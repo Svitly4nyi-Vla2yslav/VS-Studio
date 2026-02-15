@@ -1,4 +1,4 @@
-import 'modern-normalize';
+import 'modern-normalize/browser.css';
 import { css } from '@emotion/react';
 import GeistRegular from '../src/assets/fonts/Geist-Regular.ttf';
 import GeistMedium from '../src/assets/fonts/Geist-Medium.ttf';
@@ -169,7 +169,7 @@ export const GlobalStyle = css`
   html,
   body {
     height: 100%;
-    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
     touch-action: manipulation; /* Покращує відгук на тач-події */
     width: 100%;
@@ -210,6 +210,7 @@ export const GlobalStyle = css`
   input[type='tel'],
   input[type='url'],
   textarea {
+    appearance: none;
     -webkit-appearance: none;
   }
 
