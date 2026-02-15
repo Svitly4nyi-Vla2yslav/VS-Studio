@@ -23,6 +23,7 @@ import RefrigeratorSubZero from './pages/RefrigeratorSubZero/RefrigeratorSubZero
 import RefrigeratorThermador from './pages/RefrigeratorThermador/RefrigeratorThermador';
 import RefrigeratorViking from './pages/RefrigeratorViking/RefrigeratorViking';
 import { trackPageView, trackContactPhone, trackLead } from './components/metaPixel';
+import ParticlesBackground from './components/Background/StarrySky';
 
 
 declare global {
@@ -104,6 +105,7 @@ export const App: React.FC = () => {
 
   return (
     <> 
+     <ParticlesBackground />
       <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname}>
           <Route path='/' element={<Navigate to='/home' />} />
