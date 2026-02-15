@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Bar Test - Airtexno</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+    }
+
+    #header {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .content {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+    }
+
+    .content h2 {
+      margin: 30px 0 15px;
+      color: #333;
+    }
+
+    .content p {
+      line-height: 1.6;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    /* Sticky Mobile Bar */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      background: white;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+      border-top: 2px solid #e5e5e5;
+      transform: translateY(100%);
+      transition: transform 0.3s ease-in-out;
+      display: none;
+    }
+
+    .sticky-bar.visible {
+      transform: translateY(0);
+    }
+
+    @media screen and (max-width: 767px) {
+      .sticky-bar {
+        display: block;
+      }
+    }
+
+    .buttons-container {
+      display: flex;
+    }
+
+    .call-btn, .request-btn {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .call-btn {
+      background: #79caf5ff;
+      color: white;
+    }
+
+    .request-btn {
+      background: #242424;
+      color: white;
+    }
+
+    .debug-info {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      z-index: 10000;
+      max-width: 200px;
+    }
+
+    @media screen and (min-width: 768px) {
+      .debug-info {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div id="header">
+    <div>
+      <h1>HERO SECTION</h1>
+      <p style="margin-top: 20px; font-size: 18px;">Scroll down to test sticky bar</p>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <h2>Testing Sticky Mobile Bar</h2>
+    <p>This page tests the sticky bar appearance logic. The bar should appear when you scroll past the hero section (when hero bottom is less than 20% of viewport height).</p>
+    
+    <h2>How it works</h2>
+    <p>1. Find Hero element by ID: <code>#header</code></p>
+    <p>2. Get its bounding rect: <code>getBoundingClientRect()</code></p>
+    <p>3. Check if bottom edge is less than 20% of viewport: <code>heroRect.bottom < window.innerHeight * 0.2</code></p>
+    <p>4. Show sticky bar when condition is true</p>
+
+    <h2>Lorem Ipsum Content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    
+    <h2>More Content</h2>
+    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+    
+    <h2>Final Section</h2>
+    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+  </div>
+
+  <!-- Sticky Mobile Bar -->
+  <div class="sticky-bar" id="stickyBar">
+    <div class="buttons-container">
+      <a href="tel:+18055002705" class="call-btn">
+        📞 (805) 500-2705
+      </a>
+      <a href="#contact" class="request-btn">
+        📅 Request Service
+      </a>
+    </div>
+  </div>
+
+  <!-- Debug Info -->
+  <div class="debug-info" id="debugInfo">
+    Loading...
+  </div>
+
+  <script>
+    const stickyBar = document.getElementById('stickyBar');
+    const debugInfo = document.getElementById('debugInfo');
+    let isVisible = false;
+
+    function handleScroll() {
+      // Находим Hero блок
+      const heroElement = document.getElementById('header');
+      
+      if (heroElement) {
+        const heroRect = heroElement.getBoundingClientRect();
+        const heroBottom = heroRect.bottom;
+        const threshold = window.innerHeight * 0.2;
+        const shouldShow = heroBottom < threshold;
+        
+        // Update debug info
+        debugInfo.innerHTML = `
+          Hero bottom: ${Math.round(heroBottom)}px<br>
+          Viewport: ${window.innerHeight}px<br>
+          Threshold: ${Math.round(threshold)}px<br>
+          Should show: ${shouldShow ? 'YES ✅' : 'NO ❌'}<br>
+          ScrollY: ${Math.round(window.scrollY)}px
+        `;
+        
+        // Toggle sticky bar
+        if (shouldShow && !isVisible) {
+          stickyBar.classList.add('visible');
+          isVisible = true;
+        } else if (!shouldShow && isVisible) {
+          stickyBar.classList.remove('visible');
+          isVisible = false;
+        }
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    setTimeout(handleScroll, 100);
+  </script>
+</body>
+</html>
