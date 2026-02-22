@@ -1,14 +1,18 @@
-﻿const AGB: React.FC = () => {
+﻿import { useTranslation } from 'react-i18next';
+
+const AGB: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className='page'>
       <div className='container'>
         <section className='hero'>
-          <h1>AGB</h1>
-          <p>Optionale allgemeine Geschäftsbedingungen.</p>
+          <h1>{t('legal.agb.h1')}</h1>
+          <p>{t('legal.agb.subtitle')}</p>
         </section>
         <section className='section card'>
-          <p>Leistungen werden gemäß Angebot und vereinbartem Umfang erbracht.</p>
-          <p>Zahlungsbedingungen, Nutzungsrechte und Gewährleistung richten sich nach dem Vertrag.</p>
+          <p>{t('legal.agb.l1')}</p>
+          <p>{t('legal.agb.l2')}</p>
         </section>
       </div>
     </div>
@@ -16,3 +20,4 @@
 };
 
 export default AGB;
+

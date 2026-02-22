@@ -56,3 +56,7 @@ declare module "*.woff2" {
 interface Window {
   dataLayer: unknown[];
 }
+// ...existing code...
+declare module "modern-normalize/modern-normalize.css";
+declare module "*.css";
+// ...existing code...

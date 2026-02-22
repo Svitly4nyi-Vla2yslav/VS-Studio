@@ -1,17 +1,21 @@
-﻿const Impressum: React.FC = () => {
+﻿import { useTranslation } from 'react-i18next';
+
+const Impressum: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className='page'>
       <div className='container'>
         <section className='hero'>
-          <h1>Impressum</h1>
-          <p>Angaben gemäß § 5 TMG.</p>
+          <h1>{t('legal.impressum.h1')}</h1>
+          <p>{t('legal.impressum.subtitle')}</p>
         </section>
         <section className='section card'>
-          <p>VS Studio</p>
-          <p>Musterstraße 10, 10115 Berlin, Deutschland</p>
-          <p>E-Mail: kontakt@vs-web-studio.de</p>
-          <p>Telefon: +49 30 1234567</p>
-          <p>Vertreten durch: Vladyslav</p>
+          <p>{t('legal.impressum.l1')}</p>
+          <p>{t('legal.impressum.l2')}</p>
+          <p>{t('legal.impressum.l3')}</p>
+          <p>{t('legal.impressum.l4')}</p>
+          <p>{t('legal.impressum.l5')}</p>
         </section>
       </div>
     </div>
@@ -19,3 +23,4 @@
 };
 
 export default Impressum;
+

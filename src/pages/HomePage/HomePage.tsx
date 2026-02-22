@@ -1,5 +1,6 @@
-﻿import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { easeOut, motion, useInView, useScroll, useTransform, backOut } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import {
   FaArrowRight,
   FaEuroSign,
@@ -28,6 +29,7 @@ const revealUp = {
 };
 
 const Home: React.FC = () => {
+  const { t } = useTranslation();
   const { scrollYProgress } = useScroll();
   const contentY = useTransform(scrollYProgress, [0, 0.45], [0, -24]);
   const trustRef = useRef<HTMLElement | null>(null);
@@ -54,24 +56,21 @@ const Home: React.FC = () => {
           >
             <h1>
               <TerminalType
-                text='Websites, die Anfragen bringen statt nur gut aussehen.'
+                text={t('home.heroTitle')}
                 durationMs={6200}
                 storageKey='hero_terminal_once'
               />
             </h1>
-            <p>
-              Klare Positionierung, schnelle Umsetzung und transparente Pakete für lokale
-              Dienstleister in Deutschland.
-            </p>
+            <p>{t('home.heroSubtitle')}</p>
             <div className='btn-row'>
               <NavLink to='/kontakt' className='btn btn-primary'>
-                <FaArrowRight /> Projekt anfragen
+                <FaArrowRight /> {t('common.projectRequest')}
               </NavLink>
               <NavLink to='/preise' className='btn btn-secondary'>
-                <FaEuroSign /> Preise ansehen
+                <FaEuroSign /> {t('common.viewPrices')}
               </NavLink>
               <a href='#faq' className='btn btn-secondary'>
-                <FaArrowRight /> Zum FAQ
+                <FaArrowRight /> {t('home.toFaq')}
               </a>
             </div>
           </motion.div>
@@ -81,23 +80,23 @@ const Home: React.FC = () => {
           <Partners
             rows={[
               {
-                title: 'Highlights, Zielgruppen und Leistungen',
+                title: t('home.partnersTitle'),
                 direction: 'right',
                 speed: 58,
                 items: [
-                  { group: 'Highlights', label: 'Schnell geladen', description: 'Seite lädt in Sekunden', icon: <FaBolt />, iconColor: '#FFD25F', iconBg: 'rgba(255,210,95,.2)' },
-                  { group: 'Highlights', label: 'Mehr Anfragen', description: 'Mehr Kontakte über Formulare', icon: <FaChartLine />, iconColor: '#58D68D', iconBg: 'rgba(88,214,141,.2)' },
-                  { group: 'Highlights', label: 'Klare Preise', description: 'Du kennst Kosten im Voraus', icon: <FaEuroSign />, iconColor: '#5DADE2', iconBg: 'rgba(93,173,226,.2)' },
-                  { group: 'Highlights', label: 'Persönliche Hilfe', description: 'Direkter Support ohne Warteschlange', icon: <FaHandsHelping />, iconColor: '#F5B7B1', iconBg: 'rgba(245,183,177,.2)' },
-                  { group: 'Für wen', label: 'Handwerker', description: 'Anfragen pro Stadt und Leistung', icon: <FaHammer />, iconColor: '#F8C471', iconBg: 'rgba(248,196,113,.2)' },
-                  { group: 'Für wen', label: 'Praxen', description: 'Patienten finden schneller Termine', icon: <FaHeartbeat />, iconColor: '#EC7063', iconBg: 'rgba(236,112,99,.2)' },
-                  { group: 'Für wen', label: 'Werkstätten', description: 'Klare Service-Seiten mit Tracking', icon: <FaIndustry />, iconColor: '#AF7AC5', iconBg: 'rgba(175,122,197,.2)' },
-                  { group: 'Für wen', label: 'Lokale Services', description: 'Mehr Sichtbarkeit vor Ort', icon: <FaMapMarkerAlt />, iconColor: '#E74C3C', iconBg: 'rgba(231,76,60,.2)' },
-                  { group: 'Leistungen', label: 'Websites', description: 'Modern, schnell, mobil optimiert', icon: <FaGlobe />, iconColor: '#48C9B0', iconBg: 'rgba(72,201,176,.2)' },
-                  { group: 'Leistungen', label: 'Web-Apps', description: 'Tools für Team und Kunden', icon: <FaCode />, iconColor: '#85C1E9', iconBg: 'rgba(133,193,233,.2)' },
-                  { group: 'Leistungen', label: 'AI Integration', description: 'Chatbot für Fragen und Leads', icon: <FaRobot />, iconColor: '#F7DC6F', iconBg: 'rgba(247,220,111,.2)' },
-                  { group: 'Leistungen', label: 'Social Media', description: 'Website + Instagram/Meta verbunden', icon: <FaShareAlt />, iconColor: '#5DADE2', iconBg: 'rgba(93,173,226,.2)' },
-                  { group: 'Leistungen', label: 'Social Ads', description: 'Gezielte Werbung mit messbaren Ergebnissen', icon: <FaBullhorn />, iconColor: '#F1948A', iconBg: 'rgba(241,148,138,.2)' },
+                  { group: t('home.groups.highlights'), label: t('home.partners.fastLoad.title'), description: t('home.partners.fastLoad.desc'), icon: <FaBolt />, iconColor: '#FFD25F', iconBg: 'rgba(255,210,95,.2)' },
+                  { group: t('home.groups.highlights'), label: t('home.partners.moreLeads.title'), description: t('home.partners.moreLeads.desc'), icon: <FaChartLine />, iconColor: '#58D68D', iconBg: 'rgba(88,214,141,.2)' },
+                  { group: t('home.groups.highlights'), label: t('home.partners.clearPrices.title'), description: t('home.partners.clearPrices.desc'), icon: <FaEuroSign />, iconColor: '#5DADE2', iconBg: 'rgba(93,173,226,.2)' },
+                  { group: t('home.groups.highlights'), label: t('home.partners.personalHelp.title'), description: t('home.partners.personalHelp.desc'), icon: <FaHandsHelping />, iconColor: '#F5B7B1', iconBg: 'rgba(245,183,177,.2)' },
+                  { group: t('home.groups.forWhom'), label: t('home.partners.handwerker.title'), description: t('home.partners.handwerker.desc'), icon: <FaHammer />, iconColor: '#F8C471', iconBg: 'rgba(248,196,113,.2)' },
+                  { group: t('home.groups.forWhom'), label: t('home.partners.praxen.title'), description: t('home.partners.praxen.desc'), icon: <FaHeartbeat />, iconColor: '#EC7063', iconBg: 'rgba(236,112,99,.2)' },
+                  { group: t('home.groups.forWhom'), label: t('home.partners.werkstaetten.title'), description: t('home.partners.werkstaetten.desc'), icon: <FaIndustry />, iconColor: '#AF7AC5', iconBg: 'rgba(175,122,197,.2)' },
+                  { group: t('home.groups.forWhom'), label: t('home.partners.localServices.title'), description: t('home.partners.localServices.desc'), icon: <FaMapMarkerAlt />, iconColor: '#E74C3C', iconBg: 'rgba(231,76,60,.2)' },
+                  { group: t('home.groups.services'), label: t('home.partners.websites.title'), description: t('home.partners.websites.desc'), icon: <FaGlobe />, iconColor: '#48C9B0', iconBg: 'rgba(72,201,176,.2)' },
+                  { group: t('home.groups.services'), label: t('home.partners.webApps.title'), description: t('home.partners.webApps.desc'), icon: <FaCode />, iconColor: '#85C1E9', iconBg: 'rgba(133,193,233,.2)' },
+                  { group: t('home.groups.services'), label: t('home.partners.aiIntegration.title'), description: t('home.partners.aiIntegration.desc'), icon: <FaRobot />, iconColor: '#F7DC6F', iconBg: 'rgba(247,220,111,.2)' },
+                  { group: t('home.groups.services'), label: t('home.partners.socialMedia.title'), description: t('home.partners.socialMedia.desc'), icon: <FaShareAlt />, iconColor: '#5DADE2', iconBg: 'rgba(93,173,226,.2)' },
+                  { group: t('home.groups.services'), label: t('home.partners.socialAds.title'), description: t('home.partners.socialAds.desc'), icon: <FaBullhorn />, iconColor: '#F1948A', iconBg: 'rgba(241,148,138,.2)' },
                 ],
               },
             ]}
@@ -107,9 +106,9 @@ const Home: React.FC = () => {
         <section className='section' ref={trustRef}>
           <h2>
             {trustInView ? (
-              <TerminalType text='Trust mit konkreten Ergebnissen' durationMs={6200} storageKey='trust_title_v3' />
+              <TerminalType text={t('home.trustTitle')} durationMs={6200} storageKey='trust_title_v3' />
             ) : (
-              'Trust mit konkreten Ergebnissen'
+              t('home.trustTitle')
             )}
           </h2>
           <div className='grid-3'>
@@ -117,56 +116,56 @@ const Home: React.FC = () => {
               <h3>
                 <LiveMetric start={21} max={38} target={38} step={1} prefix='+' suffix='%' storageKey='trust_metric_1' />
               </h3>
-              <p className='muted'>mehr Kontaktanfragen in 60 Tagen.</p>
+              <p className='muted'>{t('home.trustDesc1')}</p>
             </article>
             <article className='card'>
               <h3>
                 <LiveMetric start={12} max={41} target={41} step={1} prefix='-' suffix='%' storageKey='trust_metric_2' />
               </h3>
-              <p className='muted'>geringere Cost-per-Lead nach Tracking-Fix.</p>
+              <p className='muted'>{t('home.trustDesc2')}</p>
             </article>
             <article className='card'>
               <h3>
                 <LiveMetric start={2.9} max={2.1} target={2.1} step={0.1} decimals={1} suffix='s' storageKey='trust_metric_3' />
               </h3>
-              <p className='muted'>durchschnittliche Ladezeit auf Mobil.</p>
+              <p className='muted'>{t('home.trustDesc3')}</p>
             </article>
           </div>
         </section>
 
         <section id='faq' className='section'>
           <h2>
-            <TerminalType text='FAQ' durationMs={2200} storageKey='faq_title_v2' />
+            <TerminalType text={t('home.faqTitle')} durationMs={2200} storageKey='faq_title_v2' />
           </h2>
           <div className='faq'>
             <details>
-              <summary>Wie schnell könnt ihr starten?</summary>
+              <summary>{t('home.faq.q1')}</summary>
               <div className='faq-answer'>
-                <p>In der Regel starten wir innerhalb von 3-5 Werktagen. Direkt nach deiner Anfrage bekommst du einen kurzen Plan mit den ersten Schritten.</p>
+                <p>{t('home.faq.a1')}</p>
               </div>
             </details>
             <details>
-              <summary>Was brauche ich als Kunde am Anfang?</summary>
+              <summary>{t('home.faq.q2')}</summary>
               <div className='faq-answer'>
-                <p>Nur Basisinfos zu deinem Angebot, Zielgruppe und Kontaktwegen. Wir helfen dir dann bei Struktur, Texten und Prioritäten.</p>
+                <p>{t('home.faq.a2')}</p>
               </div>
             </details>
             <details>
-              <summary>Wie läuft die Zusammenarbeit ab?</summary>
+              <summary>{t('home.faq.q3')}</summary>
               <div className='faq-answer'>
-                <p>Wir arbeiten in kurzen Etappen: Konzept, Design, Umsetzung, Launch. Du bekommst klare Updates, damit du immer weißt, was als Nächstes passiert.</p>
+                <p>{t('home.faq.a3')}</p>
               </div>
             </details>
             <details>
-              <summary>Ist das für kleine Unternehmen geeignet?</summary>
+              <summary>{t('home.faq.q4')}</summary>
               <div className='faq-answer'>
-                <p>Ja. Unsere Pakete sind bewusst für lokale Betriebe aufgebaut: klare Preise, schneller Start und Fokus auf echte Anfragen statt nur Optik.</p>
+                <p>{t('home.faq.a4')}</p>
               </div>
             </details>
             <details>
-              <summary>Was passiert nach dem Launch?</summary>
+              <summary>{t('home.faq.q5')}</summary>
               <div className='faq-answer'>
-                <p>Nach dem Launch prüfen wir Daten, verbessern Conversion-Punkte und unterstützen dich beim Feinschliff, damit die Seite dauerhaft besser performt.</p>
+                <p>{t('home.faq.a5')}</p>
               </div>
             </details>
           </div>

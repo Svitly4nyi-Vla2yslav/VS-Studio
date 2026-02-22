@@ -1,14 +1,17 @@
 ﻿import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const PraxisLanding: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className='page'>
       <div className='container'>
         <section className='hero'>
-          <h1>Websites für Praxen: weniger Rückfragen, mehr Terminanfragen.</h1>
-          <p>Patientenfreundliche Struktur und klarer Online-Erstkontakt.</p>
+          <h1>{t('niche.praxis.h1')}</h1>
+          <p>{t('niche.praxis.p')}</p>
           <div className='btn-row'>
-            <NavLink to='/kontakt' className='btn btn-primary'>Projekt anfragen</NavLink>
+            <NavLink to='/kontakt' className='btn btn-primary'>{t('common.projectRequest')}</NavLink>
           </div>
         </section>
       </div>
@@ -17,3 +20,4 @@ const PraxisLanding: React.FC = () => {
 };
 
 export default PraxisLanding;
+

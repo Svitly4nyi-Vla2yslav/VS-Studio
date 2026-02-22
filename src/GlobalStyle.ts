@@ -69,9 +69,9 @@ export const GlobalStyle = css`
     --glow-ember: 0 0 30px rgba(255, 177, 74, 0.18);
 
     /* Fonts */
-    --font-family: "Geist", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    --second-family: "Bebas Neue", "Geist", sans-serif;
-    --third-family: "Inter", "Geist", sans-serif;
+    --font-family: "Noto Sans", "Noto Sans Arabic", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --second-family: "Noto Sans", "Noto Sans Arabic", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --third-family: "Noto Sans", "Noto Sans Arabic", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
     /* Safe-area */
     --safe-area-inset-top: env(safe-area-inset-top, 0px);
@@ -164,8 +164,8 @@ export const GlobalStyle = css`
   h5,
   h6 {
     font-family: var(--second-family);
-    font-weight: 400;
-    letter-spacing: 0.04em;
+    font-weight: 700;
+    letter-spacing: 0.01em;
     color: var(--text);
   }
 

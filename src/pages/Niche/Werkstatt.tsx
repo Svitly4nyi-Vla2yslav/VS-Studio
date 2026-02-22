@@ -1,14 +1,17 @@
 ﻿import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const WerkstattLanding: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className='page'>
       <div className='container'>
         <section className='hero'>
-          <h1>Websites für Werkstätten: planbare Leads statt Zufall.</h1>
-          <p>Service-orientierte Seiten mit messbarer Conversion.</p>
+          <h1>{t('niche.werkstatt.h1')}</h1>
+          <p>{t('niche.werkstatt.p')}</p>
           <div className='btn-row'>
-            <NavLink to='/kontakt' className='btn btn-primary'>Projekt anfragen</NavLink>
+            <NavLink to='/kontakt' className='btn btn-primary'>{t('common.projectRequest')}</NavLink>
           </div>
         </section>
       </div>
@@ -17,3 +20,4 @@ const WerkstattLanding: React.FC = () => {
 };
 
 export default WerkstattLanding;
+

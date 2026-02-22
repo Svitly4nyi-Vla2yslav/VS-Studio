@@ -1,7 +1,8 @@
 import { createContext, useContext, ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
+import { SUPPORTED_LANGUAGES } from '../../i18n';
 
-type Language = 'en' | 'ru' | 'es' | 'ua';
+export type Language = (typeof SUPPORTED_LANGUAGES)[number];
 
 interface LanguageContextProps {
   language: Language;
@@ -15,16 +16,23 @@ const LanguageContext = createContext<LanguageContextProps | undefined>(
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const { i18n } = useTranslation();
 
+  const getSafeLanguage = (input?: string): Language => {
+    const base = (input || '').toLowerCase().split('-')[0];
+    if ((SUPPORTED_LANGUAGES as readonly string[]).includes(base)) {
+      return base as Language;
+    }
+    return 'de';
+  };
+
   const setLanguage = (lang: Language) => {
     i18n.changeLanguage(lang).then(() => {
-      // Перезавантажуємо сторінку після зміни мови
       window.location.reload();
     });
   };
 
   return (
     <LanguageContext.Provider
-      value={{ language: i18n.language as Language, setLanguage }}
+      value={{ language: getSafeLanguage(i18n.resolvedLanguage || i18n.language), setLanguage }}
     >
       {children}
     </LanguageContext.Provider>
