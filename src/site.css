@@ -52,10 +52,25 @@ main {
   line-height: 0;
 }
 
-.brand-logo {
-  width: 122px;
-  height: auto;
-  object-fit: contain;
+.brand-wordmark {
+  font-family: 'Orbitron', 'Geist', 'Segoe UI', sans-serif;
+  font-size: clamp(30px, 4vw, 52px);
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  background: linear-gradient(105deg, #c9861e, #ffe7bb, #ffb43f, #ffe7bb, #c9861e);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: logoFlow 4.8s ease-in-out infinite;
+  filter: drop-shadow(0 0 18px rgba(255, 198, 109, 0.55));
+}
+
+@keyframes logoFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .nav {
@@ -320,6 +335,10 @@ main {
 .muted { color: rgba(255, 255, 255, 0.72); }
 .price { font-size: 30px; color: #ffd08a; margin: 8px 0; }
 .live-metric { display: inline-block; min-width: 74px; color: #ffd08a; letter-spacing: 0.01em; }
+.command-line-metric {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  letter-spacing: 0.015em;
+}
 
 .checklist { display: grid; gap: 9px; }
 .checklist li {
@@ -329,28 +348,32 @@ main {
   gap: 8px;
 }
 
-.faq { display: grid; gap: 10px; }
-
-.faq details {
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(7, 11, 21, 0.8);
-  padding: 12px 14px;
-  transition: border-color var(--dur-mid) var(--ease-smooth), background var(--dur-mid) var(--ease-smooth), transform var(--dur-mid) var(--ease-smooth);
+.faq {
+  display: grid;
+  gap: 14px;
+  margin-top: 14px;
 }
 
-.faq details:hover { border-color: rgba(255, 207, 130, 0.45); transform: translateY(-1px); }
-.faq summary { cursor: pointer; font-weight: 600; transition: color var(--dur-mid) var(--ease-smooth); }
+.faq details {
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(7, 11, 21, 0.84);
+  padding: 16px 18px;
+  transition: border-color 620ms var(--ease-smooth), background 620ms var(--ease-smooth), transform 620ms var(--ease-smooth);
+}
+
+.faq details:hover { border-color: rgba(255, 207, 130, 0.5); transform: translateY(-2px); }
+.faq summary { cursor: pointer; font-weight: 700; font-size: 17px; transition: color 620ms var(--ease-smooth); }
 .faq details[open] summary { color: #ffd08a; }
 
 .faq-answer {
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows var(--dur-mid) var(--ease-smooth), opacity var(--dur-mid) var(--ease-smooth);
+  transition: grid-template-rows 700ms var(--ease-smooth), opacity 700ms var(--ease-smooth);
   opacity: 0;
 }
 
-.faq-answer p { overflow: hidden; margin-top: 8px; }
+.faq-answer p { overflow: hidden; margin-top: 10px; line-height: 1.6; color: rgba(255,255,255,.85); }
 .faq details[open] .faq-answer { grid-template-rows: 1fr; opacity: 1; }
 
 .table-like { display: grid; gap: 10px; }
@@ -411,12 +434,80 @@ main {
 
 .footer-links a:hover { color: #ffd08a; transform: translateY(-1px); }
 
+.cookie-banner {
+  position: fixed;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  width: min(980px, calc(100% - 20px));
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(10, 14, 26, 0.96);
+  box-shadow: 0 18px 28px rgba(0, 0, 0, 0.32);
+  z-index: 240;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cookie-text {
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 70ch;
+  font-size: 14px;
+}
+
+.cookie-text a { color: #ffd08a; }
+
+.cookie-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cookie-btn {
+  min-height: 40px;
+  width: auto;
+}
+
+.cookie-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.58);
+  z-index: 260;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+
+.cookie-modal {
+  width: min(640px, 100%);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.2);
+  background: rgba(12, 16, 28, 0.98);
+  padding: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.cookie-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.15);
+  padding: 10px 12px;
+  background: rgba(255,255,255,.03);
+}
+
 @media (max-width: 767px) {
   :root { --gutter: 10px; }
   .page { padding: 28px 0 52px; }
   .header-row { min-height: 66px; gap: 6px; }
   main { padding-top: 66px; }
-  .brand-logo { width: 92px; }
+  .brand-wordmark { font-size: 38px; }
   .cta-fixed { font-size: 12px; padding: 9px 10px; border-radius: 10px; }
   .hero { padding-top: 38px; gap: 14px; }
   .hero-with-video { min-height: 500px; padding: 14px; }
@@ -430,6 +521,11 @@ main {
   .btn-row { width: 100%; gap: 10px; }
   .grid-2, .grid-3, .grid-4, .badges { grid-template-columns: 1fr; }
   .footer-row { flex-direction: column; align-items: flex-start; }
+  .cookie-banner {
+    width: calc(100% - 20px);
+    bottom: 10px;
+  }
+  .cookie-text { font-size: 13px; }
   .menu-toggle { display: inline-flex; }
   .nav {
     position: absolute;
@@ -451,7 +547,7 @@ main {
   :root { --gutter: 20px; }
   .header-row { min-height: 72px; gap: 10px; }
   main { padding-top: 72px; }
-  .brand-logo { width: 106px; }
+  .brand-wordmark { font-size: 44px; }
   .menu-toggle { display: inline-flex; }
   .nav {
     position: absolute;
@@ -471,23 +567,25 @@ main {
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   :root { --gutter: 28px; }
-  .brand-logo { width: 112px; }
+  .brand-wordmark { font-size: 48px; }
 }
 
 @media (min-width: 1280px) and (max-width: 1439px) {
   :root { --gutter: 36px; }
-  .brand-logo { width: 118px; }
+  .brand-wordmark { font-size: 52px; }
 }
 
 @media (min-width: 1440px) {
   :root { --gutter: 44px; }
   .hero h1 { max-width: 15ch; }
+  .brand-wordmark { font-size: 56px; }
 }
 
 @media (min-width: 1920px) {
   :root { --gutter: 60px; }
   .hero { padding-top: 80px; }
   .section { margin-top: 34px; }
+  .brand-wordmark { font-size: 62px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

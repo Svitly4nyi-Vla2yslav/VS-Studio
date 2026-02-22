@@ -1,14 +1,17 @@
-﻿import { useEffect, useMemo, useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+﻿import { useEffect, useMemo, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
 
 type LiveMetricProps = {
   start: number;
-  min: number;
+  min?: number;
   max: number;
+  target?: number;
   step?: number;
   decimals?: number;
   prefix?: string;
   suffix?: string;
+  durationMs?: number;
+  storageKey?: string;
 };
 
 const formatValue = (
@@ -20,27 +23,52 @@ const formatValue = (
 
 const LiveMetric: React.FC<LiveMetricProps> = ({
   start,
-  min,
   max,
-  step = 1,
+  target,
   decimals = 0,
   prefix = '',
   suffix = '',
+  durationMs = 1800,
+  storageKey,
 }) => {
+  const finalValue = target ?? max;
   const [value, setValue] = useState(start);
+  const [isAnimating, setIsAnimating] = useState(true);
+  const rafRef = useRef<number | null>(null);
 
   useEffect(() => {
-    const id = window.setInterval(() => {
-      setValue(prev => {
-        const jitter = (Math.random() - 0.5) * step * 0.7;
-        const next = prev + step + jitter;
-        if (next > max) return min;
-        return Math.max(min, next);
-      });
-    }, 1000);
+    if (typeof window === 'undefined') return;
 
-    return () => window.clearInterval(id);
-  }, [max, min, step]);
+    if (storageKey && window.sessionStorage.getItem(storageKey) === '1') {
+      setValue(finalValue);
+      setIsAnimating(false);
+      return;
+    }
+
+    let startTime = 0;
+    const from = start;
+    const to = finalValue;
+
+    const tick = (t: number) => {
+      if (!startTime) startTime = t;
+      const progress = Math.min((t - startTime) / durationMs, 1);
+      const next = from + (to - from) * progress;
+      setValue(next);
+
+      if (progress < 1) {
+        rafRef.current = window.requestAnimationFrame(tick);
+      } else {
+        setIsAnimating(false);
+        setValue(to);
+        if (storageKey) window.sessionStorage.setItem(storageKey, '1');
+      }
+    };
+
+    rafRef.current = window.requestAnimationFrame(tick);
+    return () => {
+      if (rafRef.current) window.cancelAnimationFrame(rafRef.current);
+    };
+  }, [durationMs, finalValue, start, storageKey]);
 
   const view = useMemo(
     () => formatValue(value, decimals, prefix, suffix),
@@ -48,18 +76,15 @@ const LiveMetric: React.FC<LiveMetricProps> = ({
   );
 
   return (
-    <AnimatePresence mode='wait'>
-      <motion.span
-        key={view}
-        className='live-metric'
-        initial={{ opacity: 0, y: 10, filter: 'blur(2px)' }}
-        animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-        exit={{ opacity: 0, y: -8, filter: 'blur(2px)' }}
-        transition={{ duration: 0.24 }}
-      >
-        {view}
-      </motion.span>
-    </AnimatePresence>
+    <motion.span
+      className='live-metric command-line-metric'
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.42 }}
+    >
+      {view}
+      {isAnimating ? <span className='terminal-cursor'>|</span> : null}
+    </motion.span>
   );
 };
 

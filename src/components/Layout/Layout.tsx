@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { AnimatePresence, motion, easeOut } from 'framer-motion';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import CookieConsentBanner from '../CookieConsentBanner';
 
 export const Layout: React.FC = () => {
   const location = useLocation();
@@ -26,6 +27,7 @@ export const Layout: React.FC = () => {
         </motion.main>
       </AnimatePresence>
       <Footer />
+      <CookieConsentBanner />
     </div>
   );
 };

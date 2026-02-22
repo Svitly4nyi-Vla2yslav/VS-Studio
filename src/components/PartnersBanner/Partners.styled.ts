@@ -18,29 +18,65 @@ export const RowTitle = styled.h3`
 
 export const MarqueeViewport = styled.div`
   overflow: hidden;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(10, 14, 26, 0.82);
-  padding: 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(10, 14, 26, 0.86);
+  padding: 12px;
 `;
 
 export const MarqueeTrack = styled.div`
   display: flex;
   width: max-content;
-  gap: 10px;
+  gap: 12px;
 `;
 
 export const Badge = styled.div`
+  min-width: 180px;
+  min-height: 180px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 207, 130, 0.42);
+  color: #fef6df;
+  background: linear-gradient(130deg, rgba(255, 180, 90, 0.2), rgba(79, 141, 255, 0.16));
+  padding: 12px;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  align-content: start;
+  gap: 8px;
+
+  .badge-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+`;
+
+export const BadgeIcon = styled.span`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 38px;
-  padding: 0 14px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 207, 130, 0.36);
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.18);
+`;
+
+export const BadgeGroup = styled.span`
+  color: #ffdba2;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+`;
+
+export const BadgeText = styled.span`
   color: #fef6df;
-  font-size: 14px;
-  font-weight: 600;
-  background: linear-gradient(120deg, rgba(255, 180, 90, 0.26), rgba(79, 141, 255, 0.2));
-  white-space: nowrap;
+  font-size: 15px;
+  font-weight: 700;
+`;
+
+export const BadgeDesc = styled.span`
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  line-height: 1.35;
 `;

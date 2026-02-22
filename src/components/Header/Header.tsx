@@ -2,7 +2,6 @@
 import { NavLink } from 'react-router-dom';
 import { motion, backOut } from 'framer-motion';
 import { FaCogs, FaEuroSign, FaFolderOpen, FaInfoCircle, FaEnvelope, FaArrowRight } from 'react-icons/fa';
-import logo from '../../assets/logo-vs-studio.svg';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,14 +10,14 @@ const Header: React.FC = () => {
     <header className='site-header'>
       <div className='container header-row'>
         <NavLink to='/' className='brand' onClick={() => setIsOpen(false)}>
-          <motion.img
-            src={logo}
-            alt='VS Web Studio logo'
-            className='brand-logo'
+          <motion.span
+            className='brand-wordmark'
             initial={{ opacity: 0, y: -12, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.72, ease: backOut }}
-          />
+            transition={{ duration: 0.82, ease: backOut }}
+          >
+            {'<VS/>'}
+          </motion.span>
         </NavLink>
 
         <button
