@@ -18,8 +18,37 @@ const CookieConsentBanner: React.FC = () => {
 
   useEffect(() => {
     const saved = window.localStorage.getItem(KEY);
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved) as ConsentState;
+        setStatistics(Boolean(parsed.statistics));
+        setMarketing(Boolean(parsed.marketing));
+      } catch {
+        // ignore malformed localStorage
+      }
+    }
     setIsOpen(!saved);
     setIsLoaded(true);
+  }, []);
+
+  useEffect(() => {
+    const openSettings = () => {
+      const saved = window.localStorage.getItem(KEY);
+      if (saved) {
+        try {
+          const parsed = JSON.parse(saved) as ConsentState;
+          setStatistics(Boolean(parsed.statistics));
+          setMarketing(Boolean(parsed.marketing));
+        } catch {
+          // ignore malformed localStorage
+        }
+      }
+      setIsOpen(true);
+      setShowSettings(true);
+    };
+
+    window.addEventListener('open-cookie-settings', openSettings);
+    return () => window.removeEventListener('open-cookie-settings', openSettings);
   }, []);
 
   const payload: ConsentState = useMemo(
