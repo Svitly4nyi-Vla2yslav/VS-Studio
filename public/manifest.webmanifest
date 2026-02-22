@@ -1,12 +1,12 @@
-{
+﻿{
   "name": "VS Web Studio",
-  "short_name": "VS Web Studio",
+  "short_name": "VS Studio",
   "description": "Websites, die Anfragen bringen.",
   "dir": "auto",
-  "lang": "en-US",
+  "lang": "de-DE",
   "display": "standalone",
   "orientation": "any",
-  "start_url": "/?homescreen=1",
+  "start_url": "/",
   "background_color": "#0B0B0F",
   "theme_color": "#0B0B0F",
   "icons": [
