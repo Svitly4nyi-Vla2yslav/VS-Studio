@@ -1,4 +1,4 @@
-﻿{
+{
   "languages": {
     "de": "Deutsch",
     "uk": "Українська",
@@ -60,19 +60,58 @@
       "services": "Leistungen"
     },
     "partners": {
-      "fastLoad": { "title": "Schnell geladen", "desc": "Seite lädt in Sekunden" },
-      "moreLeads": { "title": "Mehr Anfragen", "desc": "Mehr Kontakte über Formulare" },
-      "clearPrices": { "title": "Klare Preise", "desc": "Du kennst Kosten im Voraus" },
-      "personalHelp": { "title": "Persönliche Hilfe", "desc": "Direkter Support ohne Warteschlange" },
-      "handwerker": { "title": "Handwerker", "desc": "Anfragen pro Stadt und Leistung" },
-      "praxen": { "title": "Praxen", "desc": "Patienten finden schneller Termine" },
-      "werkstaetten": { "title": "Werkstätten", "desc": "Klare Service-Seiten mit Tracking" },
-      "localServices": { "title": "Lokale Services", "desc": "Mehr Sichtbarkeit vor Ort" },
-      "websites": { "title": "Websites", "desc": "Modern, schnell, mobil optimiert" },
-      "webApps": { "title": "Web-Apps", "desc": "Tools für Team und Kunden" },
-      "aiIntegration": { "title": "AI Integration", "desc": "Chatbot für Fragen und Leads" },
-      "socialMedia": { "title": "Social Media", "desc": "Website + Instagram/Meta verbunden" },
-      "socialAds": { "title": "Social Ads", "desc": "Gezielte Werbung mit messbaren Ergebnissen" }
+      "fastLoad": {
+        "title": "Schnell geladen",
+        "desc": "Seite lädt in Sekunden"
+      },
+      "moreLeads": {
+        "title": "Mehr Anfragen",
+        "desc": "Mehr Kontakte über Formulare"
+      },
+      "clearPrices": {
+        "title": "Klare Preise",
+        "desc": "Du kennst Kosten im Voraus"
+      },
+      "personalHelp": {
+        "title": "Persönliche Hilfe",
+        "desc": "Direkter Support ohne Warteschlange"
+      },
+      "handwerker": {
+        "title": "Handwerker",
+        "desc": "Anfragen pro Stadt und Leistung"
+      },
+      "praxen": {
+        "title": "Praxen",
+        "desc": "Patienten finden schneller Termine"
+      },
+      "werkstaetten": {
+        "title": "Werkstätten",
+        "desc": "Klare Service-Seiten mit Tracking"
+      },
+      "localServices": {
+        "title": "Lokale Services",
+        "desc": "Mehr Sichtbarkeit vor Ort"
+      },
+      "websites": {
+        "title": "Websites",
+        "desc": "Modern, schnell, mobil optimiert"
+      },
+      "webApps": {
+        "title": "Web-Apps",
+        "desc": "Tools für Team und Kunden"
+      },
+      "aiIntegration": {
+        "title": "AI Integration",
+        "desc": "Chatbot für Fragen und Leads"
+      },
+      "socialMedia": {
+        "title": "Social Media",
+        "desc": "Website + Instagram/Meta verbunden"
+      },
+      "socialAds": {
+        "title": "Social Ads",
+        "desc": "Gezielte Werbung mit messbaren Ergebnissen"
+      }
     },
     "trustTitle": "Trust mit konkreten Ergebnissen",
     "trustDesc1": "mehr Kontaktanfragen in 60 Tagen.",
@@ -93,26 +132,47 @@
     }
   },
   "services": {
-    "h1": "Services mit klarem Scope, Ergebnis und Zeitplan.",
+    "h1": "Leistungen mit klarem Ergebnis und Zeitplan.",
     "subtitle": "Wir bauen nicht nur Seiten, sondern einen funktionierenden Lead-Prozess.",
     "cards": {
-      "websites": { "title": "Websites", "desc": "Inhalt: Positionierung, UX, technische Umsetzung, Tracking." },
-      "webAppsAi": { "title": "Web-Apps & AI", "desc": "Inhalt: interne Workflows, AI-Assistenten, Formulare, Prozesse." },
-      "ads": { "title": "Ads & Auswertung", "desc": "Kampagnenaufbau, Creatives, Conversion-Tracking." },
-      "social": { "title": "Social Integration", "desc": "Plattform-Integration, DM-Flows, Retargeting." }
+      "websites": {
+        "title": "Websites",
+        "desc": "Inhalt: Positionierung, UX, technische Umsetzung, Tracking."
+      },
+      "webAppsAi": {
+        "title": "Web-Apps & AI",
+        "desc": "Inhalt: interne Workflows, AI-Assistenten, Formulare, Prozesse."
+      },
+      "ads": {
+        "title": "Ads & Auswertung",
+        "desc": "Kampagnenaufbau, Creatives, Conversion-Tracking."
+      },
+      "social": {
+        "title": "Social Integration",
+        "desc": "Plattform-Integration, DM-Flows, Retargeting."
+      }
     },
     "deliverablesTitle": "Deliverables",
     "deliverables": {
-      "i1": "Strategie-Call + Scope-Dokument",
+      "i1": "Strategie-Call + klarer Umsetzungsplan",
       "i2": "Design in responsiven Breakpoints",
       "i3": "Technische Umsetzung + Performance",
       "i4": "Formulare, Tracking, Analytics Dashboard"
     },
     "aiSocialAdsTitle": "AI, Social, Werbung",
     "aiCards": {
-      "ai": { "title": "KI-Integration", "desc": "Chatbots, automatische Antworten, Lead-Priorisierung." },
-      "social": { "title": "Social Media", "desc": "Content-Module, Channel-Verknüpfung, Kontaktpfade." },
-      "ads": { "title": "Social Ads", "desc": "Meta/TikTok/LinkedIn Kampagnen mit Tracking." }
+      "ai": {
+        "title": "KI-Integration",
+        "desc": "Chatbots, automatische Antworten, Lead-Priorisierung."
+      },
+      "social": {
+        "title": "Social Media",
+        "desc": "Content-Module, Channel-Verknüpfung, Kontaktpfade."
+      },
+      "ads": {
+        "title": "Social Ads",
+        "desc": "Meta/TikTok/LinkedIn Kampagnen mit Tracking."
+      }
     },
     "ctaTitle": "Angebot erhalten",
     "ctaButton": "Angebot erhalten"
@@ -138,28 +198,144 @@
     "nextStep": "Nächster Schritt"
   },
   "references": {
-    "h1": "Referenzen mit klaren Ergebnissen.",
-    "subtitle": "Kein Marketing-Sprech: nur Aufgabe, Lösung, messbarer Output.",
-    "handwerk": "Handwerk",
-    "praxis": "Praxis",
-    "werkstatt": "Werkstatt",
-    "result": "Resultat:",
-    "beforeAfter": "Before / After",
-    "before": "Before",
-    "after": "After",
-    "beforeAlt": "Before case layout",
-    "afterAlt": "After case layout",
-    "cta": "Ähnliches Projekt anfragen"
+    "h1": "Referenzen mit messbarem Wachstum.",
+    "subtitle": "Wir zeigen klar, was gestiegen ist: Anfragen, Buchungen, Anrufe und Leads.",
+    "trustline": "Alle Kennzahlen mit Kontext: Zeitraum und Messung.",
+    "filterTitle": "Nische auswählen",
+    "filterAria": "Nischenfilter",
+    "counter": "{{count}} passende Cases",
+    "growthByNiche": "Wachstum nach Branche",
+    "selectedCases": "Ausgewählte Cases",
+    "challengeLabel": "Ausgangslage",
+    "solutionLabel": "Umsetzung",
+    "periodLabel": "Zeitraum",
+    "measurementLabel": "Messung",
+    "emptyTitle": "Für diese Nische folgt der nächste Case.",
+    "emptyText": "Wir zeigen nur Cases mit belastbarer Messung und klarem Zeitraum.",
+    "beforeAfter": "Vorher / Nachher",
+    "before": "Vorher",
+    "after": "Nachher",
+    "beforeAlt": "Vorher-Ansicht des Cases",
+    "afterAlt": "Nachher-Ansicht des Cases",
+    "sliderAria": "Vorher Nachher Vergleich verschieben",
+    "sliderHint": "Zum Vergleichen ziehen.",
+    "ctaTitle": "Sie wollen ähnliche Ergebnisse?",
+    "ctaText": "Wir analysieren Ihre Ausgangslage und zeigen einen realistischen 30-90-Tage-Plan.",
+    "cta": "Ähnliches Projekt anfragen",
+    "filters": {
+      "all": "Alle"
+    },
+    "niches": {
+      "handwerk": "Handwerk",
+      "praxen": "Praxen",
+      "werkstatt": "Werkstatt",
+      "gastronomie": "Gastronomie",
+      "beauty": "Beauty",
+      "immobilien": "Immobilien",
+      "kanzlei": "Kanzlei",
+      "fitnessPhysio": "Fitness/Physio",
+      "reinigung": "Reinigung",
+      "umzugTransport": "Umzug/Transport",
+      "coachingBeratung": "Coaching/Beratung",
+      "bildungKurse": "Bildung/Kurse"
+    },
+    "metrics": {
+      "moreRequests": "Mehr Anfragen",
+      "moreAppointments": "Mehr Terminbuchungen",
+      "moreCalls": "Mehr Anrufe",
+      "moreReservations": "Mehr Reservierungen",
+      "moreBookings": "Mehr Buchungen",
+      "moreLeads": "Mehr Leads",
+      "moreIntroCalls": "Mehr Erstgespräche",
+      "moreTrialSessions": "Mehr Probetrainings",
+      "moreOffers": "Mehr Angebotsanfragen",
+      "moreQualifiedLeads": "Mehr qualifizierte Leads",
+      "moreFirstContacts": "Mehr Erstkontakte",
+      "moreCourseSignups": "Mehr Kursanmeldungen",
+      "budgetEfficiency": "Budget-Effizienz",
+      "moreInteractions": "Mehr Interaktionen",
+      "moreLeadsPerBudget": "Mehr Leads pro Budget",
+      "moreConsultations": "Mehr Beratungstermine"
+    },
+    "cases": {
+      "c1": {
+        "title": "Sanitärbetrieb (Region Hannover)",
+        "challenge": "Zu wenig Anfragen trotz guter Reichweite.",
+        "solution": "Leistungsseiten neu strukturiert, CTA optimiert, Kontakttracking aktiviert."
+      },
+      "c2": {
+        "title": "Physiopraxis (Hildesheim)",
+        "challenge": "Zu wenige Online-Terminwünsche.",
+        "solution": "Termin-Flow vereinfacht, mobile Seiten beschleunigt, Kontaktwege klar definiert."
+      },
+      "c3": {
+        "title": "Karosserie-Werkstatt (Raum Harburg)",
+        "challenge": "Viele Kontakte, aber zu wenig passende Aufträge.",
+        "solution": "Lead-Qualifizierung im Formular und servicebezogene Landingpage eingeführt."
+      },
+      "c4": {
+        "title": "Restaurant (Niedersachsen)",
+        "challenge": "Zu wenige Reservierungen unter der Woche.",
+        "solution": "Reservierungsstrecke vereinfacht, lokale Kampagnen neu aufgesetzt."
+      },
+      "c5": {
+        "title": "Maklerbüro (Niedersachsen)",
+        "challenge": "Zu wenig qualifizierte Eigentümer-Leads.",
+        "solution": "Objektseiten nach Suchintention aufgebaut und Anfrageweg gestrafft."
+      },
+      "c6": {
+        "title": "Steuerkanzlei (Region Hannover)",
+        "challenge": "Geringe Conversion auf Leistungsseiten.",
+        "solution": "Seiteninhalte vereinfacht, Vertrauenstexte ergänzt, Erstkontakt klar hervorgehoben."
+      }
+    }
   },
   "about": {
     "h1": "Über uns",
     "subtitle": "Wir sind ein kleines Umsetzungsteam für lokale Unternehmen.",
     "cards": {
-      "work": { "title": "Wie wir arbeiten", "desc": "Kurze Wege, klare Verantwortungen." },
-      "ai": { "title": "AI First", "desc": "Automationen dort, wo sie Zeit sparen." },
-      "leads": { "title": "Lead Focus", "desc": "Design und Marketing arbeiten zusammen." }
+      "work": {
+        "title": "Wie wir arbeiten",
+        "desc": "Kurze Wege, klare Verantwortungen."
+      },
+      "ai": {
+        "title": "AI First",
+        "desc": "Automationen dort, wo sie Zeit sparen."
+      },
+      "leads": {
+        "title": "Lead Focus",
+        "desc": "Design und Marketing arbeiten zusammen."
+      }
     },
-    "ctaTitle": "Kontakt"
+    "ctaTitle": "Kontakt",
+    "photoPlaceholder": "Foto: Porträt des Gründers von VS Web Studio (Vladyslav)",
+    "photoCaption": "Vladyslav, Gründer von VS Web Studio. Hildesheim.",
+    "photoAlt": "Vladyslav, Webentwickler von VS Web Studio aus Hildesheim",
+    "geo": {
+      "local": "Wir arbeiten hier: Hildesheim",
+      "region": "Hauptregion: Niedersachsen",
+      "country": "Möglich: ganz Deutschland"
+    },
+    "intro1": "Ich bin Vladyslav, Gründer von VS Web Studio. Ich arbeite aus Hildesheim und unterstütze zuerst Unternehmen direkt in der Stadt und Umgebung. Zusätzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
+    "intro2": "Mein Ziel ist einfach: nicht nur eine schöne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
+    "intro3": "Wir sind ein kleines Team mit bewährten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnötige Bürokratie, und bringen Projekte bis zum Ergebnis.",
+    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes Verständnis für den Markt vor Ort.",
+    "miniFactsTitle": "Was wir konkret machen",
+    "miniFacts": {
+      "i1": "Klare Schritte ohne Fachchinesisch",
+      "i2": "Transparente Updates in jeder Projektphase",
+      "i3": "Launch und laufende Optimierung nach Daten"
+    },
+    "whatYouGetTitle": "Was Sie konkret erhalten",
+    "whatYouGet": {
+      "i1": "Eine schnelle Website, die auf dem Smartphone sauber funktioniert",
+      "i2": "Klare Seitenstruktur mit starken CTA-Elementen",
+      "i3": "Eingerichtetes Tracking, damit Sie die Quellen Ihrer Anfragen sehen",
+      "i4": "Automationen, die Zeit sparen und die Conversion erhöhen"
+    },
+    "contactTitle": "Kontakt",
+    "contactText": "Schreiben Sie uns, welches Geschäft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
+    "contactButton": "Projekt anfragen"
   },
   "contact": {
     "h1": "Kontakt",
