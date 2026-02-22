@@ -23,12 +23,18 @@
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 120;
   backdrop-filter: blur(10px);
   background: rgba(7, 9, 16, 0.78);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+main {
+  padding-top: 76px;
 }
 
 .header-row {
@@ -149,6 +155,24 @@
   display: grid;
   gap: 18px;
   padding: 70px 0 30px;
+}
+
+.hero-with-video {
+  position: relative;
+  min-height: 560px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 26px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  display: grid;
+  gap: 18px;
+  align-self: end;
 }
 
 .hero-media {
@@ -391,9 +415,11 @@
   :root { --gutter: 10px; }
   .page { padding: 28px 0 52px; }
   .header-row { min-height: 66px; gap: 6px; }
+  main { padding-top: 66px; }
   .brand-logo { width: 92px; }
   .cta-fixed { font-size: 12px; padding: 9px 10px; border-radius: 10px; }
   .hero { padding-top: 38px; gap: 14px; }
+  .hero-with-video { min-height: 500px; padding: 14px; }
   .hero h1 { font-size: clamp(30px, 10vw, 44px); max-width: 12ch; }
   .hero-media { min-height: 220px; border-radius: 14px; }
   .section { margin-top: 20px; }
@@ -424,6 +450,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   :root { --gutter: 20px; }
   .header-row { min-height: 72px; gap: 10px; }
+  main { padding-top: 72px; }
   .brand-logo { width: 106px; }
   .menu-toggle { display: inline-flex; }
   .nav {
