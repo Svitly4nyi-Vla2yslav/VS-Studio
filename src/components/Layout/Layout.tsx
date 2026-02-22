@@ -1,66 +1,31 @@
-import { Suspense, useEffect } from 'react';
-import { Outlet, useLocation } from 'react-router-dom';
+﻿import { Outlet, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+import { AnimatePresence, motion, easeOut } from 'framer-motion';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import { StickyMobileBar } from '../StickyMobileBar/StickyMobileBar';
 
 export const Layout: React.FC = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Очищаем sessionStorage при каждом перезагрузке, но оставляем localStorage для кэша видео
-    const clearOnReload = () => {
-      sessionStorage.clear();
-      // Не очищаем localStorage чтобы сохранить кэшированное видео
-    };
-
-    window.addEventListener("beforeunload", clearOnReload);
-
-    return () => {
-      window.removeEventListener("beforeunload", clearOnReload);
-    };
-  }, []);
-
-  // Очистка устаревшего кэша (например, при обновлении видео)
-  useEffect(() => {
-    const clearOldCache = () => {
-      const cacheKeys = Object.keys(localStorage);
-      const oldVideoCache = cacheKeys.find(key => key.startsWith('cached_video_'));
-      
-      if (oldVideoCache) {
-        localStorage.removeItem(oldVideoCache);
-      }
-    };
-
-    clearOldCache();
-  }, []);
-
-  useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace('#', '');
-      const element = document.getElementById(id);
-
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 400);
-      }
-    } else {
-      window.scrollTo({
-        top: 0,
-        behavior: 'auto',
-      });
-    }
+    window.scrollTo({ top: 0, behavior: 'auto' });
   }, [location.pathname]);
 
   return (
-    <>
+    <div className='site-shell'>
       <Header />
-      <Suspense>
-        <Outlet />
-      </Suspense>
+      <AnimatePresence mode='wait'>
+        <motion.main
+          key={location.pathname}
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.32, ease: easeOut }}
+        >
+          <Outlet />
+        </motion.main>
+      </AnimatePresence>
       <Footer />
-      <StickyMobileBar />
-    </>
+    </div>
   );
 };

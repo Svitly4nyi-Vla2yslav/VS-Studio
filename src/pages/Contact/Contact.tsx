@@ -1,14 +1,35 @@
-import React from 'react';
-import { ContactContainer } from './Contact.styled';
-import { ContactForm } from '../../components/ContactComponents/ContactForm';
-import ReviewCardContainer from '../../components/Feedback/Feedback';
+﻿import { motion, easeOut } from 'framer-motion';
+import { FaEnvelope, FaPhone, FaUser, FaBuilding, FaRobot } from 'react-icons/fa';
+import TerminalType from '../../components/Motion/TerminalType';
+import LiveMetric from '../../components/Motion/LiveMetric';
+
+const reveal = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } };
 
 const Contact: React.FC = () => {
   return (
-    <ContactContainer  id='ap'>
-      <ContactForm />
-      <ReviewCardContainer />
-    </ContactContainer>
+    <div className='page'>
+      <div className='container'>
+        <motion.section className='hero' initial='hidden' animate='show' variants={reveal} transition={{ duration: 0.62, ease: easeOut }}>
+          <h1><TerminalType text='Kontakt' durationMs={2200} storageKey='kontakt_h1_once' /></h1>
+          <p>Antwortzeit aktuell: <LiveMetric start={58} min={34} max={95} step={1} suffix=' min' /></p>
+        </motion.section>
+
+        <section className='section grid-2'>
+          <form className='card form-grid contact-form'>
+            <label className='field-icon'><FaUser /> <input type='text' placeholder='Name' required /></label>
+            <label className='field-icon'><FaBuilding /> <input type='text' placeholder='Business' required /></label>
+            <label className='field-icon'><FaRobot /> <textarea placeholder='Was brauchst du genau?' required /></label>
+            <button className='btn btn-primary' type='submit'><FaEnvelope /> Anfrage senden</button>
+          </form>
+
+          <div className='card'>
+            <h3>Schnelle Kontakte</h3>
+            <p><a href='mailto:kontakt@vs-web-studio.de'><FaEnvelope /> kontakt@vs-web-studio.de</a></p>
+            <p><a href='tel:+49301234567'><FaPhone /> +49 30 1234567</a></p>
+          </div>
+        </section>
+      </div>
+    </div>
   );
 };
 

@@ -1,87 +1,54 @@
-import React from 'react';
-import styled from 'styled-components';
-import ServicesSection from '../../components/ServicesSection/ServicesSection';
+﻿import { NavLink } from 'react-router-dom';
+import { motion, easeOut } from 'framer-motion';
+import { FaArrowRight, FaRobot, FaShareAlt, FaBullhorn, FaClipboardCheck, FaCode } from 'react-icons/fa';
+import TerminalType from '../../components/Motion/TerminalType';
 
-import OurEquipment from '../../components/componentsService/OurEquipment/OurEquipment';
-import CasesSection from '../../components/CasesSection/CasesSection';
-import OurProcess from '../../components/componentsService/OurProcess/OurProcess';
-import ReviewCardContainer from '../../components/Feedback/Feedback';
-import { TeamMember } from '../../components/AboutUS/TeamMember/TeamMember';
-import { ContactForm } from '../../components/ContactComponents/ContactForm';
+const reveal = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } };
 
-const Service: React.FC = () => {
+const ServicesPage: React.FC = () => {
   return (
-    <Container id='all'>
-      <ServicesSection />
-      <OurEquipment />
-      <CasesSection />
-      <OurProcess />
-      <ReviewCardContainer />
-      <TeamMember />
-      <ContactForm />
-    </Container>
+    <div className='page'>
+      <div className='container'>
+        <motion.section className='hero' initial='hidden' animate='show' variants={reveal} transition={{ duration: 0.62, ease: easeOut }}>
+          <h1><TerminalType text='Services mit klarem Scope, Ergebnis und Zeitplan.' durationMs={5200} storageKey='services_h1_once' /></h1>
+          <p>Wir bauen nicht nur Seiten, sondern einen funktionierenden Lead-Prozess.</p>
+        </motion.section>
+
+        <motion.section className='section grid-2' initial='hidden' whileInView='show' viewport={{ once: true, amount: 0.2 }} transition={{ staggerChildren: 0.1 }}>
+          <motion.article className='card' variants={reveal}><h3><span className='icon-badge'><FaCode /></span>Websites</h3><p className='muted'>Inhalt: Positionierung, UX, technische Umsetzung, Tracking.</p></motion.article>
+          <motion.article className='card' variants={reveal}><h3><span className='icon-badge'><FaRobot /></span>Web-Apps & AI</h3><p className='muted'>Inhalt: interne Workflows, AI-Assistenten, Formulare, Prozesse.</p></motion.article>
+          <motion.article className='card' variants={reveal}><h3><span className='icon-badge'><FaBullhorn /></span>Ads & Auswertung</h3><p className='muted'>Kampagnenaufbau, Creatives, Conversion-Tracking.</p></motion.article>
+          <motion.article className='card' variants={reveal}><h3><span className='icon-badge'><FaShareAlt /></span>Social Integration</h3><p className='muted'>Plattform-Integration, DM-Flows, Retargeting.</p></motion.article>
+        </motion.section>
+
+        <section className='section'>
+          <h2><TerminalType text='Deliverables' durationMs={2600} storageKey='deliverables_once' /></h2>
+          <ul className='checklist'>
+            <li><FaClipboardCheck /> Strategie-Call + Scope-Dokument</li>
+            <li><FaClipboardCheck /> Design in responsiven Breakpoints</li>
+            <li><FaClipboardCheck /> Technische Umsetzung + Performance</li>
+            <li><FaClipboardCheck /> Formulare, Tracking, Analytics Dashboard</li>
+          </ul>
+        </section>
+
+        <section className='section'>
+          <h2><TerminalType text='AI, Social, Werbung' durationMs={2800} storageKey='ai_social_services_once' /></h2>
+          <div className='grid-3'>
+            <article className='card'><h3><span className='icon-badge'><FaRobot /></span>KI-Integration</h3><p className='muted'>Chatbots, automatische Antworten, Lead-Priorisierung.</p></article>
+            <article className='card'><h3><span className='icon-badge'><FaShareAlt /></span>Social Media</h3><p className='muted'>Content-Module, Channel-Verknüpfung, Kontaktpfade.</p></article>
+            <article className='card'><h3><span className='icon-badge'><FaBullhorn /></span>Social Ads</h3><p className='muted'>Meta/TikTok/LinkedIn Kampagnen mit Tracking.</p></article>
+          </div>
+        </section>
+
+        <section className='section band'>
+          <h2><TerminalType text='Angebot erhalten' durationMs={2200} storageKey='angebot_once' /></h2>
+          <div className='btn-row'>
+            <NavLink to='/kontakt' className='btn btn-primary'><FaArrowRight /> Angebot erhalten</NavLink>
+          </div>
+        </section>
+      </div>
+    </div>
   );
 };
 
-export default Service;
-
-export const Container = styled.div`
-  width: 100%;
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 0 16px;
-  background: transparent;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 50px; /* Відступи між компонентами */
-
-  /* Мобільні пристрої (до 768px) */
-  @media (max-width: 767px) {
-    gap: 40px;
-    padding: 0 12px;
-    padding-top: 80px;
-  }
-
-  /* Планшети (768px - 1023px) */
-  @media (min-width: 768px) and (max-width: 1023px) {
-    max-width: 768px;
-    padding-top: 80px;
-    padding: 0 24px;
-    padding-top: 120px;
-
-  }
-
-  /* Невеликі десктопи (1024px - 1279px) */
-  @media (min-width: 1024px) and (max-width: 1279px) {
-    max-width: 1024px;
-    padding: 0 32px;
-    padding-top: 120px;
-
-  }
-
-  /* Середні десктопи (1280px - 1439px) */
-  @media (min-width: 1280px) and (max-width: 1439px) {
-    max-width: 1280px;
-    padding: 0 48px;
-    padding-top: 120px;
-
-  }
-
-  /* Великі десктопи (1440px і більше) */
-  @media (min-width: 1440px) {
-    max-width: 1440px;
-    padding: 0 64px;
-    padding-top: 120px;
-
-  }
-
-  /* Дуже великі екрани (1920px і більше) */
-  @media (min-width: 1920px) {
-    max-width: 1920px;
-    padding: 0 120px;
-    padding-top: 120px;
-
-  }
-`;
+export default ServicesPage;
