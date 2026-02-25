@@ -4,6 +4,8 @@
   --dur-mid: 460ms;
   --dur-slow: 720ms;
   --gutter: 10px;
+  --section-space: 36px;
+  --section-space-mobile: 24px;
 }
 
 .site-shell {
@@ -345,6 +347,8 @@ main {
 }
 
 .bento-tile span {
+  position: relative;
+  z-index: 2;
   display: block;
   color: rgba(255, 255, 255, 0.72);
   font-size: 13px;
@@ -352,7 +356,21 @@ main {
 }
 
 .bento-tile strong {
+  position: relative;
+  z-index: 2;
   font-size: 15px;
+}
+
+.bento-icon-bg {
+  position: absolute;
+  right: -10px;
+  bottom: -14px;
+  z-index: 1;
+  font-size: clamp(74px, 10vw, 112px);
+  color: rgba(149, 204, 255, 0.2);
+  opacity: 0.52;
+  transform: rotate(-10deg);
+  pointer-events: none;
 }
 
 .bento-tile::after {
@@ -563,7 +581,7 @@ main {
 }
 
 .section-divider {
-  margin-top: 34px;
+  margin: var(--section-space) 0;
   height: 1px;
   width: 100%;
   background: linear-gradient(90deg, transparent 0%, rgba(246,211,101,.42) 34%, rgba(37,99,235,.32) 66%, transparent 100%);
@@ -1209,7 +1227,8 @@ main {
 }
 
 .step-list { display: grid; gap: 10px; }
-.section { margin-top: 26px; }
+.section { margin-top: var(--section-space); }
+.section:first-of-type { margin-top: 0; }
 .section h2 { font-size: clamp(28px, 6vw, 46px); margin-bottom: 10px; }
 .section h3 { font-size: 22px; margin-bottom: 8px; }
 .muted { color: rgba(255, 255, 255, 0.72); }
@@ -1462,7 +1481,8 @@ main {
   .seg-row { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .hero h1 { font-size: clamp(30px, 10vw, 44px); max-width: 12ch; }
   .hero-media { min-height: 220px; border-radius: 14px; }
-  .section { margin-top: 20px; }
+  .section { margin-top: var(--section-space-mobile); }
+  .section-divider { margin: var(--section-space-mobile) 0; }
   .section h2 { font-size: clamp(26px, 9vw, 34px); }
   .section h3 { font-size: 20px; }
   .card, .band, .step, .package, .blog-item, .table-like { padding: 14px; }
@@ -1674,7 +1694,8 @@ main {
 @media (min-width: 1920px) {
   :root { --gutter: 60px; }
   .hero { padding-top: 80px; }
-  .section { margin-top: 34px; }
+  .section { margin-top: 42px; }
+  .section-divider { margin: 42px 0; }
   .brand-wordmark { font-size: 62px; }
 }
 

@@ -30,13 +30,18 @@ export const MarqueeTrack = styled.div`
   gap: 12px;
 `;
 
-export const Badge = styled.div`
+export const Badge = styled.div<{ $backgroundImage?: string }>`
   min-width: 180px;
   min-height: 180px;
   border-radius: 14px;
   border: 1px solid rgba(255, 207, 130, 0.42);
   color: #fef6df;
-  background: linear-gradient(130deg, rgba(255, 180, 90, 0.2), rgba(79, 141, 255, 0.16));
+  background-image: ${({ $backgroundImage }) =>
+    $backgroundImage
+      ? `linear-gradient(155deg, rgba(7, 12, 23, 0.46), rgba(7, 12, 23, 0.82)), url(${$backgroundImage})`
+      : 'linear-gradient(130deg, rgba(255, 180, 90, 0.2), rgba(79, 141, 255, 0.16))'};
+  background-size: cover;
+  background-position: center;
   padding: 12px;
   display: grid;
   grid-template-rows: auto auto 1fr;

@@ -20,6 +20,7 @@ export type PartnerBadgeItem = {
   icon?: React.ReactNode;
   iconColor?: string;
   iconBg?: string;
+  backgroundImage?: string;
 };
 
 export type PartnerRow = {
@@ -85,7 +86,7 @@ const Partners: React.FC<PartnersProps> = ({ rows = defaultRows }) => {
                 }}
               >
                 {tripled.map((item, i) => (
-                  <Badge key={`${item.group ?? 'group'}-${item.label}-${i}`}>
+                  <Badge key={`${item.group ?? 'group'}-${item.label}-${i}`} $backgroundImage={item.backgroundImage}>
                     <div className='badge-top'>
                       {item.icon ? <BadgeIcon style={{ color: item.iconColor ?? '#fff', background: item.iconBg ?? 'rgba(255,255,255,.18)' }}>{item.icon}</BadgeIcon> : null}
                       {item.group ? <BadgeGroup>{item.group}</BadgeGroup> : null}
