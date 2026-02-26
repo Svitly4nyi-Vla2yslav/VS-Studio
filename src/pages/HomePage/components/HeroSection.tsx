@@ -6,6 +6,7 @@ import { FaArrowRight, FaBolt, FaBullseye, FaEuroSign, FaLifeRing, FaSearch } fr
 import TerminalType from '../../../components/Motion/TerminalType';
 import HeroVideo from '../../../components/Motion/HeroVideo';
 import { revealUp } from './homePageData';
+import { HeroSectionScope } from './styles/HeroSection.styles';
 
 type HeroSectionProps = {
   reducedMotion: boolean;
@@ -29,16 +30,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({ reducedMotion }) => {
   const resetMagnet = () => setMagnet({ x: 0, y: 0 });
 
   return (
-    <motion.section
-      className='hero hero-with-video'
-      initial='hidden'
-      animate='show'
-      variants={revealUp}
-      transition={{ duration: 0.85, ease: backOut }}
-    >
-      <motion.div className='hero-video-parallax' style={{ y: videoY }}>
-        <HeroVideo />
-      </motion.div>
+    <HeroSectionScope>
+      <motion.section
+        className='hero hero-with-video'
+        initial='hidden'
+        animate='show'
+        variants={revealUp}
+        transition={{ duration: 0.85, ease: backOut }}
+      >
+        <motion.div className='hero-video-parallax' style={{ y: videoY }}>
+          <HeroVideo />
+        </motion.div>
 
       <motion.div
         className='hero-content'
@@ -70,7 +72,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ reducedMotion }) => {
         </div>
       </motion.div>
 
-      <aside className='hero-bento'>
+        <aside className='hero-bento'>
         <article className='bento-tile'>
           <span>Швидкість</span>
           <strong>90+ Lighthouse</strong>
@@ -91,8 +93,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ reducedMotion }) => {
           <strong>Після запуску</strong>
           <FaLifeRing className='bento-icon-bg' aria-hidden='true' />
         </article>
-      </aside>
-    </motion.section>
+        </aside>
+      </motion.section>
+    </HeroSectionScope>
   );
 };
 

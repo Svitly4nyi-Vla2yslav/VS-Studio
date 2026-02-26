@@ -26,6 +26,7 @@ import praxenBg from '../../../assets/icons/marquee/Praxen.png';
 import reinigungBg from '../../../assets/icons/marquee/Reinigung.png';
 import transportBg from '../../../assets/icons/marquee/Transport.png';
 import werkstaettenBg from '../../../assets/icons/marquee/Werkstätten.png';
+import { MarqueeSectionScope } from './styles/MarqueeSection.styles';
 
 export const MarqueeSection: React.FC = () => {
   const items = useMemo(
@@ -58,13 +59,15 @@ export const MarqueeSection: React.FC = () => {
   );
 
   return (
-    <section className='section marquee-wrap' aria-label='Nischen'>
-      <h2>Ніші, з якими працюємо</h2>
-      <p className='muted'>
-        Оберіть напрямок і подивіться приклади візуального стилю для вашої сфери.
-      </p>
-      <Partners rows={rows} />
-    </section>
+    <MarqueeSectionScope>
+      <section className='section marquee-wrap' aria-label='Nischen'>
+        <h2>Ніші, з якими працюємо</h2>
+        <p className='muted'>
+          Оберіть напрямок і подивіться приклади візуального стилю для вашої сфери.
+        </p>
+        <Partners rows={rows} />
+      </section>
+    </MarqueeSectionScope>
   );
 };
 

@@ -1,5 +1,4 @@
 import { useMemo, useRef, useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import { motion, easeOut } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { FaArrowRight, FaChartLine, FaFilter, FaDatabase, FaCalendarAlt } from 'react-icons/fa';
@@ -10,6 +9,20 @@ import caseAfter2 from '../../assets/icons/cases/photo_2025-09-16_22-58-10.jpg';
 import caseBefore3 from '../../assets/icons/cases/photo_2025-09-16_22-58-14.jpg';
 import caseAfter3 from '../../assets/icons/cases/photo_2025-09-16_22-58-19.jpg';
 import TerminalType from '../../components/Motion/TerminalType';
+import {
+  Band,
+  ButtonRow,
+  Card,
+  Grid2,
+  Grid3,
+  HeroSection,
+  Muted,
+  PageContainer,
+  PageRoot,
+  PrimaryButtonLink,
+  Section,
+} from '../shared/styles/PagePrimitives.styles';
+import { ReferencesPageScope } from './styles/ReferencesPage.styles';
 
 type Niche =
   | 'handwerk'
@@ -204,113 +217,122 @@ const ReferencesPage: React.FC = () => {
   };
 
   return (
-    <div className='page references-page'>
-      <div className='container'>
-        <motion.section className='hero references-hero' initial='hidden' animate='show' variants={reveal} transition={{ duration: 0.62, ease: easeOut }}>
-          <h1><TerminalType text={t('references.h1')} durationMs={2800} storageKey='refs_h1_new_once' /></h1>
-          <p>{t('references.subtitle')}</p>
-          <p className='muted'>{t('references.trustline')}</p>
-        </motion.section>
+    <ReferencesPageScope>
+      <PageRoot className='references-page'>
+        <PageContainer>
+          <HeroSection
+            className='references-hero'
+            as={motion.section}
+            initial='hidden'
+            animate='show'
+            variants={reveal}
+            transition={{ duration: 0.62, ease: easeOut }}
+          >
+            <h1><TerminalType text={t('references.h1')} durationMs={2800} storageKey='refs_h1_new_once' /></h1>
+            <p>{t('references.subtitle')}</p>
+            <Muted>{t('references.trustline')}</Muted>
+          </HeroSection>
 
-        <section className='section references-filter-wrap'>
-          <h2 className='references-title'><FaFilter /> {t('references.filterTitle')}</h2>
-          <p className='muted'>{t('references.counter', { count: visibleCases.length })}</p>
-          <div className='references-filters' role='tablist' aria-label={t('references.filterAria')}>
-            {NICHE_FILTERS.map(item => (
-              <button
-                key={item}
-                type='button'
-                className={`references-filter-chip ${activeFilter === item ? 'active' : ''}`}
-                onClick={() => setActiveFilter(item)}
-                role='tab'
-                aria-selected={activeFilter === item}
-              >
-                {item === 'all' ? t('references.filters.all') : t(`references.niches.${item}`)}
-              </button>
-            ))}
-          </div>
-        </section>
-
-        <section className='section references-metric-band'>
-          <h2 className='references-title'><FaChartLine /> {t('references.growthByNiche')}</h2>
-          <div className='grid-3'>
-            {visibleNicheMetrics.map(item => (
-              <article className='card references-metric-card' key={item.labelKey}>
-                <h3>{t(item.labelKey)}</h3>
-                <p className='references-metric-line'>{t(item.metricLabelKey)}: <span>{item.metricValue}</span></p>
-                <p className='muted'><FaCalendarAlt /> {t('references.periodLabel')}: {item.timeframe}</p>
-                <p className='muted'><FaDatabase /> {t('references.measurementLabel')}: {item.source}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className='section references-cases'>
-          <h2 className='references-title'>{t('references.selectedCases')}</h2>
-          {visibleCases.length === 0 ? (
-            <article className='card'>
-              <h3>{t('references.emptyTitle')}</h3>
-              <p className='muted'>{t('references.emptyText')}</p>
-            </article>
-          ) : (
-            <div className='grid-2'>
-              {visibleCases.map(caseItem => (
-                <article className='card references-case-card' key={caseItem.id}>
-                  <h3>{t(caseItem.titleKey)}</h3>
-                  <p><strong>{t('references.challengeLabel')}:</strong> {t(caseItem.challengeKey)}</p>
-                  <p><strong>{t('references.solutionLabel')}:</strong> {t(caseItem.solutionKey)}</p>
-                  <div className='references-case-metrics'>
-                    {caseItem.metrics.map(metric => (
-                      <p key={`${caseItem.id}-${metric.metricLabelKey}`}>{t(metric.metricLabelKey)}: <span>{metric.metricValue}</span></p>
-                    ))}
-                  </div>
-                  <p className='muted'><FaCalendarAlt /> {t('references.periodLabel')}: {caseItem.timeframe}</p>
-                  <p className='muted'><FaDatabase /> {t('references.measurementLabel')}: {caseItem.source}</p>
-                </article>
+          <Section className='references-filter-wrap'>
+            <h2 className='references-title'><FaFilter /> {t('references.filterTitle')}</h2>
+            <Muted>{t('references.counter', { count: visibleCases.length })}</Muted>
+            <div className='references-filters' role='tablist' aria-label={t('references.filterAria')}>
+              {NICHE_FILTERS.map(item => (
+                <button
+                  key={item}
+                  type='button'
+                  className={`references-filter-chip ${activeFilter === item ? 'active' : ''}`}
+                  onClick={() => setActiveFilter(item)}
+                  role='tab'
+                  aria-selected={activeFilter === item}
+                >
+                  {item === 'all' ? t('references.filters.all') : t(`references.niches.${item}`)}
+                </button>
               ))}
             </div>
-          )}
-        </section>
+          </Section>
 
-        <section className='section'>
-          <h2 className='references-title'>{t('references.beforeAfter')}</h2>
-          <div
-            ref={sliderRef}
-            className='references-compare'
-            onMouseMove={e => {
-              if (e.buttons === 1) updateSliderFromClientX(e.clientX);
-            }}
-            onClick={e => updateSliderFromClientX(e.clientX)}
-          >
-            <img className='after' src={sliderCase.afterImage} alt={t('references.afterAlt')} />
-            <div className='before-wrap' style={{ width: `${sliderValue}%` }}>
-              <img className='before' src={sliderCase.beforeImage} alt={t('references.beforeAlt')} />
-            </div>
-            <button
-              type='button'
-              className='references-compare-handle'
-              style={{ left: `${sliderValue}%` }}
-              onKeyDown={e => {
-                if (e.key === 'ArrowLeft') setSliderValue(prev => Math.max(0, prev - 2));
-                if (e.key === 'ArrowRight') setSliderValue(prev => Math.min(100, prev + 2));
+          <Section className='references-metric-band'>
+            <h2 className='references-title'><FaChartLine /> {t('references.growthByNiche')}</h2>
+            <Grid3 className='grid-3'>
+              {visibleNicheMetrics.map(item => (
+                <Card className='references-metric-card' key={item.labelKey}>
+                  <h3>{t(item.labelKey)}</h3>
+                  <p className='references-metric-line'>{t(item.metricLabelKey)}: <span>{item.metricValue}</span></p>
+                  <Muted><FaCalendarAlt /> {t('references.periodLabel')}: {item.timeframe}</Muted>
+                  <Muted><FaDatabase /> {t('references.measurementLabel')}: {item.source}</Muted>
+                </Card>
+              ))}
+            </Grid3>
+          </Section>
+
+          <Section className='references-cases'>
+            <h2 className='references-title'>{t('references.selectedCases')}</h2>
+            {visibleCases.length === 0 ? (
+              <Card>
+                <h3>{t('references.emptyTitle')}</h3>
+                <Muted>{t('references.emptyText')}</Muted>
+              </Card>
+            ) : (
+              <Grid2>
+                {visibleCases.map(caseItem => (
+                  <Card className='references-case-card' key={caseItem.id}>
+                    <h3>{t(caseItem.titleKey)}</h3>
+                    <p><strong>{t('references.challengeLabel')}:</strong> {t(caseItem.challengeKey)}</p>
+                    <p><strong>{t('references.solutionLabel')}:</strong> {t(caseItem.solutionKey)}</p>
+                    <div className='references-case-metrics'>
+                      {caseItem.metrics.map(metric => (
+                        <p key={`${caseItem.id}-${metric.metricLabelKey}`}>{t(metric.metricLabelKey)}: <span>{metric.metricValue}</span></p>
+                      ))}
+                    </div>
+                    <Muted><FaCalendarAlt /> {t('references.periodLabel')}: {caseItem.timeframe}</Muted>
+                    <Muted><FaDatabase /> {t('references.measurementLabel')}: {caseItem.source}</Muted>
+                  </Card>
+                ))}
+              </Grid2>
+            )}
+          </Section>
+
+          <Section>
+            <h2 className='references-title'>{t('references.beforeAfter')}</h2>
+            <div
+              ref={sliderRef}
+              className='references-compare'
+              onMouseMove={e => {
+                if (e.buttons === 1) updateSliderFromClientX(e.clientX);
               }}
-              aria-label={t('references.sliderAria')}
-            />
-            <span className='references-compare-label before'>{t('references.before')}</span>
-            <span className='references-compare-label after'>{t('references.after')}</span>
-          </div>
-          <p className='muted'>{t('references.sliderHint')} {t('references.periodLabel')}: {sliderCase.timeframe} · {t('references.measurementLabel')}: {sliderCase.source}</p>
-        </section>
+              onClick={e => updateSliderFromClientX(e.clientX)}
+            >
+              <img className='after' src={sliderCase.afterImage} alt={t('references.afterAlt')} />
+              <div className='before-wrap' style={{ width: `${sliderValue}%` }}>
+                <img className='before' src={sliderCase.beforeImage} alt={t('references.beforeAlt')} />
+              </div>
+              <button
+                type='button'
+                className='references-compare-handle'
+                style={{ left: `${sliderValue}%` }}
+                onKeyDown={e => {
+                  if (e.key === 'ArrowLeft') setSliderValue(prev => Math.max(0, prev - 2));
+                  if (e.key === 'ArrowRight') setSliderValue(prev => Math.min(100, prev + 2));
+                }}
+                aria-label={t('references.sliderAria')}
+              />
+              <span className='references-compare-label before'>{t('references.before')}</span>
+              <span className='references-compare-label after'>{t('references.after')}</span>
+            </div>
+            <Muted>{t('references.sliderHint')} {t('references.periodLabel')}: {sliderCase.timeframe} · {t('references.measurementLabel')}: {sliderCase.source}</Muted>
+          </Section>
 
-        <section className='section band'>
-          <h2>{t('references.ctaTitle')}</h2>
-          <p className='muted'>{t('references.ctaText')}</p>
-          <div className='btn-row'>
-            <NavLink to='/kontakt' className='btn btn-primary'><FaArrowRight /> {t('references.cta')}</NavLink>
-          </div>
-        </section>
-      </div>
-    </div>
+          <Band>
+            <h2>{t('references.ctaTitle')}</h2>
+            <Muted>{t('references.ctaText')}</Muted>
+            <ButtonRow>
+              <PrimaryButtonLink to='/kontakt'><FaArrowRight /> {t('references.cta')}</PrimaryButtonLink>
+            </ButtonRow>
+          </Band>
+        </PageContainer>
+      </PageRoot>
+    </ReferencesPageScope>
   );
 };
 

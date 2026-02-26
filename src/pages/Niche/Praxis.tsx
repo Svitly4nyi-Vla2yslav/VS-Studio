@@ -1,23 +1,28 @@
-﻿import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import {
+  ButtonRow,
+  HeroSection,
+  PageContainer,
+  PageRoot,
+  PrimaryButtonLink,
+} from '../shared/styles/PagePrimitives.styles';
 
 const PraxisLanding: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div className='page'>
-      <div className='container'>
-        <section className='hero'>
+    <PageRoot>
+      <PageContainer>
+        <HeroSection>
           <h1>{t('niche.praxis.h1')}</h1>
           <p>{t('niche.praxis.p')}</p>
-          <div className='btn-row'>
-            <NavLink to='/kontakt' className='btn btn-primary'>{t('common.projectRequest')}</NavLink>
-          </div>
-        </section>
-      </div>
-    </div>
+          <ButtonRow>
+            <PrimaryButtonLink to='/kontakt'>{t('common.projectRequest')}</PrimaryButtonLink>
+          </ButtonRow>
+        </HeroSection>
+      </PageContainer>
+    </PageRoot>
   );
 };
 
 export default PraxisLanding;
-

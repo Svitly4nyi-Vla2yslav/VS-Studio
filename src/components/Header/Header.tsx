@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import { AnimatePresence, backOut, easeInOut, motion } from 'framer-motion';
 import { createPortal } from 'react-dom';
 import { FaCogs, FaEuroSign, FaFolderOpen, FaInfoCircle, FaEnvelope, FaArrowRight, FaTimes } from 'react-icons/fa';
@@ -16,7 +15,23 @@ import {
   MobileMenuLink,
   MobileMenuOverlay,
   MobileMenuTop,
-} from './MobileMenu.styled';
+} from './styles/MobileMenu.styles';
+import {
+  BrandLink,
+  BrandWordmark,
+  DesktopNav,
+  DesktopNavLink,
+  FixedCta,
+  HeaderControls,
+  HeaderInner,
+  HeaderRow,
+  HeaderShell,
+  LangFlag,
+  LangItem,
+  LangMenu,
+  LangSwitch,
+  LangTrigger,
+} from './styles/Header.styles';
 
 const topLineVariants = {
   open: { rotate: 45, y: 8 },
@@ -103,70 +118,70 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className='site-header'>
-      <div className='container header-row'>
-        <NavLink to='/' className='brand' onClick={closeMenu}>
-          <motion.span
-            className='brand-wordmark'
-            initial={{ opacity: 0, y: -12, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.82, ease: backOut }}
-          >
-            {'<VS/>'}
-          </motion.span>
-        </NavLink>
+    <HeaderShell $menuOpen={isOpen}>
+      <HeaderInner>
+        <HeaderRow>
+          <BrandLink to='/' onClick={closeMenu}>
+            <motion.div
+              initial={{ opacity: 0, y: -12, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.82, ease: backOut }}
+            >
+              <BrandWordmark>{'<VS/>'}</BrandWordmark>
+            </motion.div>
+          </BrandLink>
 
-        <nav className='nav-desktop'>
-          <NavLink to='/services'><FaCogs /> {t('header.services')}</NavLink>
-          <NavLink to='/preise'><FaEuroSign /> {t('header.preise')}</NavLink>
-          <NavLink to='/referenzen'><FaFolderOpen /> {t('header.referenzen')}</NavLink>
-          <NavLink to='/ueber-uns'><FaInfoCircle /> {t('header.ueberUns')}</NavLink>
-          <NavLink to='/kontakt'><FaEnvelope /> {t('header.kontakt')}</NavLink>
-        </nav>
+          <DesktopNav>
+            <DesktopNavLink to='/services'><FaCogs /> {t('header.services')}</DesktopNavLink>
+            <DesktopNavLink to='/preise'><FaEuroSign /> {t('header.preise')}</DesktopNavLink>
+            <DesktopNavLink to='/referenzen'><FaFolderOpen /> {t('header.referenzen')}</DesktopNavLink>
+            <DesktopNavLink to='/ueber-uns'><FaInfoCircle /> {t('header.ueberUns')}</DesktopNavLink>
+            <DesktopNavLink to='/kontakt'><FaEnvelope /> {t('header.kontakt')}</DesktopNavLink>
+          </DesktopNav>
 
-        <div className='header-controls'>
-          <NavLink to='/kontakt' className='cta-fixed'>
+          <HeaderControls>
+            <FixedCta to='/kontakt'>
             <FaArrowRight /> {t('common.projectRequest')}
-          </NavLink>
+            </FixedCta>
 
-          {!isOpen ? (
-            <div className='lang-switch' ref={langRef}>
-              <button
+            {!isOpen ? (
+              <LangSwitch ref={langRef}>
+                <LangTrigger
                 type='button'
-                className='lang-trigger'
                 aria-expanded={isLangOpen}
                 aria-label='Language switcher'
                 onClick={() => setIsLangOpen(prev => !prev)}
               >
-                <span className='lang-flag'>{languageFlags[language]}</span>
-              </button>
-              {isLangOpen ? (
-                <div className='lang-menu'>
+                  <LangFlag>{languageFlags[language]}</LangFlag>
+                </LangTrigger>
+                {isLangOpen ? (
+                  <LangMenu>
                   {SUPPORTED_LANGUAGES.map(code => (
-                    <button
+                    <LangItem
                       key={code}
                       type='button'
-                      className={`lang-item ${language === code ? 'active' : ''}`}
+                        $active={language === code}
                       onClick={() => handleLanguageChange(code)}
                     >
-                      <span className='lang-flag'>{languageFlags[code]}</span>
+                        <LangFlag>{languageFlags[code]}</LangFlag>
                       <span>{languageLabels[code]}</span>
-                    </button>
+                    </LangItem>
                   ))}
-                </div>
-              ) : null}
-            </div>
-          ) : null}
+                  </LangMenu>
+                ) : null}
+              </LangSwitch>
+            ) : null}
 
-          <BurgerWrap>
-            <BurgerButton onClick={() => setIsOpen(prev => !prev)} aria-label={isOpen ? 'Close menu' : 'Open menu'}>
-              <BurgerLine animate={isOpen ? 'open' : 'closed'} variants={topLineVariants} />
-              <BurgerLine animate={isOpen ? 'open' : 'closed'} variants={middleLineVariants} />
-              <BurgerLine animate={isOpen ? 'open' : 'closed'} variants={bottomLineVariants} />
-            </BurgerButton>
-          </BurgerWrap>
-        </div>
-      </div>
+            <BurgerWrap>
+              <BurgerButton onClick={() => setIsOpen(prev => !prev)} aria-label={isOpen ? 'Close menu' : 'Open menu'}>
+                <BurgerLine animate={isOpen ? 'open' : 'closed'} variants={topLineVariants} />
+                <BurgerLine animate={isOpen ? 'open' : 'closed'} variants={middleLineVariants} />
+                <BurgerLine animate={isOpen ? 'open' : 'closed'} variants={bottomLineVariants} />
+              </BurgerButton>
+            </BurgerWrap>
+          </HeaderControls>
+        </HeaderRow>
+      </HeaderInner>
 
       {typeof document !== 'undefined'
         ? createPortal(
@@ -202,7 +217,7 @@ const Header: React.FC = () => {
             document.body
           )
         : null}
-    </header>
+    </HeaderShell>
   );
 };
 

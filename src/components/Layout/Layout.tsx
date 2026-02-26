@@ -1,9 +1,10 @@
 ﻿import { Outlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
-import { AnimatePresence, motion, easeOut } from 'framer-motion';
+import { AnimatePresence, easeOut } from 'framer-motion';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import CookieConsentBanner from '../CookieConsentBanner';
+import { MainContent, SiteShell } from './styles/Layout.styles';
 
 export const Layout: React.FC = () => {
   const location = useLocation();
@@ -13,10 +14,10 @@ export const Layout: React.FC = () => {
   }, [location.pathname]);
 
   return (
-    <div className='site-shell'>
+    <SiteShell>
       <Header />
       <AnimatePresence mode='wait'>
-        <motion.main
+        <MainContent
           key={location.pathname}
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
@@ -24,10 +25,10 @@ export const Layout: React.FC = () => {
           transition={{ duration: 0.32, ease: easeOut }}
         >
           <Outlet />
-        </motion.main>
+        </MainContent>
       </AnimatePresence>
       <Footer />
       <CookieConsentBanner />
-    </div>
+    </SiteShell>
   );
 };
