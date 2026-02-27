@@ -40,6 +40,24 @@ export const HomePageShell = styled.div`
     margin-bottom: 10px;
   }
 
+  .section-header {
+    width: min(900px, 100%);
+    margin: 0 auto;
+    text-align: center;
+    padding: clamp(20px, 4vw, 60px) 0;
+  }
+
+  .section-header h2 {
+    margin-bottom: 12px;
+  }
+
+  .section-description {
+    max-width: 72ch;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.74);
+    line-height: 1.6;
+  }
+
   .section h3 {
     font-size: 22px;
     margin-bottom: 8px;
@@ -244,6 +262,10 @@ export const HomePageShell = styled.div`
 
     .section h2 {
       font-size: clamp(26px, 9vw, 34px);
+    }
+
+    .section-header {
+      padding: clamp(20px, 6vw, 40px) 0;
     }
 
     .section h3 {

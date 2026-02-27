@@ -1,5 +1,7 @@
 import { motion, easeOut } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 import { FaEnvelope, FaPhone, FaUser, FaBuilding, FaRobot } from 'react-icons/fa';
 import TerminalType from '../../components/Motion/TerminalType';
 import LiveMetric from '../../components/Motion/LiveMetric';
@@ -19,6 +21,15 @@ const reveal = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } };
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
+  const location = useLocation();
+  const prefillNeed = (location.state as { prefillNeed?: string } | null)?.prefillNeed || '';
+  const [needValue, setNeedValue] = useState(prefillNeed);
+
+  useEffect(() => {
+    if (prefillNeed) {
+      setNeedValue(prefillNeed);
+    }
+  }, [prefillNeed]);
 
   return (
     <PageRoot>
@@ -33,7 +44,15 @@ const Contact: React.FC = () => {
             <Card as={FormGrid}>
               <FieldIcon><FaUser /> <input type='text' placeholder={t('contact.form.name')} required /></FieldIcon>
               <FieldIcon><FaBuilding /> <input type='text' placeholder={t('contact.form.business')} required /></FieldIcon>
-              <FieldIcon><FaRobot /> <textarea placeholder={t('contact.form.need')} required /></FieldIcon>
+              <FieldIcon>
+                <FaRobot />{' '}
+                <textarea
+                  placeholder={t('contact.form.need')}
+                  value={needValue}
+                  onChange={event => setNeedValue(event.target.value)}
+                  required
+                />
+              </FieldIcon>
               <PrimaryButton type='submit'><FaEnvelope /> {t('contact.form.submit')}</PrimaryButton>
             </Card>
 
