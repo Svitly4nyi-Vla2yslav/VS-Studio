@@ -2,6 +2,7 @@ export type ProcessStep = {
   step: string;
   title: string;
   text: string;
+  image: string;
 };
 
 export type ProjectCard = {

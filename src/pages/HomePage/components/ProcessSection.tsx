@@ -1,31 +1,20 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { easeOut, motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import type { Swiper as SwiperType } from 'swiper';
+import { A11y, Autoplay, EffectFade, Keyboard } from 'swiper/modules';
 import { processSteps } from './homePageData';
 import { ProcessSectionScope } from './styles/ProcessSection.styles';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
 
 const ProcessSection: React.FC = () => {
   const [activeStep, setActiveStep] = useState(0);
-  const stepRefs = useRef<Array<HTMLDivElement | null>>([]);
+  const swiperRef = useRef<SwiperType | null>(null);
 
-  useEffect(() => {
-    const nodes = stepRefs.current.filter(Boolean) as HTMLDivElement[];
-    if (!nodes.length) return;
-
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const idx = Number(entry.target.getAttribute('data-step-index') || 0);
-            setActiveStep(idx);
-          }
-        });
-      },
-      { threshold: 0.6 }
-    );
-
-    nodes.forEach(node => observer.observe(node));
-    return () => observer.disconnect();
-  }, []);
+  const goTo = (index: number) => {
+    swiperRef.current?.slideTo(index);
+  };
 
   return (
     <ProcessSectionScope>
@@ -39,30 +28,78 @@ const ProcessSection: React.FC = () => {
           </p>
         </div>
         <div className='sticky-process-grid'>
-          <div className='sticky-steps'>
+          <div className='sticky-steps' role='tablist' aria-label={'\u0415\u0442\u0430\u043f\u0438 \u0440\u043e\u0431\u043e\u0442\u0438'}>
             {processSteps.map((item, index) => (
-              <div
+              <button
                 key={item.step}
                 className={`sticky-step ${activeStep === index ? 'active' : ''}`}
-                ref={el => {
-                  stepRefs.current[index] = el;
-                }}
-                data-step-index={index}
+                onClick={() => goTo(index)}
+                type='button'
+                role='tab'
+                aria-selected={activeStep === index}
               >
                 <span>{item.step}</span>
                 <p>{item.title}</p>
-              </div>
+              </button>
             ))}
           </div>
           <motion.article
             className='sticky-process-card card'
-            key={activeStep}
             initial={{ opacity: 0, y: 10, scale: 0.99 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.32, ease: easeOut }}
           >
-            <h3>{processSteps[activeStep].title}</h3>
-            <p>{processSteps[activeStep].text}</p>
+            <Swiper
+              modules={[Keyboard, A11y, EffectFade, Autoplay]}
+              effect='fade'
+              fadeEffect={{ crossFade: true }}
+              slidesPerView={1}
+              speed={420}
+              keyboard={{ enabled: true }}
+              autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
+              onSwiper={swiper => {
+                swiperRef.current = swiper;
+                setActiveStep(swiper.activeIndex);
+              }}
+              onSlideChange={swiper => setActiveStep(swiper.activeIndex)}
+              className='process-swiper'
+            >
+              {processSteps.map((item, index) => (
+                <SwiperSlide key={`${item.step}-${index}`}>
+                  <div
+                    className='process-slide'
+                    style={{ '--process-bg': `url(${item.image})` } as React.CSSProperties}
+                  >
+                    <div className='process-content'>
+                      <div className='process-kicker'>
+                        <span className='process-chip'>{item.step}</span>
+                        <span className='process-chip subtle'>{'\u0415\u0442\u0430\u043f'}</span>
+                      </div>
+                      <h3>{item.title}</h3>
+                      <p>{item.text}</p>
+                      <div className='process-nav'>
+                        <button
+                          type='button'
+                          className='nav-btn'
+                          onClick={() => swiperRef.current?.slidePrev()}
+                          disabled={activeStep === 0}
+                        >
+                          {'\u041d\u0430\u0437\u0430\u0434'}
+                        </button>
+                        <button
+                          type='button'
+                          className='nav-btn primary'
+                          onClick={() => swiperRef.current?.slideNext()}
+                          disabled={activeStep === processSteps.length - 1}
+                        >
+                          {'\u0414\u0430\u043b\u0456'}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </motion.article>
         </div>
       </section>

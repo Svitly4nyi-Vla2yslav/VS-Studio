@@ -3,6 +3,10 @@ import poster1 from '../../../assets/icons/cases/photo_2025-09-16_22-57-47.jpg';
 import poster2 from '../../../assets/icons/cases/photo_2025-09-16_22-58-19.jpg';
 import poster3 from '../../../assets/icons/cases/photo_2025-09-16_22-58-10.jpg';
 import poster4 from '../../../assets/icons/cases/photo_2025-09-16_22-58-06.jpg';
+import processCall from '../../../assets/process/01-call.webp';
+import processPrototype from '../../../assets/process/02-prototype.webp';
+import processDev from '../../../assets/process/03-dev.webp';
+import processLaunch from '../../../assets/process/04-launch.webp';
 import type { ProcessStep, ProjectCard, SegmentOption, TrustDeliverable } from './types';
 
 export const revealUp = {
@@ -15,21 +19,25 @@ export const processSteps: ProcessStep[] = [
     step: '01',
     title: '\u0414\u0437\u0432\u0456\u043d\u043e\u043a 15 \u0445\u0432',
     text: '\u0424\u0456\u043a\u0441\u0443\u0454\u043c\u043e \u0437\u0430\u0434\u0430\u0447\u0443, KPI \u0456 \u0434\u0435\u0434\u043b\u0430\u0439\u043d. \u041e\u0434\u0440\u0430\u0437\u0443 \u043f\u043e\u0433\u043e\u0434\u0436\u0443\u0454\u043c\u043e \u0444\u043e\u0440\u043c\u0430\u0442 \u0437\u0430\u043f\u0443\u0441\u043a\u0443.',
+    image: processCall,
   },
   {
     step: '02',
     title: '\u041f\u0440\u043e\u0442\u043e\u0442\u0438\u043f 48 \u0433\u043e\u0434',
     text: '\u041f\u043e\u043a\u0430\u0437\u0443\u0454\u043c\u043e \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0443 \u0441\u0442\u043e\u0440\u0456\u043d\u043a\u0438, CTA \u0456 \u0441\u0446\u0435\u043d\u0430\u0440\u0456\u0439 \u0437\u0430\u044f\u0432\u043a\u0438 \u0434\u043e \u0440\u043e\u0437\u0440\u043e\u0431\u043a\u0438.',
+    image: processPrototype,
   },
   {
     step: '03',
     title: '\u0420\u043e\u0437\u0440\u043e\u0431\u043a\u0430 7\u201314 \u0434\u043d\u0456\u0432',
     text: '\u0412\u0435\u0440\u0441\u0442\u043a\u0430, SEO-\u0431\u0430\u0437\u0430, \u0456\u043d\u0442\u0435\u0433\u0440\u0430\u0446\u0456\u0457 \u0456 \u043f\u0456\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u043d\u044f \u0430\u043d\u0430\u043b\u0456\u0442\u0438\u043a\u0438 \u0431\u0435\u0437 \u0437\u0430\u0439\u0432\u043e\u0433\u043e \u0448\u0443\u043c\u0443.',
+    image: processDev,
   },
   {
     step: '04',
     title: '\u0417\u0430\u043f\u0443\u0441\u043a + \u043e\u043f\u0442\u0438\u043c\u0456\u0437\u0430\u0446\u0456\u044f',
     text: '\u0417\u0430\u043f\u0443\u0441\u043a\u0430\u0454\u043c\u043e, \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u044f\u0454\u043c\u043e \u043a\u043e\u043d\u0432\u0435\u0440\u0441\u0456\u0457 \u0456 \u0434\u0430\u0454\u043c\u043e \u043f\u043b\u0430\u043d \u043f\u043e\u043a\u0440\u0430\u0449\u0435\u043d\u044c \u043d\u0430 30 \u0434\u043d\u0456\u0432.',
+    image: processLaunch,
   },
 ];
 
