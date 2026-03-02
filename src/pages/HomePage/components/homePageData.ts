@@ -7,167 +7,87 @@ import processCall from '../../../assets/process/01-call.webp';
 import processPrototype from '../../../assets/process/02-prototype.webp';
 import processDev from '../../../assets/process/03-dev.webp';
 import processLaunch from '../../../assets/process/04-launch.webp';
-import type { ProcessStep, ProjectCard, SegmentOption, TrustDeliverable } from './types';
+import type { SegmentOption } from './types';
 
 export const revealUp = {
   hidden: { opacity: 0, y: 34, scale: 0.98 },
   show: { opacity: 1, y: 0, scale: 1 },
 };
 
-export const processSteps: ProcessStep[] = [
-  {
-    step: '01',
-    title: '\u0414\u0437\u0432\u0456\u043d\u043e\u043a 15 \u0445\u0432',
-    text: '\u0424\u0456\u043a\u0441\u0443\u0454\u043c\u043e \u0437\u0430\u0434\u0430\u0447\u0443, KPI \u0456 \u0434\u0435\u0434\u043b\u0430\u0439\u043d. \u041e\u0434\u0440\u0430\u0437\u0443 \u043f\u043e\u0433\u043e\u0434\u0436\u0443\u0454\u043c\u043e \u0444\u043e\u0440\u043c\u0430\u0442 \u0437\u0430\u043f\u0443\u0441\u043a\u0443.',
-    image: processCall,
-  },
-  {
-    step: '02',
-    title: '\u041f\u0440\u043e\u0442\u043e\u0442\u0438\u043f 48 \u0433\u043e\u0434',
-    text: '\u041f\u043e\u043a\u0430\u0437\u0443\u0454\u043c\u043e \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0443 \u0441\u0442\u043e\u0440\u0456\u043d\u043a\u0438, CTA \u0456 \u0441\u0446\u0435\u043d\u0430\u0440\u0456\u0439 \u0437\u0430\u044f\u0432\u043a\u0438 \u0434\u043e \u0440\u043e\u0437\u0440\u043e\u0431\u043a\u0438.',
-    image: processPrototype,
-  },
-  {
-    step: '03',
-    title: '\u0420\u043e\u0437\u0440\u043e\u0431\u043a\u0430 7\u201314 \u0434\u043d\u0456\u0432',
-    text: '\u0412\u0435\u0440\u0441\u0442\u043a\u0430, SEO-\u0431\u0430\u0437\u0430, \u0456\u043d\u0442\u0435\u0433\u0440\u0430\u0446\u0456\u0457 \u0456 \u043f\u0456\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u043d\u044f \u0430\u043d\u0430\u043b\u0456\u0442\u0438\u043a\u0438 \u0431\u0435\u0437 \u0437\u0430\u0439\u0432\u043e\u0433\u043e \u0448\u0443\u043c\u0443.',
-    image: processDev,
-  },
-  {
-    step: '04',
-    title: '\u0417\u0430\u043f\u0443\u0441\u043a + \u043e\u043f\u0442\u0438\u043c\u0456\u0437\u0430\u0446\u0456\u044f',
-    text: '\u0417\u0430\u043f\u0443\u0441\u043a\u0430\u0454\u043c\u043e, \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u044f\u0454\u043c\u043e \u043a\u043e\u043d\u0432\u0435\u0440\u0441\u0456\u0457 \u0456 \u0434\u0430\u0454\u043c\u043e \u043f\u043b\u0430\u043d \u043f\u043e\u043a\u0440\u0430\u0449\u0435\u043d\u044c \u043d\u0430 30 \u0434\u043d\u0456\u0432.',
-    image: processLaunch,
-  },
-];
+export const processSteps = [
+  { step: '01', image: processCall },
+  { step: '02', image: processPrototype },
+  { step: '03', image: processDev },
+  { step: '04', image: processLaunch },
+] as const;
 
-export const projectCards: ProjectCard[] = [
-  {
-    title: '\u0421\u0430\u0439\u0442 \u043f\u0456\u0434 \u043b\u043e\u043a\u0430\u043b\u044c\u043d\u0456 \u0437\u0430\u044f\u0432\u043a\u0438',
-    description: '\u041b\u0435\u043d\u0434\u0456\u043d\u0433 \u0437 \u0430\u043a\u0446\u0435\u043d\u0442\u043e\u043c \u043d\u0430 \u0444\u043e\u0440\u043c\u0443, \u0434\u0437\u0432\u0456\u043d\u043e\u043a \u0456 \u0448\u0432\u0438\u0434\u043a\u0438\u0439 \u043a\u043e\u043d\u0442\u0430\u043a\u0442 \u0437 \u043c\u043e\u0431\u0456\u043b\u044c\u043d\u043e\u0433\u043e.',
-    tags: ['React', 'TypeScript', 'SEO', 'GA4'],
-    goal: '\u0426\u0456\u043b\u044c: \u0431\u0456\u043b\u044c\u0448\u0435 \u0437\u0430\u044f\u0432\u043e\u043a \u0431\u0435\u0437 \u0437\u0431\u0456\u043b\u044c\u0448\u0435\u043d\u043d\u044f \u0431\u044e\u0434\u0436\u0435\u0442\u0443',
-    poster: poster1,
-    video: previewVideo,
-  },
-  {
-    title: '\u0421\u0442\u043e\u0440\u0456\u043d\u043a\u0430 \u043f\u0456\u0434 \u0440\u0435\u043a\u043b\u0430\u043c\u0443',
-    description: '\u041e\u043a\u0440\u0435\u043c\u0430 \u043f\u043e\u0441\u0430\u0434\u043a\u043e\u0432\u0430 \u0441\u0442\u043e\u0440\u0456\u043d\u043a\u0430 \u0437 \u0442\u0440\u0435\u043a\u0456\u043d\u0433\u043e\u043c \u043a\u0430\u043c\u043f\u0430\u043d\u0456\u0439 Meta/Google.',
-    tags: ['Landing', 'Ads', 'Tracking'],
-    goal: '\u041e\u0447\u0456\u043a\u0443\u0432\u0430\u043d\u0438\u0439 \u0435\u0444\u0435\u043a\u0442: \u0447\u0438\u0441\u0442\u0456\u0448\u0456 \u043b\u0456\u0434\u0438 \u0437 \u0440\u0435\u043a\u043b\u0430\u043c\u0438',
-    poster: poster2,
-    video: previewVideo,
-  },
-  {
-    title: '\u0421\u0430\u0439\u0442 \u0434\u043b\u044f \u043f\u0440\u0430\u043a\u0442\u0438\u043a\u0438',
-    description: '\u0427\u0456\u0442\u043a\u0430 \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0430 \u043f\u043e\u0441\u043b\u0443\u0433, FAQ \u0442\u0430 \u0441\u0446\u0435\u043d\u0430\u0440\u0456\u0439 \u043e\u043d\u043b\u0430\u0439\u043d-\u0437\u0430\u043f\u0438\u0441\u0443.',
-    tags: ['Forms', 'Analytics', 'UX'],
-    goal: '\u0426\u0456\u043b\u044c: \u0431\u0456\u043b\u044c\u0448\u0435 \u0437\u0430\u043f\u0438\u0441\u0456\u0432 \u0431\u0435\u0437 \u0437\u0430\u0439\u0432\u0438\u0445 \u0434\u0437\u0432\u0456\u043d\u043a\u0456\u0432',
-    poster: poster3,
-    video: previewVideo,
-  },
-  {
-    title: '\u041a\u0430\u0431\u0456\u043d\u0435\u0442 \u0434\u043b\u044f \u0437\u0430\u044f\u0432\u043e\u043a',
-    description: '\u0412\u043d\u0443\u0442\u0440\u0456\u0448\u043d\u0456\u0439 \u0456\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441 \u0434\u043b\u044f \u043e\u0431\u0440\u043e\u0431\u043a\u0438 \u043b\u0456\u0434\u0456\u0432 \u0456 \u043a\u043e\u043d\u0442\u0440\u043e\u043b\u044e \u0441\u0442\u0430\u0442\u0443\u0441\u0456\u0432.',
-    tags: ['Firebase', 'React', 'Automation'],
-    goal: '\u041e\u0447\u0456\u043a\u0443\u0432\u0430\u043d\u0438\u0439 \u0435\u0444\u0435\u043a\u0442: \u0448\u0432\u0438\u0434\u0448\u0430 \u043e\u0431\u0440\u043e\u0431\u043a\u0430 \u0437\u0430\u043f\u0438\u0442\u0456\u0432',
-    poster: poster4,
-    video: previewVideo,
-  },
-];
+export const projectCards = [
+  { id: 'c1', tags: ['React', 'TypeScript', 'SEO', 'GA4'], poster: poster1, video: previewVideo },
+  { id: 'c2', tags: ['Landing', 'Ads', 'Tracking'], poster: poster2, video: previewVideo },
+  { id: 'c3', tags: ['Forms', 'Analytics', 'UX'], poster: poster3, video: previewVideo },
+  { id: 'c4', tags: ['Firebase', 'React', 'Automation'], poster: poster4, video: previewVideo },
+] as const;
 
-export const trustDeliverables: TrustDeliverable[] = [
-  {
-    title: '\u041f\u0440\u043e\u0442\u043e\u0442\u0438\u043f \u0437\u0430 48 \u0433\u043e\u0434',
-    text: '\u041f\u043e\u043a\u0430\u0437\u0443\u0454\u043c\u043e \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0443 \u0456 CTA \u0449\u0435 \u0434\u043e \u043a\u043e\u0434\u0443, \u0449\u043e\u0431 \u0440\u0456\u0448\u0435\u043d\u043d\u044f \u0431\u0443\u043b\u043e \u043f\u0440\u043e\u0433\u043d\u043e\u0437\u043e\u0432\u0430\u043d\u0438\u043c.',
-  },
-  {
-    title: '\u0413\u043e\u0442\u043e\u0432\u0438\u0439 \u0441\u0430\u0439\u0442 \u043f\u0456\u0434 \u0437\u0430\u044f\u0432\u043a\u0438',
-    text: '\u0424\u043e\u0440\u043c\u0430, \u0434\u0437\u0432\u0456\u043d\u043e\u043a, \u043c\u0435\u0441\u0435\u043d\u0434\u0436\u0435\u0440 \u0456 \u043c\u043e\u0431\u0456\u043b\u044c\u043d\u0430 \u0432\u0435\u0440\u0441\u0456\u044f \u0434\u043b\u044f \u0448\u0432\u0438\u0434\u043a\u043e\u0433\u043e \u0437\u0432\u0435\u0440\u043d\u0435\u043d\u043d\u044f.',
-  },
-  {
-    title: '\u0410\u043d\u0430\u043b\u0456\u0442\u0438\u043a\u0430 \u0456 \u0442\u0440\u0435\u043a\u0456\u043d\u0433',
-    text: 'GA4 + \u043f\u043e\u0434\u0456\u0457, \u0449\u043e\u0431 \u0431\u0430\u0447\u0438\u0442\u0438, \u0437\u0432\u0456\u0434\u043a\u0438 \u043f\u0440\u0438\u0445\u043e\u0434\u044f\u0442\u044c \u0437\u0430\u044f\u0432\u043a\u0438 \u0456 \u0449\u043e \u0440\u0435\u0430\u043b\u044c\u043d\u043e \u043f\u0440\u0430\u0446\u044e\u0454.',
-  },
-  {
-    title: '\u041f\u043b\u0430\u043d \u043f\u043e\u043a\u0440\u0430\u0449\u0435\u043d\u044c \u043d\u0430 30 \u0434\u043d\u0456\u0432',
-    text: '\u0427\u0456\u0442\u043a\u0456 \u043d\u0430\u0441\u0442\u0443\u043f\u043d\u0456 \u043a\u0440\u043e\u043a\u0438 \u0434\u043b\u044f \u0440\u043e\u0441\u0442\u0443 \u043a\u043e\u043d\u0432\u0435\u0440\u0441\u0456\u0457 \u043f\u0456\u0441\u043b\u044f \u0437\u0430\u043f\u0443\u0441\u043a\u0443.',
-  },
-];
+export const trustDeliverables = ['d1', 'd2', 'd3', 'd4'] as const;
 
 export const segmentData: Record<string, readonly SegmentOption[]> = {
   goal: [
-    { value: 'leads', title: 'Leads' },
-    { value: 'calls', title: 'Calls' },
-    { value: 'booking', title: 'Booking' },
-    { value: 'other', title: '\u0406\u043d\u0448\u0435' },
+    { value: 'leads', title: 'home.configurator.options.goal.leads' },
+    { value: 'calls', title: 'home.configurator.options.goal.calls' },
+    { value: 'booking', title: 'home.configurator.options.goal.booking' },
+    { value: 'other', title: 'home.configurator.options.common.other' },
   ],
   integrations: [
-    { value: 'booking', title: 'Booking' },
-    { value: 'crm', title: 'CRM' },
-    { value: 'chat', title: 'Chat' },
-    { value: 'payments', title: 'Payments' },
-    { value: 'other', title: '\u0406\u043d\u0448\u0435' },
+    { value: 'booking', title: 'home.configurator.options.integrations.booking' },
+    { value: 'crm', title: 'home.configurator.options.integrations.crm' },
+    { value: 'chat', title: 'home.configurator.options.integrations.chat' },
+    { value: 'payments', title: 'home.configurator.options.integrations.payments' },
+    { value: 'other', title: 'home.configurator.options.common.other' },
   ],
   ads: [
-    { value: 'none', title: '\u0411\u0435\u0437 \u0440\u0435\u043a\u043b\u0430\u043c\u0438' },
-    { value: 'meta', title: 'Meta' },
-    { value: 'google', title: 'Google' },
-    { value: 'other', title: '\u0406\u043d\u0448\u0435' },
+    { value: 'none', title: 'home.configurator.options.ads.none' },
+    { value: 'meta', title: 'home.configurator.options.ads.meta' },
+    { value: 'google', title: 'home.configurator.options.ads.google' },
+    { value: 'other', title: 'home.configurator.options.common.other' },
   ],
   term: [
-    { value: 'up-to-7', title: '\u0414\u043e 1 \u0442\u0438\u0436\u043d\u044f' },
-    { value: '7-14', title: '7\u201314 \u0434\u043d\u0456\u0432' },
-    { value: '14-21', title: '14\u201321 \u0434\u043d\u0456\u0432' },
-    { value: '21-30', title: '21\u201330 \u0434\u043d\u0456\u0432' },
-    { value: 'other', title: '\u0406\u043d\u0448\u0435' },
+    { value: 'up-to-7', title: 'home.configurator.options.term.up_to_7' },
+    { value: '7-14', title: 'home.configurator.options.term.from_7_to_14' },
+    { value: '14-21', title: 'home.configurator.options.term.from_14_to_21' },
+    { value: '21-30', title: 'home.configurator.options.term.from_21_to_30' },
+    { value: 'other', title: 'home.configurator.options.common.other' },
   ],
   content: [
-    { value: 'has', title: '\u0404 \u0442\u0435\u043a\u0441\u0442\u0438' },
-    { value: 'copy', title: '\u041f\u043e\u0442\u0440\u0456\u0431\u0435\u043d \u043a\u043e\u043f\u0456\u0440\u0430\u0439\u0442' },
-    { value: 'other', title: '\u0406\u043d\u0448\u0435' },
+    { value: 'has', title: 'home.configurator.options.content.has' },
+    { value: 'copy', title: 'home.configurator.options.content.copy' },
+    { value: 'other', title: 'home.configurator.options.common.other' },
   ],
   languages: [
-    { value: 'basic', title: '1 \u043c\u043e\u0432\u0430' },
-    { value: 'multi', title: '2+ \u043c\u043e\u0432\u0438' },
-    { value: 'other', title: '\u0406\u043d\u0448\u0435' },
+    { value: 'basic', title: 'home.configurator.options.languages.basic' },
+    { value: 'multi', title: 'home.configurator.options.languages.multi' },
+    { value: 'other', title: 'home.configurator.options.common.other' },
   ],
   hosting: [
-    { value: 'shared', title: 'Shared hosting' },
-    { value: 'vps', title: 'VPS' },
-    { value: 'managed', title: 'Managed hosting' },
-    { value: 'other', title: '\u0406\u043d\u0448\u0435' },
+    { value: 'shared', title: 'home.configurator.options.hosting.shared' },
+    { value: 'vps', title: 'home.configurator.options.hosting.vps' },
+    { value: 'managed', title: 'home.configurator.options.hosting.managed' },
+    { value: 'other', title: 'home.configurator.options.common.other' },
   ],
   domain: [
-    { value: 'new-domain', title: '\u041d\u043e\u0432\u0438\u0439 \u0434\u043e\u043c\u0435\u043d' },
-    { value: 'existing-domain', title: '\u0412\u0436\u0435 \u0454 \u0434\u043e\u043c\u0435\u043d' },
-    { value: 'transfer', title: '\u041f\u0435\u0440\u0435\u043d\u0435\u0441\u0435\u043d\u043d\u044f \u0434\u043e\u043c\u0435\u043d\u0443' },
-    { value: 'other', title: '\u0406\u043d\u0448\u0435' },
+    { value: 'new-domain', title: 'home.configurator.options.domain.new_domain' },
+    { value: 'existing-domain', title: 'home.configurator.options.domain.existing_domain' },
+    { value: 'transfer', title: 'home.configurator.options.domain.transfer' },
+    { value: 'other', title: 'home.configurator.options.common.other' },
   ],
   pages: [
-    { value: 'one', title: '1 \u0441\u0442\u043e\u0440\u0456\u043d\u043a\u0430' },
-    { value: 'up-to-3', title: '\u0414\u043e 3 \u0441\u0442\u043e\u0440\u0456\u043d\u043e\u043a' },
-    { value: 'five-plus', title: '5+ \u0441\u0442\u043e\u0440\u0456\u043d\u043e\u043a' },
-    { value: 'other', title: '\u0406\u043d\u0448\u0435' },
+    { value: 'one', title: 'home.configurator.options.pages.one' },
+    { value: 'up-to-3', title: 'home.configurator.options.pages.up_to_3' },
+    { value: 'five-plus', title: 'home.configurator.options.pages.five_plus' },
+    { value: 'other', title: 'home.configurator.options.common.other' },
   ],
   seo: [
-    { value: 'base', title: 'SEO Base' },
-    { value: 'extended', title: 'SEO Extended' },
-    { value: 'other', title: '\u0406\u043d\u0448\u0435' },
+    { value: 'base', title: 'home.configurator.options.seo.base' },
+    { value: 'extended', title: 'home.configurator.options.seo.extended' },
+    { value: 'other', title: 'home.configurator.options.common.other' },
   ],
 };
-
-export const marqueeItems = [
-  'Handwerk',
-  'Praxen',
-  'Werkst\u00e4tten',
-  'Gastronomie',
-  'Beauty',
-  'Immobilien',
-  'Kanzlei',
-  'Fitness',
-  'Reinigung',
-  'Transport',
-  'Coaching',
-  'Bildung',
-];

@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import styled, { keyframes } from 'styled-components';
+import { fadeInUp, scaleIn, staggerContainer } from '../../../components/Motion/reveal';
 
 const gradientFlow = keyframes`
   0% { background-position: 0% 50%; }
@@ -23,7 +25,12 @@ export const PageContainer = styled.div`
   padding-right: var(--gutter);
 `;
 
-export const HeroSection = styled.section`
+export const HeroSection = styled(motion.section).attrs({
+  initial: 'hidden',
+  whileInView: 'visible',
+  viewport: { once: true, amount: 0.22 },
+  variants: fadeInUp,
+})`
   display: grid;
   gap: 18px;
   padding: 70px 0 30px;
@@ -50,7 +57,12 @@ export const HeroSection = styled.section`
   }
 `;
 
-export const Section = styled.section`
+export const Section = styled(motion.section).attrs({
+  initial: 'hidden',
+  whileInView: 'visible',
+  viewport: { once: true, amount: 0.18 },
+  variants: fadeInUp,
+})`
   margin-top: var(--section-space, 36px);
 
   h2 {
@@ -76,7 +88,12 @@ export const Section = styled.section`
   }
 `;
 
-export const Grid2 = styled.div`
+export const Grid2 = styled(motion.div).attrs({
+  initial: 'hidden',
+  whileInView: 'visible',
+  viewport: { once: true, amount: 0.12 },
+  variants: staggerContainer,
+})`
   display: grid;
   gap: 14px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -86,7 +103,12 @@ export const Grid2 = styled.div`
   }
 `;
 
-export const Grid3 = styled.div`
+export const Grid3 = styled(motion.div).attrs({
+  initial: 'hidden',
+  whileInView: 'visible',
+  viewport: { once: true, amount: 0.12 },
+  variants: staggerContainer,
+})`
   display: grid;
   gap: 14px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -96,7 +118,12 @@ export const Grid3 = styled.div`
   }
 `;
 
-export const Card = styled.article`
+export const Card = styled(motion.article).attrs({
+  initial: 'hidden',
+  whileInView: 'visible',
+  viewport: { once: true, amount: 0.2 },
+  variants: scaleIn,
+})`
   position: relative;
   overflow: hidden;
   border-radius: 14px;

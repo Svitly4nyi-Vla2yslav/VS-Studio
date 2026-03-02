@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import {
   FaBolt,
@@ -16,6 +17,7 @@ import {
   FaShareAlt,
 } from 'react-icons/fa';
 import Partners from '../../../components/PartnersBanner/PartnersBanner';
+import { fadeInUp } from '../../../components/Motion/reveal';
 
 const PartnersSection: React.FC = () => {
   const { t } = useTranslation();
@@ -138,17 +140,19 @@ const PartnersSection: React.FC = () => {
   );
 
   return (
-    <section className='section'>
+    <motion.section
+      className='section'
+      initial='hidden'
+      whileInView='visible'
+      viewport={{ once: true, amount: 0.2 }}
+      variants={fadeInUp}
+    >
       <div className='section-header'>
-        <h2>{'\u041f\u0435\u0440\u0435\u0432\u0430\u0433\u0438 \u0442\u0430 \u043d\u0430\u043f\u0440\u044f\u043c\u043a\u0438'}</h2>
-        <p className='section-description'>
-          {
-            '\u042f\u043a\u0456 \u0437\u0430\u0434\u0430\u0447\u0456 \u0437\u0430\u043a\u0440\u0438\u0432\u0430\u0454\u043c\u043e \u0456 \u0434\u043b\u044f \u044f\u043a\u0438\u0445 \u043b\u043e\u043a\u0430\u043b\u044c\u043d\u0438\u0445 \u0431\u0456\u0437\u043d\u0435\u0441\u0456\u0432 \u043d\u0430\u0439\u0447\u0430\u0441\u0442\u0456\u0448\u0435 \u0437\u0430\u043f\u0443\u0441\u043a\u0430\u0454\u043c\u043e \u0441\u0430\u0439\u0442\u0438 \u0442\u0430 \u0432\u043e\u0440\u043e\u043d\u043a\u0438 \u043f\u0440\u043e\u0434\u0430\u0436\u0456\u0432.'
-          }
-        </p>
+        <h2>{t('home.partnersSection.title')}</h2>
+        <p className='section-description'>{t('home.partnersSection.desc')}</p>
       </div>
       <Partners rows={rows} />
-    </section>
+    </motion.section>
   );
 };
 

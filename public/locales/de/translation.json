@@ -1,4 +1,4 @@
-﻿{
+{
   "languages": {
     "de": "Deutsch",
     "uk": "Українська",
@@ -60,19 +60,58 @@
       "services": "Leistungen"
     },
     "partners": {
-      "fastLoad": { "title": "Schnell geladen", "desc": "Seite lädt in Sekunden" },
-      "moreLeads": { "title": "Mehr Anfragen", "desc": "Mehr Kontakte über Formulare" },
-      "clearPrices": { "title": "Klare Preise", "desc": "Du kennst Kosten im Voraus" },
-      "personalHelp": { "title": "Persönliche Hilfe", "desc": "Direkter Support ohne Warteschlange" },
-      "handwerker": { "title": "Handwerker", "desc": "Anfragen pro Stadt und Leistung" },
-      "praxen": { "title": "Praxen", "desc": "Patienten finden schneller Termine" },
-      "werkstaetten": { "title": "Werkstätten", "desc": "Klare Service-Seiten mit Tracking" },
-      "localServices": { "title": "Lokale Services", "desc": "Mehr Sichtbarkeit vor Ort" },
-      "websites": { "title": "Websites", "desc": "Modern, schnell, mobil optimiert" },
-      "webApps": { "title": "Web-Apps", "desc": "Tools für Team und Kunden" },
-      "aiIntegration": { "title": "AI Integration", "desc": "Chatbot für Fragen und Leads" },
-      "socialMedia": { "title": "Social Media", "desc": "Website + Instagram/Meta verbunden" },
-      "socialAds": { "title": "Social Ads", "desc": "Gezielte Werbung mit messbaren Ergebnissen" }
+      "fastLoad": {
+        "title": "Schnell geladen",
+        "desc": "Seite lädt in Sekunden"
+      },
+      "moreLeads": {
+        "title": "Mehr Anfragen",
+        "desc": "Mehr Kontakte über Formulare"
+      },
+      "clearPrices": {
+        "title": "Klare Preise",
+        "desc": "Du kennst Kosten im Voraus"
+      },
+      "personalHelp": {
+        "title": "Persönliche Hilfe",
+        "desc": "Direkter Support ohne Warteschlange"
+      },
+      "handwerker": {
+        "title": "Handwerker",
+        "desc": "Anfragen pro Stadt und Leistung"
+      },
+      "praxen": {
+        "title": "Praxen",
+        "desc": "Patienten finden schneller Termine"
+      },
+      "werkstaetten": {
+        "title": "Werkstätten",
+        "desc": "Klare Service-Seiten mit Tracking"
+      },
+      "localServices": {
+        "title": "Lokale Services",
+        "desc": "Mehr Sichtbarkeit vor Ort"
+      },
+      "websites": {
+        "title": "Websites",
+        "desc": "Modern, schnell, mobil optimiert"
+      },
+      "webApps": {
+        "title": "Web-Apps",
+        "desc": "Tools für Team und Kunden"
+      },
+      "aiIntegration": {
+        "title": "AI Integration",
+        "desc": "Chatbot für Fragen und Leads"
+      },
+      "socialMedia": {
+        "title": "Social Media",
+        "desc": "Website + Instagram/Meta verbunden"
+      },
+      "socialAds": {
+        "title": "Social Ads",
+        "desc": "Gezielte Werbung mit messbaren Ergebnissen"
+      }
     },
     "trustTitle": "Trust mit konkreten Ergebnissen",
     "trustDesc1": "mehr Kontaktanfragen in 60 Tagen.",
@@ -89,17 +128,259 @@
       "q4": "Ist das für kleine Unternehmen geeignet?",
       "a4": "Ja. Unsere Pakete sind bewusst für lokale Betriebe aufgebaut: klare Preise, schneller Start und Fokus auf echte Anfragen statt nur Optik.",
       "q5": "Was passiert nach dem Launch?",
-      "a5": "Nach dem Launch prüfen wir Daten, verbessern Conversion-Punkte und unterstützen dich beim Feinschliff, damit die Seite dauerhaft besser performt."
+      "a5": "Nach dem Launch prüfen wir Daten, verbessern Conversion-Punkte und unterstützen dich beim Feinschliff, damit die Seite dauerhaft besser performt.",
+      "desc": "Antworten auf häufige Fragen zu Timing, Kosten, Launch-Prozess und laufender Betreuung."
+    },
+    "hero": {
+      "bento": {
+        "speed": {
+          "label": "Geschwindigkeit",
+          "value": "90+ Lighthouse"
+        },
+        "seo": {
+          "label": "SEO",
+          "value": "Technisches Fundament"
+        },
+        "leads": {
+          "label": "Anfragen",
+          "value": "Klare CTA und Formulare"
+        },
+        "support": {
+          "label": "Support",
+          "value": "Nach dem Launch"
+        }
+      }
+    },
+    "partnersSection": {
+      "title": "Vorteile und Einsatzbereiche",
+      "desc": "Welche Aufgaben wir abdecken und für welche lokalen Unternehmen wir am häufigsten Websites und Lead-Funnels umsetzen."
+    },
+    "marquee": {
+      "aria": "Branchen",
+      "title": "Branchen, mit denen wir arbeiten",
+      "desc": "Wählen Sie eine Richtung und sehen Sie passende Stilbeispiele. So bauen wir schneller ein präzises Angebot für Ihr Unternehmen.",
+      "items": {
+        "handwerk": "Handwerk",
+        "praxen": "Praxen",
+        "werkstaetten": "Werkstätten",
+        "gastronomie": "Gastronomie",
+        "beauty": "Beauty",
+        "immobilien": "Immobilien",
+        "kanzlei": "Kanzlei",
+        "fitness": "Fitness",
+        "reinigung": "Reinigung",
+        "transport": "Transport",
+        "coaching": "Coaching",
+        "bildung": "Bildung"
+      }
+    },
+    "process": {
+      "title": "Wie wir arbeiten",
+      "desc": "Ein transparenter Prozess ohne unnötige Schritte: vom kurzen Briefing bis zu Launch und Optimierung mit klaren Deadlines.",
+      "aria": "Projektphasen",
+      "stage": "Phase",
+      "nav": {
+        "prev": "Zurück",
+        "next": "Weiter"
+      },
+      "steps": {
+        "s1": {
+          "title": "15-Minuten-Call",
+          "text": "Wir klären Aufgabe, KPI und Deadline und stimmen sofort das Launch-Format ab."
+        },
+        "s2": {
+          "title": "Prototyp in 48h",
+          "text": "Wir zeigen Seitenstruktur, CTA und Lead-Flow vor der Entwicklung."
+        },
+        "s3": {
+          "title": "Entwicklung in 7-14 Tagen",
+          "text": "Umsetzung, SEO-Basis, Integrationen und Analytics ohne unnötigen Overhead."
+        },
+        "s4": {
+          "title": "Launch und Optimierung",
+          "text": "Wir gehen live, prüfen Conversion und liefern einen 30-Tage-Verbesserungsplan."
+        }
+      }
+    },
+    "projects": {
+      "title": "Projekte / Case Studies",
+      "desc": "Reale Aufgaben und erwartbare Ergebnisse ohne leere Versprechen. Hover auf einen Case für Live-Preview.",
+      "cards": {
+        "c1": {
+          "title": "Website für lokale Anfragen",
+          "description": "Landingpage mit Fokus auf Formular, Anruf und schnellen Mobile-Kontakt.",
+          "goal": "Ziel: mehr Anfragen ohne Budgeterhöhung"
+        },
+        "c2": {
+          "title": "Landingpage für Ads",
+          "description": "Separate Seite mit Tracking für Meta- und Google-Kampagnen.",
+          "goal": "Erwarteter Effekt: qualifiziertere Leads aus Werbung"
+        },
+        "c3": {
+          "title": "Website für Praxis",
+          "description": "Klare Leistungsstruktur, FAQ und Online-Termin-Flow.",
+          "goal": "Ziel: mehr Terminbuchungen mit weniger Rückfragen"
+        },
+        "c4": {
+          "title": "Dashboard für Leads",
+          "description": "Internes Interface zur Lead-Bearbeitung und Statuskontrolle.",
+          "goal": "Erwarteter Effekt: schnellere Bearbeitung von Anfragen"
+        }
+      }
+    },
+    "configurator": {
+      "title": "Angebots-Konfigurator",
+      "desc": "Wählen Sie Projektparameter und erhalten Sie einen Startpreis sowie passende Support-Tarife.",
+      "labels": {
+        "goal": "Ziel",
+        "integrations": "Integrationen",
+        "ads": "Werbung",
+        "term": "Zeitrahmen",
+        "content": "Content-Level",
+        "languages": "Sprachen",
+        "hosting": "Hosting",
+        "domain": "Domain",
+        "pages": "Seiten",
+        "seo": "SEO"
+      },
+      "options": {
+        "common": {
+          "other": "Andere"
+        },
+        "goal": {
+          "leads": "Leads",
+          "calls": "Anrufe",
+          "booking": "Buchungen"
+        },
+        "integrations": {
+          "booking": "Buchung",
+          "crm": "CRM",
+          "chat": "Chat",
+          "payments": "Zahlungen"
+        },
+        "ads": {
+          "none": "Ohne Werbung",
+          "meta": "Meta",
+          "google": "Google"
+        },
+        "term": {
+          "up_to_7": "Bis 1 Woche",
+          "from_7_to_14": "7-14 Tage",
+          "from_14_to_21": "14-21 Tage",
+          "from_21_to_30": "21-30 Tage"
+        },
+        "content": {
+          "has": "Texte vorhanden",
+          "copy": "Copywriting nötig"
+        },
+        "languages": {
+          "basic": "1 Sprache",
+          "multi": "2+ Sprachen"
+        },
+        "hosting": {
+          "shared": "Shared Hosting",
+          "vps": "VPS",
+          "managed": "Managed Hosting"
+        },
+        "domain": {
+          "new_domain": "Neue Domain",
+          "existing_domain": "Domain vorhanden",
+          "transfer": "Domain-Transfer"
+        },
+        "pages": {
+          "one": "1 Seite",
+          "up_to_3": "Bis 3 Seiten",
+          "five_plus": "5+ Seiten"
+        },
+        "seo": {
+          "base": "SEO Base",
+          "extended": "SEO Extended"
+        }
+      },
+      "reset": "Alles zurücksetzen",
+      "empty": "Wählen Sie mindestens eine Option in jedem Block. Mehrfachauswahl ist möglich; bei \"Andere\" wird keine Zusatzgebühr berechnet.",
+      "recommended": "Empfohlen:",
+      "pack": {
+        "starter": "Starter",
+        "business": "Business"
+      },
+      "launchPrice": "Startpreis:",
+      "supportMonthly": "Support / Monat",
+      "supportYearly": "Support / Jahr (-30%)",
+      "cta": "Kontaktanfrage und exakter Kostenvoranschlag",
+      "bullets": {
+        "prototype": "Prototyp und Struktur mit Fokus auf Anfragen",
+        "goal": "Ziele: {{value}}",
+        "integrations": "Integrationen: {{value}}",
+        "term": "Zeitrahmen: {{value}}",
+        "hosting": "Hosting: {{value}}",
+        "domain": "Domain: {{value}}",
+        "pages": "Seiten: {{value}}",
+        "analytics": "GA4 und Event-Tracking für Formulare/Kontakte",
+        "copy_true": "Unterstützung bei Texten und Offer",
+        "copy_false": "Wir arbeiten mit Ihren vorhandenen Texten",
+        "market_note": "Orientierungspreis unter marktüblichem Niveau für kleine Unternehmen"
+      },
+      "brief": {
+        "title": "Brief aus dem Angebots-Konfigurator:",
+        "goal": "Ziel: {{value}}",
+        "integrations": "Integrationen: {{value}}",
+        "ads": "Werbung: {{value}}",
+        "term": "Zeitrahmen: {{value}}",
+        "content": "Content: {{value}}",
+        "languages": "Sprachen: {{value}}",
+        "hosting": "Hosting: {{value}}",
+        "domain": "Domain: {{value}}",
+        "pages": "Seiten: {{value}}",
+        "seo": "SEO: {{value}}",
+        "launch_price": "Startpreis: {{value}}",
+        "support_monthly": "Support / Monat: {{value}}",
+        "support_yearly": "Support / Jahr (-30%): {{value}}"
+      }
+    },
+    "trust": {
+      "title": "Was Sie in 14 Tagen bekommen",
+      "desc": "Konkrete Start-Ergebnisse: eine anfrageorientierte Website, eingerichtete Analytics und ein Plan für weiteres Wachstum.",
+      "deliverables": {
+        "d1": {
+          "title": "Prototyp in 48h",
+          "text": "Wir zeigen Struktur und CTA vor dem Coding, damit Entscheidungen planbar bleiben."
+        },
+        "d2": {
+          "title": "Website für Anfragen",
+          "text": "Formular, Anruf, Messenger und mobile Version für schnelle Kontaktaufnahme."
+        },
+        "d3": {
+          "title": "Analytics und Tracking",
+          "text": "GA4 plus Events, damit sichtbar wird, wo Anfragen entstehen."
+        },
+        "d4": {
+          "title": "30-Tage-Optimierungsplan",
+          "text": "Klare nächste Schritte zur Conversion-Steigerung nach Launch."
+        }
+      }
     }
   },
   "services": {
     "h1": "Leistungen mit klarem Ergebnis und realistischem Zeitplan.",
     "subtitle": "Einfach erklärt: Was wir machen, wie lange es dauert und welchen Nutzen Ihr Betrieb konkret bekommt.",
     "cards": {
-      "websites": { "title": "Websites", "desc": "Wir bauen eine schnelle Website, die Ihre Leistungen klar zeigt und Kunden direkt zur Anfrage führt." },
-      "webAppsAi": { "title": "Automatisierung und KI", "desc": "Wir richten einfache Automationen ein: Auto-Antworten, Formulare und Sortierung von Anfragen, damit keine Leads verloren gehen." },
-      "ads": { "title": "Werbung und klare Auswertung", "desc": "Wir schalten Werbung und zeigen verständlich: wie viele Anfragen kamen rein, was ein Lead kostet und was wir verbessern." },
-      "social": { "title": "Social Media und Kontaktwege", "desc": "Wir verbinden Website mit Instagram/Facebook und Messenger, damit Kunden Sie schnell schreiben oder anrufen können." }
+      "websites": {
+        "title": "Websites",
+        "desc": "Wir bauen eine schnelle Website, die Ihre Leistungen klar zeigt und Kunden direkt zur Anfrage führt."
+      },
+      "webAppsAi": {
+        "title": "Automatisierung und KI",
+        "desc": "Wir richten einfache Automationen ein: Auto-Antworten, Formulare und Sortierung von Anfragen, damit keine Leads verloren gehen."
+      },
+      "ads": {
+        "title": "Werbung und klare Auswertung",
+        "desc": "Wir schalten Werbung und zeigen verständlich: wie viele Anfragen kamen rein, was ein Lead kostet und was wir verbessern."
+      },
+      "social": {
+        "title": "Social Media und Kontaktwege",
+        "desc": "Wir verbinden Website mit Instagram/Facebook und Messenger, damit Kunden Sie schnell schreiben oder anrufen können."
+      }
     },
     "deliverablesTitle": "Was Sie bekommen",
     "deliverables": {
@@ -110,9 +391,18 @@
     },
     "aiSocialAdsTitle": "KI, Social Media und Werbung einfach erklärt",
     "aiCards": {
-      "ai": { "title": "KI-Integration", "desc": "Wir ergänzen Chatbot oder Auto-Antworten, damit Interessenten schnell Rückmeldung bekommen, auch außerhalb der Öffnungszeiten." },
-      "social": { "title": "Social Media", "desc": "Wir bauen einen klaren Weg: Menschen sehen Sie in Social Media, wechseln auf Ihre Website und senden eine Anfrage." },
-      "ads": { "title": "Social Ads", "desc": "Wir schalten Kampagnen in Meta/TikTok/LinkedIn und steuern das Budget auf echte Anfragen statt nur Reichweite." }
+      "ai": {
+        "title": "KI-Integration",
+        "desc": "Wir ergänzen Chatbot oder Auto-Antworten, damit Interessenten schnell Rückmeldung bekommen, auch außerhalb der Öffnungszeiten."
+      },
+      "social": {
+        "title": "Social Media",
+        "desc": "Wir bauen einen klaren Weg: Menschen sehen Sie in Social Media, wechseln auf Ihre Website und senden eine Anfrage."
+      },
+      "ads": {
+        "title": "Social Ads",
+        "desc": "Wir schalten Kampagnen in Meta/TikTok/LinkedIn und steuern das Budget auf echte Anfragen statt nur Reichweite."
+      }
     },
     "ctaTitle": "Angebot erhalten",
     "ctaButton": "Angebot erhalten"
@@ -252,9 +542,18 @@
       "i3": "Launch und laufende Optimierung nach Daten"
     },
     "cards": {
-      "work": { "title": "Wie wir arbeiten", "desc": "Kurze Schritte, klare Verantwortung, realistische Deadlines. Ablauf: Briefing → Struktur → Design → Entwicklung → Launch → Verbesserung." },
-      "ai": { "title": "KI-Ansatz", "desc": "Wir automatisieren Routine, damit Sie schneller antworten und weniger Anfragen verlieren. Beispiele: smarte Formulare, Auto-Antworten, Lead-Sortierung, Integrationen." },
-      "leads": { "title": "Fokus auf Anfragen", "desc": "Design, Marketing und Tracking greifen zusammen: mehr echte Kontakte statt nur Besucher. Ziel: Ihre Website arbeitet wie ein Vertriebsmitarbeiter 24/7." }
+      "work": {
+        "title": "Wie wir arbeiten",
+        "desc": "Kurze Schritte, klare Verantwortung, realistische Deadlines. Ablauf: Briefing → Struktur → Design → Entwicklung → Launch → Verbesserung."
+      },
+      "ai": {
+        "title": "KI-Ansatz",
+        "desc": "Wir automatisieren Routine, damit Sie schneller antworten und weniger Anfragen verlieren. Beispiele: smarte Formulare, Auto-Antworten, Lead-Sortierung, Integrationen."
+      },
+      "leads": {
+        "title": "Fokus auf Anfragen",
+        "desc": "Design, Marketing und Tracking greifen zusammen: mehr echte Kontakte statt nur Besucher. Ziel: Ihre Website arbeitet wie ein Vertriebsmitarbeiter 24/7."
+      }
     },
     "whatYouGetTitle": "Was Sie konkret erhalten",
     "whatYouGet": {
@@ -354,4 +653,3 @@
     }
   }
 }
-

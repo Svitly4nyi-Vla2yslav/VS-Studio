@@ -3,12 +3,15 @@ import { easeOut, motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import type { Swiper as SwiperType } from 'swiper';
 import { A11y, Autoplay, EffectFade, Keyboard } from 'swiper/modules';
+import { useTranslation } from 'react-i18next';
 import { processSteps } from './homePageData';
 import { ProcessSectionScope } from './styles/ProcessSection.styles';
+import { fadeInUp, scaleIn, staggerContainer } from '../../../components/Motion/reveal';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 
 const ProcessSection: React.FC = () => {
+  const { t } = useTranslation();
   const [activeStep, setActiveStep] = useState(0);
   const swiperRef = useRef<SwiperType | null>(null);
 
@@ -18,31 +21,34 @@ const ProcessSection: React.FC = () => {
 
   return (
     <ProcessSectionScope>
-      <section className='section sticky-process'>
+      <motion.section
+        className='section sticky-process'
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true, amount: 0.18 }}
+        variants={fadeInUp}
+      >
         <div className='section-header'>
-          <h2>{'\u042f\u043a \u043c\u0438 \u043f\u0440\u0430\u0446\u044e\u0454\u043c\u043e'}</h2>
-          <p className='section-description'>
-            {
-              '\u041f\u0440\u043e\u0437\u043e\u0440\u0438\u0439 \u043f\u0440\u043e\u0446\u0435\u0441 \u0431\u0435\u0437 \u0437\u0430\u0439\u0432\u0438\u0445 \u0435\u0442\u0430\u043f\u0456\u0432: \u0432\u0456\u0434 \u043a\u043e\u0440\u043e\u0442\u043a\u043e\u0433\u043e \u0431\u0440\u0438\u0444\u0443 \u0434\u043e \u0437\u0430\u043f\u0443\u0441\u043a\u0443 \u0442\u0430 \u043e\u043f\u0442\u0438\u043c\u0456\u0437\u0430\u0446\u0456\u0457 \u0437 \u0447\u0456\u0442\u043a\u0438\u043c\u0438 \u0434\u0435\u0434\u043b\u0430\u0439\u043d\u0430\u043c\u0438.'
-            }
-          </p>
+          <h2>{t('home.process.title')}</h2>
+          <p className='section-description'>{t('home.process.desc')}</p>
         </div>
         <div className='sticky-process-grid'>
-          <div className='sticky-steps' role='tablist' aria-label={'\u0415\u0442\u0430\u043f\u0438 \u0440\u043e\u0431\u043e\u0442\u0438'}>
+          <motion.div className='sticky-steps' role='tablist' aria-label={t('home.process.aria')} variants={staggerContainer}>
             {processSteps.map((item, index) => (
-              <button
+              <motion.button
                 key={item.step}
                 className={`sticky-step ${activeStep === index ? 'active' : ''}`}
                 onClick={() => goTo(index)}
                 type='button'
                 role='tab'
                 aria-selected={activeStep === index}
+                variants={scaleIn}
               >
                 <span>{item.step}</span>
-                <p>{item.title}</p>
-              </button>
+                <p>{t(`home.process.steps.s${index + 1}.title`)}</p>
+              </motion.button>
             ))}
-          </div>
+          </motion.div>
           <motion.article
             className='sticky-process-card card'
             initial={{ opacity: 0, y: 10, scale: 0.99 }}
@@ -73,10 +79,10 @@ const ProcessSection: React.FC = () => {
                     <div className='process-content'>
                       <div className='process-kicker'>
                         <span className='process-chip'>{item.step}</span>
-                        <span className='process-chip subtle'>{'\u0415\u0442\u0430\u043f'}</span>
+                        <span className='process-chip subtle'>{t('home.process.stage')}</span>
                       </div>
-                      <h3>{item.title}</h3>
-                      <p>{item.text}</p>
+                      <h3>{t(`home.process.steps.s${index + 1}.title`)}</h3>
+                      <p>{t(`home.process.steps.s${index + 1}.text`)}</p>
                       <div className='process-nav'>
                         <button
                           type='button'
@@ -84,7 +90,7 @@ const ProcessSection: React.FC = () => {
                           onClick={() => swiperRef.current?.slidePrev()}
                           disabled={activeStep === 0}
                         >
-                          {'\u041d\u0430\u0437\u0430\u0434'}
+                          {t('home.process.nav.prev')}
                         </button>
                         <button
                           type='button'
@@ -92,7 +98,7 @@ const ProcessSection: React.FC = () => {
                           onClick={() => swiperRef.current?.slideNext()}
                           disabled={activeStep === processSteps.length - 1}
                         >
-                          {'\u0414\u0430\u043b\u0456'}
+                          {t('home.process.nav.next')}
                         </button>
                       </div>
                     </div>
@@ -102,7 +108,7 @@ const ProcessSection: React.FC = () => {
             </Swiper>
           </motion.article>
         </div>
-      </section>
+      </motion.section>
     </ProcessSectionScope>
   );
 };

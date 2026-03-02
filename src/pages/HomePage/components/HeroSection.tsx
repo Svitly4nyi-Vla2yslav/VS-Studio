@@ -74,23 +74,23 @@ const HeroSection: React.FC<HeroSectionProps> = ({ reducedMotion }) => {
 
         <aside className='hero-bento'>
           <article className='bento-tile'>
-            <span>{'\u0428\u0432\u0438\u0434\u043a\u0456\u0441\u0442\u044c'}</span>
-            <strong>90+ Lighthouse</strong>
+            <span>{t('home.hero.bento.speed.label')}</span>
+            <strong>{t('home.hero.bento.speed.value')}</strong>
             <FaBolt className='bento-icon-bg' aria-hidden='true' />
           </article>
           <article className='bento-tile'>
-            <span>SEO</span>
-            <strong>{'\u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0438\u0439 \u0444\u0443\u043d\u0434\u0430\u043c\u0435\u043d\u0442'}</strong>
+            <span>{t('home.hero.bento.seo.label')}</span>
+            <strong>{t('home.hero.bento.seo.value')}</strong>
             <FaSearch className='bento-icon-bg' aria-hidden='true' />
           </article>
           <article className='bento-tile'>
-            <span>{'\u0417\u0430\u044f\u0432\u043a\u0438'}</span>
-            <strong>{'\u0427\u0456\u0442\u043a\u0456 CTA \u0456 \u0444\u043e\u0440\u043c\u0438'}</strong>
+            <span>{t('home.hero.bento.leads.label')}</span>
+            <strong>{t('home.hero.bento.leads.value')}</strong>
             <FaBullseye className='bento-icon-bg' aria-hidden='true' />
           </article>
           <article className='bento-tile'>
-            <span>{'\u041f\u0456\u0434\u0442\u0440\u0438\u043c\u043a\u0430'}</span>
-            <strong>{'\u041f\u0456\u0441\u043b\u044f \u0437\u0430\u043f\u0443\u0441\u043a\u0443'}</strong>
+            <span>{t('home.hero.bento.support.label')}</span>
+            <strong>{t('home.hero.bento.support.value')}</strong>
             <FaLifeRing className='bento-icon-bg' aria-hidden='true' />
           </article>
         </aside>

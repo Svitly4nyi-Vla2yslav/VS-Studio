@@ -1,4 +1,6 @@
 import { useMemo } from 'react';
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import {
   FaBalanceScale,
   FaBroom,
@@ -27,24 +29,26 @@ import reinigungBg from '../../../assets/icons/marquee/Reinigung.png';
 import transportBg from '../../../assets/icons/marquee/Transport.png';
 import werkstaettenBg from '../../../assets/icons/marquee/Werkst\u00e4tten.png';
 import { MarqueeSectionScope } from './styles/MarqueeSection.styles';
+import { fadeInUp } from '../../../components/Motion/reveal';
 
 export const MarqueeSection: React.FC = () => {
+  const { t } = useTranslation();
   const items = useMemo(
     () => [
-      { label: 'Handwerk', icon: <FaHammer />, backgroundImage: handwerkBg },
-      { label: 'Praxen', icon: <FaHeartbeat />, backgroundImage: praxenBg },
-      { label: 'Werkst\u00e4tten', icon: <FaIndustry />, backgroundImage: werkstaettenBg },
-      { label: 'Gastronomie', icon: <FaUtensils />, backgroundImage: gastronomieBg },
-      { label: 'Beauty', icon: <FaSpa />, backgroundImage: beautyBg },
-      { label: 'Immobilien', icon: <FaBuilding />, backgroundImage: immobilienBg },
-      { label: 'Kanzlei', icon: <FaBalanceScale />, backgroundImage: kanzleiBg },
-      { label: 'Fitness', icon: <FaDumbbell />, backgroundImage: fitnessBg },
-      { label: 'Reinigung', icon: <FaBroom />, backgroundImage: reinigungBg },
-      { label: 'Transport', icon: <FaTruck />, backgroundImage: transportBg },
-      { label: 'Coaching', icon: <FaChalkboardTeacher />, backgroundImage: coachingBg },
-      { label: 'Bildung', icon: <FaGraduationCap />, backgroundImage: bildungBg },
+      { label: t('home.marquee.items.handwerk'), icon: <FaHammer />, backgroundImage: handwerkBg },
+      { label: t('home.marquee.items.praxen'), icon: <FaHeartbeat />, backgroundImage: praxenBg },
+      { label: t('home.marquee.items.werkstaetten'), icon: <FaIndustry />, backgroundImage: werkstaettenBg },
+      { label: t('home.marquee.items.gastronomie'), icon: <FaUtensils />, backgroundImage: gastronomieBg },
+      { label: t('home.marquee.items.beauty'), icon: <FaSpa />, backgroundImage: beautyBg },
+      { label: t('home.marquee.items.immobilien'), icon: <FaBuilding />, backgroundImage: immobilienBg },
+      { label: t('home.marquee.items.kanzlei'), icon: <FaBalanceScale />, backgroundImage: kanzleiBg },
+      { label: t('home.marquee.items.fitness'), icon: <FaDumbbell />, backgroundImage: fitnessBg },
+      { label: t('home.marquee.items.reinigung'), icon: <FaBroom />, backgroundImage: reinigungBg },
+      { label: t('home.marquee.items.transport'), icon: <FaTruck />, backgroundImage: transportBg },
+      { label: t('home.marquee.items.coaching'), icon: <FaChalkboardTeacher />, backgroundImage: coachingBg },
+      { label: t('home.marquee.items.bildung'), icon: <FaGraduationCap />, backgroundImage: bildungBg },
     ],
-    []
+    [t]
   );
 
   const rows = useMemo(
@@ -60,17 +64,20 @@ export const MarqueeSection: React.FC = () => {
 
   return (
     <MarqueeSectionScope>
-      <section className='section marquee-wrap' aria-label={'\u041d\u0456\u0448\u0456'}>
+      <motion.section
+        className='section marquee-wrap'
+        aria-label={t('home.marquee.aria')}
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeInUp}
+      >
         <div className='section-header'>
-          <h2>{'\u041d\u0456\u0448\u0456, \u0437 \u044f\u043a\u0438\u043c\u0438 \u043f\u0440\u0430\u0446\u044e\u0454\u043c\u043e'}</h2>
-          <p className='section-description'>
-            {
-              '\u041e\u0431\u0435\u0440\u0456\u0442\u044c \u043d\u0430\u043f\u0440\u044f\u043c \u0456 \u043f\u043e\u0434\u0438\u0432\u0456\u0442\u044c\u0441\u044f \u043f\u0440\u0438\u043a\u043b\u0430\u0434\u0438 \u0441\u0442\u0438\u043b\u044e \u0434\u043b\u044f \u0441\u0432\u043e\u0454\u0457 \u0441\u0444\u0435\u0440\u0438. \u0426\u0435 \u0434\u043e\u043f\u043e\u043c\u043e\u0436\u0435 \u0448\u0432\u0438\u0434\u0448\u0435 \u0437\u0456\u0431\u0440\u0430\u0442\u0438 \u0442\u043e\u0447\u043d\u0438\u0439 \u043e\u0444\u0435\u0440 \u043f\u0456\u0434 \u0432\u0430\u0448 \u0431\u0456\u0437\u043d\u0435\u0441.'
-            }
-          </p>
+          <h2>{t('home.marquee.title')}</h2>
+          <p className='section-description'>{t('home.marquee.desc')}</p>
         </div>
         <Partners rows={rows} />
-      </section>
+      </motion.section>
     </MarqueeSectionScope>
   );
 };
