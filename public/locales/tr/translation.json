@@ -14,26 +14,26 @@
     "bg": "Български"
   },
   "common": {
-    "projectRequest": "Projekt anfragen",
-    "viewPrices": "Preise ansehen",
-    "cancel": "Abbrechen"
+    "projectRequest": "Proje talep et",
+    "viewPrices": "Fiyatlari gor",
+    "cancel": "Iptal"
   },
   "header": {
     "menu": "Menu",
-    "menuAria": "Navigationsmenü öffnen",
-    "services": "Services",
-    "preise": "Preise",
-    "referenzen": "Referenzen",
-    "ueberUns": "Über uns",
-    "kontakt": "Kontakt"
+    "menuAria": "Gezinme menusunu ac",
+    "services": "Hizmetler",
+    "preise": "Fiyatlar",
+    "referenzen": "Referanslar",
+    "ueberUns": "Hakkimizda",
+    "kontakt": "Iletisim"
   },
   "footer": {
-    "tagline": "VS Studio · Websites, Web-Apps, Ads & Automationen",
-    "impressum": "Impressum",
-    "datenschutz": "Datenschutz",
-    "agb": "AGB",
-    "cookies": "Cookies",
-    "cookieSettings": "Cookie-Einstellungen",
+    "tagline": "VS Studio · Web siteleri, web uygulamalari, reklam ve otomasyon",
+    "impressum": "Kunye",
+    "datenschutz": "Gizlilik",
+    "agb": "Genel sartlar",
+    "cookies": "Cerezler",
+    "cookieSettings": "Cerez ayarlari",
     "blog": "Blog"
   },
   "cookie": {
@@ -50,67 +50,67 @@
     "saveSelection": "Auswahl speichern"
   },
   "home": {
-    "heroTitle": "Websites, die Anfragen bringen statt nur gut aussehen.",
-    "heroSubtitle": "Klare Positionierung, schnelle Umsetzung und transparente Pakete für lokale Dienstleister in Deutschland.",
-    "toFaq": "Zum FAQ",
-    "partnersTitle": "Highlights, Zielgruppen und Leistungen",
+    "heroTitle": "Sadece guzel gorunen degil, talep getiren web siteleri.",
+    "heroSubtitle": "Almanya'daki yerel isletmeler icin net konumlandirma, hizli uygulama ve seffaf paketler.",
+    "toFaq": "SSS'ye git",
+    "partnersTitle": "One cikanlar, hedef kitleler ve hizmetler",
     "groups": {
-      "highlights": "Highlights",
-      "forWhom": "Für wen",
-      "services": "Leistungen"
+      "highlights": "One cikanlar",
+      "forWhom": "Kimler icin",
+      "services": "Hizmetler"
     },
     "partners": {
       "fastLoad": {
-        "title": "Schnell geladen",
-        "desc": "Seite lädt in Sekunden"
+        "title": "Hizli yukleme",
+        "desc": "Sayfa saniyeler icinde acilir"
       },
       "moreLeads": {
-        "title": "Mehr Anfragen",
-        "desc": "Mehr Kontakte über Formulare"
+        "title": "Daha fazla talep",
+        "desc": "Formlar uzerinden daha cok iletisim"
       },
       "clearPrices": {
-        "title": "Klare Preise",
-        "desc": "Du kennst Kosten im Voraus"
+        "title": "Net fiyatlar",
+        "desc": "Maliyeti onceden bilirsiniz"
       },
       "personalHelp": {
-        "title": "Persönliche Hilfe",
-        "desc": "Direkter Support ohne Warteschlange"
+        "title": "Kisisel destek",
+        "desc": "Beklemeden dogrudan destek"
       },
       "handwerker": {
-        "title": "Handwerker",
-        "desc": "Anfragen pro Stadt und Leistung"
+        "title": "Ustalar",
+        "desc": "Sehir ve hizmet bazli talepler"
       },
       "praxen": {
-        "title": "Praxen",
-        "desc": "Patienten finden schneller Termine"
+        "title": "Klinikler",
+        "desc": "Hastalar daha hizli randevu bulur"
       },
       "werkstaetten": {
-        "title": "Werkstätten",
-        "desc": "Klare Service-Seiten mit Tracking"
+        "title": "Atolyeler",
+        "desc": "Takipli net hizmet sayfalari"
       },
       "localServices": {
-        "title": "Lokale Services",
-        "desc": "Mehr Sichtbarkeit vor Ort"
+        "title": "Yerel hizmetler",
+        "desc": "Bolgenizde daha fazla gorunurluk"
       },
       "websites": {
-        "title": "Websites",
-        "desc": "Modern, schnell, mobil optimiert"
+        "title": "Web siteleri",
+        "desc": "Modern, hizli, mobil uyumlu"
       },
       "webApps": {
-        "title": "Web-Apps",
-        "desc": "Tools für Team und Kunden"
+        "title": "Web uygulamalari",
+        "desc": "Ekip ve musteriler icin araclar"
       },
       "aiIntegration": {
-        "title": "AI Integration",
-        "desc": "Chatbot für Fragen und Leads"
+        "title": "Yapay zeka entegrasyonu",
+        "desc": "Sorular ve leadler icin chatbot"
       },
       "socialMedia": {
-        "title": "Social Media",
-        "desc": "Website + Instagram/Meta verbunden"
+        "title": "Sosyal medya",
+        "desc": "Web sitesi + Instagram/Meta baglantisi"
       },
       "socialAds": {
-        "title": "Social Ads",
-        "desc": "Gezielte Werbung mit messbaren Ergebnissen"
+        "title": "Sosyal reklamlar",
+        "desc": "Olculebilir sonuclarla hedefli reklam"
       }
     },
     "trustTitle": "Trust mit konkreten Ergebnissen",
@@ -119,244 +119,244 @@
     "trustDesc3": "durchschnittliche Ladezeit auf Mobil.",
     "faqTitle": "FAQ",
     "faq": {
-      "q1": "Wie schnell könnt ihr starten?",
-      "a1": "In der Regel starten wir innerhalb von 3-5 Werktagen. Direkt nach deiner Anfrage bekommst du einen kurzen Plan mit den ersten Schritten.",
-      "q2": "Was brauche ich als Kunde am Anfang?",
-      "a2": "Nur Basisinfos zu deinem Angebot, Zielgruppe und Kontaktwegen. Wir helfen dir dann bei Struktur, Texten und Prioritäten.",
-      "q3": "Wie läuft die Zusammenarbeit ab?",
-      "a3": "Wir arbeiten in kurzen Etappen: Konzept, Design, Umsetzung, Launch. Du bekommst klare Updates, damit du immer weißt, was als Nächstes passiert.",
-      "q4": "Ist das für kleine Unternehmen geeignet?",
-      "a4": "Ja. Unsere Pakete sind bewusst für lokale Betriebe aufgebaut: klare Preise, schneller Start und Fokus auf echte Anfragen statt nur Optik.",
-      "q5": "Was passiert nach dem Launch?",
-      "a5": "Nach dem Launch prüfen wir Daten, verbessern Conversion-Punkte und unterstützen dich beim Feinschliff, damit die Seite dauerhaft besser performt.",
-      "desc": "Surec, maliyet, lansman ve destek hakkinda sik sorulan sorularin cevaplari."
+      "q1": "Ne kadar hizli baslayabilirsiniz?",
+      "a1": "Genellikle 3-5 is gunu icinde basliyoruz. Talebinizden hemen sonra ilk adimlari iceren kisa bir plan paylasiyoruz.",
+      "q2": "Baslangicta musteriden ne gerekiyor?",
+      "a2": "Hizmetleriniz, hedef kitleniz ve iletisim kanallari hakkinda temel bilgiler yeterli. Sonrasinda yapi, metin ve oncelikleri birlikte netlestiriyoruz.",
+      "q3": "Is birligi nasil ilerliyor?",
+      "a3": "Kisa etaplarla ilerliyoruz: konsept, tasarim, gelistirme, yayina alma. Her adimda net guncellemeler alirsiniz.",
+      "q4": "Bu kucuk isletmeler icin uygun mu?",
+      "a4": "Evet. Paketlerimiz yerel isletmeler icin tasarlandi: net fiyatlar, hizli baslangic ve gercek taleplere odak.",
+      "q5": "Yayina alimdan sonra ne oluyor?",
+      "a5": "Yayindan sonra veriyi analiz ediyor, donusum noktalarini iyilestiriyor ve surekli optimizasyonla buyumeyi destekliyoruz.",
+      "desc": "Sure, maliyet, lansman sureci ve devam eden destek hakkindaki sik sorularin cevaplari."
     },
     "hero": {
       "bento": {
         "speed": {
-          "label": "Geschwindigkeit",
+          "label": "Hiz",
           "value": "90+ Lighthouse"
         },
         "seo": {
           "label": "SEO",
-          "value": "Technisches Fundament"
+          "value": "Teknik temel"
         },
         "leads": {
-          "label": "Anfragen",
-          "value": "Klare CTA und Formulare"
+          "label": "Talepler",
+          "value": "Net CTA ve formlar"
         },
         "support": {
-          "label": "Support",
-          "value": "Nach dem Launch"
+          "label": "Destek",
+          "value": "Yayina alimdan sonra"
         }
       }
     },
     "partnersSection": {
       "title": "Avantajlar ve odak alanlari",
-      "desc": "Welche Aufgaben wir abdecken und für welche lokalen Unternehmen wir am häufigsten Websites und Lead-Funnels umsetzen."
+      "desc": "Hangi ihtiyaclari cozdugumuz ve hangi yerel isletmeler icin en sik site ve lead hunisi kurdugumuz."
     },
     "marquee": {
-      "aria": "Branchen",
+      "aria": "Nisler",
       "title": "Calistigimiz sektorler",
-      "desc": "Wählen Sie eine Richtung und sehen Sie passende Stilbeispiele. So bauen wir schneller ein präzises Angebot für Ihr Unternehmen.",
+      "desc": "Bir yon secin ve uygun stil orneklerini inceleyin. Boylece isletmeniz icin daha hizli dogru teklif cikaririz.",
       "items": {
-        "handwerk": "Handwerk",
-        "praxen": "Praxen",
-        "werkstaetten": "Werkstätten",
-        "gastronomie": "Gastronomie",
-        "beauty": "Beauty",
-        "immobilien": "Immobilien",
-        "kanzlei": "Kanzlei",
+        "handwerk": "Ustalik",
+        "praxen": "Klinikler",
+        "werkstaetten": "Atolyeler",
+        "gastronomie": "Gastronomi",
+        "beauty": "Guzellik",
+        "immobilien": "Gayrimenkul",
+        "kanzlei": "Danismanlik",
         "fitness": "Fitness",
-        "reinigung": "Reinigung",
-        "transport": "Transport",
-        "coaching": "Coaching",
-        "bildung": "Bildung"
+        "reinigung": "Temizlik",
+        "transport": "Tasima",
+        "coaching": "Kocluk",
+        "bildung": "Egitim"
       }
     },
     "process": {
       "title": "Nasil calisiyoruz",
-      "desc": "Ein transparenter Prozess ohne unnötige Schritte: vom kurzen Briefing bis zu Launch und Optimierung mit klaren Deadlines.",
-      "aria": "Projektphasen",
-      "stage": "Phase",
+      "desc": "Gereksiz adimlar olmadan seffaf surec: kisa briften yayina alma ve optimizasyona kadar.",
+      "aria": "Calisma asamalari",
+      "stage": "Asama",
       "nav": {
-        "prev": "Zurück",
-        "next": "Weiter"
+        "prev": "Geri",
+        "next": "Ileri"
       },
       "steps": {
         "s1": {
-          "title": "15-Minuten-Call",
-          "text": "Wir klären Aufgabe, KPI und Deadline und stimmen sofort das Launch-Format ab."
+          "title": "15 dakikalik gorusme",
+          "text": "Hedefi, KPI ve teslim tarihini netlestiririz. Yayina alim formatini hemen belirleriz."
         },
         "s2": {
-          "title": "Prototyp in 48h",
-          "text": "Wir zeigen Seitenstruktur, CTA und Lead-Flow vor der Entwicklung."
+          "title": "48 saatte prototip",
+          "text": "Gelistirme oncesinde sayfa yapisi, CTA ve talep akislarini gosteririz."
         },
         "s3": {
-          "title": "Entwicklung in 7-14 Tagen",
-          "text": "Umsetzung, SEO-Basis, Integrationen und Analytics ohne unnötigen Overhead."
+          "title": "7-14 gunde gelistirme",
+          "text": "Kodlama, SEO temeli, entegrasyonlar ve analitik kurulumunu gereksiz karmasa olmadan yapariz."
         },
         "s4": {
-          "title": "Launch und Optimierung",
-          "text": "Wir gehen live, prüfen Conversion und liefern einen 30-Tage-Verbesserungsplan."
+          "title": "Yayina alma ve optimizasyon",
+          "text": "Canliya alir, donusumu kontrol eder ve 30 gunluk iyilestirme plani sunariz."
         }
       }
     },
     "projects": {
       "title": "Projeler / Vaka calismalari",
-      "desc": "Reale Aufgaben und erwartbare Ergebnisse ohne leere Versprechen. Hover auf einen Case für Live-Preview.",
+      "desc": "Bos vaatler olmadan gercek ihtiyaclar ve ongorulebilir sonuclar. Canli onizleme icin case kartinin uzerine gelin.",
       "cards": {
         "c1": {
-          "title": "Website für lokale Anfragen",
-          "description": "Landingpage mit Fokus auf Formular, Anruf und schnellen Mobile-Kontakt.",
-          "goal": "Ziel: mehr Anfragen ohne Budgeterhöhung"
+          "title": "Yerel talepler icin web sitesi",
+          "description": "Form, arama ve mobilde hizli iletisim odakli acilis sayfasi.",
+          "goal": "Hedef: butce artirmadan daha fazla talep"
         },
         "c2": {
-          "title": "Landingpage für Ads",
-          "description": "Separate Seite mit Tracking für Meta- und Google-Kampagnen.",
-          "goal": "Erwarteter Effekt: qualifiziertere Leads aus Werbung"
+          "title": "Reklam icin acilis sayfasi",
+          "description": "Meta/Google kampanyalari icin ayri ve takipli acilis sayfasi.",
+          "goal": "Beklenen etki: reklamlardan daha nitelikli lead"
         },
         "c3": {
-          "title": "Website für Praxis",
-          "description": "Klare Leistungsstruktur, FAQ und Online-Termin-Flow.",
-          "goal": "Ziel: mehr Terminbuchungen mit weniger Rückfragen"
+          "title": "Klinik icin web sitesi",
+          "description": "Net hizmet yapisi, SSS ve online randevu akis senaryosu.",
+          "goal": "Hedef: daha az geri donus sorusuyla daha fazla randevu"
         },
         "c4": {
-          "title": "Dashboard für Leads",
-          "description": "Internes Interface zur Lead-Bearbeitung und Statuskontrolle.",
-          "goal": "Erwarteter Effekt: schnellere Bearbeitung von Anfragen"
+          "title": "Lead yonetim paneli",
+          "description": "Lead isleme ve durum takibi icin dahili arayuz.",
+          "goal": "Beklenen etki: taleplerin daha hizli islenmesi"
         }
       }
     },
     "configurator": {
       "title": "Teklif olusturucu",
-      "desc": "Wählen Sie Projektparameter und erhalten Sie einen Startpreis sowie passende Support-Tarife.",
+      "desc": "Proje parametrelerini secin, kurulum maliyet araligini ve uygun destek tarifelerini gorun.",
       "labels": {
-        "goal": "Ziel",
-        "integrations": "Integrationen",
-        "ads": "Werbung",
-        "term": "Zeitrahmen",
-        "content": "Content-Level",
-        "languages": "Sprachen",
+        "goal": "Hedef",
+        "integrations": "Entegrasyonlar",
+        "ads": "Reklam",
+        "term": "Sure",
+        "content": "Icerik seviyesi",
+        "languages": "Diller",
         "hosting": "Hosting",
-        "domain": "Domain",
-        "pages": "Seiten",
+        "domain": "Alan adi",
+        "pages": "Sayfalar",
         "seo": "SEO"
       },
       "options": {
         "common": {
-          "other": "Andere"
+          "other": "Diger"
         },
         "goal": {
-          "leads": "Leads",
-          "calls": "Anrufe",
-          "booking": "Buchungen"
+          "leads": "Lead",
+          "calls": "Arama",
+          "booking": "Rezervasyon"
         },
         "integrations": {
-          "booking": "Buchung",
+          "booking": "Rezervasyon",
           "crm": "CRM",
-          "chat": "Chat",
-          "payments": "Zahlungen"
+          "chat": "Sohbet",
+          "payments": "Odeme"
         },
         "ads": {
-          "none": "Ohne Werbung",
+          "none": "Reklam yok",
           "meta": "Meta",
           "google": "Google"
         },
         "term": {
-          "up_to_7": "Bis 1 Woche",
-          "from_7_to_14": "7-14 Tage",
-          "from_14_to_21": "14-21 Tage",
-          "from_21_to_30": "21-30 Tage"
+          "up_to_7": "1 haftaya kadar",
+          "from_7_to_14": "7-14 gun",
+          "from_14_to_21": "14-21 gun",
+          "from_21_to_30": "21-30 gun"
         },
         "content": {
-          "has": "Texte vorhanden",
-          "copy": "Copywriting nötig"
+          "has": "Icerik hazir",
+          "copy": "Metin yazimi gerekli"
         },
         "languages": {
-          "basic": "1 Sprache",
-          "multi": "2+ Sprachen"
+          "basic": "1 dil",
+          "multi": "2+ dil"
         },
         "hosting": {
-          "shared": "Shared Hosting",
+          "shared": "Paylasimli hosting",
           "vps": "VPS",
-          "managed": "Managed Hosting"
+          "managed": "Yonetilen hosting"
         },
         "domain": {
-          "new_domain": "Neue Domain",
-          "existing_domain": "Domain vorhanden",
-          "transfer": "Domain-Transfer"
+          "new_domain": "Yeni alan adi",
+          "existing_domain": "Alan adi mevcut",
+          "transfer": "Alan adi tasima"
         },
         "pages": {
-          "one": "1 Seite",
-          "up_to_3": "Bis 3 Seiten",
-          "five_plus": "5+ Seiten"
+          "one": "1 sayfa",
+          "up_to_3": "3 sayfaya kadar",
+          "five_plus": "5+ sayfa"
         },
         "seo": {
-          "base": "SEO Base",
-          "extended": "SEO Extended"
+          "base": "SEO Temel",
+          "extended": "SEO Gelismis"
         }
       },
-      "reset": "Alles zurücksetzen",
-      "empty": "Wählen Sie mindestens eine Option in jedem Block. Mehrfachauswahl ist möglich; bei \"Andere\" wird keine Zusatzgebühr berechnet.",
-      "recommended": "Empfohlen:",
+      "reset": "Sifirla ve yeniden basla",
+      "empty": "Her bolumde en az bir secenek secin. Birden fazla secim yapabilirsiniz; \"Diger\" seceneginde ek ucret uygulanmaz.",
+      "recommended": "Onerilen:",
       "pack": {
         "starter": "Starter",
         "business": "Business"
       },
-      "launchPrice": "Startpreis:",
-      "supportMonthly": "Support / Monat",
-      "supportYearly": "Support / Jahr (-30%)",
-      "cta": "Kontaktanfrage und exakter Kostenvoranschlag",
+      "launchPrice": "Tahmini kurulum maliyeti:",
+      "supportMonthly": "Destek / ay",
+      "supportYearly": "Destek / yil (-30%)",
+      "cta": "Iletisim talebi ve net teklif al",
       "bullets": {
-        "prototype": "Prototyp und Struktur mit Fokus auf Anfragen",
-        "goal": "Ziele: {{value}}",
-        "integrations": "Integrationen: {{value}}",
-        "term": "Zeitrahmen: {{value}}",
+        "prototype": "Lead odakli prototip ve yapi",
+        "goal": "Hedefler: {{value}}",
+        "integrations": "Entegrasyonlar: {{value}}",
+        "term": "Sure: {{value}}",
         "hosting": "Hosting: {{value}}",
-        "domain": "Domain: {{value}}",
-        "pages": "Seiten: {{value}}",
-        "analytics": "GA4 und Event-Tracking für Formulare/Kontakte",
-        "copy_true": "Unterstützung bei Texten und Offer",
-        "copy_false": "Wir arbeiten mit Ihren vorhandenen Texten",
-        "market_note": "Orientierungspreis unter marktüblichem Niveau für kleine Unternehmen"
+        "domain": "Alan adi: {{value}}",
+        "pages": "Sayfalar: {{value}}",
+        "analytics": "Formlar/olaylar icin GA4 ve event takibi",
+        "copy_true": "Metin ve teklif icerigi konusunda destek",
+        "copy_false": "Hazir metinlerinizle calisiriz",
+        "market_note": "Kucuk isletmeler icin piyasa ortalamasinin altinda tahmini fiyat"
       },
       "brief": {
-        "title": "Brief aus dem Angebots-Konfigurator:",
-        "goal": "Ziel: {{value}}",
-        "integrations": "Integrationen: {{value}}",
-        "ads": "Werbung: {{value}}",
-        "term": "Zeitrahmen: {{value}}",
-        "content": "Content: {{value}}",
-        "languages": "Sprachen: {{value}}",
+        "title": "Teklif olusturucudan brif:",
+        "goal": "Hedef: {{value}}",
+        "integrations": "Entegrasyonlar: {{value}}",
+        "ads": "Reklam: {{value}}",
+        "term": "Sure: {{value}}",
+        "content": "Icerik: {{value}}",
+        "languages": "Diller: {{value}}",
         "hosting": "Hosting: {{value}}",
-        "domain": "Domain: {{value}}",
-        "pages": "Seiten: {{value}}",
+        "domain": "Alan adi: {{value}}",
+        "pages": "Sayfalar: {{value}}",
         "seo": "SEO: {{value}}",
-        "launch_price": "Startpreis: {{value}}",
-        "support_monthly": "Support / Monat: {{value}}",
-        "support_yearly": "Support / Jahr (-30%): {{value}}"
+        "launch_price": "Tahmini kurulum maliyeti: {{value}}",
+        "support_monthly": "Destek / ay: {{value}}",
+        "support_yearly": "Destek / yil (-30%): {{value}}"
       }
     },
     "trust": {
       "title": "14 gunde alacaklariniz",
-      "desc": "Konkrete Start-Ergebnisse: eine anfrageorientierte Website, eingerichtete Analytics und ein Plan für weiteres Wachstum.",
+      "desc": "Baslangicta somut ciktilar: talep odakli web sitesi, kurulu analitik ve devam buyume plani.",
       "deliverables": {
         "d1": {
-          "title": "Prototyp in 48h",
-          "text": "Wir zeigen Struktur und CTA vor dem Coding, damit Entscheidungen planbar bleiben."
+          "title": "48 saatte prototip",
+          "text": "Kararlar ongorulebilir olsun diye koddan once yapi ve CTA gorunur olur."
         },
         "d2": {
-          "title": "Website für Anfragen",
-          "text": "Formular, Anruf, Messenger und mobile Version für schnelle Kontaktaufnahme."
+          "title": "Talep odakli web sitesi",
+          "text": "Form, arama, mesajlasma ve hizli erisim icin mobil surum."
         },
         "d3": {
-          "title": "Analytics und Tracking",
-          "text": "GA4 plus Events, damit sichtbar wird, wo Anfragen entstehen."
+          "title": "Analitik ve takip",
+          "text": "GA4 ve olaylar ile taleplerin hangi kanaldan geldigi net gorulur."
         },
         "d4": {
-          "title": "30-Tage-Optimierungsplan",
-          "text": "Klare nächste Schritte zur Conversion-Steigerung nach Launch."
+          "title": "30 gunluk optimizasyon plani",
+          "text": "Yayindan sonra donusumu artiracak net sonraki adimlar."
         }
       }
     }

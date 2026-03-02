@@ -14,26 +14,26 @@
     "bg": "Български"
   },
   "common": {
-    "projectRequest": "Projekt anfragen",
-    "viewPrices": "Preise ansehen",
-    "cancel": "Abbrechen"
+    "projectRequest": "Richiedi progetto",
+    "viewPrices": "Visualizza i prezzi",
+    "cancel": "Annulla"
   },
   "header": {
-    "menu": "Menu",
-    "menuAria": "Navigationsmenü öffnen",
-    "services": "Services",
-    "preise": "Preise",
-    "referenzen": "Referenzen",
-    "ueberUns": "Über uns",
-    "kontakt": "Kontakt"
+    "menu": "Menù",
+    "menuAria": "Apre il menu di navigazione",
+    "services": "Servizi",
+    "preise": "prezzi",
+    "referenzen": "Riferimenti",
+    "ueberUns": "Chi siamo",
+    "kontakt": "Contatto"
   },
   "footer": {
-    "tagline": "VS Studio · Websites, Web-Apps, Ads & Automationen",
-    "impressum": "Impressum",
-    "datenschutz": "Datenschutz",
-    "agb": "AGB",
-    "cookies": "Cookies",
-    "cookieSettings": "Cookie-Einstellungen",
+    "tagline": "VS Studio · Siti web, app web, annunci e automazioni",
+    "impressum": "Impronta",
+    "datenschutz": "Protezione dei dati",
+    "agb": "Termini e condizioni",
+    "cookies": "biscotti",
+    "cookieSettings": "Impostazioni dei cookie",
     "blog": "Blog"
   },
   "cookie": {
@@ -50,313 +50,313 @@
     "saveSelection": "Auswahl speichern"
   },
   "home": {
-    "heroTitle": "Websites, die Anfragen bringen statt nur gut aussehen.",
-    "heroSubtitle": "Klare Positionierung, schnelle Umsetzung und transparente Pakete für lokale Dienstleister in Deutschland.",
-    "toFaq": "Zum FAQ",
-    "partnersTitle": "Highlights, Zielgruppen und Leistungen",
+    "heroTitle": "Siti web che attirano richieste invece di limitarsi ad avere un bell'aspetto.",
+    "heroSubtitle": "Posizionamento chiaro, implementazione rapida e pacchetti trasparenti per i fornitori di servizi locali in Germania.",
+    "toFaq": "Vai alle domande frequenti",
+    "partnersTitle": "Punti salienti, gruppi target e servizi",
     "groups": {
-      "highlights": "Highlights",
-      "forWhom": "Für wen",
-      "services": "Leistungen"
+      "highlights": "In evidenza",
+      "forWhom": "Per chi",
+      "services": "Servizi"
     },
     "partners": {
       "fastLoad": {
-        "title": "Schnell geladen",
-        "desc": "Seite lädt in Sekunden"
+        "title": "Caricato velocemente",
+        "desc": "La pagina viene caricata in pochi secondi"
       },
       "moreLeads": {
-        "title": "Mehr Anfragen",
-        "desc": "Mehr Kontakte über Formulare"
+        "title": "Altre domande",
+        "desc": "Più contatti tramite moduli"
       },
       "clearPrices": {
-        "title": "Klare Preise",
-        "desc": "Du kennst Kosten im Voraus"
+        "title": "Prezzi chiari",
+        "desc": "Conosci i costi in anticipo"
       },
       "personalHelp": {
-        "title": "Persönliche Hilfe",
-        "desc": "Direkter Support ohne Warteschlange"
+        "title": "Aiuto personale",
+        "desc": "Supporto diretto senza aspettare in fila"
       },
       "handwerker": {
-        "title": "Handwerker",
-        "desc": "Anfragen pro Stadt und Leistung"
+        "title": "artigiano",
+        "desc": "Richieste per città e servizio"
       },
       "praxen": {
-        "title": "Praxen",
-        "desc": "Patienten finden schneller Termine"
+        "title": "pratiche",
+        "desc": "I pazienti trovano gli appuntamenti più rapidamente"
       },
       "werkstaetten": {
-        "title": "Werkstätten",
-        "desc": "Klare Service-Seiten mit Tracking"
+        "title": "laboratori",
+        "desc": "Cancella pagine di servizio con tracciamento"
       },
       "localServices": {
-        "title": "Lokale Services",
-        "desc": "Mehr Sichtbarkeit vor Ort"
+        "title": "Servizi locali",
+        "desc": "Maggiore visibilità sul posto"
       },
       "websites": {
-        "title": "Websites",
-        "desc": "Modern, schnell, mobil optimiert"
+        "title": "siti web",
+        "desc": "Moderno, veloce, ottimizzato per dispositivi mobili"
       },
       "webApps": {
-        "title": "Web-Apps",
-        "desc": "Tools für Team und Kunden"
+        "title": "Applicazioni web",
+        "desc": "Strumenti per team e clienti"
       },
       "aiIntegration": {
-        "title": "AI Integration",
-        "desc": "Chatbot für Fragen und Leads"
+        "title": "Integrazione IA",
+        "desc": "Chatbot per domande e contatti"
       },
       "socialMedia": {
-        "title": "Social Media",
-        "desc": "Website + Instagram/Meta verbunden"
+        "title": "Social media",
+        "desc": "Sito web + Instagram/Meta collegati"
       },
       "socialAds": {
-        "title": "Social Ads",
-        "desc": "Gezielte Werbung mit messbaren Ergebnissen"
+        "title": "Annunci sociali",
+        "desc": "Pubblicità mirata con risultati misurabili"
       }
     },
-    "trustTitle": "Trust mit konkreten Ergebnissen",
-    "trustDesc1": "mehr Kontaktanfragen in 60 Tagen.",
-    "trustDesc2": "geringere Cost-per-Lead nach Tracking-Fix.",
-    "trustDesc3": "durchschnittliche Ladezeit auf Mobil.",
-    "faqTitle": "FAQ",
+    "trustTitle": "Fiducia con risultati concreti",
+    "trustDesc1": "più richieste di contatto in 60 giorni.",
+    "trustDesc2": "costo per lead ridotto dopo la correzione del monitoraggio.",
+    "trustDesc3": "tempo di caricamento medio su dispositivo mobile.",
+    "faqTitle": "Domande frequenti",
     "faq": {
-      "q1": "Wie schnell könnt ihr starten?",
-      "a1": "In der Regel starten wir innerhalb von 3-5 Werktagen. Direkt nach deiner Anfrage bekommst du einen kurzen Plan mit den ersten Schritten.",
-      "q2": "Was brauche ich als Kunde am Anfang?",
-      "a2": "Nur Basisinfos zu deinem Angebot, Zielgruppe und Kontaktwegen. Wir helfen dir dann bei Struktur, Texten und Prioritäten.",
-      "q3": "Wie läuft die Zusammenarbeit ab?",
-      "a3": "Wir arbeiten in kurzen Etappen: Konzept, Design, Umsetzung, Launch. Du bekommst klare Updates, damit du immer weißt, was als Nächstes passiert.",
-      "q4": "Ist das für kleine Unternehmen geeignet?",
-      "a4": "Ja. Unsere Pakete sind bewusst für lokale Betriebe aufgebaut: klare Preise, schneller Start und Fokus auf echte Anfragen statt nur Optik.",
-      "q5": "Was passiert nach dem Launch?",
-      "a5": "Nach dem Launch prüfen wir Daten, verbessern Conversion-Punkte und unterstützen dich beim Feinschliff, damit die Seite dauerhaft besser performt.",
-      "desc": "Risposte alle domande frequenti su tempi, costi, lancio e supporto continuo."
+      "q1": "Quanto velocemente puoi iniziare?",
+      "a1": "Di solito iniziamo entro 3-5 giorni lavorativi. Subito dopo la tua richiesta riceverai un breve piano con i primi passi.",
+      "q2": "Di cosa ho bisogno come cliente all'inizio?",
+      "a2": "Solo informazioni di base sulla tua offerta, gruppo target e canali di contatto. Ti aiuteremo quindi con la struttura, i testi e le priorità.",
+      "q3": "Come funziona la collaborazione?",
+      "a3": "Lavoriamo in fasi brevi: ideazione, progettazione, realizzazione, lancio. Riceverai aggiornamenti chiari in modo da sapere sempre cosa succederà dopo.",
+      "q4": "È adatto alle piccole imprese?",
+      "a4": "Sì. I nostri pacchetti sono appositamente pensati per le imprese locali: prezzi chiari, avvio rapido e attenzione alle richieste reali anziché alla semplice ottica.",
+      "q5": "Cosa succede dopo il lancio?",
+      "a5": "Dopo il lancio controlliamo i dati, miglioriamo i punti di conversione e ti supportiamo nella messa a punto in modo che il sito funzioni meglio a lungo termine.",
+      "desc": "Risposte alle domande più frequenti su tempistiche, costi, processo di lancio e supporto continuo."
     },
     "hero": {
       "bento": {
         "speed": {
-          "label": "Geschwindigkeit",
-          "value": "90+ Lighthouse"
+          "label": "velocità",
+          "value": "90+ Faro"
         },
         "seo": {
           "label": "SEO",
-          "value": "Technisches Fundament"
+          "value": "Fondamenti tecnici"
         },
         "leads": {
-          "label": "Anfragen",
-          "value": "Klare CTA und Formulare"
+          "label": "domande",
+          "value": "Cancella CTA e moduli"
         },
         "support": {
-          "label": "Support",
-          "value": "Nach dem Launch"
+          "label": "Supporto",
+          "value": "Dopo il lancio"
         }
       }
     },
     "partnersSection": {
-      "title": "Vantaggi e aree di lavoro",
-      "desc": "Welche Aufgaben wir abdecken und für welche lokalen Unternehmen wir am häufigsten Websites und Lead-Funnels umsetzen."
+      "title": "Vantaggi e ambiti di applicazione",
+      "desc": "Quali attività copriamo e per quali aziende locali implementiamo più spesso siti Web e canalizzazioni."
     },
     "marquee": {
-      "aria": "Branchen",
-      "title": "Settori con cui lavoriamo",
-      "desc": "Wählen Sie eine Richtung und sehen Sie passende Stilbeispiele. So bauen wir schneller ein präzises Angebot für Ihr Unternehmen.",
+      "aria": "Industrie",
+      "title": "Industrie con cui lavoriamo",
+      "desc": "Scegli una direzione e guarda esempi di stile adatti. Ciò significa che possiamo costruire più rapidamente un'offerta precisa per la tua azienda.",
       "items": {
-        "handwerk": "Handwerk",
-        "praxen": "Praxen",
-        "werkstaetten": "Werkstätten",
-        "gastronomie": "Gastronomie",
-        "beauty": "Beauty",
-        "immobilien": "Immobilien",
-        "kanzlei": "Kanzlei",
-        "fitness": "Fitness",
-        "reinigung": "Reinigung",
-        "transport": "Transport",
-        "coaching": "Coaching",
-        "bildung": "Bildung"
+        "handwerk": "Artigianato",
+        "praxen": "pratiche",
+        "werkstaetten": "laboratori",
+        "gastronomie": "Gastronomia",
+        "beauty": "Bellezza",
+        "immobilien": "Immobiliare",
+        "kanzlei": "studio legale",
+        "fitness": "Forma fisica",
+        "reinigung": "Pulizia",
+        "transport": "Trasporti",
+        "coaching": "Allenamento",
+        "bildung": "Istruzione"
       }
     },
     "process": {
       "title": "Come lavoriamo",
-      "desc": "Ein transparenter Prozess ohne unnötige Schritte: vom kurzen Briefing bis zu Launch und Optimierung mit klaren Deadlines.",
-      "aria": "Projektphasen",
-      "stage": "Phase",
+      "desc": "Un processo trasparente senza passaggi inutili: da un breve briefing al lancio e ottimizzazione con scadenze chiare.",
+      "aria": "Fasi del progetto",
+      "stage": "fase",
       "nav": {
-        "prev": "Zurück",
-        "next": "Weiter"
+        "prev": "Indietro",
+        "next": "Avanti"
       },
       "steps": {
         "s1": {
-          "title": "15-Minuten-Call",
-          "text": "Wir klären Aufgabe, KPI und Deadline und stimmen sofort das Launch-Format ab."
+          "title": "Chiamata di 15 minuti",
+          "text": "Chiariamo compito, KPI e scadenza e concordiamo immediatamente il formato di lancio."
         },
         "s2": {
-          "title": "Prototyp in 48h",
-          "text": "Wir zeigen Seitenstruktur, CTA und Lead-Flow vor der Entwicklung."
+          "title": "Prototipo in 48 ore",
+          "text": "Mostriamo la struttura della pagina, il CTA e il flusso dei lead prima dello sviluppo."
         },
         "s3": {
-          "title": "Entwicklung in 7-14 Tagen",
-          "text": "Umsetzung, SEO-Basis, Integrationen und Analytics ohne unnötigen Overhead."
+          "title": "Sviluppo in 7-14 giorni",
+          "text": "Implementazione, basi SEO, integrazioni e analisi senza costi inutili."
         },
         "s4": {
-          "title": "Launch und Optimierung",
-          "text": "Wir gehen live, prüfen Conversion und liefern einen 30-Tage-Verbesserungsplan."
+          "title": "Lancio e ottimizzazione",
+          "text": "Andiamo in diretta, controlliamo la conversione e forniamo un piano di miglioramento di 30 giorni."
         }
       }
     },
     "projects": {
-      "title": "Progetti / Case study",
-      "desc": "Reale Aufgaben und erwartbare Ergebnisse ohne leere Versprechen. Hover auf einen Case für Live-Preview.",
+      "title": "Progetti/Casi di studio",
+      "desc": "Compiti reali e risultati attesi senza promesse vuote. Passa il mouse su una custodia per l'anteprima dal vivo.",
       "cards": {
         "c1": {
-          "title": "Website für lokale Anfragen",
-          "description": "Landingpage mit Fokus auf Formular, Anruf und schnellen Mobile-Kontakt.",
-          "goal": "Ziel: mehr Anfragen ohne Budgeterhöhung"
+          "title": "Sito web di richiesta locale",
+          "description": "Landing page con focus su moduli, chiamate e contatti mobili rapidi.",
+          "goal": "Obiettivo: più richieste senza aumentare il budget"
         },
         "c2": {
-          "title": "Landingpage für Ads",
-          "description": "Separate Seite mit Tracking für Meta- und Google-Kampagnen.",
-          "goal": "Erwarteter Effekt: qualifiziertere Leads aus Werbung"
+          "title": "Pagina di destinazione per gli annunci",
+          "description": "Pagina separata con monitoraggio per campagne Meta e Google.",
+          "goal": "Effetto atteso: lead più qualificati dalla pubblicità"
         },
         "c3": {
-          "title": "Website für Praxis",
-          "description": "Klare Leistungsstruktur, FAQ und Online-Termin-Flow.",
-          "goal": "Ziel: mehr Terminbuchungen mit weniger Rückfragen"
+          "title": "Sito web per esercitarsi",
+          "description": "Struttura chiara dei servizi, domande frequenti e flusso degli appuntamenti online.",
+          "goal": "Obiettivo: più prenotazioni di appuntamenti con meno domande"
         },
         "c4": {
-          "title": "Dashboard für Leads",
-          "description": "Internes Interface zur Lead-Bearbeitung und Statuskontrolle.",
-          "goal": "Erwarteter Effekt: schnellere Bearbeitung von Anfragen"
+          "title": "Dashboard per i lead",
+          "description": "Interfaccia interna per l'elaborazione dei lead e il controllo dello stato.",
+          "goal": "Effetto atteso: elaborazione più rapida delle richieste"
         }
       }
     },
     "configurator": {
-      "title": "Configuratore offerta",
-      "desc": "Wählen Sie Projektparameter und erhalten Sie einen Startpreis sowie passende Support-Tarife.",
+      "title": "Configuratore di offerte",
+      "desc": "Seleziona i parametri del progetto e ricevi un prezzo iniziale e tariffe di supporto adeguate.",
       "labels": {
-        "goal": "Ziel",
-        "integrations": "Integrationen",
-        "ads": "Werbung",
-        "term": "Zeitrahmen",
+        "goal": "Obiettivo",
+        "integrations": "Integrazioni",
+        "ads": "Pubblicità",
+        "term": "intervallo di tempo",
         "content": "Content-Level",
-        "languages": "Sprachen",
-        "hosting": "Hosting",
+        "languages": "lingue",
+        "hosting": "Ospitalità",
         "domain": "Domain",
-        "pages": "Seiten",
+        "pages": "pagine",
         "seo": "SEO"
       },
       "options": {
         "common": {
-          "other": "Andere"
+          "other": "Altri"
         },
         "goal": {
-          "leads": "Leads",
-          "calls": "Anrufe",
-          "booking": "Buchungen"
+          "leads": "Conduce",
+          "calls": "chiama",
+          "booking": "prenotazioni"
         },
         "integrations": {
-          "booking": "Buchung",
+          "booking": "prenotazione",
           "crm": "CRM",
-          "chat": "Chat",
-          "payments": "Zahlungen"
+          "chat": "Chatta",
+          "payments": "pagamenti"
         },
         "ads": {
-          "none": "Ohne Werbung",
+          "none": "Senza pubblicità",
           "meta": "Meta",
           "google": "Google"
         },
         "term": {
-          "up_to_7": "Bis 1 Woche",
-          "from_7_to_14": "7-14 Tage",
-          "from_14_to_21": "14-21 Tage",
-          "from_21_to_30": "21-30 Tage"
+          "up_to_7": "Fino a 1 settimana",
+          "from_7_to_14": "7-14 giorni",
+          "from_14_to_21": "14-21 giorni",
+          "from_21_to_30": "21-30 giorni"
         },
         "content": {
-          "has": "Texte vorhanden",
-          "copy": "Copywriting nötig"
+          "has": "Testi disponibili",
+          "copy": "Copywriting richiesto"
         },
         "languages": {
-          "basic": "1 Sprache",
-          "multi": "2+ Sprachen"
+          "basic": "1 lingua",
+          "multi": "2+ lingue"
         },
         "hosting": {
-          "shared": "Shared Hosting",
+          "shared": "Hosting condiviso",
           "vps": "VPS",
-          "managed": "Managed Hosting"
+          "managed": "Hosting gestito"
         },
         "domain": {
-          "new_domain": "Neue Domain",
+          "new_domain": "Nuovo dominio",
           "existing_domain": "Domain vorhanden",
-          "transfer": "Domain-Transfer"
+          "transfer": "Trasferimento dominio"
         },
         "pages": {
-          "one": "1 Seite",
-          "up_to_3": "Bis 3 Seiten",
-          "five_plus": "5+ Seiten"
+          "one": "1 pagina",
+          "up_to_3": "Fino a 3 pagine",
+          "five_plus": "5+ pagine"
         },
         "seo": {
-          "base": "SEO Base",
-          "extended": "SEO Extended"
+          "base": "Base SEO",
+          "extended": "SEO esteso"
         }
       },
-      "reset": "Alles zurücksetzen",
-      "empty": "Wählen Sie mindestens eine Option in jedem Block. Mehrfachauswahl ist möglich; bei \"Andere\" wird keine Zusatzgebühr berechnet.",
-      "recommended": "Empfohlen:",
+      "reset": "Resetta tutto",
+      "empty": "Scegli almeno un'opzione in ciascun blocco. È possibile la selezione multipla; Per “Altro” non viene addebitato alcun costo aggiuntivo.",
+      "recommended": "Consigliato:",
       "pack": {
-        "starter": "Starter",
-        "business": "Business"
+        "starter": "Motorino d'avviamento",
+        "business": "Affari"
       },
-      "launchPrice": "Startpreis:",
-      "supportMonthly": "Support / Monat",
-      "supportYearly": "Support / Jahr (-30%)",
-      "cta": "Kontaktanfrage und exakter Kostenvoranschlag",
+      "launchPrice": "Prezzo di partenza:",
+      "supportMonthly": "Supporto/mese",
+      "supportYearly": "Supporto/anno (-30%)",
+      "cta": "Richiesta di contatto e preventivo esatto dei costi",
       "bullets": {
-        "prototype": "Prototyp und Struktur mit Fokus auf Anfragen",
-        "goal": "Ziele: {{value}}",
-        "integrations": "Integrationen: {{value}}",
-        "term": "Zeitrahmen: {{value}}",
-        "hosting": "Hosting: {{value}}",
-        "domain": "Domain: {{value}}",
-        "pages": "Seiten: {{value}}",
-        "analytics": "GA4 und Event-Tracking für Formulare/Kontakte",
-        "copy_true": "Unterstützung bei Texten und Offer",
-        "copy_false": "Wir arbeiten mit Ihren vorhandenen Texten",
-        "market_note": "Orientierungspreis unter marktüblichem Niveau für kleine Unternehmen"
+        "prototype": "Prototipo e struttura con focus sulle richieste",
+        "goal": "Gol: {{value}}",
+        "integrations": "Integrazioni: {{value}}",
+        "term": "Periodo: {{value}}",
+        "hosting": "Ospitalità: {{value}}",
+        "domain": "Dominio: {{value}}",
+        "pages": "Pagine: {{value}}",
+        "analytics": "GA4 e monitoraggio degli eventi per moduli/contatti",
+        "copy_true": "Supporto con testi e offerte",
+        "copy_false": "Lavoriamo con i vostri testi esistenti",
+        "market_note": "Prezzo indicativo inferiore al livello di mercato per le piccole imprese"
       },
       "brief": {
-        "title": "Brief aus dem Angebots-Konfigurator:",
-        "goal": "Ziel: {{value}}",
-        "integrations": "Integrationen: {{value}}",
-        "ads": "Werbung: {{value}}",
-        "term": "Zeitrahmen: {{value}}",
-        "content": "Content: {{value}}",
-        "languages": "Sprachen: {{value}}",
-        "hosting": "Hosting: {{value}}",
-        "domain": "Domain: {{value}}",
-        "pages": "Seiten: {{value}}",
+        "title": "Lettera del configuratore dell'offerta:",
+        "goal": "Obiettivo: {{value}}",
+        "integrations": "Integrazioni: {{value}}",
+        "ads": "Pubblicità: {{value}}",
+        "term": "Periodo: {{value}}",
+        "content": "Contenuto: {{value}}",
+        "languages": "Lingue: {{value}}",
+        "hosting": "Ospitalità: {{value}}",
+        "domain": "Dominio: {{value}}",
+        "pages": "Pagine: {{value}}",
         "seo": "SEO: {{value}}",
-        "launch_price": "Startpreis: {{value}}",
-        "support_monthly": "Support / Monat: {{value}}",
-        "support_yearly": "Support / Jahr (-30%): {{value}}"
+        "launch_price": "Prezzo di partenza: {{value}}",
+        "support_monthly": "Supporto/mese: {{value}}",
+        "support_yearly": "Supporto/anno (-30%): {{value}}"
       }
     },
     "trust": {
       "title": "Cosa ottieni in 14 giorni",
-      "desc": "Konkrete Start-Ergebnisse: eine anfrageorientierte Website, eingerichtete Analytics und ein Plan für weiteres Wachstum.",
+      "desc": "Risultati iniziali concreti: un sito web orientato alle query, un'impostazione analitica e un piano per un'ulteriore crescita.",
       "deliverables": {
         "d1": {
-          "title": "Prototyp in 48h",
-          "text": "Wir zeigen Struktur und CTA vor dem Coding, damit Entscheidungen planbar bleiben."
+          "title": "Prototipo in 48 ore",
+          "text": "Mostriamo la struttura e il CTA prima della codifica in modo che le decisioni possano essere pianificate."
         },
         "d2": {
-          "title": "Website für Anfragen",
-          "text": "Formular, Anruf, Messenger und mobile Version für schnelle Kontaktaufnahme."
+          "title": "Sito web per domande",
+          "text": "Modulo, chiamata, messenger e versione mobile per un contatto rapido."
         },
         "d3": {
-          "title": "Analytics und Tracking",
-          "text": "GA4 plus Events, damit sichtbar wird, wo Anfragen entstehen."
+          "title": "Analisi e monitoraggio",
+          "text": "GA4 plus events, in modo che sia visibile dove sorgono domande."
         },
         "d4": {
-          "title": "30-Tage-Optimierungsplan",
-          "text": "Klare nächste Schritte zur Conversion-Steigerung nach Launch."
+          "title": "Piano di ottimizzazione di 30 giorni",
+          "text": "Cancella i passaggi successivi per aumentare le conversioni dopo il lancio."
         }
       }
     }
