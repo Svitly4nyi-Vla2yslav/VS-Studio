@@ -408,24 +408,129 @@
     "ctaButton": "Angebot erhalten"
   },
   "pricing": {
-    "h1": "Preise ohne Überraschungen.",
-    "subtitle": "Pakete mit klaren Inhalten, Timing und Support-Level.",
+    "hero": {
+      "titleLine1": "Website i Lead System",
+      "titleLine2": "dla lokalnych firm",
+      "titleLine3": "od EUR 690",
+      "subtitle": "Premiumowy setup dla lokalnych firm w Niemczech: jasny lejek, mierzalne leady i sprawne przekazanie do sprzedazy.",
+      "cta": "Bezplatna pierwsza konsultacja",
+      "metrics": {
+        "leadVolume": "Wolumen leadow",
+        "qualifiedLeads": "Leady kwalifikowane",
+        "costPerLead": "Koszt leada"
+      },
+      "funnel": {
+        "traffic": "Ruch",
+        "landing": "Landing",
+        "leads": "Leady",
+        "crm": "CRM",
+        "sales": "Sprzedaz"
+      }
+    },
+    "flow": {
+      "title": "Przeplyw Lead System",
+      "steps": {
+        "traffic": "Ruch",
+        "landing": "Landing Page",
+        "capture": "Pozyskanie leadow",
+        "crm": "CRM",
+        "sales": "Sprzedaz"
+      }
+    },
     "packages": {
-      "starter": "Starter",
-      "business": "Business",
-      "growth": "Growth"
+      "title": "Pakiety cenowe",
+      "badge": "Polecane",
+      "coreTitle": "Core",
+      "plusTitle": "Plus",
+      "outcomeLabel": "Wynik:",
+      "starter": {
+        "name": "Starter",
+        "desc": "Dla malych lokalnych firm z szybkim startem.",
+        "price": "od EUR 690",
+        "range": "zwykle EUR 690-790",
+        "core": [
+          "Landing Page",
+          "Formularz lead + formularz kontaktowy",
+          "GA4 + podstawowa konfiguracja SEO"
+        ],
+        "plus": [
+          "Optymalizacja mobilna",
+          "Podstawowy tracking DSGVO"
+        ],
+        "outcome": "Stabilny kanal pierwszych jakosciowych zapytan."
+      },
+      "business": {
+        "name": "Business",
+        "desc": "Dla zespolow z wieloma uslugami i aktywna sprzedaza.",
+        "price": "od EUR 1.290",
+        "range": "zwykle EUR 1.290-1.490",
+        "core": [
+          "Strona wielopodstronowa do 5 stron",
+          "Integracja CRM + tracking leadow",
+          "Dashboard analityczny"
+        ],
+        "plus": [
+          "Struktura SEO dla uslug",
+          "Optymalizacja konwersji"
+        ],
+        "outcome": "Przewidywalny pipeline leadow z jasna analityka."
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Dla wzrostu z website, ads i automatyzacja.",
+        "price": "od EUR 2.490",
+        "range": "zwykle EUR 2.490-2.990",
+        "core": [
+          "Website + Ads setup",
+          "Google Ads lub Meta Ads",
+          "Dashboard marketingowy + tracking"
+        ],
+        "plus": [
+          "Kwalifikacja leadow AI",
+          "Automation flows"
+        ],
+        "outcome": "Wiecej popytu przy kontrolowanym koszcie leada."
+      }
     },
-    "activeProjects": "Aktive Projekte:",
-    "tableTitle": "Leistungstabelle",
-    "table": {
-      "aiFeatures": "AI Features",
-      "aiValue": "Starter / Business / Growth",
-      "socialIntegration": "Social Integration",
-      "socialValue": "Business / Growth",
-      "socialAdsSetup": "Social Ads Setup",
-      "adsValue": "Growth"
+    "comparison": {
+      "title": "Porownanie funkcji",
+      "yes": "Tak",
+      "no": "-",
+      "headers": {
+        "feature": "Funkcja",
+        "starter": "Starter",
+        "business": "Business",
+        "pro": "Pro"
+      },
+      "rows": {
+        "landing": "Landing Page",
+        "multi": "Strona wielopodstronowa",
+        "crm": "Integracja CRM",
+        "ai": "Kwalifikacja leadow AI",
+        "ads": "Konfiguracja Ads",
+        "dashboard": "Dashboard analityczny"
+      }
     },
-    "nextStep": "Nächster Schritt"
+    "trust": {
+      "title": "Zaufanie i zakres",
+      "delivery": {
+        "title": "Wdrozenie 7-14 dni",
+        "desc": "Jasny harmonogram i stale etapy akceptacji."
+      },
+      "support": {
+        "title": "Wsparcie po wdrozeniu",
+        "desc": "Pomoc przy przekazaniu, ustawieniu zespolu i dopracowaniu."
+      },
+      "dsgvo": {
+        "title": "Tracking DSGVO",
+        "desc": "Poprawny pomiar z consent i zgodnoscia z zasadami prywatnosci."
+      }
+    },
+    "final": {
+      "title": "Zacznij od bezplatnej pierwszej konsultacji.",
+      "subtitle": "W 30 minut pokazemy, ktory pakiet pasuje i jak zbudowac Twoj lead system.",
+      "cta": "Bezplatna pierwsza konsultacja"
+    }
   },
   "references": {
     "h1": "Referenzen mit messbarem Wachstum.",

@@ -408,24 +408,129 @@
     "ctaButton": "Отримати пропозицію"
   },
   "pricing": {
-    "h1": "Ціни без сюрпризів.",
-    "subtitle": "Пакети з чітким наповненням, таймінгом і рівнем підтримки.",
+    "hero": {
+      "titleLine1": "Вебсайт та Lead System",
+      "titleLine2": "для локального бізнесу",
+      "titleLine3": "від EUR 690",
+      "subtitle": "Преміальний формат для локального бізнесу в Німеччині: чіткий funnel, вимірювані ліди та зрозуміла передача у відділ продажу.",
+      "cta": "Безкоштовна перша консультація",
+      "metrics": {
+        "leadVolume": "Обсяг лідів",
+        "qualifiedLeads": "Якісні ліди",
+        "costPerLead": "Вартість одного ліда"
+      },
+      "funnel": {
+        "traffic": "Трафік",
+        "landing": "Лендінг",
+        "leads": "Ліди",
+        "crm": "CRM",
+        "sales": "Продажі"
+      }
+    },
+    "flow": {
+      "title": "Потік Lead System",
+      "steps": {
+        "traffic": "Трафік",
+        "landing": "Лендінгова сторінка",
+        "capture": "Збір лідів",
+        "crm": "CRM",
+        "sales": "Продажі"
+      }
+    },
     "packages": {
-      "starter": "Starter",
-      "business": "Business",
-      "growth": "Growth"
+      "title": "Пакети цін",
+      "badge": "Рекомендовано",
+      "coreTitle": "Основне",
+      "plusTitle": "Додатково",
+      "outcomeLabel": "Результат:",
+      "starter": {
+        "name": "Starter",
+        "desc": "Для малого локального бізнесу зі швидким запуском.",
+        "price": "від EUR 690",
+        "range": "зазвичай EUR 690-790",
+        "core": [
+          "Лендінгова сторінка",
+          "Lead-форма + контактна форма",
+          "GA4 + базове SEO-налаштування"
+        ],
+        "plus": [
+          "Мобільна оптимізація",
+          "Базовий DSGVO tracking"
+        ],
+        "outcome": "Стабільний канал перших якісних заявок."
+      },
+      "business": {
+        "name": "Business",
+        "desc": "Для команд з кількома послугами та активним продажем.",
+        "price": "від EUR 1.290",
+        "range": "зазвичай EUR 1.290-1.490",
+        "core": [
+          "Багатосторінковий сайт до 5 сторінок",
+          "CRM-інтеграція + lead tracking",
+          "Аналітичний dashboard"
+        ],
+        "plus": [
+          "SEO-структура за послугами",
+          "Оптимізація конверсії"
+        ],
+        "outcome": "Прогнозований потік лідів з чіткою аналітикою."
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "Для зростання через сайт, рекламу та автоматизацію.",
+        "price": "від EUR 2.490",
+        "range": "зазвичай EUR 2.490-2.990",
+        "core": [
+          "Website + Ads setup",
+          "Google Ads або Meta Ads",
+          "Marketing dashboard + tracking"
+        ],
+        "plus": [
+          "AI-кваліфікація лідів",
+          "Automation flows"
+        ],
+        "outcome": "Більший попит з контролем вартості за лід."
+      }
     },
-    "activeProjects": "Активні проєкти:",
-    "tableTitle": "Таблиця послуг",
-    "table": {
-      "aiFeatures": "AI функції",
-      "aiValue": "Starter / Business / Growth",
-      "socialIntegration": "Інтеграція соцмереж",
-      "socialValue": "Business / Growth",
-      "socialAdsSetup": "Налаштування Social Ads",
-      "adsValue": "Growth"
+    "comparison": {
+      "title": "Порівняння функцій",
+      "yes": "Так",
+      "no": "-",
+      "headers": {
+        "feature": "Функція",
+        "starter": "Starter",
+        "business": "Business",
+        "pro": "Pro"
+      },
+      "rows": {
+        "landing": "Лендінгова сторінка",
+        "multi": "Багатосторінковий сайт",
+        "crm": "CRM-інтеграція",
+        "ai": "AI-кваліфікація лідів",
+        "ads": "Ads setup",
+        "dashboard": "Аналітичний dashboard"
+      }
     },
-    "nextStep": "Наступний крок"
+    "trust": {
+      "title": "Довіра та рамка робіт",
+      "delivery": {
+        "title": "Запуск за 7-14 днів",
+        "desc": "Чіткий графік із фіксованими етапами погодження."
+      },
+      "support": {
+        "title": "Підтримка після launch",
+        "desc": "Супровід під час передачі, налаштування команди та доробок."
+      },
+      "dsgvo": {
+        "title": "DSGVO Tracking",
+        "desc": "Коректне вимірювання з consent і дотриманням DSGVO/GDPR."
+      }
+    },
+    "final": {
+      "title": "Почніть з безкоштовної першої консультації.",
+      "subtitle": "За 30 хвилин покажемо, який пакет вам підходить, і як побудувати вашу lead-system модель.",
+      "cta": "Безкоштовна перша консультація"
+    }
   },
   "references": {
     "h1": "Кейси з вимірюваним зростанням.",

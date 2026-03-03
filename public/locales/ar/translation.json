@@ -408,24 +408,129 @@
     "ctaButton": "Angebot erhalten"
   },
   "pricing": {
-    "h1": "Preise ohne Überraschungen.",
-    "subtitle": "Pakete mit klaren Inhalten, Timing und Support-Level.",
+    "hero": {
+      "titleLine1": "Website and Lead System",
+      "titleLine2": "للشركات المحلية",
+      "titleLine3": "ابتداء من EUR 690",
+      "subtitle": "Premium setup for local businesses in Germany: clear funnel, measurable leads, clean handover to sales.",
+      "cta": "جلسة أولى مجانية",
+      "metrics": {
+        "leadVolume": "Lead Volume",
+        "qualifiedLeads": "Qualified Leads",
+        "costPerLead": "Cost per Lead"
+      },
+      "funnel": {
+        "traffic": "Traffic",
+        "landing": "Landing",
+        "leads": "Leads",
+        "crm": "CRM",
+        "sales": "Sales"
+      }
+    },
+    "flow": {
+      "title": "تدفق نظام العملاء",
+      "steps": {
+        "traffic": "Traffic",
+        "landing": "Landing Page",
+        "capture": "Lead Capture",
+        "crm": "CRM",
+        "sales": "Sales"
+      }
+    },
     "packages": {
-      "starter": "Starter",
-      "business": "Business",
-      "growth": "Growth"
+      "title": "باقات الأسعار",
+      "badge": "موصى به",
+      "coreTitle": "Core",
+      "plusTitle": "Plus",
+      "outcomeLabel": "Result:",
+      "starter": {
+        "name": "Starter",
+        "desc": "For small local businesses with fast start.",
+        "price": "from EUR 690",
+        "range": "typical EUR 690-790",
+        "core": [
+          "Landing Page",
+          "Lead Form + Contact Form",
+          "GA4 + Basic SEO Setup"
+        ],
+        "plus": [
+          "Mobile Optimization",
+          "Basic DSGVO Tracking"
+        ],
+        "outcome": "Stable channel for first qualified requests."
+      },
+      "business": {
+        "name": "Business",
+        "desc": "For teams with multiple services and active sales.",
+        "price": "from EUR 1.290",
+        "range": "typical EUR 1.290-1.490",
+        "core": [
+          "Multi-page Website up to 5 pages",
+          "CRM Integration + Lead Tracking",
+          "Analytics Dashboard"
+        ],
+        "plus": [
+          "SEO Structure by Service",
+          "Conversion Optimization"
+        ],
+        "outcome": "Predictable lead pipeline with clear reporting."
+      },
+      "pro": {
+        "name": "Pro",
+        "desc": "For growth with website, ads and automation.",
+        "price": "from EUR 2.490",
+        "range": "typical EUR 2.490-2.990",
+        "core": [
+          "Website + Ads Setup",
+          "Google Ads or Meta Ads",
+          "Marketing Dashboard + Tracking"
+        ],
+        "plus": [
+          "AI Lead Qualification",
+          "Automation Flows"
+        ],
+        "outcome": "More demand with controlled cost per lead."
+      }
     },
-    "activeProjects": "Aktive Projekte:",
-    "tableTitle": "Leistungstabelle",
-    "table": {
-      "aiFeatures": "AI Features",
-      "aiValue": "Starter / Business / Growth",
-      "socialIntegration": "Social Integration",
-      "socialValue": "Business / Growth",
-      "socialAdsSetup": "Social Ads Setup",
-      "adsValue": "Growth"
+    "comparison": {
+      "title": "Feature Comparison",
+      "yes": "نعم",
+      "no": "-",
+      "headers": {
+        "feature": "Feature",
+        "starter": "Starter",
+        "business": "Business",
+        "pro": "Pro"
+      },
+      "rows": {
+        "landing": "Landing Page",
+        "multi": "Multi-page Website",
+        "crm": "CRM Integration",
+        "ai": "AI Lead Qualification",
+        "ads": "Ads Setup",
+        "dashboard": "Analytics Dashboard"
+      }
     },
-    "nextStep": "Nächster Schritt"
+    "trust": {
+      "title": "الثقة ونطاق العمل",
+      "delivery": {
+        "title": "Delivery 7-14 days",
+        "desc": "Clear timeline with fixed approval steps."
+      },
+      "support": {
+        "title": "Support after launch",
+        "desc": "Support for handover, team setup and fine-tuning."
+      },
+      "dsgvo": {
+        "title": "DSGVO Tracking",
+        "desc": "Privacy-compliant measurement with consent setup."
+      }
+    },
+    "final": {
+      "title": "ابدأ بجلسة أولى مجانية.",
+      "subtitle": "In 30 minutes we show the right package and build plan for your lead system.",
+      "cta": "جلسة أولى مجانية"
+    }
   },
   "references": {
     "h1": "Referenzen mit messbarem Wachstum.",
