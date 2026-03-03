@@ -14,27 +14,27 @@
     "bg": "Български"
   },
   "common": {
-    "projectRequest": "Projekt anfragen",
-    "viewPrices": "Preise ansehen",
-    "cancel": "Abbrechen"
+    "projectRequest": "Поискайте проект",
+    "viewPrices": "Вижте цените",
+    "cancel": "Отказ"
   },
   "header": {
-    "menu": "Menu",
-    "menuAria": "Navigationsmenü öffnen",
-    "services": "Services",
-    "preise": "Preise",
-    "referenzen": "Referenzen",
-    "ueberUns": "Über uns",
-    "kontakt": "Kontakt"
+    "menu": "Меню",
+    "menuAria": "Отворете менюто за навигация",
+    "services": "Услуги",
+    "preise": "цени",
+    "referenzen": "Референции",
+    "ueberUns": "За нас",
+    "kontakt": "Контакт"
   },
   "footer": {
-    "tagline": "VS Studio · Websites, Web-Apps, Ads & Automationen",
-    "impressum": "Impressum",
-    "datenschutz": "Datenschutz",
-    "agb": "AGB",
-    "cookies": "Cookies",
-    "cookieSettings": "Cookie-Einstellungen",
-    "blog": "Blog"
+    "tagline": "VS Studio · Уеб сайтове, уеб приложения, реклами и автоматизации",
+    "impressum": "Отпечатък",
+    "datenschutz": "Защита на данните",
+    "agb": "Правила и условия",
+    "cookies": "бисквитки",
+    "cookieSettings": "Настройки за бисквитки",
+    "blog": "Блог"
   },
   "cookie": {
     "aria": "Cookie-Einwilligung",
@@ -50,85 +50,315 @@
     "saveSelection": "Auswahl speichern"
   },
   "home": {
-    "heroTitle": "Websites, die Anfragen bringen statt nur gut aussehen.",
-    "heroSubtitle": "Klare Positionierung, schnelle Umsetzung und transparente Pakete für lokale Dienstleister in Deutschland.",
-    "toFaq": "Zum FAQ",
-    "partnersTitle": "Highlights, Zielgruppen und Leistungen",
+    "heroTitle": "Уебсайтове, които водят до запитвания, вместо просто да изглеждат добре.",
+    "heroSubtitle": "Ясно позициониране, бързо внедряване и прозрачни пакети за местни доставчици на услуги в Германия.",
+    "toFaq": "Отидете на ЧЗВ",
+    "partnersTitle": "Акценти, целеви групи и услуги",
     "groups": {
-      "highlights": "Highlights",
-      "forWhom": "Für wen",
-      "services": "Leistungen"
+      "highlights": "Акценти",
+      "forWhom": "За кого",
+      "services": "Услуги"
     },
     "partners": {
       "fastLoad": {
-        "title": "Schnell geladen",
-        "desc": "Seite lädt in Sekunden"
+        "title": "Зарежда се бързо",
+        "desc": "Страницата се зарежда за секунди"
       },
       "moreLeads": {
-        "title": "Mehr Anfragen",
-        "desc": "Mehr Kontakte über Formulare"
+        "title": "Още запитвания",
+        "desc": "Още контакти чрез формуляри"
       },
       "clearPrices": {
-        "title": "Klare Preise",
-        "desc": "Du kennst Kosten im Voraus"
+        "title": "Ясни цени",
+        "desc": "Знаете разходите предварително"
       },
       "personalHelp": {
-        "title": "Persönliche Hilfe",
-        "desc": "Direkter Support ohne Warteschlange"
+        "title": "Лична помощ",
+        "desc": "Директна поддръжка без чакане на опашка"
       },
       "handwerker": {
-        "title": "Handwerker",
-        "desc": "Anfragen pro Stadt und Leistung"
+        "title": "занаятчия",
+        "desc": "Заявки по град и услуга"
       },
       "praxen": {
-        "title": "Praxen",
-        "desc": "Patienten finden schneller Termine"
+        "title": "практики",
+        "desc": "Пациентите намират час по-бързо"
       },
       "werkstaetten": {
-        "title": "Werkstätten",
-        "desc": "Klare Service-Seiten mit Tracking"
+        "title": "работилници",
+        "desc": "Изчистване на служебните страници с проследяване"
       },
       "localServices": {
-        "title": "Lokale Services",
-        "desc": "Mehr Sichtbarkeit vor Ort"
+        "title": "Местни услуги",
+        "desc": "Повече видимост на сайта"
       },
       "websites": {
-        "title": "Websites",
-        "desc": "Modern, schnell, mobil optimiert"
+        "title": "уебсайтове",
+        "desc": "Модерен, бърз, оптимизиран за мобилни устройства"
       },
       "webApps": {
-        "title": "Web-Apps",
-        "desc": "Tools für Team und Kunden"
+        "title": "Уеб приложения",
+        "desc": "Инструменти за екип и клиенти"
       },
       "aiIntegration": {
-        "title": "AI Integration",
-        "desc": "Chatbot für Fragen und Leads"
+        "title": "AI интеграция",
+        "desc": "Чатбот за въпроси и потенциални клиенти"
       },
       "socialMedia": {
-        "title": "Social Media",
-        "desc": "Website + Instagram/Meta verbunden"
+        "title": "Социални медии",
+        "desc": "Свързан уебсайт + Instagram/Meta"
       },
       "socialAds": {
-        "title": "Social Ads",
-        "desc": "Gezielte Werbung mit messbaren Ergebnissen"
+        "title": "Социални реклами",
+        "desc": "Целенасочена реклама с измерими резултати"
       }
     },
-    "trustTitle": "Trust mit konkreten Ergebnissen",
-    "trustDesc1": "mehr Kontaktanfragen in 60 Tagen.",
-    "trustDesc2": "geringere Cost-per-Lead nach Tracking-Fix.",
-    "trustDesc3": "durchschnittliche Ladezeit auf Mobil.",
-    "faqTitle": "FAQ",
+    "trustTitle": "Доверие с конкретни резултати",
+    "trustDesc1": "още заявки за контакт за 60 дни.",
+    "trustDesc2": "по-ниска цена на потенциален клиент след корекция на проследяването.",
+    "trustDesc3": "средно време за зареждане на мобилно устройство.",
+    "faqTitle": "ЧЗВ",
     "faq": {
-      "q1": "Wie schnell könnt ihr starten?",
-      "a1": "In der Regel starten wir innerhalb von 3-5 Werktagen. Direkt nach deiner Anfrage bekommst du einen kurzen Plan mit den ersten Schritten.",
-      "q2": "Was brauche ich als Kunde am Anfang?",
-      "a2": "Nur Basisinfos zu deinem Angebot, Zielgruppe und Kontaktwegen. Wir helfen dir dann bei Struktur, Texten und Prioritäten.",
-      "q3": "Wie läuft die Zusammenarbeit ab?",
-      "a3": "Wir arbeiten in kurzen Etappen: Konzept, Design, Umsetzung, Launch. Du bekommst klare Updates, damit du immer weißt, was als Nächstes passiert.",
-      "q4": "Ist das für kleine Unternehmen geeignet?",
-      "a4": "Ja. Unsere Pakete sind bewusst für lokale Betriebe aufgebaut: klare Preise, schneller Start und Fokus auf echte Anfragen statt nur Optik.",
-      "q5": "Was passiert nach dem Launch?",
-      "a5": "Nach dem Launch prüfen wir Daten, verbessern Conversion-Punkte und unterstützen dich beim Feinschliff, damit die Seite dauerhaft besser performt."
+      "q1": "Колко бързо можете да започнете?",
+      "a1": "Обикновено започваме в рамките на 3-5 работни дни. Веднага след вашата заявка ще получите кратък план с първите стъпки.",
+      "q2": "От какво се нуждая като клиент в началото?",
+      "a2": "Само основна информация за вашата оферта, целева група и канали за контакт. След това ще ви помогнем със структурата, текстовете и приоритетите.",
+      "q3": "Как работи сътрудничеството?",
+      "a3": "Работим на кратки етапи: концепция, дизайн, реализация, стартиране. Ще получавате ясни актуализации, така че винаги да знаете какво се случва по-нататък.",
+      "q4": "Това подходящо ли е за малки предприятия?",
+      "a4": "Да. Нашите пакети са съзнателно предназначени за местни фирми: ясни цени, бърз старт и фокус върху реални запитвания, вместо само върху оптика.",
+      "q5": "Какво се случва след стартирането?",
+      "a5": "След стартирането ние проверяваме данните, подобряваме точките за преобразуване и ви подкрепяме с фина настройка, така че сайтът да работи по-добре в дългосрочен план.",
+      "desc": "Отговори на често задавани въпроси относно времето, разходите, процеса на стартиране и текущата поддръжка."
+    },
+    "hero": {
+      "bento": {
+        "speed": {
+          "label": "скорост",
+          "value": "90+ Фар"
+        },
+        "seo": {
+          "label": "SEO",
+          "value": "Техническа основа"
+        },
+        "leads": {
+          "label": "запитвания",
+          "value": "Изчистване на CTA и формуляри"
+        },
+        "support": {
+          "label": "Поддръжка",
+          "value": "След стартиране"
+        }
+      }
+    },
+    "partnersSection": {
+      "title": "Предимства и области на приложение",
+      "desc": "Кои задачи покриваме и за кои местни компании най-често реализираме уебсайтове и водещи фунии."
+    },
+    "marquee": {
+      "aria": "Индустрии",
+      "title": "Индустрии, с които работим",
+      "desc": "Изберете посока и вижте подходящи стилови примери. Това означава, че можем по-бързо да изградим точна оферта за вашата компания.",
+      "items": {
+        "handwerk": "Занаяти",
+        "praxen": "практики",
+        "werkstaetten": "работилници",
+        "gastronomie": "Гастрономия",
+        "beauty": "Красота",
+        "immobilien": "Недвижими имоти",
+        "kanzlei": "адвокатска кантора",
+        "fitness": "Фитнес",
+        "reinigung": "Почистване",
+        "transport": "Транспорт",
+        "coaching": "Коучинг",
+        "bildung": "Образование"
+      }
+    },
+    "process": {
+      "title": "Как работим",
+      "desc": "Прозрачен процес без ненужни стъпки: от кратък брифинг до стартиране и оптимизиране с ясни срокове.",
+      "aria": "Фази на проекта",
+      "stage": "фаза",
+      "nav": {
+        "prev": "Назад",
+        "next": "Следващ"
+      },
+      "steps": {
+        "s1": {
+          "title": "15 минути разговор",
+          "text": "Изясняваме задачата, KPI и крайния срок и веднага съгласуваме стартовия формат."
+        },
+        "s2": {
+          "title": "Прототип за 48 часа",
+          "text": "Показваме структура на страницата, CTA и поток от потенциални клиенти преди разработката."
+        },
+        "s3": {
+          "title": "Развитие за 7-14 дни",
+          "text": "Внедряване, SEO основа, интеграции и анализи без ненужни разходи."
+        },
+        "s4": {
+          "title": "Стартиране и оптимизиране",
+          "text": "Пускаме на живо, проверяваме преобразуването и предоставяме 30-дневен план за подобрение."
+        }
+      }
+    },
+    "projects": {
+      "title": "Проекти / казуси",
+      "desc": "Реални задачи и очаквани резултати без празни обещания. Задръжте курсора на мишката върху случай за преглед на живо.",
+      "cards": {
+        "c1": {
+          "title": "Уебсайт за местни запитвания",
+          "description": "Целева страница с фокус върху формуляри, обаждания и бърз мобилен контакт.",
+          "goal": "Цел: повече запитвания без увеличаване на бюджета"
+        },
+        "c2": {
+          "title": "Целева страница за реклами",
+          "description": "Отделна страница с проследяване за Meta и Google кампании.",
+          "goal": "Очакван ефект: повече квалифицирани потенциални клиенти от реклама"
+        },
+        "c3": {
+          "title": "Уеб сайт за упражнения",
+          "description": "Ясна структура на услугата, често задавани въпроси и поток за онлайн срещи.",
+          "goal": "Цел: повече резервации за срещи с по-малко запитвания"
+        },
+        "c4": {
+          "title": "Табло за потенциални клиенти",
+          "description": "Вътрешен интерфейс за обработка на потенциални клиенти и контрол на състоянието.",
+          "goal": "Очакван ефект: по-бърза обработка на заявките"
+        }
+      }
+    },
+    "configurator": {
+      "title": "Конфигуратор на оферти",
+      "desc": "Изберете параметри на проекта и получете начална цена и подходящи тарифи за поддръжка.",
+      "labels": {
+        "goal": "Цел",
+        "integrations": "Интеграции",
+        "ads": "Реклама",
+        "term": "времева рамка",
+        "content": "ниво на съдържание",
+        "languages": "езици",
+        "hosting": "Хостинг",
+        "domain": "домейн",
+        "pages": "страници",
+        "seo": "SEO"
+      },
+      "options": {
+        "common": {
+          "other": "Други"
+        },
+        "goal": {
+          "leads": "Води",
+          "calls": "се обажда",
+          "booking": "резервации"
+        },
+        "integrations": {
+          "booking": "резервация",
+          "crm": "CRM",
+          "chat": "Чат",
+          "payments": "плащания"
+        },
+        "ads": {
+          "none": "Без реклама",
+          "meta": "Мета",
+          "google": "Google"
+        },
+        "term": {
+          "up_to_7": "До 1 седмица",
+          "from_7_to_14": "7-14 дни",
+          "from_14_to_21": "14-21 дни",
+          "from_21_to_30": "21-30 дни"
+        },
+        "content": {
+          "has": "Налични текстове",
+          "copy": "Изисква се писане на текст"
+        },
+        "languages": {
+          "basic": "1 език",
+          "multi": "2+ езика"
+        },
+        "hosting": {
+          "shared": "Споделен хостинг",
+          "vps": "VPS",
+          "managed": "Управляван хостинг"
+        },
+        "domain": {
+          "new_domain": "Нов домейн",
+          "existing_domain": "домейн съществува",
+          "transfer": "Трансфер на домейн"
+        },
+        "pages": {
+          "one": "1 страница",
+          "up_to_3": "До 3 страници",
+          "five_plus": "5+ страници"
+        },
+        "seo": {
+          "base": "SEO база",
+          "extended": "SEO Extended"
+        }
+      },
+      "reset": "Нулирайте всичко",
+      "empty": "Изберете поне една опция във всеки блок. Възможен е многократен избор; За „Друго“ не се начислява допълнителна такса.",
+      "recommended": "Препоръчва се:",
+      "pack": {
+        "starter": "Стартер",
+        "business": "Бизнес"
+      },
+      "launchPrice": "Начална цена:",
+      "supportMonthly": "Поддръжка / месец",
+      "supportYearly": "Поддръжка / година (-30%)",
+      "cta": "Заявка за контакт и точна оценка на разходите",
+      "bullets": {
+        "prototype": "Прототип и структура с фокус върху заявките",
+        "goal": "Голове: {{value}}",
+        "integrations": "Интеграции: {{value}}",
+        "term": "Времева рамка: {{value}}",
+        "hosting": "Хостинг: {{value}}",
+        "domain": "Домейн: {{value}}",
+        "pages": "Страници: {{value}}",
+        "analytics": "GA4 и проследяване на събития за формуляри/контакти",
+        "copy_true": "Поддръжка с текстове и оферти",
+        "copy_false": "Работим с вашите съществуващи текстове",
+        "market_note": "Ориентировъчна цена под пазарното ниво за малки компании"
+      },
+      "brief": {
+        "title": "Писмо от конфигуратора на офертата:",
+        "goal": "Цел: {{value}}",
+        "integrations": "Интеграции: {{value}}",
+        "ads": "Реклама: {{value}}",
+        "term": "Времева рамка: {{value}}",
+        "content": "Съдържание: {{value}}",
+        "languages": "Езици: {{value}}",
+        "hosting": "Хостинг: {{value}}",
+        "domain": "Домейн: {{value}}",
+        "pages": "Страници: {{value}}",
+        "seo": "SEO: {{value}}",
+        "launch_price": "Начална цена: {{value}}",
+        "support_monthly": "Поддръжка / месец: {{value}}",
+        "support_yearly": "Поддръжка / година (-30%): {{value}}"
+      }
+    },
+    "trust": {
+      "title": "Какво получавате след 14 дни",
+      "desc": "Конкретни начални резултати: уеб сайт, ориентиран към заявки, настройка на анализи и план за по-нататъшен растеж.",
+      "deliverables": {
+        "d1": {
+          "title": "Прототип за 48 часа",
+          "text": "Показваме структура и CTA преди кодиране, така че решенията да могат да бъдат планирани."
+        },
+        "d2": {
+          "title": "Сайт за запитвания",
+          "text": "Форма, обаждане, месинджър и мобилна версия за бърз контакт."
+        },
+        "d3": {
+          "title": "Анализ и проследяване",
+          "text": "GA4 плюс събития, така че да се вижда къде възникват запитвания."
+        },
+        "d4": {
+          "title": "30-дневен план за оптимизация",
+          "text": "Изчистване на следващите стъпки за увеличаване на реализациите след стартиране."
+        }
+      }
     }
   },
   "services": {

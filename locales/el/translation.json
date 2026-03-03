@@ -14,27 +14,27 @@
     "bg": "Български"
   },
   "common": {
-    "projectRequest": "Projekt anfragen",
-    "viewPrices": "Preise ansehen",
-    "cancel": "Abbrechen"
+    "projectRequest": "Αίτημα έργου",
+    "viewPrices": "Δείτε τιμές",
+    "cancel": "Ακύρωση"
   },
   "header": {
-    "menu": "Menu",
-    "menuAria": "Navigationsmenü öffnen",
-    "services": "Services",
-    "preise": "Preise",
-    "referenzen": "Referenzen",
-    "ueberUns": "Über uns",
-    "kontakt": "Kontakt"
+    "menu": "Μενού",
+    "menuAria": "Ανοίξτε το μενού πλοήγησης",
+    "services": "Υπηρεσίες",
+    "preise": "τιμές",
+    "referenzen": "Παραπομπές",
+    "ueberUns": "Σχετικά με εμάς",
+    "kontakt": "Επικοινωνία"
   },
   "footer": {
-    "tagline": "VS Studio · Websites, Web-Apps, Ads & Automationen",
-    "impressum": "Impressum",
-    "datenschutz": "Datenschutz",
-    "agb": "AGB",
-    "cookies": "Cookies",
-    "cookieSettings": "Cookie-Einstellungen",
-    "blog": "Blog"
+    "tagline": "VS Studio · Ιστότοποι, εφαρμογές ιστού, διαφημίσεις και αυτοματισμοί",
+    "impressum": "Αποτύπωμα",
+    "datenschutz": "Προστασία δεδομένων",
+    "agb": "Όροι και Προϋποθέσεις",
+    "cookies": "cookies",
+    "cookieSettings": "Ρυθμίσεις cookie",
+    "blog": "Ιστολόγιο"
   },
   "cookie": {
     "aria": "Cookie-Einwilligung",
@@ -50,85 +50,315 @@
     "saveSelection": "Auswahl speichern"
   },
   "home": {
-    "heroTitle": "Websites, die Anfragen bringen statt nur gut aussehen.",
-    "heroSubtitle": "Klare Positionierung, schnelle Umsetzung und transparente Pakete für lokale Dienstleister in Deutschland.",
-    "toFaq": "Zum FAQ",
-    "partnersTitle": "Highlights, Zielgruppen und Leistungen",
+    "heroTitle": "Ιστότοποι που φέρνουν ερωτήματα αντί να δείχνουν απλώς καλοί.",
+    "heroSubtitle": "Σαφής τοποθέτηση, γρήγορη υλοποίηση και διαφανή πακέτα για τοπικούς παρόχους υπηρεσιών στη Γερμανία.",
+    "toFaq": "Μεταβείτε στις Συνήθεις Ερωτήσεις",
+    "partnersTitle": "Στιγμιότυπα, ομάδες-στόχοι και υπηρεσίες",
     "groups": {
-      "highlights": "Highlights",
-      "forWhom": "Für wen",
-      "services": "Leistungen"
+      "highlights": "Χαρακτηριστικά",
+      "forWhom": "Για ποιον",
+      "services": "Υπηρεσίες"
     },
     "partners": {
       "fastLoad": {
-        "title": "Schnell geladen",
-        "desc": "Seite lädt in Sekunden"
+        "title": "Φόρτωσε γρήγορα",
+        "desc": "Η σελίδα φορτώνεται σε δευτερόλεπτα"
       },
       "moreLeads": {
-        "title": "Mehr Anfragen",
-        "desc": "Mehr Kontakte über Formulare"
+        "title": "Περισσότερες ερωτήσεις",
+        "desc": "Περισσότερες επαφές μέσω φορμών"
       },
       "clearPrices": {
-        "title": "Klare Preise",
-        "desc": "Du kennst Kosten im Voraus"
+        "title": "Καθαρές τιμές",
+        "desc": "Γνωρίζετε το κόστος εκ των προτέρων"
       },
       "personalHelp": {
-        "title": "Persönliche Hilfe",
-        "desc": "Direkter Support ohne Warteschlange"
+        "title": "Προσωπική βοήθεια",
+        "desc": "Άμεση υποστήριξη χωρίς να περιμένετε στην ουρά"
       },
       "handwerker": {
-        "title": "Handwerker",
-        "desc": "Anfragen pro Stadt und Leistung"
+        "title": "τεχνίτης",
+        "desc": "Αιτήματα ανά πόλη και υπηρεσία"
       },
       "praxen": {
-        "title": "Praxen",
-        "desc": "Patienten finden schneller Termine"
+        "title": "πρακτικές",
+        "desc": "Οι ασθενείς βρίσκουν ραντεβού πιο γρήγορα"
       },
       "werkstaetten": {
-        "title": "Werkstätten",
-        "desc": "Klare Service-Seiten mit Tracking"
+        "title": "εργαστήρια",
+        "desc": "Εκκαθάριση σελίδων υπηρεσίας με παρακολούθηση"
       },
       "localServices": {
-        "title": "Lokale Services",
-        "desc": "Mehr Sichtbarkeit vor Ort"
+        "title": "Τοπικές υπηρεσίες",
+        "desc": "Περισσότερη ορατότητα στον ιστότοπο"
       },
       "websites": {
         "title": "Websites",
-        "desc": "Modern, schnell, mobil optimiert"
+        "desc": "Σύγχρονο, γρήγορο, βελτιστοποιημένο για κινητά"
       },
       "webApps": {
-        "title": "Web-Apps",
-        "desc": "Tools für Team und Kunden"
+        "title": "Εφαρμογές Ιστού",
+        "desc": "Εργαλεία για ομάδα και πελάτες"
       },
       "aiIntegration": {
-        "title": "AI Integration",
-        "desc": "Chatbot für Fragen und Leads"
+        "title": "Ενσωμάτωση AI",
+        "desc": "Chatbot για ερωτήσεις και δυνητικούς πελάτες"
       },
       "socialMedia": {
         "title": "Social Media",
-        "desc": "Website + Instagram/Meta verbunden"
+        "desc": "Ιστότοπος + Instagram/Meta συνδεδεμένος"
       },
       "socialAds": {
-        "title": "Social Ads",
-        "desc": "Gezielte Werbung mit messbaren Ergebnissen"
+        "title": "Διαφημίσεις κοινωνικής δικτύωσης",
+        "desc": "Στοχευμένη διαφήμιση με μετρήσιμα αποτελέσματα"
       }
     },
-    "trustTitle": "Trust mit konkreten Ergebnissen",
-    "trustDesc1": "mehr Kontaktanfragen in 60 Tagen.",
-    "trustDesc2": "geringere Cost-per-Lead nach Tracking-Fix.",
-    "trustDesc3": "durchschnittliche Ladezeit auf Mobil.",
-    "faqTitle": "FAQ",
+    "trustTitle": "Εμπιστευτείτε συγκεκριμένα αποτελέσματα",
+    "trustDesc1": "περισσότερα αιτήματα επικοινωνίας σε 60 ημέρες.",
+    "trustDesc2": "χαμηλότερο κόστος ανά δυνητικό πελάτη μετά την επιδιόρθωση παρακολούθησης.",
+    "trustDesc3": "μέσος χρόνος φόρτωσης σε κινητό.",
+    "faqTitle": "Συχνές ερωτήσεις",
     "faq": {
-      "q1": "Wie schnell könnt ihr starten?",
-      "a1": "In der Regel starten wir innerhalb von 3-5 Werktagen. Direkt nach deiner Anfrage bekommst du einen kurzen Plan mit den ersten Schritten.",
-      "q2": "Was brauche ich als Kunde am Anfang?",
-      "a2": "Nur Basisinfos zu deinem Angebot, Zielgruppe und Kontaktwegen. Wir helfen dir dann bei Struktur, Texten und Prioritäten.",
-      "q3": "Wie läuft die Zusammenarbeit ab?",
-      "a3": "Wir arbeiten in kurzen Etappen: Konzept, Design, Umsetzung, Launch. Du bekommst klare Updates, damit du immer weißt, was als Nächstes passiert.",
-      "q4": "Ist das für kleine Unternehmen geeignet?",
-      "a4": "Ja. Unsere Pakete sind bewusst für lokale Betriebe aufgebaut: klare Preise, schneller Start und Fokus auf echte Anfragen statt nur Optik.",
-      "q5": "Was passiert nach dem Launch?",
-      "a5": "Nach dem Launch prüfen wir Daten, verbessern Conversion-Punkte und unterstützen dich beim Feinschliff, damit die Seite dauerhaft besser performt."
+      "q1": "Πόσο γρήγορα μπορείτε να ξεκινήσετε;",
+      "a1": "Συνήθως ξεκινάμε μέσα σε 3-5 εργάσιμες ημέρες. Αμέσως μετά το αίτημά σας θα λάβετε ένα σύντομο σχέδιο με τα πρώτα βήματα.",
+      "q2": "Τι χρειάζομαι ως πελάτης στην αρχή;",
+      "a2": "Μόνο βασικές πληροφορίες σχετικά με την προσφορά, την ομάδα-στόχο και τα κανάλια επικοινωνίας σας. Στη συνέχεια θα σας βοηθήσουμε με τη δομή, τα κείμενα και τις προτεραιότητες.",
+      "q3": "Πώς λειτουργεί η συνεργασία;",
+      "a3": "Εργαζόμαστε σε σύντομα στάδια: ιδέα, σχεδιασμός, υλοποίηση, έναρξη. Θα λαμβάνετε σαφείς ενημερώσεις, ώστε να γνωρίζετε πάντα τι θα συμβεί στη συνέχεια.",
+      "q4": "Είναι κατάλληλο για μικρές επιχειρήσεις;",
+      "a4": "Ναι. Τα πακέτα μας έχουν σχεδιαστεί σκόπιμα για τοπικές επιχειρήσεις: σαφείς τιμές, γρήγορη εκκίνηση και εστίαση σε πραγματικές αναζητήσεις αντί για οπτικά.",
+      "q5": "Τι συμβαίνει μετά την κυκλοφορία;",
+      "a5": "Μετά την κυκλοφορία, ελέγχουμε δεδομένα, βελτιώνουμε τα σημεία μετατροπής και σας υποστηρίζουμε με τη βελτιστοποίηση, ώστε ο ιστότοπος να αποδίδει καλύτερα μακροπρόθεσμα.",
+      "desc": "Απαντάει σε συχνές ερωτήσεις σχετικά με το χρονοδιάγραμμα, το κόστος, τη διαδικασία εκκίνησης και τη συνεχή υποστήριξη."
+    },
+    "hero": {
+      "bento": {
+        "speed": {
+          "label": "ταχύτητα",
+          "value": "90+ Φάρος"
+        },
+        "seo": {
+          "label": "SEO",
+          "value": "Τεχνική θεμελίωση"
+        },
+        "leads": {
+          "label": "ερωτήματα",
+          "value": "Εκκαθάριση CTA και φόρμες"
+        },
+        "support": {
+          "label": "Υποστήριξη",
+          "value": "Μετά την εκκίνηση"
+        }
+      }
+    },
+    "partnersSection": {
+      "title": "Πλεονεκτήματα και τομείς εφαρμογής",
+      "desc": "Ποιες εργασίες καλύπτουμε και ποιες τοπικές εταιρείες εφαρμόζουμε συχνότερα ιστοτόπους και διοχετεύσεις δυνητικών πελατών."
+    },
+    "marquee": {
+      "aria": "Βιομηχανίες",
+      "title": "Βιομηχανίες με τις οποίες συνεργαζόμαστε",
+      "desc": "Επιλέξτε μια κατεύθυνση και δείτε κατάλληλα παραδείγματα στυλ. Αυτό σημαίνει ότι μπορούμε να δημιουργήσουμε μια ακριβή προσφορά για την εταιρεία σας πιο γρήγορα.",
+      "items": {
+        "handwerk": "Χειροτεχνία",
+        "praxen": "πρακτικές",
+        "werkstaetten": "Werkstätten",
+        "gastronomie": "Gastronomie",
+        "beauty": "Ομορφιά",
+        "immobilien": "Immobilien",
+        "kanzlei": "δικηγορικό γραφείο",
+        "fitness": "Γυμναστική",
+        "reinigung": "Καθαρισμός",
+        "transport": "Συγκοινωνία",
+        "coaching": "Προπονητική",
+        "bildung": "Εκπαίδευση"
+      }
+    },
+    "process": {
+      "title": "Πώς δουλεύουμε",
+      "desc": "Μια διαφανής διαδικασία χωρίς περιττά βήματα: από μια σύντομη ενημέρωση έως την έναρξη και τη βελτιστοποίηση με σαφείς προθεσμίες.",
+      "aria": "Φάσεις έργου",
+      "stage": "φάση",
+      "nav": {
+        "prev": "Πίσω",
+        "next": "Επόμενο"
+      },
+      "steps": {
+        "s1": {
+          "title": "15λεπτη κλήση",
+          "text": "Διευκρινίζουμε την εργασία, το KPI και την προθεσμία και συμφωνούμε αμέσως για τη μορφή εκκίνησης."
+        },
+        "s2": {
+          "title": "Πρωτότυπο σε 48 ώρες",
+          "text": "Δείχνουμε τη δομή της σελίδας, το CTA και τη ροή πελατών πριν από την ανάπτυξη."
+        },
+        "s3": {
+          "title": "Ανάπτυξη σε 7-14 ημέρες",
+          "text": "Υλοποίηση, βάση SEO, ενσωματώσεις και αναλυτικά στοιχεία χωρίς περιττά έξοδα."
+        },
+        "s4": {
+          "title": "Εκκίνηση και βελτιστοποίηση",
+          "text": "Εμφανιζόμαστε ζωντανά, ελέγχουμε τη μετατροπή και προσφέρουμε ένα πρόγραμμα βελτίωσης 30 ημερών."
+        }
+      }
+    },
+    "projects": {
+      "title": "Έργα / Case Studies",
+      "desc": "Πραγματικές εργασίες και αναμενόμενα αποτελέσματα χωρίς κενές υποσχέσεις. Τοποθετήστε το δείκτη του ποντικιού σε μια θήκη για ζωντανή προεπισκόπηση.",
+      "cards": {
+        "c1": {
+          "title": "Τοπικός ιστότοπος διερεύνησης",
+          "description": "Σελίδα προορισμού με έμφαση σε φόρμες, κλήσεις και γρήγορη επαφή μέσω κινητού.",
+          "goal": "Στόχος: περισσότερες έρευνες χωρίς αύξηση του προϋπολογισμού"
+        },
+        "c2": {
+          "title": "Σελίδα προορισμού για διαφημίσεις",
+          "description": "Ξεχωριστή σελίδα με παρακολούθηση για καμπάνιες Meta και Google.",
+          "goal": "Αναμενόμενο αποτέλεσμα: πιο κατάλληλοι δυνητικοί πελάτες από διαφημίσεις"
+        },
+        "c3": {
+          "title": "Ιστότοπος για εξάσκηση",
+          "description": "Σαφής δομή υπηρεσιών, συχνές ερωτήσεις και ροή διαδικτυακών ραντεβού.",
+          "goal": "Στόχος: περισσότερες κρατήσεις ραντεβού με λιγότερα ερωτήματα"
+        },
+        "c4": {
+          "title": "Ταμπλό για δυνητικούς πελάτες",
+          "description": "Εσωτερική διεπαφή για επεξεργασία δυνητικού πελάτη και έλεγχο κατάστασης.",
+          "goal": "Αναμενόμενο αποτέλεσμα: ταχύτερη επεξεργασία των αιτημάτων"
+        }
+      }
+    },
+    "configurator": {
+      "title": "Διαμορφωτής προσφοράς",
+      "desc": "Επιλέξτε παραμέτρους έργου και λάβετε μια τιμή εκκίνησης και τα κατάλληλα ποσοστά υποστήριξης.",
+      "labels": {
+        "goal": "Στόχος",
+        "integrations": "Ενσωματώσεις",
+        "ads": "Διαφήμιση",
+        "term": "χρονικό πλαίσιο",
+        "content": "Content-Level",
+        "languages": "γλώσσες",
+        "hosting": "Φιλοξενία",
+        "domain": "Domain",
+        "pages": "σελίδες",
+        "seo": "SEO"
+      },
+      "options": {
+        "common": {
+          "other": "Άλλοι"
+        },
+        "goal": {
+          "leads": "Προηγείται",
+          "calls": "κλήσεις",
+          "booking": "κρατήσεις"
+        },
+        "integrations": {
+          "booking": "κράτηση",
+          "crm": "CRM",
+          "chat": "Συνομιλία",
+          "payments": "πληρωμές"
+        },
+        "ads": {
+          "none": "Χωρίς διαφήμιση",
+          "meta": "Meta",
+          "google": "Google"
+        },
+        "term": {
+          "up_to_7": "Έως 1 εβδομάδα",
+          "from_7_to_14": "7-14 ημέρες",
+          "from_14_to_21": "14-21 ημέρες",
+          "from_21_to_30": "21-30 ημέρες"
+        },
+        "content": {
+          "has": "Διαθέσιμα κείμενα",
+          "copy": "Απαιτείται copywriting"
+        },
+        "languages": {
+          "basic": "1 γλώσσα",
+          "multi": "2+ γλώσσες"
+        },
+        "hosting": {
+          "shared": "Κοινόχρηστη φιλοξενία",
+          "vps": "VPS",
+          "managed": "Διαχειριζόμενη φιλοξενία"
+        },
+        "domain": {
+          "new_domain": "Νέος τομέας",
+          "existing_domain": "Domain vorhanden",
+          "transfer": "Μεταφορά τομέα"
+        },
+        "pages": {
+          "one": "1 σελίδα",
+          "up_to_3": "Έως 3 σελίδες",
+          "five_plus": "5+ σελίδες"
+        },
+        "seo": {
+          "base": "Βάση SEO",
+          "extended": "SEO Extended"
+        }
+      },
+      "reset": "Επαναφέρετε τα πάντα",
+      "empty": "Επιλέξτε τουλάχιστον μία επιλογή σε κάθε μπλοκ. Είναι δυνατή η πολλαπλή επιλογή. Για \"Άλλα\" δεν χρεώνεται πρόσθετη χρέωση.",
+      "recommended": "Συνιστάται:",
+      "pack": {
+        "starter": "Μίζα",
+        "business": "Επιχείρηση"
+      },
+      "launchPrice": "Τιμή εκκίνησης:",
+      "supportMonthly": "Υποστήριξη / Μήνας",
+      "supportYearly": "Υποστήριξη / έτος (-30%)",
+      "cta": "Αίτημα επικοινωνίας και ακριβής εκτίμηση κόστους",
+      "bullets": {
+        "prototype": "Πρωτότυπο και δομή με έμφαση στα αιτήματα",
+        "goal": "Στόχοι: {{value}}",
+        "integrations": "Ενσωματώσεις: {{value}}",
+        "term": "Χρονικό πλαίσιο: {{value}}",
+        "hosting": "Φιλοξενία: {{value}}",
+        "domain": "Τομέας: {{value}}",
+        "pages": "Σελίδες: {{value}}",
+        "analytics": "GA4 και παρακολούθηση συμβάντων για φόρμες/επαφές",
+        "copy_true": "Υποστήριξη με κείμενα και προσφορές",
+        "copy_false": "Εργαζόμαστε με τα υπάρχοντα κείμενά σας",
+        "market_note": "Κατευθυντήρια τιμή κάτω από το επίπεδο της αγοράς για μικρές εταιρείες"
+      },
+      "brief": {
+        "title": "Επιστολή από τον διαμορφωτή προσφοράς:",
+        "goal": "Στόχος: {{value}}",
+        "integrations": "Ενσωματώσεις: {{value}}",
+        "ads": "Διαφήμιση: {{value}}",
+        "term": "Χρονικό πλαίσιο: {{value}}",
+        "content": "Περιεχόμενο: {{value}}",
+        "languages": "Γλώσσες: {{value}}",
+        "hosting": "Φιλοξενία: {{value}}",
+        "domain": "Τομέας: {{value}}",
+        "pages": "Σελίδες: {{value}}",
+        "seo": "SEO: {{value}}",
+        "launch_price": "Τιμή εκκίνησης: {{value}}",
+        "support_monthly": "Υποστήριξη / Μήνας: {{value}}",
+        "support_yearly": "Υποστήριξη / έτος (-30%): {{value}}"
+      }
+    },
+    "trust": {
+      "title": "Τι παίρνετε σε 14 ημέρες",
+      "desc": "Συγκεκριμένα αρχικά αποτελέσματα: ιστότοπος προσανατολισμένος στα ερωτήματα, δημιουργία αναλυτικών στοιχείων και σχέδιο για περαιτέρω ανάπτυξη.",
+      "deliverables": {
+        "d1": {
+          "title": "Πρωτότυπο σε 48 ώρες",
+          "text": "Δείχνουμε δομή και CTA πριν από την κωδικοποίηση, ώστε να μπορούν να προγραμματιστούν οι αποφάσεις."
+        },
+        "d2": {
+          "title": "Ιστότοπος για ερωτήσεις",
+          "text": "Φόρμα, κλήση, messenger και έκδοση για κινητά για γρήγορη επικοινωνία."
+        },
+        "d3": {
+          "title": "Αναλύσεις και παρακολούθηση",
+          "text": "GA4 plus συμβάντα, ώστε να είναι ορατό όπου προκύπτουν ερωτήματα."
+        },
+        "d4": {
+          "title": "Σχέδιο βελτιστοποίησης 30 ημερών",
+          "text": "Διαγράψτε τα επόμενα βήματα για να αυξήσετε τις μετατροπές μετά την κυκλοφορία."
+        }
+      }
     }
   },
   "services": {

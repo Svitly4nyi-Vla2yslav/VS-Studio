@@ -14,26 +14,26 @@
     "bg": "Български"
   },
   "common": {
-    "projectRequest": "Projekt anfragen",
-    "viewPrices": "Preise ansehen",
-    "cancel": "Abbrechen"
+    "projectRequest": "Projeya daxwaz bikin",
+    "viewPrices": "Bihayan bibînin",
+    "cancel": "Betal bike"
   },
   "header": {
     "menu": "Menu",
-    "menuAria": "Navigationsmenü öffnen",
-    "services": "Services",
-    "preise": "Preise",
-    "referenzen": "Referenzen",
-    "ueberUns": "Über uns",
-    "kontakt": "Kontakt"
+    "menuAria": "Pêşeka navîgasyonê veke",
+    "services": "Xizmetên",
+    "preise": "bihayên",
+    "referenzen": "Çavkanî",
+    "ueberUns": "Di derbarê me de",
+    "kontakt": "Têkilî"
   },
   "footer": {
-    "tagline": "VS Studio · Websites, Web-Apps, Ads & Automationen",
-    "impressum": "Impressum",
-    "datenschutz": "Datenschutz",
-    "agb": "AGB",
-    "cookies": "Cookies",
-    "cookieSettings": "Cookie-Einstellungen",
+    "tagline": "VS Studio · Malper, sepanên malperê, reklam û otomasyon",
+    "impressum": "Çapkirin",
+    "datenschutz": "Parastina daneyan",
+    "agb": "Merc û Merc",
+    "cookies": "cookies",
+    "cookieSettings": "Mîhengên cookie",
     "blog": "Blog"
   },
   "cookie": {
@@ -50,85 +50,315 @@
     "saveSelection": "Auswahl speichern"
   },
   "home": {
-    "heroTitle": "Websites, die Anfragen bringen statt nur gut aussehen.",
-    "heroSubtitle": "Klare Positionierung, schnelle Umsetzung und transparente Pakete für lokale Dienstleister in Deutschland.",
-    "toFaq": "Zum FAQ",
-    "partnersTitle": "Highlights, Zielgruppen und Leistungen",
+    "heroTitle": "Malperên ku li şûna ku tenê baş xuya bikin, lêpirsînan tînin.",
+    "heroSubtitle": "Ji bo pêşkêşkerên karûbarê herêmî yên li Elmanyayê, pozîsyona zelal, pêkanîna bilez û pakêtên zelal.",
+    "toFaq": "Biçe FAQ",
+    "partnersTitle": "Nîşan, komên armanc û karûbar",
     "groups": {
-      "highlights": "Highlights",
-      "forWhom": "Für wen",
-      "services": "Leistungen"
+      "highlights": "Nîşan",
+      "forWhom": "Ji bo kê",
+      "services": "Xizmetên"
     },
     "partners": {
       "fastLoad": {
-        "title": "Schnell geladen",
-        "desc": "Seite lädt in Sekunden"
+        "title": "Bi lez hat barkirin",
+        "desc": "Rûpel di çirkeyan de tê barkirin"
       },
       "moreLeads": {
-        "title": "Mehr Anfragen",
-        "desc": "Mehr Kontakte über Formulare"
+        "title": "Lêpirsînên Zêdetir",
+        "desc": "Zêdetir têkilî bi riya forman"
       },
       "clearPrices": {
-        "title": "Klare Preise",
-        "desc": "Du kennst Kosten im Voraus"
+        "title": "Bihayên zelal",
+        "desc": "Hûn lêçûnên pêşîn dizanin"
       },
       "personalHelp": {
-        "title": "Persönliche Hilfe",
-        "desc": "Direkter Support ohne Warteschlange"
+        "title": "Alîkariya kesane",
+        "desc": "Piştgiriya rasterast bêyî ku li rêzê bimîne"
       },
       "handwerker": {
-        "title": "Handwerker",
-        "desc": "Anfragen pro Stadt und Leistung"
+        "title": "pîşekar",
+        "desc": "Daxwazên her bajar û karûbar"
       },
       "praxen": {
-        "title": "Praxen",
-        "desc": "Patienten finden schneller Termine"
+        "title": "pratîk dike",
+        "desc": "Nexweş zûtir randevûyan peyda dikin"
       },
       "werkstaetten": {
-        "title": "Werkstätten",
-        "desc": "Klare Service-Seiten mit Tracking"
+        "title": "atolyeyên",
+        "desc": "Rûpelên karûbarê bi şopandinê paqij bikin"
       },
       "localServices": {
-        "title": "Lokale Services",
-        "desc": "Mehr Sichtbarkeit vor Ort"
+        "title": "Xizmetên Herêmî",
+        "desc": "Zêdetir dîtbarî li ser malperê"
       },
       "websites": {
         "title": "Websites",
-        "desc": "Modern, schnell, mobil optimiert"
+        "desc": "Nûjen, bilez, xweşbînkirî ya mobîl"
       },
       "webApps": {
-        "title": "Web-Apps",
-        "desc": "Tools für Team und Kunden"
+        "title": "Serlêdanên Webê",
+        "desc": "Amûrên ji bo tîm û xerîdar"
       },
       "aiIntegration": {
-        "title": "AI Integration",
-        "desc": "Chatbot für Fragen und Leads"
+        "title": "entegrasyona AI",
+        "desc": "Chatbot ji bo pirs û rêberan"
       },
       "socialMedia": {
-        "title": "Social Media",
-        "desc": "Website + Instagram/Meta verbunden"
+        "title": "Medya Civakî",
+        "desc": "Malper + Instagram/Meta girêdayî"
       },
       "socialAds": {
-        "title": "Social Ads",
-        "desc": "Gezielte Werbung mit messbaren Ergebnissen"
+        "title": "Reklamên Civakî",
+        "desc": "Reklamek armanckirî bi encamên pîvandî"
       }
     },
-    "trustTitle": "Trust mit konkreten Ergebnissen",
-    "trustDesc1": "mehr Kontaktanfragen in 60 Tagen.",
-    "trustDesc2": "geringere Cost-per-Lead nach Tracking-Fix.",
-    "trustDesc3": "durchschnittliche Ladezeit auf Mobil.",
+    "trustTitle": "Bi encamên berbiçav bawer bikin",
+    "trustDesc1": "di 60 rojan de bêtir daxwazên pêwendiyê.",
+    "trustDesc2": "mesrefa kêmtir a serê rêber piştî rastkirina şopandinê.",
+    "trustDesc3": "dema barkirina navînî li ser mobîl.",
     "faqTitle": "FAQ",
     "faq": {
-      "q1": "Wie schnell könnt ihr starten?",
-      "a1": "In der Regel starten wir innerhalb von 3-5 Werktagen. Direkt nach deiner Anfrage bekommst du einen kurzen Plan mit den ersten Schritten.",
-      "q2": "Was brauche ich als Kunde am Anfang?",
-      "a2": "Nur Basisinfos zu deinem Angebot, Zielgruppe und Kontaktwegen. Wir helfen dir dann bei Struktur, Texten und Prioritäten.",
-      "q3": "Wie läuft die Zusammenarbeit ab?",
-      "a3": "Wir arbeiten in kurzen Etappen: Konzept, Design, Umsetzung, Launch. Du bekommst klare Updates, damit du immer weißt, was als Nächstes passiert.",
-      "q4": "Ist das für kleine Unternehmen geeignet?",
-      "a4": "Ja. Unsere Pakete sind bewusst für lokale Betriebe aufgebaut: klare Preise, schneller Start und Fokus auf echte Anfragen statt nur Optik.",
-      "q5": "Was passiert nach dem Launch?",
-      "a5": "Nach dem Launch prüfen wir Daten, verbessern Conversion-Punkte und unterstützen dich beim Feinschliff, damit die Seite dauerhaft besser performt."
+      "q1": "Hûn dikarin çiqas zû dest pê bikin?",
+      "a1": "Em bi gelemperî di nav 3-5 rojên xebatê de dest pê dikin. Di cih de piştî daxwaza we hûn ê bi gavên pêşîn re planek kurt bistînin.",
+      "q2": "Di destpêkê de ez wekî xerîdar çi hewce dikim?",
+      "a2": "Tenê agahdariya bingehîn li ser pêşniyara we, koma armanc û kanalên têkiliyê. Dûv re em ê ji we re bi avahî, nivîs û pêşîniyan re bibin alîkar.",
+      "q3": "Hevkarî çawa dixebite?",
+      "a3": "Em di qonaxên kurt de dixebitin: konsept, sêwirandin, pêkanîn, destpêkirin. Hûn ê nûvekirinên zelal bistînin da ku hûn her gav zanibin ka paşê çi diqewime.",
+      "q4": "Ma ev ji bo karsaziyên piçûk maqûl e?",
+      "a4": "Belê. Pakêtên me bi zanebûn ji bo karsaziyên herêmî hatine sêwirandin: bihayên zelal, destpêkek bilez û li şûna tenê optîkan li ser lêpirsînên rastîn.",
+      "q5": "Piştî destpêkirinê çi diqewime?",
+      "a5": "Piştî destpêkirinê, em daneyan kontrol dikin, xalên veguheztinê baştir dikin û ji we re bi hevrêzkirinê piştgirî dikin da ku malper di demek dirêj de çêtir bixebite.",
+      "desc": "Bersiva pirsên pir caran di derbarê dem, lêçûn, pêvajoya destpêkirinê û piştgiriya domdar de dide."
+    },
+    "hero": {
+      "bento": {
+        "speed": {
+          "label": "leza",
+          "value": "90+ Lighthouse"
+        },
+        "seo": {
+          "label": "SEO",
+          "value": "Bingeha teknîkî"
+        },
+        "leads": {
+          "label": "lêpirsîn",
+          "value": "CTA û formên paqij bikin"
+        },
+        "support": {
+          "label": "Piştgirî",
+          "value": "Piştî destpêkirinê"
+        }
+      }
+    },
+    "partnersSection": {
+      "title": "Awantaj û qadên serîlêdanê",
+      "desc": "Kîjan peywirên ku em vedigirin û kîjan pargîdaniyên herêmî em pir caran ji bo malper û rêgezên rêve dikin."
+    },
+    "marquee": {
+      "aria": "Pîşesazî",
+      "title": "Pîşesaziyên ku em pê re dixebitin",
+      "desc": "Rêgezek hilbijêrin û nimûneyên şêwazê guncan bibînin. Ev tê vê wateyê ku em dikarin ji bo pargîdaniya we zûtirîn pêşniyarek rastîn ava bikin.",
+      "items": {
+        "handwerk": "Hunermend",
+        "praxen": "pratîk dike",
+        "werkstaetten": "atolyeyên",
+        "gastronomie": "Gastronomî",
+        "beauty": "Bedew",
+        "immobilien": "Xanî",
+        "kanzlei": "buroya hiqûqê",
+        "fitness": "Fitness",
+        "reinigung": "Paqijkirin",
+        "transport": "Veguhastin",
+        "coaching": "Coaching",
+        "bildung": "Perwerde"
+      }
+    },
+    "process": {
+      "title": "Em çawa dixebitin",
+      "desc": "Pêvajoyek zelal bêyî gavên nehewce: ji kurtenivîsek kurt heya destpêkirin û xweşbînkirina bi demên diyar.",
+      "aria": "Qonaxên projeyê",
+      "stage": "Phase",
+      "nav": {
+        "prev": "Vegere",
+        "next": "Paşê"
+      },
+      "steps": {
+        "s1": {
+          "title": "15 minute bang",
+          "text": "Em peywir, KPI û muhlet eşkere dikin û tavilê li ser forma destpêkirinê li hev dikin."
+        },
+        "s2": {
+          "title": "Prototîpa di 48 saetan de",
+          "text": "Berî pêşkeftinê em avahiya rûpelê, CTA û herikîna rêber nîşan didin."
+        },
+        "s3": {
+          "title": "Pêşveçûn di 7-14 rojan de",
+          "text": "Bicîhkirin, bingeha SEO, entegrasyon û analîtîk bêyî sermayên nehewce."
+        },
+        "s4": {
+          "title": "Destpêkirin û xweşbînkirin",
+          "text": "Em zindî diçin, veguheztinê kontrol dikin û plansaziyek çêtirkirina 30-rojî pêşkêş dikin."
+        }
+      }
+    },
+    "projects": {
+      "title": "Proje / Lêkolînên Doza",
+      "desc": "Karên rastîn û encamên hêvîkirî bêyî sozên vala. Li ser dozek ji bo pêşdîtina zindî bihêlin.",
+      "cards": {
+        "c1": {
+          "title": "Malpera lêpirsîna herêmî",
+          "description": "Rûpelê zevî yê bi baldarî li ser form, bang û pêwendiya bilez a mobîl.",
+          "goal": "Armanc: bêtir lêpirsîn bêyî zêdekirina budceyê"
+        },
+        "c2": {
+          "title": "Rûpelê zevî ji bo reklaman",
+          "description": "Rûpelê veqetînin bi şopandina kampanyayên Meta û Google.",
+          "goal": "Bandora çaverêkirî: ji reklamê rêgezên jêhatîtir"
+        },
+        "c3": {
+          "title": "Malpera ji bo pratîkê",
+          "description": "Struktura karûbarê, FAQ û herikîna serhêl a serhêl zelal bikin.",
+          "goal": "Armanc: Zêdetir veqetandinên randevûyê bi kêmtir pirsan"
+        },
+        "c4": {
+          "title": "Dashboard ji bo rêberan",
+          "description": "Navbera hundurîn ji bo pêvajoyek pêşeng û kontrolkirina statûyê.",
+          "goal": "Bandora çaverêkirî: pêvajoyek bilez a daxwazan"
+        }
+      }
+    },
+    "configurator": {
+      "title": "Vesazkera Pêşkêşkerê",
+      "desc": "Parametreyên projeyê hilbijêrin û bihayek destpêkê û rêjeyên piştevaniya guncan bistînin.",
+      "labels": {
+        "goal": "Armanc",
+        "integrations": "Entegrasyonên",
+        "ads": "Reklam",
+        "term": "çarçoveya demê",
+        "content": "Content-Level",
+        "languages": "zimanan",
+        "hosting": "Mêvandarbûn",
+        "domain": "domain",
+        "pages": "Seiten",
+        "seo": "SEO"
+      },
+      "options": {
+        "common": {
+          "other": "Yên din"
+        },
+        "goal": {
+          "leads": "Serkêş dike",
+          "calls": "bang dike",
+          "booking": "veqetandin"
+        },
+        "integrations": {
+          "booking": "veqetandinê",
+          "crm": "CRM",
+          "chat": "Chat",
+          "payments": "dayinên"
+        },
+        "ads": {
+          "none": "Bê reklam",
+          "meta": "Meta",
+          "google": "Google"
+        },
+        "term": {
+          "up_to_7": "Heta 1 hefte",
+          "from_7_to_14": "7-14 roj",
+          "from_14_to_21": "14-21 roj",
+          "from_21_to_30": "21-30 roj"
+        },
+        "content": {
+          "has": "Nivîsar hene",
+          "copy": "Nivîsandina kopî hewce ye"
+        },
+        "languages": {
+          "basic": "1 ziman",
+          "multi": "2+ ziman"
+        },
+        "hosting": {
+          "shared": "Mêvandariya Parvekirî",
+          "vps": "VPS",
+          "managed": "Mêvandariya Rêvebir"
+        },
+        "domain": {
+          "new_domain": "Domaina nû",
+          "existing_domain": "Domain vorhanden",
+          "transfer": "Veguheztina domainê"
+        },
+        "pages": {
+          "one": "1 rûpel",
+          "up_to_3": "Heta 3 rûpelan",
+          "five_plus": "5+ rûpel"
+        },
+        "seo": {
+          "base": "Bingeha SEO",
+          "extended": "SEO Extended"
+        }
+      },
+      "reset": "Her tiştî vegerîne",
+      "empty": "Di her blokê de herî kêm vebijarkek hilbijêrin. Hilbijartina pirjimar gengaz e; Ji bo \"Yên din\" heqê zêde nayê dayîn.",
+      "recommended": "Pêşniyar kirin:",
+      "pack": {
+        "starter": "Destpêker",
+        "business": "Karsaz"
+      },
+      "launchPrice": "Bihayê destpêkê:",
+      "supportMonthly": "Piştgirî / Meh",
+      "supportYearly": "Piştgirî / sal (-30%)",
+      "cta": "Daxwaza pêwendiyê û texmîna lêçûnê ya rastîn",
+      "bullets": {
+        "prototype": "Prototîp û avahî bi baldarî li ser daxwazan",
+        "goal": "Armanc: {{value}}",
+        "integrations": "Yekbûn: {{value}}",
+        "term": "Demjimêr: {{value}}",
+        "hosting": "Mêvandar: {{value}}",
+        "domain": "Domain: {{value}}",
+        "pages": "Rûpel: {{value}}",
+        "analytics": "GA4 û şopandina bûyerê ji bo form / têkiliyan",
+        "copy_true": "Bi nivîs û pêşniyaran re piştgirî bikin",
+        "copy_false": "Em bi nivîsên we yên heyî re dixebitin",
+        "market_note": "Ji bo pargîdaniyên piçûk bihayê rêberiyê li jêr asta bazarê"
+      },
+      "brief": {
+        "title": "Nameya ji konfiguratorê pêşniyarê:",
+        "goal": "Armanc: {{value}}",
+        "integrations": "Yekbûn: {{value}}",
+        "ads": "Reklam: {{value}}",
+        "term": "Demjimêr: {{value}}",
+        "content": "Naverok: {{value}}",
+        "languages": "Ziman: {{value}}",
+        "hosting": "Mêvandar: {{value}}",
+        "domain": "Domain: {{value}}",
+        "pages": "Rûpel: {{value}}",
+        "seo": "SEO: {{value}}",
+        "launch_price": "Bihayê destpêkê: {{value}}",
+        "support_monthly": "Piştgirî / Meh: {{value}}",
+        "support_yearly": "Piştgirî / sal (-30%): {{value}}"
+      }
+    },
+    "trust": {
+      "title": "Tiştê ku hûn di 14 rojan de digirin",
+      "desc": "Encamên destpêkê yên berbiçav: Malperek pirs-oriented, analîtîk saz kirin û planek ji bo mezinbûna bêtir.",
+      "deliverables": {
+        "d1": {
+          "title": "Prototîpa di 48 saetan de",
+          "text": "Em berî kodkirinê struktur û CTA nîşan didin da ku biryar werin plansaz kirin."
+        },
+        "d2": {
+          "title": "Malpera lêpirsînan",
+          "text": "Form, bang, peyamnêr û guhertoya mobîl ji bo pêwendiya bilez."
+        },
+        "d3": {
+          "title": "Analîz û şopandin",
+          "text": "GA4 plus bûyerên, da ku ew li ku derê lêpirsîn çêdibin xuya bibe."
+        },
+        "d4": {
+          "title": "plansaziya xweşbîniya 30-rojî",
+          "text": "Gavên paşîn paqij bikin da ku veguheztinan piştî destpêkirinê zêde bikin."
+        }
+      }
     }
   },
   "services": {

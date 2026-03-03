@@ -14,27 +14,27 @@
     "bg": "Български"
   },
   "common": {
-    "projectRequest": "Projekt anfragen",
-    "viewPrices": "Preise ansehen",
-    "cancel": "Abbrechen"
+    "projectRequest": "طلب المشروع",
+    "viewPrices": "عرض الأسعار",
+    "cancel": "إلغاء"
   },
   "header": {
-    "menu": "Menu",
-    "menuAria": "Navigationsmenü öffnen",
-    "services": "Services",
-    "preise": "Preise",
-    "referenzen": "Referenzen",
-    "ueberUns": "Über uns",
-    "kontakt": "Kontakt"
+    "menu": "القائمة",
+    "menuAria": "افتح قائمة التنقل",
+    "services": "الخدمات",
+    "preise": "الأسعار",
+    "referenzen": "المراجع",
+    "ueberUns": "عنا",
+    "kontakt": "جهة الاتصال"
   },
   "footer": {
-    "tagline": "VS Studio · Websites, Web-Apps, Ads & Automationen",
-    "impressum": "Impressum",
-    "datenschutz": "Datenschutz",
-    "agb": "AGB",
-    "cookies": "Cookies",
-    "cookieSettings": "Cookie-Einstellungen",
-    "blog": "Blog"
+    "tagline": "VS Studio · مواقع الويب وتطبيقات الويب والإعلانات والأتمتة",
+    "impressum": "بصمة",
+    "datenschutz": "حماية البيانات",
+    "agb": "الشروط والأحكام",
+    "cookies": "ملفات تعريف الارتباط",
+    "cookieSettings": "إعدادات ملفات تعريف الارتباط",
+    "blog": "مدونة"
   },
   "cookie": {
     "aria": "Cookie-Einwilligung",
@@ -50,85 +50,315 @@
     "saveSelection": "Auswahl speichern"
   },
   "home": {
-    "heroTitle": "Websites, die Anfragen bringen statt nur gut aussehen.",
-    "heroSubtitle": "Klare Positionierung, schnelle Umsetzung und transparente Pakete für lokale Dienstleister in Deutschland.",
-    "toFaq": "Zum FAQ",
-    "partnersTitle": "Highlights, Zielgruppen und Leistungen",
+    "heroTitle": "مواقع الويب التي تجلب الاستفسارات بدلاً من مجرد الظهور بمظهر جيد.",
+    "heroSubtitle": "تحديد المواقع بشكل واضح وتنفيذ سريع وحزم شفافة لمقدمي الخدمات المحليين في ألمانيا.",
+    "toFaq": "انتقل إلى الأسئلة الشائعة",
+    "partnersTitle": "النقاط البارزة والفئات المستهدفة والخدمات",
     "groups": {
-      "highlights": "Highlights",
-      "forWhom": "Für wen",
-      "services": "Leistungen"
+      "highlights": "أبرز الأحداث",
+      "forWhom": "لمن",
+      "services": "الخدمات"
     },
     "partners": {
       "fastLoad": {
-        "title": "Schnell geladen",
-        "desc": "Seite lädt in Sekunden"
+        "title": "تم التحميل بسرعة",
+        "desc": "يتم تحميل الصفحة في ثوانٍ"
       },
       "moreLeads": {
-        "title": "Mehr Anfragen",
-        "desc": "Mehr Kontakte über Formulare"
+        "title": "المزيد من الاستفسارات",
+        "desc": "المزيد من جهات الاتصال عبر النماذج"
       },
       "clearPrices": {
-        "title": "Klare Preise",
-        "desc": "Du kennst Kosten im Voraus"
+        "title": "أسعار واضحة",
+        "desc": "أنت تعرف التكاليف مقدمًا"
       },
       "personalHelp": {
-        "title": "Persönliche Hilfe",
-        "desc": "Direkter Support ohne Warteschlange"
+        "title": "المساعدة الشخصية",
+        "desc": "الدعم المباشر دون الانتظار في الطابور"
       },
       "handwerker": {
-        "title": "Handwerker",
-        "desc": "Anfragen pro Stadt und Leistung"
+        "title": "حرفي",
+        "desc": "الطلبات حسب المدينة والخدمة"
       },
       "praxen": {
         "title": "Praxen",
-        "desc": "Patienten finden schneller Termine"
+        "desc": "يجد المرضى المواعيد بسرعة أكبر"
       },
       "werkstaetten": {
-        "title": "Werkstätten",
-        "desc": "Klare Service-Seiten mit Tracking"
+        "title": "ورش عمل",
+        "desc": "مسح صفحات الخدمة مع التتبع"
       },
       "localServices": {
-        "title": "Lokale Services",
-        "desc": "Mehr Sichtbarkeit vor Ort"
+        "title": "الخدمات المحلية",
+        "desc": "مزيد من الرؤية في الموقع"
       },
       "websites": {
         "title": "Websites",
-        "desc": "Modern, schnell, mobil optimiert"
+        "desc": "حديث وسريع ومُحسّن للجوال"
       },
       "webApps": {
-        "title": "Web-Apps",
-        "desc": "Tools für Team und Kunden"
+        "title": "تطبيقات الويب",
+        "desc": "أدوات للفريق والعملاء"
       },
       "aiIntegration": {
-        "title": "AI Integration",
-        "desc": "Chatbot für Fragen und Leads"
+        "title": "تكامل الذكاء الاصطناعي",
+        "desc": "Chatbot للأسئلة والعملاء المحتملين"
       },
       "socialMedia": {
-        "title": "Social Media",
-        "desc": "Website + Instagram/Meta verbunden"
+        "title": "وسائل التواصل الاجتماعي",
+        "desc": "موقع الويب + متصل بـ Instagram/Meta"
       },
       "socialAds": {
-        "title": "Social Ads",
-        "desc": "Gezielte Werbung mit messbaren Ergebnissen"
+        "title": "الإعلانات الاجتماعية",
+        "desc": "إعلانات مستهدفة ذات نتائج قابلة للقياس"
       }
     },
-    "trustTitle": "Trust mit konkreten Ergebnissen",
-    "trustDesc1": "mehr Kontaktanfragen in 60 Tagen.",
-    "trustDesc2": "geringere Cost-per-Lead nach Tracking-Fix.",
-    "trustDesc3": "durchschnittliche Ladezeit auf Mobil.",
-    "faqTitle": "FAQ",
+    "trustTitle": "ثق بنتائج ملموسة",
+    "trustDesc1": "المزيد من طلبات الاتصال خلال 60 يومًا.",
+    "trustDesc2": "تكلفة أقل لكل عميل متوقع بعد إصلاح التتبع.",
+    "trustDesc3": "متوسط ​​وقت التحميل على الهاتف المحمول.",
+    "faqTitle": "الأسئلة الشائعة",
     "faq": {
-      "q1": "Wie schnell könnt ihr starten?",
-      "a1": "In der Regel starten wir innerhalb von 3-5 Werktagen. Direkt nach deiner Anfrage bekommst du einen kurzen Plan mit den ersten Schritten.",
-      "q2": "Was brauche ich als Kunde am Anfang?",
-      "a2": "Nur Basisinfos zu deinem Angebot, Zielgruppe und Kontaktwegen. Wir helfen dir dann bei Struktur, Texten und Prioritäten.",
-      "q3": "Wie läuft die Zusammenarbeit ab?",
-      "a3": "Wir arbeiten in kurzen Etappen: Konzept, Design, Umsetzung, Launch. Du bekommst klare Updates, damit du immer weißt, was als Nächstes passiert.",
-      "q4": "Ist das für kleine Unternehmen geeignet?",
-      "a4": "Ja. Unsere Pakete sind bewusst für lokale Betriebe aufgebaut: klare Preise, schneller Start und Fokus auf echte Anfragen statt nur Optik.",
-      "q5": "Was passiert nach dem Launch?",
-      "a5": "Nach dem Launch prüfen wir Daten, verbessern Conversion-Punkte und unterstützen dich beim Feinschliff, damit die Seite dauerhaft besser performt."
+      "q1": "ما مدى السرعة التي يمكنك البدء بها؟",
+      "a1": "عادة ما نبدأ خلال 3-5 أيام عمل. ستتلقى مباشرة بعد طلبك خطة قصيرة تتضمن الخطوات الأولى.",
+      "q2": "ما الذي أحتاجه كعميل في البداية؟",
+      "a2": "المعلومات الأساسية فقط حول عرضك والمجموعة المستهدفة وقنوات الاتصال. وسنساعدك بعد ذلك فيما يتعلق بالهيكل والنصوص والأولويات.",
+      "q3": "كيف يتم التعاون؟",
+      "a3": "نعمل على مراحل قصيرة: الفكرة، التصميم، التنفيذ، الإطلاق. ستحصل على تحديثات واضحة حتى تعرف دائمًا ما سيحدث بعد ذلك.",
+      "q4": "هل هذا مناسب للشركات الصغيرة؟",
+      "a4": "نعم. تم تصميم عروضنا عمدًا للشركات المحلية: أسعار واضحة، وبداية سريعة، والتركيز على الاستفسارات الحقيقية بدلاً من مجرد العناصر البصرية.",
+      "q5": "ماذا يحدث بعد الإطلاق؟",
+      "a5": "بعد الإطلاق، نقوم بفحص البيانات وتحسين نقاط التحويل وندعمك في الضبط الدقيق حتى يعمل الموقع بشكل أفضل على المدى الطويل.",
+      "desc": "إجابات على الأسئلة المتداولة حول التوقيت والتكاليف وعملية الإطلاق والدعم المستمر."
+    },
+    "hero": {
+      "bento": {
+        "speed": {
+          "label": "السرعة",
+          "value": "90+ منارة"
+        },
+        "seo": {
+          "label": "تحسين محركات البحث",
+          "value": "الأساس الفني"
+        },
+        "leads": {
+          "label": "الاستفسارات",
+          "value": "مسح CTA والنماذج"
+        },
+        "support": {
+          "label": "الدعم",
+          "value": "بعد الإطلاق"
+        }
+      }
+    },
+    "partnersSection": {
+      "title": "المزايا ومجالات التطبيق",
+      "desc": "ما هي المهام التي نغطيها وما هي الشركات المحلية التي نقوم في أغلب الأحيان بتنفيذ مواقع الويب وتوجيه مسارات التحويل لها."
+    },
+    "marquee": {
+      "aria": "الصناعات",
+      "title": "الصناعات التي نعمل معها",
+      "desc": "اختر الاتجاه وشاهد أمثلة على الأسلوب المناسب. وهذا يعني أنه يمكننا بناء عرض دقيق لشركتك بسرعة أكبر.",
+      "items": {
+        "handwerk": "الحرف اليدوية",
+        "praxen": "Praxen",
+        "werkstaetten": "ورش عمل",
+        "gastronomie": "فن الطهو",
+        "beauty": "الجمال",
+        "immobilien": "العقارات",
+        "kanzlei": "محاماة",
+        "fitness": "اللياقة البدنية",
+        "reinigung": "التنظيف",
+        "transport": "النقل",
+        "coaching": "التدريب",
+        "bildung": "التعليم"
+      }
+    },
+    "process": {
+      "title": "كيف نعمل",
+      "desc": "عملية شفافة بدون خطوات غير ضرورية: بدءًا من الإحاطة القصيرة وحتى الإطلاق والتحسين بمواعيد نهائية واضحة.",
+      "aria": "مراحل المشروع",
+      "stage": "المرحلة",
+      "nav": {
+        "prev": "العودة",
+        "next": "التالي"
+      },
+      "steps": {
+        "s1": {
+          "title": "مكالمة مدتها 15 دقيقة",
+          "text": "نوضح المهمة ومؤشر الأداء الرئيسي والموعد النهائي ونتفق فورًا على تنسيق الإطلاق."
+        },
+        "s2": {
+          "title": "النموذج الأولي في 48 ساعة",
+          "text": "نعرض بنية الصفحة وعبارات الحث على اتخاذ إجراء وتدفق العملاء المحتملين قبل التطوير."
+        },
+        "s3": {
+          "title": "التطوير خلال 7-14 يومًا",
+          "text": "التنفيذ وأساس تحسين محركات البحث (SEO) وعمليات التكامل والتحليلات دون أي تكاليف إضافية غير ضرورية."
+        },
+        "s4": {
+          "title": "الإطلاق والتحسين",
+          "text": "نبدأ البث المباشر ونتحقق من التحويل ونقدم خطة تحسين لمدة 30 يومًا."
+        }
+      }
+    },
+    "projects": {
+      "title": "المشاريع/دراسات الحالة",
+      "desc": "مهام حقيقية ونتائج متوقعة دون وعود فارغة. قم بالتمرير على حالة للمعاينة المباشرة.",
+      "cards": {
+        "c1": {
+          "title": "موقع الاستفسار المحلي",
+          "description": "صفحة مقصودة مع التركيز على النماذج والمكالمات والاتصال السريع عبر الهاتف المحمول.",
+          "goal": "الهدف: المزيد من الاستفسارات دون زيادة الميزانية"
+        },
+        "c2": {
+          "title": "الصفحة المقصودة للإعلانات",
+          "description": "صفحة منفصلة بها تتبع لحملات Meta وGoogle.",
+          "goal": "التأثير المتوقع: المزيد من العملاء المحتملين المؤهلين من الإعلانات"
+        },
+        "c3": {
+          "title": "موقع للتدريب",
+          "description": "هيكل الخدمة الواضح والأسئلة الشائعة وتدفق المواعيد عبر الإنترنت.",
+          "goal": "الهدف: المزيد من حجوزات المواعيد مع عدد أقل من الاستفسارات"
+        },
+        "c4": {
+          "title": "لوحة معلومات للعملاء المحتملين",
+          "description": "واجهة داخلية لمعالجة العملاء المحتملين والتحكم في حالتهم.",
+          "goal": "التأثير المتوقع: معالجة أسرع للطلبات"
+        }
+      }
+    },
+    "configurator": {
+      "title": "مكون العرض",
+      "desc": "حدد معلمات المشروع واحصل على السعر المبدئي ومعدلات الدعم المناسبة.",
+      "labels": {
+        "goal": "الهدف",
+        "integrations": "التكامل",
+        "ads": "الإعلان",
+        "term": "الإطار الزمني",
+        "content": "مستوى المحتوى",
+        "languages": "اللغات",
+        "hosting": "الاستضافة",
+        "domain": "Domain",
+        "pages": "صفحة",
+        "seo": "تحسين محركات البحث"
+      },
+      "options": {
+        "common": {
+          "other": "أخرى"
+        },
+        "goal": {
+          "leads": "العملاء المحتملين",
+          "calls": "المكالمات",
+          "booking": "Buchungen"
+        },
+        "integrations": {
+          "booking": "Buchung",
+          "crm": "إدارة علاقات العملاء",
+          "chat": "الدردشة",
+          "payments": "المدفوعات"
+        },
+        "ads": {
+          "none": "بدون إعلانات",
+          "meta": "ميتا",
+          "google": "جوجل"
+        },
+        "term": {
+          "up_to_7": "حتى أسبوع واحد",
+          "from_7_to_14": "7-14 يومًا",
+          "from_14_to_21": "14-21 يومًا",
+          "from_21_to_30": "21-30 يومًا"
+        },
+        "content": {
+          "has": "النصوص المتاحة",
+          "copy": "كتابة الإعلانات مطلوبة"
+        },
+        "languages": {
+          "basic": "لغة واحدة",
+          "multi": "أكثر من لغتين"
+        },
+        "hosting": {
+          "shared": "الاستضافة المشتركة",
+          "vps": "الخادم الافتراضي الخاص",
+          "managed": "الاستضافة المُدارة"
+        },
+        "domain": {
+          "new_domain": "مجال جديد",
+          "existing_domain": "Domain vorhanden",
+          "transfer": "نقل النطاق"
+        },
+        "pages": {
+          "one": "صفحة واحدة",
+          "up_to_3": "ما يصل إلى 3 صفحات",
+          "five_plus": "أكثر من 5 صفحات"
+        },
+        "seo": {
+          "base": "قاعدة تحسين محركات البحث",
+          "extended": "SEO ممتد"
+        }
+      },
+      "reset": "إعادة ضبط كل شيء",
+      "empty": "اختر خيارًا واحدًا على الأقل في كل كتلة. الاختيار المتعدد ممكن. بالنسبة لـ \"أخرى\" لا يتم فرض أي رسوم إضافية.",
+      "recommended": "الموصى به:",
+      "pack": {
+        "starter": "كاتب",
+        "business": "الأعمال"
+      },
+      "launchPrice": "السعر المبدئي:",
+      "supportMonthly": "الدعم / الشهر",
+      "supportYearly": "الدعم / السنة (-30%)",
+      "cta": "طلب الاتصال وتقدير التكلفة الدقيق",
+      "bullets": {
+        "prototype": "النموذج الأولي والهيكل مع التركيز على الطلبات",
+        "goal": "الأهداف: {{value}}",
+        "integrations": "التكامل: {{value}}",
+        "term": "الإطار الزمني: {{value}}",
+        "hosting": "الاستضافة: {{value}}",
+        "domain": "النطاق: {{value}}",
+        "pages": "الصفحات: {{value}}",
+        "analytics": "GA4 وتتبع الأحداث للنماذج/جهات الاتصال",
+        "copy_true": "الدعم بالنصوص والعروض",
+        "copy_false": "نحن نعمل مع النصوص الموجودة لديك",
+        "market_note": "السعر الإرشادي أقل من مستوى السوق بالنسبة للشركات الصغيرة"
+      },
+      "brief": {
+        "title": "رسالة من مُكوِّن العرض:",
+        "goal": "الهدف: {{value}}",
+        "integrations": "التكامل: {{value}}",
+        "ads": "الإعلان: {{value}}",
+        "term": "الإطار الزمني: {{value}}",
+        "content": "المحتوى: {{value}}",
+        "languages": "اللغات: {{value}}",
+        "hosting": "الاستضافة: {{value}}",
+        "domain": "المجال: {{value}}",
+        "pages": "الصفحات: {{value}}",
+        "seo": "تحسين محركات البحث: {{value}}",
+        "launch_price": "السعر المبدئي: {{value}}",
+        "support_monthly": "الدعم / الشهر: {{value}}",
+        "support_yearly": "الدعم / السنة (-30%): {{value}}"
+      }
+    },
+    "trust": {
+      "title": "ما تحصل عليه خلال 14 يومًا",
+      "desc": "نتائج بداية ملموسة: موقع ويب موجه للاستعلام، وإعداد تحليلات وخطة لمزيد من النمو.",
+      "deliverables": {
+        "d1": {
+          "title": "النموذج الأولي في 48 ساعة",
+          "text": "نعرض الهيكل والحث على اتخاذ إجراء قبل البرمجة حتى يمكن التخطيط للقرارات."
+        },
+        "d2": {
+          "title": "موقع للاستفسارات",
+          "text": "النموذج والاتصال والماسنجر ونسخة الجوال للتواصل السريع."
+        },
+        "d3": {
+          "title": "التحليلات والتتبع",
+          "text": "أحداث GA4 plus، بحيث تكون مرئية عند ظهور الاستفسارات."
+        },
+        "d4": {
+          "title": "خطة التحسين لمدة 30 يومًا",
+          "text": "امسح الخطوات التالية لزيادة التحويلات بعد الإطلاق."
+        }
+      }
     }
   },
   "services": {
