@@ -7,16 +7,16 @@ import { segmentData } from './homePageData';
 type OfferResult =
   | { isComplete: false }
   | {
-      isComplete: true;
-      pack: 'Starter' | 'Business';
-      bullets: string[];
-      totalFrom: number;
-      totalTo: number;
-      supportMonthly: number;
-      supportYearlyRaw: number;
-      supportYearly: number;
-      cta: string;
-    };
+    isComplete: true;
+    pack: 'Starter' | 'Business';
+    bullets: string[];
+    totalFrom: number;
+    totalTo: number;
+    supportMonthly: number;
+    supportYearlyRaw: number;
+    supportYearly: number;
+    cta: string;
+  };
 
 const PRICE_BY_GOAL: Record<string, number> = {
   leads: 576,
