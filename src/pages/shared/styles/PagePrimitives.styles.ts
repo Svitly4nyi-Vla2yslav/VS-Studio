@@ -148,7 +148,7 @@ export const Card = styled(motion.article).attrs({
   }
 `;
 
-export const Band = styled(Card).attrs({ as: 'section' })`
+export const Band = styled(Card).attrs({ as: motion.section })`
   margin-top: var(--section-space, 36px);
 
   @media (max-width: 767px) {
