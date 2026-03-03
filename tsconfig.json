@@ -20,5 +20,18 @@
     "noImplicitAny": false
   },
   "include": ["src", "webpack.config.ts", "netlify/functions/**/*"],
+  "exclude": [
+    "src/pages/OvenKitchenAid/**",
+    "src/pages/OvenRepair/**",
+    "src/pages/OvenThermador/**",
+    "src/pages/OvenViking/**",
+    "src/pages/OvenWolf/**",
+    "src/pages/Refrigeration/**",
+    "src/pages/RefrigeratorGEMonogram/**",
+    "src/pages/RefrigeratorKitchenAid/**",
+    "src/pages/RefrigeratorSubZero/**",
+    "src/pages/RefrigeratorThermador/**",
+    "src/pages/RefrigeratorViking/**"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
