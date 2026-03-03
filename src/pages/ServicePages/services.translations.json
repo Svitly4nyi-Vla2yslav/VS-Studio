@@ -1,0 +1,2212 @@
+{
+  "tr": {
+    "copy": {
+      "eyebrow": "Almanya'daki yerel şirketler için öncü sistemler",
+      "heroTitle": [
+        "Trafikten",
+        "nitelikli potansiyel müşteriler",
+        "als steuerbares System"
+      ],
+      "heroLead": "Satış, pazarlama ve sahiplerin aynı verilerle çalışabilmesi için web sitesini, yapay zekayı, reklamları ve analitiği tek bir operasyonel mimaride birleştiriyoruz.",
+      "ctaTop": "Stratejik çağrıyı başlat",
+      "heroChips": [
+        "Potansiyel Müşteri Akışı",
+        "Yapay Zeka Yeterliliği",
+        "Atıf"
+      ],
+      "heroChipValues": [
+        "Canlı Yayın",
+        "DM + Bot",
+        "GA4 + CRM"
+      ],
+      "flowNodes": [
+        "Google / Meta / TikTok",
+        "İniş + Takip",
+        "Yapay Zeka Yeterliliği",
+        "CRM Boru Hattı"
+      ],
+      "heroBadges": [
+        "Sunucu tarafı izleme",
+        "Potansiyel Müşteri Puanlaması",
+        "ROAS Görünümü"
+      ],
+      "servicesTitle": "Sistem modülleri olarak hizmetler",
+      "servicesDesc": "Tek tip bir kart bloğu değil: baskın bir çekirdek, yan modüller ve kompakt bir operasyon katmanı.",
+      "trio": [
+        "Sorun",
+        "sistemi",
+        "Sonuç"
+      ],
+      "detailsSummary": "Uygulama ayrıntıları",
+      "kpiBadgesTitle": "KPI rozetleri",
+      "kpiBadgesDesc": "Her performans, yalnızca satış ve pazarlamanın birlikte okuyup kontrol edebileceği önemli rakamlar kullanılarak değerlendirilir.",
+      "signalLayerTitle": "Sinyal Katmanı",
+      "signalItems": [
+        "GA4 etkinlikleri",
+        "Meta CAPI'si",
+        "CRM Senkronizasyonu",
+        "GDPR modası"
+      ],
+      "opsTitle": "Operasyon Notları",
+      "opsItems": [
+        "Haftalık Test Sırası",
+        "Bütçenin Yeniden Dağıtılması",
+        "Dönüşüm Hunisi QA Yuvaları"
+      ],
+      "packagesTitle": "Pakete in SaaS-Logik",
+      "recommended": "Tavsiye edilir",
+      "timelineTitle": "Nasıl çalışıyoruz?",
+      "stepLabel": "Adım",
+      "controlTitle": "Kontrol Odası: Gerçek zamanlı sonuçlar",
+      "controlPanelTitle": "Kontrol Paneli Mimarisi",
+      "controlPanelDesc": "Kanal verileri, huni sinyalleri ve CRM durumu tek bir görünümde birleşiyor. Kararlar içgüdüsel olarak değil, süreç düzeyinde alınır.",
+      "miniCharts": [
+        "Potansiyel Müşteri Hacmi",
+        "Kalite Puanı",
+        "Anlaşma Hızı"
+      ],
+      "kpiPanelTitle": "Canlı KPI Sayaçları",
+      "kpiLabels": [
+        "Nitelikli Potansiyel Müşteriler",
+        "Ort. İlk yanıt",
+        "Randevuya götür",
+        "ROAS kümeleri"
+      ],
+      "controlBadges": [
+        "Liderlik kontrolü",
+        "Bütçe kontrolü",
+        "Dönüşüm hunisi kontrolü"
+      ],
+      "ctaBottom": "Potansiyel müşteri sisteminiz için kapsam isteyin"
+    },
+    "systems": {
+      "website": {
+        "title": "Web Sitesi Motoru",
+        "problem": "Trafik var ama mobil kullanıcılar formdan önce çıkıyor.",
+        "system": "GA4, Meta Piksel, sunucu tarafı izleme, CRM ve GDPR kurulumuyla Açılış/Çoklu Sayfa.",
+        "outcome": "Her müşteri izlenebilir bir şekilde kayıt altına alınır ve açıkça bir kanala atanır.",
+        "kpis": [
+          "izleme oranı",
+          "Form Doldurma",
+          "Potansiyel Müşteri Kaynağının Netliği"
+        ],
+        "details": [
+          "İzin modu doğru şekilde yapılandırıldı",
+          "Çağrı ve WhatsApp etkinlikleri",
+          "Gerçek zamanlı CRM aktarımı"
+        ]
+      },
+      "ai": {
+        "title": "Yapay Zeka Yeterlilik Katmanı",
+        "problem": "Çok fazla niteliksiz soru satışları ve telefon ekibini engelliyor.",
+        "system": "Yapay zeka sohbet robotu, otomatik yeterlilik, WhatsApp/Instagram'da DM akışları, e-posta otomasyonu, müşteri adayı puanlama.",
+        "outcome": "Ekip, zaman alıcı ilk sıralama yerine satışla ilgili potansiyel müşterilere öncelik veriyor.",
+        "kpis": [
+          "İlk yanıt süresi",
+          "Nitelikli Potansiyel Müşteri Payı",
+          "Satış Ekibi Verimi"
+        ],
+        "details": [
+          "Sektöre özel bilgi istemi yolları",
+          "Gösterilmemesi Hatırlatıcıları",
+          "Puana göre önceliklendirme"
+        ]
+      },
+      "ads": {
+        "title": "Ücretli Edinme",
+        "problem": "Bütçe kanallar arasında net bir öğrenme döngüsü olmadan dağıtılıyor.",
+        "system": "Google Ads + Meta Reklamlar + TikTok, A/B testleri, benzerler, dönüşüm izleme ve ROAS görünümü.",
+        "outcome": "Bütçe, salt tıklama hacmi yerine yüksek potansiyel müşteri kalitesine sahip kampanyalara akıyor.",
+        "kpis": [
+          "Nitelikli potansiyel müşteri başına maliyet",
+          "Kampanyaya göre ROAS",
+          "Yaratıcı Kazanma Oranı"
+        ],
+        "details": [
+          "Bölgesel kampanya kümeleri",
+          "Testteki şekil çeşitleri",
+          "Sinyale dayalı kitle güncellemeleri"
+        ]
+      },
+      "analytics": {
+        "title": "Kontrol Analitiği",
+        "problem": "Kararlar, güvenilir huni verileri yerine platform ekran görüntülerine dayanmaktadır.",
+        "system": "Tek düzeyde kanal, huni ve CRM görünümlerini içeren kontrol odası kontrol paneli.",
+        "outcome": "Haftalık bütçe, optimizasyon ve ölçeklendirme kararları verilere dayalı olarak izlenebilir.",
+        "kpis": [
+          "Randevuya Yol Açmak",
+          "Anlaşmaya varmak",
+          "Boru Hattı Hızı"
+        ],
+        "details": [
+          "Bölgeye/hizmete göre segmentasyon",
+          "Huni Düşme Uyarıları",
+          "Aylık hipotez listesi"
+        ]
+      }
+    },
+    "packages": [
+      {
+        "id": "başlangıç",
+        "title": "Başlangıç",
+        "scale": 1,
+        "lead": "Sıfırdan ölçülebilir bir potansiyel müşteri tabanına giden yerel işletmeler için.",
+        "items": [
+          "Web dönüşüm hunisi + GA4",
+          "Meta Pikseller + İzin",
+          "CRM Yakalama",
+          "Temel raporlama"
+        ],
+        "effect": "Potansiyel müşteri kaynaklarının net görünümü ve esnek bir başlangıç süreci."
+      },
+      {
+        "id": "büyüme",
+        "title": "Büyüme",
+        "scale": 2,
+        "recommended": true,
+        "lead": "Daha nitelikli potansiyel müşterilere ihtiyaç duyan aktif satışları olan ekipler için.",
+        "items": [
+          "Google + Meta kampanyaları",
+          "Yapay Zeka Yeterlilik Akışları",
+          "A/B Test Kurulumu",
+          "Müşteri Adayı Puanlama + Otomasyon"
+        ],
+        "effect": "Daha iyi yanıt süreleri ve net önceliklendirme ile daha nitelikli talep."
+      },
+      {
+        "id": "ölçeği",
+        "title": "Terazi",
+        "scale": 3,
+        "lead": "Birden fazla bölgeye veya hizmet kümesine sahip şirketler için.",
+        "items": [
+          "Çok kanallı kontrol",
+          "Sunucu Tarafı İlişkilendirmesi",
+          "Ops Web Uygulama Katmanı",
+          "Kontrol odası yönetimi"
+        ],
+        "effect": "Manuel deneme yanılma yerine süreçler ve güvenilir veriler üzerinden ölçeklendirme."
+      }
+    ],
+    "timeline": [
+      [
+        "01",
+        "Stratejik çağrı",
+        "Hedef pazar, teklif ve müşteri adayı darboğazı açıkça tanımlanmıştır."
+      ],
+      [
+        "02",
+        "Kapsam belgesi",
+        "Kanal planı, takip planı ve sorumluluklar belirlendi."
+      ],
+      [
+        "03",
+        "Yapım aşaması",
+        "Web sitesi otomasyonları ve entegrasyonları gerçekleştirilir."
+      ],
+      [
+        "04",
+        "Lansman",
+        "QA takibi, kampanya lansmanı ve CRM akışları yayına giriyor."
+      ],
+      [
+        "05",
+        "Optimizasyon",
+        "Reklam öğeleri, dönüşüm hunileri ve kalifikasyon için haftalık testler."
+      ],
+      [
+        "06",
+        "Ölçekleme",
+        "İşleyen rotalar bölgelere/hizmetlere genişletildi."
+      ]
+    ]
+  },
+  "ar": {
+    "copy": {
+      "eyebrow": "الأنظمة الرائدة للشركات المحلية في ألمانيا",
+      "heroTitle": [
+        "من حركة المرور",
+        "العملاء المتوقعون المؤهلون",
+        "كنظام يمكن السيطرة عليه"
+      ],
+      "heroLead": "نقوم بربط مواقع الويب والذكاء الاصطناعي والإعلانات والتحليلات في بنية تشغيلية واحدة بحيث يعمل فريق المبيعات والتسويق والمالكون بنفس البيانات.",
+      "ctaTop": "ابدأ المكالمة الإستراتيجية",
+      "heroChips": [
+        "تدفق الرصاص",
+        "تأهل الذكاء الاصطناعي",
+        "الإسناد"
+      ],
+      "heroChipValues": [
+        "المدخول المباشر",
+        "رسالة مباشرة + بوت",
+        "GA4 + إدارة علاقات العملاء"
+      ],
+      "flowNodes": [
+        "جوجل / ميتا / تيك توك",
+        "الهبوط + التتبع",
+        "مؤهل الذكاء الاصطناعي",
+        "خط أنابيب إدارة علاقات العملاء"
+      ],
+      "heroBadges": [
+        "التتبع من جانب الخادم",
+        "نقاط الرصاص",
+        "عرض عائد النفقات الإعلانية"
+      ],
+      "servicesTitle": "الخدمات كوحدات النظام",
+      "servicesDesc": "ليست كتلة بطاقات موحدة: نواة مهيمنة ووحدات جانبية وطبقة عمليات مدمجة.",
+      "trio": [
+        "مشكلة",
+        "System",
+        "النتيجة"
+      ],
+      "detailsSummary": "تفاصيل التنفيذ",
+      "kpiBadgesTitle": "شارات مؤشرات الأداء الرئيسية",
+      "kpiBadgesDesc": "يتم تقييم كل أداء حصريًا باستخدام الأرقام الرئيسية التي يمكن للمبيعات والتسويق قراءتها والتحكم فيها معًا.",
+      "signalLayerTitle": "طبقة الإشارة",
+      "signalItems": [
+        "أحداث \"إحصاءات Google\" 4",
+        "ميتا كابي",
+        "مزامنة إدارة علاقات العملاء",
+        "موضة القانون العام لحماية البيانات"
+      ],
+      "opsTitle": "ملاحظات العمليات",
+      "opsItems": [
+        "قائمة انتظار الاختبار الأسبوعية",
+        "إعادة تخصيص الميزانية",
+        "فتحات ضمان الجودة"
+      ],
+      "packagesTitle": "Pakete in SaaS-Logik",
+      "recommended": "موصى به",
+      "timelineTitle": "كيف نعمل",
+      "stepLabel": "الخطوة",
+      "controlTitle": "غرفة التحكم: النتائج في الوقت الحقيقي",
+      "controlPanelTitle": "بنية لوحة المعلومات",
+      "controlPanelDesc": "تتلاقى بيانات القناة وإشارات مسار التحويل وحالة إدارة علاقات العملاء (CRM) في عرض واحد. يتم اتخاذ القرارات على مستوى العملية بدلاً من الاعتماد على الشعور الغريزي.",
+      "miniCharts": [
+        "حجم الرصاص",
+        "نقاط الجودة",
+        "سرعة الصفقة"
+      ],
+      "kpiPanelTitle": "عدادات مؤشرات الأداء الرئيسية المباشرة",
+      "kpiLabels": [
+        "العملاء المتوقعون المؤهلون",
+        "متوسط. الرد الأول",
+        "يؤدي إلى التعيين",
+        "مجموعات عائد الإنفاق الإعلاني (ROAS)."
+      ],
+      "controlBadges": [
+        "التحكم في الرصاص",
+        "مراقبة الميزانية",
+        "التحكم في مسار التحويل"
+      ],
+      "ctaBottom": "نطاق الطلب لنظام العملاء المحتملين الخاص بك"
+    },
+    "systems": {
+      "website": {
+        "title": "محرك الموقع",
+        "problem": "حركة المرور موجودة، لكن مستخدمي الهاتف المحمول يتخلون عنها قبل النموذج.",
+        "system": "الصفحات المقصودة/الصفحات المتعددة مع GA4 وMeta Pixel والتتبع من جانب الخادم وإدارة علاقات العملاء وإعداد القانون العام لحماية البيانات (GDPR).",
+        "outcome": "يتم تسجيل كل عميل متوقع بطريقة يمكن تتبعها وتعيينها بوضوح إلى القناة.",
+        "kpis": [
+          "معدل التتبع",
+          "إكمال النموذج",
+          "وضوح مصدر الرصاص"
+        ],
+        "details": [
+          "تم تكوين وضع الموافقة بشكل صحيح",
+          "أحداث الاتصال والواتس اب",
+          "دفع CRM في الوقت الحقيقي"
+        ]
+      },
+      "ai": {
+        "title": "طبقة تأهيل الذكاء الاصطناعي",
+        "problem": "يؤدي وجود عدد كبير جدًا من الاستفسارات غير المؤهلة إلى عرقلة المبيعات وفريق الهاتف.",
+        "system": "روبوت الدردشة المدعم بالذكاء الاصطناعي، والتأهيل التلقائي، وتدفقات الرسائل المباشرة في WhatsApp/Instagram، وأتمتة البريد الإلكتروني، وسجل العملاء المحتملين.",
+        "outcome": "يقوم الفريق بإعطاء الأولوية للعملاء المحتملين المرتبطين بالمبيعات بدلاً من الفرز الأولي الذي يستغرق وقتًا طويلاً.",
+        "kpis": [
+          "وقت الاستجابة الأول",
+          "مشاركة العميل المحتمل المؤهل",
+          "إنتاجية فريق المبيعات"
+        ],
+        "details": [
+          "مسارات المطالبة الخاصة بالصناعة",
+          "عدم عرض التذكيرات",
+          "تحديد الأولويات حسب النتيجة"
+        ]
+      },
+      "ads": {
+        "title": "الاستحواذ المدفوع",
+        "problem": "يتم توزيع الميزانية بين القنوات بدون حلقة تعليمية واضحة.",
+        "system": "إعلانات Google + Meta Ads + TikTok، واختبارات A/B، والمشابهين، وتتبع التحويل، وعرض عائد الإنفاق الإعلاني (ROAS).",
+        "outcome": "تتدفق الميزانية إلى الحملات ذات جودة العملاء المحتملين العالية بدلاً من حجم النقرات النقي.",
+        "kpis": [
+          "التكلفة لكل عميل محتمل مؤهل",
+          "عائد النفقات الإعلانية حسب الحملة",
+          "معدل الفوز الإبداعي"
+        ],
+        "details": [
+          "مجموعات الحملات الإقليمية",
+          "متغيرات الشكل في الاختبار",
+          "تحديثات الجمهور المستندة إلى الإشارة"
+        ]
+      },
+      "analytics": {
+        "title": "تحليلات التحكم",
+        "problem": "تعتمد القرارات على لقطات شاشة النظام الأساسي بدلاً من بيانات مسار التحويل الموثوقة.",
+        "system": "لوحة معلومات غرفة التحكم مع طرق عرض القناة ومسار التحويل وإدارة علاقات العملاء (CRM) على مستوى واحد.",
+        "outcome": "يمكن تتبع القرارات الأسبوعية بشأن الميزانية والتحسين والقياس بناءً على البيانات.",
+        "kpis": [
+          "يؤدي إلى التعيين",
+          "يؤدي إلى التعامل",
+          "سرعة خط الأنابيب"
+        ],
+        "details": [
+          "التقسيم حسب المنطقة/الخدمة",
+          "تنبيهات إسقاط مسار التحويل",
+          "قائمة الفرضيات الشهرية"
+        ]
+      }
+    },
+    "packages": [
+      {
+        "id": "بداية",
+        "title": "كاتب",
+        "scale": 1,
+        "lead": "للشركات المحلية التي تنتقل من الصفر إلى قاعدة عملاء قابلة للقياس.",
+        "items": [
+          "مسار تحويل الويب + GA4",
+          "Meta Pixels + الموافقة",
+          "التقاط إدارة علاقات العملاء",
+          "إعداد التقارير الأساسية"
+        ],
+        "effect": "رؤية واضحة لمصادر العملاء المحتملين وعملية أولية مرنة."
+      },
+      {
+        "id": "النمو",
+        "title": "النمو",
+        "scale": 2,
+        "recommended": true,
+        "lead": "للفرق ذات المبيعات النشطة التي تحتاج إلى المزيد من العملاء المحتملين المؤهلين.",
+        "items": [
+          "حملات جوجل + ميتا",
+          "تدفقات تأهيل الذكاء الاصطناعي",
+          "إعداد اختبار أ/ب",
+          "تسجيل نقاط العميل المتوقع + الأتمتة"
+        ],
+        "effect": "طلب أكثر تأهيلاً مع أوقات استجابة أفضل وتحديد أولويات واضح."
+      },
+      {
+        "id": "scale",
+        "title": "مقياس",
+        "scale": 3,
+        "lead": "للشركات ذات المناطق أو مجموعات الخدمة المتعددة.",
+        "items": [
+          "تحكم متعدد القنوات",
+          "الإسناد من جانب الخادم",
+          "طبقة تطبيق ويب العمليات",
+          "إدارة غرفة التحكم"
+        ],
+        "effect": "التوسع من خلال العمليات والبيانات الموثوقة بدلاً من التجربة والخطأ اليدويين."
+      }
+    ],
+    "timeline": [
+      [
+        "01",
+        "النداء الاستراتيجي",
+        "السوق المستهدف والعرض واختناقات الرصاص محددة بوضوح."
+      ],
+      [
+        "02",
+        "مستند النطاق",
+        "تم إصلاح خطة القناة وخطة التتبع والمسؤوليات."
+      ],
+      [
+        "03",
+        "مرحلة البناء",
+        "يتم تنفيذ موقع الويب والأتمتة والتكامل."
+      ],
+      [
+        "04",
+        "الإطلاق",
+        "بدء تشغيل تتبع ضمان الجودة وإطلاق الحملة وتدفقات إدارة علاقات العملاء."
+      ],
+      [
+        "05",
+        "التحسين",
+        "اختبارات أسبوعية للمبدعين والمسارات والتأهيل."
+      ],
+      [
+        "06",
+        "التحجيم",
+        "يتم توسيع مسارات العمل إلى المناطق/الخدمات."
+      ]
+    ]
+  },
+  "pl": {
+    "copy": {
+      "eyebrow": "Systemy wiodące dla lokalnych firm w Niemczech",
+      "heroTitle": [
+        "Z ruchu",
+        "kwalifikowani potencjalni klienci",
+        "jako system sterowalny"
+      ],
+      "heroLead": "Łączymy stronę internetową, sztuczną inteligencję, reklamy i analitykę w jedną architekturę operacyjną, aby sprzedaż, marketing i właściciele pracowali z tymi samymi danymi.",
+      "ctaTop": "Rozpocznij rozmowę strategiczną",
+      "heroChips": [
+        "Przepływ ołowiu",
+        "AI Zakwalifikuj się",
+        "Uznanie autorstwa"
+      ],
+      "heroChipValues": [
+        "Ujęcie na żywo",
+        "DM + Bot",
+        "GA4 + CRM"
+      ],
+      "flowNodes": [
+        "Google/Meta/TikTok",
+        "Lądowanie + śledzenie",
+        "Kwalifikacja AI",
+        "Potok CRM"
+      ],
+      "heroBadges": [
+        "Śledzenie po stronie serwera",
+        "Punktacja leadów",
+        "ROAS Widok"
+      ],
+      "servicesTitle": "Usługi jako moduły systemu",
+      "servicesDesc": "Niejednolity blok kart: dominujący rdzeń, moduły flankujące i zwarta warstwa operacyjna.",
+      "trio": [
+        "Problem",
+        "systemu",
+        "Wynik"
+      ],
+      "detailsSummary": "Szczegóły implementacji",
+      "kpiBadgesTitle": "Odznaki KPI",
+      "kpiBadgesDesc": "Każde wyniki ocenia się wyłącznie na podstawie kluczowych danych, które sprzedaż i marketing mogą wspólnie odczytać i kontrolować.",
+      "signalLayerTitle": "Warstwa sygnału",
+      "signalItems": [
+        "Zdarzenia GA4",
+        "MetaCAPI",
+        "Synchronizacja CRM",
+        "Moda na RODO"
+      ],
+      "opsTitle": "Notatki operacyjne",
+      "opsItems": [
+        "Cotygodniowa kolejka testów",
+        "Realokacja budżetu",
+        "Szczeliny kontroli jakości lejka"
+      ],
+      "packagesTitle": "Pakete in SaaS-Logik",
+      "recommended": "Zalecane",
+      "timelineTitle": "Jak pracujemy",
+      "stepLabel": "Krok",
+      "controlTitle": "Control Room: Wyniki w czasie rzeczywistym",
+      "controlPanelTitle": "Architektura pulpitu nawigacyjnego",
+      "controlPanelDesc": "Dane kanału, sygnały ze ścieżek i status CRM są zebrane w jednym widoku. Decyzje podejmowane są na poziomie procesu, a nie na podstawie przeczuć.",
+      "miniCharts": [
+        "Ilość leadów",
+        "Wynik Jakości",
+        "Prędkość rozdania"
+      ],
+      "kpiPanelTitle": "Liczniki KPI na żywo",
+      "kpiLabels": [
+        "Kwalifikowani potencjalni klienci",
+        "Średnia Pierwsza odpowiedź",
+        "Doprowadź do spotkania",
+        "Klastry ROAS"
+      ],
+      "controlBadges": [
+        "Kontrola leadów",
+        "Kontrola budżetu",
+        "Sterowanie lejkiem"
+      ],
+      "ctaBottom": "Zakres żądania dla Twojego systemu wiodącego"
+    },
+    "systems": {
+      "website": {
+        "title": "Silnik strony internetowej",
+        "problem": "Ruch jest, ale użytkownicy mobilni rezygnują przed formularzem.",
+        "system": "Landing/Wielostronicowy z GA4, Meta Pixel, śledzeniem po stronie serwera, konfiguracją CRM i RODO.",
+        "outcome": "Każdy lead jest rejestrowany w sposób identyfikowalny i wyraźnie przypisany do kanału.",
+        "kpis": [
+          "szybkość śledzenia",
+          "Wypełnienie formularza",
+          "Przejrzystość źródła potencjalnego klienta"
+        ],
+        "details": [
+          "Tryb zgody skonfigurowany poprawnie",
+          "Połączenia i zdarzenia WhatsApp",
+          "CRM push w czasie rzeczywistym"
+        ]
+      },
+      "ai": {
+        "title": "Warstwa kwalifikacji AI",
+        "problem": "Zbyt wiele niewykwalifikowanych zapytań blokuje sprzedaż i zespół telefoniczny.",
+        "system": "Chatbot AI, automatyczna kwalifikacja, przepływy DM w WhatsApp/Instagramie, automatyzacja poczty e-mail, scoring leadów.",
+        "outcome": "Zespół priorytetowo traktuje leady związane ze sprzedażą, zamiast czasochłonnego wstępnego sortowania.",
+        "kpis": [
+          "Czas pierwszej odpowiedzi",
+          "Kwalifikowany udział wiodący",
+          "Wydajność zespołu sprzedaży"
+        ],
+        "details": [
+          "Ścieżki podpowiedzi specyficzne dla branży",
+          "Przypomnienia o braku pokazu",
+          "Priorytetyzacja według wyniku"
+        ]
+      },
+      "ads": {
+        "title": "Płatne pozyskiwanie",
+        "problem": "Budżet jest rozdzielany pomiędzy kanały bez wyraźnej pętli uczenia się.",
+        "system": "Google Ads + Meta Ads + TikTok, testy A/B, lookalikes, śledzenie konwersji i widok ROAS.",
+        "outcome": "Budżet wpływa na kampanie o wysokiej jakości potencjalnych klientów, a nie na samą liczbę kliknięć.",
+        "kpis": [
+          "Koszt za kwalifikowanego potencjalnego klienta",
+          "ROAS według kampanii",
+          "Współczynnik wygranych kreacji"
+        ],
+        "details": [
+          "Regionalne klastry kampanii",
+          "Warianty kształtu w teście",
+          "Aktualizacje odbiorców na podstawie sygnału"
+        ]
+      },
+      "analytics": {
+        "title": "Analityka kontroli",
+        "problem": "Decyzje podejmowane są na podstawie zrzutów ekranu platformy, a nie wiarygodnych danych z lejka.",
+        "system": "Pulpit kontrolny z widokami kanałów, lejków i CRM na jednym poziomie.",
+        "outcome": "Cotygodniowe decyzje dotyczące budżetu, optymalizacji i skalowania są identyfikowalne na podstawie danych.",
+        "kpis": [
+          "Prowadź do spotkania",
+          "Prowadzić do transakcji",
+          "Prędkość rurociągu"
+        ],
+        "details": [
+          "Segmentacja według regionu/usługi",
+          "Alerty o spadku ścieżki",
+          "Miesięczna lista hipotez"
+        ]
+      }
+    },
+    "packages": [
+      {
+        "id": "rozrusznik",
+        "title": "Rozrusznik",
+        "scale": 1,
+        "lead": "Dla lokalnych firm przechodzących od zera do mierzalnej bazy leadów.",
+        "items": [
+          "Lejek internetowy + GA4",
+          "Meta piksele + zgoda",
+          "Przechwytywanie CRM",
+          "Podstawowe raportowanie"
+        ],
+        "effect": "Jasny obraz źródeł potencjalnych klientów i odporny proces początkowy."
+      },
+      {
+        "id": "wzrostu",
+        "title": "Wzrost",
+        "scale": 2,
+        "recommended": true,
+        "lead": "Dla zespołów z aktywną sprzedażą, które potrzebują większej liczby wykwalifikowanych potencjalnych klientów.",
+        "items": [
+          "Kampanie Google + Meta",
+          "Przepływy kwalifikacji AI",
+          "Konfiguracja testów A/B",
+          "Punktacja leadów + automatyzacja"
+        ],
+        "effect": "Bardziej kwalifikowany popyt z lepszymi czasami reakcji i jasnym ustalaniem priorytetów."
+      },
+      {
+        "id": "scale",
+        "title": "Skala",
+        "scale": 3,
+        "lead": "Dla firm z wieloma regionami lub klastrami usług.",
+        "items": [
+          "Sterowanie wielokanałowe",
+          "Atrybucja po stronie serwera",
+          "Warstwa aplikacji internetowej Ops",
+          "Zarządzanie sterownią"
+        ],
+        "effect": "Skalowanie poprzez procesy i wiarygodne dane zamiast ręcznej metody prób i błędów."
+      }
+    ],
+    "timeline": [
+      [
+        "01",
+        "Połączenie strategiczne",
+        "Rynek docelowy, oferta i wiodące wąskie gardło są jasno określone."
+      ],
+      [
+        "02",
+        "Dokument dotyczący zakresu",
+        "Plan kanału, plan śledzenia i obowiązki są stałe."
+      ],
+      [
+        "03",
+        "Faza budowy",
+        "Serwis WWW, wdrażane są automatyzacje i integracje."
+      ],
+      [
+        "04",
+        "Uruchomienie",
+        "Śledzenie kontroli jakości, uruchamiania kampanii i przepływów CRM zostaje uruchomione."
+      ],
+      [
+        "05",
+        "Optymalizacja",
+        "Cotygodniowe testy kreacji, lejków i kwalifikacji."
+      ],
+      [
+        "06",
+        "Skalowanie",
+        "Funkcjonujące trasy są rozszerzone o regiony/usługi."
+      ]
+    ]
+  },
+  "ku": {
+    "copy": {
+      "eyebrow": "Pergalên pêşeng ji bo pargîdaniyên herêmî yên li Elmanyayê",
+      "heroTitle": [
+        "Ji Trafîkê",
+        "pêşengên jêhatî",
+        "wekî pergalek kontrolkirî"
+      ],
+      "heroLead": "Em malper, AI, reklam û analîtîk di yek mîmariya xebitandinê de girêdidin da ku firotgeh, kirrûbirra û xwedan bi heman daneyan re bixebitin.",
+      "ctaTop": "Banga stratejîk dest pê bikin",
+      "heroChips": [
+        "Lead Flow",
+        "AI Qualify",
+        "Attribution"
+      ],
+      "heroChipValues": [
+        "Vegirtina Zindî",
+        "DM + Bot",
+        "GA4 + CRM"
+      ],
+      "flowNodes": [
+        "Google / Meta / TikTok",
+        "Daxistina + Şopandin",
+        "Qalîteya AI",
+        "CRM Pipeline"
+      ],
+      "heroBadges": [
+        "Şopandina server-side",
+        "Nîşandana Serê",
+        "Dîtina ROAS"
+      ],
+      "servicesTitle": "Karûbarên wekî modulên pergalê",
+      "servicesDesc": "Ne bloka qerta yekgirtî: bingehek serdest, modulên alîgir û qatek operasyonên tevlihev.",
+      "trio": [
+        "Pirsgirêk",
+        "System",
+        "Encam"
+      ],
+      "detailsSummary": "Agahiyên pêkanînê",
+      "kpiBadgesTitle": "nîşaneyên KPI",
+      "kpiBadgesDesc": "Her performans bi taybetî bi karanîna hejmarên sereke yên ku firotgeh û kirrûbirra dikarin bi hev re bixwînin û kontrol bikin têne nirxandin.",
+      "signalLayerTitle": "Signal Layer",
+      "signalItems": [
+        "bûyerên GA4",
+        "Meta CAPI",
+        "CRM Sync",
+        "moda GDPR"
+      ],
+      "opsTitle": "Têbînîyên Ops",
+      "opsItems": [
+        "Dora Testa Heftane",
+        "Veqetandina budceyê",
+        "Funnel QA Slots"
+      ],
+      "packagesTitle": "Pakete in SaaS-Logik",
+      "recommended": "Pêşniyar kirin",
+      "timelineTitle": "Em çawa dixebitin",
+      "stepLabel": "Gavê",
+      "controlTitle": "Odeya Kontrolê: Encam di wextê rast de",
+      "controlPanelTitle": "Mîmariya Dashboard",
+      "controlPanelDesc": "Daneyên kanalê, sînyalên funnel û rewşa CRM di yek dîmenê de li hev dicivin. Biryar di asta pêvajoyê de li şûna ku li ser bingeha hestiyariyê têne girtin.",
+      "miniCharts": [
+        "Volume Lead",
+        "Pîvana Kalîteyê",
+        "Deal Leza"
+      ],
+      "kpiPanelTitle": "Hejmarên KPI-ya Zindî",
+      "kpiLabels": [
+        "Rêberên Qeydkirî",
+        "Avg. Bersiva yekem",
+        "Ber bi randevûyê ve bibe",
+        "ROAS Cluster"
+      ],
+      "controlBadges": [
+        "Kontrola rêber",
+        "Kontrola budceyê",
+        "Kontrola funnel"
+      ],
+      "ctaBottom": "Ji bo pergala rêberiya xwe qada xwe daxwaz bikin"
+    },
+    "systems": {
+      "website": {
+        "title": "Motora Malperê",
+        "problem": "Trafîk li wir e, lê bikarhênerên mobîl berê xwe didin formê.",
+        "system": "Zevî / Pir-Rûpel bi GA4, Meta Pixel, şopandina server-side, sazkirina CRM û GDPR.",
+        "outcome": "Her lînka bi şêwazek peydakirî tê tomar kirin û bi zelalî ji kanalek re tê veqetandin.",
+        "kpis": [
+          "rêjeya şopandinê",
+          "Temamkirina Formê",
+          "Zelaliya Çavkaniya Rêber"
+        ],
+        "details": [
+          "Moda razîbûnê rast hate mîheng kirin",
+          "Bang û bûyerên WhatsApp",
+          "CRM di wextê rast de bişopîne"
+        ]
+      },
+      "ai": {
+        "title": "Qatê Qalîteya AI",
+        "problem": "Pir lêpirsînên bêkalîte firotan û tîmê têlefonê asteng dikin.",
+        "system": "chatbotê AI-ê, kalîteya xweser, DM di WhatsApp/Instagram-ê de diherike, otomasyona e-nameyê, pîvana pêşeng.",
+        "outcome": "Tîm li şûna rêzkirina destpêkê ya dem-dixwe, pêşengên bi firotanê ve girêdayî ye.",
+        "kpis": [
+          "Dema bersivê ya yekem",
+          "Parvekirina Pêşkêşiya Qeydkirî",
+          "Rêjeya Tîma Firotanê"
+        ],
+        "details": [
+          "Rêçên bilez ên pîşesaziyê",
+          "Bîranînên Nîşan Nade",
+          "Pêşniyarkirin li gorî puanê"
+        ]
+      },
+      "ads": {
+        "title": "Bidestxistina Pad",
+        "problem": "Budçe di navbera kanalan de bêyî çerxa fêrbûnê ya zelal tê dabeş kirin.",
+        "system": "Google Ads + Meta Ads + TikTok, testên A/B, xuyang, şopandina veguheztinê û dîtina ROAS.",
+        "outcome": "Budçe li şûna voltaja klîk a paqij di kampanyayên bi kalîteya pêşeng a bilind de diherike.",
+        "kpis": [
+          "Mesrefa serê pêşengê jêhatî",
+          "ROAS ji hêla Kampanyayê ve",
+          "Rêjeya Serketina Afirîner"
+        ],
+        "details": [
+          "Komên kampanyaya herêmî",
+          "Guhertoyên şikilê di ceribandinê de",
+          "Nûvekirinên temaşevanan-based sînyala"
+        ]
+      },
+      "analytics": {
+        "title": "Analîtîk kontrol bikin",
+        "problem": "Biryar li şûna daneyên pêbawer ên pêbawer li ser dîmenên platformê têne çêkirin.",
+        "system": "Tabloya jûreya kontrolê bi dîtinên kanal, kavil û CRM li yek astê.",
+        "outcome": "Biryarên heftane yên li ser budce, xweşbînkirin û pîvandinê li ser bingeha daneyan têne şopandin.",
+        "kpis": [
+          "Ber bi Randevûyê ve bibe",
+          "Bi rê ve bibin",
+          "Leza boriyê"
+        ],
+        "details": [
+          "Segmentkirin li gorî herêm/xizmet",
+          "Agahiyên Daxistina Funnel",
+          "Lîsteya hîpoteza mehane"
+        ]
+      }
+    },
+    "packages": [
+      {
+        "id": "destpêk",
+        "title": "Destpêker",
+        "scale": 1,
+        "lead": "Ji bo karsaziyên herêmî ku ji sifirê diçin bingehek pêşeng a pîvandî.",
+        "items": [
+          "Kanala Web + GA4",
+          "Meta Pixels + Destûr",
+          "Girtina CRM",
+          "Raporkirina bingehîn"
+        ],
+        "effect": "Dîtina zelal a çavkaniyên pêşeng û pêvajoyek destpêkê ya berxwedêr."
+      },
+      {
+        "id": "mezinbûn",
+        "title": "Mezinbûn",
+        "scale": 2,
+        "recommended": true,
+        "lead": "Ji bo tîmên xwedan firotana çalak ku hewceyê pêşengên jêhatîtir in.",
+        "items": [
+          "Google + Meta Kampagnen",
+          "Qalîteya AI-ê diherike",
+          "Sazkirina Testkirina A/B",
+          "Nîgarkirina Serê + Otomasyon"
+        ],
+        "effect": "Daxwaza jêhatîtir bi demên bersivdayînê çêtir û pêşengiya zelal."
+      },
+      {
+        "id": "scale",
+        "title": "Pîvana",
+        "scale": 3,
+        "lead": "Ji bo pargîdaniyên bi gelek herêm an komên karûbarê.",
+        "items": [
+          "Kontrola pir-kanal",
+          "Server-Side Attribution",
+          "Ops Web App Layer",
+          "Rêveberiya odeya kontrolê"
+        ],
+        "effect": "Li şûna ceribandin û xeletiya destan, bi pêvajo û daneyên pêbawer ve pîvandin."
+      }
+    ],
+    "timeline": [
+      [
+        "01",
+        "Banga Stratejîk",
+        "Bazara armanc, pêşkêşî û kêşeya pêşeng bi zelalî têne destnîşan kirin."
+      ],
+      [
+        "02",
+        "Belgeya çarçovê",
+        "Plana kanalê, plana şopandinê û berpirsiyarî têne rast kirin."
+      ],
+      [
+        "03",
+        "Qonaxa avakirinê",
+        "Malper, otomasyon û entegrasyon têne pêkanîn."
+      ],
+      [
+        "04",
+        "Destpêkirin",
+        "Şopandina QA, destpêkirina kampanyayê û herikîna CRM zindî diçin."
+      ],
+      [
+        "05",
+        "Optimîzasyon",
+        "Testên heftane ji bo afirîner, kavil û jêhatîbûnê."
+      ],
+      [
+        "06",
+        "Scaling",
+        "Rêçên fonksiyonel li herêm / karûbaran têne berfireh kirin."
+      ]
+    ]
+  },
+  "fa": {
+    "copy": {
+      "eyebrow": "سیستم های رهبری برای شرکت های محلی در آلمان",
+      "heroTitle": [
+        "از ترافیک",
+        "سرنخ های واجد شرایط",
+        "به عنوان یک سیستم قابل کنترل"
+      ],
+      "heroLead": "ما وب سایت، هوش مصنوعی، تبلیغات و تجزیه و تحلیل را در یک معماری عملیاتی به هم متصل می کنیم تا فروش، بازاریابی و مالکان با داده های یکسان کار کنند.",
+      "ctaTop": "تماس استراتژیک را شروع کنید",
+      "heroChips": [
+        "جریان سرب",
+        "AI Qualify",
+        "اسناد"
+      ],
+      "heroChipValues": [
+        "مصرف زنده",
+        "DM + ربات",
+        "GA4 + CRM"
+      ],
+      "flowNodes": [
+        "Google / Meta / TikTok",
+        "فرود + ردیابی",
+        "صلاحیت هوش مصنوعی",
+        "خط لوله CRM"
+      ],
+      "heroBadges": [
+        "ردیابی سمت سرور",
+        "امتیازدهی برتر",
+        "نمای ROAS"
+      ],
+      "servicesTitle": "خدمات به عنوان ماژول های سیستم",
+      "servicesDesc": "یک بلوک کارت یکنواخت نیست: یک هسته غالب، ماژول های کناری و یک لایه عملیات فشرده.",
+      "trio": [
+        "مشکل",
+        "System",
+        "نتیجه"
+      ],
+      "detailsSummary": "جزئیات پیاده سازی",
+      "kpiBadgesTitle": "نشان های KPI",
+      "kpiBadgesDesc": "هر عملکرد منحصراً با استفاده از ارقام کلیدی ارزیابی می شود که فروش و بازاریابی می توانند با هم بخوانند و کنترل کنند.",
+      "signalLayerTitle": "لایه سیگنال",
+      "signalItems": [
+        "رویدادهای GA4",
+        "متا CAPI",
+        "CRM Sync",
+        "مد GDPR"
+      ],
+      "opsTitle": "یادداشت های عملیاتی",
+      "opsItems": [
+        "صف تست هفتگی",
+        "تخصیص مجدد بودجه",
+        "قیف QA اسلات"
+      ],
+      "packagesTitle": "Pakete in SaaS-Logik",
+      "recommended": "توصیه می شود",
+      "timelineTitle": "چگونه کار می کنیم",
+      "stepLabel": "گام",
+      "controlTitle": "اتاق کنترل: نتایج در زمان واقعی",
+      "controlPanelTitle": "معماری داشبورد",
+      "controlPanelDesc": "داده های کانال، سیگنال های قیف و وضعیت CRM در یک نما همگرا می شوند. تصمیمات به جای اینکه بر اساس احساس درونی باشد، در سطح فرآیند گرفته می شود.",
+      "miniCharts": [
+        "حجم سرب",
+        "امتیاز کیفیت",
+        "سرعت معامله"
+      ],
+      "kpiPanelTitle": "شمارنده های KPI زنده",
+      "kpiLabels": [
+        "سرنخ های واجد شرایط",
+        "میانگین اولین پاسخ",
+        "منجر به قرار ملاقات",
+        "خوشه های ROAS"
+      ],
+      "controlBadges": [
+        "کنترل سرب",
+        "کنترل بودجه",
+        "کنترل قیف"
+      ],
+      "ctaBottom": "دامنه درخواست برای سیستم رهبری خود"
+    },
+    "systems": {
+      "website": {
+        "title": "موتور وب سایت",
+        "problem": "ترافیک وجود دارد، اما کاربران تلفن همراه قبل از فرم آن را رها می کنند.",
+        "system": "Landing/Multi-Page با GA4، Meta Pixel، ردیابی سمت سرور، راه اندازی CRM و GDPR.",
+        "outcome": "هر لید به شیوه ای قابل ردیابی ثبت می شود و به وضوح به یک کانال اختصاص داده می شود.",
+        "kpis": [
+          "نرخ ردیابی",
+          "تکمیل فرم",
+          "وضوح منبع سرب"
+        ],
+        "details": [
+          "حالت رضایت به درستی پیکربندی شده است",
+          "تماس و رویدادهای WhatsApp",
+          "فشار CRM در زمان واقعی"
+        ]
+      },
+      "ai": {
+        "title": "لایه صلاحیت هوش مصنوعی",
+        "problem": "بسیاری از سوالات غیرمجاز فروش و تیم تلفن را مسدود می کند.",
+        "system": "چت ربات هوش مصنوعی، صلاحیت خودکار، جریان DM در واتس اپ/اینستاگرام، اتوماسیون ایمیل، امتیازدهی سرنخ.",
+        "outcome": "تیم سرنخ های مرتبط با فروش را به جای مرتب سازی اولیه وقت گیر در اولویت قرار می دهد.",
+        "kpis": [
+          "اولین زمان پاسخ",
+          "اشتراک سرب واجد شرایط",
+          "توان عملیاتی تیم فروش"
+        ],
+        "details": [
+          "مسیرهای سریع خاص صنعت",
+          "بدون نمایش یادآوری",
+          "اولویت بندی بر اساس امتیاز"
+        ]
+      },
+      "ads": {
+        "title": "خرید پولی",
+        "problem": "بودجه بین کانال ها بدون یک حلقه یادگیری واضح توزیع می شود.",
+        "system": "Google Ads + Meta Ads + TikTok، تست های A/B، مشابه، ردیابی تبدیل و نمای ROAS.",
+        "outcome": "بودجه به جای حجم کلیک خالص به کمپین هایی با کیفیت سرنخ بالا سرازیر می شود.",
+        "kpis": [
+          "هزینه هر سرنخ واجد شرایط",
+          "ROAS توسط کمپین",
+          "نرخ برد خلاقانه"
+        ],
+        "details": [
+          "خوشه های کمپین منطقه ای",
+          "انواع شکل در آزمون",
+          "به روز رسانی مخاطبان مبتنی بر سیگنال"
+        ]
+      },
+      "analytics": {
+        "title": "کنترل تجزیه و تحلیل",
+        "problem": "تصمیم‌گیری‌ها به جای داده‌های قیف قابل اعتماد، بر اساس اسکرین‌شات‌های پلتفرم هستند.",
+        "system": "داشبورد اتاق کنترل با نمای کانال، قیف و CRM در یک سطح.",
+        "outcome": "تصمیمات هفتگی در مورد بودجه، بهینه سازی و مقیاس بندی بر اساس داده ها قابل ردیابی هستند.",
+        "kpis": [
+          "منجر به قرار ملاقات",
+          "منجر به معامله شود",
+          "سرعت خط لوله"
+        ],
+        "details": [
+          "تقسیم بندی بر اساس منطقه/سرویس",
+          "هشدارهای سقوط قیف",
+          "فهرست فرضیه های ماهانه"
+        ]
+      }
+    },
+    "packages": [
+      {
+        "id": "استارتر",
+        "title": "استارتر",
+        "scale": 1,
+        "lead": "برای کسب و کارهای محلی که از صفر به یک پایه سرب قابل اندازه گیری می روند.",
+        "items": [
+          "قیف وب + GA4",
+          "متا پیکسل + رضایت",
+          "ضبط CRM",
+          "گزارش اولیه"
+        ],
+        "effect": "نمای واضح از منابع سرب و فرآیند اولیه انعطاف پذیر."
+      },
+      {
+        "id": "رشد",
+        "title": "رشد",
+        "scale": 2,
+        "recommended": true,
+        "lead": "برای تیم هایی با فروش فعال که به سرنخ های واجد شرایط بیشتری نیاز دارند.",
+        "items": [
+          "کمپین های Google + Meta",
+          "جریان های صلاحیت هوش مصنوعی",
+          "راه اندازی تست A/B",
+          "امتیازدهی سرب + اتوماسیون"
+        ],
+        "effect": "تقاضای واجد شرایط بیشتر با زمان پاسخگویی بهتر و اولویت بندی واضح."
+      },
+      {
+        "id": "scale",
+        "title": "مقیاس",
+        "scale": 3,
+        "lead": "برای شرکت هایی با چندین منطقه یا خوشه خدمات.",
+        "items": [
+          "کنترل چند کاناله",
+          "اسناد سمت سرور",
+          "لایه برنامه وب Ops",
+          "اداره اتاق کنترل"
+        ],
+        "effect": "مقیاس گذاری از طریق فرآیندها و داده های قابل اعتماد به جای آزمون و خطای دستی."
+      }
+    ],
+    "timeline": [
+      [
+        "01",
+        "تماس استراتژیک",
+        "بازار هدف، پیشنهاد و گلوگاه سرب به وضوح تعریف شده است."
+      ],
+      [
+        "02",
+        "سند محدوده",
+        "طرح کانال، طرح پیگیری و مسئولیت ها ثابت است."
+      ],
+      [
+        "03",
+        "فاز ساخت",
+        "وب سایت، اتوماسیون ها و ادغام ها پیاده سازی شده اند."
+      ],
+      [
+        "04",
+        "راه اندازی",
+        "پیگیری QA، راه‌اندازی کمپین و جریان‌های CRM فعال می‌شوند."
+      ],
+      [
+        "05",
+        "بهینه سازی",
+        "آزمون های هفتگی برای خلاقیت ها، قیف ها و صلاحیت ها."
+      ],
+      [
+        "06",
+        "مقیاس بندی",
+        "مسیرهای عملکردی به مناطق/خدمات گسترش یافته است."
+      ]
+    ]
+  },
+  "it": {
+    "copy": {
+      "eyebrow": "Sistemi guida per aziende locali in Germania",
+      "heroTitle": [
+        "Dal traffico",
+        "lead qualificati",
+        "come sistema controllabile"
+      ],
+      "heroLead": "Colleghiamo sito web, intelligenza artificiale, pubblicità e analisi in un'unica architettura operativa in modo che vendite, marketing e proprietari lavorino con gli stessi dati.",
+      "ctaTop": "Avvia chiamata strategica",
+      "heroChips": [
+        "Flusso principale",
+        "Qualificazione AI",
+        "Attribuzione"
+      ],
+      "heroChipValues": [
+        "Assunzione dal vivo",
+        "DM + Bot",
+        "GA4 + CRM"
+      ],
+      "flowNodes": [
+        "Google/Meta/TikTok",
+        "Atterraggio + Inseguimento",
+        "Qualificazione AI",
+        "Pipeline CRM"
+      ],
+      "heroBadges": [
+        "Monitoraggio lato server",
+        "Punteggio principale",
+        "Visualizzazione ROAS"
+      ],
+      "servicesTitle": "Servizi come moduli di sistema",
+      "servicesDesc": "Blocco di carte non uniforme: un nucleo dominante, moduli affiancati e uno strato operativo compatto.",
+      "trio": [
+        "Problema",
+        "sistema",
+        "Risultato"
+      ],
+      "detailsSummary": "Dettagli di implementazione",
+      "kpiBadgesTitle": "Badge KPI",
+      "kpiBadgesDesc": "Ogni prestazione viene valutata esclusivamente utilizzando cifre chiave che vendite e marketing possono leggere e controllare insieme.",
+      "signalLayerTitle": "Livello del segnale",
+      "signalItems": [
+        "Eventi GA4",
+        "Meta CAPI",
+        "Sincronizzazione CRM",
+        "Moda GDPR"
+      ],
+      "opsTitle": "Note operative",
+      "opsItems": [
+        "Coda di prova settimanale",
+        "Riallocazione del budget",
+        "Slot QA canalizzazione"
+      ],
+      "packagesTitle": "pacchetti in logica SaaS",
+      "recommended": "Consigliato",
+      "timelineTitle": "Come lavoriamo",
+      "stepLabel": "Passaggio",
+      "controlTitle": "Sala di controllo: risultati in tempo reale",
+      "controlPanelTitle": "Architettura del dashboard",
+      "controlPanelDesc": "I dati del canale, i segnali del funnel e lo stato del CRM convergono in un'unica visualizzazione. Le decisioni vengono prese a livello di processo anziché in base al sentimento.",
+      "miniCharts": [
+        "Volume di lead",
+        "Punteggio di qualità",
+        "Velocità dell'operazione"
+      ],
+      "kpiPanelTitle": "Contatori KPI in tempo reale",
+      "kpiLabels": [
+        "Lead qualificati",
+        "Media Prima risposta",
+        "Porta all'appuntamento",
+        "Cluster ROAS"
+      ],
+      "controlBadges": [
+        "Controllo principale",
+        "Controllo del bilancio",
+        "Controllo imbuto"
+      ],
+      "ctaBottom": "Richiedi l'ambito per il tuo sistema lead"
+    },
+    "systems": {
+      "website": {
+        "title": "Motore del sito web",
+        "problem": "Il traffico c'è, ma gli utenti mobile abbandonano prima del modulo.",
+        "system": "Landing/Multi-pagina con GA4, Meta Pixel, tracciamento lato server, configurazione CRM e GDPR.",
+        "outcome": "Ogni lead viene registrato in modo tracciabile e chiaramente assegnato a un canale.",
+        "kpis": [
+          "tasso di tracciamento",
+          "Completamento del modulo",
+          "Chiarezza della fonte principale"
+        ],
+        "details": [
+          "Modalità di consenso configurata correttamente",
+          "Chiama ed eventi WhatsApp",
+          "Push CRM in tempo reale"
+        ]
+      },
+      "ai": {
+        "title": "Livello di qualificazione AI",
+        "problem": "Troppe richieste non qualificate bloccano le vendite e il team telefonico.",
+        "system": "Chatbot AI, autoqualificazione, flussi DM in WhatsApp/Instagram, automazione della posta elettronica, lead scoring.",
+        "outcome": "Il team dà priorità ai lead relativi alle vendite anziché al lungo smistamento iniziale.",
+        "kpis": [
+          "Tempo di prima risposta",
+          "Condivisione di lead qualificati",
+          "Produttività del team di vendita"
+        ],
+        "details": [
+          "Percorsi rapidi specifici del settore",
+          "Promemoria mancata presentazione",
+          "Priorità in base al punteggio"
+        ]
+      },
+      "ads": {
+        "title": "Acquisizione a pagamento",
+        "problem": "Il budget è distribuito tra i canali senza un chiaro ciclo di apprendimento.",
+        "system": "Google Ads + Meta Ads + TikTok, test A/B, lookalike, monitoraggio delle conversioni e visualizzazione ROAS.",
+        "outcome": "Il budget confluisce in campagne con un'elevata qualità dei lead invece che con un puro volume di clic.",
+        "kpis": [
+          "Costo per lead qualificato",
+          "ROAS per campagna",
+          "Tasso di vincita creatività"
+        ],
+        "details": [
+          "Cluster di campagne regionali",
+          "Varianti di forma nel test",
+          "Aggiornamenti sul pubblico basati sui segnali"
+        ]
+      },
+      "analytics": {
+        "title": "Analisi di controllo",
+        "problem": "Le decisioni si basano sugli screenshot della piattaforma anziché su dati affidabili della canalizzazione.",
+        "system": "Cruscotto della sala di controllo con visualizzazioni canale, canalizzazione e CRM su un unico livello.",
+        "outcome": "Le decisioni settimanali su budget, ottimizzazione e ridimensionamento sono tracciabili sulla base dei dati.",
+        "kpis": [
+          "Porta all'appuntamento",
+          "Porta all'affare",
+          "Velocità della pipeline"
+        ],
+        "details": [
+          "Segmentazione per regione/servizio",
+          "Avvisi di eliminazione della canalizzazione",
+          "Elenco mensile delle ipotesi"
+        ]
+      }
+    },
+    "packages": [
+      {
+        "id": "motorino di avviamento",
+        "title": "Motorino d'avviamento",
+        "scale": 1,
+        "lead": "Per le imprese locali che passano da zero a una base di lead misurabile.",
+        "items": [
+          "Imbuto web + GA4",
+          "Meta Pixel + Consenso",
+          "Acquisizione CRM",
+          "Reportistica di base"
+        ],
+        "effect": "Visione chiara delle fonti di lead e processo iniziale resiliente."
+      },
+      {
+        "id": "crescita",
+        "title": "Crescita",
+        "scale": 2,
+        "recommended": true,
+        "lead": "Per i team con vendite attive che necessitano di lead più qualificati.",
+        "items": [
+          "Campagne Google + Meta",
+          "Flussi di qualificazione AI",
+          "Impostazione test A/B",
+          "Punteggio lead + automazione"
+        ],
+        "effect": "Domanda più qualificata con tempi di risposta migliori e chiara definizione delle priorità."
+      },
+      {
+        "id": "scale",
+        "title": "Scala",
+        "scale": 3,
+        "lead": "Per aziende con più regioni o cluster di servizi.",
+        "items": [
+          "Controllo multicanale",
+          "Attribuzione lato server",
+          "Livello app Web Ops",
+          "Governance della sala di controllo"
+        ],
+        "effect": "Scalabilità tramite processi e dati affidabili anziché tentativi ed errori manuali."
+      }
+    ],
+    "timeline": [
+      [
+        "01",
+        "Chiamata strategica",
+        "Il mercato target, l'offerta e il collo di bottiglia del lead sono chiaramente definiti."
+      ],
+      [
+        "02",
+        "Documento di ambito",
+        "Il piano dei canali, il piano di monitoraggio e le responsabilità sono fissi."
+      ],
+      [
+        "03",
+        "Fase di costruzione",
+        "Sito web, automazioni e integrazioni implementate."
+      ],
+      [
+        "04",
+        "Lancio",
+        "Il monitoraggio del QA, del lancio della campagna e dei flussi CRM diventa attivo."
+      ],
+      [
+        "05",
+        "Ottimizzazione",
+        "Test settimanali per creatività, canalizzazioni e qualificazione."
+      ],
+      [
+        "06",
+        "Ridimensionamento",
+        "I percorsi funzionanti vengono estesi a regioni/servizi."
+      ]
+    ]
+  },
+  "es": {
+    "copy": {
+      "eyebrow": "Sistemas líderes para empresas locales en Alemania",
+      "heroTitle": [
+        "Del tráfico",
+        "clientes potenciales calificados",
+        "como sistema controlable"
+      ],
+      "heroLead": "Conectamos sitios web, inteligencia artificial, anuncios y análisis en una arquitectura operativa para que ventas, marketing y propietarios trabajen con los mismos datos.",
+      "ctaTop": "Iniciar llamada estratégica",
+      "heroChips": [
+        "Flujo de plomo",
+        "Clasificación IA",
+        "Atribución"
+      ],
+      "heroChipValues": [
+        "Ingesta viva",
+        "DM + Bot",
+        "GA4 + CRM"
+      ],
+      "flowNodes": [
+        "Google/Meta/TikTok",
+        "Aterrizaje + Seguimiento",
+        "Calificación de IA",
+        "Canal de CRM"
+      ],
+      "heroBadges": [
+        "Seguimiento del lado del servidor",
+        "Puntuación de clientes potenciales",
+        "ROAS Ver"
+      ],
+      "servicesTitle": "Servicios como módulos del sistema",
+      "servicesDesc": "No es un bloque de tarjetas uniforme: un núcleo dominante, módulos flanqueantes y una capa de operaciones compacta.",
+      "trio": [
+        "Problema",
+        "System",
+        "Resultado"
+      ],
+      "detailsSummary": "Detalles de implementación",
+      "kpiBadgesTitle": "insignias de KPI",
+      "kpiBadgesDesc": "Cada desempeño se evalúa exclusivamente utilizando cifras clave que ventas y marketing pueden leer y controlar juntos.",
+      "signalLayerTitle": "Capa de señal",
+      "signalItems": [
+        "eventos GA4",
+        "Meta CAPI",
+        "Sincronización CRM",
+        "RGPD moda"
+      ],
+      "opsTitle": "Notas de operaciones",
+      "opsItems": [
+        "Cola de prueba semanal",
+        "Reasignación de presupuesto",
+        "Ranuras de control de calidad del embudo"
+      ],
+      "packagesTitle": "Pakete in SaaS-Logik",
+      "recommended": "Recomendado",
+      "timelineTitle": "Cómo trabajamos",
+      "stepLabel": "Paso",
+      "controlTitle": "Sala de Control: Resultados en tiempo real",
+      "controlPanelTitle": "Arquitectura del tablero",
+      "controlPanelDesc": "Los datos del canal, las señales del embudo y el estado de CRM convergen en una sola vista. Las decisiones se toman a nivel de proceso en lugar de basarse en intuiciones.",
+      "miniCharts": [
+        "Volumen de clientes potenciales",
+        "Nivel de calidad",
+        "Velocidad de negociación"
+      ],
+      "kpiPanelTitle": "Contadores de KPI en vivo",
+      "kpiLabels": [
+        "Clientes potenciales calificados",
+        "Promedio Primera respuesta",
+        "Conduce a la cita",
+        "Clústeres de ROAS"
+      ],
+      "controlBadges": [
+        "Control de plomo",
+        "Control presupuestario",
+        "Control de embudo"
+      ],
+      "ctaBottom": "Solicite alcance para su sistema principal"
+    },
+    "systems": {
+      "website": {
+        "title": "Motor de sitio web",
+        "problem": "Hay tráfico, pero los usuarios de dispositivos móviles abandonan antes del formulario.",
+        "system": "Landing/Multi-Page con GA4, Meta Pixel, seguimiento del lado del servidor, CRM y configuración GDPR.",
+        "outcome": "Cada cliente potencial se registra de manera rastreable y se asigna claramente a un canal.",
+        "kpis": [
+          "tasa de seguimiento",
+          "Completar formulario",
+          "Claridad de la fuente principal"
+        ],
+        "details": [
+          "Modo de consentimiento configurado correctamente",
+          "Llamadas y eventos de WhatsApp",
+          "Impulso de CRM en tiempo real"
+        ]
+      },
+      "ai": {
+        "title": "Capa de calificación de IA",
+        "problem": "Demasiadas consultas no calificadas bloquean las ventas y el equipo telefónico.",
+        "system": "Chatbot AI, calificación automática, flujos de DM en WhatsApp/Instagram, automatización de correo electrónico, puntuación de clientes potenciales.",
+        "outcome": "El equipo prioriza los clientes potenciales relacionados con las ventas en lugar de una clasificación inicial que requiere mucho tiempo.",
+        "kpis": [
+          "Primer tiempo de respuesta",
+          "Participación de clientes potenciales calificados",
+          "Rendimiento del equipo de ventas"
+        ],
+        "details": [
+          "Rutas de aviso específicas de la industria",
+          "Recordatorios de ausencia",
+          "Priorización por puntuación"
+        ]
+      },
+      "ads": {
+        "title": "Adquisición pagada",
+        "problem": "El presupuesto se distribuye entre los canales sin un ciclo de aprendizaje claro.",
+        "system": "Google Ads + Meta Ads + TikTok, pruebas A/B, lookalikes, seguimiento de conversiones y visualización de ROAS.",
+        "outcome": "El presupuesto fluye hacia campañas con alta calidad de clientes potenciales en lugar de solo volumen de clics.",
+        "kpis": [
+          "Costo por cliente potencial calificado",
+          "ROAS por campaña",
+          "Tasa de ganancias creativas"
+        ],
+        "details": [
+          "Grupos de campañas regionales",
+          "Variantes de forma en la prueba",
+          "Actualizaciones de audiencia basadas en señales"
+        ]
+      },
+      "analytics": {
+        "title": "Análisis de control",
+        "problem": "Las decisiones se basan en capturas de pantalla de la plataforma en lugar de datos confiables del embudo.",
+        "system": "Panel de control de sala de control con vistas de canal, embudo y CRM en un nivel.",
+        "outcome": "Las decisiones semanales sobre presupuesto, optimización y escalamiento se pueden rastrear en función de los datos.",
+        "kpis": [
+          "Conduce a la cita",
+          "Llevar a cabo un trato",
+          "Velocidad de la tubería"
+        ],
+        "details": [
+          "Segmentación por región/servicio",
+          "Alertas de caída del embudo",
+          "Lista mensual de hipótesis"
+        ]
+      }
+    },
+    "packages": [
+      {
+        "id": "motor de arranque",
+        "title": "Arrancador",
+        "scale": 1,
+        "lead": "Para empresas locales que pasan de cero a una base de clientes potenciales mensurable.",
+        "items": [
+          "Embudo web + GA4",
+          "Metapíxeles + Consentimiento",
+          "Captura de CRM",
+          "Informes básicos"
+        ],
+        "effect": "Visión clara de las fuentes de clientes potenciales y un proceso inicial resiliente."
+      },
+      {
+        "id": "crecimiento",
+        "title": "Crecimiento",
+        "scale": 2,
+        "recommended": true,
+        "lead": "Para equipos con ventas activas que necesitan más clientes potenciales calificados.",
+        "items": [
+          "Metacampañas de Google +",
+          "Flujos de calificación de IA",
+          "Configuración de prueba A/B",
+          "Puntuación de clientes potenciales + Automatización"
+        ],
+        "effect": "Demanda más calificada con mejores tiempos de respuesta y priorización clara."
+      },
+      {
+        "id": "scale",
+        "title": "Scale",
+        "scale": 3,
+        "lead": "Para empresas con múltiples regiones o grupos de servicios.",
+        "items": [
+          "Control multicanal",
+          "Atribución del lado del servidor",
+          "Capa de aplicación web de operaciones",
+          "Gobernanza de la sala de control"
+        ],
+        "effect": "Escalar a través de procesos y datos confiables en lugar de prueba y error manual."
+      }
+    ],
+    "timeline": [
+      [
+        "01",
+        "Llamada estratégica",
+        "El mercado objetivo, la oferta y el cuello de botella del cliente potencial están claramente definidos."
+      ],
+      [
+        "02",
+        "Documento de alcance",
+        "Se fijan el plan de canales, el plan de seguimiento y las responsabilidades."
+      ],
+      [
+        "03",
+        "Fase de construcción",
+        "Sitio web, automatizaciones e integraciones implementadas."
+      ],
+      [
+        "04",
+        "Lanzamiento",
+        "Se activa el seguimiento de control de calidad, lanzamiento de campañas y flujos de CRM."
+      ],
+      [
+        "05",
+        "Optimización",
+        "Pruebas semanales de creatividades, embudos y calificación."
+      ],
+      [
+        "06",
+        "Escalado",
+        "Las rutas en funcionamiento se amplían a regiones/servicios."
+      ]
+    ]
+  },
+  "el": {
+    "copy": {
+      "eyebrow": "Ηγετικά συστήματα για τοπικές εταιρείες στη Γερμανία",
+      "heroTitle": [
+        "Από Τροχαία",
+        "πιστοποιημένοι υποψήφιοι πελάτες",
+        "ως ελεγχόμενο σύστημα"
+      ],
+      "heroLead": "Συνδέουμε ιστότοπο, τεχνητή νοημοσύνη, διαφημίσεις και αναλυτικά στοιχεία σε μία λειτουργική αρχιτεκτονική, έτσι ώστε οι πωλήσεις, το μάρκετινγκ και οι ιδιοκτήτες να λειτουργούν με τα ίδια δεδομένα.",
+      "ctaTop": "Έναρξη στρατηγικής κλήσης",
+      "heroChips": [
+        "Ροή μολύβδου",
+        "AI Qualify",
+        "Αναφορά"
+      ],
+      "heroChipValues": [
+        "Ζωντανή πρόσληψη",
+        "DM + Bot",
+        "GA4 + CRM"
+      ],
+      "flowNodes": [
+        "Google / Meta / TikTok",
+        "Προσγείωση + Παρακολούθηση",
+        "Πιστοποίηση AI",
+        "Αγωγός CRM"
+      ],
+      "heroBadges": [
+        "Παρακολούθηση από την πλευρά του διακομιστή",
+        "Βαθμολογία Πρωτοδικών",
+        "Προβολή ROAS"
+      ],
+      "servicesTitle": "Υπηρεσίες ως λειτουργικές μονάδες συστήματος",
+      "servicesDesc": "Δεν είναι ένα ομοιόμορφο μπλοκ κάρτας: ένας κυρίαρχος πυρήνας, πλευρικές μονάδες και ένα συμπαγές επίπεδο λειτουργιών.",
+      "trio": [
+        "Πρόβλημα",
+        "σύστημα",
+        "Αποτέλεσμα"
+      ],
+      "detailsSummary": "Λεπτομέρειες υλοποίησης",
+      "kpiBadgesTitle": "Σήματα KPI",
+      "kpiBadgesDesc": "Κάθε απόδοση αξιολογείται αποκλειστικά χρησιμοποιώντας βασικά στοιχεία που οι πωλήσεις και το μάρκετινγκ μπορούν να διαβάσουν και να ελέγξουν μαζί.",
+      "signalLayerTitle": "Επίπεδο σήματος",
+      "signalItems": [
+        "Γεγονότα GA4",
+        "Meta CAPI",
+        "CRM Sync",
+        "Μόδα GDPR"
+      ],
+      "opsTitle": "Σημειώσεις λειτουργιών",
+      "opsItems": [
+        "Εβδομαδιαία ουρά δοκιμής",
+        "Ανακατανομή Προϋπολογισμού",
+        "Κουλοχέρηδες QA Funnel"
+      ],
+      "packagesTitle": "Pakete in SaaS-Logik",
+      "recommended": "Συνιστάται",
+      "timelineTitle": "Πώς δουλεύουμε",
+      "stepLabel": "Βήμα",
+      "controlTitle": "Χώρος ελέγχου: Αποτελέσματα σε πραγματικό χρόνο",
+      "controlPanelTitle": "Αρχιτεκτονική ταμπλό",
+      "controlPanelDesc": "Τα δεδομένα καναλιού, τα σήματα διοχέτευσης και η κατάσταση CRM συγκλίνουν σε μία προβολή. Οι αποφάσεις λαμβάνονται σε επίπεδο διαδικασίας αντί να βασίζονται στην αίσθηση του εντέρου.",
+      "miniCharts": [
+        "Όγκος μολύβδου",
+        "Βαθμολογία ποιότητας",
+        "Ταχύτητα συμφωνίας"
+      ],
+      "kpiPanelTitle": "Ζωντανοί μετρητές KPI",
+      "kpiLabels": [
+        "Πιστοποιημένοι δυνητικοί πελάτες",
+        "Μέσος όρος Πρώτη απάντηση",
+        "Οδηγήστε στο ραντεβού",
+        "συστάδες απόδοσης διαφημιστικής επένδυσης (ROAS)."
+      ],
+      "controlBadges": [
+        "Έλεγχος ηλεκτροδίου",
+        "Έλεγχος προϋπολογισμού",
+        "Έλεγχος διοχέτευσης"
+      ],
+      "ctaBottom": "Αίτημα πεδίου εφαρμογής για το σύστημά σας"
+    },
+    "systems": {
+      "website": {
+        "title": "Μηχανή ιστότοπου",
+        "problem": "Υπάρχει επισκεψιμότητα, αλλά οι χρήστες κινητών εγκαταλείπουν τη φόρμα.",
+        "system": "Landing/Multi-Page με GA4, Meta Pixel, παρακολούθηση από την πλευρά του διακομιστή, CRM και ρύθμιση GDPR.",
+        "outcome": "Κάθε υποψήφιος πελάτης καταγράφεται με ανιχνεύσιμο τρόπο και εκχωρείται σαφώς σε ένα κανάλι.",
+        "kpis": [
+          "ποσοστό παρακολούθησης",
+          "Συμπλήρωση εντύπου",
+          "Διαύγεια πηγής μολύβδου"
+        ],
+        "details": [
+          "Η λειτουργία συναίνεσης διαμορφώθηκε σωστά",
+          "Εκδηλώσεις κλήσεων και WhatsApp",
+          "CRM push σε πραγματικό χρόνο"
+        ]
+      },
+      "ai": {
+        "title": "Επίπεδο πιστοποίησης AI",
+        "problem": "Πάρα πολλές ακατάλληλες έρευνες μπλοκάρουν τις πωλήσεις και την τηλεφωνική ομάδα.",
+        "system": "AI chatbot, αυτόματη πιστοποίηση, ροές DM σε WhatsApp/Instagram, αυτοματοποίηση email, βαθμολογία δυνητικού πελάτη.",
+        "outcome": "Η ομάδα δίνει προτεραιότητα στους δυνητικούς πελάτες που σχετίζονται με τις πωλήσεις αντί της χρονοβόρας αρχικής ταξινόμησης.",
+        "kpis": [
+          "Πρώτος χρόνος απόκρισης",
+          "Πιστοποιημένο μερίδιο δυνητικού πελάτη",
+          "Διακίνηση της Ομάδας Πωλήσεων"
+        ],
+        "details": [
+          "Διαδρομές προτροπής για συγκεκριμένο κλάδο",
+          "Χωρίς εμφάνιση υπενθυμίσεων",
+          "Προτεραιότητα ανά βαθμολογία"
+        ]
+      },
+      "ads": {
+        "title": "Απόκτηση επί πληρωμή",
+        "problem": "Ο προϋπολογισμός κατανέμεται μεταξύ των καναλιών χωρίς σαφή βρόχο εκμάθησης.",
+        "system": "Google Ads + Meta Ads + TikTok, δοκιμές A/B, εμφανίσεις, παρακολούθηση μετατροπών και προβολή Απόδοσης Διαφημιστικής Επένδυσης.",
+        "outcome": "Ο προϋπολογισμός ρέει σε καμπάνιες με υψηλή ποιότητα δυνητικού πελάτη αντί για καθαρό όγκο κλικ.",
+        "kpis": [
+          "Κόστος ανά κατάλληλο υποψήφιο πελάτη",
+          "Απόδοση Διαφημιστικής Επένδυσης κατά Campaign",
+          "Ποσοστό κέρδους δημιουργικού"
+        ],
+        "details": [
+          "Περιφερειακές ομάδες εκστρατειών",
+          "Παραλλαγές σχήματος στη δοκιμή",
+          "Ενημερώσεις κοινού βάσει σήματος"
+        ]
+      },
+      "analytics": {
+        "title": "Control Analytics",
+        "problem": "Οι αποφάσεις βασίζονται σε στιγμιότυπα οθόνης πλατφόρμας αντί σε αξιόπιστα δεδομένα διοχέτευσης.",
+        "system": "Πίνακας ελέγχου δωματίου με προβολές καναλιού, διοχέτευσης και CRM σε ένα επίπεδο.",
+        "outcome": "Οι εβδομαδιαίες αποφάσεις σχετικά με τον προϋπολογισμό, τη βελτιστοποίηση και την κλιμάκωση είναι ανιχνεύσιμες βάσει δεδομένων.",
+        "kpis": [
+          "Οδήγησε στο ραντεβού",
+          "Οδήγησε σε συμφωνία",
+          "Ταχύτητα αγωγού"
+        ],
+        "details": [
+          "Τμηματοποίηση ανά περιοχή/υπηρεσία",
+          "Ειδοποιήσεις πτώσης διοχέτευσης",
+          "Μηνιαία λίστα υποθέσεων"
+        ]
+      }
+    },
+    "packages": [
+      {
+        "id": "μίζα",
+        "title": "Μίζα",
+        "scale": 1,
+        "lead": "Για τοπικές επιχειρήσεις που πηγαίνουν από το μηδέν σε μια μετρήσιμη βάση δυνητικών πελατών.",
+        "items": [
+          "Διοχέτευση Ιστού + GA4",
+          "Meta Pixels + Consent",
+          "Λήψη CRM",
+          "Βασική αναφορά"
+        ],
+        "effect": "Καθαρή άποψη των πηγών μολύβδου και μια ανθεκτική αρχική διαδικασία."
+      },
+      {
+        "id": "ανάπτυξη",
+        "title": "Ανάπτυξη",
+        "scale": 2,
+        "recommended": true,
+        "lead": "Για ομάδες με ενεργές πωλήσεις που χρειάζονται περισσότερους κατάλληλους δυνητικούς πελάτες.",
+        "items": [
+          "Καμπάνιες Google + Meta",
+          "Ροές πιστοποίησης AI",
+          "Ρύθμιση δοκιμής A/B",
+          "Βαθμολογία δυνάμεων + Αυτοματισμός"
+        ],
+        "effect": "Πιο κατάλληλη ζήτηση με καλύτερους χρόνους απόκρισης και σαφή ιεράρχηση προτεραιοτήτων."
+      },
+      {
+        "id": "κλίμακα",
+        "title": "Κλίμακα",
+        "scale": 3,
+        "lead": "Για εταιρείες με πολλές περιοχές ή ομάδες υπηρεσιών.",
+        "items": [
+          "Έλεγχος πολλαπλών καναλιών",
+          "Απόδοση από την πλευρά του διακομιστή",
+          "Επίπεδο εφαρμογής Ιστού Ops",
+          "Διακυβέρνηση της αίθουσας ελέγχου"
+        ],
+        "effect": "Κλιμάκωση μέσω διαδικασιών και αξιόπιστων δεδομένων αντί για μη αυτόματη δοκιμή και σφάλμα."
+      }
+    ],
+    "timeline": [
+      [
+        "01",
+        "Στρατηγική κλήση",
+        "Η αγορά-στόχος, η προσφορά και το σημείο συμφόρησης είναι σαφώς καθορισμένα."
+      ],
+      [
+        "02",
+        "Έγγραφο πεδίου",
+        "Το σχέδιο καναλιού, το σχέδιο παρακολούθησης και οι ευθύνες έχουν διορθωθεί."
+      ],
+      [
+        "03",
+        "Φάση κατασκευής",
+        "Ιστοσελίδα, αυτοματισμοί και ενσωματώσεις υλοποιούνται."
+      ],
+      [
+        "04",
+        "Εκκίνηση",
+        "Παρακολούθηση QA, εκκίνηση καμπάνιας και ροές CRM εμφανίζονται ζωντανά."
+      ],
+      [
+        "05",
+        "Βελτιστοποίηση",
+        "Εβδομαδιαίες δοκιμές για δημιουργικά, διοχετεύσεις και πιστοποίηση."
+      ],
+      [
+        "06",
+        "Κλιμάκωση",
+        "Οι λειτουργικές διαδρομές επεκτείνονται σε περιοχές/υπηρεσίες."
+      ]
+    ]
+  },
+  "ro": {
+    "copy": {
+      "eyebrow": "Sisteme de conducere pentru companiile locale din Germania",
+      "heroTitle": [
+        "Din Trafic",
+        "clienți potențiali calificați",
+        "ca sistem controlabil"
+      ],
+      "heroLead": "Conectăm site-ul web, AI, reclamele și analizele într-o singură arhitectură operațională, astfel încât vânzările, marketingul și proprietarii să lucreze cu aceleași date.",
+      "ctaTop": "Începe apelul strategic",
+      "heroChips": [
+        "Flux de plumb",
+        "AI Calify",
+        "Atribuire"
+      ],
+      "heroChipValues": [
+        "Aportul live",
+        "DM + Bot",
+        "GA4 + CRM"
+      ],
+      "flowNodes": [
+        "Google / Meta / TikTok",
+        "Aterizare + Urmărire",
+        "Calificare AI",
+        "CRM Pipeline"
+      ],
+      "heroBadges": [
+        "Urmărire pe partea serverului",
+        "Punctajul potențial",
+        "Vizualizare ROAS"
+      ],
+      "servicesTitle": "Servicii ca module de sistem",
+      "servicesDesc": "Nu este un bloc de carduri uniform: un nucleu dominant, module de flancare și un strat de operațiuni compact.",
+      "trio": [
+        "Problemă",
+        "System",
+        "Rezultat"
+      ],
+      "detailsSummary": "Detalii de implementare",
+      "kpiBadgesTitle": "insigne KPI",
+      "kpiBadgesDesc": "Fiecare performanță este evaluată exclusiv folosind cifre cheie pe care vânzările și marketingul le pot citi și controla împreună.",
+      "signalLayerTitle": "Strat de semnal",
+      "signalItems": [
+        "evenimente GA4",
+        "Meta CAPI",
+        "Sincronizare CRM",
+        "GDPR moda"
+      ],
+      "opsTitle": "Note operaționale",
+      "opsItems": [
+        "Coada de test săptămânală",
+        "Realocarea bugetului",
+        "Sloturi QA canal"
+      ],
+      "packagesTitle": "pachete în logica SaaS",
+      "recommended": "Recomandat",
+      "timelineTitle": "Cum lucrăm",
+      "stepLabel": "Pas",
+      "controlTitle": "Camera de control: Rezultate în timp real",
+      "controlPanelTitle": "Arhitectura tabloului de bord",
+      "controlPanelDesc": "Datele canalului, semnalele canalului și starea CRM converg într-o singură vizualizare. Deciziile sunt luate la nivel de proces în loc să se bazeze pe sentimente.",
+      "miniCharts": [
+        "Volumul de plumb",
+        "Scor de calitate",
+        "Deal Velocity"
+      ],
+      "kpiPanelTitle": "Contoare KPI live",
+      "kpiLabels": [
+        "Clienti potentiali calificati",
+        "medie Primul răspuns",
+        "Conduce la programare",
+        "clustere ROAS"
+      ],
+      "controlBadges": [
+        "Control plumb",
+        "Controlul bugetului",
+        "Control pâlnie"
+      ],
+      "ctaBottom": "Solicitați domeniul de aplicare pentru sistemul dvs. principal"
+    },
+    "systems": {
+      "website": {
+        "title": "Motor de site",
+        "problem": "Trafic există, dar utilizatorii de telefonie mobilă abandonează înainte de formular.",
+        "system": "Landing/Multi-Page cu GA4, Meta Pixel, urmărire pe server, configurare CRM și GDPR.",
+        "outcome": "Fiecare client potențial este înregistrat într-o manieră urmăribilă și atribuit în mod clar unui canal.",
+        "kpis": [
+          "rata de urmărire",
+          "Completarea formularului",
+          "Claritatea sursei potențiale"
+        ],
+        "details": [
+          "Modul de consimțământ configurat corect",
+          "Evenimente de apel și WhatsApp",
+          "CRM push în timp real"
+        ]
+      },
+      "ai": {
+        "title": "Stratul de calificare AI",
+        "problem": "Prea multe întrebări necalificate blochează vânzările și echipa telefonică.",
+        "system": "AI chatbot, auto-calificare, fluxuri DM în WhatsApp/Instagram, automatizare e-mail, scoring lead.",
+        "outcome": "Echipa acordă prioritate clienților potențiali legate de vânzări în loc de sortarea inițială care necesită timp.",
+        "kpis": [
+          "Timpul primului răspuns",
+          "Cotă de lead calificată",
+          "Randamentul echipei de vânzări"
+        ],
+        "details": [
+          "Căi prompte specifice industriei",
+          "No Show Mementouri",
+          "Prioritizare după scor"
+        ]
+      },
+      "ads": {
+        "title": "Achiziție plătită",
+        "problem": "Bugetul este distribuit între canale fără o buclă clară de învățare.",
+        "system": "Google Ads + Meta Ads + TikTok, teste A/B, asemănări, urmărirea conversiilor și vizualizarea ROAS.",
+        "outcome": "Bugetul este transferat în campanii cu o calitate ridicată a clienților potențiali în loc de volumul de clicuri pur.",
+        "kpis": [
+          "Costul pe client potențial calificat",
+          "Rentabilitatea cheltuielilor publicitare în funcție de campanie",
+          "Rata de câștiguri creative"
+        ],
+        "details": [
+          "Clustere regionale de campanii",
+          "Variante de formă în test",
+          "Actualizări ale publicului bazate pe semnal"
+        ]
+      },
+      "analytics": {
+        "title": "Control Analytics",
+        "problem": "Deciziile se bazează pe capturi de ecran ale platformei, nu pe date fiabile ale canalului.",
+        "system": "Tabloul de bord al camerei de control cu ​​vizualizări ale canalului, pâlniei și CRM la un singur nivel.",
+        "outcome": "Deciziile săptămânale privind bugetul, optimizarea și scalarea sunt urmăribile pe baza datelor.",
+        "kpis": [
+          "Conduce la numire",
+          "Conduce la tranzacție",
+          "Viteza conductei"
+        ],
+        "details": [
+          "Segmentarea pe regiune/serviciu",
+          "Alerte de aruncare a pâlniei",
+          "Lista lunară de ipoteze"
+        ]
+      }
+    },
+    "packages": [
+      {
+        "id": "starter",
+        "title": "Starter",
+        "scale": 1,
+        "lead": "Pentru companiile locale care trec de la zero la o bază de lead-uri măsurabilă.",
+        "items": [
+          "Canal web + GA4",
+          "Meta Pixeli + Consimțământ",
+          "CRM Capture",
+          "Raportare de bază"
+        ],
+        "effect": "Vedere clară a surselor de plumb și un proces inițial rezistent."
+      },
+      {
+        "id": "creștere",
+        "title": "Creștere",
+        "scale": 2,
+        "recommended": true,
+        "lead": "Pentru echipele cu vânzări active care au nevoie de clienți potențiali mai calificați.",
+        "items": [
+          "Campanii Google + Meta",
+          "Fluxuri de calificare AI",
+          "Configurare testare A/B",
+          "Lead Scoring + Automatizare"
+        ],
+        "effect": "Cerere mai calificată, cu timpi de răspuns mai buni și prioritizare clară."
+      },
+      {
+        "id": "scară",
+        "title": "Scară",
+        "scale": 3,
+        "lead": "Pentru companii cu mai multe regiuni sau clustere de servicii.",
+        "items": [
+          "Control multicanal",
+          "Atribuire pe partea serverului",
+          "Ops Web App Layer",
+          "Guvernarea camerei de control"
+        ],
+        "effect": "Scalare prin procese și date fiabile în loc de încercări și erori manuale."
+      }
+    ],
+    "timeline": [
+      [
+        "01",
+        "Apel strategic",
+        "Piața țintă, oferta și blocajele de plumb sunt clar definite."
+      ],
+      [
+        "02",
+        "Document de aplicare",
+        "Planul canalului, planul de urmărire și responsabilitățile sunt fixate."
+      ],
+      [
+        "03",
+        "Faza de construire",
+        "Site-ul web, automatizările și integrările sunt implementate."
+      ],
+      [
+        "04",
+        "Lansare",
+        "Urmărirea QA, lansarea campaniei și fluxurile CRM sunt disponibile."
+      ],
+      [
+        "05",
+        "Optimizare",
+        "Teste săptămânale pentru reclame, canale și calificare."
+      ],
+      [
+        "06",
+        "Scalare",
+        "Rutele funcționale sunt extinse la regiuni/servicii."
+      ]
+    ]
+  },
+  "bg": {
+    "copy": {
+      "eyebrow": "Лид системи за местни компании в Германия",
+      "heroTitle": [
+        "От Трафик",
+        "квалифицирани потенциални клиенти",
+        "като управляема система"
+      ],
+      "heroLead": "Ние свързваме уебсайт, AI, реклами и анализи в една оперативна архитектура, така че продажбите, маркетингът и собствениците да работят с едни и същи данни.",
+      "ctaTop": "Започнете стратегическо обаждане",
+      "heroChips": [
+        "Водещ поток",
+        "AI Квалификация",
+        "Приписване"
+      ],
+      "heroChipValues": [
+        "Прием на живо",
+        "DM + Bot",
+        "GA4 + CRM"
+      ],
+      "flowNodes": [
+        "Google / Meta / TikTok",
+        "Кацане + Проследяване",
+        "AI квалификация",
+        "CRM тръбопровод"
+      ],
+      "heroBadges": [
+        "Проследяване от страна на сървъра",
+        "Оловно точкуване",
+        "Изглед на ROAS"
+      ],
+      "servicesTitle": "Услуги като системни модули",
+      "servicesDesc": "Не е единен картов блок: доминиращо ядро, странични модули и компактен оперативен слой.",
+      "trio": [
+        "Проблем",
+        "система",
+        "Резултат"
+      ],
+      "detailsSummary": "Подробности за внедряването",
+      "kpiBadgesTitle": "KPI значки",
+      "kpiBadgesDesc": "Всяко представяне се оценява изключително с помощта на ключови цифри, които продажбите и маркетингът могат да четат и контролират заедно.",
+      "signalLayerTitle": "Сигнален слой",
+      "signalItems": [
+        "GA4 събития",
+        "Meta CAPI",
+        "CRM синхронизиране",
+        "GDPR мода"
+      ],
+      "opsTitle": "Оперативни бележки",
+      "opsItems": [
+        "Седмична тестова опашка",
+        "Преразпределение на бюджета",
+        "Слотове за QA на фунии"
+      ],
+      "packagesTitle": "пакети в SaaS логиката",
+      "recommended": "Препоръчва се",
+      "timelineTitle": "Как работим",
+      "stepLabel": "Стъпка",
+      "controlTitle": "Контролна зала: Резултати в реално време",
+      "controlPanelTitle": "Архитектура на таблото",
+      "controlPanelDesc": "Данните за канала, сигналите във фунията и състоянието на CRM се събират в един изглед. Решенията се вземат на ниво процес, вместо на базата на усещане.",
+      "miniCharts": [
+        "Водещ обем",
+        "Качествен рейтинг",
+        "Скорост на сделката"
+      ],
+      "kpiPanelTitle": "Броячи на KPI на живо",
+      "kpiLabels": [
+        "Квалифицирани потенциални клиенти",
+        "Ср. Първи отговор",
+        "Води до среща",
+        "ROAS клъстери"
+      ],
+      "controlBadges": [
+        "Контрол на оловото",
+        "Бюджетен контрол",
+        "Контрол на фунията"
+      ],
+      "ctaBottom": "Обхват на заявката за вашата водеща система"
+    },
+    "systems": {
+      "website": {
+        "title": "Двигател на уебсайта",
+        "problem": "Трафик има, но мобилните потребители изоставят преди формуляра.",
+        "system": "Landing/Multi-Page с GA4, Meta Pixel, проследяване от страна на сървъра, настройка на CRM и GDPR.",
+        "outcome": "Всеки потенциален клиент се записва по начин, който може да бъде проследен и ясно присвоен на канал.",
+        "kpis": [
+          "скорост на проследяване",
+          "Попълване на формуляр",
+          "Яснота на водещия източник"
+        ],
+        "details": [
+          "Режимът на съгласие е конфигуриран правилно",
+          "Обаждания и събития в WhatsApp",
+          "CRM push в реално време"
+        ]
+      },
+      "ai": {
+        "title": "Квалификационен слой на AI",
+        "problem": "Твърде много неквалифицирани запитвания блокират продажбите и телефонния екип.",
+        "system": "AI чатбот, автоматична квалификация, DM потоци в WhatsApp/Instagram, автоматизация на имейл, точкуване за потенциални клиенти.",
+        "outcome": "Екипът дава приоритет на потенциални клиенти, свързани с продажби, вместо отнемащо време първоначално сортиране.",
+        "kpis": [
+          "Време за първа реакция",
+          "Квалифициран водещ дял",
+          "Пропускателна способност на екипа по продажбите"
+        ],
+        "details": [
+          "Специфични за индустрията подканващи пътища",
+          "Напомняния за неявяване",
+          "Приоритизиране по точки"
+        ]
+      },
+      "ads": {
+        "title": "Платено придобиване",
+        "problem": "Бюджетът се разпределя между каналите без ясен цикъл на обучение.",
+        "system": "Google Ads + Meta Ads + TikTok, A/B тестове, lookalikes, проследяване на реализациите и изглед на ROAS.",
+        "outcome": "Бюджетът се влива в кампании с високо качество на потенциалните клиенти вместо чист обем на кликванията.",
+        "kpis": [
+          "Цена на квалифициран потенциален клиент",
+          "ROAS по кампания",
+          "Creative Win Rate"
+        ],
+        "details": [
+          "Регионални групи от кампании",
+          "Варианти на формата в теста",
+          "Актуализации на аудиторията, базирани на сигнала"
+        ]
+      },
+      "analytics": {
+        "title": "Контролен анализ",
+        "problem": "Решенията се основават на екранни снимки на платформа вместо надеждни данни за фунията.",
+        "system": "Табло за управление на контролната зала с изгледи на канал, фуния и CRM на едно ниво.",
+        "outcome": "Седмичните решения за бюджет, оптимизация и мащабиране могат да бъдат проследени въз основа на данни.",
+        "kpis": [
+          "Води до назначаване",
+          "Води до сделка",
+          "Скорост на тръбопровода"
+        ],
+        "details": [
+          "Сегментиране по регион/услуга",
+          "Сигнали за падане на фуния",
+          "Месечен списък с хипотези"
+        ]
+      }
+    },
+    "packages": [
+      {
+        "id": "стартер",
+        "title": "Стартер",
+        "scale": 1,
+        "lead": "За местни фирми, преминаващи от нула към измерима потенциална база.",
+        "items": [
+          "Уеб фуния + GA4",
+          "Мета пиксели + съгласие",
+          "CRM Capture",
+          "Основно отчитане"
+        ],
+        "effect": "Ясен поглед върху източниците на олово и устойчив първоначален процес."
+      },
+      {
+        "id": "растеж",
+        "title": "Растеж",
+        "scale": 2,
+        "recommended": true,
+        "lead": "За екипи с активни продажби, които се нуждаят от повече квалифицирани потенциални клиенти.",
+        "items": [
+          "Google + мета кампании",
+          "AI квалификационни потоци",
+          "Настройка на A/B тестване",
+          "Водещ резултат + автоматизация"
+        ],
+        "effect": "По-квалифицирано търсене с по-добро време за реакция и ясно приоритизиране."
+      },
+      {
+        "id": "мащаб",
+        "title": "Мащаб",
+        "scale": 3,
+        "lead": "За компании с множество региони или сервизни клъстери.",
+        "items": [
+          "Многоканален контрол",
+          "Приписване от страна на сървъра",
+          "Ops Web App Layer",
+          "Управление на контролната зала"
+        ],
+        "effect": "Мащабиране чрез процеси и надеждни данни вместо ръчни проби и грешки."
+      }
+    ],
+    "timeline": [
+      [
+        "01",
+        "Стратегическо обаждане",
+        "Целевият пазар, офертата и тесните места са ясно дефинирани."
+      ],
+      [
+        "02",
+        "Документ за обхват",
+        "Планът на канала, планът за проследяване и отговорностите са фиксирани."
+      ],
+      [
+        "03",
+        "Фаза на изграждане",
+        "Уеб сайт, автоматизации и интеграции са внедрени."
+      ],
+      [
+        "04",
+        "Стартиране",
+        "Проследяване на QA, стартиране на кампания и CRM потоци стават активни."
+      ],
+      [
+        "05",
+        "Оптимизация",
+        "Седмични тестове за рекламни послания, фунии и квалификация."
+      ],
+      [
+        "06",
+        "Мащабиране",
+        "Функциониращите маршрути са разширени до региони/услуги."
+      ]
+    ]
+  }
+}
