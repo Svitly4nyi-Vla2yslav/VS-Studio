@@ -1,14 +1,39 @@
 [build]
   command = "npm run build"
   publish = "dist"
+  # Skip builds for branch deploys and doc-only changes to reduce queue pressure.
+  ignore = """
+    if [ -z "$CACHED_COMMIT_REF" ]; then
+      exit 1
+    fi
+
+    if [ "$CONTEXT" = "branch-deploy" ]; then
+      exit 0
+    fi
+
+    git diff --quiet "$CACHED_COMMIT_REF" "$COMMIT_REF" -- . \
+      ':(exclude)README.md' \
+      ':(exclude)**/*.md' \
+      ':(exclude)docs/**' \
+      ':(exclude).github/**'
+  """
+
+[context.production]
+  command = "npm run build"
+
+[context.deploy-preview]
+  command = "npm run build"
+
+[context.deploy-preview.environment]
+  VITE_APP_ENV = "preview"
 
 [dev]
   command = "npm run dev"
-  port = 8888  # Netlify dev порт
-  targetPort = 5173  # Порт вашого додатку
+  port = 8888
+  targetPort = 5173
 
 [functions]
   node_bundler = "esbuild"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
