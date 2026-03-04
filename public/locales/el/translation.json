@@ -533,32 +533,32 @@
     }
   },
   "references": {
-    "h1": "Referenzen mit messbarem Wachstum.",
-    "subtitle": "Wir zeigen klar, was gestiegen ist: Anfragen, Buchungen, Anrufe und Leads.",
-    "trustline": "Alle Kennzahlen mit Kontext: Zeitraum und Messung.",
-    "filterTitle": "Nische auswählen",
-    "filterAria": "Nischenfilter",
-    "counter": "{{count}} passende Cases",
-    "growthByNiche": "Wachstum nach Branche",
-    "selectedCases": "Ausgewählte Cases",
-    "challengeLabel": "Ausgangslage",
-    "solutionLabel": "Umsetzung",
-    "periodLabel": "Zeitraum",
-    "measurementLabel": "Messung",
-    "emptyTitle": "Für diese Nische folgt der nächste Case.",
-    "emptyText": "Wir zeigen nur Cases mit belastbarer Messung und klarem Zeitraum.",
-    "beforeAfter": "Vorher / Nachher",
-    "before": "Vorher",
-    "after": "Nachher",
-    "beforeAlt": "Vorher-Ansicht des Cases",
-    "afterAlt": "Nachher-Ansicht des Cases",
-    "sliderAria": "Vorher Nachher Vergleich verschieben",
-    "sliderHint": "Zum Vergleichen ziehen.",
-    "ctaTitle": "Sie wollen ähnliche Ergebnisse?",
-    "ctaText": "Wir analysieren Ihre Ausgangslage und zeigen einen realistischen 30-90-Tage-Plan.",
-    "cta": "Ähnliches Projekt anfragen",
+    "h1": "Αναφορές με μετρήσιμη ανάπτυξη.",
+    "subtitle": "Δείχνουμε καθαρά τι αυξήθηκε: αιτήματα, κρατήσεις, κλήσεις και leads.",
+    "trustline": "Όλα τα metrics με πλαίσιο: περίοδος και μέτρηση.",
+    "filterTitle": "Επιλογή κλάδου",
+    "filterAria": "Φίλτρο κλάδων",
+    "counter": "{{count}} σχετικά cases",
+    "growthByNiche": "Ανάπτυξη ανά κλάδο",
+    "selectedCases": "Επιλεγμένα cases",
+    "challengeLabel": "Αφετηρία",
+    "solutionLabel": "Λύση",
+    "periodLabel": "Περίοδος",
+    "measurementLabel": "Μέτρηση",
+    "emptyTitle": "Το επόμενο case για αυτόν τον κλάδο έρχεται σύντομα.",
+    "emptyText": "Δείχνουμε μόνο cases με αξιόπιστη μέτρηση και σαφή περίοδο.",
+    "beforeAfter": "Πριν / Μετά",
+    "before": "Πριν",
+    "after": "Μετά",
+    "beforeAlt": "Προβολή πριν",
+    "afterAlt": "Προβολή μετά",
+    "sliderAria": "Μετακίνηση σύγκρισης πριν/μετά",
+    "sliderHint": "Σύρε για σύγκριση.",
+    "ctaTitle": "Θέλετε παρόμοια αποτελέσματα;",
+    "ctaText": "Αναλύουμε την κατάσταση σας και δείχνουμε ρεαλιστικό πλάνο 30-90 ημερών.",
+    "cta": "Ζητήστε παρόμοιο project",
     "filters": {
-      "all": "Alle"
+      "all": "Όλα"
     },
     "niches": {
       "handwerk": "Handwerk",
@@ -575,55 +575,76 @@
       "bildungKurse": "Bildung/Kurse"
     },
     "metrics": {
-      "moreRequests": "Mehr Anfragen",
-      "moreAppointments": "Mehr Terminbuchungen",
-      "moreCalls": "Mehr Anrufe",
-      "moreReservations": "Mehr Reservierungen",
-      "moreBookings": "Mehr Buchungen",
-      "moreLeads": "Mehr Leads",
-      "moreIntroCalls": "Mehr Erstgespräche",
-      "moreTrialSessions": "Mehr Probetrainings",
-      "moreOffers": "Mehr Angebotsanfragen",
-      "moreQualifiedLeads": "Mehr qualifizierte Leads",
-      "moreFirstContacts": "Mehr Erstkontakte",
-      "moreCourseSignups": "Mehr Kursanmeldungen",
-      "budgetEfficiency": "Budget-Effizienz",
-      "moreInteractions": "Mehr Interaktionen",
-      "moreLeadsPerBudget": "Mehr Leads pro Budget",
-      "moreConsultations": "Mehr Beratungstermine"
+      "moreRequests": "Περισσότερα αιτήματα",
+      "moreAppointments": "Περισσότερα ραντεβού",
+      "moreCalls": "Περισσότερες κλήσεις",
+      "moreReservations": "Περισσότερες κρατήσεις",
+      "moreBookings": "Περισσότερες κρατήσεις υπηρεσιών",
+      "moreLeads": "Περισσότερα leads",
+      "moreIntroCalls": "Περισσότερες αρχικές κλήσεις",
+      "moreTrialSessions": "Περισσότερες δοκιμαστικές συνεδρίες",
+      "moreOffers": "Περισσότερα αιτήματα προσφοράς",
+      "moreQualifiedLeads": "Περισσότερα ποιοτικά leads",
+      "moreFirstContacts": "Περισσότερες πρώτες επαφές",
+      "moreCourseSignups": "Περισσότερες εγγραφές μαθημάτων",
+      "budgetEfficiency": "Αποδοτικότητα budget",
+      "moreInteractions": "Περισσότερες αλληλεπιδράσεις",
+      "moreLeadsPerBudget": "Περισσότερα leads ανά budget",
+      "moreConsultations": "Περισσότερες συμβουλευτικές"
     },
     "cases": {
       "c1": {
-        "title": "Sanitärbetrieb (Region Hannover)",
-        "challenge": "Zu wenig Anfragen trotz guter Reichweite.",
-        "solution": "Leistungsseiten neu strukturiert, CTA optimiert, Kontakttracking aktiviert."
+        "title": "Επιχείρηση υδραυλικών (περιοχή Ανόβερου)",
+        "challenge": "Λίγα αιτήματα παρά την καλή εμβέλεια.",
+        "solution": "Αναδομήθηκαν οι σελίδες υπηρεσιών, βελτιστοποιήθηκαν CTA και ενεργοποιήθηκε tracking επαφών."
       },
       "c2": {
-        "title": "Physiopraxis (Hildesheim)",
-        "challenge": "Zu wenige Online-Terminwünsche.",
-        "solution": "Termin-Flow vereinfacht, mobile Seiten beschleunigt, Kontaktwege klar definiert."
+        "title": "Κέντρο φυσικοθεραπείας (Hildesheim)",
+        "challenge": "Λίγα online αιτήματα ραντεβού.",
+        "solution": "Απλοποιήθηκε το flow ραντεβού, επιταχύνθηκαν mobile σελίδες και ξεκαθαρίστηκαν τα κανάλια επαφής."
       },
       "c3": {
-        "title": "Karosserie-Werkstatt (Raum Harburg)",
-        "challenge": "Viele Kontakte, aber zu wenig passende Aufträge.",
-        "solution": "Lead-Qualifizierung im Formular und servicebezogene Landingpage eingeführt."
+        "title": "Φανοποιείο (περιοχή Harburg)",
+        "challenge": "Πολλές επαφές αλλά λίγες κατάλληλες εργασίες.",
+        "solution": "Μπήκε qualification lead στη φόρμα και landing page ανά υπηρεσία."
       },
       "c4": {
-        "title": "Restaurant (Niedersachsen)",
-        "challenge": "Zu wenige Reservierungen unter der Woche.",
-        "solution": "Reservierungsstrecke vereinfacht, lokale Kampagnen neu aufgesetzt."
+        "title": "Εστιατόριο (Κάτω Σαξονία)",
+        "challenge": "Λίγες κρατήσεις τις καθημερινές.",
+        "solution": "Απλοποιήθηκε η διαδρομή κράτησης και ανανεώθηκαν οι τοπικές καμπάνιες."
       },
       "c5": {
-        "title": "Maklerbüro (Niedersachsen)",
-        "challenge": "Zu wenig qualifizierte Eigentümer-Leads.",
-        "solution": "Objektseiten nach Suchintention aufgebaut und Anfrageweg gestrafft."
+        "title": "Μεσιτικό γραφείο (Κάτω Σαξονία)",
+        "challenge": "Λίγα ποιοτικά leads ιδιοκτητών.",
+        "solution": "Οι σελίδες ακινήτων στήθηκαν με βάση search intent και συντομεύτηκε η ροή αιτήματος."
       },
       "c6": {
-        "title": "Steuerkanzlei (Region Hannover)",
-        "challenge": "Geringe Conversion auf Leistungsseiten.",
-        "solution": "Seiteninhalte vereinfacht, Vertrauenstexte ergänzt, Erstkontakt klar hervorgehoben."
+        "title": "Φοροτεχνικό γραφείο (περιοχή Ανόβερου)",
+        "challenge": "Χαμηλό conversion στις σελίδες υπηρεσιών.",
+        "solution": "Απλοποιήθηκε το περιεχόμενο, προστέθηκαν στοιχεία εμπιστοσύνης και τονίστηκε η πρώτη επαφή."
       }
-    }
+    },
+    "performanceDashboard": "Πίνακας απόδοσης",
+    "growthCurve90": "Καμπύλη ανάπτυξης 90 ημερών",
+    "growthChartAria": "Γράφημα ανάπτυξης",
+    "resultLabel": "Αποτέλεσμα",
+    "trendAria": "Τάση: {{niche}}",
+    "compareGraphAria": "Γράφημα πριν και μετά",
+    "dayLabel": "Ημέρα {{day}}",
+    "beforeLegend": "Πριν: αδύναμη δυναμική",
+    "afterLegend": "Μετά: σταθερή ανάπτυξη",
+    "filterGroups": {
+      "all": "Όλα",
+      "localServices": "Τοπικές υπηρεσίες",
+      "healthBeauty": "Υγεία και Ομορφιά",
+      "professional": "Επαγγελματικό"
+    },
+    "kpis": {
+      "traffic": "Κίνηση",
+      "leads": "Leads",
+      "conversion": "Μετατροπή"
+    },
+    "daysUnit": "ημέρες"
   },
   "about": {
     "h1": "Über uns",

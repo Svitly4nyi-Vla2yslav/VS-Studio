@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+﻿import { useEffect, useMemo, useState } from 'react';
 import { motion, easeOut } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { FaArrowRight, FaChartLine, FaFilter, FaDatabase, FaCalendarAlt, FaArrowUp } from 'react-icons/fa';
@@ -69,18 +69,18 @@ interface CaseStudy {
 const reveal = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } };
 
 const NICHE_METRICS: NicheMetric[] = [
-  { niche: 'handwerk', labelKey: 'references.niches.handwerk', metricLabelKey: 'references.metrics.moreRequests', metricValue: '+41%', timeframe: '30-90 Tage', source: 'GA4 / Google Ads', sparkline: [16, 18, 22, 24, 27, 31, 34] },
-  { niche: 'praxen', labelKey: 'references.niches.praxen', metricLabelKey: 'references.metrics.moreAppointments', metricValue: '+33%', timeframe: '30-90 Tage', source: 'GA4 / Meta Ads', sparkline: [14, 15, 19, 23, 25, 27, 30] },
-  { niche: 'werkstatt', labelKey: 'references.niches.werkstatt', metricLabelKey: 'references.metrics.moreCalls', metricValue: '+46%', timeframe: '30-90 Tage', source: 'GA4 / Google Ads', sparkline: [11, 14, 17, 22, 26, 31, 36] },
-  { niche: 'gastronomie', labelKey: 'references.niches.gastronomie', metricLabelKey: 'references.metrics.moreReservations', metricValue: '+27%', timeframe: '30-90 Tage', source: 'GA4 / Meta Ads', sparkline: [16, 16, 19, 21, 22, 24, 27] },
-  { niche: 'beauty', labelKey: 'references.niches.beauty', metricLabelKey: 'references.metrics.moreBookings', metricValue: '+31%', timeframe: '30-90 Tage', source: 'GA4 / Meta Ads', sparkline: [13, 16, 18, 21, 23, 25, 29] },
-  { niche: 'immobilien', labelKey: 'references.niches.immobilien', metricLabelKey: 'references.metrics.moreLeads', metricValue: '+22%', timeframe: '30-90 Tage', source: 'GA4 / Search Console', sparkline: [9, 11, 12, 14, 16, 17, 19] },
-  { niche: 'kanzlei', labelKey: 'references.niches.kanzlei', metricLabelKey: 'references.metrics.moreIntroCalls', metricValue: '+24%', timeframe: '30-90 Tage', source: 'GA4 / Google Ads', sparkline: [11, 12, 14, 15, 17, 18, 20] },
-  { niche: 'fitnessPhysio', labelKey: 'references.niches.fitnessPhysio', metricLabelKey: 'references.metrics.moreTrialSessions', metricValue: '+29%', timeframe: '30-90 Tage', source: 'GA4 / Meta Ads', sparkline: [10, 13, 15, 18, 20, 22, 25] },
-  { niche: 'reinigung', labelKey: 'references.niches.reinigung', metricLabelKey: 'references.metrics.moreOffers', metricValue: '+35%', timeframe: '30-90 Tage', source: 'GA4 / Google Ads', sparkline: [12, 14, 17, 20, 22, 25, 28] },
-  { niche: 'umzugTransport', labelKey: 'references.niches.umzugTransport', metricLabelKey: 'references.metrics.moreQualifiedLeads', metricValue: '+26%', timeframe: '30-90 Tage', source: 'GA4 / Google Ads', sparkline: [11, 13, 14, 17, 18, 20, 23] },
-  { niche: 'coachingBeratung', labelKey: 'references.niches.coachingBeratung', metricLabelKey: 'references.metrics.moreFirstContacts', metricValue: '+28%', timeframe: '30-90 Tage', source: 'GA4 / Meta Ads', sparkline: [10, 12, 14, 16, 18, 20, 22] },
-  { niche: 'bildungKurse', labelKey: 'references.niches.bildungKurse', metricLabelKey: 'references.metrics.moreCourseSignups', metricValue: '+32%', timeframe: '30-90 Tage', source: 'GA4 / Search Console / Ads', sparkline: [8, 10, 13, 15, 17, 20, 23] },
+  { niche: 'handwerk', labelKey: 'references.niches.handwerk', metricLabelKey: 'references.metrics.moreRequests', metricValue: '+41%', timeframe: '30-90', source: 'GA4 / Google Ads', sparkline: [16, 18, 22, 24, 27, 31, 34] },
+  { niche: 'praxen', labelKey: 'references.niches.praxen', metricLabelKey: 'references.metrics.moreAppointments', metricValue: '+33%', timeframe: '30-90', source: 'GA4 / Meta Ads', sparkline: [14, 15, 19, 23, 25, 27, 30] },
+  { niche: 'werkstatt', labelKey: 'references.niches.werkstatt', metricLabelKey: 'references.metrics.moreCalls', metricValue: '+46%', timeframe: '30-90', source: 'GA4 / Google Ads', sparkline: [11, 14, 17, 22, 26, 31, 36] },
+  { niche: 'gastronomie', labelKey: 'references.niches.gastronomie', metricLabelKey: 'references.metrics.moreReservations', metricValue: '+27%', timeframe: '30-90', source: 'GA4 / Meta Ads', sparkline: [16, 16, 19, 21, 22, 24, 27] },
+  { niche: 'beauty', labelKey: 'references.niches.beauty', metricLabelKey: 'references.metrics.moreBookings', metricValue: '+31%', timeframe: '30-90', source: 'GA4 / Meta Ads', sparkline: [13, 16, 18, 21, 23, 25, 29] },
+  { niche: 'immobilien', labelKey: 'references.niches.immobilien', metricLabelKey: 'references.metrics.moreLeads', metricValue: '+22%', timeframe: '30-90', source: 'GA4 / Search Console', sparkline: [9, 11, 12, 14, 16, 17, 19] },
+  { niche: 'kanzlei', labelKey: 'references.niches.kanzlei', metricLabelKey: 'references.metrics.moreIntroCalls', metricValue: '+24%', timeframe: '30-90', source: 'GA4 / Google Ads', sparkline: [11, 12, 14, 15, 17, 18, 20] },
+  { niche: 'fitnessPhysio', labelKey: 'references.niches.fitnessPhysio', metricLabelKey: 'references.metrics.moreTrialSessions', metricValue: '+29%', timeframe: '30-90', source: 'GA4 / Meta Ads', sparkline: [10, 13, 15, 18, 20, 22, 25] },
+  { niche: 'reinigung', labelKey: 'references.niches.reinigung', metricLabelKey: 'references.metrics.moreOffers', metricValue: '+35%', timeframe: '30-90', source: 'GA4 / Google Ads', sparkline: [12, 14, 17, 20, 22, 25, 28] },
+  { niche: 'umzugTransport', labelKey: 'references.niches.umzugTransport', metricLabelKey: 'references.metrics.moreQualifiedLeads', metricValue: '+26%', timeframe: '30-90', source: 'GA4 / Google Ads', sparkline: [11, 13, 14, 17, 18, 20, 23] },
+  { niche: 'coachingBeratung', labelKey: 'references.niches.coachingBeratung', metricLabelKey: 'references.metrics.moreFirstContacts', metricValue: '+28%', timeframe: '30-90', source: 'GA4 / Meta Ads', sparkline: [10, 12, 14, 16, 18, 20, 22] },
+  { niche: 'bildungKurse', labelKey: 'references.niches.bildungKurse', metricLabelKey: 'references.metrics.moreCourseSignups', metricValue: '+32%', timeframe: '30-90', source: 'GA4 / Search Console / Ads', sparkline: [8, 10, 13, 15, 17, 20, 23] },
 ];
 
 const CASE_STUDIES: CaseStudy[] = [
@@ -94,7 +94,7 @@ const CASE_STUDIES: CaseStudy[] = [
       { metricLabelKey: 'references.metrics.moreRequests', metricValue: '+41%' },
       { metricLabelKey: 'references.metrics.budgetEfficiency', metricValue: '+33%' },
     ],
-    timeframe: '30-90 Tage',
+    timeframe: '30-90',
     source: 'GA4 / Google Ads',
     beforeImage: caseBefore1,
     afterImage: caseAfter1,
@@ -109,7 +109,7 @@ const CASE_STUDIES: CaseStudy[] = [
       { metricLabelKey: 'references.metrics.moreAppointments', metricValue: '+33%' },
       { metricLabelKey: 'references.metrics.moreInteractions', metricValue: '+46%' },
     ],
-    timeframe: '30-90 Tage',
+    timeframe: '30-90',
     source: 'GA4 / Meta Ads',
     beforeImage: caseBefore2,
     afterImage: caseAfter2,
@@ -124,7 +124,7 @@ const CASE_STUDIES: CaseStudy[] = [
       { metricLabelKey: 'references.metrics.moreQualifiedLeads', metricValue: '+32%' },
       { metricLabelKey: 'references.metrics.moreLeadsPerBudget', metricValue: '+31%' },
     ],
-    timeframe: '30-90 Tage',
+    timeframe: '30-90',
     source: 'GA4 / Google Ads',
     beforeImage: caseBefore3,
     afterImage: caseAfter3,
@@ -139,7 +139,7 @@ const CASE_STUDIES: CaseStudy[] = [
       { metricLabelKey: 'references.metrics.moreReservations', metricValue: '+27%' },
       { metricLabelKey: 'references.metrics.moreCalls', metricValue: '+21%' },
     ],
-    timeframe: '30-90 Tage',
+    timeframe: '30-90',
     source: 'GA4 / Meta Ads',
     beforeImage: caseBefore2,
     afterImage: caseAfter1,
@@ -154,7 +154,7 @@ const CASE_STUDIES: CaseStudy[] = [
       { metricLabelKey: 'references.metrics.moreLeads', metricValue: '+22%' },
       { metricLabelKey: 'references.metrics.moreIntroCalls', metricValue: '+19%' },
     ],
-    timeframe: '30-90 Tage',
+    timeframe: '30-90',
     source: 'GA4 / Search Console / Ads',
     beforeImage: caseBefore1,
     afterImage: caseAfter3,
@@ -169,7 +169,7 @@ const CASE_STUDIES: CaseStudy[] = [
       { metricLabelKey: 'references.metrics.moreFirstContacts', metricValue: '+24%' },
       { metricLabelKey: 'references.metrics.moreConsultations', metricValue: '+18%' },
     ],
-    timeframe: '30-90 Tage',
+    timeframe: '30-90',
     source: 'GA4 / Google Ads',
     beforeImage: caseBefore3,
     afterImage: caseAfter2,
@@ -177,17 +177,23 @@ const CASE_STUDIES: CaseStudy[] = [
 ];
 
 const FILTER_GROUPS: Array<{ label: string; items: Array<'all' | Niche> }> = [
-  { label: 'All', items: ['all'] },
-  { label: 'Local Services', items: ['handwerk', 'werkstatt', 'reinigung', 'umzugTransport'] },
-  { label: 'Health & Beauty', items: ['praxen', 'fitnessPhysio', 'beauty'] },
-  { label: 'Professional', items: ['immobilien', 'kanzlei', 'coachingBeratung', 'bildungKurse', 'gastronomie'] },
+  { label: 'references.filterGroups.all', items: ['all'] },
+  { label: 'references.filterGroups.localServices', items: ['handwerk', 'werkstatt', 'reinigung', 'umzugTransport'] },
+  { label: 'references.filterGroups.healthBeauty', items: ['praxen', 'fitnessPhysio', 'beauty'] },
+  { label: 'references.filterGroups.professional', items: ['immobilien', 'kanzlei', 'coachingBeratung', 'bildungKurse', 'gastronomie'] },
 ];
 
 const HERO_KPIS = [
-  { value: '+41%', label: 'Leads' },
-  { value: '+27%', label: 'Conversion' },
-  { value: '+32%', label: 'Traffic' },
+  { value: '+41%', label: 'references.kpis.leads' },
+  { value: '+27%', label: 'references.kpis.conversion' },
+  { value: '+32%', label: 'references.kpis.traffic' },
 ];
+
+const BEFORE_COMPARE = { traffic: '-12%', leads: '-18%', conversion: '-9%' };
+const AFTER_COMPARE = { traffic: '+32%', leads: '+41%', conversion: '+27%' };
+const DAY_LABELS = [0, 15, 30, 45, 60, 75, 90];
+const BEFORE_CURVE = [11, 10, 10, 9, 10, 9, 10];
+const AFTER_CURVE = [8, 14, 21, 29, 38, 48, 58];
 
 const clamp = (value: number, min: number, max: number) => Math.max(min, Math.min(max, value));
 const FALLBACK_HERO_PATH = 'M 0 99 C 30 72, 70 30, 100 1';
@@ -255,12 +261,27 @@ const buildSparklinePath = (values: number[] | undefined, phase: number): string
   return toSmoothPath(points);
 };
 
+const buildStaticComparePoints = (values: number[]): Array<{ x: number; y: number; value: number }> => {
+  const maxValue = 60;
+  return values.map((value, index) => {
+    const x = (index / (values.length - 1)) * 100;
+    const y = clamp(56 - (value / maxValue) * 52, 2, 58);
+    return { x, y, value };
+  });
+};
+
+const getDeltaLabel = (values: number[], index: number): string => {
+  if (index === 0) return '*';
+  const delta = values[index] - values[index - 1];
+  if (delta > 0) return `+${delta}`;
+  if (delta < 0) return `${delta}`;
+  return '0';
+};
+
 const ReferencesPage: React.FC = () => {
   const { t } = useTranslation();
   const [activeFilter, setActiveFilter] = useState<'all' | Niche>('all');
-  const [sliderValue, setSliderValue] = useState(50);
   const [heroCurvePhase, setHeroCurvePhase] = useState(0);
-  const sliderRef = useRef<HTMLDivElement | null>(null);
 
   const visibleCases = useMemo(
     () => CASE_STUDIES.filter(caseItem => activeFilter === 'all' || caseItem.category === activeFilter),
@@ -272,8 +293,12 @@ const ReferencesPage: React.FC = () => {
     [activeFilter]
   );
 
-  const sliderCase = visibleCases[0] ?? CASE_STUDIES[0];
+  const compareCase = visibleCases[0] ?? CASE_STUDIES[0];
   const heroChartPath = useMemo(() => buildHeroGrowthPath(heroCurvePhase) || FALLBACK_HERO_PATH, [heroCurvePhase]);
+  const beforeComparePoints = useMemo(() => buildStaticComparePoints(BEFORE_CURVE), []);
+  const afterComparePoints = useMemo(() => buildStaticComparePoints(AFTER_CURVE), []);
+  const beforeComparePath = useMemo(() => toSmoothPath(beforeComparePoints), [beforeComparePoints]);
+  const afterComparePath = useMemo(() => toSmoothPath(afterComparePoints), [afterComparePoints]);
 
   useEffect(() => {
     const timerId = window.setInterval(() => {
@@ -282,14 +307,6 @@ const ReferencesPage: React.FC = () => {
 
     return () => window.clearInterval(timerId);
   }, []);
-
-  const updateSliderFromClientX = (clientX: number) => {
-    if (!sliderRef.current) return;
-    const rect = sliderRef.current.getBoundingClientRect();
-    const ratio = (clientX - rect.left) / rect.width;
-    const next = Math.max(0, Math.min(100, Math.round(ratio * 100)));
-    setSliderValue(next);
-  };
 
   return (
     <ReferencesPageScope>
@@ -323,7 +340,7 @@ const ReferencesPage: React.FC = () => {
                 }}
                 transition={{ duration: 5.2, repeat: Infinity, ease: 'easeInOut' }}
               >
-                <p className='references-dashboard-label'>Performance Dashboard</p>
+                <p className='references-dashboard-label'>{t('references.performanceDashboard')}</p>
                 <div className='references-kpi-row'>
                   {HERO_KPIS.map((kpi, index) => (
                     <motion.div
@@ -341,18 +358,18 @@ const ReferencesPage: React.FC = () => {
                       }}
                     >
                       <span className='references-kpi-value'>{kpi.value}</span>
-                      <span className='references-kpi-label'>{kpi.label}</span>
+                      <span className='references-kpi-label'>{t(kpi.label)}</span>
                     </motion.div>
                   ))}
                 </div>
                 <div className='references-growth-chart-wrap'>
-                  <p className='references-chart-label'>90-Day Growth Curve</p>
+                  <p className='references-chart-label'>{t('references.growthCurve90')}</p>
                   <svg
                     viewBox='0 0 100 100'
                     preserveAspectRatio='none'
                     className='references-growth-chart'
                     role='img'
-                    aria-label='Growth chart'
+                    aria-label={t('references.growthChartAria')}
                   >
                     <defs>
                       <linearGradient id='refsGrowth' x1='0%' y1='0%' x2='100%' y2='0%'>
@@ -373,7 +390,7 @@ const ReferencesPage: React.FC = () => {
             <div className='references-filter-groups' role='tablist' aria-label={t('references.filterAria')}>
               {FILTER_GROUPS.map(group => (
                 <div key={group.label} className='references-filter-group'>
-                  <p className='references-filter-group-label'>{group.label}</p>
+                  <p className='references-filter-group-label'>{t(group.label)}</p>
                   <div className='references-filters'>
                     {group.items.map(item => (
                       <button
@@ -423,11 +440,11 @@ const ReferencesPage: React.FC = () => {
                     preserveAspectRatio='none'
                     className='references-sparkline'
                     role='img'
-                    aria-label={`${t(item.labelKey)} trend`}
+                    aria-label={t('references.trendAria', { niche: t(item.labelKey) })}
                   >
                     <path d={buildSparklinePath(item.sparkline, heroCurvePhase + index * 0.9) || FALLBACK_SPARKLINE_PATH} />
                   </svg>
-                  <Muted><FaCalendarAlt /> {t('references.periodLabel')}: {item.timeframe}</Muted>
+                  <Muted><FaCalendarAlt /> {t('references.periodLabel')}: {item.timeframe} {t('references.daysUnit')}</Muted>
                   <Muted><FaDatabase /> {t('references.measurementLabel')}: {item.source}</Muted>
                 </Card>
               ))}
@@ -447,20 +464,20 @@ const ReferencesPage: React.FC = () => {
                   <Card className='references-case-card' key={caseItem.id}>
                     <h3>{t(caseItem.titleKey)}</h3>
                     <div className='references-case-block'>
-                      <p className='references-case-label'>Problem</p>
+                      <p className='references-case-label'>{t('references.challengeLabel')}</p>
                       <p>{t(caseItem.challengeKey)}</p>
                     </div>
                     <div className='references-case-block'>
-                      <p className='references-case-label'>Solution</p>
+                      <p className='references-case-label'>{t('references.solutionLabel')}</p>
                       <p>{t(caseItem.solutionKey)}</p>
                     </div>
                     <div className='references-case-result'>
-                      <p className='references-case-label'>Result</p>
+                      <p className='references-case-label'>{t('references.resultLabel')}</p>
                       {caseItem.metrics.map(metric => (
                         <p key={`${caseItem.id}-${metric.metricLabelKey}`}>{t(metric.metricLabelKey)}: <span>{metric.metricValue}</span></p>
                       ))}
                     </div>
-                    <Muted><FaCalendarAlt /> {t('references.periodLabel')}: {caseItem.timeframe}</Muted>
+                    <Muted><FaCalendarAlt /> {t('references.periodLabel')}: {caseItem.timeframe} {t('references.daysUnit')}</Muted>
                     <Muted><FaDatabase /> {t('references.measurementLabel')}: {caseItem.source}</Muted>
                   </Card>
                 ))}
@@ -470,42 +487,67 @@ const ReferencesPage: React.FC = () => {
 
           <Section>
             <h2 className='references-title'>{t('references.beforeAfter')}</h2>
-            <div
-              ref={sliderRef}
-              className='references-compare'
-              onMouseMove={e => {
-                if (e.buttons === 1) updateSliderFromClientX(e.clientX);
-              }}
-              onClick={e => updateSliderFromClientX(e.clientX)}
-            >
-              <img className='after' src={sliderCase.afterImage} alt={t('references.afterAlt')} />
-              <div className='before-wrap' style={{ width: `${sliderValue}%` }}>
-                <img className='before' src={sliderCase.beforeImage} alt={t('references.beforeAlt')} />
+            <div className='references-compare-shell'>
+              <div className='references-compare-chart'>
+                <svg
+                  viewBox='0 0 100 60'
+                  preserveAspectRatio='none'
+                  className='references-compare-graph'
+                  role='img'
+                  aria-label={t('references.compareGraphAria')}
+                >
+                  {[0, 16.66, 33.33, 50, 66.66, 83.33, 100].map(x => (
+                    <line key={`vx-${x}`} x1={x} y1='0' x2={x} y2='60' className='grid-line' />
+                  ))}
+                  {[8, 16, 24, 32, 40, 48, 56].map(y => (
+                    <line key={`hy-${y}`} x1='0' y1={y} x2='100' y2={y} className='grid-line' />
+                  ))}
+                  <line x1='0' y1='58' x2='100' y2='58' className='axis-line' />
+                  <path className='before-line' d={beforeComparePath} />
+                  <path className='after-line' d={afterComparePath} />
+                  {beforeComparePoints.map((point, index) => (
+                    <g key={`before-point-${index}`}>
+                      <circle className='before-point' cx={point.x} cy={point.y} r='1.2' />
+                      <text className='point-delta before' x={point.x} y={clamp(point.y + 4.4, 4, 59)}>
+                        {getDeltaLabel(BEFORE_CURVE, index)}
+                      </text>
+                    </g>
+                  ))}
+                  {afterComparePoints.map((point, index) => (
+                    <g key={`after-point-${index}`}>
+                      <circle className='after-point' cx={point.x} cy={point.y} r='1.4' />
+                      <text className='point-delta after' x={point.x} y={clamp(point.y - 2.2, 1.5, 58)}>
+                        {getDeltaLabel(AFTER_CURVE, index)}
+                      </text>
+                    </g>
+                  ))}
+                </svg>
+                <div className='references-compare-days'>
+                  {DAY_LABELS.map(day => (
+                    <span key={day}>{t('references.dayLabel', { day })}</span>
+                  ))}
+                </div>
+                <div className='references-compare-legend'>
+                  <span><i className='dot before' /> {t('references.beforeLegend')}</span>
+                  <span><i className='dot after' /> {t('references.afterLegend')}</span>
+                </div>
               </div>
-              <button
-                type='button'
-                className='references-compare-handle'
-                style={{ left: `${sliderValue}%` }}
-                onKeyDown={e => {
-                  if (e.key === 'ArrowLeft') setSliderValue(prev => Math.max(0, prev - 2));
-                  if (e.key === 'ArrowRight') setSliderValue(prev => Math.min(100, prev + 2));
-                }}
-                aria-label={t('references.sliderAria')}
-              />
-              <span className='references-compare-label before'>{t('references.before')}</span>
-              <span className='references-compare-label after'>{t('references.after')}</span>
-              <div className='references-compare-overlay before-panel'>
-                <p>Traffic <span>+32%</span></p>
-                <p>Leads <span>+41%</span></p>
-                <p>Conversion <span>+27%</span></p>
-              </div>
-              <div className='references-compare-overlay after-panel'>
-                <p>Traffic <span>+54%</span></p>
-                <p>Leads <span>+71%</span></p>
-                <p>Conversion <span>+39%</span></p>
+              <div className='references-compare-kpis'>
+                <div className='kpi-panel before'>
+                  <h3>{t('references.before')}</h3>
+                  <p>{t('references.kpis.traffic')} <span>{BEFORE_COMPARE.traffic}</span></p>
+                  <p>{t('references.kpis.leads')} <span>{BEFORE_COMPARE.leads}</span></p>
+                  <p>{t('references.kpis.conversion')} <span>{BEFORE_COMPARE.conversion}</span></p>
+                </div>
+                <div className='kpi-panel after'>
+                  <h3>{t('references.after')}</h3>
+                  <p>{t('references.kpis.traffic')} <span>{AFTER_COMPARE.traffic}</span></p>
+                  <p>{t('references.kpis.leads')} <span>{AFTER_COMPARE.leads}</span></p>
+                  <p>{t('references.kpis.conversion')} <span>{AFTER_COMPARE.conversion}</span></p>
+                </div>
               </div>
             </div>
-            <Muted>{t('references.sliderHint')} {t('references.periodLabel')}: {sliderCase.timeframe} · {t('references.measurementLabel')}: {sliderCase.source}</Muted>
+            <Muted>{t('references.periodLabel')}: {compareCase.timeframe} {t('references.daysUnit')} · {t('references.measurementLabel')}: {compareCase.source}</Muted>
           </Section>
 
           <Band>
@@ -522,3 +564,4 @@ const ReferencesPage: React.FC = () => {
 };
 
 export default ReferencesPage;
+

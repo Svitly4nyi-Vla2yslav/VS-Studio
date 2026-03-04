@@ -623,7 +623,28 @@
         "challenge": "Geringe Conversion auf Leistungsseiten.",
         "solution": "Seiteninhalte vereinfacht, Vertrauenstexte ergänzt, Erstkontakt klar hervorgehoben."
       }
-    }
+    },
+    "performanceDashboard": "Performance-Dashboard",
+    "growthCurve90": "90-Tage-Wachstumskurve",
+    "growthChartAria": "Wachstumsdiagramm",
+    "resultLabel": "Ergebnis",
+    "trendAria": "{{niche}} Trend",
+    "compareGraphAria": "Vorher-Nachher-Diagramm",
+    "dayLabel": "Tag {{day}}",
+    "beforeLegend": "Vorher: schwache Dynamik",
+    "afterLegend": "Nachher: stabiles Wachstum",
+    "filterGroups": {
+      "all": "Alle",
+      "localServices": "Lokale Services",
+      "healthBeauty": "Gesundheit & Beauty",
+      "professional": "Professionell"
+    },
+    "kpis": {
+      "traffic": "Traffic",
+      "leads": "Leads",
+      "conversion": "Conversion"
+    },
+    "daysUnit": "Tage"
   },
   "about": {
     "h1": "Über uns",

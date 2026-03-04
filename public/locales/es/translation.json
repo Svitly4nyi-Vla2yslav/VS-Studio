@@ -533,32 +533,32 @@
     }
   },
   "references": {
-    "h1": "Referenzen mit messbarem Wachstum.",
-    "subtitle": "Wir zeigen klar, was gestiegen ist: Anfragen, Buchungen, Anrufe und Leads.",
-    "trustline": "Alle Kennzahlen mit Kontext: Zeitraum und Messung.",
-    "filterTitle": "Nische auswählen",
-    "filterAria": "Nischenfilter",
-    "counter": "{{count}} passende Cases",
-    "growthByNiche": "Wachstum nach Branche",
-    "selectedCases": "Ausgewählte Cases",
-    "challengeLabel": "Ausgangslage",
-    "solutionLabel": "Umsetzung",
-    "periodLabel": "Zeitraum",
-    "measurementLabel": "Messung",
-    "emptyTitle": "Für diese Nische folgt der nächste Case.",
-    "emptyText": "Wir zeigen nur Cases mit belastbarer Messung und klarem Zeitraum.",
-    "beforeAfter": "Vorher / Nachher",
-    "before": "Vorher",
-    "after": "Nachher",
-    "beforeAlt": "Vorher-Ansicht des Cases",
-    "afterAlt": "Nachher-Ansicht des Cases",
-    "sliderAria": "Vorher Nachher Vergleich verschieben",
-    "sliderHint": "Zum Vergleichen ziehen.",
-    "ctaTitle": "Sie wollen ähnliche Ergebnisse?",
-    "ctaText": "Wir analysieren Ihre Ausgangslage und zeigen einen realistischen 30-90-Tage-Plan.",
-    "cta": "Ähnliches Projekt anfragen",
+    "h1": "Referencias con crecimiento medible.",
+    "subtitle": "Mostramos claramente qué ha crecido: solicitudes, reservas, llamadas y leads.",
+    "trustline": "Todas las métricas con contexto: periodo y medición.",
+    "filterTitle": "Selecciona nicho",
+    "filterAria": "Filtro de nichos",
+    "counter": "{{count}} casos relevantes",
+    "growthByNiche": "Crecimiento por sector",
+    "selectedCases": "Casos seleccionados",
+    "challengeLabel": "Situación inicial",
+    "solutionLabel": "Solución",
+    "periodLabel": "Periodo",
+    "measurementLabel": "Medición",
+    "emptyTitle": "El próximo caso para este nicho llegará pronto.",
+    "emptyText": "Mostramos solo casos con medición sólida y periodo claro.",
+    "beforeAfter": "Antes / Después",
+    "before": "Antes",
+    "after": "Después",
+    "beforeAlt": "Vista antes",
+    "afterAlt": "Vista después",
+    "sliderAria": "Mover comparación antes/después",
+    "sliderHint": "Arrastra para comparar.",
+    "ctaTitle": "¿Quieres resultados similares?",
+    "ctaText": "Analizamos tu situación y mostramos un plan realista de 30-90 días.",
+    "cta": "Solicitar proyecto similar",
     "filters": {
-      "all": "Alle"
+      "all": "Todos"
     },
     "niches": {
       "handwerk": "Handwerk",
@@ -575,55 +575,76 @@
       "bildungKurse": "Bildung/Kurse"
     },
     "metrics": {
-      "moreRequests": "Mehr Anfragen",
-      "moreAppointments": "Mehr Terminbuchungen",
-      "moreCalls": "Mehr Anrufe",
-      "moreReservations": "Mehr Reservierungen",
-      "moreBookings": "Mehr Buchungen",
-      "moreLeads": "Mehr Leads",
-      "moreIntroCalls": "Mehr Erstgespräche",
-      "moreTrialSessions": "Mehr Probetrainings",
-      "moreOffers": "Mehr Angebotsanfragen",
-      "moreQualifiedLeads": "Mehr qualifizierte Leads",
-      "moreFirstContacts": "Mehr Erstkontakte",
-      "moreCourseSignups": "Mehr Kursanmeldungen",
-      "budgetEfficiency": "Budget-Effizienz",
-      "moreInteractions": "Mehr Interaktionen",
-      "moreLeadsPerBudget": "Mehr Leads pro Budget",
-      "moreConsultations": "Mehr Beratungstermine"
+      "moreRequests": "Más solicitudes",
+      "moreAppointments": "Más reservas de cita",
+      "moreCalls": "Más llamadas",
+      "moreReservations": "Más reservas",
+      "moreBookings": "Más reservas de servicios",
+      "moreLeads": "Más leads",
+      "moreIntroCalls": "Más llamadas iniciales",
+      "moreTrialSessions": "Más sesiones de prueba",
+      "moreOffers": "Más solicitudes de presupuesto",
+      "moreQualifiedLeads": "Más leads cualificados",
+      "moreFirstContacts": "Más primeros contactos",
+      "moreCourseSignups": "Más inscripciones a cursos",
+      "budgetEfficiency": "Eficiencia del presupuesto",
+      "moreInteractions": "Más interacciones",
+      "moreLeadsPerBudget": "Más leads por presupuesto",
+      "moreConsultations": "Más consultas"
     },
     "cases": {
       "c1": {
-        "title": "Sanitärbetrieb (Region Hannover)",
-        "challenge": "Zu wenig Anfragen trotz guter Reichweite.",
-        "solution": "Leistungsseiten neu strukturiert, CTA optimiert, Kontakttracking aktiviert."
+        "title": "Empresa de fontanería (región de Hannover)",
+        "challenge": "Pocas solicitudes a pesar del buen alcance.",
+        "solution": "Se reestructuraron páginas de servicios, se optimizaron CTA y se activó el tracking de contacto."
       },
       "c2": {
-        "title": "Physiopraxis (Hildesheim)",
-        "challenge": "Zu wenige Online-Terminwünsche.",
-        "solution": "Termin-Flow vereinfacht, mobile Seiten beschleunigt, Kontaktwege klar definiert."
+        "title": "Clínica de fisioterapia (Hildesheim)",
+        "challenge": "Pocas solicitudes de cita online.",
+        "solution": "Se simplificó el flujo de cita, se aceleraron las páginas móviles y se aclararon vías de contacto."
       },
       "c3": {
-        "title": "Karosserie-Werkstatt (Raum Harburg)",
-        "challenge": "Viele Kontakte, aber zu wenig passende Aufträge.",
-        "solution": "Lead-Qualifizierung im Formular und servicebezogene Landingpage eingeführt."
+        "title": "Taller de carrocería (zona de Harburg)",
+        "challenge": "Muchos contactos pero pocos trabajos adecuados.",
+        "solution": "Se añadió cualificación de lead en el formulario y una landing por servicio."
       },
       "c4": {
-        "title": "Restaurant (Niedersachsen)",
-        "challenge": "Zu wenige Reservierungen unter der Woche.",
-        "solution": "Reservierungsstrecke vereinfacht, lokale Kampagnen neu aufgesetzt."
+        "title": "Restaurante (Baja Sajonia)",
+        "challenge": "Pocas reservas entre semana.",
+        "solution": "Se simplificó la reserva y se reiniciaron campañas locales."
       },
       "c5": {
-        "title": "Maklerbüro (Niedersachsen)",
-        "challenge": "Zu wenig qualifizierte Eigentümer-Leads.",
-        "solution": "Objektseiten nach Suchintention aufgebaut und Anfrageweg gestrafft."
+        "title": "Agencia inmobiliaria (Baja Sajonia)",
+        "challenge": "Pocos leads cualificados de propietarios.",
+        "solution": "Páginas de inmuebles estructuradas por intención de búsqueda y solicitud más directa."
       },
       "c6": {
-        "title": "Steuerkanzlei (Region Hannover)",
-        "challenge": "Geringe Conversion auf Leistungsseiten.",
-        "solution": "Seiteninhalte vereinfacht, Vertrauenstexte ergänzt, Erstkontakt klar hervorgehoben."
+        "title": "Asesoría fiscal (región de Hannover)",
+        "challenge": "Baja conversión en páginas de servicios.",
+        "solution": "Se simplificaron contenidos, se añadieron textos de confianza y se destacó el primer contacto."
       }
-    }
+    },
+    "performanceDashboard": "Panel de rendimiento",
+    "growthCurve90": "Curva de crecimiento de 90 días",
+    "growthChartAria": "Gráfico de crecimiento",
+    "resultLabel": "Resultado",
+    "trendAria": "Tendencia de {{niche}}",
+    "compareGraphAria": "Gráfico antes y después",
+    "dayLabel": "Día {{day}}",
+    "beforeLegend": "Antes: dinámica débil",
+    "afterLegend": "Después: crecimiento estable",
+    "filterGroups": {
+      "all": "Todos",
+      "localServices": "Servicios locales",
+      "healthBeauty": "Salud y Belleza",
+      "professional": "Profesional"
+    },
+    "kpis": {
+      "traffic": "Tráfico",
+      "leads": "Leads",
+      "conversion": "Conversión"
+    },
+    "daysUnit": "días"
   },
   "about": {
     "h1": "Über uns",

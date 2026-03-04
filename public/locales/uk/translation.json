@@ -623,7 +623,28 @@
         "challenge": "Низька конверсія на сторінках послуг.",
         "solution": "Спростили контент, додали блоки довіри та чітко виділили перший контакт."
       }
-    }
+    },
+    "performanceDashboard": "Панель ефективності",
+    "growthCurve90": "Крива зростання за 90 днів",
+    "growthChartAria": "Графік зростання",
+    "resultLabel": "Результат",
+    "trendAria": "Тренд: {{niche}}",
+    "compareGraphAria": "Графік до та після",
+    "dayLabel": "День {{day}}",
+    "beforeLegend": "До: слабка динаміка",
+    "afterLegend": "Після: стабільне зростання",
+    "filterGroups": {
+      "all": "Усі",
+      "localServices": "Локальні послуги",
+      "healthBeauty": "Здоров'я та краса",
+      "professional": "Професійні послуги"
+    },
+    "kpis": {
+      "traffic": "Трафік",
+      "leads": "Ліди",
+      "conversion": "Конверсія"
+    },
+    "daysUnit": "днів"
   },
   "about": {
     "h1": "Про нас",

@@ -419,119 +419,154 @@ export const ReferencesPageScope = styled.div`
     text-shadow: 0 0 12px rgba(63, 233, 163, 0.38);
   }
 
-  .references-compare {
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-    border: 1px solid rgba(118, 173, 255, 0.34);
-    min-height: 360px;
-    height: clamp(360px, 46vw, 560px);
-    background: #0b0b0f;
-    box-shadow: 0 24px 46px rgba(2, 7, 17, 0.55);
-  }
-
-  .references-compare img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    user-select: none;
-    pointer-events: none;
-  }
-
-  .references-compare .after {
-    position: absolute;
-    inset: 0;
-  }
-
-  .references-compare .before-wrap {
-    position: absolute;
-    inset: 0 auto 0 0;
-    overflow: hidden;
-    border-right: 2px solid rgba(126, 201, 255, 0.95);
-  }
-
-  .references-compare-handle {
-    position: absolute;
-    top: 0;
-    transform: translateX(-50%);
-    width: 30px;
-    height: 100%;
-    border: 0;
-    background: transparent;
-  }
-
-  .references-compare-handle::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30px;
-    height: 30px;
-    border-radius: 999px;
-    border: 2px solid rgba(123, 203, 255, 0.95);
-    background: rgba(11, 23, 39, 0.95);
-    box-shadow: 0 0 20px rgba(106, 184, 255, 0.55);
-  }
-
-  .references-compare-handle:focus-visible {
-    outline: 2px solid rgba(113, 187, 255, 0.95);
-    outline-offset: -2px;
-  }
-
-  .references-compare-label {
-    position: absolute;
-    top: 12px;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.01em;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.45);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 999px;
-    padding: 5px 10px;
-  }
-
-  .references-compare-label.before {
-    left: 12px;
-  }
-
-  .references-compare-label.after {
-    right: 12px;
-  }
-
-  .references-compare-overlay {
-    position: absolute;
-    bottom: 14px;
-    border-radius: 12px;
-    border: 1px solid rgba(156, 214, 255, 0.36);
-    background: rgba(6, 20, 39, 0.8);
-    backdrop-filter: blur(6px);
-    padding: 10px 12px;
-    min-width: 150px;
+  .references-compare-shell {
     display: grid;
-    gap: 4px;
+    gap: 14px;
   }
 
-  .references-compare-overlay p {
+  .references-compare-chart {
+    border-radius: 18px;
+    border: 1px solid rgba(118, 173, 255, 0.34);
+    background: linear-gradient(180deg, rgba(7, 18, 33, 0.94), rgba(6, 16, 29, 0.96));
+    padding: 14px;
+    box-shadow: 0 20px 40px rgba(2, 8, 20, 0.45);
+  }
+
+  .references-compare-graph {
+    width: 100%;
+    height: clamp(260px, 34vw, 420px);
+    border-radius: 12px;
+    background: rgba(5, 14, 26, 0.72);
+  }
+
+  .references-compare-graph .grid-line {
+    stroke: rgba(145, 187, 245, 0.2);
+    stroke-width: 0.5;
+    stroke-dasharray: 2 2;
+  }
+
+  .references-compare-graph .axis-line {
+    stroke: rgba(180, 215, 255, 0.45);
+    stroke-width: 0.75;
+  }
+
+  .references-compare-graph .before-line {
+    fill: none;
+    stroke: #f97316;
+    stroke-width: 2.2;
+    filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.35));
+  }
+
+  .references-compare-graph .after-line {
+    fill: none;
+    stroke: #22d3ee;
+    stroke-width: 2.8;
+    filter: drop-shadow(0 0 10px rgba(34, 211, 238, 0.45));
+  }
+
+  .references-compare-graph .before-point {
+    fill: #fb923c;
+    stroke: rgba(26, 13, 5, 0.9);
+    stroke-width: 0.45;
+  }
+
+  .references-compare-graph .after-point {
+    fill: #22d3ee;
+    stroke: rgba(3, 24, 30, 0.95);
+    stroke-width: 0.5;
+  }
+
+  .references-compare-graph .point-delta {
+    font-size: 2.6px;
+    font-weight: 700;
+    text-anchor: middle;
+    paint-order: stroke;
+    stroke: rgba(4, 11, 20, 0.85);
+    stroke-width: 0.55px;
+    stroke-linejoin: round;
+  }
+
+  .references-compare-graph .point-delta.before {
+    fill: #ffb171;
+  }
+
+  .references-compare-graph .point-delta.after {
+    fill: #a6f3ff;
+  }
+
+  .references-compare-days {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .references-compare-days span {
+    font-size: 12px;
+    color: rgba(189, 214, 243, 0.82);
+    text-align: center;
+  }
+
+  .references-compare-legend {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    color: rgba(223, 239, 255, 0.9);
+    font-size: 13px;
+  }
+
+  .references-compare-legend .dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  .references-compare-legend .dot.before {
+    background: #f97316;
+    box-shadow: 0 0 8px rgba(249, 115, 22, 0.45);
+  }
+
+  .references-compare-legend .dot.after {
+    background: #22d3ee;
+    box-shadow: 0 0 8px rgba(34, 211, 238, 0.45);
+  }
+
+  .references-compare-kpis {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .references-compare-kpis .kpi-panel {
+    border-radius: 14px;
+    padding: 14px;
+    border: 1px solid rgba(130, 176, 245, 0.28);
+    background: rgba(7, 17, 33, 0.74);
+    display: grid;
+    gap: 6px;
+  }
+
+  .references-compare-kpis .kpi-panel h3 {
+    margin-bottom: 4px;
+  }
+
+  .references-compare-kpis .kpi-panel p {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    font-size: 13px;
-    color: rgba(227, 239, 255, 0.92);
   }
 
-  .references-compare-overlay span {
-    color: #95f7cf;
+  .references-compare-kpis .kpi-panel.before span {
+    color: #fb923c;
     font-weight: 700;
   }
 
-  .references-compare-overlay.before-panel {
-    left: 14px;
-  }
-
-  .references-compare-overlay.after-panel {
-    right: 14px;
+  .references-compare-kpis .kpi-panel.after span {
+    color: #6ee7ff;
+    font-weight: 700;
   }
 
   @media (max-width: 1024px) {
@@ -550,9 +585,8 @@ export const ReferencesPageScope = styled.div`
       justify-content: center;
     }
 
-    .references-compare-overlay {
-      min-width: 132px;
-      padding: 8px 10px;
+    .references-compare-kpis {
+      grid-template-columns: 1fr;
     }
   }
 

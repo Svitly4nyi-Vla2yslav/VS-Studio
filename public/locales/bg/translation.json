@@ -533,32 +533,32 @@
     }
   },
   "references": {
-    "h1": "Referenzen mit messbarem Wachstum.",
-    "subtitle": "Wir zeigen klar, was gestiegen ist: Anfragen, Buchungen, Anrufe und Leads.",
-    "trustline": "Alle Kennzahlen mit Kontext: Zeitraum und Messung.",
-    "filterTitle": "Nische auswählen",
-    "filterAria": "Nischenfilter",
-    "counter": "{{count}} passende Cases",
-    "growthByNiche": "Wachstum nach Branche",
-    "selectedCases": "Ausgewählte Cases",
-    "challengeLabel": "Ausgangslage",
-    "solutionLabel": "Umsetzung",
-    "periodLabel": "Zeitraum",
-    "measurementLabel": "Messung",
-    "emptyTitle": "Für diese Nische folgt der nächste Case.",
-    "emptyText": "Wir zeigen nur Cases mit belastbarer Messung und klarem Zeitraum.",
-    "beforeAfter": "Vorher / Nachher",
-    "before": "Vorher",
-    "after": "Nachher",
-    "beforeAlt": "Vorher-Ansicht des Cases",
-    "afterAlt": "Nachher-Ansicht des Cases",
-    "sliderAria": "Vorher Nachher Vergleich verschieben",
-    "sliderHint": "Zum Vergleichen ziehen.",
-    "ctaTitle": "Sie wollen ähnliche Ergebnisse?",
-    "ctaText": "Wir analysieren Ihre Ausgangslage und zeigen einen realistischen 30-90-Tage-Plan.",
-    "cta": "Ähnliches Projekt anfragen",
+    "h1": "Референции с измерим растеж.",
+    "subtitle": "Показваме ясно какво се е повишило: запитвания, резервации, обаждания и лийдове.",
+    "trustline": "Всички показатели с контекст: период и измерване.",
+    "filterTitle": "Изберете ниша",
+    "filterAria": "Филтър по ниши",
+    "counter": "{{count}} подходящи случая",
+    "growthByNiche": "Растеж по сектори",
+    "selectedCases": "Избрани случаи",
+    "challengeLabel": "Изходна ситуация",
+    "solutionLabel": "Решение",
+    "periodLabel": "Период",
+    "measurementLabel": "Измерване",
+    "emptyTitle": "Следващият случай за тази ниша ще бъде добавен скоро.",
+    "emptyText": "Показваме само случаи с надеждно измерване и ясен период.",
+    "beforeAfter": "Преди / След",
+    "before": "Преди",
+    "after": "След",
+    "beforeAlt": "Изглед преди",
+    "afterAlt": "Изглед след",
+    "sliderAria": "Премести сравнение преди/след",
+    "sliderHint": "Плъзнете за сравнение.",
+    "ctaTitle": "Искате подобни резултати?",
+    "ctaText": "Анализираме текущата ви ситуация и показваме реалистичен план за 30-90 дни.",
+    "cta": "Заявете подобен проект",
     "filters": {
-      "all": "Alle"
+      "all": "Всички"
     },
     "niches": {
       "handwerk": "Handwerk",
@@ -575,55 +575,76 @@
       "bildungKurse": "Bildung/Kurse"
     },
     "metrics": {
-      "moreRequests": "Mehr Anfragen",
-      "moreAppointments": "Mehr Terminbuchungen",
-      "moreCalls": "Mehr Anrufe",
-      "moreReservations": "Mehr Reservierungen",
-      "moreBookings": "Mehr Buchungen",
-      "moreLeads": "Mehr Leads",
-      "moreIntroCalls": "Mehr Erstgespräche",
-      "moreTrialSessions": "Mehr Probetrainings",
-      "moreOffers": "Mehr Angebotsanfragen",
-      "moreQualifiedLeads": "Mehr qualifizierte Leads",
-      "moreFirstContacts": "Mehr Erstkontakte",
-      "moreCourseSignups": "Mehr Kursanmeldungen",
-      "budgetEfficiency": "Budget-Effizienz",
-      "moreInteractions": "Mehr Interaktionen",
-      "moreLeadsPerBudget": "Mehr Leads pro Budget",
-      "moreConsultations": "Mehr Beratungstermine"
+      "moreRequests": "Повече запитвания",
+      "moreAppointments": "Повече записани часове",
+      "moreCalls": "Повече обаждания",
+      "moreReservations": "Повече резервации",
+      "moreBookings": "Повече резервации на услуги",
+      "moreLeads": "Повече лийдове",
+      "moreIntroCalls": "Повече първични разговори",
+      "moreTrialSessions": "Повече пробни сесии",
+      "moreOffers": "Повече запитвания за оферта",
+      "moreQualifiedLeads": "Повече квалифицирани лийдове",
+      "moreFirstContacts": "Повече първи контакти",
+      "moreCourseSignups": "Повече записвания за курсове",
+      "budgetEfficiency": "Ефективност на бюджета",
+      "moreInteractions": "Повече взаимодействия",
+      "moreLeadsPerBudget": "Повече лийдове за същия бюджет",
+      "moreConsultations": "Повече консултации"
     },
     "cases": {
       "c1": {
-        "title": "Sanitärbetrieb (Region Hannover)",
-        "challenge": "Zu wenig Anfragen trotz guter Reichweite.",
-        "solution": "Leistungsseiten neu strukturiert, CTA optimiert, Kontakttracking aktiviert."
+        "title": "ВиК фирма (регион Хановер)",
+        "challenge": "Твърде малко запитвания въпреки добър обхват.",
+        "solution": "Преструктурирани страници услуги, оптимизирани CTA и активирано проследяване на контактите."
       },
       "c2": {
-        "title": "Physiopraxis (Hildesheim)",
-        "challenge": "Zu wenige Online-Terminwünsche.",
-        "solution": "Termin-Flow vereinfacht, mobile Seiten beschleunigt, Kontaktwege klar definiert."
+        "title": "Физиотерапевтична практика (Хилдесхайм)",
+        "challenge": "Твърде малко онлайн записвания.",
+        "solution": "Опростен поток за записване, ускорени мобилни страници и ясни канали за контакт."
       },
       "c3": {
-        "title": "Karosserie-Werkstatt (Raum Harburg)",
-        "challenge": "Viele Kontakte, aber zu wenig passende Aufträge.",
-        "solution": "Lead-Qualifizierung im Formular und servicebezogene Landingpage eingeführt."
+        "title": "Автосервиз каросерия (район Харбург)",
+        "challenge": "Много контакти, но малко подходящи поръчки.",
+        "solution": "Добавена квалификация на лийдовете във формата и service landing page."
       },
       "c4": {
-        "title": "Restaurant (Niedersachsen)",
-        "challenge": "Zu wenige Reservierungen unter der Woche.",
-        "solution": "Reservierungsstrecke vereinfacht, lokale Kampagnen neu aufgesetzt."
+        "title": "Ресторант (Долна Саксония)",
+        "challenge": "Малко резервации през делнични дни.",
+        "solution": "Опростен процес на резервация и рестарт на локалните кампании."
       },
       "c5": {
-        "title": "Maklerbüro (Niedersachsen)",
-        "challenge": "Zu wenig qualifizierte Eigentümer-Leads.",
-        "solution": "Objektseiten nach Suchintention aufgebaut und Anfrageweg gestrafft."
+        "title": "Агенция за имоти (Долна Саксония)",
+        "challenge": "Малко квалифицирани лийдове от собственици.",
+        "solution": "Страници за имоти според търсещото намерение и съкратен път за запитване."
       },
       "c6": {
-        "title": "Steuerkanzlei (Region Hannover)",
-        "challenge": "Geringe Conversion auf Leistungsseiten.",
-        "solution": "Seiteninhalte vereinfacht, Vertrauenstexte ergänzt, Erstkontakt klar hervorgehoben."
+        "title": "Данъчна кантора (регион Хановер)",
+        "challenge": "Ниска конверсия на страниците услуги.",
+        "solution": "Опростено съдържание, добавени елементи на доверие и подчертан първи контакт."
       }
-    }
+    },
+    "performanceDashboard": "Табло за ефективност",
+    "growthCurve90": "90-дневна крива на растеж",
+    "growthChartAria": "Графика на растежа",
+    "resultLabel": "Резултат",
+    "trendAria": "Тенденция: {{niche}}",
+    "compareGraphAria": "Графика преди и след",
+    "dayLabel": "Ден {{day}}",
+    "beforeLegend": "Преди: слаба динамика",
+    "afterLegend": "След: стабилен растеж",
+    "filterGroups": {
+      "all": "Всички",
+      "localServices": "Локални услуги",
+      "healthBeauty": "Здраве и красота",
+      "professional": "Професионални"
+    },
+    "kpis": {
+      "traffic": "Трафик",
+      "leads": "Лийдове",
+      "conversion": "Конверсия"
+    },
+    "daysUnit": "дни"
   },
   "about": {
     "h1": "Über uns",
