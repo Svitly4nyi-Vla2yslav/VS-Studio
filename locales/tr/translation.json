@@ -533,97 +533,118 @@
     }
   },
   "references": {
-    "h1": "Referenzen mit messbarem Wachstum.",
-    "subtitle": "Wir zeigen klar, was gestiegen ist: Anfragen, Buchungen, Anrufe und Leads.",
-    "trustline": "Alle Kennzahlen mit Kontext: Zeitraum und Messung.",
-    "filterTitle": "Nische auswählen",
-    "filterAria": "Nischenfilter",
-    "counter": "{{count}} passende Cases",
-    "growthByNiche": "Wachstum nach Branche",
-    "selectedCases": "Ausgewählte Cases",
-    "challengeLabel": "Ausgangslage",
-    "solutionLabel": "Umsetzung",
-    "periodLabel": "Zeitraum",
-    "measurementLabel": "Messung",
-    "emptyTitle": "Für diese Nische folgt der nächste Case.",
-    "emptyText": "Wir zeigen nur Cases mit belastbarer Messung und klarem Zeitraum.",
-    "beforeAfter": "Vorher / Nachher",
-    "before": "Vorher",
-    "after": "Nachher",
-    "beforeAlt": "Vorher-Ansicht des Cases",
-    "afterAlt": "Nachher-Ansicht des Cases",
-    "sliderAria": "Vorher Nachher Vergleich verschieben",
-    "sliderHint": "Zum Vergleichen ziehen.",
-    "ctaTitle": "Sie wollen ähnliche Ergebnisse?",
-    "ctaText": "Wir analysieren Ihre Ausgangslage und zeigen einen realistischen 30-90-Tage-Plan.",
-    "cta": "Ähnliches Projekt anfragen",
+    "h1": "Ölçülebilir büyüme içeren referanslar.",
+    "subtitle": "Nelerin arttığını net gösteriyoruz: talepler, rezervasyonlar, aramalar ve leadler.",
+    "trustline": "Tüm metrikler bağlamla birlikte: dönem ve ölçüm.",
+    "filterTitle": "Niş seçin",
+    "filterAria": "Niş filtresi",
+    "counter": "{{count}} uygun vaka",
+    "growthByNiche": "Sektöre göre büyüme",
+    "selectedCases": "Seçili vakalar",
+    "challengeLabel": "Durum",
+    "solutionLabel": "Çözüm",
+    "periodLabel": "Dönem",
+    "measurementLabel": "Ölçüm",
+    "emptyTitle": "Bu niş için sonraki vaka yakında eklenecek.",
+    "emptyText": "Sadece sağlam ölçüm ve net dönem içeren vakaları yayınlıyoruz.",
+    "beforeAfter": "Önce / Sonra",
+    "before": "Önce",
+    "after": "Sonra",
+    "beforeAlt": "Vaka öncesi görünüm",
+    "afterAlt": "Vaka sonrası görünüm",
+    "sliderAria": "Önce-sonra karşılaştırmasını kaydır",
+    "sliderHint": "Karşılaştırmak için sürükleyin.",
+    "ctaTitle": "Benzer sonuçlar mı istiyorsunuz?",
+    "ctaText": "Mevcut durumunuzu analiz eder, gerçekçi bir 30-90 günlük plan sunarız.",
+    "cta": "Benzer proje talep et",
     "filters": {
-      "all": "Alle"
+      "all": "Tümü"
     },
     "niches": {
-      "handwerk": "Handwerk",
-      "praxen": "Praxen",
-      "werkstatt": "Werkstatt",
-      "gastronomie": "Gastronomie",
-      "beauty": "Beauty",
-      "immobilien": "Immobilien",
-      "kanzlei": "Kanzlei",
-      "fitnessPhysio": "Fitness/Physio",
-      "reinigung": "Reinigung",
-      "umzugTransport": "Umzug/Transport",
-      "coachingBeratung": "Coaching/Beratung",
-      "bildungKurse": "Bildung/Kurse"
+      "handwerk": "Zanaat",
+      "praxen": "Klinikler",
+      "werkstatt": "Atölye",
+      "gastronomie": "Gastronomi",
+      "beauty": "Güzellik",
+      "immobilien": "Gayrimenkul",
+      "kanzlei": "Danışmanlık Ofisi",
+      "fitnessPhysio": "Fitness/Fizyoterapi",
+      "reinigung": "Temizlik",
+      "umzugTransport": "Taşımacılık",
+      "coachingBeratung": "Koçluk/Danışmanlık",
+      "bildungKurse": "Eğitim/Kurslar"
     },
     "metrics": {
-      "moreRequests": "Mehr Anfragen",
-      "moreAppointments": "Mehr Terminbuchungen",
-      "moreCalls": "Mehr Anrufe",
-      "moreReservations": "Mehr Reservierungen",
-      "moreBookings": "Mehr Buchungen",
-      "moreLeads": "Mehr Leads",
-      "moreIntroCalls": "Mehr Erstgespräche",
-      "moreTrialSessions": "Mehr Probetrainings",
-      "moreOffers": "Mehr Angebotsanfragen",
-      "moreQualifiedLeads": "Mehr qualifizierte Leads",
-      "moreFirstContacts": "Mehr Erstkontakte",
-      "moreCourseSignups": "Mehr Kursanmeldungen",
-      "budgetEfficiency": "Budget-Effizienz",
-      "moreInteractions": "Mehr Interaktionen",
-      "moreLeadsPerBudget": "Mehr Leads pro Budget",
-      "moreConsultations": "Mehr Beratungstermine"
+      "moreRequests": "Daha fazla talep",
+      "moreAppointments": "Daha fazla randevu",
+      "moreCalls": "Daha fazla arama",
+      "moreReservations": "Daha fazla rezervasyon",
+      "moreBookings": "Daha fazla booking",
+      "moreLeads": "Daha fazla lead",
+      "moreIntroCalls": "Daha fazla ilk görüşme",
+      "moreTrialSessions": "Daha fazla deneme seansı",
+      "moreOffers": "Daha fazla teklif talebi",
+      "moreQualifiedLeads": "Daha fazla nitelikli lead",
+      "moreFirstContacts": "Daha fazla ilk temas",
+      "moreCourseSignups": "Daha fazla kurs kaydı",
+      "budgetEfficiency": "Bütçe verimliliği",
+      "moreInteractions": "Daha fazla etkileşim",
+      "moreLeadsPerBudget": "Bütçe başına daha fazla lead",
+      "moreConsultations": "Daha fazla danışmanlık"
     },
     "cases": {
       "c1": {
-        "title": "Sanitärbetrieb (Region Hannover)",
-        "challenge": "Zu wenig Anfragen trotz guter Reichweite.",
-        "solution": "Leistungsseiten neu strukturiert, CTA optimiert, Kontakttracking aktiviert."
+        "title": "Sıhhi Tesisat İşletmesi (Hannover Bölgesi)",
+        "challenge": "İyi erişime rağmen talep azdı.",
+        "solution": "Hizmet sayfaları yeniden yapılandırıldı, CTA optimize edildi, iletişim takibi etkinleştirildi."
       },
       "c2": {
-        "title": "Physiopraxis (Hildesheim)",
-        "challenge": "Zu wenige Online-Terminwünsche.",
-        "solution": "Termin-Flow vereinfacht, mobile Seiten beschleunigt, Kontaktwege klar definiert."
+        "title": "Fizyoterapi Kliniği (Hildesheim)",
+        "challenge": "Online randevu talepleri azdı.",
+        "solution": "Randevu akışı sadeleştirildi, mobil sayfalar hızlandırıldı, iletişim kanalları netleştirildi."
       },
       "c3": {
-        "title": "Karosserie-Werkstatt (Raum Harburg)",
-        "challenge": "Viele Kontakte, aber zu wenig passende Aufträge.",
-        "solution": "Lead-Qualifizierung im Formular und servicebezogene Landingpage eingeführt."
+        "title": "Kaporta Atölyesi (Harburg Bölgesi)",
+        "challenge": "Çok temas vardı ama uygun iş azdı.",
+        "solution": "Formda lead kalifikasyonu ve hizmete özel landing page devreye alındı."
       },
       "c4": {
-        "title": "Restaurant (Niedersachsen)",
-        "challenge": "Zu wenige Reservierungen unter der Woche.",
-        "solution": "Reservierungsstrecke vereinfacht, lokale Kampagnen neu aufgesetzt."
+        "title": "Restoran (Aşağı Saksonya)",
+        "challenge": "Hafta içi rezervasyonlar yetersizdi.",
+        "solution": "Rezervasyon akışı sadeleştirildi, yerel kampanyalar yeniden kuruldu."
       },
       "c5": {
-        "title": "Maklerbüro (Niedersachsen)",
-        "challenge": "Zu wenig qualifizierte Eigentümer-Leads.",
-        "solution": "Objektseiten nach Suchintention aufgebaut und Anfrageweg gestrafft."
+        "title": "Emlak Ofisi (Aşağı Saksonya)",
+        "challenge": "Nitelikli mülk sahibi leadleri yetersizdi.",
+        "solution": "İlan sayfaları arama niyetine göre düzenlendi ve başvuru akışı sadeleştirildi."
       },
       "c6": {
-        "title": "Steuerkanzlei (Region Hannover)",
-        "challenge": "Geringe Conversion auf Leistungsseiten.",
-        "solution": "Seiteninhalte vereinfacht, Vertrauenstexte ergänzt, Erstkontakt klar hervorgehoben."
+        "title": "Vergi Danışmanlığı Ofisi (Hannover Bölgesi)",
+        "challenge": "Hizmet sayfalarında dönüşüm düşüktü.",
+        "solution": "Sayfa içerikleri sadeleştirildi, güven unsurları eklendi, ilk temas net öne çıkarıldı."
       }
-    }
+    },
+    "performanceDashboard": "Performans Paneli",
+    "growthCurve90": "90 Günlük Büyüme Eğrisi",
+    "growthChartAria": "Büyüme grafiği",
+    "resultLabel": "Sonuç",
+    "trendAria": "{{niche}} trendi",
+    "compareGraphAria": "Önce ve sonrası grafiği",
+    "dayLabel": "Gün {{day}}",
+    "beforeLegend": "Önce: zayıf dinamik",
+    "afterLegend": "Sonra: istikrarlı büyüme",
+    "filterGroups": {
+      "all": "Tümü",
+      "localServices": "Yerel Hizmetler",
+      "healthBeauty": "Sağlık ve Güzellik",
+      "professional": "Profesyonel"
+    },
+    "kpis": {
+      "traffic": "Trafik",
+      "leads": "Lead",
+      "conversion": "Dönüşüm"
+    },
+    "daysUnit": "gün"
   },
   "about": {
     "h1": "Über uns",

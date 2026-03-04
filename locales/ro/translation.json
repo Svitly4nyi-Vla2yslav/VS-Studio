@@ -533,32 +533,32 @@
     }
   },
   "references": {
-    "h1": "Referenzen mit messbarem Wachstum.",
-    "subtitle": "Wir zeigen klar, was gestiegen ist: Anfragen, Buchungen, Anrufe und Leads.",
-    "trustline": "Alle Kennzahlen mit Kontext: Zeitraum und Messung.",
-    "filterTitle": "Nische auswählen",
-    "filterAria": "Nischenfilter",
-    "counter": "{{count}} passende Cases",
-    "growthByNiche": "Wachstum nach Branche",
-    "selectedCases": "Ausgewählte Cases",
-    "challengeLabel": "Ausgangslage",
-    "solutionLabel": "Umsetzung",
-    "periodLabel": "Zeitraum",
-    "measurementLabel": "Messung",
-    "emptyTitle": "Für diese Nische folgt der nächste Case.",
-    "emptyText": "Wir zeigen nur Cases mit belastbarer Messung und klarem Zeitraum.",
-    "beforeAfter": "Vorher / Nachher",
-    "before": "Vorher",
-    "after": "Nachher",
-    "beforeAlt": "Vorher-Ansicht des Cases",
-    "afterAlt": "Nachher-Ansicht des Cases",
-    "sliderAria": "Vorher Nachher Vergleich verschieben",
-    "sliderHint": "Zum Vergleichen ziehen.",
-    "ctaTitle": "Sie wollen ähnliche Ergebnisse?",
-    "ctaText": "Wir analysieren Ihre Ausgangslage und zeigen einen realistischen 30-90-Tage-Plan.",
-    "cta": "Ähnliches Projekt anfragen",
+    "h1": "Referințe cu creștere măsurabilă.",
+    "subtitle": "Arătăm clar ce a crescut: cereri, rezervări, apeluri și lead-uri.",
+    "trustline": "Toate metricile cu context: perioadă și măsurare.",
+    "filterTitle": "Selectează nișa",
+    "filterAria": "Filtru nișe",
+    "counter": "{{count}} cazuri relevante",
+    "growthByNiche": "Creștere pe domenii",
+    "selectedCases": "Cazuri selectate",
+    "challengeLabel": "Situație inițială",
+    "solutionLabel": "Soluție",
+    "periodLabel": "Perioadă",
+    "measurementLabel": "Măsurare",
+    "emptyTitle": "Următorul caz pentru această nișă vine curând.",
+    "emptyText": "Afișăm doar cazuri cu măsurare solidă și perioadă clară.",
+    "beforeAfter": "Înainte / După",
+    "before": "Înainte",
+    "after": "După",
+    "beforeAlt": "Vedere înainte",
+    "afterAlt": "Vedere după",
+    "sliderAria": "Mută comparația înainte/după",
+    "sliderHint": "Trage pentru a compara.",
+    "ctaTitle": "Vrei rezultate similare?",
+    "ctaText": "Analizăm situația ta și arătăm un plan realist pe 30-90 de zile.",
+    "cta": "Solicită proiect similar",
     "filters": {
-      "all": "Alle"
+      "all": "Toate"
     },
     "niches": {
       "handwerk": "Handwerk",
@@ -575,55 +575,76 @@
       "bildungKurse": "Bildung/Kurse"
     },
     "metrics": {
-      "moreRequests": "Mehr Anfragen",
-      "moreAppointments": "Mehr Terminbuchungen",
-      "moreCalls": "Mehr Anrufe",
-      "moreReservations": "Mehr Reservierungen",
-      "moreBookings": "Mehr Buchungen",
-      "moreLeads": "Mehr Leads",
-      "moreIntroCalls": "Mehr Erstgespräche",
-      "moreTrialSessions": "Mehr Probetrainings",
-      "moreOffers": "Mehr Angebotsanfragen",
-      "moreQualifiedLeads": "Mehr qualifizierte Leads",
-      "moreFirstContacts": "Mehr Erstkontakte",
-      "moreCourseSignups": "Mehr Kursanmeldungen",
-      "budgetEfficiency": "Budget-Effizienz",
-      "moreInteractions": "Mehr Interaktionen",
-      "moreLeadsPerBudget": "Mehr Leads pro Budget",
-      "moreConsultations": "Mehr Beratungstermine"
+      "moreRequests": "Mai multe solicitări",
+      "moreAppointments": "Mai multe programări",
+      "moreCalls": "Mai multe apeluri",
+      "moreReservations": "Mai multe rezervări",
+      "moreBookings": "Mai multe rezervări servicii",
+      "moreLeads": "Mai multe lead-uri",
+      "moreIntroCalls": "Mai multe apeluri inițiale",
+      "moreTrialSessions": "Mai multe sesiuni de probă",
+      "moreOffers": "Mai multe cereri de ofertă",
+      "moreQualifiedLeads": "Mai multe lead-uri calificate",
+      "moreFirstContacts": "Mai multe contacte inițiale",
+      "moreCourseSignups": "Mai multe înscrieri la cursuri",
+      "budgetEfficiency": "Eficiența bugetului",
+      "moreInteractions": "Mai multe interacțiuni",
+      "moreLeadsPerBudget": "Mai multe lead-uri per buget",
+      "moreConsultations": "Mai multe consultații"
     },
     "cases": {
       "c1": {
-        "title": "Sanitärbetrieb (Region Hannover)",
-        "challenge": "Zu wenig Anfragen trotz guter Reichweite.",
-        "solution": "Leistungsseiten neu strukturiert, CTA optimiert, Kontakttracking aktiviert."
+        "title": "Firmă de instalații sanitare (regiunea Hanovra)",
+        "challenge": "Prea puține solicitări în ciuda acoperirii bune.",
+        "solution": "Paginile de servicii au fost restructurate, CTA-urile optimizate, trackingul de contact activat."
       },
       "c2": {
-        "title": "Physiopraxis (Hildesheim)",
-        "challenge": "Zu wenige Online-Terminwünsche.",
-        "solution": "Termin-Flow vereinfacht, mobile Seiten beschleunigt, Kontaktwege klar definiert."
+        "title": "Clinică de fizioterapie (Hildesheim)",
+        "challenge": "Prea puține cereri de programare online.",
+        "solution": "Fluxul de programare simplificat, paginile mobile accelerate și canalele de contact clarificate."
       },
       "c3": {
-        "title": "Karosserie-Werkstatt (Raum Harburg)",
-        "challenge": "Viele Kontakte, aber zu wenig passende Aufträge.",
-        "solution": "Lead-Qualifizierung im Formular und servicebezogene Landingpage eingeführt."
+        "title": "Service caroserie (zona Harburg)",
+        "challenge": "Multe contacte, dar prea puține comenzi potrivite.",
+        "solution": "Calificarea lead-urilor în formular și landing page pe servicii."
       },
       "c4": {
-        "title": "Restaurant (Niedersachsen)",
-        "challenge": "Zu wenige Reservierungen unter der Woche.",
-        "solution": "Reservierungsstrecke vereinfacht, lokale Kampagnen neu aufgesetzt."
+        "title": "Restaurant (Saxonia Inferioară)",
+        "challenge": "Prea puține rezervări în timpul săptămânii.",
+        "solution": "Fluxul de rezervare simplificat și campaniile locale relansate."
       },
       "c5": {
-        "title": "Maklerbüro (Niedersachsen)",
-        "challenge": "Zu wenig qualifizierte Eigentümer-Leads.",
-        "solution": "Objektseiten nach Suchintention aufgebaut und Anfrageweg gestrafft."
+        "title": "Agenție imobiliară (Saxonia Inferioară)",
+        "challenge": "Prea puține lead-uri calificate de la proprietari.",
+        "solution": "Pagini de proprietăți construite după intenția de căutare și fluxul de solicitare simplificat."
       },
       "c6": {
-        "title": "Steuerkanzlei (Region Hannover)",
-        "challenge": "Geringe Conversion auf Leistungsseiten.",
-        "solution": "Seiteninhalte vereinfacht, Vertrauenstexte ergänzt, Erstkontakt klar hervorgehoben."
+        "title": "Birou fiscal (regiunea Hanovra)",
+        "challenge": "Conversie scăzută pe paginile de servicii.",
+        "solution": "Conținut simplificat, texte de încredere adăugate, primul contact evidențiat."
       }
-    }
+    },
+    "performanceDashboard": "Panou de performanță",
+    "growthCurve90": "Curba de creștere pe 90 de zile",
+    "growthChartAria": "Grafic de creștere",
+    "resultLabel": "Rezultat",
+    "trendAria": "Trend: {{niche}}",
+    "compareGraphAria": "Grafic înainte și după",
+    "dayLabel": "Ziua {{day}}",
+    "beforeLegend": "Înainte: dinamică slabă",
+    "afterLegend": "După: creștere stabilă",
+    "filterGroups": {
+      "all": "Toate",
+      "localServices": "Servicii locale",
+      "healthBeauty": "Sănătate și Frumusețe",
+      "professional": "Profesional"
+    },
+    "kpis": {
+      "traffic": "Trafic",
+      "leads": "Lead-uri",
+      "conversion": "Conversie"
+    },
+    "daysUnit": "zile"
   },
   "about": {
     "h1": "Über uns",

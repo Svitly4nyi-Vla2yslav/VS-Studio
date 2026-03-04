@@ -533,97 +533,118 @@
     }
   },
   "references": {
-    "h1": "Referenzen mit messbarem Wachstum.",
-    "subtitle": "Wir zeigen klar, was gestiegen ist: Anfragen, Buchungen, Anrufe und Leads.",
-    "trustline": "Alle Kennzahlen mit Kontext: Zeitraum und Messung.",
-    "filterTitle": "Nische auswählen",
-    "filterAria": "Nischenfilter",
-    "counter": "{{count}} passende Cases",
-    "growthByNiche": "Wachstum nach Branche",
-    "selectedCases": "Ausgewählte Cases",
-    "challengeLabel": "Ausgangslage",
-    "solutionLabel": "Umsetzung",
-    "periodLabel": "Zeitraum",
-    "measurementLabel": "Messung",
-    "emptyTitle": "Für diese Nische folgt der nächste Case.",
-    "emptyText": "Wir zeigen nur Cases mit belastbarer Messung und klarem Zeitraum.",
-    "beforeAfter": "Vorher / Nachher",
-    "before": "Vorher",
-    "after": "Nachher",
-    "beforeAlt": "Vorher-Ansicht des Cases",
-    "afterAlt": "Nachher-Ansicht des Cases",
-    "sliderAria": "Vorher Nachher Vergleich verschieben",
-    "sliderHint": "Zum Vergleichen ziehen.",
-    "ctaTitle": "Sie wollen ähnliche Ergebnisse?",
-    "ctaText": "Wir analysieren Ihre Ausgangslage und zeigen einen realistischen 30-90-Tage-Plan.",
-    "cta": "Ähnliches Projekt anfragen",
+    "h1": "مراجع مع نمو قابل للقياس.",
+    "subtitle": "نوضح بدقة ما الذي ارتفع: الطلبات، الحجوزات، المكالمات والعملاء المحتملون.",
+    "trustline": "كل المؤشرات مع السياق: الفترة وطريقة القياس.",
+    "filterTitle": "اختر المجال",
+    "filterAria": "فلتر المجالات",
+    "counter": "{{count}} حالات مناسبة",
+    "growthByNiche": "النمو حسب القطاع",
+    "selectedCases": "حالات مختارة",
+    "challengeLabel": "الوضع",
+    "solutionLabel": "الحل",
+    "periodLabel": "الفترة",
+    "measurementLabel": "القياس",
+    "emptyTitle": "سيتم إضافة الحالة التالية لهذا المجال قريبًا.",
+    "emptyText": "نعرض فقط الحالات ذات القياس الموثوق والفترة الواضحة.",
+    "beforeAfter": "قبل / بعد",
+    "before": "قبل",
+    "after": "بعد",
+    "beforeAlt": "عرض الحالة قبل",
+    "afterAlt": "عرض الحالة بعد",
+    "sliderAria": "حرّك مقارنة قبل/بعد",
+    "sliderHint": "اسحب للمقارنة.",
+    "ctaTitle": "هل تريد نتائج مشابهة؟",
+    "ctaText": "نحلل وضعك الحالي ونوضح خطة واقعية لمدة 30-90 يومًا.",
+    "cta": "اطلب مشروعًا مشابهًا",
     "filters": {
-      "all": "Alle"
+      "all": "الكل"
     },
     "niches": {
-      "handwerk": "Handwerk",
-      "praxen": "Praxen",
-      "werkstatt": "Werkstatt",
-      "gastronomie": "Gastronomie",
-      "beauty": "Beauty",
-      "immobilien": "Immobilien",
-      "kanzlei": "Kanzlei",
-      "fitnessPhysio": "Fitness/Physio",
-      "reinigung": "Reinigung",
-      "umzugTransport": "Umzug/Transport",
-      "coachingBeratung": "Coaching/Beratung",
-      "bildungKurse": "Bildung/Kurse"
+      "handwerk": "الحرف",
+      "praxen": "العيادات",
+      "werkstatt": "الورش",
+      "gastronomie": "المطاعم",
+      "beauty": "التجميل",
+      "immobilien": "العقارات",
+      "kanzlei": "المكاتب المهنية",
+      "fitnessPhysio": "اللياقة/العلاج الطبيعي",
+      "reinigung": "التنظيف",
+      "umzugTransport": "النقل",
+      "coachingBeratung": "التدريب/الاستشارات",
+      "bildungKurse": "التعليم/الدورات"
     },
     "metrics": {
-      "moreRequests": "Mehr Anfragen",
-      "moreAppointments": "Mehr Terminbuchungen",
-      "moreCalls": "Mehr Anrufe",
-      "moreReservations": "Mehr Reservierungen",
-      "moreBookings": "Mehr Buchungen",
-      "moreLeads": "Mehr Leads",
-      "moreIntroCalls": "Mehr Erstgespräche",
-      "moreTrialSessions": "Mehr Probetrainings",
-      "moreOffers": "Mehr Angebotsanfragen",
-      "moreQualifiedLeads": "Mehr qualifizierte Leads",
-      "moreFirstContacts": "Mehr Erstkontakte",
-      "moreCourseSignups": "Mehr Kursanmeldungen",
-      "budgetEfficiency": "Budget-Effizienz",
-      "moreInteractions": "Mehr Interaktionen",
-      "moreLeadsPerBudget": "Mehr Leads pro Budget",
-      "moreConsultations": "Mehr Beratungstermine"
+      "moreRequests": "طلبات أكثر",
+      "moreAppointments": "مواعيد أكثر",
+      "moreCalls": "مكالمات أكثر",
+      "moreReservations": "حجوزات أكثر",
+      "moreBookings": "حجوزات خدمات أكثر",
+      "moreLeads": "عملاء محتملون أكثر",
+      "moreIntroCalls": "مكالمات أولية أكثر",
+      "moreTrialSessions": "جلسات تجريبية أكثر",
+      "moreOffers": "طلبات عروض أسعار أكثر",
+      "moreQualifiedLeads": "عملاء محتملون مؤهلون أكثر",
+      "moreFirstContacts": "اتصالات أولية أكثر",
+      "moreCourseSignups": "تسجيلات دورات أكثر",
+      "budgetEfficiency": "كفاءة الميزانية",
+      "moreInteractions": "تفاعلات أكثر",
+      "moreLeadsPerBudget": "عملاء أكثر لكل ميزانية",
+      "moreConsultations": "استشارات أكثر"
     },
     "cases": {
       "c1": {
-        "title": "Sanitärbetrieb (Region Hannover)",
-        "challenge": "Zu wenig Anfragen trotz guter Reichweite.",
-        "solution": "Leistungsseiten neu strukturiert, CTA optimiert, Kontakttracking aktiviert."
+        "title": "شركة سباكة (منطقة هانوفر)",
+        "challenge": "طلبات قليلة رغم وصول جيد.",
+        "solution": "إعادة هيكلة صفحات الخدمات، تحسين CTA، وتفعيل تتبع التواصل."
       },
       "c2": {
-        "title": "Physiopraxis (Hildesheim)",
-        "challenge": "Zu wenige Online-Terminwünsche.",
-        "solution": "Termin-Flow vereinfacht, mobile Seiten beschleunigt, Kontaktwege klar definiert."
+        "title": "عيادة علاج طبيعي (هيلدسهايم)",
+        "challenge": "طلبات المواعيد عبر الإنترنت كانت قليلة.",
+        "solution": "تبسيط مسار الحجز، تسريع الصفحات على الهاتف، وتوضيح قنوات التواصل."
       },
       "c3": {
-        "title": "Karosserie-Werkstatt (Raum Harburg)",
-        "challenge": "Viele Kontakte, aber zu wenig passende Aufträge.",
-        "solution": "Lead-Qualifizierung im Formular und servicebezogene Landingpage eingeführt."
+        "title": "ورشة هياكل سيارات (منطقة هاربورغ)",
+        "challenge": "تواصل كثير لكن أعمال مناسبة قليلة.",
+        "solution": "إضافة تأهيل العملاء في النموذج وإنشاء صفحة هبوط مخصصة للخدمات."
       },
       "c4": {
-        "title": "Restaurant (Niedersachsen)",
-        "challenge": "Zu wenige Reservierungen unter der Woche.",
-        "solution": "Reservierungsstrecke vereinfacht, lokale Kampagnen neu aufgesetzt."
+        "title": "مطعم (ساكسونيا السفلى)",
+        "challenge": "حجوزات قليلة خلال أيام الأسبوع.",
+        "solution": "تبسيط مسار الحجز وإعادة ضبط الحملات المحلية."
       },
       "c5": {
-        "title": "Maklerbüro (Niedersachsen)",
-        "challenge": "Zu wenig qualifizierte Eigentümer-Leads.",
-        "solution": "Objektseiten nach Suchintention aufgebaut und Anfrageweg gestrafft."
+        "title": "مكتب عقارات (ساكسونيا السفلى)",
+        "challenge": "قلة العملاء المؤهلين من الملاك.",
+        "solution": "بناء صفحات العقارات حسب نية البحث وتبسيط مسار الطلب."
       },
       "c6": {
-        "title": "Steuerkanzlei (Region Hannover)",
-        "challenge": "Geringe Conversion auf Leistungsseiten.",
-        "solution": "Seiteninhalte vereinfacht, Vertrauenstexte ergänzt, Erstkontakt klar hervorgehoben."
+        "title": "مكتب ضرائب (منطقة هانوفر)",
+        "challenge": "تحويل منخفض في صفحات الخدمات.",
+        "solution": "تبسيط المحتوى، إضافة عناصر الثقة، وإبراز نقطة التواصل الأول."
       }
-    }
+    },
+    "performanceDashboard": "لوحة الأداء",
+    "growthCurve90": "منحنى النمو خلال 90 يومًا",
+    "growthChartAria": "مخطط النمو",
+    "resultLabel": "النتيجة",
+    "trendAria": "اتجاه {{niche}}",
+    "compareGraphAria": "مخطط قبل وبعد",
+    "dayLabel": "اليوم {{day}}",
+    "beforeLegend": "قبل: ديناميكية ضعيفة",
+    "afterLegend": "بعد: نمو مستقر",
+    "filterGroups": {
+      "all": "الكل",
+      "localServices": "الخدمات المحلية",
+      "healthBeauty": "الصحة والجمال",
+      "professional": "الخدمات المهنية"
+    },
+    "kpis": {
+      "traffic": "الزيارات",
+      "leads": "العملاء المحتملون",
+      "conversion": "التحويل"
+    },
+    "daysUnit": "يومًا"
   },
   "about": {
     "h1": "Über uns",

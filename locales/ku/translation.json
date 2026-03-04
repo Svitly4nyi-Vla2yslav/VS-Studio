@@ -533,32 +533,32 @@
     }
   },
   "references": {
-    "h1": "Referenzen mit messbarem Wachstum.",
-    "subtitle": "Wir zeigen klar, was gestiegen ist: Anfragen, Buchungen, Anrufe und Leads.",
-    "trustline": "Alle Kennzahlen mit Kontext: Zeitraum und Messung.",
-    "filterTitle": "Nische auswählen",
-    "filterAria": "Nischenfilter",
-    "counter": "{{count}} passende Cases",
-    "growthByNiche": "Wachstum nach Branche",
-    "selectedCases": "Ausgewählte Cases",
-    "challengeLabel": "Ausgangslage",
-    "solutionLabel": "Umsetzung",
-    "periodLabel": "Zeitraum",
-    "measurementLabel": "Messung",
-    "emptyTitle": "Für diese Nische folgt der nächste Case.",
-    "emptyText": "Wir zeigen nur Cases mit belastbarer Messung und klarem Zeitraum.",
-    "beforeAfter": "Vorher / Nachher",
-    "before": "Vorher",
-    "after": "Nachher",
-    "beforeAlt": "Vorher-Ansicht des Cases",
-    "afterAlt": "Nachher-Ansicht des Cases",
-    "sliderAria": "Vorher Nachher Vergleich verschieben",
-    "sliderHint": "Zum Vergleichen ziehen.",
-    "ctaTitle": "Sie wollen ähnliche Ergebnisse?",
-    "ctaText": "Wir analysieren Ihre Ausgangslage und zeigen einen realistischen 30-90-Tage-Plan.",
-    "cta": "Ähnliches Projekt anfragen",
+    "h1": "Referansên bi mezinbûna pîvable.",
+    "subtitle": "Em bi zelalî nîşan didin ka çi zêde bû: daxwaz, rezerva, telefon û lead.",
+    "trustline": "Hemû metrik bi kontekstê: dem û pîvan.",
+    "filterTitle": "Nîşê hilbijêre",
+    "filterAria": "Fîltra nîşan",
+    "counter": "{{count}} case guncaw",
+    "growthByNiche": "Mezinbûn li gorî beşê",
+    "selectedCases": "Caseyên hilbijartî",
+    "challengeLabel": "Rewşa destpêkê",
+    "solutionLabel": "Çareserî",
+    "periodLabel": "Dem",
+    "measurementLabel": "Pîvan",
+    "emptyTitle": "Ji bo vê nîşê caseya din nêzîkê tê zêdekirin.",
+    "emptyText": "Tenê caseyên bi pîvana rast û demê zelal nîşan didin.",
+    "beforeAfter": "Berê / Paşê",
+    "before": "Berê",
+    "after": "Paşê",
+    "beforeAlt": "Dîtina berê",
+    "afterAlt": "Dîtina paşê",
+    "sliderAria": "Berê-paşê hereket bide",
+    "sliderHint": "Ji bo berhevkirinê bikişîne.",
+    "ctaTitle": "Tu dixwazî encamên wekhev?",
+    "ctaText": "Em rewşa te analîz dikin û plana rastîn ya 30-90 rojan nîşan didin.",
+    "cta": "Projeya wekhev bipirse",
     "filters": {
-      "all": "Alle"
+      "all": "Hemû"
     },
     "niches": {
       "handwerk": "Handwerk",
@@ -575,55 +575,76 @@
       "bildungKurse": "Bildung/Kurse"
     },
     "metrics": {
-      "moreRequests": "Mehr Anfragen",
-      "moreAppointments": "Mehr Terminbuchungen",
-      "moreCalls": "Mehr Anrufe",
-      "moreReservations": "Mehr Reservierungen",
-      "moreBookings": "Mehr Buchungen",
-      "moreLeads": "Mehr Leads",
-      "moreIntroCalls": "Mehr Erstgespräche",
-      "moreTrialSessions": "Mehr Probetrainings",
-      "moreOffers": "Mehr Angebotsanfragen",
-      "moreQualifiedLeads": "Mehr qualifizierte Leads",
-      "moreFirstContacts": "Mehr Erstkontakte",
-      "moreCourseSignups": "Mehr Kursanmeldungen",
-      "budgetEfficiency": "Budget-Effizienz",
-      "moreInteractions": "Mehr Interaktionen",
-      "moreLeadsPerBudget": "Mehr Leads pro Budget",
-      "moreConsultations": "Mehr Beratungstermine"
+      "moreRequests": "Daxwazên zêdetir",
+      "moreAppointments": "Randevûyên zêdetir",
+      "moreCalls": "Telefonên zêdetir",
+      "moreReservations": "Rezervasyonên zêdetir",
+      "moreBookings": "Rezervasyonên xizmetê zêdetir",
+      "moreLeads": "Leadên zêdetir",
+      "moreIntroCalls": "Peywendiyên destpêkê zêdetir",
+      "moreTrialSessions": "Seansên ceribandinê zêdetir",
+      "moreOffers": "Daxwazên pêşniyarê zêdetir",
+      "moreQualifiedLeads": "Leadên kalîteyê zêdetir",
+      "moreFirstContacts": "Peywendiyên yekem zêdetir",
+      "moreCourseSignups": "Tomarkirinên kursê zêdetir",
+      "budgetEfficiency": "Karîgeriya budceyê",
+      "moreInteractions": "Têkiliyên zêdetir",
+      "moreLeadsPerBudget": "Li ser budceyê leadên zêdetir",
+      "moreConsultations": "Şêwirmendiyên zêdetir"
     },
     "cases": {
       "c1": {
-        "title": "Sanitärbetrieb (Region Hannover)",
-        "challenge": "Zu wenig Anfragen trotz guter Reichweite.",
-        "solution": "Leistungsseiten neu strukturiert, CTA optimiert, Kontakttracking aktiviert."
+        "title": "Karûbarê tesîsatê (herêma Hannover)",
+        "challenge": "Digel gihîştina baş daxwaz kêm bûn.",
+        "solution": "Rûpelên xizmetê nû hatin saz kirin, CTA hat optimize kirin, trackinga peywendiyê hat çalak kirin."
       },
       "c2": {
-        "title": "Physiopraxis (Hildesheim)",
-        "challenge": "Zu wenige Online-Terminwünsche.",
-        "solution": "Termin-Flow vereinfacht, mobile Seiten beschleunigt, Kontaktwege klar definiert."
+        "title": "Navenda fizyoterapî (Hildesheim)",
+        "challenge": "Daxwazên randevûya online kêm bûn.",
+        "solution": "Rêça randevûyê hêsantir kirin, rûpelên mobîl bilez kirin û rêyên peywendiyê zelal kirin."
       },
       "c3": {
-        "title": "Karosserie-Werkstatt (Raum Harburg)",
-        "challenge": "Viele Kontakte, aber zu wenig passende Aufträge.",
-        "solution": "Lead-Qualifizierung im Formular und servicebezogene Landingpage eingeführt."
+        "title": "Werkstatta karoserî (navçeya Harburg)",
+        "challenge": "Peywendî gelek bûn, lê karên guncan kêm bûn.",
+        "solution": "Di formê de kalîteya leadê hat zêdekirin û landing page-a xizmetê hat avakirin."
       },
       "c4": {
-        "title": "Restaurant (Niedersachsen)",
-        "challenge": "Zu wenige Reservierungen unter der Woche.",
-        "solution": "Reservierungsstrecke vereinfacht, lokale Kampagnen neu aufgesetzt."
+        "title": "Restoran (Niedersachsen)",
+        "challenge": "Di nav hefteyê de rezervasyon kêm bûn.",
+        "solution": "Rêça rezervasyonê hêsantir kirin û kampanyayên herêmî nû kirin."
       },
       "c5": {
-        "title": "Maklerbüro (Niedersachsen)",
-        "challenge": "Zu wenig qualifizierte Eigentümer-Leads.",
-        "solution": "Objektseiten nach Suchintention aufgebaut und Anfrageweg gestrafft."
+        "title": "Ofîsa emlakê (Niedersachsen)",
+        "challenge": "Leadên xwediyên malê yên kalîteyê kêm bûn.",
+        "solution": "Rûpelên emlakê li gor niyeta lêgerînê hatin saz kirin û rêça daxwazê kurt kirin."
       },
       "c6": {
-        "title": "Steuerkanzlei (Region Hannover)",
-        "challenge": "Geringe Conversion auf Leistungsseiten.",
-        "solution": "Seiteninhalte vereinfacht, Vertrauenstexte ergänzt, Erstkontakt klar hervorgehoben."
+        "title": "Kanzleya bacê (herêma Hannover)",
+        "challenge": "Li rûpelên xizmetê conversion kêm bû.",
+        "solution": "Naverok hêsantir kirin, nivîsên baweriyê zêde kirin û peywendiya yekem bilind kirin."
       }
-    }
+    },
+    "performanceDashboard": "Panela performansê",
+    "growthCurve90": "Kerva mezinbûnê ya 90-rojan",
+    "growthChartAria": "Grafîka mezinbûnê",
+    "resultLabel": "Encam",
+    "trendAria": "Trenda {{niche}}",
+    "compareGraphAria": "Grafîka berê û paşê",
+    "dayLabel": "Roj {{day}}",
+    "beforeLegend": "Berê: tevgera lawaz",
+    "afterLegend": "Paşê: mezinbûna stabîl",
+    "filterGroups": {
+      "all": "Hemû",
+      "localServices": "Xizmetên herêmî",
+      "healthBeauty": "Tenduristî û bedewî",
+      "professional": "Profesyonel"
+    },
+    "kpis": {
+      "traffic": "Trafîk",
+      "leads": "Lead",
+      "conversion": "Veguherîn"
+    },
+    "daysUnit": "roj"
   },
   "about": {
     "h1": "Über uns",

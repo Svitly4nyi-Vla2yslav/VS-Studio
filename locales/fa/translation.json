@@ -533,32 +533,32 @@
     }
   },
   "references": {
-    "h1": "Referenzen mit messbarem Wachstum.",
-    "subtitle": "Wir zeigen klar, was gestiegen ist: Anfragen, Buchungen, Anrufe und Leads.",
-    "trustline": "Alle Kennzahlen mit Kontext: Zeitraum und Messung.",
-    "filterTitle": "Nische auswählen",
-    "filterAria": "Nischenfilter",
-    "counter": "{{count}} passende Cases",
-    "growthByNiche": "Wachstum nach Branche",
-    "selectedCases": "Ausgewählte Cases",
-    "challengeLabel": "Ausgangslage",
-    "solutionLabel": "Umsetzung",
-    "periodLabel": "Zeitraum",
-    "measurementLabel": "Messung",
-    "emptyTitle": "Für diese Nische folgt der nächste Case.",
-    "emptyText": "Wir zeigen nur Cases mit belastbarer Messung und klarem Zeitraum.",
-    "beforeAfter": "Vorher / Nachher",
-    "before": "Vorher",
-    "after": "Nachher",
-    "beforeAlt": "Vorher-Ansicht des Cases",
-    "afterAlt": "Nachher-Ansicht des Cases",
-    "sliderAria": "Vorher Nachher Vergleich verschieben",
-    "sliderHint": "Zum Vergleichen ziehen.",
-    "ctaTitle": "Sie wollen ähnliche Ergebnisse?",
-    "ctaText": "Wir analysieren Ihre Ausgangslage und zeigen einen realistischen 30-90-Tage-Plan.",
-    "cta": "Ähnliches Projekt anfragen",
+    "h1": "نمونه‌کارها با رشد قابل اندازه‌گیری.",
+    "subtitle": "شفاف نشان می‌دهیم چه چیزهایی رشد کرده‌اند: درخواست‌ها، رزروها، تماس‌ها و لیدها.",
+    "trustline": "تمام شاخص‌ها همراه با زمینه: بازه زمانی و روش اندازه‌گیری.",
+    "filterTitle": "انتخاب حوزه",
+    "filterAria": "فیلتر حوزه‌ها",
+    "counter": "{{count}} کیس مرتبط",
+    "growthByNiche": "رشد بر اساس حوزه",
+    "selectedCases": "کیس‌های منتخب",
+    "challengeLabel": "وضعیت اولیه",
+    "solutionLabel": "راهکار",
+    "periodLabel": "بازه زمانی",
+    "measurementLabel": "اندازه‌گیری",
+    "emptyTitle": "کیس بعدی این حوزه به‌زودی اضافه می‌شود.",
+    "emptyText": "فقط کیس‌هایی را نمایش می‌دهیم که اندازه‌گیری معتبر و بازه زمانی مشخص دارند.",
+    "beforeAfter": "قبل / بعد",
+    "before": "قبل",
+    "after": "بعد",
+    "beforeAlt": "نمای قبل از تغییر",
+    "afterAlt": "نمای بعد از تغییر",
+    "sliderAria": "جابجا کردن مقایسه قبل/بعد",
+    "sliderHint": "برای مقایسه بکشید.",
+    "ctaTitle": "نتایج مشابه می‌خواهید؟",
+    "ctaText": "وضعیت فعلی شما را تحلیل می‌کنیم و یک برنامه واقع‌بینانه ۳۰ تا ۹۰ روزه ارائه می‌دهیم.",
+    "cta": "درخواست پروژه مشابه",
     "filters": {
-      "all": "Alle"
+      "all": "همه"
     },
     "niches": {
       "handwerk": "Handwerk",
@@ -575,55 +575,76 @@
       "bildungKurse": "Bildung/Kurse"
     },
     "metrics": {
-      "moreRequests": "Mehr Anfragen",
-      "moreAppointments": "Mehr Terminbuchungen",
-      "moreCalls": "Mehr Anrufe",
-      "moreReservations": "Mehr Reservierungen",
-      "moreBookings": "Mehr Buchungen",
-      "moreLeads": "Mehr Leads",
-      "moreIntroCalls": "Mehr Erstgespräche",
-      "moreTrialSessions": "Mehr Probetrainings",
-      "moreOffers": "Mehr Angebotsanfragen",
-      "moreQualifiedLeads": "Mehr qualifizierte Leads",
-      "moreFirstContacts": "Mehr Erstkontakte",
-      "moreCourseSignups": "Mehr Kursanmeldungen",
-      "budgetEfficiency": "Budget-Effizienz",
-      "moreInteractions": "Mehr Interaktionen",
-      "moreLeadsPerBudget": "Mehr Leads pro Budget",
-      "moreConsultations": "Mehr Beratungstermine"
+      "moreRequests": "درخواست‌های بیشتر",
+      "moreAppointments": "رزرو نوبت بیشتر",
+      "moreCalls": "تماس‌های بیشتر",
+      "moreReservations": "رزروهای بیشتر",
+      "moreBookings": "رزرو خدمات بیشتر",
+      "moreLeads": "لیدهای بیشتر",
+      "moreIntroCalls": "تماس اولیه بیشتر",
+      "moreTrialSessions": "جلسات آزمایشی بیشتر",
+      "moreOffers": "درخواست پیشنهاد بیشتر",
+      "moreQualifiedLeads": "لیدهای واجدشرایط بیشتر",
+      "moreFirstContacts": "تماس‌های اولیه بیشتر",
+      "moreCourseSignups": "ثبت‌نام دوره بیشتر",
+      "budgetEfficiency": "بهره‌وری بودجه",
+      "moreInteractions": "تعامل بیشتر",
+      "moreLeadsPerBudget": "لید بیشتر به ازای بودجه",
+      "moreConsultations": "مشاوره بیشتر"
     },
     "cases": {
       "c1": {
-        "title": "Sanitärbetrieb (Region Hannover)",
-        "challenge": "Zu wenig Anfragen trotz guter Reichweite.",
-        "solution": "Leistungsseiten neu strukturiert, CTA optimiert, Kontakttracking aktiviert."
+        "title": "شرکت تاسیسات (منطقه هانوفر)",
+        "challenge": "با وجود دسترسی خوب، درخواست‌ها کم بود.",
+        "solution": "صفحات خدمات بازطراحی شد، CTA بهینه شد و رهگیری تماس فعال شد."
       },
       "c2": {
-        "title": "Physiopraxis (Hildesheim)",
-        "challenge": "Zu wenige Online-Terminwünsche.",
-        "solution": "Termin-Flow vereinfacht, mobile Seiten beschleunigt, Kontaktwege klar definiert."
+        "title": "کلینیک فیزیوتراپی (هیلدسهایم)",
+        "challenge": "درخواست نوبت آنلاین کم بود.",
+        "solution": "فرآیند رزرو ساده شد، صفحات موبایل سریع‌تر شد و مسیرهای تماس شفاف شدند."
       },
       "c3": {
-        "title": "Karosserie-Werkstatt (Raum Harburg)",
-        "challenge": "Viele Kontakte, aber zu wenig passende Aufträge.",
-        "solution": "Lead-Qualifizierung im Formular und servicebezogene Landingpage eingeführt."
+        "title": "کارگاه بدنه خودرو (منطقه هاربورگ)",
+        "challenge": "تماس زیاد بود اما سفارش مناسب کم بود.",
+        "solution": "در فرم، صلاحیت‌سنجی لید اضافه شد و لندینگ اختصاصی خدمات ایجاد شد."
       },
       "c4": {
-        "title": "Restaurant (Niedersachsen)",
-        "challenge": "Zu wenige Reservierungen unter der Woche.",
-        "solution": "Reservierungsstrecke vereinfacht, lokale Kampagnen neu aufgesetzt."
+        "title": "رستوران (نیدرزاکسن)",
+        "challenge": "رزروهای روزهای کاری کم بود.",
+        "solution": "مسیر رزرو ساده شد و کمپین‌های محلی بازتنظیم شدند."
       },
       "c5": {
-        "title": "Maklerbüro (Niedersachsen)",
-        "challenge": "Zu wenig qualifizierte Eigentümer-Leads.",
-        "solution": "Objektseiten nach Suchintention aufgebaut und Anfrageweg gestrafft."
+        "title": "دفتر املاک (نیدرزاکسن)",
+        "challenge": "لیدهای مالک واجدشرایط کم بود.",
+        "solution": "صفحات املاک بر اساس نیت جست‌وجو ساخته شد و مسیر درخواست کوتاه شد."
       },
       "c6": {
-        "title": "Steuerkanzlei (Region Hannover)",
-        "challenge": "Geringe Conversion auf Leistungsseiten.",
-        "solution": "Seiteninhalte vereinfacht, Vertrauenstexte ergänzt, Erstkontakt klar hervorgehoben."
+        "title": "دفتر مالیاتی (منطقه هانوفر)",
+        "challenge": "نرخ تبدیل در صفحات خدمات پایین بود.",
+        "solution": "محتوا ساده شد، متن‌های اعتماد اضافه شد و تماس اولیه برجسته شد."
       }
-    }
+    },
+    "performanceDashboard": "داشبورد عملکرد",
+    "growthCurve90": "منحنی رشد ۹۰ روزه",
+    "growthChartAria": "نمودار رشد",
+    "resultLabel": "نتیجه",
+    "trendAria": "روند {{niche}}",
+    "compareGraphAria": "نمودار قبل و بعد",
+    "dayLabel": "روز {{day}}",
+    "beforeLegend": "قبل: روند ضعیف",
+    "afterLegend": "بعد: رشد پایدار",
+    "filterGroups": {
+      "all": "همه",
+      "localServices": "خدمات محلی",
+      "healthBeauty": "سلامت و زیبایی",
+      "professional": "حرفه‌ای"
+    },
+    "kpis": {
+      "traffic": "ترافیک",
+      "leads": "لید",
+      "conversion": "نرخ تبدیل"
+    },
+    "daysUnit": "روز"
   },
   "about": {
     "h1": "Über uns",
