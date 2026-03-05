@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaArrowRight, FaUsers, FaRobot, FaBullhorn, FaMapMarkerAlt, FaCheckCircle, FaLayerGroup, FaChartLine } from 'react-icons/fa';
 import aboutFounderPhoto from '../../assets/icons/about/vladyslav-founder.jpg';
@@ -18,6 +19,138 @@ import {
 } from '../shared/styles/PagePrimitives.styles';
 import { AboutUsScope } from './styles/AboutUsPage.styles';
 
+const HeroVisual: React.FC = () => {
+  const [time, setTime] = useState(0);
+
+  useEffect(() => {
+    let frameId = 0;
+    const start = performance.now();
+
+    const tick = (now: number) => {
+      setTime((now - start) / 1000);
+      frameId = window.requestAnimationFrame(tick);
+    };
+
+    frameId = window.requestAnimationFrame(tick);
+
+    return () => window.cancelAnimationFrame(frameId);
+  }, []);
+
+  const beforeOffset = Math.sin(time * 1.2) * -10;
+  const systemOffset = Math.sin(time * 1.2 + 0.8) * -12;
+  const resultOffset = Math.sin(time * 1.2 + 1.6) * -9;
+  const firstPulseX = ((time * 40) % 64);
+  const secondPulseX = ((time * 40 + 18) % 64);
+  const firstLineScale = 0.9 + ((Math.sin(time * 2.4) + 1) / 2) * 0.1;
+  const secondLineScale = 0.88 + ((Math.sin(time * 2.4 + 0.6) + 1) / 2) * 0.12;
+  const thirdLineScale = 0.84 + ((Math.sin(time * 2.4 + 1.2) + 1) / 2) * 0.14;
+  const ctaScale = 1 + ((Math.sin(time * 2.8) + 1) / 2) * 0.05;
+  const anchorShift = Math.sin(time * 1.1) * 6;
+
+  return (
+    <div className='about-hero-visual' aria-hidden='true'>
+      <div className='about-hero-bgLayer'>
+        <div className='about-hero-radial' />
+        <div className='about-hero-grid' />
+      </div>
+      <div className='about-hero-contentLayer'>
+        <div className='about-hero-dashboard-shell'>
+          <div className='about-hero-dashboard-head'>
+            <div className='about-hero-product-badge'>Lead System</div>
+            <div className='about-hero-shell-metric'>
+              <span className='about-hero-shell-label'>Flow</span>
+              <span className='about-hero-shell-value'>Before zu System zu Result</span>
+            </div>
+          </div>
+          <div className='about-hero-storyboard'>
+            <article
+              className='about-hero-story-card about-hero-story-card-before'
+              style={{ transform: `translateY(${beforeOffset}px)` }}
+            >
+              <p className='about-hero-stage-eyebrow'>Before</p>
+              <p className='about-hero-metric-title'>Viele Klicks, wenig Klarheit</p>
+              <ul className='about-hero-story-list'>
+                <li>Langsame Seiten</li>
+                <li>Unklare Kontaktwege</li>
+                <li>Keine sauberen Daten</li>
+              </ul>
+            </article>
+
+            <div className='about-hero-story-connector'>
+              <div className='about-hero-pipeline-line' />
+              <span
+                className='about-hero-pipeline-pulse'
+                style={{ transform: `translate(${firstPulseX}px, -50%) scale(1.15)` }}
+              />
+            </div>
+
+            <article
+              className='about-hero-story-card about-hero-story-card-system'
+              style={{ transform: `translateY(${systemOffset}px)` }}
+            >
+              <p className='about-hero-stage-eyebrow'>System</p>
+              <div className='about-hero-phone-preview'>
+                <div className='about-hero-phone-notch' />
+                <div className='about-hero-phone-screen'>
+                  <div className='about-hero-phone-badge'>Website</div>
+                  <div
+                    className='about-hero-phone-line about-hero-phone-line-strong'
+                    style={{ transform: `scaleX(${firstLineScale})`, opacity: 0.7 + (firstLineScale - 0.9) * 2.2 }}
+                  />
+                  <div
+                    className='about-hero-phone-line'
+                    style={{ transform: `scaleX(${secondLineScale})`, opacity: 0.56 + (secondLineScale - 0.88) * 2.1 }}
+                  />
+                  <div
+                    className='about-hero-phone-line'
+                    style={{ transform: `scaleX(${thirdLineScale})`, opacity: 0.52 + (thirdLineScale - 0.84) * 1.9 }}
+                  />
+                  <div
+                    className='about-hero-phone-cta'
+                    style={{ transform: `scale(${ctaScale})`, opacity: 0.88 + (ctaScale - 1) * 2 }}
+                  >
+                    Termin anfragen
+                  </div>
+                </div>
+              </div>
+              <div className='about-hero-system-pills'>
+                <span>Website</span>
+                <span>Kontaktwege</span>
+                <span>Tracking</span>
+              </div>
+            </article>
+
+            <div className='about-hero-story-connector'>
+              <div className='about-hero-pipeline-line' />
+              <span
+                className='about-hero-pipeline-pulse'
+                style={{ transform: `translate(${secondPulseX}px, -50%) scale(1.15)` }}
+              />
+            </div>
+
+            <article
+              className='about-hero-story-card about-hero-story-card-result'
+              style={{ transform: `translateY(${resultOffset}px)` }}
+            >
+              <p className='about-hero-stage-eyebrow'>Result</p>
+              <p className='about-hero-result-metric'>+12</p>
+              <p className='about-hero-metric-title'>Qualifizierte Anfragen</p>
+              <p className='about-hero-metric-text'>Messbar, schneller beantwortbar und klar im Funnel sichtbar.</p>
+            </article>
+          </div>
+          <div
+            className='about-hero-metric-anchor'
+            style={{ transform: `translateX(${anchorShift}px)` }}
+          >
+            <span className='about-hero-anchor-label'>Ergebnis</span>
+            <span className='about-hero-anchor-value'>Mehr qualifizierte Anfragen statt nur Website-Traffic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const AboutUs: React.FC = () => {
   const { t } = useTranslation();
 
@@ -26,125 +159,166 @@ const AboutUs: React.FC = () => {
       <PageRoot>
         <PageContainer>
           <HeroSection className='about-hero'>
-            <p className='about-hero-eyebrow'>
-              {t('about.heroEyebrow', { defaultValue: 'VS Studio | Hildesheim | Niedersachsen | Deutschland' })}
-            </p>
-            <h1>{t('about.heroTitle', { defaultValue: 'Web Studio fuer lokale Unternehmen in Hildesheim' })}</h1>
-            <p>{t('about.heroSubtitle', { defaultValue: 'Wir helfen kleinen Unternehmen, planbare Anfragen zu gewinnen - mit Websites, Lead-Systemen, Werbung und klarer Analyse.' })}</p>
-            <p className='about-trustline'>
-              {t('about.heroTrustline', { defaultValue: 'Lokal in Hildesheim. Strategisch in Niedersachsen. Umsetzbar in ganz Deutschland.' })}
-            </p>
-            <ButtonRow>
-              <PrimaryButtonLink to='/kontakt'><FaArrowRight /> {t('about.primaryCta', { defaultValue: 'Kostenloses Erstgespraech starten' })}</PrimaryButtonLink>
-            </ButtonRow>
+            <div className='about-hero-copy'>
+              <p className='about-hero-eyebrow'>
+                {t('aboutPage.heroEyebrow', { defaultValue: 'VS Studio | Hildesheim | Niedersachsen | Deutschland' })}
+              </p>
+              <h1>
+                <span className='about-hero-title-line'>{t('aboutPage.heroTitleLine1', { defaultValue: 'Websites und' })}</span>
+                <span className='about-hero-title-line'>
+                  <span className='about-hero-title-highlight'>{t('aboutPage.heroTitleLine2', { defaultValue: 'Lead-Systeme' })}</span>
+                </span>
+                <span className='about-hero-title-line'>{t('aboutPage.heroTitleLine3', { defaultValue: 'fuer lokale Unternehmen' })}</span>
+                <span className='about-hero-title-line'>{t('aboutPage.heroTitleLine4', { defaultValue: 'in Hildesheim' })}</span>
+              </h1>
+              <p className='about-hero-subtitle'>
+                {t('aboutPage.heroSubtitle', { defaultValue: 'Mehr qualifizierte Anfragen durch schnelle Websites, klare Kontaktwege und messbares Marketing.' })}
+              </p>
+              <p className='about-trustline'>
+                {t('aboutPage.heroTrustline', { defaultValue: 'Lokal in Hildesheim. Strategisch in Niedersachsen. Umsetzbar in ganz Deutschland.' })}
+              </p>
+              <ButtonRow className='about-hero-actions'>
+                <PrimaryButtonLink to='/kontakt'><FaArrowRight /> {t('aboutPage.primaryCta', { defaultValue: 'Kostenlose Website-Analyse' })}</PrimaryButtonLink>
+              </ButtonRow>
+            </div>
+            <HeroVisual />
           </HeroSection>
 
           <Section>
-            <h2>{t('about.section.about', { defaultValue: 'About' })}</h2>
+            <h2>{t('aboutPage.section.about', { defaultValue: 'About' })}</h2>
             <Grid2>
               <Card>
-                <h3>{t('about.blocks.who.title', { defaultValue: 'Wer wir sind' })}</h3>
-                <Muted>{t('about.blocks.who.text', { defaultValue: 'Wir sind eine digitale Wachstumsagentur aus Hildesheim. Unser Fokus liegt auf lokaler Sichtbarkeit und messbaren Anfragen fuer kleine Unternehmen.' })}</Muted>
+                <h3>{t('aboutPage.blocks.who.title', { defaultValue: 'Fuer lokale Unternehmen' })}</h3>
+                <Muted>{t('aboutPage.blocks.who.text', { defaultValue: 'Websites, Lead-Systeme und Marketing fuer Betriebe, die planbar mehr Anfragen wollen.' })}</Muted>
               </Card>
               <Card>
-                <h3>{t('about.blocks.focus.title', { defaultValue: 'Unser Fokus' })}</h3>
-                <Muted>{t('about.blocks.focus.text', { defaultValue: 'Wir verbinden Website, Lead-Prozess, Werbung und Tracking zu einem klaren System statt isolierter Einzelmassnahmen.' })}</Muted>
+                <h3>{t('aboutPage.blocks.focus.title', { defaultValue: 'Ein System statt Einzelloesungen' })}</h3>
+                <Muted>{t('aboutPage.blocks.focus.text', { defaultValue: 'Website, Kontaktwege, Kampagnen und Tracking greifen als ein klarer Prozess zusammen.' })}</Muted>
               </Card>
             </Grid2>
           </Section>
 
-          <Section className='about-main-grid'>
-            <Card className='about-photo-card'>
-              <img className='about-photo-image' src={aboutFounderPhoto} alt={t('about.photoAlt')} />
-              <Muted className='about-photo-caption'>{t('about.photoCaption')}</Muted>
-              <div className='about-geo-badges'>
-                <span className='about-geo-badge'><FaMapMarkerAlt /> {t('about.geo.local')}</span>
-                <span className='about-geo-badge'><FaMapMarkerAlt /> {t('about.geo.region')}</span>
-                <span className='about-geo-badge'><FaMapMarkerAlt /> {t('about.geo.country')}</span>
-              </div>
-            </Card>
+          <Section>
+            <h2>{t('aboutPage.section.localAdvantages', { defaultValue: 'Lokale Vorteile' })}</h2>
+            <div className='about-main-grid'>
+              <Card className='about-photo-card'>
+                <img className='about-photo-image' src={aboutFounderPhoto} alt={t('aboutPage.photoAlt', { defaultValue: 'Vladyslav, Gruender von VS Web Studio aus Hildesheim' })} />
+                <p className='about-photo-caption'>{t('aboutPage.photoCaption', { defaultValue: 'Vladyslav - Gruender von VS Web Studio' })}</p>
+                <Checklist className='about-photo-facts'>
+                  <li><FaCheckCircle /> {t('aboutPage.photoFacts.f1', { defaultValue: 'Fokus: lokale Unternehmen' })}</li>
+                  <li><FaCheckCircle /> {t('aboutPage.photoFacts.f2', { defaultValue: 'Standort: Hildesheim' })}</li>
+                  <li><FaCheckCircle /> {t('aboutPage.photoFacts.f3', { defaultValue: 'Projekte: deutschlandweit' })}</li>
+                </Checklist>
+                <div className='about-geo-badges'>
+                  <span className='about-geo-badge'><FaMapMarkerAlt /> {t('aboutPage.geo.local', { defaultValue: 'Hildesheim' })}</span>
+                  <span className='about-geo-badge'><FaMapMarkerAlt /> {t('aboutPage.geo.region', { defaultValue: 'Niedersachsen' })}</span>
+                  <span className='about-geo-badge'><FaMapMarkerAlt /> {t('aboutPage.geo.country', { defaultValue: 'Deutschlandweit' })}</span>
+                </div>
+              </Card>
 
-            <Card className='about-text-card'>
-              <h3>{t('about.blocks.locality.title', { defaultValue: 'Lokale Naehe als Vorteil' })}</h3>
-              <Muted>{t('about.blocks.locality.text1', { defaultValue: 'Wir arbeiten direkt aus Hildesheim und kennen die Realitaet lokaler Betriebe: knappe Zeit, klare Budgets und Bedarf an schnellen Ergebnissen.' })}</Muted>
-              <Muted>{t('about.blocks.locality.text2', { defaultValue: 'Unser Setup passt fuer Hildesheim, Niedersachsen und Unternehmen in ganz Deutschland, die planbar wachsen wollen.' })}</Muted>
-              <p className='about-local-priority'>{t('about.localPriority')}</p>
-            </Card>
+              <Card className='about-text-card'>
+                <h3>{t('aboutPage.blocks.locality.title', { defaultValue: 'Lokale Naehe als Vorteil' })}</h3>
+                <p className='about-local-subtitle'>
+                  {t('aboutPage.blocks.locality.subtitle', { defaultValue: 'Schnelle Abstimmung, klare Prioritaeten und messbare Ergebnisse.' })}
+                </p>
+                <Muted className='about-local-copy'>
+                  {t('aboutPage.blocks.locality.text1', { defaultValue: 'Wir arbeiten direkt mit lokalen Unternehmen zusammen - ohne lange Agenturketten und unnoetige Buerokratie.' })}
+                </Muted>
+                <Checklist className='about-local-list'>
+                  <li><FaCheckCircle /> {t('aboutPage.blocks.locality.i1', { defaultValue: 'Direkte Kommunikation ohne Umwege' })}</li>
+                  <li><FaCheckCircle /> {t('aboutPage.blocks.locality.i2', { defaultValue: 'Schnelle Umsetzung statt langer Abstimmungen' })}</li>
+                  <li><FaCheckCircle /> {t('aboutPage.blocks.locality.i3', { defaultValue: 'Verstaendnis fuer lokale Maerkte und Budgets' })}</li>
+                </Checklist>
+                <Muted className='about-local-copy'>
+                  {t('aboutPage.blocks.locality.text2', { defaultValue: 'Unsere Kunden profitieren davon, dass Entscheidungen schneller getroffen werden und Projekte nicht wochenlang in Abstimmungsschleifen haengen bleiben.' })}
+                </Muted>
+                <Muted className='about-local-copy'>
+                  {t('aboutPage.blocks.locality.text3', { defaultValue: 'Das spart Zeit, reduziert Kosten und sorgt dafuer, dass Marketingmassnahmen schneller Ergebnisse liefern.' })}
+                </Muted>
+                <Muted className='about-local-copy'>
+                  {t('aboutPage.blocks.locality.text4', { defaultValue: 'Wir kennen die Realitaet kleiner und mittelstaendischer Unternehmen: begrenzte Budgets, wenig Zeit und den Wunsch nach klaren Resultaten statt komplizierten Konzepten.' })}
+                </Muted>
+                <Muted className='about-local-copy'>
+                  {t('aboutPage.blocks.locality.text5', { defaultValue: 'Deshalb arbeiten wir pragmatisch und strukturiert - von der ersten Analyse ueber die Umsetzung bis zur kontinuierlichen Optimierung.' })}
+                </Muted>
+                <p className='about-local-priority'>{t('aboutPage.localPriority', { defaultValue: 'Kurze Wege. Klare Prioritaeten. Fokus auf Ergebnisse.' })}</p>
+              </Card>
+            </div>
           </Section>
 
           <Section>
-            <h2>{t('about.section.how', { defaultValue: 'How we work' })}</h2>
+            <h2>{t('aboutPage.section.how', { defaultValue: 'How we work' })}</h2>
             <Grid3 className='about-work-grid'>
               <Card className='about-step-card'>
-                <h3><IconBadge><FaLayerGroup /></IconBadge>{t('about.how.s1.title', { defaultValue: '1. Verstehen' })}</h3>
-                <Muted>{t('about.how.s1.text', { defaultValue: 'Wir klaeren Zielgruppe, Angebot und Markt in Hildesheim, Niedersachsen und Deutschland.' })}</Muted>
+                <h3><IconBadge><FaLayerGroup /></IconBadge>{t('aboutPage.how.s1.title', { defaultValue: '1. Verstehen' })}</h3>
+                <Muted>{t('aboutPage.how.s1.text', { defaultValue: 'Zielgruppe, Angebot und Markt analysieren.' })}</Muted>
               </Card>
               <Card className='about-step-card'>
-                <h3><IconBadge><FaUsers /></IconBadge>{t('about.how.s2.title', { defaultValue: '2. Umsetzen' })}</h3>
-                <Muted>{t('about.how.s2.text', { defaultValue: 'Wir bauen Website, Lead-System und Kampagnen so, dass Kontaktwege klar und einfach bleiben.' })}</Muted>
+                <h3><IconBadge><FaUsers /></IconBadge>{t('aboutPage.how.s2.title', { defaultValue: '2. Umsetzen' })}</h3>
+                <Muted>{t('aboutPage.how.s2.text', { defaultValue: 'Website, Lead-System und Kampagnen starten.' })}</Muted>
               </Card>
               <Card className='about-step-card'>
-                <h3><IconBadge><FaChartLine /></IconBadge>{t('about.how.s3.title', { defaultValue: '3. Optimieren' })}</h3>
-                <Muted>{t('about.how.s3.text', { defaultValue: 'Wir messen Anfragen, Kosten und Conversion und verbessern jede Phase datenbasiert.' })}</Muted>
+                <h3><IconBadge><FaChartLine /></IconBadge>{t('aboutPage.how.s3.title', { defaultValue: '3. Optimieren' })}</h3>
+                <Muted>{t('aboutPage.how.s3.text', { defaultValue: 'Daten analysieren und Ergebnisse verbessern.' })}</Muted>
               </Card>
             </Grid3>
           </Section>
 
           <Section>
-            <h2>{t('about.section.value', { defaultValue: 'Value' })}</h2>
+            <h2>{t('aboutPage.section.value', { defaultValue: 'Value' })}</h2>
             <Grid3 className='about-value-grid'>
               <Card className='about-value-card'>
-                <h3><IconBadge><FaUsers /></IconBadge>{t('about.cards.work.title', { defaultValue: 'Klarer Prozess' })}</h3>
-                <Muted>{t('about.cards.work.desc', { defaultValue: 'Ein Team, ein Ablauf, klare Verantwortung von Strategie bis Launch.' })}</Muted>
+                <h3><IconBadge><FaUsers /></IconBadge>{t('aboutPage.cards.work.title', { defaultValue: 'Klare Prozesse' })}</h3>
+                <Muted>{t('aboutPage.cards.work.desc', { defaultValue: 'Kurze Wege. Klare Verantwortung.' })}</Muted>
               </Card>
               <Card className='about-value-card'>
-                <h3><IconBadge><FaRobot /></IconBadge>{t('about.cards.ai.title', { defaultValue: 'AI First' })}</h3>
-                <Muted>{t('about.cards.ai.desc', { defaultValue: 'KI beschleunigt Content, Auswertung und Kampagnen ohne Qualitaetsverlust.' })}</Muted>
+                <h3><IconBadge><FaRobot /></IconBadge>{t('aboutPage.cards.ai.title', { defaultValue: 'AI First' })}</h3>
+                <Muted>{t('aboutPage.cards.ai.desc', { defaultValue: 'Automatisierung dort, wo sie Zeit spart.' })}</Muted>
               </Card>
               <Card className='about-value-card'>
-                <h3><IconBadge><FaBullhorn /></IconBadge>{t('about.cards.leads.title', { defaultValue: 'Lead Fokus' })}</h3>
-                <Muted>{t('about.cards.leads.desc', { defaultValue: 'Jede Seite und jede Anzeige ist auf qualifizierte Anfragen ausgerichtet.' })}</Muted>
+                <h3><IconBadge><FaBullhorn /></IconBadge>{t('aboutPage.cards.leads.title', { defaultValue: 'Lead Fokus' })}</h3>
+                <Muted>{t('aboutPage.cards.leads.desc', { defaultValue: 'Design und Marketing arbeiten zusammen.' })}</Muted>
               </Card>
             </Grid3>
           </Section>
 
           <Section>
             <Card>
-              <h2>{t('about.results.title', { defaultValue: 'Was Kunden erhalten' })}</h2>
+              <h2>{t('aboutPage.results.title', { defaultValue: 'Was Kunden erhalten' })}</h2>
               <Checklist>
-                <li><FaCheckCircle /> {t('about.results.i1', { defaultValue: 'Website, die schnell laedt und Vertrauen aufbaut' })}</li>
-                <li><FaCheckCircle /> {t('about.results.i2', { defaultValue: 'Klare Kontaktwege fuer Anruf, Formular und Termin' })}</li>
-                <li><FaCheckCircle /> {t('about.results.i3', { defaultValue: 'Messbare Anfragen statt unklarer Marketing-Daten' })}</li>
+                <li><FaCheckCircle /> {t('aboutPage.results.i1', { defaultValue: 'Schnelle Website, die auf jedem Smartphone laedt' })}</li>
+                <li><FaCheckCircle /> {t('aboutPage.results.i2', { defaultValue: 'Klare Kontaktwege: Anruf, Formular, Termin' })}</li>
+                <li><FaCheckCircle /> {t('aboutPage.results.i3', { defaultValue: 'Messbare Anfragen mit Tracking und Marketing-Daten' })}</li>
               </Checklist>
             </Card>
           </Section>
 
           <Section>
-            <h2>{t('about.section.trust', { defaultValue: 'Trust' })}</h2>
+            <h2>{t('aboutPage.section.trust', { defaultValue: 'Trust' })}</h2>
             <Grid3>
               <Card>
-                <h3>{t('about.trust.projects.label', { defaultValue: 'Anzahl Projekte' })}</h3>
-                <p className='about-trust-metric'>{t('about.trust.projects.value', { defaultValue: '120+' })}</p>
-                <Muted>{t('about.trust.projects.text', { defaultValue: 'Realisierte Websites, Lead-Funnels und Conversion-Relaunches.' })}</Muted>
+                <h3>{t('aboutPage.trust.projects.label', { defaultValue: 'Anzahl Projekte' })}</h3>
+                <p className='about-trust-metric'>{t('aboutPage.trust.projects.value', { defaultValue: '120+' })}</p>
+                <Muted>{t('aboutPage.trust.projects.text', { defaultValue: 'Websites, Lead-Funnels und Relaunches.' })}</Muted>
               </Card>
               <Card>
-                <h3>{t('about.trust.industries.label', { defaultValue: 'Branchen' })}</h3>
-                <p className='about-trust-metric'>{t('about.trust.industries.value', { defaultValue: '12' })}</p>
-                <Muted>{t('about.trust.industries.text', { defaultValue: 'Handwerk, Praxen, Gastronomie, Beauty, Bildung und lokale Dienstleistungen.' })}</Muted>
+                <h3>{t('aboutPage.trust.industries.label', { defaultValue: 'Branchen' })}</h3>
+                <p className='about-trust-metric'>{t('aboutPage.trust.industries.value', { defaultValue: '12' })}</p>
+                <Muted>{t('aboutPage.trust.industries.text', { defaultValue: 'Handwerk, Praxen, Gastronomie, Beauty, Bildung und lokale Dienstleistungen.' })}</Muted>
               </Card>
               <Card>
-                <h3>{t('about.trust.focus.label', { defaultValue: 'Fokus' })}</h3>
-                <p className='about-trust-metric'>{t('about.trust.focus.value', { defaultValue: 'Lokal + Messbar' })}</p>
-                <Muted>{t('about.trust.focus.text', { defaultValue: 'Hildesheim, Niedersachsen und Deutschland mit klarem Lead-Fokus.' })}</Muted>
+                <h3>{t('aboutPage.trust.focus.label', { defaultValue: 'Fokus' })}</h3>
+                <p className='about-trust-metric'>{t('aboutPage.trust.focus.value', { defaultValue: 'Lokal + Messbar' })}</p>
+                <Muted>{t('aboutPage.trust.focus.text', { defaultValue: 'Hildesheim, Niedersachsen und Deutschland mit klarem Lead-Fokus.' })}</Muted>
               </Card>
             </Grid3>
           </Section>
 
           <Band className='about-cta-band'>
-            <h2>{t('about.cta.title', { defaultValue: 'Bereit fuer planbare Anfragen?' })}</h2>
-            <Muted>{t('about.cta.text', { defaultValue: 'Im kostenlosen Erstgespraech zeigen wir die groessten Hebel fuer Ihre Website, Lead-Prozesse und Werbung.' })}</Muted>
+            <h2>{t('aboutPage.cta.title', { defaultValue: 'Bereit fuer planbare Anfragen?' })}</h2>
+            <Muted>{t('aboutPage.cta.text', { defaultValue: 'Im kostenlosen Erstgespraech zeigen wir die groessten Hebel fuer Ihre Website, Lead-Prozesse und Werbung.' })}</Muted>
             <ButtonRow>
-              <PrimaryButtonLink to='/kontakt'><FaArrowRight /> {t('about.primaryCta', { defaultValue: 'Kostenloses Erstgespraech starten' })}</PrimaryButtonLink>
+              <PrimaryButtonLink to='/kontakt'><FaArrowRight /> {t('aboutPage.primaryCta', { defaultValue: 'Kostenloses Erstgespraech starten' })}</PrimaryButtonLink>
             </ButtonRow>
           </Band>
         </PageContainer>

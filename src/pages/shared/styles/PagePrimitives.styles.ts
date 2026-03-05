@@ -10,16 +10,16 @@ const gradientFlow = keyframes`
 `;
 
 export const PageRoot = styled.div`
-  padding: 48px 0 72px;
+  padding: 48px 0 96px;
 
   @media (max-width: 767px) {
-    padding: 28px 0 52px;
+    padding: 24px 0 72px;
   }
 `;
 
 export const PageContainer = styled.div`
   width: 100%;
-  max-width: 1560px;
+  max-width: 1320px;
   margin: 0 auto;
   padding-left: var(--gutter);
   padding-right: var(--gutter);
@@ -32,13 +32,13 @@ export const HeroSection = styled(motion.section).attrs({
   variants: fadeInUp,
 })`
   display: grid;
-  gap: 18px;
-  padding: 70px 0 30px;
+  gap: 24px;
+  padding: 72px 0;
 
   h1 {
     font-size: clamp(34px, 8vw, 70px);
-    line-height: 0.96;
-    max-width: 15ch;
+    line-height: 1.2;
+    max-width: 680px;
   }
 
   p {
@@ -47,12 +47,12 @@ export const HeroSection = styled(motion.section).attrs({
   }
 
   @media (max-width: 767px) {
-    padding-top: 38px;
-    gap: 14px;
+    padding: 48px 0;
+    gap: 16px;
 
     h1 {
       font-size: clamp(30px, 10vw, 44px);
-      max-width: 12ch;
+      max-width: 680px;
     }
   }
 `;
@@ -63,27 +63,36 @@ export const Section = styled(motion.section).attrs({
   viewport: { once: true, amount: 0.18 },
   variants: fadeInUp,
 })`
-  margin-top: var(--section-space, 36px);
+  padding-top: 72px;
+  padding-bottom: 72px;
 
   h2 {
     font-size: clamp(28px, 6vw, 46px);
-    margin-bottom: 10px;
+    margin-top: 72px;
+    margin-bottom: 24px;
   }
 
   h3 {
     font-size: 22px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+  }
+
+  > :first-child {
+    margin-top: 0;
   }
 
   @media (max-width: 767px) {
-    margin-top: var(--section-space-mobile, 24px);
+    padding-top: 48px;
+    padding-bottom: 48px;
 
     h2 {
       font-size: clamp(26px, 9vw, 34px);
+      margin-top: 48px;
     }
 
     h3 {
       font-size: 20px;
+      margin-bottom: 16px;
     }
   }
 `;
@@ -95,7 +104,7 @@ export const Grid2 = styled(motion.div).attrs({
   variants: staggerContainer,
 })`
   display: grid;
-  gap: 14px;
+  gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
   @media (max-width: 767px) {
@@ -110,7 +119,7 @@ export const Grid3 = styled(motion.div).attrs({
   variants: staggerContainer,
 })`
   display: grid;
-  gap: 14px;
+  gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 
   @media (max-width: 767px) {
@@ -129,7 +138,7 @@ export const Card = styled(motion.article).attrs({
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: rgba(11, 15, 27, 0.75);
-  padding: 18px;
+  padding: 32px;
   transition:
     transform var(--dur-mid) var(--ease-smooth),
     border-color var(--dur-mid) var(--ease-smooth),
@@ -144,15 +153,15 @@ export const Card = styled(motion.article).attrs({
   }
 
   @media (max-width: 767px) {
-    padding: 14px;
+    padding: 24px;
   }
 `;
 
 export const Band = styled(Card).attrs({ as: motion.section })`
-  margin-top: var(--section-space, 36px);
+  margin-top: 72px;
 
   @media (max-width: 767px) {
-    margin-top: var(--section-space-mobile, 24px);
+    margin-top: 48px;
   }
 `;
 
@@ -163,11 +172,11 @@ export const Muted = styled.p`
 export const ButtonRow = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
 
   @media (max-width: 767px) {
     width: 100%;
-    gap: 10px;
+    gap: 16px;
   }
 `;
 
@@ -176,8 +185,8 @@ const BaseButtonStyles = `
   align-items: center;
   justify-content: center;
   gap: 8px;
-  min-height: 46px;
-  padding: 0 18px;
+  min-height: 48px;
+  padding: 0 24px;
   border-radius: 10px;
   font-weight: 700;
   text-align: center;
@@ -246,7 +255,7 @@ export const IconBadge = styled.span`
 
 export const Checklist = styled.ul`
   display: grid;
-  gap: 9px;
+  gap: 16px;
   padding: 0;
   margin: 0;
 
