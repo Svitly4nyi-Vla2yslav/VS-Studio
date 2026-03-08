@@ -440,8 +440,14 @@
     "packages": {
       "title": "Pricing Pakete",
       "badge": "Empfohlen",
+      "billing": {
+        "monthly": "Monat",
+        "yearly": "Jahr"
+      },
       "coreTitle": "Core",
       "plusTitle": "Plus",
+      "subscriptionTitle": "Support Abo",
+      "subscriptionIncludesTitle": "Enthalten",
       "outcomeLabel": "Result:",
       "starter": {
         "name": "Starter",
@@ -457,6 +463,21 @@
           "Mobile Optimization",
           "Basic DSGVO Tracking"
         ],
+        "subscription": {
+          "monthly": {
+            "price": "EUR 62 / Monat",
+            "meta": "Basis-Support nach dem Launch"
+          },
+          "yearly": {
+            "price": "EUR 521 / Jahr",
+            "meta": "12 Monate mit 30% Rabatt"
+          },
+          "includes": [
+            "Technische Updates und Backups",
+            "Monitoring von Formularen, Conversions und Basis-Tracking",
+            "Bis zu 1 Block fuer Aenderungen oder Updates pro Monat"
+          ]
+        },
         "outcome": "Stable channel for first qualified requests."
       },
       "business": {
@@ -473,6 +494,21 @@
           "SEO Structure by Service",
           "Conversion Optimization"
         ],
+        "subscription": {
+          "monthly": {
+            "price": "EUR 86 / Monat",
+            "meta": "Support fuer Website, CRM und Analytics"
+          },
+          "yearly": {
+            "price": "EUR 722 / Jahr",
+            "meta": "12 Monate mit 30% Rabatt"
+          },
+          "includes": [
+            "Regelmaessige Updates fuer Inhalte und Seiten",
+            "Kontrolle von CRM, Lead Tracking und Dashboard",
+            "Bis zu 2 Aufgaben pro Monat fuer Conversion-Optimierung"
+          ]
+        },
         "outcome": "Predictable lead pipeline with clear reporting."
       },
       "pro": {
@@ -489,6 +525,21 @@
           "AI Lead Qualification",
           "Automation Flows"
         ],
+        "subscription": {
+          "monthly": {
+            "price": "EUR 160 / Monat",
+            "meta": "Aktive Betreuung der Growth-Systeme"
+          },
+          "yearly": {
+            "price": "EUR 1.344 / Jahr",
+            "meta": "12 Monate mit 30% Rabatt"
+          },
+          "includes": [
+            "Woechentliche Kontrolle von Website, Ads und Automation Flows",
+            "Optimierung von CPL, Funnel und Lead Qualification",
+            "Bis zu 4 Growth-Aufgaben pro Monat plus priorisierter Support"
+          ]
+        },
         "outcome": "More demand with controlled cost per lead."
       }
     },

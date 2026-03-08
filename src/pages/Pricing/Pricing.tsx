@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { motion, easeOut } from 'framer-motion';
 import styled, { keyframes } from 'styled-components';
 import { useTranslation } from 'react-i18next';
@@ -270,6 +271,39 @@ const PricingGrid = styled.div`
   }
 `;
 
+const BillingToggle = styled.div`
+  display: inline-flex;
+  gap: 6px;
+  margin-top: 14px;
+  margin-bottom: 8px;
+  padding: 6px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(11, 17, 32, 0.72);
+`;
+
+const BillingButton = styled.button<{ $active?: boolean }>`
+  border: 0;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: 999px;
+  color: ${({ $active }) => ($active ? '#08101f' : 'rgba(255, 255, 255, 0.82)')};
+  background: ${({ $active }) =>
+    $active ? 'linear-gradient(120deg, #ffd08a, #fff1cf)' : 'transparent'};
+  box-shadow: ${({ $active }) => ($active ? '0 8px 20px rgba(255, 201, 125, 0.24)' : 'none')};
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background var(--dur-mid) var(--ease-smooth),
+    color var(--dur-mid) var(--ease-smooth),
+    transform var(--dur-mid) var(--ease-smooth);
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-1px);
+  }
+`;
+
 const PricingCard = styled(motion.article)<{ $recommended?: boolean }>`
   position: relative;
   border-radius: 16px;
@@ -347,6 +381,37 @@ const Outcome = styled.div`
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   color: rgba(255, 255, 255, 0.9);
   font-size: 14px;
+`;
+
+const SubscriptionBox = styled.div`
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(118, 182, 255, 0.2);
+  background:
+    linear-gradient(180deg, rgba(17, 27, 49, 0.82), rgba(10, 16, 31, 0.84)),
+    radial-gradient(circle at top right, rgba(255, 206, 132, 0.12), transparent 42%);
+`;
+
+const SubscriptionLabel = styled.div`
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.58);
+`;
+
+const SubscriptionPrice = styled.div`
+  margin-top: 8px;
+  font-size: 28px;
+  line-height: 1.05;
+  font-weight: 800;
+  color: #8fc5ff;
+`;
+
+const SubscriptionMeta = styled.div`
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
 `;
 
 const CompareWrap = styled.div`
@@ -463,6 +528,23 @@ const FinalButton = styled(HeroButton)`
 
 const PricingPage: React.FC = () => {
   const { t } = useTranslation();
+  const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'yearly'>('monthly');
+
+  const packageKeys = ['starter', 'business', 'pro'] as const;
+  const packages = packageKeys.map(key => ({
+    key,
+    recommended: key === 'business',
+    name: t(`pricing.packages.${key}.name`),
+    desc: t(`pricing.packages.${key}.desc`),
+    price: t(`pricing.packages.${key}.price`),
+    range: t(`pricing.packages.${key}.range`),
+    core: t(`pricing.packages.${key}.core`, { returnObjects: true }) as string[],
+    plus: t(`pricing.packages.${key}.plus`, { returnObjects: true }) as string[],
+    outcome: t(`pricing.packages.${key}.outcome`),
+    subscriptionPrice: t(`pricing.packages.${key}.subscription.${billingPeriod}.price`),
+    subscriptionMeta: t(`pricing.packages.${key}.subscription.${billingPeriod}.meta`),
+    subscriptionItems: t(`pricing.packages.${key}.subscription.includes`, { returnObjects: true }) as string[],
+  }));
 
   return (
     <PageRoot>
@@ -543,64 +625,61 @@ const PricingPage: React.FC = () => {
 
           <Section>
             <h2>{t('pricing.packages.title')}</h2>
+            <BillingToggle role='tablist' aria-label={t('pricing.packages.subscriptionTitle')}>
+              <BillingButton
+                type='button'
+                $active={billingPeriod === 'monthly'}
+                onClick={() => setBillingPeriod('monthly')}
+              >
+                {t('pricing.packages.billing.monthly')}
+              </BillingButton>
+              <BillingButton
+                type='button'
+                $active={billingPeriod === 'yearly'}
+                onClick={() => setBillingPeriod('yearly')}
+              >
+                {t('pricing.packages.billing.yearly')}
+              </BillingButton>
+            </BillingToggle>
             <PricingGrid>
-              <PricingCard whileHover={{ y: -4 }} transition={{ duration: 0.25 }}>
-                <h3>{t('pricing.packages.starter.name')}</h3>
-                <p>{t('pricing.packages.starter.desc')}</p>
-                <Price>{t('pricing.packages.starter.price')}</Price>
-                <PriceMeta>{t('pricing.packages.starter.range')}</PriceMeta>
-                <CardGroupTitle>{t('pricing.packages.coreTitle')}</CardGroupTitle>
-                <FeatureList>
-                  <li><FaCheck /> {t('pricing.packages.starter.core.0')}</li>
-                  <li><FaCheck /> {t('pricing.packages.starter.core.1')}</li>
-                  <li><FaCheck /> {t('pricing.packages.starter.core.2')}</li>
-                </FeatureList>
-                <CardGroupTitle>{t('pricing.packages.plusTitle')}</CardGroupTitle>
-                <FeatureList>
-                  <li><FaCheck /> {t('pricing.packages.starter.plus.0')}</li>
-                  <li><FaCheck /> {t('pricing.packages.starter.plus.1')}</li>
-                </FeatureList>
-                <Outcome><strong>{t('pricing.packages.outcomeLabel')}</strong> {t('pricing.packages.starter.outcome')}</Outcome>
-              </PricingCard>
-
-              <PricingCard $recommended whileHover={{ y: -6 }} transition={{ duration: 0.25 }}>
-                <Badge>{t('pricing.packages.badge')}</Badge>
-                <h3>{t('pricing.packages.business.name')}</h3>
-                <p>{t('pricing.packages.business.desc')}</p>
-                <Price>{t('pricing.packages.business.price')}</Price>
-                <PriceMeta>{t('pricing.packages.business.range')}</PriceMeta>
-                <CardGroupTitle>{t('pricing.packages.coreTitle')}</CardGroupTitle>
-                <FeatureList>
-                  <li><FaCheck /> {t('pricing.packages.business.core.0')}</li>
-                  <li><FaCheck /> {t('pricing.packages.business.core.1')}</li>
-                  <li><FaCheck /> {t('pricing.packages.business.core.2')}</li>
-                </FeatureList>
-                <CardGroupTitle>{t('pricing.packages.plusTitle')}</CardGroupTitle>
-                <FeatureList>
-                  <li><FaCheck /> {t('pricing.packages.business.plus.0')}</li>
-                  <li><FaCheck /> {t('pricing.packages.business.plus.1')}</li>
-                </FeatureList>
-                <Outcome><strong>{t('pricing.packages.outcomeLabel')}</strong> {t('pricing.packages.business.outcome')}</Outcome>
-              </PricingCard>
-
-              <PricingCard whileHover={{ y: -4 }} transition={{ duration: 0.25 }}>
-                <h3>{t('pricing.packages.pro.name')}</h3>
-                <p>{t('pricing.packages.pro.desc')}</p>
-                <Price>{t('pricing.packages.pro.price')}</Price>
-                <PriceMeta>{t('pricing.packages.pro.range')}</PriceMeta>
-                <CardGroupTitle>{t('pricing.packages.coreTitle')}</CardGroupTitle>
-                <FeatureList>
-                  <li><FaCheck /> {t('pricing.packages.pro.core.0')}</li>
-                  <li><FaCheck /> {t('pricing.packages.pro.core.1')}</li>
-                  <li><FaCheck /> {t('pricing.packages.pro.core.2')}</li>
-                </FeatureList>
-                <CardGroupTitle>{t('pricing.packages.plusTitle')}</CardGroupTitle>
-                <FeatureList>
-                  <li><FaCheck /> {t('pricing.packages.pro.plus.0')}</li>
-                  <li><FaCheck /> {t('pricing.packages.pro.plus.1')}</li>
-                </FeatureList>
-                <Outcome><strong>{t('pricing.packages.outcomeLabel')}</strong> {t('pricing.packages.pro.outcome')}</Outcome>
-              </PricingCard>
+              {packages.map(pkg => (
+                <PricingCard
+                  key={pkg.key}
+                  $recommended={pkg.recommended}
+                  whileHover={{ y: pkg.recommended ? -6 : -4 }}
+                  transition={{ duration: 0.25 }}
+                >
+                  {pkg.recommended ? <Badge>{t('pricing.packages.badge')}</Badge> : null}
+                  <h3>{pkg.name}</h3>
+                  <p>{pkg.desc}</p>
+                  <Price>{pkg.price}</Price>
+                  <PriceMeta>{pkg.range}</PriceMeta>
+                  <CardGroupTitle>{t('pricing.packages.coreTitle')}</CardGroupTitle>
+                  <FeatureList>
+                    {pkg.core.map(item => (
+                      <li key={item}><FaCheck /> {item}</li>
+                    ))}
+                  </FeatureList>
+                  <CardGroupTitle>{t('pricing.packages.plusTitle')}</CardGroupTitle>
+                  <FeatureList>
+                    {pkg.plus.map(item => (
+                      <li key={item}><FaCheck /> {item}</li>
+                    ))}
+                  </FeatureList>
+                  <SubscriptionBox>
+                    <SubscriptionLabel>{t('pricing.packages.subscriptionTitle')}</SubscriptionLabel>
+                    <SubscriptionPrice>{pkg.subscriptionPrice}</SubscriptionPrice>
+                    <SubscriptionMeta>{pkg.subscriptionMeta}</SubscriptionMeta>
+                    <CardGroupTitle>{t('pricing.packages.subscriptionIncludesTitle')}</CardGroupTitle>
+                    <FeatureList>
+                      {pkg.subscriptionItems.map(item => (
+                        <li key={item}><FaCheck /> {item}</li>
+                      ))}
+                    </FeatureList>
+                  </SubscriptionBox>
+                  <Outcome><strong>{t('pricing.packages.outcomeLabel')}</strong> {pkg.outcome}</Outcome>
+                </PricingCard>
+              ))}
             </PricingGrid>
           </Section>
 
