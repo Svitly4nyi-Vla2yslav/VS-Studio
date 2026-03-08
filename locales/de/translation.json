@@ -1,17 +1,17 @@
 {
   "languages": {
     "de": "Deutsch",
-    "uk": "Українська",
+    "uk": "УкѬа�\u0014нс�Rка",
     "tr": "Türkçe",
-    "ar": "العربية",
+    "ar": "Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©",
     "pl": "Polski",
     "ku": "Kurmancî",
-    "fa": "فارسی",
+    "fa": "ÙØ§Ø±Ø³ÛŒ",
     "it": "Italiano",
     "es": "Español",
-    "el": "Ελληνικά",
-    "ro": "Română",
-    "bg": "Български"
+    "el": "Î•Î»Î»Î·Î½Î¹ÎºÎ¬",
+    "ro": "Rom�n\u0012",
+    "bg": "�\u0018�`лгаѬски"
   },
   "common": {
     "projectRequest": "Projekt anfragen",
@@ -20,15 +20,15 @@
   },
   "header": {
     "menu": "Menu",
-    "menuAria": "Navigationsmenü öffnen",
+    "menuAria": "NavigationsmenÒ�\u0019�\u001a¼ Ò�\u0019�\u001a¶ffnen",
     "services": "Services",
     "preise": "Preise",
     "referenzen": "Referenzen",
-    "ueberUns": "Über uns",
+    "ueberUns": "Ueber uns",
     "kontakt": "Kontakt"
   },
   "footer": {
-    "tagline": "VS Studio · Websites, Web-Apps, Ads & Automationen",
+    "tagline": "VS Studio Ò�a�\u001a· Websites, Web-Apps, Ads & Automationen",
     "impressum": "Impressum",
     "datenschutz": "Datenschutz",
     "agb": "AGB",
@@ -43,7 +43,7 @@
     "settings": "Einstellungen",
     "acceptAll": "Alle akzeptieren",
     "modalTitle": "Datenschutz-Einstellungen",
-    "modalText": "Du kannst deine Einwilligung jederzeit in den Cookie-Einstellungen ändern.",
+    "modalText": "Du kannst deine Einwilligung jederzeit in den Cookie-Einstellungen Ò�\u0019�\u001a¤ndern.",
     "essential": "Essenzielle Cookies (immer aktiv)",
     "statistics": "Statistik (z. B. Reichweite, Nutzung)",
     "marketing": "Marketing (z. B. Social/Ads Tracking)",
@@ -51,29 +51,29 @@
   },
   "home": {
     "heroTitle": "Websites, die Anfragen bringen statt nur gut aussehen.",
-    "heroSubtitle": "Klare Positionierung, schnelle Umsetzung und transparente Pakete für lokale Dienstleister in Deutschland.",
+    "heroSubtitle": "Klare Positionierung, schnelle Umsetzung und transparente Pakete fÒ�\u0019�\u001a¼r lokale Dienstleister in Deutschland.",
     "toFaq": "Zum FAQ",
     "partnersTitle": "Highlights, Zielgruppen und Leistungen",
     "groups": {
       "highlights": "Highlights",
-      "forWhom": "Für wen",
+      "forWhom": "FÒ�\u0019�\u001a¼r wen",
       "services": "Leistungen"
     },
     "partners": {
       "fastLoad": {
         "title": "Schnell geladen",
-        "desc": "Seite lädt in Sekunden"
+        "desc": "Seite lÒ�\u0019�\u001a¤dt in Sekunden"
       },
       "moreLeads": {
         "title": "Mehr Anfragen",
-        "desc": "Mehr Kontakte über Formulare"
+        "desc": "Mehr Kontakte Ò�\u0019�\u001a¼ber Formulare"
       },
       "clearPrices": {
         "title": "Klare Preise",
         "desc": "Du kennst Kosten im Voraus"
       },
       "personalHelp": {
-        "title": "Persönliche Hilfe",
+        "title": "PersÒ�\u0019�\u001a¶nliche Hilfe",
         "desc": "Direkter Support ohne Warteschlange"
       },
       "handwerker": {
@@ -85,7 +85,7 @@
         "desc": "Patienten finden schneller Termine"
       },
       "werkstaetten": {
-        "title": "Werkstätten",
+        "title": "WerkstÒ�\u0019�\u001a¤tten",
         "desc": "Klare Service-Seiten mit Tracking"
       },
       "localServices": {
@@ -98,11 +98,11 @@
       },
       "webApps": {
         "title": "Web-Apps",
-        "desc": "Tools für Team und Kunden"
+        "desc": "Tools fÒ�\u0019�\u001a¼r Team und Kunden"
       },
       "aiIntegration": {
         "title": "AI Integration",
-        "desc": "Chatbot für Fragen und Leads"
+        "desc": "Chatbot fÒ�\u0019�\u001a¼r Fragen und Leads"
       },
       "socialMedia": {
         "title": "Social Media",
@@ -119,16 +119,16 @@
     "trustDesc3": "durchschnittliche Ladezeit auf Mobil.",
     "faqTitle": "FAQ",
     "faq": {
-      "q1": "Wie schnell könnt ihr starten?",
+      "q1": "Wie schnell kÒ�\u0019�\u001a¶nnt ihr starten?",
       "a1": "In der Regel starten wir innerhalb von 3-5 Werktagen. Direkt nach deiner Anfrage bekommst du einen kurzen Plan mit den ersten Schritten.",
       "q2": "Was brauche ich als Kunde am Anfang?",
-      "a2": "Nur Basisinfos zu deinem Angebot, Zielgruppe und Kontaktwegen. Wir helfen dir dann bei Struktur, Texten und Prioritäten.",
-      "q3": "Wie läuft die Zusammenarbeit ab?",
-      "a3": "Wir arbeiten in kurzen Etappen: Konzept, Design, Umsetzung, Launch. Du bekommst klare Updates, damit du immer weißt, was als Nächstes passiert.",
-      "q4": "Ist das für kleine Unternehmen geeignet?",
-      "a4": "Ja. Unsere Pakete sind bewusst für lokale Betriebe aufgebaut: klare Preise, schneller Start und Fokus auf echte Anfragen statt nur Optik.",
+      "a2": "Nur Basisinfos zu deinem Angebot, Zielgruppe und Kontaktwegen. Wir helfen dir dann bei Struktur, Texten und PrioritÒ�\u0019�\u001a¤ten.",
+      "q3": "Wie lÒ�\u0019�\u001a¤uft die Zusammenarbeit ab?",
+      "a3": "Wir arbeiten in kurzen Etappen: Konzept, Design, Umsetzung, Launch. Du bekommst klare Updates, damit du immer weiÒ�\u0019�&¸t, was als NÒ�\u0019�\u001a¤chstes passiert.",
+      "q4": "Ist das fÒ�\u0019�\u001a¼r kleine Unternehmen geeignet?",
+      "a4": "Ja. Unsere Pakete sind bewusst fÒ�\u0019�\u001a¼r lokale Betriebe aufgebaut: klare Preise, schneller Start und Fokus auf echte Anfragen statt nur Optik.",
       "q5": "Was passiert nach dem Launch?",
-      "a5": "Nach dem Launch prüfen wir Daten, verbessern Conversion-Punkte und unterstützen dich beim Feinschliff, damit die Seite dauerhaft besser performt.",
+      "a5": "Nach dem Launch prÒ�\u0019�\u001a¼fen wir Daten, verbessern Conversion-Punkte und unterstÒ�\u0019�\u001a¼tzen dich beim Feinschliff, damit die Seite dauerhaft besser performt.",
       "desc": "Antworten auf häufige Fragen zu Timing, Kosten, Launch-Prozess und laufender Betreuung."
     },
     "hero": {
@@ -363,11 +363,11 @@
   },
   "services": {
     "h1": "Leistungen mit klarem Ergebnis und realistischem Zeitplan.",
-    "subtitle": "Einfach erklärt: Was wir machen, wie lange es dauert und welchen Nutzen Ihr Betrieb konkret bekommt.",
+    "subtitle": "Einfach erklÒ�\u0019�\u001a¤rt: Was wir machen, wie lange es dauert und welchen Nutzen Ihr Betrieb konkret bekommt.",
     "cards": {
       "websites": {
         "title": "Websites",
-        "desc": "Wir bauen eine schnelle Website, die Ihre Leistungen klar zeigt und Kunden direkt zur Anfrage führt."
+        "desc": "Wir bauen eine schnelle Website, die Ihre Leistungen klar zeigt und Kunden direkt zur Anfrage fÒ�\u0019�\u001a¼hrt."
       },
       "webAppsAi": {
         "title": "Automatisierung und KI",
@@ -375,11 +375,11 @@
       },
       "ads": {
         "title": "Werbung und klare Auswertung",
-        "desc": "Wir schalten Werbung und zeigen verständlich: wie viele Anfragen kamen rein, was ein Lead kostet und was wir verbessern."
+        "desc": "Wir schalten Werbung und zeigen verstÒ�\u0019�\u001a¤ndlich: wie viele Anfragen kamen rein, was ein Lead kostet und was wir verbessern."
       },
       "social": {
         "title": "Social Media und Kontaktwege",
-        "desc": "Wir verbinden Website mit Instagram/Facebook und Messenger, damit Kunden Sie schnell schreiben oder anrufen können."
+        "desc": "Wir verbinden Website mit Instagram/Facebook und Messenger, damit Kunden Sie schnell schreiben oder anrufen kÒ�\u0019�\u001a¶nnen."
       }
     },
     "deliverablesTitle": "Was Sie bekommen",
@@ -389,11 +389,11 @@
       "i3": "Technische Umsetzung mit schneller Ladezeit",
       "i4": "Formulare, Tracking und klare Auswertung der Anfragen"
     },
-    "aiSocialAdsTitle": "KI, Social Media und Werbung einfach erklärt",
+    "aiSocialAdsTitle": "KI, Social Media und Werbung einfach erklÒ�\u0019�\u001a¤rt",
     "aiCards": {
       "ai": {
         "title": "KI-Integration",
-        "desc": "Wir ergänzen Chatbot oder Auto-Antworten, damit Interessenten schnell Rückmeldung bekommen, auch außerhalb der Öffnungszeiten."
+        "desc": "Wir erg��\u0019�\u001a�nzen Chatbot oder Auto-Antworten, damit Interessenten schnell R��\u0019�\u001a�ckmeldung bekommen, auch au��\u0019�&�erhalb der ��\u0019��\u001a��Sffnungszeiten."
       },
       "social": {
         "title": "Social Media",
@@ -438,30 +438,30 @@
       }
     },
     "packages": {
-      "title": "Pricing Pakete",
+      "title": "Preis Pakete",
       "badge": "Empfohlen",
       "billing": {
         "monthly": "Monat",
         "yearly": "Jahr"
       },
-      "coreTitle": "Core",
-      "plusTitle": "Plus",
+      "coreTitle": "Basis",
+      "plusTitle": "Extra",
       "subscriptionTitle": "Support Abo",
       "subscriptionIncludesTitle": "Enthalten",
-      "outcomeLabel": "Result:",
+      "outcomeLabel": "Ergebnis:",
       "starter": {
         "name": "Starter",
-        "desc": "For small local businesses with fast start.",
-        "price": "from EUR 690",
-        "range": "typical EUR 690-790",
+        "desc": "Fuer kleine lokale Unternehmen mit schnellem Start.",
+        "price": "ab EUR 690",
+        "range": "meist EUR 690-790",
         "core": [
-          "Landing Page",
-          "Lead Form + Contact Form",
-          "GA4 + Basic SEO Setup"
+          "Landingpage",
+          "Lead-Formular + Kontaktformular",
+          "GA4 + Basis-SEO Setup"
         ],
         "plus": [
-          "Mobile Optimization",
-          "Basic DSGVO Tracking"
+          "Mobile Optimierung",
+          "Basis DSGVO Tracking"
         ],
         "subscription": {
           "monthly": {
@@ -478,21 +478,21 @@
             "Bis zu 1 Block fuer Aenderungen oder Updates pro Monat"
           ]
         },
-        "outcome": "Stable channel for first qualified requests."
+        "outcome": "Stabiler Kanal fuer erste qualifizierte Anfragen."
       },
       "business": {
         "name": "Business",
-        "desc": "For teams with multiple services and active sales.",
-        "price": "from EUR 1.290",
-        "range": "typical EUR 1.290-1.490",
+        "desc": "Fuer Teams mit mehreren Leistungen und aktivem Vertrieb.",
+        "price": "ab EUR 1.290",
+        "range": "meist EUR 1.290-1.490",
         "core": [
-          "Multi-page Website up to 5 pages",
+          "Mehrseitige Website bis zu 5 Seiten",
           "CRM Integration + Lead Tracking",
           "Analytics Dashboard"
         ],
         "plus": [
-          "SEO Structure by Service",
-          "Conversion Optimization"
+          "SEO Struktur nach Leistungen",
+          "Conversion Optimierung"
         ],
         "subscription": {
           "monthly": {
@@ -506,23 +506,23 @@
           "includes": [
             "Regelmaessige Updates fuer Inhalte und Seiten",
             "Kontrolle von CRM, Lead Tracking und Dashboard",
-            "Bis zu 2 Aufgaben pro Monat fuer Conversion-Optimierung"
+            "Bis zu 2 Aufgaben pro Monat fuer Conversion Optimierung"
           ]
         },
-        "outcome": "Predictable lead pipeline with clear reporting."
+        "outcome": "Planbarer Lead-Flow mit klarer Auswertung."
       },
       "pro": {
         "name": "Pro",
-        "desc": "For growth with website, ads and automation.",
-        "price": "from EUR 2.490",
-        "range": "typical EUR 2.490-2.990",
+        "desc": "Fuer Wachstum mit Website, Ads und Automatisierung.",
+        "price": "ab EUR 2.490",
+        "range": "meist EUR 2.490-2.990",
         "core": [
           "Website + Ads Setup",
-          "Google Ads or Meta Ads",
+          "Google Ads oder Meta Ads",
           "Marketing Dashboard + Tracking"
         ],
         "plus": [
-          "AI Lead Qualification",
+          "AI Lead Qualifizierung",
           "Automation Flows"
         ],
         "subscription": {
@@ -536,11 +536,11 @@
           },
           "includes": [
             "Woechentliche Kontrolle von Website, Ads und Automation Flows",
-            "Optimierung von CPL, Funnel und Lead Qualification",
+            "Optimierung von CPL, Funnel und Lead Qualifizierung",
             "Bis zu 4 Growth-Aufgaben pro Monat plus priorisierter Support"
           ]
         },
-        "outcome": "More demand with controlled cost per lead."
+        "outcome": "Mehr Nachfrage mit kontrollierten Kosten pro Lead."
       }
     },
     "comparison": {
@@ -587,16 +587,16 @@
     "h1": "Referenzen mit messbarem Wachstum.",
     "subtitle": "Wir zeigen klar, was gestiegen ist: Anfragen, Buchungen, Anrufe und Leads.",
     "trustline": "Alle Kennzahlen mit Kontext: Zeitraum und Messung.",
-    "filterTitle": "Nische auswählen",
+    "filterTitle": "Nische auswÒ�\u0019�\u001a¤hlen",
     "filterAria": "Nischenfilter",
     "counter": "{{count}} passende Cases",
     "growthByNiche": "Wachstum nach Branche",
-    "selectedCases": "Ausgewählte Cases",
+    "selectedCases": "AusgewÒ�\u0019�\u001a¤hlte Cases",
     "challengeLabel": "Ausgangslage",
     "solutionLabel": "Umsetzung",
     "periodLabel": "Zeitraum",
     "measurementLabel": "Messung",
-    "emptyTitle": "Für diese Nische folgt der nächste Case.",
+    "emptyTitle": "FÒ�\u0019�\u001a¼r diese Nische folgt der nÒ�\u0019�\u001a¤chste Case.",
     "emptyText": "Wir zeigen nur Cases mit belastbarer Messung und klarem Zeitraum.",
     "beforeAfter": "Vorher / Nachher",
     "before": "Vorher",
@@ -605,9 +605,9 @@
     "afterAlt": "Nachher-Ansicht des Cases",
     "sliderAria": "Vorher Nachher Vergleich verschieben",
     "sliderHint": "Zum Vergleichen ziehen.",
-    "ctaTitle": "Sie wollen ähnliche Ergebnisse?",
+    "ctaTitle": "Sie wollen Ò�\u0019�\u001a¤hnliche Ergebnisse?",
     "ctaText": "Wir analysieren Ihre Ausgangslage und zeigen einen realistischen 30-90-Tage-Plan.",
-    "cta": "Ähnliches Projekt anfragen",
+    "cta": "��\u0019��\u001a�~hnliches Projekt anfragen",
     "filters": {
       "all": "Alle"
     },
@@ -632,7 +632,7 @@
       "moreReservations": "Mehr Reservierungen",
       "moreBookings": "Mehr Buchungen",
       "moreLeads": "Mehr Leads",
-      "moreIntroCalls": "Mehr Erstgespräche",
+      "moreIntroCalls": "Mehr ErstgesprÒ�\u0019�\u001a¤che",
       "moreTrialSessions": "Mehr Probetrainings",
       "moreOffers": "Mehr Angebotsanfragen",
       "moreQualifiedLeads": "Mehr qualifizierte Leads",
@@ -645,19 +645,19 @@
     },
     "cases": {
       "c1": {
-        "title": "Sanitärbetrieb (Region Hannover)",
+        "title": "SanitÒ�\u0019�\u001a¤rbetrieb (Region Hannover)",
         "challenge": "Zu wenig Anfragen trotz guter Reichweite.",
         "solution": "Leistungsseiten neu strukturiert, CTA optimiert, Kontakttracking aktiviert."
       },
       "c2": {
         "title": "Physiopraxis (Hildesheim)",
-        "challenge": "Zu wenige Online-Terminwünsche.",
+        "challenge": "Zu wenige Online-TerminwÒ�\u0019�\u001a¼nsche.",
         "solution": "Termin-Flow vereinfacht, mobile Seiten beschleunigt, Kontaktwege klar definiert."
       },
       "c3": {
         "title": "Karosserie-Werkstatt (Raum Harburg)",
-        "challenge": "Viele Kontakte, aber zu wenig passende Aufträge.",
-        "solution": "Lead-Qualifizierung im Formular und servicebezogene Landingpage eingeführt."
+        "challenge": "Viele Kontakte, aber zu wenig passende AuftrÒ�\u0019�\u001a¤ge.",
+        "solution": "Lead-Qualifizierung im Formular und servicebezogene Landingpage eingefÒ�\u0019�\u001a¼hrt."
       },
       "c4": {
         "title": "Restaurant (Niedersachsen)",
@@ -665,14 +665,14 @@
         "solution": "Reservierungsstrecke vereinfacht, lokale Kampagnen neu aufgesetzt."
       },
       "c5": {
-        "title": "Maklerbüro (Niedersachsen)",
-        "challenge": "Zu wenig qualifizierte Eigentümer-Leads.",
+        "title": "MaklerbÒ�\u0019�\u001a¼ro (Niedersachsen)",
+        "challenge": "Zu wenig qualifizierte EigentÒ�\u0019�\u001a¼mer-Leads.",
         "solution": "Objektseiten nach Suchintention aufgebaut und Anfrageweg gestrafft."
       },
       "c6": {
         "title": "Steuerkanzlei (Region Hannover)",
         "challenge": "Geringe Conversion auf Leistungsseiten.",
-        "solution": "Seiteninhalte vereinfacht, Vertrauenstexte ergänzt, Erstkontakt klar hervorgehoben."
+        "solution": "Seiteninhalte vereinfacht, Vertrauenstexte ergÒ�\u0019�\u001a¤nzt, Erstkontakt klar hervorgehoben."
       }
     },
     "performanceDashboard": "Performance-Dashboard",
@@ -698,20 +698,20 @@
     "daysUnit": "Tage"
   },
   "about": {
-    "h1": "Über uns",
+    "h1": "Ò�\u0019�&�Sber uns",
     "subtitle": "Wir erstellen Websites und Automationen, die lokalen Unternehmen messbar mehr Anfragen bringen.",
-    "photoPlaceholder": "Foto: Porträt des Gründers von VS Web Studio (Vladyslav)",
-    "photoCaption": "Vladyslav, Gründer von VS Web Studio. Hildesheim.",
+    "photoPlaceholder": "Foto: PortrÒ�\u0019�\u001a¤t des GrÒ�\u0019�\u001a¼nders von VS Web Studio (Vladyslav)",
+    "photoCaption": "Vladyslav, GrÒ�\u0019�\u001a¼nder von VS Web Studio. Hildesheim.",
     "photoAlt": "Vladyslav, Webentwickler von VS Web Studio aus Hildesheim",
     "geo": {
       "local": "Wir arbeiten hier: Hildesheim",
       "region": "Hauptregion: Niedersachsen",
-      "country": "Möglich: ganz Deutschland"
+      "country": "MÒ�\u0019�\u001a¶glich: ganz Deutschland"
     },
-    "intro1": "Ich bin Vladyslav, Gründer von VS Web Studio. Ich arbeite aus Hildesheim und unterstütze zuerst Unternehmen direkt in der Stadt und Umgebung. Zusätzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
-    "intro2": "Mein Ziel ist einfach: nicht nur eine schöne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
-    "intro3": "Wir sind ein kleines Team mit bewährten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnötige Bürokratie, und bringen Projekte bis zum Ergebnis.",
-    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes Verständnis für den Markt vor Ort.",
+    "intro1": "Ich bin Vladyslav, GrÒ�\u0019�\u001a¼nder von VS Web Studio. Ich arbeite aus Hildesheim und unterstÒ�\u0019�\u001a¼tze zuerst Unternehmen direkt in der Stadt und Umgebung. ZusÒ�\u0019�\u001a¤tzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
+    "intro2": "Mein Ziel ist einfach: nicht nur eine schÒ�\u0019�\u001a¶ne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
+    "intro3": "Wir sind ein kleines Team mit bewÒ�\u0019�\u001a¤hrten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnÒ�\u0019�\u001a¶tige BÒ�\u0019�\u001a¼rokratie, und bringen Projekte bis zum Ergebnis.",
+    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes VerstÒ�\u0019�\u001a¤ndnis fÒ�\u0019�\u001a¼r den Markt vor Ort.",
     "miniFactsTitle": "Was wir konkret machen",
     "miniFacts": {
       "i1": "Klare Schritte ohne Fachchinesisch",
@@ -721,7 +721,7 @@
     "cards": {
       "work": {
         "title": "Wie wir arbeiten",
-        "desc": "Kurze Schritte, klare Verantwortung, realistische Deadlines. Ablauf: Briefing → Struktur → Design → Entwicklung → Launch → Verbesserung."
+        "desc": "Kurze Schritte, klare Verantwortung, realistische Deadlines. Ablauf: Briefing Ң��\u001a����\u001a��\u001e� Struktur Ң��\u001a����\u001a��\u001e� Design Ң��\u001a����\u001a��\u001e� Entwicklung Ң��\u001a����\u001a��\u001e� Launch Ң��\u001a����\u001a��\u001e� Verbesserung."
       },
       "ai": {
         "title": "KI-Ansatz",
@@ -737,15 +737,15 @@
       "i1": "Eine schnelle Website, die auf dem Smartphone sauber funktioniert",
       "i2": "Klare Seitenstruktur mit starken CTA-Elementen",
       "i3": "Eingerichtetes Tracking, damit Sie die Quellen Ihrer Anfragen sehen",
-      "i4": "Automationen, die Zeit sparen und die Conversion erhöhen"
+      "i4": "Automationen, die Zeit sparen und die Conversion erhÒ�\u0019�\u001a¶hen"
     },
     "contactTitle": "Kontakt",
-    "contactText": "Schreiben Sie uns, welches Geschäft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
+    "contactText": "Schreiben Sie uns, welches GeschÒ�\u0019�\u001a¤ft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
     "contactButton": "Projekt anfragen",
     "ctaTitle": "Kontakt"
   },
   "contact": {
-    "h1": "Kontakt",
+    "h1": "Kontakt & Anfrage fuer dein Projekt",
     "responseTime": "Antwortzeit aktuell:",
     "quickContacts": "Schnelle Kontakte",
     "form": {
@@ -762,54 +762,54 @@
       "c1": "AI-Workflows im Website Funnel",
       "c2": "Social-Prozesse ohne Chaos",
       "c3": "Social Ads mit sauberem Tracking",
-      "c4": "Automationen für Erstkontakt"
+      "c4": "Automationen fÒ�\u0019�\u001a¼r Erstkontakt"
     },
     "leadMagnet": "Lead Magnet",
-    "emailPlaceholder": "E-Mail für den Guide",
+    "emailPlaceholder": "E-Mail fÒ�\u0019�\u001a¼r den Guide",
     "getGuide": "Guide erhalten"
   },
   "niche": {
     "handwerker": {
-      "h1": "Websites für Handwerker: mehr passende Anfragen.",
+      "h1": "Websites fÒ�\u0019�\u001a¼r Handwerker: mehr passende Anfragen.",
       "p": "Klare Leistungen, lokale Sichtbarkeit, einfache Kontaktwege."
     },
     "praxis": {
-      "h1": "Websites für Praxen: weniger Rückfragen, mehr Terminanfragen.",
+      "h1": "Websites fÒ�\u0019�\u001a¼r Praxen: weniger RÒ�\u0019�\u001a¼ckfragen, mehr Terminanfragen.",
       "p": "Patientenfreundliche Struktur und klarer Online-Erstkontakt."
     },
     "werkstatt": {
-      "h1": "Websites für Werkstätten: planbare Leads statt Zufall.",
+      "h1": "Websites fÒ�\u0019�\u001a¼r WerkstÒ�\u0019�\u001a¤tten: planbare Leads statt Zufall.",
       "p": "Service-orientierte Seiten mit messbarer Conversion."
     }
   },
   "legal": {
     "impressum": {
       "h1": "Impressum",
-      "subtitle": "Angaben gemäß § 5 TMG.",
+      "subtitle": "Angaben gemÒ�\u0019�\u001a¤Ò�\u0019�&¸ Ò�a�\u001a§ 5 TMG.",
       "l1": "VS Studio",
-      "l2": "Musterstraße 10, 10115 Berlin, Deutschland",
+      "l2": "MusterstraÒ�\u0019�&¸e 10, 10115 Berlin, Deutschland",
       "l3": "E-Mail: kontakt@vs-web-studio.de",
       "l4": "Telefon: +49 30 1234567",
       "l5": "Vertreten durch: Vladyslav"
     },
     "datenschutz": {
-      "h1": "Datenschutzerklärung",
+      "h1": "DatenschutzerklÒ�\u0019�\u001a¤rung",
       "subtitle": "Kurzinformation zur Verarbeitung personenbezogener Daten.",
       "l1": "Wir verarbeiten Daten nur zweckgebunden (Kontaktanfragen, Angebotserstellung, Statistik).",
       "l2": "Rechtsgrundlagen: Art. 6 Abs. 1 lit. b und f DSGVO.",
-      "l3": "Betroffene Rechte: Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch.",
-      "l4": "Kontakt für Datenschutz: datenschutz@vs-web-studio.de"
+      "l3": "Betroffene Rechte: Auskunft, Berichtigung, LÒ�\u0019�\u001a¶schung, EinschrÒ�\u0019�\u001a¤nkung, Widerspruch.",
+      "l4": "Kontakt fÒ�\u0019�\u001a¼r Datenschutz: datenschutz@vs-web-studio.de"
     },
     "agb": {
       "h1": "AGB",
-      "subtitle": "Optionale allgemeine Geschäftsbedingungen.",
-      "l1": "Leistungen werden gemäß Angebot und vereinbartem Umfang erbracht.",
-      "l2": "Zahlungsbedingungen, Nutzungsrechte und Gewährleistung richten sich nach dem Vertrag."
+      "subtitle": "Optionale allgemeine GeschÒ�\u0019�\u001a¤ftsbedingungen.",
+      "l1": "Leistungen werden gemÒ�\u0019�\u001a¤Ò�\u0019�&¸ Angebot und vereinbartem Umfang erbracht.",
+      "l2": "Zahlungsbedingungen, Nutzungsrechte und GewÒ�\u0019�\u001a¤hrleistung richten sich nach dem Vertrag."
     },
     "cookies": {
       "h1": "Cookie-Hinweise",
       "subtitle": "Informationen zu eingesetzten Cookies und Messdiensten.",
-      "l1": "Technisch notwendige Cookies sichern die Funktionalität der Website.",
+      "l1": "Technisch notwendige Cookies sichern die FunktionalitÒ�\u0019�\u001a¤t der Website.",
       "l2": "Optionale Analyse-Cookies helfen bei der Optimierung von Inhalten und Kampagnen."
     }
   },
@@ -827,6 +827,142 @@
     "form": {
       "success": "Danke fuer dein Feedback!",
       "error": "Feedback konnte nicht gesendet werden."
+    }
+  },
+  "aboutPage": {
+    "heroEyebrow": "VS Studio | Hildesheim | Niedersachsen | Deutschland",
+    "heroTitleLine1": "Websites und",
+    "heroTitleLine2": "Lead-Systeme",
+    "heroTitleLine3": "fuer lokale Unternehmen",
+    "heroTitleLine4": "in Hildesheim",
+    "heroSubtitle": "Mehr qualifizierte Anfragen durch schnelle Websites, klare Kontaktwege und messbares Marketing.",
+    "heroTrustline": "Lokal in Hildesheim. Strategisch in Niedersachsen. Umsetzbar in ganz Deutschland.",
+    "primaryCta": "Kostenlose Website-Analyse",
+    "section": {
+      "about": "About",
+      "localAdvantages": "Lokale Vorteile",
+      "how": "How we work",
+      "value": "Value",
+      "trust": "Trust"
+    },
+    "blocks": {
+      "who": {
+        "title": "Fuer lokale Unternehmen",
+        "text": "Websites, Lead-Systeme und Marketing fuer Betriebe, die planbar mehr Anfragen wollen."
+      },
+      "focus": {
+        "title": "Ein System statt Einzelloesungen",
+        "text": "Website, Kontaktwege, Kampagnen und Tracking greifen als ein klarer Prozess zusammen."
+      },
+      "locality": {
+        "title": "Lokale Naehe als Vorteil",
+        "subtitle": "Schnelle Abstimmung, klare Prioritaeten und messbare Ergebnisse.",
+        "text1": "Wir arbeiten direkt mit lokalen Unternehmen zusammen - ohne lange Agenturketten und unnoetige Buerokratie.",
+        "i1": "Direkte Kommunikation ohne Umwege",
+        "i2": "Schnelle Umsetzung statt langer Abstimmungen",
+        "i3": "Verstaendnis fuer lokale Maerkte und Budgets",
+        "text2": "Unsere Kunden profitieren davon, dass Entscheidungen schneller getroffen werden und Projekte nicht wochenlang in Abstimmungsschleifen haengen bleiben.",
+        "text3": "Das spart Zeit, reduziert Kosten und sorgt dafuer, dass Marketingmassnahmen schneller Ergebnisse liefern.",
+        "text4": "Wir kennen die Realitaet kleiner und mittelstaendischer Unternehmen: begrenzte Budgets, wenig Zeit und den Wunsch nach klaren Resultaten statt komplizierten Konzepten.",
+        "text5": "Deshalb arbeiten wir pragmatisch und strukturiert - von der ersten Analyse ueber die Umsetzung bis zur kontinuierlichen Optimierung."
+      }
+    },
+    "photoAlt": "Vladyslav, Gruender von VS Web Studio aus Hildesheim",
+    "photoCaption": "Vladyslav - Gruender von VS Web Studio",
+    "photoFacts": {
+      "f1": "Fokus: lokale Unternehmen",
+      "f2": "Standort: Hildesheim",
+      "f3": "Projekte: deutschlandweit"
+    },
+    "geo": {
+      "local": "Hildesheim",
+      "region": "Niedersachsen",
+      "country": "Deutschlandweit"
+    },
+    "localPriority": "Kurze Wege. Klare Prioritaeten. Fokus auf Ergebnisse.",
+    "how": {
+      "s1": {
+        "title": "1. Verstehen",
+        "text": "Zielgruppe, Angebot und Markt analysieren."
+      },
+      "s2": {
+        "title": "2. Umsetzen",
+        "text": "Website, Lead-System und Kampagnen starten."
+      },
+      "s3": {
+        "title": "3. Optimieren",
+        "text": "Daten analysieren und Ergebnisse verbessern."
+      }
+    },
+    "cards": {
+      "work": {
+        "title": "Klare Prozesse",
+        "desc": "Kurze Wege. Klare Verantwortung."
+      },
+      "ai": {
+        "title": "AI First",
+        "desc": "Automatisierung dort, wo sie Zeit spart."
+      },
+      "leads": {
+        "title": "Lead Fokus",
+        "desc": "Design und Marketing arbeiten zusammen."
+      }
+    },
+    "results": {
+      "title": "Was Kunden erhalten",
+      "i1": "Schnelle Website, die auf jedem Smartphone laedt",
+      "i2": "Klare Kontaktwege: Anruf, Formular, Termin",
+      "i3": "Messbare Anfragen mit Tracking und Marketing-Daten"
+    },
+    "trust": {
+      "projects": {
+        "label": "Anzahl Projekte",
+        "value": "120+",
+        "text": "Websites, Lead-Funnels und Relaunches."
+      },
+      "industries": {
+        "label": "Branchen",
+        "value": "12",
+        "text": "Handwerk, Praxen, Gastronomie, Beauty, Bildung und lokale Dienstleistungen."
+      },
+      "focus": {
+        "label": "Fokus",
+        "value": "Lokal + Messbar",
+        "text": "Hildesheim, Niedersachsen und Deutschland mit klarem Lead-Fokus."
+      }
+    },
+    "cta": {
+      "title": "Bereit fuer planbare Anfragen?",
+      "text": "Im kostenlosen Erstgespraech zeigen wir die groessten Hebel fuer Ihre Website, Lead-Prozesse und Werbung."
+    },
+    "visual": {
+      "productBadge": "Lead System",
+      "flowLabel": "Flow",
+      "flowValue": "Before zu System zu Result",
+      "before": {
+        "label": "Before",
+        "title": "Viele Klicks, wenig Klarheit",
+        "i1": "Langsame Seiten",
+        "i2": "Unklare Kontaktwege",
+        "i3": "Keine sauberen Daten"
+      },
+      "system": {
+        "label": "System",
+        "phoneBadge": "Website",
+        "cta": "Termin anfragen",
+        "pill1": "Website",
+        "pill2": "Kontaktwege",
+        "pill3": "Tracking"
+      },
+      "result": {
+        "label": "Result",
+        "title": "Qualifizierte Anfragen",
+        "text": "Messbar, schneller beantwortbar und klar im Funnel sichtbar."
+      },
+      "anchor": {
+        "label": "Ergebnis",
+        "value": "Mehr qualifizierte Anfragen statt nur Website-Traffic"
+      }
     }
   }
 }

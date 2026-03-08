@@ -10,31 +10,31 @@
     "it": "Italiano",
     "es": "Español",
     "el": "Ελληνικά",
-    "ro": "Română",
+    "ro": "Rom�n\u0003",
     "bg": "Български"
   },
   "common": {
-    "projectRequest": "Поискайте проект",
-    "viewPrices": "Вижте цените",
-    "cancel": "Отказ"
+    "projectRequest": "�xои�\u0018�кай�\u0018�aе п�\u0018�\u001a�оек�\u0018�a",
+    "viewPrices": "��\"иж�\u0018�aе �\u0018 ени�\u0018�aе",
+    "cancel": "�~�\u0018�aказ"
   },
   "header": {
-    "menu": "Меню",
-    "menuAria": "Отворете менюто за навигация",
-    "services": "Услуги",
-    "preise": "цени",
-    "referenzen": "Референции",
-    "ueberUns": "За нас",
-    "kontakt": "Контакт"
+    "menu": "��\u001cен�\u0018}",
+    "menuAria": "�~�\u0018�aво�\u0018�\u001a�е�\u0018�aе мен�\u0018}�\u0018�aо за навига�\u0018 и�\u0018�",
+    "services": "У�\u0018�л�\u0018�\u0019ги",
+    "preise": "�\u0018 ени",
+    "referenzen": "Ре�\u0018�~е�\u0018�\u001a�ен�\u0018 ии",
+    "ueberUns": "��\u001dа на�\u0018�",
+    "kontakt": "�aон�\u0018�aак�\u0018�a"
   },
   "footer": {
-    "tagline": "VS Studio · Уеб сайтове, уеб приложения, реклами и автоматизации",
-    "impressum": "Отпечатък",
-    "datenschutz": "Защита на данните",
-    "agb": "Правила и условия",
-    "cookies": "бисквитки",
-    "cookieSettings": "Настройки за бисквитки",
-    "blog": "Блог"
+    "tagline": "VS Studio �\u001a� Уеб �\u0018�ай�\u0018�aове, �\u0018�\u0019еб п�\u0018�\u001a�иложени�\u0018�, �\u0018�\u001a�еклами и ав�\u0018�aома�\u0018�aиза�\u0018 ии",
+    "impressum": "�~�\u0018�aпе�\u0018!а�\u0018�a�\u0018`к",
+    "datenschutz": "��\u001dа�\u00180и�\u0018�aа на данни�\u0018�aе",
+    "agb": "�x�\u0018�\u001a�авила и �\u0018�\u0019�\u0018�лови�\u0018�",
+    "cookies": "би�\u0018�кви�\u0018�aки",
+    "cookieSettings": "На�\u0018��\u0018�a�\u0018�\u001a�ойки за би�\u0018�кви�\u0018�aки",
+    "blog": "���лог"
   },
   "cookie": {
     "aria": "Cookie-Einwilligung",
@@ -43,320 +43,320 @@
     "settings": "Einstellungen",
     "acceptAll": "Alle akzeptieren",
     "modalTitle": "Datenschutz-Einstellungen",
-    "modalText": "Du kannst deine Einwilligung jederzeit in den Cookie-Einstellungen ändern.",
+    "modalText": "Du kannst deine Einwilligung jederzeit in den Cookie-Einstellungen Ò¤ndern.",
     "essential": "Essenzielle Cookies (immer aktiv)",
     "statistics": "Statistik (z. B. Reichweite, Nutzung)",
     "marketing": "Marketing (z. B. Social/Ads Tracking)",
     "saveSelection": "Auswahl speichern"
   },
   "home": {
-    "heroTitle": "Уебсайтове, които водят до запитвания, вместо просто да изглеждат добре.",
-    "heroSubtitle": "Ясно позициониране, бързо внедряване и прозрачни пакети за местни доставчици на услуги в Германия.",
-    "toFaq": "Отидете на ЧЗВ",
-    "partnersTitle": "Акценти, целеви групи и услуги",
+    "heroTitle": "Уеб�\u0018�ай�\u0018�aове, кои�\u0018�aо вод�\u0018��\u0018�a до запи�\u0018�aвани�\u0018�, вме�\u0018��\u0018�aо п�\u0018�\u001a�о�\u0018��\u0018�aо да изглежда�\u0018�a доб�\u0018�\u001a�е.",
+    "heroSubtitle": "Я�\u0018�но пози�\u0018 иони�\u0018�\u001a�ане, б�\u0018`�\u0018�\u001a�зо внед�\u0018�\u001a��\u0018�ване и п�\u0018�\u001a�оз�\u0018�\u001a�а�\u0018!ни паке�\u0018�aи за ме�\u0018��\u0018�aни до�\u0018��\u0018�aав�\u0018!и�\u0018 и на �\u0018�\u0019�\u0018�л�\u0018�\u0019ги в ��Sе�\u0018�\u001a�мани�\u0018�.",
+    "toFaq": "�~�\u0018�aиде�\u0018�aе на Ч��\u001d��\"",
+    "partnersTitle": "Ак�\u0018 ен�\u0018�aи, �\u0018 елеви г�\u0018�\u001a��\u0018�\u0019пи и �\u0018�\u0019�\u0018�л�\u0018�\u0019ги",
     "groups": {
-      "highlights": "Акценти",
-      "forWhom": "За кого",
-      "services": "Услуги"
+      "highlights": "Ак�\u0018 ен�\u0018�aи",
+      "forWhom": "��\u001dа кого",
+      "services": "У�\u0018�л�\u0018�\u0019ги"
     },
     "partners": {
       "fastLoad": {
-        "title": "Зарежда се бързо",
-        "desc": "Страницата се зарежда за секунди"
+        "title": "��\u001dа�\u0018�\u001a�ежда �\u0018�е б�\u0018`�\u0018�\u001a�зо",
+        "desc": "С�\u0018�a�\u0018�\u001a�ани�\u0018 а�\u0018�aа �\u0018�е за�\u0018�\u001a�ежда за �\u0018�ек�\u0018�\u0019нди"
       },
       "moreLeads": {
-        "title": "Още запитвания",
-        "desc": "Още контакти чрез формуляри"
+        "title": "�~�\u00180е запи�\u0018�aвани�\u0018�",
+        "desc": "�~�\u00180е кон�\u0018�aак�\u0018�aи �\u0018!�\u0018�\u001a�ез �\u0018�~о�\u0018�\u001a�м�\u0018�\u0019л�\u0018��\u0018�\u001a�и"
       },
       "clearPrices": {
-        "title": "Ясни цени",
-        "desc": "Знаете разходите предварително"
+        "title": "Я�\u0018�ни �\u0018 ени",
+        "desc": "��\u001dнае�\u0018�aе �\u0018�\u001a�аз�\u0018&оди�\u0018�aе п�\u0018�\u001a�едва�\u0018�\u001a�и�\u0018�aелно"
       },
       "personalHelp": {
-        "title": "Лична помощ",
-        "desc": "Директна поддръжка без чакане на опашка"
+        "title": "�:и�\u0018!на помо�\u00180",
+        "desc": "�\u001dи�\u0018�\u001a�ек�\u0018�aна подд�\u0018�\u001a��\u0018`жка без �\u0018!акане на опа�\u0018� ка"
       },
       "handwerker": {
-        "title": "занаятчия",
-        "desc": "Заявки по град и услуга"
+        "title": "зана�\u0018��\u0018�a�\u0018!и�\u0018�",
+        "desc": "��\u001dа�\u0018�вки по г�\u0018�\u001a�ад и �\u0018�\u0019�\u0018�л�\u0018�\u0019га"
       },
       "praxen": {
-        "title": "практики",
-        "desc": "Пациентите намират час по-бързо"
+        "title": "п�\u0018�\u001a�ак�\u0018�aики",
+        "desc": "�xа�\u0018 иен�\u0018�aи�\u0018�aе нами�\u0018�\u001a�а�\u0018�a �\u0018!а�\u0018� по-б�\u0018`�\u0018�\u001a�зо"
       },
       "werkstaetten": {
-        "title": "работилници",
-        "desc": "Изчистване на служебните страници с проследяване"
+        "title": "�\u0018�\u001a�або�\u0018�aилни�\u0018 и",
+        "desc": "��Sз�\u0018!и�\u0018��\u0018�aване на �\u0018�л�\u0018�\u0019жебни�\u0018�aе �\u0018��\u0018�a�\u0018�\u001a�ани�\u0018 и �\u0018� п�\u0018�\u001a�о�\u0018�лед�\u0018�ване"
       },
       "localServices": {
-        "title": "Местни услуги",
-        "desc": "Повече видимост на сайта"
+        "title": "��\u001cе�\u0018��\u0018�aни �\u0018�\u0019�\u0018�л�\u0018�\u0019ги",
+        "desc": "�xове�\u0018!е видимо�\u0018��\u0018�a на �\u0018�ай�\u0018�aа"
       },
       "websites": {
-        "title": "уебсайтове",
-        "desc": "Модерен, бърз, оптимизиран за мобилни устройства"
+        "title": "�\u0018�\u0019еб�\u0018�ай�\u0018�aове",
+        "desc": "��\u001cоде�\u0018�\u001a�ен, б�\u0018`�\u0018�\u001a�з, оп�\u0018�aимизи�\u0018�\u001a�ан за мобилни �\u0018�\u0019�\u0018��\u0018�a�\u0018�\u001a�ой�\u0018��\u0018�aва"
       },
       "webApps": {
-        "title": "Уеб приложения",
-        "desc": "Инструменти за екип и клиенти"
+        "title": "Уеб п�\u0018�\u001a�иложени�\u0018�",
+        "desc": "��Sн�\u0018��\u0018�a�\u0018�\u001a��\u0018�\u0019мен�\u0018�aи за екип и клиен�\u0018�aи"
       },
       "aiIntegration": {
-        "title": "AI интеграция",
-        "desc": "Чатбот за въпроси и потенциални клиенти"
+        "title": "AI ин�\u0018�aег�\u0018�\u001a�а�\u0018 и�\u0018�",
+        "desc": "Ча�\u0018�aбо�\u0018�a за в�\u0018`п�\u0018�\u001a�о�\u0018�и и по�\u0018�aен�\u0018 иални клиен�\u0018�aи"
       },
       "socialMedia": {
-        "title": "Социални медии",
-        "desc": "Свързан уебсайт + Instagram/Meta"
+        "title": "Со�\u0018 иални медии",
+        "desc": "Св�\u0018`�\u0018�\u001a�зан �\u0018�\u0019еб�\u0018�ай�\u0018�a + Instagram/Meta"
       },
       "socialAds": {
-        "title": "Социални реклами",
-        "desc": "Целенасочена реклама с измерими резултати"
+        "title": "Со�\u0018 иални �\u0018�\u001a�еклами",
+        "desc": "Целена�\u0018�о�\u0018!ена �\u0018�\u001a�еклама �\u0018� изме�\u0018�\u001a�ими �\u0018�\u001a�ез�\u0018�\u0019л�\u0018�aа�\u0018�aи"
       }
     },
-    "trustTitle": "Доверие с конкретни резултати",
-    "trustDesc1": "още заявки за контакт за 60 дни.",
-    "trustDesc2": "по-ниска цена на потенциален клиент след корекция на проследяването.",
-    "trustDesc3": "средно време за зареждане на мобилно устройство.",
-    "faqTitle": "ЧЗВ",
+    "trustTitle": "�\u001dове�\u0018�\u001a�ие �\u0018� конк�\u0018�\u001a�е�\u0018�aни �\u0018�\u001a�ез�\u0018�\u0019л�\u0018�aа�\u0018�aи",
+    "trustDesc1": "о�\u00180е за�\u0018�вки за кон�\u0018�aак�\u0018�a за 60 дни.",
+    "trustDesc2": "по-ни�\u0018�ка �\u0018 ена на по�\u0018�aен�\u0018 иален клиен�\u0018�a �\u0018�лед ко�\u0018�\u001a�ек�\u0018 и�\u0018� на п�\u0018�\u001a�о�\u0018�лед�\u0018�ване�\u0018�aо.",
+    "trustDesc3": "�\u0018��\u0018�\u001a�едно в�\u0018�\u001a�еме за за�\u0018�\u001a�еждане на мобилно �\u0018�\u0019�\u0018��\u0018�a�\u0018�\u001a�ой�\u0018��\u0018�aво.",
+    "faqTitle": "Ч��\u001d��\"",
     "faq": {
-      "q1": "Колко бързо можете да започнете?",
-      "a1": "Обикновено започваме в рамките на 3-5 работни дни. Веднага след вашата заявка ще получите кратък план с първите стъпки.",
-      "q2": "От какво се нуждая като клиент в началото?",
-      "a2": "Само основна информация за вашата оферта, целева група и канали за контакт. След това ще ви помогнем със структурата, текстовете и приоритетите.",
-      "q3": "Как работи сътрудничеството?",
-      "a3": "Работим на кратки етапи: концепция, дизайн, реализация, стартиране. Ще получавате ясни актуализации, така че винаги да знаете какво се случва по-нататък.",
-      "q4": "Това подходящо ли е за малки предприятия?",
-      "a4": "Да. Нашите пакети са съзнателно предназначени за местни фирми: ясни цени, бърз старт и фокус върху реални запитвания, вместо само върху оптика.",
-      "q5": "Какво се случва след стартирането?",
-      "a5": "След стартирането ние проверяваме данните, подобряваме точките за преобразуване и ви подкрепяме с фина настройка, така че сайтът да работи по-добре в дългосрочен план.",
-      "desc": "Отговори на често задавани въпроси относно времето, разходите, процеса на стартиране и текущата поддръжка."
+      "q1": "�aолко б�\u0018`�\u0018�\u001a�зо може�\u0018�aе да запо�\u0018!не�\u0018�aе?",
+      "a1": "�~бикновено запо�\u0018!ваме в �\u0018�\u001a�амки�\u0018�aе на 3-5 �\u0018�\u001a�або�\u0018�aни дни. ��\"еднага �\u0018�лед ва�\u0018� а�\u0018�aа за�\u0018�вка �\u00180е пол�\u0018�\u0019�\u0018!и�\u0018�aе к�\u0018�\u001a�а�\u0018�a�\u0018`к план �\u0018� п�\u0018`�\u0018�\u001a�ви�\u0018�aе �\u0018��\u0018�a�\u0018`пки.",
+      "q2": "�~�\u0018�a какво �\u0018�е н�\u0018�\u0019жда�\u0018� ка�\u0018�aо клиен�\u0018�a в на�\u0018!ало�\u0018�aо?",
+      "a2": "Само о�\u0018�новна ин�\u0018�~о�\u0018�\u001a�ма�\u0018 и�\u0018� за ва�\u0018� а�\u0018�aа о�\u0018�~е�\u0018�\u001a��\u0018�aа, �\u0018 елева г�\u0018�\u001a��\u0018�\u0019па и канали за кон�\u0018�aак�\u0018�a. След �\u0018�aова �\u00180е ви помогнем �\u0018��\u0018`�\u0018� �\u0018��\u0018�a�\u0018�\u001a��\u0018�\u0019к�\u0018�a�\u0018�\u0019�\u0018�\u001a�а�\u0018�aа, �\u0018�aек�\u0018��\u0018�aове�\u0018�aе и п�\u0018�\u001a�ио�\u0018�\u001a�и�\u0018�aе�\u0018�aи�\u0018�aе.",
+      "q3": "�aак �\u0018�\u001a�або�\u0018�aи �\u0018��\u0018`�\u0018�a�\u0018�\u001a��\u0018�\u0019дни�\u0018!е�\u0018��\u0018�aво�\u0018�aо?",
+      "a3": "Рабо�\u0018�aим на к�\u0018�\u001a�а�\u0018�aки е�\u0018�aапи: кон�\u0018 еп�\u0018 и�\u0018�, дизайн, �\u0018�\u001a�еализа�\u0018 и�\u0018�, �\u0018��\u0018�aа�\u0018�\u001a��\u0018�aи�\u0018�\u001a�ане. Ще пол�\u0018�\u0019�\u0018!ава�\u0018�aе �\u0018��\u0018�ни ак�\u0018�a�\u0018�\u0019ализа�\u0018 ии, �\u0018�aака �\u0018!е винаги да знае�\u0018�aе какво �\u0018�е �\u0018�л�\u0018�\u0019�\u0018!ва по-на�\u0018�aа�\u0018�a�\u0018`к.",
+      "q4": "Това под�\u0018&од�\u0018��\u00180о ли е за малки п�\u0018�\u001a�едп�\u0018�\u001a�и�\u0018��\u0018�aи�\u0018�?",
+      "a4": "�\u001dа. На�\u0018� и�\u0018�aе паке�\u0018�aи �\u0018�а �\u0018��\u0018`зна�\u0018�aелно п�\u0018�\u001a�едназна�\u0018!ени за ме�\u0018��\u0018�aни �\u0018�~и�\u0018�\u001a�ми: �\u0018��\u0018�ни �\u0018 ени, б�\u0018`�\u0018�\u001a�з �\u0018��\u0018�aа�\u0018�\u001a��\u0018�a и �\u0018�~ок�\u0018�\u0019�\u0018� в�\u0018`�\u0018�\u001a��\u0018&�\u0018�\u0019 �\u0018�\u001a�еални запи�\u0018�aвани�\u0018�, вме�\u0018��\u0018�aо �\u0018�амо в�\u0018`�\u0018�\u001a��\u0018&�\u0018�\u0019 оп�\u0018�aика.",
+      "q5": "�aакво �\u0018�е �\u0018�л�\u0018�\u0019�\u0018!ва �\u0018�лед �\u0018��\u0018�aа�\u0018�\u001a��\u0018�aи�\u0018�\u001a�ане�\u0018�aо?",
+      "a5": "След �\u0018��\u0018�aа�\u0018�\u001a��\u0018�aи�\u0018�\u001a�ане�\u0018�aо ние п�\u0018�\u001a�ове�\u0018�\u001a��\u0018�ваме данни�\u0018�aе, подоб�\u0018�\u001a��\u0018�ваме �\u0018�aо�\u0018!ки�\u0018�aе за п�\u0018�\u001a�еоб�\u0018�\u001a�аз�\u0018�\u0019ване и ви подк�\u0018�\u001a�еп�\u0018�ме �\u0018� �\u0018�~ина на�\u0018��\u0018�a�\u0018�\u001a�ойка, �\u0018�aака �\u0018!е �\u0018�ай�\u0018�a�\u0018`�\u0018�a да �\u0018�\u001a�або�\u0018�aи по-доб�\u0018�\u001a�е в д�\u0018`лго�\u0018��\u0018�\u001a�о�\u0018!ен план.",
+      "desc": "Отговори на чести въпроси за срок, цена, стартиране и последваща поддръжка."
     },
     "hero": {
       "bento": {
         "speed": {
-          "label": "скорост",
-          "value": "90+ Фар"
+          "label": "Geschwindigkeit",
+          "value": "90+ Lighthouse"
         },
         "seo": {
           "label": "SEO",
-          "value": "Техническа основа"
+          "value": "Technisches Fundament"
         },
         "leads": {
-          "label": "запитвания",
-          "value": "Изчистване на CTA и формуляри"
+          "label": "Anfragen",
+          "value": "Klare CTA und Formulare"
         },
         "support": {
-          "label": "Поддръжка",
-          "value": "След стартиране"
+          "label": "Support",
+          "value": "Nach dem Launch"
         }
       }
     },
     "partnersSection": {
-      "title": "Предимства и области на приложение",
-      "desc": "Кои задачи покриваме и за кои местни компании най-често реализираме уебсайтове и водещи фунии."
+      "title": "Предимства и посоки",
+      "desc": "Welche Aufgaben wir abdecken und für welche lokalen Unternehmen wir am häufigsten Websites und Lead-Funnels umsetzen."
     },
     "marquee": {
-      "aria": "Индустрии",
-      "title": "Индустрии, с които работим",
-      "desc": "Изберете посока и вижте подходящи стилови примери. Това означава, че можем по-бързо да изградим точна оферта за вашата компания.",
+      "aria": "Branchen",
+      "title": "Ниши, с които работим",
+      "desc": "Wählen Sie eine Richtung und sehen Sie passende Stilbeispiele. So bauen wir schneller ein präzises Angebot für Ihr Unternehmen.",
       "items": {
-        "handwerk": "Занаяти",
-        "praxen": "практики",
-        "werkstaetten": "работилници",
-        "gastronomie": "Гастрономия",
-        "beauty": "Красота",
-        "immobilien": "Недвижими имоти",
-        "kanzlei": "адвокатска кантора",
-        "fitness": "Фитнес",
-        "reinigung": "Почистване",
-        "transport": "Транспорт",
-        "coaching": "Коучинг",
-        "bildung": "Образование"
+        "handwerk": "Handwerk",
+        "praxen": "Praxen",
+        "werkstaetten": "Werkstätten",
+        "gastronomie": "Gastronomie",
+        "beauty": "Beauty",
+        "immobilien": "Immobilien",
+        "kanzlei": "Kanzlei",
+        "fitness": "Fitness",
+        "reinigung": "Reinigung",
+        "transport": "Transport",
+        "coaching": "Coaching",
+        "bildung": "Bildung"
       }
     },
     "process": {
       "title": "Как работим",
-      "desc": "Прозрачен процес без ненужни стъпки: от кратък брифинг до стартиране и оптимизиране с ясни срокове.",
-      "aria": "Фази на проекта",
-      "stage": "фаза",
+      "desc": "Ein transparenter Prozess ohne unnötige Schritte: vom kurzen Briefing bis zu Launch und Optimierung mit klaren Deadlines.",
+      "aria": "Projektphasen",
+      "stage": "Phase",
       "nav": {
-        "prev": "Назад",
-        "next": "Следващ"
+        "prev": "Zurück",
+        "next": "Weiter"
       },
       "steps": {
         "s1": {
-          "title": "15 минути разговор",
-          "text": "Изясняваме задачата, KPI и крайния срок и веднага съгласуваме стартовия формат."
+          "title": "15-Minuten-Call",
+          "text": "Wir klären Aufgabe, KPI und Deadline und stimmen sofort das Launch-Format ab."
         },
         "s2": {
-          "title": "Прототип за 48 часа",
-          "text": "Показваме структура на страницата, CTA и поток от потенциални клиенти преди разработката."
+          "title": "Prototyp in 48h",
+          "text": "Wir zeigen Seitenstruktur, CTA und Lead-Flow vor der Entwicklung."
         },
         "s3": {
-          "title": "Развитие за 7-14 дни",
-          "text": "Внедряване, SEO основа, интеграции и анализи без ненужни разходи."
+          "title": "Entwicklung in 7-14 Tagen",
+          "text": "Umsetzung, SEO-Basis, Integrationen und Analytics ohne unnötigen Overhead."
         },
         "s4": {
-          "title": "Стартиране и оптимизиране",
-          "text": "Пускаме на живо, проверяваме преобразуването и предоставяме 30-дневен план за подобрение."
+          "title": "Launch und Optimierung",
+          "text": "Wir gehen live, prüfen Conversion und liefern einen 30-Tage-Verbesserungsplan."
         }
       }
     },
     "projects": {
-      "title": "Проекти / казуси",
-      "desc": "Реални задачи и очаквани резултати без празни обещания. Задръжте курсора на мишката върху случай за преглед на живо.",
+      "title": "Проекти / Казуси",
+      "desc": "Reale Aufgaben und erwartbare Ergebnisse ohne leere Versprechen. Hover auf einen Case für Live-Preview.",
       "cards": {
         "c1": {
-          "title": "Уебсайт за местни запитвания",
-          "description": "Целева страница с фокус върху формуляри, обаждания и бърз мобилен контакт.",
-          "goal": "Цел: повече запитвания без увеличаване на бюджета"
+          "title": "Website für lokale Anfragen",
+          "description": "Landingpage mit Fokus auf Formular, Anruf und schnellen Mobile-Kontakt.",
+          "goal": "Ziel: mehr Anfragen ohne Budgeterhöhung"
         },
         "c2": {
-          "title": "Целева страница за реклами",
-          "description": "Отделна страница с проследяване за Meta и Google кампании.",
-          "goal": "Очакван ефект: повече квалифицирани потенциални клиенти от реклама"
+          "title": "Landingpage für Ads",
+          "description": "Separate Seite mit Tracking für Meta- und Google-Kampagnen.",
+          "goal": "Erwarteter Effekt: qualifiziertere Leads aus Werbung"
         },
         "c3": {
-          "title": "Уеб сайт за упражнения",
-          "description": "Ясна структура на услугата, често задавани въпроси и поток за онлайн срещи.",
-          "goal": "Цел: повече резервации за срещи с по-малко запитвания"
+          "title": "Website für Praxis",
+          "description": "Klare Leistungsstruktur, FAQ und Online-Termin-Flow.",
+          "goal": "Ziel: mehr Terminbuchungen mit weniger Rückfragen"
         },
         "c4": {
-          "title": "Табло за потенциални клиенти",
-          "description": "Вътрешен интерфейс за обработка на потенциални клиенти и контрол на състоянието.",
-          "goal": "Очакван ефект: по-бърза обработка на заявките"
+          "title": "Dashboard für Leads",
+          "description": "Internes Interface zur Lead-Bearbeitung und Statuskontrolle.",
+          "goal": "Erwarteter Effekt: schnellere Bearbeitung von Anfragen"
         }
       }
     },
     "configurator": {
-      "title": "Конфигуратор на оферти",
-      "desc": "Изберете параметри на проекта и получете начална цена и подходящи тарифи за поддръжка.",
+      "title": "Конфигуратор на оферта",
+      "desc": "Wählen Sie Projektparameter und erhalten Sie einen Startpreis sowie passende Support-Tarife.",
       "labels": {
-        "goal": "Цел",
-        "integrations": "Интеграции",
-        "ads": "Реклама",
-        "term": "времева рамка",
-        "content": "ниво на съдържание",
-        "languages": "езици",
-        "hosting": "Хостинг",
-        "domain": "домейн",
-        "pages": "страници",
+        "goal": "Ziel",
+        "integrations": "Integrationen",
+        "ads": "Werbung",
+        "term": "Zeitrahmen",
+        "content": "Content-Level",
+        "languages": "Sprachen",
+        "hosting": "Hosting",
+        "domain": "Domain",
+        "pages": "Seiten",
         "seo": "SEO"
       },
       "options": {
         "common": {
-          "other": "Други"
+          "other": "Andere"
         },
         "goal": {
-          "leads": "Води",
-          "calls": "се обажда",
-          "booking": "резервации"
+          "leads": "Leads",
+          "calls": "Anrufe",
+          "booking": "Buchungen"
         },
         "integrations": {
-          "booking": "резервация",
+          "booking": "Buchung",
           "crm": "CRM",
-          "chat": "Чат",
-          "payments": "плащания"
+          "chat": "Chat",
+          "payments": "Zahlungen"
         },
         "ads": {
-          "none": "Без реклама",
-          "meta": "Мета",
+          "none": "Ohne Werbung",
+          "meta": "Meta",
           "google": "Google"
         },
         "term": {
-          "up_to_7": "До 1 седмица",
-          "from_7_to_14": "7-14 дни",
-          "from_14_to_21": "14-21 дни",
-          "from_21_to_30": "21-30 дни"
+          "up_to_7": "Bis 1 Woche",
+          "from_7_to_14": "7-14 Tage",
+          "from_14_to_21": "14-21 Tage",
+          "from_21_to_30": "21-30 Tage"
         },
         "content": {
-          "has": "Налични текстове",
-          "copy": "Изисква се писане на текст"
+          "has": "Texte vorhanden",
+          "copy": "Copywriting nötig"
         },
         "languages": {
-          "basic": "1 език",
-          "multi": "2+ езика"
+          "basic": "1 Sprache",
+          "multi": "2+ Sprachen"
         },
         "hosting": {
-          "shared": "Споделен хостинг",
+          "shared": "Shared Hosting",
           "vps": "VPS",
-          "managed": "Управляван хостинг"
+          "managed": "Managed Hosting"
         },
         "domain": {
-          "new_domain": "Нов домейн",
-          "existing_domain": "домейн съществува",
-          "transfer": "Трансфер на домейн"
+          "new_domain": "Neue Domain",
+          "existing_domain": "Domain vorhanden",
+          "transfer": "Domain-Transfer"
         },
         "pages": {
-          "one": "1 страница",
-          "up_to_3": "До 3 страници",
-          "five_plus": "5+ страници"
+          "one": "1 Seite",
+          "up_to_3": "Bis 3 Seiten",
+          "five_plus": "5+ Seiten"
         },
         "seo": {
-          "base": "SEO база",
+          "base": "SEO Base",
           "extended": "SEO Extended"
         }
       },
-      "reset": "Нулирайте всичко",
-      "empty": "Изберете поне една опция във всеки блок. Възможен е многократен избор; За „Друго“ не се начислява допълнителна такса.",
-      "recommended": "Препоръчва се:",
+      "reset": "Alles zurücksetzen",
+      "empty": "Wählen Sie mindestens eine Option in jedem Block. Mehrfachauswahl ist möglich; bei \"Andere\" wird keine Zusatzgebühr berechnet.",
+      "recommended": "Empfohlen:",
       "pack": {
-        "starter": "Стартер",
-        "business": "Бизнес"
+        "starter": "Starter",
+        "business": "Business"
       },
-      "launchPrice": "Начална цена:",
-      "supportMonthly": "Поддръжка / месец",
-      "supportYearly": "Поддръжка / година (-30%)",
-      "cta": "Заявка за контакт и точна оценка на разходите",
+      "launchPrice": "Startpreis:",
+      "supportMonthly": "Support / Monat",
+      "supportYearly": "Support / Jahr (-30%)",
+      "cta": "Kontaktanfrage und exakter Kostenvoranschlag",
       "bullets": {
-        "prototype": "Прототип и структура с фокус върху заявките",
-        "goal": "Голове: {{value}}",
-        "integrations": "Интеграции: {{value}}",
-        "term": "Времева рамка: {{value}}",
-        "hosting": "Хостинг: {{value}}",
-        "domain": "Домейн: {{value}}",
-        "pages": "Страници: {{value}}",
-        "analytics": "GA4 и проследяване на събития за формуляри/контакти",
-        "copy_true": "Поддръжка с текстове и оферти",
-        "copy_false": "Работим с вашите съществуващи текстове",
-        "market_note": "Ориентировъчна цена под пазарното ниво за малки компании"
+        "prototype": "Prototyp und Struktur mit Fokus auf Anfragen",
+        "goal": "Ziele: {{value}}",
+        "integrations": "Integrationen: {{value}}",
+        "term": "Zeitrahmen: {{value}}",
+        "hosting": "Hosting: {{value}}",
+        "domain": "Domain: {{value}}",
+        "pages": "Seiten: {{value}}",
+        "analytics": "GA4 und Event-Tracking für Formulare/Kontakte",
+        "copy_true": "Unterstützung bei Texten und Offer",
+        "copy_false": "Wir arbeiten mit Ihren vorhandenen Texten",
+        "market_note": "Orientierungspreis unter marktüblichem Niveau für kleine Unternehmen"
       },
       "brief": {
-        "title": "Писмо от конфигуратора на офертата:",
-        "goal": "Цел: {{value}}",
-        "integrations": "Интеграции: {{value}}",
-        "ads": "Реклама: {{value}}",
-        "term": "Времева рамка: {{value}}",
-        "content": "Съдържание: {{value}}",
-        "languages": "Езици: {{value}}",
-        "hosting": "Хостинг: {{value}}",
-        "domain": "Домейн: {{value}}",
-        "pages": "Страници: {{value}}",
+        "title": "Brief aus dem Angebots-Konfigurator:",
+        "goal": "Ziel: {{value}}",
+        "integrations": "Integrationen: {{value}}",
+        "ads": "Werbung: {{value}}",
+        "term": "Zeitrahmen: {{value}}",
+        "content": "Content: {{value}}",
+        "languages": "Sprachen: {{value}}",
+        "hosting": "Hosting: {{value}}",
+        "domain": "Domain: {{value}}",
+        "pages": "Seiten: {{value}}",
         "seo": "SEO: {{value}}",
-        "launch_price": "Начална цена: {{value}}",
-        "support_monthly": "Поддръжка / месец: {{value}}",
-        "support_yearly": "Поддръжка / година (-30%): {{value}}"
+        "launch_price": "Startpreis: {{value}}",
+        "support_monthly": "Support / Monat: {{value}}",
+        "support_yearly": "Support / Jahr (-30%): {{value}}"
       }
     },
     "trust": {
-      "title": "Какво получавате след 14 дни",
-      "desc": "Конкретни начални резултати: уеб сайт, ориентиран към заявки, настройка на анализи и план за по-нататъшен растеж.",
+      "title": "Какво получавате за 14 дни",
+      "desc": "Konkrete Start-Ergebnisse: eine anfrageorientierte Website, eingerichtete Analytics und ein Plan für weiteres Wachstum.",
       "deliverables": {
         "d1": {
-          "title": "Прототип за 48 часа",
-          "text": "Показваме структура и CTA преди кодиране, така че решенията да могат да бъдат планирани."
+          "title": "Prototyp in 48h",
+          "text": "Wir zeigen Struktur und CTA vor dem Coding, damit Entscheidungen planbar bleiben."
         },
         "d2": {
-          "title": "Сайт за запитвания",
-          "text": "Форма, обаждане, месинджър и мобилна версия за бърз контакт."
+          "title": "Website für Anfragen",
+          "text": "Formular, Anruf, Messenger und mobile Version für schnelle Kontaktaufnahme."
         },
         "d3": {
-          "title": "Анализ и проследяване",
-          "text": "GA4 плюс събития, така че да се вижда къде възникват запитвания."
+          "title": "Analytics und Tracking",
+          "text": "GA4 plus Events, damit sichtbar wird, wo Anfragen entstehen."
         },
         "d4": {
-          "title": "30-дневен план за оптимизация",
-          "text": "Изчистване на следващите стъпки за увеличаване на реализациите след стартиране."
+          "title": "30-Tage-Optimierungsplan",
+          "text": "Klare nächste Schritte zur Conversion-Steigerung nach Launch."
         }
       }
     }
@@ -397,7 +397,7 @@
       },
       "social": {
         "title": "Social Media",
-        "desc": "Content-Module, Channel-Verknüpfung, Kontaktpfade."
+        "desc": "Content-Module, Channel-VerknÒ¼pfung, Kontaktpfade."
       },
       "ads": {
         "title": "Social Ads",
@@ -438,58 +438,109 @@
       }
     },
     "packages": {
-      "title": "Tsenovi paketi",
-      "badge": "Preporachano",
-      "coreTitle": "Core",
-      "plusTitle": "Plus",
-      "outcomeLabel": "Result:",
+      "title": "Ценови паке�\u001aи",
+      "badge": "�xѬепоѬ�`�!ано",
+      "billing": {
+        "monthly": "�Sесе� ",
+        "yearly": "�\u001cодина"
+      },
+      "coreTitle": "�~сновно",
+      "plusTitle": "�\u001dоп�`лни�\u001aелно",
+      "subscriptionTitle": "Абонамен�\u001a за поддѬ�`жка",
+      "subscriptionIncludesTitle": "�\u0019кл�}�!ва",
+      "outcomeLabel": "Резђл�\u001aа�\u001a:",
       "starter": {
         "name": "Starter",
-        "desc": "For small local businesses with fast start.",
-        "price": "from EUR 690",
-        "range": "typical EUR 690-790",
+        "desc": "�\u0014а мал�`к локален бизнес с б�`Ѭз с�\u001aаѬ�\u001a.",
+        "price": "о�\u001a EUR 690",
+        "range": "обикновено EUR 690-790",
         "core": [
-          "Landing Page",
-          "Lead Form + Contact Form",
-          "GA4 + Basic SEO Setup"
+          "Landing page",
+          "Lead �\u001eоѬма + кон�\u001aак�\u001aна �\u001eоѬма",
+          "GA4 + базова SEO нас�\u001aѬойка"
         ],
         "plus": [
-          "Mobile Optimization",
-          "Basic DSGVO Tracking"
+          "�Sобилна оп�\u001aимиза� ия",
+          "�\u0018азов DSGVO tracking"
         ],
-        "outcome": "Stable channel for first qualified requests."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 62 / месе� ",
+            "meta": "базова поддѬ�`жка след с�\u001aаѬ�\u001aа"
+          },
+          "yearly": {
+            "price": "EUR 521 / година",
+            "meta": "12 месе� а с 30% о�\u001aс�\u001a�`пка"
+          },
+          "includes": [
+            "Те�&ни�!ески обновления и ѬезеѬвни копия",
+            "�aон�\u001aѬол на �\u001eоѬми�\u001aе, конвеѬсии�\u001aе и базовия tracking",
+            "�\u001dо 1 блок пѬомени или обновления на месе� "
+          ]
+        },
+        "outcome": "С�\u001aабилен канал за п�`Ѭви�\u001aе ка�!ес�\u001aвени запи�\u001aвания."
       },
       "business": {
         "name": "Business",
-        "desc": "For teams with multiple services and active sales.",
-        "price": "from EUR 1.290",
-        "range": "typical EUR 1.290-1.490",
+        "desc": "�\u0014а екипи с няколко ђслђги и ак�\u001aивни пѬодажби.",
+        "price": "о�\u001a EUR 1.290",
+        "range": "обикновено EUR 1.290-1.490",
         "core": [
-          "Multi-page Website up to 5 pages",
-          "CRM Integration + Lead Tracking",
-          "Analytics Dashboard"
+          "�Sногос�\u001aѬани�!ен сай�\u001a до 5 с�\u001aѬани� и",
+          "CRM ин�\u001aегѬа� ия + lead tracking",
+          "Анали�\u001aи�!ен dashboard"
         ],
         "plus": [
-          "SEO Structure by Service",
-          "Conversion Optimization"
+          "SEO с�\u001aѬђк�\u001aђѬа по ђслђги",
+          "�~п�\u001aимиза� ия на конвеѬсии�\u001aе"
         ],
-        "outcome": "Predictable lead pipeline with clear reporting."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 86 / месе� ",
+            "meta": "поддѬ�`жка за сай�\u001a, CRM и анали�\u001aика"
+          },
+          "yearly": {
+            "price": "EUR 722 / година",
+            "meta": "12 месе� а с 30% о�\u001aс�\u001a�`пка"
+          },
+          "includes": [
+            "Редовни обновления на с�`д�`Ѭжание и с�\u001aѬани� и",
+            "�aон�\u001aѬол на CRM, lead tracking и dashboard",
+            "�\u001dо 2 зада�!и на месе�  за подобѬяване на конвеѬсия�\u001aа"
+          ]
+        },
+        "outcome": "�xѬедвидим по�\u001aок о�\u001a лидове с ясна анали�\u001aика."
       },
       "pro": {
         "name": "Pro",
-        "desc": "For growth with website, ads and automation.",
-        "price": "from EUR 2.490",
-        "range": "typical EUR 2.490-2.990",
+        "desc": "�\u0014а Ѭас�\u001aеж �!Ѭез сай�\u001a, Ѭеклама и ав�\u001aома�\u001aиза� ия.",
+        "price": "о�\u001a EUR 2.490",
+        "range": "обикновено EUR 2.490-2.990",
         "core": [
-          "Website + Ads Setup",
-          "Google Ads or Meta Ads",
-          "Marketing Dashboard + Tracking"
+          "Website + Ads setup",
+          "Google Ads или Meta Ads",
+          "Marketing dashboard + tracking"
         ],
         "plus": [
-          "AI Lead Qualification",
-          "Automation Flows"
+          "AI квали�\u001eика� ия на лидове",
+          "Automation flows"
         ],
-        "outcome": "More demand with controlled cost per lead."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 160 / месе� ",
+            "meta": "ак�\u001aивно ђпѬавление на growth сис�\u001aема�\u001aа"
+          },
+          "yearly": {
+            "price": "EUR 1.344 / година",
+            "meta": "12 месе� а с 30% о�\u001aс�\u001a�`пка"
+          },
+          "includes": [
+            "Седми�!ен кон�\u001aѬол на сай�\u001aа, Ѭеклами�\u001aе и automation flows",
+            "�~п�\u001aимиза� ия на CPL, funnel и квали�\u001eика� ия�\u001aа на лидове",
+            "�\u001dо 4 growth зада�!и на месе�  + пѬиоѬи�\u001aе�\u001aна поддѬ�`жка"
+          ]
+        },
+        "outcome": "�xове�!е �\u001a�`Ѭсене с кон�\u001aѬолиѬан Ѭаз�&од за лид."
       }
     },
     "comparison": {
@@ -533,32 +584,32 @@
     }
   },
   "references": {
-    "h1": "Референции с измерим растеж.",
-    "subtitle": "Показваме ясно какво се е повишило: запитвания, резервации, обаждания и лийдове.",
-    "trustline": "Всички показатели с контекст: период и измерване.",
-    "filterTitle": "Изберете ниша",
-    "filterAria": "Филтър по ниши",
-    "counter": "{{count}} подходящи случая",
-    "growthByNiche": "Растеж по сектори",
-    "selectedCases": "Избрани случаи",
-    "challengeLabel": "Изходна ситуация",
-    "solutionLabel": "Решение",
-    "periodLabel": "Период",
-    "measurementLabel": "Измерване",
-    "emptyTitle": "Следващият случай за тази ниша ще бъде добавен скоро.",
-    "emptyText": "Показваме само случаи с надеждно измерване и ясен период.",
-    "beforeAfter": "Преди / След",
-    "before": "Преди",
+    "h1": "Ре�\u0018�~е�\u0018�\u001a�ен�\u0018 ии �\u0018� изме�\u0018�\u001a�им �\u0018�\u001a�а�\u0018��\u0018�aеж.",
+    "subtitle": "�xоказваме �\u0018��\u0018�но какво �\u0018�е е пови�\u0018� ило: запи�\u0018�aвани�\u0018�, �\u0018�\u001a�езе�\u0018�\u001a�ва�\u0018 ии, обаждани�\u0018� и лийдове.",
+    "trustline": "��\"�\u0018�и�\u0018!ки показа�\u0018�aели �\u0018� кон�\u0018�aек�\u0018��\u0018�a: пе�\u0018�\u001a�иод и изме�\u0018�\u001a�ване.",
+    "filterTitle": "��Sзбе�\u0018�\u001a�е�\u0018�aе ни�\u0018� а",
+    "filterAria": "Фил�\u0018�a�\u0018`�\u0018�\u001a� по ни�\u0018� и",
+    "counter": "{{count}} под�\u0018&од�\u0018��\u00180и �\u0018�л�\u0018�\u0019�\u0018!а�\u0018�",
+    "growthByNiche": "Ра�\u0018��\u0018�aеж по �\u0018�ек�\u0018�aо�\u0018�\u001a�и",
+    "selectedCases": "��Sзб�\u0018�\u001a�ани �\u0018�л�\u0018�\u0019�\u0018!аи",
+    "challengeLabel": "��Sз�\u0018&одна �\u0018�и�\u0018�a�\u0018�\u0019а�\u0018 и�\u0018�",
+    "solutionLabel": "Ре�\u0018� ение",
+    "periodLabel": "�xе�\u0018�\u001a�иод",
+    "measurementLabel": "��Sзме�\u0018�\u001a�ване",
+    "emptyTitle": "Следва�\u00180и�\u0018��\u0018�a �\u0018�л�\u0018�\u0019�\u0018!ай за �\u0018�aази ни�\u0018� а �\u00180е б�\u0018`де добавен �\u0018�ко�\u0018�\u001a�о.",
+    "emptyText": "�xоказваме �\u0018�амо �\u0018�л�\u0018�\u0019�\u0018!аи �\u0018� надеждно изме�\u0018�\u001a�ване и �\u0018��\u0018�ен пе�\u0018�\u001a�иод.",
+    "beforeAfter": "�x�\u0018�\u001a�еди / След",
+    "before": "�x�\u0018�\u001a�еди",
     "after": "След",
-    "beforeAlt": "Изглед преди",
-    "afterAlt": "Изглед след",
-    "sliderAria": "Премести сравнение преди/след",
-    "sliderHint": "Плъзнете за сравнение.",
-    "ctaTitle": "Искате подобни резултати?",
-    "ctaText": "Анализираме текущата ви ситуация и показваме реалистичен план за 30-90 дни.",
-    "cta": "Заявете подобен проект",
+    "beforeAlt": "��Sзглед п�\u0018�\u001a�еди",
+    "afterAlt": "��Sзглед �\u0018�лед",
+    "sliderAria": "�x�\u0018�\u001a�еме�\u0018��\u0018�aи �\u0018��\u0018�\u001a�авнение п�\u0018�\u001a�еди/�\u0018�лед",
+    "sliderHint": "�xл�\u0018`зне�\u0018�aе за �\u0018��\u0018�\u001a�авнение.",
+    "ctaTitle": "��S�\u0018�ка�\u0018�aе подобни �\u0018�\u001a�ез�\u0018�\u0019л�\u0018�aа�\u0018�aи?",
+    "ctaText": "Анализи�\u0018�\u001a�аме �\u0018�aек�\u0018�\u0019�\u00180а�\u0018�aа ви �\u0018�и�\u0018�a�\u0018�\u0019а�\u0018 и�\u0018� и показваме �\u0018�\u001a�еали�\u0018��\u0018�aи�\u0018!ен план за 30-90 дни.",
+    "cta": "��\u001dа�\u0018�ве�\u0018�aе подобен п�\u0018�\u001a�оек�\u0018�a",
     "filters": {
-      "all": "Всички"
+      "all": "��\"�\u0018�и�\u0018!ки"
     },
     "niches": {
       "handwerk": "Handwerk",
@@ -575,80 +626,80 @@
       "bildungKurse": "Bildung/Kurse"
     },
     "metrics": {
-      "moreRequests": "Повече запитвания",
-      "moreAppointments": "Повече записани часове",
-      "moreCalls": "Повече обаждания",
-      "moreReservations": "Повече резервации",
-      "moreBookings": "Повече резервации на услуги",
-      "moreLeads": "Повече лийдове",
-      "moreIntroCalls": "Повече първични разговори",
-      "moreTrialSessions": "Повече пробни сесии",
-      "moreOffers": "Повече запитвания за оферта",
-      "moreQualifiedLeads": "Повече квалифицирани лийдове",
-      "moreFirstContacts": "Повече първи контакти",
-      "moreCourseSignups": "Повече записвания за курсове",
-      "budgetEfficiency": "Ефективност на бюджета",
-      "moreInteractions": "Повече взаимодействия",
-      "moreLeadsPerBudget": "Повече лийдове за същия бюджет",
-      "moreConsultations": "Повече консултации"
+      "moreRequests": "�xове�\u0018!е запи�\u0018�aвани�\u0018�",
+      "moreAppointments": "�xове�\u0018!е запи�\u0018�ани �\u0018!а�\u0018�ове",
+      "moreCalls": "�xове�\u0018!е обаждани�\u0018�",
+      "moreReservations": "�xове�\u0018!е �\u0018�\u001a�езе�\u0018�\u001a�ва�\u0018 ии",
+      "moreBookings": "�xове�\u0018!е �\u0018�\u001a�езе�\u0018�\u001a�ва�\u0018 ии на �\u0018�\u0019�\u0018�л�\u0018�\u0019ги",
+      "moreLeads": "�xове�\u0018!е лийдове",
+      "moreIntroCalls": "�xове�\u0018!е п�\u0018`�\u0018�\u001a�ви�\u0018!ни �\u0018�\u001a�азгово�\u0018�\u001a�и",
+      "moreTrialSessions": "�xове�\u0018!е п�\u0018�\u001a�обни �\u0018�е�\u0018�ии",
+      "moreOffers": "�xове�\u0018!е запи�\u0018�aвани�\u0018� за о�\u0018�~е�\u0018�\u001a��\u0018�aа",
+      "moreQualifiedLeads": "�xове�\u0018!е квали�\u0018�~и�\u0018 и�\u0018�\u001a�ани лийдове",
+      "moreFirstContacts": "�xове�\u0018!е п�\u0018`�\u0018�\u001a�ви кон�\u0018�aак�\u0018�aи",
+      "moreCourseSignups": "�xове�\u0018!е запи�\u0018�вани�\u0018� за к�\u0018�\u0019�\u0018�\u001a��\u0018�ове",
+      "budgetEfficiency": "�\"�\u0018�~ек�\u0018�aивно�\u0018��\u0018�a на б�\u0018}дже�\u0018�aа",
+      "moreInteractions": "�xове�\u0018!е взаимодей�\u0018��\u0018�aви�\u0018�",
+      "moreLeadsPerBudget": "�xове�\u0018!е лийдове за �\u0018��\u0018`�\u00180и�\u0018� б�\u0018}дже�\u0018�a",
+      "moreConsultations": "�xове�\u0018!е кон�\u0018��\u0018�\u0019л�\u0018�aа�\u0018 ии"
     },
     "cases": {
       "c1": {
-        "title": "ВиК фирма (регион Хановер)",
-        "challenge": "Твърде малко запитвания въпреки добър обхват.",
-        "solution": "Преструктурирани страници услуги, оптимизирани CTA и активирано проследяване на контактите."
+        "title": "��\"и�a �\u0018�~и�\u0018�\u001a�ма (�\u0018�\u001a�егион Ханове�\u0018�\u001a�)",
+        "challenge": "Тв�\u0018`�\u0018�\u001a�де малко запи�\u0018�aвани�\u0018� в�\u0018`п�\u0018�\u001a�еки доб�\u0018`�\u0018�\u001a� об�\u0018&ва�\u0018�a.",
+        "solution": "�x�\u0018�\u001a�е�\u0018��\u0018�a�\u0018�\u001a��\u0018�\u0019к�\u0018�a�\u0018�\u0019�\u0018�\u001a�и�\u0018�\u001a�ани �\u0018��\u0018�a�\u0018�\u001a�ани�\u0018 и �\u0018�\u0019�\u0018�л�\u0018�\u0019ги, оп�\u0018�aимизи�\u0018�\u001a�ани CTA и ак�\u0018�aиви�\u0018�\u001a�ано п�\u0018�\u001a�о�\u0018�лед�\u0018�ване на кон�\u0018�aак�\u0018�aи�\u0018�aе."
       },
       "c2": {
-        "title": "Физиотерапевтична практика (Хилдесхайм)",
-        "challenge": "Твърде малко онлайн записвания.",
-        "solution": "Опростен поток за записване, ускорени мобилни страници и ясни канали за контакт."
+        "title": "Физио�\u0018�aе�\u0018�\u001a�апев�\u0018�aи�\u0018!на п�\u0018�\u001a�ак�\u0018�aика (Хилде�\u0018��\u0018&айм)",
+        "challenge": "Тв�\u0018`�\u0018�\u001a�де малко онлайн запи�\u0018�вани�\u0018�.",
+        "solution": "�~п�\u0018�\u001a�о�\u0018��\u0018�aен по�\u0018�aок за запи�\u0018�ване, �\u0018�\u0019�\u0018�ко�\u0018�\u001a�ени мобилни �\u0018��\u0018�a�\u0018�\u001a�ани�\u0018 и и �\u0018��\u0018�ни канали за кон�\u0018�aак�\u0018�a."
       },
       "c3": {
-        "title": "Автосервиз каросерия (район Харбург)",
-        "challenge": "Много контакти, но малко подходящи поръчки.",
-        "solution": "Добавена квалификация на лийдовете във формата и service landing page."
+        "title": "Ав�\u0018�aо�\u0018�е�\u0018�\u001a�виз ка�\u0018�\u001a�о�\u0018�е�\u0018�\u001a�и�\u0018� (�\u0018�\u001a�айон Ха�\u0018�\u001a�б�\u0018�\u0019�\u0018�\u001a�г)",
+        "challenge": "��\u001cного кон�\u0018�aак�\u0018�aи, но малко под�\u0018&од�\u0018��\u00180и по�\u0018�\u001a��\u0018`�\u0018!ки.",
+        "solution": "�\u001dобавена квали�\u0018�~ика�\u0018 и�\u0018� на лийдове�\u0018�aе в�\u0018`в �\u0018�~о�\u0018�\u001a�ма�\u0018�aа и service landing page."
       },
       "c4": {
-        "title": "Ресторант (Долна Саксония)",
-        "challenge": "Малко резервации през делнични дни.",
-        "solution": "Опростен процес на резервация и рестарт на локалните кампании."
+        "title": "Ре�\u0018��\u0018�aо�\u0018�\u001a�ан�\u0018�a (�\u001dолна Сак�\u0018�они�\u0018�)",
+        "challenge": "��\u001cалко �\u0018�\u001a�езе�\u0018�\u001a�ва�\u0018 ии п�\u0018�\u001a�ез делни�\u0018!ни дни.",
+        "solution": "�~п�\u0018�\u001a�о�\u0018��\u0018�aен п�\u0018�\u001a�о�\u0018 е�\u0018� на �\u0018�\u001a�езе�\u0018�\u001a�ва�\u0018 и�\u0018� и �\u0018�\u001a�е�\u0018��\u0018�aа�\u0018�\u001a��\u0018�a на локални�\u0018�aе кампании."
       },
       "c5": {
-        "title": "Агенция за имоти (Долна Саксония)",
-        "challenge": "Малко квалифицирани лийдове от собственици.",
-        "solution": "Страници за имоти според търсещото намерение и съкратен път за запитване."
+        "title": "Аген�\u0018 и�\u0018� за имо�\u0018�aи (�\u001dолна Сак�\u0018�они�\u0018�)",
+        "challenge": "��\u001cалко квали�\u0018�~и�\u0018 и�\u0018�\u001a�ани лийдове о�\u0018�a �\u0018�об�\u0018��\u0018�aвени�\u0018 и.",
+        "solution": "С�\u0018�a�\u0018�\u001a�ани�\u0018 и за имо�\u0018�aи �\u0018�по�\u0018�\u001a�ед �\u0018�a�\u0018`�\u0018�\u001a��\u0018�е�\u00180о�\u0018�aо наме�\u0018�\u001a�ение и �\u0018��\u0018`к�\u0018�\u001a�а�\u0018�aен п�\u0018`�\u0018�a за запи�\u0018�aване."
       },
       "c6": {
-        "title": "Данъчна кантора (регион Хановер)",
-        "challenge": "Ниска конверсия на страниците услуги.",
-        "solution": "Опростено съдържание, добавени елементи на доверие и подчертан първи контакт."
+        "title": "�\u001dан�\u0018`�\u0018!на кан�\u0018�aо�\u0018�\u001a�а (�\u0018�\u001a�егион Ханове�\u0018�\u001a�)",
+        "challenge": "Ни�\u0018�ка конве�\u0018�\u001a��\u0018�и�\u0018� на �\u0018��\u0018�a�\u0018�\u001a�ани�\u0018 и�\u0018�aе �\u0018�\u0019�\u0018�л�\u0018�\u0019ги.",
+        "solution": "�~п�\u0018�\u001a�о�\u0018��\u0018�aено �\u0018��\u0018`д�\u0018`�\u0018�\u001a�жание, добавени елемен�\u0018�aи на дове�\u0018�\u001a�ие и под�\u0018!е�\u0018�\u001a��\u0018�aан п�\u0018`�\u0018�\u001a�ви кон�\u0018�aак�\u0018�a."
       }
     },
-    "performanceDashboard": "Табло за ефективност",
-    "growthCurve90": "90-дневна крива на растеж",
-    "growthChartAria": "Графика на растежа",
-    "resultLabel": "Резултат",
-    "trendAria": "Тенденция: {{niche}}",
-    "compareGraphAria": "Графика преди и след",
-    "dayLabel": "Ден {{day}}",
-    "beforeLegend": "Преди: слаба динамика",
-    "afterLegend": "След: стабилен растеж",
+    "performanceDashboard": "Табло за е�\u0018�~ек�\u0018�aивно�\u0018��\u0018�a",
+    "growthCurve90": "90-дневна к�\u0018�\u001a�ива на �\u0018�\u001a�а�\u0018��\u0018�aеж",
+    "growthChartAria": "��S�\u0018�\u001a�а�\u0018�~ика на �\u0018�\u001a�а�\u0018��\u0018�aежа",
+    "resultLabel": "Рез�\u0018�\u0019л�\u0018�aа�\u0018�a",
+    "trendAria": "Тенден�\u0018 и�\u0018�: {{niche}}",
+    "compareGraphAria": "��S�\u0018�\u001a�а�\u0018�~ика п�\u0018�\u001a�еди и �\u0018�лед",
+    "dayLabel": "�\u001dен {{day}}",
+    "beforeLegend": "�x�\u0018�\u001a�еди: �\u0018�лаба динамика",
+    "afterLegend": "След: �\u0018��\u0018�aабилен �\u0018�\u001a�а�\u0018��\u0018�aеж",
     "filterGroups": {
-      "all": "Всички",
-      "localServices": "Локални услуги",
-      "healthBeauty": "Здраве и красота",
-      "professional": "Професионални"
+      "all": "��\"�\u0018�и�\u0018!ки",
+      "localServices": "�:окални �\u0018�\u0019�\u0018�л�\u0018�\u0019ги",
+      "healthBeauty": "��\u001dд�\u0018�\u001a�аве и к�\u0018�\u001a�а�\u0018�о�\u0018�aа",
+      "professional": "�x�\u0018�\u001a�о�\u0018�~е�\u0018�ионални"
     },
     "kpis": {
-      "traffic": "Трафик",
-      "leads": "Лийдове",
-      "conversion": "Конверсия"
+      "traffic": "Т�\u0018�\u001a�а�\u0018�~ик",
+      "leads": "�:ийдове",
+      "conversion": "�aонве�\u0018�\u001a��\u0018�и�\u0018�"
     },
     "daysUnit": "дни"
   },
   "about": {
-    "h1": "Über uns",
-    "subtitle": "Wir sind ein kleines Umsetzungsteam für lokale Unternehmen.",
+    "h1": "Ò�\u001cber uns",
+    "subtitle": "Wir sind ein kleines Umsetzungsteam fÒ¼r lokale Unternehmen.",
     "cards": {
       "work": {
         "title": "Wie wir arbeiten",
@@ -664,18 +715,18 @@
       }
     },
     "ctaTitle": "Kontakt",
-    "photoPlaceholder": "Foto: Porträt des Gründers von VS Web Studio (Vladyslav)",
-    "photoCaption": "Vladyslav, Gründer von VS Web Studio. Hildesheim.",
+    "photoPlaceholder": "Foto: PortrÒ¤t des GrÒ¼nders von VS Web Studio (Vladyslav)",
+    "photoCaption": "Vladyslav, GrÒ¼nder von VS Web Studio. Hildesheim.",
     "photoAlt": "Vladyslav, Webentwickler von VS Web Studio aus Hildesheim",
     "geo": {
       "local": "Wir arbeiten hier: Hildesheim",
       "region": "Hauptregion: Niedersachsen",
-      "country": "Möglich: ganz Deutschland"
+      "country": "MÒ¶glich: ganz Deutschland"
     },
-    "intro1": "Ich bin Vladyslav, Gründer von VS Web Studio. Ich arbeite aus Hildesheim und unterstütze zuerst Unternehmen direkt in der Stadt und Umgebung. Zusätzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
-    "intro2": "Mein Ziel ist einfach: nicht nur eine schöne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
-    "intro3": "Wir sind ein kleines Team mit bewährten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnötige Bürokratie, und bringen Projekte bis zum Ergebnis.",
-    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes Verständnis für den Markt vor Ort.",
+    "intro1": "Ich bin Vladyslav, GrÒ¼nder von VS Web Studio. Ich arbeite aus Hildesheim und unterstÒ¼tze zuerst Unternehmen direkt in der Stadt und Umgebung. ZusÒ¤tzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
+    "intro2": "Mein Ziel ist einfach: nicht nur eine schÒ¶ne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
+    "intro3": "Wir sind ein kleines Team mit bewÒ¤hrten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnÒ¶tige BÒ¼rokratie, und bringen Projekte bis zum Ergebnis.",
+    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes VerstÒ¤ndnis fÒ¼r den Markt vor Ort.",
     "miniFactsTitle": "Was wir konkret machen",
     "miniFacts": {
       "i1": "Klare Schritte ohne Fachchinesisch",
@@ -687,21 +738,21 @@
       "i1": "Eine schnelle Website, die auf dem Smartphone sauber funktioniert",
       "i2": "Klare Seitenstruktur mit starken CTA-Elementen",
       "i3": "Eingerichtetes Tracking, damit Sie die Quellen Ihrer Anfragen sehen",
-      "i4": "Automationen, die Zeit sparen und die Conversion erhöhen"
+      "i4": "Automationen, die Zeit sparen und die Conversion erhÒ¶hen"
     },
     "contactTitle": "Kontakt",
-    "contactText": "Schreiben Sie uns, welches Geschäft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
+    "contactText": "Schreiben Sie uns, welches GeschÒ¤ft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
     "contactButton": "Projekt anfragen"
   },
   "contact": {
-    "h1": "Kontakt",
-    "responseTime": "Antwortzeit aktuell:",
-    "quickContacts": "Schnelle Kontakte",
+    "h1": "Контакт и запитване за вашия проект",
+    "responseTime": "Текущо време за отговор:",
+    "quickContacts": "Бързи контакти",
     "form": {
-      "name": "Name",
-      "business": "Business",
-      "need": "Was brauchst du genau?",
-      "submit": "Anfrage senden"
+      "name": "Име",
+      "business": "Бизнес",
+      "need": "От какво точно имате нужда?",
+      "submit": "Изпрати запитване"
     }
   },
   "blog": {
@@ -711,54 +762,54 @@
       "c1": "AI-Workflows im Website Funnel",
       "c2": "Social-Prozesse ohne Chaos",
       "c3": "Social Ads mit sauberem Tracking",
-      "c4": "Automationen für Erstkontakt"
+      "c4": "Automationen fÒ¼r Erstkontakt"
     },
     "leadMagnet": "Lead Magnet",
-    "emailPlaceholder": "E-Mail für den Guide",
+    "emailPlaceholder": "E-Mail fÒ¼r den Guide",
     "getGuide": "Guide erhalten"
   },
   "niche": {
     "handwerker": {
-      "h1": "Websites für Handwerker: mehr passende Anfragen.",
+      "h1": "Websites fÒ¼r Handwerker: mehr passende Anfragen.",
       "p": "Klare Leistungen, lokale Sichtbarkeit, einfache Kontaktwege."
     },
     "praxis": {
-      "h1": "Websites für Praxen: weniger Rückfragen, mehr Terminanfragen.",
+      "h1": "Websites fÒ¼r Praxen: weniger RÒ¼ckfragen, mehr Terminanfragen.",
       "p": "Patientenfreundliche Struktur und klarer Online-Erstkontakt."
     },
     "werkstatt": {
-      "h1": "Websites für Werkstätten: planbare Leads statt Zufall.",
+      "h1": "Websites fÒ¼r WerkstÒ¤tten: planbare Leads statt Zufall.",
       "p": "Service-orientierte Seiten mit messbarer Conversion."
     }
   },
   "legal": {
     "impressum": {
       "h1": "Impressum",
-      "subtitle": "Angaben gemäß § 5 TMG.",
+      "subtitle": "Angaben gemÒ¤ÒŸ �\u001a§ 5 TMG.",
       "l1": "VS Studio",
-      "l2": "Musterstraße 10, 10115 Berlin, Deutschland",
+      "l2": "MusterstraÒŸe 10, 10115 Berlin, Deutschland",
       "l3": "E-Mail: kontakt@vs-web-studio.de",
       "l4": "Telefon: +49 30 1234567",
       "l5": "Vertreten durch: Vladyslav"
     },
     "datenschutz": {
-      "h1": "Datenschutzerklärung",
+      "h1": "DatenschutzerklÒ¤rung",
       "subtitle": "Kurzinformation zur Verarbeitung personenbezogener Daten.",
       "l1": "Wir verarbeiten Daten nur zweckgebunden (Kontaktanfragen, Angebotserstellung, Statistik).",
       "l2": "Rechtsgrundlagen: Art. 6 Abs. 1 lit. b und f DSGVO.",
-      "l3": "Betroffene Rechte: Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch.",
-      "l4": "Kontakt für Datenschutz: datenschutz@vs-web-studio.de"
+      "l3": "Betroffene Rechte: Auskunft, Berichtigung, LÒ¶schung, EinschrÒ¤nkung, Widerspruch.",
+      "l4": "Kontakt fÒ¼r Datenschutz: datenschutz@vs-web-studio.de"
     },
     "agb": {
       "h1": "AGB",
-      "subtitle": "Optionale allgemeine Geschäftsbedingungen.",
-      "l1": "Leistungen werden gemäß Angebot und vereinbartem Umfang erbracht.",
-      "l2": "Zahlungsbedingungen, Nutzungsrechte und Gewährleistung richten sich nach dem Vertrag."
+      "subtitle": "Optionale allgemeine GeschÒ¤ftsbedingungen.",
+      "l1": "Leistungen werden gemÒ¤ÒŸ Angebot und vereinbartem Umfang erbracht.",
+      "l2": "Zahlungsbedingungen, Nutzungsrechte und GewÒ¤hrleistung richten sich nach dem Vertrag."
     },
     "cookies": {
       "h1": "Cookie-Hinweise",
       "subtitle": "Informationen zu eingesetzten Cookies und Messdiensten.",
-      "l1": "Technisch notwendige Cookies sichern die Funktionalität der Website.",
+      "l1": "Technisch notwendige Cookies sichern die FunktionalitÒ¤t der Website.",
       "l2": "Optionale Analyse-Cookies helfen bei der Optimierung von Inhalten und Kampagnen."
     }
   },
@@ -776,6 +827,142 @@
     "form": {
       "success": "Danke fuer dein Feedback!",
       "error": "Feedback konnte nicht gesendet werden."
+    }
+  },
+  "aboutPage": {
+    "heroEyebrow": "VS Studio | Hildesheim | Niedersachsen | Германия",
+    "heroTitleLine1": "Уебсайтове и",
+    "heroTitleLine2": "lead системи",
+    "heroTitleLine3": "за локален бизнес",
+    "heroTitleLine4": "в Hildesheim",
+    "heroSubtitle": "Повече качествени запитвания чрез бързи сайтове, ясни пътища за контакт и измерим маркетинг.",
+    "heroTrustline": "Локално в Hildesheim. Стратегически в Niedersachsen. Приложимо в цяла Германия.",
+    "primaryCta": "Безплатен анализ на сайт",
+    "section": {
+      "about": "За нас",
+      "localAdvantages": "Локални предимства",
+      "how": "Как работим",
+      "value": "Стойност",
+      "trust": "Доверие"
+    },
+    "blocks": {
+      "who": {
+        "title": "За локален бизнес",
+        "text": "Уебсайтове, lead системи и маркетинг за компании, които искат предвидимо повече запитвания."
+      },
+      "focus": {
+        "title": "Една система вместо отделни решения",
+        "text": "Сайтът, каналите за контакт, кампаниите и tracking-ът работят като един ясен процес."
+      },
+      "locality": {
+        "title": "Локалната близост като предимство",
+        "subtitle": "Бърза координация, ясни приоритети и измерими резултати.",
+        "text1": "Работим директно с локални компании без дълги агентски вериги и излишна бюрокрация.",
+        "i1": "Директна комуникация без посредници",
+        "i2": "Бързо изпълнение вместо дълги съгласувания",
+        "i3": "Разбиране за локални пазари и бюджети",
+        "text2": "Решенията се вземат по-бързо, а проектите не висят със седмици в одобрения.",
+        "text3": "Това спестява време, намалява разходите и ускорява резултатите.",
+        "text4": "Познаваме реалността на малкия и средния бизнес: ограничени бюджети, малко време и нужда от ясен резултат.",
+        "text5": "Затова работим прагматично и структурирано - от анализа до оптимизацията."
+      }
+    },
+    "photoAlt": "Владислав, основател на VS Web Studio от Hildesheim",
+    "photoCaption": "Владислав - основател на VS Web Studio",
+    "photoFacts": {
+      "f1": "Фокус: локален бизнес",
+      "f2": "Локация: Hildesheim",
+      "f3": "Проекти: в цяла Германия"
+    },
+    "geo": {
+      "local": "Hildesheim",
+      "region": "Niedersachsen",
+      "country": "В цяла Германия"
+    },
+    "localPriority": "Кратки пътища. Ясни приоритети. Фокус върху резултата.",
+    "how": {
+      "s1": {
+        "title": "1. Разбираме",
+        "text": "Анализираме аудиторията, офертата и пазара."
+      },
+      "s2": {
+        "title": "2. Изпълняваме",
+        "text": "Пускаме сайта, lead системата и кампаниите."
+      },
+      "s3": {
+        "title": "3. Оптимизираме",
+        "text": "Анализираме данните и подобряваме резултатите."
+      }
+    },
+    "cards": {
+      "work": {
+        "title": "Ясни процеси",
+        "desc": "Кратки пътища. Ясна отговорност."
+      },
+      "ai": {
+        "title": "AI First",
+        "desc": "Автоматизация там, където спестява време."
+      },
+      "leads": {
+        "title": "Фокус върху lead-ите",
+        "desc": "Дизайнът и маркетингът работят заедно."
+      }
+    },
+    "results": {
+      "title": "Какво получават клиентите",
+      "i1": "Бърз сайт, който работи добре на всеки смартфон",
+      "i2": "Ясни начини за контакт: обаждане, форма, записване",
+      "i3": "Измерими запитвания с tracking и маркетингови данни"
+    },
+    "trust": {
+      "projects": {
+        "label": "Брой проекти",
+        "value": "120+",
+        "text": "Сайтове, lead funnel-и и relaunch проекти."
+      },
+      "industries": {
+        "label": "Ниши",
+        "value": "12",
+        "text": "Занаятчии, практики, гастрономия, beauty, образование и локални услуги."
+      },
+      "focus": {
+        "label": "Фокус",
+        "value": "Локално + Измеримо",
+        "text": "Hildesheim, Niedersachsen и Германия с ясен lead фокус."
+      }
+    },
+    "cta": {
+      "title": "Готови ли сте за предвидими запитвания?",
+      "text": "В безплатния първи разговор ще покажем най-силните лостове за вашия сайт, lead процеси и реклама."
+    },
+    "visual": {
+      "productBadge": "Lead System",
+      "flowLabel": "Поток",
+      "flowValue": "От before към система и резултат",
+      "before": {
+        "label": "Преди",
+        "title": "Много кликове, малко яснота",
+        "i1": "Бавни страници",
+        "i2": "Неясни пътища за контакт",
+        "i3": "Нечисти данни"
+      },
+      "system": {
+        "label": "Система",
+        "phoneBadge": "Сайт",
+        "cta": "Заяви среща",
+        "pill1": "Сайт",
+        "pill2": "Контакт",
+        "pill3": "Tracking"
+      },
+      "result": {
+        "label": "Резултат",
+        "title": "Квалифицирани запитвания",
+        "text": "Измерими, по-бързо обработвани и ясно видими във funnel-а."
+      },
+      "anchor": {
+        "label": "Резултат",
+        "value": "Повече квалифицирани запитвания вместо само трафик"
+      }
     }
   }
 }

@@ -10,31 +10,31 @@
     "it": "Italiano",
     "es": "Español",
     "el": "Ελληνικά",
-    "ro": "Română",
+    "ro": "Rom�n\u0003",
     "bg": "Български"
   },
   "common": {
-    "projectRequest": "طلب المشروع",
-    "viewPrices": "عرض الأسعار",
-    "cancel": "إلغاء"
+    "projectRequest": "Ø§Ø·Ù„Ø¨ Ù…Ø´Ø±ÙˆØ¹Ù‹Ø§",
+    "viewPrices": "Ø¹Ø±Ø¶ Ø§Ù„Ø£Ø³Ø¹Ø§Ø±",
+    "cancel": "Ø¥Ù„ØºØ§Ø¡"
   },
   "header": {
-    "menu": "القائمة",
-    "menuAria": "افتح قائمة التنقل",
-    "services": "الخدمات",
-    "preise": "الأسعار",
-    "referenzen": "المراجع",
-    "ueberUns": "عنا",
-    "kontakt": "جهة الاتصال"
+    "menu": "Ø§Ù„Ù‚Ø§Ø¦Ù…Ø©",
+    "menuAria": "Ø§ÙØªØ­ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„ØªÙ†Ù‚Ù„",
+    "services": "Ø§Ù„Ø®Ø¯Ù…Ø§Øª",
+    "preise": "Ø§Ù„Ø£Ø³Ø¹Ø§Ø±",
+    "referenzen": "Ø§Ù„Ø£Ø¹Ù…Ø§Ù„",
+    "ueberUns": "Ù…Ù† Ù†Ø­Ù†",
+    "kontakt": "ØªÙˆØ§ØµÙ„"
   },
   "footer": {
-    "tagline": "VS Studio · مواقع الويب وتطبيقات الويب والإعلانات والأتمتة",
-    "impressum": "بصمة",
-    "datenschutz": "حماية البيانات",
-    "agb": "الشروط والأحكام",
-    "cookies": "ملفات تعريف الارتباط",
-    "cookieSettings": "إعدادات ملفات تعريف الارتباط",
-    "blog": "مدونة"
+    "tagline": "VS Studio · �&��ا�\u001aع ���`ب�R أ� ظ�&ة جذب ع�&�\u001eاء�R إع�\u001eا� ات�R ��أت�&تة �\u001e�\u001eشرْات ا�\u001e�&ح�\u001e�`ة",
+    "impressum": "Ø§Ù„Ø¨ÙŠØ§Ù†Ø§Øª Ø§Ù„Ù‚Ø§Ù†ÙˆÙ†ÙŠØ©",
+    "datenschutz": "Ø§Ù„Ø®ØµÙˆØµÙŠØ©",
+    "agb": "Ø§Ù„Ø´Ø±ÙˆØ· ÙˆØ§Ù„Ø£Ø­ÙƒØ§Ù…",
+    "cookies": "Ù…Ù„ÙØ§Øª ØªØ¹Ø±ÙŠÙ Ø§Ù„Ø§Ø±ØªØ¨Ø§Ø·",
+    "cookieSettings": "Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ù…Ù„ÙØ§Øª ØªØ¹Ø±ÙŠÙ Ø§Ù„Ø§Ø±ØªØ¨Ø§Ø·",
+    "blog": "Ø§Ù„Ù…Ø¯ÙˆÙ†Ø©"
   },
   "cookie": {
     "aria": "Cookie-Einwilligung",
@@ -43,320 +43,320 @@
     "settings": "Einstellungen",
     "acceptAll": "Alle akzeptieren",
     "modalTitle": "Datenschutz-Einstellungen",
-    "modalText": "Du kannst deine Einwilligung jederzeit in den Cookie-Einstellungen ändern.",
+    "modalText": "Du kannst deine Einwilligung jederzeit in den Cookie-Einstellungen Ò�\u0019�\u001a¤ndern.",
     "essential": "Essenzielle Cookies (immer aktiv)",
     "statistics": "Statistik (z. B. Reichweite, Nutzung)",
     "marketing": "Marketing (z. B. Social/Ads Tracking)",
     "saveSelection": "Auswahl speichern"
   },
   "home": {
-    "heroTitle": "مواقع الويب التي تجلب الاستفسارات بدلاً من مجرد الظهور بمظهر جيد.",
-    "heroSubtitle": "تحديد المواقع بشكل واضح وتنفيذ سريع وحزم شفافة لمقدمي الخدمات المحليين في ألمانيا.",
-    "toFaq": "انتقل إلى الأسئلة الشائعة",
-    "partnersTitle": "النقاط البارزة والفئات المستهدفة والخدمات",
+    "heroTitle": "��\u001e���\u001a����\u001e��9 ��S�\u001a���\u001e���\u001a�a��S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e��9 ��\u001e��&���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��&� ��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���\u001e��\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�� ��\u001e���\u001a����\u001e���\u001a�� ��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a����\u001e��9 ��S�\u001a� ��S�\u001a���\u001e���\u001a����S�\u001a���\u001e���\u001a����S�\u001a� ��S�\u001a���\u001e��&���S�\u001a�.",
+    "heroSubtitle": "��S�\u001a���S�\u001a���S�\u001a���\u001e��&���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e��9 ��S�\u001a���\u001e���\u001a�a��S�\u001a� ��S�\u001a���S�\u001a���\u001e�� �\"��\u001e���\u001a�~ ��\u001e��9 ��S�\u001a���S�\u001a���S�\u001a� ��\u001e��9 ��S�\u001a���\u001e���\u001a����\u001e��\u001a���\u001e��&���S�\u001a� ��S�\u001a���S�\u001a���\u001e��&���S�\u001a� ��\u001e��9 ��S�\u001a���S�\u001a���\u001e���\u001a�� ��S�\u001a���\u001e��\u001a���S�\u001a���\u001e��\u001a���S�\u001a� ��\u001e���\u001a�~��\u001e���\u001a����\u001e���\u001a�a��S�\u001a���\u001e���\u001a����\u001e��&� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e���\u001a�~��\u001e��&���\u001e��&���\u001e���\u001a�� ��\u001e��\u001a���\u001e��&� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e���\u001a����\u001e��&���S�\u001a�.",
+    "toFaq": "��S�\u001a���\u001e���\u001a����S�\u001a���\u001e���\u001a�a��\u001e���\u001a�~ ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a�",
+    "partnersTitle": "��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e���\u001a�a��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��\u001e��9 ��S�\u001a���\u001e���\u001a�~��\u001e��\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���\u001e��\u001a���S�\u001a� ��\u001e��9 ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a�",
     "groups": {
-      "highlights": "أبرز الأحداث",
-      "forWhom": "لمن",
-      "services": "الخدمات"
+      "highlights": "��S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a�",
+      "forWhom": "��\u001e���\u001a�~��\u001e���\u001a����\u001e���\u001a��",
+      "services": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a�"
     },
     "partners": {
       "fastLoad": {
-        "title": "تم التحميل بسرعة",
-        "desc": "يتم تحميل الصفحة في ثوانٍ"
+        "title": "��S�\u001a���\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a����\u001e��&���\u001e���\u001a�~ ��S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a�",
+        "desc": "��\u001e��&���S�\u001a���\u001e���\u001a�� ��S�\u001a���S�\u001a���\u001e���\u001a����\u001e��&���\u001e���\u001a�~ ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��\u001a���S�\u001a���S�\u001a� ��\u001e��\u001a���\u001e��&� ��S�\u001a���\u001e��9 ��S�\u001a���\u001e���\u001a����\u001e��\u001a�"
       },
       "moreLeads": {
-        "title": "المزيد من الاستفسارات",
-        "desc": "المزيد من جهات الاتصال عبر النماذج"
+        "title": "��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e��&���S�\u001a� ��\u001e���\u001a����\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���\u001e��\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a�",
+        "desc": "��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e��&���S�\u001a� ��\u001e���\u001a����\u001e���\u001a�� ��S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a�~ ��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a�"
       },
       "clearPrices": {
-        "title": "أسعار واضحة",
-        "desc": "أنت تعرف التكاليف مقدمًا"
+        "title": "Ò�S�\u001a£Ò�S�\u001a³Ò�S�\u001a¹Ò�S�\u001a§Ò�S�\u001a± Ò�\u001e��9⬠Ò�S�\u001a§Ò�S�\u001a¶Ò�S�\u001a­Ò�S�\u001a©",
+        "desc": "��S�\u001a���\u001e���\u001a����S�\u001a� ��S�\u001a���S�\u001a���S�\u001a���\u001e��\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e�� �\"��S�\u001a���\u001e���\u001a�~��\u001e��&���\u001e��\u001a� ��\u001e���\u001a����\u001e���\u001a�a��S�\u001a���\u001e���\u001a����\u001e���\u001a����S�\u001a�"
       },
       "personalHelp": {
-        "title": "المساعدة الشخصية",
-        "desc": "الدعم المباشر دون الانتظار في الطابور"
+        "title": "��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���\u001e��&���S�\u001a�",
+        "desc": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e��9 ��\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��\u001e��\u001a���\u001e��&� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���\u001e��9 ��S�\u001a�"
       },
       "handwerker": {
-        "title": "حرفي",
-        "desc": "الطلبات حسب المدينة والخدمة"
+        "title": "Ò�S�\u001a­Ò�S�\u001a±Ò�\u001e��\u001aÒ�\u001e��& ",
+        "desc": "��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e��&���\u001e���\u001a����S�\u001a� ��\u001e��9 ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a�"
       },
       "praxen": {
         "title": "Praxen",
-        "desc": "يجد المرضى المواعيد بسرعة أكبر"
+        "desc": "��\u001e��&���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e��9 ��S�\u001a���S�\u001a���\u001e��&���S�\u001a� ��S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a�"
       },
       "werkstaetten": {
-        "title": "ورش عمل",
-        "desc": "مسح صفحات الخدمة مع التتبع"
+        "title": "��\u001e��9 ��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a����\u001e���\u001a�~",
+        "desc": "��\u001e���\u001a����S�\u001a���S�\u001a� ��S�\u001a���\u001e��\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a� ��\u001e���\u001a����S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���S�\u001a�"
       },
       "localServices": {
-        "title": "الخدمات المحلية",
-        "desc": "مزيد من الرؤية في الموقع"
+        "title": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e���\u001a�~��\u001e��&���S�\u001a�",
+        "desc": "��\u001e���\u001a����S�\u001a���\u001e��&���S�\u001a� ��\u001e���\u001a����\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e��&���S�\u001a� ��\u001e��\u001a���\u001e��&� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e��9 ��\u001e���\u001a�a��S�\u001a�"
       },
       "websites": {
         "title": "Websites",
-        "desc": "حديث وسريع ومُحسّن للجوال"
+        "desc": "��S�\u001a���S�\u001a���\u001e��&���S�\u001a� ��\u001e��9 ��S�\u001a���S�\u001a���\u001e��&���S�\u001a� ��\u001e��9 ��\u001e���\u001a����\u001e��\u001a���S�\u001a���S�\u001a���\u001e���\u001a��S��\u001e���\u001a�� ��\u001e���\u001a�~��\u001e���\u001a�~��S�\u001a���\u001e��9 ��S�\u001a���\u001e���\u001a�~"
       },
       "webApps": {
-        "title": "تطبيقات الويب",
-        "desc": "أدوات للفريق والعملاء"
+        "title": "��S�\u001a���S�\u001a���S�\u001a���\u001e��&���\u001e���\u001a�a��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e��9 ��\u001e��&���S�\u001a�",
+        "desc": "��S�\u001a���S�\u001a���\u001e��9 ��S�\u001a���S�\u001a� ��\u001e���\u001a�~��\u001e���\u001a�~��\u001e��\u001a���S�\u001a���\u001e��&���\u001e���\u001a�a ��\u001e��9 ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a����\u001e���\u001a�~��S�\u001a���S�\u001a�"
       },
       "aiIntegration": {
-        "title": "تكامل الذكاء الاصطناعي",
-        "desc": "Chatbot للأسئلة والعملاء المحتملين"
+        "title": "��S�\u001a���\u001e�� �\"��S�\u001a���\u001e���\u001a����\u001e���\u001a�~ ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a���\u001e��&�",
+        "desc": "Chatbot ��\u001e���\u001a�~��\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a� ��\u001e��9 ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a����\u001e���\u001a�~��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a����\u001e���\u001a�~��\u001e��&���\u001e���\u001a��"
       },
       "socialMedia": {
-        "title": "وسائل التواصل الاجتماعي",
-        "desc": "موقع الويب + متصل بـ Instagram/Meta"
+        "title": "��\u001e��9 ��S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a�~ ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��9 ��S�\u001a���S�\u001a���\u001e���\u001a�~ ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a���\u001e��&�",
+        "desc": "��\u001e���\u001a����\u001e��9 ��\u001e���\u001a�a��S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e��9 ��\u001e��&���S�\u001a� + ��\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a�~ ��S�\u001a���\u001e���a� Instagram/Meta"
       },
       "socialAds": {
-        "title": "الإعلانات الاجتماعية",
-        "desc": "إعلانات مستهدفة ذات نتائج قابلة للقياس"
+        "title": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a���\u001e��&���S�\u001a�",
+        "desc": "��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a� ��\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���\u001e��\u001a���S�\u001a� ��S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a�a��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a� ��\u001e���\u001a�~��\u001e���\u001a�~��\u001e���\u001a�a��\u001e��&���S�\u001a���S�\u001a�"
       }
     },
-    "trustTitle": "ثق بنتائج ملموسة",
-    "trustDesc1": "المزيد من طلبات الاتصال خلال 60 يومًا.",
-    "trustDesc2": "تكلفة أقل لكل عميل متوقع بعد إصلاح التتبع.",
-    "trustDesc3": "متوسط ​​وقت التحميل على الهاتف المحمول.",
-    "faqTitle": "الأسئلة الشائعة",
+    "trustTitle": "��S�\u001a���\u001e���\u001a�a ��S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a����\u001e���\u001a�~��\u001e���\u001a����\u001e��9 ��S�\u001a���S�\u001a�",
+    "trustDesc1": "��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e��&���S�\u001a� ��\u001e���\u001a����\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a�~ ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�~ 60 ��\u001e��&���\u001e��9 ��\u001e���\u001a����\u001e���\u001a����S�\u001a�.",
+    "trustDesc2": "��S�\u001a���\u001e�� �\"��\u001e���\u001a�~��\u001e��\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�a��\u001e���\u001a�~ ��\u001e���\u001a�~��\u001e�� �\"��\u001e���\u001a�~ ��S�\u001a���\u001e���\u001a����\u001e��&���\u001e���\u001a�~ ��\u001e���\u001a����S�\u001a���\u001e��9 ��\u001e���\u001a�a��S�\u001a� ��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���S�\u001a�.",
+    "trustDesc3": "��\u001e���\u001a����S�\u001a���\u001e��9 ��S�\u001a���S�\u001a� Ң��a���\u001a��Ң��a���\u001a����\u001e��9 ��\u001e���\u001a�a��S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a����\u001e��&���\u001e���\u001a�~ ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a���\u001e��\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e���\u001a����\u001e��9 ��\u001e���\u001a�~.",
+    "faqTitle": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a�",
     "faq": {
-      "q1": "ما مدى السرعة التي يمكنك البدء بها؟",
-      "a1": "عادة ما نبدأ خلال 3-5 أيام عمل. ستتلقى مباشرة بعد طلبك خطة قصيرة تتضمن الخطوات الأولى.",
-      "q2": "ما الذي أحتاجه كعميل في البداية؟",
-      "a2": "المعلومات الأساسية فقط حول عرضك والمجموعة المستهدفة وقنوات الاتصال. وسنساعدك بعد ذلك فيما يتعلق بالهيكل والنصوص والأولويات.",
-      "q3": "كيف يتم التعاون؟",
-      "a3": "نعمل على مراحل قصيرة: الفكرة، التصميم، التنفيذ، الإطلاق. ستحصل على تحديثات واضحة حتى تعرف دائمًا ما سيحدث بعد ذلك.",
-      "q4": "هل هذا مناسب للشركات الصغيرة؟",
-      "a4": "نعم. تم تصميم عروضنا عمدًا للشركات المحلية: أسعار واضحة، وبداية سريعة، والتركيز على الاستفسارات الحقيقية بدلاً من مجرد العناصر البصرية.",
-      "q5": "ماذا يحدث بعد الإطلاق؟",
-      "a5": "بعد الإطلاق، نقوم بفحص البيانات وتحسين نقاط التحويل وندعمك في الضبط الدقيق حتى يعمل الموقع بشكل أفضل على المدى الطويل.",
-      "desc": "إجابات على الأسئلة المتداولة حول التوقيت والتكاليف وعملية الإطلاق والدعم المستمر."
+      "q1": "��\u001e���\u001a����S�\u001a� ��\u001e���\u001a����S�\u001a���\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��&� ��\u001e��&���\u001e���\u001a����\u001e�� �\"��\u001e���\u001a����\u001e�� �\" ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a����S�\u001a���S�&�",
+      "a1": "��S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a����S�\u001a� ��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�~ 3-5 ��S�\u001a���\u001e��&���S�\u001a���\u001e���\u001a�� ��S�\u001a���\u001e���\u001a����\u001e���\u001a�~. ��S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a�~��\u001e���\u001a�a��\u001e���\u001a�� ��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e�� �\" ��S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a�a��S�\u001a���\u001e��&���S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a����\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e��9 ��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��9 ��\u001e���\u001a�~��\u001e���\u001a��.",
+      "q2": "��\u001e���\u001a����S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��&� ��S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a�� ��\u001e�� �\"��S�\u001a���\u001e���\u001a����\u001e��&���\u001e���\u001a�~ ��\u001e��\u001a���\u001e��&� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���\u001e��&���S�\u001a���S�&�",
+      "a2": "��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e���\u001a�~��\u001e��9 ��\u001e���\u001a����S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���S�\u001a���\u001e��&���S�\u001a� ��\u001e��\u001a���\u001e���\u001a�a��S�\u001a� ��S�\u001a���\u001e��9 ��\u001e���\u001a�~ ��S�\u001a���S�\u001a���S�\u001a���\u001e�� �\" ��\u001e��9 ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e���\u001a����\u001e��9 ��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���\u001e��\u001a���S�\u001a� ��\u001e��9 ��\u001e���\u001a�a��\u001e���\u001a����\u001e��9 ��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a�~. ��\u001e��9 ��S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���S�\u001a���\u001e�� �\" ��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e�� �\" ��\u001e��\u001a���\u001e��&���\u001e���\u001a����S�\u001a� ��\u001e��&���S�\u001a���S�\u001a���\u001e���\u001a�~��\u001e���\u001a�a ��S�\u001a���S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e��&���\u001e�� �\"��\u001e���\u001a�~ ��\u001e��9 ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e��9 ��S�\u001a� ��\u001e��9 ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��9 ��\u001e���\u001a�~��\u001e��9 ��\u001e��&���S�\u001a���S�\u001a�.",
+      "q3": "��\u001e�� �\"��\u001e��&���\u001e��\u001a� ��\u001e��&���S�\u001a���\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���\u001e��9 ��\u001e���\u001a����S�&�",
+      "a3": "��\u001e���\u001a����S�\u001a���\u001e���\u001a����\u001e���\u001a�~ ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a�� ��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a�~ ��\u001e���\u001a�a��S�\u001a���\u001e��&���S�\u001a���S�\u001a�: ��S�\u001a���\u001e���\u001a�~��\u001e��\u001a���\u001e�� �\"��S�\u001a���S�\u001a���S�&�\" ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a����\u001e��&���\u001e���\u001a����S�&�\" ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a����\u001e��\u001a���\u001e��&���S�\u001a���S�&�\" ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�a. ��S�\u001a���S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a�~ ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a�� ��S�\u001a���S�\u001a���S�\u001a���\u001e��&���S�\u001a���S�\u001a���S�\u001a� ��\u001e��9 ��S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���\u001e���\u001a�� ��S�\u001a���S�\u001a���S�\u001a���\u001e��\u001a� ��S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a����\u001e���\u001a����S�\u001a� ��\u001e���\u001a����S�\u001a� ��S�\u001a���\u001e��&���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e�� �\".",
+      "q4": "��\u001e���\u001a����\u001e���\u001a�~ ��\u001e���\u001a����S�\u001a���S�\u001a� ��\u001e���\u001a����\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a�~��\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e��&���S�\u001a���S�\u001a���S�&�",
+      "a4": "��\u001e���\u001a����S�\u001a���\u001e���\u001a��. ��S�\u001a���\u001e���\u001a�� ��S�\u001a���S�\u001a���\u001e���\u001a����\u001e��&���\u001e���\u001a�� ��S�\u001a���S�\u001a���\u001e��9 ��S�\u001a���\u001e���\u001a����S�\u001a� ��S�\u001a���\u001e���\u001a����S�\u001a���\u001e���\u001a����S�\u001a� ��\u001e���\u001a�~��\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e���\u001a�~��\u001e��&���S�\u001a�: ��S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��\u001e��9 ��S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�&�\" ��\u001e��9 ��S�\u001a���S�\u001a���S�\u001a���\u001e��&���S�\u001a� ��S�\u001a���S�\u001a���\u001e��&���S�\u001a���S�\u001a���S�&�\" ��\u001e��9 ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e�� �\"��\u001e��&���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���\u001e��\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�a��\u001e��&���\u001e���\u001a�a��\u001e��&���S�\u001a� ��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�� ��\u001e���\u001a����\u001e���\u001a�� ��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���\u001e��&���S�\u001a�.",
+      "q5": "��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a� ��\u001e��&���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�a��S�&�",
+      "a5": "��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�a��S�&�\" ��\u001e���\u001a����\u001e���\u001a�a��\u001e��9 ��\u001e���\u001a�� ��S�\u001a���\u001e��\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��&���S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a� ��\u001e��9 ��S�\u001a���S�\u001a���S�\u001a���\u001e��&���\u001e���\u001a�� ��\u001e���\u001a����\u001e���\u001a�a��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e��9 ��\u001e��&���\u001e���\u001a�~ ��\u001e��9 ��\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a����\u001e�� �\" ��\u001e��\u001a���\u001e��&� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�a��\u001e��&���\u001e���\u001a�a ��S�\u001a���S�\u001a���\u001e���\u001a�� ��\u001e��&���S�\u001a���\u001e���\u001a����\u001e���\u001a�~ ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e��9 ��\u001e���\u001a�a��S�\u001a� ��S�\u001a���S�\u001a���\u001e�� �\"��\u001e���\u001a�~ ��S�\u001a���\u001e��\u001a���S�\u001a���\u001e���\u001a�~ ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��9 ��\u001e��&���\u001e���\u001a�~.",
+      "desc": "اجابات عن الاسئلة الشائعة حول المدة والتكلفة واطلاق المشروع والدعم بعد الاطلاق."
     },
     "hero": {
       "bento": {
         "speed": {
-          "label": "السرعة",
-          "value": "90+ منارة"
+          "label": "Geschwindigkeit",
+          "value": "90+ Lighthouse"
         },
         "seo": {
-          "label": "تحسين محركات البحث",
-          "value": "الأساس الفني"
+          "label": "SEO",
+          "value": "Technisches Fundament"
         },
         "leads": {
-          "label": "الاستفسارات",
-          "value": "مسح CTA والنماذج"
+          "label": "Anfragen",
+          "value": "Klare CTA und Formulare"
         },
         "support": {
-          "label": "الدعم",
-          "value": "بعد الإطلاق"
+          "label": "Support",
+          "value": "Nach dem Launch"
         }
       }
     },
     "partnersSection": {
-      "title": "المزايا ومجالات التطبيق",
-      "desc": "ما هي المهام التي نغطيها وما هي الشركات المحلية التي نقوم في أغلب الأحيان بتنفيذ مواقع الويب وتوجيه مسارات التحويل لها."
+      "title": "المزايا ومجالات العمل",
+      "desc": "Welche Aufgaben wir abdecken und für welche lokalen Unternehmen wir am häufigsten Websites und Lead-Funnels umsetzen."
     },
     "marquee": {
-      "aria": "الصناعات",
-      "title": "الصناعات التي نعمل معها",
-      "desc": "اختر الاتجاه وشاهد أمثلة على الأسلوب المناسب. وهذا يعني أنه يمكننا بناء عرض دقيق لشركتك بسرعة أكبر.",
+      "aria": "Branchen",
+      "title": "القطاعات التي نعمل معها",
+      "desc": "Wählen Sie eine Richtung und sehen Sie passende Stilbeispiele. So bauen wir schneller ein präzises Angebot für Ihr Unternehmen.",
       "items": {
-        "handwerk": "الحرف اليدوية",
+        "handwerk": "Handwerk",
         "praxen": "Praxen",
-        "werkstaetten": "ورش عمل",
-        "gastronomie": "فن الطهو",
-        "beauty": "الجمال",
-        "immobilien": "العقارات",
-        "kanzlei": "محاماة",
-        "fitness": "اللياقة البدنية",
-        "reinigung": "التنظيف",
-        "transport": "النقل",
-        "coaching": "التدريب",
-        "bildung": "التعليم"
+        "werkstaetten": "Werkstätten",
+        "gastronomie": "Gastronomie",
+        "beauty": "Beauty",
+        "immobilien": "Immobilien",
+        "kanzlei": "Kanzlei",
+        "fitness": "Fitness",
+        "reinigung": "Reinigung",
+        "transport": "Transport",
+        "coaching": "Coaching",
+        "bildung": "Bildung"
       }
     },
     "process": {
       "title": "كيف نعمل",
-      "desc": "عملية شفافة بدون خطوات غير ضرورية: بدءًا من الإحاطة القصيرة وحتى الإطلاق والتحسين بمواعيد نهائية واضحة.",
-      "aria": "مراحل المشروع",
-      "stage": "المرحلة",
+      "desc": "Ein transparenter Prozess ohne unnötige Schritte: vom kurzen Briefing bis zu Launch und Optimierung mit klaren Deadlines.",
+      "aria": "Projektphasen",
+      "stage": "Phase",
       "nav": {
-        "prev": "العودة",
-        "next": "التالي"
+        "prev": "Zurück",
+        "next": "Weiter"
       },
       "steps": {
         "s1": {
-          "title": "مكالمة مدتها 15 دقيقة",
-          "text": "نوضح المهمة ومؤشر الأداء الرئيسي والموعد النهائي ونتفق فورًا على تنسيق الإطلاق."
+          "title": "15-Minuten-Call",
+          "text": "Wir klären Aufgabe, KPI und Deadline und stimmen sofort das Launch-Format ab."
         },
         "s2": {
-          "title": "النموذج الأولي في 48 ساعة",
-          "text": "نعرض بنية الصفحة وعبارات الحث على اتخاذ إجراء وتدفق العملاء المحتملين قبل التطوير."
+          "title": "Prototyp in 48h",
+          "text": "Wir zeigen Seitenstruktur, CTA und Lead-Flow vor der Entwicklung."
         },
         "s3": {
-          "title": "التطوير خلال 7-14 يومًا",
-          "text": "التنفيذ وأساس تحسين محركات البحث (SEO) وعمليات التكامل والتحليلات دون أي تكاليف إضافية غير ضرورية."
+          "title": "Entwicklung in 7-14 Tagen",
+          "text": "Umsetzung, SEO-Basis, Integrationen und Analytics ohne unnötigen Overhead."
         },
         "s4": {
-          "title": "الإطلاق والتحسين",
-          "text": "نبدأ البث المباشر ونتحقق من التحويل ونقدم خطة تحسين لمدة 30 يومًا."
+          "title": "Launch und Optimierung",
+          "text": "Wir gehen live, prüfen Conversion und liefern einen 30-Tage-Verbesserungsplan."
         }
       }
     },
     "projects": {
-      "title": "المشاريع/دراسات الحالة",
-      "desc": "مهام حقيقية ونتائج متوقعة دون وعود فارغة. قم بالتمرير على حالة للمعاينة المباشرة.",
+      "title": "المشاريع / دراسات الحالة",
+      "desc": "Reale Aufgaben und erwartbare Ergebnisse ohne leere Versprechen. Hover auf einen Case für Live-Preview.",
       "cards": {
         "c1": {
-          "title": "موقع الاستفسار المحلي",
-          "description": "صفحة مقصودة مع التركيز على النماذج والمكالمات والاتصال السريع عبر الهاتف المحمول.",
-          "goal": "الهدف: المزيد من الاستفسارات دون زيادة الميزانية"
+          "title": "Website für lokale Anfragen",
+          "description": "Landingpage mit Fokus auf Formular, Anruf und schnellen Mobile-Kontakt.",
+          "goal": "Ziel: mehr Anfragen ohne Budgeterhöhung"
         },
         "c2": {
-          "title": "الصفحة المقصودة للإعلانات",
-          "description": "صفحة منفصلة بها تتبع لحملات Meta وGoogle.",
-          "goal": "التأثير المتوقع: المزيد من العملاء المحتملين المؤهلين من الإعلانات"
+          "title": "Landingpage für Ads",
+          "description": "Separate Seite mit Tracking für Meta- und Google-Kampagnen.",
+          "goal": "Erwarteter Effekt: qualifiziertere Leads aus Werbung"
         },
         "c3": {
-          "title": "موقع للتدريب",
-          "description": "هيكل الخدمة الواضح والأسئلة الشائعة وتدفق المواعيد عبر الإنترنت.",
-          "goal": "الهدف: المزيد من حجوزات المواعيد مع عدد أقل من الاستفسارات"
+          "title": "Website für Praxis",
+          "description": "Klare Leistungsstruktur, FAQ und Online-Termin-Flow.",
+          "goal": "Ziel: mehr Terminbuchungen mit weniger Rückfragen"
         },
         "c4": {
-          "title": "لوحة معلومات للعملاء المحتملين",
-          "description": "واجهة داخلية لمعالجة العملاء المحتملين والتحكم في حالتهم.",
-          "goal": "التأثير المتوقع: معالجة أسرع للطلبات"
+          "title": "Dashboard für Leads",
+          "description": "Internes Interface zur Lead-Bearbeitung und Statuskontrolle.",
+          "goal": "Erwarteter Effekt: schnellere Bearbeitung von Anfragen"
         }
       }
     },
     "configurator": {
-      "title": "مكون العرض",
-      "desc": "حدد معلمات المشروع واحصل على السعر المبدئي ومعدلات الدعم المناسبة.",
+      "title": "مُنشئ العرض",
+      "desc": "Wählen Sie Projektparameter und erhalten Sie einen Startpreis sowie passende Support-Tarife.",
       "labels": {
-        "goal": "الهدف",
-        "integrations": "التكامل",
-        "ads": "الإعلان",
-        "term": "الإطار الزمني",
-        "content": "مستوى المحتوى",
-        "languages": "اللغات",
-        "hosting": "الاستضافة",
+        "goal": "Ziel",
+        "integrations": "Integrationen",
+        "ads": "Werbung",
+        "term": "Zeitrahmen",
+        "content": "Content-Level",
+        "languages": "Sprachen",
+        "hosting": "Hosting",
         "domain": "Domain",
-        "pages": "صفحة",
-        "seo": "تحسين محركات البحث"
+        "pages": "Seiten",
+        "seo": "SEO"
       },
       "options": {
         "common": {
-          "other": "أخرى"
+          "other": "Andere"
         },
         "goal": {
-          "leads": "العملاء المحتملين",
-          "calls": "المكالمات",
+          "leads": "Leads",
+          "calls": "Anrufe",
           "booking": "Buchungen"
         },
         "integrations": {
           "booking": "Buchung",
-          "crm": "إدارة علاقات العملاء",
-          "chat": "الدردشة",
-          "payments": "المدفوعات"
+          "crm": "CRM",
+          "chat": "Chat",
+          "payments": "Zahlungen"
         },
         "ads": {
-          "none": "بدون إعلانات",
-          "meta": "ميتا",
-          "google": "جوجل"
+          "none": "Ohne Werbung",
+          "meta": "Meta",
+          "google": "Google"
         },
         "term": {
-          "up_to_7": "حتى أسبوع واحد",
-          "from_7_to_14": "7-14 يومًا",
-          "from_14_to_21": "14-21 يومًا",
-          "from_21_to_30": "21-30 يومًا"
+          "up_to_7": "Bis 1 Woche",
+          "from_7_to_14": "7-14 Tage",
+          "from_14_to_21": "14-21 Tage",
+          "from_21_to_30": "21-30 Tage"
         },
         "content": {
-          "has": "النصوص المتاحة",
-          "copy": "كتابة الإعلانات مطلوبة"
+          "has": "Texte vorhanden",
+          "copy": "Copywriting nötig"
         },
         "languages": {
-          "basic": "لغة واحدة",
-          "multi": "أكثر من لغتين"
+          "basic": "1 Sprache",
+          "multi": "2+ Sprachen"
         },
         "hosting": {
-          "shared": "الاستضافة المشتركة",
-          "vps": "الخادم الافتراضي الخاص",
-          "managed": "الاستضافة المُدارة"
+          "shared": "Shared Hosting",
+          "vps": "VPS",
+          "managed": "Managed Hosting"
         },
         "domain": {
-          "new_domain": "مجال جديد",
+          "new_domain": "Neue Domain",
           "existing_domain": "Domain vorhanden",
-          "transfer": "نقل النطاق"
+          "transfer": "Domain-Transfer"
         },
         "pages": {
-          "one": "صفحة واحدة",
-          "up_to_3": "ما يصل إلى 3 صفحات",
-          "five_plus": "أكثر من 5 صفحات"
+          "one": "1 Seite",
+          "up_to_3": "Bis 3 Seiten",
+          "five_plus": "5+ Seiten"
         },
         "seo": {
-          "base": "قاعدة تحسين محركات البحث",
-          "extended": "SEO ممتد"
+          "base": "SEO Base",
+          "extended": "SEO Extended"
         }
       },
-      "reset": "إعادة ضبط كل شيء",
-      "empty": "اختر خيارًا واحدًا على الأقل في كل كتلة. الاختيار المتعدد ممكن. بالنسبة لـ \"أخرى\" لا يتم فرض أي رسوم إضافية.",
-      "recommended": "الموصى به:",
+      "reset": "Alles zurücksetzen",
+      "empty": "Wählen Sie mindestens eine Option in jedem Block. Mehrfachauswahl ist möglich; bei \"Andere\" wird keine Zusatzgebühr berechnet.",
+      "recommended": "Empfohlen:",
       "pack": {
-        "starter": "كاتب",
-        "business": "الأعمال"
+        "starter": "Starter",
+        "business": "Business"
       },
-      "launchPrice": "السعر المبدئي:",
-      "supportMonthly": "الدعم / الشهر",
-      "supportYearly": "الدعم / السنة (-30%)",
-      "cta": "طلب الاتصال وتقدير التكلفة الدقيق",
+      "launchPrice": "Startpreis:",
+      "supportMonthly": "Support / Monat",
+      "supportYearly": "Support / Jahr (-30%)",
+      "cta": "Kontaktanfrage und exakter Kostenvoranschlag",
       "bullets": {
-        "prototype": "النموذج الأولي والهيكل مع التركيز على الطلبات",
-        "goal": "الأهداف: {{value}}",
-        "integrations": "التكامل: {{value}}",
-        "term": "الإطار الزمني: {{value}}",
-        "hosting": "الاستضافة: {{value}}",
-        "domain": "النطاق: {{value}}",
-        "pages": "الصفحات: {{value}}",
-        "analytics": "GA4 وتتبع الأحداث للنماذج/جهات الاتصال",
-        "copy_true": "الدعم بالنصوص والعروض",
-        "copy_false": "نحن نعمل مع النصوص الموجودة لديك",
-        "market_note": "السعر الإرشادي أقل من مستوى السوق بالنسبة للشركات الصغيرة"
+        "prototype": "Prototyp und Struktur mit Fokus auf Anfragen",
+        "goal": "Ziele: {{value}}",
+        "integrations": "Integrationen: {{value}}",
+        "term": "Zeitrahmen: {{value}}",
+        "hosting": "Hosting: {{value}}",
+        "domain": "Domain: {{value}}",
+        "pages": "Seiten: {{value}}",
+        "analytics": "GA4 und Event-Tracking für Formulare/Kontakte",
+        "copy_true": "Unterstützung bei Texten und Offer",
+        "copy_false": "Wir arbeiten mit Ihren vorhandenen Texten",
+        "market_note": "Orientierungspreis unter marktüblichem Niveau für kleine Unternehmen"
       },
       "brief": {
-        "title": "رسالة من مُكوِّن العرض:",
-        "goal": "الهدف: {{value}}",
-        "integrations": "التكامل: {{value}}",
-        "ads": "الإعلان: {{value}}",
-        "term": "الإطار الزمني: {{value}}",
-        "content": "المحتوى: {{value}}",
-        "languages": "اللغات: {{value}}",
-        "hosting": "الاستضافة: {{value}}",
-        "domain": "المجال: {{value}}",
-        "pages": "الصفحات: {{value}}",
-        "seo": "تحسين محركات البحث: {{value}}",
-        "launch_price": "السعر المبدئي: {{value}}",
-        "support_monthly": "الدعم / الشهر: {{value}}",
-        "support_yearly": "الدعم / السنة (-30%): {{value}}"
+        "title": "Brief aus dem Angebots-Konfigurator:",
+        "goal": "Ziel: {{value}}",
+        "integrations": "Integrationen: {{value}}",
+        "ads": "Werbung: {{value}}",
+        "term": "Zeitrahmen: {{value}}",
+        "content": "Content: {{value}}",
+        "languages": "Sprachen: {{value}}",
+        "hosting": "Hosting: {{value}}",
+        "domain": "Domain: {{value}}",
+        "pages": "Seiten: {{value}}",
+        "seo": "SEO: {{value}}",
+        "launch_price": "Startpreis: {{value}}",
+        "support_monthly": "Support / Monat: {{value}}",
+        "support_yearly": "Support / Jahr (-30%): {{value}}"
       }
     },
     "trust": {
-      "title": "ما تحصل عليه خلال 14 يومًا",
-      "desc": "نتائج بداية ملموسة: موقع ويب موجه للاستعلام، وإعداد تحليلات وخطة لمزيد من النمو.",
+      "title": "ما الذي ستحصل عليه خلال 14 يوما",
+      "desc": "Konkrete Start-Ergebnisse: eine anfrageorientierte Website, eingerichtete Analytics und ein Plan für weiteres Wachstum.",
       "deliverables": {
         "d1": {
-          "title": "النموذج الأولي في 48 ساعة",
-          "text": "نعرض الهيكل والحث على اتخاذ إجراء قبل البرمجة حتى يمكن التخطيط للقرارات."
+          "title": "Prototyp in 48h",
+          "text": "Wir zeigen Struktur und CTA vor dem Coding, damit Entscheidungen planbar bleiben."
         },
         "d2": {
-          "title": "موقع للاستفسارات",
-          "text": "النموذج والاتصال والماسنجر ونسخة الجوال للتواصل السريع."
+          "title": "Website für Anfragen",
+          "text": "Formular, Anruf, Messenger und mobile Version für schnelle Kontaktaufnahme."
         },
         "d3": {
-          "title": "التحليلات والتتبع",
-          "text": "أحداث GA4 plus، بحيث تكون مرئية عند ظهور الاستفسارات."
+          "title": "Analytics und Tracking",
+          "text": "GA4 plus Events, damit sichtbar wird, wo Anfragen entstehen."
         },
         "d4": {
-          "title": "خطة التحسين لمدة 30 يومًا",
-          "text": "امسح الخطوات التالية لزيادة التحويلات بعد الإطلاق."
+          "title": "30-Tage-Optimierungsplan",
+          "text": "Klare nächste Schritte zur Conversion-Steigerung nach Launch."
         }
       }
     }
@@ -397,7 +397,7 @@
       },
       "social": {
         "title": "Social Media",
-        "desc": "Content-Module, Channel-Verknüpfung, Kontaktpfade."
+        "desc": "Content-Module, Channel-VerknÒ�\u0019�\u001a¼pfung, Kontaktpfade."
       },
       "ads": {
         "title": "Social Ads",
@@ -409,246 +409,297 @@
   },
   "pricing": {
     "hero": {
-      "titleLine1": "Website and Lead System",
-      "titleLine2": "للشركات المحلية",
-      "titleLine3": "ابتداء من EUR 690",
-      "subtitle": "Premium setup for local businesses in Germany: clear funnel, measurable leads, clean handover to sales.",
-      "cta": "جلسة أولى مجانية",
+      "titleLine1": "Ù…ÙˆÙ‚Ø¹ ÙˆÙ†Ø¸Ø§Ù… Ø¬Ø°Ø¨ Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡",
+      "titleLine2": "Ù„Ù„Ø´Ø±ÙƒØ§Øª Ø§Ù„Ù…Ø­Ù„ÙŠØ©",
+      "titleLine3": "Ø§Ø¨ØªØ¯Ø§Ø¡Ù‹ Ù…Ù† EUR 690",
+      "subtitle": "Ø¥Ø¹Ø¯Ø§Ø¯ Ø§Ø­ØªØ±Ø§ÙÙŠ Ù„Ù„Ø´Ø±ÙƒØ§Øª Ø§Ù„Ù…Ø­Ù„ÙŠØ© ÙÙŠ Ø£Ù„Ù…Ø§Ù†ÙŠØ§: Ù…Ø³Ø§Ø± ÙˆØ§Ø¶Ø­ØŒ Ø¹Ù…Ù„Ø§Ø¡ Ù…Ø­ØªÙ…Ù„ÙˆÙ† Ù‚Ø§Ø¨Ù„ÙˆÙ† Ù„Ù„Ù‚ÙŠØ§Ø³ØŒ ÙˆØªØ³Ù„ÙŠÙ… Ù…Ù†Ø¸Ù… Ù„ÙØ±ÙŠÙ‚ Ø§Ù„Ù…Ø¨ÙŠØ¹Ø§Øª.",
+      "cta": "Ø§Ø­Ø¬Ø² Ø¬Ù„Ø³Ø© Ø£ÙˆÙ„ÙŠØ© Ù…Ø¬Ø§Ù†ÙŠØ©",
       "metrics": {
-        "leadVolume": "Lead Volume",
-        "qualifiedLeads": "Qualified Leads",
-        "costPerLead": "Cost per Lead"
+        "leadVolume": "Ø­Ø¬Ù… Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡ Ø§Ù„Ù…Ø­ØªÙ…Ù„ÙŠÙ†",
+        "qualifiedLeads": "Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡ Ø§Ù„Ù…Ø¤Ù‡Ù„ÙˆÙ†",
+        "costPerLead": "ØªÙƒÙ„ÙØ© Ø§Ù„Ø¹Ù…ÙŠÙ„ Ø§Ù„Ù…Ø­ØªÙ…Ù„"
       },
       "funnel": {
-        "traffic": "Traffic",
-        "landing": "Landing",
-        "leads": "Leads",
+        "traffic": "Ø§Ù„Ø²ÙŠØ§Ø±Ø§Øª",
+        "landing": "Ø§Ù„ØµÙØ­Ø©",
+        "leads": "Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡ Ø§Ù„Ù…Ø­ØªÙ…Ù„ÙˆÙ†",
         "crm": "CRM",
-        "sales": "Sales"
+        "sales": "Ø§Ù„Ù…Ø¨ÙŠØ¹Ø§Øª"
       }
     },
     "flow": {
-      "title": "تدفق نظام العملاء",
+      "title": "ØªØ¯ÙÙ‚ Ù†Ø¸Ø§Ù… Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡",
       "steps": {
-        "traffic": "Traffic",
-        "landing": "Landing Page",
-        "capture": "Lead Capture",
+        "traffic": "Ø§Ù„Ø²ÙŠØ§Ø±Ø§Øª",
+        "landing": "Ø§Ù„ØµÙØ­Ø© Ø§Ù„Ù…Ù‚ØµÙˆØ¯Ø©",
+        "capture": "Ø§Ù„ØªÙ‚Ø§Ø· Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡",
         "crm": "CRM",
-        "sales": "Sales"
+        "sales": "Ø§Ù„Ù…Ø¨ÙŠØ¹Ø§Øª"
       }
     },
     "packages": {
-      "title": "باقات الأسعار",
-      "badge": "موصى به",
-      "coreTitle": "Core",
-      "plusTitle": "Plus",
-      "outcomeLabel": "Result:",
+      "title": "Ø¨Ø§Ù‚Ø§Øª Ø§Ù„Ø£Ø³Ø¹Ø§Ø±",
+      "badge": "Ù…ÙˆØµÙ‰ Ø¨Ù‡",
+      "billing": {
+        "monthly": "Ø´Ù‡Ø±ÙŠ",
+        "yearly": "Ø³Ù†ÙˆÙŠ"
+      },
+      "coreTitle": "Ø§Ù„Ø£Ø³Ø§Ø³ÙŠ",
+      "plusTitle": "Ø¥Ø¶Ø§ÙÙŠ",
+      "subscriptionTitle": "Ø§Ø´ØªØ±Ø§Ùƒ Ø§Ù„Ø¯Ø¹Ù…",
+      "subscriptionIncludesTitle": "ÙŠØ´Ù…Ù„",
+      "outcomeLabel": "Ø§Ù„Ù†ØªÙŠØ¬Ø©:",
       "starter": {
         "name": "Starter",
-        "desc": "For small local businesses with fast start.",
-        "price": "from EUR 690",
-        "range": "typical EUR 690-790",
+        "desc": "Ù„Ù„Ø´Ø±ÙƒØ§Øª Ø§Ù„Ù…Ø­Ù„ÙŠØ© Ø§Ù„ØµØºÙŠØ±Ø© Ø§Ù„ØªÙŠ ØªØ±ÙŠØ¯ Ø§Ù†Ø·Ù„Ø§Ù‚Ù‹Ø§ Ø³Ø±ÙŠØ¹Ù‹Ø§.",
+        "price": "Ù…Ù† EUR 690",
+        "range": "Ø¹Ø§Ø¯Ø© EUR 690-790",
         "core": [
-          "Landing Page",
-          "Lead Form + Contact Form",
-          "GA4 + Basic SEO Setup"
+          "ØµÙØ­Ø© Ù‡Ø¨ÙˆØ·",
+          "Ù†Ù…ÙˆØ°Ø¬ leads + Ù†Ù…ÙˆØ°Ø¬ ØªÙˆØ§ØµÙ„",
+          "GA4 + Ø¥Ø¹Ø¯Ø§Ø¯ SEO Ø£Ø³Ø§Ø³ÙŠ"
         ],
         "plus": [
-          "Mobile Optimization",
-          "Basic DSGVO Tracking"
+          "ØªØ­Ø³ÙŠÙ† Ù„Ù„Ù…ÙˆØ¨Ø§ÙŠÙ„",
+          "ØªØªØ¨Ø¹ DSGVO Ø£Ø³Ø§Ø³ÙŠ"
         ],
-        "outcome": "Stable channel for first qualified requests."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 62 / Ø´Ù‡Ø±",
+            "meta": "Ø¯Ø¹Ù… Ø£Ø³Ø§Ø³ÙŠ Ø¨Ø¹Ø¯ Ø§Ù„Ø¥Ø·Ù„Ø§Ù‚"
+          },
+          "yearly": {
+            "price": "EUR 521 / Ø³Ù†Ø©",
+            "meta": "12 Ø´Ù‡Ø±Ù‹Ø§ Ø¨Ø®ØµÙ… 30%"
+          },
+          "includes": [
+            "ØªØ­Ø¯ÙŠØ«Ø§Øª ØªÙ‚Ù†ÙŠØ© ÙˆÙ†Ø³Ø® Ø§Ø­ØªÙŠØ§Ø·ÙŠØ©",
+            "Ù…Ø±Ø§Ù‚Ø¨Ø© Ø§Ù„Ù†Ù…Ø§Ø°Ø¬ ÙˆØ§Ù„ØªØ­ÙˆÙŠÙ„Ø§Øª ÙˆØ§Ù„ØªØªØ¨Ø¹ Ø§Ù„Ø£Ø³Ø§Ø³ÙŠ",
+            "Ø­ØªÙ‰ Ø­Ø²Ù…Ø© ØªØ¹Ø¯ÙŠÙ„ Ø£Ùˆ ØªØ­Ø¯ÙŠØ« ÙˆØ§Ø­Ø¯Ø© Ø´Ù‡Ø±ÙŠÙ‹Ø§"
+          ]
+        },
+        "outcome": "Ù‚Ù†Ø§Ø© Ù…Ø³ØªÙ‚Ø±Ø© Ù„Ø£ÙˆÙ„ Ø§Ù„Ø·Ù„Ø¨Ø§Øª Ø§Ù„Ù…Ø¤Ù‡Ù„Ø©."
       },
       "business": {
         "name": "Business",
-        "desc": "For teams with multiple services and active sales.",
-        "price": "from EUR 1.290",
-        "range": "typical EUR 1.290-1.490",
+        "desc": "Ù„Ù„ÙØ±Ù‚ Ø§Ù„ØªÙŠ Ù„Ø¯ÙŠÙ‡Ø§ Ø¹Ø¯Ø© Ø®Ø¯Ù…Ø§Øª ÙˆÙ…Ø¨ÙŠØ¹Ø§Øª Ù†Ø´Ø·Ø©.",
+        "price": "Ù…Ù† EUR 1.290",
+        "range": "Ø¹Ø§Ø¯Ø© EUR 1.290-1.490",
         "core": [
-          "Multi-page Website up to 5 pages",
-          "CRM Integration + Lead Tracking",
-          "Analytics Dashboard"
+          "Ù…ÙˆÙ‚Ø¹ Ù…ØªØ¹Ø¯Ø¯ Ø§Ù„ØµÙØ­Ø§Øª Ø­ØªÙ‰ 5 ØµÙØ­Ø§Øª",
+          "ØªÙƒØ§Ù…Ù„ CRM + lead tracking",
+          "Ù„ÙˆØ­Ø© ØªØ­Ù„ÙŠÙ„Ø§Øª"
         ],
         "plus": [
-          "SEO Structure by Service",
-          "Conversion Optimization"
+          "Ù‡ÙŠÙƒÙ„ SEO Ø­Ø³Ø¨ Ø§Ù„Ø®Ø¯Ù…Ø©",
+          "ØªØ­Ø³ÙŠÙ† Ø§Ù„ØªØ­ÙˆÙŠÙ„"
         ],
-        "outcome": "Predictable lead pipeline with clear reporting."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 86 / Ø´Ù‡Ø±",
+            "meta": "Ø¯Ø¹Ù… Ù„Ù„Ù…ÙˆÙ‚Ø¹ ÙˆCRM ÙˆØ§Ù„ØªØ­Ù„ÙŠÙ„Ø§Øª"
+          },
+          "yearly": {
+            "price": "EUR 722 / Ø³Ù†Ø©",
+            "meta": "12 Ø´Ù‡Ø±Ù‹Ø§ Ø¨Ø®ØµÙ… 30%"
+          },
+          "includes": [
+            "ØªØ­Ø¯ÙŠØ«Ø§Øª Ù…Ù†ØªØ¸Ù…Ø© Ù„Ù„Ù…Ø­ØªÙˆÙ‰ ÙˆØ§Ù„ØµÙØ­Ø§Øª",
+            "Ù…ØªØ§Ø¨Ø¹Ø© CRM Ùˆlead tracking Ùˆdashboard",
+            "Ø­ØªÙ‰ Ù…Ù‡Ù…ØªÙŠÙ† Ø´Ù‡Ø±ÙŠÙ‹Ø§ Ù„ØªØ­Ø³ÙŠÙ† Ø§Ù„ØªØ­ÙˆÙŠÙ„"
+          ]
+        },
+        "outcome": "ØªØ¯ÙÙ‚ leads Ù…ØªÙˆÙ‚Ø¹ Ù…Ø¹ ØªØ­Ù„ÙŠÙ„Ø§Øª ÙˆØ§Ø¶Ø­Ø©."
       },
       "pro": {
         "name": "Pro",
-        "desc": "For growth with website, ads and automation.",
-        "price": "from EUR 2.490",
-        "range": "typical EUR 2.490-2.990",
+        "desc": "Ù„Ù„Ù†Ù…Ùˆ Ø¹Ø¨Ø± Ø§Ù„Ù…ÙˆÙ‚Ø¹ ÙˆØ§Ù„Ø¥Ø¹Ù„Ø§Ù†Ø§Øª ÙˆØ§Ù„Ø£ØªÙ…ØªØ©.",
+        "price": "Ù…Ù† EUR 2.490",
+        "range": "Ø¹Ø§Ø¯Ø© EUR 2.490-2.990",
         "core": [
-          "Website + Ads Setup",
-          "Google Ads or Meta Ads",
-          "Marketing Dashboard + Tracking"
+          "Website + Ø¥Ø¹Ø¯Ø§Ø¯ Ads",
+          "Google Ads Ø£Ùˆ Meta Ads",
+          "Marketing dashboard + tracking"
         ],
         "plus": [
-          "AI Lead Qualification",
-          "Automation Flows"
+          "ØªØ£Ù‡ÙŠÙ„ leads Ø¨Ø§Ù„Ø°ÙƒØ§Ø¡ Ø§Ù„Ø§ØµØ·Ù†Ø§Ø¹ÙŠ",
+          "Automation flows"
         ],
-        "outcome": "More demand with controlled cost per lead."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 160 / Ø´Ù‡Ø±",
+            "meta": "Ø¥Ø¯Ø§Ø±Ø© Ù†Ø´Ø·Ø© Ù„Ù†Ø¸Ø§Ù… growth"
+          },
+          "yearly": {
+            "price": "EUR 1.344 / Ø³Ù†Ø©",
+            "meta": "12 Ø´Ù‡Ø±Ù‹Ø§ Ø¨Ø®ØµÙ… 30%"
+          },
+          "includes": [
+            "Ù…Ø±Ø§Ø¬Ø¹Ø© Ø£Ø³Ø¨ÙˆØ¹ÙŠØ© Ù„Ù„Ù…ÙˆÙ‚Ø¹ ÙˆØ§Ù„Ø¥Ø¹Ù„Ø§Ù†Ø§Øª Ùˆautomation flows",
+            "ØªØ­Ø³ÙŠÙ† CPL Ùˆfunnel ÙˆØªØ£Ù‡ÙŠÙ„ leads",
+            "Ø­ØªÙ‰ 4 Ù…Ù‡Ø§Ù… growth Ø´Ù‡Ø±ÙŠÙ‹Ø§ + Ø¯Ø¹Ù… Ø¨Ø£ÙˆÙ„ÙˆÙŠØ©"
+          ]
+        },
+        "outcome": "Ø·Ù„Ø¨ Ø£ÙƒØ¨Ø± Ù…Ø¹ Ø§Ù„ØªØ­ÙƒÙ… ÙÙŠ ØªÙƒÙ„ÙØ© lead."
       }
     },
     "comparison": {
-      "title": "Feature Comparison",
-      "yes": "نعم",
+      "title": "Ù…Ù‚Ø§Ø±Ù†Ø© Ø§Ù„Ù…ÙŠØ²Ø§Øª",
+      "yes": "Ù†Ø¹Ù…",
       "no": "-",
       "headers": {
-        "feature": "Feature",
+        "feature": "Ø§Ù„Ù…ÙŠØ²Ø©",
         "starter": "Starter",
         "business": "Business",
         "pro": "Pro"
       },
       "rows": {
-        "landing": "Landing Page",
-        "multi": "Multi-page Website",
-        "crm": "CRM Integration",
-        "ai": "AI Lead Qualification",
-        "ads": "Ads Setup",
-        "dashboard": "Analytics Dashboard"
+        "landing": "ØµÙØ­Ø© Ù‡Ø¨ÙˆØ·",
+        "multi": "Ù…ÙˆÙ‚Ø¹ Ù…ØªØ¹Ø¯Ø¯ Ø§Ù„ØµÙØ­Ø§Øª",
+        "crm": "ØªÙƒØ§Ù…Ù„ CRM",
+        "ai": "ØªØ£Ù‡ÙŠÙ„ leads Ø¨Ø§Ù„Ø°ÙƒØ§Ø¡ Ø§Ù„Ø§ØµØ·Ù†Ø§Ø¹ÙŠ",
+        "ads": "Ø¥Ø¹Ø¯Ø§Ø¯ Ads",
+        "dashboard": "Ù„ÙˆØ­Ø© ØªØ­Ù„ÙŠÙ„Ø§Øª"
       }
     },
     "trust": {
-      "title": "الثقة ونطاق العمل",
+      "title": "Ø§Ù„Ø«Ù‚Ø© ÙˆØ¥Ø·Ø§Ø± Ø§Ù„Ø¹Ù…Ù„",
       "delivery": {
-        "title": "Delivery 7-14 days",
-        "desc": "Clear timeline with fixed approval steps."
+        "title": "Ø§Ù„ØªØ³Ù„ÙŠÙ… Ø®Ù„Ø§Ù„ 7-14 ÙŠÙˆÙ…Ù‹Ø§",
+        "desc": "Ø¬Ø¯ÙˆÙ„ Ø²Ù…Ù†ÙŠ ÙˆØ§Ø¶Ø­ Ù…Ø¹ Ø®Ø·ÙˆØ§Øª Ø§Ø¹ØªÙ…Ø§Ø¯ Ù…Ø­Ø¯Ø¯Ø©."
       },
       "support": {
-        "title": "Support after launch",
-        "desc": "Support for handover, team setup and fine-tuning."
+        "title": "Ø§Ù„Ø¯Ø¹Ù… Ø¨Ø¹Ø¯ Ø§Ù„Ø¥Ø·Ù„Ø§Ù‚",
+        "desc": "Ø¯Ø¹Ù… Ù„Ù„ØªØ³Ù„ÙŠÙ…ØŒ Ø¥Ø¹Ø¯Ø§Ø¯ Ø§Ù„ÙØ±ÙŠÙ‚ØŒ ÙˆØ§Ù„ØªØ­Ø³ÙŠÙ†Ø§Øª Ø§Ù„Ù†Ù‡Ø§Ø¦ÙŠØ©."
       },
       "dsgvo": {
         "title": "DSGVO Tracking",
-        "desc": "Privacy-compliant measurement with consent setup."
+        "desc": "Ù‚ÙŠØ§Ø³ Ù…ØªÙˆØ§ÙÙ‚ Ù…Ø¹ Ø§Ù„Ø®ØµÙˆØµÙŠØ© Ù…Ø¹ Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„Ù…ÙˆØ§ÙÙ‚Ø©."
       }
     },
     "final": {
-      "title": "ابدأ بجلسة أولى مجانية.",
-      "subtitle": "In 30 minutes we show the right package and build plan for your lead system.",
-      "cta": "جلسة أولى مجانية"
+      "title": "Ø§Ø¨Ø¯Ø£ Ø¨Ø¬Ù„Ø³Ø© Ø£ÙˆÙ„ÙŠØ© Ù…Ø¬Ø§Ù†ÙŠØ©.",
+      "subtitle": "Ø®Ù„Ø§Ù„ 30 Ø¯Ù‚ÙŠÙ‚Ø© Ù†Ø­Ø¯Ø¯ Ø§Ù„Ø¨Ø§Ù‚Ø© Ø§Ù„Ù…Ù†Ø§Ø³Ø¨Ø© ÙˆØ®Ø·Ø© Ø§Ù„ØªÙ†ÙÙŠØ° Ù„Ù†Ø¸Ø§Ù… Ø¬Ø°Ø¨ Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡ Ù„Ø¯ÙŠÙƒ.",
+      "cta": "Ø§Ø­Ø¬Ø² Ø¬Ù„Ø³Ø© Ø£ÙˆÙ„ÙŠØ© Ù…Ø¬Ø§Ù†ÙŠØ©"
     }
   },
   "references": {
-    "h1": "مراجع مع نمو قابل للقياس.",
-    "subtitle": "نوضح بدقة ما الذي ارتفع: الطلبات، الحجوزات، المكالمات والعملاء المحتملون.",
-    "trustline": "كل المؤشرات مع السياق: الفترة وطريقة القياس.",
-    "filterTitle": "اختر المجال",
-    "filterAria": "فلتر المجالات",
-    "counter": "{{count}} حالات مناسبة",
-    "growthByNiche": "النمو حسب القطاع",
-    "selectedCases": "حالات مختارة",
-    "challengeLabel": "الوضع",
-    "solutionLabel": "الحل",
-    "periodLabel": "الفترة",
-    "measurementLabel": "القياس",
-    "emptyTitle": "سيتم إضافة الحالة التالية لهذا المجال قريبًا.",
-    "emptyText": "نعرض فقط الحالات ذات القياس الموثوق والفترة الواضحة.",
-    "beforeAfter": "قبل / بعد",
-    "before": "قبل",
-    "after": "بعد",
-    "beforeAlt": "عرض الحالة قبل",
-    "afterAlt": "عرض الحالة بعد",
-    "sliderAria": "حرّك مقارنة قبل/بعد",
-    "sliderHint": "اسحب للمقارنة.",
-    "ctaTitle": "هل تريد نتائج مشابهة؟",
-    "ctaText": "نحلل وضعك الحالي ونوضح خطة واقعية لمدة 30-90 يومًا.",
-    "cta": "اطلب مشروعًا مشابهًا",
+    "h1": "��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a����S�\u001a� ��\u001e���\u001a����\u001e���\u001a����\u001e��9  ��\u001e���\u001a�a��S�\u001a���S�\u001a���\u001e���\u001a�~ ��\u001e���\u001a�~��\u001e���\u001a�~��\u001e���\u001a�a��\u001e��&���S�\u001a���S�\u001a�.",
+    "subtitle": "��\u001e���\u001a����\u001e��9 ��S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���\u001e���\u001a�a��S�\u001a� ��\u001e���\u001a����S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��&� ��S�\u001a���S�\u001a���S�\u001a���\u001e��\u001a���S�\u001a�: ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���S�&�\" ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e��9 ��S�\u001a���S�\u001a���S�\u001a���S�&�\" ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e�� �\"��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a� ��\u001e��9 ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a����\u001e���\u001a�~��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a����\u001e���\u001a�~��\u001e��9 ��\u001e���\u001a��.",
+    "trustline": "��\u001e�� �\"��\u001e���\u001a�~ ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a����S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��&���S�\u001a���\u001e���\u001a�a: ��S�\u001a���\u001e���\u001a�~��\u001e��\u001a���S�\u001a���S�\u001a���S�\u001a� ��\u001e��9 ��S�\u001a���S�\u001a���\u001e��&���\u001e���\u001a�a��S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a�a��\u001e��&���S�\u001a���S�\u001a�.",
+    "filterTitle": "��S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a�~",
+    "filterAria": "��\u001e��\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a�",
+    "counter": "{{count}} ��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a� ��\u001e���\u001a����\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���S�\u001a�",
+    "growthByNiche": "��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e���\u001a����\u001e��9  ��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a�a��S�\u001a���S�\u001a���S�\u001a�",
+    "selectedCases": "��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a� ��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a�",
+    "challengeLabel": "��S�\u001a���\u001e���\u001a�~��\u001e��9 ��S�\u001a���S�\u001a�",
+    "solutionLabel": "��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�~",
+    "periodLabel": "��S�\u001a���\u001e���\u001a�~��\u001e��\u001a���S�\u001a���S�\u001a���S�\u001a�",
+    "measurementLabel": "��S�\u001a���\u001e���\u001a�~��\u001e���\u001a�a��\u001e��&���S�\u001a���S�\u001a�",
+    "emptyTitle": "��S�\u001a���\u001e��&���S�\u001a���\u001e���\u001a�� ��S�\u001a���S�\u001a���S�\u001a���\u001e��\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a�~��\u001e��&���S�\u001a� ��\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a�~ ��\u001e���\u001a�a��S�\u001a���\u001e��&���S�\u001a���\u001e���\u001a����S�\u001a�.",
+    "emptyText": "��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a� ��\u001e��\u001a���\u001e���\u001a�a��S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a�a��\u001e��&���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e��9 ��S�\u001a���\u001e��9 ��\u001e���\u001a�a ��\u001e��9 ��S�\u001a���\u001e���\u001a�~��\u001e��\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e��9 ��S�\u001a���S�\u001a���S�\u001a���S�\u001a�.",
+    "beforeAfter": "��\u001e���\u001a�a��S�\u001a���\u001e���\u001a�~ / ��S�\u001a���S�\u001a���S�\u001a�",
+    "before": "��\u001e���\u001a�a��S�\u001a���\u001e���\u001a�~",
+    "after": "Ò�S�\u001a¨Ò�S�\u001a¹Ò�S�\u001a¯",
+    "beforeAlt": "��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a� ��\u001e���\u001a�a��S�\u001a���\u001e���\u001a�~",
+    "afterAlt": "��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a� ��S�\u001a���S�\u001a���S�\u001a�",
+    "sliderAria": "��S�\u001a���S�\u001a���\u001e���\u001a��S��\u001e�� �\" ��\u001e���\u001a����\u001e���\u001a�a��S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a� ��\u001e���\u001a�a��S�\u001a���\u001e���\u001a�~/��S�\u001a���S�\u001a���S�\u001a�",
+    "sliderHint": "��S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a�~��\u001e���\u001a�~��\u001e���\u001a����\u001e���\u001a�a��S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a�.",
+    "ctaTitle": "��\u001e���\u001a����\u001e���\u001a�~ ��S�\u001a���S�\u001a���\u001e��&���S�\u001a� ��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���S�&�",
+    "ctaText": "��\u001e���\u001a����S�\u001a���\u001e���\u001a�~��\u001e���\u001a�~ ��\u001e��9 ��S�\u001a���S�\u001a���\u001e�� �\" ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a�~��\u001e��&� ��\u001e��9 ��\u001e���\u001a����\u001e��9 ��S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���S�\u001a� ��\u001e��9 ��S�\u001a���\u001e���\u001a�a��S�\u001a���\u001e��&���S�\u001a� ��\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a� 30-90 ��\u001e��&���\u001e��9 ��\u001e���\u001a����\u001e���\u001a����S�\u001a�.",
+    "cta": "��S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a� ��\u001e���\u001a����S�\u001a���S�\u001a���\u001e��9 ��S�\u001a���\u001e���\u001a����S�\u001a� ��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a����\u001e���\u001a����S�\u001a�",
     "filters": {
-      "all": "الكل"
+      "all": "��S�\u001a���\u001e���\u001a�~��\u001e�� �\"��\u001e���\u001a�~"
     },
     "niches": {
-      "handwerk": "الحرف",
-      "praxen": "العيادات",
-      "werkstatt": "الورش",
-      "gastronomie": "المطاعم",
-      "beauty": "التجميل",
-      "immobilien": "العقارات",
-      "kanzlei": "المكاتب المهنية",
-      "fitnessPhysio": "اللياقة/العلاج الطبيعي",
-      "reinigung": "التنظيف",
-      "umzugTransport": "النقل",
-      "coachingBeratung": "التدريب/الاستشارات",
-      "bildungKurse": "التعليم/الدورات"
+      "handwerk": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e��\u001a�",
+      "praxen": "��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��&���S�\u001a���S�\u001a���S�\u001a���S�\u001a�",
+      "werkstatt": "��S�\u001a���\u001e���\u001a�~��\u001e��9 ��S�\u001a���S�\u001a�",
+      "gastronomie": "��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a��",
+      "beauty": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a����\u001e��&���\u001e���\u001a�~",
+      "immobilien": "��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�a��S�\u001a���S�\u001a���S�\u001a���S�\u001a�",
+      "kanzlei": "��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e�� �\"��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e���\u001a����\u001e���\u001a����\u001e��&���S�\u001a�",
+      "fitnessPhysio": "��S�\u001a���\u001e���\u001a�~��\u001e���\u001a�~��\u001e��&���S�\u001a���\u001e���\u001a�a��S�\u001a�/��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e��&���S�\u001a���\u001e��&�",
+      "reinigung": "��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a����S�\u001a���\u001e��&���\u001e��\u001a�",
+      "umzugTransport": "��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e���\u001a�a��\u001e���\u001a�~",
+      "coachingBeratung": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���\u001e��&���S�\u001a�/��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a�",
+      "bildungKurse": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a�~��\u001e��&���\u001e���\u001a��/��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��9 ��S�\u001a���S�\u001a���S�\u001a�"
     },
     "metrics": {
-      "moreRequests": "طلبات أكثر",
-      "moreAppointments": "مواعيد أكثر",
-      "moreCalls": "مكالمات أكثر",
-      "moreReservations": "حجوزات أكثر",
-      "moreBookings": "حجوزات خدمات أكثر",
-      "moreLeads": "عملاء محتملون أكثر",
-      "moreIntroCalls": "مكالمات أولية أكثر",
-      "moreTrialSessions": "جلسات تجريبية أكثر",
-      "moreOffers": "طلبات عروض أسعار أكثر",
-      "moreQualifiedLeads": "عملاء محتملون مؤهلون أكثر",
-      "moreFirstContacts": "اتصالات أولية أكثر",
-      "moreCourseSignups": "تسجيلات دورات أكثر",
-      "budgetEfficiency": "كفاءة الميزانية",
-      "moreInteractions": "تفاعلات أكثر",
-      "moreLeadsPerBudget": "عملاء أكثر لكل ميزانية",
-      "moreConsultations": "استشارات أكثر"
+      "moreRequests": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a�",
+      "moreAppointments": "��\u001e���\u001a����\u001e��9 ��S�\u001a���S�\u001a���\u001e��&���S�\u001a� ��S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a�",
+      "moreCalls": "��\u001e���\u001a����\u001e�� �\"��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a� ��S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a�",
+      "moreReservations": "Ò�S�\u001a­Ò�S�\u001a¬Ò�\u001e��9⬠Ò�S�\u001a²Ò�S�\u001a§Ò�S�\u001aª Ò�S�\u001a£Ò�\u001e�� �\"Ò�S�\u001a«Ò�S�\u001a±",
+      "moreBookings": "��S�\u001a���S�\u001a���\u001e��9 ��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a� ��S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a�",
+      "moreLeads": "��S�\u001a���\u001e���\u001a����\u001e���\u001a�~��S�\u001a���S�\u001a� ��\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a����\u001e���\u001a�~��\u001e��9 ��\u001e���\u001a�� ��S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a�",
+      "moreIntroCalls": "��\u001e���\u001a����\u001e�� �\"��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a� ��S�\u001a���\u001e��9 ��\u001e���\u001a�~��\u001e��&���S�\u001a� ��S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a�",
+      "moreTrialSessions": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���S�\u001a���\u001e��&���S�\u001a���\u001e��&���S�\u001a� ��S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a�",
+      "moreOffers": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���\u001e��9 ��S�\u001a� ��S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a�",
+      "moreQualifiedLeads": "��S�\u001a���\u001e���\u001a����\u001e���\u001a�~��S�\u001a���S�\u001a� ��\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a����\u001e���\u001a�~��\u001e��9 ��\u001e���\u001a�� ��\u001e���\u001a����S�\u001a���\u001e���\u001a����\u001e���\u001a�~��\u001e��9 ��\u001e���\u001a�� ��S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a�",
+      "moreFirstContacts": "��S�\u001a���S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a� ��S�\u001a���\u001e��9 ��\u001e���\u001a�~��\u001e��&���S�\u001a� ��S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a�",
+      "moreCourseSignups": "��S�\u001a���S�\u001a���S�\u001a���\u001e��&���\u001e���\u001a�~��S�\u001a���S�\u001a� ��S�\u001a���\u001e��9 ��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a�",
+      "budgetEfficiency": "��\u001e�� �\"��\u001e��\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e��&���S�\u001a���S�\u001a���\u001e���\u001a����\u001e��&���S�\u001a�",
+      "moreInteractions": "��S�\u001a���\u001e��\u001a���S�\u001a���S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a� ��S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a�",
+      "moreLeadsPerBudget": "��S�\u001a���\u001e���\u001a����\u001e���\u001a�~��S�\u001a���S�\u001a� ��S�\u001a���\u001e�� �\"��S�\u001a���S�\u001a� ��\u001e���\u001a�~��\u001e�� �\"��\u001e���\u001a�~ ��\u001e���\u001a����\u001e��&���S�\u001a���S�\u001a���\u001e���\u001a����\u001e��&���S�\u001a�",
+      "moreConsultations": "Ò�S�\u001a§Ò�S�\u001a³Ò�S�\u001aªÒ�S�\u001a´Ò�S�\u001a§Ò�S�\u001a±Ò�S�\u001a§Ò�S�\u001aª Ò�S�\u001a£Ò�\u001e�� �\"Ò�S�\u001a«Ò�S�\u001a±"
     },
     "cases": {
       "c1": {
-        "title": "شركة سباكة (منطقة هانوفر)",
-        "challenge": "طلبات قليلة رغم وصول جيد.",
-        "solution": "إعادة هيكلة صفحات الخدمات، تحسين CTA، وتفعيل تتبع التواصل."
+        "title": "��S�\u001a���S�\u001a���\u001e�� �\"��S�\u001a� ��S�\u001a���S�\u001a���S�\u001a���\u001e�� �\"��S�\u001a� (��\u001e���\u001a����\u001e���\u001a����S�\u001a���\u001e���\u001a�a��S�\u001a� ��\u001e���\u001a����S�\u001a���\u001e���\u001a����\u001e��9 ��\u001e��\u001a���S�\u001a�)",
+        "challenge": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a�a��\u001e���\u001a�~��\u001e��&���\u001e���\u001a�~��S�\u001a� ��S�\u001a���S�\u001a���\u001e���\u001a�� ��\u001e��9 ��S�\u001a���\u001e��9 ��\u001e���\u001a�~ ��S�\u001a���\u001e��&���S�\u001a�.",
+        "solution": "��S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a����\u001e��&���\u001e�� �\"��\u001e���\u001a�~��S�\u001a� ��S�\u001a���\u001e��\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a���S�&�\" ��S�\u001a���S�\u001a���S�\u001a���\u001e��&���\u001e���\u001a�� CTA��S�&�\" ��\u001e��9 ��S�\u001a���\u001e��\u001a���S�\u001a���\u001e��&���\u001e���\u001a�~ ��S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��9 ��S�\u001a���S�\u001a���\u001e���\u001a�~."
       },
       "c2": {
-        "title": "عيادة علاج طبيعي (هيلدسهايم)",
-        "challenge": "طلبات المواعيد عبر الإنترنت كانت قليلة.",
-        "solution": "تبسيط مسار الحجز، تسريع الصفحات على الهاتف، وتوضيح قنوات التواصل."
+        "title": "��S�\u001a���\u001e��&���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���\u001e��&���S�\u001a���\u001e��&� (��\u001e���\u001a����\u001e��&���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���\u001e��&���\u001e���\u001a��)",
+        "challenge": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e��9 ��S�\u001a���S�\u001a���\u001e��&���S�\u001a� ��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a� ��\u001e�� �\"��S�\u001a���\u001e���\u001a����S�\u001a� ��\u001e���\u001a�a��\u001e���\u001a�~��\u001e��&���\u001e���\u001a�~��S�\u001a�.",
+        "solution": "��S�\u001a���S�\u001a���S�\u001a���\u001e��&���S�\u001a� ��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���S�&�\" ��S�\u001a���S�\u001a���S�\u001a���\u001e��&���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a���\u001e��\u001a���S�&�\" ��\u001e��9 ��S�\u001a���\u001e��9 ��S�\u001a���\u001e��&���S�\u001a� ��\u001e���\u001a�a��\u001e���\u001a����\u001e��9 ��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��9 ��S�\u001a���S�\u001a���\u001e���\u001a�~."
       },
       "c3": {
-        "title": "ورشة هياكل سيارات (منطقة هاربورغ)",
-        "challenge": "تواصل كثير لكن أعمال مناسبة قليلة.",
-        "solution": "إضافة تأهيل العملاء في النموذج وإنشاء صفحة هبوط مخصصة للخدمات."
+        "title": "��\u001e��9 ��S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a����\u001e��&���S�\u001a���\u001e�� �\"��\u001e���\u001a�~ ��S�\u001a���\u001e��&���S�\u001a���S�\u001a���S�\u001a���S�\u001a� (��\u001e���\u001a����\u001e���\u001a����S�\u001a���\u001e���\u001a�a��S�\u001a� ��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���\u001e��9 ��S�\u001a���S�\u001a�)",
+        "challenge": "��S�\u001a���\u001e��9 ��S�\u001a���S�\u001a���\u001e���\u001a�~ ��\u001e�� �\"��S�\u001a���\u001e��&���S�\u001a� ��\u001e���\u001a�~��\u001e�� �\"��\u001e���\u001a�� ��S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���\u001e���\u001a�~ ��\u001e���\u001a����\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a�a��\u001e���\u001a�~��\u001e��&���\u001e���\u001a�~��S�\u001a�.",
+        "solution": "��S�\u001a���S�\u001a���S�\u001a���\u001e��\u001a���S�\u001a� ��S�\u001a���S�\u001a���\u001e���\u001a����\u001e��&���\u001e���\u001a�~ ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a����\u001e���\u001a�~��S�\u001a���S�\u001a� ��\u001e��\u001a���\u001e��&� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e���\u001a����\u001e��9 ��S�\u001a���S�\u001a� ��\u001e��9 ��S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e��\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a����S�\u001a���\u001e��9 ��S�\u001a� ��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a�~��\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a�."
       },
       "c4": {
-        "title": "مطعم (ساكسونيا السفلى)",
-        "challenge": "حجوزات قليلة خلال أيام الأسبوع.",
-        "solution": "تبسيط مسار الحجز وإعادة ضبط الحملات المحلية."
+        "title": "��\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a�� (��S�\u001a���S�\u001a���\u001e�� �\"��S�\u001a���\u001e��9 ��\u001e���\u001a����\u001e��&���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��\u001a���\u001e���\u001a�~��\u001e���\u001a��)",
+        "challenge": "��S�\u001a���S�\u001a���\u001e��9 ��S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a�a��\u001e���\u001a�~��\u001e��&���\u001e���\u001a�~��S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�~ ��S�\u001a���\u001e��&���S�\u001a���\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���\u001e��9 ��S�\u001a�.",
+        "solution": "��S�\u001a���S�\u001a���S�\u001a���\u001e��&���S�\u001a� ��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a� ��\u001e��9 ��S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a����\u001e���\u001a�~��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e���\u001a�~��\u001e��&���S�\u001a�."
       },
       "c5": {
-        "title": "مكتب عقارات (ساكسونيا السفلى)",
-        "challenge": "قلة العملاء المؤهلين من الملاك.",
-        "solution": "بناء صفحات العقارات حسب نية البحث وتبسيط مسار الطلب."
+        "title": "��\u001e���\u001a����\u001e�� �\"��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�a��S�\u001a���S�\u001a���S�\u001a���S�\u001a� (��S�\u001a���S�\u001a���\u001e�� �\"��S�\u001a���\u001e��9 ��\u001e���\u001a����\u001e��&���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��\u001a���\u001e���\u001a�~��\u001e���\u001a��)",
+        "challenge": "��\u001e���\u001a�a��\u001e���\u001a�~��S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a����\u001e���\u001a�~��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e���\u001a����\u001e���\u001a�~��\u001e��&���\u001e���\u001a�� ��\u001e���\u001a����\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e���\u001a�~��S�\u001a���\u001e�� �\".",
+        "solution": "��S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a� ��S�\u001a���\u001e��\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�a��S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a����\u001e��&���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a� ��\u001e��9 ��S�\u001a���S�\u001a���S�\u001a���\u001e��&���S�\u001a� ��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�~��S�\u001a�."
       },
       "c6": {
-        "title": "مكتب ضرائب (منطقة هانوفر)",
-        "challenge": "تحويل منخفض في صفحات الخدمات.",
-        "solution": "تبسيط المحتوى، إضافة عناصر الثقة، وإبراز نقطة التواصل الأول."
+        "title": "��\u001e���\u001a����\u001e�� �\"��S�\u001a���S�\u001a� ��S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a� (��\u001e���\u001a����\u001e���\u001a����S�\u001a���\u001e���\u001a�a��S�\u001a� ��\u001e���\u001a����S�\u001a���\u001e���\u001a����\u001e��9 ��\u001e��\u001a���S�\u001a�)",
+        "challenge": "��S�\u001a���S�\u001a���\u001e��9 ��\u001e��&���\u001e���\u001a�~ ��\u001e���\u001a����\u001e���\u001a����S�\u001a���\u001e��\u001a���S�\u001a� ��\u001e��\u001a���\u001e��&� ��S�\u001a���\u001e��\u001a���S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a�.",
+        "solution": "��S�\u001a���S�\u001a���S�\u001a���\u001e��&���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a���\u001e��9 ��\u001e���\u001a����S�&�\" ��S�\u001a���S�\u001a���S�\u001a���\u001e��\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�a��S�\u001a���S�&�\" ��\u001e��9 ��S�\u001a���S�\u001a���S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a����\u001e���\u001a�a��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��9 ��S�\u001a���S�\u001a���\u001e���\u001a�~ ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��9 ��\u001e���\u001a�~."
       }
     },
-    "performanceDashboard": "لوحة الأداء",
-    "growthCurve90": "منحنى النمو خلال 90 يومًا",
-    "growthChartAria": "مخطط النمو",
-    "resultLabel": "النتيجة",
-    "trendAria": "اتجاه {{niche}}",
-    "compareGraphAria": "مخطط قبل وبعد",
-    "dayLabel": "اليوم {{day}}",
-    "beforeLegend": "قبل: ديناميكية ضعيفة",
-    "afterLegend": "بعد: نمو مستقر",
+    "performanceDashboard": "��\u001e���\u001a�~��\u001e��9 ��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a���S�\u001a�",
+    "growthCurve90": "��\u001e���\u001a����\u001e���\u001a����S�\u001a���\u001e���\u001a����\u001e���\u001a�� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e���\u001a����\u001e��9  ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a�~ 90 ��\u001e��&���\u001e��9 ��\u001e���\u001a����\u001e���\u001a����S�\u001a�",
+    "growthChartAria": "��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e���\u001a����\u001e��9 ",
+    "resultLabel": "��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e��&���S�\u001a���S�\u001a�",
+    "trendAria": "��S�\u001a���S�\u001a���S�\u001a���S�\u001a���\u001e���\u001a�� {{niche}}",
+    "compareGraphAria": "��\u001e���\u001a����S�\u001a���S�\u001a���S�\u001a� ��\u001e���\u001a�a��S�\u001a���\u001e���\u001a�~ ��\u001e��9 ��S�\u001a���S�\u001a���S�\u001a�",
+    "dayLabel": "��S�\u001a���\u001e���\u001a�~��\u001e��&���\u001e��9 ��\u001e���\u001a�� {{day}}",
+    "beforeLegend": "��\u001e���\u001a�a��S�\u001a���\u001e���\u001a�~: ��S�\u001a���\u001e��&���\u001e���\u001a����S�\u001a���\u001e���\u001a����\u001e��&���\u001e�� �\"��\u001e��&���S�\u001a� ��S�\u001a���S�\u001a���\u001e��&���\u001e��\u001a���S�\u001a�",
+    "afterLegend": "��S�\u001a���S�\u001a���S�\u001a�: ��\u001e���\u001a����\u001e���\u001a����\u001e��9  ��\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a�a��S�\u001a�",
     "filterGroups": {
-      "all": "الكل",
-      "localServices": "الخدمات المحلية",
-      "healthBeauty": "الصحة والجمال",
-      "professional": "الخدمات المهنية"
+      "all": "��S�\u001a���\u001e���\u001a�~��\u001e�� �\"��\u001e���\u001a�~",
+      "localServices": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���\u001e���\u001a�~��\u001e��&���S�\u001a�",
+      "healthBeauty": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���S�\u001a� ��\u001e��9 ��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a����S�\u001a���\u001e���\u001a�~",
+      "professional": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e���\u001a����S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����\u001e���\u001a����\u001e���\u001a����\u001e��&���S�\u001a�"
     },
     "kpis": {
-      "traffic": "الزيارات",
-      "leads": "العملاء المحتملون",
-      "conversion": "التحويل"
+      "traffic": "��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e��&���S�\u001a���S�\u001a���S�\u001a���S�\u001a�",
+      "leads": "��S�\u001a���\u001e���\u001a�~��S�\u001a���\u001e���\u001a����\u001e���\u001a�~��S�\u001a���S�\u001a� ��S�\u001a���\u001e���\u001a�~��\u001e���\u001a����S�\u001a���S�\u001a���\u001e���\u001a����\u001e���\u001a�~��\u001e��9 ��\u001e���\u001a��",
+      "conversion": "��S�\u001a���\u001e���\u001a�~��S�\u001a���S�\u001a���\u001e��9 ��\u001e��&���\u001e���\u001a�~"
     },
-    "daysUnit": "يومًا"
+    "daysUnit": "��\u001e��&���\u001e��9 ��\u001e���\u001a����\u001e���\u001a����S�\u001a�"
   },
   "about": {
-    "h1": "Über uns",
-    "subtitle": "Wir sind ein kleines Umsetzungsteam für lokale Unternehmen.",
+    "h1": "Ò�\u0019�&�Sber uns",
+    "subtitle": "Wir sind ein kleines Umsetzungsteam fÒ�\u0019�\u001a¼r lokale Unternehmen.",
     "cards": {
       "work": {
         "title": "Wie wir arbeiten",
@@ -664,18 +715,18 @@
       }
     },
     "ctaTitle": "Kontakt",
-    "photoPlaceholder": "Foto: Porträt des Gründers von VS Web Studio (Vladyslav)",
-    "photoCaption": "Vladyslav, Gründer von VS Web Studio. Hildesheim.",
+    "photoPlaceholder": "Foto: PortrÒ�\u0019�\u001a¤t des GrÒ�\u0019�\u001a¼nders von VS Web Studio (Vladyslav)",
+    "photoCaption": "Vladyslav, GrÒ�\u0019�\u001a¼nder von VS Web Studio. Hildesheim.",
     "photoAlt": "Vladyslav, Webentwickler von VS Web Studio aus Hildesheim",
     "geo": {
       "local": "Wir arbeiten hier: Hildesheim",
       "region": "Hauptregion: Niedersachsen",
-      "country": "Möglich: ganz Deutschland"
+      "country": "MÒ�\u0019�\u001a¶glich: ganz Deutschland"
     },
-    "intro1": "Ich bin Vladyslav, Gründer von VS Web Studio. Ich arbeite aus Hildesheim und unterstütze zuerst Unternehmen direkt in der Stadt und Umgebung. Zusätzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
-    "intro2": "Mein Ziel ist einfach: nicht nur eine schöne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
-    "intro3": "Wir sind ein kleines Team mit bewährten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnötige Bürokratie, und bringen Projekte bis zum Ergebnis.",
-    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes Verständnis für den Markt vor Ort.",
+    "intro1": "Ich bin Vladyslav, GrÒ�\u0019�\u001a¼nder von VS Web Studio. Ich arbeite aus Hildesheim und unterstÒ�\u0019�\u001a¼tze zuerst Unternehmen direkt in der Stadt und Umgebung. ZusÒ�\u0019�\u001a¤tzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
+    "intro2": "Mein Ziel ist einfach: nicht nur eine schÒ�\u0019�\u001a¶ne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
+    "intro3": "Wir sind ein kleines Team mit bewÒ�\u0019�\u001a¤hrten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnÒ�\u0019�\u001a¶tige BÒ�\u0019�\u001a¼rokratie, und bringen Projekte bis zum Ergebnis.",
+    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes VerstÒ�\u0019�\u001a¤ndnis fÒ�\u0019�\u001a¼r den Markt vor Ort.",
     "miniFactsTitle": "Was wir konkret machen",
     "miniFacts": {
       "i1": "Klare Schritte ohne Fachchinesisch",
@@ -687,21 +738,21 @@
       "i1": "Eine schnelle Website, die auf dem Smartphone sauber funktioniert",
       "i2": "Klare Seitenstruktur mit starken CTA-Elementen",
       "i3": "Eingerichtetes Tracking, damit Sie die Quellen Ihrer Anfragen sehen",
-      "i4": "Automationen, die Zeit sparen und die Conversion erhöhen"
+      "i4": "Automationen, die Zeit sparen und die Conversion erhÒ�\u0019�\u001a¶hen"
     },
     "contactTitle": "Kontakt",
-    "contactText": "Schreiben Sie uns, welches Geschäft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
+    "contactText": "Schreiben Sie uns, welches GeschÒ�\u0019�\u001a¤ft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
     "contactButton": "Projekt anfragen"
   },
   "contact": {
-    "h1": "Kontakt",
-    "responseTime": "Antwortzeit aktuell:",
-    "quickContacts": "Schnelle Kontakte",
+    "h1": "تواصل وطلب لمشروعك",
+    "responseTime": "وقت الرد الحالي:",
+    "quickContacts": "جهات اتصال سريعة",
     "form": {
-      "name": "Name",
-      "business": "Business",
-      "need": "Was brauchst du genau?",
-      "submit": "Anfrage senden"
+      "name": "الاسم",
+      "business": "اسم النشاط",
+      "need": "ما الذي تحتاجه بالضبط؟",
+      "submit": "إرسال الطلب"
     }
   },
   "blog": {
@@ -711,54 +762,54 @@
       "c1": "AI-Workflows im Website Funnel",
       "c2": "Social-Prozesse ohne Chaos",
       "c3": "Social Ads mit sauberem Tracking",
-      "c4": "Automationen für Erstkontakt"
+      "c4": "Automationen fÒ�\u0019�\u001a¼r Erstkontakt"
     },
     "leadMagnet": "Lead Magnet",
-    "emailPlaceholder": "E-Mail für den Guide",
+    "emailPlaceholder": "E-Mail fÒ�\u0019�\u001a¼r den Guide",
     "getGuide": "Guide erhalten"
   },
   "niche": {
     "handwerker": {
-      "h1": "Websites für Handwerker: mehr passende Anfragen.",
+      "h1": "Websites fÒ�\u0019�\u001a¼r Handwerker: mehr passende Anfragen.",
       "p": "Klare Leistungen, lokale Sichtbarkeit, einfache Kontaktwege."
     },
     "praxis": {
-      "h1": "Websites für Praxen: weniger Rückfragen, mehr Terminanfragen.",
+      "h1": "Websites fÒ�\u0019�\u001a¼r Praxen: weniger RÒ�\u0019�\u001a¼ckfragen, mehr Terminanfragen.",
       "p": "Patientenfreundliche Struktur und klarer Online-Erstkontakt."
     },
     "werkstatt": {
-      "h1": "Websites für Werkstätten: planbare Leads statt Zufall.",
+      "h1": "Websites fÒ�\u0019�\u001a¼r WerkstÒ�\u0019�\u001a¤tten: planbare Leads statt Zufall.",
       "p": "Service-orientierte Seiten mit messbarer Conversion."
     }
   },
   "legal": {
     "impressum": {
       "h1": "Impressum",
-      "subtitle": "Angaben gemäß § 5 TMG.",
+      "subtitle": "Angaben gemÒ�\u0019�\u001a¤Ò�\u0019�&¸ Ò�a�\u001a§ 5 TMG.",
       "l1": "VS Studio",
-      "l2": "Musterstraße 10, 10115 Berlin, Deutschland",
+      "l2": "MusterstraÒ�\u0019�&¸e 10, 10115 Berlin, Deutschland",
       "l3": "E-Mail: kontakt@vs-web-studio.de",
       "l4": "Telefon: +49 30 1234567",
       "l5": "Vertreten durch: Vladyslav"
     },
     "datenschutz": {
-      "h1": "Datenschutzerklärung",
+      "h1": "DatenschutzerklÒ�\u0019�\u001a¤rung",
       "subtitle": "Kurzinformation zur Verarbeitung personenbezogener Daten.",
       "l1": "Wir verarbeiten Daten nur zweckgebunden (Kontaktanfragen, Angebotserstellung, Statistik).",
       "l2": "Rechtsgrundlagen: Art. 6 Abs. 1 lit. b und f DSGVO.",
-      "l3": "Betroffene Rechte: Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch.",
-      "l4": "Kontakt für Datenschutz: datenschutz@vs-web-studio.de"
+      "l3": "Betroffene Rechte: Auskunft, Berichtigung, LÒ�\u0019�\u001a¶schung, EinschrÒ�\u0019�\u001a¤nkung, Widerspruch.",
+      "l4": "Kontakt fÒ�\u0019�\u001a¼r Datenschutz: datenschutz@vs-web-studio.de"
     },
     "agb": {
       "h1": "AGB",
-      "subtitle": "Optionale allgemeine Geschäftsbedingungen.",
-      "l1": "Leistungen werden gemäß Angebot und vereinbartem Umfang erbracht.",
-      "l2": "Zahlungsbedingungen, Nutzungsrechte und Gewährleistung richten sich nach dem Vertrag."
+      "subtitle": "Optionale allgemeine GeschÒ�\u0019�\u001a¤ftsbedingungen.",
+      "l1": "Leistungen werden gemÒ�\u0019�\u001a¤Ò�\u0019�&¸ Angebot und vereinbartem Umfang erbracht.",
+      "l2": "Zahlungsbedingungen, Nutzungsrechte und GewÒ�\u0019�\u001a¤hrleistung richten sich nach dem Vertrag."
     },
     "cookies": {
       "h1": "Cookie-Hinweise",
       "subtitle": "Informationen zu eingesetzten Cookies und Messdiensten.",
-      "l1": "Technisch notwendige Cookies sichern die Funktionalität der Website.",
+      "l1": "Technisch notwendige Cookies sichern die FunktionalitÒ�\u0019�\u001a¤t der Website.",
       "l2": "Optionale Analyse-Cookies helfen bei der Optimierung von Inhalten und Kampagnen."
     }
   },
@@ -776,6 +827,142 @@
     "form": {
       "success": "Danke fuer dein Feedback!",
       "error": "Feedback konnte nicht gesendet werden."
+    }
+  },
+  "aboutPage": {
+    "heroEyebrow": "VS Studio | Hildesheim | Niedersachsen | ألمانيا",
+    "heroTitleLine1": "مواقع ويب و",
+    "heroTitleLine2": "أنظمة ليد",
+    "heroTitleLine3": "للشركات المحلية",
+    "heroTitleLine4": "في Hildesheim",
+    "heroSubtitle": "طلبات مؤهلة أكثر عبر مواقع سريعة، مسارات تواصل واضحة وتسويق قابل للقياس.",
+    "heroTrustline": "محلياً في Hildesheim. استراتيجياً في Niedersachsen. قابل للتنفيذ في كل ألمانيا.",
+    "primaryCta": "تحليل مجاني للموقع",
+    "section": {
+      "about": "من نحن",
+      "localAdvantages": "مزايا محلية",
+      "how": "كيف نعمل",
+      "value": "القيمة",
+      "trust": "الثقة"
+    },
+    "blocks": {
+      "who": {
+        "title": "للشركات المحلية",
+        "text": "مواقع ويب وأنظمة ليد وتسويق للشركات التي تريد طلبات أكثر بشكل متوقع."
+      },
+      "focus": {
+        "title": "نظام واحد بدل حلول متفرقة",
+        "text": "الموقع، مسارات التواصل، الحملات والتتبع تعمل معاً كعملية واضحة واحدة."
+      },
+      "locality": {
+        "title": "القرب المحلي كميزة",
+        "subtitle": "تنسيق أسرع، أولويات أوضح ونتائج قابلة للقياس.",
+        "text1": "نعمل مباشرة مع الشركات المحلية من دون سلاسل وكالات طويلة أو بيروقراطية غير ضرورية.",
+        "i1": "تواصل مباشر من دون وسطاء",
+        "i2": "تنفيذ سريع بدلاً من موافقات طويلة",
+        "i3": "فهم للأسواق والميزانيات المحلية",
+        "text2": "يستفيد عملاؤنا من اتخاذ القرارات بسرعة أكبر ومن عدم بقاء المشاريع عالقة لأسابيع في دوائر الموافقة.",
+        "text3": "هذا يوفر الوقت، يقلل التكاليف ويساعد أنشطة التسويق على تحقيق نتائج أسرع.",
+        "text4": "نحن نفهم واقع الشركات الصغيرة والمتوسطة: ميزانيات محدودة، وقت قليل وحاجة إلى نتائج واضحة بدلاً من مفاهيم معقدة.",
+        "text5": "لذلك نعمل بشكل عملي ومنظم، من التحليل الأول حتى التنفيذ والتحسين المستمر."
+      }
+    },
+    "photoAlt": "فلاديسلاف، مؤسس VS Web Studio من Hildesheim",
+    "photoCaption": "فلاديسلاف - مؤسس VS Web Studio",
+    "photoFacts": {
+      "f1": "التركيز: الشركات المحلية",
+      "f2": "الموقع: Hildesheim",
+      "f3": "المشاريع: في كل ألمانيا"
+    },
+    "geo": {
+      "local": "Hildesheim",
+      "region": "Niedersachsen",
+      "country": "في كل ألمانيا"
+    },
+    "localPriority": "طرق أقصر. أولويات أوضح. تركيز على النتائج.",
+    "how": {
+      "s1": {
+        "title": "1. نفهم",
+        "text": "نحلل الجمهور المستهدف، العرض والسوق."
+      },
+      "s2": {
+        "title": "2. ننفذ",
+        "text": "نطلق الموقع، نظام الليد والحملات."
+      },
+      "s3": {
+        "title": "3. نحسن",
+        "text": "نحلل البيانات ونطور النتائج."
+      }
+    },
+    "cards": {
+      "work": {
+        "title": "عمليات واضحة",
+        "desc": "طرق قصيرة. مسؤوليات واضحة."
+      },
+      "ai": {
+        "title": "AI First",
+        "desc": "أتمتة حيث توفر الوقت فعلاً."
+      },
+      "leads": {
+        "title": "تركيز على الليد",
+        "desc": "التصميم والتسويق يعملان معاً."
+      }
+    },
+    "results": {
+      "title": "ما الذي يحصل عليه العملاء",
+      "i1": "موقع سريع يعمل جيداً على كل هاتف ذكي",
+      "i2": "مسارات تواصل واضحة: اتصال، نموذج، حجز موعد",
+      "i3": "طلبات قابلة للقياس مع تتبع وبيانات تسويقية"
+    },
+    "trust": {
+      "projects": {
+        "label": "عدد المشاريع",
+        "value": "120+",
+        "text": "مواقع ويب، مسارات ليد ومشاريع إعادة إطلاق."
+      },
+      "industries": {
+        "label": "القطاعات",
+        "value": "12",
+        "text": "حرف، عيادات، ضيافة، beauty، تعليم وخدمات محلية."
+      },
+      "focus": {
+        "label": "التركيز",
+        "value": "محلي + قابل للقياس",
+        "text": "Hildesheim وNiedersachsen وكل ألمانيا مع تركيز واضح على الليد."
+      }
+    },
+    "cta": {
+      "title": "جاهزون لطلبات يمكن التنبؤ بها؟",
+      "text": "في المكالمة الأولى المجانية نوضح أكبر نقاط الرفع لموقعكم، عمليات الليد والإعلانات."
+    },
+    "visual": {
+      "productBadge": "Lead System",
+      "flowLabel": "التدفق",
+      "flowValue": "من قبل إلى النظام والنتيجة",
+      "before": {
+        "label": "قبل",
+        "title": "نقرات كثيرة، وضوح قليل",
+        "i1": "صفحات بطيئة",
+        "i2": "طرق تواصل غير واضحة",
+        "i3": "بيانات غير نظيفة"
+      },
+      "system": {
+        "label": "النظام",
+        "phoneBadge": "الموقع",
+        "cta": "احجز موعداً",
+        "pill1": "الموقع",
+        "pill2": "التواصل",
+        "pill3": "التتبع"
+      },
+      "result": {
+        "label": "النتيجة",
+        "title": "طلبات مؤهلة",
+        "text": "قابلة للقياس، يتم الرد عليها أسرع وتظهر بوضوح داخل الـ funnel."
+      },
+      "anchor": {
+        "label": "الخلاصة",
+        "value": "طلبات مؤهلة أكثر بدلاً من مجرد زيارات للموقع"
+      }
     }
   }
 }

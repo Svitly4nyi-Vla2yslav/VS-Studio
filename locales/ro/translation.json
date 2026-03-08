@@ -10,30 +10,30 @@
     "it": "Italiano",
     "es": "Español",
     "el": "Ελληνικά",
-    "ro": "Română",
+    "ro": "Rom�n\u0003",
     "bg": "Български"
   },
   "common": {
-    "projectRequest": "Solicitați proiect",
-    "viewPrices": "Vedeți prețurile",
-    "cancel": "Anulează"
+    "projectRequest": "Solicita��⬺i proiect",
+    "viewPrices": "Vede��⬺i pre��⬺urile",
+    "cancel": "Anuleaz�\u001e�\u0019"
   },
   "header": {
     "menu": "Meniu",
-    "menuAria": "Deschideți meniul de navigare",
+    "menuAria": "Deschide��⬺i meniul de navigare",
     "services": "Servicii",
     "preise": "preturi",
-    "referenzen": "Referințe",
+    "referenzen": "Referin��⬺e",
     "ueberUns": "Despre noi",
     "kontakt": "Contact"
   },
   "footer": {
-    "tagline": "VS Studio · Site-uri web, aplicații web, reclame și automatizări",
-    "impressum": "Amprentă",
-    "datenschutz": "Protecția datelor",
-    "agb": "Termeni și condiții",
+    "tagline": "VS Studio �\u001a· Site-uri web, aplica��⬺ii web, reclame ���\u001e�i automatiz�\u001e�\u0019ri",
+    "impressum": "Amprent�\u001e�\u0019",
+    "datenschutz": "Protec��⬺ia datelor",
+    "agb": "Termeni ���\u001e�i condi��⬺ii",
     "cookies": "cookie-uri",
-    "cookieSettings": "Setări cookie",
+    "cookieSettings": "Set�\u001e�\u0019ri cookie",
     "blog": "Blog"
   },
   "cookie": {
@@ -43,17 +43,17 @@
     "settings": "Einstellungen",
     "acceptAll": "Alle akzeptieren",
     "modalTitle": "Datenschutz-Einstellungen",
-    "modalText": "Du kannst deine Einwilligung jederzeit in den Cookie-Einstellungen ändern.",
+    "modalText": "Du kannst deine Einwilligung jederzeit in den Cookie-Einstellungen Ò¤ndern.",
     "essential": "Essenzielle Cookies (immer aktiv)",
     "statistics": "Statistik (z. B. Reichweite, Nutzung)",
     "marketing": "Marketing (z. B. Social/Ads Tracking)",
     "saveSelection": "Auswahl speichern"
   },
   "home": {
-    "heroTitle": "Site-uri web care aduc întrebări în loc să arate doar bine.",
-    "heroSubtitle": "Poziționare clară, implementare rapidă și pachete transparente pentru furnizorii locali de servicii din Germania.",
-    "toFaq": "Accesați Întrebări frecvente",
-    "partnersTitle": "Repere, grupuri țintă și servicii",
+    "heroTitle": "Site-uri web care aduc Ò®ntreb�\u001e�\u0019ri Ò®n loc s�\u001e�\u0019 arate doar bine.",
+    "heroSubtitle": "Pozi��⬺ionare clar�\u001e�\u0019, implementare rapid�\u001e�\u0019 ���\u001e�i pachete transparente pentru furnizorii locali de servicii din Germania.",
+    "toFaq": "Accesa��⬺i ÒŽntreb�\u001e�\u0019ri frecvente",
+    "partnersTitle": "Repere, grupuri ��⬺int�\u001e�\u0019 ���\u001e�i servicii",
     "groups": {
       "highlights": "Repere",
       "forWhom": "Pentru cine",
@@ -61,48 +61,48 @@
     },
     "partners": {
       "fastLoad": {
-        "title": "Încărcat rapid",
-        "desc": "Pagina se încarcă în secunde"
+        "title": "ÒŽnc�\u001e�\u0019rcat rapid",
+        "desc": "Pagina se Ò®ncarc�\u001e�\u0019 Ò®n secunde"
       },
       "moreLeads": {
-        "title": "Mai multe întrebări",
+        "title": "Mai multe Ò®ntreb�\u001e�\u0019ri",
         "desc": "Mai multe persoane de contact prin intermediul formularelor"
       },
       "clearPrices": {
-        "title": "Prețuri clare",
-        "desc": "Știți costurile în avans"
+        "title": "Pre��⬺uri clare",
+        "desc": "���Sti��⬺i costurile Ò®n avans"
       },
       "personalHelp": {
         "title": "Ajutor personal",
-        "desc": "Asistență directă fără a sta la coadă"
+        "desc": "Asisten��⬺�\u001e�\u0019 direct�\u001e�\u0019 f�\u001e�\u0019r�\u001e�\u0019 a sta la coad�\u001e�\u0019"
       },
       "handwerker": {
-        "title": "meșter",
-        "desc": "Cereri pe oraș și serviciu"
+        "title": "me���\u001e�ter",
+        "desc": "Cereri pe ora���\u001e� ���\u001e�i serviciu"
       },
       "praxen": {
         "title": "practici",
-        "desc": "Pacienții își găsesc întâlnirile mai repede"
+        "desc": "Pacien��⬺ii Ò®���\u001e�i g�\u001e�\u0019sesc Ò®ntÒ¢lnirile mai repede"
       },
       "werkstaetten": {
         "title": "ateliere",
-        "desc": "Ștergeți paginile de servicii cu urmărire"
+        "desc": "���Sterge��⬺i paginile de servicii cu urm�\u001e�\u0019rire"
       },
       "localServices": {
         "title": "Servicii locale",
-        "desc": "Mai multă vizibilitate pe site"
+        "desc": "Mai mult�\u001e�\u0019 vizibilitate pe site"
       },
       "websites": {
         "title": "site-uri web",
         "desc": "Modern, rapid, optimizat pentru mobil"
       },
       "webApps": {
-        "title": "Aplicații web",
-        "desc": "Instrumente pentru echipă și clienți"
+        "title": "Aplica��⬺ii web",
+        "desc": "Instrumente pentru echip�\u001e�\u0019 ���\u001e�i clien��⬺i"
       },
       "aiIntegration": {
         "title": "integrare AI",
-        "desc": "Chatbot pentru întrebări și piste"
+        "desc": "Chatbot pentru Ò®ntreb�\u001e�\u0019ri ���\u001e�i piste"
       },
       "socialMedia": {
         "title": "Social Media",
@@ -110,253 +110,253 @@
       },
       "socialAds": {
         "title": "Reclame sociale",
-        "desc": "Publicitate direcționată cu rezultate măsurabile"
+        "desc": "Publicitate direc��⬺ionat�\u001e�\u0019 cu rezultate m�\u001e�\u0019surabile"
       }
     },
-    "trustTitle": "Încredere cu rezultate concrete",
-    "trustDesc1": "mai multe solicitări de contact în 60 de zile.",
-    "trustDesc2": "cost mai mic pe client potențial după remedierea urmăririi.",
-    "trustDesc3": "timp mediu de încărcare pe mobil.",
-    "faqTitle": "Întrebări frecvente",
+    "trustTitle": "ÒŽncredere cu rezultate concrete",
+    "trustDesc1": "mai multe solicit�\u001e�\u0019ri de contact Ò®n 60 de zile.",
+    "trustDesc2": "cost mai mic pe client poten��⬺ial dup�\u001e�\u0019 remedierea urm�\u001e�\u0019ririi.",
+    "trustDesc3": "timp mediu de Ò®nc�\u001e�\u0019rcare pe mobil.",
+    "faqTitle": "ÒŽntreb�\u001e�\u0019ri frecvente",
     "faq": {
-      "q1": "Cât de repede poți începe?",
-      "a1": "De obicei începem în 3-5 zile lucrătoare. Imediat după solicitarea dvs. veți primi un scurt plan cu primii pași.",
-      "q2": "De ce am nevoie ca client la început?",
-      "a2": "Numai informații de bază despre oferta dvs., grupul țintă și canalele de contact. Vă vom ajuta apoi cu structura, textele și prioritățile.",
-      "q3": "Cum funcționează colaborarea?",
-      "a3": "Lucrăm în etape scurte: concept, proiectare, implementare, lansare. Veți primi actualizări clare, astfel încât să știți mereu ce se întâmplă în continuare.",
-      "q4": "Este potrivit pentru întreprinderile mici?",
-      "a4": "Da. Pachetele noastre sunt concepute în mod deliberat pentru afacerile locale: prețuri clare, o pornire rapidă și concentrare pe întrebări reale în loc de doar optică.",
-      "q5": "Ce se întâmplă după lansare?",
-      "a5": "După lansare, verificăm datele, îmbunătățim punctele de conversie și vă sprijinim cu reglaje, astfel încât site-ul să aibă performanțe mai bune pe termen lung.",
-      "desc": "Răspunsuri la întrebările frecvente despre calendar, costuri, procesul de lansare și asistență continuă."
+      "q1": "CÒ¢t de repede po��⬺i Ò®ncepe?",
+      "a1": "De obicei Ò®ncepem Ò®n 3-5 zile lucr�\u001e�\u0019toare. Imediat dup�\u001e�\u0019 solicitarea dvs. ve��⬺i primi un scurt plan cu primii pa���\u001e�i.",
+      "q2": "De ce am nevoie ca client la Ò®nceput?",
+      "a2": "Numai informa��⬺ii de baz�\u001e�\u0019 despre oferta dvs., grupul ��⬺int�\u001e�\u0019 ���\u001e�i canalele de contact. V�\u001e�\u0019 vom ajuta apoi cu structura, textele ���\u001e�i priorit�\u001e�\u0019��⬺ile.",
+      "q3": "Cum func��⬺ioneaz�\u001e�\u0019 colaborarea?",
+      "a3": "Lucr�\u001e�\u0019m Ò®n etape scurte: concept, proiectare, implementare, lansare. Ve��⬺i primi actualiz�\u001e�\u0019ri clare, astfel Ò®ncÒ¢t s�\u001e�\u0019 ���\u001e�ti��⬺i mereu ce se Ò®ntÒ¢mpl�\u001e�\u0019 Ò®n continuare.",
+      "q4": "Este potrivit pentru Ò®ntreprinderile mici?",
+      "a4": "Da. Pachetele noastre sunt concepute Ò®n mod deliberat pentru afacerile locale: pre��⬺uri clare, o pornire rapid�\u001e�\u0019 ���\u001e�i concentrare pe Ò®ntreb�\u001e�\u0019ri reale Ò®n loc de doar optic�\u001e�\u0019.",
+      "q5": "Ce se Ò®ntÒ¢mpl�\u001e�\u0019 dup�\u001e�\u0019 lansare?",
+      "a5": "Dup�\u001e�\u0019 lansare, verific�\u001e�\u0019m datele, Ò®mbun�\u001e�\u0019t�\u001e�\u0019��⬺im punctele de conversie ���\u001e�i v�\u001e�\u0019 sprijinim cu reglaje, astfel Ò®ncÒ¢t site-ul s�\u001e�\u0019 aib�\u001e�\u0019 performan��⬺e mai bune pe termen lung.",
+      "desc": "Raspunsuri la intrebarile frecvente despre termen, cost, lansare si suport continuu."
     },
     "hero": {
       "bento": {
         "speed": {
-          "label": "viteza",
-          "value": "90+ Far"
+          "label": "Geschwindigkeit",
+          "value": "90+ Lighthouse"
         },
         "seo": {
           "label": "SEO",
-          "value": "Fundație tehnică"
+          "value": "Technisches Fundament"
         },
         "leads": {
-          "label": "întrebări",
-          "value": "Șterge CTA și formularele"
+          "label": "Anfragen",
+          "value": "Klare CTA und Formulare"
         },
         "support": {
-          "label": "Suport",
-          "value": "După lansare"
+          "label": "Support",
+          "value": "Nach dem Launch"
         }
       }
     },
     "partnersSection": {
-      "title": "Avantaje și domenii de aplicare",
-      "desc": "Ce sarcini acoperim și pentru ce companii locale implementăm cel mai adesea site-uri web și canale de conducere."
+      "title": "Avantaje si directii",
+      "desc": "Welche Aufgaben wir abdecken und für welche lokalen Unternehmen wir am häufigsten Websites und Lead-Funnels umsetzen."
     },
     "marquee": {
-      "aria": "Industrii",
-      "title": "Industrii cu care lucrăm",
-      "desc": "Alegeți o direcție și vedeți exemple de stil potrivite. Aceasta înseamnă că putem construi o ofertă precisă pentru compania dumneavoastră mai rapid.",
+      "aria": "Branchen",
+      "title": "Nisele cu care lucram",
+      "desc": "Wählen Sie eine Richtung und sehen Sie passende Stilbeispiele. So bauen wir schneller ein präzises Angebot für Ihr Unternehmen.",
       "items": {
-        "handwerk": "Meșteșuguri",
-        "praxen": "practici",
-        "werkstaetten": "ateliere",
+        "handwerk": "Handwerk",
+        "praxen": "Praxen",
+        "werkstaetten": "Werkstätten",
         "gastronomie": "Gastronomie",
-        "beauty": "Frumusețe",
-        "immobilien": "Imobiliare",
-        "kanzlei": "firmă de avocatură",
+        "beauty": "Beauty",
+        "immobilien": "Immobilien",
+        "kanzlei": "Kanzlei",
         "fitness": "Fitness",
-        "reinigung": "Curatenie",
+        "reinigung": "Reinigung",
         "transport": "Transport",
         "coaching": "Coaching",
-        "bildung": "Educație"
+        "bildung": "Bildung"
       }
     },
     "process": {
-      "title": "Cum lucrăm",
-      "desc": "Un proces transparent fără pași inutile: de la un scurt briefing până la lansare și optimizare cu termene limită clare.",
-      "aria": "Fazele proiectului",
-      "stage": "faza",
+      "title": "Cum lucram",
+      "desc": "Ein transparenter Prozess ohne unnötige Schritte: vom kurzen Briefing bis zu Launch und Optimierung mit klaren Deadlines.",
+      "aria": "Projektphasen",
+      "stage": "Phase",
       "nav": {
-        "prev": "Înapoi",
-        "next": "În continuare"
+        "prev": "Zurück",
+        "next": "Weiter"
       },
       "steps": {
         "s1": {
-          "title": "apel de 15 minute",
-          "text": "Clarificăm sarcina, KPI și termenul limită și cădem imediat de acord asupra formatului de lansare."
+          "title": "15-Minuten-Call",
+          "text": "Wir klären Aufgabe, KPI und Deadline und stimmen sofort das Launch-Format ab."
         },
         "s2": {
-          "title": "Prototip în 48 de ore",
-          "text": "Arătăm structura paginii, CTA și fluxul de clienți potențiali înainte de dezvoltare."
+          "title": "Prototyp in 48h",
+          "text": "Wir zeigen Seitenstruktur, CTA und Lead-Flow vor der Entwicklung."
         },
         "s3": {
-          "title": "Dezvoltare în 7-14 zile",
-          "text": "Implementare, baza SEO, integrări și analize fără costuri suplimentare inutile."
+          "title": "Entwicklung in 7-14 Tagen",
+          "text": "Umsetzung, SEO-Basis, Integrationen und Analytics ohne unnötigen Overhead."
         },
         "s4": {
-          "title": "Lansare și optimizare",
-          "text": "Lansăm live, verificăm conversia și oferim un plan de îmbunătățire de 30 de zile."
+          "title": "Launch und Optimierung",
+          "text": "Wir gehen live, prüfen Conversion und liefern einen 30-Tage-Verbesserungsplan."
         }
       }
     },
     "projects": {
       "title": "Proiecte / Studii de caz",
-      "desc": "Sarcini reale și rezultate așteptate fără promisiuni goale. Plasați cursorul pe un caz pentru previzualizare live.",
+      "desc": "Reale Aufgaben und erwartbare Ergebnisse ohne leere Versprechen. Hover auf einen Case für Live-Preview.",
       "cards": {
         "c1": {
-          "title": "Site web de anchetă local",
-          "description": "Pagina de destinație cu accent pe formulare, apeluri și contact rapid pe mobil.",
-          "goal": "Obiectiv: mai multe întrebări fără creșterea bugetului"
+          "title": "Website für lokale Anfragen",
+          "description": "Landingpage mit Fokus auf Formular, Anruf und schnellen Mobile-Kontakt.",
+          "goal": "Ziel: mehr Anfragen ohne Budgeterhöhung"
         },
         "c2": {
-          "title": "Pagina de destinație pentru anunțuri",
-          "description": "Pagină separată cu urmărire pentru campaniile Meta și Google.",
-          "goal": "Efectul așteptat: clienți potențiali mai calificați din publicitate"
+          "title": "Landingpage für Ads",
+          "description": "Separate Seite mit Tracking für Meta- und Google-Kampagnen.",
+          "goal": "Erwarteter Effekt: qualifiziertere Leads aus Werbung"
         },
         "c3": {
-          "title": "Site pentru exersare",
-          "description": "Structură clară a serviciilor, Întrebări frecvente și flux de întâlniri online.",
-          "goal": "Obiectiv: mai multe rezervări de întâlniri cu mai puține interogări"
+          "title": "Website für Praxis",
+          "description": "Klare Leistungsstruktur, FAQ und Online-Termin-Flow.",
+          "goal": "Ziel: mehr Terminbuchungen mit weniger Rückfragen"
         },
         "c4": {
-          "title": "Tabloul de bord pentru clienți potențiali",
-          "description": "Interfață internă pentru procesarea clienților potențiali și controlul stării.",
-          "goal": "Efectul așteptat: procesarea mai rapidă a cererilor"
+          "title": "Dashboard für Leads",
+          "description": "Internes Interface zur Lead-Bearbeitung und Statuskontrolle.",
+          "goal": "Erwarteter Effekt: schnellere Bearbeitung von Anfragen"
         }
       }
     },
     "configurator": {
-      "title": "Configurator oferte",
-      "desc": "Selectați parametrii proiectului și primiți un preț de pornire și tarife de asistență adecvate.",
+      "title": "Configurator oferta",
+      "desc": "Wählen Sie Projektparameter und erhalten Sie einen Startpreis sowie passende Support-Tarife.",
       "labels": {
-        "goal": "Țintă",
-        "integrations": "Integrari",
-        "ads": "Publicitate",
-        "term": "interval de timp",
-        "content": "nivel de conținut",
-        "languages": "limbi",
-        "hosting": "Gazduire",
+        "goal": "Ziel",
+        "integrations": "Integrationen",
+        "ads": "Werbung",
+        "term": "Zeitrahmen",
+        "content": "Content-Level",
+        "languages": "Sprachen",
+        "hosting": "Hosting",
         "domain": "Domain",
-        "pages": "pagini",
+        "pages": "Seiten",
         "seo": "SEO"
       },
       "options": {
         "common": {
-          "other": "Alții"
+          "other": "Andere"
         },
         "goal": {
-          "leads": "conduce",
-          "calls": "sună",
-          "booking": "rezervări"
+          "leads": "Leads",
+          "calls": "Anrufe",
+          "booking": "Buchungen"
         },
         "integrations": {
-          "booking": "rezervare",
+          "booking": "Buchung",
           "crm": "CRM",
           "chat": "Chat",
-          "payments": "plăți"
+          "payments": "Zahlungen"
         },
         "ads": {
-          "none": "Fără publicitate",
+          "none": "Ohne Werbung",
           "meta": "Meta",
           "google": "Google"
         },
         "term": {
-          "up_to_7": "Până la 1 săptămână",
-          "from_7_to_14": "7-14 zile",
-          "from_14_to_21": "14-21 de zile",
-          "from_21_to_30": "21-30 de zile"
+          "up_to_7": "Bis 1 Woche",
+          "from_7_to_14": "7-14 Tage",
+          "from_14_to_21": "14-21 Tage",
+          "from_21_to_30": "21-30 Tage"
         },
         "content": {
-          "has": "Texte disponibile",
-          "copy": "Copywriting este necesar"
+          "has": "Texte vorhanden",
+          "copy": "Copywriting nötig"
         },
         "languages": {
-          "basic": "1 limbă",
-          "multi": "2+ limbi"
+          "basic": "1 Sprache",
+          "multi": "2+ Sprachen"
         },
         "hosting": {
-          "shared": "Găzduire partajată",
+          "shared": "Shared Hosting",
           "vps": "VPS",
-          "managed": "Găzduire gestionată"
+          "managed": "Managed Hosting"
         },
         "domain": {
-          "new_domain": "Domeniu nou",
+          "new_domain": "Neue Domain",
           "existing_domain": "Domain vorhanden",
-          "transfer": "Transfer de domeniu"
+          "transfer": "Domain-Transfer"
         },
         "pages": {
-          "one": "1 pagină",
-          "up_to_3": "Până la 3 pagini",
-          "five_plus": "5+ pagini"
+          "one": "1 Seite",
+          "up_to_3": "Bis 3 Seiten",
+          "five_plus": "5+ Seiten"
         },
         "seo": {
-          "base": "Baza SEO",
-          "extended": "SEO extins"
+          "base": "SEO Base",
+          "extended": "SEO Extended"
         }
       },
-      "reset": "Resetează totul",
-      "empty": "Alegeți cel puțin o opțiune în fiecare bloc. Selectarea multiplă este posibilă; Pentru „Altele” nu se percepe nicio taxă suplimentară.",
-      "recommended": "Recomandat:",
+      "reset": "Alles zurücksetzen",
+      "empty": "Wählen Sie mindestens eine Option in jedem Block. Mehrfachauswahl ist möglich; bei \"Andere\" wird keine Zusatzgebühr berechnet.",
+      "recommended": "Empfohlen:",
       "pack": {
         "starter": "Starter",
-        "business": "Afaceri"
+        "business": "Business"
       },
-      "launchPrice": "Preț de pornire:",
-      "supportMonthly": "Asistență / Lună",
-      "supportYearly": "Suport/an (-30%)",
-      "cta": "Cerere de contact și estimare exactă a costurilor",
+      "launchPrice": "Startpreis:",
+      "supportMonthly": "Support / Monat",
+      "supportYearly": "Support / Jahr (-30%)",
+      "cta": "Kontaktanfrage und exakter Kostenvoranschlag",
       "bullets": {
-        "prototype": "Prototip și structură cu accent pe solicitări",
-        "goal": "Obiective: {{value}}",
-        "integrations": "Integrari: {{value}}",
-        "term": "Interval de timp: {{value}}",
-        "hosting": "Găzduire: {{value}}",
-        "domain": "Domeniu: {{value}}",
-        "pages": "Pagini: {{value}}",
-        "analytics": "GA4 și urmărirea evenimentelor pentru formulare/contacte",
-        "copy_true": "Suport cu texte și oferte",
-        "copy_false": "Lucrăm cu textele dvs. existente",
-        "market_note": "Preț orientativ sub nivelul pieței pentru companiile mici"
+        "prototype": "Prototyp und Struktur mit Fokus auf Anfragen",
+        "goal": "Ziele: {{value}}",
+        "integrations": "Integrationen: {{value}}",
+        "term": "Zeitrahmen: {{value}}",
+        "hosting": "Hosting: {{value}}",
+        "domain": "Domain: {{value}}",
+        "pages": "Seiten: {{value}}",
+        "analytics": "GA4 und Event-Tracking für Formulare/Kontakte",
+        "copy_true": "Unterstützung bei Texten und Offer",
+        "copy_false": "Wir arbeiten mit Ihren vorhandenen Texten",
+        "market_note": "Orientierungspreis unter marktüblichem Niveau für kleine Unternehmen"
       },
       "brief": {
-        "title": "Scrisoare din partea configuratorului de oferte:",
-        "goal": "Țintă: {{value}}",
-        "integrations": "Integrari: {{value}}",
-        "ads": "Publicitate: {{value}}",
-        "term": "Interval de timp: {{value}}",
-        "content": "Conținut: {{value}}",
-        "languages": "Limbi: {{value}}",
-        "hosting": "Găzduire: {{value}}",
-        "domain": "Domeniu: {{value}}",
-        "pages": "Pagini: {{value}}",
+        "title": "Brief aus dem Angebots-Konfigurator:",
+        "goal": "Ziel: {{value}}",
+        "integrations": "Integrationen: {{value}}",
+        "ads": "Werbung: {{value}}",
+        "term": "Zeitrahmen: {{value}}",
+        "content": "Content: {{value}}",
+        "languages": "Sprachen: {{value}}",
+        "hosting": "Hosting: {{value}}",
+        "domain": "Domain: {{value}}",
+        "pages": "Seiten: {{value}}",
         "seo": "SEO: {{value}}",
-        "launch_price": "Preț de pornire: {{value}}",
-        "support_monthly": "Asistență / Lună: {{value}}",
-        "support_yearly": "Suport/an (-30%): {{value}}"
+        "launch_price": "Startpreis: {{value}}",
+        "support_monthly": "Support / Monat: {{value}}",
+        "support_yearly": "Support / Jahr (-30%): {{value}}"
       }
     },
     "trust": {
-      "title": "Ce primești în 14 zile",
-      "desc": "Rezultate de pornire concrete: un site web orientat către interogări, analitice configurate și un plan de creștere ulterioară.",
+      "title": "Ce primesti in 14 zile",
+      "desc": "Konkrete Start-Ergebnisse: eine anfrageorientierte Website, eingerichtete Analytics und ein Plan für weiteres Wachstum.",
       "deliverables": {
         "d1": {
-          "title": "Prototip în 48 de ore",
-          "text": "Arătăm structura și CTA înainte de codificare, astfel încât deciziile să poată fi planificate."
+          "title": "Prototyp in 48h",
+          "text": "Wir zeigen Struktur und CTA vor dem Coding, damit Entscheidungen planbar bleiben."
         },
         "d2": {
-          "title": "Site pentru întrebări",
-          "text": "Versiunea de formular, apel, messenger și mobil pentru contact rapid."
+          "title": "Website für Anfragen",
+          "text": "Formular, Anruf, Messenger und mobile Version für schnelle Kontaktaufnahme."
         },
         "d3": {
-          "title": "Analiză și urmărire",
-          "text": "GA4 plus evenimente, astfel încât să fie vizibil acolo unde apar întrebări."
+          "title": "Analytics und Tracking",
+          "text": "GA4 plus Events, damit sichtbar wird, wo Anfragen entstehen."
         },
         "d4": {
-          "title": "Plan de optimizare de 30 de zile",
-          "text": "Ștergeți pașii următori pentru a crește numărul de conversii după lansare."
+          "title": "30-Tage-Optimierungsplan",
+          "text": "Klare nächste Schritte zur Conversion-Steigerung nach Launch."
         }
       }
     }
@@ -397,7 +397,7 @@
       },
       "social": {
         "title": "Social Media",
-        "desc": "Content-Module, Channel-Verknüpfung, Kontaktpfade."
+        "desc": "Content-Module, Channel-VerknÒ¼pfung, Kontaktpfade."
       },
       "ads": {
         "title": "Social Ads",
@@ -440,56 +440,107 @@
     "packages": {
       "title": "Pachete de pret",
       "badge": "Recomandat",
-      "coreTitle": "Core",
-      "plusTitle": "Plus",
-      "outcomeLabel": "Result:",
+      "billing": {
+        "monthly": "Lunar",
+        "yearly": "Anual"
+      },
+      "coreTitle": "Baza",
+      "plusTitle": "Extra",
+      "subscriptionTitle": "Abonament suport",
+      "subscriptionIncludesTitle": "Include",
+      "outcomeLabel": "Rezultat:",
       "starter": {
         "name": "Starter",
-        "desc": "For small local businesses with fast start.",
-        "price": "from EUR 690",
-        "range": "typical EUR 690-790",
+        "desc": "Pentru afaceri locale mici cu lansare rapida.",
+        "price": "de la EUR 690",
+        "range": "de obicei EUR 690-790",
         "core": [
-          "Landing Page",
-          "Lead Form + Contact Form",
-          "GA4 + Basic SEO Setup"
+          "Landing page",
+          "Formular lead + formular de contact",
+          "GA4 + configurare SEO de baza"
         ],
         "plus": [
-          "Mobile Optimization",
-          "Basic DSGVO Tracking"
+          "Optimizare mobila",
+          "Tracking DSGVO de baza"
         ],
-        "outcome": "Stable channel for first qualified requests."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 62 / luna",
+            "meta": "suport de baza dupa lansare"
+          },
+          "yearly": {
+            "price": "EUR 521 / an",
+            "meta": "12 luni cu reducere de 30%"
+          },
+          "includes": [
+            "Actualizari tehnice si backup-uri",
+            "Monitorizarea formularelor, conversiilor si trackingului de baza",
+            "Pana la 1 bloc de modificari sau update-uri pe luna"
+          ]
+        },
+        "outcome": "Canal stabil pentru primele cereri calificate."
       },
       "business": {
         "name": "Business",
-        "desc": "For teams with multiple services and active sales.",
-        "price": "from EUR 1.290",
-        "range": "typical EUR 1.290-1.490",
+        "desc": "Pentru echipe cu mai multe servicii si vanzari active.",
+        "price": "de la EUR 1.290",
+        "range": "de obicei EUR 1.290-1.490",
         "core": [
-          "Multi-page Website up to 5 pages",
-          "CRM Integration + Lead Tracking",
-          "Analytics Dashboard"
+          "Website multi-page de pana la 5 pagini",
+          "Integrare CRM + lead tracking",
+          "Dashboard analitic"
         ],
         "plus": [
-          "SEO Structure by Service",
-          "Conversion Optimization"
+          "Structura SEO pe servicii",
+          "Optimizarea conversiei"
         ],
-        "outcome": "Predictable lead pipeline with clear reporting."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 86 / luna",
+            "meta": "suport pentru website, CRM si analytics"
+          },
+          "yearly": {
+            "price": "EUR 722 / an",
+            "meta": "12 luni cu reducere de 30%"
+          },
+          "includes": [
+            "Actualizari regulate de continut si pagini",
+            "Control pentru CRM, lead tracking si dashboard",
+            "Pana la 2 taskuri pe luna pentru cresterea conversiei"
+          ]
+        },
+        "outcome": "Flux previzibil de leaduri cu analiza clara."
       },
       "pro": {
         "name": "Pro",
-        "desc": "For growth with website, ads and automation.",
-        "price": "from EUR 2.490",
-        "range": "typical EUR 2.490-2.990",
+        "desc": "Pentru crestere prin website, ads si automatizare.",
+        "price": "de la EUR 2.490",
+        "range": "de obicei EUR 2.490-2.990",
         "core": [
-          "Website + Ads Setup",
-          "Google Ads or Meta Ads",
-          "Marketing Dashboard + Tracking"
+          "Website + setup Ads",
+          "Google Ads sau Meta Ads",
+          "Marketing dashboard + tracking"
         ],
         "plus": [
-          "AI Lead Qualification",
-          "Automation Flows"
+          "Calificare leaduri cu AI",
+          "Automation flows"
         ],
-        "outcome": "More demand with controlled cost per lead."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 160 / luna",
+            "meta": "gestionare activa a sistemului de growth"
+          },
+          "yearly": {
+            "price": "EUR 1.344 / an",
+            "meta": "12 luni cu reducere de 30%"
+          },
+          "includes": [
+            "Control saptamanal pentru website, ads si automation flows",
+            "Optimizarea CPL, funnel-ului si calificarii leadurilor",
+            "Pana la 4 taskuri de growth pe luna + suport prioritar"
+          ]
+        },
+        "outcome": "Mai multa cerere cu cost pe lead controlat."
       }
     },
     "comparison": {
@@ -533,30 +584,30 @@
     }
   },
   "references": {
-    "h1": "Referințe cu creștere măsurabilă.",
-    "subtitle": "Arătăm clar ce a crescut: cereri, rezervări, apeluri și lead-uri.",
-    "trustline": "Toate metricile cu context: perioadă și măsurare.",
-    "filterTitle": "Selectează nișa",
-    "filterAria": "Filtru nișe",
+    "h1": "Referin��⬺e cu cre���\u001e�tere m�\u001e�\u0019surabil�\u001e�\u0019.",
+    "subtitle": "Ar�\u001e�\u0019t�\u001e�\u0019m clar ce a crescut: cereri, rezerv�\u001e�\u0019ri, apeluri ���\u001e�i lead-uri.",
+    "trustline": "Toate metricile cu context: perioad�\u001e�\u0019 ���\u001e�i m�\u001e�\u0019surare.",
+    "filterTitle": "Selecteaz�\u001e�\u0019 ni���\u001e�a",
+    "filterAria": "Filtru ni���\u001e�e",
     "counter": "{{count}} cazuri relevante",
-    "growthByNiche": "Creștere pe domenii",
+    "growthByNiche": "Cre���\u001e�tere pe domenii",
     "selectedCases": "Cazuri selectate",
-    "challengeLabel": "Situație inițială",
-    "solutionLabel": "Soluție",
-    "periodLabel": "Perioadă",
-    "measurementLabel": "Măsurare",
-    "emptyTitle": "Următorul caz pentru această nișă vine curând.",
-    "emptyText": "Afișăm doar cazuri cu măsurare solidă și perioadă clară.",
-    "beforeAfter": "Înainte / După",
-    "before": "Înainte",
-    "after": "După",
-    "beforeAlt": "Vedere înainte",
-    "afterAlt": "Vedere după",
-    "sliderAria": "Mută comparația înainte/după",
+    "challengeLabel": "Situa��⬺ie ini��⬺ial�\u001e�\u0019",
+    "solutionLabel": "Solu��⬺ie",
+    "periodLabel": "Perioad�\u001e�\u0019",
+    "measurementLabel": "M�\u001e�\u0019surare",
+    "emptyTitle": "Urm�\u001e�\u0019torul caz pentru aceast�\u001e�\u0019 ni���\u001e��\u001e�\u0019 vine curÒ¢nd.",
+    "emptyText": "Afi���\u001e��\u001e�\u0019m doar cazuri cu m�\u001e�\u0019surare solid�\u001e�\u0019 ���\u001e�i perioad�\u001e�\u0019 clar�\u001e�\u0019.",
+    "beforeAfter": "ÒŽnainte / Dup�\u001e�\u0019",
+    "before": "ÒŽnainte",
+    "after": "Dup�\u001e�\u0019",
+    "beforeAlt": "Vedere Ò®nainte",
+    "afterAlt": "Vedere dup�\u001e�\u0019",
+    "sliderAria": "Mut�\u001e�\u0019 compara��⬺ia Ò®nainte/dup�\u001e�\u0019",
     "sliderHint": "Trage pentru a compara.",
     "ctaTitle": "Vrei rezultate similare?",
-    "ctaText": "Analizăm situația ta și arătăm un plan realist pe 30-90 de zile.",
-    "cta": "Solicită proiect similar",
+    "ctaText": "Analiz�\u001e�\u0019m situa��⬺ia ta ���\u001e�i ar�\u001e�\u0019t�\u001e�\u0019m un plan realist pe 30-90 de zile.",
+    "cta": "Solicit�\u001e�\u0019 proiect similar",
     "filters": {
       "all": "Toate"
     },
@@ -575,68 +626,68 @@
       "bildungKurse": "Bildung/Kurse"
     },
     "metrics": {
-      "moreRequests": "Mai multe solicitări",
-      "moreAppointments": "Mai multe programări",
+      "moreRequests": "Mai multe solicit�\u001e�\u0019ri",
+      "moreAppointments": "Mai multe program�\u001e�\u0019ri",
       "moreCalls": "Mai multe apeluri",
-      "moreReservations": "Mai multe rezervări",
-      "moreBookings": "Mai multe rezervări servicii",
+      "moreReservations": "Mai multe rezerv�\u001e�\u0019ri",
+      "moreBookings": "Mai multe rezerv�\u001e�\u0019ri servicii",
       "moreLeads": "Mai multe lead-uri",
-      "moreIntroCalls": "Mai multe apeluri inițiale",
-      "moreTrialSessions": "Mai multe sesiuni de probă",
-      "moreOffers": "Mai multe cereri de ofertă",
+      "moreIntroCalls": "Mai multe apeluri ini��⬺iale",
+      "moreTrialSessions": "Mai multe sesiuni de prob�\u001e�\u0019",
+      "moreOffers": "Mai multe cereri de ofert�\u001e�\u0019",
       "moreQualifiedLeads": "Mai multe lead-uri calificate",
-      "moreFirstContacts": "Mai multe contacte inițiale",
-      "moreCourseSignups": "Mai multe înscrieri la cursuri",
-      "budgetEfficiency": "Eficiența bugetului",
-      "moreInteractions": "Mai multe interacțiuni",
+      "moreFirstContacts": "Mai multe contacte ini��⬺iale",
+      "moreCourseSignups": "Mai multe Ò®nscrieri la cursuri",
+      "budgetEfficiency": "Eficien��⬺a bugetului",
+      "moreInteractions": "Mai multe interac��⬺iuni",
       "moreLeadsPerBudget": "Mai multe lead-uri per buget",
-      "moreConsultations": "Mai multe consultații"
+      "moreConsultations": "Mai multe consulta��⬺ii"
     },
     "cases": {
       "c1": {
-        "title": "Firmă de instalații sanitare (regiunea Hanovra)",
-        "challenge": "Prea puține solicitări în ciuda acoperirii bune.",
+        "title": "Firm�\u001e�\u0019 de instala��⬺ii sanitare (regiunea Hanovra)",
+        "challenge": "Prea pu��⬺ine solicit�\u001e�\u0019ri Ò®n ciuda acoperirii bune.",
         "solution": "Paginile de servicii au fost restructurate, CTA-urile optimizate, trackingul de contact activat."
       },
       "c2": {
-        "title": "Clinică de fizioterapie (Hildesheim)",
-        "challenge": "Prea puține cereri de programare online.",
-        "solution": "Fluxul de programare simplificat, paginile mobile accelerate și canalele de contact clarificate."
+        "title": "Clinic�\u001e�\u0019 de fizioterapie (Hildesheim)",
+        "challenge": "Prea pu��⬺ine cereri de programare online.",
+        "solution": "Fluxul de programare simplificat, paginile mobile accelerate ���\u001e�i canalele de contact clarificate."
       },
       "c3": {
         "title": "Service caroserie (zona Harburg)",
-        "challenge": "Multe contacte, dar prea puține comenzi potrivite.",
-        "solution": "Calificarea lead-urilor în formular și landing page pe servicii."
+        "challenge": "Multe contacte, dar prea pu��⬺ine comenzi potrivite.",
+        "solution": "Calificarea lead-urilor Ò®n formular ���\u001e�i landing page pe servicii."
       },
       "c4": {
-        "title": "Restaurant (Saxonia Inferioară)",
-        "challenge": "Prea puține rezervări în timpul săptămânii.",
-        "solution": "Fluxul de rezervare simplificat și campaniile locale relansate."
+        "title": "Restaurant (Saxonia Inferioar�\u001e�\u0019)",
+        "challenge": "Prea pu��⬺ine rezerv�\u001e�\u0019ri Ò®n timpul s�\u001e�\u0019pt�\u001e�\u0019mÒ¢nii.",
+        "solution": "Fluxul de rezervare simplificat ���\u001e�i campaniile locale relansate."
       },
       "c5": {
-        "title": "Agenție imobiliară (Saxonia Inferioară)",
-        "challenge": "Prea puține lead-uri calificate de la proprietari.",
-        "solution": "Pagini de proprietăți construite după intenția de căutare și fluxul de solicitare simplificat."
+        "title": "Agen��⬺ie imobiliar�\u001e�\u0019 (Saxonia Inferioar�\u001e�\u0019)",
+        "challenge": "Prea pu��⬺ine lead-uri calificate de la proprietari.",
+        "solution": "Pagini de propriet�\u001e�\u0019��⬺i construite dup�\u001e�\u0019 inten��⬺ia de c�\u001e�\u0019utare ���\u001e�i fluxul de solicitare simplificat."
       },
       "c6": {
         "title": "Birou fiscal (regiunea Hanovra)",
-        "challenge": "Conversie scăzută pe paginile de servicii.",
-        "solution": "Conținut simplificat, texte de încredere adăugate, primul contact evidențiat."
+        "challenge": "Conversie sc�\u001e�\u0019zut�\u001e�\u0019 pe paginile de servicii.",
+        "solution": "Con��⬺inut simplificat, texte de Ò®ncredere ad�\u001e�\u0019ugate, primul contact eviden��⬺iat."
       }
     },
-    "performanceDashboard": "Panou de performanță",
-    "growthCurve90": "Curba de creștere pe 90 de zile",
-    "growthChartAria": "Grafic de creștere",
+    "performanceDashboard": "Panou de performan��⬺�\u001e�\u0019",
+    "growthCurve90": "Curba de cre���\u001e�tere pe 90 de zile",
+    "growthChartAria": "Grafic de cre���\u001e�tere",
     "resultLabel": "Rezultat",
     "trendAria": "Trend: {{niche}}",
-    "compareGraphAria": "Grafic înainte și după",
+    "compareGraphAria": "Grafic Ò®nainte ���\u001e�i dup�\u001e�\u0019",
     "dayLabel": "Ziua {{day}}",
-    "beforeLegend": "Înainte: dinamică slabă",
-    "afterLegend": "După: creștere stabilă",
+    "beforeLegend": "ÒŽnainte: dinamic�\u001e�\u0019 slab�\u001e�\u0019",
+    "afterLegend": "Dup�\u001e�\u0019: cre���\u001e�tere stabil�\u001e�\u0019",
     "filterGroups": {
       "all": "Toate",
       "localServices": "Servicii locale",
-      "healthBeauty": "Sănătate și Frumusețe",
+      "healthBeauty": "S�\u001e�\u0019n�\u001e�\u0019tate ���\u001e�i Frumuse��⬺e",
       "professional": "Profesional"
     },
     "kpis": {
@@ -647,8 +698,8 @@
     "daysUnit": "zile"
   },
   "about": {
-    "h1": "Über uns",
-    "subtitle": "Wir sind ein kleines Umsetzungsteam für lokale Unternehmen.",
+    "h1": "Ò�\u001cber uns",
+    "subtitle": "Wir sind ein kleines Umsetzungsteam fÒ¼r lokale Unternehmen.",
     "cards": {
       "work": {
         "title": "Wie wir arbeiten",
@@ -664,18 +715,18 @@
       }
     },
     "ctaTitle": "Kontakt",
-    "photoPlaceholder": "Foto: Porträt des Gründers von VS Web Studio (Vladyslav)",
-    "photoCaption": "Vladyslav, Gründer von VS Web Studio. Hildesheim.",
+    "photoPlaceholder": "Foto: PortrÒ¤t des GrÒ¼nders von VS Web Studio (Vladyslav)",
+    "photoCaption": "Vladyslav, GrÒ¼nder von VS Web Studio. Hildesheim.",
     "photoAlt": "Vladyslav, Webentwickler von VS Web Studio aus Hildesheim",
     "geo": {
       "local": "Wir arbeiten hier: Hildesheim",
       "region": "Hauptregion: Niedersachsen",
-      "country": "Möglich: ganz Deutschland"
+      "country": "MÒ¶glich: ganz Deutschland"
     },
-    "intro1": "Ich bin Vladyslav, Gründer von VS Web Studio. Ich arbeite aus Hildesheim und unterstütze zuerst Unternehmen direkt in der Stadt und Umgebung. Zusätzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
-    "intro2": "Mein Ziel ist einfach: nicht nur eine schöne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
-    "intro3": "Wir sind ein kleines Team mit bewährten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnötige Bürokratie, und bringen Projekte bis zum Ergebnis.",
-    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes Verständnis für den Markt vor Ort.",
+    "intro1": "Ich bin Vladyslav, GrÒ¼nder von VS Web Studio. Ich arbeite aus Hildesheim und unterstÒ¼tze zuerst Unternehmen direkt in der Stadt und Umgebung. ZusÒ¤tzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
+    "intro2": "Mein Ziel ist einfach: nicht nur eine schÒ¶ne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
+    "intro3": "Wir sind ein kleines Team mit bewÒ¤hrten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnÒ¶tige BÒ¼rokratie, und bringen Projekte bis zum Ergebnis.",
+    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes VerstÒ¤ndnis fÒ¼r den Markt vor Ort.",
     "miniFactsTitle": "Was wir konkret machen",
     "miniFacts": {
       "i1": "Klare Schritte ohne Fachchinesisch",
@@ -687,21 +738,21 @@
       "i1": "Eine schnelle Website, die auf dem Smartphone sauber funktioniert",
       "i2": "Klare Seitenstruktur mit starken CTA-Elementen",
       "i3": "Eingerichtetes Tracking, damit Sie die Quellen Ihrer Anfragen sehen",
-      "i4": "Automationen, die Zeit sparen und die Conversion erhöhen"
+      "i4": "Automationen, die Zeit sparen und die Conversion erhÒ¶hen"
     },
     "contactTitle": "Kontakt",
-    "contactText": "Schreiben Sie uns, welches Geschäft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
+    "contactText": "Schreiben Sie uns, welches GeschÒ¤ft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
     "contactButton": "Projekt anfragen"
   },
   "contact": {
-    "h1": "Kontakt",
-    "responseTime": "Antwortzeit aktuell:",
-    "quickContacts": "Schnelle Kontakte",
+    "h1": "Contact si cerere pentru proiectul tau",
+    "responseTime": "Timpul actual de raspuns:",
+    "quickContacts": "Contacte rapide",
     "form": {
-      "name": "Name",
-      "business": "Business",
-      "need": "Was brauchst du genau?",
-      "submit": "Anfrage senden"
+      "name": "Nume",
+      "business": "Afacere",
+      "need": "De ce ai nevoie exact?",
+      "submit": "Trimite cererea"
     }
   },
   "blog": {
@@ -711,54 +762,54 @@
       "c1": "AI-Workflows im Website Funnel",
       "c2": "Social-Prozesse ohne Chaos",
       "c3": "Social Ads mit sauberem Tracking",
-      "c4": "Automationen für Erstkontakt"
+      "c4": "Automationen fÒ¼r Erstkontakt"
     },
     "leadMagnet": "Lead Magnet",
-    "emailPlaceholder": "E-Mail für den Guide",
+    "emailPlaceholder": "E-Mail fÒ¼r den Guide",
     "getGuide": "Guide erhalten"
   },
   "niche": {
     "handwerker": {
-      "h1": "Websites für Handwerker: mehr passende Anfragen.",
+      "h1": "Websites fÒ¼r Handwerker: mehr passende Anfragen.",
       "p": "Klare Leistungen, lokale Sichtbarkeit, einfache Kontaktwege."
     },
     "praxis": {
-      "h1": "Websites für Praxen: weniger Rückfragen, mehr Terminanfragen.",
+      "h1": "Websites fÒ¼r Praxen: weniger RÒ¼ckfragen, mehr Terminanfragen.",
       "p": "Patientenfreundliche Struktur und klarer Online-Erstkontakt."
     },
     "werkstatt": {
-      "h1": "Websites für Werkstätten: planbare Leads statt Zufall.",
+      "h1": "Websites fÒ¼r WerkstÒ¤tten: planbare Leads statt Zufall.",
       "p": "Service-orientierte Seiten mit messbarer Conversion."
     }
   },
   "legal": {
     "impressum": {
       "h1": "Impressum",
-      "subtitle": "Angaben gemäß § 5 TMG.",
+      "subtitle": "Angaben gemÒ¤ÒŸ �\u001a§ 5 TMG.",
       "l1": "VS Studio",
-      "l2": "Musterstraße 10, 10115 Berlin, Deutschland",
+      "l2": "MusterstraÒŸe 10, 10115 Berlin, Deutschland",
       "l3": "E-Mail: kontakt@vs-web-studio.de",
       "l4": "Telefon: +49 30 1234567",
       "l5": "Vertreten durch: Vladyslav"
     },
     "datenschutz": {
-      "h1": "Datenschutzerklärung",
+      "h1": "DatenschutzerklÒ¤rung",
       "subtitle": "Kurzinformation zur Verarbeitung personenbezogener Daten.",
       "l1": "Wir verarbeiten Daten nur zweckgebunden (Kontaktanfragen, Angebotserstellung, Statistik).",
       "l2": "Rechtsgrundlagen: Art. 6 Abs. 1 lit. b und f DSGVO.",
-      "l3": "Betroffene Rechte: Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch.",
-      "l4": "Kontakt für Datenschutz: datenschutz@vs-web-studio.de"
+      "l3": "Betroffene Rechte: Auskunft, Berichtigung, LÒ¶schung, EinschrÒ¤nkung, Widerspruch.",
+      "l4": "Kontakt fÒ¼r Datenschutz: datenschutz@vs-web-studio.de"
     },
     "agb": {
       "h1": "AGB",
-      "subtitle": "Optionale allgemeine Geschäftsbedingungen.",
-      "l1": "Leistungen werden gemäß Angebot und vereinbartem Umfang erbracht.",
-      "l2": "Zahlungsbedingungen, Nutzungsrechte und Gewährleistung richten sich nach dem Vertrag."
+      "subtitle": "Optionale allgemeine GeschÒ¤ftsbedingungen.",
+      "l1": "Leistungen werden gemÒ¤ÒŸ Angebot und vereinbartem Umfang erbracht.",
+      "l2": "Zahlungsbedingungen, Nutzungsrechte und GewÒ¤hrleistung richten sich nach dem Vertrag."
     },
     "cookies": {
       "h1": "Cookie-Hinweise",
       "subtitle": "Informationen zu eingesetzten Cookies und Messdiensten.",
-      "l1": "Technisch notwendige Cookies sichern die Funktionalität der Website.",
+      "l1": "Technisch notwendige Cookies sichern die FunktionalitÒ¤t der Website.",
       "l2": "Optionale Analyse-Cookies helfen bei der Optimierung von Inhalten und Kampagnen."
     }
   },
@@ -776,6 +827,142 @@
     "form": {
       "success": "Danke fuer dein Feedback!",
       "error": "Feedback konnte nicht gesendet werden."
+    }
+  },
+  "aboutPage": {
+    "heroEyebrow": "VS Studio | Hildesheim | Niedersachsen | Germania",
+    "heroTitleLine1": "Website-uri si",
+    "heroTitleLine2": "sisteme de lead-uri",
+    "heroTitleLine3": "pentru afaceri locale",
+    "heroTitleLine4": "in Hildesheim",
+    "heroSubtitle": "Mai multe cereri calificate prin website-uri rapide, cai clare de contact si marketing masurabil.",
+    "heroTrustline": "Local in Hildesheim. Strategic in Niedersachsen. Aplicabil in toata Germania.",
+    "primaryCta": "Analiza gratuita a website-ului",
+    "section": {
+      "about": "Despre noi",
+      "localAdvantages": "Avantaje locale",
+      "how": "Cum lucram",
+      "value": "Valoare",
+      "trust": "Incredere"
+    },
+    "blocks": {
+      "who": {
+        "title": "Pentru afaceri locale",
+        "text": "Website-uri, sisteme de lead-uri si marketing pentru firme care vor mai multe cereri in mod previzibil."
+      },
+      "focus": {
+        "title": "Un sistem in loc de solutii separate",
+        "text": "Website-ul, caile de contact, campaniile si trackingul functioneaza impreuna ca un proces clar."
+      },
+      "locality": {
+        "title": "Apropierea locala ca avantaj",
+        "subtitle": "Coordonare rapida, prioritati clare si rezultate masurabile.",
+        "text1": "Lucram direct cu afaceri locale, fara lanturi lungi de agentii si birocratie inutila.",
+        "i1": "Comunicare directa fara ocolisuri",
+        "i2": "Implementare rapida in locul aprobarilor lente",
+        "i3": "Intelegere pentru pietele si bugetele locale",
+        "text2": "Deciziile se iau mai repede, iar proiectele nu raman blocate saptamani intregi.",
+        "text3": "Asta economiseste timp, reduce costurile si accelereaza rezultatele.",
+        "text4": "Cunoastem realitatea companiilor mici si mijlocii: bugete limitate, timp putin si nevoie de rezultate clare.",
+        "text5": "De aceea lucram pragmatic si structurat, de la analiza pana la optimizare."
+      }
+    },
+    "photoAlt": "Vladyslav, fondatorul VS Web Studio din Hildesheim",
+    "photoCaption": "Vladyslav - fondatorul VS Web Studio",
+    "photoFacts": {
+      "f1": "Focus: afaceri locale",
+      "f2": "Locatie: Hildesheim",
+      "f3": "Proiecte: in toata Germania"
+    },
+    "geo": {
+      "local": "Hildesheim",
+      "region": "Niedersachsen",
+      "country": "In toata Germania"
+    },
+    "localPriority": "Drumuri scurte. Prioritati clare. Focus pe rezultate.",
+    "how": {
+      "s1": {
+        "title": "1. Intelegem",
+        "text": "Analizam audienta, oferta si piata."
+      },
+      "s2": {
+        "title": "2. Implementam",
+        "text": "Lansam website-ul, sistemul de lead-uri si campaniile."
+      },
+      "s3": {
+        "title": "3. Optimizam",
+        "text": "Analizam datele si imbunatatim rezultatele."
+      }
+    },
+    "cards": {
+      "work": {
+        "title": "Procese clare",
+        "desc": "Drumuri scurte. Responsabilitate clara."
+      },
+      "ai": {
+        "title": "AI First",
+        "desc": "Automatizare acolo unde economiseste timp."
+      },
+      "leads": {
+        "title": "Focus pe lead-uri",
+        "desc": "Designul si marketingul lucreaza impreuna."
+      }
+    },
+    "results": {
+      "title": "Ce primesc clientii",
+      "i1": "Un website rapid care se incarca bine pe orice smartphone",
+      "i2": "Cai clare de contact: apel, formular, programare",
+      "i3": "Cereri masurabile cu tracking si date de marketing"
+    },
+    "trust": {
+      "projects": {
+        "label": "Numar de proiecte",
+        "value": "120+",
+        "text": "Website-uri, funnel-uri de lead-uri si relaunch-uri."
+      },
+      "industries": {
+        "label": "Industrii",
+        "value": "12",
+        "text": "Mesteri, cabinete, gastronomie, beauty, educatie si servicii locale."
+      },
+      "focus": {
+        "label": "Focus",
+        "value": "Local + Masurabil",
+        "text": "Hildesheim, Niedersachsen si Germania cu focus clar pe lead-uri."
+      }
+    },
+    "cta": {
+      "title": "Pregatiti pentru cereri previzibile?",
+      "text": "In prima discutie gratuita va aratam cele mai mari oportunitati pentru website, procesele de lead-uri si publicitate."
+    },
+    "visual": {
+      "productBadge": "Lead System",
+      "flowLabel": "Flux",
+      "flowValue": "De la before la sistem si rezultat",
+      "before": {
+        "label": "Inainte",
+        "title": "Multe clickuri, putina claritate",
+        "i1": "Pagini lente",
+        "i2": "Cai de contact neclare",
+        "i3": "Date necurate"
+      },
+      "system": {
+        "label": "Sistem",
+        "phoneBadge": "Website",
+        "cta": "Cere programare",
+        "pill1": "Website",
+        "pill2": "Contact",
+        "pill3": "Tracking"
+      },
+      "result": {
+        "label": "Rezultat",
+        "title": "Cereri calificate",
+        "text": "Masurabile, raspunse mai rapid si vizibile clar in funnel."
+      },
+      "anchor": {
+        "label": "Rezultat",
+        "value": "Mai multe cereri calificate in loc de simplu trafic"
+      }
     }
   }
 }

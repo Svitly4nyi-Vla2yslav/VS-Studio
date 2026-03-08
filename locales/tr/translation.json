@@ -10,7 +10,7 @@
     "it": "Italiano",
     "es": "Español",
     "el": "Ελληνικά",
-    "ro": "Română",
+    "ro": "Rom�n\u0003",
     "bg": "Български"
   },
   "common": {
@@ -28,7 +28,7 @@
     "kontakt": "Iletisim"
   },
   "footer": {
-    "tagline": "VS Studio · Web siteleri, web uygulamalari, reklam ve otomasyon",
+    "tagline": "VS Studio �\u001a· Web siteleri, web uygulamalari, reklam ve otomasyon",
     "impressum": "Kunye",
     "datenschutz": "Gizlilik",
     "agb": "Genel sartlar",
@@ -43,7 +43,7 @@
     "settings": "Einstellungen",
     "acceptAll": "Alle akzeptieren",
     "modalTitle": "Datenschutz-Einstellungen",
-    "modalText": "Du kannst deine Einwilligung jederzeit in den Cookie-Einstellungen ändern.",
+    "modalText": "Du kannst deine Einwilligung jederzeit in den Cookie-Einstellungen Ò¤ndern.",
     "essential": "Essenzielle Cookies (immer aktiv)",
     "statistics": "Statistik (z. B. Reichweite, Nutzung)",
     "marketing": "Marketing (z. B. Social/Ads Tracking)",
@@ -129,234 +129,234 @@
       "a4": "Evet. Paketlerimiz yerel isletmeler icin tasarlandi: net fiyatlar, hizli baslangic ve gercek taleplere odak.",
       "q5": "Yayina alimdan sonra ne oluyor?",
       "a5": "Yayindan sonra veriyi analiz ediyor, donusum noktalarini iyilestiriyor ve surekli optimizasyonla buyumeyi destekliyoruz.",
-      "desc": "Sure, maliyet, lansman sureci ve devam eden destek hakkindaki sik sorularin cevaplari."
+      "desc": "Surec, maliyet, lansman ve destek hakkinda sik sorulan sorularin cevaplari."
     },
     "hero": {
       "bento": {
         "speed": {
-          "label": "Hiz",
+          "label": "Geschwindigkeit",
           "value": "90+ Lighthouse"
         },
         "seo": {
           "label": "SEO",
-          "value": "Teknik temel"
+          "value": "Technisches Fundament"
         },
         "leads": {
-          "label": "Talepler",
-          "value": "Net CTA ve formlar"
+          "label": "Anfragen",
+          "value": "Klare CTA und Formulare"
         },
         "support": {
-          "label": "Destek",
-          "value": "Yayina alimdan sonra"
+          "label": "Support",
+          "value": "Nach dem Launch"
         }
       }
     },
     "partnersSection": {
       "title": "Avantajlar ve odak alanlari",
-      "desc": "Hangi ihtiyaclari cozdugumuz ve hangi yerel isletmeler icin en sik site ve lead hunisi kurdugumuz."
+      "desc": "Welche Aufgaben wir abdecken und für welche lokalen Unternehmen wir am häufigsten Websites und Lead-Funnels umsetzen."
     },
     "marquee": {
-      "aria": "Nisler",
+      "aria": "Branchen",
       "title": "Calistigimiz sektorler",
-      "desc": "Bir yon secin ve uygun stil orneklerini inceleyin. Boylece isletmeniz icin daha hizli dogru teklif cikaririz.",
+      "desc": "Wählen Sie eine Richtung und sehen Sie passende Stilbeispiele. So bauen wir schneller ein präzises Angebot für Ihr Unternehmen.",
       "items": {
-        "handwerk": "Ustalik",
-        "praxen": "Klinikler",
-        "werkstaetten": "Atolyeler",
-        "gastronomie": "Gastronomi",
-        "beauty": "Guzellik",
-        "immobilien": "Gayrimenkul",
-        "kanzlei": "Danismanlik",
+        "handwerk": "Handwerk",
+        "praxen": "Praxen",
+        "werkstaetten": "Werkstätten",
+        "gastronomie": "Gastronomie",
+        "beauty": "Beauty",
+        "immobilien": "Immobilien",
+        "kanzlei": "Kanzlei",
         "fitness": "Fitness",
-        "reinigung": "Temizlik",
-        "transport": "Tasima",
-        "coaching": "Kocluk",
-        "bildung": "Egitim"
+        "reinigung": "Reinigung",
+        "transport": "Transport",
+        "coaching": "Coaching",
+        "bildung": "Bildung"
       }
     },
     "process": {
       "title": "Nasil calisiyoruz",
-      "desc": "Gereksiz adimlar olmadan seffaf surec: kisa briften yayina alma ve optimizasyona kadar.",
-      "aria": "Calisma asamalari",
-      "stage": "Asama",
+      "desc": "Ein transparenter Prozess ohne unnötige Schritte: vom kurzen Briefing bis zu Launch und Optimierung mit klaren Deadlines.",
+      "aria": "Projektphasen",
+      "stage": "Phase",
       "nav": {
-        "prev": "Geri",
-        "next": "Ileri"
+        "prev": "Zurück",
+        "next": "Weiter"
       },
       "steps": {
         "s1": {
-          "title": "15 dakikalik gorusme",
-          "text": "Hedefi, KPI ve teslim tarihini netlestiririz. Yayina alim formatini hemen belirleriz."
+          "title": "15-Minuten-Call",
+          "text": "Wir klären Aufgabe, KPI und Deadline und stimmen sofort das Launch-Format ab."
         },
         "s2": {
-          "title": "48 saatte prototip",
-          "text": "Gelistirme oncesinde sayfa yapisi, CTA ve talep akislarini gosteririz."
+          "title": "Prototyp in 48h",
+          "text": "Wir zeigen Seitenstruktur, CTA und Lead-Flow vor der Entwicklung."
         },
         "s3": {
-          "title": "7-14 gunde gelistirme",
-          "text": "Kodlama, SEO temeli, entegrasyonlar ve analitik kurulumunu gereksiz karmasa olmadan yapariz."
+          "title": "Entwicklung in 7-14 Tagen",
+          "text": "Umsetzung, SEO-Basis, Integrationen und Analytics ohne unnötigen Overhead."
         },
         "s4": {
-          "title": "Yayina alma ve optimizasyon",
-          "text": "Canliya alir, donusumu kontrol eder ve 30 gunluk iyilestirme plani sunariz."
+          "title": "Launch und Optimierung",
+          "text": "Wir gehen live, prüfen Conversion und liefern einen 30-Tage-Verbesserungsplan."
         }
       }
     },
     "projects": {
       "title": "Projeler / Vaka calismalari",
-      "desc": "Bos vaatler olmadan gercek ihtiyaclar ve ongorulebilir sonuclar. Canli onizleme icin case kartinin uzerine gelin.",
+      "desc": "Reale Aufgaben und erwartbare Ergebnisse ohne leere Versprechen. Hover auf einen Case für Live-Preview.",
       "cards": {
         "c1": {
-          "title": "Yerel talepler icin web sitesi",
-          "description": "Form, arama ve mobilde hizli iletisim odakli acilis sayfasi.",
-          "goal": "Hedef: butce artirmadan daha fazla talep"
+          "title": "Website für lokale Anfragen",
+          "description": "Landingpage mit Fokus auf Formular, Anruf und schnellen Mobile-Kontakt.",
+          "goal": "Ziel: mehr Anfragen ohne Budgeterhöhung"
         },
         "c2": {
-          "title": "Reklam icin acilis sayfasi",
-          "description": "Meta/Google kampanyalari icin ayri ve takipli acilis sayfasi.",
-          "goal": "Beklenen etki: reklamlardan daha nitelikli lead"
+          "title": "Landingpage für Ads",
+          "description": "Separate Seite mit Tracking für Meta- und Google-Kampagnen.",
+          "goal": "Erwarteter Effekt: qualifiziertere Leads aus Werbung"
         },
         "c3": {
-          "title": "Klinik icin web sitesi",
-          "description": "Net hizmet yapisi, SSS ve online randevu akis senaryosu.",
-          "goal": "Hedef: daha az geri donus sorusuyla daha fazla randevu"
+          "title": "Website für Praxis",
+          "description": "Klare Leistungsstruktur, FAQ und Online-Termin-Flow.",
+          "goal": "Ziel: mehr Terminbuchungen mit weniger Rückfragen"
         },
         "c4": {
-          "title": "Lead yonetim paneli",
-          "description": "Lead isleme ve durum takibi icin dahili arayuz.",
-          "goal": "Beklenen etki: taleplerin daha hizli islenmesi"
+          "title": "Dashboard für Leads",
+          "description": "Internes Interface zur Lead-Bearbeitung und Statuskontrolle.",
+          "goal": "Erwarteter Effekt: schnellere Bearbeitung von Anfragen"
         }
       }
     },
     "configurator": {
       "title": "Teklif olusturucu",
-      "desc": "Proje parametrelerini secin, kurulum maliyet araligini ve uygun destek tarifelerini gorun.",
+      "desc": "Wählen Sie Projektparameter und erhalten Sie einen Startpreis sowie passende Support-Tarife.",
       "labels": {
-        "goal": "Hedef",
-        "integrations": "Entegrasyonlar",
-        "ads": "Reklam",
-        "term": "Sure",
-        "content": "Icerik seviyesi",
-        "languages": "Diller",
+        "goal": "Ziel",
+        "integrations": "Integrationen",
+        "ads": "Werbung",
+        "term": "Zeitrahmen",
+        "content": "Content-Level",
+        "languages": "Sprachen",
         "hosting": "Hosting",
-        "domain": "Alan adi",
-        "pages": "Sayfalar",
+        "domain": "Domain",
+        "pages": "Seiten",
         "seo": "SEO"
       },
       "options": {
         "common": {
-          "other": "Diger"
+          "other": "Andere"
         },
         "goal": {
-          "leads": "Lead",
-          "calls": "Arama",
-          "booking": "Rezervasyon"
+          "leads": "Leads",
+          "calls": "Anrufe",
+          "booking": "Buchungen"
         },
         "integrations": {
-          "booking": "Rezervasyon",
+          "booking": "Buchung",
           "crm": "CRM",
-          "chat": "Sohbet",
-          "payments": "Odeme"
+          "chat": "Chat",
+          "payments": "Zahlungen"
         },
         "ads": {
-          "none": "Reklam yok",
+          "none": "Ohne Werbung",
           "meta": "Meta",
           "google": "Google"
         },
         "term": {
-          "up_to_7": "1 haftaya kadar",
-          "from_7_to_14": "7-14 gun",
-          "from_14_to_21": "14-21 gun",
-          "from_21_to_30": "21-30 gun"
+          "up_to_7": "Bis 1 Woche",
+          "from_7_to_14": "7-14 Tage",
+          "from_14_to_21": "14-21 Tage",
+          "from_21_to_30": "21-30 Tage"
         },
         "content": {
-          "has": "Icerik hazir",
-          "copy": "Metin yazimi gerekli"
+          "has": "Texte vorhanden",
+          "copy": "Copywriting nötig"
         },
         "languages": {
-          "basic": "1 dil",
-          "multi": "2+ dil"
+          "basic": "1 Sprache",
+          "multi": "2+ Sprachen"
         },
         "hosting": {
-          "shared": "Paylasimli hosting",
+          "shared": "Shared Hosting",
           "vps": "VPS",
-          "managed": "Yonetilen hosting"
+          "managed": "Managed Hosting"
         },
         "domain": {
-          "new_domain": "Yeni alan adi",
-          "existing_domain": "Alan adi mevcut",
-          "transfer": "Alan adi tasima"
+          "new_domain": "Neue Domain",
+          "existing_domain": "Domain vorhanden",
+          "transfer": "Domain-Transfer"
         },
         "pages": {
-          "one": "1 sayfa",
-          "up_to_3": "3 sayfaya kadar",
-          "five_plus": "5+ sayfa"
+          "one": "1 Seite",
+          "up_to_3": "Bis 3 Seiten",
+          "five_plus": "5+ Seiten"
         },
         "seo": {
-          "base": "SEO Temel",
-          "extended": "SEO Gelismis"
+          "base": "SEO Base",
+          "extended": "SEO Extended"
         }
       },
-      "reset": "Sifirla ve yeniden basla",
-      "empty": "Her bolumde en az bir secenek secin. Birden fazla secim yapabilirsiniz; \"Diger\" seceneginde ek ucret uygulanmaz.",
-      "recommended": "Onerilen:",
+      "reset": "Alles zurücksetzen",
+      "empty": "Wählen Sie mindestens eine Option in jedem Block. Mehrfachauswahl ist möglich; bei \"Andere\" wird keine Zusatzgebühr berechnet.",
+      "recommended": "Empfohlen:",
       "pack": {
         "starter": "Starter",
         "business": "Business"
       },
-      "launchPrice": "Tahmini kurulum maliyeti:",
-      "supportMonthly": "Destek / ay",
-      "supportYearly": "Destek / yil (-30%)",
-      "cta": "Iletisim talebi ve net teklif al",
+      "launchPrice": "Startpreis:",
+      "supportMonthly": "Support / Monat",
+      "supportYearly": "Support / Jahr (-30%)",
+      "cta": "Kontaktanfrage und exakter Kostenvoranschlag",
       "bullets": {
-        "prototype": "Lead odakli prototip ve yapi",
-        "goal": "Hedefler: {{value}}",
-        "integrations": "Entegrasyonlar: {{value}}",
-        "term": "Sure: {{value}}",
+        "prototype": "Prototyp und Struktur mit Fokus auf Anfragen",
+        "goal": "Ziele: {{value}}",
+        "integrations": "Integrationen: {{value}}",
+        "term": "Zeitrahmen: {{value}}",
         "hosting": "Hosting: {{value}}",
-        "domain": "Alan adi: {{value}}",
-        "pages": "Sayfalar: {{value}}",
-        "analytics": "Formlar/olaylar icin GA4 ve event takibi",
-        "copy_true": "Metin ve teklif icerigi konusunda destek",
-        "copy_false": "Hazir metinlerinizle calisiriz",
-        "market_note": "Kucuk isletmeler icin piyasa ortalamasinin altinda tahmini fiyat"
+        "domain": "Domain: {{value}}",
+        "pages": "Seiten: {{value}}",
+        "analytics": "GA4 und Event-Tracking für Formulare/Kontakte",
+        "copy_true": "Unterstützung bei Texten und Offer",
+        "copy_false": "Wir arbeiten mit Ihren vorhandenen Texten",
+        "market_note": "Orientierungspreis unter marktüblichem Niveau für kleine Unternehmen"
       },
       "brief": {
-        "title": "Teklif olusturucudan brif:",
-        "goal": "Hedef: {{value}}",
-        "integrations": "Entegrasyonlar: {{value}}",
-        "ads": "Reklam: {{value}}",
-        "term": "Sure: {{value}}",
-        "content": "Icerik: {{value}}",
-        "languages": "Diller: {{value}}",
+        "title": "Brief aus dem Angebots-Konfigurator:",
+        "goal": "Ziel: {{value}}",
+        "integrations": "Integrationen: {{value}}",
+        "ads": "Werbung: {{value}}",
+        "term": "Zeitrahmen: {{value}}",
+        "content": "Content: {{value}}",
+        "languages": "Sprachen: {{value}}",
         "hosting": "Hosting: {{value}}",
-        "domain": "Alan adi: {{value}}",
-        "pages": "Sayfalar: {{value}}",
+        "domain": "Domain: {{value}}",
+        "pages": "Seiten: {{value}}",
         "seo": "SEO: {{value}}",
-        "launch_price": "Tahmini kurulum maliyeti: {{value}}",
-        "support_monthly": "Destek / ay: {{value}}",
-        "support_yearly": "Destek / yil (-30%): {{value}}"
+        "launch_price": "Startpreis: {{value}}",
+        "support_monthly": "Support / Monat: {{value}}",
+        "support_yearly": "Support / Jahr (-30%): {{value}}"
       }
     },
     "trust": {
       "title": "14 gunde alacaklariniz",
-      "desc": "Baslangicta somut ciktilar: talep odakli web sitesi, kurulu analitik ve devam buyume plani.",
+      "desc": "Konkrete Start-Ergebnisse: eine anfrageorientierte Website, eingerichtete Analytics und ein Plan für weiteres Wachstum.",
       "deliverables": {
         "d1": {
-          "title": "48 saatte prototip",
-          "text": "Kararlar ongorulebilir olsun diye koddan once yapi ve CTA gorunur olur."
+          "title": "Prototyp in 48h",
+          "text": "Wir zeigen Struktur und CTA vor dem Coding, damit Entscheidungen planbar bleiben."
         },
         "d2": {
-          "title": "Talep odakli web sitesi",
-          "text": "Form, arama, mesajlasma ve hizli erisim icin mobil surum."
+          "title": "Website für Anfragen",
+          "text": "Formular, Anruf, Messenger und mobile Version für schnelle Kontaktaufnahme."
         },
         "d3": {
-          "title": "Analitik ve takip",
-          "text": "GA4 ve olaylar ile taleplerin hangi kanaldan geldigi net gorulur."
+          "title": "Analytics und Tracking",
+          "text": "GA4 plus Events, damit sichtbar wird, wo Anfragen entstehen."
         },
         "d4": {
-          "title": "30 gunluk optimizasyon plani",
-          "text": "Yayindan sonra donusumu artiracak net sonraki adimlar."
+          "title": "30-Tage-Optimierungsplan",
+          "text": "Klare nächste Schritte zur Conversion-Steigerung nach Launch."
         }
       }
     }
@@ -397,7 +397,7 @@
       },
       "social": {
         "title": "Social Media",
-        "desc": "Content-Module, Channel-Verknüpfung, Kontaktpfade."
+        "desc": "Content-Module, Channel-VerknÒ¼pfung, Kontaktpfade."
       },
       "ads": {
         "title": "Social Ads",
@@ -440,56 +440,107 @@
     "packages": {
       "title": "Fiyat paketleri",
       "badge": "Onerilen",
-      "coreTitle": "Core",
-      "plusTitle": "Plus",
-      "outcomeLabel": "Result:",
+      "billing": {
+        "monthly": "Aylik",
+        "yearly": "Yillik"
+      },
+      "coreTitle": "Temel",
+      "plusTitle": "Ekstra",
+      "subscriptionTitle": "Destek aboneligi",
+      "subscriptionIncludesTitle": "Dahil olanlar",
+      "outcomeLabel": "Sonuc:",
       "starter": {
         "name": "Starter",
-        "desc": "For small local businesses with fast start.",
-        "price": "from EUR 690",
-        "range": "typical EUR 690-790",
+        "desc": "Hizli baslangic isteyen kucuk yerel isletmeler icin.",
+        "price": "EUR 690'dan itibaren",
+        "range": "genelde EUR 690-790",
         "core": [
-          "Landing Page",
-          "Lead Form + Contact Form",
-          "GA4 + Basic SEO Setup"
+          "Landing page",
+          "Lead formu + iletisim formu",
+          "GA4 + temel SEO kurulumu"
         ],
         "plus": [
-          "Mobile Optimization",
-          "Basic DSGVO Tracking"
+          "Mobil optimizasyon",
+          "Temel DSGVO tracking"
         ],
-        "outcome": "Stable channel for first qualified requests."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 62 / ay",
+            "meta": "yayina alindiktan sonra temel destek"
+          },
+          "yearly": {
+            "price": "EUR 521 / yil",
+            "meta": "12 ay icin %30 indirim"
+          },
+          "includes": [
+            "Teknik guncellemeler ve yedeklemeler",
+            "Formlarin, donusumlerin ve temel tracking'in kontrolu",
+            "Ayda 1 blok duzeltme veya guncelleme"
+          ]
+        },
+        "outcome": "Ilk nitelikli talepler icin istikrarli kanal."
       },
       "business": {
         "name": "Business",
-        "desc": "For teams with multiple services and active sales.",
-        "price": "from EUR 1.290",
-        "range": "typical EUR 1.290-1.490",
+        "desc": "Birden fazla hizmeti ve aktif satisi olan ekipler icin.",
+        "price": "EUR 1.290'dan itibaren",
+        "range": "genelde EUR 1.290-1.490",
         "core": [
-          "Multi-page Website up to 5 pages",
-          "CRM Integration + Lead Tracking",
-          "Analytics Dashboard"
+          "5 sayfaya kadar cok sayfali web sitesi",
+          "CRM entegrasyonu + lead tracking",
+          "Analitik dashboard"
         ],
         "plus": [
-          "SEO Structure by Service",
-          "Conversion Optimization"
+          "Hizmete gore SEO yapisi",
+          "Donusum optimizasyonu"
         ],
-        "outcome": "Predictable lead pipeline with clear reporting."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 86 / ay",
+            "meta": "web sitesi, CRM ve analitik icin destek"
+          },
+          "yearly": {
+            "price": "EUR 722 / yil",
+            "meta": "12 ay icin %30 indirim"
+          },
+          "includes": [
+            "Icerik ve sayfa guncellemeleri",
+            "CRM, lead tracking ve dashboard kontrolu",
+            "Donusumu artirmak icin ayda 2 goreve kadar"
+          ]
+        },
+        "outcome": "Net analitikle ongorulebilir lead akisi."
       },
       "pro": {
         "name": "Pro",
-        "desc": "For growth with website, ads and automation.",
-        "price": "from EUR 2.490",
-        "range": "typical EUR 2.490-2.990",
+        "desc": "Web sitesi, reklam ve otomasyonla buyumek icin.",
+        "price": "EUR 2.490'dan itibaren",
+        "range": "genelde EUR 2.490-2.990",
         "core": [
-          "Website + Ads Setup",
-          "Google Ads or Meta Ads",
-          "Marketing Dashboard + Tracking"
+          "Website + Ads kurulumu",
+          "Google Ads veya Meta Ads",
+          "Marketing dashboard + tracking"
         ],
         "plus": [
-          "AI Lead Qualification",
-          "Automation Flows"
+          "Yapay zeka ile lead kalifikasyonu",
+          "Automation flows"
         ],
-        "outcome": "More demand with controlled cost per lead."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 160 / ay",
+            "meta": "growth sisteminin aktif yonetimi"
+          },
+          "yearly": {
+            "price": "EUR 1.344 / yil",
+            "meta": "12 ay icin %30 indirim"
+          },
+          "includes": [
+            "Web sitesi, reklamlar ve automation flows icin haftalik kontrol",
+            "CPL, funnel ve lead kalifikasyonu optimizasyonu",
+            "Ayda 4 growth gorevine kadar + oncelikli destek"
+          ]
+        },
+        "outcome": "Lead basina maliyeti kontrol ederek daha fazla talep."
       }
     },
     "comparison": {
@@ -533,46 +584,46 @@
     }
   },
   "references": {
-    "h1": "Ölçülebilir büyüme içeren referanslar.",
-    "subtitle": "Nelerin arttığını net gösteriyoruz: talepler, rezervasyonlar, aramalar ve leadler.",
-    "trustline": "Tüm metrikler bağlamla birlikte: dönem ve ölçüm.",
-    "filterTitle": "Niş seçin",
-    "filterAria": "Niş filtresi",
+    "h1": "Ò�\u001clÒ§Ò¼lebilir bÒ¼yÒ¼me iÒ§eren referanslar.",
+    "subtitle": "Nelerin artt�\u001e±�\u001eŸ�\u001e±n�\u001e± net gÒ¶steriyoruz: talepler, rezervasyonlar, aramalar ve leadler.",
+    "trustline": "TÒ¼m metrikler ba�\u001eŸlamla birlikte: dÒ¶nem ve Ò¶lÒ§Ò¼m.",
+    "filterTitle": "Ni�&Ÿ seÒ§in",
+    "filterAria": "Ni�&Ÿ filtresi",
     "counter": "{{count}} uygun vaka",
-    "growthByNiche": "Sektöre göre büyüme",
-    "selectedCases": "Seçili vakalar",
+    "growthByNiche": "SektÒ¶re gÒ¶re bÒ¼yÒ¼me",
+    "selectedCases": "SeÒ§ili vakalar",
     "challengeLabel": "Durum",
-    "solutionLabel": "Çözüm",
-    "periodLabel": "Dönem",
-    "measurementLabel": "Ölçüm",
-    "emptyTitle": "Bu niş için sonraki vaka yakında eklenecek.",
-    "emptyText": "Sadece sağlam ölçüm ve net dönem içeren vakaları yayınlıyoruz.",
-    "beforeAfter": "Önce / Sonra",
-    "before": "Önce",
+    "solutionLabel": "Ò⬡Ò¶zÒ¼m",
+    "periodLabel": "DÒ¶nem",
+    "measurementLabel": "Ò�\u001clÒ§Ò¼m",
+    "emptyTitle": "Bu ni�&Ÿ iÒ§in sonraki vaka yak�\u001e±nda eklenecek.",
+    "emptyText": "Sadece sa�\u001eŸlam Ò¶lÒ§Ò¼m ve net dÒ¶nem iÒ§eren vakalar�\u001e± yay�\u001e±nl�\u001e±yoruz.",
+    "beforeAfter": "Ò�\u001cnce / Sonra",
+    "before": "Ò�\u001cnce",
     "after": "Sonra",
-    "beforeAlt": "Vaka öncesi görünüm",
-    "afterAlt": "Vaka sonrası görünüm",
-    "sliderAria": "Önce-sonra karşılaştırmasını kaydır",
-    "sliderHint": "Karşılaştırmak için sürükleyin.",
-    "ctaTitle": "Benzer sonuçlar mı istiyorsunuz?",
-    "ctaText": "Mevcut durumunuzu analiz eder, gerçekçi bir 30-90 günlük plan sunarız.",
+    "beforeAlt": "Vaka Ò¶ncesi gÒ¶rÒ¼nÒ¼m",
+    "afterAlt": "Vaka sonras�\u001e± gÒ¶rÒ¼nÒ¼m",
+    "sliderAria": "Ò�\u001cnce-sonra kar�&Ÿ�\u001e±la�&Ÿt�\u001e±rmas�\u001e±n�\u001e± kayd�\u001e±r",
+    "sliderHint": "Kar�&Ÿ�\u001e±la�&Ÿt�\u001e±rmak iÒ§in sÒ¼rÒ¼kleyin.",
+    "ctaTitle": "Benzer sonuÒ§lar m�\u001e± istiyorsunuz?",
+    "ctaText": "Mevcut durumunuzu analiz eder, gerÒ§ekÒ§i bir 30-90 gÒ¼nlÒ¼k plan sunar�\u001e±z.",
     "cta": "Benzer proje talep et",
     "filters": {
-      "all": "Tümü"
+      "all": "TÒ¼mÒ¼"
     },
     "niches": {
       "handwerk": "Zanaat",
       "praxen": "Klinikler",
-      "werkstatt": "Atölye",
+      "werkstatt": "AtÒ¶lye",
       "gastronomie": "Gastronomi",
-      "beauty": "Güzellik",
+      "beauty": "GÒ¼zellik",
       "immobilien": "Gayrimenkul",
-      "kanzlei": "Danışmanlık Ofisi",
+      "kanzlei": "Dan�\u001e±�&Ÿmanl�\u001e±k Ofisi",
       "fitnessPhysio": "Fitness/Fizyoterapi",
       "reinigung": "Temizlik",
-      "umzugTransport": "Taşımacılık",
-      "coachingBeratung": "Koçluk/Danışmanlık",
-      "bildungKurse": "Eğitim/Kurslar"
+      "umzugTransport": "Ta�&Ÿ�\u001e±mac�\u001e±l�\u001e±k",
+      "coachingBeratung": "KoÒ§luk/Dan�\u001e±�&Ÿmanl�\u001e±k",
+      "bildungKurse": "E�\u001eŸitim/Kurslar"
     },
     "metrics": {
       "moreRequests": "Daha fazla talep",
@@ -581,74 +632,74 @@
       "moreReservations": "Daha fazla rezervasyon",
       "moreBookings": "Daha fazla booking",
       "moreLeads": "Daha fazla lead",
-      "moreIntroCalls": "Daha fazla ilk görüşme",
-      "moreTrialSessions": "Daha fazla deneme seansı",
+      "moreIntroCalls": "Daha fazla ilk gÒ¶rÒ¼�&Ÿme",
+      "moreTrialSessions": "Daha fazla deneme seans�\u001e±",
       "moreOffers": "Daha fazla teklif talebi",
       "moreQualifiedLeads": "Daha fazla nitelikli lead",
       "moreFirstContacts": "Daha fazla ilk temas",
-      "moreCourseSignups": "Daha fazla kurs kaydı",
-      "budgetEfficiency": "Bütçe verimliliği",
-      "moreInteractions": "Daha fazla etkileşim",
-      "moreLeadsPerBudget": "Bütçe başına daha fazla lead",
-      "moreConsultations": "Daha fazla danışmanlık"
+      "moreCourseSignups": "Daha fazla kurs kayd�\u001e±",
+      "budgetEfficiency": "BÒ¼tÒ§e verimlili�\u001eŸi",
+      "moreInteractions": "Daha fazla etkile�&Ÿim",
+      "moreLeadsPerBudget": "BÒ¼tÒ§e ba�&Ÿ�\u001e±na daha fazla lead",
+      "moreConsultations": "Daha fazla dan�\u001e±�&Ÿmanl�\u001e±k"
     },
     "cases": {
       "c1": {
-        "title": "Sıhhi Tesisat İşletmesi (Hannover Bölgesi)",
-        "challenge": "İyi erişime rağmen talep azdı.",
-        "solution": "Hizmet sayfaları yeniden yapılandırıldı, CTA optimize edildi, iletişim takibi etkinleştirildi."
+        "title": "S�\u001e±hhi Tesisat �\u001e°�&Ÿletmesi (Hannover BÒ¶lgesi)",
+        "challenge": "�\u001e°yi eri�&Ÿime ra�\u001eŸmen talep azd�\u001e±.",
+        "solution": "Hizmet sayfalar�\u001e± yeniden yap�\u001e±land�\u001e±r�\u001e±ld�\u001e±, CTA optimize edildi, ileti�&Ÿim takibi etkinle�&Ÿtirildi."
       },
       "c2": {
-        "title": "Fizyoterapi Kliniği (Hildesheim)",
-        "challenge": "Online randevu talepleri azdı.",
-        "solution": "Randevu akışı sadeleştirildi, mobil sayfalar hızlandırıldı, iletişim kanalları netleştirildi."
+        "title": "Fizyoterapi Klini�\u001eŸi (Hildesheim)",
+        "challenge": "Online randevu talepleri azd�\u001e±.",
+        "solution": "Randevu ak�\u001e±�&Ÿ�\u001e± sadele�&Ÿtirildi, mobil sayfalar h�\u001e±zland�\u001e±r�\u001e±ld�\u001e±, ileti�&Ÿim kanallar�\u001e± netle�&Ÿtirildi."
       },
       "c3": {
-        "title": "Kaporta Atölyesi (Harburg Bölgesi)",
-        "challenge": "Çok temas vardı ama uygun iş azdı.",
-        "solution": "Formda lead kalifikasyonu ve hizmete özel landing page devreye alındı."
+        "title": "Kaporta AtÒ¶lyesi (Harburg BÒ¶lgesi)",
+        "challenge": "Ò⬡ok temas vard�\u001e± ama uygun i�&Ÿ azd�\u001e±.",
+        "solution": "Formda lead kalifikasyonu ve hizmete Ò¶zel landing page devreye al�\u001e±nd�\u001e±."
       },
       "c4": {
-        "title": "Restoran (Aşağı Saksonya)",
-        "challenge": "Hafta içi rezervasyonlar yetersizdi.",
-        "solution": "Rezervasyon akışı sadeleştirildi, yerel kampanyalar yeniden kuruldu."
+        "title": "Restoran (A�&Ÿa�\u001eŸ�\u001e± Saksonya)",
+        "challenge": "Hafta iÒ§i rezervasyonlar yetersizdi.",
+        "solution": "Rezervasyon ak�\u001e±�&Ÿ�\u001e± sadele�&Ÿtirildi, yerel kampanyalar yeniden kuruldu."
       },
       "c5": {
-        "title": "Emlak Ofisi (Aşağı Saksonya)",
-        "challenge": "Nitelikli mülk sahibi leadleri yetersizdi.",
-        "solution": "İlan sayfaları arama niyetine göre düzenlendi ve başvuru akışı sadeleştirildi."
+        "title": "Emlak Ofisi (A�&Ÿa�\u001eŸ�\u001e± Saksonya)",
+        "challenge": "Nitelikli mÒ¼lk sahibi leadleri yetersizdi.",
+        "solution": "�\u001e°lan sayfalar�\u001e± arama niyetine gÒ¶re dÒ¼zenlendi ve ba�&Ÿvuru ak�\u001e±�&Ÿ�\u001e± sadele�&Ÿtirildi."
       },
       "c6": {
-        "title": "Vergi Danışmanlığı Ofisi (Hannover Bölgesi)",
-        "challenge": "Hizmet sayfalarında dönüşüm düşüktü.",
-        "solution": "Sayfa içerikleri sadeleştirildi, güven unsurları eklendi, ilk temas net öne çıkarıldı."
+        "title": "Vergi Dan�\u001e±�&Ÿmanl�\u001e±�\u001eŸ�\u001e± Ofisi (Hannover BÒ¶lgesi)",
+        "challenge": "Hizmet sayfalar�\u001e±nda dÒ¶nÒ¼�&ŸÒ¼m dÒ¼�&ŸÒ¼ktÒ¼.",
+        "solution": "Sayfa iÒ§erikleri sadele�&Ÿtirildi, gÒ¼ven unsurlar�\u001e± eklendi, ilk temas net Ò¶ne Ò§�\u001e±kar�\u001e±ld�\u001e±."
       }
     },
     "performanceDashboard": "Performans Paneli",
-    "growthCurve90": "90 Günlük Büyüme Eğrisi",
-    "growthChartAria": "Büyüme grafiği",
-    "resultLabel": "Sonuç",
+    "growthCurve90": "90 GÒ¼nlÒ¼k BÒ¼yÒ¼me E�\u001eŸrisi",
+    "growthChartAria": "BÒ¼yÒ¼me grafi�\u001eŸi",
+    "resultLabel": "SonuÒ§",
     "trendAria": "{{niche}} trendi",
-    "compareGraphAria": "Önce ve sonrası grafiği",
-    "dayLabel": "Gün {{day}}",
-    "beforeLegend": "Önce: zayıf dinamik",
-    "afterLegend": "Sonra: istikrarlı büyüme",
+    "compareGraphAria": "Ò�\u001cnce ve sonras�\u001e± grafi�\u001eŸi",
+    "dayLabel": "GÒ¼n {{day}}",
+    "beforeLegend": "Ò�\u001cnce: zay�\u001e±f dinamik",
+    "afterLegend": "Sonra: istikrarl�\u001e± bÒ¼yÒ¼me",
     "filterGroups": {
-      "all": "Tümü",
+      "all": "TÒ¼mÒ¼",
       "localServices": "Yerel Hizmetler",
-      "healthBeauty": "Sağlık ve Güzellik",
+      "healthBeauty": "Sa�\u001eŸl�\u001e±k ve GÒ¼zellik",
       "professional": "Profesyonel"
     },
     "kpis": {
       "traffic": "Trafik",
       "leads": "Lead",
-      "conversion": "Dönüşüm"
+      "conversion": "DÒ¶nÒ¼�&ŸÒ¼m"
     },
-    "daysUnit": "gün"
+    "daysUnit": "gÒ¼n"
   },
   "about": {
-    "h1": "Über uns",
-    "subtitle": "Wir sind ein kleines Umsetzungsteam für lokale Unternehmen.",
+    "h1": "Ò�\u001cber uns",
+    "subtitle": "Wir sind ein kleines Umsetzungsteam fÒ¼r lokale Unternehmen.",
     "cards": {
       "work": {
         "title": "Wie wir arbeiten",
@@ -664,18 +715,18 @@
       }
     },
     "ctaTitle": "Kontakt",
-    "photoPlaceholder": "Foto: Porträt des Gründers von VS Web Studio (Vladyslav)",
-    "photoCaption": "Vladyslav, Gründer von VS Web Studio. Hildesheim.",
+    "photoPlaceholder": "Foto: PortrÒ¤t des GrÒ¼nders von VS Web Studio (Vladyslav)",
+    "photoCaption": "Vladyslav, GrÒ¼nder von VS Web Studio. Hildesheim.",
     "photoAlt": "Vladyslav, Webentwickler von VS Web Studio aus Hildesheim",
     "geo": {
       "local": "Wir arbeiten hier: Hildesheim",
       "region": "Hauptregion: Niedersachsen",
-      "country": "Möglich: ganz Deutschland"
+      "country": "MÒ¶glich: ganz Deutschland"
     },
-    "intro1": "Ich bin Vladyslav, Gründer von VS Web Studio. Ich arbeite aus Hildesheim und unterstütze zuerst Unternehmen direkt in der Stadt und Umgebung. Zusätzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
-    "intro2": "Mein Ziel ist einfach: nicht nur eine schöne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
-    "intro3": "Wir sind ein kleines Team mit bewährten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnötige Bürokratie, und bringen Projekte bis zum Ergebnis.",
-    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes Verständnis für den Markt vor Ort.",
+    "intro1": "Ich bin Vladyslav, GrÒ¼nder von VS Web Studio. Ich arbeite aus Hildesheim und unterstÒ¼tze zuerst Unternehmen direkt in der Stadt und Umgebung. ZusÒ¤tzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
+    "intro2": "Mein Ziel ist einfach: nicht nur eine schÒ¶ne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
+    "intro3": "Wir sind ein kleines Team mit bewÒ¤hrten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnÒ¶tige BÒ¼rokratie, und bringen Projekte bis zum Ergebnis.",
+    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes VerstÒ¤ndnis fÒ¼r den Markt vor Ort.",
     "miniFactsTitle": "Was wir konkret machen",
     "miniFacts": {
       "i1": "Klare Schritte ohne Fachchinesisch",
@@ -687,21 +738,21 @@
       "i1": "Eine schnelle Website, die auf dem Smartphone sauber funktioniert",
       "i2": "Klare Seitenstruktur mit starken CTA-Elementen",
       "i3": "Eingerichtetes Tracking, damit Sie die Quellen Ihrer Anfragen sehen",
-      "i4": "Automationen, die Zeit sparen und die Conversion erhöhen"
+      "i4": "Automationen, die Zeit sparen und die Conversion erhÒ¶hen"
     },
     "contactTitle": "Kontakt",
-    "contactText": "Schreiben Sie uns, welches Geschäft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
+    "contactText": "Schreiben Sie uns, welches GeschÒ¤ft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
     "contactButton": "Projekt anfragen"
   },
   "contact": {
-    "h1": "Kontakt",
-    "responseTime": "Antwortzeit aktuell:",
-    "quickContacts": "Schnelle Kontakte",
+    "h1": "Projeniz icin iletisim ve talep",
+    "responseTime": "Guncel yanit suresi:",
+    "quickContacts": "Hizli iletisim",
     "form": {
-      "name": "Name",
-      "business": "Business",
-      "need": "Was brauchst du genau?",
-      "submit": "Anfrage senden"
+      "name": "Isim",
+      "business": "Isletme",
+      "need": "Tam olarak neye ihtiyaciniz var?",
+      "submit": "Talep gonder"
     }
   },
   "blog": {
@@ -711,54 +762,54 @@
       "c1": "AI-Workflows im Website Funnel",
       "c2": "Social-Prozesse ohne Chaos",
       "c3": "Social Ads mit sauberem Tracking",
-      "c4": "Automationen für Erstkontakt"
+      "c4": "Automationen fÒ¼r Erstkontakt"
     },
     "leadMagnet": "Lead Magnet",
-    "emailPlaceholder": "E-Mail für den Guide",
+    "emailPlaceholder": "E-Mail fÒ¼r den Guide",
     "getGuide": "Guide erhalten"
   },
   "niche": {
     "handwerker": {
-      "h1": "Websites für Handwerker: mehr passende Anfragen.",
+      "h1": "Websites fÒ¼r Handwerker: mehr passende Anfragen.",
       "p": "Klare Leistungen, lokale Sichtbarkeit, einfache Kontaktwege."
     },
     "praxis": {
-      "h1": "Websites für Praxen: weniger Rückfragen, mehr Terminanfragen.",
+      "h1": "Websites fÒ¼r Praxen: weniger RÒ¼ckfragen, mehr Terminanfragen.",
       "p": "Patientenfreundliche Struktur und klarer Online-Erstkontakt."
     },
     "werkstatt": {
-      "h1": "Websites für Werkstätten: planbare Leads statt Zufall.",
+      "h1": "Websites fÒ¼r WerkstÒ¤tten: planbare Leads statt Zufall.",
       "p": "Service-orientierte Seiten mit messbarer Conversion."
     }
   },
   "legal": {
     "impressum": {
       "h1": "Impressum",
-      "subtitle": "Angaben gemäß § 5 TMG.",
+      "subtitle": "Angaben gemÒ¤ÒŸ �\u001a§ 5 TMG.",
       "l1": "VS Studio",
-      "l2": "Musterstraße 10, 10115 Berlin, Deutschland",
+      "l2": "MusterstraÒŸe 10, 10115 Berlin, Deutschland",
       "l3": "E-Mail: kontakt@vs-web-studio.de",
       "l4": "Telefon: +49 30 1234567",
       "l5": "Vertreten durch: Vladyslav"
     },
     "datenschutz": {
-      "h1": "Datenschutzerklärung",
+      "h1": "DatenschutzerklÒ¤rung",
       "subtitle": "Kurzinformation zur Verarbeitung personenbezogener Daten.",
       "l1": "Wir verarbeiten Daten nur zweckgebunden (Kontaktanfragen, Angebotserstellung, Statistik).",
       "l2": "Rechtsgrundlagen: Art. 6 Abs. 1 lit. b und f DSGVO.",
-      "l3": "Betroffene Rechte: Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch.",
-      "l4": "Kontakt für Datenschutz: datenschutz@vs-web-studio.de"
+      "l3": "Betroffene Rechte: Auskunft, Berichtigung, LÒ¶schung, EinschrÒ¤nkung, Widerspruch.",
+      "l4": "Kontakt fÒ¼r Datenschutz: datenschutz@vs-web-studio.de"
     },
     "agb": {
       "h1": "AGB",
-      "subtitle": "Optionale allgemeine Geschäftsbedingungen.",
-      "l1": "Leistungen werden gemäß Angebot und vereinbartem Umfang erbracht.",
-      "l2": "Zahlungsbedingungen, Nutzungsrechte und Gewährleistung richten sich nach dem Vertrag."
+      "subtitle": "Optionale allgemeine GeschÒ¤ftsbedingungen.",
+      "l1": "Leistungen werden gemÒ¤ÒŸ Angebot und vereinbartem Umfang erbracht.",
+      "l2": "Zahlungsbedingungen, Nutzungsrechte und GewÒ¤hrleistung richten sich nach dem Vertrag."
     },
     "cookies": {
       "h1": "Cookie-Hinweise",
       "subtitle": "Informationen zu eingesetzten Cookies und Messdiensten.",
-      "l1": "Technisch notwendige Cookies sichern die Funktionalität der Website.",
+      "l1": "Technisch notwendige Cookies sichern die FunktionalitÒ¤t der Website.",
       "l2": "Optionale Analyse-Cookies helfen bei der Optimierung von Inhalten und Kampagnen."
     }
   },
@@ -776,6 +827,142 @@
     "form": {
       "success": "Danke fuer dein Feedback!",
       "error": "Feedback konnte nicht gesendet werden."
+    }
+  },
+  "aboutPage": {
+    "heroEyebrow": "VS Studio | Hildesheim | Niedersachsen | Almanya",
+    "heroTitleLine1": "Web siteleri ve",
+    "heroTitleLine2": "lead sistemleri",
+    "heroTitleLine3": "yerel isletmeler icin",
+    "heroTitleLine4": "Hildesheim’da",
+    "heroSubtitle": "Hizli web siteleri, net iletisim yollari ve olculebilir pazarlama ile daha nitelikli talepler.",
+    "heroTrustline": "Hildesheim’da yerel. Niedersachsen’da stratejik. Tum Almanya’da uygulanabilir.",
+    "primaryCta": "Ucretsiz web sitesi analizi",
+    "section": {
+      "about": "Hakkimizda",
+      "localAdvantages": "Yerel avantajlar",
+      "how": "Nasil calisiyoruz",
+      "value": "Deger",
+      "trust": "Guven"
+    },
+    "blocks": {
+      "who": {
+        "title": "Yerel isletmeler icin",
+        "text": "Planli sekilde daha fazla talep isteyen firmalar icin web siteleri, lead sistemleri ve pazarlama."
+      },
+      "focus": {
+        "title": "Parca parca cozumler yerine tek sistem",
+        "text": "Web sitesi, iletisim akislari, kampanyalar ve takip tek bir net surec olarak birlikte calisir."
+      },
+      "locality": {
+        "title": "Avantaj olarak yerel yakinlik",
+        "subtitle": "Hizli koordinasyon, net oncelikler ve olculebilir sonuclar.",
+        "text1": "Yerel sirketlerle dogrudan calisiyoruz; uzun ajans zincirleri ve gereksiz burokrasi olmadan.",
+        "i1": "Aracisiz dogrudan iletisim",
+        "i2": "Uzun onay surecleri yerine hizli uygulama",
+        "i3": "Yerel pazarlar ve butceler icin anlayis",
+        "text2": "Musterilerimiz kararlarin daha hizli alinmasindan ve projelerin haftalarca onay dongulerinde takilmamasindan fayda saglar.",
+        "text3": "Bu zaman kazandirir, maliyeti azaltir ve pazarlama aksiyonlarinin daha hizli sonuc vermesini saglar.",
+        "text4": "Kucuk ve orta olcekli sirketlerin gercegini biliyoruz: sinirli butce, az zaman ve karmasik kavramlar yerine net sonuc ihtiyaci.",
+        "text5": "Bu yuzden ilk analizden uygulamaya ve surekli optimizasyona kadar pragmatik ve duzenli calisiriz."
+      }
+    },
+    "photoAlt": "VS Web Studio kurucusu Vladyslav, Hildesheim",
+    "photoCaption": "Vladyslav - VS Web Studio kurucusu",
+    "photoFacts": {
+      "f1": "Odak: yerel isletmeler",
+      "f2": "Konum: Hildesheim",
+      "f3": "Projeler: tum Almanya"
+    },
+    "geo": {
+      "local": "Hildesheim",
+      "region": "Niedersachsen",
+      "country": "Tum Almanya"
+    },
+    "localPriority": "Kisa yollar. Net oncelikler. Sonuc odagi.",
+    "how": {
+      "s1": {
+        "title": "1. Anlamak",
+        "text": "Hedef kitleyi, teklifi ve pazari analiz ediyoruz."
+      },
+      "s2": {
+        "title": "2. Uygulamak",
+        "text": "Web sitesini, lead sistemini ve kampanyalari baslatiyoruz."
+      },
+      "s3": {
+        "title": "3. Optimize etmek",
+        "text": "Verileri analiz edip sonuclari gelistiriyoruz."
+      }
+    },
+    "cards": {
+      "work": {
+        "title": "Net surecler",
+        "desc": "Kisa yollar. Net sorumluluk."
+      },
+      "ai": {
+        "title": "AI First",
+        "desc": "Zaman kazandirdigi yerde otomasyon."
+      },
+      "leads": {
+        "title": "Lead odagi",
+        "desc": "Tasarim ve pazarlama birlikte calisir."
+      }
+    },
+    "results": {
+      "title": "Musterilerin aldigi sonuc",
+      "i1": "Her akilli telefonda hizli acilan bir web sitesi",
+      "i2": "Net iletisim yollari: arama, form, randevu",
+      "i3": "Takip ve pazarlama verileriyle olculebilir talepler"
+    },
+    "trust": {
+      "projects": {
+        "label": "Proje sayisi",
+        "value": "120+",
+        "text": "Web siteleri, lead funnel’lari ve relaunch projeleri."
+      },
+      "industries": {
+        "label": "Sektorler",
+        "value": "12",
+        "text": "Zanaat, klinikler, gastronomi, beauty, egitim ve yerel hizmetler."
+      },
+      "focus": {
+        "label": "Odak",
+        "value": "Yerel + Olculebilir",
+        "text": "Hildesheim, Niedersachsen ve tum Almanya icin net lead odagi."
+      }
+    },
+    "cta": {
+      "title": "Planlanabilir taleplere hazir misiniz?",
+      "text": "Ucretsiz ilk gorusmede web siteniz, lead surecleriniz ve reklaminiz icin en buyuk kaldiraclari gosteriyoruz."
+    },
+    "visual": {
+      "productBadge": "Lead System",
+      "flowLabel": "Akis",
+      "flowValue": "Onceden sistem ve sonuca",
+      "before": {
+        "label": "Once",
+        "title": "Cok tiklama, az netlik",
+        "i1": "Yavas sayfalar",
+        "i2": "Belirsiz iletisim yollari",
+        "i3": "Temiz olmayan veriler"
+      },
+      "system": {
+        "label": "Sistem",
+        "phoneBadge": "Website",
+        "cta": "Randevu al",
+        "pill1": "Website",
+        "pill2": "Iletisim",
+        "pill3": "Takip"
+      },
+      "result": {
+        "label": "Sonuc",
+        "title": "Nitelikli talepler",
+        "text": "Olculebilir, daha hizli yanitlanan ve hunide net gorunen talepler."
+      },
+      "anchor": {
+        "label": "Sonuc",
+        "value": "Sadece trafik yerine daha nitelikli talepler"
+      }
     }
   }
 }

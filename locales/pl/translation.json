@@ -10,7 +10,7 @@
     "it": "Italiano",
     "es": "Español",
     "el": "Ελληνικά",
-    "ro": "Română",
+    "ro": "Rom�n\u0003",
     "bg": "Български"
   },
   "common": {
@@ -20,20 +20,20 @@
   },
   "header": {
     "menu": "Menu",
-    "menuAria": "Otwórz menu nawigacyjne",
-    "services": "Usługi",
+    "menuAria": "OtwÒ³rz menu nawigacyjne",
+    "services": "Us�&�augi",
     "preise": "ceny",
     "referenzen": "Referencje",
     "ueberUns": "O nas",
     "kontakt": "Kontakt"
   },
   "footer": {
-    "tagline": "VS Studio · Strony internetowe, aplikacje internetowe, reklamy i automatyzacje",
+    "tagline": "VS Studio �\u001a· Strony internetowe, aplikacje internetowe, reklamy i automatyzacje",
     "impressum": "Odcisk",
     "datenschutz": "Ochrona danych",
     "agb": "Regulamin",
     "cookies": "ciasteczka",
-    "cookieSettings": "Ustawienia plików cookies",
+    "cookieSettings": "Ustawienia plikÒ³w cookies",
     "blog": "Bloga"
   },
   "cookie": {
@@ -43,320 +43,320 @@
     "settings": "Einstellungen",
     "acceptAll": "Alle akzeptieren",
     "modalTitle": "Datenschutz-Einstellungen",
-    "modalText": "Du kannst deine Einwilligung jederzeit in den Cookie-Einstellungen ändern.",
+    "modalText": "Du kannst deine Einwilligung jederzeit in den Cookie-Einstellungen Ò¤ndern.",
     "essential": "Essenzielle Cookies (immer aktiv)",
     "statistics": "Statistik (z. B. Reichweite, Nutzung)",
     "marketing": "Marketing (z. B. Social/Ads Tracking)",
     "saveSelection": "Auswahl speichern"
   },
   "home": {
-    "heroTitle": "Strony internetowe, które przyciągają zapytania, a nie tylko dobrze wyglądają.",
-    "heroSubtitle": "Jasne pozycjonowanie, szybkie wdrożenie i przejrzyste pakiety dla lokalnych usługodawców w Niemczech.",
-    "toFaq": "Przejdź do często zadawanych pytań",
-    "partnersTitle": "Najważniejsze informacje, grupy docelowe i usługi",
+    "heroTitle": "Strony internetowe, ktÒ³re przyci�\u001e⬦gaj�\u001e⬦ zapytania, a nie tylko dobrze wygl�\u001e⬦daj�\u001e⬦.",
+    "heroSubtitle": "Jasne pozycjonowanie, szybkie wdro�&¼enie i przejrzyste pakiety dla lokalnych us�&�augodawcÒ³w w Niemczech.",
+    "toFaq": "Przejd�&º do cz�\u001e�\u001e�sto zadawanych pyta�&�~",
+    "partnersTitle": "Najwa�&¼niejsze informacje, grupy docelowe i us�&�augi",
     "groups": {
-      "highlights": "Najważniejsze wydarzenia",
+      "highlights": "Najwa�&¼niejsze wydarzenia",
       "forWhom": "Dla kogo",
-      "services": "Usługi"
+      "services": "Us�&�augi"
     },
     "partners": {
       "fastLoad": {
-        "title": "Załadowano szybko",
-        "desc": "Strona ładuje się w ciągu kilku sekund"
+        "title": "Za�&�aadowano szybko",
+        "desc": "Strona �&�aaduje si�\u001e�\u001e� w ci�\u001e⬦gu kilku sekund"
       },
       "moreLeads": {
-        "title": "Więcej zapytań",
-        "desc": "Więcej kontaktów poprzez formularze"
+        "title": "Wi�\u001e�\u001e�cej zapyta�&�~",
+        "desc": "Wi�\u001e�\u001e�cej kontaktÒ³w poprzez formularze"
       },
       "clearPrices": {
         "title": "Jasne ceny",
-        "desc": "Znasz koszty z góry"
+        "desc": "Znasz koszty z gÒ³ry"
       },
       "personalHelp": {
         "title": "Pomoc osobista",
-        "desc": "Bezpośrednie wsparcie bez czekania w kolejce"
+        "desc": "Bezpo�&⬺rednie wsparcie bez czekania w kolejce"
       },
       "handwerker": {
-        "title": "rzemieślnik",
-        "desc": "Żądania na miasto i usługę"
+        "title": "rzemie�&⬺lnik",
+        "desc": "�&»�\u001e⬦dania na miasto i us�&�aug�\u001e�\u001e�"
       },
       "praxen": {
         "title": "praktyki",
-        "desc": "Pacjenci szybciej znajdują wizyty"
+        "desc": "Pacjenci szybciej znajduj�\u001e⬦ wizyty"
       },
       "werkstaetten": {
         "title": "warsztaty",
-        "desc": "Wyczyść strony usług ze śledzeniem"
+        "desc": "Wyczy�&⬺�\u001e⬡ strony us�&�aug ze �&⬺ledzeniem"
       },
       "localServices": {
-        "title": "Usługi lokalne",
-        "desc": "Większa widoczność na miejscu"
+        "title": "Us�&�augi lokalne",
+        "desc": "Wi�\u001e�\u001e�ksza widoczno�&⬺�\u001e⬡ na miejscu"
       },
       "websites": {
         "title": "strony internetowe",
-        "desc": "Nowoczesny, szybki, zoptymalizowany pod kątem urządzeń mobilnych"
+        "desc": "Nowoczesny, szybki, zoptymalizowany pod k�\u001e⬦tem urz�\u001e⬦dze�&�~ mobilnych"
       },
       "webApps": {
         "title": "Aplikacje internetowe",
-        "desc": "Narzędzia dla zespołu i klientów"
+        "desc": "Narz�\u001e�\u001e�dzia dla zespo�&�au i klientÒ³w"
       },
       "aiIntegration": {
         "title": "Integracja AI",
-        "desc": "Chatbot do pytań i potencjalnych klientów"
+        "desc": "Chatbot do pyta�&�~ i potencjalnych klientÒ³w"
       },
       "socialMedia": {
-        "title": "Media społecznościowe",
-        "desc": "Strona internetowa + połączenie z Instagramem/Meta"
+        "title": "Media spo�&�aeczno�&⬺ciowe",
+        "desc": "Strona internetowa + po�&�a�\u001e⬦czenie z Instagramem/Meta"
       },
       "socialAds": {
-        "title": "Reklamy społecznościowe",
+        "title": "Reklamy spo�&�aeczno�&⬺ciowe",
         "desc": "Reklama ukierunkowana z wymiernymi wynikami"
       }
     },
     "trustTitle": "Zaufaj konkretnym wynikom",
-    "trustDesc1": "więcej próśb o kontakt w ciągu 60 dni.",
-    "trustDesc2": "niższy koszt potencjalnego klienta po poprawieniu śledzenia.",
-    "trustDesc3": "średni czas ładowania na telefonie komórkowym.",
-    "faqTitle": "Często zadawane pytania",
+    "trustDesc1": "wi�\u001e�\u001e�cej prÒ³�&⬺b o kontakt w ci�\u001e⬦gu 60 dni.",
+    "trustDesc2": "ni�&¼szy koszt potencjalnego klienta po poprawieniu �&⬺ledzenia.",
+    "trustDesc3": "�&⬺redni czas �&�aadowania na telefonie komÒ³rkowym.",
+    "faqTitle": "Cz�\u001e�\u001e�sto zadawane pytania",
     "faq": {
-      "q1": "Jak szybko potrafisz zacząć?",
-      "a1": "Zwykle zaczynamy w ciągu 3-5 dni roboczych. Natychmiast po złożeniu wniosku otrzymasz krótki plan z pierwszymi krokami.",
-      "q2": "Czego potrzebuję jako klient na początku?",
-      "a2": "Tylko podstawowe informacje o Twojej ofercie, grupie docelowej i kanałach kontaktu. Następnie pomożemy Ci w zakresie struktury, tekstów i priorytetów.",
-      "q3": "Jak wygląda współpraca?",
-      "a3": "Pracujemy w krótkich etapach: koncepcja, projekt, wdrożenie, uruchomienie. Otrzymasz przejrzyste aktualizacje, dzięki czemu zawsze będziesz wiedzieć, co wydarzy się dalej.",
-      "q4": "Czy jest to odpowiednie dla małych firm?",
-      "a4": "Tak. Nasze pakiety są celowo zaprojektowane dla lokalnych firm: jasne ceny, szybki start i skupienie się na prawdziwych zapytaniach, a nie tylko na optyce.",
-      "q5": "Co się stanie po starcie?",
-      "a5": "Po uruchomieniu sprawdzamy dane, poprawiamy punkty konwersji i wspieramy Cię w dostrojeniu, aby strona działała lepiej w dłuższej perspektywie.",
-      "desc": "Odpowiedzi na często zadawane pytania dotyczące terminów, kosztów, procesu uruchomienia i bieżącego wsparcia."
+      "q1": "Jak szybko potrafisz zacz�\u001e⬦�\u001e⬡?",
+      "a1": "Zwykle zaczynamy w ci�\u001e⬦gu 3-5 dni roboczych. Natychmiast po z�&�ao�&¼eniu wniosku otrzymasz krÒ³tki plan z pierwszymi krokami.",
+      "q2": "Czego potrzebuj�\u001e�\u001e� jako klient na pocz�\u001e⬦tku?",
+      "a2": "Tylko podstawowe informacje o Twojej ofercie, grupie docelowej i kana�&�aach kontaktu. Nast�\u001e�\u001e�pnie pomo�&¼emy Ci w zakresie struktury, tekstÒ³w i priorytetÒ³w.",
+      "q3": "Jak wygl�\u001e⬦da wspÒ³�&�apraca?",
+      "a3": "Pracujemy w krÒ³tkich etapach: koncepcja, projekt, wdro�&¼enie, uruchomienie. Otrzymasz przejrzyste aktualizacje, dzi�\u001e�\u001e�ki czemu zawsze b�\u001e�\u001e�dziesz wiedzie�\u001e⬡, co wydarzy si�\u001e�\u001e� dalej.",
+      "q4": "Czy jest to odpowiednie dla ma�&�aych firm?",
+      "a4": "Tak. Nasze pakiety s�\u001e⬦ celowo zaprojektowane dla lokalnych firm: jasne ceny, szybki start i skupienie si�\u001e�\u001e� na prawdziwych zapytaniach, a nie tylko na optyce.",
+      "q5": "Co si�\u001e�\u001e� stanie po starcie?",
+      "a5": "Po uruchomieniu sprawdzamy dane, poprawiamy punkty konwersji i wspieramy Ci�\u001e�\u001e� w dostrojeniu, aby strona dzia�&�aa�&�aa lepiej w d�&�au�&¼szej perspektywie.",
+      "desc": "Odpowiedzi na najczestsze pytania o terminy, koszty, wdrozenie i wsparcie po starcie."
     },
     "hero": {
       "bento": {
         "speed": {
-          "label": "prędkość",
-          "value": "90+ Latarnia morska"
+          "label": "Geschwindigkeit",
+          "value": "90+ Lighthouse"
         },
         "seo": {
           "label": "SEO",
-          "value": "Podstawy techniczne"
+          "value": "Technisches Fundament"
         },
         "leads": {
-          "label": "zapytania",
-          "value": "Wyczyść wezwanie do działania i formularze"
+          "label": "Anfragen",
+          "value": "Klare CTA und Formulare"
         },
         "support": {
-          "label": "Wsparcie",
-          "value": "Po uruchomieniu"
+          "label": "Support",
+          "value": "Nach dem Launch"
         }
       }
     },
     "partnersSection": {
-      "title": "Zalety i obszary zastosowań",
-      "desc": "Jakimi zadaniami się zajmujemy i dla jakich lokalnych firm najczęściej wdrażamy strony internetowe i lejki leadowe."
+      "title": "Korzyści i obszary działania",
+      "desc": "Welche Aufgaben wir abdecken und für welche lokalen Unternehmen wir am häufigsten Websites und Lead-Funnels umsetzen."
     },
     "marquee": {
-      "aria": "Branże",
-      "title": "Branże, z którymi współpracujemy",
-      "desc": "Wybierz kierunek i zobacz odpowiednie przykłady stylu. Dzięki temu możemy szybciej zbudować precyzyjną ofertę dla Twojej firmy.",
+      "aria": "Branchen",
+      "title": "Branze, z ktorymi pracujemy",
+      "desc": "Wählen Sie eine Richtung und sehen Sie passende Stilbeispiele. So bauen wir schneller ein präzises Angebot für Ihr Unternehmen.",
       "items": {
-        "handwerk": "Rękodzieło",
-        "praxen": "praktyki",
-        "werkstaetten": "warsztaty",
-        "gastronomie": "Gastronomia",
-        "beauty": "Piękno",
-        "immobilien": "Nieruchomości",
-        "kanzlei": "kancelaria prawna",
+        "handwerk": "Handwerk",
+        "praxen": "Praxen",
+        "werkstaetten": "Werkstätten",
+        "gastronomie": "Gastronomie",
+        "beauty": "Beauty",
+        "immobilien": "Immobilien",
+        "kanzlei": "Kanzlei",
         "fitness": "Fitness",
-        "reinigung": "Czyszczenie",
+        "reinigung": "Reinigung",
         "transport": "Transport",
         "coaching": "Coaching",
-        "bildung": "Edukacja"
+        "bildung": "Bildung"
       }
     },
     "process": {
       "title": "Jak pracujemy",
-      "desc": "Przejrzysty proces bez zbędnych kroków: od krótkiej odprawy po uruchomienie i optymalizację z jasnymi terminami.",
-      "aria": "Fazy projektu",
+      "desc": "Ein transparenter Prozess ohne unnötige Schritte: vom kurzen Briefing bis zu Launch und Optimierung mit klaren Deadlines.",
+      "aria": "Projektphasen",
       "stage": "Phase",
       "nav": {
-        "prev": "Powrót",
-        "next": "Dalej"
+        "prev": "Zurück",
+        "next": "Weiter"
       },
       "steps": {
         "s1": {
-          "title": "15 minut rozmowy",
-          "text": "Wyjaśniamy zadanie, KPI i termin i od razu uzgadniamy format uruchomienia."
+          "title": "15-Minuten-Call",
+          "text": "Wir klären Aufgabe, KPI und Deadline und stimmen sofort das Launch-Format ab."
         },
         "s2": {
-          "title": "Prototyp w 48 godzin",
-          "text": "Przed opracowaniem pokazujemy strukturę strony, CTA i przepływ leadów."
+          "title": "Prototyp in 48h",
+          "text": "Wir zeigen Seitenstruktur, CTA und Lead-Flow vor der Entwicklung."
         },
         "s3": {
-          "title": "Rozwój w 7-14 dni",
-          "text": "Wdrożenie, podstawy SEO, integracje i analityka bez zbędnych narzutów."
+          "title": "Entwicklung in 7-14 Tagen",
+          "text": "Umsetzung, SEO-Basis, Integrationen und Analytics ohne unnötigen Overhead."
         },
         "s4": {
-          "title": "Uruchomienie i optymalizacja",
-          "text": "Wprowadzamy na rynek, sprawdzamy konwersję i dostarczamy 30-dniowy plan ulepszeń."
+          "title": "Launch und Optimierung",
+          "text": "Wir gehen live, prüfen Conversion und liefern einen 30-Tage-Verbesserungsplan."
         }
       }
     },
     "projects": {
-      "title": "Projekty / Studia przypadków",
-      "desc": "Prawdziwe zadania i oczekiwane rezultaty bez pustych obietnic. Najedź kursorem na obudowę, aby wyświetlić podgląd na żywo.",
+      "title": "Projekty / Case studies",
+      "desc": "Reale Aufgaben und erwartbare Ergebnisse ohne leere Versprechen. Hover auf einen Case für Live-Preview.",
       "cards": {
         "c1": {
-          "title": "Lokalna witryna internetowa z zapytaniami",
-          "description": "Landing page z naciskiem na formularze, połączenia i szybki kontakt mobilny.",
-          "goal": "Cel: więcej zapytań bez zwiększania budżetu"
+          "title": "Website für lokale Anfragen",
+          "description": "Landingpage mit Fokus auf Formular, Anruf und schnellen Mobile-Kontakt.",
+          "goal": "Ziel: mehr Anfragen ohne Budgeterhöhung"
         },
         "c2": {
-          "title": "Strona docelowa dla reklam",
-          "description": "Oddzielna strona ze śledzeniem dla kampanii Meta i Google.",
-          "goal": "Oczekiwany efekt: więcej kwalifikowanych leadów z reklam"
+          "title": "Landingpage für Ads",
+          "description": "Separate Seite mit Tracking für Meta- und Google-Kampagnen.",
+          "goal": "Erwarteter Effekt: qualifiziertere Leads aus Werbung"
         },
         "c3": {
-          "title": "Strona internetowa poświęcona praktyce",
-          "description": "Przejrzysta struktura usług, często zadawane pytania i przebieg spotkań online.",
-          "goal": "Cel: więcej rezerwacji spotkań przy mniejszej liczbie zapytań"
+          "title": "Website für Praxis",
+          "description": "Klare Leistungsstruktur, FAQ und Online-Termin-Flow.",
+          "goal": "Ziel: mehr Terminbuchungen mit weniger Rückfragen"
         },
         "c4": {
-          "title": "Panel dla potencjalnych klientów",
-          "description": "Wewnętrzny interfejs do przetwarzania leadów i kontroli statusu.",
-          "goal": "Oczekiwany efekt: szybsze przetwarzanie żądań"
+          "title": "Dashboard für Leads",
+          "description": "Internes Interface zur Lead-Bearbeitung und Statuskontrolle.",
+          "goal": "Erwarteter Effekt: schnellere Bearbeitung von Anfragen"
         }
       }
     },
     "configurator": {
-      "title": "Konfigurator ofert",
-      "desc": "Wybierz parametry projektu i otrzymaj cenę wywoławczą oraz odpowiednie stawki wsparcia.",
+      "title": "Kalkulator oferty",
+      "desc": "Wählen Sie Projektparameter und erhalten Sie einen Startpreis sowie passende Support-Tarife.",
       "labels": {
-        "goal": "Cel",
-        "integrations": "Integracje",
-        "ads": "Reklama",
-        "term": "ramy czasowe",
-        "content": "poziom treści",
-        "languages": "języków",
+        "goal": "Ziel",
+        "integrations": "Integrationen",
+        "ads": "Werbung",
+        "term": "Zeitrahmen",
+        "content": "Content-Level",
+        "languages": "Sprachen",
         "hosting": "Hosting",
         "domain": "Domain",
-        "pages": "stron",
+        "pages": "Seiten",
         "seo": "SEO"
       },
       "options": {
         "common": {
-          "other": "Inni"
+          "other": "Andere"
         },
         "goal": {
-          "leads": "Potencjalni klienci",
-          "calls": "dzwoni",
-          "booking": "rezerwacje"
+          "leads": "Leads",
+          "calls": "Anrufe",
+          "booking": "Buchungen"
         },
         "integrations": {
-          "booking": "rezerwacja",
+          "booking": "Buchung",
           "crm": "CRM",
-          "chat": "Czat",
-          "payments": "płatności"
+          "chat": "Chat",
+          "payments": "Zahlungen"
         },
         "ads": {
-          "none": "Bez reklam",
+          "none": "Ohne Werbung",
           "meta": "Meta",
           "google": "Google"
         },
         "term": {
-          "up_to_7": "Do 1 tygodnia",
-          "from_7_to_14": "7-14 dni",
-          "from_14_to_21": "14-21 dni",
-          "from_21_to_30": "21-30 dni"
+          "up_to_7": "Bis 1 Woche",
+          "from_7_to_14": "7-14 Tage",
+          "from_14_to_21": "14-21 Tage",
+          "from_21_to_30": "21-30 Tage"
         },
         "content": {
-          "has": "Dostępne teksty",
-          "copy": "Wymagany copywriting"
+          "has": "Texte vorhanden",
+          "copy": "Copywriting nötig"
         },
         "languages": {
-          "basic": "1 język",
-          "multi": "2+ języki"
+          "basic": "1 Sprache",
+          "multi": "2+ Sprachen"
         },
         "hosting": {
-          "shared": "Hosting współdzielony",
-          "vps": "Serwer VPS",
-          "managed": "Hosting zarządzany"
+          "shared": "Shared Hosting",
+          "vps": "VPS",
+          "managed": "Managed Hosting"
         },
         "domain": {
-          "new_domain": "Nowa domena",
+          "new_domain": "Neue Domain",
           "existing_domain": "Domain vorhanden",
-          "transfer": "Transfer domeny"
+          "transfer": "Domain-Transfer"
         },
         "pages": {
-          "one": "1 strona",
-          "up_to_3": "Do 3 stron",
-          "five_plus": "ponad 5 stron"
+          "one": "1 Seite",
+          "up_to_3": "Bis 3 Seiten",
+          "five_plus": "5+ Seiten"
         },
         "seo": {
-          "base": "Baza SEO",
-          "extended": "Rozszerzone SEO"
+          "base": "SEO Base",
+          "extended": "SEO Extended"
         }
       },
-      "reset": "Zresetuj wszystko",
-      "empty": "Wybierz przynajmniej jedną opcję w każdym bloku. Możliwy jest wielokrotny wybór; Za „Inne” nie jest pobierana dodatkowa opłata.",
-      "recommended": "Zalecane:",
+      "reset": "Alles zurücksetzen",
+      "empty": "Wählen Sie mindestens eine Option in jedem Block. Mehrfachauswahl ist möglich; bei \"Andere\" wird keine Zusatzgebühr berechnet.",
+      "recommended": "Empfohlen:",
       "pack": {
-        "starter": "Rozrusznik",
-        "business": "Biznes"
+        "starter": "Starter",
+        "business": "Business"
       },
-      "launchPrice": "Cena wywoławcza:",
-      "supportMonthly": "Wsparcie / Miesiąc",
-      "supportYearly": "Wsparcie / rok (-30%)",
-      "cta": "Prośba o kontakt i dokładny kosztorys",
+      "launchPrice": "Startpreis:",
+      "supportMonthly": "Support / Monat",
+      "supportYearly": "Support / Jahr (-30%)",
+      "cta": "Kontaktanfrage und exakter Kostenvoranschlag",
       "bullets": {
-        "prototype": "Prototyp i konstrukcja z naciskiem na żądania",
-        "goal": "Cele: {{value}}",
-        "integrations": "Integracje: {{value}}",
-        "term": "Ramy czasowe: {{value}}",
+        "prototype": "Prototyp und Struktur mit Fokus auf Anfragen",
+        "goal": "Ziele: {{value}}",
+        "integrations": "Integrationen: {{value}}",
+        "term": "Zeitrahmen: {{value}}",
         "hosting": "Hosting: {{value}}",
-        "domain": "Domena: {{value}}",
-        "pages": "Strony: {{value}}",
-        "analytics": "GA4 i śledzenie zdarzeń dla formularzy/kontaktów",
-        "copy_true": "Wsparcie za pomocą SMS-ów i ofert",
-        "copy_false": "Pracujemy z Twoimi istniejącymi tekstami",
-        "market_note": "Cena orientacyjna poniżej poziomu rynkowego dla małych firm"
+        "domain": "Domain: {{value}}",
+        "pages": "Seiten: {{value}}",
+        "analytics": "GA4 und Event-Tracking für Formulare/Kontakte",
+        "copy_true": "Unterstützung bei Texten und Offer",
+        "copy_false": "Wir arbeiten mit Ihren vorhandenen Texten",
+        "market_note": "Orientierungspreis unter marktüblichem Niveau für kleine Unternehmen"
       },
       "brief": {
-        "title": "List od konfiguratora oferty:",
-        "goal": "Cel: {{value}}",
-        "integrations": "Integracje: {{value}}",
-        "ads": "Reklama: {{value}}",
-        "term": "Ramy czasowe: {{value}}",
-        "content": "Treść: {{value}}",
-        "languages": "Języki: {{value}}",
+        "title": "Brief aus dem Angebots-Konfigurator:",
+        "goal": "Ziel: {{value}}",
+        "integrations": "Integrationen: {{value}}",
+        "ads": "Werbung: {{value}}",
+        "term": "Zeitrahmen: {{value}}",
+        "content": "Content: {{value}}",
+        "languages": "Sprachen: {{value}}",
         "hosting": "Hosting: {{value}}",
-        "domain": "Domena: {{value}}",
-        "pages": "Strony: {{value}}",
+        "domain": "Domain: {{value}}",
+        "pages": "Seiten: {{value}}",
         "seo": "SEO: {{value}}",
-        "launch_price": "Cena wywoławcza: {{value}}",
-        "support_monthly": "Wsparcie / Miesiąc: {{value}}",
-        "support_yearly": "Wsparcie / rok (-30%): {{value}}"
+        "launch_price": "Startpreis: {{value}}",
+        "support_monthly": "Support / Monat: {{value}}",
+        "support_yearly": "Support / Jahr (-30%): {{value}}"
       }
     },
     "trust": {
       "title": "Co otrzymasz w 14 dni",
-      "desc": "Konkretne wyniki początkowe: strona internetowa zorientowana na zapytania, skonfigurowane narzędzia analityczne i plan dalszego rozwoju.",
+      "desc": "Konkrete Start-Ergebnisse: eine anfrageorientierte Website, eingerichtete Analytics und ein Plan für weiteres Wachstum.",
       "deliverables": {
         "d1": {
-          "title": "Prototyp w 48 godzin",
-          "text": "Przed kodowaniem pokazujemy strukturę i CTA, aby można było zaplanować decyzje."
+          "title": "Prototyp in 48h",
+          "text": "Wir zeigen Struktur und CTA vor dem Coding, damit Entscheidungen planbar bleiben."
         },
         "d2": {
-          "title": "Strona internetowa z zapytaniami",
-          "text": "Formularz, telefon, komunikator i wersja mobilna do szybkiego kontaktu."
+          "title": "Website für Anfragen",
+          "text": "Formular, Anruf, Messenger und mobile Version für schnelle Kontaktaufnahme."
         },
         "d3": {
-          "title": "Analityka i śledzenie",
-          "text": "GA4 plus zdarzenia, tak aby było widoczne tam, gdzie pojawiają się zapytania."
+          "title": "Analytics und Tracking",
+          "text": "GA4 plus Events, damit sichtbar wird, wo Anfragen entstehen."
         },
         "d4": {
-          "title": "30-dniowy plan optymalizacyjny",
-          "text": "Wyczyść kolejne kroki, aby zwiększyć liczbę konwersji po uruchomieniu."
+          "title": "30-Tage-Optimierungsplan",
+          "text": "Klare nächste Schritte zur Conversion-Steigerung nach Launch."
         }
       }
     }
@@ -397,7 +397,7 @@
       },
       "social": {
         "title": "Social Media",
-        "desc": "Content-Module, Channel-Verknüpfung, Kontaktpfade."
+        "desc": "Content-Module, Channel-VerknÒ¼pfung, Kontaktpfade."
       },
       "ads": {
         "title": "Social Ads",
@@ -440,56 +440,107 @@
     "packages": {
       "title": "Pakiety cenowe",
       "badge": "Polecane",
-      "coreTitle": "Core",
-      "plusTitle": "Plus",
-      "outcomeLabel": "Wynik:",
+      "billing": {
+        "monthly": "Miesiac",
+        "yearly": "Rok"
+      },
+      "coreTitle": "Podstawa",
+      "plusTitle": "Dodatkowo",
+      "subscriptionTitle": "Abonament wsparcia",
+      "subscriptionIncludesTitle": "W pakiecie",
+      "outcomeLabel": "Rezultat:",
       "starter": {
         "name": "Starter",
-        "desc": "Dla malych lokalnych firm z szybkim startem.",
+        "desc": "Dla malych lokalnych firm, ktore chca szybko wystartowac.",
         "price": "od EUR 690",
         "range": "zwykle EUR 690-790",
         "core": [
-          "Landing Page",
-          "Formularz lead + formularz kontaktowy",
+          "Landing page",
+          "Formularz leadowy + formularz kontaktowy",
           "GA4 + podstawowa konfiguracja SEO"
         ],
         "plus": [
           "Optymalizacja mobilna",
-          "Podstawowy tracking DSGVO"
+          "Podstawowy DSGVO tracking"
         ],
-        "outcome": "Stabilny kanal pierwszych jakosciowych zapytan."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 62 / miesiac",
+            "meta": "podstawowe wsparcie po wdrozeniu"
+          },
+          "yearly": {
+            "price": "EUR 521 / rok",
+            "meta": "12 miesiecy z rabatem 30%"
+          },
+          "includes": [
+            "Aktualizacje techniczne i kopie zapasowe",
+            "Kontrola formularzy, konwersji i podstawowego trackingu",
+            "Do 1 bloku poprawek lub aktualizacji miesiecznie"
+          ]
+        },
+        "outcome": "Stabilny kanal pierwszych kwalifikowanych zapytan."
       },
       "business": {
         "name": "Business",
-        "desc": "Dla zespolow z wieloma uslugami i aktywna sprzedaza.",
+        "desc": "Dla zespolow z kilkoma uslugami i aktywna sprzedaza.",
         "price": "od EUR 1.290",
         "range": "zwykle EUR 1.290-1.490",
         "core": [
           "Strona wielopodstronowa do 5 stron",
-          "Integracja CRM + tracking leadow",
+          "Integracja CRM + lead tracking",
           "Dashboard analityczny"
         ],
         "plus": [
-          "Struktura SEO dla uslug",
+          "Struktura SEO wedlug uslug",
           "Optymalizacja konwersji"
         ],
-        "outcome": "Przewidywalny pipeline leadow z jasna analityka."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 86 / miesiac",
+            "meta": "wsparcie dla strony, CRM i analityki"
+          },
+          "yearly": {
+            "price": "EUR 722 / rok",
+            "meta": "12 miesiecy z rabatem 30%"
+          },
+          "includes": [
+            "Regularne aktualizacje tresci i stron",
+            "Kontrola CRM, lead trackingu i dashboardu",
+            "Do 2 zadan miesiecznie dla poprawy konwersji"
+          ]
+        },
+        "outcome": "Przewidywalny naplyw leadow z jasna analityka."
       },
       "pro": {
         "name": "Pro",
-        "desc": "Dla wzrostu z website, ads i automatyzacja.",
+        "desc": "Dla wzrostu przez strone, reklamy i automatyzacje.",
         "price": "od EUR 2.490",
         "range": "zwykle EUR 2.490-2.990",
         "core": [
-          "Website + Ads setup",
+          "Website + konfiguracja Ads",
           "Google Ads lub Meta Ads",
-          "Dashboard marketingowy + tracking"
+          "Marketing dashboard + tracking"
         ],
         "plus": [
-          "Kwalifikacja leadow AI",
+          "Kwalifikacja leadow przez AI",
           "Automation flows"
         ],
-        "outcome": "Wiecej popytu przy kontrolowanym koszcie leada."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 160 / miesiac",
+            "meta": "aktywne prowadzenie systemu growth"
+          },
+          "yearly": {
+            "price": "EUR 1.344 / rok",
+            "meta": "12 miesiecy z rabatem 30%"
+          },
+          "includes": [
+            "Cotygodniowa kontrola strony, reklam i automation flows",
+            "Optymalizacja CPL, lejka i kwalifikacji leadow",
+            "Do 4 zadan growth miesiecznie + priorytetowe wsparcie"
+          ]
+        },
+        "outcome": "Wiekszy popyt z kontrola kosztu za lead."
       }
     },
     "comparison": {
@@ -534,28 +585,28 @@
   },
   "references": {
     "h1": "Referencje z mierzalnym wzrostem.",
-    "subtitle": "Pokazujemy jasno, co wzrosło: zapytania, rezerwacje, telefony i leady.",
-    "trustline": "Wszystkie wskaźniki z kontekstem: okres i pomiar.",
-    "filterTitle": "Wybierz niszę",
+    "subtitle": "Pokazujemy jasno, co wzros�&�ao: zapytania, rezerwacje, telefony i leady.",
+    "trustline": "Wszystkie wska�&ºniki z kontekstem: okres i pomiar.",
+    "filterTitle": "Wybierz nisz�\u001e�\u001e�",
     "filterAria": "Filtr nisz",
-    "counter": "{{count}} pasujących case studies",
-    "growthByNiche": "Wzrost według branży",
+    "counter": "{{count}} pasuj�\u001e⬦cych case studies",
+    "growthByNiche": "Wzrost wed�&�aug bran�&¼y",
     "selectedCases": "Wybrane case studies",
-    "challengeLabel": "Punkt wyjścia",
-    "solutionLabel": "Wdrożenie",
+    "challengeLabel": "Punkt wyj�&⬺cia",
+    "solutionLabel": "Wdro�&¼enie",
     "periodLabel": "Okres",
     "measurementLabel": "Pomiar",
-    "emptyTitle": "Kolejny case dla tej niszy wkrótce.",
+    "emptyTitle": "Kolejny case dla tej niszy wkrÒ³tce.",
     "emptyText": "Pokazujemy tylko case z rzetelnym pomiarem i jasnym okresem.",
     "beforeAfter": "Przed / Po",
     "before": "Przed",
     "after": "Po",
     "beforeAlt": "Widok przed zmianami",
     "afterAlt": "Widok po zmianach",
-    "sliderAria": "Przesuń porównanie przed-po",
-    "sliderHint": "Przeciągnij, aby porównać.",
-    "ctaTitle": "Chcesz podobnych wyników?",
-    "ctaText": "Przeanalizujemy Twoją sytuację i pokażemy realistyczny plan na 30-90 dni.",
+    "sliderAria": "Przesu�&�~ porÒ³wnanie przed-po",
+    "sliderHint": "Przeci�\u001e⬦gnij, aby porÒ³wna�\u001e⬡.",
+    "ctaTitle": "Chcesz podobnych wynikÒ³w?",
+    "ctaText": "Przeanalizujemy Twoj�\u001e⬦ sytuacj�\u001e�\u001e� i poka�&¼emy realistyczny plan na 30-90 dni.",
     "cta": "Zapytaj o podobny projekt",
     "filters": {
       "all": "Wszystkie"
@@ -575,67 +626,67 @@
       "bildungKurse": "Bildung/Kurse"
     },
     "metrics": {
-      "moreRequests": "Więcej zapytań",
-      "moreAppointments": "Więcej rezerwacji terminów",
-      "moreCalls": "Więcej połączeń",
-      "moreReservations": "Więcej rezerwacji",
-      "moreBookings": "Więcej rezerwacji usług",
-      "moreLeads": "Więcej leadów",
-      "moreIntroCalls": "Więcej rozmów wstępnych",
-      "moreTrialSessions": "Więcej sesji próbnych",
-      "moreOffers": "Więcej zapytań ofertowych",
-      "moreQualifiedLeads": "Więcej kwalifikowanych leadów",
-      "moreFirstContacts": "Więcej pierwszych kontaktów",
-      "moreCourseSignups": "Więcej zapisów na kursy",
-      "budgetEfficiency": "Efektywność budżetu",
-      "moreInteractions": "Więcej interakcji",
-      "moreLeadsPerBudget": "Więcej leadów na budżet",
-      "moreConsultations": "Więcej konsultacji"
+      "moreRequests": "Wi�\u001e�\u001e�cej zapyta�&�~",
+      "moreAppointments": "Wi�\u001e�\u001e�cej rezerwacji terminÒ³w",
+      "moreCalls": "Wi�\u001e�\u001e�cej po�&�a�\u001e⬦cze�&�~",
+      "moreReservations": "Wi�\u001e�\u001e�cej rezerwacji",
+      "moreBookings": "Wi�\u001e�\u001e�cej rezerwacji us�&�aug",
+      "moreLeads": "Wi�\u001e�\u001e�cej leadÒ³w",
+      "moreIntroCalls": "Wi�\u001e�\u001e�cej rozmÒ³w wst�\u001e�\u001e�pnych",
+      "moreTrialSessions": "Wi�\u001e�\u001e�cej sesji prÒ³bnych",
+      "moreOffers": "Wi�\u001e�\u001e�cej zapyta�&�~ ofertowych",
+      "moreQualifiedLeads": "Wi�\u001e�\u001e�cej kwalifikowanych leadÒ³w",
+      "moreFirstContacts": "Wi�\u001e�\u001e�cej pierwszych kontaktÒ³w",
+      "moreCourseSignups": "Wi�\u001e�\u001e�cej zapisÒ³w na kursy",
+      "budgetEfficiency": "Efektywno�&⬺�\u001e⬡ bud�&¼etu",
+      "moreInteractions": "Wi�\u001e�\u001e�cej interakcji",
+      "moreLeadsPerBudget": "Wi�\u001e�\u001e�cej leadÒ³w na bud�&¼et",
+      "moreConsultations": "Wi�\u001e�\u001e�cej konsultacji"
     },
     "cases": {
       "c1": {
         "title": "Firma hydrauliczna (region Hanower)",
-        "challenge": "Za mało zapytań mimo dobrego zasięgu.",
-        "solution": "Przebudowano strony usług, zoptymalizowano CTA i włączono tracking kontaktów."
+        "challenge": "Za ma�&�ao zapyta�&�~ mimo dobrego zasi�\u001e�\u001e�gu.",
+        "solution": "Przebudowano strony us�&�aug, zoptymalizowano CTA i w�&�a�\u001e⬦czono tracking kontaktÒ³w."
       },
       "c2": {
         "title": "Gabinet fizjoterapii (Hildesheim)",
-        "challenge": "Za mało próśb o wizytę online.",
-        "solution": "Uproszczono ścieżkę rezerwacji, przyspieszono strony mobilne i doprecyzowano kanały kontaktu."
+        "challenge": "Za ma�&�ao prÒ³�&⬺b o wizyt�\u001e�\u001e� online.",
+        "solution": "Uproszczono �&⬺cie�&¼k�\u001e�\u001e� rezerwacji, przyspieszono strony mobilne i doprecyzowano kana�&�ay kontaktu."
       },
       "c3": {
         "title": "Warsztat blacharsko-lakierniczy (rejon Harburg)",
-        "challenge": "Dużo kontaktów, ale za mało dopasowanych zleceń.",
-        "solution": "Wdrożono kwalifikację leadów w formularzu i landing page pod usługi."
+        "challenge": "Du�&¼o kontaktÒ³w, ale za ma�&�ao dopasowanych zlece�&�~.",
+        "solution": "Wdro�&¼ono kwalifikacj�\u001e�\u001e� leadÒ³w w formularzu i landing page pod us�&�augi."
       },
       "c4": {
         "title": "Restauracja (Dolna Saksonia)",
-        "challenge": "Za mało rezerwacji w tygodniu.",
+        "challenge": "Za ma�&�ao rezerwacji w tygodniu.",
         "solution": "Uproszczono proces rezerwacji i uruchomiono na nowo kampanie lokalne."
       },
       "c5": {
-        "title": "Biuro nieruchomości (Dolna Saksonia)",
-        "challenge": "Za mało kwalifikowanych leadów od właścicieli.",
-        "solution": "Zbudowano strony ofert pod intencję wyszukiwania i skrócono ścieżkę zapytania."
+        "title": "Biuro nieruchomo�&⬺ci (Dolna Saksonia)",
+        "challenge": "Za ma�&�ao kwalifikowanych leadÒ³w od w�&�aa�&⬺cicieli.",
+        "solution": "Zbudowano strony ofert pod intencj�\u001e�\u001e� wyszukiwania i skrÒ³cono �&⬺cie�&¼k�\u001e�\u001e� zapytania."
       },
       "c6": {
         "title": "Kancelaria podatkowa (region Hanower)",
-        "challenge": "Niska konwersja na stronach usług.",
-        "solution": "Uproszczono treści, dodano elementy zaufania i wyeksponowano pierwszy kontakt."
+        "challenge": "Niska konwersja na stronach us�&�aug.",
+        "solution": "Uproszczono tre�&⬺ci, dodano elementy zaufania i wyeksponowano pierwszy kontakt."
       }
     },
-    "performanceDashboard": "Panel wyników",
+    "performanceDashboard": "Panel wynikÒ³w",
     "growthCurve90": "Krzywa wzrostu 90 dni",
     "growthChartAria": "Wykres wzrostu",
     "resultLabel": "Wynik",
     "trendAria": "Trend: {{niche}}",
     "compareGraphAria": "Wykres przed i po",
-    "dayLabel": "Dzień {{day}}",
-    "beforeLegend": "Przed: słaba dynamika",
+    "dayLabel": "Dzie�&�~ {{day}}",
+    "beforeLegend": "Przed: s�&�aaba dynamika",
     "afterLegend": "Po: stabilny wzrost",
     "filterGroups": {
       "all": "Wszystkie",
-      "localServices": "Usługi lokalne",
+      "localServices": "Us�&�augi lokalne",
       "healthBeauty": "Zdrowie i uroda",
       "professional": "Profesjonalne"
     },
@@ -647,8 +698,8 @@
     "daysUnit": "dni"
   },
   "about": {
-    "h1": "Über uns",
-    "subtitle": "Wir sind ein kleines Umsetzungsteam für lokale Unternehmen.",
+    "h1": "Ò�\u001cber uns",
+    "subtitle": "Wir sind ein kleines Umsetzungsteam fÒ¼r lokale Unternehmen.",
     "cards": {
       "work": {
         "title": "Wie wir arbeiten",
@@ -664,18 +715,18 @@
       }
     },
     "ctaTitle": "Kontakt",
-    "photoPlaceholder": "Foto: Porträt des Gründers von VS Web Studio (Vladyslav)",
-    "photoCaption": "Vladyslav, Gründer von VS Web Studio. Hildesheim.",
+    "photoPlaceholder": "Foto: PortrÒ¤t des GrÒ¼nders von VS Web Studio (Vladyslav)",
+    "photoCaption": "Vladyslav, GrÒ¼nder von VS Web Studio. Hildesheim.",
     "photoAlt": "Vladyslav, Webentwickler von VS Web Studio aus Hildesheim",
     "geo": {
       "local": "Wir arbeiten hier: Hildesheim",
       "region": "Hauptregion: Niedersachsen",
-      "country": "Möglich: ganz Deutschland"
+      "country": "MÒ¶glich: ganz Deutschland"
     },
-    "intro1": "Ich bin Vladyslav, Gründer von VS Web Studio. Ich arbeite aus Hildesheim und unterstütze zuerst Unternehmen direkt in der Stadt und Umgebung. Zusätzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
-    "intro2": "Mein Ziel ist einfach: nicht nur eine schöne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
-    "intro3": "Wir sind ein kleines Team mit bewährten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnötige Bürokratie, und bringen Projekte bis zum Ergebnis.",
-    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes Verständnis für den Markt vor Ort.",
+    "intro1": "Ich bin Vladyslav, GrÒ¼nder von VS Web Studio. Ich arbeite aus Hildesheim und unterstÒ¼tze zuerst Unternehmen direkt in der Stadt und Umgebung. ZusÒ¤tzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
+    "intro2": "Mein Ziel ist einfach: nicht nur eine schÒ¶ne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
+    "intro3": "Wir sind ein kleines Team mit bewÒ¤hrten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnÒ¶tige BÒ¼rokratie, und bringen Projekte bis zum Ergebnis.",
+    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes VerstÒ¤ndnis fÒ¼r den Markt vor Ort.",
     "miniFactsTitle": "Was wir konkret machen",
     "miniFacts": {
       "i1": "Klare Schritte ohne Fachchinesisch",
@@ -687,21 +738,21 @@
       "i1": "Eine schnelle Website, die auf dem Smartphone sauber funktioniert",
       "i2": "Klare Seitenstruktur mit starken CTA-Elementen",
       "i3": "Eingerichtetes Tracking, damit Sie die Quellen Ihrer Anfragen sehen",
-      "i4": "Automationen, die Zeit sparen und die Conversion erhöhen"
+      "i4": "Automationen, die Zeit sparen und die Conversion erhÒ¶hen"
     },
     "contactTitle": "Kontakt",
-    "contactText": "Schreiben Sie uns, welches Geschäft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
+    "contactText": "Schreiben Sie uns, welches GeschÒ¤ft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
     "contactButton": "Projekt anfragen"
   },
   "contact": {
-    "h1": "Kontakt",
-    "responseTime": "Antwortzeit aktuell:",
-    "quickContacts": "Schnelle Kontakte",
+    "h1": "Kontakt i zapytanie o Twoj projekt",
+    "responseTime": "Aktualny czas odpowiedzi:",
+    "quickContacts": "Szybki kontakt",
     "form": {
-      "name": "Name",
-      "business": "Business",
-      "need": "Was brauchst du genau?",
-      "submit": "Anfrage senden"
+      "name": "Imie",
+      "business": "Firma",
+      "need": "Czego dokladnie potrzebujesz?",
+      "submit": "Wyslij zapytanie"
     }
   },
   "blog": {
@@ -711,54 +762,54 @@
       "c1": "AI-Workflows im Website Funnel",
       "c2": "Social-Prozesse ohne Chaos",
       "c3": "Social Ads mit sauberem Tracking",
-      "c4": "Automationen für Erstkontakt"
+      "c4": "Automationen fÒ¼r Erstkontakt"
     },
     "leadMagnet": "Lead Magnet",
-    "emailPlaceholder": "E-Mail für den Guide",
+    "emailPlaceholder": "E-Mail fÒ¼r den Guide",
     "getGuide": "Guide erhalten"
   },
   "niche": {
     "handwerker": {
-      "h1": "Websites für Handwerker: mehr passende Anfragen.",
+      "h1": "Websites fÒ¼r Handwerker: mehr passende Anfragen.",
       "p": "Klare Leistungen, lokale Sichtbarkeit, einfache Kontaktwege."
     },
     "praxis": {
-      "h1": "Websites für Praxen: weniger Rückfragen, mehr Terminanfragen.",
+      "h1": "Websites fÒ¼r Praxen: weniger RÒ¼ckfragen, mehr Terminanfragen.",
       "p": "Patientenfreundliche Struktur und klarer Online-Erstkontakt."
     },
     "werkstatt": {
-      "h1": "Websites für Werkstätten: planbare Leads statt Zufall.",
+      "h1": "Websites fÒ¼r WerkstÒ¤tten: planbare Leads statt Zufall.",
       "p": "Service-orientierte Seiten mit messbarer Conversion."
     }
   },
   "legal": {
     "impressum": {
       "h1": "Impressum",
-      "subtitle": "Angaben gemäß § 5 TMG.",
+      "subtitle": "Angaben gemÒ¤ÒŸ �\u001a§ 5 TMG.",
       "l1": "VS Studio",
-      "l2": "Musterstraße 10, 10115 Berlin, Deutschland",
+      "l2": "MusterstraÒŸe 10, 10115 Berlin, Deutschland",
       "l3": "E-Mail: kontakt@vs-web-studio.de",
       "l4": "Telefon: +49 30 1234567",
       "l5": "Vertreten durch: Vladyslav"
     },
     "datenschutz": {
-      "h1": "Datenschutzerklärung",
+      "h1": "DatenschutzerklÒ¤rung",
       "subtitle": "Kurzinformation zur Verarbeitung personenbezogener Daten.",
       "l1": "Wir verarbeiten Daten nur zweckgebunden (Kontaktanfragen, Angebotserstellung, Statistik).",
       "l2": "Rechtsgrundlagen: Art. 6 Abs. 1 lit. b und f DSGVO.",
-      "l3": "Betroffene Rechte: Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch.",
-      "l4": "Kontakt für Datenschutz: datenschutz@vs-web-studio.de"
+      "l3": "Betroffene Rechte: Auskunft, Berichtigung, LÒ¶schung, EinschrÒ¤nkung, Widerspruch.",
+      "l4": "Kontakt fÒ¼r Datenschutz: datenschutz@vs-web-studio.de"
     },
     "agb": {
       "h1": "AGB",
-      "subtitle": "Optionale allgemeine Geschäftsbedingungen.",
-      "l1": "Leistungen werden gemäß Angebot und vereinbartem Umfang erbracht.",
-      "l2": "Zahlungsbedingungen, Nutzungsrechte und Gewährleistung richten sich nach dem Vertrag."
+      "subtitle": "Optionale allgemeine GeschÒ¤ftsbedingungen.",
+      "l1": "Leistungen werden gemÒ¤ÒŸ Angebot und vereinbartem Umfang erbracht.",
+      "l2": "Zahlungsbedingungen, Nutzungsrechte und GewÒ¤hrleistung richten sich nach dem Vertrag."
     },
     "cookies": {
       "h1": "Cookie-Hinweise",
       "subtitle": "Informationen zu eingesetzten Cookies und Messdiensten.",
-      "l1": "Technisch notwendige Cookies sichern die Funktionalität der Website.",
+      "l1": "Technisch notwendige Cookies sichern die FunktionalitÒ¤t der Website.",
       "l2": "Optionale Analyse-Cookies helfen bei der Optimierung von Inhalten und Kampagnen."
     }
   },
@@ -776,6 +827,142 @@
     "form": {
       "success": "Danke fuer dein Feedback!",
       "error": "Feedback konnte nicht gesendet werden."
+    }
+  },
+  "aboutPage": {
+    "heroEyebrow": "VS Studio | Hildesheim | Dolna Saksonia | Niemcy",
+    "heroTitleLine1": "Strony i",
+    "heroTitleLine2": "systemy leadowe",
+    "heroTitleLine3": "dla lokalnych firm",
+    "heroTitleLine4": "w Hildesheim",
+    "heroSubtitle": "Wiecej jakosciowych zapytan dzieki szybkim stronom, jasnym sciezkom kontaktu i mierzalnemu marketingowi.",
+    "heroTrustline": "Lokalnie w Hildesheim. Strategicznie w Dolnej Saksonii. Wdrazalne w calych Niemczech.",
+    "primaryCta": "Bezplatna analiza strony",
+    "section": {
+      "about": "O nas",
+      "localAdvantages": "Lokalne przewagi",
+      "how": "Jak pracujemy",
+      "value": "Wartosc",
+      "trust": "Zaufanie"
+    },
+    "blocks": {
+      "who": {
+        "title": "Dla lokalnych firm",
+        "text": "Strony, systemy leadowe i marketing dla firm, ktore chca przewidywalnie wiecej zapytan."
+      },
+      "focus": {
+        "title": "Jeden system zamiast pojedynczych rozwiazan",
+        "text": "Strona, kontakt, kampanie i tracking tworza jeden przejrzysty proces."
+      },
+      "locality": {
+        "title": "Bliskosc lokalna jako przewaga",
+        "subtitle": "Szybkie uzgodnienia, jasne priorytety i mierzalne wyniki.",
+        "text1": "Pracujemy bezposrednio z lokalnymi firmami, bez dlugich lancuchow agencji i zbednej biurokracji.",
+        "i1": "Bezposrednia komunikacja bez posrednikow",
+        "i2": "Szybkie wdrozenie zamiast dlugich uzgodnien",
+        "i3": "Zrozumienie lokalnych rynkow i budzetow",
+        "text2": "Decyzje zapadaja szybciej, a projekty nie utknely na tygodnie w petlach akceptacji.",
+        "text3": "To oszczedza czas, ogranicza koszty i przyspiesza efekty marketingu.",
+        "text4": "Znamy realia malych i srednich firm: ograniczone budzety, malo czasu i potrzebe jasnych rezultatow.",
+        "text5": "Dlatego pracujemy pragmatycznie i metodycznie od analizy po wdrozenie i optymalizacje."
+      }
+    },
+    "photoAlt": "Vladyslav, zalozyciel VS Web Studio z Hildesheim",
+    "photoCaption": "Vladyslav - zalozyciel VS Web Studio",
+    "photoFacts": {
+      "f1": "Fokus: lokalne firmy",
+      "f2": "Lokalizacja: Hildesheim",
+      "f3": "Projekty: cale Niemcy"
+    },
+    "geo": {
+      "local": "Hildesheim",
+      "region": "Dolna Saksonia",
+      "country": "W calej Niemczech"
+    },
+    "localPriority": "Krotkie drogi. Jasne priorytety. Fokus na wyniki.",
+    "how": {
+      "s1": {
+        "title": "1. Zrozumiec",
+        "text": "Analizujemy grupe docelowa, oferte i rynek."
+      },
+      "s2": {
+        "title": "2. Wdrozyc",
+        "text": "Uruchamiamy strone, system leadowy i kampanie."
+      },
+      "s3": {
+        "title": "3. Optymalizowac",
+        "text": "Analizujemy dane i poprawiamy wyniki."
+      }
+    },
+    "cards": {
+      "work": {
+        "title": "Jasne procesy",
+        "desc": "Krotkie sciezki. Jasna odpowiedzialnosc."
+      },
+      "ai": {
+        "title": "AI First",
+        "desc": "Automatyzacja tam, gdzie oszczedza czas."
+      },
+      "leads": {
+        "title": "Fokus na leadach",
+        "desc": "Design i marketing dzialaja razem."
+      }
+    },
+    "results": {
+      "title": "Co otrzymuja klienci",
+      "i1": "Szybka strona dzialajaca na kazdym smartfonie",
+      "i2": "Jasne sciezki kontaktu: telefon, formularz, termin",
+      "i3": "Mierzalne zapytania z trackingiem i danymi marketingowymi"
+    },
+    "trust": {
+      "projects": {
+        "label": "Liczba projektow",
+        "value": "120+",
+        "text": "Strony, lejki leadowe i relaunche."
+      },
+      "industries": {
+        "label": "Branze",
+        "value": "12",
+        "text": "Rzemioslo, praktyki, gastronomia, beauty, edukacja i uslugi lokalne."
+      },
+      "focus": {
+        "label": "Fokus",
+        "value": "Lokalnie + Mierzalnie",
+        "text": "Hildesheim, Dolna Saksonia i Niemcy z wyraznym naciskiem na leady."
+      }
+    },
+    "cta": {
+      "title": "Gotowi na przewidywalne zapytania?",
+      "text": "Podczas bezplatnej pierwszej rozmowy pokazemy najwieksze dzwignie dla strony, procesow leadowych i reklamy."
+    },
+    "visual": {
+      "productBadge": "Lead System",
+      "flowLabel": "Przeplyw",
+      "flowValue": "Od before do systemu i wyniku",
+      "before": {
+        "label": "Przed",
+        "title": "Dużo klikniec, malo jasnosci",
+        "i1": "Powolne strony",
+        "i2": "Niejasne sciezki kontaktu",
+        "i3": "Brak czystych danych"
+      },
+      "system": {
+        "label": "System",
+        "phoneBadge": "Strona",
+        "cta": "Umow termin",
+        "pill1": "Strona",
+        "pill2": "Kontakt",
+        "pill3": "Tracking"
+      },
+      "result": {
+        "label": "Wynik",
+        "title": "Kwalifikowane zapytania",
+        "text": "Mierzalne, szybciej obslugiwane i wyraznie widoczne w lejku."
+      },
+      "anchor": {
+        "label": "Efekt",
+        "value": "Wiecej kwalifikowanych zapytan zamiast samego ruchu"
+      }
     }
   }
 }
