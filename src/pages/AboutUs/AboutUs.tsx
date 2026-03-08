@@ -20,6 +20,7 @@ import {
 import { AboutUsScope } from './styles/AboutUsPage.styles';
 
 const HeroVisual: React.FC = () => {
+  const { t } = useTranslation();
   const [time, setTime] = useState(0);
 
   useEffect(() => {
@@ -56,10 +57,10 @@ const HeroVisual: React.FC = () => {
       <div className='about-hero-contentLayer'>
         <div className='about-hero-dashboard-shell'>
           <div className='about-hero-dashboard-head'>
-            <div className='about-hero-product-badge'>Lead System</div>
+            <div className='about-hero-product-badge'>{t('aboutPage.visual.productBadge', { defaultValue: 'Lead System' })}</div>
             <div className='about-hero-shell-metric'>
-              <span className='about-hero-shell-label'>Flow</span>
-              <span className='about-hero-shell-value'>Before zu System zu Result</span>
+              <span className='about-hero-shell-label'>{t('aboutPage.visual.flowLabel', { defaultValue: 'Flow' })}</span>
+              <span className='about-hero-shell-value'>{t('aboutPage.visual.flowValue', { defaultValue: 'Before zu System zu Result' })}</span>
             </div>
           </div>
           <div className='about-hero-storyboard'>
@@ -67,12 +68,12 @@ const HeroVisual: React.FC = () => {
               className='about-hero-story-card about-hero-story-card-before'
               style={{ transform: `translateY(${beforeOffset}px)` }}
             >
-              <p className='about-hero-stage-eyebrow'>Before</p>
-              <p className='about-hero-metric-title'>Viele Klicks, wenig Klarheit</p>
+              <p className='about-hero-stage-eyebrow'>{t('aboutPage.visual.before.label', { defaultValue: 'Before' })}</p>
+              <p className='about-hero-metric-title'>{t('aboutPage.visual.before.title', { defaultValue: 'Viele Klicks, wenig Klarheit' })}</p>
               <ul className='about-hero-story-list'>
-                <li>Langsame Seiten</li>
-                <li>Unklare Kontaktwege</li>
-                <li>Keine sauberen Daten</li>
+                <li>{t('aboutPage.visual.before.i1', { defaultValue: 'Langsame Seiten' })}</li>
+                <li>{t('aboutPage.visual.before.i2', { defaultValue: 'Unklare Kontaktwege' })}</li>
+                <li>{t('aboutPage.visual.before.i3', { defaultValue: 'Keine sauberen Daten' })}</li>
               </ul>
             </article>
 
@@ -88,11 +89,11 @@ const HeroVisual: React.FC = () => {
               className='about-hero-story-card about-hero-story-card-system'
               style={{ transform: `translateY(${systemOffset}px)` }}
             >
-              <p className='about-hero-stage-eyebrow'>System</p>
+              <p className='about-hero-stage-eyebrow'>{t('aboutPage.visual.system.label', { defaultValue: 'System' })}</p>
               <div className='about-hero-phone-preview'>
                 <div className='about-hero-phone-notch' />
                 <div className='about-hero-phone-screen'>
-                  <div className='about-hero-phone-badge'>Website</div>
+                  <div className='about-hero-phone-badge'>{t('aboutPage.visual.system.phoneBadge', { defaultValue: 'Website' })}</div>
                   <div
                     className='about-hero-phone-line about-hero-phone-line-strong'
                     style={{ transform: `scaleX(${firstLineScale})`, opacity: 0.7 + (firstLineScale - 0.9) * 2.2 }}
@@ -109,14 +110,14 @@ const HeroVisual: React.FC = () => {
                     className='about-hero-phone-cta'
                     style={{ transform: `scale(${ctaScale})`, opacity: 0.88 + (ctaScale - 1) * 2 }}
                   >
-                    Termin anfragen
+                    {t('aboutPage.visual.system.cta', { defaultValue: 'Termin anfragen' })}
                   </div>
                 </div>
               </div>
               <div className='about-hero-system-pills'>
-                <span>Website</span>
-                <span>Kontaktwege</span>
-                <span>Tracking</span>
+                <span>{t('aboutPage.visual.system.pill1', { defaultValue: 'Website' })}</span>
+                <span>{t('aboutPage.visual.system.pill2', { defaultValue: 'Kontaktwege' })}</span>
+                <span>{t('aboutPage.visual.system.pill3', { defaultValue: 'Tracking' })}</span>
               </div>
             </article>
 
@@ -132,18 +133,18 @@ const HeroVisual: React.FC = () => {
               className='about-hero-story-card about-hero-story-card-result'
               style={{ transform: `translateY(${resultOffset}px)` }}
             >
-              <p className='about-hero-stage-eyebrow'>Result</p>
+              <p className='about-hero-stage-eyebrow'>{t('aboutPage.visual.result.label', { defaultValue: 'Result' })}</p>
               <p className='about-hero-result-metric'>+12</p>
-              <p className='about-hero-metric-title'>Qualifizierte Anfragen</p>
-              <p className='about-hero-metric-text'>Messbar, schneller beantwortbar und klar im Funnel sichtbar.</p>
+              <p className='about-hero-metric-title'>{t('aboutPage.visual.result.title', { defaultValue: 'Qualifizierte Anfragen' })}</p>
+              <p className='about-hero-metric-text'>{t('aboutPage.visual.result.text', { defaultValue: 'Messbar, schneller beantwortbar und klar im Funnel sichtbar.' })}</p>
             </article>
           </div>
           <div
             className='about-hero-metric-anchor'
             style={{ transform: `translateX(${anchorShift}px)` }}
           >
-            <span className='about-hero-anchor-label'>Ergebnis</span>
-            <span className='about-hero-anchor-value'>Mehr qualifizierte Anfragen statt nur Website-Traffic</span>
+            <span className='about-hero-anchor-label'>{t('aboutPage.visual.anchor.label', { defaultValue: 'Ergebnis' })}</span>
+            <span className='about-hero-anchor-value'>{t('aboutPage.visual.anchor.value', { defaultValue: 'Mehr qualifizierte Anfragen statt nur Website-Traffic' })}</span>
           </div>
         </div>
       </div>

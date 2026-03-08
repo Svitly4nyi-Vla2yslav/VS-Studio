@@ -53,42 +53,42 @@ const menuVariants = {
   closed: { opacity: 0 },
 };
 
+const languageLabels: Record<Language, string> = {
+  de: 'Deutsch',
+  uk: '\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430',
+  tr: 'T\u00fcrk\u00e7e',
+  ar: '\u0627\u0644\u0639\u0631\u0628\u064a\u0629',
+  pl: 'Polski',
+  ku: 'Kurmanc\u00ee',
+  fa: '\u0641\u0627\u0631\u0633\u06cc',
+  it: 'Italiano',
+  es: 'Espa\u00f1ol',
+  el: '\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac',
+  ro: 'Rom\u00e2n\u0103',
+  bg: '\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438',
+};
+
+const languageCodes: Record<Language, string> = {
+  de: 'DE',
+  uk: 'UA',
+  tr: 'TR',
+  ar: 'SA',
+  pl: 'PL',
+  ku: 'KU',
+  fa: 'IR',
+  it: 'IT',
+  es: 'ES',
+  el: 'GR',
+  ro: 'RO',
+  bg: 'BG',
+};
+
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
   const { language, setLanguage } = useLanguage();
   const { t } = useTranslation();
   const langRef = useRef<HTMLDivElement | null>(null);
-
-  const languageLabels: Record<Language, string> = {
-    de: t('languages.de'),
-    uk: t('languages.uk'),
-    tr: t('languages.tr'),
-    ar: t('languages.ar'),
-    pl: t('languages.pl'),
-    ku: t('languages.ku'),
-    fa: t('languages.fa'),
-    it: t('languages.it'),
-    es: t('languages.es'),
-    el: t('languages.el'),
-    ro: t('languages.ro'),
-    bg: t('languages.bg'),
-  };
-
-  const languageFlags: Record<Language, string> = {
-    de: '🇩🇪',
-    uk: '🇺🇦',
-    tr: '🇹🇷',
-    ar: '🇸🇦',
-    pl: '🇵🇱',
-    ku: '🌐',
-    fa: '🇮🇷',
-    it: '🇮🇹',
-    es: '🇪🇸',
-    el: '🇬🇷',
-    ro: '🇷🇴',
-    bg: '🇧🇬',
-  };
 
   useEffect(() => {
     const onClickOutside = (event: MouseEvent) => {
@@ -141,32 +141,32 @@ const Header: React.FC = () => {
 
           <HeaderControls>
             <FixedCta to='/kontakt'>
-            <FaArrowRight /> {t('common.projectRequest')}
+              <FaArrowRight /> {t('common.projectRequest')}
             </FixedCta>
 
             {!isOpen ? (
               <LangSwitch ref={langRef}>
                 <LangTrigger
-                type='button'
-                aria-expanded={isLangOpen}
-                aria-label='Language switcher'
-                onClick={() => setIsLangOpen(prev => !prev)}
-              >
-                  <LangFlag>{languageFlags[language]}</LangFlag>
+                  type='button'
+                  aria-expanded={isLangOpen}
+                  aria-label='Language switcher'
+                  onClick={() => setIsLangOpen(prev => !prev)}
+                >
+                  <LangFlag>{languageCodes[language]}</LangFlag>
                 </LangTrigger>
                 {isLangOpen ? (
                   <LangMenu>
-                  {SUPPORTED_LANGUAGES.map(code => (
-                    <LangItem
-                      key={code}
-                      type='button'
+                    {SUPPORTED_LANGUAGES.map(code => (
+                      <LangItem
+                        key={code}
+                        type='button'
                         $active={language === code}
-                      onClick={() => handleLanguageChange(code)}
-                    >
-                        <LangFlag>{languageFlags[code]}</LangFlag>
-                      <span>{languageLabels[code]}</span>
-                    </LangItem>
-                  ))}
+                        onClick={() => handleLanguageChange(code)}
+                      >
+                        <LangFlag>{languageCodes[code]}</LangFlag>
+                        <span>{languageLabels[code]}</span>
+                      </LangItem>
+                    ))}
                   </LangMenu>
                 ) : null}
               </LangSwitch>

@@ -3,6 +3,8 @@ import { initReactI18next } from "react-i18next";
 import HttpApi from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 
+const TRANSLATION_ASSET_VERSION = "20260308-contact-locale-fix";
+
 export const SUPPORTED_LANGUAGES = [
   "de",
   "uk",
@@ -30,7 +32,8 @@ i18n
       escapeValue: false 
     },
     backend: {
-      loadPath: "/locales/{{lng}}/translation.json",
+      // Bust cached locale payloads after translation repairs.
+      loadPath: `/locales/{{lng}}/translation.json?v=${TRANSLATION_ASSET_VERSION}`,
     },
     detection: {
       order: ["localStorage", "navigator"],

@@ -10,31 +10,31 @@
     "it": "Italiano",
     "es": "Español",
     "el": "Ελληνικά",
-    "ro": "Română",
+    "ro": "Rom�n\u0003",
     "bg": "Български"
   },
   "common": {
-    "projectRequest": "Αίτημα έργου",
-    "viewPrices": "Δείτε τιμές",
-    "cancel": "Ακύρωση"
+    "projectRequest": "�}���}¯Ï�~�}·�}¼�}± �}­Ï�}³�}¿Ï⬦",
+    "viewPrices": "�}⬝�}µ�}¯Ï�~�}µ Ï�~�}¹�}¼�}­Ï�a",
+    "cancel": "�}���}ºÏÏÏ⬰Ï�\u0019�}·"
   },
   "header": {
-    "menu": "Μενού",
-    "menuAria": "Ανοίξτε το μενού πλοήγησης",
-    "services": "Υπηρεσίες",
-    "preise": "τιμές",
-    "referenzen": "Παραπομπές",
-    "ueberUns": "Σχετικά με εμάς",
-    "kontakt": "Επικοινωνία"
+    "menu": "�}�\u001c�}µ�}½�}¿Ï",
+    "menuAria": "�}���}½�}¿�}¯�}¾Ï�~�}µ Ï�~�}¿ �}¼�}µ�}½�}¿Ï Ï�\u001a��}»�}¿�}®�}³�}·Ï�\u0019�}·Ï�a",
+    "services": "�}¥Ï�\u001a��}·Ï�}µÏ�\u0019�}¯�}µÏ�a",
+    "preise": "Ï�~�}¹�}¼�}­Ï�a",
+    "referenzen": "�} �}±Ï�}±Ï�\u001a��}¿�}¼Ï�\u001a��}­Ï�a",
+    "ueberUns": "�}£Ï⬡�}µÏ�~�}¹�}º�}¬ �}¼�}µ �}µ�}¼�}¬Ï�a",
+    "kontakt": "�}⬢Ï�\u001a��}¹�}º�}¿�}¹�}½Ï⬰�}½�}¯�}±"
   },
   "footer": {
-    "tagline": "VS Studio · Ιστότοποι, εφαρμογές ιστού, διαφημίσεις και αυτοματισμοί",
-    "impressum": "Αποτύπωμα",
-    "datenschutz": "Προστασία δεδομένων",
-    "agb": "Όροι και Προϋποθέσεις",
+    "tagline": "VS Studio �\u001a· �}�\u001e�Ï�\u0019Ï�~Ï�\u0019Ï�~�}¿Ï�\u001a��}¿�}¹, �}µÏ⬠�}±Ï�}¼�}¿�}³�}­Ï�a �}¹Ï�\u0019Ï�~�}¿Ï, �}´�}¹�}±Ï⬠�}·�}¼�}¯Ï�\u0019�}µ�}¹Ï�a �}º�}±�}¹ �}±Ï⬦Ï�~�}¿�}¼�}±Ï�~�}¹Ï�\u0019�}¼�}¿�}¯",
+    "impressum": "�}��Ï�\u001a��}¿Ï�~ÏÏ�\u001a�Ï⬰�}¼�}±",
+    "datenschutz": "�} Ï�}¿Ï�\u0019Ï�~�}±Ï�\u0019�}¯�}± �}´�}µ�}´�}¿�}¼�}­�}½Ï⬰�}½",
+    "agb": "�}�\u0019Ï�}¿�}¹ �}º�}±�}¹ �} Ï�}¿Ï⬹Ï�\u001a��}¿�}¸�}­Ï�\u0019�}µ�}¹Ï�a",
     "cookies": "cookies",
-    "cookieSettings": "Ρυθμίσεις cookie",
-    "blog": "Ιστολόγιο"
+    "cookieSettings": "�}¡Ï⬦�}¸�}¼�}¯Ï�\u0019�}µ�}¹Ï�a cookie",
+    "blog": "�}�\u001e�Ï�\u0019Ï�~�}¿�}»Ï�\u0019�}³�}¹�}¿"
   },
   "cookie": {
     "aria": "Cookie-Einwilligung",
@@ -43,320 +43,320 @@
     "settings": "Einstellungen",
     "acceptAll": "Alle akzeptieren",
     "modalTitle": "Datenschutz-Einstellungen",
-    "modalText": "Du kannst deine Einwilligung jederzeit in den Cookie-Einstellungen ändern.",
+    "modalText": "Du kannst deine Einwilligung jederzeit in den Cookie-Einstellungen Ò¤ndern.",
     "essential": "Essenzielle Cookies (immer aktiv)",
     "statistics": "Statistik (z. B. Reichweite, Nutzung)",
     "marketing": "Marketing (z. B. Social/Ads Tracking)",
     "saveSelection": "Auswahl speichern"
   },
   "home": {
-    "heroTitle": "Ιστότοποι που φέρνουν ερωτήματα αντί να δείχνουν απλώς καλοί.",
-    "heroSubtitle": "Σαφής τοποθέτηση, γρήγορη υλοποίηση και διαφανή πακέτα για τοπικούς παρόχους υπηρεσιών στη Γερμανία.",
-    "toFaq": "Μεταβείτε στις Συνήθεις Ερωτήσεις",
-    "partnersTitle": "Στιγμιότυπα, ομάδες-στόχοι και υπηρεσίες",
+    "heroTitle": "�}�\u001e�Ï�\u0019Ï�~Ï�\u0019Ï�~�}¿Ï�\u001a��}¿�}¹ Ï�\u001a��}¿Ï⬦ Ï⬠�}­Ï�}½�}¿Ï⬦�}½ �}µÏÏ⬰Ï�~�}®�}¼�}±Ï�~�}± �}±�}½Ï�~�}¯ �}½�}± �}´�}µ�}¯Ï⬡�}½�}¿Ï⬦�}½ �}±Ï�\u001a��}»ÏŽÏ�a �}º�}±�}»�}¿�}¯.",
+    "heroSubtitle": "�}£�}±Ï⬠�}®Ï�a Ï�~�}¿Ï�\u001a��}¿�}¸�}­Ï�~�}·Ï�\u0019�}·, �}³Ï�}®�}³�}¿Ï�}· Ï⬦�}»�}¿Ï�\u001a��}¿�}¯�}·Ï�\u0019�}· �}º�}±�}¹ �}´�}¹�}±Ï⬠�}±�}½�}® Ï�\u001a��}±�}º�}­Ï�~�}± �}³�}¹�}± Ï�~�}¿Ï�\u001a��}¹�}º�}¿ÏÏ�a Ï�\u001a��}±ÏÏ�\u0019Ï⬡�}¿Ï⬦Ï�a Ï⬦Ï�\u001a��}·Ï�}µÏ�\u0019�}¹ÏŽ�}½ Ï�\u0019Ï�~�}· �}�S�}µÏ�}¼�}±�}½�}¯�}±.",
+    "toFaq": "�}�\u001c�}µÏ�~�}±�}²�}µ�}¯Ï�~�}µ Ï�\u0019Ï�~�}¹Ï�a �}£Ï⬦�}½�}®�}¸�}µ�}¹Ï�a �}⬢ÏÏ⬰Ï�~�}®Ï�\u0019�}µ�}¹Ï�a",
+    "partnersTitle": "�}£Ï�~�}¹�}³�}¼�}¹Ï�\u0019Ï�~Ï⬦Ï�\u001a��}±, �}¿�}¼�}¬�}´�}µÏ�a-Ï�\u0019Ï�~Ï�\u0019Ï⬡�}¿�}¹ �}º�}±�}¹ Ï⬦Ï�\u001a��}·Ï�}µÏ�\u0019�}¯�}µÏ�a",
     "groups": {
-      "highlights": "Χαρακτηριστικά",
-      "forWhom": "Για ποιον",
-      "services": "Υπηρεσίες"
+      "highlights": "�}§�}±Ï�}±�}ºÏ�~�}·Ï�}¹Ï�\u0019Ï�~�}¹�}º�}¬",
+      "forWhom": "�}�S�}¹�}± Ï�\u001a��}¿�}¹�}¿�}½",
+      "services": "�}¥Ï�\u001a��}·Ï�}µÏ�\u0019�}¯�}µÏ�a"
     },
     "partners": {
       "fastLoad": {
-        "title": "Φόρτωσε γρήγορα",
-        "desc": "Η σελίδα φορτώνεται σε δευτερόλεπτα"
+        "title": "�}¦Ï�\u0019ÏÏ�~Ï⬰Ï�\u0019�}µ �}³Ï�}®�}³�}¿Ï�}±",
+        "desc": "�}�\u001d Ï�\u0019�}µ�}»�}¯�}´�}± Ï⬠�}¿ÏÏ�~ÏŽ�}½�}µÏ�~�}±�}¹ Ï�\u0019�}µ �}´�}µÏ⬦Ï�~�}µÏÏ�\u0019�}»�}µÏ�\u001a�Ï�~�}±"
       },
       "moreLeads": {
-        "title": "Περισσότερες ερωτήσεις",
-        "desc": "Περισσότερες επαφές μέσω φορμών"
+        "title": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}µÏ�a �}µÏÏ⬰Ï�~�}®Ï�\u0019�}µ�}¹Ï�a",
+        "desc": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}µÏ�a �}µÏ�\u001a��}±Ï⬠�}­Ï�a �}¼�}­Ï�\u0019Ï⬰ Ï⬠�}¿Ï�}¼ÏŽ�}½"
       },
       "clearPrices": {
-        "title": "Καθαρές τιμές",
-        "desc": "Γνωρίζετε το κόστος εκ των προτέρων"
+        "title": "�}š�}±�}¸�}±Ï�}­Ï�a Ï�~�}¹�}¼�}­Ï�a",
+        "desc": "�}�S�}½Ï⬰Ï�}¯�}¶�}µÏ�~�}µ Ï�~�}¿ �}ºÏ�\u0019Ï�\u0019Ï�~�}¿Ï�a �}µ�}º Ï�~Ï⬰�}½ Ï�\u001a�Ï�}¿Ï�~�}­ÏÏ⬰�}½"
       },
       "personalHelp": {
-        "title": "Προσωπική βοήθεια",
-        "desc": "Άμεση υποστήριξη χωρίς να περιμένετε στην ουρά"
+        "title": "�} Ï�}¿Ï�\u0019Ï⬰Ï�\u001a��}¹�}º�}® �}²�}¿�}®�}¸�}µ�}¹�}±",
+        "desc": "�}⬠�}¼�}µÏ�\u0019�}· Ï⬦Ï�\u001a��}¿Ï�\u0019Ï�~�}®Ï�}¹�}¾�}· Ï⬡Ï⬰Ï�}¯Ï�a �}½�}± Ï�\u001a��}µÏ�}¹�}¼�}­�}½�}µÏ�~�}µ Ï�\u0019Ï�~�}·�}½ �}¿Ï⬦Ï�}¬"
       },
       "handwerker": {
-        "title": "τεχνίτης",
-        "desc": "Αιτήματα ανά πόλη και υπηρεσία"
+        "title": "Ï�~�}µÏ⬡�}½�}¯Ï�~�}·Ï�a",
+        "desc": "�}���}¹Ï�~�}®�}¼�}±Ï�~�}± �}±�}½�}¬ Ï�\u001a�Ï�\u0019�}»�}· �}º�}±�}¹ Ï⬦Ï�\u001a��}·Ï�}µÏ�\u0019�}¯�}±"
       },
       "praxen": {
-        "title": "πρακτικές",
-        "desc": "Οι ασθενείς βρίσκουν ραντεβού πιο γρήγορα"
+        "title": "Ï�\u001a�Ï�}±�}ºÏ�~�}¹�}º�}­Ï�a",
+        "desc": "�}Ÿ�}¹ �}±Ï�\u0019�}¸�}µ�}½�}µ�}¯Ï�a �}²Ï�}¯Ï�\u0019�}º�}¿Ï⬦�}½ Ï�}±�}½Ï�~�}µ�}²�}¿Ï Ï�\u001a��}¹�}¿ �}³Ï�}®�}³�}¿Ï�}±"
       },
       "werkstaetten": {
-        "title": "εργαστήρια",
-        "desc": "Εκκαθάριση σελίδων υπηρεσίας με παρακολούθηση"
+        "title": "�}µÏ�}³�}±Ï�\u0019Ï�~�}®Ï�}¹�}±",
+        "desc": "�}⬢�}º�}º�}±�}¸�}¬Ï�}¹Ï�\u0019�}· Ï�\u0019�}µ�}»�}¯�}´Ï⬰�}½ Ï⬦Ï�\u001a��}·Ï�}µÏ�\u0019�}¯�}±Ï�a �}¼�}µ Ï�\u001a��}±Ï�}±�}º�}¿�}»�}¿Ï�}¸�}·Ï�\u0019�}·"
       },
       "localServices": {
-        "title": "Τοπικές υπηρεσίες",
-        "desc": "Περισσότερη ορατότητα στον ιστότοπο"
+        "title": "�}¤�}¿Ï�\u001a��}¹�}º�}­Ï�a Ï⬦Ï�\u001a��}·Ï�}µÏ�\u0019�}¯�}µÏ�a",
+        "desc": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}· �}¿Ï�}±Ï�~Ï�\u0019Ï�~�}·Ï�~�}± Ï�\u0019Ï�~�}¿�}½ �}¹Ï�\u0019Ï�~Ï�\u0019Ï�~�}¿Ï�\u001a��}¿"
       },
       "websites": {
         "title": "Websites",
-        "desc": "Σύγχρονο, γρήγορο, βελτιστοποιημένο για κινητά"
+        "desc": "�}£Ï�}³Ï⬡Ï�}¿�}½�}¿, �}³Ï�}®�}³�}¿Ï�}¿, �}²�}µ�}»Ï�~�}¹Ï�\u0019Ï�~�}¿Ï�\u001a��}¿�}¹�}·�}¼�}­�}½�}¿ �}³�}¹�}± �}º�}¹�}½�}·Ï�~�}¬"
       },
       "webApps": {
-        "title": "Εφαρμογές Ιστού",
-        "desc": "Εργαλεία για ομάδα και πελάτες"
+        "title": "�}⬢Ï⬠�}±Ï�}¼�}¿�}³�}­Ï�a �}�\u001e�Ï�\u0019Ï�~�}¿Ï",
+        "desc": "�}⬢Ï�}³�}±�}»�}µ�}¯�}± �}³�}¹�}± �}¿�}¼�}¬�}´�}± �}º�}±�}¹ Ï�\u001a��}µ�}»�}¬Ï�~�}µÏ�a"
       },
       "aiIntegration": {
-        "title": "Ενσωμάτωση AI",
-        "desc": "Chatbot για ερωτήσεις και δυνητικούς πελάτες"
+        "title": "�}⬢�}½Ï�\u0019Ï⬰�}¼�}¬Ï�~Ï⬰Ï�\u0019�}· AI",
+        "desc": "Chatbot �}³�}¹�}± �}µÏÏ⬰Ï�~�}®Ï�\u0019�}µ�}¹Ï�a �}º�}±�}¹ �}´Ï⬦�}½�}·Ï�~�}¹�}º�}¿ÏÏ�a Ï�\u001a��}µ�}»�}¬Ï�~�}µÏ�a"
       },
       "socialMedia": {
         "title": "Social Media",
-        "desc": "Ιστότοπος + Instagram/Meta συνδεδεμένος"
+        "desc": "�}�\u001e�Ï�\u0019Ï�~Ï�\u0019Ï�~�}¿Ï�\u001a��}¿Ï�a + Instagram/Meta Ï�\u0019Ï⬦�}½�}´�}µ�}´�}µ�}¼�}­�}½�}¿Ï�a"
       },
       "socialAds": {
-        "title": "Διαφημίσεις κοινωνικής δικτύωσης",
-        "desc": "Στοχευμένη διαφήμιση με μετρήσιμα αποτελέσματα"
+        "title": "�}⬝�}¹�}±Ï⬠�}·�}¼�}¯Ï�\u0019�}µ�}¹Ï�a �}º�}¿�}¹�}½Ï⬰�}½�}¹�}º�}®Ï�a �}´�}¹�}ºÏ�~ÏÏ⬰Ï�\u0019�}·Ï�a",
+        "desc": "�}£Ï�~�}¿Ï⬡�}µÏ⬦�}¼�}­�}½�}· �}´�}¹�}±Ï⬠�}®�}¼�}¹Ï�\u0019�}· �}¼�}µ �}¼�}µÏ�~Ï�}®Ï�\u0019�}¹�}¼�}± �}±Ï�\u001a��}¿Ï�~�}µ�}»�}­Ï�\u0019�}¼�}±Ï�~�}±"
       }
     },
-    "trustTitle": "Εμπιστευτείτε συγκεκριμένα αποτελέσματα",
-    "trustDesc1": "περισσότερα αιτήματα επικοινωνίας σε 60 ημέρες.",
-    "trustDesc2": "χαμηλότερο κόστος ανά δυνητικό πελάτη μετά την επιδιόρθωση παρακολούθησης.",
-    "trustDesc3": "μέσος χρόνος φόρτωσης σε κινητό.",
-    "faqTitle": "Συχνές ερωτήσεις",
+    "trustTitle": "�}⬢�}¼Ï�\u001a��}¹Ï�\u0019Ï�~�}µÏ⬦Ï�~�}µ�}¯Ï�~�}µ Ï�\u0019Ï⬦�}³�}º�}µ�}ºÏ�}¹�}¼�}­�}½�}± �}±Ï�\u001a��}¿Ï�~�}µ�}»�}­Ï�\u0019�}¼�}±Ï�~�}±",
+    "trustDesc1": "Ï�\u001a��}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}± �}±�}¹Ï�~�}®�}¼�}±Ï�~�}± �}µÏ�\u001a��}¹�}º�}¿�}¹�}½Ï⬰�}½�}¯�}±Ï�a Ï�\u0019�}µ 60 �}·�}¼�}­Ï�}µÏ�a.",
+    "trustDesc2": "Ï⬡�}±�}¼�}·�}»Ï�\u0019Ï�~�}µÏ�}¿ �}ºÏ�\u0019Ï�\u0019Ï�~�}¿Ï�a �}±�}½�}¬ �}´Ï⬦�}½�}·Ï�~�}¹�}ºÏ�\u0019 Ï�\u001a��}µ�}»�}¬Ï�~�}· �}¼�}µÏ�~�}¬ Ï�~�}·�}½ �}µÏ�\u001a��}¹�}´�}¹Ï�\u0019Ï�}¸Ï⬰Ï�\u0019�}· Ï�\u001a��}±Ï�}±�}º�}¿�}»�}¿Ï�}¸�}·Ï�\u0019�}·Ï�a.",
+    "trustDesc3": "�}¼�}­Ï�\u0019�}¿Ï�a Ï⬡ÏÏ�\u0019�}½�}¿Ï�a Ï⬠Ï�\u0019ÏÏ�~Ï⬰Ï�\u0019�}·Ï�a Ï�\u0019�}µ �}º�}¹�}½�}·Ï�~Ï�\u0019.",
+    "faqTitle": "�}£Ï⬦Ï⬡�}½�}­Ï�a �}µÏÏ⬰Ï�~�}®Ï�\u0019�}µ�}¹Ï�a",
     "faq": {
-      "q1": "Πόσο γρήγορα μπορείτε να ξεκινήσετε;",
-      "a1": "Συνήθως ξεκινάμε μέσα σε 3-5 εργάσιμες ημέρες. Αμέσως μετά το αίτημά σας θα λάβετε ένα σύντομο σχέδιο με τα πρώτα βήματα.",
-      "q2": "Τι χρειάζομαι ως πελάτης στην αρχή;",
-      "a2": "Μόνο βασικές πληροφορίες σχετικά με την προσφορά, την ομάδα-στόχο και τα κανάλια επικοινωνίας σας. Στη συνέχεια θα σας βοηθήσουμε με τη δομή, τα κείμενα και τις προτεραιότητες.",
-      "q3": "Πώς λειτουργεί η συνεργασία;",
-      "a3": "Εργαζόμαστε σε σύντομα στάδια: ιδέα, σχεδιασμός, υλοποίηση, έναρξη. Θα λαμβάνετε σαφείς ενημερώσεις, ώστε να γνωρίζετε πάντα τι θα συμβεί στη συνέχεια.",
-      "q4": "Είναι κατάλληλο για μικρές επιχειρήσεις;",
-      "a4": "Ναι. Τα πακέτα μας έχουν σχεδιαστεί σκόπιμα για τοπικές επιχειρήσεις: σαφείς τιμές, γρήγορη εκκίνηση και εστίαση σε πραγματικές αναζητήσεις αντί για οπτικά.",
-      "q5": "Τι συμβαίνει μετά την κυκλοφορία;",
-      "a5": "Μετά την κυκλοφορία, ελέγχουμε δεδομένα, βελτιώνουμε τα σημεία μετατροπής και σας υποστηρίζουμε με τη βελτιστοποίηση, ώστε ο ιστότοπος να αποδίδει καλύτερα μακροπρόθεσμα.",
-      "desc": "Απαντάει σε συχνές ερωτήσεις σχετικά με το χρονοδιάγραμμα, το κόστος, τη διαδικασία εκκίνησης και τη συνεχή υποστήριξη."
+      "q1": "�} Ï�\u0019Ï�\u0019�}¿ �}³Ï�}®�}³�}¿Ï�}± �}¼Ï�\u001a��}¿Ï�}µ�}¯Ï�~�}µ �}½�}± �}¾�}µ�}º�}¹�}½�}®Ï�\u0019�}µÏ�~�}µ;",
+      "a1": "�}£Ï⬦�}½�}®�}¸Ï⬰Ï�a �}¾�}µ�}º�}¹�}½�}¬�}¼�}µ �}¼�}­Ï�\u0019�}± Ï�\u0019�}µ 3-5 �}µÏ�}³�}¬Ï�\u0019�}¹�}¼�}µÏ�a �}·�}¼�}­Ï�}µÏ�a. �}���}¼�}­Ï�\u0019Ï⬰Ï�a �}¼�}µÏ�~�}¬ Ï�~�}¿ �}±�}¯Ï�~�}·�}¼�}¬ Ï�\u0019�}±Ï�a �}¸�}± �}»�}¬�}²�}µÏ�~�}µ �}­�}½�}± Ï�\u0019Ï�}½Ï�~�}¿�}¼�}¿ Ï�\u0019Ï⬡�}­�}´�}¹�}¿ �}¼�}µ Ï�~�}± Ï�\u001a�ÏÏŽÏ�~�}± �}²�}®�}¼�}±Ï�~�}±.",
+      "q2": "�}¤�}¹ Ï⬡Ï�}µ�}¹�}¬�}¶�}¿�}¼�}±�}¹ Ï⬰Ï�a Ï�\u001a��}µ�}»�}¬Ï�~�}·Ï�a Ï�\u0019Ï�~�}·�}½ �}±ÏÏ⬡�}®;",
+      "a2": "�}�\u001cÏ�\u0019�}½�}¿ �}²�}±Ï�\u0019�}¹�}º�}­Ï�a Ï�\u001a��}»�}·Ï�}¿Ï⬠�}¿Ï�}¯�}µÏ�a Ï�\u0019Ï⬡�}µÏ�~�}¹�}º�}¬ �}¼�}µ Ï�~�}·�}½ Ï�\u001a�Ï�}¿Ï�\u0019Ï⬠�}¿Ï�}¬, Ï�~�}·�}½ �}¿�}¼�}¬�}´�}±-Ï�\u0019Ï�~Ï�\u0019Ï⬡�}¿ �}º�}±�}¹ Ï�~�}± �}º�}±�}½�}¬�}»�}¹�}± �}µÏ�\u001a��}¹�}º�}¿�}¹�}½Ï⬰�}½�}¯�}±Ï�a Ï�\u0019�}±Ï�a. �}£Ï�~�}· Ï�\u0019Ï⬦�}½�}­Ï⬡�}µ�}¹�}± �}¸�}± Ï�\u0019�}±Ï�a �}²�}¿�}·�}¸�}®Ï�\u0019�}¿Ï⬦�}¼�}µ �}¼�}µ Ï�~�}· �}´�}¿�}¼�}®, Ï�~�}± �}º�}µ�}¯�}¼�}µ�}½�}± �}º�}±�}¹ Ï�~�}¹Ï�a Ï�\u001a�Ï�}¿Ï�~�}µÏ�}±�}¹Ï�\u0019Ï�~�}·Ï�~�}µÏ�a.",
+      "q3": "�} ÏŽÏ�a �}»�}µ�}¹Ï�~�}¿Ï⬦Ï�}³�}µ�}¯ �}· Ï�\u0019Ï⬦�}½�}µÏ�}³�}±Ï�\u0019�}¯�}±;",
+      "a3": "�}⬢Ï�}³�}±�}¶Ï�\u0019�}¼�}±Ï�\u0019Ï�~�}µ Ï�\u0019�}µ Ï�\u0019Ï�}½Ï�~�}¿�}¼�}± Ï�\u0019Ï�~�}¬�}´�}¹�}±: �}¹�}´�}­�}±, Ï�\u0019Ï⬡�}µ�}´�}¹�}±Ï�\u0019�}¼Ï�\u0019Ï�a, Ï⬦�}»�}¿Ï�\u001a��}¿�}¯�}·Ï�\u0019�}·, �}­�}½�}±Ï�}¾�}·. �}�S�}± �}»�}±�}¼�}²�}¬�}½�}µÏ�~�}µ Ï�\u0019�}±Ï⬠�}µ�}¯Ï�a �}µ�}½�}·�}¼�}µÏÏŽÏ�\u0019�}µ�}¹Ï�a, ÏŽÏ�\u0019Ï�~�}µ �}½�}± �}³�}½Ï⬰Ï�}¯�}¶�}µÏ�~�}µ Ï�\u001a��}¬�}½Ï�~�}± Ï�~�}¹ �}¸�}± Ï�\u0019Ï⬦�}¼�}²�}µ�}¯ Ï�\u0019Ï�~�}· Ï�\u0019Ï⬦�}½�}­Ï⬡�}µ�}¹�}±.",
+      "q4": "�}⬢�}¯�}½�}±�}¹ �}º�}±Ï�~�}¬�}»�}»�}·�}»�}¿ �}³�}¹�}± �}¼�}¹�}ºÏ�}­Ï�a �}µÏ�\u001a��}¹Ï⬡�}µ�}¹Ï�}®Ï�\u0019�}µ�}¹Ï�a;",
+      "a4": "�}�}±�}¹. �}¤�}± Ï�\u001a��}±�}º�}­Ï�~�}± �}¼�}±Ï�a �}­Ï⬡�}¿Ï⬦�}½ Ï�\u0019Ï⬡�}µ�}´�}¹�}±Ï�\u0019Ï�~�}µ�}¯ Ï�\u0019�}ºÏ�\u0019Ï�\u001a��}¹�}¼�}± �}³�}¹�}± Ï�~�}¿Ï�\u001a��}¹�}º�}­Ï�a �}µÏ�\u001a��}¹Ï⬡�}µ�}¹Ï�}®Ï�\u0019�}µ�}¹Ï�a: Ï�\u0019�}±Ï⬠�}µ�}¯Ï�a Ï�~�}¹�}¼�}­Ï�a, �}³Ï�}®�}³�}¿Ï�}· �}µ�}º�}º�}¯�}½�}·Ï�\u0019�}· �}º�}±�}¹ �}µÏ�\u0019Ï�~�}¯�}±Ï�\u0019�}· Ï�\u0019�}µ Ï�\u001a�Ï�}±�}³�}¼�}±Ï�~�}¹�}º�}­Ï�a �}±�}½�}±�}¶�}·Ï�~�}®Ï�\u0019�}µ�}¹Ï�a �}±�}½Ï�~�}¯ �}³�}¹�}± �}¿Ï�\u001a�Ï�~�}¹�}º�}¬.",
+      "q5": "�}¤�}¹ Ï�\u0019Ï⬦�}¼�}²�}±�}¯�}½�}µ�}¹ �}¼�}µÏ�~�}¬ Ï�~�}·�}½ �}ºÏ⬦�}º�}»�}¿Ï⬠�}¿Ï�}¯�}±;",
+      "a5": "�}�\u001c�}µÏ�~�}¬ Ï�~�}·�}½ �}ºÏ⬦�}º�}»�}¿Ï⬠�}¿Ï�}¯�}±, �}µ�}»�}­�}³Ï⬡�}¿Ï⬦�}¼�}µ �}´�}µ�}´�}¿�}¼�}­�}½�}±, �}²�}µ�}»Ï�~�}¹ÏŽ�}½�}¿Ï⬦�}¼�}µ Ï�~�}± Ï�\u0019�}·�}¼�}µ�}¯�}± �}¼�}µÏ�~�}±Ï�~Ï�}¿Ï�\u001a��}®Ï�a �}º�}±�}¹ Ï�\u0019�}±Ï�a Ï⬦Ï�\u001a��}¿Ï�\u0019Ï�~�}·Ï�}¯�}¶�}¿Ï⬦�}¼�}µ �}¼�}µ Ï�~�}· �}²�}µ�}»Ï�~�}¹Ï�\u0019Ï�~�}¿Ï�\u001a��}¿�}¯�}·Ï�\u0019�}·, ÏŽÏ�\u0019Ï�~�}µ �}¿ �}¹Ï�\u0019Ï�~Ï�\u0019Ï�~�}¿Ï�\u001a��}¿Ï�a �}½�}± �}±Ï�\u001a��}¿�}´�}¯�}´�}µ�}¹ �}º�}±�}»ÏÏ�~�}µÏ�}± �}¼�}±�}ºÏ�}¿Ï�\u001a�ÏÏ�\u0019�}¸�}µÏ�\u0019�}¼�}±.",
+      "desc": "Απαντησεις σε συχνες ερωτησεις για χρονο, κοστος, λανσαρισμα και υποστηριξη."
     },
     "hero": {
       "bento": {
         "speed": {
-          "label": "ταχύτητα",
-          "value": "90+ Φάρος"
+          "label": "Geschwindigkeit",
+          "value": "90+ Lighthouse"
         },
         "seo": {
           "label": "SEO",
-          "value": "Τεχνική θεμελίωση"
+          "value": "Technisches Fundament"
         },
         "leads": {
-          "label": "ερωτήματα",
-          "value": "Εκκαθάριση CTA και φόρμες"
+          "label": "Anfragen",
+          "value": "Klare CTA und Formulare"
         },
         "support": {
-          "label": "Υποστήριξη",
-          "value": "Μετά την εκκίνηση"
+          "label": "Support",
+          "value": "Nach dem Launch"
         }
       }
     },
     "partnersSection": {
-      "title": "Πλεονεκτήματα και τομείς εφαρμογής",
-      "desc": "Ποιες εργασίες καλύπτουμε και ποιες τοπικές εταιρείες εφαρμόζουμε συχνότερα ιστοτόπους και διοχετεύσεις δυνητικών πελατών."
+      "title": "Πλεονεκτηματα και τομεις",
+      "desc": "Welche Aufgaben wir abdecken und für welche lokalen Unternehmen wir am häufigsten Websites und Lead-Funnels umsetzen."
     },
     "marquee": {
-      "aria": "Βιομηχανίες",
-      "title": "Βιομηχανίες με τις οποίες συνεργαζόμαστε",
-      "desc": "Επιλέξτε μια κατεύθυνση και δείτε κατάλληλα παραδείγματα στυλ. Αυτό σημαίνει ότι μπορούμε να δημιουργήσουμε μια ακριβή προσφορά για την εταιρεία σας πιο γρήγορα.",
+      "aria": "Branchen",
+      "title": "Κλαδοι με τους οποιους δουλευουμε",
+      "desc": "Wählen Sie eine Richtung und sehen Sie passende Stilbeispiele. So bauen wir schneller ein präzises Angebot für Ihr Unternehmen.",
       "items": {
-        "handwerk": "Χειροτεχνία",
-        "praxen": "πρακτικές",
+        "handwerk": "Handwerk",
+        "praxen": "Praxen",
         "werkstaetten": "Werkstätten",
         "gastronomie": "Gastronomie",
-        "beauty": "Ομορφιά",
+        "beauty": "Beauty",
         "immobilien": "Immobilien",
-        "kanzlei": "δικηγορικό γραφείο",
-        "fitness": "Γυμναστική",
-        "reinigung": "Καθαρισμός",
-        "transport": "Συγκοινωνία",
-        "coaching": "Προπονητική",
-        "bildung": "Εκπαίδευση"
+        "kanzlei": "Kanzlei",
+        "fitness": "Fitness",
+        "reinigung": "Reinigung",
+        "transport": "Transport",
+        "coaching": "Coaching",
+        "bildung": "Bildung"
       }
     },
     "process": {
-      "title": "Πώς δουλεύουμε",
-      "desc": "Μια διαφανής διαδικασία χωρίς περιττά βήματα: από μια σύντομη ενημέρωση έως την έναρξη και τη βελτιστοποίηση με σαφείς προθεσμίες.",
-      "aria": "Φάσεις έργου",
-      "stage": "φάση",
+      "title": "Πως δουλευουμε",
+      "desc": "Ein transparenter Prozess ohne unnötige Schritte: vom kurzen Briefing bis zu Launch und Optimierung mit klaren Deadlines.",
+      "aria": "Projektphasen",
+      "stage": "Phase",
       "nav": {
-        "prev": "Πίσω",
-        "next": "Επόμενο"
+        "prev": "Zurück",
+        "next": "Weiter"
       },
       "steps": {
         "s1": {
-          "title": "15λεπτη κλήση",
-          "text": "Διευκρινίζουμε την εργασία, το KPI και την προθεσμία και συμφωνούμε αμέσως για τη μορφή εκκίνησης."
+          "title": "15-Minuten-Call",
+          "text": "Wir klären Aufgabe, KPI und Deadline und stimmen sofort das Launch-Format ab."
         },
         "s2": {
-          "title": "Πρωτότυπο σε 48 ώρες",
-          "text": "Δείχνουμε τη δομή της σελίδας, το CTA και τη ροή πελατών πριν από την ανάπτυξη."
+          "title": "Prototyp in 48h",
+          "text": "Wir zeigen Seitenstruktur, CTA und Lead-Flow vor der Entwicklung."
         },
         "s3": {
-          "title": "Ανάπτυξη σε 7-14 ημέρες",
-          "text": "Υλοποίηση, βάση SEO, ενσωματώσεις και αναλυτικά στοιχεία χωρίς περιττά έξοδα."
+          "title": "Entwicklung in 7-14 Tagen",
+          "text": "Umsetzung, SEO-Basis, Integrationen und Analytics ohne unnötigen Overhead."
         },
         "s4": {
-          "title": "Εκκίνηση και βελτιστοποίηση",
-          "text": "Εμφανιζόμαστε ζωντανά, ελέγχουμε τη μετατροπή και προσφέρουμε ένα πρόγραμμα βελτίωσης 30 ημερών."
+          "title": "Launch und Optimierung",
+          "text": "Wir gehen live, prüfen Conversion und liefern einen 30-Tage-Verbesserungsplan."
         }
       }
     },
     "projects": {
-      "title": "Έργα / Case Studies",
-      "desc": "Πραγματικές εργασίες και αναμενόμενα αποτελέσματα χωρίς κενές υποσχέσεις. Τοποθετήστε το δείκτη του ποντικιού σε μια θήκη για ζωντανή προεπισκόπηση.",
+      "title": "Εργα / Μελετες περιπτωσης",
+      "desc": "Reale Aufgaben und erwartbare Ergebnisse ohne leere Versprechen. Hover auf einen Case für Live-Preview.",
       "cards": {
         "c1": {
-          "title": "Τοπικός ιστότοπος διερεύνησης",
-          "description": "Σελίδα προορισμού με έμφαση σε φόρμες, κλήσεις και γρήγορη επαφή μέσω κινητού.",
-          "goal": "Στόχος: περισσότερες έρευνες χωρίς αύξηση του προϋπολογισμού"
+          "title": "Website für lokale Anfragen",
+          "description": "Landingpage mit Fokus auf Formular, Anruf und schnellen Mobile-Kontakt.",
+          "goal": "Ziel: mehr Anfragen ohne Budgeterhöhung"
         },
         "c2": {
-          "title": "Σελίδα προορισμού για διαφημίσεις",
-          "description": "Ξεχωριστή σελίδα με παρακολούθηση για καμπάνιες Meta και Google.",
-          "goal": "Αναμενόμενο αποτέλεσμα: πιο κατάλληλοι δυνητικοί πελάτες από διαφημίσεις"
+          "title": "Landingpage für Ads",
+          "description": "Separate Seite mit Tracking für Meta- und Google-Kampagnen.",
+          "goal": "Erwarteter Effekt: qualifiziertere Leads aus Werbung"
         },
         "c3": {
-          "title": "Ιστότοπος για εξάσκηση",
-          "description": "Σαφής δομή υπηρεσιών, συχνές ερωτήσεις και ροή διαδικτυακών ραντεβού.",
-          "goal": "Στόχος: περισσότερες κρατήσεις ραντεβού με λιγότερα ερωτήματα"
+          "title": "Website für Praxis",
+          "description": "Klare Leistungsstruktur, FAQ und Online-Termin-Flow.",
+          "goal": "Ziel: mehr Terminbuchungen mit weniger Rückfragen"
         },
         "c4": {
-          "title": "Ταμπλό για δυνητικούς πελάτες",
-          "description": "Εσωτερική διεπαφή για επεξεργασία δυνητικού πελάτη και έλεγχο κατάστασης.",
-          "goal": "Αναμενόμενο αποτέλεσμα: ταχύτερη επεξεργασία των αιτημάτων"
+          "title": "Dashboard für Leads",
+          "description": "Internes Interface zur Lead-Bearbeitung und Statuskontrolle.",
+          "goal": "Erwarteter Effekt: schnellere Bearbeitung von Anfragen"
         }
       }
     },
     "configurator": {
-      "title": "Διαμορφωτής προσφοράς",
-      "desc": "Επιλέξτε παραμέτρους έργου και λάβετε μια τιμή εκκίνησης και τα κατάλληλα ποσοστά υποστήριξης.",
+      "title": "Διαμορφωτης προσφορας",
+      "desc": "Wählen Sie Projektparameter und erhalten Sie einen Startpreis sowie passende Support-Tarife.",
       "labels": {
-        "goal": "Στόχος",
-        "integrations": "Ενσωματώσεις",
-        "ads": "Διαφήμιση",
-        "term": "χρονικό πλαίσιο",
+        "goal": "Ziel",
+        "integrations": "Integrationen",
+        "ads": "Werbung",
+        "term": "Zeitrahmen",
         "content": "Content-Level",
-        "languages": "γλώσσες",
-        "hosting": "Φιλοξενία",
+        "languages": "Sprachen",
+        "hosting": "Hosting",
         "domain": "Domain",
-        "pages": "σελίδες",
+        "pages": "Seiten",
         "seo": "SEO"
       },
       "options": {
         "common": {
-          "other": "Άλλοι"
+          "other": "Andere"
         },
         "goal": {
-          "leads": "Προηγείται",
-          "calls": "κλήσεις",
-          "booking": "κρατήσεις"
+          "leads": "Leads",
+          "calls": "Anrufe",
+          "booking": "Buchungen"
         },
         "integrations": {
-          "booking": "κράτηση",
+          "booking": "Buchung",
           "crm": "CRM",
-          "chat": "Συνομιλία",
-          "payments": "πληρωμές"
+          "chat": "Chat",
+          "payments": "Zahlungen"
         },
         "ads": {
-          "none": "Χωρίς διαφήμιση",
+          "none": "Ohne Werbung",
           "meta": "Meta",
           "google": "Google"
         },
         "term": {
-          "up_to_7": "Έως 1 εβδομάδα",
-          "from_7_to_14": "7-14 ημέρες",
-          "from_14_to_21": "14-21 ημέρες",
-          "from_21_to_30": "21-30 ημέρες"
+          "up_to_7": "Bis 1 Woche",
+          "from_7_to_14": "7-14 Tage",
+          "from_14_to_21": "14-21 Tage",
+          "from_21_to_30": "21-30 Tage"
         },
         "content": {
-          "has": "Διαθέσιμα κείμενα",
-          "copy": "Απαιτείται copywriting"
+          "has": "Texte vorhanden",
+          "copy": "Copywriting nötig"
         },
         "languages": {
-          "basic": "1 γλώσσα",
-          "multi": "2+ γλώσσες"
+          "basic": "1 Sprache",
+          "multi": "2+ Sprachen"
         },
         "hosting": {
-          "shared": "Κοινόχρηστη φιλοξενία",
+          "shared": "Shared Hosting",
           "vps": "VPS",
-          "managed": "Διαχειριζόμενη φιλοξενία"
+          "managed": "Managed Hosting"
         },
         "domain": {
-          "new_domain": "Νέος τομέας",
+          "new_domain": "Neue Domain",
           "existing_domain": "Domain vorhanden",
-          "transfer": "Μεταφορά τομέα"
+          "transfer": "Domain-Transfer"
         },
         "pages": {
-          "one": "1 σελίδα",
-          "up_to_3": "Έως 3 σελίδες",
-          "five_plus": "5+ σελίδες"
+          "one": "1 Seite",
+          "up_to_3": "Bis 3 Seiten",
+          "five_plus": "5+ Seiten"
         },
         "seo": {
-          "base": "Βάση SEO",
+          "base": "SEO Base",
           "extended": "SEO Extended"
         }
       },
-      "reset": "Επαναφέρετε τα πάντα",
-      "empty": "Επιλέξτε τουλάχιστον μία επιλογή σε κάθε μπλοκ. Είναι δυνατή η πολλαπλή επιλογή. Για \"Άλλα\" δεν χρεώνεται πρόσθετη χρέωση.",
-      "recommended": "Συνιστάται:",
+      "reset": "Alles zurücksetzen",
+      "empty": "Wählen Sie mindestens eine Option in jedem Block. Mehrfachauswahl ist möglich; bei \"Andere\" wird keine Zusatzgebühr berechnet.",
+      "recommended": "Empfohlen:",
       "pack": {
-        "starter": "Μίζα",
-        "business": "Επιχείρηση"
+        "starter": "Starter",
+        "business": "Business"
       },
-      "launchPrice": "Τιμή εκκίνησης:",
-      "supportMonthly": "Υποστήριξη / Μήνας",
-      "supportYearly": "Υποστήριξη / έτος (-30%)",
-      "cta": "Αίτημα επικοινωνίας και ακριβής εκτίμηση κόστους",
+      "launchPrice": "Startpreis:",
+      "supportMonthly": "Support / Monat",
+      "supportYearly": "Support / Jahr (-30%)",
+      "cta": "Kontaktanfrage und exakter Kostenvoranschlag",
       "bullets": {
-        "prototype": "Πρωτότυπο και δομή με έμφαση στα αιτήματα",
-        "goal": "Στόχοι: {{value}}",
-        "integrations": "Ενσωματώσεις: {{value}}",
-        "term": "Χρονικό πλαίσιο: {{value}}",
-        "hosting": "Φιλοξενία: {{value}}",
-        "domain": "Τομέας: {{value}}",
-        "pages": "Σελίδες: {{value}}",
-        "analytics": "GA4 και παρακολούθηση συμβάντων για φόρμες/επαφές",
-        "copy_true": "Υποστήριξη με κείμενα και προσφορές",
-        "copy_false": "Εργαζόμαστε με τα υπάρχοντα κείμενά σας",
-        "market_note": "Κατευθυντήρια τιμή κάτω από το επίπεδο της αγοράς για μικρές εταιρείες"
+        "prototype": "Prototyp und Struktur mit Fokus auf Anfragen",
+        "goal": "Ziele: {{value}}",
+        "integrations": "Integrationen: {{value}}",
+        "term": "Zeitrahmen: {{value}}",
+        "hosting": "Hosting: {{value}}",
+        "domain": "Domain: {{value}}",
+        "pages": "Seiten: {{value}}",
+        "analytics": "GA4 und Event-Tracking für Formulare/Kontakte",
+        "copy_true": "Unterstützung bei Texten und Offer",
+        "copy_false": "Wir arbeiten mit Ihren vorhandenen Texten",
+        "market_note": "Orientierungspreis unter marktüblichem Niveau für kleine Unternehmen"
       },
       "brief": {
-        "title": "Επιστολή από τον διαμορφωτή προσφοράς:",
-        "goal": "Στόχος: {{value}}",
-        "integrations": "Ενσωματώσεις: {{value}}",
-        "ads": "Διαφήμιση: {{value}}",
-        "term": "Χρονικό πλαίσιο: {{value}}",
-        "content": "Περιεχόμενο: {{value}}",
-        "languages": "Γλώσσες: {{value}}",
-        "hosting": "Φιλοξενία: {{value}}",
-        "domain": "Τομέας: {{value}}",
-        "pages": "Σελίδες: {{value}}",
+        "title": "Brief aus dem Angebots-Konfigurator:",
+        "goal": "Ziel: {{value}}",
+        "integrations": "Integrationen: {{value}}",
+        "ads": "Werbung: {{value}}",
+        "term": "Zeitrahmen: {{value}}",
+        "content": "Content: {{value}}",
+        "languages": "Sprachen: {{value}}",
+        "hosting": "Hosting: {{value}}",
+        "domain": "Domain: {{value}}",
+        "pages": "Seiten: {{value}}",
         "seo": "SEO: {{value}}",
-        "launch_price": "Τιμή εκκίνησης: {{value}}",
-        "support_monthly": "Υποστήριξη / Μήνας: {{value}}",
-        "support_yearly": "Υποστήριξη / έτος (-30%): {{value}}"
+        "launch_price": "Startpreis: {{value}}",
+        "support_monthly": "Support / Monat: {{value}}",
+        "support_yearly": "Support / Jahr (-30%): {{value}}"
       }
     },
     "trust": {
-      "title": "Τι παίρνετε σε 14 ημέρες",
-      "desc": "Συγκεκριμένα αρχικά αποτελέσματα: ιστότοπος προσανατολισμένος στα ερωτήματα, δημιουργία αναλυτικών στοιχείων και σχέδιο για περαιτέρω ανάπτυξη.",
+      "title": "Τι θα παρεις σε 14 ημερες",
+      "desc": "Konkrete Start-Ergebnisse: eine anfrageorientierte Website, eingerichtete Analytics und ein Plan für weiteres Wachstum.",
       "deliverables": {
         "d1": {
-          "title": "Πρωτότυπο σε 48 ώρες",
-          "text": "Δείχνουμε δομή και CTA πριν από την κωδικοποίηση, ώστε να μπορούν να προγραμματιστούν οι αποφάσεις."
+          "title": "Prototyp in 48h",
+          "text": "Wir zeigen Struktur und CTA vor dem Coding, damit Entscheidungen planbar bleiben."
         },
         "d2": {
-          "title": "Ιστότοπος για ερωτήσεις",
-          "text": "Φόρμα, κλήση, messenger και έκδοση για κινητά για γρήγορη επικοινωνία."
+          "title": "Website für Anfragen",
+          "text": "Formular, Anruf, Messenger und mobile Version für schnelle Kontaktaufnahme."
         },
         "d3": {
-          "title": "Αναλύσεις και παρακολούθηση",
-          "text": "GA4 plus συμβάντα, ώστε να είναι ορατό όπου προκύπτουν ερωτήματα."
+          "title": "Analytics und Tracking",
+          "text": "GA4 plus Events, damit sichtbar wird, wo Anfragen entstehen."
         },
         "d4": {
-          "title": "Σχέδιο βελτιστοποίησης 30 ημερών",
-          "text": "Διαγράψτε τα επόμενα βήματα για να αυξήσετε τις μετατροπές μετά την κυκλοφορία."
+          "title": "30-Tage-Optimierungsplan",
+          "text": "Klare nächste Schritte zur Conversion-Steigerung nach Launch."
         }
       }
     }
@@ -397,7 +397,7 @@
       },
       "social": {
         "title": "Social Media",
-        "desc": "Content-Module, Channel-Verknüpfung, Kontaktpfade."
+        "desc": "Content-Module, Channel-VerknÒ¼pfung, Kontaktpfade."
       },
       "ads": {
         "title": "Social Ads",
@@ -438,58 +438,109 @@
       }
     },
     "packages": {
-      "title": "Paketa timologisis",
-      "badge": "Protino",
-      "coreTitle": "Core",
-      "plusTitle": "Plus",
-      "outcomeLabel": "Result:",
+      "title": "Î Î±ÎºÎ­Ï„Î± Ï„Î¹Î¼ÏŽÎ½",
+      "badge": "Î ÏÎ¿Ï„ÎµÎ¹Î½ÏŒÎ¼ÎµÎ½Î¿",
+      "billing": {
+        "monthly": "ÎœÎ®Î½Î±Ï‚",
+        "yearly": "ÎˆÏ„Î¿Ï‚"
+      },
+      "coreTitle": "Î’Î±ÏƒÎ¹ÎºÏŒ",
+      "plusTitle": "Î•Ï€Î¹Ï€Î»Î­Î¿Î½",
+      "subscriptionTitle": "Î£Ï…Î½Î´ÏÎ¿Î¼Î® Ï…Ï€Î¿ÏƒÏ„Î®ÏÎ¹Î¾Î·Ï‚",
+      "subscriptionIncludesTitle": "Î ÎµÏÎ¹Î»Î±Î¼Î²Î¬Î½ÎµÎ¹",
+      "outcomeLabel": "Î‘Ï€Î¿Ï„Î­Î»ÎµÏƒÎ¼Î±:",
       "starter": {
         "name": "Starter",
-        "desc": "For small local businesses with fast start.",
-        "price": "from EUR 690",
-        "range": "typical EUR 690-790",
+        "desc": "Î“Î¹Î± Î¼Î¹ÎºÏÎ­Ï‚ Ï„Î¿Ï€Î¹ÎºÎ­Ï‚ ÎµÏ€Î¹Ï‡ÎµÎ¹ÏÎ®ÏƒÎµÎ¹Ï‚ Î¼Îµ Î³ÏÎ®Î³Î¿ÏÎ· ÎµÎºÎºÎ¯Î½Î·ÏƒÎ·.",
+        "price": "Î±Ï€ÏŒ EUR 690",
+        "range": "ÏƒÏ…Î½Î®Î¸Ï‰Ï‚ EUR 690-790",
         "core": [
-          "Landing Page",
-          "Lead Form + Contact Form",
-          "GA4 + Basic SEO Setup"
+          "Landing page",
+          "Î¦ÏŒÏÎ¼Î± lead + Ï†ÏŒÏÎ¼Î± ÎµÏ€Î¹ÎºÎ¿Î¹Î½Ï‰Î½Î¯Î±Ï‚",
+          "GA4 + Î²Î±ÏƒÎ¹ÎºÎ® ÏÏÎ¸Î¼Î¹ÏƒÎ· SEO"
         ],
         "plus": [
-          "Mobile Optimization",
-          "Basic DSGVO Tracking"
+          "Î’ÎµÎ»Ï„Î¹ÏƒÏ„Î¿Ï€Î¿Î¯Î·ÏƒÎ· Î³Î¹Î± ÎºÎ¹Î½Î·Ï„Î¬",
+          "Î’Î±ÏƒÎ¹ÎºÏŒ DSGVO tracking"
         ],
-        "outcome": "Stable channel for first qualified requests."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 62 / Î¼Î®Î½Î±",
+            "meta": "Î²Î±ÏƒÎ¹ÎºÎ® Ï…Ï€Î¿ÏƒÏ„Î®ÏÎ¹Î¾Î· Î¼ÎµÏ„Î¬ Ï„Î¿ launch"
+          },
+          "yearly": {
+            "price": "EUR 521 / Î­Ï„Î¿Ï‚",
+            "meta": "12 Î¼Î®Î½ÎµÏ‚ Î¼Îµ Î­ÎºÏ€Ï„Ï‰ÏƒÎ· 30%"
+          },
+          "includes": [
+            "Î¤ÎµÏ‡Î½Î¹ÎºÎ­Ï‚ ÎµÎ½Î·Î¼ÎµÏÏŽÏƒÎµÎ¹Ï‚ ÎºÎ±Î¹ backups",
+            "ÎˆÎ»ÎµÎ³Ï‡Î¿Ï‚ Ï†Î¿ÏÎ¼ÏŽÎ½, conversions ÎºÎ±Î¹ Î²Î±ÏƒÎ¹ÎºÎ¿Ï tracking",
+            "ÎˆÏ‰Ï‚ 1 Ï€Î±ÎºÎ­Ï„Î¿ Î±Î»Î»Î±Î³ÏŽÎ½ Î® ÎµÎ½Î·Î¼ÎµÏÏŽÏƒÎµÏ‰Î½ Ï„Î¿Î½ Î¼Î®Î½Î±"
+          ]
+        },
+        "outcome": "Î£Ï„Î±Î¸ÎµÏÏŒ ÎºÎ±Î½Î¬Î»Î¹ Î³Î¹Î± Ï„Î± Ï€ÏÏŽÏ„Î± Ï€Î¿Î¹Î¿Ï„Î¹ÎºÎ¬ Î±Î¹Ï„Î®Î¼Î±Ï„Î±."
       },
       "business": {
         "name": "Business",
-        "desc": "For teams with multiple services and active sales.",
-        "price": "from EUR 1.290",
-        "range": "typical EUR 1.290-1.490",
+        "desc": "Î“Î¹Î± Î¿Î¼Î¬Î´ÎµÏ‚ Î¼Îµ Ï€Î¿Î»Î»Î±Ï€Î»Î­Ï‚ Ï…Ï€Î·ÏÎµÏƒÎ¯ÎµÏ‚ ÎºÎ±Î¹ ÎµÎ½ÎµÏÎ³Î­Ï‚ Ï€Ï‰Î»Î®ÏƒÎµÎ¹Ï‚.",
+        "price": "Î±Ï€ÏŒ EUR 1.290",
+        "range": "ÏƒÏ…Î½Î®Î¸Ï‰Ï‚ EUR 1.290-1.490",
         "core": [
-          "Multi-page Website up to 5 pages",
-          "CRM Integration + Lead Tracking",
-          "Analytics Dashboard"
+          "Î Î¿Î»Ï…ÏƒÎ­Î»Î¹Î´Î¿ website Î­Ï‰Ï‚ 5 ÏƒÎµÎ»Î¯Î´ÎµÏ‚",
+          "Î•Î½ÏƒÏ‰Î¼Î¬Ï„Ï‰ÏƒÎ· CRM + lead tracking",
+          "Analytics dashboard"
         ],
         "plus": [
-          "SEO Structure by Service",
-          "Conversion Optimization"
+          "SEO Î´Î¿Î¼Î® Î±Î½Î¬ Ï…Ï€Î·ÏÎµÏƒÎ¯Î±",
+          "Î’ÎµÎ»Ï„Î¹ÏƒÏ„Î¿Ï€Î¿Î¯Î·ÏƒÎ· conversion"
         ],
-        "outcome": "Predictable lead pipeline with clear reporting."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 86 / Î¼Î®Î½Î±",
+            "meta": "Ï…Ï€Î¿ÏƒÏ„Î®ÏÎ¹Î¾Î· Î³Î¹Î± website, CRM ÎºÎ±Î¹ analytics"
+          },
+          "yearly": {
+            "price": "EUR 722 / Î­Ï„Î¿Ï‚",
+            "meta": "12 Î¼Î®Î½ÎµÏ‚ Î¼Îµ Î­ÎºÏ€Ï„Ï‰ÏƒÎ· 30%"
+          },
+          "includes": [
+            "Î¤Î±ÎºÏ„Î¹ÎºÎ­Ï‚ ÎµÎ½Î·Î¼ÎµÏÏŽÏƒÎµÎ¹Ï‚ Ï€ÎµÏÎ¹ÎµÏ‡Î¿Î¼Î­Î½Î¿Ï… ÎºÎ±Î¹ ÏƒÎµÎ»Î¯Î´Ï‰Î½",
+            "ÎˆÎ»ÎµÎ³Ï‡Î¿Ï‚ CRM, lead tracking ÎºÎ±Î¹ dashboard",
+            "ÎˆÏ‰Ï‚ 2 tasks Ï„Î¿Î½ Î¼Î®Î½Î± Î³Î¹Î± Î²ÎµÎ»Ï„Î¯Ï‰ÏƒÎ· conversion"
+          ]
+        },
+        "outcome": "Î ÏÎ¿Î²Î»Î­ÏˆÎ¹Î¼Î· ÏÎ¿Î® leads Î¼Îµ ÎºÎ±Î¸Î±ÏÎ® Î±Î½Î±Î»Ï…Ï„Î¹ÎºÎ® ÎµÎ¹ÎºÏŒÎ½Î±."
       },
       "pro": {
         "name": "Pro",
-        "desc": "For growth with website, ads and automation.",
-        "price": "from EUR 2.490",
-        "range": "typical EUR 2.490-2.990",
+        "desc": "Î“Î¹Î± Î±Î½Î¬Ï€Ï„Ï…Î¾Î· Î¼Îµ website, ads ÎºÎ±Î¹ Î±Ï…Ï„Î¿Î¼Î±Ï„Î¿Ï€Î¿Î¯Î·ÏƒÎ·.",
+        "price": "Î±Ï€ÏŒ EUR 2.490",
+        "range": "ÏƒÏ…Î½Î®Î¸Ï‰Ï‚ EUR 2.490-2.990",
         "core": [
-          "Website + Ads Setup",
-          "Google Ads or Meta Ads",
-          "Marketing Dashboard + Tracking"
+          "Website + setup Ads",
+          "Google Ads Î® Meta Ads",
+          "Marketing dashboard + tracking"
         ],
         "plus": [
-          "AI Lead Qualification",
-          "Automation Flows"
+          "AI qualification Î³Î¹Î± leads",
+          "Automation flows"
         ],
-        "outcome": "More demand with controlled cost per lead."
+        "subscription": {
+          "monthly": {
+            "price": "EUR 160 / Î¼Î®Î½Î±",
+            "meta": "ÎµÎ½ÎµÏÎ³Î® Î´Î¹Î±Ï‡ÎµÎ¯ÏÎ¹ÏƒÎ· Ï„Î¿Ï… growth ÏƒÏ…ÏƒÏ„Î®Î¼Î±Ï„Î¿Ï‚"
+          },
+          "yearly": {
+            "price": "EUR 1.344 / Î­Ï„Î¿Ï‚",
+            "meta": "12 Î¼Î®Î½ÎµÏ‚ Î¼Îµ Î­ÎºÏ€Ï„Ï‰ÏƒÎ· 30%"
+          },
+          "includes": [
+            "Î•Î²Î´Î¿Î¼Î±Î´Î¹Î±Î¯Î¿Ï‚ Î­Î»ÎµÎ³Ï‡Î¿Ï‚ website, ads ÎºÎ±Î¹ automation flows",
+            "Î’ÎµÎ»Ï„Î¹ÏƒÏ„Î¿Ï€Î¿Î¯Î·ÏƒÎ· CPL, funnel ÎºÎ±Î¹ qualification leads",
+            "ÎˆÏ‰Ï‚ 4 growth tasks Ï„Î¿Î½ Î¼Î®Î½Î± + Ï€ÏÎ¿Ï„ÎµÏÎ±Î¹ÏŒÏ„Î·Ï„Î± ÏƒÏ„Î·Î½ Ï…Ï€Î¿ÏƒÏ„Î®ÏÎ¹Î¾Î·"
+          ]
+        },
+        "outcome": "Î ÎµÏÎ¹ÏƒÏƒÏŒÏ„ÎµÏÎ· Î¶Î®Ï„Î·ÏƒÎ· Î¼Îµ ÎµÎ»ÎµÎ³Ï‡ÏŒÎ¼ÎµÎ½Î¿ ÎºÏŒÏƒÏ„Î¿Ï‚ Î±Î½Î¬ lead."
       }
     },
     "comparison": {
@@ -533,32 +584,32 @@
     }
   },
   "references": {
-    "h1": "Αναφορές με μετρήσιμη ανάπτυξη.",
-    "subtitle": "Δείχνουμε καθαρά τι αυξήθηκε: αιτήματα, κρατήσεις, κλήσεις και leads.",
-    "trustline": "Όλα τα metrics με πλαίσιο: περίοδος και μέτρηση.",
-    "filterTitle": "Επιλογή κλάδου",
-    "filterAria": "Φίλτρο κλάδων",
-    "counter": "{{count}} σχετικά cases",
-    "growthByNiche": "Ανάπτυξη ανά κλάδο",
-    "selectedCases": "Επιλεγμένα cases",
-    "challengeLabel": "Αφετηρία",
-    "solutionLabel": "Λύση",
-    "periodLabel": "Περίοδος",
-    "measurementLabel": "Μέτρηση",
-    "emptyTitle": "Το επόμενο case για αυτόν τον κλάδο έρχεται σύντομα.",
-    "emptyText": "Δείχνουμε μόνο cases με αξιόπιστη μέτρηση και σαφή περίοδο.",
-    "beforeAfter": "Πριν / Μετά",
-    "before": "Πριν",
-    "after": "Μετά",
-    "beforeAlt": "Προβολή πριν",
-    "afterAlt": "Προβολή μετά",
-    "sliderAria": "Μετακίνηση σύγκρισης πριν/μετά",
-    "sliderHint": "Σύρε για σύγκριση.",
-    "ctaTitle": "Θέλετε παρόμοια αποτελέσματα;",
-    "ctaText": "Αναλύουμε την κατάσταση σας και δείχνουμε ρεαλιστικό πλάνο 30-90 ημερών.",
-    "cta": "Ζητήστε παρόμοιο project",
+    "h1": "�}���}½�}±Ï⬠�}¿Ï�}­Ï�a �}¼�}µ �}¼�}µÏ�~Ï�}®Ï�\u0019�}¹�}¼�}· �}±�}½�}¬Ï�\u001a�Ï�~Ï⬦�}¾�}·.",
+    "subtitle": "�}⬝�}µ�}¯Ï⬡�}½�}¿Ï⬦�}¼�}µ �}º�}±�}¸�}±Ï�}¬ Ï�~�}¹ �}±Ï⬦�}¾�}®�}¸�}·�}º�}µ: �}±�}¹Ï�~�}®�}¼�}±Ï�~�}±, �}ºÏ�}±Ï�~�}®Ï�\u0019�}µ�}¹Ï�a, �}º�}»�}®Ï�\u0019�}µ�}¹Ï�a �}º�}±�}¹ leads.",
+    "trustline": "�}�\u0019�}»�}± Ï�~�}± metrics �}¼�}µ Ï�\u001a��}»�}±�}¯Ï�\u0019�}¹�}¿: Ï�\u001a��}µÏ�}¯�}¿�}´�}¿Ï�a �}º�}±�}¹ �}¼�}­Ï�~Ï�}·Ï�\u0019�}·.",
+    "filterTitle": "�}⬢Ï�\u001a��}¹�}»�}¿�}³�}® �}º�}»�}¬�}´�}¿Ï⬦",
+    "filterAria": "�}¦�}¯�}»Ï�~Ï�}¿ �}º�}»�}¬�}´Ï⬰�}½",
+    "counter": "{{count}} Ï�\u0019Ï⬡�}µÏ�~�}¹�}º�}¬ cases",
+    "growthByNiche": "�}���}½�}¬Ï�\u001a�Ï�~Ï⬦�}¾�}· �}±�}½�}¬ �}º�}»�}¬�}´�}¿",
+    "selectedCases": "�}⬢Ï�\u001a��}¹�}»�}µ�}³�}¼�}­�}½�}± cases",
+    "challengeLabel": "�}��Ï⬠�}µÏ�~�}·Ï�}¯�}±",
+    "solutionLabel": "�}⬺ÏÏ�\u0019�}·",
+    "periodLabel": "�} �}µÏ�}¯�}¿�}´�}¿Ï�a",
+    "measurementLabel": "�}�\u001c�}­Ï�~Ï�}·Ï�\u0019�}·",
+    "emptyTitle": "�}¤�}¿ �}µÏ�\u001a�Ï�\u0019�}¼�}µ�}½�}¿ case �}³�}¹�}± �}±Ï⬦Ï�~Ï�\u0019�}½ Ï�~�}¿�}½ �}º�}»�}¬�}´�}¿ �}­ÏÏ⬡�}µÏ�~�}±�}¹ Ï�\u0019Ï�}½Ï�~�}¿�}¼�}±.",
+    "emptyText": "�}⬝�}µ�}¯Ï⬡�}½�}¿Ï⬦�}¼�}µ �}¼Ï�\u0019�}½�}¿ cases �}¼�}µ �}±�}¾�}¹Ï�\u0019Ï�\u001a��}¹Ï�\u0019Ï�~�}· �}¼�}­Ï�~Ï�}·Ï�\u0019�}· �}º�}±�}¹ Ï�\u0019�}±Ï⬠�}® Ï�\u001a��}µÏ�}¯�}¿�}´�}¿.",
+    "beforeAfter": "�} Ï�}¹�}½ / �}�\u001c�}µÏ�~�}¬",
+    "before": "�} Ï�}¹�}½",
+    "after": "�}�\u001c�}µÏ�~�}¬",
+    "beforeAlt": "�} Ï�}¿�}²�}¿�}»�}® Ï�\u001a�Ï�}¹�}½",
+    "afterAlt": "�} Ï�}¿�}²�}¿�}»�}® �}¼�}µÏ�~�}¬",
+    "sliderAria": "�}�\u001c�}µÏ�~�}±�}º�}¯�}½�}·Ï�\u0019�}· Ï�\u0019Ï�}³�}ºÏ�}¹Ï�\u0019�}·Ï�a Ï�\u001a�Ï�}¹�}½/�}¼�}µÏ�~�}¬",
+    "sliderHint": "�}£ÏÏ�}µ �}³�}¹�}± Ï�\u0019Ï�}³�}ºÏ�}¹Ï�\u0019�}·.",
+    "ctaTitle": "�}�S�}­�}»�}µÏ�~�}µ Ï�\u001a��}±ÏÏ�\u0019�}¼�}¿�}¹�}± �}±Ï�\u001a��}¿Ï�~�}µ�}»�}­Ï�\u0019�}¼�}±Ï�~�}±;",
+    "ctaText": "�}���}½�}±�}»Ï�}¿Ï⬦�}¼�}µ Ï�~�}·�}½ �}º�}±Ï�~�}¬Ï�\u0019Ï�~�}±Ï�\u0019�}· Ï�\u0019�}±Ï�a �}º�}±�}¹ �}´�}µ�}¯Ï⬡�}½�}¿Ï⬦�}¼�}µ Ï�}µ�}±�}»�}¹Ï�\u0019Ï�~�}¹�}ºÏ�\u0019 Ï�\u001a��}»�}¬�}½�}¿ 30-90 �}·�}¼�}µÏÏŽ�}½.",
+    "cta": "�}�\u001c�}·Ï�~�}®Ï�\u0019Ï�~�}µ Ï�\u001a��}±ÏÏ�\u0019�}¼�}¿�}¹�}¿ project",
     "filters": {
-      "all": "Όλα"
+      "all": "�}�\u0019�}»�}±"
     },
     "niches": {
       "handwerk": "Handwerk",
@@ -575,80 +626,80 @@
       "bildungKurse": "Bildung/Kurse"
     },
     "metrics": {
-      "moreRequests": "Περισσότερα αιτήματα",
-      "moreAppointments": "Περισσότερα ραντεβού",
-      "moreCalls": "Περισσότερες κλήσεις",
-      "moreReservations": "Περισσότερες κρατήσεις",
-      "moreBookings": "Περισσότερες κρατήσεις υπηρεσιών",
-      "moreLeads": "Περισσότερα leads",
-      "moreIntroCalls": "Περισσότερες αρχικές κλήσεις",
-      "moreTrialSessions": "Περισσότερες δοκιμαστικές συνεδρίες",
-      "moreOffers": "Περισσότερα αιτήματα προσφοράς",
-      "moreQualifiedLeads": "Περισσότερα ποιοτικά leads",
-      "moreFirstContacts": "Περισσότερες πρώτες επαφές",
-      "moreCourseSignups": "Περισσότερες εγγραφές μαθημάτων",
-      "budgetEfficiency": "Αποδοτικότητα budget",
-      "moreInteractions": "Περισσότερες αλληλεπιδράσεις",
-      "moreLeadsPerBudget": "Περισσότερα leads ανά budget",
-      "moreConsultations": "Περισσότερες συμβουλευτικές"
+      "moreRequests": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}± �}±�}¹Ï�~�}®�}¼�}±Ï�~�}±",
+      "moreAppointments": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}± Ï�}±�}½Ï�~�}µ�}²�}¿Ï",
+      "moreCalls": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}µÏ�a �}º�}»�}®Ï�\u0019�}µ�}¹Ï�a",
+      "moreReservations": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}µÏ�a �}ºÏ�}±Ï�~�}®Ï�\u0019�}µ�}¹Ï�a",
+      "moreBookings": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}µÏ�a �}ºÏ�}±Ï�~�}®Ï�\u0019�}µ�}¹Ï�a Ï⬦Ï�\u001a��}·Ï�}µÏ�\u0019�}¹ÏŽ�}½",
+      "moreLeads": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}± leads",
+      "moreIntroCalls": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}µÏ�a �}±ÏÏ⬡�}¹�}º�}­Ï�a �}º�}»�}®Ï�\u0019�}µ�}¹Ï�a",
+      "moreTrialSessions": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}µÏ�a �}´�}¿�}º�}¹�}¼�}±Ï�\u0019Ï�~�}¹�}º�}­Ï�a Ï�\u0019Ï⬦�}½�}µ�}´Ï�}¯�}µÏ�a",
+      "moreOffers": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}± �}±�}¹Ï�~�}®�}¼�}±Ï�~�}± Ï�\u001a�Ï�}¿Ï�\u0019Ï⬠�}¿Ï�}¬Ï�a",
+      "moreQualifiedLeads": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}± Ï�\u001a��}¿�}¹�}¿Ï�~�}¹�}º�}¬ leads",
+      "moreFirstContacts": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}µÏ�a Ï�\u001a�ÏÏŽÏ�~�}µÏ�a �}µÏ�\u001a��}±Ï⬠�}­Ï�a",
+      "moreCourseSignups": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}µÏ�a �}µ�}³�}³Ï�}±Ï⬠�}­Ï�a �}¼�}±�}¸�}·�}¼�}¬Ï�~Ï⬰�}½",
+      "budgetEfficiency": "�}��Ï�\u001a��}¿�}´�}¿Ï�~�}¹�}ºÏ�\u0019Ï�~�}·Ï�~�}± budget",
+      "moreInteractions": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}µÏ�a �}±�}»�}»�}·�}»�}µÏ�\u001a��}¹�}´Ï�}¬Ï�\u0019�}µ�}¹Ï�a",
+      "moreLeadsPerBudget": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}± leads �}±�}½�}¬ budget",
+      "moreConsultations": "�} �}µÏ�}¹Ï�\u0019Ï�\u0019Ï�\u0019Ï�~�}µÏ�}µÏ�a Ï�\u0019Ï⬦�}¼�}²�}¿Ï⬦�}»�}µÏ⬦Ï�~�}¹�}º�}­Ï�a"
     },
     "cases": {
       "c1": {
-        "title": "Επιχείρηση υδραυλικών (περιοχή Ανόβερου)",
-        "challenge": "Λίγα αιτήματα παρά την καλή εμβέλεια.",
-        "solution": "Αναδομήθηκαν οι σελίδες υπηρεσιών, βελτιστοποιήθηκαν CTA και ενεργοποιήθηκε tracking επαφών."
+        "title": "�}⬢Ï�\u001a��}¹Ï⬡�}µ�}¯Ï�}·Ï�\u0019�}· Ï⬦�}´Ï�}±Ï⬦�}»�}¹�}ºÏŽ�}½ (Ï�\u001a��}µÏ�}¹�}¿Ï⬡�}® �}���}½Ï�\u0019�}²�}µÏ�}¿Ï⬦)",
+        "challenge": "�}⬺�}¯�}³�}± �}±�}¹Ï�~�}®�}¼�}±Ï�~�}± Ï�\u001a��}±Ï�}¬ Ï�~�}·�}½ �}º�}±�}»�}® �}µ�}¼�}²�}­�}»�}µ�}¹�}±.",
+        "solution": "�}���}½�}±�}´�}¿�}¼�}®�}¸�}·�}º�}±�}½ �}¿�}¹ Ï�\u0019�}µ�}»�}¯�}´�}µÏ�a Ï⬦Ï�\u001a��}·Ï�}µÏ�\u0019�}¹ÏŽ�}½, �}²�}µ�}»Ï�~�}¹Ï�\u0019Ï�~�}¿Ï�\u001a��}¿�}¹�}®�}¸�}·�}º�}±�}½ CTA �}º�}±�}¹ �}µ�}½�}µÏ�}³�}¿Ï�\u001a��}¿�}¹�}®�}¸�}·�}º�}µ tracking �}µÏ�\u001a��}±Ï⬠ÏŽ�}½."
       },
       "c2": {
-        "title": "Κέντρο φυσικοθεραπείας (Hildesheim)",
-        "challenge": "Λίγα online αιτήματα ραντεβού.",
-        "solution": "Απλοποιήθηκε το flow ραντεβού, επιταχύνθηκαν mobile σελίδες και ξεκαθαρίστηκαν τα κανάλια επαφής."
+        "title": "�}š�}­�}½Ï�~Ï�}¿ Ï⬠Ï⬦Ï�\u0019�}¹�}º�}¿�}¸�}µÏ�}±Ï�\u001a��}µ�}¯�}±Ï�a (Hildesheim)",
+        "challenge": "�}⬺�}¯�}³�}± online �}±�}¹Ï�~�}®�}¼�}±Ï�~�}± Ï�}±�}½Ï�~�}µ�}²�}¿Ï.",
+        "solution": "�}��Ï�\u001a��}»�}¿Ï�\u001a��}¿�}¹�}®�}¸�}·�}º�}µ Ï�~�}¿ flow Ï�}±�}½Ï�~�}µ�}²�}¿Ï, �}µÏ�\u001a��}¹Ï�~�}±Ï⬡Ï�}½�}¸�}·�}º�}±�}½ mobile Ï�\u0019�}µ�}»�}¯�}´�}µÏ�a �}º�}±�}¹ �}¾�}µ�}º�}±�}¸�}±Ï�}¯Ï�\u0019Ï�~�}·�}º�}±�}½ Ï�~�}± �}º�}±�}½�}¬�}»�}¹�}± �}µÏ�\u001a��}±Ï⬠�}®Ï�a."
       },
       "c3": {
-        "title": "Φανοποιείο (περιοχή Harburg)",
-        "challenge": "Πολλές επαφές αλλά λίγες κατάλληλες εργασίες.",
-        "solution": "Μπήκε qualification lead στη φόρμα και landing page ανά υπηρεσία."
+        "title": "�}¦�}±�}½�}¿Ï�\u001a��}¿�}¹�}µ�}¯�}¿ (Ï�\u001a��}µÏ�}¹�}¿Ï⬡�}® Harburg)",
+        "challenge": "�} �}¿�}»�}»�}­Ï�a �}µÏ�\u001a��}±Ï⬠�}­Ï�a �}±�}»�}»�}¬ �}»�}¯�}³�}µÏ�a �}º�}±Ï�~�}¬�}»�}»�}·�}»�}µÏ�a �}µÏ�}³�}±Ï�\u0019�}¯�}µÏ�a.",
+        "solution": "�}�\u001cÏ�\u001a��}®�}º�}µ qualification lead Ï�\u0019Ï�~�}· Ï⬠Ï�\u0019Ï�}¼�}± �}º�}±�}¹ landing page �}±�}½�}¬ Ï⬦Ï�\u001a��}·Ï�}µÏ�\u0019�}¯�}±."
       },
       "c4": {
-        "title": "Εστιατόριο (Κάτω Σαξονία)",
-        "challenge": "Λίγες κρατήσεις τις καθημερινές.",
-        "solution": "Απλοποιήθηκε η διαδρομή κράτησης και ανανεώθηκαν οι τοπικές καμπάνιες."
+        "title": "�}⬢Ï�\u0019Ï�~�}¹�}±Ï�~Ï�\u0019Ï�}¹�}¿ (�}š�}¬Ï�~Ï⬰ �}£�}±�}¾�}¿�}½�}¯�}±)",
+        "challenge": "�}⬺�}¯�}³�}µÏ�a �}ºÏ�}±Ï�~�}®Ï�\u0019�}µ�}¹Ï�a Ï�~�}¹Ï�a �}º�}±�}¸�}·�}¼�}µÏ�}¹�}½�}­Ï�a.",
+        "solution": "�}��Ï�\u001a��}»�}¿Ï�\u001a��}¿�}¹�}®�}¸�}·�}º�}µ �}· �}´�}¹�}±�}´Ï�}¿�}¼�}® �}ºÏ�}¬Ï�~�}·Ï�\u0019�}·Ï�a �}º�}±�}¹ �}±�}½�}±�}½�}µÏŽ�}¸�}·�}º�}±�}½ �}¿�}¹ Ï�~�}¿Ï�\u001a��}¹�}º�}­Ï�a �}º�}±�}¼Ï�\u001a��}¬�}½�}¹�}µÏ�a."
       },
       "c5": {
-        "title": "Μεσιτικό γραφείο (Κάτω Σαξονία)",
-        "challenge": "Λίγα ποιοτικά leads ιδιοκτητών.",
-        "solution": "Οι σελίδες ακινήτων στήθηκαν με βάση search intent και συντομεύτηκε η ροή αιτήματος."
+        "title": "�}�\u001c�}µÏ�\u0019�}¹Ï�~�}¹�}ºÏ�\u0019 �}³Ï�}±Ï⬠�}µ�}¯�}¿ (�}š�}¬Ï�~Ï⬰ �}£�}±�}¾�}¿�}½�}¯�}±)",
+        "challenge": "�}⬺�}¯�}³�}± Ï�\u001a��}¿�}¹�}¿Ï�~�}¹�}º�}¬ leads �}¹�}´�}¹�}¿�}ºÏ�~�}·Ï�~ÏŽ�}½.",
+        "solution": "�}Ÿ�}¹ Ï�\u0019�}µ�}»�}¯�}´�}µÏ�a �}±�}º�}¹�}½�}®Ï�~Ï⬰�}½ Ï�\u0019Ï�~�}®�}¸�}·�}º�}±�}½ �}¼�}µ �}²�}¬Ï�\u0019�}· search intent �}º�}±�}¹ Ï�\u0019Ï⬦�}½Ï�~�}¿�}¼�}µÏÏ�~�}·�}º�}µ �}· Ï�}¿�}® �}±�}¹Ï�~�}®�}¼�}±Ï�~�}¿Ï�a."
       },
       "c6": {
-        "title": "Φοροτεχνικό γραφείο (περιοχή Ανόβερου)",
-        "challenge": "Χαμηλό conversion στις σελίδες υπηρεσιών.",
-        "solution": "Απλοποιήθηκε το περιεχόμενο, προστέθηκαν στοιχεία εμπιστοσύνης και τονίστηκε η πρώτη επαφή."
+        "title": "�}¦�}¿Ï�}¿Ï�~�}µÏ⬡�}½�}¹�}ºÏ�\u0019 �}³Ï�}±Ï⬠�}µ�}¯�}¿ (Ï�\u001a��}µÏ�}¹�}¿Ï⬡�}® �}���}½Ï�\u0019�}²�}µÏ�}¿Ï⬦)",
+        "challenge": "�}§�}±�}¼�}·�}»Ï�\u0019 conversion Ï�\u0019Ï�~�}¹Ï�a Ï�\u0019�}µ�}»�}¯�}´�}µÏ�a Ï⬦Ï�\u001a��}·Ï�}µÏ�\u0019�}¹ÏŽ�}½.",
+        "solution": "�}��Ï�\u001a��}»�}¿Ï�\u001a��}¿�}¹�}®�}¸�}·�}º�}µ Ï�~�}¿ Ï�\u001a��}µÏ�}¹�}µÏ⬡Ï�\u0019�}¼�}µ�}½�}¿, Ï�\u001a�Ï�}¿Ï�\u0019Ï�~�}­�}¸�}·�}º�}±�}½ Ï�\u0019Ï�~�}¿�}¹Ï⬡�}µ�}¯�}± �}µ�}¼Ï�\u001a��}¹Ï�\u0019Ï�~�}¿Ï�\u0019Ï�}½�}·Ï�a �}º�}±�}¹ Ï�~�}¿�}½�}¯Ï�\u0019Ï�~�}·�}º�}µ �}· Ï�\u001a�ÏÏŽÏ�~�}· �}µÏ�\u001a��}±Ï⬠�}®."
       }
     },
-    "performanceDashboard": "Πίνακας απόδοσης",
-    "growthCurve90": "Καμπύλη ανάπτυξης 90 ημερών",
-    "growthChartAria": "Γράφημα ανάπτυξης",
-    "resultLabel": "Αποτέλεσμα",
-    "trendAria": "Τάση: {{niche}}",
-    "compareGraphAria": "Γράφημα πριν και μετά",
-    "dayLabel": "Ημέρα {{day}}",
-    "beforeLegend": "Πριν: αδύναμη δυναμική",
-    "afterLegend": "Μετά: σταθερή ανάπτυξη",
+    "performanceDashboard": "�} �}¯�}½�}±�}º�}±Ï�a �}±Ï�\u001a�Ï�\u0019�}´�}¿Ï�\u0019�}·Ï�a",
+    "growthCurve90": "�}š�}±�}¼Ï�\u001a�Ï�}»�}· �}±�}½�}¬Ï�\u001a�Ï�~Ï⬦�}¾�}·Ï�a 90 �}·�}¼�}µÏÏŽ�}½",
+    "growthChartAria": "�}�SÏ�}¬Ï⬠�}·�}¼�}± �}±�}½�}¬Ï�\u001a�Ï�~Ï⬦�}¾�}·Ï�a",
+    "resultLabel": "�}��Ï�\u001a��}¿Ï�~�}­�}»�}µÏ�\u0019�}¼�}±",
+    "trendAria": "�}¤�}¬Ï�\u0019�}·: {{niche}}",
+    "compareGraphAria": "�}�SÏ�}¬Ï⬠�}·�}¼�}± Ï�\u001a�Ï�}¹�}½ �}º�}±�}¹ �}¼�}µÏ�~�}¬",
+    "dayLabel": "�}�\u001d�}¼�}­Ï�}± {{day}}",
+    "beforeLegend": "�} Ï�}¹�}½: �}±�}´Ï�}½�}±�}¼�}· �}´Ï⬦�}½�}±�}¼�}¹�}º�}®",
+    "afterLegend": "�}�\u001c�}µÏ�~�}¬: Ï�\u0019Ï�~�}±�}¸�}µÏ�}® �}±�}½�}¬Ï�\u001a�Ï�~Ï⬦�}¾�}·",
     "filterGroups": {
-      "all": "Όλα",
-      "localServices": "Τοπικές υπηρεσίες",
-      "healthBeauty": "Υγεία και Ομορφιά",
-      "professional": "Επαγγελματικό"
+      "all": "�}�\u0019�}»�}±",
+      "localServices": "�}¤�}¿Ï�\u001a��}¹�}º�}­Ï�a Ï⬦Ï�\u001a��}·Ï�}µÏ�\u0019�}¯�}µÏ�a",
+      "healthBeauty": "�}¥�}³�}µ�}¯�}± �}º�}±�}¹ �}Ÿ�}¼�}¿ÏÏ⬠�}¹�}¬",
+      "professional": "�}⬢Ï�\u001a��}±�}³�}³�}µ�}»�}¼�}±Ï�~�}¹�}ºÏ�\u0019"
     },
     "kpis": {
-      "traffic": "Κίνηση",
+      "traffic": "�}š�}¯�}½�}·Ï�\u0019�}·",
       "leads": "Leads",
-      "conversion": "Μετατροπή"
+      "conversion": "�}�\u001c�}µÏ�~�}±Ï�~Ï�}¿Ï�\u001a��}®"
     },
-    "daysUnit": "ημέρες"
+    "daysUnit": "�}·�}¼�}­Ï�}µÏ�a"
   },
   "about": {
-    "h1": "Über uns",
-    "subtitle": "Wir sind ein kleines Umsetzungsteam für lokale Unternehmen.",
+    "h1": "Ò�\u001cber uns",
+    "subtitle": "Wir sind ein kleines Umsetzungsteam fÒ¼r lokale Unternehmen.",
     "cards": {
       "work": {
         "title": "Wie wir arbeiten",
@@ -664,18 +715,18 @@
       }
     },
     "ctaTitle": "Kontakt",
-    "photoPlaceholder": "Foto: Porträt des Gründers von VS Web Studio (Vladyslav)",
-    "photoCaption": "Vladyslav, Gründer von VS Web Studio. Hildesheim.",
+    "photoPlaceholder": "Foto: PortrÒ¤t des GrÒ¼nders von VS Web Studio (Vladyslav)",
+    "photoCaption": "Vladyslav, GrÒ¼nder von VS Web Studio. Hildesheim.",
     "photoAlt": "Vladyslav, Webentwickler von VS Web Studio aus Hildesheim",
     "geo": {
       "local": "Wir arbeiten hier: Hildesheim",
       "region": "Hauptregion: Niedersachsen",
-      "country": "Möglich: ganz Deutschland"
+      "country": "MÒ¶glich: ganz Deutschland"
     },
-    "intro1": "Ich bin Vladyslav, Gründer von VS Web Studio. Ich arbeite aus Hildesheim und unterstütze zuerst Unternehmen direkt in der Stadt und Umgebung. Zusätzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
-    "intro2": "Mein Ziel ist einfach: nicht nur eine schöne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
-    "intro3": "Wir sind ein kleines Team mit bewährten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnötige Bürokratie, und bringen Projekte bis zum Ergebnis.",
-    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes Verständnis für den Markt vor Ort.",
+    "intro1": "Ich bin Vladyslav, GrÒ¼nder von VS Web Studio. Ich arbeite aus Hildesheim und unterstÒ¼tze zuerst Unternehmen direkt in der Stadt und Umgebung. ZusÒ¤tzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
+    "intro2": "Mein Ziel ist einfach: nicht nur eine schÒ¶ne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
+    "intro3": "Wir sind ein kleines Team mit bewÒ¤hrten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnÒ¶tige BÒ¼rokratie, und bringen Projekte bis zum Ergebnis.",
+    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes VerstÒ¤ndnis fÒ¼r den Markt vor Ort.",
     "miniFactsTitle": "Was wir konkret machen",
     "miniFacts": {
       "i1": "Klare Schritte ohne Fachchinesisch",
@@ -687,21 +738,21 @@
       "i1": "Eine schnelle Website, die auf dem Smartphone sauber funktioniert",
       "i2": "Klare Seitenstruktur mit starken CTA-Elementen",
       "i3": "Eingerichtetes Tracking, damit Sie die Quellen Ihrer Anfragen sehen",
-      "i4": "Automationen, die Zeit sparen und die Conversion erhöhen"
+      "i4": "Automationen, die Zeit sparen und die Conversion erhÒ¶hen"
     },
     "contactTitle": "Kontakt",
-    "contactText": "Schreiben Sie uns, welches Geschäft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
+    "contactText": "Schreiben Sie uns, welches GeschÒ¤ft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
     "contactButton": "Projekt anfragen"
   },
   "contact": {
-    "h1": "Kontakt",
-    "responseTime": "Antwortzeit aktuell:",
-    "quickContacts": "Schnelle Kontakte",
+    "h1": "Επικοινωνία και αίτημα για το project σας",
+    "responseTime": "Τρέχων χρόνος απάντησης:",
+    "quickContacts": "Γρήγορες επαφές",
     "form": {
-      "name": "Name",
-      "business": "Business",
-      "need": "Was brauchst du genau?",
-      "submit": "Anfrage senden"
+      "name": "Όνομα",
+      "business": "Επιχείρηση",
+      "need": "Τι ακριβώς χρειάζεστε;",
+      "submit": "Αποστολή αιτήματος"
     }
   },
   "blog": {
@@ -711,54 +762,54 @@
       "c1": "AI-Workflows im Website Funnel",
       "c2": "Social-Prozesse ohne Chaos",
       "c3": "Social Ads mit sauberem Tracking",
-      "c4": "Automationen für Erstkontakt"
+      "c4": "Automationen fÒ¼r Erstkontakt"
     },
     "leadMagnet": "Lead Magnet",
-    "emailPlaceholder": "E-Mail für den Guide",
+    "emailPlaceholder": "E-Mail fÒ¼r den Guide",
     "getGuide": "Guide erhalten"
   },
   "niche": {
     "handwerker": {
-      "h1": "Websites für Handwerker: mehr passende Anfragen.",
+      "h1": "Websites fÒ¼r Handwerker: mehr passende Anfragen.",
       "p": "Klare Leistungen, lokale Sichtbarkeit, einfache Kontaktwege."
     },
     "praxis": {
-      "h1": "Websites für Praxen: weniger Rückfragen, mehr Terminanfragen.",
+      "h1": "Websites fÒ¼r Praxen: weniger RÒ¼ckfragen, mehr Terminanfragen.",
       "p": "Patientenfreundliche Struktur und klarer Online-Erstkontakt."
     },
     "werkstatt": {
-      "h1": "Websites für Werkstätten: planbare Leads statt Zufall.",
+      "h1": "Websites fÒ¼r WerkstÒ¤tten: planbare Leads statt Zufall.",
       "p": "Service-orientierte Seiten mit messbarer Conversion."
     }
   },
   "legal": {
     "impressum": {
       "h1": "Impressum",
-      "subtitle": "Angaben gemäß § 5 TMG.",
+      "subtitle": "Angaben gemÒ¤ÒŸ �\u001a§ 5 TMG.",
       "l1": "VS Studio",
-      "l2": "Musterstraße 10, 10115 Berlin, Deutschland",
+      "l2": "MusterstraÒŸe 10, 10115 Berlin, Deutschland",
       "l3": "E-Mail: kontakt@vs-web-studio.de",
       "l4": "Telefon: +49 30 1234567",
       "l5": "Vertreten durch: Vladyslav"
     },
     "datenschutz": {
-      "h1": "Datenschutzerklärung",
+      "h1": "DatenschutzerklÒ¤rung",
       "subtitle": "Kurzinformation zur Verarbeitung personenbezogener Daten.",
       "l1": "Wir verarbeiten Daten nur zweckgebunden (Kontaktanfragen, Angebotserstellung, Statistik).",
       "l2": "Rechtsgrundlagen: Art. 6 Abs. 1 lit. b und f DSGVO.",
-      "l3": "Betroffene Rechte: Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch.",
-      "l4": "Kontakt für Datenschutz: datenschutz@vs-web-studio.de"
+      "l3": "Betroffene Rechte: Auskunft, Berichtigung, LÒ¶schung, EinschrÒ¤nkung, Widerspruch.",
+      "l4": "Kontakt fÒ¼r Datenschutz: datenschutz@vs-web-studio.de"
     },
     "agb": {
       "h1": "AGB",
-      "subtitle": "Optionale allgemeine Geschäftsbedingungen.",
-      "l1": "Leistungen werden gemäß Angebot und vereinbartem Umfang erbracht.",
-      "l2": "Zahlungsbedingungen, Nutzungsrechte und Gewährleistung richten sich nach dem Vertrag."
+      "subtitle": "Optionale allgemeine GeschÒ¤ftsbedingungen.",
+      "l1": "Leistungen werden gemÒ¤ÒŸ Angebot und vereinbartem Umfang erbracht.",
+      "l2": "Zahlungsbedingungen, Nutzungsrechte und GewÒ¤hrleistung richten sich nach dem Vertrag."
     },
     "cookies": {
       "h1": "Cookie-Hinweise",
       "subtitle": "Informationen zu eingesetzten Cookies und Messdiensten.",
-      "l1": "Technisch notwendige Cookies sichern die Funktionalität der Website.",
+      "l1": "Technisch notwendige Cookies sichern die FunktionalitÒ¤t der Website.",
       "l2": "Optionale Analyse-Cookies helfen bei der Optimierung von Inhalten und Kampagnen."
     }
   },
@@ -776,6 +827,142 @@
     "form": {
       "success": "Danke fuer dein Feedback!",
       "error": "Feedback konnte nicht gesendet werden."
+    }
+  },
+  "aboutPage": {
+    "heroEyebrow": "VS Studio | Hildesheim | Niedersachsen | Γερμανία",
+    "heroTitleLine1": "Ιστοσελίδες και",
+    "heroTitleLine2": "συστήματα lead",
+    "heroTitleLine3": "για τοπικές επιχειρήσεις",
+    "heroTitleLine4": "στο Hildesheim",
+    "heroSubtitle": "Περισσότερα ποιοτικά αιτήματα μέσω γρήγορων ιστοσελίδων, καθαρών διαδρομών επικοινωνίας και μετρήσιμου marketing.",
+    "heroTrustline": "Τοπικά στο Hildesheim. Στρατηγικά στη Niedersachsen. Εφαρμόσιμο σε όλη τη Γερμανία.",
+    "primaryCta": "Δωρεάν ανάλυση ιστοσελίδας",
+    "section": {
+      "about": "Σχετικά με εμάς",
+      "localAdvantages": "Τοπικά πλεονεκτήματα",
+      "how": "Πώς δουλεύουμε",
+      "value": "Αξία",
+      "trust": "Εμπιστοσύνη"
+    },
+    "blocks": {
+      "who": {
+        "title": "Για τοπικές επιχειρήσεις",
+        "text": "Ιστοσελίδες, συστήματα lead και marketing για επιχειρήσεις που θέλουν προβλέψιμα περισσότερα αιτήματα."
+      },
+      "focus": {
+        "title": "Ένα σύστημα αντί για αποσπασματικές λύσεις",
+        "text": "Ιστοσελίδα, κανάλια επικοινωνίας, καμπάνιες και tracking λειτουργούν μαζί ως μία καθαρή διαδικασία."
+      },
+      "locality": {
+        "title": "Η τοπική εγγύτητα ως πλεονέκτημα",
+        "subtitle": "Γρήγορος συντονισμός, καθαρές προτεραιότητες και μετρήσιμα αποτελέσματα.",
+        "text1": "Συνεργαζόμαστε απευθείας με τοπικές επιχειρήσεις χωρίς μακριές αλυσίδες agencies και περιττή γραφειοκρατία.",
+        "i1": "Άμεση επικοινωνία χωρίς μεσάζοντες",
+        "i2": "Γρήγορη υλοποίηση αντί για αργές εγκρίσεις",
+        "i3": "Κατανόηση των τοπικών αγορών και budgets",
+        "text2": "Οι πελάτες μας επωφελούνται επειδή οι αποφάσεις παίρνονται πιο γρήγορα και τα projects δεν κολλάνε για εβδομάδες σε κύκλους εγκρίσεων.",
+        "text3": "Αυτό εξοικονομεί χρόνο, μειώνει το κόστος και βοηθά το marketing να φέρνει αποτελέσματα πιο γρήγορα.",
+        "text4": "Γνωρίζουμε την πραγματικότητα των μικρών και μεσαίων επιχειρήσεων: περιορισμένα budgets, λίγο χρόνο και ανάγκη για καθαρά αποτελέσματα.",
+        "text5": "Γι’ αυτό δουλεύουμε πρακτικά και δομημένα, από την πρώτη ανάλυση μέχρι την υλοποίηση και τη συνεχή βελτιστοποίηση."
+      }
+    },
+    "photoAlt": "Ο Vladyslav, ιδρυτής του VS Web Studio από το Hildesheim",
+    "photoCaption": "Vladyslav - ιδρυτής του VS Web Studio",
+    "photoFacts": {
+      "f1": "Εστίαση: τοπικές επιχειρήσεις",
+      "f2": "Τοποθεσία: Hildesheim",
+      "f3": "Projects: σε όλη τη Γερμανία"
+    },
+    "geo": {
+      "local": "Hildesheim",
+      "region": "Niedersachsen",
+      "country": "Σε όλη τη Γερμανία"
+    },
+    "localPriority": "Σύντομες διαδρομές. Καθαρές προτεραιότητες. Εστίαση στο αποτέλεσμα.",
+    "how": {
+      "s1": {
+        "title": "1. Κατανοούμε",
+        "text": "Αναλύουμε το κοινό, την προσφορά και την αγορά."
+      },
+      "s2": {
+        "title": "2. Υλοποιούμε",
+        "text": "Λανσάρουμε ιστοσελίδα, σύστημα lead και καμπάνιες."
+      },
+      "s3": {
+        "title": "3. Βελτιστοποιούμε",
+        "text": "Αναλύουμε τα δεδομένα και βελτιώνουμε το αποτέλεσμα."
+      }
+    },
+    "cards": {
+      "work": {
+        "title": "Καθαρές διαδικασίες",
+        "desc": "Σύντομες διαδρομές. Καθαρή ευθύνη."
+      },
+      "ai": {
+        "title": "AI First",
+        "desc": "Αυτοματοποίηση όπου όντως εξοικονομεί χρόνο."
+      },
+      "leads": {
+        "title": "Εστίαση στα lead",
+        "desc": "Design και marketing δουλεύουν μαζί."
+      }
+    },
+    "results": {
+      "title": "Τι λαμβάνουν οι πελάτες",
+      "i1": "Μια γρήγορη ιστοσελίδα που φορτώνει σωστά σε κάθε smartphone",
+      "i2": "Καθαρούς τρόπους επικοινωνίας: κλήση, φόρμα, ραντεβού",
+      "i3": "Μετρήσιμα αιτήματα με tracking και marketing data"
+    },
+    "trust": {
+      "projects": {
+        "label": "Αριθμός projects",
+        "value": "120+",
+        "text": "Ιστοσελίδες, lead funnels και relaunch projects."
+      },
+      "industries": {
+        "label": "Κλάδοι",
+        "value": "12",
+        "text": "Τεχνικά επαγγέλματα, ιατρεία, εστίαση, beauty, εκπαίδευση και τοπικές υπηρεσίες."
+      },
+      "focus": {
+        "label": "Εστίαση",
+        "value": "Τοπικά + Μετρήσιμα",
+        "text": "Hildesheim, Niedersachsen και Γερμανία με καθαρή εστίαση στα lead."
+      }
+    },
+    "cta": {
+      "title": "Έτοιμοι για προβλέψιμα αιτήματα;",
+      "text": "Στην δωρεάν πρώτη κλήση δείχνουμε τα μεγαλύτερα σημεία βελτίωσης για την ιστοσελίδα, τις lead διαδικασίες και τη διαφήμισή σας."
+    },
+    "visual": {
+      "productBadge": "Lead System",
+      "flowLabel": "Ροή",
+      "flowValue": "Από το πριν στο σύστημα και το αποτέλεσμα",
+      "before": {
+        "label": "Πριν",
+        "title": "Πολλά κλικ, λίγη σαφήνεια",
+        "i1": "Αργές σελίδες",
+        "i2": "Ασαφείς δρόμοι επικοινωνίας",
+        "i3": "Μη καθαρά δεδομένα"
+      },
+      "system": {
+        "label": "Σύστημα",
+        "phoneBadge": "Website",
+        "cta": "Κλείστε ραντεβού",
+        "pill1": "Website",
+        "pill2": "Επικοινωνία",
+        "pill3": "Tracking"
+      },
+      "result": {
+        "label": "Αποτέλεσμα",
+        "title": "Ποιοτικά αιτήματα",
+        "text": "Μετρήσιμα, με ταχύτερη απάντηση και καθαρή ορατότητα μέσα στο funnel."
+      },
+      "anchor": {
+        "label": "Αποτέλεσμα",
+        "value": "Περισσότερα ποιοτικά αιτήματα αντί μόνο για traffic"
+      }
     }
   }
 }
