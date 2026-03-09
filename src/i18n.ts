@@ -3,7 +3,7 @@ import { initReactI18next } from "react-i18next";
 import HttpApi from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-const TRANSLATION_ASSET_VERSION = "20260308-contact-locale-fix";
+const TRANSLATION_ASSET_VERSION = "20260309-contact-hero-refresh";
 
 export const SUPPORTED_LANGUAGES = [
   "de",

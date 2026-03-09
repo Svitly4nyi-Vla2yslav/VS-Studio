@@ -745,14 +745,29 @@
     "ctaTitle": "Kontakt"
   },
   "contact": {
-    "h1": "Kontakt & Anfrage fuer dein Projekt",
-    "responseTime": "Antwortzeit aktuell:",
-    "quickContacts": "Schnelle Kontakte",
+    "h1": "Erzaehlen Sie uns von Ihrem Projekt",
+    "responseTime": "Durchschnittliche Antwortzeit: 1-2h",
+    "subtitle": "Kurz beschreiben, was Sie planen. Sie erhalten eine klare Ersteinschaetzung und den naechsten sinnvollen Schritt.",
+    "quickContacts": "Direkter Kontakt",
+    "responseNote": "Antwort meist innerhalb von 1-2 Stunden",
+    "contactMeta": {
+      "location": "Standort fuer schnelle Abstimmung",
+      "email": "Projektanfragen per E-Mail",
+      "phone": "Kurzes Erstgespraech oder Rueckruf"
+    },
+    "trustItems": [
+      "Direkte Kommunikation",
+      "Klare Ersteinschaetzung",
+      "Schnelle Rueckmeldung"
+    ],
     "form": {
-      "name": "Name",
-      "business": "Business",
-      "need": "Was brauchst du genau?",
-      "submit": "Anfrage senden"
+      "title": "Projektanfrage",
+      "intro": "Je klarer die Anfrage, desto schneller koennen wir Aufwand, Prioritaeten und naechste Schritte einschaetzen.",
+      "name": "Ihr Name",
+      "business": "Firmenname",
+      "need": "Zum Beispiel: Website fuer ein Kosmetikstudio oder Werbung fuer eine Autowerkstatt",
+      "help": "Zum Start reichen Branche, Ziel und was zuerst verbessert werden soll.",
+      "submit": "Kostenlose Beratung"
     }
   },
   "blog": {
