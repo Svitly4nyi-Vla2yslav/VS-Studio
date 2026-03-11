@@ -2,35 +2,146 @@ import { motion } from 'framer-motion';
 import styled, { css, keyframes } from 'styled-components';
 import { Card, FieldIcon, PrimaryButton } from '../shared/styles/PagePrimitives.styles';
 
+export const ContactPageRoot = styled.div`
+  padding: 14px 0 84px;
+
+  @media (max-width: 991px) {
+    padding: 16px 0 72px;
+  }
+`;
+
 export const ContactHeroSection = styled(motion.section)`
-  padding-top: 80px;
-  padding-bottom: 80px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  min-height: calc(100svh - 72px);
+  padding-top: 20px;
+  padding-bottom: 24px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  transform: none;
+
+  @media (max-width: 991px) {
+    min-height: auto;
+  }
+`;
+
+export const ContactHeroCanvas = styled.div`
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100svh - 134px);
+  box-sizing: border-box;
+  width: min(1440px, calc(100vw - 40px));
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  transform: none;
+  padding: 28px;
+  border-radius: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255, 188, 97, 0.14), transparent 24%),
+    radial-gradient(circle at 100% 0%, rgba(72, 129, 255, 0.2), transparent 30%),
+    linear-gradient(120deg, rgba(255, 255, 255, 0.03), transparent 36%),
+    linear-gradient(180deg, rgba(6, 10, 22, 0.96), rgba(5, 9, 18, 0.98));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 32px 80px rgba(2, 8, 22, 0.36);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 18px;
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: auto 28px 0 28px;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255, 188, 97, 0), rgba(255, 188, 97, 0.18), rgba(72, 129, 255, 0.18), rgba(72, 129, 255, 0));
+    pointer-events: none;
+  }
+
+  @media (max-width: 767px) {
+    min-height: auto;
+    width: calc(100vw - 24px);
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 24px;
+  }
 `;
 
 export const ContactHeroGrid = styled.div`
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 32px;
-  align-items: start;
+  min-height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 28px;
+  align-items: stretch;
+
+  @media (max-width: 1279px) {
+    gap: 24px;
+  }
 
   @media (max-width: 991px) {
-    grid-template-columns: 1fr;
+    min-height: auto;
+    gap: 24px;
   }
 `;
 
-export const IntroStack = styled.div`
+export const HeroCopyBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0 0;
+`;
+
+export const HeroWorkbench = styled.div`
+  position: relative;
+  overflow: hidden;
   display: grid;
+  align-self: end;
+  grid-template-columns: minmax(420px, 1.12fr) minmax(420px, 1fr);
   gap: 20px;
+  align-items: stretch;
+  padding: 14px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background:
+    radial-gradient(circle at top right, rgba(255, 188, 97, 0.08), transparent 24%),
+    linear-gradient(180deg, rgba(8, 13, 25, 0.82), rgba(6, 10, 20, 0.86));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 22px 22px;
+    mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0.22), transparent 70%);
+    pointer-events: none;
+  }
+
+  @media (max-width: 1279px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 12px;
+  }
 `;
 
-export const HeroSideStack = styled.div`
-  display: grid;
-  gap: 18px;
-
-  @media (min-width: 992px) {
-    position: sticky;
-    top: 112px;
-  }
+export const HeroVisualColumn = styled.div`
+  align-self: stretch;
+  position: relative;
+  z-index: 1;
 `;
 
 export const ResponseBadge = styled.div`
@@ -38,41 +149,58 @@ export const ResponseBadge = styled.div`
   align-items: center;
   gap: 8px;
   width: fit-content;
-  padding: 6px 12px;
+  padding: 7px 14px;
+  margin-bottom: 18px;
   border-radius: 999px;
   background: rgba(255, 180, 80, 0.12);
   border: 1px solid rgba(255, 180, 80, 0.25);
   color: #ffd8ab;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   line-height: 1.4;
 `;
 
 export const HeroTitle = styled.h1`
-  max-width: 620px;
+  max-width: none;
+  width: 100%;
   margin: 0;
-  font-size: clamp(34px, 8vw, 70px);
-  line-height: 1.08;
+  margin-bottom: 16px;
+  font-size: clamp(54px, 4.5vw, 78px);
+  line-height: 0.88;
+  letter-spacing: -0.04em;
+  text-wrap: pretty;
 
   @media (max-width: 767px) {
     font-size: clamp(30px, 10vw, 44px);
+    line-height: 1.02;
+    max-width: 12ch;
   }
 `;
 
 export const HeroLead = styled.p`
   max-width: 620px;
   margin: 0;
+  margin-bottom: 0;
   color: rgba(255, 255, 255, 0.78);
   font-size: 17px;
-  line-height: 1.65;
+  line-height: 1.42;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 1.45;
+  }
 `;
 
 const BaseCard = styled(Card)`
-  padding: 32px;
-  border-radius: 24px;
+  padding: 24px;
+  border-radius: 28px;
+  border-color: rgba(255, 255, 255, 0.09);
   background:
-    radial-gradient(circle at top right, rgba(255, 180, 80, 0.16), transparent 38%),
-    linear-gradient(180deg, rgba(14, 20, 35, 0.94), rgba(9, 13, 24, 0.9));
+    radial-gradient(circle at top right, rgba(255, 180, 80, 0.14), transparent 34%),
+    linear-gradient(180deg, rgba(15, 21, 37, 0.96), rgba(9, 13, 24, 0.94));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 22px 52px rgba(2, 8, 22, 0.26);
 
   @media (max-width: 767px) {
     padding: 24px;
@@ -80,13 +208,19 @@ const BaseCard = styled(Card)`
 `;
 
 export const FormCard = styled(BaseCard).attrs({ as: 'form' })`
-  display: grid;
-  gap: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(20px);
 `;
 
 export const ContactCard = styled(BaseCard)`
   display: grid;
-  gap: 18px;
+  gap: 14px;
 `;
 
 export const CardEyebrow = styled.span`
@@ -94,6 +228,7 @@ export const CardEyebrow = styled.span`
   align-items: center;
   gap: 8px;
   width: fit-content;
+  margin-bottom: 10px;
   color: #ffcf94;
   font-size: 12px;
   font-weight: 700;
@@ -102,35 +237,38 @@ export const CardEyebrow = styled.span`
 `;
 
 export const CardTitle = styled.h2`
-  margin: 0;
-  font-size: clamp(28px, 5vw, 40px);
-  line-height: 1.1;
+  margin: 0 0 10px;
+  font-size: clamp(24px, 2.4vw, 34px);
+  line-height: 1.02;
 `;
 
 export const FormIntro = styled.p`
-  margin: 0;
+  margin: 0 0 12px;
   color: rgba(255, 255, 255, 0.72);
-  line-height: 1.65;
+  font-size: 12px;
+  line-height: 1.35;
 `;
 
 export const FieldGroup = styled.div`
   display: grid;
-  gap: 8px;
+  gap: 4px;
 `;
 
 export const FieldLabel = styled.span`
   color: rgba(255, 255, 255, 0.72);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.02em;
+  margin-bottom: 6px;
 `;
 
 export const ContextField = styled(FieldIcon)`
-  gap: 12px;
-  padding: 12px 14px;
-  border-radius: 14px;
-  border-color: rgba(255, 255, 255, 0.14);
-  background: rgba(255, 255, 255, 0.05);
+  gap: 8px;
+  min-height: 46px;
+  padding: 7px 12px;
+  border-radius: 16px;
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.045);
 
   svg {
     color: rgba(255, 200, 138, 0.88);
@@ -141,29 +279,36 @@ export const ContextField = styled(FieldIcon)`
     font: inherit;
   }
 
+  input {
+    min-height: 26px;
+  }
+
   input::placeholder,
   textarea::placeholder {
     color: rgba(255, 255, 255, 0.42);
   }
 
   textarea {
-    min-height: 140px;
+    min-height: 82px;
+    max-height: 96px;
   }
 `;
 
 export const FieldHint = styled.p`
-  margin: 0;
+  margin: 6px 0 0;
   color: rgba(255, 255, 255, 0.58);
-  font-size: 14px;
-  line-height: 1.6;
+  max-width: 36ch;
+  font-size: 11px;
+  line-height: 1.35;
 `;
 
 export const SubmitButton = styled(PrimaryButton)`
   width: fit-content;
   min-height: auto;
-  padding: 14px 22px;
-  border-radius: 12px;
+  padding: 12px 18px;
+  border-radius: 14px;
   font-weight: 600;
+  margin-top: 10px;
 
   @media (max-width: 767px) {
     width: 100%;
@@ -174,7 +319,7 @@ export const ResponseNote = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 14px 16px;
+  padding: 10px 12px;
   border-radius: 16px;
   background: rgba(255, 180, 80, 0.12);
   border: 1px solid rgba(255, 180, 80, 0.25);
@@ -185,7 +330,7 @@ export const ResponseNote = styled.div`
 
 export const ContactList = styled.div`
   display: grid;
-  gap: 12px;
+  gap: 8px;
 `;
 
 const contactItemStyles = css`
@@ -193,7 +338,7 @@ const contactItemStyles = css`
   grid-template-columns: 18px 1fr;
   gap: 12px;
   align-items: start;
-  padding: 14px 16px;
+  padding: 12px 14px;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.04);
@@ -210,7 +355,7 @@ const contactItemStyles = css`
 
   strong {
     display: block;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
   }
 
@@ -218,8 +363,8 @@ const contactItemStyles = css`
     display: block;
     margin-top: 4px;
     color: rgba(255, 255, 255, 0.64);
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 13px;
+    line-height: 1.45;
   }
 `;
 
@@ -242,14 +387,14 @@ export const ContactItemLink = styled.a`
 export const TrustGrid = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 `;
 
 export const TrustBadge = styled.span`
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 12px;
+  padding: 8px 11px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -259,6 +404,73 @@ export const TrustBadge = styled.span`
 
   svg {
     color: #ffcf94;
+  }
+`;
+
+export const ContactSecondarySection = styled(motion.section)`
+  padding-top: 8px;
+`;
+
+export const ContactSecondaryGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+export const SectionEyebrow = styled(CardEyebrow)`
+  color: rgba(255, 211, 148, 0.88);
+`;
+
+export const MiniCardTitle = styled.h3`
+  margin: 0;
+  font-size: clamp(22px, 2.8vw, 30px);
+  line-height: 1.12;
+`;
+
+export const MiniCardText = styled.p`
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  line-height: 1.55;
+`;
+
+export const InfoList = styled.div`
+  display: grid;
+  gap: 10px;
+`;
+
+export const InfoListItem = styled.div`
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    color: #121723;
+    font-size: 13px;
+    font-weight: 700;
+    background: linear-gradient(135deg, rgba(255, 190, 100, 0.96), rgba(255, 221, 173, 0.78));
+  }
+
+  p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 14px;
+    line-height: 1.5;
   }
 `;
 
@@ -435,18 +647,19 @@ const iconPulse = keyframes`
 export const LeadVisualPanel = styled.div`
   position: relative;
   overflow: hidden;
-  padding: 22px;
-  border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  height: 100%;
+  min-height: 100%;
+  padding: 20px;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
   background:
-    linear-gradient(180deg, rgba(14, 20, 35, 0.84), rgba(8, 12, 22, 0.9)),
-    radial-gradient(circle at 20% 12%, rgba(255, 195, 110, 0.09), transparent 44%);
-  box-shadow: 0 24px 80px rgba(3, 8, 20, 0.28);
+    linear-gradient(180deg, rgba(10, 16, 30, 0.92), rgba(7, 11, 20, 0.96)),
+    radial-gradient(circle at 20% 12%, rgba(255, 195, 110, 0.1), transparent 42%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 22px 52px rgba(2, 8, 22, 0.28);
   isolation: isolate;
-
-  @media (max-width: 991px) {
-    display: none;
-  }
+  backdrop-filter: blur(18px);
 `;
 
 export const LeadVisualGlow = styled.div`
@@ -480,8 +693,8 @@ export const LeadVisualHeader = styled.div`
   position: relative;
   z-index: 1;
   display: grid;
-  gap: 6px;
-  margin-bottom: 18px;
+  gap: 3px;
+  margin-bottom: 12px;
 `;
 
 export const LeadVisualEyebrow = styled.span`
@@ -494,10 +707,179 @@ export const LeadVisualEyebrow = styled.span`
 
 export const LeadVisualTitle = styled.p`
   margin: 0;
-  max-width: 30ch;
+  max-width: 24ch;
   color: rgba(255, 255, 255, 0.88);
-  font-size: 15px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.3;
+`;
+
+export const LeadCompactScene = styled.div`
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  align-items: start;
+`;
+
+export const LeadSourceStack = styled.div`
+  display: grid;
+  gap: 8px;
+`;
+
+export const LeadSourceLane = styled.div`
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 34px minmax(98px, 0.78fr);
+  gap: 8px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+
+  @media (max-width: 767px) {
+    grid-template-columns: minmax(0, 1fr) 30px minmax(96px, 0.86fr);
+  }
+`;
+
+export const LeadNode = styled.div<{ $tone?: 'gold' | 'blue' | 'green' }>`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 12px;
+  border-radius: 12px;
+  border: 1px solid
+    ${({ $tone }) => {
+      switch ($tone) {
+        case 'blue':
+          return 'rgba(102, 156, 255, 0.24)';
+        case 'green':
+          return 'rgba(84, 219, 174, 0.24)';
+        case 'gold':
+        default:
+          return 'rgba(255, 188, 97, 0.24)';
+      }
+    }};
+  background:
+    ${({ $tone }) => {
+      switch ($tone) {
+        case 'blue':
+          return 'linear-gradient(180deg, rgba(55, 96, 176, 0.18), rgba(18, 27, 45, 0.74))';
+        case 'green':
+          return 'linear-gradient(180deg, rgba(28, 118, 89, 0.18), rgba(18, 27, 45, 0.74))';
+        case 'gold':
+        default:
+          return 'linear-gradient(180deg, rgba(143, 102, 34, 0.18), rgba(18, 27, 45, 0.74))';
+      }
+    }};
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+`;
+
+export const LeadArrow = styled.div`
+  position: relative;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(255, 188, 97, 0.36), rgba(88, 145, 255, 0.92));
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -2px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid rgba(88, 145, 255, 0.9);
+    border-right: 2px solid rgba(88, 145, 255, 0.9);
+    transform: translateY(-50%) rotate(45deg);
+  }
+`;
+
+export const LeadRouterCard = styled.div`
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    radial-gradient(circle at top center, rgba(255, 188, 97, 0.16), transparent 34%),
+    linear-gradient(180deg, rgba(13, 18, 31, 0.92), rgba(9, 12, 22, 0.96));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 24px 56px rgba(3, 9, 20, 0.24);
+`;
+
+export const LeadRouterEyebrow = styled.span`
+  color: rgba(255, 211, 148, 0.82);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+`;
+
+export const LeadRouterTitle = styled.strong`
+  color: rgba(255, 255, 255, 0.96);
+  font-size: 18px;
+  line-height: 1.05;
+`;
+
+export const LeadRouterMeta = styled.p`
+  margin: 0;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 11px;
+  line-height: 1.3;
+`;
+
+export const LeadMiniMetaRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+`;
+
+export const LeadMiniMetaChip = styled.span`
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 11px;
+  line-height: 1.3;
+`;
+
+export const LeadStatRow = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+`;
+
+export const LeadStatChip = styled.div`
+  display: grid;
+  gap: 2px;
+  padding: 8px 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+
+  strong {
+    color: rgba(255, 255, 255, 0.96);
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  span {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 10px;
+    line-height: 1.25;
+  }
 `;
 
 export const LeadVisualBoard = styled.div`

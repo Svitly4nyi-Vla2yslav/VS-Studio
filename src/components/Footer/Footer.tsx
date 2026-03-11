@@ -10,6 +10,10 @@ import {
   FooterRow,
 } from './styles/Footer.styles';
 
+const hasBrokenEncoding = (value: string) => /[ÃÂ]|�/.test(value);
+
+const safeText = (value: string, fallback: string) => (hasBrokenEncoding(value) ? fallback : value);
+
 const Footer: React.FC = () => {
   const { t } = useTranslation();
 
@@ -22,18 +26,18 @@ const Footer: React.FC = () => {
       <FooterInner>
         <FooterRow>
           <FooterInfo>
-            <p>{t('footer.tagline')}</p>
-            <FooterMuted>kontakt@vs-web-studio.de · +49 30 1234567</FooterMuted>
+            <p>{safeText(t('footer.tagline'), 'VS Studio - Websites, Web-Apps, Ads & Automationen')}</p>
+            <FooterMuted>kontakt@vs-web-studio.de | +49 30 1234567</FooterMuted>
           </FooterInfo>
           <FooterLinks>
-            <FooterLink to='/impressum'>{t('footer.impressum')}</FooterLink>
-            <FooterLink to='/datenschutz'>{t('footer.datenschutz')}</FooterLink>
-            <FooterLink to='/agb'>{t('footer.agb')}</FooterLink>
-            <FooterLink to='/cookies'>{t('footer.cookies')}</FooterLink>
+            <FooterLink to='/impressum'>{safeText(t('footer.impressum'), 'Impressum')}</FooterLink>
+            <FooterLink to='/datenschutz'>{safeText(t('footer.datenschutz'), 'Datenschutz')}</FooterLink>
+            <FooterLink to='/agb'>{safeText(t('footer.agb'), 'AGB')}</FooterLink>
+            <FooterLink to='/cookies'>{safeText(t('footer.cookies'), 'Cookies')}</FooterLink>
             <FooterCookieButton type='button' onClick={openCookieSettings}>
-              {t('footer.cookieSettings')}
+              {safeText(t('footer.cookieSettings'), 'Cookie-Einstellungen')}
             </FooterCookieButton>
-            <FooterLink to='/blog'>{t('footer.blog')}</FooterLink>
+            <FooterLink to='/blog'>{safeText(t('footer.blog'), 'Blog')}</FooterLink>
           </FooterLinks>
         </FooterRow>
       </FooterInner>
