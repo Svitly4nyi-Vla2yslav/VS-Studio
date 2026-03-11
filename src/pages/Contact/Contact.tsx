@@ -93,6 +93,7 @@ const copy = {
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const contactDevEndpoint = 'http://localhost:8888/api/contact';
+const contactDevFunctionEndpoint = 'http://localhost:8888/.netlify/functions/contact';
 const mapsAddress = 'Ehrlicherstr. 52, 31135 Hildesheim, Germany';
 const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapsAddress)}`;
 
@@ -116,12 +117,12 @@ const Contact: React.FC = () => {
     }
   }, [prefillNeed]);
 
-  const getContactEndpoint = () => {
+  const getContactEndpoints = () => {
     if (import.meta.env.DEV && window.location.port === '5173') {
-      return contactDevEndpoint;
+      return [contactDevEndpoint, contactDevFunctionEndpoint];
     }
 
-    return '/api/contact';
+    return ['/api/contact', '/.netlify/functions/contact'];
   };
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -139,25 +140,41 @@ const Contact: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch(getContactEndpoint(), {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: nameValue.trim(),
-          business: businessValue.trim(),
-          email: emailValue.trim(),
-          message: needValue.trim(),
-          website: websiteValue.trim(),
-        }),
+      const requestBody = JSON.stringify({
+        name: nameValue.trim(),
+        business: businessValue.trim(),
+        email: emailValue.trim(),
+        message: needValue.trim(),
+        website: websiteValue.trim(),
       });
 
-      if (!response.ok) {
-        if (import.meta.env.DEV && response.status === 404) {
-          console.warn('Local contact endpoint not found. Run the site via Netlify Dev on http://localhost:8888.');
+      const endpoints = getContactEndpoints();
+      let response: Response | null = null;
+
+      for (const endpoint of endpoints) {
+        response = await fetch(endpoint, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: requestBody,
+        });
+
+        if (response.ok) {
+          break;
         }
-        throw new Error(`Request failed with status ${response.status}`);
+
+        if (response.status !== 404) {
+          break;
+        }
+
+        if (import.meta.env.DEV) {
+          console.warn(`Contact endpoint returned 404: ${endpoint}`);
+        }
+      }
+
+      if (!response || !response.ok) {
+        throw new Error(`Request failed with status ${response?.status ?? 'unknown'}`);
       }
 
       setNameValue('');
