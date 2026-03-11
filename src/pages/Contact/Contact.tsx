@@ -92,8 +92,8 @@ const copy = {
 };
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const contactDevEndpoint = 'http://localhost:8888/api/contact';
 const contactDevFunctionEndpoint = 'http://localhost:8888/.netlify/functions/contact';
+const contactDevEndpoint = 'http://localhost:8888/api/contact';
 const mapsAddress = 'Ehrlicherstr. 52, 31135 Hildesheim, Germany';
 const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapsAddress)}`;
 
@@ -119,10 +119,10 @@ const Contact: React.FC = () => {
 
   const getContactEndpoints = () => {
     if (import.meta.env.DEV && window.location.port === '5173') {
-      return [contactDevEndpoint, contactDevFunctionEndpoint];
+      return [contactDevFunctionEndpoint, contactDevEndpoint];
     }
 
-    return ['/api/contact', '/.netlify/functions/contact'];
+    return ['/.netlify/functions/contact', '/api/contact'];
   };
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
