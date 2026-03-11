@@ -34,6 +34,7 @@ import {
   FieldLabel,
   FormCard,
   FormIntro,
+  FormStatusMessage,
   HeroCopyBlock,
   HeroLead,
   HeroTitle,
@@ -46,10 +47,10 @@ import {
   ResponseBadge,
   ResponseNote,
   SectionEyebrow,
-  StaticContactItem,
   SubmitButton,
   TrustBadge,
   TrustGrid,
+  VisuallyHiddenField,
 } from './Contact.styled';
 
 const reveal = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } };
@@ -69,8 +70,14 @@ const copy = {
   labels: {
     name: 'Ihr Name',
     business: 'Unternehmen',
+    email: 'E-Mail',
     message: 'Projekt oder Ziel',
   },
+  submitLoading: 'Wird gesendet...',
+  submitSuccess: 'Vielen Dank. Ihre Anfrage wurde erfolgreich versendet.',
+  submitError: 'Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.',
+  submitDevError:
+    'Lokaler API-Server nicht erreichbar. Starten Sie die App mit "npm run dev:netlify" und öffnen Sie dann http://localhost:8888.',
   contactMeta: {
     location: 'Standort fuer schnelle Abstimmung',
     email: 'Projektanfragen per E-Mail',
@@ -84,13 +91,24 @@ const copy = {
   ],
 };
 
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const contactDevEndpoint = 'http://localhost:8888/api/contact';
+const mapsAddress = 'Ehrlicherstr. 52, 31135 Hildesheim, Germany';
+const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapsAddress)}`;
+
 const Contact: React.FC = () => {
   const { t } = useTranslation();
   const location = useLocation();
   const prefillNeed = (location.state as { prefillNeed?: string } | null)?.prefillNeed || '';
   const [nameValue, setNameValue] = useState('');
   const [businessValue, setBusinessValue] = useState('');
+  const [emailValue, setEmailValue] = useState('');
   const [needValue, setNeedValue] = useState(prefillNeed);
+  const [websiteValue, setWebsiteValue] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
+  const [submitErrorMessage, setSubmitErrorMessage] = useState('');
 
   useEffect(() => {
     if (prefillNeed) {
@@ -98,19 +116,71 @@ const Contact: React.FC = () => {
     }
   }, [prefillNeed]);
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const getContactEndpoint = () => {
+    if (import.meta.env.DEV && window.location.port === '5173') {
+      return contactDevEndpoint;
+    }
+
+    return '/api/contact';
+  };
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setSubmitSuccess(false);
+    setSubmitError(false);
+    setSubmitErrorMessage('');
 
-    const subjectBase = t('contact.form.title', { defaultValue: copy.formTitle });
-    const subjectSuffix = businessValue.trim() ? ` - ${businessValue.trim()}` : '';
-    const body = [
-      `${t('contact.form.labels.name', { defaultValue: copy.labels.name })}: ${nameValue.trim() || '-'}`,
-      `${t('contact.form.labels.business', { defaultValue: copy.labels.business })}: ${businessValue.trim() || '-'}`,
-      `${t('contact.form.labels.message', { defaultValue: copy.labels.message })}:`,
-      needValue.trim() || '-',
-    ].join('\n');
+    if (!emailPattern.test(emailValue.trim())) {
+      setSubmitError(true);
+      setSubmitErrorMessage(t('contact.form.error', { defaultValue: copy.submitError }));
+      return;
+    }
 
-    window.location.href = `mailto:kontakt@vs-web-studio.de?subject=${encodeURIComponent(`${subjectBase}${subjectSuffix}`)}&body=${encodeURIComponent(body)}`;
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch(getContactEndpoint(), {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: nameValue.trim(),
+          business: businessValue.trim(),
+          email: emailValue.trim(),
+          message: needValue.trim(),
+          website: websiteValue.trim(),
+        }),
+      });
+
+      if (!response.ok) {
+        if (import.meta.env.DEV && response.status === 404) {
+          console.warn('Local contact endpoint not found. Run the site via Netlify Dev on http://localhost:8888.');
+        }
+        throw new Error(`Request failed with status ${response.status}`);
+      }
+
+      setNameValue('');
+      setBusinessValue('');
+      setEmailValue('');
+      setNeedValue('');
+      setWebsiteValue('');
+      setSubmitSuccess(true);
+    } catch (error) {
+      console.error('Contact form submit failed', error);
+      setSubmitError(true);
+      if (
+        import.meta.env.DEV &&
+        error instanceof TypeError &&
+        window.location.port === '5173'
+      ) {
+        setSubmitErrorMessage(t('contact.form.devError', { defaultValue: copy.submitDevError }));
+      } else {
+        setSubmitErrorMessage(t('contact.form.error', { defaultValue: copy.submitError }));
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -137,10 +207,23 @@ const Contact: React.FC = () => {
               </HeroCopyBlock>
 
               <HeroWorkbench>
-                <FormCard onSubmit={handleSubmit} noValidate name="contact" data-netlify="true">
+                <FormCard onSubmit={handleSubmit} noValidate>
                   <CardEyebrow>VS Web Studio</CardEyebrow>
                   <CardTitle>{t('contact.form.title', { defaultValue: copy.formTitle })}</CardTitle>
                   <FormIntro>{t('contact.form.intro', { defaultValue: copy.formIntro })}</FormIntro>
+
+                  <VisuallyHiddenField aria-hidden='true'>
+                    <label htmlFor='contact-website'>Website</label>
+                    <input
+                      id='contact-website'
+                      type='text'
+                      name='website'
+                      value={websiteValue}
+                      onChange={event => setWebsiteValue(event.target.value)}
+                      tabIndex={-1}
+                      autoComplete='off'
+                    />
+                  </VisuallyHiddenField>
 
                   <FieldGroup>
                     <FieldLabel>{t('contact.form.labels.name', { defaultValue: copy.labels.name })}</FieldLabel>
@@ -175,6 +258,23 @@ const Contact: React.FC = () => {
                   </FieldGroup>
 
                   <FieldGroup>
+                    <FieldLabel>{t('contact.form.labels.email', { defaultValue: copy.labels.email })}</FieldLabel>
+                    <ContextField>
+                      <FaEnvelope />
+                      <input
+                        type='email'
+                        name='email'
+                        value={emailValue}
+                        onChange={event => setEmailValue(event.target.value)}
+                        placeholder={t('contact.form.email', { defaultValue: copy.labels.email })}
+                        aria-label={t('contact.form.labels.email', { defaultValue: copy.labels.email })}
+                        autoComplete='email'
+                        required
+                      />
+                    </ContextField>
+                  </FieldGroup>
+
+                  <FieldGroup>
                     <FieldLabel>{t('contact.form.labels.message', { defaultValue: copy.labels.message })}</FieldLabel>
                     <ContextField>
                       <FaCommentDots />
@@ -191,9 +291,23 @@ const Contact: React.FC = () => {
 
                   <FieldHint>{t('contact.form.help', { defaultValue: copy.formHelp })}</FieldHint>
 
-                  <SubmitButton type='submit'>
+                  {submitSuccess ? (
+                    <FormStatusMessage $tone='success' role='status' aria-live='polite'>
+                      {t('contact.form.success', { defaultValue: copy.submitSuccess })}
+                    </FormStatusMessage>
+                  ) : null}
+
+                  {submitError ? (
+                    <FormStatusMessage $tone='error' role='alert'>
+                      {submitErrorMessage || t('contact.form.error', { defaultValue: copy.submitError })}
+                    </FormStatusMessage>
+                  ) : null}
+
+                  <SubmitButton type='submit' disabled={isSubmitting} aria-busy={isSubmitting}>
                     <FaEnvelope />
-                    {t('contact.form.submit', { defaultValue: 'Projekt anfragen' })}
+                    {isSubmitting
+                      ? t('contact.form.submitLoading', { defaultValue: copy.submitLoading })
+                      : t('contact.form.submit', { defaultValue: 'Projekt anfragen' })}
                   </SubmitButton>
                 </FormCard>
 
@@ -223,26 +337,26 @@ const Contact: React.FC = () => {
               </ResponseNote>
 
               <ContactList>
-                <StaticContactItem>
+                <ContactItemLink href={mapsHref} target='_blank' rel='noreferrer'>
                   <FaMapMarkerAlt />
                   <div>
-                    <strong>Hildesheim</strong>
+                    <strong>Ehrlicherstr. 52, 31135 Hildesheim</strong>
                     <span>{t('contact.contactMeta.location', { defaultValue: copy.contactMeta.location })}</span>
                   </div>
-                </StaticContactItem>
+                </ContactItemLink>
 
-                <ContactItemLink href='mailto:kontakt@vs-web-studio.de'>
+                <ContactItemLink href='mailto:anfrage@vs-web-studio.de'>
                   <FaEnvelope />
                   <div>
-                    <strong>kontakt@vs-web-studio.de</strong>
+                    <strong>anfrage@vs-web-studio.de</strong>
                     <span>{t('contact.contactMeta.email', { defaultValue: copy.contactMeta.email })}</span>
                   </div>
                 </ContactItemLink>
 
-                <ContactItemLink href='tel:+49301234567'>
+                <ContactItemLink href='tel:+4915164392053'>
                   <FaPhone />
                   <div>
-                    <strong>+49 30 1234567</strong>
+                    <strong>+49 1516 4392053</strong>
                     <span>{t('contact.contactMeta.phone', { defaultValue: copy.contactMeta.phone })}</span>
                   </div>
                 </ContactItemLink>

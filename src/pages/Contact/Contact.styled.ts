@@ -314,6 +314,30 @@ export const FieldHint = styled.p`
   line-height: 1.35;
 `;
 
+export const FormStatusMessage = styled.p<{ $tone: 'success' | 'error' }>`
+  margin: 8px 0 0;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid
+    ${({ $tone }) => ($tone === 'success' ? 'rgba(104, 211, 145, 0.35)' : 'rgba(255, 150, 150, 0.32)')};
+  background: ${({ $tone }) => ($tone === 'success' ? 'rgba(104, 211, 145, 0.12)' : 'rgba(255, 120, 120, 0.12)')};
+  color: ${({ $tone }) => ($tone === 'success' ? '#bef7d0' : '#ffd0d0')};
+  font-size: 12px;
+  line-height: 1.45;
+`;
+
+export const VisuallyHiddenField = styled.div`
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+`;
+
 export const SubmitButton = styled(PrimaryButton)`
   width: fit-content;
   min-height: auto;
@@ -321,6 +345,15 @@ export const SubmitButton = styled(PrimaryButton)`
   border-radius: 14px;
   font-weight: 600;
   margin-top: 10px;
+
+  &:disabled {
+    cursor: wait;
+    opacity: 0.7;
+    transform: none;
+    animation: none;
+    box-shadow: none;
+    filter: saturate(0.8);
+  }
 
   @media (max-width: 767px) {
     width: 100%;

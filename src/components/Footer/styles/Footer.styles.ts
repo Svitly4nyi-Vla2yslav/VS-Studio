@@ -36,6 +36,17 @@ export const FooterInfo = styled.div`
 export const FooterMuted = styled.p`
   color: rgba(255, 255, 255, 0.72) !important;
   margin-top: 4px !important;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--dur-fast) var(--ease-smooth);
+  }
+
+  a:hover,
+  a:focus-visible {
+    color: #ffd08a;
+  }
 `;
 
 export const FooterLinks = styled.div`

@@ -27,7 +27,11 @@ const Footer: React.FC = () => {
         <FooterRow>
           <FooterInfo>
             <p>{safeText(t('footer.tagline'), 'VS Studio - Websites, Web-Apps, Ads & Automationen')}</p>
-            <FooterMuted>kontakt@vs-web-studio.de | +49 30 1234567</FooterMuted>
+            <FooterMuted>
+              <a href='mailto:anfrage@vs-web-studio.de'>anfrage@vs-web-studio.de</a>
+              {' | '}
+              <a href='tel:+4915164392053'>+49 1516 4392053</a>
+            </FooterMuted>
           </FooterInfo>
           <FooterLinks>
             <FooterLink to='/impressum'>{safeText(t('footer.impressum'), 'Impressum')}</FooterLink>

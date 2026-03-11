@@ -1,4 +1,4 @@
-﻿{
+{
   "languages": {
     "de": "Deutsch",
     "uk": "Ð£ÐºÑ¬Ð°ï¿½\u0014Ð½Ñï¿½RÐºÐ°",
@@ -767,7 +767,18 @@
       "business": "Firmenname",
       "need": "Zum Beispiel: Website fuer ein Kosmetikstudio oder Werbung fuer eine Autowerkstatt",
       "help": "Zum Start reichen Branche, Ziel und was zuerst verbessert werden soll.",
-      "submit": "Kostenlose Beratung"
+      "submit": "Kostenlose Beratung",
+      "labels": {
+        "email": "E-Mail-Adresse",
+        "name": "Ihr Name",
+        "business": "Unternehmen",
+        "message": "Projekt oder Ziel"
+      },
+      "email": "E-Mail-Adresse",
+      "submitLoading": "Wird gesendet...",
+      "success": "Vielen Dank. Ihre Anfrage wurde erfolgreich versendet.",
+      "error": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+      "devError": "Lokaler API-Server nicht erreichbar. Starten Sie die App mit \"npm run dev:netlify\" und ?ffnen Sie dann http://localhost:8888."
     }
   },
   "blog": {
@@ -981,4 +992,3 @@
     }
   }
 }
-
