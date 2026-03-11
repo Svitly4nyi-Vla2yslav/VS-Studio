@@ -1341,7 +1341,7 @@ main {
   width: min(980px, calc(100% - 20px));
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.16);
-  background: rgba(10, 14, 26, 0.96);
+  background: rgb(58, 68, 181);
   box-shadow: 0 18px 28px rgba(0, 0, 0, 0.32);
   z-index: 240;
   padding: 12px;
