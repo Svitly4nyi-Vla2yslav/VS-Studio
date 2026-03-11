@@ -587,16 +587,16 @@
     "h1": "Referenzen mit messbarem Wachstum.",
     "subtitle": "Wir zeigen klar, was gestiegen ist: Anfragen, Buchungen, Anrufe und Leads.",
     "trustline": "Alle Kennzahlen mit Kontext: Zeitraum und Messung.",
-    "filterTitle": "Nische auswÃ’ï¿½\u0019ï¿½\u001aÂ¤hlen",
+    "filterTitle": "Nische auswählen",
     "filterAria": "Nischenfilter",
     "counter": "{{count}} passende Cases",
     "growthByNiche": "Wachstum nach Branche",
-    "selectedCases": "AusgewÃ’ï¿½\u0019ï¿½\u001aÂ¤hlte Cases",
+    "selectedCases": "Ausgewählte Cases",
     "challengeLabel": "Ausgangslage",
     "solutionLabel": "Umsetzung",
     "periodLabel": "Zeitraum",
     "measurementLabel": "Messung",
-    "emptyTitle": "FÃ’ï¿½\u0019ï¿½\u001aÂ¼r diese Nische folgt der nÃ’ï¿½\u0019ï¿½\u001aÂ¤chste Case.",
+    "emptyTitle": "Für diese Nische folgt der nächste Case.",
     "emptyText": "Wir zeigen nur Cases mit belastbarer Messung und klarem Zeitraum.",
     "beforeAfter": "Vorher / Nachher",
     "before": "Vorher",
@@ -605,9 +605,9 @@
     "afterAlt": "Nachher-Ansicht des Cases",
     "sliderAria": "Vorher Nachher Vergleich verschieben",
     "sliderHint": "Zum Vergleichen ziehen.",
-    "ctaTitle": "Sie wollen Ã’ï¿½\u0019ï¿½\u001aÂ¤hnliche Ergebnisse?",
+    "ctaTitle": "Sie wollen ähnliche Ergebnisse?",
     "ctaText": "Wir analysieren Ihre Ausgangslage und zeigen einen realistischen 30-90-Tage-Plan.",
-    "cta": "ï¿½ï¿½\u0019ï¿½ï¿½\u001aï¿½~hnliches Projekt anfragen",
+    "cta": "Ähnliches Projekt anfragen",
     "filters": {
       "all": "Alle"
     },
@@ -632,7 +632,7 @@
       "moreReservations": "Mehr Reservierungen",
       "moreBookings": "Mehr Buchungen",
       "moreLeads": "Mehr Leads",
-      "moreIntroCalls": "Mehr ErstgesprÃ’ï¿½\u0019ï¿½\u001aÂ¤che",
+      "moreIntroCalls": "Mehr Erstgespräche",
       "moreTrialSessions": "Mehr Probetrainings",
       "moreOffers": "Mehr Angebotsanfragen",
       "moreQualifiedLeads": "Mehr qualifizierte Leads",
@@ -645,19 +645,19 @@
     },
     "cases": {
       "c1": {
-        "title": "SanitÃ’ï¿½\u0019ï¿½\u001aÂ¤rbetrieb (Region Hannover)",
+        "title": "Sanitärbetrieb (Region Hannover)",
         "challenge": "Zu wenig Anfragen trotz guter Reichweite.",
         "solution": "Leistungsseiten neu strukturiert, CTA optimiert, Kontakttracking aktiviert."
       },
       "c2": {
         "title": "Physiopraxis (Hildesheim)",
-        "challenge": "Zu wenige Online-TerminwÃ’ï¿½\u0019ï¿½\u001aÂ¼nsche.",
+        "challenge": "Zu wenige Online-Terminwünsche.",
         "solution": "Termin-Flow vereinfacht, mobile Seiten beschleunigt, Kontaktwege klar definiert."
       },
       "c3": {
         "title": "Karosserie-Werkstatt (Raum Harburg)",
-        "challenge": "Viele Kontakte, aber zu wenig passende AuftrÃ’ï¿½\u0019ï¿½\u001aÂ¤ge.",
-        "solution": "Lead-Qualifizierung im Formular und servicebezogene Landingpage eingefÃ’ï¿½\u0019ï¿½\u001aÂ¼hrt."
+        "challenge": "Viele Kontakte, aber zu wenig passende Aufträge.",
+        "solution": "Lead-Qualifizierung im Formular und servicebezogene Landingpage eingeführt."
       },
       "c4": {
         "title": "Restaurant (Niedersachsen)",
@@ -665,14 +665,14 @@
         "solution": "Reservierungsstrecke vereinfacht, lokale Kampagnen neu aufgesetzt."
       },
       "c5": {
-        "title": "MaklerbÃ’ï¿½\u0019ï¿½\u001aÂ¼ro (Niedersachsen)",
-        "challenge": "Zu wenig qualifizierte EigentÃ’ï¿½\u0019ï¿½\u001aÂ¼mer-Leads.",
+        "title": "Maklerbüro (Niedersachsen)",
+        "challenge": "Zu wenig qualifizierte Eigentümer-Leads.",
         "solution": "Objektseiten nach Suchintention aufgebaut und Anfrageweg gestrafft."
       },
       "c6": {
         "title": "Steuerkanzlei (Region Hannover)",
         "challenge": "Geringe Conversion auf Leistungsseiten.",
-        "solution": "Seiteninhalte vereinfacht, Vertrauenstexte ergÃ’ï¿½\u0019ï¿½\u001aÂ¤nzt, Erstkontakt klar hervorgehoben."
+        "solution": "Seiteninhalte vereinfacht, Vertrauenstexte ergänzt, Erstkontakt klar hervorgehoben."
       }
     },
     "performanceDashboard": "Performance-Dashboard",

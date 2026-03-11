@@ -266,7 +266,7 @@ const Contact: React.FC = () => {
             </ContactCard>
 
             <ContactCard>
-              <SectionEyebrow>Lead Intake</SectionEyebrow>
+              <SectionEyebrow>{t('contact.nextStepsEyebrow', { defaultValue: 'Lead Intake' })}</SectionEyebrow>
               <MiniCardTitle>{t('contact.nextStepsTitle', { defaultValue: copy.nextStepsTitle })}</MiniCardTitle>
               <MiniCardText>{t('contact.nextStepsLead', { defaultValue: copy.nextStepsLead })}</MiniCardText>
 

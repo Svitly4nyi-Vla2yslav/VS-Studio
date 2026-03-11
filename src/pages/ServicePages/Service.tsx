@@ -84,21 +84,39 @@ const SectionShell = styled(motion.section)`
   }
 `;
 
+const HeroShell = styled.div`
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: var(--gutter);
+`;
+
 const HeroGrid = styled(motion.section)`
   display: grid;
   grid-template-columns: 1.06fr 0.94fr;
   gap: clamp(24px, 3vw, 44px);
-  padding-top: clamp(44px, 6vw, 80px);
+  align-items: center;
+  min-height: calc(100svh - 124px);
+  padding-top: clamp(28px, 4vw, 52px);
+  padding-bottom: clamp(18px, 3vw, 34px);
 
   @media (max-width: 980px) {
     grid-template-columns: 1fr;
+    min-height: auto;
+    align-items: start;
+    padding-top: clamp(28px, 6vw, 44px);
+    padding-bottom: 0;
   }
 `;
 
 const HeroCopy = styled.div`
   display: grid;
   gap: 20px;
-  align-content: start;
+  align-content: center;
+
+  @media (max-width: 980px) {
+    align-content: start;
+  }
 `;
 
 const Eyebrow = styled.p`
@@ -163,7 +181,7 @@ const HeroCta = styled(PrimaryButtonLink)`
 
 const HeroVisual = styled.div`
   position: relative;
-  min-height: clamp(360px, 56vw, 520px);
+  min-height: clamp(460px, 44vw, 640px);
   border-radius: 24px;
   border: 1px solid rgba(129, 198, 255, 0.32);
   background:
@@ -1070,7 +1088,7 @@ const ServicesPage: React.FC = () => {
 
   return (
     <StyledPageRoot>
-      <PageContainer>
+      <HeroShell>
         <HeroGrid initial='hidden' animate='visible' variants={staggerContainer}>
           <HeroCopy as={motion.div} variants={fadeInLeft}>
             <Eyebrow>{ui.eyebrow}</Eyebrow>
@@ -1142,6 +1160,9 @@ const ServicesPage: React.FC = () => {
             </DashboardShell>
           </HeroVisual>
         </HeroGrid>
+      </HeroShell>
+
+      <PageContainer>
 
         <SectionShell initial='hidden' whileInView='visible' viewport={{ once: true, amount: 0.2 }} variants={fadeInUp}>
           <h2>{ui.servicesTitle}</h2>

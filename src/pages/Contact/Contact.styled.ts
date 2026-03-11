@@ -3,20 +3,20 @@ import styled, { css, keyframes } from 'styled-components';
 import { Card, FieldIcon, PrimaryButton } from '../shared/styles/PagePrimitives.styles';
 
 export const ContactPageRoot = styled.div`
-  padding: 14px 0 84px;
+  padding: 0 0 84px;
 
   @media (max-width: 991px) {
-    padding: 16px 0 72px;
+    padding: 0 0 72px;
   }
 `;
 
 export const ContactHeroSection = styled(motion.section)`
   display: grid;
   justify-items: center;
-  align-items: center;
-  min-height: calc(100svh - 72px);
-  padding-top: 20px;
-  padding-bottom: 24px;
+  align-items: stretch;
+  min-height: calc(100svh - 76px);
+  padding-top: 18px;
+  padding-bottom: 18px;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   transform: none;
@@ -29,7 +29,7 @@ export const ContactHeroSection = styled(motion.section)`
 export const ContactHeroCanvas = styled.div`
   position: relative;
   overflow: hidden;
-  min-height: calc(100svh - 134px);
+  min-height: calc(100svh - 112px);
   box-sizing: border-box;
   width: min(1440px, calc(100vw - 40px));
   max-width: none;
@@ -79,7 +79,7 @@ export const ContactHeroGrid = styled.div`
   display: grid;
   min-height: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto minmax(0, 1fr);
   gap: 28px;
   align-items: stretch;
 
@@ -100,6 +100,8 @@ export const HeroCopyBlock = styled.div`
   justify-content: flex-start;
   text-align: center;
   width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
   padding: 10px 0 0;
 `;
 
@@ -107,7 +109,7 @@ export const HeroWorkbench = styled.div`
   position: relative;
   overflow: hidden;
   display: grid;
-  align-self: end;
+  align-self: stretch;
   grid-template-columns: minmax(420px, 1.12fr) minmax(420px, 1fr);
   gap: 20px;
   align-items: stretch;
@@ -161,14 +163,19 @@ export const ResponseBadge = styled.div`
 `;
 
 export const HeroTitle = styled.h1`
-  max-width: none;
-  width: 100%;
+  width: min(100%, 48ch);
   margin: 0;
+  margin-inline: auto;
   margin-bottom: 16px;
-  font-size: clamp(54px, 4.5vw, 78px);
-  line-height: 0.88;
-  letter-spacing: -0.04em;
-  text-wrap: pretty;
+  font-size: clamp(34px, 4.15vw, 54px);
+  line-height: 0.96;
+  letter-spacing: -0.03em;
+  /* text-wrap: balance; */
+
+  @media (max-width: 1279px) {
+    width: min(100%, 15ch);
+    font-size: clamp(40px, 5.5vw, 42px);
+  }
 
   @media (max-width: 767px) {
     font-size: clamp(30px, 10vw, 44px);
