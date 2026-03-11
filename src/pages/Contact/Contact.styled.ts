@@ -198,7 +198,7 @@ export const HeroLead = styled.p`
   }
 `;
 
-const BaseCard = styled(Card)`
+const baseCardStyles = css`
   padding: 24px;
   border-radius: 28px;
   border-color: rgba(255, 255, 255, 0.09);
@@ -214,7 +214,12 @@ const BaseCard = styled(Card)`
   }
 `;
 
-export const FormCard = styled(BaseCard).attrs({ as: 'form' })`
+const BaseCard = styled(Card)`
+  ${baseCardStyles}
+`;
+
+export const FormCard = styled(motion.form)`
+  ${baseCardStyles}
   display: flex;
   flex-direction: column;
   gap: 10px;

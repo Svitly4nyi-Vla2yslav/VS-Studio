@@ -1,4 +1,4 @@
-import { motion, easeOut } from 'framer-motion';
+import { easeOut } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
@@ -116,13 +116,7 @@ const Contact: React.FC = () => {
   return (
     <ContactPageRoot>
       <PageContainer>
-        <ContactHeroSection
-          as={motion.section}
-          initial='hidden'
-          animate='show'
-          variants={reveal}
-          transition={{ duration: 0.62, ease: easeOut }}
-        >
+        <ContactHeroSection initial='hidden' animate='show' variants={reveal} transition={{ duration: 0.62, ease: easeOut }}>
           <ContactHeroCanvas>
             <ContactHeroGrid>
               <HeroCopyBlock>
@@ -143,7 +137,7 @@ const Contact: React.FC = () => {
               </HeroCopyBlock>
 
               <HeroWorkbench>
-                <FormCard onSubmit={handleSubmit} noValidate>
+                <FormCard onSubmit={handleSubmit} noValidate name="contact" data-netlify="true">
                   <CardEyebrow>VS Web Studio</CardEyebrow>
                   <CardTitle>{t('contact.form.title', { defaultValue: copy.formTitle })}</CardTitle>
                   <FormIntro>{t('contact.form.intro', { defaultValue: copy.formIntro })}</FormIntro>
@@ -212,7 +206,6 @@ const Contact: React.FC = () => {
         </ContactHeroSection>
 
         <ContactSecondarySection
-          as={motion.section}
           initial='hidden'
           whileInView='show'
           viewport={{ once: true, amount: 0.18 }}
