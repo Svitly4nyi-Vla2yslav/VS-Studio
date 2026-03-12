@@ -17,8 +17,10 @@ const ConfiguratorSection: React.FC = () => {
         variants={fadeInUp}
       >
         <div className='section-header'>
-          <h2>{t('home.configurator.title')}</h2>
-          <p className='section-description'>{t('home.configurator.desc')}</p>
+          <h2>{t('home.configurator.title', { defaultValue: 'Angebots-Konfigurator' })}</h2>
+          <p className='section-description'>
+            {t('home.configurator.desc', { defaultValue: 'Wählen Sie Projektparameter und erhalten Sie einen Startpreis sowie passende Support-Tarife.' })}
+          </p>
         </div>
         <motion.div variants={scaleIn}>
           <Configurator />

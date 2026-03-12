@@ -50,9 +50,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ reducedMotion }) => {
           transition={{ duration: 0.9, ease: easeOut }}
         >
           <h1>
-            <TerminalType text={t('home.heroTitle')} durationMs={6200} storageKey='hero_terminal_once' />
+            <TerminalType
+              text={t('home.heroTitle', { defaultValue: 'Websites, die Anfragen bringen statt nur gut aussehen.' })}
+              durationMs={6200}
+              storageKey='hero_terminal_once'
+            />
           </h1>
-          <p>{t('home.heroSubtitle')}</p>
+          <p>{t('home.heroSubtitle', { defaultValue: 'Klare Positionierung, schnelle Umsetzung und transparente Pakete für lokale Dienstleister in Deutschland.' })}</p>
           <div className='btn-row'>
             <NavLink
               to='/kontakt'
@@ -67,30 +71,30 @@ const HeroSection: React.FC<HeroSectionProps> = ({ reducedMotion }) => {
               <FaEuroSign /> {t('common.viewPrices')}
             </NavLink>
             <a href='#faq' className='btn btn-secondary'>
-              <FaArrowRight /> {t('home.toFaq')}
+              <FaArrowRight /> {t('home.toFaq', { defaultValue: 'Zum FAQ' })}
             </a>
           </div>
         </motion.div>
 
         <aside className='hero-bento'>
           <article className='bento-tile'>
-            <span>{t('home.hero.bento.speed.label')}</span>
-            <strong>{t('home.hero.bento.speed.value')}</strong>
+            <span>{t('home.hero.bento.speed.label', { defaultValue: 'Geschwindigkeit' })}</span>
+            <strong>{t('home.hero.bento.speed.value', { defaultValue: '90+ Lighthouse' })}</strong>
             <FaBolt className='bento-icon-bg' aria-hidden='true' />
           </article>
           <article className='bento-tile'>
-            <span>{t('home.hero.bento.seo.label')}</span>
-            <strong>{t('home.hero.bento.seo.value')}</strong>
+            <span>{t('home.hero.bento.seo.label', { defaultValue: 'SEO' })}</span>
+            <strong>{t('home.hero.bento.seo.value', { defaultValue: 'Technisches Fundament' })}</strong>
             <FaSearch className='bento-icon-bg' aria-hidden='true' />
           </article>
           <article className='bento-tile'>
-            <span>{t('home.hero.bento.leads.label')}</span>
-            <strong>{t('home.hero.bento.leads.value')}</strong>
+            <span>{t('home.hero.bento.leads.label', { defaultValue: 'Anfragen' })}</span>
+            <strong>{t('home.hero.bento.leads.value', { defaultValue: 'Klare CTA und Formulare' })}</strong>
             <FaBullseye className='bento-icon-bg' aria-hidden='true' />
           </article>
           <article className='bento-tile'>
-            <span>{t('home.hero.bento.support.label')}</span>
-            <strong>{t('home.hero.bento.support.value')}</strong>
+            <span>{t('home.hero.bento.support.label', { defaultValue: 'Support' })}</span>
+            <strong>{t('home.hero.bento.support.value', { defaultValue: 'Nach dem Launch' })}</strong>
             <FaLifeRing className='bento-icon-bg' aria-hidden='true' />
           </article>
         </aside>

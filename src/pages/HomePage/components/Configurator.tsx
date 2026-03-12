@@ -156,6 +156,33 @@ const MAX_BY_SEO: Record<string, number> = {
   other: 90,
 };
 
+
+const labelFallbacks: Record<string, string> = {
+  goal: 'Ziel',
+  integrations: 'Integrationen',
+  ads: 'Werbung',
+  term: 'Zeitrahmen',
+  content: 'Content-Level',
+  languages: 'Sprachen',
+  hosting: 'Hosting',
+  domain: 'Domain',
+  pages: 'Seiten',
+  seo: 'SEO',
+};
+
+const optionFallbacks: Record<string, Record<string, string>> = {
+  goal: { leads: 'Leads', calls: 'Anrufe', booking: 'Buchungen', other: 'Andere' },
+  integrations: { booking: 'Buchung', crm: 'CRM', chat: 'Chat', payments: 'Zahlungen', other: 'Andere' },
+  ads: { none: 'Ohne Werbung', meta: 'Meta', google: 'Google', other: 'Andere' },
+  term: { 'up-to-7': 'Bis 1 Woche', '7-14': '7-14 Tage', '14-21': '14-21 Tage', '21-30': '21-30 Tage', other: 'Andere' },
+  content: { has: 'Texte vorhanden', copy: 'Copywriting ötig', other: 'Andere' },
+  languages: { basic: '1 Sprache', multi: '2+ Sprachen', other: 'Andere' },
+  hosting: { shared: 'Shared Hosting', vps: 'VPS', managed: 'Managed Hosting', other: 'Andere' },
+  domain: { 'new-domain': 'Neue Domain', 'existing-domain': 'Domain vorhanden', transfer: 'Domain-Transfer', other: 'Andere' },
+  pages: { one: '1 Seite', 'up-to-3': 'Bis 3 Seiten', 'five-plus': '5+ Seiten', other: 'Andere' },
+  seo: { base: 'SEO Base', extended: 'SEO Extended', other: 'Andere' },
+};
+
 const Configurator: React.FC = () => {
   const { t } = useTranslation();
   const [goal, setGoal] = useState<string[]>([]);
@@ -182,18 +209,38 @@ const Configurator: React.FC = () => {
     setSeo([]);
   };
 
+  const translate = (key: string, fallback: string, options?: Record<string, unknown>) =>
+    t(key, { defaultValue: fallback, ...options });
+
+  const getOptionFallback = (group: string, value: string) => optionFallbacks[group]?.[value] ?? value;
+
   const translatedSegmentData = useMemo(
     () => ({
-      goal: segmentData.goal.map(option => ({ ...option, title: t(option.title) })),
-      integrations: segmentData.integrations.map(option => ({ ...option, title: t(option.title) })),
-      ads: segmentData.ads.map(option => ({ ...option, title: t(option.title) })),
-      term: segmentData.term.map(option => ({ ...option, title: t(option.title) })),
-      content: segmentData.content.map(option => ({ ...option, title: t(option.title) })),
-      languages: segmentData.languages.map(option => ({ ...option, title: t(option.title) })),
-      hosting: segmentData.hosting.map(option => ({ ...option, title: t(option.title) })),
-      domain: segmentData.domain.map(option => ({ ...option, title: t(option.title) })),
-      pages: segmentData.pages.map(option => ({ ...option, title: t(option.title) })),
-      seo: segmentData.seo.map(option => ({ ...option, title: t(option.title) })),
+      goal: segmentData.goal.map(option => ({ ...option, title: translate(option.title, getOptionFallback('goal', option.value)) })),
+      integrations: segmentData.integrations.map(option => ({
+        ...option,
+        title: translate(option.title, getOptionFallback('integrations', option.value)),
+      })),
+      ads: segmentData.ads.map(option => ({ ...option, title: translate(option.title, getOptionFallback('ads', option.value)) })),
+      term: segmentData.term.map(option => ({ ...option, title: translate(option.title, getOptionFallback('term', option.value)) })),
+      content: segmentData.content.map(option => ({
+        ...option,
+        title: translate(option.title, getOptionFallback('content', option.value)),
+      })),
+      languages: segmentData.languages.map(option => ({
+        ...option,
+        title: translate(option.title, getOptionFallback('languages', option.value)),
+      })),
+      hosting: segmentData.hosting.map(option => ({
+        ...option,
+        title: translate(option.title, getOptionFallback('hosting', option.value)),
+      })),
+      domain: segmentData.domain.map(option => ({
+        ...option,
+        title: translate(option.title, getOptionFallback('domain', option.value)),
+      })),
+      pages: segmentData.pages.map(option => ({ ...option, title: translate(option.title, getOptionFallback('pages', option.value)) })),
+      seo: segmentData.seo.map(option => ({ ...option, title: translate(option.title, getOptionFallback('seo', option.value)) })),
     }),
     [t]
   );
@@ -250,16 +297,20 @@ const Configurator: React.FC = () => {
     const supportYearly = Math.round(supportYearlyRaw * 0.7);
 
     const bullets = [
-      t('home.configurator.bullets.prototype'),
-      t('home.configurator.bullets.goal', { value: getLabels(goal, translatedSegmentData.goal) }),
-      t('home.configurator.bullets.integrations', { value: getLabels(integration, translatedSegmentData.integrations) }),
-      t('home.configurator.bullets.term', { value: getLabels(term, translatedSegmentData.term) }),
-      t('home.configurator.bullets.hosting', { value: getLabels(hosting, translatedSegmentData.hosting) }),
-      t('home.configurator.bullets.domain', { value: getLabels(domain, translatedSegmentData.domain) }),
-      t('home.configurator.bullets.pages', { value: getLabels(pages, translatedSegmentData.pages) }),
-      t('home.configurator.bullets.analytics'),
-      content.includes('copy') ? t('home.configurator.bullets.copy_true') : t('home.configurator.bullets.copy_false'),
-      t('home.configurator.bullets.market_note'),
+      translate('home.configurator.bullets.prototype', 'Prototyp und Struktur mit Fokus auf Anfragen'),
+      translate('home.configurator.bullets.goal', 'Ziele: {{value}}', { value: getLabels(goal, translatedSegmentData.goal) }),
+      translate('home.configurator.bullets.integrations', 'Integrationen: {{value}}', {
+        value: getLabels(integration, translatedSegmentData.integrations),
+      }),
+      translate('home.configurator.bullets.term', 'Zeitrahmen: {{value}}', { value: getLabels(term, translatedSegmentData.term) }),
+      translate('home.configurator.bullets.hosting', 'Hosting: {{value}}', { value: getLabels(hosting, translatedSegmentData.hosting) }),
+      translate('home.configurator.bullets.domain', 'Domain: {{value}}', { value: getLabels(domain, translatedSegmentData.domain) }),
+      translate('home.configurator.bullets.pages', 'Seiten: {{value}}', { value: getLabels(pages, translatedSegmentData.pages) }),
+      translate('home.configurator.bullets.analytics', 'GA4 und Event-Tracking für Formulare/Kontakte'),
+      content.includes('copy')
+        ? translate('home.configurator.bullets.copy_true', 'Unterstützung bei Texten und Offer')
+        : translate('home.configurator.bullets.copy_false', 'Wir arbeiten mit Ihren vorhandenen Texten'),
+      translate('home.configurator.bullets.market_note', 'Orientierungspreis unter marktüblichem Niveau für kleine Unternehmen'),
     ];
 
     return {
@@ -287,75 +338,119 @@ const Configurator: React.FC = () => {
         : `${offer.totalFrom} - ${offer.totalTo} EUR`;
 
     return [
-      t('home.configurator.brief.title'),
-      t('home.configurator.brief.goal', { value: labels(goal, translatedSegmentData.goal) }),
-      t('home.configurator.brief.integrations', { value: labels(integration, translatedSegmentData.integrations) }),
-      t('home.configurator.brief.ads', { value: labels(ads, translatedSegmentData.ads) }),
-      t('home.configurator.brief.term', { value: labels(term, translatedSegmentData.term) }),
-      t('home.configurator.brief.content', { value: labels(content, translatedSegmentData.content) }),
-      t('home.configurator.brief.languages', { value: labels(languages, translatedSegmentData.languages) }),
-      t('home.configurator.brief.hosting', { value: labels(hosting, translatedSegmentData.hosting) }),
-      t('home.configurator.brief.domain', { value: labels(domain, translatedSegmentData.domain) }),
-      t('home.configurator.brief.pages', { value: labels(pages, translatedSegmentData.pages) }),
-      t('home.configurator.brief.seo', { value: labels(seo, translatedSegmentData.seo) }),
-      t('home.configurator.brief.launch_price', { value: formatPrice }),
-      t('home.configurator.brief.support_monthly', { value: `${offer.supportMonthly} EUR` }),
-      t('home.configurator.brief.support_yearly', { value: `${offer.supportYearly} EUR` }),
+      translate('home.configurator.brief.title', 'Brief aus dem Angebots-Konfigurator:'),
+      translate('home.configurator.brief.goal', 'Ziel: {{value}}', { value: labels(goal, translatedSegmentData.goal) }),
+      translate('home.configurator.brief.integrations', 'Integrationen: {{value}}', {
+        value: labels(integration, translatedSegmentData.integrations),
+      }),
+      translate('home.configurator.brief.ads', 'Werbung: {{value}}', { value: labels(ads, translatedSegmentData.ads) }),
+      translate('home.configurator.brief.term', 'Zeitrahmen: {{value}}', { value: labels(term, translatedSegmentData.term) }),
+      translate('home.configurator.brief.content', 'Content: {{value}}', { value: labels(content, translatedSegmentData.content) }),
+      translate('home.configurator.brief.languages', 'Sprachen: {{value}}', {
+        value: labels(languages, translatedSegmentData.languages),
+      }),
+      translate('home.configurator.brief.hosting', 'Hosting: {{value}}', {
+        value: labels(hosting, translatedSegmentData.hosting),
+      }),
+      translate('home.configurator.brief.domain', 'Domain: {{value}}', { value: labels(domain, translatedSegmentData.domain) }),
+      translate('home.configurator.brief.pages', 'Seiten: {{value}}', { value: labels(pages, translatedSegmentData.pages) }),
+      translate('home.configurator.brief.seo', 'SEO: {{value}}', { value: labels(seo, translatedSegmentData.seo) }),
+      translate('home.configurator.brief.launch_price', 'Startpreis: {{value}}', { value: formatPrice }),
+      translate('home.configurator.brief.support_monthly', 'Support / Monat: {{value}}', {
+        value: `${offer.supportMonthly} EUR`,
+      }),
+      translate('home.configurator.brief.support_yearly', 'Support / Jahr (-30%): {{value}}', {
+        value: `${offer.supportYearly} EUR`,
+      }),
     ].join('\n');
   }, [ads, content, domain, goal, hosting, integration, languages, offer, pages, seo, t, term, translatedSegmentData]);
 
   return (
     <div className='card configurator-card'>
-      <Segmented label={t('home.configurator.labels.goal')} value={goal} options={translatedSegmentData.goal} onChange={setGoal} />
       <Segmented
-        label={t('home.configurator.labels.integrations')}
+        label={translate('home.configurator.labels.goal', labelFallbacks.goal)}
+        value={goal}
+        options={translatedSegmentData.goal}
+        onChange={setGoal}
+      />
+      <Segmented
+        label={translate('home.configurator.labels.integrations', labelFallbacks.integrations)}
         value={integration}
         options={translatedSegmentData.integrations}
         onChange={setIntegration}
       />
-      <Segmented label={t('home.configurator.labels.ads')} value={ads} options={translatedSegmentData.ads} onChange={setAds} />
-      <Segmented label={t('home.configurator.labels.term')} value={term} options={translatedSegmentData.term} onChange={setTerm} />
       <Segmented
-        label={t('home.configurator.labels.content')}
+        label={translate('home.configurator.labels.ads', labelFallbacks.ads)}
+        value={ads}
+        options={translatedSegmentData.ads}
+        onChange={setAds}
+      />
+      <Segmented
+        label={translate('home.configurator.labels.term', labelFallbacks.term)}
+        value={term}
+        options={translatedSegmentData.term}
+        onChange={setTerm}
+      />
+      <Segmented
+        label={translate('home.configurator.labels.content', labelFallbacks.content)}
         value={content}
         options={translatedSegmentData.content}
         onChange={setContent}
       />
       <Segmented
-        label={t('home.configurator.labels.languages')}
+        label={translate('home.configurator.labels.languages', labelFallbacks.languages)}
         value={languages}
         options={translatedSegmentData.languages}
         onChange={setLanguages}
       />
       <Segmented
-        label={t('home.configurator.labels.hosting')}
+        label={translate('home.configurator.labels.hosting', labelFallbacks.hosting)}
         value={hosting}
         options={translatedSegmentData.hosting}
         onChange={setHosting}
       />
       <Segmented
-        label={t('home.configurator.labels.domain')}
+        label={translate('home.configurator.labels.domain', labelFallbacks.domain)}
         value={domain}
         options={translatedSegmentData.domain}
         onChange={setDomain}
       />
-      <Segmented label={t('home.configurator.labels.pages')} value={pages} options={translatedSegmentData.pages} onChange={setPages} />
-      <Segmented label={t('home.configurator.labels.seo')} value={seo} options={translatedSegmentData.seo} onChange={setSeo} />
+      <Segmented
+        label={translate('home.configurator.labels.pages', labelFallbacks.pages)}
+        value={pages}
+        options={translatedSegmentData.pages}
+        onChange={setPages}
+      />
+      <Segmented
+        label={translate('home.configurator.labels.seo', labelFallbacks.seo)}
+        value={seo}
+        options={translatedSegmentData.seo}
+        onChange={setSeo}
+      />
 
       <div className='offer'>
         <button type='button' className='btn btn-secondary reset-btn' onClick={resetAll}>
-          {t('home.configurator.reset')}
+          {translate('home.configurator.reset', 'Alles zurücksetzen')}
         </button>
         {!offer.isComplete ? (
-          <div className='offer-empty'>{t('home.configurator.empty')}</div>
+          <div className='offer-empty'>
+            {translate(
+              'home.configurator.empty',
+              'Wählen Sie mindestens eine Option in jedem Block. Mehrfachauswahl ist möglich; bei "Andere" wird keine Zusatzgebühr berechnet.'
+            )}
+          </div>
         ) : (
           <>
             <div className='offer-title'>
-              {t('home.configurator.recommended')}{' '}
-              <strong>{offer.pack === 'Business' ? t('home.configurator.pack.business') : t('home.configurator.pack.starter')}</strong>
+              {translate('home.configurator.recommended', 'Empfohlen:')}{' '}
+              <strong>
+                {offer.pack === 'Business'
+                  ? translate('home.configurator.pack.business', 'Business')
+                  : translate('home.configurator.pack.starter', 'Starter')}
+              </strong>
             </div>
             <p className='offer-price'>
-              {t('home.configurator.launchPrice')}{' '}
+              {translate('home.configurator.launchPrice', 'Startpreis:')}{' '}
               <strong>
                 {offer.totalFrom === offer.totalTo
                   ? `${offer.totalFrom} EUR`
@@ -369,20 +464,20 @@ const Configurator: React.FC = () => {
             </ul>
             <div className='support-grid'>
               <article className='support-card'>
-                <h3>{t('home.configurator.supportMonthly')}</h3>
+                <h3>{translate('home.configurator.supportMonthly', 'Support / Monat')}</h3>
                 <p>
                   <strong>{offer.supportMonthly} EUR</strong>
                 </p>
               </article>
               <article className='support-card'>
-                <h3>{t('home.configurator.supportYearly')}</h3>
+                <h3>{translate('home.configurator.supportYearly', 'Support / Jahr (-30%)')}</h3>
                 <p>
                   <strong>{offer.supportYearly} EUR</strong> <span className='support-old'>{offer.supportYearlyRaw} EUR</span>
                 </p>
               </article>
             </div>
             <NavLink to={offer.cta} state={{ prefillNeed: contactBrief }} className='btn btn-primary offer-cta'>
-              {t('home.configurator.cta')}
+              {translate('home.configurator.cta', 'Kontaktanfrage und exakter Kostenvoranschlag')}
             </NavLink>
           </>
         )}

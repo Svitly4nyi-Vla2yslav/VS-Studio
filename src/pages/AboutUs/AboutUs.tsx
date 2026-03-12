@@ -316,10 +316,10 @@ const AboutUs: React.FC = () => {
           </Section>
 
           <Band className='about-cta-band'>
-            <h2>{t('aboutPage.cta.title', { defaultValue: 'Bereit fuer planbare Anfragen?' })}</h2>
-            <Muted>{t('aboutPage.cta.text', { defaultValue: 'Im kostenlosen Erstgespraech zeigen wir die groessten Hebel fuer Ihre Website, Lead-Prozesse und Werbung.' })}</Muted>
+            <h2>{t('aboutPage.cta.title', { defaultValue: 'Bereit für planbare Anfragen?' })}</h2>
+            <Muted>{t('aboutPage.cta.text', { defaultValue: 'Im kostenlosen Erstgespräch zeigen wir die größten Hebel für Ihre Website, Lead-Prozesse und Werbung.' })}</Muted>
             <ButtonRow>
-              <PrimaryButtonLink to='/kontakt'><FaArrowRight /> {t('aboutPage.primaryCta', { defaultValue: 'Kostenloses Erstgespraech starten' })}</PrimaryButtonLink>
+              <PrimaryButtonLink to='/kontakt'><FaArrowRight /> {t('aboutPage.primaryCta', { defaultValue: 'Kostenloses Erstgespräch starten' })}</PrimaryButtonLink>
             </ButtonRow>
           </Band>
         </PageContainer>

@@ -29,11 +29,18 @@ const ProcessSection: React.FC = () => {
         variants={fadeInUp}
       >
         <div className='section-header'>
-          <h2>{t('home.process.title')}</h2>
-          <p className='section-description'>{t('home.process.desc')}</p>
+          <h2>{t('home.process.title', { defaultValue: 'Wie wir arbeiten' })}</h2>
+          <p className='section-description'>
+            {t('home.process.desc', { defaultValue: 'Ein transparenter Prozess ohne unnötige Schritte: vom kurzen Briefing bis zu Launch und Optimierung mit klaren Deadlines.' })}
+          </p>
         </div>
         <div className='sticky-process-grid'>
-          <motion.div className='sticky-steps' role='tablist' aria-label={t('home.process.aria')} variants={staggerContainer}>
+          <motion.div
+            className='sticky-steps'
+            role='tablist'
+            aria-label={t('home.process.aria', { defaultValue: 'Projektphasen' })}
+            variants={staggerContainer}
+          >
             {processSteps.map((item, index) => (
               <motion.button
                 key={item.step}
@@ -45,7 +52,11 @@ const ProcessSection: React.FC = () => {
                 variants={scaleIn}
               >
                 <span>{item.step}</span>
-                <p>{t(`home.process.steps.s${index + 1}.title`)}</p>
+                <p>
+                  {t(`home.process.steps.s${index + 1}.title`, {
+                    defaultValue: ['15-Minuten-Call', 'Prototyp in 48h', 'Entwicklung in 7-14 Tagen', 'Launch und Optimierung'][index],
+                  })}
+                </p>
               </motion.button>
             ))}
           </motion.div>
@@ -79,10 +90,23 @@ const ProcessSection: React.FC = () => {
                     <div className='process-content'>
                       <div className='process-kicker'>
                         <span className='process-chip'>{item.step}</span>
-                        <span className='process-chip subtle'>{t('home.process.stage')}</span>
+                        <span className='process-chip subtle'>{t('home.process.stage', { defaultValue: 'Phase' })}</span>
                       </div>
-                      <h3>{t(`home.process.steps.s${index + 1}.title`)}</h3>
-                      <p>{t(`home.process.steps.s${index + 1}.text`)}</p>
+                      <h3>
+                        {t(`home.process.steps.s${index + 1}.title`, {
+                          defaultValue: ['15-Minuten-Call', 'Prototyp in 48h', 'Entwicklung in 7-14 Tagen', 'Launch und Optimierung'][index],
+                        })}
+                      </h3>
+                      <p>
+                        {t(`home.process.steps.s${index + 1}.text`, {
+                          defaultValue: [
+                            'Wir klären Aufgabe, KPI und Deadline und stimmen sofort das Launch-Format ab.',
+                            'Wir zeigen Seitenstruktur, CTA und Lead-Flow vor der Entwicklung.',
+                            'Umsetzung, SEO-Basis, Integrationen und Analytics ohne unnötigen Overhead.',
+                            'Wir gehen live, prüfen Conversion und liefern einen 30-Tage-Verbesserungsplan.',
+                          ][index],
+                        })}
+                      </p>
                       <div className='process-nav'>
                         <button
                           type='button'
@@ -90,7 +114,7 @@ const ProcessSection: React.FC = () => {
                           onClick={() => swiperRef.current?.slidePrev()}
                           disabled={activeStep === 0}
                         >
-                          {t('home.process.nav.prev')}
+                          {t('home.process.nav.prev', { defaultValue: 'Zurück' })}
                         </button>
                         <button
                           type='button'
@@ -98,7 +122,7 @@ const ProcessSection: React.FC = () => {
                           onClick={() => swiperRef.current?.slideNext()}
                           disabled={activeStep === processSteps.length - 1}
                         >
-                          {t('home.process.nav.next')}
+                          {t('home.process.nav.next', { defaultValue: 'Weiter' })}
                         </button>
                       </div>
                     </div>

@@ -35,18 +35,18 @@ export const MarqueeSection: React.FC = () => {
   const { t } = useTranslation();
   const items = useMemo(
     () => [
-      { label: t('home.marquee.items.handwerk'), icon: <FaHammer />, backgroundImage: handwerkBg },
-      { label: t('home.marquee.items.praxen'), icon: <FaHeartbeat />, backgroundImage: praxenBg },
-      { label: t('home.marquee.items.werkstaetten'), icon: <FaIndustry />, backgroundImage: werkstaettenBg },
-      { label: t('home.marquee.items.gastronomie'), icon: <FaUtensils />, backgroundImage: gastronomieBg },
-      { label: t('home.marquee.items.beauty'), icon: <FaSpa />, backgroundImage: beautyBg },
-      { label: t('home.marquee.items.immobilien'), icon: <FaBuilding />, backgroundImage: immobilienBg },
-      { label: t('home.marquee.items.kanzlei'), icon: <FaBalanceScale />, backgroundImage: kanzleiBg },
-      { label: t('home.marquee.items.fitness'), icon: <FaDumbbell />, backgroundImage: fitnessBg },
-      { label: t('home.marquee.items.reinigung'), icon: <FaBroom />, backgroundImage: reinigungBg },
-      { label: t('home.marquee.items.transport'), icon: <FaTruck />, backgroundImage: transportBg },
-      { label: t('home.marquee.items.coaching'), icon: <FaChalkboardTeacher />, backgroundImage: coachingBg },
-      { label: t('home.marquee.items.bildung'), icon: <FaGraduationCap />, backgroundImage: bildungBg },
+      { label: t('home.marquee.items.handwerk', { defaultValue: 'Handwerk' }), icon: <FaHammer />, backgroundImage: handwerkBg },
+      { label: t('home.marquee.items.praxen', { defaultValue: 'Praxen' }), icon: <FaHeartbeat />, backgroundImage: praxenBg },
+      { label: t('home.marquee.items.werkstaetten', { defaultValue: 'Werkstätten' }), icon: <FaIndustry />, backgroundImage: werkstaettenBg },
+      { label: t('home.marquee.items.gastronomie', { defaultValue: 'Gastronomie' }), icon: <FaUtensils />, backgroundImage: gastronomieBg },
+      { label: t('home.marquee.items.beauty', { defaultValue: 'Beauty' }), icon: <FaSpa />, backgroundImage: beautyBg },
+      { label: t('home.marquee.items.immobilien', { defaultValue: 'Immobilien' }), icon: <FaBuilding />, backgroundImage: immobilienBg },
+      { label: t('home.marquee.items.kanzlei', { defaultValue: 'Kanzlei' }), icon: <FaBalanceScale />, backgroundImage: kanzleiBg },
+      { label: t('home.marquee.items.fitness', { defaultValue: 'Fitness' }), icon: <FaDumbbell />, backgroundImage: fitnessBg },
+      { label: t('home.marquee.items.reinigung', { defaultValue: 'Reinigung' }), icon: <FaBroom />, backgroundImage: reinigungBg },
+      { label: t('home.marquee.items.transport', { defaultValue: 'Transport' }), icon: <FaTruck />, backgroundImage: transportBg },
+      { label: t('home.marquee.items.coaching', { defaultValue: 'Coaching' }), icon: <FaChalkboardTeacher />, backgroundImage: coachingBg },
+      { label: t('home.marquee.items.bildung', { defaultValue: 'Bildung' }), icon: <FaGraduationCap />, backgroundImage: bildungBg },
     ],
     [t]
   );
@@ -66,15 +66,17 @@ export const MarqueeSection: React.FC = () => {
     <MarqueeSectionScope>
       <motion.section
         className='section marquee-wrap'
-        aria-label={t('home.marquee.aria')}
+        aria-label={t('home.marquee.aria', { defaultValue: 'Branchen' })}
         initial='hidden'
         whileInView='visible'
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeInUp}
       >
         <div className='section-header'>
-          <h2>{t('home.marquee.title')}</h2>
-          <p className='section-description'>{t('home.marquee.desc')}</p>
+          <h2>{t('home.marquee.title', { defaultValue: 'Branchen, mit denen wir arbeiten' })}</h2>
+          <p className='section-description'>
+            {t('home.marquee.desc', { defaultValue: 'Wählen Sie eine Richtung und sehen Sie passende Stilbeispiele. So bauen wir schneller ein präzises Angebot für Ihr Unternehmen.' })}
+          </p>
         </div>
         <Partners rows={rows} />
       </motion.section>

@@ -10,7 +10,7 @@ import {
   FooterRow,
 } from './styles/Footer.styles';
 
-const hasBrokenEncoding = (value: string) => /[ÃÂ]|�/.test(value);
+const hasBrokenEncoding = (value: string) => /[\u00C3\u00C2\uFFFD]/.test(value);
 
 const safeText = (value: string, fallback: string) => (hasBrokenEncoding(value) ? fallback : value);
 
