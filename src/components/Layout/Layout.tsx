@@ -4,6 +4,7 @@ import { AnimatePresence, easeOut } from 'framer-motion';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import CookieConsentBanner from '../CookieConsentBanner';
+import SeoHead from '../../seo/SeoHead';
 import { MainContent, SiteShell } from './styles/Layout.styles';
 
 export const Layout: React.FC = () => {
@@ -15,6 +16,7 @@ export const Layout: React.FC = () => {
 
   return (
     <SiteShell>
+      <SeoHead />
       <Header />
       <AnimatePresence mode='wait'>
         <MainContent

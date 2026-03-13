@@ -14,6 +14,7 @@ import Cookies from './pages/Legal/Cookies';
 import HandwerkerLanding from './pages/Niche/Handwerker';
 import PraxisLanding from './pages/Niche/Praxis';
 import WerkstattLanding from './pages/Niche/Werkstatt';
+import NotFound from './pages/NotFound/NotFound';
 import './site.css';
 
 export const App: React.FC = () => {
@@ -38,7 +39,7 @@ export const App: React.FC = () => {
         <Route path='cookies' element={<Cookies />} />
 
         <Route path='home' element={<Navigate to='/' replace />} />
-        <Route path='*' element={<Navigate to='/' replace />} />
+        <Route path='*' element={<NotFound />} />
       </Route>
     </Routes>
   );
