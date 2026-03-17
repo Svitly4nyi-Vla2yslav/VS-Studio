@@ -141,6 +141,8 @@ export const getSeoRoute = (pathname: string): SeoResolvedRoute => {
 
 const websiteId = `${config.site.baseUrl}/#website`;
 const organizationId = `${config.site.baseUrl}/#organization`;
+const importantRoutePaths = ['/services', '/preise', '/referenzen', '/ueber-uns', '/kontakt'];
+const importantRoutes = config.routes.filter(route => importantRoutePaths.includes(route.path));
 
 const pageTypeByKind: Record<PageKind, string> = {
   home: 'WebPage',
@@ -171,7 +173,7 @@ const createOrganizationNode = () => ({
   '@id': organizationId,
   name: config.site.siteName,
   url: `${config.site.baseUrl}/`,
-  logo: `${config.site.baseUrl}/apple-touch-icon.png`,
+  logo: `${config.site.baseUrl}/android-chrome-512x512.png`,
   image: config.site.defaultImage,
   email: config.site.email,
   telephone: config.site.telephone,
@@ -215,6 +217,9 @@ const createWebsiteNode = () => ({
   url: `${config.site.baseUrl}/`,
   name: config.site.siteName,
   inLanguage: 'de-DE',
+  hasPart: importantRoutes.map(route => ({
+    '@id': `${buildAbsoluteUrl(route.path)}#navigation`,
+  })),
   publisher: {
     '@id': organizationId,
   },
@@ -234,11 +239,27 @@ const createPageNode = (route: SeoResolvedRoute) => ({
   about: {
     '@id': organizationId,
   },
+  significantLink:
+    route.pageKind === 'home'
+      ? importantRoutes.map(item => buildAbsoluteUrl(item.path))
+      : undefined,
   primaryImageOfPage: {
     '@type': 'ImageObject',
     url: config.site.defaultImage,
   },
 });
+
+const createNavigationNodes = () =>
+  importantRoutes.map(route => ({
+    '@type': 'SiteNavigationElement',
+    '@id': `${buildAbsoluteUrl(route.path)}#navigation`,
+    name: route.name,
+    url: buildAbsoluteUrl(route.path),
+    inLanguage: 'de-DE',
+    isPartOf: {
+      '@id': websiteId,
+    },
+  }));
 
 const createHomeFaqNode = () => ({
   '@type': 'FAQPage',
@@ -304,6 +325,7 @@ export const buildStructuredData = (route: SeoResolvedRoute) => {
     createWebsiteNode(),
     createPageNode(route),
     createBreadcrumbNode(route),
+    ...createNavigationNodes(),
   ];
 
   if (route.pageKind === 'home') {

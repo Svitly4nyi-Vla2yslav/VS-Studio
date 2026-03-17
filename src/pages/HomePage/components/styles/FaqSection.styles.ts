@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 
 export const FaqSectionScope = styled.div`
+  .section {
+    display: grid;
+    gap: 18px;
+  }
+
   .faq {
     display: grid;
     gap: 14px;
-    margin-top: 14px;
   }
 
   .faq details {
@@ -53,5 +57,62 @@ export const FaqSectionScope = styled.div`
   .faq details[open] .faq-answer {
     grid-template-rows: 1fr;
     opacity: 1;
+  }
+
+  .faq-links-card {
+    display: grid;
+    gap: 16px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background:
+      radial-gradient(420px 180px at 0% 0%, rgba(246, 211, 101, 0.12), transparent 65%),
+      rgba(7, 11, 21, 0.86);
+    padding: 20px;
+  }
+
+  .faq-links-header {
+    display: grid;
+    gap: 6px;
+  }
+
+  .faq-links-header h3 {
+    font-size: 20px;
+  }
+
+  .faq-links-header p {
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.6;
+  }
+
+  .faq-links-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .faq-link-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.94);
+    font-weight: 600;
+    transition:
+      transform var(--dur-fast) var(--ease-smooth),
+      border-color var(--dur-fast) var(--ease-smooth),
+      background var(--dur-fast) var(--ease-smooth),
+      color var(--dur-fast) var(--ease-smooth);
+  }
+
+  .faq-link-pill:hover,
+  .faq-link-pill:focus-visible {
+    transform: translateY(-1px);
+    border-color: rgba(255, 209, 137, 0.75);
+    background: rgba(255, 222, 167, 0.12);
+    color: #ffe5b1;
   }
 `;

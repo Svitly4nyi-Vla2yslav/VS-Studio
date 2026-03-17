@@ -2,8 +2,8 @@
   "site": {
     "baseUrl": "https://vs-web-studio.de",
     "siteName": "VS Web Studio",
-    "defaultTitle": "VS Web Studio | Websites, SEO und Lead-Systeme für Deutschland",
-    "defaultDescription": "VS Web Studio entwickelt schnelle Websites, Landingpages und Lead-Systeme für lokale Unternehmen in Deutschland. SEO, Performance, Tracking und Conversion aus einer Hand.",
+    "defaultTitle": "VS Web Studio | Websites, SEO und Lead-Systeme fuer Deutschland",
+    "defaultDescription": "VS Web Studio entwickelt schnelle Websites, Landingpages und Lead-Systeme fuer lokale Unternehmen in Deutschland. SEO, Performance, Tracking und Conversion aus einer Hand.",
     "defaultImage": "https://vs-web-studio.de/og.png",
     "defaultImageAlt": "VS Web Studio - Websites, SEO und Lead-Systeme",
     "locale": "de_DE",
@@ -37,19 +37,19 @@
       "answer": "Wir arbeiten in klaren Etappen: Konzept, Design, Entwicklung, Launch und Optimierung. Sie erhalten waehrend des gesamten Projekts transparente Updates."
     },
     {
-      "question": "Ist das Angebot für kleine Unternehmen geeignet?",
-      "answer": "Ja. Die Pakete sind bewusst für lokale Unternehmen aufgebaut und fokussieren Anfragen, klare Preise und eine schnelle Umsetzung."
+      "question": "Ist das Angebot fuer kleine Unternehmen geeignet?",
+      "answer": "Ja. Die Pakete sind bewusst fuer lokale Unternehmen aufgebaut und fokussieren Anfragen, klare Preise und eine schnelle Umsetzung."
     },
     {
       "question": "Was passiert nach dem Launch?",
-      "answer": "Nach dem Launch pruefen wir Tracking, Conversion-Punkte und Ladezeit und erstellen einen konkreten Verbesserungsplan für die naechsten 30 Tage."
+      "answer": "Nach dem Launch pruefen wir Tracking, Conversion-Punkte und Ladezeit und erstellen einen konkreten Verbesserungsplan fuer die naechsten 30 Tage."
     }
   ],
   "pricingPackages": [
     {
       "name": "Starter",
       "price": "ab EUR 690",
-      "description": "Landingpage mit Lead-Formular, Tracking und SEO-Basis für kleine lokale Unternehmen."
+      "description": "Landingpage mit Lead-Formular, Tracking und SEO-Basis fuer kleine lokale Unternehmen."
     },
     {
       "name": "Business",
@@ -66,9 +66,9 @@
     {
       "path": "/",
       "name": "Startseite",
-      "title": "VS Web Studio | Websites, SEO und Lead-Systeme für Deutschland",
-      "description": "VS Web Studio entwickelt schnelle Websites, Landingpages und Lead-Systeme für lokale Unternehmen in Deutschland. SEO, Performance, Tracking und Conversion aus einer Hand.",
-      "keywords": "webagentur deutschland, webdesign hildesheim, seo agentur niedersachsen, landingpage agentur, lead system für lokale unternehmen, performance website",
+      "title": "VS Web Studio | Websites, SEO und Lead-Systeme fuer Deutschland",
+      "description": "VS Web Studio entwickelt schnelle Websites, Landingpages und Lead-Systeme fuer lokale Unternehmen in Deutschland. SEO, Performance, Tracking und Conversion aus einer Hand.",
+      "keywords": "webagentur deutschland, webdesign hildesheim, seo agentur niedersachsen, landingpage agentur, lead system fuer lokale unternehmen, performance website",
       "pageKind": "home",
       "changeFrequency": "weekly",
       "priority": 1,
@@ -80,7 +80,7 @@
       "path": "/services",
       "name": "Leistungen",
       "title": "Leistungen | Website, SEO, Tracking, Ads und Automationen",
-      "description": "Website-Entwicklung, SEO-Basis, Tracking, Social Ads, KI-Automationen und Lead-Systeme für lokale Unternehmen in Deutschland.",
+      "description": "Website-Entwicklung, SEO-Basis, Tracking, Social Ads, KI-Automationen und Lead-Systeme fuer lokale Unternehmen in Deutschland.",
       "keywords": "website entwicklung deutschland, seo basis, tracking setup, social ads agentur, ki automation, lead funnel",
       "pageKind": "services",
       "changeFrequency": "weekly",
@@ -93,7 +93,7 @@
       "path": "/preise",
       "name": "Preise",
       "title": "Preise | Website- und Lead-Systeme ab EUR 690",
-      "description": "Transparente Preise für Landingpages, mehrseitige Websites und Lead-Systeme inklusive SEO-Basis, Tracking und Support für lokale Unternehmen.",
+      "description": "Transparente Preise fuer Landingpages, mehrseitige Websites und Lead-Systeme inklusive SEO-Basis, Tracking und Support fuer lokale Unternehmen.",
       "keywords": "website preise deutschland, landingpage ab 690, webagentur preise, lead system kosten, seo paket",
       "pageKind": "pricing",
       "changeFrequency": "weekly",
@@ -105,7 +105,7 @@
     {
       "path": "/referenzen",
       "name": "Referenzen",
-      "title": "Referenzen | Messbare Ergebnisse für lokale Unternehmen",
+      "title": "Referenzen | Messbare Ergebnisse fuer lokale Unternehmen",
       "description": "Ausgewaehlte Referenzen mit messbaren Ergebnissen: mehr Anfragen, mehr Termine, mehr qualifizierte Leads und bessere Conversion.",
       "keywords": "webagentur referenzen, case studies lokale unternehmen, mehr anfragen website, conversion optimierung referenzen",
       "pageKind": "references",
@@ -119,7 +119,7 @@
       "path": "/ueber-uns",
       "name": "Ueber uns",
       "title": "Ueber VS Web Studio | Webagentur aus Hildesheim",
-      "description": "VS Web Studio aus Hildesheim entwickelt Websites und Lead-Systeme für lokale Unternehmen in Niedersachsen und ganz Deutschland.",
+      "description": "VS Web Studio aus Hildesheim entwickelt Websites und Lead-Systeme fuer lokale Unternehmen in Niedersachsen und ganz Deutschland.",
       "keywords": "webagentur hildesheim, webdesign niedersachsen, ueber vs web studio, lokale agentur deutschland",
       "pageKind": "about",
       "changeFrequency": "monthly",
@@ -132,7 +132,7 @@
       "path": "/kontakt",
       "name": "Kontakt",
       "title": "Kontakt | Projektanfrage an VS Web Studio",
-      "description": "Projektanfrage für Website, Relaunch, SEO, Tracking oder Lead-System. Direkter Kontakt mit VS Web Studio in Hildesheim.",
+      "description": "Projektanfrage fuer Website, Relaunch, SEO, Tracking oder Lead-System. Direkter Kontakt mit VS Web Studio in Hildesheim.",
       "keywords": "kontakt webagentur hildesheim, projektanfrage website, seo agentur kontakt, landingpage anfragen",
       "pageKind": "contact",
       "changeFrequency": "monthly",
@@ -145,7 +145,7 @@
       "path": "/blog",
       "name": "Blog",
       "title": "Blog | Insights zu Website, SEO, Ads und Automationen",
-      "description": "Insights zu Websites, Lead-Funnels, SEO, Tracking, Social Ads und Automationen für lokale Unternehmen in Deutschland.",
+      "description": "Insights zu Websites, Lead-Funnels, SEO, Tracking, Social Ads und Automationen fuer lokale Unternehmen in Deutschland.",
       "keywords": "website blog deutschland, seo insights, lead funnel tipps, social ads tracking, automation blog",
       "pageKind": "blog",
       "changeFrequency": "weekly",
@@ -157,9 +157,9 @@
     {
       "path": "/handwerker",
       "name": "Handwerker",
-      "title": "Websites für Handwerker | Mehr passende Anfragen",
-      "description": "Websites für Handwerker mit lokaler Sichtbarkeit, klaren Leistungsseiten, schneller Ladezeit und direktem Anfrage-Fokus.",
-      "keywords": "website für handwerker, handwerker webdesign, lokale sichtbarkeit handwerk, anfragen für handwerker",
+      "title": "Websites fuer Handwerker | Mehr passende Anfragen",
+      "description": "Websites fuer Handwerker mit lokaler Sichtbarkeit, klaren Leistungsseiten, schneller Ladezeit und direktem Anfrage-Fokus.",
+      "keywords": "website fuer handwerker, handwerker webdesign, lokale sichtbarkeit handwerk, anfragen fuer handwerker",
       "pageKind": "niche",
       "changeFrequency": "monthly",
       "priority": 0.84,
@@ -170,9 +170,9 @@
     {
       "path": "/praxis",
       "name": "Praxis",
-      "title": "Websites für Praxen | Mehr Terminanfragen und weniger Rueckfragen",
-      "description": "Websites für Praxen mit patientenfreundlicher Struktur, klaren Kontaktwegen und messbarer Conversion für Terminanfragen.",
-      "keywords": "website für praxis, arztpraxis webdesign, terminanfragen website, praxis marketing deutschland",
+      "title": "Websites fuer Praxen | Mehr Terminanfragen und weniger Rueckfragen",
+      "description": "Websites fuer Praxen mit patientenfreundlicher Struktur, klaren Kontaktwegen und messbarer Conversion fuer Terminanfragen.",
+      "keywords": "website fuer praxis, arztpraxis webdesign, terminanfragen website, praxis marketing deutschland",
       "pageKind": "niche",
       "changeFrequency": "monthly",
       "priority": 0.84,
@@ -183,9 +183,9 @@
     {
       "path": "/werkstatt",
       "name": "Werkstatt",
-      "title": "Websites für Werkstaetten | Planbare Leads statt Zufall",
-      "description": "Website- und Lead-Systeme für Werkstaetten mit serviceorientierten Seiten, Tracking und klarem Anfrageprozess.",
-      "keywords": "website für werkstatt, auto werkstatt webdesign, lead system werkstatt, conversion website servicebetrieb",
+      "title": "Websites fuer Werkstaetten | Planbare Leads statt Zufall",
+      "description": "Website- und Lead-Systeme fuer Werkstaetten mit serviceorientierten Seiten, Tracking und klarem Anfrageprozess.",
+      "keywords": "website fuer werkstatt, auto werkstatt webdesign, lead system werkstatt, conversion website servicebetrieb",
       "pageKind": "niche",
       "changeFrequency": "monthly",
       "priority": 0.84,

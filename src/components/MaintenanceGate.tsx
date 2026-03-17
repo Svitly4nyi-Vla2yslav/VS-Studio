@@ -3,13 +3,23 @@ import { ReactNode, useEffect, useRef, useState } from 'react';
 const STORAGE_KEY = 'vs-studio-maintenance-bypass';
 const REQUIRED_TAPS = 5;
 const TAP_RESET_MS = 3200;
+const CRAWLER_UA_PATTERN =
+  /googlebot|google-inspectiontool|googleother|bingbot|slurp|duckduckbot|baiduspider|yandexbot|applebot|petalbot|facebot|facebookexternalhit|twitterbot|linkedinbot|slackbot|discordbot|telegrambot/i;
+
+const isCrawlerRequest = () => {
+  if (typeof window === 'undefined') {
+    return false;
+  }
+
+  return CRAWLER_UA_PATTERN.test(window.navigator.userAgent);
+};
 
 const readStoredAccess = () => {
   if (typeof window === 'undefined') {
     return false;
   }
 
-  return window.localStorage.getItem(STORAGE_KEY) === 'true';
+  return isCrawlerRequest() || window.localStorage.getItem(STORAGE_KEY) === 'true';
 };
 
 type MaintenanceGateProps = {
