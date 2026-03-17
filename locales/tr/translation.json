@@ -888,7 +888,7 @@
   },
   "feedback2": {
     "form": {
-      "success": "Danke fuer dein Feedback!",
+      "success": "Danke für dein Feedback!",
       "error": "Feedback konnte nicht gesendet werden."
     }
   },
