@@ -6,7 +6,7 @@ const sourceLang = 'de';
 
 const data = {
   copy: {
-    eyebrow: 'Lead-Systeme fuer lokale Unternehmen in Deutschland',
+    eyebrow: 'Lead-Systeme für lokale Unternehmen in Deutschland',
     heroTitle: ['Aus Traffic', 'qualifizierte Leads', 'als steuerbares System'],
     heroLead: 'Wir verbinden Website, AI, Ads und Analytics in einer operativen Architektur, damit Vertrieb, Marketing und Inhaber mit denselben Daten arbeiten.',
     ctaTop: 'Strategischen Call starten',
@@ -35,7 +35,7 @@ const data = {
     kpiPanelTitle: 'Live KPI Counters',
     kpiLabels: ['Qualified Leads', 'Avg. First Response', 'Lead to Termin', 'ROAS Cluster'],
     controlBadges: ['Lead Kontrolle', 'Budget Kontrolle', 'Funnel Kontrolle'],
-    ctaBottom: 'Scope fuer Ihr Lead-System anfragen'
+    ctaBottom: 'Scope für Ihr Lead-System anfragen'
   },
   systems: {
     website: {
@@ -103,7 +103,7 @@ const data = {
     ['02', 'Scope Dokument', 'Kanalplan, Tracking-Plan und Verantwortlichkeiten werden fixiert.'],
     ['03', 'Build Phase', 'Website, Automationen und Integrationen werden umgesetzt.'],
     ['04', 'Launch', 'Tracking QA, Kampagnenstart und CRM-Flows gehen live.'],
-    ['05', 'Optimierung', 'Woechentliche Tests fuer Creatives, Funnel und Qualifizierung.'],
+    ['05', 'Optimierung', 'Woechentliche Tests für Creatives, Funnel und Qualifizierung.'],
     ['06', 'Skalierung', 'Funktionierende Strecken werden auf Regionen/Leistungen erweitert.']
   ]
 };

@@ -6,14 +6,14 @@ const ABOUT_PAGE = {
     heroEyebrow: 'VS Studio | Hildesheim | Niedersachsen | Deutschland',
     heroTitleLine1: 'Websites und',
     heroTitleLine2: 'Lead-Systeme',
-    heroTitleLine3: 'fuer lokale Unternehmen',
+    heroTitleLine3: 'für lokale Unternehmen',
     heroTitleLine4: 'in Hildesheim',
     heroSubtitle: 'Mehr qualifizierte Anfragen durch schnelle Websites, klare Kontaktwege und messbares Marketing.',
     heroTrustline: 'Lokal in Hildesheim. Strategisch in Niedersachsen. Umsetzbar in ganz Deutschland.',
     primaryCta: 'Kostenlose Website-Analyse',
     section: { about: 'About', localAdvantages: 'Lokale Vorteile', how: 'How we work', value: 'Value', trust: 'Trust' },
     blocks: {
-      who: { title: 'Fuer lokale Unternehmen', text: 'Websites, Lead-Systeme und Marketing fuer Betriebe, die planbar mehr Anfragen wollen.' },
+      who: { title: 'Fuer lokale Unternehmen', text: 'Websites, Lead-Systeme und Marketing für Betriebe, die planbar mehr Anfragen wollen.' },
       focus: { title: 'Ein System statt Einzelloesungen', text: 'Website, Kontaktwege, Kampagnen und Tracking greifen als ein klarer Prozess zusammen.' },
       locality: {
         title: 'Lokale Naehe als Vorteil',
@@ -21,7 +21,7 @@ const ABOUT_PAGE = {
         text1: 'Wir arbeiten direkt mit lokalen Unternehmen zusammen - ohne lange Agenturketten und unnoetige Buerokratie.',
         i1: 'Direkte Kommunikation ohne Umwege',
         i2: 'Schnelle Umsetzung statt langer Abstimmungen',
-        i3: 'Verstaendnis fuer lokale Maerkte und Budgets',
+        i3: 'Verstaendnis für lokale Maerkte und Budgets',
         text2: 'Unsere Kunden profitieren davon, dass Entscheidungen schneller getroffen werden und Projekte nicht wochenlang in Abstimmungsschleifen haengen bleiben.',
         text3: 'Das spart Zeit, reduziert Kosten und sorgt dafuer, dass Marketingmassnahmen schneller Ergebnisse liefern.',
         text4: 'Wir kennen die Realitaet kleiner und mittelstaendischer Unternehmen: begrenzte Budgets, wenig Zeit und den Wunsch nach klaren Resultaten statt komplizierten Konzepten.',
@@ -55,8 +55,8 @@ const ABOUT_PAGE = {
       focus: { label: 'Fokus', value: 'Lokal + Messbar', text: 'Hildesheim, Niedersachsen und Deutschland mit klarem Lead-Fokus.' },
     },
     cta: {
-      title: 'Bereit fuer planbare Anfragen?',
-      text: 'Im kostenlosen Erstgespraech zeigen wir die groessten Hebel fuer Ihre Website, Lead-Prozesse und Werbung.',
+      title: 'Bereit für planbare Anfragen?',
+      text: 'Im kostenlosen Erstgespraech zeigen wir die groessten Hebel für Ihre Website, Lead-Prozesse und Werbung.',
     },
     visual: {
       productBadge: 'Lead System',

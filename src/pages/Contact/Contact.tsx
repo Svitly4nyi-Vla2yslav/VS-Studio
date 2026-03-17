@@ -62,7 +62,7 @@ const copy = {
   quickContacts: 'Direkter Kontakt',
   responseNote: 'Antwort meist innerhalb von 1-2 Stunden',
   formTitle: 'Projektanfrage',
-  formIntro: 'Drei Angaben reichen fuer den Start.',
+  formIntro: 'Drei Angaben reichen für den Start.',
   formHelp: 'Name, Unternehmen und Ziel genuegen.',
   nextStepsTitle: 'So geht es weiter',
   nextStepsLead:
@@ -79,7 +79,7 @@ const copy = {
   submitDevError:
     'Lokaler API-Server nicht erreichbar. Starten Sie die App mit "npm run dev:netlify" und öffnen Sie dann http://localhost:8888.',
   contactMeta: {
-    location: 'Standort fuer schnelle Abstimmung',
+    location: 'Standort für schnelle Abstimmung',
     email: 'Projektanfragen per E-Mail',
     phone: 'Kurzes Erstgespraech oder Rueckruf',
   },

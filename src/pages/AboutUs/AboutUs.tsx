@@ -169,7 +169,7 @@ const AboutUs: React.FC = () => {
                 <span className='about-hero-title-line'>
                   <span className='about-hero-title-highlight'>{t('aboutPage.heroTitleLine2', { defaultValue: 'Lead-Systeme' })}</span>
                 </span>
-                <span className='about-hero-title-line'>{t('aboutPage.heroTitleLine3', { defaultValue: 'fuer lokale Unternehmen' })}</span>
+                <span className='about-hero-title-line'>{t('aboutPage.heroTitleLine3', { defaultValue: 'für lokale Unternehmen' })}</span>
                 <span className='about-hero-title-line'>{t('aboutPage.heroTitleLine4', { defaultValue: 'in Hildesheim' })}</span>
               </h1>
               <p className='about-hero-subtitle'>
@@ -190,7 +190,7 @@ const AboutUs: React.FC = () => {
             <Grid2>
               <Card>
                 <h3>{t('aboutPage.blocks.who.title', { defaultValue: 'Fuer lokale Unternehmen' })}</h3>
-                <Muted>{t('aboutPage.blocks.who.text', { defaultValue: 'Websites, Lead-Systeme und Marketing fuer Betriebe, die planbar mehr Anfragen wollen.' })}</Muted>
+                <Muted>{t('aboutPage.blocks.who.text', { defaultValue: 'Websites, Lead-Systeme und Marketing für Betriebe, die planbar mehr Anfragen wollen.' })}</Muted>
               </Card>
               <Card>
                 <h3>{t('aboutPage.blocks.focus.title', { defaultValue: 'Ein System statt Einzelloesungen' })}</h3>
@@ -228,7 +228,7 @@ const AboutUs: React.FC = () => {
                 <Checklist className='about-local-list'>
                   <li><FaCheckCircle /> {t('aboutPage.blocks.locality.i1', { defaultValue: 'Direkte Kommunikation ohne Umwege' })}</li>
                   <li><FaCheckCircle /> {t('aboutPage.blocks.locality.i2', { defaultValue: 'Schnelle Umsetzung statt langer Abstimmungen' })}</li>
-                  <li><FaCheckCircle /> {t('aboutPage.blocks.locality.i3', { defaultValue: 'Verstaendnis fuer lokale Maerkte und Budgets' })}</li>
+                  <li><FaCheckCircle /> {t('aboutPage.blocks.locality.i3', { defaultValue: 'Verstaendnis für lokale Maerkte und Budgets' })}</li>
                 </Checklist>
                 <Muted className='about-local-copy'>
                   {t('aboutPage.blocks.locality.text2', { defaultValue: 'Unsere Kunden profitieren davon, dass Entscheidungen schneller getroffen werden und Projekte nicht wochenlang in Abstimmungsschleifen haengen bleiben.' })}

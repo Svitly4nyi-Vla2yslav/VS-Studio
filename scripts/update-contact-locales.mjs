@@ -3,7 +3,7 @@ import path from 'path';
 
 const CONTACT = {
   de: {
-    h1: 'Kontakt & Anfrage fuer dein Projekt',
+    h1: 'Kontakt & Anfrage für dein Projekt',
     responseTime: 'Antwortzeit aktuell:',
     quickContacts: 'Schnelle Kontakte',
     form: {
