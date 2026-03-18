@@ -6,16 +6,21 @@ import { fadeInUp, scaleIn, staggerContainer } from '../../../components/Motion/
 import { homeFaq } from '../../../seo/seo';
 import { FaqSectionScope } from './styles/FaqSection.styles';
 
-const quickLinks = [
-  { to: '/services', label: 'Services' },
-  { to: '/preise', label: 'Preise' },
-  { to: '/referenzen', label: 'Referenzen' },
-  { to: '/ueber-uns', label: 'Ueber uns' },
-  { to: '/kontakt', label: 'Kontakt' },
-];
-
 const FaqSection: React.FC = () => {
   const { t } = useTranslation();
+
+  const faqItems = homeFaq.map((item, index) => ({
+    question: t(`home.faq.q${index + 1}`, { defaultValue: item.question }),
+    answer: t(`home.faq.a${index + 1}`, { defaultValue: item.answer }),
+  }));
+
+  const quickLinks = [
+    { to: '/services', label: t('header.services', { defaultValue: 'Services' }) },
+    { to: '/preise', label: t('header.preise', { defaultValue: 'Preise' }) },
+    { to: '/referenzen', label: t('header.referenzen', { defaultValue: 'Referenzen' }) },
+    { to: '/ueber-uns', label: t('header.ueberUns', { defaultValue: 'Ueber uns' }) },
+    { to: '/kontakt', label: t('header.kontakt', { defaultValue: 'Kontakt' }) },
+  ];
 
   return (
     <FaqSectionScope>
@@ -44,7 +49,7 @@ const FaqSection: React.FC = () => {
         </div>
 
         <motion.div className='faq' variants={staggerContainer}>
-          {homeFaq.map(item => (
+          {faqItems.map(item => (
             <motion.details key={item.question} variants={scaleIn}>
               <summary>{item.question}</summary>
               <div className='faq-answer'>
@@ -56,13 +61,18 @@ const FaqSection: React.FC = () => {
 
         <motion.div className='faq-links-card' variants={fadeInUp}>
           <div className='faq-links-header'>
-            <h3>Wichtige Seiten</h3>
+            <h3>{t('home.faq.linksTitle', { defaultValue: 'Wichtige Seiten' })}</h3>
             <p>
-              Direkte Einstiege für Leistungen, Preise, Referenzen, Agenturprofil
-              und Projektanfrage.
+              {t('home.faq.linksDesc', {
+                defaultValue:
+                  'Direkte Einstiege fuer Leistungen, Preise, Referenzen, Agenturprofil und Projektanfrage.',
+              })}
             </p>
           </div>
-          <nav className='faq-links-grid' aria-label='Wichtige Seiten'>
+          <nav
+            className='faq-links-grid'
+            aria-label={t('home.faq.linksAria', { defaultValue: 'Wichtige Seiten' })}
+          >
             {quickLinks.map(link => (
               <Link key={link.to} to={link.to} className='faq-link-pill'>
                 {link.label}
