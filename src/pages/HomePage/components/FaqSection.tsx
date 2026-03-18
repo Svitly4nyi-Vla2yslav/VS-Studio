@@ -58,7 +58,7 @@ const FaqSection: React.FC = () => {
           <div className='faq-links-header'>
             <h3>Wichtige Seiten</h3>
             <p>
-              Direkte Einstiege fuer Leistungen, Preise, Referenzen, Agenturprofil
+              Direkte Einstiege für Leistungen, Preise, Referenzen, Agenturprofil
               und Projektanfrage.
             </p>
           </div>
