@@ -443,222 +443,222 @@
            },
     "pl":  {
                "copy":  {
-                            "eyebrow":  "Systemy wiodÄ…ce dla lokalnych firm w Niemczech",
+                            "eyebrow":  "Systemy leadowe dla lokalnych firm w Niemczech",
                             "heroTitle":  [
                                               "Z ruchu",
-                                              "kwalifikowani potencjalni klienci",
-                                              "jako system sterowalny"
+                                              "w kwalifikowane leady",
+                                              "jako sterowalny system"
                                           ],
-                            "heroLead":  "ÅÄ…czymy stronÄ™ internetowÄ…, sztucznÄ… inteligencjÄ™, reklamy i analitykÄ™ w jednÄ… architekturÄ™ operacyjnÄ…, aby sprzedaÅ¼, marketing i wÅ‚aÅ›ciciele pracowali z tymi samymi danymi.",
-                            "ctaTop":  "Rozpocznij rozmowÄ™ strategicznÄ…",
+                            "heroLead":  "Łączymy stronę internetową, AI, reklamy i analitykę w jedną architekturę operacyjną, aby sprzedaż, marketing i właściciel pracowali na tych samych danych.",
+                            "ctaTop":  "Rozpocznij rozmowę strategiczną",
                             "heroChips":  [
-                                              "PrzepÅ‚yw oÅ‚owiu",
-                                              "AI Zakwalifikuj siÄ™",
-                                              "Uznanie autorstwa"
+                                              "Przepływ leadów",
+                                              "Kwalifikacja AI",
+                                              "Atrybucja"
                                           ],
                             "heroChipValues":  [
-                                                   "UjÄ™cie na Å¼ywo",
+                                                   "Live intake",
                                                    "DM + Bot",
                                                    "GA4 + CRM"
                                                ],
                             "flowNodes":  [
-                                              "Google/Meta/TikTok",
-                                              "LÄ…dowanie + Å›ledzenie",
+                                              "Google / Meta / TikTok",
+                                              "Landing + tracking",
                                               "Kwalifikacja AI",
-                                              "Potok CRM"
+                                              "Pipeline CRM"
                                           ],
                             "heroBadges":  [
-                                               "Åšledzenie po stronie serwera",
-                                               "Punktacja leadÃ³w",
-                                               "ROAS Widok"
+                                               "Tracking server-side",
+                                               "Lead scoring",
+                                               "Widok ROAS"
                                            ],
-                            "servicesTitle":  "UsÅ‚ugi jako moduÅ‚y systemu",
-                            "servicesDesc":  "Niejednolity blok kart: dominujÄ…cy rdzeÅ„, moduÅ‚y flankujÄ…ce i zwarta warstwa operacyjna.",
+                            "servicesTitle":  "Usługi jako moduły systemu",
+                            "servicesDesc":  "Nie klasyczny blok równych kart, tylko dominujący rdzeń, moduły uzupełniające i kompaktowa warstwa operacyjna.",
                             "trio":  [
                                          "Problem",
-                                         "systemu",
-                                         "Wynik"
+                                         "System",
+                                         "Efekt"
                                      ],
-                            "detailsSummary":  "SzczegÃ³Å‚y implementacji",
+                            "detailsSummary":  "Szczegóły wdrożenia",
                             "kpiBadgesTitle":  "Odznaki KPI",
-                            "kpiBadgesDesc":  "KaÅ¼de wyniki ocenia siÄ™ wyÅ‚Ä…cznie na podstawie kluczowych danych, ktÃ³re sprzedaÅ¼ i marketing mogÄ… wspÃ³lnie odczytaÄ‡ i kontrolowaÄ‡.",
-                            "signalLayerTitle":  "Warstwa sygnaÅ‚u",
+                            "kpiBadgesDesc":  "Każdy obszar oceniamy wyłącznie przez pryzmat wskaźników, które sprzedaż i marketing mogą wspólnie czytać oraz kontrolować.",
+                            "signalLayerTitle":  "Warstwa sygnałowa",
                             "signalItems":  [
                                                 "Zdarzenia GA4",
-                                                "MetaCAPI",
+                                                "Meta CAPI",
                                                 "Synchronizacja CRM",
-                                                "Moda na RODO"
+                                                "Tryb DSGVO"
                                             ],
                             "opsTitle":  "Notatki operacyjne",
                             "opsItems":  [
-                                             "Cotygodniowa kolejka testÃ³w",
-                                             "Realokacja budÅ¼etu",
-                                             "Szczeliny kontroli jakoÅ›ci lejka"
+                                             "Cotygodniowa kolejka testów",
+                                             "Realokacja budżetu",
+                                             "Sloty QA dla lejka"
                                          ],
-                            "packagesTitle":  "Pakete in SaaS-Logik",
-                            "recommended":  "Zalecane",
+                            "packagesTitle":  "Pakiety w logice SaaS",
+                            "recommended":  "Polecane",
                             "timelineTitle":  "Jak pracujemy",
                             "stepLabel":  "Krok",
-                            "controlTitle":  "Control Room: Wyniki w czasie rzeczywistym",
-                            "controlPanelTitle":  "Architektura pulpitu nawigacyjnego",
-                            "controlPanelDesc":  "Dane kanaÅ‚u, sygnaÅ‚y ze Å›cieÅ¼ek i status CRM sÄ… zebrane w jednym widoku. Decyzje podejmowane sÄ… na poziomie procesu, a nie na podstawie przeczuÄ‡.",
+                            "controlTitle":  "Control Room: wyniki w czasie rzeczywistym",
+                            "controlPanelTitle":  "Architektura dashboardu",
+                            "controlPanelDesc":  "Dane kanałów, sygnały lejka i status CRM zbieramy w jednym widoku. Decyzje zapadają na poziomie procesu, a nie na podstawie przeczucia.",
                             "miniCharts":  [
-                                               "IloÅ›Ä‡ leadÃ³w",
-                                               "Wynik JakoÅ›ci",
-                                               "PrÄ™dkoÅ›Ä‡ rozdania"
+                                               "Liczba leadów",
+                                               "Quality Score",
+                                               "Tempo pipeline'u"
                                            ],
-                            "kpiPanelTitle":  "Liczniki KPI na Å¼ywo",
+                            "kpiPanelTitle":  "Liczniki KPI na żywo",
                             "kpiLabels":  [
-                                              "Kwalifikowani potencjalni klienci",
-                                              "Åšrednia Pierwsza odpowiedÅº",
-                                              "DoprowadÅº do spotkania",
+                                              "Kwalifikowane leady",
+                                              "Śr. pierwszy kontakt",
+                                              "Lead do terminu",
                                               "Klastry ROAS"
                                           ],
                             "controlBadges":  [
-                                                  "Kontrola leadÃ³w",
-                                                  "Kontrola budÅ¼etu",
-                                                  "Sterowanie lejkiem"
+                                                  "Kontrola leadów",
+                                                  "Kontrola budżetu",
+                                                  "Kontrola lejka"
                                               ],
-                            "ctaBottom":  "Zakres Å¼Ä…dania dla Twojego systemu wiodÄ…cego"
+                            "ctaBottom":  "Zapytaj o zakres dla swojego systemu leadowego"
                         },
                "systems":  {
                                "website":  {
-                                               "title":  "Silnik strony internetowej",
-                                               "problem":  "Ruch jest, ale uÅ¼ytkownicy mobilni rezygnujÄ… przed formularzem.",
-                                               "system":  "Landing/Wielostronicowy z GA4, Meta Pixel, Å›ledzeniem po stronie serwera, konfiguracjÄ… CRM i RODO.",
-                                               "outcome":  "KaÅ¼dy lead jest rejestrowany w sposÃ³b identyfikowalny i wyraÅºnie przypisany do kanaÅ‚u.",
+                                               "title":  "Silnik strony",
+                                               "problem":  "Ruch jest, ale użytkownicy mobilni odpadają przed formularzem.",
+                                               "system":  "Landing page albo strona wielopodstronowa z GA4, Meta Pixel, trackingiem server-side, CRM i konfiguracją DSGVO.",
+                                               "outcome":  "Każdy lead jest rejestrowany w sposób możliwy do prześledzenia i jednoznacznie przypisany do kanału.",
                                                "kpis":  [
-                                                            "szybkoÅ›Ä‡ Å›ledzenia",
-                                                            "WypeÅ‚nienie formularza",
-                                                            "PrzejrzystoÅ›Ä‡ ÅºrÃ³dÅ‚a potencjalnego klienta"
+                                                            "Skuteczność trackingu",
+                                                            "Ukończenie formularza",
+                                                            "Przejrzystość źródła leada"
                                                         ],
                                                "details":  [
-                                                               "Tryb zgody skonfigurowany poprawnie",
-                                                               "PoÅ‚Ä…czenia i zdarzenia WhatsApp",
-                                                               "CRM push w czasie rzeczywistym"
+                                                               "Consent Mode skonfigurowany poprawnie",
+                                                               "Połączenia i zdarzenia WhatsApp",
+                                                               "Push do CRM w czasie rzeczywistym"
                                                            ]
                                            },
                                "ai":  {
                                           "title":  "Warstwa kwalifikacji AI",
-                                          "problem":  "Zbyt wiele niewykwalifikowanych zapytaÅ„ blokuje sprzedaÅ¼ i zespÃ³Å‚ telefoniczny.",
-                                          "system":  "Chatbot AI, automatyczna kwalifikacja, przepÅ‚ywy DM w WhatsApp/Instagramie, automatyzacja poczty e-mail, scoring leadÃ³w.",
-                                          "outcome":  "ZespÃ³Å‚ priorytetowo traktuje leady zwiÄ…zane ze sprzedaÅ¼Ä…, zamiast czasochÅ‚onnego wstÄ™pnego sortowania.",
+                                          "problem":  "Zbyt wiele niekwalifikowanych zapytań blokuje sprzedaż i zespół telefoniczny.",
+                                          "system":  "Chatbot AI, auto-kwalifikacja, DM flow w WhatsAppie i Instagramie, automatyzacja e-maili oraz lead scoring.",
+                                          "outcome":  "Zespół priorytetyzuje leady bliższe sprzedaży zamiast tracić czas na ręczną preselekcję.",
                                           "kpis":  [
                                                        "Czas pierwszej odpowiedzi",
-                                                       "Kwalifikowany udziaÅ‚ wiodÄ…cy",
-                                                       "WydajnoÅ›Ä‡ zespoÅ‚u sprzedaÅ¼y"
+                                                       "Udział kwalifikowanych leadów",
+                                                       "Przepustowość zespołu sprzedaży"
                                                    ],
                                           "details":  [
-                                                          "ÅšcieÅ¼ki podpowiedzi specyficzne dla branÅ¼y",
-                                                          "Przypomnienia o braku pokazu",
-                                                          "Priorytetyzacja wedÅ‚ug wyniku"
+                                                          "Ścieżki promptów dopasowane do branży",
+                                                          "Przypomnienia o no-show",
+                                                          "Priorytetyzacja według scoringu"
                                                       ]
                                       },
                                "ads":  {
-                                           "title":  "PÅ‚atne pozyskiwanie",
-                                           "problem":  "BudÅ¼et jest rozdzielany pomiÄ™dzy kanaÅ‚y bez wyraÅºnej pÄ™tli uczenia siÄ™.",
-                                           "system":  "Google Ads + Meta Ads + TikTok, testy A/B, lookalikes, Å›ledzenie konwersji i widok ROAS.",
-                                           "outcome":  "BudÅ¼et wpÅ‚ywa na kampanie o wysokiej jakoÅ›ci potencjalnych klientÃ³w, a nie na samÄ… liczbÄ™ klikniÄ™Ä‡.",
+                                           "title":  "Płatne pozyskiwanie",
+                                           "problem":  "Budżet rozkłada się między kanały bez wyraźnej pętli uczenia.",
+                                           "system":  "Google Ads, Meta Ads i TikTok, testy A/B, lookalike'i, tracking konwersji i widok ROAS.",
+                                           "outcome":  "Budżet trafia do kampanii o wyższej jakości leadów, a nie tylko do źródeł z dużą liczbą kliknięć.",
                                            "kpis":  [
-                                                        "Koszt za kwalifikowanego potencjalnego klienta",
-                                                        "ROAS wedÅ‚ug kampanii",
-                                                        "WspÃ³Å‚czynnik wygranych kreacji"
+                                                        "Koszt kwalifikowanego leada",
+                                                        "ROAS według kampanii",
+                                                        "Skuteczność kreacji"
                                                     ],
                                            "details":  [
                                                            "Regionalne klastry kampanii",
-                                                           "Warianty ksztaÅ‚tu w teÅ›cie",
-                                                           "Aktualizacje odbiorcÃ³w na podstawie sygnaÅ‚u"
+                                                           "Warianty formularzy w testach",
+                                                           "Aktualizacje odbiorców oparte na sygnałach"
                                                        ]
                                        },
                                "analytics":  {
-                                                 "title":  "Analityka kontroli",
-                                                 "problem":  "Decyzje podejmowane sÄ… na podstawie zrzutÃ³w ekranu platformy, a nie wiarygodnych danych z lejka.",
-                                                 "system":  "Pulpit kontrolny z widokami kanaÅ‚Ã³w, lejkÃ³w i CRM na jednym poziomie.",
-                                                 "outcome":  "Cotygodniowe decyzje dotyczÄ…ce budÅ¼etu, optymalizacji i skalowania sÄ… identyfikowalne na podstawie danych.",
+                                                 "title":  "Analityka kontrolna",
+                                                 "problem":  "Decyzje opierają się na screenshotach z platform zamiast na wiarygodnych danych z lejka.",
+                                                 "system":  "Dashboard control room z widokiem kanałów, lejka i CRM w jednej warstwie.",
+                                                 "outcome":  "Cotygodniowe decyzje dotyczące budżetu, optymalizacji i skalowania są jasno uzasadnione danymi.",
                                                  "kpis":  [
-                                                              "ProwadÅº do spotkania",
-                                                              "ProwadziÄ‡ do transakcji",
-                                                              "PrÄ™dkoÅ›Ä‡ rurociÄ…gu"
+                                                              "Lead do terminu",
+                                                              "Lead do sprzedaży",
+                                                              "Tempo pipeline'u"
                                                           ],
                                                  "details":  [
-                                                                 "Segmentacja wedÅ‚ug regionu/usÅ‚ugi",
-                                                                 "Alerty o spadku Å›cieÅ¼ki",
-                                                                 "MiesiÄ™czna lista hipotez"
+                                                                 "Segmentacja według regionu i usługi",
+                                                                 "Alerty przy spadkach w lejku",
+                                                                 "Miesięczna lista hipotez"
                                                              ]
                                              }
                            },
                "packages":  [
                                 {
-                                    "id":  "rozrusznik",
-                                    "title":  "Rozrusznik",
+                                    "id":  "starter",
+                                    "title":  "Starter",
                                     "scale":  1,
-                                    "lead":  "Dla lokalnych firm przechodzÄ…cych od zera do mierzalnej bazy leadÃ³w.",
+                                    "lead":  "Dla lokalnych firm, które przechodzą od zera do mierzalnej bazy leadów.",
                                     "items":  [
-                                                  "Lejek internetowy + GA4",
-                                                  "Meta piksele + zgoda",
-                                                  "Przechwytywanie CRM",
+                                                  "Lejek webowy + GA4",
+                                                  "Meta Pixel + consent",
+                                                  "CRM capture",
                                                   "Podstawowe raportowanie"
                                               ],
-                                    "effect":  "Jasny obraz ÅºrÃ³deÅ‚ potencjalnych klientÃ³w i odporny proces poczÄ…tkowy."
+                                    "effect":  "Jasny obraz źródeł leadów i odporny proces startowy."
                                 },
                                 {
-                                    "id":  "wzrostu",
-                                    "title":  "Wzrost",
+                                    "id":  "growth",
+                                    "title":  "Growth",
                                     "scale":  2,
                                     "recommended":  true,
-                                    "lead":  "Dla zespoÅ‚Ã³w z aktywnÄ… sprzedaÅ¼Ä…, ktÃ³re potrzebujÄ… wiÄ™kszej liczby wykwalifikowanych potencjalnych klientÃ³w.",
+                                    "lead":  "Dla zespołów z aktywną sprzedażą, które potrzebują większej liczby kwalifikowanych leadów.",
                                     "items":  [
                                                   "Kampanie Google + Meta",
-                                                  "PrzepÅ‚ywy kwalifikacji AI",
-                                                  "Konfiguracja testÃ³w A/B",
-                                                  "Punktacja leadÃ³w + automatyzacja"
+                                                  "AI qualification flows",
+                                                  "Konfiguracja testów A/B",
+                                                  "Lead scoring + automatyzacja"
                                               ],
-                                    "effect":  "Bardziej kwalifikowany popyt z lepszymi czasami reakcji i jasnym ustalaniem priorytetÃ³w."
+                                    "effect":  "Więcej kwalifikowanego popytu, lepszy czas reakcji i klarowna priorytetyzacja."
                                 },
                                 {
                                     "id":  "scale",
-                                    "title":  "Skala",
+                                    "title":  "Scale",
                                     "scale":  3,
-                                    "lead":  "Dla firm z wieloma regionami lub klastrami usÅ‚ug.",
+                                    "lead":  "Dla firm działających w wielu regionach albo klastrach usług.",
                                     "items":  [
-                                                  "Sterowanie wielokanaÅ‚owe",
-                                                  "Atrybucja po stronie serwera",
-                                                  "Warstwa aplikacji internetowej Ops",
-                                                  "ZarzÄ…dzanie sterowniÄ…"
+                                                  "Sterowanie multi-channel",
+                                                  "Atrybucja server-side",
+                                                  "Ops Web-App Layer",
+                                                  "Control-Room Governance"
                                               ],
-                                    "effect":  "Skalowanie poprzez procesy i wiarygodne dane zamiast rÄ™cznej metody prÃ³b i bÅ‚Ä™dÃ³w."
+                                    "effect":  "Skalowanie oparte na procesach i wiarygodnych danych zamiast ręcznego trial-and-error."
                                 }
                             ],
                "timeline":  [
                                 [
                                     "01",
-                                    "PoÅ‚Ä…czenie strategiczne",
-                                    "Rynek docelowy, oferta i wiodÄ…ce wÄ…skie gardÅ‚o sÄ… jasno okreÅ›lone."
+                                    "Połączenie strategiczne",
+                                    "Rynek docelowy, oferta i główne wąskie gardło leadowe są jasno definiowane."
                                 ],
                                 [
                                     "02",
-                                    "Dokument dotyczÄ…cy zakresu",
-                                    "Plan kanaÅ‚u, plan Å›ledzenia i obowiÄ…zki sÄ… staÅ‚e."
+                                    "Dokument scope",
+                                    "Ustalamy plan kanałów, plan trackingu i odpowiedzialności."
                                 ],
                                 [
                                     "03",
-                                    "Faza budowy",
-                                    "Serwis WWW, wdraÅ¼ane sÄ… automatyzacje i integracje."
+                                    "Faza build",
+                                    "Wdrażamy stronę, automatyzacje i integracje."
                                 ],
                                 [
                                     "04",
-                                    "Uruchomienie",
-                                    "Åšledzenie kontroli jakoÅ›ci, uruchamiania kampanii i przepÅ‚ywÃ³w CRM zostaje uruchomione."
+                                    "Launch",
+                                    "Uruchamiamy QA trackingu, start kampanii i przepływy CRM."
                                 ],
                                 [
                                     "05",
                                     "Optymalizacja",
-                                    "Cotygodniowe testy kreacji, lejkÃ³w i kwalifikacji."
+                                    "Co tydzień testujemy kreacje, lejek i logikę kwalifikacji."
                                 ],
                                 [
                                     "06",
                                     "Skalowanie",
-                                    "FunkcjonujÄ…ce trasy sÄ… rozszerzone o regiony/usÅ‚ugi."
+                                    "Działające ścieżki rozszerzamy na kolejne regiony i usługi."
                                 ]
                             ]
            },

@@ -47,14 +47,14 @@ const CONTACT = {
     },
   },
   pl: {
-    h1: 'Kontakt i zapytanie o Twoj projekt',
+    h1: 'Kontakt i zapytanie o Twój projekt',
     responseTime: 'Aktualny czas odpowiedzi:',
     quickContacts: 'Szybki kontakt',
     form: {
-      name: 'Imie',
+      name: 'Imię',
       business: 'Firma',
-      need: 'Czego dokladnie potrzebujesz?',
-      submit: 'Wyslij zapytanie',
+      need: 'Czego dokładnie potrzebujesz?',
+      submit: 'Wyślij zapytanie',
     },
   },
   ku: {
