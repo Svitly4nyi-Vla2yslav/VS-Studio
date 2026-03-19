@@ -1,9 +1,9 @@
-import i18n from "i18next";
+﻿import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import HttpApi from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-const TRANSLATION_ASSET_VERSION = "20260319-pl-locale-repair";
+const TRANSLATION_ASSET_VERSION = "20260319-fa-locale-repair";
 
 export const SUPPORTED_LANGUAGES = [
   "de",
@@ -43,3 +43,4 @@ i18n
   });
 
 export default i18n;
+

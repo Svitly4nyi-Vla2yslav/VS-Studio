@@ -461,14 +461,14 @@ const ABOUT_PAGE = {
   },
   ku: {
     heroEyebrow: 'VS Studio | Hildesheim | Niedersachsen | Elmanya',
-    heroTitleLine1: 'Malper u',
+    heroTitleLine1: 'Malper û',
     heroTitleLine2: 'sîstemên lead',
     heroTitleLine3: 'ji bo karsaziyên herêmî',
     heroTitleLine4: 'li Hildesheim',
     heroSubtitle: 'Pirsên kalîteyî zêdetir bi malperên zû, rêyên têkiliyê yên zelal û marketinga ku tê pîvan kirin.',
     heroTrustline: 'Li Hildesheim herêmî. Li Niedersachsen stratejîk. Li hemû Elmanyayê pêkan.',
     primaryCta: 'Analîza malperê ya belaş',
-    section: { about: 'Der barê me de', localAdvantages: 'Berxwedanên herêmî', how: 'Em çawa dixebitin', value: 'Nirx', trust: 'Bawerî' },
+    section: { about: 'Derbarê me de', localAdvantages: 'Berxwedanên herêmî', how: 'Em çawa dixebitin', value: 'Nirx', trust: 'Bawerî' },
     blocks: {
       who: { title: 'Ji bo karsaziyên herêmî', text: 'Malper, sîstemên lead û marketing ji bo şîrketên ku dixwazin bi awayekî pêşbînîkirî daxwazên zêdetir bistînin.' },
       focus: { title: 'Sîsteme yekane li şûna çareseriyên perçebûyî', text: 'Malper, rêyên têkiliyê, kampanyayên reklamê û tracking wekî pêvajoyek zelal bi hev re dixebitin.' },
@@ -513,7 +513,7 @@ const ABOUT_PAGE = {
     },
     cta: {
       title: 'Ji bo daxwazên pêşbînîkirî amade ne?',
-      text: 'Di axaftina yekem a belaş de em mezinترîn xalên hêza malpera we, pêvajoyên lead û reklamê nîşan didin.',
+      text: 'Di axaftina yekem a belaş de em girîngtirîn xalên hêza malpera we, pêvajoyên lead û reklamê nîşan didin.',
     },
     visual: {
       productBadge: 'Lead System',

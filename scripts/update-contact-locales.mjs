@@ -1,4 +1,4 @@
-import fs from 'fs';
+﻿import fs from 'fs';
 import path from 'path';
 
 const CONTACT = {
@@ -147,3 +147,4 @@ for (const [lang, patch] of Object.entries(CONTACT)) {
 }
 
 console.log('Updated Contact page i18n keys.');
+
