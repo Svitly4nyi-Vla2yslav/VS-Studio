@@ -10,823 +10,849 @@
     "it": "Italiano",
     "es": "Español",
     "el": "Ελληνικά",
-    "ro": "Rom�n\u0003",
+    "ro": "Română",
     "bg": "Български"
   },
   "common": {
-    "projectRequest": "��¯��±��®�\"� ��§��³��ª �\"¾��±�\"� �a�S�\"⬡",
-    "viewPrices": "�\"⬦��´��§�\"⬡��¯�\"⬡ �\"�a�:�\u0019�\"⬦��ª �\"⬡��§",
-    "cancel": "�\"�~��º�\"� "
+    "projectRequest": "درخواست پروژه",
+    "viewPrices": "مشاهده قیمت‌ها",
+    "cancel": "لغو"
   },
   "header": {
-    "menu": "�\"⬦�\"⬠�\"� ",
-    "menuAria": "�\"⬦�\"⬠�\"� �:�\u0019 �\"¾�:�\u0019�\"⬦��§�:�\u0019��´ ��±��§ ��¨��§��² �a©�\"⬠�:�\u0019��¯",
-    "services": "��®��¯�\"⬦��§��ª",
-    "preise": "Preise",
-    "referenzen": "�\"⬦��±��§��¬��¹",
-    "ueberUns": "��¯��±��¨��§��±�\"⬡ �\"⬦��§",
-    "kontakt": "��ª�\"⬦��§��³ ��¨�a¯�:�\u0019��±�:�\u0019��¯"
+    "menu": "منو",
+    "menuAria": "باز کردن منوی ناوبری",
+    "services": "خدمات",
+    "preise": "قیمت‌ها",
+    "referenzen": "نمونه‌کارها",
+    "ueberUns": "درباره ما",
+    "kontakt": "تماس"
   },
   "footer": {
-    "tagline": "VS Studio �\u001a· �\"� ��¨ ��³��§�:�\u0019��ª �\"⬡��§���\u0019 ��¨��±�\"⬠��§�\"⬦�\"⬡ �\"⬡��§�:�\u0019 �\"� ��¨���\u0019 ��ª��¨�\"�~�:�\u0019��º��§��ª �\"�  ��§��ª�\"� �\"⬦��§��³�:�\u0019�\"� �\"⬠ �\"⬡��§",
-    "impressum": "�a⬠��§�\"¾",
-    "datenschutz": "��­�\"��§��¸��ª ��§��² ��¯��§��¯�\"⬡ �\"⬡��§",
-    "agb": "��´��±��§�:�\u0019��· �\"�  ��¶�\"� ��§��¨��·",
-    "cookies": "Cookies",
-    "cookieSettings": "��ª�\"⬠��¸�:�\u0019�\"⬦��§��ª �a©�\"� �a©�:�\u0019",
-    "blog": "�\"� ��¨�\"�~��§�a¯"
+    "tagline": "VS Studio - وب‌سایت‌ها، وب‌اپ‌ها، تبلیغات و اتوماسیون‌ها",
+    "impressum": "اطلاعات حقوقی",
+    "datenschutz": "حریم خصوصی",
+    "agb": "شرایط و ضوابط",
+    "cookies": "کوکی‌ها",
+    "cookieSettings": "تنظیمات کوکی",
+    "blog": "بلاگ"
   },
   "cookie": {
-    "aria": "Cookie-Einwilligung",
-    "bannerText": "Wir nutzen Cookies nach DSGVO/TTDSG: notwendige Cookies sind aktiv, optionale Cookies (Statistik/Marketing) nur mit Einwilligung. Mehr Infos in",
-    "onlyEssential": "Nur essenziell",
-    "settings": "Einstellungen",
-    "acceptAll": "Alle akzeptieren",
-    "modalTitle": "Datenschutz-Einstellungen",
-    "modalText": "Du kannst deine Einwilligung jederzeit in den Cookie-Einstellungen Ò¤ndern.",
-    "essential": "Essenzielle Cookies (immer aktiv)",
-    "statistics": "Statistik (z. B. Reichweite, Nutzung)",
-    "marketing": "Marketing (z. B. Social/Ads Tracking)",
-    "saveSelection": "Auswahl speichern"
+    "aria": "رضایت برای کوکی‌ها",
+    "bannerText": "ما مطابق DSGVO/TTDSG از کوکی‌ها استفاده می‌کنیم: کوکی‌های ضروری فعال هستند و کوکی‌های اختیاری (آمار/بازاریابی) فقط با رضایت شما فعال می‌شوند. اطلاعات بیشتر در",
+    "onlyEssential": "فقط ضروری‌ها",
+    "settings": "تنظیمات",
+    "acceptAll": "پذیرفتن همه",
+    "modalTitle": "تنظیمات حریم خصوصی",
+    "modalText": "شما می‌توانید رضایت خود را هر زمان در تنظیمات کوکی تغییر دهید.",
+    "essential": "کوکی‌های ضروری (همیشه فعال)",
+    "statistics": "آمار (مثلاً بازدید و نحوه استفاده)",
+    "marketing": "بازاریابی (مثلاً رهگیری شبکه‌های اجتماعی/تبلیغات)",
+    "saveSelection": "ذخیره انتخاب"
   },
   "home": {
-    "heroTitle": "�\"� �����\u001a��\u0019�������:�\u0019�����\u001a��\u0019�\"!����:�\u0019�:�\u0019 �a��\"! ����\"! �������:�\u0019 ����:�\u0019�\" �a��\"! �\"��\"�a��� ����\"� ��� ����\"! �\" ������ ����������\" ������\u0019 ����������\"�~������ ������ �\"&��������� �\"&�:�\u0019��\u001a��\u0019�a��\" �\" ���.",
-    "heroSubtitle": "�\"⬦�\"� �\"�a��¹�:�\u0019��ª �:�\u0019��§��¨�:�\u0019 �\"� ��§��¶��­���\u0019 �\"¾�:�\u0019��§��¯�\"⬡ ��³��§��²�:�\u0019 ��³��±�:�\u0019��¹ �\"�  ��¨��³��ª�\"⬡ �\"⬡��§�:�\u0019 ��´�\"��§�\" ��¨��±��§�:�\u0019 ��§��±��§��¦�\"⬡ ��¯�\"⬡�\"⬠��¯�a¯��§�\"⬠ ��®��¯�\"⬦��§��ª �\"⬦��­�\"�~�:�\u0019 ��¯��± ��¢�\"�~�\"⬦��§�\"⬠.",
-    "toFaq": "��¨�\"⬡ ��³�\"� ��§�\"�~��§��ª �\"⬦��ª��¯��§�\"� �\"�~ ��¨��±�\"� �:�\u0019��¯",
-    "partnersTitle": "�\"⬠�a©��§��ª ��¨��±��¬��³��ª�\"⬡���\u0019 �a¯��±�\"� �\"⬡ �\"⬡��§�:�\u0019 �\"⬡��¯�\" �\"�  ��®��¯�\"⬦��§��ª",
+    "heroTitle": "وب‌سایت‌هایی که به‌جای فقط خوب به‌نظر رسیدن، درخواست می‌آورند.",
+    "heroSubtitle": "جایگاه‌سازی شفاف، اجرای سریع و پکیج‌های شفاف برای کسب‌وکارهای خدماتی محلی در آلمان.",
+    "toFaq": "رفتن به پرسش‌های رایج",
+    "partnersTitle": "نکات برجسته، مخاطبان هدف و خدمات",
     "groups": {
-      "highlights": "�\"⬠�a©��§��ª ��¨��±��¬��³��ª�\"⬡",
-      "forWhom": "��¨��±��§�:�\u0019 �a⬠�\"⬡ �a©��³�:�\u0019",
-      "services": "��®��¯�\"⬦��§��ª"
+      "highlights": "نکات برجسته",
+      "forWhom": "برای چه کسانی",
+      "services": "خدمات"
     },
     "partners": {
       "fastLoad": {
-        "title": "��¨�\"⬡ ��³��±��¹��ª ��¨��§��±�a¯�:�\u0019��±�:�\u0019 ��´��¯",
-        "desc": "��µ�\"��­�\"⬡ ��¯��± �a⬠�\"⬠��¯ ��«��§�\"⬠�:�\u0019�\"⬡ ��¨��§��±�a¯�:�\u0019��±�:�\u0019 �\"⬦�:�\u0019 ��´�\"� ��¯"
+        "title": "بارگذاری سریع",
+        "desc": "صفحه در چند ثانیه بارگذاری می‌شود"
       },
       "moreLeads": {
-        "title": "��³�\"� ��§�\"�~��§��ª ��¨�:�\u0019��´��ª��±",
-        "desc": "��ª�\"⬦��§��³ �\"⬡��§�:�\u0019 ��¨�:�\u0019��´��ª��± ��§��² ��·��±�:�\u0019�\"�a �\"��±�\"⬦ �\"⬡��§"
+        "title": "درخواست‌های بیشتر",
+        "desc": "تماس‌های بیشتر از طریق فرم‌ها"
       },
       "clearPrices": {
-        "title": "�\"�a�:�\u0019�\"&�����\u001a��\u0019�\"!��� ����\"� ����\"  ���������",
-        "desc": "�\"⬡��²�:�\u0019�\"⬠�\"⬡ �\"⬡��§ ��±��§ ��§��² �\"�a��¨�\"�~ �\"⬦�:�\u0019 ��¯��§�\"⬠�:�\u0019��¯"
+        "title": "قیمت‌های شفاف",
+        "desc": "از قبل هزینه را می‌دانید"
       },
       "personalHelp": {
-        "title": "�a©�\"⬦�a© ��´��®��µ�:�\u0019",
-        "desc": "�\"¾��´��ª�:�\u0019��¨��§�\"⬠�:�\u0019 �\"⬦��³��ª�\"�a�:�\u0019�\"⬦ ��¨��¯�\"� �\"⬠ ��§�\"⬠��ª��¸��§��± ��¯��± ��µ�\""
+        "title": "پشتیبانی شخصی",
+        "desc": "پشتیبانی مستقیم بدون صف انتظار"
       },
       "handwerker": {
-        "title": "��µ�\"⬠��¹��ª�a¯��±",
-        "desc": "��¯��±��®�\"� ��§��³��ª �\"⬡��§ ��¨��±��§�:�\u0019 �\"⬡��± ��´�\"⬡��± �\"�  ��®��¯�\"⬦��§��ª"
+        "title": "مشاغل فنی",
+        "desc": "درخواست بر اساس شهر و خدمت"
       },
       "praxen": {
-        "title": "��ª�\"⬦��±�:�\u0019�\"⬠ �\"⬦�:�\u0019 �a©�\"⬠��¯",
-        "desc": "��¨�:�\u0019�\"⬦��§��±��§�\"⬠ ��¨��§ ��³��±��¹��ª ��¨�:�\u0019��´��ª��±�:�\u0019 �\"�a��±��§��± �\"⬦�\"�~��§�\"�a��§��ª �\"⬦�:�\u0019 �:�\u0019��§��¨�\"⬠��¯"
+        "title": "کلینیک‌ها",
+        "desc": "بیماران سریع‌تر نوبت می‌گیرند"
       },
       "werkstaetten": {
-        "title": "�a©��§��±�a¯��§�\"⬡ �\"⬡��§�:�\u0019 ��¢�\"⬦�\"� ��²��´�:�\u0019",
-        "desc": "��µ�\"��­��§��ª ��®��¯�\"⬦��§��ª ��±��§ ��¨��§ ��±��¯�:�\u0019��§��¨�:�\u0019 �\"¾��§�a© �a©�\"⬠�:�\u0019��¯"
+        "title": "تعمیرگاه‌ها",
+        "desc": "صفحات خدمات شفاف با رهگیری"
       },
       "localServices": {
-        "title": "��®��¯�\"⬦��§��ª �\"⬦��­�\"�~�:�\u0019",
-        "desc": "��¯�:�\u0019��¯ ��¨�:�\u0019��´��ª��± ��¯��± ��³��§�:�\u0019��ª"
+        "title": "خدمات محلی",
+        "desc": "دیده‌شدن بیشتر در منطقه"
       },
       "websites": {
-        "title": "Websites",
-        "desc": "�\"⬦��¯��±�\"⬠���\u0019 ��³��±�:�\u0019��¹���\u0019 ��¨�\"⬡�:�\u0019�\"⬠�\"⬡ ��´��¯�\"⬡ ��¨��±��§�:�\u0019 �\"⬦�\"� ��¨��§�:�\u0019�\"�~"
+        "title": "وب‌سایت‌ها",
+        "desc": "مدرن، سریع و بهینه برای موبایل"
       },
       "webApps": {
-        "title": "��¨��±�\"⬠��§�\"⬦�\"⬡ �\"⬡��§�:�\u0019 �\"� ��¨",
-        "desc": "��§��¨��²��§��±�\"⬡��§�:�\u0019�:�\u0019 ��¨��±��§�:�\u0019 ��ª�:�\u0019�\"⬦ �\"�  �\"⬦��´��ª��±�:�\u0019��§�\"⬠"
+        "title": "وب‌اپ‌ها",
+        "desc": "ابزار برای تیم و مشتریان"
       },
       "aiIntegration": {
-        "title": "��§��¯��º��§�\"⬦ �\"⬡�\"� ��´ �\"⬦��µ�\"⬠�\"� ��¹�:�\u0019",
-        "desc": "�a⬠��ª ��¨��§��ª ��¨��±��§�:�\u0019 ��³�\"� ��§�\"�~��§��ª �\"�  ��³��±�\"⬠��® �\"⬡��§"
+        "title": "یکپارچه‌سازی هوش مصنوعی",
+        "desc": "چت‌بات برای سوال‌ها و لیدها"
       },
       "socialMedia": {
-        "title": "��±��³��§�\"⬠�\"⬡ �\"⬡��§�:�\u0019 ��§��¬��ª�\"⬦��§��¹�:�\u0019",
-        "desc": "�\"� ��¨ ��³��§�:�\u0019��ª + ��§�:�\u0019�\"⬠��³��ª��§�a¯��±��§�\"⬦ / �\"⬦��ª��§ �\"⬦��ª��µ�\"�~ ��§��³��ª"
+        "title": "شبکه‌های اجتماعی",
+        "desc": "وب‌سایت + اینستاگرام/متا به‌هم متصل"
       },
       "socialAds": {
-        "title": "��ª��¨�\"�~�:�\u0019��º��§��ª ��§��¬��ª�\"⬦��§��¹�:�\u0019",
-        "desc": "��ª��¨�\"�~�:�\u0019��º��§��ª �\"⬡��¯�\"�\"⬦�\"⬠��¯ ��¨��§ �\"⬠��ª��§�:�\u0019��¬ �\"�a��§��¨�\"�~ ��§�\"⬠��¯��§��²�\"⬡ �a¯�:�\u0019��±�:�\u0019"
+        "title": "تبلیغات شبکه‌های اجتماعی",
+        "desc": "تبلیغات هدفمند با نتایج قابل اندازه‌گیری"
       }
     },
-    "trustTitle": "��¨�\"⬡ �\"⬠��ª��§�:�\u0019��¬ �\"⬦�\"�~�\"⬦�\"� ��³ ��§��¹��ª�\"⬦��§��¯ �a©�\"⬠�:�\u0019��¯",
-    "trustDesc1": "��¯��±��®�\"� ��§��³��ª �\"⬡��§�:�\u0019 ��ª�\"⬦��§��³ ��¨�:�\u0019��´��ª��± ��¯��± 60 ��±�\"� ��².",
-    "trustDesc2": "�\"⬡��²�:�\u0019�\"⬠�\"⬡ �a©�\"⬦��ª��± ��¨��±��§�:�\u0019 �\"⬡��± ��³��±�\"⬠��® �\"¾��³ ��§��² ��±�\"��¹ ��±��¯�:�\u0019��§��¨�:�\u0019.",
-    "trustDesc3": "�\"&����\"� ������ ��\u001a�9��\u001a�9����\"&����\"  ����������a�����������:�\u0019 ������ ����\"�~�\"��\"  �\"!�\"&�������\"!.",
-    "faqTitle": "��³�\"� ��§�\"�~��§��ª �\"⬦��ª��¯��§�\"� �\"�~",
+    "trustTitle": "اعتماد با نتایج ملموس",
+    "trustDesc1": "در 60 روز درخواست‌های تماس بیشتر.",
+    "trustDesc2": "هزینه هر لید کمتر بعد از اصلاح رهگیری.",
+    "trustDesc3": "میانگین زمان بارگذاری روی موبایل.",
+    "faqTitle": "پرسش‌های رایج",
     "faq": {
-      "q1": "�a⬠�\"�a��¯��± ��³��±�:�\u0019��¹ �\"⬦�:�\u0019 ��ª�\"� ��§�\"⬠�:�\u0019��¯ ��´��±�\"� ��¹ �a©�\"⬠�:�\u0019��¯��Ÿ",
-      "a1": "�\"⬦��§ �\"⬦��¹�\"⬦�\"� �\"�~��§ ��¯��± ��¹��±��¶ 3-5 ��±�\"� ��² �a©��§��±�:�\u0019 ��´��±�\"� ��¹ �\"⬦�:�\u0019 �a©�\"⬠�:�\u0019�\"⬦. ��¨�\"�~��§�\"��§��µ�\"�~�\"⬡ �\"¾��³ ��§��² ��¯��±��®�\"� ��§��³��ª ��´�\"⬦��§ �:�\u0019�a© ��·��±��­ �a©�\"� ��ª��§�\"⬡ ��¨��§ ��§�\"� �\"�~�:�\u0019�\"⬠ �\"⬦��±��§��­�\"�~ ��¯��±�:�\u0019��§�\"��ª ��®�\"� ��§�\"⬡�:�\u0019��¯ �a©��±��¯.",
-      "q2": "��¨�\"⬡ ��¹�\"⬠�\"� ��§�\"⬠ �:�\u0019�a© �\"⬦��´��ª��±�:�\u0019 ��¯��± ��§��¨��ª��¯��§ ��¨�\"⬡ �a⬠�\"⬡ �a⬠�:�\u0019��²�:�\u0019 �\"⬠�:�\u0019��§��² ��¯��§��±�\"⬦��Ÿ",
-      "a2": "�\"�\"�a��· ��§��·�\"�~��§��¹��§��ª ��§�\"� �\"�~�:�\u0019�\"⬡ ��¯��±��¨��§��±�\"⬡ �\"¾�:�\u0019��´�\"⬠�\"⬡��§��¯���\u0019 �a¯��±�\"� �\"⬡ �\"⬡��¯�\" �\"�  �a©��§�\"⬠��§�\"�~ �\"⬡��§�:�\u0019 ��ª�\"⬦��§��³ ��´�\"⬦��§. ��³�\"¾��³ ��¯��± �\"⬦�\"� ��±��¯ ��³��§��®��ª��§��±���\u0019 �\"⬦��ª�\"� �\"⬠ �\"�  ��§�\"� �\"�~�\"� �:�\u0019��ª �\"⬡��§ ��¨�\"⬡ ��´�\"⬦��§ �a©�\"⬦�a© ��®�\"� ��§�\"⬡�:�\u0019�\"⬦ �a©��±��¯.",
-      "q3": "�\"⬡�\"⬦�a©��§��±�:�\u0019 �a⬠�a¯�\"� �\"⬠�\"⬡ �a©��§��± �\"⬦�:�\u0019 �a©�\"⬠��¯��Ÿ",
-      "a3": "�\"&��� ������ �\"&����������\"�~ �a��\"� �������\"! �a������� �\"&�:�\u0019 �a��\" �:�\u0019�\"&: �\"&�\"��\"!�\"� �\"&���\u0019 �������������:�\u0019���\u0019 ���������������\u0019 �������\"! ����\" ����������:�\u0019. ����\"!��\u001a��\u0019����\"� �������������\" �:�\u0019��\u001a��\u0019�\"!����:�\u0019 �\"� ����������:�\u0019 �������:�\u0019����\"���� ����\"� ����\"!�:�\u0019��� �a������� ������ �\"!�\"&�:�\u0019����\"! ����������\" �:�\u0019��� ������ ����:�\u0019�\" ����\"! �a �\"! �������\"�����\"�a�:�\u0019 �\"&�:�\u0019��\u001a��\u0019����\"�������.",
-      "q4": "��¢�:�\u0019��§ ��§�:�\u0019�\"⬠ ��¨��±��§�:�\u0019 �\"⬦��´��§��º�\"�~ �a©�\"� �a⬠�a© �\"⬦�\"⬠��§��³��¨ ��§��³��ª��Ÿ",
-      "a4": "����\"�~�\"!. ����������\"!��\u001a��\u0019�\"!����:�\u0019 �\"&��� ����\"&�������\"9 ����������:�\u0019 �\"&����������\"�~ �\"&����\"�~�:�\u0019 �������������:�\u0019 �������\"!��\u001a��\u0019����\" ���: �\"�a�:�\u0019�\"&�����\u001a��\u0019�\"!����:�\u0019 �\"� ������������\u0019 �������\"� ��� �������:�\u0019��� �\"�  ����\"&����a���� ������ ����������\"�~������ �\"� ����\"�a����:�\u0019 ����\"! �������:�\u0019 �������\"�����\"9 ����\"�����:�\u0019�a�.",
-      "q5": "�\"¾��³ ��§��² ��±��§�\"⬡ ��§�\"⬠��¯��§��²�:�\u0019 �a⬠�\"⬡ ��§��ª�\"��§�\"�a�:�\u0019 �\"⬦�:�\u0019 ��§�\"��ª��¯��Ÿ",
-      "a5": "�\"���� ������ �������\"!��\u001a��\u0019����\" ����������:�\u0019���\u0019 ����������\"!��\u001a��\u0019�\"!��� ������ �������������:�\u0019 �\"&�:�\u0019��\u001a��\u0019�a��\" �:�\u0019�\"&���\u0019 �\" �\"�a������ ����������:�\u0019�\"�~ ������ ����\"!����\"� ��� �\"&�:�\u0019��\u001a��\u0019����\"!�:�\u0019�\"& �\"�  ������ ����\" ����:�\u0019�\"& ����\"�a�:�\u0019�\"�a ������ ����\"&��� �\"��������:�\u0019�������\" �:�\u0019 �\"&�:�\u0019��\u001a��\u0019�a��\" �:�\u0019�\"& ������ �������:�\u0019��� ������ ������������ �\"&������ ����\"&�\"�~�a������� ����\"!�������:�\u0019 �������������\"! ������������.",
-      "desc": "پاسخ به سوالات رایج درباره زمان، هزینه، فرایند لانچ و پشتیبانی بعد از لانچ."
+      "q1": "چقدر سریع می‌توانید شروع کنید؟",
+      "a1": "معمولاً ظرف 3 تا 5 روز کاری شروع می‌کنیم. بلافاصله بعد از درخواست شما، یک برنامه کوتاه با اولین قدم‌ها دریافت می‌کنید.",
+      "q2": "در شروع به‌عنوان مشتری چه چیزی لازم است؟",
+      "a2": "فقط اطلاعات پایه درباره پیشنهاد، مخاطب هدف و راه‌های تماس شما. بعد از آن ما در ساختار، متن‌ها و اولویت‌ها کمک می‌کنیم.",
+      "q3": "همکاری چگونه پیش می‌رود؟",
+      "a3": "در گام‌های کوتاه کار می‌کنیم: مفهوم، طراحی، اجرا و لانچ. شما به‌روزرسانی‌های روشن دریافت می‌کنید تا همیشه بدانید قدم بعدی چیست.",
+      "q4": "آیا این برای کسب‌وکارهای کوچک مناسب است؟",
+      "a4": "بله. پکیج‌های ما عمداً برای کسب‌وکارهای محلی طراحی شده‌اند: قیمت شفاف، شروع سریع و تمرکز بر درخواست واقعی به‌جای فقط ظاهر.",
+      "q5": "بعد از لانچ چه اتفاقی می‌افتد؟",
+      "a5": "بعد از لانچ داده‌ها را بررسی می‌کنیم، نقاط تبدیل را بهبود می‌دهیم و در بهینه‌سازی نهایی کنار شما هستیم تا سایت به‌صورت پایدار بهتر عمل کند.",
+      "desc": "پاسخ به سوالات رایج درباره زمان‌بندی، هزینه، فرایند لانچ و پشتیبانی مداوم."
     },
     "hero": {
       "bento": {
         "speed": {
-          "label": "Geschwindigkeit",
+          "label": "سرعت",
           "value": "90+ Lighthouse"
         },
         "seo": {
-          "label": "SEO",
-          "value": "Technisches Fundament"
+          "label": "سئو",
+          "value": "زیرساخت فنی"
         },
         "leads": {
-          "label": "Anfragen",
-          "value": "Klare CTA und Formulare"
+          "label": "درخواست‌ها",
+          "value": "CTA و فرم‌های شفاف"
         },
         "support": {
-          "label": "Support",
-          "value": "Nach dem Launch"
+          "label": "پشتیبانی",
+          "value": "بعد از لانچ"
         }
       }
     },
     "partnersSection": {
-      "title": "مزایا و حوزه های کاری",
-      "desc": "Welche Aufgaben wir abdecken und für welche lokalen Unternehmen wir am häufigsten Websites und Lead-Funnels umsetzen."
+      "title": "مزایا و حوزه‌های کاری",
+      "desc": "چه کارهایی را پوشش می‌دهیم و برای کدام کسب‌وکارهای محلی بیشتر از همه وب‌سایت و قیف لید اجرا می‌کنیم."
     },
     "marquee": {
-      "aria": "Branchen",
-      "title": "صنعت هایی که با آنها کار می کنیم",
-      "desc": "Wählen Sie eine Richtung und sehen Sie passende Stilbeispiele. So bauen wir schneller ein präzises Angebot für Ihr Unternehmen.",
+      "aria": "حوزه‌ها",
+      "title": "صنعت‌هایی که با آن‌ها کار می‌کنیم",
+      "desc": "یک مسیر را انتخاب کنید و نمونه‌های سبک متناسب را ببینید. این‌طور سریع‌تر یک پیشنهاد دقیق برای کسب‌وکار شما آماده می‌کنیم.",
       "items": {
-        "handwerk": "Handwerk",
-        "praxen": "Praxen",
-        "werkstaetten": "Werkstätten",
-        "gastronomie": "Gastronomie",
-        "beauty": "Beauty",
-        "immobilien": "Immobilien",
-        "kanzlei": "Kanzlei",
-        "fitness": "Fitness",
-        "reinigung": "Reinigung",
-        "transport": "Transport",
-        "coaching": "Coaching",
-        "bildung": "Bildung"
+        "handwerk": "مشاغل فنی",
+        "praxen": "کلینیک‌ها",
+        "werkstaetten": "تعمیرگاه‌ها",
+        "gastronomie": "رستوران و غذا",
+        "beauty": "بیوتی",
+        "immobilien": "املاک",
+        "kanzlei": "دفتر حقوقی",
+        "fitness": "فیتنس",
+        "reinigung": "نظافت",
+        "transport": "حمل‌ونقل",
+        "coaching": "کوچینگ",
+        "bildung": "آموزش"
       }
     },
     "process": {
-      "title": "چطور کار می کنیم",
-      "desc": "Ein transparenter Prozess ohne unnötige Schritte: vom kurzen Briefing bis zu Launch und Optimierung mit klaren Deadlines.",
-      "aria": "Projektphasen",
-      "stage": "Phase",
+      "title": "چطور کار می‌کنیم",
+      "desc": "یک فرایند شفاف بدون مراحل اضافی: از بریف کوتاه تا لانچ و بهینه‌سازی با ددلاین‌های روشن.",
+      "aria": "مراحل پروژه",
+      "stage": "مرحله",
       "nav": {
-        "prev": "Zurück",
-        "next": "Weiter"
+        "prev": "قبلی",
+        "next": "بعدی"
       },
       "steps": {
         "s1": {
-          "title": "15-Minuten-Call",
-          "text": "Wir klären Aufgabe, KPI und Deadline und stimmen sofort das Launch-Format ab."
+          "title": "تماس 15 دقیقه‌ای",
+          "text": "هدف، KPI و ددلاین را مشخص می‌کنیم و فوراً فرمت لانچ را هماهنگ می‌کنیم."
         },
         "s2": {
-          "title": "Prototyp in 48h",
-          "text": "Wir zeigen Seitenstruktur, CTA und Lead-Flow vor der Entwicklung."
+          "title": "پروتوتایپ در 48 ساعت",
+          "text": "قبل از توسعه، ساختار صفحه، CTA و جریان لید را نشان می‌دهیم."
         },
         "s3": {
-          "title": "Entwicklung in 7-14 Tagen",
-          "text": "Umsetzung, SEO-Basis, Integrationen und Analytics ohne unnötigen Overhead."
+          "title": "توسعه در 7 تا 14 روز",
+          "text": "اجرا، پایه سئو، یکپارچه‌سازی‌ها و آنالیتیکس بدون اضافه‌کاری غیرضروری."
         },
         "s4": {
-          "title": "Launch und Optimierung",
-          "text": "Wir gehen live, prüfen Conversion und liefern einen 30-Tage-Verbesserungsplan."
+          "title": "لانچ و بهینه‌سازی",
+          "text": "لایو می‌شویم، تبدیل را بررسی می‌کنیم و یک برنامه بهبود 30 روزه ارائه می‌دهیم."
         }
       }
     },
     "projects": {
-      "title": "پروژه ها / نمونه کارها",
-      "desc": "Reale Aufgaben und erwartbare Ergebnisse ohne leere Versprechen. Hover auf einen Case für Live-Preview.",
+      "title": "پروژه‌ها / نمونه‌کارها",
+      "desc": "مسئله‌های واقعی و نتیجه‌های قابل انتظار، بدون وعده‌های توخالی. روی هر کیس بروید تا پیش‌نمایش زنده را ببینید.",
       "cards": {
         "c1": {
-          "title": "Website für lokale Anfragen",
-          "description": "Landingpage mit Fokus auf Formular, Anruf und schnellen Mobile-Kontakt.",
-          "goal": "Ziel: mehr Anfragen ohne Budgeterhöhung"
+          "title": "وب‌سایت برای درخواست‌های محلی",
+          "description": "لندینگ‌پیج با تمرکز بر فرم، تماس تلفنی و ارتباط سریع موبایلی.",
+          "goal": "هدف: درخواست‌های بیشتر بدون افزایش بودجه"
         },
         "c2": {
-          "title": "Landingpage für Ads",
-          "description": "Separate Seite mit Tracking für Meta- und Google-Kampagnen.",
-          "goal": "Erwarteter Effekt: qualifiziertere Leads aus Werbung"
+          "title": "لندینگ‌پیج برای تبلیغات",
+          "description": "صفحه جداگانه با رهگیری برای کمپین‌های متا و گوگل.",
+          "goal": "اثر مورد انتظار: لیدهای واجد شرایط‌تر از تبلیغات"
         },
         "c3": {
-          "title": "Website für Praxis",
-          "description": "Klare Leistungsstruktur, FAQ und Online-Termin-Flow.",
-          "goal": "Ziel: mehr Terminbuchungen mit weniger Rückfragen"
+          "title": "وب‌سایت برای کلینیک",
+          "description": "ساختار شفاف خدمات، FAQ و جریان رزرو آنلاین.",
+          "goal": "هدف: رزروهای بیشتر با سوالات تکراری کمتر"
         },
         "c4": {
-          "title": "Dashboard für Leads",
-          "description": "Internes Interface zur Lead-Bearbeitung und Statuskontrolle.",
-          "goal": "Erwarteter Effekt: schnellere Bearbeitung von Anfragen"
+          "title": "داشبورد لیدها",
+          "description": "رابط داخلی برای رسیدگی به لیدها و کنترل وضعیت.",
+          "goal": "اثر مورد انتظار: رسیدگی سریع‌تر به درخواست‌ها"
         }
       }
     },
     "configurator": {
       "title": "سازنده پیشنهاد",
-      "desc": "Wählen Sie Projektparameter und erhalten Sie einen Startpreis sowie passende Support-Tarife.",
+      "desc": "پارامترهای پروژه را انتخاب کنید و قیمت شروع و تعرفه‌های پشتیبانی مناسب را دریافت کنید.",
       "labels": {
-        "goal": "Ziel",
-        "integrations": "Integrationen",
-        "ads": "Werbung",
-        "term": "Zeitrahmen",
-        "content": "Content-Level",
-        "languages": "Sprachen",
-        "hosting": "Hosting",
-        "domain": "Domain",
-        "pages": "Seiten",
-        "seo": "SEO"
+        "goal": "هدف",
+        "integrations": "یکپارچه‌سازی‌ها",
+        "ads": "تبلیغات",
+        "term": "بازه زمانی",
+        "content": "سطح محتوا",
+        "languages": "زبان‌ها",
+        "hosting": "میزبانی",
+        "domain": "دامنه",
+        "pages": "صفحات",
+        "seo": "سئو"
       },
       "options": {
         "common": {
-          "other": "Andere"
+          "other": "سایر"
         },
         "goal": {
-          "leads": "Leads",
-          "calls": "Anrufe",
-          "booking": "Buchungen"
+          "leads": "لید",
+          "calls": "تماس",
+          "booking": "رزرو"
         },
         "integrations": {
-          "booking": "Buchung",
+          "booking": "رزرو",
           "crm": "CRM",
-          "chat": "Chat",
-          "payments": "Zahlungen"
+          "chat": "چت",
+          "payments": "پرداخت‌ها"
         },
         "ads": {
-          "none": "Ohne Werbung",
+          "none": "بدون تبلیغات",
           "meta": "Meta",
           "google": "Google"
         },
         "term": {
-          "up_to_7": "Bis 1 Woche",
-          "from_7_to_14": "7-14 Tage",
-          "from_14_to_21": "14-21 Tage",
-          "from_21_to_30": "21-30 Tage"
+          "up_to_7": "تا 1 هفته",
+          "from_7_to_14": "7 تا 14 روز",
+          "from_14_to_21": "14 تا 21 روز",
+          "from_21_to_30": "21 تا 30 روز"
         },
         "content": {
-          "has": "Texte vorhanden",
-          "copy": "Copywriting nötig"
+          "has": "متن‌ها آماده است",
+          "copy": "نیاز به کپی‌رایتینگ"
         },
         "languages": {
-          "basic": "1 Sprache",
-          "multi": "2+ Sprachen"
+          "basic": "1 زبان",
+          "multi": "2+ زبان"
         },
         "hosting": {
-          "shared": "Shared Hosting",
+          "shared": "میزبانی اشتراکی",
           "vps": "VPS",
-          "managed": "Managed Hosting"
+          "managed": "میزبانی مدیریت‌شده"
         },
         "domain": {
-          "new_domain": "Neue Domain",
-          "existing_domain": "Domain vorhanden",
-          "transfer": "Domain-Transfer"
+          "new_domain": "دامنه جدید",
+          "existing_domain": "دامنه موجود",
+          "transfer": "انتقال دامنه"
         },
         "pages": {
-          "one": "1 Seite",
-          "up_to_3": "Bis 3 Seiten",
-          "five_plus": "5+ Seiten"
+          "one": "1 صفحه",
+          "up_to_3": "تا 3 صفحه",
+          "five_plus": "5+ صفحه"
         },
         "seo": {
-          "base": "SEO Base",
-          "extended": "SEO Extended"
+          "base": "سئوی پایه",
+          "extended": "سئوی پیشرفته"
         }
       },
-      "reset": "Alles zurücksetzen",
-      "empty": "Wählen Sie mindestens eine Option in jedem Block. Mehrfachauswahl ist möglich; bei \"Andere\" wird keine Zusatzgebühr berechnet.",
-      "recommended": "Empfohlen:",
+      "reset": "بازنشانی همه موارد",
+      "empty": "در هر بخش حداقل یک گزینه انتخاب کنید. انتخاب چندگانه ممکن است و برای «سایر» هزینه اضافی محاسبه نمی‌شود.",
+      "recommended": "پیشنهادی:",
       "pack": {
-        "starter": "Starter",
-        "business": "Business"
+        "starter": "استارتر",
+        "business": "بیزنس"
       },
-      "launchPrice": "Startpreis:",
-      "supportMonthly": "Support / Monat",
-      "supportYearly": "Support / Jahr (-30%)",
-      "cta": "Kontaktanfrage und exakter Kostenvoranschlag",
+      "launchPrice": "قیمت شروع:",
+      "supportMonthly": "پشتیبانی / ماه",
+      "supportYearly": "پشتیبانی / سال (-30%)",
+      "cta": "درخواست تماس و برآورد دقیق هزینه",
       "bullets": {
-        "prototype": "Prototyp und Struktur mit Fokus auf Anfragen",
-        "goal": "Ziele: {{value}}",
-        "integrations": "Integrationen: {{value}}",
-        "term": "Zeitrahmen: {{value}}",
-        "hosting": "Hosting: {{value}}",
-        "domain": "Domain: {{value}}",
-        "pages": "Seiten: {{value}}",
-        "analytics": "GA4 und Event-Tracking für Formulare/Kontakte",
-        "copy_true": "Unterstützung bei Texten und Offer",
-        "copy_false": "Wir arbeiten mit Ihren vorhandenen Texten",
-        "market_note": "Orientierungspreis unter marktüblichem Niveau für kleine Unternehmen"
+        "prototype": "پروتوتایپ و ساختار با تمرکز بر درخواست‌ها",
+        "goal": "اهداف: {{value}}",
+        "integrations": "یکپارچه‌سازی‌ها: {{value}}",
+        "term": "بازه زمانی: {{value}}",
+        "hosting": "میزبانی: {{value}}",
+        "domain": "دامنه: {{value}}",
+        "pages": "صفحات: {{value}}",
+        "analytics": "GA4 و رهگیری رویداد برای فرم‌ها/تماس‌ها",
+        "copy_true": "کمک در متن‌نویسی و آفر",
+        "copy_false": "با متن‌های آماده شما کار می‌کنیم",
+        "market_note": "قیمت راهنما پایین‌تر از سطح معمول بازار برای کسب‌وکارهای کوچک"
       },
       "brief": {
-        "title": "Brief aus dem Angebots-Konfigurator:",
-        "goal": "Ziel: {{value}}",
-        "integrations": "Integrationen: {{value}}",
-        "ads": "Werbung: {{value}}",
-        "term": "Zeitrahmen: {{value}}",
-        "content": "Content: {{value}}",
-        "languages": "Sprachen: {{value}}",
-        "hosting": "Hosting: {{value}}",
-        "domain": "Domain: {{value}}",
-        "pages": "Seiten: {{value}}",
-        "seo": "SEO: {{value}}",
-        "launch_price": "Startpreis: {{value}}",
-        "support_monthly": "Support / Monat: {{value}}",
-        "support_yearly": "Support / Jahr (-30%): {{value}}"
+        "title": "بریف از سازنده پیشنهاد:",
+        "goal": "هدف: {{value}}",
+        "integrations": "یکپارچه‌سازی‌ها: {{value}}",
+        "ads": "تبلیغات: {{value}}",
+        "term": "بازه زمانی: {{value}}",
+        "content": "محتوا: {{value}}",
+        "languages": "زبان‌ها: {{value}}",
+        "hosting": "میزبانی: {{value}}",
+        "domain": "دامنه: {{value}}",
+        "pages": "صفحات: {{value}}",
+        "seo": "سئو: {{value}}",
+        "launch_price": "قیمت شروع: {{value}}",
+        "support_monthly": "پشتیبانی / ماه: {{value}}",
+        "support_yearly": "پشتیبانی / سال (-30%): {{value}}"
       }
     },
     "trust": {
-      "title": "در 14 روز چه دریافت می کنید",
-      "desc": "Konkrete Start-Ergebnisse: eine anfrageorientierte Website, eingerichtete Analytics und ein Plan für weiteres Wachstum.",
+      "title": "در 14 روز چه دریافت می‌کنید",
+      "desc": "نتیجه‌های مشخص برای شروع: یک وب‌سایت متمرکز بر درخواست، آنالیتیکس راه‌اندازی‌شده و برنامه‌ای برای رشد بعدی.",
       "deliverables": {
         "d1": {
-          "title": "Prototyp in 48h",
-          "text": "Wir zeigen Struktur und CTA vor dem Coding, damit Entscheidungen planbar bleiben."
+          "title": "پروتوتایپ در 48 ساعت",
+          "text": "پیش از کدنویسی، ساختار و CTA را نشان می‌دهیم تا تصمیم‌گیری قابل پیش‌بینی بماند."
         },
         "d2": {
-          "title": "Website für Anfragen",
-          "text": "Formular, Anruf, Messenger und mobile Version für schnelle Kontaktaufnahme."
+          "title": "وب‌سایت برای درخواست‌ها",
+          "text": "فرم، تماس، پیام‌رسان و نسخه موبایل برای ارتباط سریع‌تر."
         },
         "d3": {
-          "title": "Analytics und Tracking",
-          "text": "GA4 plus Events, damit sichtbar wird, wo Anfragen entstehen."
+          "title": "آنالیتیکس و رهگیری",
+          "text": "GA4 به‌همراه رویدادها تا مشخص شود درخواست‌ها از کجا ایجاد می‌شوند."
         },
         "d4": {
-          "title": "30-Tage-Optimierungsplan",
-          "text": "Klare nächste Schritte zur Conversion-Steigerung nach Launch."
+          "title": "برنامه بهینه‌سازی 30 روزه",
+          "text": "گام‌های بعدی شفاف برای افزایش تبدیل بعد از لانچ."
         }
       }
     }
   },
   "services": {
-    "h1": "Leistungen mit klarem Ergebnis und Zeitplan.",
-    "subtitle": "Wir bauen nicht nur Seiten, sondern einen funktionierenden Lead-Prozess.",
+    "h1": "خدمات با نتیجه روشن و زمان‌بندی واقع‌بینانه.",
+    "subtitle": "ساده و شفاف: چه کاری انجام می‌دهیم، چقدر زمان می‌برد و کسب‌وکار شما دقیقاً چه سودی می‌برد.",
     "cards": {
       "websites": {
-        "title": "Websites",
-        "desc": "Inhalt: Positionierung, UX, technische Umsetzung, Tracking."
+        "title": "وب‌سایت‌ها",
+        "desc": "یک وب‌سایت سریع می‌سازیم که خدمات شما را شفاف نشان دهد و مشتری را مستقیم به درخواست برساند."
       },
       "webAppsAi": {
-        "title": "Web-Apps & AI",
-        "desc": "Inhalt: interne Workflows, AI-Assistenten, Formulare, Prozesse."
+        "title": "اتوماسیون و هوش مصنوعی",
+        "desc": "اتوماسیون‌های ساده راه‌اندازی می‌کنیم: پاسخ خودکار، فرم‌ها و دسته‌بندی درخواست‌ها تا هیچ لیدی از دست نرود."
       },
       "ads": {
-        "title": "Ads & Auswertung",
-        "desc": "Kampagnenaufbau, Creatives, Conversion-Tracking."
+        "title": "تبلیغات و گزارش شفاف",
+        "desc": "تبلیغات را اجرا می‌کنیم و به‌صورت قابل فهم نشان می‌دهیم چند درخواست آمده، هر لید چقدر هزینه دارد و چه چیزی را بهبود می‌دهیم."
       },
       "social": {
-        "title": "Social Integration",
-        "desc": "Plattform-Integration, DM-Flows, Retargeting."
+        "title": "شبکه‌های اجتماعی و مسیرهای تماس",
+        "desc": "وب‌سایت را به اینستاگرام/فیسبوک و پیام‌رسان‌ها وصل می‌کنیم تا مشتری بتواند سریع پیام بدهد یا تماس بگیرد."
       }
     },
-    "deliverablesTitle": "Deliverables",
+    "deliverablesTitle": "آنچه دریافت می‌کنید",
     "deliverables": {
-      "i1": "Strategie-Call + klarer Umsetzungsplan",
-      "i2": "Design in responsiven Breakpoints",
-      "i3": "Technische Umsetzung + Performance",
-      "i4": "Formulare, Tracking, Analytics Dashboard"
+      "i1": "تماس کوتاه استراتژیک و برنامه اجرای روشن با زبان ساده",
+      "i2": "طراحی که روی موبایل، تبلت و دسکتاپ تمیز کار می‌کند",
+      "i3": "پیاده‌سازی فنی با سرعت بارگذاری بالا",
+      "i4": "فرم‌ها، رهگیری و گزارش روشن از درخواست‌ها"
     },
-    "aiSocialAdsTitle": "AI, Social, Werbung",
+    "aiSocialAdsTitle": "هوش مصنوعی، شبکه‌های اجتماعی و تبلیغات به زبان ساده",
     "aiCards": {
       "ai": {
-        "title": "KI-Integration",
-        "desc": "Chatbots, automatische Antworten, Lead-Priorisierung."
+        "title": "یکپارچه‌سازی هوش مصنوعی",
+        "desc": "چت‌بات یا پاسخ‌های خودکار اضافه می‌کنیم تا علاقه‌مندان سریع‌تر بازخورد بگیرند، حتی خارج از ساعات کاری."
       },
       "social": {
-        "title": "Social Media",
-        "desc": "Content-Module, Channel-VerknÒ¼pfung, Kontaktpfade."
+        "title": "شبکه‌های اجتماعی",
+        "desc": "یک مسیر روشن می‌سازیم: افراد شما را در شبکه‌های اجتماعی می‌بینند، وارد وب‌سایت می‌شوند و درخواست ارسال می‌کنند."
       },
       "ads": {
-        "title": "Social Ads",
-        "desc": "Meta/TikTok/LinkedIn Kampagnen mit Tracking."
+        "title": "تبلیغات شبکه‌های اجتماعی",
+        "desc": "کمپین‌های Meta/TikTok/LinkedIn را اجرا می‌کنیم و بودجه را روی درخواست‌های واقعی هدایت می‌کنیم، نه فقط روی بازدید."
       }
     },
-    "ctaTitle": "Angebot erhalten",
-    "ctaButton": "Angebot erhalten"
+    "ctaTitle": "دریافت پیشنهاد",
+    "ctaButton": "دریافت پیشنهاد"
   },
   "pricing": {
     "hero": {
-      "titleLine1": "Website and Lead System",
-      "titleLine2": "��¨��±��§�:�\u0019 �a©��³��¨ �\"�  �a©��§��±�\"⬡��§�:�\u0019 �\"⬦��­�\"�~�:�\u0019",
-      "titleLine3": "?? EUR 690",
-      "subtitle": "Premium setup for local businesses in Germany: clear funnel, measurable leads, clean handover to sales.",
-      "cta": "��¬�\"�~��³�\"⬡ ��§�\"� �\"�~�:�\u0019�\"⬡ ��±��§�:�\u0019�a¯��§�\"⬠",
+      "titleLine1": "وب‌سایت و سیستم لید",
+      "titleLine2": "برای کسب‌وکارهای محلی",
+      "titleLine3": "از 690 یورو",
+      "subtitle": "راه‌اندازی پریمیوم برای کسب‌وکارهای محلی در آلمان: قیف شفاف، لید قابل اندازه‌گیری و تحویل منظم به فروش.",
+      "cta": "مشاوره اولیه رایگان",
       "metrics": {
-        "leadVolume": "Lead Volume",
-        "qualifiedLeads": "Qualified Leads",
-        "costPerLead": "Cost per Lead"
+        "leadVolume": "حجم لید",
+        "qualifiedLeads": "لیدهای واجد شرایط",
+        "costPerLead": "هزینه هر لید"
       },
       "funnel": {
-        "traffic": "Traffic",
-        "landing": "Landing",
-        "leads": "Leads",
+        "traffic": "ترافیک",
+        "landing": "لندینگ",
+        "leads": "لیدها",
         "crm": "CRM",
-        "sales": "Sales"
+        "sales": "فروش"
       }
     },
     "flow": {
-      "title": "��¬��±�:�\u0019��§�\"⬠ ��³�:�\u0019��³��ª�\"⬦ �\"�~�:�\u0019��¯",
+      "title": "جریان سیستم لید",
       "steps": {
-        "traffic": "Traffic",
-        "landing": "Landing Page",
-        "capture": "Lead Capture",
+        "traffic": "ترافیک",
+        "landing": "لندینگ‌پیج",
+        "capture": "دریافت لید",
         "crm": "CRM",
-        "sales": "Sales"
+        "sales": "فروش"
       }
     },
     "packages": {
-      "title": "Ù¾Ú©ÛŒØ¬ Ù‡Ø§ÛŒ Ù‚ÛŒÙ…Øª",
-      "badge": "Ù¾ÛŒØ´Ù†Ù‡Ø§Ø¯ÛŒ",
+      "title": "پکیج‌های قیمت",
+      "badge": "پیشنهادی",
       "billing": {
-        "monthly": "Ù…Ø§Ù‡Ø§Ù†Ù‡",
-        "yearly": "Ø³Ø§Ù„Ø§Ù†Ù‡"
+        "monthly": "ماه",
+        "yearly": "سال"
       },
-      "coreTitle": "Ø§ØµÙ„ÛŒ",
-      "plusTitle": "Ø§Ø¶Ø§ÙÛŒ",
-      "subscriptionTitle": "Ø§Ø´ØªØ±Ø§Ú© Ù¾Ø´ØªÛŒØ¨Ø§Ù†ÛŒ",
-      "subscriptionIncludesTitle": "Ø´Ø§Ù…Ù„",
-      "outcomeLabel": "Ù†ØªÛŒØ¬Ù‡:",
+      "coreTitle": "پایه",
+      "plusTitle": "افزونه",
+      "subscriptionTitle": "اشتراک پشتیبانی",
+      "subscriptionIncludesTitle": "شامل",
+      "outcomeLabel": "نتیجه:",
       "starter": {
-        "name": "Starter",
-        "desc": "Ø¨Ø±Ø§ÛŒ Ú©Ø³Ø¨ Ùˆ Ú©Ø§Ø±Ù‡Ø§ÛŒ Ù…Ø­Ù„ÛŒ Ú©ÙˆÚ†Ú© Ø¨Ø§ Ø´Ø±ÙˆØ¹ Ø³Ø±ÛŒØ¹.",
-        "price": "Ø§Ø² EUR 690",
-        "range": "Ù…Ø¹Ù…ÙˆÙ„Ø§ EUR 690-790",
+        "name": "استارتر",
+        "desc": "برای کسب‌وکارهای محلی کوچک با شروع سریع.",
+        "price": "از 690 یورو",
+        "range": "معمولاً 690 تا 790 یورو",
         "core": [
-          "Ù„Ù†Ø¯ÛŒÙ†Ú¯ Ù¾ÛŒØ¬",
-          "ÙØ±Ù… lead + ÙØ±Ù… ØªÙ…Ø§Ø³",
-          "GA4 + ØªÙ†Ø¸ÛŒÙ… Ù¾Ø§ÛŒÙ‡ SEO"
+          "لندینگ‌پیج",
+          "فرم لید + فرم تماس",
+          "GA4 + راه‌اندازی پایه سئو"
         ],
         "plus": [
-          "Ø¨Ù‡ÛŒÙ†Ù‡ Ø³Ø§Ø²ÛŒ Ù…ÙˆØ¨Ø§ÛŒÙ„",
-          "DSGVO tracking Ù¾Ø§ÛŒÙ‡"
+          "بهینه‌سازی موبایل",
+          "رهگیری پایه DSGVO"
         ],
         "subscription": {
           "monthly": {
-            "price": "EUR 62 / Ù…Ø§Ù‡",
-            "meta": "Ù¾Ø´ØªÛŒØ¨Ø§Ù†ÛŒ Ù¾Ø§ÛŒÙ‡ Ø¨Ø¹Ø¯ Ø§Ø² Ù„Ø§Ù†Ú†"
+            "price": "62 یورو / ماه",
+            "meta": "پشتیبانی پایه بعد از لانچ"
           },
           "yearly": {
-            "price": "EUR 521 / Ø³Ø§Ù„",
-            "meta": "12 Ù…Ø§Ù‡ Ø¨Ø§ 30% ØªØ®ÙÛŒÙ"
+            "price": "521 یورو / سال",
+            "meta": "12 ماه با 30٪ تخفیف"
           },
           "includes": [
-            "Ø¨Ù‡ Ø±ÙˆØ²Ø±Ø³Ø§Ù†ÛŒ Ù‡Ø§ÛŒ ÙÙ†ÛŒ Ùˆ Ø¨Ú©Ø§Ù¾",
-            "Ú©Ù†ØªØ±Ù„ ÙØ±Ù… Ù‡Ø§ØŒ conversion Ù‡Ø§ Ùˆ tracking Ù¾Ø§ÛŒÙ‡",
-            "ØªØ§ 1 Ø¨Ø³ØªÙ‡ ØªØºÛŒÛŒØ± ÛŒØ§ Ø¨Ù‡ Ø±ÙˆØ²Ø±Ø³Ø§Ù†ÛŒ Ø¯Ø± Ù…Ø§Ù‡"
+            "به‌روزرسانی‌های فنی و بکاپ‌ها",
+            "پایش فرم‌ها، تبدیل‌ها و رهگیری پایه",
+            "تا 1 بلوک تغییر یا به‌روزرسانی در ماه"
           ]
         },
-        "outcome": "Ú©Ø§Ù†Ø§Ù„ Ù¾Ø§ÛŒØ¯Ø§Ø± Ø¨Ø±Ø§ÛŒ Ø§ÙˆÙ„ÛŒÙ† Ø¯Ø±Ø®ÙˆØ§Ø³Øª Ù‡Ø§ÛŒ Ø¨Ø§Ú©ÛŒÙÛŒØª."
+        "outcome": "یک کانال پایدار برای اولین درخواست‌های واجد شرایط."
       },
       "business": {
-        "name": "Business",
-        "desc": "Ø¨Ø±Ø§ÛŒ ØªÛŒÙ… Ù‡Ø§ÛŒÛŒ Ø¨Ø§ Ú†Ù†Ø¯ Ø®Ø¯Ù…Øª Ùˆ ÙØ±ÙˆØ´ ÙØ¹Ø§Ù„.",
-        "price": "Ø§Ø² EUR 1.290",
-        "range": "Ù…Ø¹Ù…ÙˆÙ„Ø§ EUR 1.290-1.490",
+        "name": "بیزنس",
+        "desc": "برای تیم‌هایی با چند خدمت و فروش فعال.",
+        "price": "از 1,290 یورو",
+        "range": "معمولاً 1,290 تا 1,490 یورو",
         "core": [
-          "ÙˆØ¨ Ø³Ø§ÛŒØª Ú†Ù†Ø¯ ØµÙØ­Ù‡ Ø§ÛŒ ØªØ§ 5 ØµÙØ­Ù‡",
-          "ÛŒÚ©Ù¾Ø§Ø±Ú†Ù‡ Ø³Ø§Ø²ÛŒ CRM + lead tracking",
-          "dashboard ØªØ­Ù„ÛŒÙ„ÛŒ"
+          "وب‌سایت چندصفحه‌ای تا 5 صفحه",
+          "یکپارچه‌سازی CRM + رهگیری لید",
+          "داشبورد آنالیتیکس"
         ],
         "plus": [
-          "Ø³Ø§Ø®ØªØ§Ø± SEO Ø¨Ø± Ø§Ø³Ø§Ø³ Ø®Ø¯Ù…Ø§Øª",
-          "Ø¨Ù‡ÛŒÙ†Ù‡ Ø³Ø§Ø²ÛŒ conversion"
+          "ساختار سئو بر اساس خدمات",
+          "بهینه‌سازی تبدیل"
         ],
         "subscription": {
           "monthly": {
-            "price": "EUR 86 / Ù…Ø§Ù‡",
-            "meta": "Ù¾Ø´ØªÛŒØ¨Ø§Ù†ÛŒ Ø¨Ø±Ø§ÛŒ Ø³Ø§ÛŒØªØŒ CRM Ùˆ analytics"
+            "price": "86 یورو / ماه",
+            "meta": "پشتیبانی برای وب‌سایت، CRM و آنالیتیکس"
           },
           "yearly": {
-            "price": "EUR 722 / Ø³Ø§Ù„",
-            "meta": "12 Ù…Ø§Ù‡ Ø¨Ø§ 30% ØªØ®ÙÛŒÙ"
+            "price": "722 یورو / سال",
+            "meta": "12 ماه با 30٪ تخفیف"
           },
           "includes": [
-            "Ø¨Ù‡ Ø±ÙˆØ²Ø±Ø³Ø§Ù†ÛŒ Ù…Ù†Ø¸Ù… Ù…Ø­ØªÙˆØ§ Ùˆ ØµÙØ­Ø§Øª",
-            "Ú©Ù†ØªØ±Ù„ CRMØŒ lead tracking Ùˆ dashboard",
-            "ØªØ§ 2 ØªØ³Ú© Ø¯Ø± Ù…Ø§Ù‡ Ø¨Ø±Ø§ÙŠ Ø¨Ù‡Ø¨ÙˆØ¯ conversion"
+            "به‌روزرسانی منظم محتوا و صفحات",
+            "کنترل CRM، رهگیری لید و داشبورد",
+            "تا 2 کار در ماه برای بهینه‌سازی تبدیل"
           ]
         },
-        "outcome": "Ø¬Ø±ÙŠØ§Ù† Ù‚Ø§Ø¨Ù„ Ù¾ÙŠØ´ Ø¨ÙŠÙ†ÙŠ lead Ø¨Ø§ ØªØ­Ù„ÙŠÙ„ Ø´ÙØ§Ù."
+        "outcome": "جریان لید قابل برنامه‌ریزی با گزارش شفاف."
       },
       "pro": {
-        "name": "Pro",
-        "desc": "Ø¨Ø±Ø§ÙŠ Ø±Ø´Ø¯ Ø¨Ø§ ÙˆØ¨ Ø³Ø§ÙŠØªØŒ ØªØ¨Ù„ÙŠØºØ§Øª Ùˆ Ø§ØªÙˆÙ…Ø§Ø³ÙŠÙˆÙ†.",
-        "price": "Ø§Ø² EUR 2.490",
-        "range": "Ù…Ø¹Ù…ÙˆÙ„Ø§ EUR 2.490-2.990",
+        "name": "پرو",
+        "desc": "برای رشد با وب‌سایت، تبلیغات و اتوماسیون.",
+        "price": "از 2,490 یورو",
+        "range": "معمولاً 2,490 تا 2,990 یورو",
         "core": [
-          "Website + Ø±Ø§Ù‡ Ø§Ù†Ø¯Ø§Ø²ÙŠ Ads",
-          "Google Ads ÙŠØ§ Meta Ads",
-          "Marketing dashboard + tracking"
+          "وب‌سایت + راه‌اندازی تبلیغات",
+          "Google Ads یا Meta Ads",
+          "داشبورد بازاریابی + رهگیری"
         ],
         "plus": [
-          "Ø§Ø±Ø²ÙŠØ§Ø¨ÙŠ lead Ø¨Ø§ AI",
-          "Automation flows"
+          "صلاحیت‌سنجی لید با هوش مصنوعی",
+          "فلوهای اتوماسیون"
         ],
         "subscription": {
           "monthly": {
-            "price": "EUR 160 / Ù…Ø§Ù‡",
-            "meta": "Ù…Ø¯ÙŠØ±ÙŠØª ÙØ¹Ø§Ù„ Ø³ÙŠØ³ØªÙ… growth"
+            "price": "160 یورو / ماه",
+            "meta": "پشتیبانی فعال از سیستم‌های رشد"
           },
           "yearly": {
-            "price": "EUR 1.344 / Ø³Ø§Ù„",
-            "meta": "12 Ù…Ø§Ù‡ Ø¨Ø§ 30% ØªØ®ÙÙŠÙ"
+            "price": "1,344 یورو / سال",
+            "meta": "12 ماه با 30٪ تخفیف"
           },
           "includes": [
-            "Ú©Ù†ØªØ±Ù„ Ù‡ÙØªÚ¯ÙŠ Ø³Ø§ÙŠØªØŒ ØªØ¨Ù„ÙŠØºØ§Øª Ùˆ automation flows",
-            "Ø¨Ù‡ÙŠÙ†Ù‡ Ø³Ø§Ø²ÙŠ CPLØŒ funnel Ùˆ Ø§Ø±Ø²ÙŠØ§Ø¨ÙŠ lead",
-            "ØªØ§ 4 ØªØ³Ú© growth Ø¯Ø± Ù…Ø§Ù‡ + Ù¾Ø´ØªÙŠØ¨Ø§Ù†ÙŠ Ø§ÙˆÙ„ÙˆÙŠØª Ø¯Ø§Ø±"
+            "کنترل هفتگی وب‌سایت، تبلیغات و فلوهای اتوماسیون",
+            "بهینه‌سازی CPL، قیف و صلاحیت‌سنجی لید",
+            "تا 4 تسک رشد در ماه به‌همراه پشتیبانی اولویت‌دار"
           ]
         },
-        "outcome": "ØªÙ‚Ø§Ø¶Ø§ÙŠ Ø¨ÙŠØ´ØªØ± Ø¨Ø§ Ú©Ù†ØªØ±Ù„ Ù‡Ø²ÙŠÙ†Ù‡ Ù‡Ø± lead."
+        "outcome": "تقاضای بیشتر با هزینه کنترل‌شده برای هر لید."
       }
     },
     "comparison": {
-      "title": "Feature Comparison",
-      "yes": "��¨�\"�~�\"⬡",
+      "title": "مقایسه امکانات",
+      "yes": "بله",
       "no": "-",
       "headers": {
-        "feature": "Feature",
-        "starter": "Starter",
-        "business": "Business",
-        "pro": "Pro"
+        "feature": "قابلیت",
+        "starter": "استارتر",
+        "business": "بیزنس",
+        "pro": "پرو"
       },
       "rows": {
-        "landing": "Landing Page",
-        "multi": "Multi-page Website",
-        "crm": "CRM Integration",
-        "ai": "AI Lead Qualification",
-        "ads": "Ads Setup",
-        "dashboard": "Analytics Dashboard"
+        "landing": "لندینگ‌پیج",
+        "multi": "وب‌سایت چندصفحه‌ای",
+        "crm": "یکپارچه‌سازی CRM",
+        "ai": "صلاحیت‌سنجی لید با هوش مصنوعی",
+        "ads": "راه‌اندازی تبلیغات",
+        "dashboard": "داشبورد آنالیتیکس"
       }
     },
     "trust": {
-      "title": "��§��¹��ª�\"⬦��§��¯ �\"�  �\"⬦��­��¯�\"� ��¯�\"⬡",
+      "title": "اعتماد و چارچوب اجرا",
       "delivery": {
-        "title": "Delivery 7-14 days",
-        "desc": "Clear timeline with fixed approval steps."
+        "title": "تحویل در 7 تا 14 روز",
+        "desc": "زمان‌بندی روشن با مراحل تایید ثابت."
       },
       "support": {
-        "title": "Support after launch",
-        "desc": "Support for handover, team setup and fine-tuning."
+        "title": "پشتیبانی پس از لانچ",
+        "desc": "پشتیبانی برای تحویل، راه‌اندازی تیم و بهینه‌سازی نهایی."
       },
       "dsgvo": {
-        "title": "DSGVO Tracking",
-        "desc": "Privacy-compliant measurement with consent setup."
+        "title": "رهگیری سازگار با DSGVO",
+        "desc": "اندازه‌گیری سازگار با حریم خصوصی همراه با تنظیم رضایت."
       }
     },
     "final": {
-      "title": "��¨��§ �:�\u0019�a© ��¬�\"�~��³�\"⬡ ��§�\"� �\"�~�:�\u0019�\"⬡ ��±��§�:�\u0019�a¯��§�\"⬠ ��´��±�\"� ��¹ �a©�\"⬠�:�\u0019��¯.",
-      "subtitle": "In 30 minutes we show the right package and build plan for your lead system.",
-      "cta": "��¬�\"�~��³�\"⬡ ��§�\"� �\"�~�:�\u0019�\"⬡ ��±��§�:�\u0019�a¯��§�\"⬠"
+      "title": "با یک مشاوره اولیه رایگان شروع کنید.",
+      "subtitle": "در 30 دقیقه پکیج مناسب و برنامه اجرای سیستم لید شما را نشان می‌دهیم.",
+      "cta": "مشاوره اولیه رایگان"
     }
   },
   "references": {
-    "h1": "�\" �\"&�\"� �\" �\"!��\u001a��\u0019�a��������\"!��� ������ ��������� �\"�a�������\"�~ ����\" ����������\"!��\u001a��\u0019�a��:�\u0019����:�\u0019.",
-    "subtitle": "����\"�����\"� �\" �������\"  �\"&�:�\u0019��\u001a��\u0019����\"!�:�\u0019�\"& �a �\"! �a �:�\u0019����\"!����:�\u0019�:�\u0019 ��������� �a��������\"!��\u001a��\u0019����\" ���: ����������\"� �����������\u001a��\u0019�\"!������\u0019 ����������\"� �\"!������\u0019 ����\"&��������\u001a��\u0019�\"!��� �\"�  �\"�~�:�\u0019����\"!���.",
-    "trustline": "����\"&����\"& ��������������\u001a��\u0019�\"!��� �\"!�\"&�������\"! ������ ����\"&�:�\u0019�\" �\"!: ����������\"! ����\"&����\" �:�\u0019 �\"�  ����\"� ��� ����\" ����������\"!��\u001a��\u0019�a��:�\u0019����:�\u0019.",
-    "filterTitle": "��§�\"⬠��ª��®��§��¨ ��­�\"� ��²�\"⬡",
-    "filterAria": "�\"��:�\u0019�\"�~������ ����\"� ����\"!��\u001a��\u0019�\"!���",
-    "counter": "{{count}} �a©�:�\u0019��³ �\"⬦��±��ª��¨��·",
-    "growthByNiche": "��±��´��¯ ��¨��± ��§��³��§��³ ��­�\"� ��²�\"⬡",
-    "selectedCases": "�a��:�\u0019�����\u001a��\u0019�\"!����:�\u0019 �\"&�\" ���������",
-    "challengeLabel": "�\"� ��¶��¹�:�\u0019��ª ��§�\"� �\"�~�:�\u0019�\"⬡",
-    "solutionLabel": "��±��§�\"⬡�a©��§��±",
-    "periodLabel": "��¨��§��²�\"⬡ ��²�\"⬦��§�\"⬠�:�\u0019",
-    "measurementLabel": "����\" ����������\"!��\u001a��\u0019�a��:�\u0019����:�\u0019",
-    "emptyTitle": "�a��:�\u0019��� ����������:�\u0019 ����:�\u0019�\"  ����\"� ����\"! ����\"!��\u001a��\u0019����\"� ����:�\u0019 ����������\"��\"! �\"&�:�\u0019��\u001a��\u0019����\"� ���.",
-    "emptyText": "�\"��\"�a��� �a��:�\u0019�����\u001a��\u0019�\"!����:�\u0019�:�\u0019 ������ �\" �\"&����:�\u0019��� �\"&�:�\u0019��\u001a��\u0019����\"!�:�\u0019�\"& �a��\"! ����\" ����������\"!��\u001a��\u0019�a��:�\u0019����:�\u0019 �\"&������������ �\"�  ����������\"! ����\"&����\" �:�\u0019 �\"&��������� ����������\" ���.",
-    "beforeAfter": "�\"�a��¨�\"�~ / ��¨��¹��¯",
-    "before": "�\"�a��¨�\"�~",
-    "after": "��¨��¹��¯",
-    "beforeAlt": "�\"⬠�\"⬦��§�:�\u0019 �\"�a��¨�\"�~ ��§��² ��ª��º�:�\u0019�:�\u0019��±",
-    "afterAlt": "�\"⬠�\"⬦��§�:�\u0019 ��¨��¹��¯ ��§��² ��ª��º�:�\u0019�:�\u0019��±",
-    "sliderAria": "��¬��§��¨��¬��§ �a©��±��¯�\"⬠ �\"⬦�\"�a��§�:�\u0019��³�\"⬡ �\"�a��¨�\"�~/��¨��¹��¯",
-    "sliderHint": "��¨��±��§�:�\u0019 �\"⬦�\"�a��§�:�\u0019��³�\"⬡ ��¨�a©��´�:�\u0019��¯.",
-    "ctaTitle": "�\" �������:�\u0019��� �\"&����������\"! �\"&�:�\u0019��\u001a��\u0019����\"� ����\"!�:�\u0019�����x",
-    "ctaText": "�\"� �������:�\u0019��� �\"�����\"�~�:�\u0019 ����\"&��� ������ �������\"�~�:�\u0019�\"�~ �\"&�:�\u0019��\u001a��\u0019�a��\" �:�\u0019�\"& �\"�  �:�\u0019�a� �������\" ����\"&�\"! �\"� ����\"�a�����\u001a��\u0019����:�\u0019�\" ����\" �\"! �:��:� ������ �:��:� ����\"� ����\"! �������������\"! �\"&�:�\u0019��\u001a��\u0019����\"!�:�\u0019�\"&.",
-    "cta": "��¯��±��®�\"� ��§��³��ª �\"¾��±�\"� �a�S�\"⬡ �\"⬦��´��§��¨�\"⬡",
+    "h1": "نمونه‌کارها با رشد قابل اندازه‌گیری.",
+    "subtitle": "شفاف نشان می‌دهیم چه چیزی رشد کرده است: درخواست‌ها، رزروها، تماس‌ها و لیدها.",
+    "trustline": "همه اعداد با زمینه روشن: بازه زمانی و روش اندازه‌گیری.",
+    "filterTitle": "انتخاب حوزه",
+    "filterAria": "فیلتر حوزه‌ها",
+    "counter": "{{count}} کیس مرتبط",
+    "growthByNiche": "رشد بر اساس حوزه",
+    "selectedCases": "کیس‌های منتخب",
+    "challengeLabel": "وضعیت اولیه",
+    "solutionLabel": "راه‌حل اجراشده",
+    "periodLabel": "بازه زمانی",
+    "measurementLabel": "اندازه‌گیری",
+    "emptyTitle": "کیس بعدی برای این حوزه به‌زودی اضافه می‌شود.",
+    "emptyText": "فقط کیس‌هایی را نشان می‌دهیم که اندازه‌گیری معتبر و بازه زمانی روشن دارند.",
+    "beforeAfter": "قبل / بعد",
+    "before": "قبل",
+    "after": "بعد",
+    "beforeAlt": "نمای قبل از کیس",
+    "afterAlt": "نمای بعد از کیس",
+    "sliderAria": "جابجایی مقایسه قبل و بعد",
+    "sliderHint": "برای مقایسه بکشید.",
+    "ctaTitle": "نتایج مشابه می‌خواهید؟",
+    "ctaText": "وضعیت فعلی شما را بررسی می‌کنیم و یک برنامه واقع‌بینانه 30 تا 90 روزه نشان می‌دهیم.",
+    "cta": "درخواست پروژه مشابه",
     "filters": {
-      "all": "�\"⬡�\"⬦�\"⬡"
+      "all": "همه"
     },
     "niches": {
-      "handwerk": "Handwerk",
-      "praxen": "Praxen",
-      "werkstatt": "Werkstatt",
-      "gastronomie": "Gastronomie",
-      "beauty": "Beauty",
-      "immobilien": "Immobilien",
-      "kanzlei": "Kanzlei",
-      "fitnessPhysio": "Fitness/Physio",
-      "reinigung": "Reinigung",
-      "umzugTransport": "Umzug/Transport",
-      "coachingBeratung": "Coaching/Beratung",
-      "bildungKurse": "Bildung/Kurse"
+      "handwerk": "مشاغل فنی",
+      "praxen": "کلینیک‌ها",
+      "werkstatt": "تعمیرگاه",
+      "gastronomie": "رستوران و غذا",
+      "beauty": "بیوتی",
+      "immobilien": "املاک",
+      "kanzlei": "دفتر حقوقی",
+      "fitnessPhysio": "فیتنس/فیزیوتراپی",
+      "reinigung": "نظافت",
+      "umzugTransport": "اسباب‌کشی/حمل‌ونقل",
+      "coachingBeratung": "کوچینگ/مشاوره",
+      "bildungKurse": "آموزش/دوره‌ها"
     },
     "metrics": {
-      "moreRequests": "����������\"� �����������\u001a��\u0019�\"!����:�\u0019 ����:�\u0019���������",
-      "moreAppointments": "��±��²��±�\"�  �\"⬠�\"� ��¨��ª ��¨�:�\u0019��´��ª��±",
-      "moreCalls": "����\"&��������\u001a��\u0019�\"!����:�\u0019 ����:�\u0019���������",
-      "moreReservations": "��±��²��±�\"� �\"⬡��§�:�\u0019 ��¨�:�\u0019��´��ª��±",
-      "moreBookings": "��±��²��±�\"�  ��®��¯�\"⬦��§��ª ��¨�:�\u0019��´��ª��±",
-      "moreLeads": "�\"�~�:�\u0019��¯�\"⬡��§�:�\u0019 ��¨�:�\u0019��´��ª��±",
-      "moreIntroCalls": "��ª�\"⬦��§��³ ��§�\"� �\"�~�:�\u0019�\"⬡ ��¨�:�\u0019��´��ª��±",
-      "moreTrialSessions": "��¬�\"�~��³��§��ª ��¢��²�\"⬦��§�:�\u0019��´�:�\u0019 ��¨�:�\u0019��´��ª��±",
-      "moreOffers": "��¯��±��®�\"� ��§��³��ª �\"¾�:�\u0019��´�\"⬠�\"⬡��§��¯ ��¨�:�\u0019��´��ª��±",
-      "moreQualifiedLeads": "�\"�~�:�\u0019��¯�\"⬡��§�:�\u0019 �\"� ��§��¬��¯��´��±��§�:�\u0019��· ��¨�:�\u0019��´��ª��±",
-      "moreFirstContacts": "����\"&��������\u001a��\u0019�\"!����:�\u0019 ����\"� �\"�~�:�\u0019�\"! ����:�\u0019���������",
-      "moreCourseSignups": "�����������\u001a��\u0019�\" ����\"& ����\"� ����\"! ����:�\u0019���������",
-      "budgetEfficiency": "����\"!����\"!��\u001a��\u0019�\"� ����:�\u0019 ����\"� �������\"!",
-      "moreInteractions": "��ª��¹��§�\"⬦�\"�~ ��¨�:�\u0019��´��ª��±",
-      "moreLeadsPerBudget": "�\"�~�:�\u0019��¯ ��¨�:�\u0019��´��ª��± ��¨�\"⬡ ��§��²��§�:�\u0019 ��¨�\"� ��¯��¬�\"⬡",
-      "moreConsultations": "�\"⬦��´��§�\"� ��±�\"⬡ ��¨�:�\u0019��´��ª��±"
+      "moreRequests": "درخواست‌های بیشتر",
+      "moreAppointments": "رزروهای بیشتر",
+      "moreCalls": "تماس‌های بیشتر",
+      "moreReservations": "رزروهای بیشتر",
+      "moreBookings": "بوکینگ‌های بیشتر",
+      "moreLeads": "لیدهای بیشتر",
+      "moreIntroCalls": "تماس‌های اولیه بیشتر",
+      "moreTrialSessions": "جلسه آزمایشی بیشتر",
+      "moreOffers": "درخواست پیشنهاد بیشتر",
+      "moreQualifiedLeads": "لیدهای واجد شرایط بیشتر",
+      "moreFirstContacts": "اولین تماس‌های بیشتر",
+      "moreCourseSignups": "ثبت‌نام بیشتر در دوره‌ها",
+      "budgetEfficiency": "بهره‌وری بودجه",
+      "moreInteractions": "تعامل‌های بیشتر",
+      "moreLeadsPerBudget": "لید بیشتر به‌ازای بودجه",
+      "moreConsultations": "جلسات مشاوره بیشتر"
     },
     "cases": {
       "c1": {
-        "title": "��´��±�a©��ª ��ª��§��³�:�\u0019��³��§��ª (�\"⬦�\"⬠��·�\"�a�\"⬡ �\"⬡��§�\"⬠�\"� �\"��±)",
-        "challenge": "������ �\"� ����\"� ��� ����������������:�\u0019 ����\"� ������\u0019 ����������\"� �����������\u001a��\u0019�\"!��� �a��\"& ����\"� ���.",
-        "solution": "��µ�\"��­��§��ª ��®��¯�\"⬦��§��ª ��¨��§��²��·��±��§��­�:�\u0019 ��´��¯���\u0019 CTA ��¨�\"⬡�:�\u0019�\"⬠�\"⬡ ��´��¯ �\"�  ��±�\"⬡�a¯�:�\u0019��±�:�\u0019 ��ª�\"⬦��§��³ �\"��¹��§�\"�~ ��´��¯."
+        "title": "شرکت تاسیسات بهداشتی (منطقه هانوفر)",
+        "challenge": "درخواست‌ها با وجود بازدید خوب کافی نبود.",
+        "solution": "صفحات خدمات را بازطراحی کردیم، CTA را بهینه کردیم و رهگیری تماس را فعال کردیم."
       },
       "c2": {
-        "title": "�a©�\"�~�:�\u0019�\"⬠�:�\u0019�a© �\"�:�\u0019��²�:�\u0019�\"� ��ª��±��§�\"¾�:�\u0019 (�\"⬡�:�\u0019�\"�~��¯��³�\"⬡��§�:�\u0019�\"⬦)",
-        "challenge": "��¯��±��®�\"� ��§��³��ª �\"⬠�\"� ��¨��ª ��¢�\"⬠�\"�~��§�:�\u0019�\"⬠ �a©�\"⬦ ��¨�\"� ��¯.",
-        "solution": "�\"��������:�\u0019�\" ��� ����������\"�  ����������\"! ���������\u0019 ����\"���������� �\"&�\"� �������:�\u0019�\"�~ �������:�\u0019�����\u001a��\u0019������ ������ �\"�  �\"&����:�\u0019����\"!����:�\u0019 ����\"&������ ����\"�����\"� �������\" ���."
+        "title": "کلینیک فیزیوتراپی (هیلدسهایم)",
+        "challenge": "درخواست‌های نوبت آنلاین خیلی کم بود.",
+        "solution": "جریان رزرو را ساده کردیم، صفحات موبایل را سریع‌تر کردیم و مسیرهای تماس را شفاف کردیم."
       },
       "c3": {
-        "title": "�a©��§��±�a¯��§�\"⬡ ��¨��¯�\"⬠�\"⬡ ��®�\"� ��¯��±�\"�  (�\"⬦�\"⬠��·�\"�a�\"⬡ �\"⬡��§��±��¨�\"� ��±�a¯)",
-        "challenge": "��ª�\"⬦��§��³ ��²�:�\u0019��§��¯ ��¨�\"� ��¯ ��§�\"⬦��§ ��³�\"��§��±��´ �\"⬦�\"⬠��§��³��¨ �a©�\"⬦ ��¨�\"� ��¯.",
-        "solution": "������ �\"�����\"&���\u0019 ����\"�~�������:�\u0019�����\u001a��\u0019����\" ����:�\u0019 �\"�~�:�\u0019��� ����������\"��\"! ������ �\"�  �\"�~�\" ����:�\u0019�\" �a� �������������������:�\u0019 �������\"&������ ����:�\u0019��������� ������."
+        "title": "تعمیرگاه بدنه خودرو (منطقه هاربورگ)",
+        "challenge": "تماس زیاد بود اما سفارش مناسب کم بود.",
+        "solution": "صلاحیت‌سنجی لید را در فرم وارد کردیم و لندینگ‌پیج مبتنی بر خدمات ساختیم."
       },
       "c4": {
-        "title": "��±��³��ª�\"� ��±��§�\"⬠ (�\"⬠�:�\u0019��¯��±��²��§�a©��³�\"⬠)",
-        "challenge": "��±��²��±�\"� �\"⬡��§�:�\u0019 ��±�\"� ��²�\"⬡��§�:�\u0019 �a©��§��±�:�\u0019 �a©�\"⬦ ��¨�\"� ��¯.",
-        "solution": "�\"&����:�\u0019��� ����������\"�  ����������\"! ������ �\"�  �a��\"&�\"��:�\u0019�\" ��\u001a��\u0019�\"!����:�\u0019 �\"&����\"�~�:�\u0019 �������������\" ����:�\u0019�\"& �������\" ���."
+        "title": "رستوران (نیدرزاکسن)",
+        "challenge": "رزرو در روزهای میانی هفته کم بود.",
+        "solution": "مسیر رزرو را ساده کردیم و کمپین‌های محلی را دوباره تنظیم کردیم."
       },
       "c5": {
-        "title": "��¯�\"��ª��± ��§�\"⬦�\"�~��§�a© (�\"⬠�:�\u0019��¯��±��²��§�a©��³�\"⬠)",
-        "challenge": "�\"�~�:�\u0019��¯�\"⬡��§�:�\u0019 �\"⬦��§�\"�~�a© �\"� ��§��¬��¯��´��±��§�:�\u0019��· �a©�\"⬦ ��¨�\"� ��¯.",
-        "solution": "����\"���������� ����\"&�\"�~����a� ������ ������������ �\" �:�\u0019��� �����������\u001a��\u0019�\"� ����\"�  �������������\"! ������ �\"�  �\"&����:�\u0019��� ����������\"� ��������� �a��\"� �������\"! ������."
+        "title": "دفتر املاک (نیدرزاکسن)",
+        "challenge": "لیدهای واجد شرایط مالکان خیلی کم بود.",
+        "solution": "صفحات ملک را بر اساس نیت جستجو ساختیم و مسیر درخواست را کوتاه‌تر کردیم."
       },
       "c6": {
-        "title": "��¯�\"��ª��± �\"⬦��§�\"�~�:�\u0019��§��ª�:�\u0019 (�\"⬦�\"⬠��·�\"�a�\"⬡ �\"⬡��§�\"⬠�\"� �\"��±)",
-        "challenge": "�\"⬠��±��® ��ª��¨��¯�:�\u0019�\"�~ ��¯��± ��µ�\"��­��§��ª ��®��¯�\"⬦��§��ª �\"¾��§�:�\u0019�:�\u0019�\"⬠ ��¨�\"� ��¯.",
-        "solution": "�\"&�������\"� ��� ����������\"! ���������\u0019 �\"&����\" ��\u001a��\u0019�\"!����:�\u0019 ����������\"&������ ����������\"��\"! ������ �\"�  ����\"&������ ����\"� �\"�~�:�\u0019�\"! ����������������\"! ������."
+        "title": "دفتر مالیاتی (منطقه هانوفر)",
+        "challenge": "تبدیل در صفحات خدمات پایین بود.",
+        "solution": "محتوای صفحات را ساده کردیم، متن‌های اعتماد را افزودیم و اولین تماس را برجسته کردیم."
       }
     },
-    "performanceDashboard": "��¯��§��´��¨�\"� ��±��¯ ��¹�\"⬦�\"�~�a©��±��¯",
-    "growthCurve90": "�\"⬦�\"⬠��­�\"⬠�:�\u0019 ��±��´��¯ �:¹�:° ��±�\"� ��²�\"⬡",
-    "growthChartAria": "�\"⬠�\"⬦�\"� ��¯��§��± ��±��´��¯",
-    "resultLabel": "�\"⬠��ª�:�\u0019��¬�\"⬡",
-    "trendAria": "��±�\"� �\"⬠��¯ {{niche}}",
-    "compareGraphAria": "�\"⬠�\"⬦�\"� ��¯��§��± �\"�a��¨�\"�~ �\"�  ��¨��¹��¯",
-    "dayLabel": "��±�\"� ��² {{day}}",
-    "beforeLegend": "�\"�a��¨�\"�~: ��±�\"� �\"⬠��¯ ��¶��¹�:�\u0019�\"",
-    "afterLegend": "��¨��¹��¯: ��±��´��¯ �\"¾��§�:�\u0019��¯��§��±",
+    "performanceDashboard": "داشبورد عملکرد",
+    "growthCurve90": "منحنی رشد 90 روزه",
+    "growthChartAria": "نمودار رشد",
+    "resultLabel": "نتیجه",
+    "trendAria": "روند {{niche}}",
+    "compareGraphAria": "نمودار مقایسه قبل و بعد",
+    "dayLabel": "روز {{day}}",
+    "beforeLegend": "قبل: رشد ضعیف",
+    "afterLegend": "بعد: رشد پایدار",
     "filterGroups": {
-      "all": "�\"⬡�\"⬦�\"⬡",
-      "localServices": "��®��¯�\"⬦��§��ª �\"⬦��­�\"�~�:�\u0019",
-      "healthBeauty": "��³�\"�~��§�\"⬦��ª �\"�  ��²�:�\u0019��¨��§�:�\u0019�:�\u0019",
-      "professional": "�������\"��\"!��\u001a��\u0019����:�\u0019"
+      "all": "همه",
+      "localServices": "خدمات محلی",
+      "healthBeauty": "سلامت و بیوتی",
+      "professional": "حرفه‌ای"
     },
     "kpis": {
-      "traffic": "��ª��±��§�\"�:�\u0019�a©",
-      "leads": "�\"�~�:�\u0019��¯",
-      "conversion": "�\"⬠��±��® ��ª��¨��¯�:�\u0019�\"�~"
+      "traffic": "ترافیک",
+      "leads": "لیدها",
+      "conversion": "تبدیل"
     },
-    "daysUnit": "��±�\"� ��²"
+    "daysUnit": "روز"
   },
   "about": {
-    "h1": "Ò�\u001cber uns",
-    "subtitle": "Wir sind ein kleines Umsetzungsteam fÒ¼r lokale Unternehmen.",
+    "h1": "درباره ما",
+    "subtitle": "ما وب‌سایت‌ها و اتوماسیون‌هایی می‌سازیم که به‌صورت قابل اندازه‌گیری برای کسب‌وکارهای محلی درخواست بیشتری ایجاد می‌کنند.",
+    "photoPlaceholder": "عکس: پرتره بنیان‌گذار VS Web Studio (ولادیسلاو)",
+    "photoCaption": "ولادیسلاو، بنیان‌گذار VS Web Studio. هیلدسهایم.",
+    "photoAlt": "ولادیسلاو، توسعه‌دهنده وب VS Web Studio از هیلدسهایم",
+    "geo": {
+      "local": "اینجا کار می‌کنیم: هیلدسهایم",
+      "region": "منطقه اصلی: نیدرزاکسن",
+      "country": "امکان اجرا: سراسر آلمان"
+    },
+    "intro1": "من ولادیسلاو، بنیان‌گذار VS Web Studio هستم. از هیلدسهایم کار می‌کنم و اول از همه از کسب‌وکارهای همین شهر و اطراف آن پشتیبانی می‌کنم. در کنار آن پروژه‌هایی را در سراسر نیدرزاکسن و در صورت نیاز در کل آلمان اجرا می‌کنیم.",
+    "intro2": "هدف ما ساده است: نه فقط یک وب‌سایت زیبا، بلکه وب‌سایتی که بفروشد و مشتری جدید بیاورد. به همین دلیل روی ساختار، سرعت، اعتماد، رهگیری و مسیرهای تماس روشن (تماس، فرم، پیام‌رسان، رزرو) تمرکز می‌کنیم.",
+    "intro3": "ما یک تیم کوچک با شرکای باتجربه هستیم (طراحی، محتوا، تبلیغات). همین باعث می‌شود سریع و بدون بوروکراسی اضافه کار کنیم و پروژه را تا نتیجه جلو ببریم.",
+    "localPriority": "هیلدسهایم تمرکز ماست: کسب‌وکارهای محلی به ارتباط سریع و درک واقعی از بازار منطقه نیاز دارند.",
+    "miniFactsTitle": "دقیقاً چه کاری انجام می‌دهیم",
+    "miniFacts": {
+      "i1": "گام‌های روشن بدون زبان پیچیده",
+      "i2": "به‌روزرسانی شفاف در هر مرحله پروژه",
+      "i3": "لانچ و بهینه‌سازی مداوم بر اساس داده"
+    },
     "cards": {
       "work": {
-        "title": "Wie wir arbeiten",
-        "desc": "Kurze Wege, klare Verantwortungen."
+        "title": "چطور کار می‌کنیم",
+        "desc": "گام‌های کوتاه، مسئولیت روشن و ددلاین واقع‌بینانه. روند کار: بریف -> ساختار -> طراحی -> توسعه -> لانچ -> بهبود."
       },
       "ai": {
-        "title": "AI First",
-        "desc": "Automationen dort, wo sie Zeit sparen."
+        "title": "رویکرد هوش مصنوعی",
+        "desc": "کارهای روتین را خودکار می‌کنیم تا شما سریع‌تر پاسخ بدهید و درخواست‌های کمتری را از دست بدهید. مثال‌ها: فرم‌های هوشمند، پاسخ خودکار، مرتب‌سازی لیدها و یکپارچه‌سازی‌ها."
       },
       "leads": {
-        "title": "Lead Focus",
-        "desc": "Design und Marketing arbeiten zusammen."
+        "title": "تمرکز بر درخواست‌ها",
+        "desc": "طراحی، بازاریابی و رهگیری با هم کار می‌کنند: تماس‌های واقعی بیشتر به‌جای فقط بازدید. هدف این است که وب‌سایت شما مثل یک نیروی فروش 24/7 کار کند."
       }
     },
-    "ctaTitle": "Kontakt",
-    "photoPlaceholder": "Foto: PortrÒ¤t des GrÒ¼nders von VS Web Studio (Vladyslav)",
-    "photoCaption": "Vladyslav, GrÒ¼nder von VS Web Studio. Hildesheim.",
-    "photoAlt": "Vladyslav, Webentwickler von VS Web Studio aus Hildesheim",
-    "geo": {
-      "local": "Wir arbeiten hier: Hildesheim",
-      "region": "Hauptregion: Niedersachsen",
-      "country": "MÒ¶glich: ganz Deutschland"
-    },
-    "intro1": "Ich bin Vladyslav, GrÒ¼nder von VS Web Studio. Ich arbeite aus Hildesheim und unterstÒ¼tze zuerst Unternehmen direkt in der Stadt und Umgebung. ZusÒ¤tzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
-    "intro2": "Mein Ziel ist einfach: nicht nur eine schÒ¶ne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
-    "intro3": "Wir sind ein kleines Team mit bewÒ¤hrten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnÒ¶tige BÒ¼rokratie, und bringen Projekte bis zum Ergebnis.",
-    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes VerstÒ¤ndnis fÒ¼r den Markt vor Ort.",
-    "miniFactsTitle": "Was wir konkret machen",
-    "miniFacts": {
-      "i1": "Klare Schritte ohne Fachchinesisch",
-      "i2": "Transparente Updates in jeder Projektphase",
-      "i3": "Launch und laufende Optimierung nach Daten"
-    },
-    "whatYouGetTitle": "Was Sie konkret erhalten",
+    "whatYouGetTitle": "چه چیزی دقیقاً دریافت می‌کنید",
     "whatYouGet": {
-      "i1": "Eine schnelle Website, die auf dem Smartphone sauber funktioniert",
-      "i2": "Klare Seitenstruktur mit starken CTA-Elementen",
-      "i3": "Eingerichtetes Tracking, damit Sie die Quellen Ihrer Anfragen sehen",
-      "i4": "Automationen, die Zeit sparen und die Conversion erhÒ¶hen"
+      "i1": "یک وب‌سایت سریع که روی گوشی تمیز و درست کار می‌کند",
+      "i2": "ساختار واضح صفحات با CTAهای قوی",
+      "i3": "رهگیری راه‌اندازی‌شده تا منبع درخواست‌ها را ببینید",
+      "i4": "اتوماسیون‌هایی که زمان ذخیره می‌کنند و تبدیل را افزایش می‌دهند"
     },
-    "contactTitle": "Kontakt",
-    "contactText": "Schreiben Sie uns, welches GeschÒ¤ft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
-    "contactButton": "Projekt anfragen"
+    "contactTitle": "تماس",
+    "contactText": "به ما بنویسید در هیلدسهایم یا منطقه چه کسب‌وکاری دارید و چه چیزی باید بهتر شود (درخواست‌ها، تبلیغات، وب‌سایت). یک برنامه روشن همراه با بازه زمانی دریافت می‌کنید.",
+    "contactButton": "درخواست پروژه",
+    "ctaTitle": "تماس"
   },
   "contact": {
-    "h1": "تماس و درخواست برای پروژه شما",
-    "responseTime": "زمان پاسخ فعلی:",
-    "quickContacts": "راه‌های ارتباط سریع",
+    "h1": "از پروژه‌تان برای ما بگویید",
+    "responseTime": "میانگین زمان پاسخ: 1 تا 2 ساعت",
+    "subtitle": "کوتاه توضیح دهید چه چیزی در نظر دارید. یک ارزیابی اولیه روشن و منطقی‌ترین قدم بعدی را دریافت می‌کنید.",
+    "quickContacts": "ارتباط مستقیم",
+    "responseNote": "معمولاً ظرف 1 تا 2 ساعت پاسخ می‌دهیم",
+    "contactMeta": {
+      "location": "موقعیت برای هماهنگی سریع‌تر",
+      "email": "درخواست پروژه از طریق ایمیل",
+      "phone": "مشاوره کوتاه اولیه یا تماس برگشتی"
+    },
+    "trustItems": [
+      "ارتباط مستقیم",
+      "ارزیابی اولیه روشن",
+      "بازخورد سریع"
+    ],
     "form": {
-      "name": "نام",
-      "business": "نام کسب‌وکار",
-      "need": "دقیقاً به چه چیزی نیاز دارید؟",
-      "submit": "ارسال درخواست"
+      "title": "درخواست پروژه",
+      "intro": "هرچه درخواست روشن‌تر باشد، سریع‌تر می‌توانیم میزان کار، اولویت‌ها و قدم‌های بعدی را ارزیابی کنیم.",
+      "name": "نام شما",
+      "business": "نام شرکت",
+      "need": "مثال: وب‌سایت برای سالن زیبایی یا تبلیغات برای تعمیرگاه خودرو",
+      "help": "برای شروع، حوزه فعالیت، هدف و چیزی که باید اول بهتر شود کافی است.",
+      "submit": "مشاوره رایگان",
+      "labels": {
+        "email": "آدرس ایمیل",
+        "name": "نام شما",
+        "business": "شرکت",
+        "message": "پروژه یا هدف"
+      },
+      "email": "آدرس ایمیل",
+      "submitLoading": "در حال ارسال...",
+      "success": "ممنون. درخواست شما با موفقیت ارسال شد.",
+      "error": "هنگام ارسال خطایی رخ داد. لطفاً دوباره تلاش کنید.",
+      "devError": "سرور محلی API در دسترس نیست. برنامه را با \"npm run dev:netlify\" اجرا کنید و سپس http://localhost:8888 را باز کنید."
     }
   },
   "blog": {
-    "h1": "Blog / Insights",
-    "subtitle": "Artikel zu Website, Leads, SEO, Ads und Automationen.",
+    "h1": "بلاگ / بینش‌ها",
+    "subtitle": "مقاله‌هایی درباره وب‌سایت، لیدها، سئو، تبلیغات و اتوماسیون‌ها.",
     "cards": {
-      "c1": "AI-Workflows im Website Funnel",
-      "c2": "Social-Prozesse ohne Chaos",
-      "c3": "Social Ads mit sauberem Tracking",
-      "c4": "Automationen fÒ¼r Erstkontakt"
+      "c1": "جریان‌های کاری هوش مصنوعی در قیف وب‌سایت",
+      "c2": "فرایندهای شبکه اجتماعی بدون آشفتگی",
+      "c3": "تبلیغات شبکه اجتماعی با رهگیری تمیز",
+      "c4": "اتوماسیون برای اولین تماس"
     },
-    "leadMagnet": "Lead Magnet",
-    "emailPlaceholder": "E-Mail fÒ¼r den Guide",
-    "getGuide": "Guide erhalten"
+    "leadMagnet": "لید مگنت",
+    "emailPlaceholder": "ایمیل برای دریافت راهنما",
+    "getGuide": "دریافت راهنما"
   },
   "niche": {
     "handwerker": {
-      "h1": "Websites fÒ¼r Handwerker: mehr passende Anfragen.",
-      "p": "Klare Leistungen, lokale Sichtbarkeit, einfache Kontaktwege."
+      "h1": "وب‌سایت برای مشاغل فنی: درخواست‌های مناسب‌تر.",
+      "p": "خدمات روشن، دیده‌شدن محلی و مسیرهای تماس ساده."
     },
     "praxis": {
-      "h1": "Websites fÒ¼r Praxen: weniger RÒ¼ckfragen, mehr Terminanfragen.",
-      "p": "Patientenfreundliche Struktur und klarer Online-Erstkontakt."
+      "h1": "وب‌سایت برای کلینیک‌ها: سوال تکراری کمتر، درخواست نوبت بیشتر.",
+      "p": "ساختار کاربرپسند برای بیمار و اولین تماس آنلاین شفاف."
     },
     "werkstatt": {
-      "h1": "Websites fÒ¼r WerkstÒ¤tten: planbare Leads statt Zufall.",
-      "p": "Service-orientierte Seiten mit messbarer Conversion."
+      "h1": "وب‌سایت برای تعمیرگاه‌ها: لید قابل برنامه‌ریزی به‌جای اتفاقی.",
+      "p": "صفحات مبتنی بر خدمات با تبدیل قابل اندازه‌گیری."
     }
   },
   "legal": {
     "impressum": {
-      "h1": "Impressum",
-      "subtitle": "Angaben gemÒ¤ÒŸ �\u001a§ 5 TMG.",
+      "h1": "اطلاعات حقوقی",
+      "subtitle": "اطلاعات طبق § 5 TMG.",
       "l1": "VS Studio",
-      "l2": "MusterstraÒŸe 10, 10115 Berlin, Deutschland",
-      "l3": "E-Mail: kontakt@vs-web-studio.de",
-      "l4": "Telefon: +49 30 1234567",
-      "l5": "Vertreten durch: Vladyslav"
+      "l2": "Musterstraße 10, 10115 Berlin, Deutschland",
+      "l3": "ایمیل: kontakt@vs-web-studio.de",
+      "l4": "تلفن: +49 30 1234567",
+      "l5": "نماینده: Vladyslav"
     },
     "datenschutz": {
-      "h1": "DatenschutzerklÒ¤rung",
-      "subtitle": "Kurzinformation zur Verarbeitung personenbezogener Daten.",
-      "l1": "Wir verarbeiten Daten nur zweckgebunden (Kontaktanfragen, Angebotserstellung, Statistik).",
-      "l2": "Rechtsgrundlagen: Art. 6 Abs. 1 lit. b und f DSGVO.",
-      "l3": "Betroffene Rechte: Auskunft, Berichtigung, LÒ¶schung, EinschrÒ¤nkung, Widerspruch.",
-      "l4": "Kontakt fÒ¼r Datenschutz: datenschutz@vs-web-studio.de"
+      "h1": "سیاست حریم خصوصی",
+      "subtitle": "اطلاعات کوتاه درباره پردازش داده‌های شخصی.",
+      "l1": "ما داده‌ها را فقط برای هدف مشخص پردازش می‌کنیم (درخواست تماس، تهیه پیشنهاد، آمار).",
+      "l2": "مبنای قانونی: ماده 6 بند 1 قسمت b و f از DSGVO.",
+      "l3": "حقوق اشخاص: دسترسی، اصلاح، حذف، محدودسازی، اعتراض.",
+      "l4": "تماس برای امور حریم خصوصی: datenschutz@vs-web-studio.de"
     },
     "agb": {
-      "h1": "AGB",
-      "subtitle": "Optionale allgemeine GeschÒ¤ftsbedingungen.",
-      "l1": "Leistungen werden gemÒ¤ÒŸ Angebot und vereinbartem Umfang erbracht.",
-      "l2": "Zahlungsbedingungen, Nutzungsrechte und GewÒ¤hrleistung richten sich nach dem Vertrag."
+      "h1": "شرایط و ضوابط",
+      "subtitle": "شرایط عمومی اختیاری.",
+      "l1": "خدمات مطابق پیشنهاد و دامنه مورد توافق ارائه می‌شوند.",
+      "l2": "شرایط پرداخت، حقوق استفاده و گارانتی بر اساس قرارداد تعیین می‌شود."
     },
     "cookies": {
-      "h1": "Cookie-Hinweise",
-      "subtitle": "Informationen zu eingesetzten Cookies und Messdiensten.",
-      "l1": "Technisch notwendige Cookies sichern die FunktionalitÒ¤t der Website.",
-      "l2": "Optionale Analyse-Cookies helfen bei der Optimierung von Inhalten und Kampagnen."
+      "h1": "اطلاعات کوکی‌ها",
+      "subtitle": "اطلاعات درباره کوکی‌ها و سرویس‌های اندازه‌گیری مورد استفاده.",
+      "l1": "کوکی‌های فنی ضروری عملکرد وب‌سایت را تضمین می‌کنند.",
+      "l2": "کوکی‌های تحلیلی اختیاری به بهینه‌سازی محتوا و کمپین‌ها کمک می‌کنند."
     }
   },
   "alert": {
-    "success": "Erfolg! Deine Anfrage wurde gesendet.",
-    "error": "Fehler! Bitte versuche es spaeter erneut."
+    "success": "موفقیت! درخواست شما ارسال شد.",
+    "error": "خطا! لطفاً کمی بعد دوباره تلاش کنید."
   },
   "contact2": {
     "form": {
-      "success": "Danke! Wir melden uns bald bei dir.",
-      "error": "Senden fehlgeschlagen. Bitte erneut versuchen."
+      "success": "ممنون! به‌زودی با شما تماس می‌گیریم.",
+      "error": "ارسال ناموفق بود. لطفاً دوباره تلاش کنید."
     }
   },
   "feedback2": {
     "form": {
-      "success": "Danke für dein Feedback!",
-      "error": "Feedback konnte nicht gesendet werden."
+      "success": "از بازخورد شما ممنونیم!",
+      "error": "ارسال بازخورد ممکن نبود."
     }
   },
   "aboutPage": {
@@ -834,9 +860,9 @@
     "heroTitleLine1": "وب‌سایت و",
     "heroTitleLine2": "سیستم‌های لید",
     "heroTitleLine3": "برای کسب‌وکارهای محلی",
-    "heroTitleLine4": "در Hildesheim",
+    "heroTitleLine4": "در هیلدسهایم",
     "heroSubtitle": "درخواست‌های باکیفیت‌تر با وب‌سایت‌های سریع، مسیرهای تماس شفاف و بازاریابی قابل اندازه‌گیری.",
-    "heroTrustline": "محلی در Hildesheim. استراتژیک در Niedersachsen. قابل اجرا در سراسر آلمان.",
+    "heroTrustline": "محلی در هیلدسهایم. استراتژیک در نیدرزاکسن. قابل اجرا در سراسر آلمان.",
     "primaryCta": "تحلیل رایگان وب‌سایت",
     "section": {
       "about": "درباره ما",
@@ -871,12 +897,12 @@
     "photoCaption": "ولادیسلاو - بنیان‌گذار VS Web Studio",
     "photoFacts": {
       "f1": "تمرکز: کسب‌وکارهای محلی",
-      "f2": "موقعیت: Hildesheim",
+      "f2": "موقعیت: هیلدسهایم",
       "f3": "پروژه‌ها: سراسر آلمان"
     },
     "geo": {
-      "local": "Hildesheim",
-      "region": "Niedersachsen",
+      "local": "هیلدسهایم",
+      "region": "نیدرزاکسن",
       "country": "سراسر آلمان"
     },
     "localPriority": "مسیرهای کوتاه‌تر. اولویت‌های روشن‌تر. تمرکز بر نتیجه.",
@@ -900,7 +926,7 @@
         "desc": "مسیرهای کوتاه. مسئولیت روشن."
       },
       "ai": {
-        "title": "AI First",
+        "title": "هوش مصنوعی در اولویت",
         "desc": "اتوماسیون در جایی که واقعاً زمان ذخیره می‌کند."
       },
       "leads": {
@@ -918,12 +944,12 @@
       "projects": {
         "label": "تعداد پروژه‌ها",
         "value": "120+",
-        "text": "وب‌سایت‌ها، لید فانل‌ها و پروژه‌های relaunch."
+        "text": "وب‌سایت‌ها، قیف‌های لید و بازطراحی‌ها."
       },
       "industries": {
         "label": "حوزه‌ها",
         "value": "12",
-        "text": "فنی و خدماتی، کلینیک‌ها، رستوران، beauty، آموزش و خدمات محلی."
+        "text": "مشاغل فنی، کلینیک‌ها، رستوران، بیوتی، آموزش و خدمات محلی."
       },
       "focus": {
         "label": "تمرکز",
@@ -936,9 +962,9 @@
       "text": "در جلسه رایگان اول، مهم‌ترین اهرم‌های رشد برای وب‌سایت، فرایندهای لید و تبلیغات شما را نشان می‌دهیم."
     },
     "visual": {
-      "productBadge": "Lead System",
+      "productBadge": "سیستم لید",
       "flowLabel": "جریان",
-      "flowValue": "از قبل به سیستم و نتیجه",
+      "flowValue": "از قبل تا سیستم تا نتیجه",
       "before": {
         "label": "قبل",
         "title": "کلیک زیاد، شفافیت کم",
@@ -957,10 +983,10 @@
       "result": {
         "label": "نتیجه",
         "title": "درخواست‌های باکیفیت",
-        "text": "قابل اندازه‌گیری، با پاسخ سریع‌تر و دیده‌شدن واضح در funnel."
+        "text": "قابل اندازه‌گیری، سریع‌تر قابل پاسخ‌گویی و کاملاً قابل مشاهده در قیف."
       },
       "anchor": {
-        "label": "خلاصه",
+        "label": "دستاورد",
         "value": "درخواست‌های باکیفیت بیشتر به‌جای فقط ترافیک سایت"
       }
     }

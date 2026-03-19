@@ -10,125 +10,125 @@
     "it": "Italiano",
     "es": "Español",
     "el": "Ελληνικά",
-    "ro": "Rom�n\u0003",
+    "ro": "Romşn\u0003",
     "bg": "Български"
   },
   "common": {
     "projectRequest": "Projeya daxwaz bikin",
-    "viewPrices": "Bihayan bibÒ®nin",
+    "viewPrices": "Bihayan bibînin",
     "cancel": "Betal bike"
   },
   "header": {
     "menu": "Menu",
-    "menuAria": "PÒª�&Ÿeka navÒ®gasyonÒª veke",
-    "services": "XizmetÒªn",
-    "preise": "bihayÒªn",
-    "referenzen": "Ò⬡avkanÒ®",
-    "ueberUns": "Di derbarÒª me de",
-    "kontakt": "TÒªkilÒ®"
+    "menuAria": "Pêşeka navîgasyonê veke",
+    "services": "Xizmetên",
+    "preise": "bihayên",
+    "referenzen": "ÒÇavkanî",
+    "ueberUns": "Di derbarê me de",
+    "kontakt": "Têkilî"
   },
   "footer": {
-    "tagline": "VS Studio �\u001a· Malper, sepanÒªn malperÒª, reklam Ò» otomasyon",
-    "impressum": "Ò⬡apkirin",
+    "tagline": "VS Studio ş\u001a· Malper, sepanên malperê, reklam û otomasyon",
+    "impressum": "ÒÇapkirin",
     "datenschutz": "Parastina daneyan",
-    "agb": "Merc Ò» Merc",
+    "agb": "Merc û Merc",
     "cookies": "cookies",
-    "cookieSettings": "MÒ®hengÒªn cookie",
+    "cookieSettings": "Mîhengên cookie",
     "blog": "Blog"
   },
   "cookie": {
-    "aria": "Cookie-Einwilligung",
-    "bannerText": "Wir nutzen Cookies nach DSGVO/TTDSG: notwendige Cookies sind aktiv, optionale Cookies (Statistik/Marketing) nur mit Einwilligung. Mehr Infos in",
+    "aria": "Destûra cookieyan",
+    "bannerText": "Em cookieyan li gor DSGVO/TTDSG bi kar tînin: cookieyên pêwîst çalak in, cookieyên vebijarkî (statîstîk/marketing) tenê bi destûra we çalak dibin. Agahiyên zêdetir di",
     "onlyEssential": "Nur essenziell",
     "settings": "Einstellungen",
     "acceptAll": "Alle akzeptieren",
-    "modalTitle": "Datenschutz-Einstellungen",
-    "modalText": "Du kannst deine Einwilligung jederzeit in den Cookie-Einstellungen Ò¤ndern.",
-    "essential": "Essenzielle Cookies (immer aktiv)",
-    "statistics": "Statistik (z. B. Reichweite, Nutzung)",
-    "marketing": "Marketing (z. B. Social/Ads Tracking)",
-    "saveSelection": "Auswahl speichern"
+    "modalTitle": "Mîhengên parastina daneyan",
+    "modalText": "Hûn dikarin destûra xwe her dem di mîhengên cookieyan de biguherînin.",
+    "essential": "Cookieyên bingehîn (her dem çalak)",
+    "statistics": "Statîstîk (mînak: gihîştin, bikaranîn)",
+    "marketing": "Marketing (mînak: tracking-a social/ads)",
+    "saveSelection": "Hilbijartinê tomar bike"
   },
   "home": {
-    "heroTitle": "MalperÒªn ku li �&ŸÒ»na ku tenÒª ba�&Ÿ xuya bikin, lÒªpirsÒ®nan tÒ®nin.",
-    "heroSubtitle": "Ji bo pÒª�&ŸkÒª�&ŸkerÒªn karÒ»barÒª herÒªmÒ® yÒªn li ElmanyayÒª, pozÒ®syona zelal, pÒªkanÒ®na bilez Ò» pakÒªtÒªn zelal.",
-    "toFaq": "BiÒ§e FAQ",
-    "partnersTitle": "NÒ®�&Ÿan, komÒªn armanc Ò» karÒ»bar",
+    "heroTitle": "Malperên ku li şûna ku tenê baş xuya bikin, lêpirsînan tînin.",
+    "heroSubtitle": "Ji bo pêşkêşkerên karûbarê herêmî yên li Elmanyayê, pozîsyona zelal, pêkanîna bilez û pakêtên zelal.",
+    "toFaq": "Biçe FAQ",
+    "partnersTitle": "Nîşan, komên armanc û karûbar",
     "groups": {
-      "highlights": "NÒ®�&Ÿan",
-      "forWhom": "Ji bo kÒª",
-      "services": "XizmetÒªn"
+      "highlights": "Nîşan",
+      "forWhom": "Ji bo kê",
+      "services": "Xizmetên"
     },
     "partners": {
       "fastLoad": {
         "title": "Bi lez hat barkirin",
-        "desc": "RÒ»pel di Ò§irkeyan de tÒª barkirin"
+        "desc": "Rûpel di çirkeyan de tê barkirin"
       },
       "moreLeads": {
-        "title": "LÒªpirsÒ®nÒªn ZÒªdetir",
-        "desc": "ZÒªdetir tÒªkilÒ® bi riya forman"
+        "title": "Lêpirsînên Zêdetir",
+        "desc": "Zêdetir têkilî bi riya forman"
       },
       "clearPrices": {
-        "title": "BihayÒªn zelal",
-        "desc": "HÒ»n lÒªÒ§Ò»nÒªn pÒª�&ŸÒ®n dizanin"
+        "title": "Bihayên zelal",
+        "desc": "Hûn lêçûnên pêşîn dizanin"
       },
       "personalHelp": {
-        "title": "AlÒ®kariya kesane",
-        "desc": "Pi�&Ÿtgiriya rasterast bÒªyÒ® ku li rÒªzÒª bimÒ®ne"
+        "title": "Alîkariya kesane",
+        "desc": "Piştgiriya rasterast bêyî ku li rêzê bimîne"
       },
       "handwerker": {
-        "title": "pÒ®�&Ÿekar",
-        "desc": "DaxwazÒªn her bajar Ò» karÒ»bar"
+        "title": "pîşekar",
+        "desc": "Daxwazên her bajar û karûbar"
       },
       "praxen": {
-        "title": "pratÒ®k dike",
-        "desc": "Nexwe�&Ÿ zÒ»tir randevÒ»yan peyda dikin"
+        "title": "pratîk dike",
+        "desc": "Nexweş zûtir randevûyan peyda dikin"
       },
       "werkstaetten": {
-        "title": "atolyeyÒªn",
-        "desc": "RÒ»pelÒªn karÒ»barÒª bi �&ŸopandinÒª paqij bikin"
+        "title": "atolyeyên",
+        "desc": "Rûpelên karûbarê bi şopandinê paqij bikin"
       },
       "localServices": {
-        "title": "XizmetÒªn HerÒªmÒ®",
-        "desc": "ZÒªdetir dÒ®tbarÒ® li ser malperÒª"
+        "title": "Xizmetên Herêmî",
+        "desc": "Zêdetir dîtbarî li ser malperê"
       },
       "websites": {
         "title": "Websites",
-        "desc": "NÒ»jen, bilez, xwe�&ŸbÒ®nkirÒ® ya mobÒ®l"
+        "desc": "Nûjen, bilez, xweşbînkirî ya mobîl"
       },
       "webApps": {
-        "title": "SerlÒªdanÒªn WebÒª",
-        "desc": "AmÒ»rÒªn ji bo tÒ®m Ò» xerÒ®dar"
+        "title": "Serlêdanên Webê",
+        "desc": "Amûrên ji bo tîm û xerîdar"
       },
       "aiIntegration": {
         "title": "entegrasyona AI",
-        "desc": "Chatbot ji bo pirs Ò» rÒªberan"
+        "desc": "Chatbot ji bo pirs û rêberan"
       },
       "socialMedia": {
-        "title": "Medya CivakÒ®",
-        "desc": "Malper + Instagram/Meta girÒªdayÒ®"
+        "title": "Medya Civakî",
+        "desc": "Malper + Instagram/Meta girêdayî"
       },
       "socialAds": {
-        "title": "ReklamÒªn CivakÒ®",
-        "desc": "Reklamek armanckirÒ® bi encamÒªn pÒ®vandÒ®"
+        "title": "Reklamên Civakî",
+        "desc": "Reklamek armanckirî bi encamên pîvandî"
       }
     },
-    "trustTitle": "Bi encamÒªn berbiÒ§av bawer bikin",
-    "trustDesc1": "di 60 rojan de bÒªtir daxwazÒªn pÒªwendiyÒª.",
-    "trustDesc2": "mesrefa kÒªmtir a serÒª rÒªber pi�&ŸtÒ® rastkirina �&ŸopandinÒª.",
-    "trustDesc3": "dema barkirina navÒ®nÒ® li ser mobÒ®l.",
+    "trustTitle": "Bi encamên berbiçav bawer bikin",
+    "trustDesc1": "di 60 rojan de bêtir daxwazên pêwendiyê.",
+    "trustDesc2": "mesrefa kêmtir a serê rêber piştî rastkirina şopandinê.",
+    "trustDesc3": "dema barkirina navînî li ser mobîl.",
     "faqTitle": "FAQ",
     "faq": {
-      "q1": "HÒ»n dikarin Ò§iqas zÒ» dest pÒª bikin?",
-      "a1": "Em bi gelemperÒ® di nav 3-5 rojÒªn xebatÒª de dest pÒª dikin. Di cih de pi�&ŸtÒ® daxwaza we hÒ»n Òª bi gavÒªn pÒª�&ŸÒ®n re planek kurt bistÒ®nin.",
-      "q2": "Di destpÒªkÒª de ez wekÒ® xerÒ®dar Ò§i hewce dikim?",
-      "a2": "TenÒª agahdariya bingehÒ®n li ser pÒª�&Ÿniyara we, koma armanc Ò» kanalÒªn tÒªkiliyÒª. DÒ»v re em Òª ji we re bi avahÒ®, nivÒ®s Ò» pÒª�&ŸÒ®niyan re bibin alÒ®kar.",
-      "q3": "HevkarÒ® Ò§awa dixebite?",
-      "a3": "Em di qonaxÒªn kurt de dixebitin: konsept, sÒªwirandin, pÒªkanÒ®n, destpÒªkirin. HÒ»n Òª nÒ»vekirinÒªn zelal bistÒ®nin da ku hÒ»n her gav zanibin ka pa�&ŸÒª Ò§i diqewime.",
-      "q4": "Ma ev ji bo karsaziyÒªn piÒ§Ò»k maqÒ»l e?",
-      "a4": "BelÒª. PakÒªtÒªn me bi zanebÒ»n ji bo karsaziyÒªn herÒªmÒ® hatine sÒªwirandin: bihayÒªn zelal, destpÒªkek bilez Ò» li �&ŸÒ»na tenÒª optÒ®kan li ser lÒªpirsÒ®nÒªn rastÒ®n.",
-      "q5": "Pi�&ŸtÒ® destpÒªkirinÒª Ò§i diqewime?",
-      "a5": "Pi�&ŸtÒ® destpÒªkirinÒª, em daneyan kontrol dikin, xalÒªn veguheztinÒª ba�&Ÿtir dikin Ò» ji we re bi hevrÒªzkirinÒª pi�&ŸtgirÒ® dikin da ku malper di demek dirÒªj de Ò§Òªtir bixebite.",
+      "q1": "Hûn dikarin çiqas zû dest pê bikin?",
+      "a1": "Em bi gelemperî di nav 3-5 rojên xebatê de dest pê dikin. Di cih de piştî daxwaza we hûn ê bi gavên pêşîn re planek kurt bistînin.",
+      "q2": "Di destpêkê de ez wekî xerîdar çi hewce dikim?",
+      "a2": "Tenê agahdariya bingehîn li ser pêşniyara we, koma armanc û kanalên têkiliyê. Dûv re em ê ji we re bi avahî, nivîs û pêşîniyan re bibin alîkar.",
+      "q3": "Hevkarî çawa dixebite?",
+      "a3": "Em di qonaxên kurt de dixebitin: konsept, sêwirandin, pêkanîn, destpêkirin. Hûn ê nûvekirinên zelal bistînin da ku hûn her gav zanibin ka paşê çi diqewime.",
+      "q4": "Ma ev ji bo karsaziyên piçûk maqûl e?",
+      "a4": "Belê. Pakêtên me bi zanebûn ji bo karsaziyên herêmî hatine sêwirandin: bihayên zelal, destpêkek bilez û li şûna tenê optîkan li ser lêpirsînên rastîn.",
+      "q5": "Piştî destpêkirinê çi diqewime?",
+      "a5": "Piştî destpêkirinê, em daneyan kontrol dikin, xalên veguheztinê baştir dikin û ji we re bi hevrêzkirinê piştgirî dikin da ku malper di demek dirêj de çêtir bixebite.",
       "desc": "Bersivên pirsên gelemperî derbarê dem, nirx, destpêk û piştgiriyê."
     },
     "hero": {
@@ -142,12 +142,12 @@
           "value": "Technisches Fundament"
         },
         "leads": {
-          "label": "Anfragen",
+          "label": "Daxwaz",
           "value": "Klare CTA und Formulare"
         },
         "support": {
           "label": "Support",
-          "value": "Nach dem Launch"
+          "value": "Piştî launchê"
         }
       }
     },
@@ -176,7 +176,7 @@
     },
     "process": {
       "title": "Em çawa dixebitin",
-      "desc": "Ein transparenter Prozess ohne unnötige Schritte: vom kurzen Briefing bis zu Launch und Optimierung mit klaren Deadlines.",
+      "desc": "Pêvajoyek zelal bê gavên zêde: ji brîfeke kurt heta launch û baştirkirin bi deadlineyên zelal.",
       "aria": "Projektphasen",
       "stage": "Phase",
       "nav": {
@@ -186,19 +186,19 @@
       "steps": {
         "s1": {
           "title": "15-Minuten-Call",
-          "text": "Wir klären Aufgabe, KPI und Deadline und stimmen sofort das Launch-Format ab."
+          "text": "Em peywir, KPI û deadline zelal dikin û tavilê forma launchê li hev dicînin."
         },
         "s2": {
           "title": "Prototyp in 48h",
-          "text": "Wir zeigen Seitenstruktur, CTA und Lead-Flow vor der Entwicklung."
+          "text": "Em avahiya rûpelê, CTA û flow-a leadê berî pêkanînê nîşan didin."
         },
         "s3": {
           "title": "Entwicklung in 7-14 Tagen",
           "text": "Umsetzung, SEO-Basis, Integrationen und Analytics ohne unnötigen Overhead."
         },
         "s4": {
-          "title": "Launch und Optimierung",
-          "text": "Wir gehen live, prüfen Conversion und liefern einen 30-Tage-Verbesserungsplan."
+          "title": "Launch û baştirkirin",
+          "text": "Em live dibin, conversionê kontrol dikin û planeke 30-rojî ji bo baştirkirinê radest dikin."
         }
       }
     },
@@ -207,9 +207,9 @@
       "desc": "Reale Aufgaben und erwartbare Ergebnisse ohne leere Versprechen. Hover auf einen Case für Live-Preview.",
       "cards": {
         "c1": {
-          "title": "Website für lokale Anfragen",
+          "title": "Malperek ji bo daxwazên herêmî",
           "description": "Landingpage mit Fokus auf Formular, Anruf und schnellen Mobile-Kontakt.",
-          "goal": "Ziel: mehr Anfragen ohne Budgeterhöhung"
+          "goal": "Armanc: daxwazên zêdetir bê zêdekirina budceyê"
         },
         "c2": {
           "title": "Landingpage für Ads",
@@ -217,14 +217,14 @@
           "goal": "Erwarteter Effekt: qualifiziertere Leads aus Werbung"
         },
         "c3": {
-          "title": "Website für Praxis",
+          "title": "Malperek ji bo klînîkê",
           "description": "Klare Leistungsstruktur, FAQ und Online-Termin-Flow.",
           "goal": "Ziel: mehr Terminbuchungen mit weniger Rückfragen"
         },
         "c4": {
           "title": "Dashboard für Leads",
           "description": "Internes Interface zur Lead-Bearbeitung und Statuskontrolle.",
-          "goal": "Erwarteter Effekt: schnellere Bearbeitung von Anfragen"
+          "goal": "Encama hêvîkirî: rêvebirina zûtir a daxwazan"
         }
       }
     },
@@ -309,7 +309,7 @@
       "supportYearly": "Support / Jahr (-30%)",
       "cta": "Kontaktanfrage und exakter Kostenvoranschlag",
       "bullets": {
-        "prototype": "Prototyp und Struktur mit Fokus auf Anfragen",
+        "prototype": "Prototîp û avahî bi fokusa li ser daxwazan",
         "goal": "Ziele: {{value}}",
         "integrations": "Integrationen: {{value}}",
         "term": "Zeitrahmen: {{value}}",
@@ -318,7 +318,7 @@
         "pages": "Seiten: {{value}}",
         "analytics": "GA4 und Event-Tracking für Formulare/Kontakte",
         "copy_true": "Unterstützung bei Texten und Offer",
-        "copy_false": "Wir arbeiten mit Ihren vorhandenen Texten",
+        "copy_false": "Em bi nivîsên we yên amade dixebitin",
         "market_note": "Orientierungspreis unter marktüblichem Niveau für kleine Unternehmen"
       },
       "brief": {
@@ -340,113 +340,113 @@
     },
     "trust": {
       "title": "Di 14 rojan de tu çi distînî",
-      "desc": "Konkrete Start-Ergebnisse: eine anfrageorientierte Website, eingerichtete Analytics und ein Plan für weiteres Wachstum.",
+      "desc": "Encamên destpêkê yên têkildar: malperek ku li ser daxwazê hatiye çêkirin, analytics-a sazkirî û planek ji bo mezinbûna paşerojê.",
       "deliverables": {
         "d1": {
           "title": "Prototyp in 48h",
-          "text": "Wir zeigen Struktur und CTA vor dem Coding, damit Entscheidungen planbar bleiben."
+          "text": "Em avahî û CTA berî codingê nîşan didin da ku biryar pêşbînîkirî bimînin."
         },
         "d2": {
-          "title": "Website für Anfragen",
-          "text": "Formular, Anruf, Messenger und mobile Version für schnelle Kontaktaufnahme."
+          "title": "Malperek ji bo daxwazan",
+          "text": "Form, bang, messenger û versiyona mobîl ji bo têkiliya zû."
         },
         "d3": {
           "title": "Analytics und Tracking",
-          "text": "GA4 plus Events, damit sichtbar wird, wo Anfragen entstehen."
+          "text": "GA4 û events da ku were dîtin daxwaz ji ku derê tên."
         },
         "d4": {
           "title": "30-Tage-Optimierungsplan",
-          "text": "Klare nächste Schritte zur Conversion-Steigerung nach Launch."
+          "text": "Gavên paşê yên zelal ji bo bilindkirina conversionê piştî launchê."
         }
       }
     }
   },
   "services": {
-    "h1": "Leistungen mit klarem Ergebnis und Zeitplan.",
-    "subtitle": "Wir bauen nicht nur Seiten, sondern einen funktionierenden Lead-Prozess.",
+    "h1": "Xizmet bi encamek zelal û demjimêrê re realistîk.",
+    "subtitle": "Bi hêsanî tê ravekirin: em çi dikin, çend dem dibe û karsaziya we çi sûdê ji vê yekê distîne.",
     "cards": {
       "websites": {
-        "title": "Websites",
-        "desc": "Inhalt: Positionierung, UX, technische Umsetzung, Tracking."
+        "title": "Malper",
+        "desc": "Em malpereke zû ava dikin ku xizmetên we bi zelalî nîşan dide û mişteriyan rasterast ber bi daxwazê ve dibe."
       },
       "webAppsAi": {
-        "title": "Web-Apps & AI",
-        "desc": "Inhalt: interne Workflows, AI-Assistenten, Formulare, Prozesse."
+        "title": "Otomatîkkirin û AI",
+        "desc": "Em otomasyona hêsan saz dikin: auto-bersiv, form û veqetandina daxwazan da ku ti lead winda nebin."
       },
       "ads": {
-        "title": "Ads & Auswertung",
-        "desc": "Kampagnenaufbau, Creatives, Conversion-Tracking."
+        "title": "Reklam û raportkirina zelal",
+        "desc": "Em reklam dimeşînin û bi hêsanî nîşan didin: çend daxwaz hatin, mesrefa her leadê çend e û em çi baştir dikin."
       },
       "social": {
-        "title": "Social Integration",
-        "desc": "Plattform-Integration, DM-Flows, Retargeting."
+        "title": "Social media û rêyên têkiliyê",
+        "desc": "Em malperê bi Instagram/Facebook û messengerê re girêdidin da ku mişterî zû nivîsîn an bang bikin."
       }
     },
-    "deliverablesTitle": "Deliverables",
+    "deliverablesTitle": "Hûn çi distînin",
     "deliverables": {
-      "i1": "Strategie-Call + klarer Umsetzungsplan",
-      "i2": "Design in responsiven Breakpoints",
-      "i3": "Technische Umsetzung + Performance",
-      "i4": "Formulare, Tracking, Analytics Dashboard"
+      "i1": "Axaftineke stratejîk a kurt û planeke pêkanînê ya zelal bi gotinên hêsan",
+      "i2": "Dîzayneke ku li ser mobile, tablet û desktop bi paqijî dixebite",
+      "i3": "Pêkanîna teknîkî bi barkirina bilez",
+      "i4": "Form, tracking û dîtineke zelal a daxwazan"
     },
-    "aiSocialAdsTitle": "AI, Social, Werbung",
+    "aiSocialAdsTitle": "AI, social media û reklam bi awayekî hêsan",
     "aiCards": {
       "ai": {
-        "title": "KI-Integration",
-        "desc": "Chatbots, automatische Antworten, Lead-Priorisierung."
+        "title": "Entegrasyona AI",
+        "desc": "Em chatbot an auto-bersiv zêde dikin da ku kesên eleqedar zû feedback bistînin, hetta derveyî demjimêrên vekirî."
       },
       "social": {
-        "title": "Social Media",
-        "desc": "Content-Module, Channel-VerknÒ¼pfung, Kontaktpfade."
+        "title": "Social media",
+        "desc": "Em rêyekî zelal ava dikin: mirov we li social media dibînin, derbasî malpera we dibin û daxwazek dişînin."
       },
       "ads": {
-        "title": "Social Ads",
-        "desc": "Meta/TikTok/LinkedIn Kampagnen mit Tracking."
+        "title": "Reklamên social",
+        "desc": "Em kampanyayan li Meta/TikTok/LinkedIn dimeşînin û budceyê li ser daxwazên rast kontrol dikin, ne tenê li ser gihîştinê."
       }
     },
-    "ctaTitle": "Angebot erhalten",
-    "ctaButton": "Angebot erhalten"
+    "ctaTitle": "Pêşniyar bistîne",
+    "ctaButton": "Pêşniyar bistîne"
   },
   "pricing": {
     "hero": {
-      "titleLine1": "Website and Lead System",
+      "titleLine1": "Malper û Sîstema Lead",
       "titleLine2": "bo bazirganiyen heremi",
       "titleLine3": "ji EUR 690 dest pe dike",
-      "subtitle": "Premium setup for local businesses in Germany: clear funnel, measurable leads, clean handover to sales.",
-      "cta": "Hevditina yekem belas",
+      "subtitle": "Setup-a premium ji bo karsaziyên herêmî li Elmanyayê: funnel-a zelal, leadên pîvankirî û radestkirina paqij ji bo tîmê firotanê.",
+      "cta": "Hevdîtina yekem a belaş",
       "metrics": {
-        "leadVolume": "Lead Volume",
-        "qualifiedLeads": "Qualified Leads",
-        "costPerLead": "Cost per Lead"
+        "leadVolume": "Voluma leadan",
+        "qualifiedLeads": "Leadên kalîteyî",
+        "costPerLead": "Mesrefa her leadê"
       },
       "funnel": {
-        "traffic": "Traffic",
+        "traffic": "Trafîk",
         "landing": "Landing",
         "leads": "Leads",
         "crm": "CRM",
-        "sales": "Sales"
+        "sales": "Firotin"
       }
     },
     "flow": {
       "title": "Revecuna Lead System",
       "steps": {
-        "traffic": "Traffic",
-        "landing": "Landing Page",
+        "traffic": "Trafîk",
+        "landing": "Landing page",
         "capture": "Lead Capture",
         "crm": "CRM",
-        "sales": "Sales"
+        "sales": "Firotin"
       }
     },
     "packages": {
       "title": "Pakêtên bihayê",
-      "badge": "Pê�xniyarkirî",
+      "badge": "Pêşniyarkirî",
       "billing": {
         "monthly": "Mehane",
         "yearly": "Salane"
       },
       "coreTitle": "Bingehî",
       "plusTitle": "Zêde",
-      "subscriptionTitle": "Aboneya pi�xtgiriyê",
+      "subscriptionTitle": "Aboneya piştgiriyê",
       "subscriptionIncludesTitle": "Tê de heye",
       "outcomeLabel": "Encam:",
       "starter": {
@@ -466,7 +466,7 @@
         "subscription": {
           "monthly": {
             "price": "EUR 62 / meh",
-            "meta": "pi�xtgiriya bingehîn pi�xtî launch"
+            "meta": "piştgiriya bingehîn piştî launch"
           },
           "yearly": {
             "price": "EUR 521 / sal",
@@ -486,7 +486,7 @@
         "price": "ji EUR 1.290",
         "range": "bi gelemperî EUR 1.290-1.490",
         "core": [
-          "Website-a pir-rûpel heya 5 rûpel",
+          "Malperek pir-rûpelî heta 5 rûpel",
           "Têkildana CRM + lead tracking",
           "Dashboard-a analîtîkî"
         ],
@@ -497,7 +497,7 @@
         "subscription": {
           "monthly": {
             "price": "EUR 86 / meh",
-            "meta": "pi�xtgirî ji bo website, CRM û analytics"
+            "meta": "piştgirî ji bo website, CRM û analytics"
           },
           "yearly": {
             "price": "EUR 722 / sal",
@@ -506,10 +506,10 @@
           "includes": [
             "Nûvekirinên naverok û rûpelan bi rêkûpêk",
             "Kontrola CRM, lead tracking û dashboard",
-            "Heta 2 task di mehê de ji bo ba�xtirkirina conversion"
+            "Heta 2 task di mehê de ji bo baştirkirina conversion"
           ]
         },
-        "outcome": "Herikîna lead ya pê�xbînîkirî bi analîtîka zelal."
+        "outcome": "Herikîna lead ya pêşbînîkirî bi analîtîka zelal."
       },
       "pro": {
         "name": "Pro",
@@ -517,7 +517,7 @@
         "price": "ji EUR 2.490",
         "range": "bi gelemperî EUR 2.490-2.990",
         "core": [
-          "Website + setup-a Ads",
+          "Malper + setup-a Ads",
           "Google Ads an Meta Ads",
           "Marketing dashboard + tracking"
         ],
@@ -537,14 +537,14 @@
           "includes": [
             "Kontrola heftane ya website, ads û automation flows",
             "Optîmîzasyona CPL, funnel û pêvajoya lead",
-            "Heta 4 taskên growth di mehê de + pi�xtgiriya pê�xîn"
+            "Heta 4 taskên growth di mehê de + piştgiriya pêşîn"
           ]
         },
         "outcome": "Daxwazeke zêdetir bi kontrola mesrefa her lead."
       }
     },
     "comparison": {
-      "title": "Feature Comparison",
+      "title": "Berhevkirina taybetmendiyan",
       "yes": "Ere",
       "no": "-",
       "headers": {
@@ -554,263 +554,322 @@
         "pro": "Pro"
       },
       "rows": {
-        "landing": "Landing Page",
-        "multi": "Multi-page Website",
+        "landing": "Landing page",
+        "multi": "Malperek pir-rûpelî",
         "crm": "CRM Integration",
         "ai": "AI Lead Qualification",
         "ads": "Ads Setup",
-        "dashboard": "Analytics Dashboard"
+        "dashboard": "Dashboard-a analîtîkî"
       }
     },
     "trust": {
-      "title": "Baweri u carcove",
+      "title": "Bawerî û çarçove",
       "delivery": {
-        "title": "Delivery 7-14 days",
-        "desc": "Clear timeline with fixed approval steps."
+        "title": "Radestkirin di 7-14 rojan de",
+        "desc": "Timeline-ek zelal bi gavên pejirandinê yên sabit."
       },
       "support": {
-        "title": "Support after launch",
-        "desc": "Support for handover, team setup and fine-tuning."
+        "title": "Piştgiriya piştî launchê",
+        "desc": "Piştgiriya ji bo handover, sazkirina tîmê û fine-tuning."
       },
       "dsgvo": {
         "title": "DSGVO Tracking",
-        "desc": "Privacy-compliant measurement with consent setup."
+        "desc": "Pîvandina li gorî privacy bi setup-a destûrê."
       }
     },
     "final": {
-      "title": "Bi hevditina yekem a belas dest pe bikin.",
-      "subtitle": "In 30 minutes we show the right package and build plan for your lead system.",
-      "cta": "Hevditina yekem belas"
+      "title": "Bi hevdîtina yekem a belaş dest pê bikin.",
+      "subtitle": "Di 30 deqeyan de em pakêta guncaw û plana avakirina sîstema leadê nîşan didin.",
+      "cta": "Hevdîtina yekem a belaş"
     }
   },
   "references": {
-    "h1": "ReferansÒªn bi mezinbÒ»na pÒ®vable.",
-    "subtitle": "Em bi zelalÒ® nÒ®�&Ÿan didin ka Ò§i zÒªde bÒ»: daxwaz, rezerva, telefon Ò» lead.",
-    "trustline": "HemÒ» metrik bi kontekstÒª: dem Ò» pÒ®van.",
-    "filterTitle": "NÒ®�&ŸÒª hilbijÒªre",
-    "filterAria": "FÒ®ltra nÒ®�&Ÿan",
+    "h1": "Referansên bi mezinbûna pîvable.",
+    "subtitle": "Em bi zelalî nîşan didin ka çi zêde bû: daxwaz, rezerva, telefon û lead.",
+    "trustline": "Hemû metrik bi kontekstê: dem û pîvan.",
+    "filterTitle": "Nîşê hilbijêre",
+    "filterAria": "Fîltra nîşan",
     "counter": "{{count}} case guncaw",
-    "growthByNiche": "MezinbÒ»n li gorÒ® be�&ŸÒª",
-    "selectedCases": "CaseyÒªn hilbijartÒ®",
-    "challengeLabel": "Rew�&Ÿa destpÒªkÒª",
-    "solutionLabel": "Ò⬡areserÒ®",
+    "growthByNiche": "Mezinbûn li gorî beşê",
+    "selectedCases": "Caseyên hilbijartî",
+    "challengeLabel": "Rewşa destpêkê",
+    "solutionLabel": "ÒÇareserî",
     "periodLabel": "Dem",
-    "measurementLabel": "PÒ®van",
-    "emptyTitle": "Ji bo vÒª nÒ®�&ŸÒª caseya din nÒªzÒ®kÒª tÒª zÒªdekirin.",
-    "emptyText": "TenÒª caseyÒªn bi pÒ®vana rast Ò» demÒª zelal nÒ®�&Ÿan didin.",
-    "beforeAfter": "BerÒª / Pa�&ŸÒª",
-    "before": "BerÒª",
-    "after": "Pa�&ŸÒª",
-    "beforeAlt": "DÒ®tina berÒª",
-    "afterAlt": "DÒ®tina pa�&ŸÒª",
-    "sliderAria": "BerÒª-pa�&ŸÒª hereket bide",
-    "sliderHint": "Ji bo berhevkirinÒª biki�&ŸÒ®ne.",
-    "ctaTitle": "Tu dixwazÒ® encamÒªn wekhev?",
-    "ctaText": "Em rew�&Ÿa te analÒ®z dikin Ò» plana rastÒ®n ya 30-90 rojan nÒ®�&Ÿan didin.",
+    "measurementLabel": "Pîvan",
+    "emptyTitle": "Ji bo vê nîşê caseya din nêzîkê tê zêdekirin.",
+    "emptyText": "Tenê caseyên bi pîvana rast û demê zelal nîşan didin.",
+    "beforeAfter": "Berê / Paşê",
+    "before": "Berê",
+    "after": "Paşê",
+    "beforeAlt": "Dîtina berê",
+    "afterAlt": "Dîtina paşê",
+    "sliderAria": "Berê-paşê hereket bide",
+    "sliderHint": "Ji bo berhevkirinê bikişîne.",
+    "ctaTitle": "Tu dixwazî encamên wekhev?",
+    "ctaText": "Em rewşa te analîz dikin û plana rastîn ya 30-90 rojan nîşan didin.",
     "cta": "Projeya wekhev bipirse",
     "filters": {
-      "all": "HemÒ»"
+      "all": "Hemû"
     },
     "niches": {
-      "handwerk": "Handwerk",
-      "praxen": "Praxen",
-      "werkstatt": "Werkstatt",
-      "gastronomie": "Gastronomie",
-      "beauty": "Beauty",
-      "immobilien": "Immobilien",
-      "kanzlei": "Kanzlei",
-      "fitnessPhysio": "Fitness/Physio",
-      "reinigung": "Reinigung",
-      "umzugTransport": "Umzug/Transport",
-      "coachingBeratung": "Coaching/Beratung",
-      "bildungKurse": "Bildung/Kurse"
+      "handwerk": "Pîşe",
+      "praxen": "Klînîk",
+      "werkstatt": "Tamîrxane",
+      "gastronomie": "Gastironomî",
+      "beauty": "Bedewî",
+      "immobilien": "Emlak",
+      "kanzlei": "Kanzleye",
+      "fitnessPhysio": "Fitness / Fîzyoterapî",
+      "reinigung": "Paqijkirin",
+      "umzugTransport": "Barkirin / Transport",
+      "coachingBeratung": "Coaching / Şêwirmendî",
+      "bildungKurse": "Perwerdehî / Kurs"
     },
     "metrics": {
-      "moreRequests": "DaxwazÒªn zÒªdetir",
-      "moreAppointments": "RandevÒ»yÒªn zÒªdetir",
-      "moreCalls": "TelefonÒªn zÒªdetir",
-      "moreReservations": "RezervasyonÒªn zÒªdetir",
-      "moreBookings": "RezervasyonÒªn xizmetÒª zÒªdetir",
-      "moreLeads": "LeadÒªn zÒªdetir",
-      "moreIntroCalls": "PeywendiyÒªn destpÒªkÒª zÒªdetir",
-      "moreTrialSessions": "SeansÒªn ceribandinÒª zÒªdetir",
-      "moreOffers": "DaxwazÒªn pÒª�&ŸniyarÒª zÒªdetir",
-      "moreQualifiedLeads": "LeadÒªn kalÒ®teyÒª zÒªdetir",
-      "moreFirstContacts": "PeywendiyÒªn yekem zÒªdetir",
-      "moreCourseSignups": "TomarkirinÒªn kursÒª zÒªdetir",
-      "budgetEfficiency": "KarÒ®geriya budceyÒª",
-      "moreInteractions": "TÒªkiliyÒªn zÒªdetir",
-      "moreLeadsPerBudget": "Li ser budceyÒª leadÒªn zÒªdetir",
-      "moreConsultations": "�&žÒªwirmendiyÒªn zÒªdetir"
+      "moreRequests": "Daxwazên zêdetir",
+      "moreAppointments": "Randevûyên zêdetir",
+      "moreCalls": "Telefonên zêdetir",
+      "moreReservations": "Rezervasyonên zêdetir",
+      "moreBookings": "Rezervasyonên xizmetê zêdetir",
+      "moreLeads": "Leadên zêdetir",
+      "moreIntroCalls": "Peywendiyên destpêkê zêdetir",
+      "moreTrialSessions": "Seansên ceribandinê zêdetir",
+      "moreOffers": "Daxwazên pêşniyarê zêdetir",
+      "moreQualifiedLeads": "Leadên kalîteyê zêdetir",
+      "moreFirstContacts": "Peywendiyên yekem zêdetir",
+      "moreCourseSignups": "Tomarkirinên kursê zêdetir",
+      "budgetEfficiency": "Karîgeriya budceyê",
+      "moreInteractions": "Têkiliyên zêdetir",
+      "moreLeadsPerBudget": "Li ser budceyê leadên zêdetir",
+      "moreConsultations": "Şêwirmendiyên zêdetir"
     },
     "cases": {
       "c1": {
-        "title": "KarÒ»barÒª tesÒ®satÒª (herÒªma Hannover)",
-        "challenge": "Digel gihÒ®�&Ÿtina ba�&Ÿ daxwaz kÒªm bÒ»n.",
-        "solution": "RÒ»pelÒªn xizmetÒª nÒ» hatin saz kirin, CTA hat optimize kirin, trackinga peywendiyÒª hat Ò§alak kirin."
+        "title": "Karûbarê tesîsatê (herêma Hannover)",
+        "challenge": "Digel gihîştina baş daxwaz kêm bûn.",
+        "solution": "Rûpelên xizmetê nû hatin saz kirin, CTA hat optimize kirin, trackinga peywendiyê hat çalak kirin."
       },
       "c2": {
-        "title": "Navenda fizyoterapÒ® (Hildesheim)",
-        "challenge": "DaxwazÒªn randevÒ»ya online kÒªm bÒ»n.",
-        "solution": "RÒªÒ§a randevÒ»yÒª hÒªsantir kirin, rÒ»pelÒªn mobÒ®l bilez kirin Ò» rÒªyÒªn peywendiyÒª zelal kirin."
+        "title": "Navenda fîzyoterapiyê (Hildesheim)",
+        "challenge": "Daxwazên randevûya online kêm bûn.",
+        "solution": "Rêça randevûyê hêsantir kirin, rûpelên mobîl bilez kirin û rêyên peywendiyê zelal kirin."
       },
       "c3": {
-        "title": "Werkstatta karoserÒ® (navÒ§eya Harburg)",
-        "challenge": "PeywendÒ® gelek bÒ»n, lÒª karÒªn guncan kÒªm bÒ»n.",
-        "solution": "Di formÒª de kalÒ®teya leadÒª hat zÒªdekirin Ò» landing page-a xizmetÒª hat avakirin."
+        "title": "Werkstatta karoserî (navçeya Harburg)",
+        "challenge": "Peywendî gelek bûn, lê karên guncan kêm bûn.",
+        "solution": "Di formê de kalîteya leadê hat zêdekirin û landing page-a xizmetê hat avakirin."
       },
       "c4": {
         "title": "Restoran (Niedersachsen)",
-        "challenge": "Di nav hefteyÒª de rezervasyon kÒªm bÒ»n.",
-        "solution": "RÒªÒ§a rezervasyonÒª hÒªsantir kirin Ò» kampanyayÒªn herÒªmÒ® nÒ» kirin."
+        "challenge": "Di nav hefteyê de rezervasyon kêm bûn.",
+        "solution": "Rêça rezervasyonê hêsantir kirin û kampanyayên herêmî nû kirin."
       },
       "c5": {
-        "title": "OfÒ®sa emlakÒª (Niedersachsen)",
-        "challenge": "LeadÒªn xwediyÒªn malÒª yÒªn kalÒ®teyÒª kÒªm bÒ»n.",
-        "solution": "RÒ»pelÒªn emlakÒª li gor niyeta lÒªgerÒ®nÒª hatin saz kirin Ò» rÒªÒ§a daxwazÒª kurt kirin."
+        "title": "Ofîsa emlakê (Niedersachsen)",
+        "challenge": "Leadên xwediyên malê yên kalîteyê kêm bûn.",
+        "solution": "Rûpelên emlakê li gor niyeta lêgerînê hatin saz kirin û rêça daxwazê kurt kirin."
       },
       "c6": {
-        "title": "Kanzleya bacÒª (herÒªma Hannover)",
-        "challenge": "Li rÒ»pelÒªn xizmetÒª conversion kÒªm bÒ».",
-        "solution": "Naverok hÒªsantir kirin, nivÒ®sÒªn baweriyÒª zÒªde kirin Ò» peywendiya yekem bilind kirin."
+        "title": "Kanzleya bacê (herêma Hannover)",
+        "challenge": "Li rûpelên xizmetê conversion kêm bû.",
+        "solution": "Naverok hêsantir kirin, nivîsên baweriyê zêde kirin û peywendiya yekem bilind kirin."
       }
     },
-    "performanceDashboard": "Panela performansÒª",
-    "growthCurve90": "Kerva mezinbÒ»nÒª ya 90-rojan",
-    "growthChartAria": "GrafÒ®ka mezinbÒ»nÒª",
+    "performanceDashboard": "Panela performansê",
+    "growthCurve90": "Kerva mezinbûnê ya 90-rojan",
+    "growthChartAria": "Grafîka mezinbûnê",
     "resultLabel": "Encam",
     "trendAria": "Trenda {{niche}}",
-    "compareGraphAria": "GrafÒ®ka berÒª Ò» pa�&ŸÒª",
+    "compareGraphAria": "Grafîka berê û paşê",
     "dayLabel": "Roj {{day}}",
-    "beforeLegend": "BerÒª: tevgera lawaz",
-    "afterLegend": "Pa�&ŸÒª: mezinbÒ»na stabÒ®l",
+    "beforeLegend": "Berê: tevgera lawaz",
+    "afterLegend": "Paşê: mezinbûna stabîl",
     "filterGroups": {
-      "all": "HemÒ»",
-      "localServices": "XizmetÒªn herÒªmÒ®",
-      "healthBeauty": "TenduristÒ® Ò» bedewÒ®",
-      "professional": "Profesyonel"
+      "all": "Hemû",
+      "localServices": "Xizmetên herêmî",
+      "healthBeauty": "Tenduristî û bedewî",
+      "professional": "Pîşeyî"
     },
     "kpis": {
-      "traffic": "TrafÒ®k",
+      "traffic": "Trafîk",
       "leads": "Lead",
-      "conversion": "VeguherÒ®n"
+      "conversion": "Veguherîn"
     },
     "daysUnit": "roj"
   },
   "about": {
-    "h1": "Ò�\u001cber uns",
-    "subtitle": "Wir sind ein kleines Umsetzungsteam fÒ¼r lokale Unternehmen.",
+    "h1": "Derbarê me de",
+    "subtitle": "Em malper û otomasyonan ava dikin ku ji bo karsaziyên herêmî bi awayekî pîvankirî daxwazên zêdetir tînin.",
     "cards": {
       "work": {
-        "title": "Wie wir arbeiten",
-        "desc": "Kurze Wege, klare Verantwortungen."
+        "title": "Em çawa dixebitin",
+        "desc": "Gavên kurt, berpirsyariya zelal û deadlineyên realistîk. Pêvajo: briefing -> avahî -> dîzayn -> pêkanîn -> launch -> baştirkirin."
       },
       "ai": {
-        "title": "AI First",
-        "desc": "Automationen dort, wo sie Zeit sparen."
+        "title": "Nêzîkatiya AI",
+        "desc": "Em routineyan otomatîk dikin da ku hûn zûtir bersiv bidin û kêm lead winda bikin. Mînak: formên zana, auto-bersiv, veqetandina leadan û entegrasyon."
       },
       "leads": {
-        "title": "Lead Focus",
-        "desc": "Design und Marketing arbeiten zusammen."
+        "title": "Fokus li ser daxwazan",
+        "desc": "Dîzayn, marketing û tracking bi hev re dixebitin: zêdetir têkiliyên rast li şûna tenê mêvanan. Armanc ev e ku malpera we 24/7 wekî alîkarê firotanê bixebite."
       }
     },
-    "ctaTitle": "Kontakt",
-    "photoPlaceholder": "Foto: PortrÒ¤t des GrÒ¼nders von VS Web Studio (Vladyslav)",
-    "photoCaption": "Vladyslav, GrÒ¼nder von VS Web Studio. Hildesheim.",
-    "photoAlt": "Vladyslav, Webentwickler von VS Web Studio aus Hildesheim",
+    "ctaTitle": "Têkilî",
+    "photoPlaceholder": "Wêne: portreya damezrînerê VS Web Studio (Vladyslav)",
+    "photoCaption": "Vladyslav, damezrînerê VS Web Studio. Hildesheim.",
+    "photoAlt": "Vladyslav, pêşdebirê webê ji VS Web Studio li Hildesheim",
     "geo": {
-      "local": "Wir arbeiten hier: Hildesheim",
-      "region": "Hauptregion: Niedersachsen",
-      "country": "MÒ¶glich: ganz Deutschland"
+      "local": "Em li vir dixebitin: Hildesheim",
+      "region": "Herêma sereke: Niedersachsen",
+      "country": "Pêkan e: li hemû Elmanyayê"
     },
-    "intro1": "Ich bin Vladyslav, GrÒ¼nder von VS Web Studio. Ich arbeite aus Hildesheim und unterstÒ¼tze zuerst Unternehmen direkt in der Stadt und Umgebung. ZusÒ¤tzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
-    "intro2": "Mein Ziel ist einfach: nicht nur eine schÒ¶ne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
-    "intro3": "Wir sind ein kleines Team mit bewÒ¤hrten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnÒ¶tige BÒ¼rokratie, und bringen Projekte bis zum Ergebnis.",
-    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes VerstÒ¤ndnis fÒ¼r den Markt vor Ort.",
-    "miniFactsTitle": "Was wir konkret machen",
+    "intro1": "Ez Vladyslav im, damezrînerê VS Web Studio. Ez ji Hildesheim dixebitim û pêşî piştgirî ji karsaziyên li bajêr û derdora wê dikim. Wekî zêde, ez li hemû Niedersachsenê û, hewce be, li hemû Elmanyayê li ser projeyan dixebitim.",
+    "intro2": "Armanca min hêsan e: ne tenê malpereke xweşik, lê malperek ku difroşe û mişteriyên nû tîne. Ji ber vê yekê em li ser avahî, leza malperê, bawerî, tracking û rêyên têkiliyê yên zelal fokus dikin.",
+    "intro3": "Em tîmek biçûk in bi hevkarên pêbawer ên di dîzayn, naverok û reklamê de. Ji ber wê em zû dixebitin, bê burokrasiya zêde, û projeyan digihînin encamê.",
+    "localPriority": "Hildesheim fokus-a me ye: karsaziyên herêmî hewce ne bi têkiliya zû û têgihiştineke rast ji bazara derdorê.",
+    "miniFactsTitle": "Em bi rastî çi dikin",
     "miniFacts": {
-      "i1": "Klare Schritte ohne Fachchinesisch",
-      "i2": "Transparente Updates in jeder Projektphase",
-      "i3": "Launch und laufende Optimierung nach Daten"
+      "i1": "Gavên zelal bê gotinên teknikî yên nehewce",
+      "i2": "Nûvekirinên şeffaf di her qonaxa projeyê de",
+      "i3": "Launch û baştirkirina berdewam li gorî daneyan"
     },
-    "whatYouGetTitle": "Was Sie konkret erhalten",
+    "whatYouGetTitle": "Hûn bi rastî çi distînin",
     "whatYouGet": {
-      "i1": "Eine schnelle Website, die auf dem Smartphone sauber funktioniert",
-      "i2": "Klare Seitenstruktur mit starken CTA-Elementen",
-      "i3": "Eingerichtetes Tracking, damit Sie die Quellen Ihrer Anfragen sehen",
-      "i4": "Automationen, die Zeit sparen und die Conversion erhÒ¶hen"
+      "i1": "Malperek zû ku li ser smartphone bi paqijî dixebite",
+      "i2": "Avahiya rûpelan a zelal bi elementên CTA yên xurt",
+      "i3": "Tracking-a sazkirî da ku hûn bibînin daxwaz ji kîjan çavkaniyê tên",
+      "i4": "Otomasyonên ku demê parastin dikin û conversionê bilind dikin"
     },
-    "contactTitle": "Kontakt",
-    "contactText": "Schreiben Sie uns, welches GeschÒ¤ft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
-    "contactButton": "Projekt anfragen"
+    "contactTitle": "Têkilî",
+    "contactText": "Ji me re binivîsin karsaziya we li Hildesheim an li herêmê çi ye û çi divê baştir bibe (daxwaz, reklam, malper). Hûn ê planek zelal bi demjimêrê bistînin.",
+    "contactButton": "Projeyê bipirsin"
   },
   "contact": {
-    "h1": "Têkilî û daxwaz ji bo projeya we",
-    "responseTime": "Dema bersivê ya niha:",
-    "quickContacts": "Têkiliyên zû",
+    "h1": "Ji me re derbarê projeya xwe de bibêjin",
+    "responseTime": "Dema bersivê ya navîn: 1-2 saet",
+    "quickContacts": "Têkiliya rasterast",
     "form": {
-      "name": "Nav",
+      "name": "Navê we",
       "business": "Navê karsaziyê",
-      "need": "Bi tamî çi hewce dike?",
-      "submit": "Daxwazê bişîne"
+      "need": "Mînak: malperek ji bo salon-a beauty an reklam ji bo tamîrxaneyeke otomobîlan",
+      "submit": "Şêwirmendiya belaş",
+      "title": "Daxwaza proje",
+      "intro": "Her ku daxwaz zelaltir be, em ê zûtir kar, pêşîniyan û gavên paşê nirxandin.",
+      "help": "Ji bo destpêkê qada karsaziyê, armanc û tiştê ku divê pêşî were baştir kirin têr e.",
+      "labels": {
+        "email": "Navnîşana e-nameyê",
+        "name": "Navê we",
+        "business": "Karsazî",
+        "message": "Proje an armanc"
+      },
+      "email": "Navnîşana e-nameyê",
+      "submitLoading": "Tê şandin...",
+      "success": "Spas. Daxwaza we bi serkeftî hate şandin.",
+      "error": "Di şandinê de çewtiyek çêbû. Ji kerema xwe dîsa biceribîne.",
+      "devError": "Servera API-ya lokal nagihîje. Appê bi \"npm run dev:netlify\" dest pê bike û piştre http://localhost:8888 veke."
+    },
+    "subtitle": "Bi kurtî binivîsin hûn çi plan dikin. Hûn ê pêşnirxandineke yekem a zelal û gava guncaw a paşê bistînin.",
+    "responseNote": "Bersiv bi gelemperî di nav 1-2 saetan de",
+    "contactMeta": {
+      "location": "Cih ji bo li hevkirina zû",
+      "email": "Daxwazên proje bi e-nameyê",
+      "phone": "Axaftineke yekem a kurt an vegerîna bangê"
+    },
+    "trustItems": [
+      "Têkiliya rasterast",
+      "Pêşnirxandina yekem a zelal",
+      "Bersiva zû"
+    ],
+    "nextStepsEyebrow": "Herikîna daxwazê",
+    "nextStepsTitle": "Paşê çi dibe?",
+    "nextStepsLead": "Piştî şandina daxwazê, hûn tavilê dizanin têkiliya yekem, pêşîniyakirin û feedback çawa dimeşe.",
+    "nextSteps": {
+      "0": "Daxwaza we yekser dikeve intake flow-a me.",
+      "1": "Bi gelemperî em di nav 1-2 saetan de vedigerin.",
+      "2": "Hûn gava paşê ya zelal distînin, ne lîsteyeke dirêj a pirsên zêde."
+    },
+    "visual": {
+      "eyebrow": "Herikîna leadan",
+      "title": "Malper, reklam û bang rasterast dikevin herikîna CRM-ê.",
+      "lanes": {
+        "0": {
+          "source": "Malper",
+          "target": "Lead"
+        },
+        "1": {
+          "source": "Reklam",
+          "target": "Lead"
+        },
+        "2": {
+          "source": "Bang",
+          "target": "Lead"
+        }
+      },
+      "routerEyebrow": "Rêya yekane",
+      "routerTitle": "Her çavkanî ber bi intake, pêşniyakirin û bersivê ve diçe.",
+      "routerMeta": "Bê veqetandina tîmê, bê windabûna daxwazan.",
+      "miniMeta": [
+        "CRM",
+        "Lead flow"
+      ]
     }
   },
   "blog": {
-    "h1": "Blog / Insights",
-    "subtitle": "Artikel zu Website, Leads, SEO, Ads und Automationen.",
+    "h1": "Blog / Nêrîn",
+    "subtitle": "Gotar li ser malper, lead, SEO, ads û otomasyonan.",
     "cards": {
-      "c1": "AI-Workflows im Website Funnel",
-      "c2": "Social-Prozesse ohne Chaos",
-      "c3": "Social Ads mit sauberem Tracking",
-      "c4": "Automationen fÒ¼r Erstkontakt"
+      "c1": "Workflows-ên AI di funnel-a malperê de",
+      "c2": "Pêvajoyên social bê kaos",
+      "c3": "Reklamên social bi tracking-a paqij",
+      "c4": "Otomasyonên ji bo têkiliya yekem"
     },
     "leadMagnet": "Lead Magnet",
-    "emailPlaceholder": "E-Mail fÒ¼r den Guide",
-    "getGuide": "Guide erhalten"
+    "emailPlaceholder": "E-name ji bo guideyê",
+    "getGuide": "Guide bistîne"
   },
   "niche": {
     "handwerker": {
-      "h1": "Websites fÒ¼r Handwerker: mehr passende Anfragen.",
-      "p": "Klare Leistungen, lokale Sichtbarkeit, einfache Kontaktwege."
+      "h1": "Malper ji bo pîşesazan: daxwazên guncan zêdetir.",
+      "p": "Xizmetên zelal, xuya bûna herêmî û rêyên têkiliyê yên hêsan."
     },
     "praxis": {
-      "h1": "Websites fÒ¼r Praxen: weniger RÒ¼ckfragen, mehr Terminanfragen.",
-      "p": "Patientenfreundliche Struktur und klarer Online-Erstkontakt."
+      "h1": "Malper ji bo klînîkan: kêm pirsên paşerojî, zêdetir daxwazên randevûyê.",
+      "p": "Avahiya xizmetê ya zelal, bawerî û rezervasyona hêsan."
     },
     "werkstatt": {
-      "h1": "Websites fÒ¼r WerkstÒ¤tten: planbare Leads statt Zufall.",
-      "p": "Service-orientierte Seiten mit messbarer Conversion."
+      "h1": "Malper ji bo tamîrxanan: leadên pêşbînîkirî li şûna tesadufê.",
+      "p": "Rêyên têkiliyê yên rast, rûpelên xizmetê û tracking-a zelal."
     }
   },
   "legal": {
     "impressum": {
-      "h1": "Impressum",
-      "subtitle": "Angaben gemÒ¤ÒŸ �\u001a§ 5 TMG.",
+      "h1": "Agahiyên qanûnî",
+      "subtitle": "Agahiyên li gorî § 5 TMG.",
       "l1": "VS Studio",
-      "l2": "MusterstraÒŸe 10, 10115 Berlin, Deutschland",
+      "l2": "Musterstraße 10, 10115 Berlin, Elmanya",
       "l3": "E-Mail: kontakt@vs-web-studio.de",
       "l4": "Telefon: +49 30 1234567",
       "l5": "Vertreten durch: Vladyslav"
     },
     "datenschutz": {
-      "h1": "DatenschutzerklÒ¤rung",
-      "subtitle": "Kurzinformation zur Verarbeitung personenbezogener Daten.",
-      "l1": "Wir verarbeiten Daten nur zweckgebunden (Kontaktanfragen, Angebotserstellung, Statistik).",
-      "l2": "Rechtsgrundlagen: Art. 6 Abs. 1 lit. b und f DSGVO.",
-      "l3": "Betroffene Rechte: Auskunft, Berichtigung, LÒ¶schung, EinschrÒ¤nkung, Widerspruch.",
-      "l4": "Kontakt fÒ¼r Datenschutz: datenschutz@vs-web-studio.de"
+      "h1": "Daxuyaniya parastina daneyan",
+      "subtitle": "Agahdariya kurt derbarê pêvajoya daneyên kesane.",
+      "l1": "Em daneyan tenê ji bo armancên taybet pêvajoyê dikin (daxwazên têkiliyê, amadekirina pêşniyarê, statîstîk).",
+      "l2": "Bingehên qanûnî: Art. 6 Abs. 1 lit. b û f DSGVO.",
+      "l3": "Mafên kesên eleqedar: agahdarî, rastkirin, jêbirin, sînordarkirin û nerazîbûn.",
+      "l4": "Têkiliya ji bo parastina daneyan: datenschutz@vs-web-studio.de"
     },
     "agb": {
-      "h1": "AGB",
-      "subtitle": "Optionale allgemeine GeschÒ¤ftsbedingungen.",
-      "l1": "Leistungen werden gemÒ¤ÒŸ Angebot und vereinbartem Umfang erbracht.",
-      "l2": "Zahlungsbedingungen, Nutzungsrechte und GewÒ¤hrleistung richten sich nach dem Vertrag."
+      "h1": "Şert û mercên giştî (AGB)",
+      "subtitle": "Şert û mercên giştî yên vebijarkî.",
+      "l1": "Xizmet li gorî pêşniyarê û qada li hevkirî têne pêşkêş kirin.",
+      "l2": "Mercên dravdanê, mafên bikaranînê û garantî li gorî peymanê ne."
     },
     "cookies": {
-      "h1": "Cookie-Hinweise",
-      "subtitle": "Informationen zu eingesetzten Cookies und Messdiensten.",
-      "l1": "Technisch notwendige Cookies sichern die FunktionalitÒ¤t der Website.",
-      "l2": "Optionale Analyse-Cookies helfen bei der Optimierung von Inhalten und Kampagnen."
+      "h1": "Agahiyên cookieyan",
+      "subtitle": "Agahî derbarê cookie û xizmetên pîvandinê yên bikaranînê de.",
+      "l1": "Cookieyên teknîkî yên pêwîst fonksiyona malperê ewle dikin.",
+      "l2": "Cookieyên analîzê yên vebijarkî di baştirkirina naverok û kampanyayan de alîkar in."
     }
   },
   "alert": {
@@ -819,19 +878,19 @@
   },
   "contact2": {
     "form": {
-      "success": "Danke! Wir melden uns bald bei dir.",
-      "error": "Senden fehlgeschlagen. Bitte erneut versuchen."
+      "success": "Spas! Em ê zû bi te re têkilî bikin.",
+      "error": "Şandin serneket. Ji kerema xwe dîsa biceribîne."
     }
   },
   "feedback2": {
     "form": {
-      "success": "Danke für dein Feedback!",
-      "error": "Feedback konnte nicht gesendet werden."
+      "success": "Spas ji bo feedbacka te!",
+      "error": "Feedback nehat şandin."
     }
   },
   "aboutPage": {
     "heroEyebrow": "VS Studio | Hildesheim | Niedersachsen | Elmanya",
-    "heroTitleLine1": "Malper u",
+    "heroTitleLine1": "Malper û",
     "heroTitleLine2": "sîstemên lead",
     "heroTitleLine3": "ji bo karsaziyên herêmî",
     "heroTitleLine4": "li Hildesheim",
@@ -839,7 +898,7 @@
     "heroTrustline": "Li Hildesheim herêmî. Li Niedersachsen stratejîk. Li hemû Elmanyayê pêkan.",
     "primaryCta": "Analîza malperê ya belaş",
     "section": {
-      "about": "Der barê me de",
+      "about": "Derbarê me de",
       "localAdvantages": "Berxwedanên herêmî",
       "how": "Em çawa dixebitin",
       "value": "Nirx",
@@ -933,7 +992,7 @@
     },
     "cta": {
       "title": "Ji bo daxwazên pêşbînîkirî amade ne?",
-      "text": "Di axaftina yekem a belaş de em mezinترîn xalên hêza malpera we, pêvajoyên lead û reklamê nîşan didin."
+      "text": "Di axaftina yekem a belaş de em girîngtirîn xalên hêza malpera we, pêvajoyên lead û reklamê nîşan didin."
     },
     "visual": {
       "productBadge": "Lead System",
