@@ -203,28 +203,39 @@
       }
     },
     "projects": {
-      "title": "Проекти / Казуси",
-      "desc": "Reale Aufgaben und erwartbare Ergebnisse ohne leere Versprechen. Hover auf einen Case für Live-Preview.",
-      "cards": {
-        "c1": {
-          "title": "Website für lokale Anfragen",
-          "description": "Landingpage mit Fokus auf Formular, Anruf und schnellen Mobile-Kontakt.",
-          "goal": "Ziel: mehr Anfragen ohne Budgeterhöhung"
+      "eyebrow": "Подбрани демо проекти",
+      "title": "Подбрани сайтове за локален бизнес",
+      "desc": "Тези демо проекти показват как изграждам сайтове за реален локален бизнес: ясно, балансирано и с фокус върху бърз контакт.",
+      "benefitLabel": "Полза за бизнеса",
+      "cta": {
+        "livePreview": "Отвори демо",
+        "github": "GitHub",
+        "moreOnGithub": "Още проекти в GitHub"
+      },
+      "tags": {
+        "localLeads": "Локални заявки",
+        "services": "Услуги",
+        "fastContact": "Бърз контакт",
+        "booking": "Записване",
+        "faq": "Чести въпроси",
+        "onePageWebsite": "Едностраничен сайт",
+        "trust": "Доверие"
+      },
+      "items": {
+        "handwerk": {
+          "title": "Сайт за отопление, ВиК и термопомпи",
+          "description": "Ясен сервизен сайт за локална компания. Посетителят веднага вижда какви услуги предлагате, къде работите и как може бързо да се свърже с вас.",
+          "benefit": "Помага по-бързо да получавате обаждания и заявки от хора, които вече търсят майстор."
         },
-        "c2": {
-          "title": "Landingpage für Ads",
-          "description": "Separate Seite mit Tracking für Meta- und Google-Kampagnen.",
-          "goal": "Erwarteter Effekt: qualifiziertere Leads aus Werbung"
+        "autoWorkshop": {
+          "title": "Сайт за автосервиз",
+          "description": "Ясна сервизна страница с услуги, чести въпроси и бърз контакт. Без претоварване и без излишни кликове.",
+          "benefit": "Помага да превръщате посетителите в записвания и запитвания, вместо да ги губите след първото посещение."
         },
-        "c3": {
-          "title": "Website für Praxis",
-          "description": "Klare Leistungsstruktur, FAQ und Online-Termin-Flow.",
-          "goal": "Ziel: mehr Terminbuchungen mit weniger Rückfragen"
-        },
-        "c4": {
-          "title": "Dashboard für Leads",
-          "description": "Internes Interface zur Lead-Bearbeitung und Statuskontrolle.",
-          "goal": "Erwarteter Effekt: schnellere Bearbeitung von Anfragen"
+        "singlePageBeautySalon": {
+          "title": "Сайт за салон за красота",
+          "description": "Визуално силен едностраничен сайт за представяне на услуги, изграждане на доверие и бързо записване на клиенти.",
+          "benefit": "Помага да създадете доверие още от първия екран и да увеличите броя на записванията."
         }
       }
     },

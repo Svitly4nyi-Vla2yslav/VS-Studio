@@ -1,17 +1,25 @@
-﻿import React from 'react';
+import React from 'react';
 import { easeOut, motion } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { A11y, Autoplay, Keyboard } from 'swiper/modules';
 import {
   SectionWrap,
   RowWrap,
   RowTitle,
   MarqueeViewport,
-  MarqueeTrack,
+  CardsGrid,
   Badge,
+  CardBg,
+  CardOverlay,
+  CardContent,
+  CardTop,
+  CardBottom,
   BadgeIcon,
   BadgeGroup,
   BadgeText,
   BadgeDesc,
 } from './Partners.styled';
+import 'swiper/css';
 
 export type PartnerBadgeItem = {
   label: string;
@@ -28,17 +36,24 @@ export type PartnerRow = {
   items: PartnerBadgeItem[];
   direction: 'left' | 'right';
   speed?: number;
+  autoplay?: boolean;
+  autoplayDelay?: number;
+  spaceBetween?: number;
+  breakpoints?: Record<number, { slidesPerView: number }>;
+  transitionSpeed?: number;
 };
 
 type PartnersProps = {
   rows?: PartnerRow[];
+  variant?: 'carousel' | 'grid';
 };
 
 const defaultRows: PartnerRow[] = [
   {
     title: 'Trusted Technologies',
     direction: 'left',
-    speed: 60,
+    speed: 68,
+    autoplay: true,
     items: [
       { label: 'React', description: 'UI', group: 'Tech' },
       { label: 'TypeScript', description: 'Typing', group: 'Tech' },
@@ -49,12 +64,48 @@ const defaultRows: PartnerRow[] = [
   },
 ];
 
-const Partners: React.FC<PartnersProps> = ({ rows = defaultRows }) => {
+const Partners: React.FC<PartnersProps> = ({ rows = defaultRows, variant = 'carousel' }) => {
+  const defaultBreakpoints = {
+    0: { slidesPerView: 1.08 },
+    560: { slidesPerView: 1.35 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+    1440: { slidesPerView: 3.45 },
+  };
+
+  const renderCard = (item: PartnerBadgeItem, key: string) => (
+    <Badge key={key}>
+      <CardBg className='card-bg' $backgroundImage={item.backgroundImage} />
+      <CardOverlay className='card-overlay' />
+      <CardContent className='card-content'>
+        <CardTop>
+          {item.icon ? (
+            <BadgeIcon
+              className='badge-icon'
+              style={{
+                color: item.iconColor ?? '#fff',
+                background: item.iconBg ?? 'rgba(255,255,255,.18)',
+              }}
+            >
+              {item.icon}
+            </BadgeIcon>
+          ) : null}
+          {item.group ? <BadgeGroup>{item.group}</BadgeGroup> : null}
+        </CardTop>
+        <CardBottom>
+          <BadgeText className='badge-title'>{item.label}</BadgeText>
+          {item.description ? <BadgeDesc className='badge-desc'>{item.description}</BadgeDesc> : null}
+        </CardBottom>
+      </CardContent>
+    </Badge>
+  );
+
   return (
     <SectionWrap>
       {rows.map((row, idx) => {
-        const speed = row.speed ?? 60;
-        const tripled = [...row.items, ...row.items, ...row.items];
+        const autoplayDelay = Math.max((row.speed ?? 60) * 54, 3200);
+        const shouldAutoplay = row.autoplay ?? true;
+        const transitionSpeed = row.transitionSpeed ?? 1400;
 
         return (
           <RowWrap key={`${row.title ?? 'row'}-${idx}`}>
@@ -69,34 +120,45 @@ const Partners: React.FC<PartnersProps> = ({ rows = defaultRows }) => {
               </motion.div>
             ) : null}
 
-            <MarqueeViewport>
-              <MarqueeTrack
-                as={motion.div}
-                animate={{
-                  x:
-                    row.direction === 'right'
-                      ? ['-33.3333%', '0%']
-                      : ['0%', '-33.3333%'],
-                }}
-                transition={{
-                  duration: speed,
-                  ease: 'linear',
-                  repeat: Infinity,
-                  repeatType: 'loop',
-                }}
-              >
-                {tripled.map((item, i) => (
-                  <Badge key={`${item.group ?? 'group'}-${item.label}-${i}`} $backgroundImage={item.backgroundImage}>
-                    <div className='badge-top'>
-                      {item.icon ? <BadgeIcon style={{ color: item.iconColor ?? '#fff', background: item.iconBg ?? 'rgba(255,255,255,.18)' }}>{item.icon}</BadgeIcon> : null}
-                      {item.group ? <BadgeGroup>{item.group}</BadgeGroup> : null}
-                    </div>
-                    <BadgeText>{item.label}</BadgeText>
-                    {item.description ? <BadgeDesc>{item.description}</BadgeDesc> : null}
-                  </Badge>
-                ))}
-              </MarqueeTrack>
-            </MarqueeViewport>
+            {variant === 'grid' ? (
+              <CardsGrid>
+                {row.items.map((item, i) =>
+                  renderCard(item, `${item.group ?? 'group'}-${item.label}-${i}`)
+                )}
+              </CardsGrid>
+            ) : (
+              <MarqueeViewport>
+                <Swiper
+                  modules={[A11y, Autoplay, Keyboard]}
+                  className='partners-swiper'
+                  spaceBetween={row.spaceBetween ?? 16}
+                  speed={transitionSpeed}
+                  loop={row.items.length > 3}
+                  loopAdditionalSlides={row.items.length}
+                  watchSlidesProgress
+                  allowTouchMove
+                  grabCursor
+                  keyboard={{ enabled: true }}
+                  autoplay={
+                    shouldAutoplay
+                      ? {
+                          delay: row.autoplayDelay ?? autoplayDelay,
+                          disableOnInteraction: false,
+                          pauseOnMouseEnter: true,
+                          reverseDirection: row.direction === 'right',
+                        }
+                      : false
+                  }
+                  breakpoints={row.breakpoints ?? defaultBreakpoints}
+                >
+                  {row.items.map((item, i) => (
+                    <SwiperSlide key={`${item.group ?? 'group'}-${item.label}-${i}`}>
+                      {renderCard(item, `${item.group ?? 'group'}-${item.label}-${i}-card`)}
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </MarqueeViewport>
+            )}
           </RowWrap>
         );
       })}

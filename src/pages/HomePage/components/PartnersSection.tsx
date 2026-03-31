@@ -16,6 +16,19 @@ import {
   FaRobot,
   FaShareAlt,
 } from 'react-icons/fa';
+import aiIntegrationBg from '../../../assets/service/AI Integration.png';
+import arztpraxisBg from '../../../assets/service/Arztpraxis.png';
+import handwerkerBg from '../../../assets/service/Handwerker.png';
+import klarePreiseBg from '../../../assets/service/Klare Preise.png';
+import lokaleServicesBg from '../../../assets/service/Lokale Services.png';
+import mehrAnfragenBg from '../../../assets/service/Mehr Anfragen.png';
+import persoenlicheHilfeBg from '../../../assets/service/Persönliche Hilfe.png';
+import schnellGeladenBg from '../../../assets/service/Schnell geladen.png';
+import socialAdsBg from '../../../assets/service/Social Ads.png';
+import socialMediaBg from '../../../assets/service/Social Media.png';
+import webAppsBg from '../../../assets/service/Web-Apps.png';
+import websitesBg from '../../../assets/service/Websites.png';
+import werkstaettenBg from '../../../assets/service/Werkstätten.png';
 import Partners from '../../../components/PartnersBanner/PartnersBanner';
 import { fadeInUp } from '../../../components/Motion/reveal';
 
@@ -25,113 +38,190 @@ const PartnersSection: React.FC = () => {
   const rows = useMemo(
     () => [
       {
-        title: t('home.partnersTitle', { defaultValue: 'Highlights, Zielgruppen und Leistungen' }),
+        title: t('home.partnersTitle', {
+          defaultValue: 'Highlights, Zielgruppen und Leistungen',
+        }),
         direction: 'right' as const,
-        speed: 58,
+        speed: 68,
+        autoplay: true,
+        autoplayDelay: 2600,
+        transitionSpeed: 2400,
+        spaceBetween: 20,
+        breakpoints: {
+          0: { slidesPerView: 1.05 },
+          768: { slidesPerView: 2 },
+          1200: { slidesPerView: 3 },
+          1536: { slidesPerView: 4 },
+        },
         items: [
           {
             group: t('home.groups.highlights', { defaultValue: 'Highlights' }),
-            label: t('home.partners.fastLoad.title', { defaultValue: 'Schnell geladen' }),
-            description: t('home.partners.fastLoad.desc', { defaultValue: 'Seite lädt in Sekunden' }),
+            label: t('home.partners.fastLoad.title', {
+              defaultValue: 'Schnell geladen',
+            }),
+            description: t('home.partners.fastLoad.desc', {
+              defaultValue: 'Seite lädt in Sekunden',
+            }),
             icon: <FaBolt />,
             iconColor: '#FFD25F',
             iconBg: 'rgba(255,210,95,.2)',
+            backgroundImage: schnellGeladenBg,
           },
           {
             group: t('home.groups.highlights', { defaultValue: 'Highlights' }),
-            label: t('home.partners.moreLeads.title', { defaultValue: 'Mehr Anfragen' }),
-            description: t('home.partners.moreLeads.desc', { defaultValue: 'Mehr Kontakte über Formulare' }),
+            label: t('home.partners.moreLeads.title', {
+              defaultValue: 'Mehr Anfragen',
+            }),
+            description: t('home.partners.moreLeads.desc', {
+              defaultValue: 'Mehr Kontakte über Formulare',
+            }),
             icon: <FaChartLine />,
             iconColor: '#58D68D',
             iconBg: 'rgba(88,214,141,.2)',
+            backgroundImage: mehrAnfragenBg,
           },
           {
             group: t('home.groups.highlights', { defaultValue: 'Highlights' }),
-            label: t('home.partners.clearPrices.title', { defaultValue: 'Klare Preise' }),
-            description: t('home.partners.clearPrices.desc', { defaultValue: 'Du kennst Kosten im Voraus' }),
+            label: t('home.partners.clearPrices.title', {
+              defaultValue: 'Klare Preise',
+            }),
+            description: t('home.partners.clearPrices.desc', {
+              defaultValue: 'Du kennst Kosten im Voraus',
+            }),
             icon: <FaEuroSign />,
             iconColor: '#5DADE2',
             iconBg: 'rgba(93,173,226,.2)',
+            backgroundImage: klarePreiseBg,
           },
           {
             group: t('home.groups.highlights', { defaultValue: 'Highlights' }),
-            label: t('home.partners.personalHelp.title', { defaultValue: 'Persönliche Hilfe' }),
-            description: t('home.partners.personalHelp.desc', { defaultValue: 'Direkter Support ohne Warteschlange' }),
+            label: t('home.partners.personalHelp.title', {
+              defaultValue: 'Persönliche Hilfe',
+            }),
+            description: t('home.partners.personalHelp.desc', {
+              defaultValue: 'Direkter Support ohne Warteschlange',
+            }),
             icon: <FaHandsHelping />,
             iconColor: '#F5B7B1',
             iconBg: 'rgba(245,183,177,.2)',
+            backgroundImage: persoenlicheHilfeBg,
           },
           {
             group: t('home.groups.forWhom', { defaultValue: 'Für wen' }),
-            label: t('home.partners.handwerker.title', { defaultValue: 'Handwerker' }),
-            description: t('home.partners.handwerker.desc', { defaultValue: 'Anfragen pro Stadt und Leistung' }),
+            label: t('home.partners.handwerker.title', {
+              defaultValue: 'Handwerker',
+            }),
+            description: t('home.partners.handwerker.desc', {
+              defaultValue: 'Anfragen pro Stadt und Leistung',
+            }),
             icon: <FaHammer />,
             iconColor: '#F8C471',
             iconBg: 'rgba(248,196,113,.2)',
+            backgroundImage: handwerkerBg,
           },
           {
             group: t('home.groups.forWhom', { defaultValue: 'Für wen' }),
-            label: t('home.partners.praxen.title', { defaultValue: 'Praxen' }),
-            description: t('home.partners.praxen.desc', { defaultValue: 'Patienten finden schneller Termine' }),
+            label: t('home.partners.praxen.title', {
+              defaultValue: 'Praxen',
+            }),
+            description: t('home.partners.praxen.desc', {
+              defaultValue: 'Patienten finden schneller Termine',
+            }),
             icon: <FaHeartbeat />,
             iconColor: '#EC7063',
             iconBg: 'rgba(236,112,99,.2)',
+            backgroundImage: arztpraxisBg,
           },
           {
             group: t('home.groups.forWhom', { defaultValue: 'Für wen' }),
-            label: t('home.partners.werkstaetten.title', { defaultValue: 'Werkstätten' }),
-            description: t('home.partners.werkstaetten.desc', { defaultValue: 'Klare Service-Seiten mit Tracking' }),
+            label: t('home.partners.werkstaetten.title', {
+              defaultValue: 'Werkstätten',
+            }),
+            description: t('home.partners.werkstaetten.desc', {
+              defaultValue: 'Klare Service-Seiten mit Tracking',
+            }),
             icon: <FaIndustry />,
             iconColor: '#AF7AC5',
             iconBg: 'rgba(175,122,197,.2)',
+            backgroundImage: werkstaettenBg,
           },
           {
             group: t('home.groups.forWhom', { defaultValue: 'Für wen' }),
-            label: t('home.partners.localServices.title', { defaultValue: 'Lokale Services' }),
-            description: t('home.partners.localServices.desc', { defaultValue: 'Mehr Sichtbarkeit vor Ort' }),
+            label: t('home.partners.localServices.title', {
+              defaultValue: 'Lokale Services',
+            }),
+            description: t('home.partners.localServices.desc', {
+              defaultValue: 'Mehr Sichtbarkeit vor Ort',
+            }),
             icon: <FaMapMarkerAlt />,
             iconColor: '#E74C3C',
             iconBg: 'rgba(231,76,60,.2)',
+            backgroundImage: lokaleServicesBg,
           },
           {
             group: t('home.groups.services', { defaultValue: 'Leistungen' }),
-            label: t('home.partners.websites.title', { defaultValue: 'Websites' }),
-            description: t('home.partners.websites.desc', { defaultValue: 'Modern, schnell, mobil optimiert' }),
+            label: t('home.partners.websites.title', {
+              defaultValue: 'Websites',
+            }),
+            description: t('home.partners.websites.desc', {
+              defaultValue: 'Modern, schnell, mobil optimiert',
+            }),
             icon: <FaGlobe />,
             iconColor: '#48C9B0',
             iconBg: 'rgba(72,201,176,.2)',
+            backgroundImage: websitesBg,
           },
           {
             group: t('home.groups.services', { defaultValue: 'Leistungen' }),
-            label: t('home.partners.webApps.title', { defaultValue: 'Web-Apps' }),
-            description: t('home.partners.webApps.desc', { defaultValue: 'Tools für Team und Kunden' }),
+            label: t('home.partners.webApps.title', {
+              defaultValue: 'Web-Apps',
+            }),
+            description: t('home.partners.webApps.desc', {
+              defaultValue: 'Tools für Team und Kunden',
+            }),
             icon: <FaCode />,
             iconColor: '#85C1E9',
             iconBg: 'rgba(133,193,233,.2)',
+            backgroundImage: webAppsBg,
           },
           {
             group: t('home.groups.services', { defaultValue: 'Leistungen' }),
-            label: t('home.partners.aiIntegration.title', { defaultValue: 'AI Integration' }),
-            description: t('home.partners.aiIntegration.desc', { defaultValue: 'Chatbot für Fragen und Leads' }),
+            label: t('home.partners.aiIntegration.title', {
+              defaultValue: 'AI Integration',
+            }),
+            description: t('home.partners.aiIntegration.desc', {
+              defaultValue: 'Chatbot für Fragen und Leads',
+            }),
             icon: <FaRobot />,
             iconColor: '#F7DC6F',
             iconBg: 'rgba(247,220,111,.2)',
+            backgroundImage: aiIntegrationBg,
           },
           {
             group: t('home.groups.services', { defaultValue: 'Leistungen' }),
-            label: t('home.partners.socialMedia.title', { defaultValue: 'Social Media' }),
-            description: t('home.partners.socialMedia.desc', { defaultValue: 'Website + Instagram/Meta verbunden' }),
+            label: t('home.partners.socialMedia.title', {
+              defaultValue: 'Social Media',
+            }),
+            description: t('home.partners.socialMedia.desc', {
+              defaultValue: 'Website + Instagram/Meta verbunden',
+            }),
             icon: <FaShareAlt />,
             iconColor: '#5DADE2',
             iconBg: 'rgba(93,173,226,.2)',
+            backgroundImage: socialMediaBg,
           },
           {
             group: t('home.groups.services', { defaultValue: 'Leistungen' }),
-            label: t('home.partners.socialAds.title', { defaultValue: 'Social Ads' }),
-            description: t('home.partners.socialAds.desc', { defaultValue: 'Gezielte Werbung mit messbaren Ergebnissen' }),
+            label: t('home.partners.socialAds.title', {
+              defaultValue: 'Social Ads',
+            }),
+            description: t('home.partners.socialAds.desc', {
+              defaultValue: 'Gezielte Werbung mit messbaren Ergebnissen',
+            }),
             icon: <FaBullhorn />,
             iconColor: '#F1948A',
             iconBg: 'rgba(241,148,138,.2)',
+            backgroundImage: socialAdsBg,
           },
         ],
       },
@@ -148,12 +238,19 @@ const PartnersSection: React.FC = () => {
       variants={fadeInUp}
     >
       <div className='section-header'>
-        <h2>{t('home.partnersSection.title', { defaultValue: 'Vorteile und Einsatzbereiche' })}</h2>
+        <h2>
+          {t('home.partnersSection.title', {
+            defaultValue: 'Vorteile und Einsatzbereiche',
+          })}
+        </h2>
         <p className='section-description'>
-          {t('home.partnersSection.desc', { defaultValue: 'Welche Aufgaben wir abdecken und für welche lokalen Unternehmen wir am häufigsten Websites und Lead-Funnels umsetzen.' })}
+          {t('home.partnersSection.desc', {
+            defaultValue:
+              'Welche Aufgaben wir abdecken und für welche lokalen Unternehmen wir am häufigsten Websites und Lead-Funnels umsetzen.',
+          })}
         </p>
       </div>
-      <Partners rows={rows} />
+      <Partners rows={rows} variant='carousel' />
     </motion.section>
   );
 };

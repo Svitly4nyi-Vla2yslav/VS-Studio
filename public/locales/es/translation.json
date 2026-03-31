@@ -203,28 +203,39 @@
       }
     },
     "projects": {
-      "title": "Proyectos / Casos de estudio",
-      "desc": "Reale Aufgaben und erwartbare Ergebnisse ohne leere Versprechen. Hover auf einen Case für Live-Preview.",
-      "cards": {
-        "c1": {
-          "title": "Website für lokale Anfragen",
-          "description": "Landingpage mit Fokus auf Formular, Anruf und schnellen Mobile-Kontakt.",
-          "goal": "Ziel: mehr Anfragen ohne Budgeterhöhung"
+      "eyebrow": "Proyectos demo seleccionados",
+      "title": "Sitios seleccionados para negocios locales",
+      "desc": "Estos proyectos demo muestran cómo construyo sitios para negocios locales reales: claros, equilibrados y pensados para facilitar un contacto rápido.",
+      "benefitLabel": "Beneficio para el negocio",
+      "cta": {
+        "livePreview": "Abrir demo",
+        "github": "GitHub",
+        "moreOnGithub": "Más proyectos en GitHub"
+      },
+      "tags": {
+        "localLeads": "Solicitudes locales",
+        "services": "Servicios",
+        "fastContact": "Contacto rápido",
+        "booking": "Reservas",
+        "faq": "Preguntas frecuentes",
+        "onePageWebsite": "Sitio de una sola página",
+        "trust": "Confianza"
+      },
+      "items": {
+        "handwerk": {
+          "title": "Sitio para servicios de calefacción, fontanería y bombas de calor",
+          "description": "Un sitio de servicios claro para una empresa local. El visitante ve de inmediato qué servicios ofreces, dónde trabajas y cómo puede contactarte rápido.",
+          "benefit": "Ayuda a recibir más rápido llamadas y solicitudes de personas que ya están buscando un profesional."
         },
-        "c2": {
-          "title": "Landingpage für Ads",
-          "description": "Separate Seite mit Tracking für Meta- und Google-Kampagnen.",
-          "goal": "Erwarteter Effekt: qualifiziertere Leads aus Werbung"
+        "autoWorkshop": {
+          "title": "Sitio para un taller mecánico",
+          "description": "Una página de servicios clara con servicios, preguntas frecuentes y contacto rápido. Sin sobrecarga y sin clics innecesarios.",
+          "benefit": "Ayuda a convertir visitantes en reservas y consultas en lugar de perderlos después de la primera visita."
         },
-        "c3": {
-          "title": "Website für Praxis",
-          "description": "Klare Leistungsstruktur, FAQ und Online-Termin-Flow.",
-          "goal": "Ziel: mehr Terminbuchungen mit weniger Rückfragen"
-        },
-        "c4": {
-          "title": "Dashboard für Leads",
-          "description": "Internes Interface zur Lead-Bearbeitung und Statuskontrolle.",
-          "goal": "Erwarteter Effekt: schnellere Bearbeitung von Anfragen"
+        "singlePageBeautySalon": {
+          "title": "Sitio para un salón de belleza",
+          "description": "Un sitio de una sola página, visualmente fuerte, para presentar servicios, generar confianza y facilitar reservas rápidas.",
+          "benefit": "Ayuda a generar confianza desde la primera pantalla y a aumentar el número de reservas."
         }
       }
     },

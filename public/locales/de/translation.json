@@ -203,28 +203,39 @@
       }
     },
     "projects": {
-      "title": "Projekte / Case Studies",
-      "desc": "Reale Aufgaben und erwartbare Ergebnisse ohne leere Versprechen. Hover auf einen Case für Live-Preview.",
-      "cards": {
-        "c1": {
-          "title": "Website für lokale Anfragen",
-          "description": "Landingpage mit Fokus auf Formular, Anruf und schnellen Mobile-Kontakt.",
-          "goal": "Ziel: mehr Anfragen ohne Budgeterhöhung"
+      "eyebrow": "Ausgewählte Demo-Projekte",
+      "title": "Ausgewählte Websites für lokale Unternehmen",
+      "desc": "Diese ausgewählten Demos zeigen, wie ich Websites für echte lokale Unternehmen aufbaue: klar strukturiert, vertrauenswürdig und auf schnelle Kontaktaufnahme ausgerichtet.",
+      "benefitLabel": "Geschäftlicher Nutzen",
+      "cta": {
+        "livePreview": "Demo ansehen",
+        "github": "GitHub",
+        "moreOnGithub": "Mehr Projekte auf GitHub"
+      },
+      "tags": {
+        "localLeads": "Lokale Anfragen",
+        "services": "Leistungen",
+        "fastContact": "Schneller Kontakt",
+        "booking": "Terminbuchung",
+        "faq": "Häufige Fragen",
+        "onePageWebsite": "Einseitige Website",
+        "trust": "Vertrauen"
+      },
+      "items": {
+        "handwerk": {
+          "title": "Website für Heizung, Sanitär und Wärmepumpen",
+          "description": "Eine klare Service-Website für einen lokalen Fachbetrieb. Besucher sehen sofort, welche Leistungen angeboten werden, wo der Betrieb arbeitet und wie sie schnell Kontakt aufnehmen können.",
+          "benefit": "Hilft dabei, schneller Anrufe und Anfragen von Menschen zu bekommen, die bereits einen Handwerker suchen."
         },
-        "c2": {
-          "title": "Landingpage für Ads",
-          "description": "Separate Seite mit Tracking für Meta- und Google-Kampagnen.",
-          "goal": "Erwarteter Effekt: qualifiziertere Leads aus Werbung"
+        "autoWorkshop": {
+          "title": "Website für eine Auto-Werkstatt",
+          "description": "Eine klare Service-Seite mit Leistungen, häufigen Fragen und schnellem Kontakt. Ohne Überladung und ohne unnötige Klicks.",
+          "benefit": "Hilft dabei, Besucher in Buchungen und Anfragen zu verwandeln statt sie nach dem ersten Besuch zu verlieren."
         },
-        "c3": {
-          "title": "Website für Praxis",
-          "description": "Klare Leistungsstruktur, FAQ und Online-Termin-Flow.",
-          "goal": "Ziel: mehr Terminbuchungen mit weniger Rückfragen"
-        },
-        "c4": {
-          "title": "Dashboard für Leads",
-          "description": "Internes Interface zur Lead-Bearbeitung und Statuskontrolle.",
-          "goal": "Erwarteter Effekt: schnellere Bearbeitung von Anfragen"
+        "singlePageBeautySalon": {
+          "title": "Website für ein Kosmetikstudio",
+          "description": "Eine visuell starke einseitige Website, um Leistungen zu präsentieren, Vertrauen aufzubauen und schnelle Terminbuchungen zu fördern.",
+          "benefit": "Hilft dabei, schon auf dem ersten Bildschirm Vertrauen zu schaffen und mehr Buchungen auszulösen."
         }
       }
     },

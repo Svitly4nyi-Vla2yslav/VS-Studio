@@ -203,28 +203,39 @@
       }
     },
     "projects": {
-      "title": "Progetti / Case study",
-      "desc": "Reale Aufgaben und erwartbare Ergebnisse ohne leere Versprechen. Hover auf einen Case für Live-Preview.",
-      "cards": {
-        "c1": {
-          "title": "Website für lokale Anfragen",
-          "description": "Landingpage mit Fokus auf Formular, Anruf und schnellen Mobile-Kontakt.",
-          "goal": "Ziel: mehr Anfragen ohne Budgeterhöhung"
+      "eyebrow": "Progetti demo selezionati",
+      "title": "Siti selezionati per attività locali",
+      "desc": "Questi progetti demo mostrano come realizzo siti per vere attività locali: chiari, curati e orientati a facilitare il contatto rapido.",
+      "benefitLabel": "Vantaggio per il business",
+      "cta": {
+        "livePreview": "Apri demo",
+        "github": "GitHub",
+        "moreOnGithub": "Altri progetti su GitHub"
+      },
+      "tags": {
+        "localLeads": "Contatti locali",
+        "services": "Servizi",
+        "fastContact": "Contatto rapido",
+        "booking": "Prenotazione",
+        "faq": "Domande frequenti",
+        "onePageWebsite": "Sito a pagina unica",
+        "trust": "Fiducia"
+      },
+      "items": {
+        "handwerk": {
+          "title": "Sito per servizi di riscaldamento, idraulica e pompe di calore",
+          "description": "Un sito servizi chiaro per un’attività locale. Il visitatore vede subito quali servizi offri, dove lavori e come contattarti rapidamente.",
+          "benefit": "Aiuta a ricevere più velocemente chiamate e richieste da persone che stanno già cercando un tecnico."
         },
-        "c2": {
-          "title": "Landingpage für Ads",
-          "description": "Separate Seite mit Tracking für Meta- und Google-Kampagnen.",
-          "goal": "Erwarteter Effekt: qualifiziertere Leads aus Werbung"
+        "autoWorkshop": {
+          "title": "Sito per un’officina auto",
+          "description": "Una pagina servizi chiara con offerte, domande frequenti e contatto rapido. Senza sovraccarico e senza clic inutili.",
+          "benefit": "Aiuta a trasformare i visitatori in prenotazioni e richieste invece di perderli dopo la prima visita."
         },
-        "c3": {
-          "title": "Website für Praxis",
-          "description": "Klare Leistungsstruktur, FAQ und Online-Termin-Flow.",
-          "goal": "Ziel: mehr Terminbuchungen mit weniger Rückfragen"
-        },
-        "c4": {
-          "title": "Dashboard für Leads",
-          "description": "Internes Interface zur Lead-Bearbeitung und Statuskontrolle.",
-          "goal": "Erwarteter Effekt: schnellere Bearbeitung von Anfragen"
+        "singlePageBeautySalon": {
+          "title": "Sito per un salone di bellezza",
+          "description": "Un sito a pagina unica, forte dal punto di vista visivo, per presentare servizi, fiducia e prenotazioni rapide.",
+          "benefit": "Aiuta a creare fiducia fin dal primo schermo e ad aumentare il numero di prenotazioni."
         }
       }
     },

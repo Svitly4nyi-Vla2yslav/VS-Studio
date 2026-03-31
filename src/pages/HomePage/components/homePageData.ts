@@ -1,8 +1,3 @@
-import previewVideo from '../../../assets/video/hero-main.webm';
-import poster1 from '../../../assets/icons/cases/photo_2025-09-16_22-57-47.jpg';
-import poster2 from '../../../assets/icons/cases/photo_2025-09-16_22-58-19.jpg';
-import poster3 from '../../../assets/icons/cases/photo_2025-09-16_22-58-10.jpg';
-import poster4 from '../../../assets/icons/cases/photo_2025-09-16_22-58-06.jpg';
 import processCall from '../../../assets/process/01-call.webp';
 import processPrototype from '../../../assets/process/02-prototype.webp';
 import processDev from '../../../assets/process/03-dev.webp';
@@ -19,13 +14,6 @@ export const processSteps = [
   { step: '02', image: processPrototype },
   { step: '03', image: processDev },
   { step: '04', image: processLaunch },
-] as const;
-
-export const projectCards = [
-  { id: 'c1', tags: ['React', 'TypeScript', 'SEO', 'GA4'], poster: poster1, video: previewVideo },
-  { id: 'c2', tags: ['Landing', 'Ads', 'Tracking'], poster: poster2, video: previewVideo },
-  { id: 'c3', tags: ['Forms', 'Analytics', 'UX'], poster: poster3, video: previewVideo },
-  { id: 'c4', tags: ['Firebase', 'React', 'Automation'], poster: poster4, video: previewVideo },
 ] as const;
 
 export const trustDeliverables = ['d1', 'd2', 'd3', 'd4'] as const;
