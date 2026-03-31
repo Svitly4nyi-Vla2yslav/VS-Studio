@@ -18,7 +18,7 @@ const FaqSection: React.FC = () => {
     { to: '/services', label: t('header.services', { defaultValue: 'Services' }) },
     { to: '/preise', label: t('header.preise', { defaultValue: 'Preise' }) },
     { to: '/referenzen', label: t('header.referenzen', { defaultValue: 'Referenzen' }) },
-    { to: '/ueber-uns', label: t('header.ueberUns', { defaultValue: 'Ueber uns' }) },
+    { to: '/ueber-uns', label: t('header.ueberUns', { defaultValue: 'Über uns' }) },
     { to: '/kontakt', label: t('header.kontakt', { defaultValue: 'Kontakt' }) },
   ];
 

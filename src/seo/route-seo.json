@@ -117,7 +117,7 @@
     },
     {
       "path": "/ueber-uns",
-      "name": "Ueber uns",
+      "name": "Über uns",
       "title": "Ueber VS Web Studio | Webagentur aus Hildesheim",
       "description": "VS Web Studio aus Hildesheim entwickelt Websites und Lead-Systeme für lokale Unternehmen in Niedersachsen und ganz Deutschland.",
       "keywords": "webagentur hildesheim, webdesign niedersachsen, ueber vs web studio, lokale agentur deutschland",
@@ -126,7 +126,7 @@
       "priority": 0.86,
       "indexable": true,
       "sitemap": true,
-      "breadcrumb": ["Startseite", "Ueber uns"]
+      "breadcrumb": ["Startseite", "Über uns"]
     },
     {
       "path": "/kontakt",

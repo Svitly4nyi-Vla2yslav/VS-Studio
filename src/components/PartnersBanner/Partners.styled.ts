@@ -80,9 +80,9 @@ export const Badge = styled.article`
     inset 0 1px 0 rgba(255, 255, 255, 0.06),
     0 16px 40px rgba(0, 0, 0, 0.28);
   transition:
-    transform 240ms ease,
-    border-color 240ms ease,
-    box-shadow 240ms ease;
+    transform 520ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 520ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 520ms cubic-bezier(0.22, 1, 0.36, 1);
 
   &::before {
     content: '';
@@ -133,7 +133,9 @@ export const CardBg = styled.div<{ $backgroundImage?: string }>`
   background-position: center;
   background-repeat: no-repeat;
   transform: scale(1);
-  transition: transform 520ms ease, filter 520ms ease;
+  transition:
+    transform 780ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 780ms cubic-bezier(0.22, 1, 0.36, 1);
   filter: saturate(0.96) brightness(0.94);
 `;
 
@@ -151,7 +153,7 @@ export const CardOverlay = styled.div`
     ),
     linear-gradient(180deg, rgba(255, 214, 148, 0.05), transparent 24%);
   opacity: 1;
-  transition: opacity 320ms ease;
+  transition: opacity 560ms cubic-bezier(0.22, 1, 0.36, 1);
   pointer-events: none;
 `;
 
@@ -163,7 +165,7 @@ export const CardContent = styled.div`
   flex-direction: column;
   min-height: 100%;
   padding: 18px;
-  transition: transform 320ms ease;
+  transition: transform 560ms cubic-bezier(0.22, 1, 0.36, 1);
 
   @media (max-width: 767px) {
     padding: 16px;
@@ -194,7 +196,9 @@ export const BadgeIcon = styled.span`
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.18);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
-  transition: transform 240ms ease, box-shadow 240ms ease;
+  transition:
+    transform 520ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 520ms cubic-bezier(0.22, 1, 0.36, 1);
 `;
 
 export const BadgeGroup = styled.span`
