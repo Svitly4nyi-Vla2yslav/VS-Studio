@@ -203,28 +203,39 @@
       }
     },
     "projects": {
-      "title": "Proje / Case study",
-      "desc": "Reale Aufgaben und erwartbare Ergebnisse ohne leere Versprechen. Hover auf einen Case für Live-Preview.",
-      "cards": {
-        "c1": {
-          "title": "Malperek ji bo daxwazên herêmî",
-          "description": "Landingpage mit Fokus auf Formular, Anruf und schnellen Mobile-Kontakt.",
-          "goal": "Armanc: daxwazên zêdetir bê zêdekirina budceyê"
+      "eyebrow": "Projeyên demo yên hilbijartî",
+      "title": "Malperên hilbijartî ji bo karsaziyên herêmî",
+      "desc": "Van projeyên demo nîşan didin ku ez çawa ji bo karsaziyên herêmî yên rastîn malper ava dikim: zelal, xweşbîn û bi armanca peywendiya zû.",
+      "benefitLabel": "Feydeya karsaziyê",
+      "cta": {
+        "livePreview": "Demoyê veke",
+        "github": "GitHub",
+        "moreOnGithub": "Projeyên din li ser GitHub"
+      },
+      "tags": {
+        "localLeads": "Daxwazên herêmî",
+        "services": "Xizmet",
+        "fastContact": "Peywendiya bilez",
+        "booking": "Rezervasyon",
+        "faq": "Pirsên gelemperî",
+        "onePageWebsite": "Malpera yek-rûpel",
+        "trust": "Bawerî"
+      },
+      "items": {
+        "handwerk": {
+          "title": "Malper ji bo xizmetên germkirin, avahî û pompayên germê",
+          "description": "Malperek xizmetê ya zelal ji bo şirketa herêmî. Serdanker di demeke kurt de dibîne ku hûn çi xizmet dikin, li ku derê dixebitin û çawa dikare zû bi we re têkeve peywendiyê.",
+          "benefit": "Alîkarî dike ku zûtir telefon û daxwazên formê ji kesên ku jixwe li pey pispor in bistînin."
         },
-        "c2": {
-          "title": "Landingpage für Ads",
-          "description": "Separate Seite mit Tracking für Meta- und Google-Kampagnen.",
-          "goal": "Erwarteter Effekt: qualifiziertere Leads aus Werbung"
+        "autoWorkshop": {
+          "title": "Malper ji bo tamîrxaneya otomobîlan",
+          "description": "Rûpelek xizmetê ya zelal bi xizmet, pirsên gelemperî û peywendiya bilez. Ne pir tijî ye û ne jî hewceyê klikên zêde heye.",
+          "benefit": "Alîkarî dike ku serdanker bibin rezervasyon û daxwaz, ne ku piştî serdana yekem winda bibin."
         },
-        "c3": {
-          "title": "Malperek ji bo klînîkê",
-          "description": "Klare Leistungsstruktur, FAQ und Online-Termin-Flow.",
-          "goal": "Ziel: mehr Terminbuchungen mit weniger Rückfragen"
-        },
-        "c4": {
-          "title": "Dashboard für Leads",
-          "description": "Internes Interface zur Lead-Bearbeitung und Statuskontrolle.",
-          "goal": "Encama hêvîkirî: rêvebirina zûtir a daxwazan"
+        "singlePageBeautySalon": {
+          "title": "Malper ji bo salonê bedewiyê",
+          "description": "Malperek yek-rûpel a bi dîtina bihêz ji bo pêşkêşandina xizmet, avakirina baweriyê û rezervasyona bilez a mişteriyan.",
+          "benefit": "Alîkarî dike ku ji yekem ekranê bawerî were çêkirin û hejmara rezervasyonan zêde bibe."
         }
       }
     },

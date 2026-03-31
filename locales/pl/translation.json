@@ -206,28 +206,39 @@
       }
     },
     "projects": {
-      "title": "Projekty / case studies",
-      "desc": "Realne zadania i przewidywalne efekty bez pustych obietnic. Najedź na case, aby zobaczyć live preview.",
-      "cards": {
-        "c1": {
-          "title": "Strona pod lokalne zapytania",
-          "description": "Landing page z naciskiem na formularz, telefon i szybki kontakt mobilny.",
-          "goal": "Cel: więcej zapytań bez zwiększania budżetu"
+      "eyebrow": "Wybrane projekty demo",
+      "title": "Wybrane strony dla lokalnych firm",
+      "desc": "Te projekty demo pokazują, jak tworzę strony dla prawdziwych lokalnych firm: jasno, estetycznie i z naciskiem na szybki kontakt.",
+      "benefitLabel": "Korzyść biznesowa",
+      "cta": {
+        "livePreview": "Otwórz demo",
+        "github": "GitHub",
+        "moreOnGithub": "Więcej projektów na GitHub"
+      },
+      "tags": {
+        "localLeads": "Lokalne zapytania",
+        "services": "Usługi",
+        "fastContact": "Szybki kontakt",
+        "booking": "Rezerwacja",
+        "faq": "Najczęstsze pytania",
+        "onePageWebsite": "Strona jednostronicowa",
+        "trust": "Zaufanie"
+      },
+      "items": {
+        "handwerk": {
+          "title": "Strona dla usług ogrzewania, hydrauliki i pomp ciepła",
+          "description": "Przejrzysta strona usługowa dla lokalnej firmy. Odwiedzający od razu widzi, jakie usługi oferujesz, gdzie działasz i jak szybko może się z Tobą skontaktować.",
+          "benefit": "Pomaga szybciej otrzymywać telefony i formularze od osób, które już szukają fachowca."
         },
-        "c2": {
-          "title": "Landing page pod reklamy",
-          "description": "Osobna strona z trackingiem dla kampanii Meta i Google.",
-          "goal": "Oczekiwany efekt: lepiej kwalifikowane leady z reklam"
+        "autoWorkshop": {
+          "title": "Strona dla warsztatu samochodowego",
+          "description": "Czytelna strona usługowa z ofertą, najczęstszymi pytaniami i szybkim kontaktem. Bez przeładowania i bez zbędnych kliknięć.",
+          "benefit": "Pomaga zamieniać odwiedzających w rezerwacje i zapytania zamiast tracić ich po pierwszej wizycie."
         },
-        "c3": {
-          "title": "Strona dla gabinetu",
-          "description": "Jasna struktura usług, FAQ i online flow do umawiania wizyt.",
-          "goal": "Cel: więcej rezerwacji przy mniejszej liczbie dodatkowych pytań"
-        },
-        "c4": {
-          "title": "Dashboard leadów",
-          "description": "Wewnętrzny interfejs do obsługi leadów i kontroli statusów.",
-          "goal": "Oczekiwany efekt: szybsza obsługa zapytań"
+        "singlePageBeautySalon": {
+          "title": "Strona dla salonu urody",
+          "description": "Mocna wizualnie strona jednostronicowa do prezentacji usług, budowania zaufania i szybkiego umawiania klientów.",
+          "benefit": "Pomaga budować zaufanie od pierwszego ekranu i zwiększać liczbę rezerwacji."
         }
       }
     },

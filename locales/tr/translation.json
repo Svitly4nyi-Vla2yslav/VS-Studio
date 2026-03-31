@@ -1,4 +1,4 @@
-﻿{
+{
   "languages": {
     "de": "Deutsch",
     "uk": "Українська",
@@ -206,28 +206,39 @@
       }
     },
     "projects": {
-      "title": "Projeler / Vaka calismalari",
-      "desc": "Boş vaatler olmadan gerçek işler ve beklenebilir sonuçlar. Canlı ön izleme için bir vakayı seçin.",
-      "cards": {
-        "c1": {
-          "title": "Yerel talepler için web sitesi",
-          "description": "Form, arama ve hızlı mobil iletişim odaklı landing page.",
-          "goal": "Hedef: bütçeyi artırmadan daha fazla talep"
+      "eyebrow": "Secili demo projeler",
+      "title": "Yerel isletmeler icin secili siteler",
+      "desc": "Bu demo projeler, gercek yerel isletmeler icin nasil web siteleri kurdugumu gosterir: acik, dengeli ve hizli iletisim icin tasarlanmis.",
+      "benefitLabel": "Is faydasi",
+      "cta": {
+        "livePreview": "Demoyu ac",
+        "github": "GitHub",
+        "moreOnGithub": "GitHub'da daha fazla proje"
+      },
+      "tags": {
+        "localLeads": "Yerel talepler",
+        "services": "Hizmetler",
+        "fastContact": "Hizli iletisim",
+        "booking": "Randevu",
+        "faq": "Sik sorulanlar",
+        "onePageWebsite": "Tek sayfali site",
+        "trust": "Guven"
+      },
+      "items": {
+        "handwerk": {
+          "title": "Isitma, tesisat ve isi pompalari icin web sitesi",
+          "description": "Yerel bir sirket icin acik bir hizmet sitesi. Ziyaretci hangi hizmetleri sundugunuzu, hangi bolgede calistiginizi ve nasil hizli iletisim kuracagini hemen gorur.",
+          "benefit": "Zaten usta arayan kisilerden daha hizli arama ve talep almaya yardim eder."
         },
-        "c2": {
-          "title": "Reklamlar için landing page",
-          "description": "Meta ve Google kampanyaları için tracking içeren ayrı sayfa.",
-          "goal": "Beklenen etki: reklamlardan daha nitelikli lead'ler"
+        "autoWorkshop": {
+          "title": "Oto servis icin web sitesi",
+          "description": "Hizmetler, sik sorulan sorular ve hizli iletisim iceren net bir servis sayfasi. Ne kalabalik ne de gereksiz tiklama var.",
+          "benefit": "Ziyaretcileri ilk ziyaret sonrasinda kaybetmek yerine randevu ve iletisime donusturmeye yardim eder."
         },
-        "c3": {
-          "title": "Klinik için web sitesi",
-          "description": "Net hizmet yapısı, SSS bölümü ve online randevu akışı.",
-          "goal": "Hedef: daha az geri soruyla daha fazla randevu"
-        },
-        "c4": {
-          "title": "Lead yönetim paneli",
-          "description": "Lead işleme ve durum kontrolü için iç yönetim arayüzü.",
-          "goal": "Beklenen etki: taleplerin daha hızlı işlenmesi"
+        "singlePageBeautySalon": {
+          "title": "Guzellik salonu icin web sitesi",
+          "description": "Hizmetleri tanitmak, guven olusturmak ve hizli randevu almak icin gorsel olarak guclu tek sayfali bir site.",
+          "benefit": "Ilk ekrandan itibaren guven olusturmaya ve randevu sayisini artirmaya yardim eder."
         }
       }
     },
