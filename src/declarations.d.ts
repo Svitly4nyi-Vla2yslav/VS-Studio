@@ -58,5 +58,7 @@ interface Window {
 }
 // ...existing code...
 declare module "modern-normalize/modern-normalize.css";
+declare module "swiper/css";
+declare module "swiper/css/*";
 declare module "*.css";
 // ...existing code...
