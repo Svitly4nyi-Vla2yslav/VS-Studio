@@ -354,13 +354,13 @@ const Contact: React.FC = () => {
               </ResponseNote>
 
               <ContactList>
-                <ContactItemLink href={mapsHref} target='_blank' rel='noreferrer'>
+                {/* <ContactItemLink href={mapsHref} target='_blank' rel='noreferrer'>
                   <FaMapMarkerAlt />
                   <div>
                     <strong>Ehrlicherstr. 52, 31135 Hildesheim</strong>
                     <span>{t('contact.contactMeta.location', { defaultValue: copy.contactMeta.location })}</span>
                   </div>
-                </ContactItemLink>
+                </ContactItemLink> */}
 
                 <ContactItemLink href='mailto:anfrage@vs-web-studio.de'>
                   <FaEnvelope />
