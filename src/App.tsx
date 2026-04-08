@@ -1,22 +1,25 @@
-﻿import { Navigate, Route, Routes } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from './components/Layout/Layout';
-import Home from './pages/HomePage/HomePage';
-import ServicesPage from './pages/ServicePages/Service';
-import PricingPage from './pages/Pricing/Pricing';
-import ReferencesPage from './pages/References/References';
+import { MaintenanceGate } from './components/MaintenanceGate';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Contact from './pages/Contact/Contact';
+import Home from './pages/HomePage/HomePage';
 import BlogPage from './pages/Info/Info';
-import Impressum from './pages/Legal/Impressum';
-import Datenschutz from './pages/Legal/Datenschutz';
 import AGB from './pages/Legal/AGB';
 import Cookies from './pages/Legal/Cookies';
+import Datenschutz from './pages/Legal/Datenschutz';
+import Impressum from './pages/Legal/Impressum';
 import HandwerkerLanding from './pages/Niche/Handwerker';
 import PraxisLanding from './pages/Niche/Praxis';
 import WerkstattLanding from './pages/Niche/Werkstatt';
 import NotFound from './pages/NotFound/NotFound';
-import { MaintenanceGate } from './components/MaintenanceGate';
+import PricingPage from './pages/Pricing/Pricing';
+import ReferencesPage from './pages/References/References';
+import ServicesPage from './pages/ServicePages/Service';
 import './site.css';
+
+const AIAssistantDemoPage = lazy(() => import('./pages/AIAssistantDemo'));
 
 export const App: React.FC = () => {
   return (
@@ -30,6 +33,14 @@ export const App: React.FC = () => {
           <Route path='ueber-uns' element={<AboutUs />} />
           <Route path='kontakt' element={<Contact />} />
           <Route path='blog' element={<BlogPage />} />
+          <Route
+            path='ki-assistent'
+            element={
+              <Suspense fallback={null}>
+                <AIAssistantDemoPage />
+              </Suspense>
+            }
+          />
 
           <Route path='handwerker' element={<HandwerkerLanding />} />
           <Route path='praxis' element={<PraxisLanding />} />

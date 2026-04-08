@@ -8,7 +8,6 @@ import {
   FaCheckCircle,
   FaCommentDots,
   FaEnvelope,
-  FaMapMarkerAlt,
   FaPhone,
   FaRegClock,
   FaUser,
@@ -94,9 +93,6 @@ const copy = {
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const contactDevFunctionEndpoint = 'http://localhost:8888/.netlify/functions/contact';
 const contactDevEndpoint = 'http://localhost:8888/api/contact';
-const mapsAddress = 'Ehrlicherstr. 52, 31135 Hildesheim, Germany';
-const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapsAddress)}`;
-
 const Contact: React.FC = () => {
   const { t } = useTranslation();
   const location = useLocation();

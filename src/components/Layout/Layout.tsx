@@ -1,10 +1,11 @@
-﻿import { Outlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { AnimatePresence, easeOut } from 'framer-motion';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import CookieConsentBanner from '../CookieConsentBanner';
+import { Outlet, useLocation } from 'react-router-dom';
+import { FloatingAssistantWidget } from '../../features/ai-assistant/components/FloatingAssistantWidget';
 import SeoHead from '../../seo/SeoHead';
+import CookieConsentBanner from '../CookieConsentBanner';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 import { MainContent, SiteShell } from './styles/Layout.styles';
 
 export const Layout: React.FC = () => {
@@ -30,6 +31,7 @@ export const Layout: React.FC = () => {
         </MainContent>
       </AnimatePresence>
       <Footer />
+      <FloatingAssistantWidget />
       <CookieConsentBanner />
     </SiteShell>
   );
