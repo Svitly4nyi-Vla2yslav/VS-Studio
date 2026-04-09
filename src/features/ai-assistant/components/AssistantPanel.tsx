@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { ASSISTANT_QUICK_REPLIES } from '../constants';
 import type { useAssistant } from '../hooks/useAssistant';
 import { AssistantComposer } from './AssistantComposer';
@@ -54,6 +54,20 @@ const Shell = styled(motion.aside)<{ $embedded: boolean }>`
   }
 `;
 
+const shimmer = keyframes`
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+`;
+
 const Header = styled.div`
   display: flex;
   align-items: flex-start;
@@ -66,23 +80,89 @@ const Headline = styled.div`
   gap: 6px;
 `;
 
+const BrandBadge = styled.div`
+  position: relative;
+  display: inline-grid;
+  gap: 4px;
+  padding: 12px 16px 12px 14px;
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 16% 22%, rgba(255, 206, 122, 0.2), transparent 28%),
+    radial-gradient(circle at 88% 18%, rgba(103, 163, 255, 0.2), transparent 30%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
+    linear-gradient(130deg, rgba(33, 42, 64, 0.86), rgba(15, 20, 32, 0.92) 42%, rgba(18, 28, 48, 0.94));
+  border: 1px solid rgba(255, 227, 174, 0.12);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 -1px 0 rgba(105, 162, 255, 0.08),
+    0 20px 50px rgba(5, 8, 18, 0.36),
+    0 0 26px rgba(255, 182, 84, 0.14),
+    0 0 38px rgba(90, 142, 255, 0.14);
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -30% -20%;
+    background: linear-gradient(
+      115deg,
+      rgba(255, 177, 74, 0) 14%,
+      rgba(255, 227, 167, 0.26) 38%,
+      rgba(144, 191, 255, 0.2) 54%,
+      rgba(255, 194, 106, 0.16) 66%,
+      rgba(255, 177, 74, 0) 82%
+    );
+    background-size: 220% 220%;
+    animation: ${shimmer} 9s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 1px;
+    border-radius: 21px;
+    border: 1px solid rgba(129, 178, 255, 0.08);
+    box-shadow:
+      inset 0 0 18px rgba(92, 144, 255, 0.08),
+      inset 0 0 22px rgba(255, 188, 92, 0.05);
+    pointer-events: none;
+  }
+`;
+
 const TitleRow = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
+  z-index: 1;
 `;
 
 const Title = styled.h2`
   margin: 0;
   font-size: 22px;
   line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: transparent;
+  background-image: linear-gradient(135deg, #fff8e7 0%, #ffe0a2 24%, #fff7e2 42%, #93bbff 66%, #fff1c9 100%);
+  background-size: 240% 240%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: ${shimmer} 8s ease-in-out infinite;
+  text-shadow:
+    0 0 18px rgba(255, 199, 108, 0.18),
+    0 0 26px rgba(103, 163, 255, 0.12);
 `;
 
 const Subtitle = styled.p`
   margin: 0;
-  color: rgba(255, 255, 255, 0.68);
-  font-size: 13px;
+  position: relative;
+  z-index: 1;
+  color: rgba(255, 243, 224, 0.76);
+  font-size: 12px;
+  font-weight: 600;
   line-height: 1.5;
+  text-shadow: 0 0 16px rgba(255, 188, 92, 0.08);
 `;
 
 const TopLine = styled.div`
@@ -177,11 +257,13 @@ export const AssistantPanel: React.FC<AssistantPanelProps> = ({ assistant, open 
     >
       <Header>
         <Headline>
-          <TitleRow>
-            <AssistantOrb size={22} />
-            <Title>{copy.title}</Title>
-          </TitleRow>
-          <Subtitle>{copy.subtitle}</Subtitle>
+          <BrandBadge>
+            <TitleRow>
+              <AssistantOrb size={22} />
+              <Title>{copy.title}</Title>
+            </TitleRow>
+            <Subtitle>{copy.subtitle}</Subtitle>
+          </BrandBadge>
         </Headline>
         {!embedded ? <CloseButton type='button' onClick={onClose} aria-label='Close assistant'>×</CloseButton> : null}
       </Header>

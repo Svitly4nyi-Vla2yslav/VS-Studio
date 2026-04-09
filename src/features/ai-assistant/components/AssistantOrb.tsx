@@ -11,11 +11,12 @@ const OrbShell = styled(motion.div)<{ $size: number }>`
   height: ${({ $size }) => `${$size}px`};
   border-radius: 50%;
   background:
-    radial-gradient(circle at 30% 30%, rgba(255, 232, 190, 0.95), rgba(255, 177, 74, 0.68) 32%, rgba(72, 129, 255, 0.35) 72%, rgba(12, 16, 28, 0.08) 100%);
+    radial-gradient(circle at 32% 28%, rgba(255, 247, 226, 0.98), rgba(255, 208, 124, 0.92) 20%, rgba(255, 171, 64, 0.68) 38%, rgba(96, 155, 255, 0.46) 72%, rgba(10, 16, 34, 0.12) 100%);
   box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 0 0 1px rgba(255, 236, 197, 0.14),
     0 18px 42px rgba(6, 10, 20, 0.4),
-    0 0 48px rgba(255, 177, 74, 0.28);
+    0 0 30px rgba(255, 183, 77, 0.28),
+    0 0 42px rgba(94, 152, 255, 0.18);
 
   &::before,
   &::after {
@@ -27,13 +28,13 @@ const OrbShell = styled(motion.div)<{ $size: number }>`
   }
 
   &::before {
-    border: 1px solid rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 247, 226, 0.22);
     filter: blur(1px);
   }
 
   &::after {
     inset: 20%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.56), rgba(255, 255, 255, 0));
+    background: radial-gradient(circle, rgba(255, 248, 231, 0.64), rgba(255, 255, 255, 0));
     filter: blur(10px);
   }
 
@@ -41,7 +42,10 @@ const OrbShell = styled(motion.div)<{ $size: number }>`
     position: absolute;
     inset: -18%;
     border-radius: 50%;
-    border: 1px solid rgba(255, 196, 119, 0.18);
+    border: 1px solid rgba(255, 206, 127, 0.2);
+    box-shadow:
+      0 0 16px rgba(255, 184, 72, 0.14),
+      0 0 24px rgba(85, 147, 255, 0.12);
     pointer-events: none;
   }
 `;
