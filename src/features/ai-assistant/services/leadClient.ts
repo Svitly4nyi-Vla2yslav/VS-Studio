@@ -32,7 +32,12 @@ export const leadClient = {
 
       if (response.status !== 404) {
         const errorText = await response.text();
-        throw new Error(errorText || `Lead request failed with status ${response.status}`);
+        try {
+          const parsed = JSON.parse(errorText) as { error?: string };
+          throw new Error(parsed.error || `Lead request failed with status ${response.status}`);
+        } catch {
+          throw new Error(errorText || `Lead request failed with status ${response.status}`);
+        }
       }
     }
 

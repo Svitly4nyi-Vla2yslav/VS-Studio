@@ -147,6 +147,20 @@ export const handler = async (event: HandlerEvent): Promise<HandlerResponse> => 
     });
   } catch (error) {
     console.error('booking-request failed.', error);
-    return jsonResponse(400, { ok: false, error: 'Invalid booking payload' });
+    if (error instanceof z.ZodError) {
+      return jsonResponse(400, {
+        ok: false,
+        error: error.issues[0]?.message || 'Invalid booking payload',
+        issues: error.issues.map(issue => ({
+          path: issue.path.join('.'),
+          message: issue.message,
+        })),
+      });
+    }
+
+    return jsonResponse(500, {
+      ok: false,
+      error: error instanceof Error ? error.message : 'Booking request failed',
+    });
   }
 };

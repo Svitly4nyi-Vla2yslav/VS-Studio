@@ -77,6 +77,20 @@ export const handler = async (event: HandlerEvent): Promise<HandlerResponse> => 
     return jsonResponse(200, { ok: true, storageProvider: storage.provider, id: storage.id ?? null });
   } catch (error) {
     console.error('create-lead failed.', error);
-    return jsonResponse(400, { ok: false, error: 'Invalid lead payload' });
+    if (error instanceof z.ZodError) {
+      return jsonResponse(400, {
+        ok: false,
+        error: error.issues[0]?.message || 'Invalid lead payload',
+        issues: error.issues.map(issue => ({
+          path: issue.path.join('.'),
+          message: issue.message,
+        })),
+      });
+    }
+
+    return jsonResponse(500, {
+      ok: false,
+      error: error instanceof Error ? error.message : 'Lead request failed',
+    });
   }
 };
