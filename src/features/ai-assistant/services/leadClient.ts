@@ -11,13 +11,20 @@ const resolveLeadEndpoints = () => {
 export const leadClient = {
   async createLead(payload: AssistantLeadPayload) {
     const body = JSON.stringify(payload);
+    let lastNetworkError: Error | null = null;
 
     for (const endpoint of resolveLeadEndpoints()) {
-      const response = await fetch(endpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body,
-      });
+      let response: Response;
+      try {
+        response = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body,
+        });
+      } catch (error) {
+        lastNetworkError = error instanceof Error ? error : new Error('Failed to fetch lead endpoint');
+        continue;
+      }
 
       if (response.ok) {
         return response.json();
@@ -29,6 +36,6 @@ export const leadClient = {
       }
     }
 
-    throw new Error('Lead endpoint unavailable');
+    throw lastNetworkError ?? new Error('Lead endpoint unavailable');
   },
 };

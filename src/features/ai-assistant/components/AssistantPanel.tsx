@@ -23,11 +23,11 @@ const Shell = styled(motion.aside)<{ $embedded: boolean }>`
   position: ${({ $embedded }) => ($embedded ? 'relative' : 'fixed')};
   right: ${({ $embedded }) => ($embedded ? 'auto' : '24px')};
   bottom: ${({ $embedded }) => ($embedded ? 'auto' : '24px')};
-  top: ${({ $embedded }) => ($embedded ? 'auto' : '92px')};
-  width: ${({ $embedded }) => ($embedded ? '100%' : 'min(430px, calc(100vw - 24px))')};
+  top: ${({ $embedded }) => ($embedded ? 'auto' : '72px')};
+  width: ${({ $embedded }) => ($embedded ? '100%' : 'min(520px, calc(100vw - 32px))')};
   max-width: 100%;
-  min-height: ${({ $embedded }) => ($embedded ? '640px' : 'min(760px, calc(100vh - 120px))')};
-  max-height: ${({ $embedded }) => ($embedded ? 'none' : 'calc(100vh - 120px)')};
+  min-height: ${({ $embedded }) => ($embedded ? '720px' : 'min(840px, calc(100vh - 96px))')};
+  max-height: ${({ $embedded }) => ($embedded ? 'none' : 'calc(100vh - 96px)')};
   display: grid;
   grid-template-rows: auto auto minmax(0, 1fr) auto;
   gap: 16px;
@@ -47,8 +47,8 @@ const Shell = styled(motion.aside)<{ $embedded: boolean }>`
   @media (max-width: 767px) {
     inset: ${({ $embedded }) => ($embedded ? 'auto' : 'auto 12px 12px 12px')};
     width: auto;
-    min-height: ${({ $embedded }) => ($embedded ? '620px' : '76vh')};
-    max-height: ${({ $embedded }) => ($embedded ? 'none' : '76vh')};
+    min-height: ${({ $embedded }) => ($embedded ? '680px' : '84vh')};
+    max-height: ${({ $embedded }) => ($embedded ? 'none' : '84vh')};
     padding: 16px;
     border-radius: 24px;
   }

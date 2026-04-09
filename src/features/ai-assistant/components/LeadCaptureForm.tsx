@@ -11,6 +11,18 @@ const Form = styled.form`
   border: 1px solid rgba(255, 255, 255, 0.08);
 `;
 
+const Field = styled.div`
+  display: grid;
+  gap: 6px;
+`;
+
+const Label = styled.label`
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3;
+`;
+
 const Input = styled.input`
   min-height: 44px;
   padding: 0 12px;
@@ -84,21 +96,80 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ copy, onSubmit
 
   return (
     <Form onSubmit={handleSubmit}>
-      <Input value={name} onChange={event => setName(event.target.value)} placeholder={copy.fields.name} />
-      <Input value={email} onChange={event => setEmail(event.target.value)} placeholder={copy.fields.email} />
-      <Input value={phone} onChange={event => setPhone(event.target.value)} placeholder={copy.fields.phone} />
-      <Input
-        value={businessType}
-        onChange={event => setBusinessType(event.target.value)}
-        placeholder={copy.fields.businessType}
-      />
-      <Input
-        value={requestedService}
-        onChange={event => setRequestedService(event.target.value)}
-        placeholder={copy.fields.requestedService}
-      />
-      <Textarea value={need} onChange={event => setNeed(event.target.value)} placeholder={copy.fields.need} />
-      {error ? <ErrorText>{error}</ErrorText> : null}
+      <Field>
+        <Label htmlFor='assistant-lead-name'>{copy.fields.name}</Label>
+        <Input
+          id='assistant-lead-name'
+          name='name'
+          type='text'
+          autoComplete='name'
+          value={name}
+          onChange={event => setName(event.target.value)}
+          placeholder={copy.fields.name}
+        />
+      </Field>
+      <Field>
+        <Label htmlFor='assistant-lead-email'>{copy.fields.email}</Label>
+        <Input
+          id='assistant-lead-email'
+          name='email'
+          type='email'
+          inputMode='email'
+          autoComplete='email'
+          value={email}
+          onChange={event => setEmail(event.target.value)}
+          placeholder={copy.fields.email}
+        />
+      </Field>
+      <Field>
+        <Label htmlFor='assistant-lead-phone'>{copy.fields.phone}</Label>
+        <Input
+          id='assistant-lead-phone'
+          name='phone'
+          type='tel'
+          inputMode='tel'
+          autoComplete='tel'
+          value={phone}
+          onChange={event => setPhone(event.target.value)}
+          placeholder={copy.fields.phone}
+        />
+      </Field>
+      <Field>
+        <Label htmlFor='assistant-lead-business-type'>{copy.fields.businessType}</Label>
+        <Input
+          id='assistant-lead-business-type'
+          name='businessType'
+          type='text'
+          autoComplete='organization'
+          value={businessType}
+          onChange={event => setBusinessType(event.target.value)}
+          placeholder={copy.fields.businessType}
+        />
+      </Field>
+      <Field>
+        <Label htmlFor='assistant-lead-requested-service'>{copy.fields.requestedService}</Label>
+        <Input
+          id='assistant-lead-requested-service'
+          name='requestedService'
+          type='text'
+          autoComplete='off'
+          value={requestedService}
+          onChange={event => setRequestedService(event.target.value)}
+          placeholder={copy.fields.requestedService}
+        />
+      </Field>
+      <Field>
+        <Label htmlFor='assistant-lead-need'>{copy.fields.need}</Label>
+        <Textarea
+          id='assistant-lead-need'
+          name='need'
+          autoComplete='off'
+          value={need}
+          onChange={event => setNeed(event.target.value)}
+          placeholder={copy.fields.need}
+        />
+      </Field>
+      {error ? <ErrorText id='assistant-lead-error'>{error}</ErrorText> : null}
       <Submit type='submit'>{copy.leadSubmit}</Submit>
     </Form>
   );
