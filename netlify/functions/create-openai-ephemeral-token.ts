@@ -42,8 +42,24 @@ export const handler = async (event: HandlerEvent): Promise<HandlerResponse> => 
       throw new Error(`Realtime client secret request failed with status ${response.status}`);
     }
 
-    const payload = await response.json();
-    return jsonResponse(200, payload);
+    const payload = (await response.json()) as {
+      value?: string;
+      expires_at?: number;
+      client_secret?: { value?: string; expires_at?: number } | null;
+      session?: unknown;
+    };
+
+    const normalizedPayload = payload.client_secret
+      ? payload
+      : {
+          ...payload,
+          client_secret:
+            payload.value && payload.expires_at
+              ? { value: payload.value, expires_at: payload.expires_at }
+              : null,
+        };
+
+    return jsonResponse(200, normalizedPayload);
   } catch (error) {
     console.error('Failed to create OpenAI ephemeral token.', error);
     return jsonResponse(500, { ok: false, error: 'Unable to create voice session token.' });

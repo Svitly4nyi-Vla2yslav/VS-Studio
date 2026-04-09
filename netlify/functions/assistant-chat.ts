@@ -57,7 +57,7 @@ const callOpenAI = async (messages: AssistantMessage[], language: AssistantLangu
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) return null;
 
-  const model = process.env.OPENAI_ASSISTANT_MODEL || 'gpt-5-mini';
+  const model = process.env.OPENAI_ASSISTANT_MODEL || process.env.OPENAI_MODEL || 'gpt-5-mini';
   const payload = {
     model,
     input: [

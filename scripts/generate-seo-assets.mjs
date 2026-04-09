@@ -316,7 +316,7 @@ const manifest = JSON.stringify(
     name: site.siteName,
     short_name: 'VS Studio',
     description: 'Websites, SEO und Lead-Systeme für lokale Unternehmen in Deutschland.',
-    id: `${site.baseUrl}/`,
+    id: '/',
     scope: '/',
     start_url: '/',
     display: 'standalone',

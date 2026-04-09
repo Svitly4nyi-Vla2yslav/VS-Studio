@@ -48,6 +48,17 @@ type PartnersProps = {
   variant?: 'carousel' | 'grid';
 };
 
+const defaultBreakpoints = {
+  0: { slidesPerView: 1.08 },
+  560: { slidesPerView: 1.35 },
+  768: { slidesPerView: 2 },
+  1024: { slidesPerView: 3 },
+  1440: { slidesPerView: 3.45 },
+};
+
+const getMaxSlidesPerView = (breakpoints: Record<number, { slidesPerView: number }>) =>
+  Math.max(1, ...Object.values(breakpoints).map(({ slidesPerView }) => Math.ceil(slidesPerView)));
+
 const defaultRows: PartnerRow[] = [
   {
     title: 'Trusted Technologies',
@@ -65,14 +76,6 @@ const defaultRows: PartnerRow[] = [
 ];
 
 const Partners: React.FC<PartnersProps> = ({ rows = defaultRows, variant = 'carousel' }) => {
-  const defaultBreakpoints = {
-    0: { slidesPerView: 1.08 },
-    560: { slidesPerView: 1.35 },
-    768: { slidesPerView: 2 },
-    1024: { slidesPerView: 3 },
-    1440: { slidesPerView: 3.45 },
-  };
-
   const renderCard = (item: PartnerBadgeItem, key: string) => (
     <Badge key={key}>
       <CardBg className='card-bg' $backgroundImage={item.backgroundImage} />
@@ -106,6 +109,9 @@ const Partners: React.FC<PartnersProps> = ({ rows = defaultRows, variant = 'caro
         const autoplayDelay = Math.max((row.speed ?? 60) * 54, 3200);
         const shouldAutoplay = row.autoplay ?? true;
         const transitionSpeed = row.transitionSpeed ?? 1400;
+        const breakpoints = row.breakpoints ?? defaultBreakpoints;
+        const maxSlidesPerView = getMaxSlidesPerView(breakpoints);
+        const shouldLoop = row.items.length >= maxSlidesPerView + 1;
 
         return (
           <RowWrap key={`${row.title ?? 'row'}-${idx}`}>
@@ -133,8 +139,7 @@ const Partners: React.FC<PartnersProps> = ({ rows = defaultRows, variant = 'caro
                   className='partners-swiper'
                   spaceBetween={row.spaceBetween ?? 16}
                   speed={transitionSpeed}
-                  loop={row.items.length > 3}
-                  loopAdditionalSlides={row.items.length}
+                  loop={shouldLoop}
                   watchSlidesProgress
                   allowTouchMove
                   grabCursor
@@ -149,7 +154,7 @@ const Partners: React.FC<PartnersProps> = ({ rows = defaultRows, variant = 'caro
                         }
                       : false
                   }
-                  breakpoints={row.breakpoints ?? defaultBreakpoints}
+                  breakpoints={breakpoints}
                 >
                   {row.items.map((item, i) => (
                     <SwiperSlide key={`${item.group ?? 'group'}-${item.label}-${i}`}>
