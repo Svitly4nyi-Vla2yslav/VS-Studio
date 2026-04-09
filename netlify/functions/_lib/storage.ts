@@ -65,8 +65,10 @@ const createGoogleAccessToken = async () => {
   return json.access_token;
 };
 
+const resolveFirebaseProjectId = () => process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID || null;
+
 const persistToFirestore = async (collection: string, record: Record<string, unknown>): Promise<PersistResult> => {
-  const projectId = process.env.FIREBASE_PROJECT_ID;
+  const projectId = resolveFirebaseProjectId();
   if (!projectId) {
     return { provider: 'none', stored: false };
   }
