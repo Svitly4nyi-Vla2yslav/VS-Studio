@@ -4,6 +4,7 @@ interface PersistResult {
   provider: 'firestore' | 'supabase' | 'none';
   stored: boolean;
   id?: string | null;
+  error?: string | null;
 }
 
 const toFirestoreFields = (value: unknown): Record<string, unknown> => {
@@ -130,11 +131,28 @@ const persistToSupabase = async (table: string, record: Record<string, unknown>)
 };
 
 export const persistRecord = async (collection: string, table: string, record: Record<string, unknown>) => {
-  const firestoreResult = await persistToFirestore(collection, record);
-  if (firestoreResult.stored) return firestoreResult;
+  const errors: string[] = [];
 
-  const supabaseResult = await persistToSupabase(table, record);
-  if (supabaseResult.stored) return supabaseResult;
+  try {
+    const firestoreResult = await persistToFirestore(collection, record);
+    if (firestoreResult.stored) return firestoreResult;
+    if (firestoreResult.error) errors.push(firestoreResult.error);
+  } catch (error) {
+    errors.push(error instanceof Error ? error.message : 'Firestore storage failed');
+  }
 
-  return { provider: 'none', stored: false, id: null };
+  try {
+    const supabaseResult = await persistToSupabase(table, record);
+    if (supabaseResult.stored) return supabaseResult;
+    if (supabaseResult.error) errors.push(supabaseResult.error);
+  } catch (error) {
+    errors.push(error instanceof Error ? error.message : 'Supabase storage failed');
+  }
+
+  return {
+    provider: 'none',
+    stored: false,
+    id: null,
+    error: errors.length > 0 ? errors.join(' | ') : 'No storage provider configured',
+  };
 };

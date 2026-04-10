@@ -36,9 +36,6 @@ export const handler = async (event: HandlerEvent): Promise<HandlerResponse> => 
     };
 
     const storage = await persistRecord('assistantLeads', 'assistant_leads', record);
-    if (!storage.stored) {
-      return jsonResponse(500, { ok: false, error: 'Lead storage is not configured.' });
-    }
 
     const subject = 'Neue AI-Assistant-Anfrage – VS Web Studio';
     const text = [
@@ -55,7 +52,7 @@ export const handler = async (event: HandlerEvent): Promise<HandlerResponse> => 
       `Quelle: ${payload.source}`,
     ].join('\n');
 
-    await sendNotificationEmail({
+    const emailResult = await sendNotificationEmail({
       subject,
       replyTo: payload.email,
       text,
@@ -72,9 +69,21 @@ export const handler = async (event: HandlerEvent): Promise<HandlerResponse> => 
       }),
     });
 
-    await sendTelegramPlaceholder(text);
+    const telegramResult = await sendTelegramPlaceholder(text);
 
-    return jsonResponse(200, { ok: true, storageProvider: storage.provider, id: storage.id ?? null });
+    if (!storage.stored && !emailResult.sent && !telegramResult.sent) {
+      return jsonResponse(500, {
+        ok: false,
+        error: storage.error || 'Lead delivery is not configured.',
+      });
+    }
+
+    return jsonResponse(200, {
+      ok: true,
+      storageProvider: storage.provider,
+      id: storage.id ?? null,
+      storageWarning: storage.stored ? null : storage.error ?? 'Lead was delivered without database storage.',
+    });
   } catch (error) {
     console.error('create-lead failed.', error);
     if (error instanceof z.ZodError) {

@@ -50,28 +50,17 @@ const toPseudoTimestamp = (year: number, month: number, day: number, hour: numbe
 const validateSlot = (preferredDate: string, preferredTime: string) => {
   const [year, month, day] = preferredDate.split('-').map(Number);
   const [hour, minute] = preferredTime.split(':').map(Number);
-  const weekday = new Date(Date.UTC(year, month - 1, day, 12, 0)).getUTCDay();
 
-  if (weekday < 2 || weekday > 5) {
-    return 'Bookings are available Tuesday to Friday only.';
-  }
-
-  if (minute % 15 !== 0) {
-    return 'Please choose a time on a 15-minute grid.';
-  }
-
-  const minutes = hour * 60 + minute;
-  if (minutes < 600 || minutes > 1005) {
-    return 'Available start times are between 10:00 and 16:45 Europe/Berlin.';
+  if ([year, month, day, hour, minute].some(value => Number.isNaN(value))) {
+    return 'Please choose a valid date and time.';
   }
 
   const now = berlinParts(new Date());
   const requestedTimestamp = toPseudoTimestamp(year, month, day, hour, minute);
   const nowTimestamp = toPseudoTimestamp(now.year, now.month, now.day, now.hour, now.minute);
-  const sameDay = year === now.year && month === now.month && day === now.day;
 
-  if (sameDay && requestedTimestamp - nowTimestamp < 3 * 60 * 60 * 1000) {
-    return 'Same-day bookings require at least 3 hours of notice.';
+  if (requestedTimestamp < nowTimestamp) {
+    return 'Please choose a future time slot.';
   }
 
   return null;
@@ -101,9 +90,6 @@ export const handler = async (event: HandlerEvent): Promise<HandlerResponse> => 
     };
 
     const storage = await persistRecord('assistantBookings', 'assistant_bookings', record);
-    if (!storage.stored) {
-      return jsonResponse(500, { ok: false, error: 'Booking storage is not configured.' });
-    }
 
     const subject = 'Neue Terminanfrage über AI Assistant – VS Web Studio';
     const text = [
@@ -120,7 +106,7 @@ export const handler = async (event: HandlerEvent): Promise<HandlerResponse> => 
       `Zeitpunkt: ${submittedAt}`,
     ].join('\n');
 
-    await sendNotificationEmail({
+    const emailResult = await sendNotificationEmail({
       subject,
       replyTo: payload.email,
       text,
@@ -137,13 +123,21 @@ export const handler = async (event: HandlerEvent): Promise<HandlerResponse> => 
       }),
     });
 
-    await sendTelegramPlaceholder(text);
+    const telegramResult = await sendTelegramPlaceholder(text);
+
+    if (!storage.stored && !emailResult.sent && !telegramResult.sent) {
+      return jsonResponse(500, {
+        ok: false,
+        error: storage.error || 'Booking delivery is not configured.',
+      });
+    }
 
     return jsonResponse(200, {
       ok: true,
       storageProvider: storage.provider,
       id: storage.id ?? null,
       calendarPlaceholderUrl: process.env.BOOKING_CALENDAR_EMBED_URL || null,
+      storageWarning: storage.stored ? null : storage.error ?? 'Booking was delivered without database storage.',
     });
   } catch (error) {
     console.error('booking-request failed.', error);
