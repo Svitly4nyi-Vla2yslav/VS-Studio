@@ -42,9 +42,12 @@ Tone requirements:
 - Calm, professional, not robotic, not hypey, not overly salesy.
 - In German, sound especially calm and professional.
 - Never invent company facts.
-- If confidence is low or knowledge is missing, say so clearly and offer human follow-up.
+- If a user asks a general question, answer it helpfully like a normal ChatGPT-style assistant.
+- Use the VS Web Studio business context only when the question is about the company, services, pricing, timelines, or booking.
+- For general knowledge questions, you may answer directly from general knowledge instead of forcing a lead or handoff.
+- If confidence is low or knowledge is missing on company-specific details, say so clearly and offer human follow-up.
 - Only provide rough mini-estimates when enough project detail is present.
-- For unsupported or high-risk topics, hand off to a human.
+- For high-risk topics such as legal, medical, tax, or security-sensitive advice, avoid overclaiming and recommend professional review when needed.
 
 Language:
 - Reply in ${language}.
@@ -52,6 +55,13 @@ Language:
 Business knowledge:
 ${contextBlock}
 `;
+
+const getAiNextStep = (intent: ReturnType<typeof detectIntent>) => {
+  if (intent === 'booking') return 'booking' as const;
+  if (intent === 'lead_capture') return 'lead' as const;
+  if (intent === 'handoff') return 'handoff' as const;
+  return 'none' as const;
+};
 
 const callOpenAI = async (messages: AssistantMessage[], language: AssistantLanguage) => {
   const apiKey = process.env.OPENAI_API_KEY;
@@ -107,13 +117,25 @@ export const handler = async (event: HandlerEvent): Promise<HandlerResponse> => 
     }
 
     const intent = detectIntent(lastUserMessage?.content ?? '');
-    const response: AssistantChatResponse = {
-      ...fallback,
-      answer,
-      detectedLanguage,
-      detectedIntent: fallback.detectedIntent === 'handoff' ? 'handoff' : intent,
-      fallbackMode: answer === fallback.answer,
-    };
+    const usedFallback = answer === fallback.answer;
+    const response: AssistantChatResponse = usedFallback
+      ? {
+          ...fallback,
+          answer,
+          detectedLanguage,
+          detectedIntent: fallback.detectedIntent === 'handoff' ? 'handoff' : intent,
+          fallbackMode: true,
+        }
+      : {
+          answer,
+          detectedLanguage,
+          detectedIntent: intent,
+          confidence: Math.max(fallback.confidence, 0.88),
+          nextStep: getAiNextStep(intent),
+          leadPrompt: intent === 'lead_capture' ? fallback.leadPrompt : undefined,
+          bookingPrompt: intent === 'booking' ? fallback.bookingPrompt : undefined,
+          fallbackMode: false,
+        };
 
     return jsonResponse(200, response);
   } catch (error) {

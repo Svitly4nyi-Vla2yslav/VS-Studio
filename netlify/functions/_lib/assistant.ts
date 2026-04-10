@@ -94,6 +94,12 @@ export const accuracyFallback: Record<AssistantLanguage, string> = {
   uk: 'Я хочу відповісти точно. Я можу одразу передати ваш запит, щоб ви отримали точну відповідь.',
 };
 
+const generalFallback: Record<AssistantLanguage, string> = {
+  de: 'Ich kann auch allgemeine Fragen beantworten. Im lokalen Fallback-Modus ist mein Wissen aber begrenzt. Formulieren Sie die Frage gern etwas genauer.',
+  en: 'I can also help with general questions. In local fallback mode my knowledge is limited, so feel free to phrase the question a bit more specifically.',
+  uk: 'Я також можу допомагати із загальними питаннями. Але в локальному fallback-режимі мої знання обмежені, тож можна сформулювати запит трохи точніше.',
+};
+
 export const coerceLanguage = (input?: string | null): AssistantLanguage => {
   const normalized = normalize(input ?? '');
   if (normalized === 'en') return 'en';
@@ -274,12 +280,12 @@ export const generateLocalResponse = (messages: AssistantMessage[], language: As
   }
 
   return {
-    answer: accuracyFallback[language],
+    answer: intent === 'service_info' ? generalFallback[language] : accuracyFallback[language],
     detectedLanguage: language,
-    detectedIntent: 'handoff',
-    confidence: 0.34,
-    nextStep: 'handoff',
-    leadPrompt: 'lead',
+    detectedIntent: intent === 'service_info' ? 'service_info' : 'handoff',
+    confidence: intent === 'service_info' ? 0.52 : 0.34,
+    nextStep: intent === 'service_info' ? 'none' : 'handoff',
+    leadPrompt: intent === 'service_info' ? undefined : 'lead',
     fallbackMode: true,
   };
 };

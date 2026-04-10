@@ -150,6 +150,12 @@ export const ASSISTANT_ACCURACY_FALLBACK: Record<AssistantLanguage, string> = {
   uk: 'Я хочу відповісти точно. Я можу одразу передати ваш запит, щоб ви отримали точну відповідь.',
 };
 
+const GENERAL_FALLBACK: Record<AssistantLanguage, string> = {
+  de: 'Ich kann auch allgemeine Fragen beantworten. Im lokalen Fallback-Modus ist mein Wissen aber begrenzt. Formulieren Sie die Frage gern etwas genauer.',
+  en: 'I can also help with general questions. In local fallback mode my knowledge is limited, so feel free to phrase the question a bit more specifically.',
+  uk: 'Я також можу допомагати із загальними питаннями. Але в локальному fallback-режимі мої знання обмежені, тож можна сформулювати запит трохи точніше.',
+};
+
 export const getAssistantCopy = (language: AssistantLanguage): AssistantPanelCopy => ASSISTANT_COPY[language];
 
 export const getAssistantKnowledge = (language: AssistantLanguage): AssistantKnowledgeBundle => knowledgeByLanguage[language];
@@ -356,9 +362,11 @@ export const generateAssistantLocalReply = ({
     };
   }
 
-  const confidence = intent === 'service_info' ? 0.48 : 0.35;
-  const nextStep =
-    confidence < ASSISTANT_LOW_CONFIDENCE_THRESHOLD
+  const isGeneralFallback = intent === 'service_info';
+  const confidence = isGeneralFallback ? 0.52 : 0.35;
+  const nextStep = isGeneralFallback
+    ? 'none'
+    : confidence < ASSISTANT_LOW_CONFIDENCE_THRESHOLD
       ? 'handoff'
       : confidence < ASSISTANT_CONFIDENCE_THRESHOLD
         ? 'lead'
@@ -366,7 +374,9 @@ export const generateAssistantLocalReply = ({
 
   return {
     answer:
-      nextStep === 'handoff'
+      isGeneralFallback
+        ? GENERAL_FALLBACK[language]
+        : nextStep === 'handoff'
         ? `${ASSISTANT_ACCURACY_FALLBACK[language]} ${copy.suggestions.handoff}`
         : `${copy.suggestions.estimate} ${copy.suggestions.booking}`,
     detectedLanguage: language,
