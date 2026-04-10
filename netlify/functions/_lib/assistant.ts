@@ -25,6 +25,21 @@ const BOOKING_KEYWORDS = ['termin', 'booking', 'call', 'meeting', 'appointment',
 const HANDOFF_KEYWORDS = ['mensch', 'human', 'mitarbeiter', 'manager', 'людина', 'менеджер'];
 const LEAD_KEYWORDS = ['angebot', 'anfrage', 'contact', 'lead', 'projekt', 'проєкт', 'заявка'];
 const NICHE_KEYWORDS = ['werkstatt', 'praxis', 'beauty', 'shk', 'майстерня', 'clinic', 'garage'];
+const TIME_QUESTION_PATTERNS = [
+  'what time',
+  'current time',
+  'time in berlin',
+  'berlin time',
+  'wie spät',
+  'wie spaet',
+  'wie viel uhr',
+  'uhrzeit',
+  'berliner zeit',
+  'який час',
+  'котра година',
+  'час у берліні',
+  'скільки зараз часу',
+];
 
 const knowledgeByLanguage: Record<AssistantLanguage, AssistantKnowledgeBundle> = {
   de: { services: servicesDe, faq: faqDe, niches: nichesDe },
@@ -44,6 +59,34 @@ const summarizeScope = (messages: AssistantMessage[]) =>
     .map(message => message.content.trim())
     .join(' ')
     .trim();
+
+const isTimeQuestion = (text: string) => {
+  const source = normalize(text);
+  return TIME_QUESTION_PATTERNS.some(pattern => source.includes(pattern));
+};
+
+const getBerlinTimeAnswer = (language: AssistantLanguage) => {
+  const locale = language === 'uk' ? 'uk-UA' : language === 'en' ? 'en-US' : 'de-DE';
+  const now = new Date();
+  const time = new Intl.DateTimeFormat(locale, {
+    timeZone: 'Europe/Berlin',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+    timeZoneName: 'short',
+  }).format(now);
+  const date = new Intl.DateTimeFormat(locale, {
+    timeZone: 'Europe/Berlin',
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }).format(now);
+
+  if (language === 'uk') return `Зараз у Берліні ${time}. Сьогодні ${date}.`;
+  if (language === 'en') return `The current time in Berlin is ${time}. Today is ${date}.`;
+  return `Aktuell ist es in Berlin ${time}. Heute ist ${date}.`;
+};
 
 export const accuracyFallback: Record<AssistantLanguage, string> = {
   de: 'Ich möchte das korrekt beantworten. Ich kann Ihre Anfrage direkt weiterleiten, damit Sie eine präzise Antwort erhalten.',
@@ -112,6 +155,17 @@ export const generateLocalResponse = (messages: AssistantMessage[], language: As
   const scope = summarizeScope(messages);
   const enoughInfo = scope.length > 40;
 
+  if (isTimeQuestion(lastUserContent)) {
+    return {
+      answer: getBerlinTimeAnswer(language),
+      detectedLanguage: language,
+      detectedIntent: 'service_info',
+      confidence: 0.96,
+      nextStep: 'none',
+      fallbackMode: true,
+    };
+  }
+
   if (HIGH_RISK_KEYWORDS.some(keyword => normalize(lastUserContent).includes(keyword))) {
     return {
       answer: accuracyFallback[language],
@@ -128,10 +182,10 @@ export const generateLocalResponse = (messages: AssistantMessage[], language: As
     return {
       answer:
         language === 'de'
-          ? 'Ich kann einen Terminwunsch aufnehmen. Möglich sind Dienstag bis Freitag zwischen 10:00 und 17:30 Uhr.'
+          ? 'Ich kann einen Terminwunsch aufnehmen. Bitte nennen Sie einfach ein passendes Datum und eine passende Uhrzeit in Europe/Berlin.'
           : language === 'uk'
-            ? 'Я можу прийняти запит на дзвінок. Базове вікно: вівторок-п’ятниця, 10:00-17:30.'
-            : 'I can capture a booking request. The current window is Tuesday to Friday, 10:00 to 17:30.',
+            ? 'Я можу прийняти запит на дзвінок. Просто вкажіть зручну дату та час у Europe/Berlin.'
+            : 'I can capture a booking request. Please share a suitable date and time in Europe/Berlin.',
       detectedLanguage: language,
       detectedIntent: 'booking',
       confidence: 0.92,

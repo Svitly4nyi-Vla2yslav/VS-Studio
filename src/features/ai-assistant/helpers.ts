@@ -49,6 +49,21 @@ const BOOKING_KEYWORDS = ['termin', 'booking', 'call', 'meeting', 'appointment',
 const HANDOFF_KEYWORDS = ['mensch', 'human', 'jemand', 'mitarbeiter', 'manager', 'людина', 'менеджер'];
 const LEAD_KEYWORDS = ['angebot', 'anfrage', 'contact', 'lead', 'projekt', 'проєкт', 'заявка'];
 const NICHE_KEYWORDS = ['werkstatt', 'praxis', 'beauty', 'shk', 'сан', 'майстерня', 'clinic', 'garage'];
+const TIME_QUESTION_PATTERNS = [
+  'what time',
+  'current time',
+  'time in berlin',
+  'berlin time',
+  'wie spät',
+  'wie spaet',
+  'wie viel uhr',
+  'uhrzeit',
+  'berliner zeit',
+  'який час',
+  'котра година',
+  'час у берліні',
+  'скільки зараз часу',
+];
 
 const knowledgeByLanguage: Record<AssistantLanguage, AssistantKnowledgeBundle> = {
   de: { services: servicesDe, faq: faqDe, niches: nichesDe },
@@ -72,6 +87,34 @@ const summarizeScope = (messages: AssistantMessage[]) =>
     .map(message => message.content.trim())
     .join(' ')
     .trim();
+
+const isTimeQuestion = (text: string) => {
+  const source = normalize(text);
+  return TIME_QUESTION_PATTERNS.some(pattern => source.includes(pattern));
+};
+
+const getBerlinTimeAnswer = (language: AssistantLanguage) => {
+  const locale = language === 'uk' ? 'uk-UA' : language === 'en' ? 'en-US' : 'de-DE';
+  const now = new Date();
+  const time = new Intl.DateTimeFormat(locale, {
+    timeZone: 'Europe/Berlin',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+    timeZoneName: 'short',
+  }).format(now);
+  const date = new Intl.DateTimeFormat(locale, {
+    timeZone: 'Europe/Berlin',
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }).format(now);
+
+  if (language === 'uk') return `Зараз у Берліні ${time}. Сьогодні ${date}.`;
+  if (language === 'en') return `The current time in Berlin is ${time}. Today is ${date}.`;
+  return `Aktuell ist es in Berlin ${time}. Heute ist ${date}.`;
+};
 
 const buildEstimateText = (
   service: AssistantService,
@@ -173,6 +216,17 @@ export const generateAssistantLocalReply = ({
   const scope = summarizeScope(messages);
   const hasBusinessType = Boolean(leadContext?.businessType?.trim()) || scope.length > 40;
 
+  if (isTimeQuestion(lastUserContent)) {
+    return {
+      answer: getBerlinTimeAnswer(language),
+      detectedLanguage: language,
+      detectedIntent: 'service_info',
+      confidence: 0.96,
+      nextStep: 'none',
+      fallbackMode: true,
+    };
+  }
+
   if (HIGH_RISK_KEYWORDS.some(keyword => normalize(lastUserContent).includes(keyword))) {
     return {
       answer: `${ASSISTANT_ACCURACY_FALLBACK[language]} ${copy.suggestions.handoff}`,
@@ -189,10 +243,10 @@ export const generateAssistantLocalReply = ({
     return {
       answer:
         language === 'de'
-          ? 'Gerne. Ich kann einen Terminwunsch aufnehmen. Möglich sind Termine Dienstag bis Freitag zwischen 10:00 und 17:30 Uhr in der Zeitzone Europe/Berlin.'
+          ? 'Gerne. Ich kann einen Terminwunsch aufnehmen. Sie können einfach ein passendes Datum und eine passende Uhrzeit in Europe/Berlin eintragen.'
           : language === 'uk'
-            ? 'Звісно. Я можу прийняти запит на дзвінок. Базове вікно: вівторок-п’ятниця, 10:00-17:30, Europe/Berlin.'
-            : 'Certainly. I can capture a booking request. The current window is Tuesday to Friday, 10:00 to 17:30, Europe/Berlin.',
+            ? 'Звісно. Я можу прийняти запит на дзвінок. Просто вкажіть зручну дату та час у Europe/Berlin.'
+            : 'Certainly. I can capture a booking request. Just share a suitable date and time in Europe/Berlin.',
       detectedLanguage: language,
       detectedIntent: 'booking',
       confidence: 0.9,
@@ -281,7 +335,7 @@ export const generateAssistantLocalReply = ({
             ? `${matchedService.title}: ${matchedService.shortDescription} ${matchedService.businessValue} Стартова рамка: ${matchedService.pricingFrom}. Строк: ${matchedService.timeline}.`
             : `${matchedService.title}: ${matchedService.shortDescription} ${matchedService.businessValue} Starting price: ${matchedService.pricingFrom}. Timeline: ${matchedService.timeline}.`,
       detectedLanguage: language,
-      detectedIntent: intent === 'unknown' ? 'service_info' : intent,
+      detectedIntent: intent,
       confidence: 0.8,
       nextStep: intent === 'lead_capture' ? 'lead' : 'none',
       leadPrompt: intent === 'lead_capture' ? copy.leadIntro : undefined,
