@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import styled, { keyframes } from 'styled-components';
 import { ASSISTANT_QUICK_REPLIES } from '../constants';
@@ -11,46 +10,20 @@ import { BookingRequestForm } from './BookingRequestForm';
 import { LanguageBadge } from './LanguageBadge';
 import { LeadCaptureForm } from './LeadCaptureForm';
 
-const Backdrop = styled(motion.div)`
-  position: fixed;
-  inset: 0;
-  background: rgba(5, 8, 16, 0.62);
-  backdrop-filter: blur(10px);
-  z-index: 160;
-`;
+const auroraFlow = keyframes`
+  0% {
+    transform: translate3d(-8%, -6%, 0) scale(1);
+    opacity: 0.72;
+  }
 
-const Shell = styled(motion.aside)<{ $embedded: boolean }>`
-  position: ${({ $embedded }) => ($embedded ? 'relative' : 'fixed')};
-  right: ${({ $embedded }) => ($embedded ? 'auto' : '24px')};
-  bottom: ${({ $embedded }) => ($embedded ? 'auto' : '24px')};
-  top: ${({ $embedded }) => ($embedded ? 'auto' : '72px')};
-  width: ${({ $embedded }) => ($embedded ? '100%' : 'min(520px, calc(100vw - 32px))')};
-  max-width: 100%;
-  min-height: ${({ $embedded }) => ($embedded ? '720px' : 'min(840px, calc(100vh - 96px))')};
-  max-height: ${({ $embedded }) => ($embedded ? 'none' : 'calc(100vh - 96px)')};
-  display: grid;
-  grid-template-rows: auto auto minmax(0, 1fr) auto;
-  gap: 16px;
-  padding: 20px;
-  border-radius: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background:
-    radial-gradient(circle at top right, rgba(255, 177, 74, 0.16), transparent 28%),
-    radial-gradient(circle at 0% 0%, rgba(78, 118, 255, 0.14), transparent 30%),
-    linear-gradient(180deg, rgba(10, 14, 25, 0.98), rgba(8, 12, 20, 0.98));
-  box-shadow:
-    0 28px 80px rgba(2, 6, 16, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.04);
-  z-index: 170;
-  overflow: hidden;
+  50% {
+    transform: translate3d(8%, 6%, 0) scale(1.08);
+    opacity: 1;
+  }
 
-  @media (max-width: 767px) {
-    inset: ${({ $embedded }) => ($embedded ? 'auto' : 'auto 12px 12px 12px')};
-    width: auto;
-    min-height: ${({ $embedded }) => ($embedded ? '680px' : '84vh')};
-    max-height: ${({ $embedded }) => ($embedded ? 'none' : '84vh')};
-    padding: 16px;
-    border-radius: 24px;
+  100% {
+    transform: translate3d(-8%, -6%, 0) scale(1);
+    opacity: 0.72;
   }
 `;
 
@@ -68,6 +41,73 @@ const shimmer = keyframes`
   }
 `;
 
+const Shell = styled(motion.aside)<{ $embedded: boolean }>`
+  position: ${({ $embedded }) => ($embedded ? 'relative' : 'fixed')};
+  right: ${({ $embedded }) => ($embedded ? 'auto' : '24px')};
+  bottom: ${({ $embedded }) => ($embedded ? 'auto' : '24px')};
+  top: ${({ $embedded }) => ($embedded ? 'auto' : '48px')};
+  width: ${({ $embedded }) => ($embedded ? '100%' : 'min(620px, calc(100vw - 32px))')};
+  max-width: 100%;
+  min-height: ${({ $embedded }) => ($embedded ? '760px' : 'min(900px, calc(100vh - 72px))')};
+  max-height: ${({ $embedded }) => ($embedded ? 'none' : 'calc(100vh - 72px)')};
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  gap: 18px;
+  padding: 22px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.66), rgba(248, 250, 255, 0.42) 38%, rgba(255, 243, 214, 0.38) 68%, rgba(212, 231, 255, 0.34) 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.86),
+    0 36px 90px rgba(54, 83, 131, 0.28),
+    0 0 56px rgba(255, 209, 128, 0.14);
+  backdrop-filter: blur(24px) saturate(145%);
+  isolation: isolate;
+  z-index: 170;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -18%;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  &::before {
+    background:
+      radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.94), transparent 20%),
+      radial-gradient(circle at 68% 18%, rgba(255, 215, 136, 0.84), transparent 28%),
+      radial-gradient(circle at 78% 74%, rgba(170, 214, 255, 0.82), transparent 30%),
+      radial-gradient(circle at 26% 82%, rgba(255, 240, 201, 0.68), transparent 24%);
+    filter: blur(18px);
+    animation: ${auroraFlow} 12s ease-in-out infinite;
+  }
+
+  &::after {
+    inset: 1px;
+    border-radius: 31px;
+    border: 1px solid rgba(255, 255, 255, 0.58);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.42);
+  }
+
+  @media (max-width: 767px) {
+    inset: ${({ $embedded }) => ($embedded ? 'auto' : 'auto 12px 12px 12px')};
+    width: auto;
+    min-height: ${({ $embedded }) => ($embedded ? '700px' : '88vh')};
+    max-height: ${({ $embedded }) => ($embedded ? 'none' : '88vh')};
+    padding: 16px;
+    border-radius: 28px;
+
+    &::after {
+      border-radius: 27px;
+    }
+  }
+`;
+
 const Header = styled.div`
   display: flex;
   align-items: flex-start;
@@ -78,54 +118,30 @@ const Header = styled.div`
 const Headline = styled.div`
   display: grid;
   gap: 6px;
+  min-width: 0;
 `;
 
 const BrandBadge = styled.div`
   position: relative;
   display: inline-grid;
-  gap: 4px;
-  padding: 12px 16px 12px 14px;
-  border-radius: 22px;
+  gap: 6px;
+  padding: 16px 18px;
+  border-radius: 24px;
   background:
-    radial-gradient(circle at 16% 22%, rgba(255, 206, 122, 0.2), transparent 28%),
-    radial-gradient(circle at 88% 18%, rgba(103, 163, 255, 0.2), transparent 30%),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02)),
-    linear-gradient(130deg, rgba(33, 42, 64, 0.86), rgba(15, 20, 32, 0.92) 42%, rgba(18, 28, 48, 0.94));
-  border: 1px solid rgba(255, 227, 174, 0.12);
+    linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(252, 246, 228, 0.66) 50%, rgba(220, 236, 255, 0.62) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.84);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.12),
-    inset 0 -1px 0 rgba(105, 162, 255, 0.08),
-    0 20px 50px rgba(5, 8, 18, 0.36),
-    0 0 26px rgba(255, 182, 84, 0.14),
-    0 0 38px rgba(90, 142, 255, 0.14);
+    inset 0 1px 0 rgba(255, 255, 255, 0.88),
+    0 26px 50px rgba(87, 119, 173, 0.16);
   overflow: hidden;
 
   &::before {
     content: '';
     position: absolute;
-    inset: -30% -20%;
-    background: linear-gradient(
-      115deg,
-      rgba(255, 177, 74, 0) 14%,
-      rgba(255, 227, 167, 0.26) 38%,
-      rgba(144, 191, 255, 0.2) 54%,
-      rgba(255, 194, 106, 0.16) 66%,
-      rgba(255, 177, 74, 0) 82%
-    );
+    inset: -40% -16%;
+    background: linear-gradient(115deg, rgba(255, 255, 255, 0) 18%, rgba(255, 225, 164, 0.32) 42%, rgba(166, 211, 255, 0.28) 66%, rgba(255, 255, 255, 0) 84%);
     background-size: 220% 220%;
     animation: ${shimmer} 9s ease-in-out infinite;
-    pointer-events: none;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 1px;
-    border-radius: 21px;
-    border: 1px solid rgba(129, 178, 255, 0.08);
-    box-shadow:
-      inset 0 0 18px rgba(92, 144, 255, 0.08),
-      inset 0 0 22px rgba(255, 188, 92, 0.05);
     pointer-events: none;
   }
 `;
@@ -140,74 +156,135 @@ const TitleRow = styled.div`
 
 const Title = styled.h2`
   margin: 0;
-  font-size: 22px;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  font-size: 26px;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
   color: transparent;
-  background-image: linear-gradient(135deg, #fff8e7 0%, #ffe0a2 24%, #fff7e2 42%, #93bbff 66%, #fff1c9 100%);
-  background-size: 240% 240%;
+  background-image: linear-gradient(135deg, #17305d 0%, #d49429 42%, #6aaeea 100%);
+  background-size: 220% 220%;
   background-clip: text;
   -webkit-background-clip: text;
   animation: ${shimmer} 8s ease-in-out infinite;
-  text-shadow:
-    0 0 18px rgba(255, 199, 108, 0.18),
-    0 0 26px rgba(103, 163, 255, 0.12);
 `;
 
 const Subtitle = styled.p`
   margin: 0;
   position: relative;
   z-index: 1;
-  color: rgba(255, 243, 224, 0.76);
-  font-size: 12px;
+  color: rgba(18, 33, 63, 0.72);
+  font-size: 13px;
   font-weight: 600;
-  line-height: 1.5;
-  text-shadow: 0 0 16px rgba(255, 188, 92, 0.08);
+  line-height: 1.55;
 `;
 
 const TopLine = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 12px;
 `;
 
 const SectionTitle = styled.span`
-  color: rgba(255, 214, 156, 0.86);
+  color: rgba(23, 48, 93, 0.72);
   font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-weight: 800;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
 `;
 
 const Note = styled.div`
-  padding: 12px 14px;
-  border-radius: 16px;
-  background: rgba(255, 189, 112, 0.1);
-  border: 1px solid rgba(255, 189, 112, 0.18);
-  color: rgba(255, 242, 221, 0.92);
+  padding: 14px 16px;
+  border-radius: 18px;
+  background:
+    linear-gradient(145deg, rgba(255, 247, 230, 0.88), rgba(255, 236, 205, 0.76));
+  border: 1px solid rgba(237, 189, 104, 0.34);
+  color: rgba(118, 64, 18, 0.92);
   font-size: 12px;
-  line-height: 1.55;
+  line-height: 1.6;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.78),
+    0 16px 30px rgba(214, 174, 103, 0.14);
+
+  strong {
+    display: inline-block;
+    margin-bottom: 2px;
+    color: #8a4c12;
+  }
 `;
 
 const Content = styled.div`
   min-height: 0;
-  overflow: hidden;
+  display: block;
 `;
 
-const Footer = styled.div`
+const Body = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  gap: 14px;
+  overflow-y: auto;
+  padding-right: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(222, 178, 91, 0.55) transparent;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: rgba(222, 178, 91, 0.55);
+  }
+`;
+
+const Footer = styled.div<{ $scrollable: boolean }>`
   display: grid;
   gap: 14px;
+  min-height: 0;
+  max-height: ${({ $scrollable }) => ($scrollable ? 'min(44vh, 420px)' : 'none')};
+  overflow-y: ${({ $scrollable }) => ($scrollable ? 'auto' : 'visible')};
+  padding-right: ${({ $scrollable }) => ($scrollable ? '4px' : '0')};
+  scrollbar-width: thin;
+  scrollbar-color: rgba(222, 178, 91, 0.55) transparent;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: rgba(222, 178, 91, 0.55);
+  }
 `;
 
 const CloseButton = styled.button`
-  width: 38px;
-  height: 38px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(255, 255, 255, 0.74);
-  font-size: 18px;
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.74), rgba(230, 240, 255, 0.6));
+  color: rgba(18, 33, 63, 0.76);
+  font-size: 22px;
+  line-height: 1;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.88),
+    0 14px 26px rgba(95, 128, 182, 0.14);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    color 180ms ease;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-1px);
+    color: #17305d;
+    box-shadow:
+      0 18px 30px rgba(255, 204, 112, 0.18),
+      0 0 0 4px rgba(169, 209, 255, 0.16);
+  }
 `;
 
 interface AssistantPanelProps {
@@ -233,39 +310,29 @@ export const AssistantPanel: React.FC<AssistantPanelProps> = ({ assistant, open 
     setActiveForm,
   } = assistant;
 
-  useEffect(() => {
-    if (embedded) return undefined;
-
-    if (open) {
-      document.body.classList.add('modal-open');
-    } else {
-      document.body.classList.remove('modal-open');
-    }
-
-    return () => {
-      document.body.classList.remove('modal-open');
-    };
-  }, [embedded, open]);
-
   const panel = (
     <Shell
       $embedded={embedded}
       initial={embedded ? false : { opacity: 0, y: 14, scale: 0.98 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       exit={{ opacity: 0, y: 12, scale: 0.98 }}
-      transition={{ duration: 0.22, ease: 'easeOut' }}
+      transition={{ duration: 0.24, ease: 'easeOut' }}
     >
       <Header>
         <Headline>
           <BrandBadge>
             <TitleRow>
-              <AssistantOrb size={22} />
+              <AssistantOrb size={24} />
               <Title>{copy.title}</Title>
             </TitleRow>
             <Subtitle>{copy.subtitle}</Subtitle>
           </BrandBadge>
         </Headline>
-        {!embedded ? <CloseButton type='button' onClick={onClose} aria-label='Close assistant'>×</CloseButton> : null}
+        {!embedded ? (
+          <CloseButton type='button' onClick={onClose} aria-label='Close assistant'>
+            &times;
+          </CloseButton>
+        ) : null}
       </Header>
 
       <TopLine>
@@ -273,19 +340,21 @@ export const AssistantPanel: React.FC<AssistantPanelProps> = ({ assistant, open 
         <LanguageBadge language={assistantLanguage} />
       </TopLine>
 
-      {degradedMode ? (
-        <Note>
-          <strong>{copy.fallbackNotice}</strong>
-          <br />
-          {copy.fallbackLine}
-        </Note>
-      ) : null}
+      <Body>
+        {degradedMode ? (
+          <Note>
+            <strong>{copy.fallbackNotice}</strong>
+            <br />
+            {copy.fallbackLine}
+          </Note>
+        ) : null}
 
-      <Content>
-        <AssistantMessageList messages={messages} isTyping={isTyping} copy={copy} />
-      </Content>
+        <Content>
+          <AssistantMessageList messages={messages} isTyping={isTyping} copy={copy} />
+        </Content>
+      </Body>
 
-      <Footer>
+      <Footer $scrollable={Boolean(activeForm)}>
         <AssistantQuickReplies items={ASSISTANT_QUICK_REPLIES[assistantLanguage]} onSelect={handleQuickReply} />
 
         {activeForm === 'lead' ? <LeadCaptureForm copy={copy} onSubmit={submitLead} /> : null}
@@ -295,7 +364,7 @@ export const AssistantPanel: React.FC<AssistantPanelProps> = ({ assistant, open 
 
         {activeForm ? (
           <CloseButton type='button' onClick={() => setActiveForm(null)} aria-label='Close form'>
-            ×
+            &times;
           </CloseButton>
         ) : null}
 
@@ -308,14 +377,5 @@ export const AssistantPanel: React.FC<AssistantPanelProps> = ({ assistant, open 
     return panel;
   }
 
-  return (
-    <AnimatePresence>
-      {open ? (
-        <>
-          <Backdrop initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={onClose} />
-          {panel}
-        </>
-      ) : null}
-    </AnimatePresence>
-  );
+  return <AnimatePresence>{open ? panel : null}</AnimatePresence>;
 };

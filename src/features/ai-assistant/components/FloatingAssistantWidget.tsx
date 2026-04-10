@@ -13,16 +13,19 @@ const Button = styled(motion.button)`
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  padding: 12px 16px 12px 12px;
+  padding: 13px 18px 13px 13px;
   border-radius: 999px;
   background:
-    linear-gradient(135deg, rgba(16, 22, 36, 0.94), rgba(10, 14, 24, 0.98)),
-    radial-gradient(circle at top left, rgba(255, 177, 74, 0.18), transparent 40%);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 18px 44px rgba(2, 6, 16, 0.38);
-  color: rgba(255, 255, 255, 0.92);
+    linear-gradient(120deg, rgba(255, 255, 255, 0.9), rgba(255, 239, 204, 0.82) 42%, rgba(211, 231, 255, 0.82) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.92),
+    0 20px 44px rgba(93, 126, 182, 0.18),
+    0 0 30px rgba(255, 210, 138, 0.16);
+  color: #10203b;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 800;
+  backdrop-filter: blur(18px);
 
   strong {
     display: block;
@@ -32,9 +35,9 @@ const Button = styled(motion.button)`
 
   span {
     display: block;
-    color: rgba(255, 255, 255, 0.58);
+    color: rgba(16, 32, 59, 0.58);
     font-size: 11px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   @media (max-width: 767px) {
@@ -59,7 +62,14 @@ export const FloatingAssistantWidget: React.FC = () => {
         type='button'
         onClick={handleOpen}
         aria-label='Open AI assistant'
-        animate={{ y: [0, -4, 0], boxShadow: ['0 18px 44px rgba(2, 6, 16, 0.38)', '0 22px 56px rgba(255, 177, 74, 0.2)', '0 18px 44px rgba(2, 6, 16, 0.38)'] }}
+        animate={{
+          y: [0, -4, 0],
+          boxShadow: [
+            'inset 0 1px 0 rgba(255, 255, 255, 0.92), 0 20px 44px rgba(93, 126, 182, 0.18), 0 0 30px rgba(255, 210, 138, 0.16)',
+            'inset 0 1px 0 rgba(255, 255, 255, 0.92), 0 26px 54px rgba(96, 149, 229, 0.24), 0 0 42px rgba(255, 205, 112, 0.22)',
+            'inset 0 1px 0 rgba(255, 255, 255, 0.92), 0 20px 44px rgba(93, 126, 182, 0.18), 0 0 30px rgba(255, 210, 138, 0.16)',
+          ],
+        }}
         transition={{ duration: 4.8, repeat: Infinity, ease: 'easeInOut' }}
         whileHover={{ y: -3, scale: 1.02 }}
         whileTap={{ scale: 0.98 }}

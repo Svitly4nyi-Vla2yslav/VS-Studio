@@ -5,18 +5,18 @@ import type { AssistantMessage, AssistantPanelCopy } from '../types';
 
 const List = styled.div`
   display: grid;
-  gap: 12px;
-  height: 100%;
-  max-height: 100%;
-  overflow-y: auto;
-  padding-right: 2px;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-
-  &::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
+  gap: 14px;
+  min-height: min-content;
+  padding: 18px;
+  border-radius: 28px;
+  background:
+    linear-gradient(155deg, rgba(255, 255, 255, 0.38), rgba(247, 250, 255, 0.24)),
+    linear-gradient(120deg, rgba(255, 234, 192, 0.16), rgba(195, 226, 255, 0.16));
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.78),
+    0 20px 44px rgba(93, 125, 181, 0.12);
+  backdrop-filter: blur(16px);
 `;
 
 const Row = styled.div<{ $role: AssistantMessage['role'] }>`
@@ -25,26 +25,32 @@ const Row = styled.div<{ $role: AssistantMessage['role'] }>`
 `;
 
 const Bubble = styled.div<{ $role: AssistantMessage['role'] }>`
-  max-width: min(88%, 38ch);
-  padding: 13px 14px;
-  border-radius: ${({ $role }) => ($role === 'user' ? '18px 18px 6px 18px' : '18px 18px 18px 6px')};
+  max-width: min(88%, 40ch);
+  padding: 15px 16px;
+  border-radius: ${({ $role }) => ($role === 'user' ? '24px 24px 10px 24px' : '24px 24px 24px 10px')};
   background:
     ${({ $role }) =>
       $role === 'user'
-        ? 'linear-gradient(135deg, rgba(64, 98, 170, 0.82), rgba(38, 63, 116, 0.92))'
-        : 'linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.04))'};
-  border: 1px solid ${({ $role }) => ($role === 'user' ? 'rgba(112, 151, 255, 0.18)' : 'rgba(255, 255, 255, 0.08)')};
-  color: rgba(255, 255, 255, 0.9);
+        ? 'linear-gradient(135deg, rgba(86, 132, 229, 0.94), rgba(135, 193, 255, 0.9))'
+        : 'linear-gradient(145deg, rgba(255, 255, 255, 0.86), rgba(247, 245, 236, 0.72) 52%, rgba(222, 238, 255, 0.7) 100%)'};
+  border: 1px solid
+    ${({ $role }) => ($role === 'user' ? 'rgba(118, 166, 255, 0.7)' : 'rgba(255, 255, 255, 0.82)')};
+  color: ${({ $role }) => ($role === 'user' ? '#f7fbff' : '#12213f')};
   font-size: 14px;
-  line-height: 1.55;
+  font-weight: 500;
+  line-height: 1.62;
   white-space: pre-wrap;
+  box-shadow:
+    inset 0 1px 0 ${({ $role }) => ($role === 'user' ? 'rgba(255, 255, 255, 0.18)' : 'rgba(255, 255, 255, 0.8)')},
+    0 16px 30px ${({ $role }) => ($role === 'user' ? 'rgba(88, 132, 213, 0.22)' : 'rgba(104, 136, 181, 0.12)')};
 `;
 
-const Meta = styled.span`
+const Meta = styled.span<{ $role: AssistantMessage['role'] }>`
   display: block;
-  margin-top: 8px;
-  color: rgba(255, 255, 255, 0.48);
+  margin-top: 9px;
+  color: ${({ $role }) => ($role === 'user' ? 'rgba(247, 251, 255, 0.74)' : 'rgba(18, 33, 63, 0.46)')};
   font-size: 11px;
+  font-weight: 700;
 `;
 
 interface AssistantMessageListProps {
@@ -66,7 +72,7 @@ export const AssistantMessageList: React.FC<AssistantMessageListProps> = ({ mess
         <Row key={message.id} $role={message.role}>
           <Bubble $role={message.role}>
             {message.content}
-            {message.confidence !== undefined ? <Meta>Confidence {Math.round(message.confidence * 100)}%</Meta> : null}
+            {message.confidence !== undefined ? <Meta $role={message.role}>Confidence {Math.round(message.confidence * 100)}%</Meta> : null}
           </Bubble>
         </Row>
       ))}
