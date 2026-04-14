@@ -77,6 +77,51 @@ const INTEGRATION_QUESTION_KEYWORDS = [
 ];
 const MAP_KEYWORDS = ['map', 'maps', 'google maps', 'karte', 'karten', 'mapa', 'мапа', 'карта', 'карти'];
 const CALENDAR_KEYWORDS = ['calendar', 'google calendar', 'calendly', 'booking widget', 'kalender', 'календар', 'календарь'];
+const SOCIAL_MEDIA_KEYWORDS = [
+  'social',
+  'social media',
+  'instagram',
+  'facebook',
+  'messenger',
+  'whatsapp',
+  'telegram',
+  'tiktok',
+  'meta',
+  'direct message',
+  'dm',
+  'private message',
+  'comments',
+  'comment',
+  'social networks',
+  'social network',
+  'соц',
+  'соціаль',
+  'соцмереж',
+  'соц мереж',
+  'instagram',
+  'facebook',
+  'месенджер',
+  'директ',
+  'особисті повідомлення',
+  'приватні повідомлення',
+  'коментар',
+  'коментарі',
+];
+const SOCIAL_DM_KEYWORDS = [
+  'direct message',
+  'dm',
+  'private message',
+  'messenger',
+  'whatsapp',
+  'telegram',
+  'instagram dm',
+  'facebook dm',
+  'директ',
+  'особисті повідомлення',
+  'приватні повідомлення',
+  'повідомлення',
+];
+const SOCIAL_COMMENT_KEYWORDS = ['comment', 'comments', 'коментар', 'коментарі'];
 const TIME_QUESTION_PATTERNS = [
   'what time',
   'current time',
@@ -179,6 +224,61 @@ const buildIntegrationAnswer = (language: AssistantLanguage, text: string) => {
   }
 
   return 'Ja, einfache Website-Integrationen sind in der Regel möglich. Das kann zum Beispiel eine Karte, ein Kalender, ein Buchungs-Widget, ein Formular oder ein externer Dienst sein. Wenn Sie das konkrete Tool nennen, kann ich die passende Variante kurz einordnen.';
+};
+
+const buildSocialAutomationAnswer = (language: AssistantLanguage, text: string) => {
+  const source = normalize(text);
+  const mentionsSocial = SOCIAL_MEDIA_KEYWORDS.some(keyword => source.includes(keyword));
+  if (!mentionsSocial) return null;
+
+  const mentionsDm = SOCIAL_DM_KEYWORDS.some(keyword => source.includes(keyword));
+  const mentionsComments = SOCIAL_COMMENT_KEYWORDS.some(keyword => source.includes(keyword));
+
+  if (language === 'uk') {
+    if (mentionsDm && mentionsComments) {
+      return 'Так, ми можемо налаштувати AI-асистента для відповідей клієнтам у соцмережах і месенджерах. Найкраще автоматизація працює в особистих повідомленнях, а в коментарях зазвичай потрібні додаткові правила, модерація або частково ручний контроль через обмеження платформ.';
+    }
+
+    if (mentionsDm) {
+      return 'Так, AI-бота можна підключити до особистих повідомлень у соцмережах і месенджерах, наприклад Instagram, Facebook Messenger, WhatsApp або Telegram. Зазвичай він закриває прості питання, кваліфікує запит і передає діалог людині, коли тема вже нетипова або важлива.';
+    }
+
+    if (mentionsComments) {
+      return 'Так, автоматизація відповідей у коментарях теж можлива, але тут усе більше залежить від правил конкретної платформи. Найчастіше ми рекомендуємо або напівавтоматичний сценарій, або відповіді лише на типові й безпечні питання, а складні випадки передавати людині.';
+    }
+
+    return 'Так, AI-асистента можна використовувати не лише на сайті, а й у соцмережах та месенджерах. Найчастіше він відповідає на прості питання, дає базову інформацію, допомагає з бронюванням або заявкою й передає діалог менеджеру, коли потрібна жива людина.';
+  }
+
+  if (language === 'en') {
+    if (mentionsDm && mentionsComments) {
+      return 'Yes, we can set up an AI assistant to reply to customers across social channels and messengers. Automation usually works best in direct messages, while comment replies often need extra rules, moderation, or partial human review because of platform limits.';
+    }
+
+    if (mentionsDm) {
+      return 'Yes, an AI bot can be connected to direct messages in channels such as Instagram, Facebook Messenger, WhatsApp, or Telegram. It can usually handle simple questions, qualify the enquiry, and hand the conversation to a person once the topic becomes more specific or sensitive.';
+    }
+
+    if (mentionsComments) {
+      return 'Yes, comment automation is also possible, but it depends more heavily on the rules and limits of the platform. In practice, a semi-automated setup or replies only to safe, repetitive questions is often the cleaner approach.';
+    }
+
+    return 'Yes, an AI assistant can be used not only on a website but also in social channels and messengers. It is usually best for simple questions, basic information, booking or lead capture, and then handing the conversation to a human when needed.';
+  }
+
+  if (mentionsDm && mentionsComments) {
+    return 'Ja, wir können einen AI-Assistenten für Antworten in sozialen Netzwerken und Messengern einrichten. Am zuverlässigsten funktioniert Automatisierung meist in Direktnachrichten, während Kommentare wegen Plattformregeln oft zusätzliche Regeln, Moderation oder einen teilmanuellen Ablauf brauchen.';
+  }
+
+  if (mentionsDm) {
+    return 'Ja, ein AI-Bot lässt sich an Direktnachrichten in Kanälen wie Instagram, Facebook Messenger, WhatsApp oder Telegram anbinden. Er kann dort einfache Fragen beantworten, Anfragen vorqualifizieren und an einen Menschen übergeben, sobald das Thema spezieller oder sensibler wird.';
+  }
+
+  if (mentionsComments) {
+    return 'Ja, auch Antworten in Kommentaren lassen sich teilweise automatisieren. In der Praxis hängt das aber stärker von den Regeln und Grenzen der jeweiligen Plattform ab, daher ist oft ein teilautomatischer Ablauf sinnvoller.';
+  }
+
+  return 'Ja, ein AI-Assistent kann nicht nur auf der Website, sondern auch in sozialen Netzwerken und Messengern eingesetzt werden. Typisch sind Antworten auf einfache Fragen, Basisinformationen, Termin- oder Anfrageaufnahme und die saubere Übergabe an einen Menschen, wenn es nötig wird.';
 };
 
 const getBerlinTimeAnswer = (language: AssistantLanguage) => {
@@ -357,6 +457,18 @@ export const generateAssistantLocalReply = ({
       detectedLanguage: language,
       detectedIntent: 'service_info',
       confidence: 0.84,
+      nextStep: 'none',
+      fallbackMode: true,
+    };
+  }
+
+  const socialAutomationAnswer = buildSocialAutomationAnswer(language, lastUserContent);
+  if (socialAutomationAnswer) {
+    return {
+      answer: socialAutomationAnswer,
+      detectedLanguage: language,
+      detectedIntent: 'service_info',
+      confidence: 0.86,
       nextStep: 'none',
       fallbackMode: true,
     };
