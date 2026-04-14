@@ -25,6 +25,34 @@ const BOOKING_KEYWORDS = ['termin', 'booking', 'call', 'meeting', 'appointment',
 const HANDOFF_KEYWORDS = ['mensch', 'human', 'mitarbeiter', 'manager', 'людина', 'менеджер'];
 const LEAD_KEYWORDS = ['angebot', 'anfrage', 'contact', 'lead', 'projekt', 'проєкт', 'заявка'];
 const NICHE_KEYWORDS = ['werkstatt', 'praxis', 'beauty', 'shk', 'майстерня', 'clinic', 'garage'];
+const INTEGRATION_QUESTION_KEYWORDS = [
+  'integrat',
+  'embed',
+  'widget',
+  'iframe',
+  'api',
+  'calendar',
+  'booking widget',
+  'calendly',
+  'google calendar',
+  'map',
+  'maps',
+  'google maps',
+  'karte',
+  'karten',
+  'kalender',
+  'mapa',
+  'мапа',
+  'карта',
+  'карти',
+  'календар',
+  'календарь',
+  'інтегру',
+  'інтеграці',
+  'вбудува',
+];
+const MAP_KEYWORDS = ['map', 'maps', 'google maps', 'karte', 'karten', 'mapa', 'мапа', 'карта', 'карти'];
+const CALENDAR_KEYWORDS = ['calendar', 'google calendar', 'calendly', 'booking widget', 'kalender', 'календар', 'календарь'];
 const TIME_QUESTION_PATTERNS = [
   'what time',
   'current time',
@@ -63,6 +91,66 @@ const summarizeScope = (messages: AssistantMessage[]) =>
 const isTimeQuestion = (text: string) => {
   const source = normalize(text);
   return TIME_QUESTION_PATTERNS.some(pattern => source.includes(pattern));
+};
+
+const detectIntegrationTargets = (text: string) => {
+  const source = normalize(text);
+  return {
+    mentionsMap: MAP_KEYWORDS.some(keyword => source.includes(keyword)),
+    mentionsCalendar: CALENDAR_KEYWORDS.some(keyword => source.includes(keyword)),
+    mentionsIntegration: INTEGRATION_QUESTION_KEYWORDS.some(keyword => source.includes(keyword)),
+  };
+};
+
+const buildIntegrationAnswer = (language: AssistantLanguage, text: string) => {
+  const { mentionsMap, mentionsCalendar, mentionsIntegration } = detectIntegrationTargets(text);
+  if (!mentionsIntegration && !mentionsMap && !mentionsCalendar) return null;
+
+  if (language === 'uk') {
+    if (mentionsMap && mentionsCalendar) {
+      return 'Так, у вебсайт можна інтегрувати і мапу, і календар. Зазвичай це робиться через embed, iframe, віджет або API залежно від сервісу. Якщо підкажете, який саме сервіс маєте на увазі, я скажу найкращий варіант інтеграції та що для цього потрібно.';
+    }
+
+    if (mentionsMap) {
+      return 'Так, мапу можна інтегрувати у вебсайт. Найчастіше це Google Maps embed або кастомна інтеграція через API, якщо потрібні фільтри, кілька локацій чи нестандартна логіка.';
+    }
+
+    if (mentionsCalendar) {
+      return 'Так, календар або booking-віджет можна інтегрувати у вебсайт. Зазвичай це робиться через embed, iframe або API, якщо потрібне бронювання, синхронізація слотів чи власна логіка.';
+    }
+
+    return 'Так, прості інтеграції у вебсайт зазвичай можливі. Це може бути календар, мапа, booking-віджет, форма чи інший зовнішній сервіс. Якщо скажете, який саме інструмент хочете підключити, я підкажу найкращий варіант.';
+  }
+
+  if (language === 'en') {
+    if (mentionsMap && mentionsCalendar) {
+      return 'Yes, both a map and a calendar can be integrated into a website. This is usually done with an embed, iframe, widget, or API depending on the tool. If you share the exact service, I can suggest the cleanest implementation path.';
+    }
+
+    if (mentionsMap) {
+      return 'Yes, a map can be integrated into a website. The most common option is a Google Maps embed, while API-based integration is better when you need multiple locations, filters, or custom behaviour.';
+    }
+
+    if (mentionsCalendar) {
+      return 'Yes, a calendar or booking widget can be integrated into a website. This is often done with an embed, iframe, or API when you need scheduling logic, slot sync, or a more custom flow.';
+    }
+
+    return 'Yes, simple website integrations are usually possible. That can include a map, calendar, booking widget, form, or another external service. If you tell me the exact tool, I can suggest the best setup.';
+  }
+
+  if (mentionsMap && mentionsCalendar) {
+    return 'Ja, sowohl eine Karte als auch ein Kalender lassen sich in eine Website integrieren. Je nach Tool geschieht das meist per Embed, iframe, Widget oder API. Wenn Sie den genauen Dienst nennen, kann ich den saubersten Weg kurz einordnen.';
+  }
+
+  if (mentionsMap) {
+    return 'Ja, eine Karte lässt sich in eine Website integrieren. Am häufigsten ist ein Google-Maps-Embed, bei mehreren Standorten oder spezieller Logik ist auch eine API-Anbindung sinnvoll.';
+  }
+
+  if (mentionsCalendar) {
+    return 'Ja, ein Kalender oder Buchungs-Widget lässt sich in eine Website integrieren. Das erfolgt oft per Embed, iframe oder API, wenn Terminlogik, Slot-Synchronisierung oder ein individueller Ablauf gebraucht werden.';
+  }
+
+  return 'Ja, einfache Website-Integrationen sind in der Regel möglich. Das kann zum Beispiel eine Karte, ein Kalender, ein Buchungs-Widget, ein Formular oder ein externer Dienst sein. Wenn Sie das konkrete Tool nennen, kann ich die passende Variante kurz einordnen.';
 };
 
 const getBerlinTimeAnswer = (language: AssistantLanguage) => {
@@ -197,6 +285,18 @@ export const generateLocalResponse = (messages: AssistantMessage[], language: As
       confidence: 0.92,
       nextStep: 'booking',
       bookingPrompt: 'booking',
+      fallbackMode: true,
+    };
+  }
+
+  const integrationAnswer = buildIntegrationAnswer(language, lastUserContent);
+  if (integrationAnswer) {
+    return {
+      answer: integrationAnswer,
+      detectedLanguage: language,
+      detectedIntent: 'service_info',
+      confidence: 0.84,
+      nextStep: 'none',
       fallbackMode: true,
     };
   }
