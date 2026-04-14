@@ -69,7 +69,9 @@ export const ContactHeroCanvas = styled.div`
   @media (max-width: 767px) {
     min-height: auto;
     width: calc(100vw - 24px);
-    transform: translateX(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    transform: none;
     padding: 20px;
     border-radius: 24px;
   }
