@@ -101,7 +101,7 @@ export const ASSISTANT_COPY: Record<AssistantLanguage, AssistantPanelCopy> = {
     fallbackNotice: 'The live AI service is currently unavailable.',
     fallbackLine: 'I can still reply using the local knowledge base and offer a human follow-up when needed.',
     humanHandoffTitle: 'Human follow-up recommended',
-    humanHandoffBody: 'If you like, I can forward your request directly as a lead or booking request.',
+    humanHandoffBody: 'To give you an accurate answer, I can forward your request to a specialist. Please leave your email or phone number, and we will get back to you.',
     humanHandoffCta: 'Forward request',
     leadTitle: 'Project enquiry',
     leadIntro: 'To follow up properly, I need a few basics first.',

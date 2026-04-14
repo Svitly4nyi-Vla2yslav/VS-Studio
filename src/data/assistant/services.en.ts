@@ -50,9 +50,9 @@ export const servicesEn: AssistantService[] = [
     id: 'ai-chatbot',
     title: 'AI chatbot',
     shortDescription:
-      'An AI assistant for website questions, lead qualification, booking requests, and early project intake.',
+      'An AI assistant for website chat, Instagram, Facebook Messenger, WhatsApp, Telegram, lead qualification, booking requests, and early project intake.',
     businessValue:
-      'Especially useful when prospects should get quick replies and a clear next step outside office hours.',
+      'Especially useful when prospects should get quick replies and a clear next step across social channels and outside office hours.',
     pricingFrom: 'from EUR 2,990',
     pricingNumericFrom: 2990,
     pricingModel: 'one_time',

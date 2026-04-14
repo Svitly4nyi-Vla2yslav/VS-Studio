@@ -19,6 +19,106 @@ import type {
 const ENGLISH_SIGNAL = /\b(website|price|pricing|quote|book|booking|call|support|ads|tracking|chatbot|timeline|estimate|project)\b/i;
 const UKRAINIAN_SIGNAL = /[іїєґІЇЄҐ]/;
 const HIGH_RISK_KEYWORDS = ['legal', 'vertrag', 'contract', 'medical', 'steuer', 'tax', 'lawyer', 'anwalt'];
+const LEGAL_ESCALATION_KEYWORDS = [
+  'dsgvo',
+  'datenschutz',
+  'privacy policy',
+  'privacy notice',
+  'compliance',
+  'rechtlich',
+  'juristisch',
+  'юридич',
+  'правов',
+  'конфіденцій',
+];
+const AUDIT_ESCALATION_KEYWORDS = [
+  'audit',
+  'account blocked',
+  'blocked account',
+  'suspended account',
+  'suspension',
+  'banned account',
+  'site audit',
+  'ads audit',
+  'tracking audit',
+  'existing site problem',
+  'current site issue',
+  'google ads issue',
+  'meta ads issue',
+  'problem with account',
+  'акаунт заблок',
+  'акаунт блок',
+  'блокування акаун',
+  'аудит',
+  'існуючий сайт',
+  'проблема з акаунтом',
+  'проблема з рекламою',
+];
+const ACCESS_ESCALATION_KEYWORDS = [
+  'login',
+  'password',
+  'credentials',
+  'access',
+  'admin access',
+  'billing account',
+  'payment account',
+  '2fa',
+  'otp',
+  'zugang',
+  'zugänge',
+  'dostup',
+  'логін',
+  'пароль',
+  'доступ',
+  'платіжний акаунт',
+  'платежный аккаунт',
+];
+const URGENT_ESCALATION_KEYWORDS = ['urgent', 'asap', 'immediately', 'right now', 'dringend', 'sofort', 'eilig', 'терміново', 'негайно'];
+const ENTERPRISE_ESCALATION_KEYWORDS = ['enterprise', 'large budget', 'big budget', 'high budget', 'grosses budget', 'großes budget', 'великий бюджет'];
+const COMPLAINT_ESCALATION_KEYWORDS = [
+  'complaint',
+  'refund',
+  'angry',
+  'bad review',
+  'negative review',
+  'unhappy',
+  'скарга',
+  'негатив',
+  'незадоволен',
+  'повернення коштів',
+];
+const GREY_SCHEME_KEYWORDS = [
+  'spam',
+  'mass dm',
+  'bulk dm',
+  'cold dm',
+  'mass message',
+  'mass messaging',
+  'scraping',
+  'scrape',
+  'fake review',
+  'fake engagement',
+  'bot farm',
+  'black hat',
+  'grey hat',
+  'gray hat',
+  'накрут',
+  'спам',
+  'масова розсилка',
+  'сірі схем',
+];
+const COMPLEX_INTEGRATION_KEYWORDS = [
+  'complex integration',
+  'custom api',
+  'custom integration',
+  'erp',
+  'sap',
+  'sso',
+  'single sign-on',
+  'multi-step integration',
+  'складна інтеграція',
+  'нестандартна інтеграція',
+];
 const PRICING_KEYWORDS = ['preis', 'preise', 'kosten', 'pricing', 'cost', 'quote', 'angebot', 'вартість', 'ціна'];
 const TIMELINE_KEYWORDS = ['dauer', 'timeline', 'zeit', 'wie lange', 'launch', 'строк', 'коли'];
 const BOOKING_KEYWORDS = ['termin', 'booking', 'call', 'meeting', 'appointment', 'дзвінок', 'зустріч', 'запис'];
@@ -98,6 +198,25 @@ const SOCIAL_DM_KEYWORDS = [
   'повідомлення',
 ];
 const SOCIAL_COMMENT_KEYWORDS = ['comment', 'comments', 'коментар', 'коментарі'];
+const INSTAGRAM_KEYWORDS = ['instagram', 'insta', 'інстаграм'];
+const FACEBOOK_KEYWORDS = ['facebook', 'messenger', 'meta', 'фейсбук', 'месенджер'];
+const WHATSAPP_KEYWORDS = ['whatsapp', 'whats app', 'ватсап', 'ватцап'];
+const TELEGRAM_KEYWORDS = ['telegram', 'телеграм'];
+const PUBLISHING_KEYWORDS = [
+  'publish',
+  'publishing',
+  'posting',
+  'post',
+  'posts',
+  'autopost',
+  'auto post',
+  'publication',
+  'публікац',
+  'постинг',
+  'пости',
+  'автопост',
+  'постити',
+];
 const TIME_QUESTION_PATTERNS = [
   'what time',
   'current time',
@@ -136,6 +255,36 @@ const summarizeScope = (messages: AssistantMessage[]) =>
 const isTimeQuestion = (text: string) => {
   const source = normalize(text);
   return TIME_QUESTION_PATTERNS.some(pattern => source.includes(pattern));
+};
+
+const shouldEscalateToHuman = (text: string) => {
+  const source = normalize(text);
+  const escalationGroups = [
+    HIGH_RISK_KEYWORDS,
+    LEGAL_ESCALATION_KEYWORDS,
+    AUDIT_ESCALATION_KEYWORDS,
+    ACCESS_ESCALATION_KEYWORDS,
+    URGENT_ESCALATION_KEYWORDS,
+    ENTERPRISE_ESCALATION_KEYWORDS,
+    COMPLAINT_ESCALATION_KEYWORDS,
+    GREY_SCHEME_KEYWORDS,
+    COMPLEX_INTEGRATION_KEYWORDS,
+    HANDOFF_KEYWORDS,
+  ];
+
+  return escalationGroups.some(group => group.some(keyword => source.includes(keyword)));
+};
+
+const buildPreciseHandoffAnswer = (language: AssistantLanguage) => {
+  if (language === 'uk') {
+    return 'Щоб дати вам точну відповідь, я передам запит спеціалісту. Залиште, будь ласка, ваш email або номер телефону, і ми зв’яжемося з вами.';
+  }
+
+  if (language === 'en') {
+    return 'To give you an accurate answer, I will forward your request to a specialist. Please leave your email or phone number, and we will get back to you.';
+  }
+
+  return 'Damit wir Ihnen eine präzise Antwort geben können, leite ich die Anfrage an einen Spezialisten weiter. Bitte hinterlassen Sie Ihre E-Mail oder Telefonnummer, und wir melden uns bei Ihnen.';
 };
 
 const detectIntegrationTargets = (text: string) => {
@@ -205,52 +354,186 @@ const buildSocialAutomationAnswer = (language: AssistantLanguage, text: string) 
 
   const mentionsDm = SOCIAL_DM_KEYWORDS.some(keyword => source.includes(keyword));
   const mentionsComments = SOCIAL_COMMENT_KEYWORDS.some(keyword => source.includes(keyword));
+  const mentionsInstagram = INSTAGRAM_KEYWORDS.some(keyword => source.includes(keyword));
+  const mentionsFacebook = FACEBOOK_KEYWORDS.some(keyword => source.includes(keyword));
+  const mentionsWhatsApp = WHATSAPP_KEYWORDS.some(keyword => source.includes(keyword));
+  const mentionsTelegram = TELEGRAM_KEYWORDS.some(keyword => source.includes(keyword));
+  const mentionsPublishing = PUBLISHING_KEYWORDS.some(keyword => source.includes(keyword));
 
   if (language === 'uk') {
-    if (mentionsDm && mentionsComments) {
-      return 'Так, ми можемо налаштувати AI-асистента для відповідей клієнтам у соцмережах і месенджерах. Найкраще автоматизація працює в особистих повідомленнях, а в коментарях зазвичай потрібні додаткові правила, модерація або частково ручний контроль через обмеження платформ.';
+    const lines = [
+      'Так, ми можемо автоматизувати частину роботи в соцмережах, але в межах офіційних можливостей платформ і без ризикових "сірих" рішень.',
+      '',
+      'Що реально можна автоматизувати:',
+      '- автовідповіді на часті питання в DM і месенджерах;',
+      '- первинну кваліфікацію лідів: що потрібно, який бізнес, бюджет, термін, зручний час;',
+      '- збір заявок і передачу в email, CRM, Google Sheets або календар;',
+      '- маршрутизацію: прості запити обробляє бот, складні або нестандартні переходять людині;',
+    ];
+
+    if (mentionsComments || (!mentionsDm && !mentionsPublishing)) {
+      lines.push('- контрольовані сценарії для коментарів там, де це підтримується платформою.');
     }
 
-    if (mentionsDm) {
-      return 'Так, AI-бота можна підключити до особистих повідомлень у соцмережах і месенджерах, наприклад Instagram, Facebook Messenger, WhatsApp або Telegram. Зазвичай він закриває прості питання, кваліфікує запит і передає діалог людині, коли тема вже нетипова або важлива.';
+    if (mentionsPublishing) {
+      lines.push('- підготовку текстів, шаблонів і планування публікацій, але не масовий спам або агресивний автодирект.');
+    }
+
+    lines.push('', 'Що важливо по платформах:');
+
+    if (mentionsInstagram || mentionsFacebook || (!mentionsWhatsApp && !mentionsTelegram)) {
+      lines.push(
+        '- Instagram / Facebook Messenger: найкраще працювати через офіційні інтеграції Meta API. Для Instagram зазвичай йдеться про Professional account, відповіді в DM, FAQ, кваліфікацію ліда та приватні відповіді на коментарі там, де це підтримується платформою.'
+      );
+    }
+
+    if (mentionsWhatsApp || (!mentionsInstagram && !mentionsFacebook && !mentionsTelegram)) {
+      lines.push(
+        '- WhatsApp Business Platform: звичайні відповіді добре працюють у межах відкритого 24-годинного вікна після повідомлення клієнта. Поза ним зазвичай можна писати лише template messages.'
+      );
+    }
+
+    if (mentionsTelegram || (!mentionsInstagram && !mentionsFacebook && !mentionsWhatsApp)) {
+      lines.push(
+        '- Telegram: бот може відповідати, збирати дані й передавати заявки, але користувач має спочатку сам почати взаємодію з ботом. Просто так першим бот не пише.'
+      );
     }
 
     if (mentionsComments) {
-      return 'Так, автоматизація відповідей у коментарях теж можлива, але тут усе більше залежить від правил конкретної платформи. Найчастіше ми рекомендуємо або напівавтоматичний сценарій, або відповіді лише на типові й безпечні питання, а складні випадки передавати людині.';
+      lines.push(
+        '- Коментарі: тут не варто обіцяти "повну магію". Найчастіше це або private replies, або напівавтоматичний сценарій з правилами й модерацією.'
+      );
     }
 
-    return 'Так, AI-асистента можна використовувати не лише на сайті, а й у соцмережах та месенджерах. Найчастіше він відповідає на прості питання, дає базову інформацію, допомагає з бронюванням або заявкою й передає діалог менеджеру, коли потрібна жива людина.';
+    if (mentionsPublishing) {
+      lines.push(
+        '- Автопублікація: підготовка та планування контенту можливі, але офіційна автопублікація залежить від конкретної платформи й типу акаунта.'
+      );
+    }
+
+    lines.push(
+      '',
+      'Практично це виглядає так: клієнт пише, бот відповідає на типові питання, ставить 2-5 уточнень, збирає заявку й передає її вам або переводить діалог на людину.'
+    );
+
+    return lines.join('\n');
   }
 
   if (language === 'en') {
-    if (mentionsDm && mentionsComments) {
-      return 'Yes, we can set up an AI assistant to reply to customers across social channels and messengers. Automation usually works best in direct messages, while comment replies often need extra rules, moderation, or partial human review because of platform limits.';
+    const lines = [
+      'Yes, we can automate part of the workload in social channels, but only within official platform capabilities and without risky grey-hat setups.',
+      '',
+      'What can usually be automated:',
+      '- auto-replies to frequent questions in DMs and messengers;',
+      '- early lead qualification such as need, business type, budget, timing, and preferred contact;',
+      '- structured lead capture into email, CRM, Google Sheets, or a calendar;',
+      '- routing: simple questions stay with the bot, more specific or sensitive ones go to a person;',
+    ];
+
+    if (mentionsComments || (!mentionsDm && !mentionsPublishing)) {
+      lines.push('- controlled comment workflows where the platform supports them.');
     }
 
-    if (mentionsDm) {
-      return 'Yes, an AI bot can be connected to direct messages in channels such as Instagram, Facebook Messenger, WhatsApp, or Telegram. It can usually handle simple questions, qualify the enquiry, and hand the conversation to a person once the topic becomes more specific or sensitive.';
+    if (mentionsPublishing) {
+      lines.push('- content drafting, templates, and scheduling support, but not mass spam or aggressive auto-DM tactics.');
+    }
+
+    lines.push('', 'Important platform limits:');
+
+    if (mentionsInstagram || mentionsFacebook || (!mentionsWhatsApp && !mentionsTelegram)) {
+      lines.push(
+        '- Instagram / Facebook Messenger: the clean approach is through official Meta APIs. For Instagram this usually means Professional accounts, DM handling, FAQ flows, lead qualification, and private replies to comments where supported.'
+      );
+    }
+
+    if (mentionsWhatsApp || (!mentionsInstagram && !mentionsFacebook && !mentionsTelegram)) {
+      lines.push(
+        '- WhatsApp Business Platform: standard replies work best inside the open 24-hour customer service window after the user message. Outside that window, you usually need approved template messages.'
+      );
+    }
+
+    if (mentionsTelegram || (!mentionsInstagram && !mentionsFacebook && !mentionsWhatsApp)) {
+      lines.push(
+        '- Telegram: the bot can reply, collect data, and forward leads, but the user has to start the interaction first. A bot does not just message private users out of nowhere.'
+      );
     }
 
     if (mentionsComments) {
-      return 'Yes, comment automation is also possible, but it depends more heavily on the rules and limits of the platform. In practice, a semi-automated setup or replies only to safe, repetitive questions is often the cleaner approach.';
+      lines.push(
+        '- Comments: this should not be framed as unlimited automation. In practice it is often private replies or semi-automated moderation with clear rules.'
+      );
     }
 
-    return 'Yes, an AI assistant can be used not only on a website but also in social channels and messengers. It is usually best for simple questions, basic information, booking or lead capture, and then handing the conversation to a human when needed.';
+    if (mentionsPublishing) {
+      lines.push(
+        '- Publishing: content planning is possible, but official auto-publishing still depends on the specific platform and account type.'
+      );
+    }
+
+    lines.push(
+      '',
+      'In practice the flow is: the customer writes, the bot answers routine questions, asks 2 to 5 clarifying questions, captures the lead, and either forwards it to you or hands the conversation to a person.'
+    );
+
+    return lines.join('\n');
   }
 
-  if (mentionsDm && mentionsComments) {
-    return 'Ja, wir können einen AI-Assistenten für Antworten in sozialen Netzwerken und Messengern einrichten. Am zuverlässigsten funktioniert Automatisierung meist in Direktnachrichten, während Kommentare wegen Plattformregeln oft zusätzliche Regeln, Moderation oder einen teilmanuellen Ablauf brauchen.';
+  const lines = [
+    'Ja, wir können einen Teil der Arbeit in sozialen Netzwerken automatisieren, aber nur innerhalb der offiziellen Plattformregeln und ohne riskante Grauzonen-Lösungen.',
+    '',
+    'Was sich typischerweise automatisieren lässt:',
+    '- automatische Antworten auf häufige Fragen in Direktnachrichten und Messengern;',
+    '- erste Lead-Qualifizierung wie Bedarf, Branche, Budget, Timing und Kontaktwunsch;',
+    '- strukturierte Übergabe an E-Mail, CRM, Google Sheets oder Kalender;',
+    '- Routing: einfache Fragen beantwortet der Bot, komplexere oder sensible Fälle übernimmt ein Mensch;',
+  ];
+
+  if (mentionsComments || (!mentionsDm && !mentionsPublishing)) {
+    lines.push('- kontrollierte Abläufe für Kommentare dort, wo die Plattform das unterstützt.');
   }
 
-  if (mentionsDm) {
-    return 'Ja, ein AI-Bot lässt sich an Direktnachrichten in Kanälen wie Instagram, Facebook Messenger, WhatsApp oder Telegram anbinden. Er kann dort einfache Fragen beantworten, Anfragen vorqualifizieren und an einen Menschen übergeben, sobald das Thema spezieller oder sensibler wird.';
+  if (mentionsPublishing) {
+    lines.push('- Content-Vorbereitung, Vorlagen und Planung, aber kein Massen-Spam und kein aggressiver Auto-Direktversand.');
+  }
+
+  lines.push('', 'Wichtige Plattformgrenzen:');
+
+  if (mentionsInstagram || mentionsFacebook || (!mentionsWhatsApp && !mentionsTelegram)) {
+    lines.push(
+      '- Instagram / Facebook Messenger: sinnvoll ist die offizielle Anbindung über Meta APIs. Bei Instagram geht es meist um Professional Accounts, Direktnachrichten, FAQ-Abläufe, Lead-Qualifizierung und private Antworten auf Kommentare, soweit die Plattform das unterstützt.'
+    );
+  }
+
+  if (mentionsWhatsApp || (!mentionsInstagram && !mentionsFacebook && !mentionsTelegram)) {
+    lines.push(
+      '- WhatsApp Business Platform: normale Antworten funktionieren vor allem innerhalb des offenen 24-Stunden-Fensters nach der Nachricht des Nutzers. Außerhalb davon sind meist nur Template Messages zulässig.'
+    );
+  }
+
+  if (mentionsTelegram || (!mentionsInstagram && !mentionsFacebook && !mentionsWhatsApp)) {
+    lines.push(
+      '- Telegram: der Bot kann antworten, Daten sammeln und Leads weitergeben, aber der Nutzer muss die Interaktion zuerst selbst starten. Ein Bot schreibt Privatnutzer nicht einfach ungefragt an.'
+    );
   }
 
   if (mentionsComments) {
-    return 'Ja, auch Antworten in Kommentaren lassen sich teilweise automatisieren. In der Praxis hängt das aber stärker von den Regeln und Grenzen der jeweiligen Plattform ab, daher ist oft ein teilautomatischer Ablauf sinnvoller.';
+    lines.push(
+      '- Kommentare: Das sollte nicht als grenzenlose Vollautomatisierung verkauft werden. In der Praxis sind es oft private Replies oder teilautomatische Moderationsabläufe mit klaren Regeln.'
+    );
   }
 
-  return 'Ja, ein AI-Assistent kann nicht nur auf der Website, sondern auch in sozialen Netzwerken und Messengern eingesetzt werden. Typisch sind Antworten auf einfache Fragen, Basisinformationen, Termin- oder Anfrageaufnahme und die saubere Übergabe an einen Menschen, wenn es nötig wird.';
+  if (mentionsPublishing) {
+    lines.push(
+      '- Publishing: Planung und Vorbereitung sind möglich, offizielle Auto-Veröffentlichung hängt aber von Plattform und Account-Typ ab.'
+    );
+  }
+
+  lines.push(
+    '',
+    'Praktisch läuft es so: Der Kunde schreibt, der Bot beantwortet Standardfragen, stellt 2 bis 5 Rückfragen, erfasst den Lead und übergibt dann sauber an Ihr Team oder an eine reale Person.'
+  );
+
+  return lines.join('\n');
 };
 
 const getBerlinTimeAnswer = (language: AssistantLanguage) => {
@@ -304,9 +587,8 @@ export const detectLanguage = (input: string, fallback: AssistantLanguage = 'de'
 
 export const detectIntent = (text: string): AssistantIntent => {
   const source = normalize(text);
-  if (HIGH_RISK_KEYWORDS.some(keyword => source.includes(keyword))) return 'handoff';
+  if (shouldEscalateToHuman(source)) return 'handoff';
   if (BOOKING_KEYWORDS.some(keyword => source.includes(keyword))) return 'booking';
-  if (HANDOFF_KEYWORDS.some(keyword => source.includes(keyword))) return 'handoff';
   if (LEAD_KEYWORDS.some(keyword => source.includes(keyword))) return 'lead_capture';
   if (PRICING_KEYWORDS.some(keyword => source.includes(keyword))) return 'pricing';
   if (TIMELINE_KEYWORDS.some(keyword => source.includes(keyword))) return 'timeline';
@@ -360,14 +642,14 @@ export const generateLocalResponse = (messages: AssistantMessage[], language: As
     };
   }
 
-  if (HIGH_RISK_KEYWORDS.some(keyword => normalize(lastUserContent).includes(keyword))) {
+  if (shouldEscalateToHuman(lastUserContent)) {
     return {
-      answer: accuracyFallback[language],
+      answer: buildPreciseHandoffAnswer(language),
       detectedLanguage: language,
       detectedIntent: 'handoff',
       confidence: 0.2,
       nextStep: 'handoff',
-      leadPrompt: accuracyFallback[language],
+      leadPrompt: buildPreciseHandoffAnswer(language),
       fallbackMode: true,
     };
   }
