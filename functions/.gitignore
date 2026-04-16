@@ -1,7 +1,10 @@
+# Compiled JavaScript files
+lib/**/*.js
+lib/**/*.js.map
+
+# TypeScript v1 declaration files
+typings/
+
+# Node.js dependency directory
 node_modules/
-lib/
-venv/
-__pycache__/
-firebase-debug.log
-firebase-debug.*.log
 *.local
