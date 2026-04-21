@@ -680,6 +680,7 @@ export const generateAssistantLocalReply = ({
   messages,
   language,
   leadContext,
+  bookingContext,
 }: AssistantLocalReplyContext): AssistantLocalReply => {
   const copy = getAssistantCopy(language);
   const knowledge = getAssistantKnowledge(language);
@@ -690,7 +691,8 @@ export const generateAssistantLocalReply = ({
   const matchedNiche = findByKeywords(knowledge.niches, lastUserContent);
   const matchedFaq = findByKeywords(knowledge.faq, lastUserContent) ?? findFaqByIntent(knowledge.faq, intent);
   const scope = summarizeScope(messages);
-  const hasBusinessType = Boolean(leadContext?.businessType?.trim()) || scope.length > 40;
+  const hasBusinessType =
+    Boolean(leadContext?.businessType?.trim()) || Boolean(bookingContext?.businessType?.trim()) || scope.length > 40;
 
   if (isTimeQuestion(lastUserContent)) {
     return {

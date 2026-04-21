@@ -9,9 +9,11 @@ import { servicesEn } from '../../../src/data/assistant/services.en';
 import { servicesUk } from '../../../src/data/assistant/services.uk';
 import type {
   AssistantChatResponse,
+  AssistantBookingContext,
   AssistantIntent,
   AssistantKnowledgeBundle,
   AssistantLanguage,
+  AssistantLeadPayload,
   AssistantMessage,
   AssistantService,
 } from '../../../src/features/ai-assistant/types';
@@ -620,7 +622,14 @@ const buildEstimate = (service: AssistantService, language: AssistantLanguage, e
   return `Rough guide: about EUR ${low.toLocaleString('en-US')} to EUR ${high.toLocaleString('en-US')}. ${service.estimateHint}`;
 };
 
-export const generateLocalResponse = (messages: AssistantMessage[], language: AssistantLanguage): AssistantChatResponse => {
+export const generateLocalResponse = (
+  messages: AssistantMessage[],
+  language: AssistantLanguage,
+  context?: {
+    leadContext?: Partial<AssistantLeadPayload>;
+    bookingContext?: AssistantBookingContext;
+  }
+): AssistantChatResponse => {
   const knowledge = knowledgeByLanguage[language];
   const lastUserMessage = [...messages].reverse().find(message => message.role === 'user');
   const lastUserContent = lastUserMessage?.content ?? '';
@@ -629,7 +638,10 @@ export const generateLocalResponse = (messages: AssistantMessage[], language: As
   const matchedNiche = findByKeywords(knowledge.niches, lastUserContent);
   const matchedFaq = findByKeywords(knowledge.faq, lastUserContent);
   const scope = summarizeScope(messages);
-  const enoughInfo = scope.length > 40;
+  const enoughInfo =
+    scope.length > 40 ||
+    Boolean(context?.leadContext?.businessType?.trim()) ||
+    Boolean(context?.bookingContext?.businessType?.trim());
 
   if (isTimeQuestion(lastUserContent)) {
     return {

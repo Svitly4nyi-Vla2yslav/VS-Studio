@@ -104,6 +104,7 @@ export const handler = async (event: HandlerEvent): Promise<HandlerResponse> => 
       `Notizen: ${payload.notes ?? '-'}`,
       `Sprache: ${payload.language}`,
       `Zeitpunkt: ${submittedAt}`,
+      `Quelle: ${payload.source}`,
     ].join('\n');
 
     const emailResult = await sendNotificationEmail({
@@ -120,6 +121,7 @@ export const handler = async (event: HandlerEvent): Promise<HandlerResponse> => 
         Notizen: payload.notes ?? '-',
         Sprache: payload.language,
         Zeitpunkt: submittedAt,
+        Quelle: payload.source,
       }),
     });
 

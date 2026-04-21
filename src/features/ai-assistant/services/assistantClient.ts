@@ -62,4 +62,5 @@ export const buildLocalAssistantFallback = (request: AssistantChatRequest): Assi
     messages: request.messages,
     language: request.language ?? 'de',
     leadContext: request.leadContext,
+    bookingContext: request.bookingContext,
   });

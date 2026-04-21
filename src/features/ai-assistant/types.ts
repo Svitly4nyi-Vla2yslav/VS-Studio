@@ -121,10 +121,23 @@ export interface AssistantBookingPayload {
   source: 'assistant';
 }
 
+export interface AssistantBookingContext {
+  name?: string;
+  email?: string;
+  phone?: string;
+  businessType?: string;
+  requestedService?: string;
+  preferredDate?: string;
+  preferredTime?: string;
+  timezone?: string;
+  notes?: string;
+}
+
 export interface AssistantChatRequest {
   messages: AssistantMessage[];
   language?: AssistantLanguage;
   leadContext?: Partial<AssistantLeadPayload>;
+  bookingContext?: AssistantBookingContext;
 }
 
 export interface AssistantChatResponse {
@@ -142,6 +155,7 @@ export interface AssistantLocalReplyContext {
   messages: AssistantMessage[];
   language: AssistantLanguage;
   leadContext?: Partial<AssistantLeadPayload>;
+  bookingContext?: AssistantBookingContext;
 }
 
 export interface AssistantLocalReply extends AssistantChatResponse {

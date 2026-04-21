@@ -62,6 +62,11 @@ export const useAssistant = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const [activeForm, setActiveForm] = useState<'lead' | 'booking' | null>(null);
   const [leadDraft, setLeadDraft] = useState<Partial<AssistantLeadPayload>>({ language: assistantLanguage, source: 'assistant' });
+  const [bookingDraft, setBookingDraft] = useState<Partial<AssistantBookingPayload>>({
+    language: assistantLanguage,
+    source: 'assistant',
+    timezone: 'Europe/Berlin',
+  });
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -71,6 +76,15 @@ export const useAssistant = () => {
 
   useEffect(() => {
     setLeadDraft(previous => ({ ...previous, language: assistantLanguage, source: 'assistant' }));
+  }, [assistantLanguage]);
+
+  useEffect(() => {
+    setBookingDraft(previous => ({
+      ...previous,
+      language: assistantLanguage,
+      source: 'assistant',
+      timezone: previous.timezone ?? 'Europe/Berlin',
+    }));
   }, [assistantLanguage]);
 
   const openAssistant = () => {
@@ -124,6 +138,7 @@ export const useAssistant = () => {
         messages: nextMessages,
         language: detectedLanguage,
         leadContext: leadDraft,
+        bookingContext: bookingDraft,
       });
       setAssistantLanguage(response.detectedLanguage);
       setDegradedMode(Boolean(response.fallbackMode));
@@ -138,6 +153,7 @@ export const useAssistant = () => {
           messages: nextMessages,
           language: detectedLanguage,
           leadContext: leadDraft,
+          bookingContext: bookingDraft,
         })
       );
     } finally {
@@ -209,6 +225,7 @@ export const useAssistant = () => {
       source: 'assistant',
     };
 
+    setBookingDraft(fullPayload);
     setErrorMessage('');
     trackAssistantEvent('assistant_booking_started', { language: assistantLanguage });
 
@@ -250,6 +267,7 @@ export const useAssistant = () => {
     assistantLanguage,
     copy: getAssistantCopy(assistantLanguage),
     leadDraft,
+    bookingDraft,
     openAssistant,
     closeAssistant,
     sendMessage,

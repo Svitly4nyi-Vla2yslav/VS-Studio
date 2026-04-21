@@ -21,6 +21,19 @@ const requestSchema = z.object({
       need: z.string().optional(),
     })
     .optional(),
+  bookingContext: z
+    .object({
+      name: z.string().optional(),
+      email: z.string().optional(),
+      phone: z.string().optional(),
+      businessType: z.string().optional(),
+      requestedService: z.string().optional(),
+      preferredDate: z.string().optional(),
+      preferredTime: z.string().optional(),
+      timezone: z.string().optional(),
+      notes: z.string().optional(),
+    })
+    .optional(),
 });
 
 const responseToText = (payload: unknown) => {
@@ -36,7 +49,37 @@ const responseToText = (payload: unknown) => {
   );
 };
 
-const createSystemPrompt = (language: AssistantLanguage, contextBlock: string) => `
+const buildCapturedDataBlock = (request: Pick<AssistantChatRequest, 'leadContext' | 'bookingContext'>) => {
+  const leadDetails = [
+    request.leadContext?.businessType ? `Lead business type: ${request.leadContext.businessType}` : null,
+    request.leadContext?.requestedService ? `Lead requested service: ${request.leadContext.requestedService}` : null,
+    request.leadContext?.need ? `Lead need: ${request.leadContext.need}` : null,
+  ].filter(Boolean);
+
+  const bookingDetails = [
+    request.bookingContext?.name ? `Booking name: ${request.bookingContext.name}` : null,
+    request.bookingContext?.email ? `Booking email: ${request.bookingContext.email}` : null,
+    request.bookingContext?.phone ? `Booking phone: ${request.bookingContext.phone}` : null,
+    request.bookingContext?.businessType ? `Booking business type: ${request.bookingContext.businessType}` : null,
+    request.bookingContext?.requestedService ? `Booking requested service: ${request.bookingContext.requestedService}` : null,
+    request.bookingContext?.preferredDate ? `Booking preferred date: ${request.bookingContext.preferredDate}` : null,
+    request.bookingContext?.preferredTime ? `Booking preferred time: ${request.bookingContext.preferredTime}` : null,
+    request.bookingContext?.timezone ? `Booking timezone: ${request.bookingContext.timezone}` : null,
+    request.bookingContext?.notes ? `Booking notes: ${request.bookingContext.notes}` : null,
+  ].filter(Boolean);
+
+  if (leadDetails.length === 0 && bookingDetails.length === 0) {
+    return '';
+  }
+
+  return `
+
+Captured enquiry data:
+${[...leadDetails, ...bookingDetails].map(detail => `- ${detail}`).join('\n')}
+`;
+};
+
+const createSystemPrompt = (language: AssistantLanguage, contextBlock: string, capturedDataBlock: string) => `
 You are the on-site AI assistant for VS Web Studio.
 Core positioning:
 - Present the offer as an AI assistant for enquiry handling, lead qualification, and consultation booking across Instagram, Facebook Messenger, WhatsApp, Telegram, and website chat.
@@ -61,6 +104,7 @@ Language:
 
 Business knowledge:
 ${contextBlock}
+${capturedDataBlock}
 `;
 
 const getAiNextStep = (intent: ReturnType<typeof detectIntent>) => {
@@ -70,7 +114,11 @@ const getAiNextStep = (intent: ReturnType<typeof detectIntent>) => {
   return 'none' as const;
 };
 
-const callOpenAI = async (messages: AssistantMessage[], language: AssistantLanguage) => {
+const callOpenAI = async (
+  messages: AssistantMessage[],
+  language: AssistantLanguage,
+  request: Pick<AssistantChatRequest, 'leadContext' | 'bookingContext'>
+) => {
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) return null;
 
@@ -80,7 +128,12 @@ const callOpenAI = async (messages: AssistantMessage[], language: AssistantLangu
     input: [
       {
         role: 'system',
-        content: [{ type: 'input_text', text: createSystemPrompt(language, buildContextBlock(language)) }],
+        content: [
+          {
+            type: 'input_text',
+            text: createSystemPrompt(language, buildContextBlock(language), buildCapturedDataBlock(request)),
+          },
+        ],
       },
       ...messages.map(message => ({
         role: message.role === 'system' ? 'assistant' : message.role,
@@ -113,11 +166,14 @@ export const handler = async (event: HandlerEvent): Promise<HandlerResponse> => 
     const parsed = requestSchema.parse(parseJsonBody<AssistantChatRequest>(event.body));
     const lastUserMessage = [...parsed.messages].reverse().find(message => message.role === 'user');
     const detectedLanguage = detectLanguage(lastUserMessage?.content ?? '', coerceLanguage(parsed.language));
-    const fallback = generateLocalResponse(parsed.messages as AssistantMessage[], detectedLanguage);
+    const fallback = generateLocalResponse(parsed.messages as AssistantMessage[], detectedLanguage, {
+      leadContext: parsed.leadContext,
+      bookingContext: parsed.bookingContext,
+    });
     let answer = fallback.answer;
 
     try {
-      const aiAnswer = await callOpenAI(parsed.messages as AssistantMessage[], detectedLanguage);
+      const aiAnswer = await callOpenAI(parsed.messages as AssistantMessage[], detectedLanguage, parsed);
       if (aiAnswer) answer = aiAnswer;
     } catch (error) {
       console.error('assistant-chat falling back to local mode.', error);
