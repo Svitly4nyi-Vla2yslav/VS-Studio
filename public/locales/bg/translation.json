@@ -422,7 +422,7 @@
     "hero": {
       "titleLine1": "Website and Lead System",
       "titleLine2": "za lokalni biznesi",
-      "titleLine3": "ot EUR 690",
+      "titleLine3": "ot EUR 490",
       "subtitle": "Premium setup for local businesses in Germany: clear funnel, measurable leads, clean handover to sales.",
       "cta": "Bezplatna parva konsultatsiya",
       "metrics": {
@@ -463,8 +463,8 @@
       "starter": {
         "name": "Starter",
         "desc": "�\u0014а мал�`к локален бизнес с б�`Ѭз с�\u001aаѬ�\u001a.",
-        "price": "о�\u001a EUR 690",
-        "range": "обикновено EUR 690-790",
+        "price": "о�\u001a EUR 490",
+        "range": "обикновено EUR 490-590",
         "core": [
           "Landing page",
           "Lead �\u001eоѬма + кон�\u001aак�\u001aна �\u001eоѬма",
@@ -494,8 +494,8 @@
       "business": {
         "name": "Business",
         "desc": "�\u0014а екипи с няколко ђслђги и ак�\u001aивни пѬодажби.",
-        "price": "о�\u001a EUR 1.290",
-        "range": "обикновено EUR 1.290-1.490",
+        "price": "о�\u001a EUR 590",
+        "range": "обикновено EUR 590-790",
         "core": [
           "�Sногос�\u001aѬани�!ен сай�\u001a до 5 с�\u001aѬани� и",
           "CRM ин�\u001aегѬа� ия + lead tracking",
@@ -525,8 +525,8 @@
       "pro": {
         "name": "Pro",
         "desc": "�\u0014а Ѭас�\u001aеж �!Ѭез сай�\u001a, Ѭеклама и ав�\u001aома�\u001aиза� ия.",
-        "price": "о�\u001a EUR 2.490",
-        "range": "обикновено EUR 2.490-2.990",
+        "price": "о�\u001a EUR 790",
+        "range": "обикновено EUR 790-990",
         "core": [
           "Website + Ads setup",
           "Google Ads или Meta Ads",

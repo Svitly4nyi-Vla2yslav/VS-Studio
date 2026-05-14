@@ -425,7 +425,7 @@
     "hero": {
       "titleLine1": "Web sitesi ve lead sistemi",
       "titleLine2": "yerel isletmeler icin",
-      "titleLine3": "690 EUR'dan itibaren",
+      "titleLine3": "490 EUR'dan itibaren",
       "subtitle": "Almanya'daki yerel işletmeler için premium kurulum: net funnel, ölçülebilir lead'ler ve satış ekibine düzenli teslim.",
       "cta": "Ucretsiz ilk gorusme",
       "metrics": {
@@ -466,8 +466,8 @@
       "starter": {
         "name": "Starter",
         "desc": "Hizli baslangic isteyen kucuk yerel isletmeler icin.",
-        "price": "EUR 690'dan itibaren",
-        "range": "genelde EUR 690-790",
+        "price": "EUR 490'dan itibaren",
+        "range": "genelde EUR 490-590",
         "core": [
           "Landing page",
           "Lead formu + iletisim formu",
@@ -497,8 +497,8 @@
       "business": {
         "name": "Business",
         "desc": "Birden fazla hizmeti ve aktif satisi olan ekipler icin.",
-        "price": "EUR 1.290'dan itibaren",
-        "range": "genelde EUR 1.290-1.490",
+        "price": "EUR 590'dan itibaren",
+        "range": "genelde EUR 590-790",
         "core": [
           "5 sayfaya kadar cok sayfali web sitesi",
           "CRM entegrasyonu + lead tracking",
@@ -528,8 +528,8 @@
       "pro": {
         "name": "Pro",
         "desc": "Web sitesi, reklam ve otomasyonla buyumek icin.",
-        "price": "EUR 2.490'dan itibaren",
-        "range": "genelde EUR 2.490-2.990",
+        "price": "EUR 790'dan itibaren",
+        "range": "genelde EUR 790-990",
         "core": [
           "Web sitesi + reklam kurulumu",
           "Google Ads veya Meta Ads",

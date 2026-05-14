@@ -48,17 +48,17 @@
   "pricingPackages": [
     {
       "name": "Starter",
-      "price": "ab EUR 690",
+      "price": "ab EUR 490",
       "description": "Landingpage mit Lead-Formular, Tracking und SEO-Basis für kleine lokale Unternehmen."
     },
     {
       "name": "Business",
-      "price": "ab EUR 1.290",
+      "price": "ab EUR 590",
       "description": "Mehrseitige Website mit CRM-Integration, Tracking und Conversion-Fokus."
     },
     {
       "name": "Pro",
-      "price": "ab EUR 2.490",
+      "price": "ab EUR 790",
       "description": "Growth-Setup mit Website, Ads, Marketing-Dashboard und Automationen."
     }
   ],
@@ -92,9 +92,9 @@
     {
       "path": "/preise",
       "name": "Preise",
-      "title": "Preise | Website- und Lead-Systeme ab EUR 690",
+      "title": "Preise | Website- und Lead-Systeme ab EUR 490",
       "description": "Transparente Preise für Landingpages, mehrseitige Websites und Lead-Systeme inklusive SEO-Basis, Tracking und Support für lokale Unternehmen.",
-      "keywords": "website preise deutschland, landingpage ab 690, webagentur preise, lead system kosten, seo paket",
+      "keywords": "website preise deutschland, landingpage ab 490, webagentur preise, lead system kosten, seo paket",
       "pageKind": "pricing",
       "changeFrequency": "weekly",
       "priority": 0.92,

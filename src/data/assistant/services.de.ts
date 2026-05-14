@@ -8,7 +8,7 @@ export const servicesDe: AssistantService[] = [
       'Eine klare, schnelle Website mit Fokus auf Anfragen, Vertrauen und messbare Kontaktpunkte.',
     businessValue:
       'Ideal, wenn Ihr Unternehmen online professionell wirken und regelmäßig qualifizierte Anfragen erhalten soll.',
-    pricingFrom: 'ab 2.490 EUR',
+    pricingFrom: 'ab 790 EUR',
     pricingNumericFrom: 2490,
     pricingModel: 'one_time',
     timeline: 'ca. 2 bis 4 Wochen',
@@ -23,7 +23,7 @@ export const servicesDe: AssistantService[] = [
       'Ein Relaunch für bestehende Websites mit besserer Struktur, stärkerem Vertrauen und klareren Conversion-Pfaden.',
     businessValue:
       'Sinnvoll, wenn bereits Traffic vorhanden ist, die Seite aber veraltet wirkt oder zu wenig Anfragen erzeugt.',
-    pricingFrom: 'ab 1.690 EUR',
+    pricingFrom: 'ab 1.490 EUR',
     pricingNumericFrom: 1690,
     pricingModel: 'one_time',
     timeline: 'ca. 1 bis 3 Wochen',

@@ -156,6 +156,16 @@ const MAX_BY_SEO: Record<string, number> = {
   other: 90,
 };
 
+const LAUNCH_PRICE_MIN = 600;
+const LAUNCH_PRICE_MAX = 900;
+const LAUNCH_PRICE_SCALE = 0.42;
+const LAUNCH_PRICE_STEP = 10;
+
+const normalizeLaunchPrice = (value: number) =>
+  Math.min(
+    LAUNCH_PRICE_MAX,
+    Math.max(LAUNCH_PRICE_MIN, Math.round((value * LAUNCH_PRICE_SCALE) / LAUNCH_PRICE_STEP) * LAUNCH_PRICE_STEP)
+  );
 
 const labelFallbacks: Record<string, string> = {
   goal: 'Ziel',
@@ -260,7 +270,7 @@ const Configurator: React.FC = () => {
     const getLabels = (values: string[], options: readonly { value: string; title: string }[]) =>
       values.map(value => options.find(option => option.value === value)?.title || value).join(', ');
 
-    const totalFrom =
+    const rawTotalFrom =
       sumPrices(goal, PRICE_BY_GOAL) +
       sumPrices(integration, PRICE_BY_INTEGRATION) +
       sumPrices(ads, PRICE_BY_ADS) +
@@ -271,7 +281,7 @@ const Configurator: React.FC = () => {
       sumPrices(domain, PRICE_BY_DOMAIN) +
       sumPrices(pages, PRICE_BY_PAGES) +
       sumPrices(seo, PRICE_BY_SEO);
-    const totalTo =
+    const rawTotalTo =
       sumPrices(goal, MAX_BY_GOAL) +
       sumPrices(integration, MAX_BY_INTEGRATION) +
       sumPrices(ads, MAX_BY_ADS) +
@@ -282,6 +292,8 @@ const Configurator: React.FC = () => {
       sumPrices(domain, MAX_BY_DOMAIN) +
       sumPrices(pages, MAX_BY_PAGES) +
       sumPrices(seo, MAX_BY_SEO);
+    const totalFrom = normalizeLaunchPrice(rawTotalFrom);
+    const totalTo = Math.max(totalFrom, normalizeLaunchPrice(rawTotalTo));
 
     const businessSignals =
       languages.includes('multi') ||
@@ -291,7 +303,7 @@ const Configurator: React.FC = () => {
       integration.includes('crm') ||
       integration.includes('payments');
 
-    const pack: 'Starter' | 'Business' = totalTo > 980 || businessSignals ? 'Business' : 'Starter';
+    const pack: 'Starter' | 'Business' = rawTotalTo > 1400 || businessSignals ? 'Business' : 'Starter';
     const supportMonthly = pack === 'Business' ? 86 : 62;
     const supportYearlyRaw = supportMonthly * 12;
     const supportYearly = Math.round(supportYearlyRaw * 0.7);

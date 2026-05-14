@@ -422,7 +422,7 @@
     "hero": {
       "titleLine1": "Website and Lead System",
       "titleLine2": "pentru afaceri locale",
-      "titleLine3": "de la EUR 690",
+      "titleLine3": "de la EUR 490",
       "subtitle": "Premium setup for local businesses in Germany: clear funnel, measurable leads, clean handover to sales.",
       "cta": "Prima consultatie gratuita",
       "metrics": {
@@ -463,8 +463,8 @@
       "starter": {
         "name": "Starter",
         "desc": "Pentru afaceri locale mici cu lansare rapida.",
-        "price": "de la EUR 690",
-        "range": "de obicei EUR 690-790",
+        "price": "de la EUR 490",
+        "range": "de obicei EUR 490-590",
         "core": [
           "Landing page",
           "Formular lead + formular de contact",
@@ -494,8 +494,8 @@
       "business": {
         "name": "Business",
         "desc": "Pentru echipe cu mai multe servicii si vanzari active.",
-        "price": "de la EUR 1.290",
-        "range": "de obicei EUR 1.290-1.490",
+        "price": "de la EUR 590",
+        "range": "de obicei EUR 590-790",
         "core": [
           "Website multi-page de pana la 5 pagini",
           "Integrare CRM + lead tracking",
@@ -525,8 +525,8 @@
       "pro": {
         "name": "Pro",
         "desc": "Pentru crestere prin website, ads si automatizare.",
-        "price": "de la EUR 2.490",
-        "range": "de obicei EUR 2.490-2.990",
+        "price": "de la EUR 790",
+        "range": "de obicei EUR 790-990",
         "core": [
           "Website + setup Ads",
           "Google Ads sau Meta Ads",

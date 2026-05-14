@@ -23,7 +23,7 @@ export const servicesUk: AssistantService[] = [
       'Оновлення існуючого сайту зі зрозумілішою структурою, сильнішою довірою та кращими шляхами до заявки.',
     businessValue:
       'Корисно, коли трафік уже є, але сайт виглядає застаріло або слабко конвертує.',
-    pricingFrom: 'від 1 690 EUR',
+    pricingFrom: 'від 1 490 EUR',
     pricingNumericFrom: 1690,
     pricingModel: 'one_time',
     timeline: 'приблизно 1-3 тижні',

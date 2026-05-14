@@ -23,7 +23,7 @@ export const servicesEn: AssistantService[] = [
       'A relaunch for existing websites with better structure, stronger trust signals, and clearer conversion paths.',
     businessValue:
       'Useful when traffic already exists, but the current website looks dated or converts too weakly.',
-    pricingFrom: 'from EUR 1,690',
+    pricingFrom: 'from EUR 1,490',
     pricingNumericFrom: 1690,
     pricingModel: 'one_time',
     timeline: 'about 1 to 3 weeks',

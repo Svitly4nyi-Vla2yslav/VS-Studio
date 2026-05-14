@@ -422,7 +422,7 @@
     "hero": {
       "titleLine1": "Malper û Sîstema Lead",
       "titleLine2": "bo bazirganiyen heremi",
-      "titleLine3": "ji EUR 690 dest pe dike",
+      "titleLine3": "ji EUR 490 dest pe dike",
       "subtitle": "Setup-a premium ji bo karsaziyên herêmî li Elmanyayê: funnel-a zelal, leadên pîvankirî û radestkirina paqij ji bo tîmê firotanê.",
       "cta": "Hevdîtina yekem a belaş",
       "metrics": {
@@ -463,8 +463,8 @@
       "starter": {
         "name": "Starter",
         "desc": "Ji bo karsaziyên biçûk ên herêmî ku dixwazin bi lez dest pê bikin.",
-        "price": "ji EUR 690",
-        "range": "bi gelemperî EUR 690-790",
+        "price": "ji EUR 490",
+        "range": "bi gelemperî EUR 490-590",
         "core": [
           "Landing page",
           "Forma lead + forma têkiliyê",
@@ -494,8 +494,8 @@
       "business": {
         "name": "Business",
         "desc": "Ji bo tîmên bi gelek xizmet û firotina çalak.",
-        "price": "ji EUR 1.290",
-        "range": "bi gelemperî EUR 1.290-1.490",
+        "price": "ji EUR 590",
+        "range": "bi gelemperî EUR 590-790",
         "core": [
           "Malperek pir-rûpelî heta 5 rûpel",
           "Têkildana CRM + lead tracking",
@@ -525,8 +525,8 @@
       "pro": {
         "name": "Pro",
         "desc": "Ji bo mezinbûn bi website, ads û otomatîzasyon.",
-        "price": "ji EUR 2.490",
-        "range": "bi gelemperî EUR 2.490-2.990",
+        "price": "ji EUR 790",
+        "range": "bi gelemperî EUR 790-990",
         "core": [
           "Malper + setup-a Ads",
           "Google Ads an Meta Ads",

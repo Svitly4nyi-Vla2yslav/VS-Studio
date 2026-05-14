@@ -425,7 +425,7 @@
     "hero": {
       "titleLine1": "Strona i system leadowy",
       "titleLine2": "dla lokalnych firm",
-      "titleLine3": "od 690 EUR",
+      "titleLine3": "od 490 EUR",
       "subtitle": "Premiumowy setup dla lokalnych firm w Niemczech: przejrzysty lejek, mierzalne leady i sprawne przekazanie do sprzedaży.",
       "cta": "Bezpłatna konsultacja wstępna",
       "metrics": {
@@ -466,8 +466,8 @@
       "starter": {
         "name": "Starter",
         "desc": "Dla małych lokalnych firm, które chcą szybko wystartować.",
-        "price": "od 690 EUR",
-        "range": "zwykle 690-790 EUR",
+        "price": "od 490 EUR",
+        "range": "zwykle 490-590 EUR",
         "core": [
           "Landing page",
           "Formularz leadowy + formularz kontaktowy",
@@ -497,8 +497,8 @@
       "business": {
         "name": "Business",
         "desc": "Dla zespołów z kilkoma usługami i aktywną sprzedażą.",
-        "price": "od 1.290 EUR",
-        "range": "zwykle 1.290-1.490 EUR",
+        "price": "od 590 EUR",
+        "range": "zwykle 590-790 EUR",
         "core": [
           "Strona wielopodstronowa do 5 stron",
           "Integracja CRM + lead tracking",
@@ -528,8 +528,8 @@
       "pro": {
         "name": "Pro",
         "desc": "Dla wzrostu napędzanego stroną, reklamami i automatyzacjami.",
-        "price": "od 2.490 EUR",
-        "range": "zwykle 2.490-2.990 EUR",
+        "price": "od 790 EUR",
+        "range": "zwykle 790-990 EUR",
         "core": [
           "Strona + konfiguracja Ads",
           "Google Ads albo Meta Ads",
