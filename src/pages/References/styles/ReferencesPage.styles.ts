@@ -311,6 +311,10 @@ export const ReferencesPageScope = styled.div`
     animation: tileGlow 7.8s ease-in-out infinite;
   }
 
+  .references-metric-card > * {
+    min-width: 0;
+  }
+
   .references-metric-card::before {
     content: '';
     position: absolute;
@@ -337,19 +341,27 @@ export const ReferencesPageScope = styled.div`
 
   .references-metric-head {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 8px;
+    min-width: 0;
   }
 
   .references-metric-card h3 {
+    flex: 1 1 150px;
+    min-width: 0;
     margin-bottom: 0;
+    overflow-wrap: anywhere;
   }
 
   .references-kpi-badge {
     display: inline-flex;
+    flex: 0 1 auto;
     align-items: center;
     gap: 6px;
+    max-width: 100%;
+    box-sizing: border-box;
     border-radius: 999px;
     border: 1px solid rgba(106, 245, 191, 0.44);
     background: rgba(36, 190, 139, 0.18);
@@ -357,6 +369,7 @@ export const ReferencesPageScope = styled.div`
     font-weight: 700;
     font-size: 13px;
     padding: 4px 10px;
+    white-space: nowrap;
   }
 
   .references-metric-line {
