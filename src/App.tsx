@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from './components/Layout/Layout';
-import { MaintenanceGate } from './components/MaintenanceGate';
+// import { MaintenanceGate } from './components/MaintenanceGate';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/HomePage/HomePage';
@@ -23,7 +23,7 @@ const AIAssistantDemoPage = lazy(() => import('./pages/AIAssistantDemo'));
 
 export const App: React.FC = () => {
   return (
-    <MaintenanceGate>
+    // <MaintenanceGate>
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
@@ -55,6 +55,6 @@ export const App: React.FC = () => {
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
-    </MaintenanceGate>
+    // </MaintenanceGate>
   );
 };
