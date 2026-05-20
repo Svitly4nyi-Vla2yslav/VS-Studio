@@ -449,110 +449,114 @@
       }
     },
     "packages": {
-      "title": "Pacchetti prezzi",
+      "title": "Pacchetti e prezzi",
       "badge": "Consigliato",
       "billing": {
-        "monthly": "Mensile",
-        "yearly": "Annuale"
+        "monthly": "Mese",
+        "yearly": "Anno"
       },
       "coreTitle": "Base",
       "plusTitle": "Extra",
       "subscriptionTitle": "Abbonamento supporto",
-      "subscriptionIncludesTitle": "Include",
+      "subscriptionIncludesTitle": "Incluso",
       "outcomeLabel": "Risultato:",
       "starter": {
         "name": "Starter",
-        "desc": "Per piccole aziende locali con partenza rapida.",
+        "desc": "Per piccole aziende locali che vogliono essere visibili online in modo rapido e professionale.",
         "price": "da EUR 490",
-        "range": "di solito EUR 490-590",
+        "range": "di solito EUR 490–590",
         "core": [
           "Landing page",
-          "Modulo lead + modulo di contatto",
-          "GA4 + configurazione SEO base"
+          "Modulo lead + area contatto",
+          "GA4 + setup SEO di base"
         ],
         "plus": [
           "Ottimizzazione mobile",
-          "Tracking DSGVO base"
+          "Tracking base conforme DSGVO"
         ],
         "subscription": {
           "monthly": {
             "price": "EUR 62 / mese",
-            "meta": "supporto base dopo il lancio"
+            "meta": "Abbonamento supporto separato dalla creazione del sito"
           },
           "yearly": {
             "price": "EUR 521 / anno",
-            "meta": "12 mesi con sconto del 30%"
+            "meta": "12 mesi con il 30% di sconto"
           },
           "includes": [
             "Aggiornamenti tecnici e backup",
-            "Controllo di moduli, conversioni e tracking base",
-            "Fino a 1 blocco di modifiche o aggiornamenti al mese"
+            "Monitoraggio di moduli, conversioni e tracking base",
+            "Fino a 1 piccolo blocco modifiche al mese"
           ]
         },
-        "outcome": "Canale stabile per le prime richieste qualificate."
+        "outcome": "Presenza online professionale per le prime richieste qualificate."
       },
       "business": {
         "name": "Business",
-        "desc": "Per team con piu servizi e vendite attive.",
+        "desc": "Per aziende locali che hanno bisogno di più richieste, struttura migliore e analisi chiara.",
         "price": "da EUR 590",
-        "range": "di solito EUR 590-790",
+        "range": "di solito EUR 590–790",
         "core": [
           "Sito multipagina fino a 5 pagine",
           "Integrazione CRM + lead tracking",
-          "Dashboard analitica"
+          "Dashboard analytics"
         ],
         "plus": [
-          "Struttura SEO per servizio",
+          "Struttura SEO per servizi",
           "Ottimizzazione conversioni"
         ],
         "subscription": {
           "monthly": {
             "price": "EUR 86 / mese",
-            "meta": "supporto per sito, CRM e analytics"
+            "meta": "Abbonamento supporto separato dalla creazione del sito"
           },
           "yearly": {
             "price": "EUR 722 / anno",
-            "meta": "12 mesi con sconto del 30%"
+            "meta": "12 mesi con il 30% di sconto"
           },
           "includes": [
-            "Aggiornamenti regolari di contenuti e pagine",
+            "Aggiornamenti regolari per contenuti e pagine",
             "Controllo di CRM, lead tracking e dashboard",
-            "Fino a 2 task al mese per migliorare la conversione"
+            "Fino a 2 attività di ottimizzazione al mese"
           ]
         },
-        "outcome": "Flusso lead prevedibile con analitica chiara."
+        "outcome": "Flusso lead pianificabile con analisi chiara."
       },
       "pro": {
         "name": "Pro",
-        "desc": "Per crescere con sito, ads e automazione.",
+        "desc": "Per aziende che vogliono collegare sito, pubblicità e automazione.",
         "price": "da EUR 790",
-        "range": "di solito EUR 790-990",
+        "range": "di solito EUR 790–990",
         "core": [
-          "Website + setup Ads",
+          "Sito + setup ads",
           "Google Ads o Meta Ads",
-          "Marketing dashboard + tracking"
+          "Dashboard marketing + tracking"
         ],
         "plus": [
           "Qualificazione lead con AI",
-          "Automation flows"
+          "Workflow di automazione"
         ],
         "subscription": {
           "monthly": {
             "price": "EUR 160 / mese",
-            "meta": "gestione attiva del sistema growth"
+            "meta": "Abbonamento supporto separato dalla creazione del sito"
           },
           "yearly": {
             "price": "EUR 1.344 / anno",
-            "meta": "12 mesi con sconto del 30%"
+            "meta": "12 mesi con il 30% di sconto"
           },
           "includes": [
-            "Controllo settimanale di sito, ads e automation flows",
+            "Controllo settimanale di sito, ads e workflow di automazione",
             "Ottimizzazione di CPL, funnel e qualificazione lead",
-            "Fino a 4 task growth al mese + supporto prioritario"
+            "Fino a 4 attività growth al mese più supporto prioritario"
           ]
         },
-        "outcome": "Piu domanda con costo per lead sotto controllo."
-      }
+        "outcome": "Più domanda con costi per lead controllati."
+      },
+      "subtitle": "Offerta introduttiva per i primi clienti: creazione chiara del sito e supporto opzionale.",
+      "websiteCreationLabel": "Creazione sito web",
+      "introOfferNote": "Prezzo introduttivo per i primi clienti",
+      "optionalSupportLabel": "Supporto opzionale"
     },
     "comparison": {
       "title": "Feature Comparison",

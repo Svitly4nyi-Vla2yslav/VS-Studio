@@ -452,110 +452,114 @@
       }
     },
     "packages": {
-      "title": "Fiyat paketleri",
-      "badge": "Onerilen",
+      "title": "Paketler ve fiyatlar",
+      "badge": "Önerilen",
       "billing": {
-        "monthly": "Aylik",
-        "yearly": "Yillik"
+        "monthly": "Ay",
+        "yearly": "Yıl"
       },
       "coreTitle": "Temel",
       "plusTitle": "Ekstra",
-      "subscriptionTitle": "Destek aboneligi",
-      "subscriptionIncludesTitle": "Dahil olanlar",
-      "outcomeLabel": "Sonuc:",
+      "subscriptionTitle": "Destek aboneliği",
+      "subscriptionIncludesTitle": "Dahil",
+      "outcomeLabel": "Sonuç:",
       "starter": {
         "name": "Starter",
-        "desc": "Hizli baslangic isteyen kucuk yerel isletmeler icin.",
+        "desc": "Hızlı ve profesyonel şekilde online görünür olmak isteyen küçük yerel işletmeler için.",
         "price": "EUR 490'dan itibaren",
-        "range": "genelde EUR 490-590",
+        "range": "genelde EUR 490–590",
         "core": [
           "Landing page",
-          "Lead formu + iletisim formu",
+          "Lead formu + iletişim alanı",
           "GA4 + temel SEO kurulumu"
         ],
         "plus": [
           "Mobil optimizasyon",
-          "Temel DSGVO tracking"
+          "DSGVO uyumlu temel tracking"
         ],
         "subscription": {
           "monthly": {
             "price": "EUR 62 / ay",
-            "meta": "yayina alindiktan sonra temel destek"
+            "meta": "Destek aboneliği web sitesi yapımından ayrıdır"
           },
           "yearly": {
-            "price": "EUR 521 / yil",
-            "meta": "12 ay icin %30 indirim"
+            "price": "EUR 521 / yıl",
+            "meta": "12 ay için %30 indirim"
           },
           "includes": [
-            "Teknik guncellemeler ve yedeklemeler",
-            "Formlarin, donusumlerin ve temel tracking'in kontrolu",
-            "Ayda 1 blok duzeltme veya guncelleme"
+            "Teknik güncellemeler ve yedekler",
+            "Form, dönüşüm ve temel tracking takibi",
+            "Ayda 1 küçük değişiklik bloğuna kadar"
           ]
         },
-        "outcome": "Ilk nitelikli talepler icin istikrarli kanal."
+        "outcome": "İlk nitelikli talepler için profesyonel online görünüm."
       },
       "business": {
         "name": "Business",
-        "desc": "Birden fazla hizmeti ve aktif satisi olan ekipler icin.",
+        "desc": "Daha fazla talep, daha iyi yapı ve net analiz isteyen yerel işletmeler için.",
         "price": "EUR 590'dan itibaren",
-        "range": "genelde EUR 590-790",
+        "range": "genelde EUR 590–790",
         "core": [
-          "5 sayfaya kadar cok sayfali web sitesi",
+          "5 sayfaya kadar çok sayfalı web sitesi",
           "CRM entegrasyonu + lead tracking",
           "Analitik dashboard"
         ],
         "plus": [
-          "Hizmete gore SEO yapisi",
-          "Donusum optimizasyonu"
+          "Hizmetlere göre SEO yapısı",
+          "Dönüşüm optimizasyonu"
         ],
         "subscription": {
           "monthly": {
             "price": "EUR 86 / ay",
-            "meta": "web sitesi, CRM ve analitik icin destek"
+            "meta": "Destek aboneliği web sitesi yapımından ayrıdır"
           },
           "yearly": {
-            "price": "EUR 722 / yil",
-            "meta": "12 ay icin %30 indirim"
+            "price": "EUR 722 / yıl",
+            "meta": "12 ay için %30 indirim"
           },
           "includes": [
-            "Icerik ve sayfa guncellemeleri",
-            "CRM, lead tracking ve dashboard kontrolu",
-            "Donusumu artirmak icin ayda 2 goreve kadar"
+            "İçerik ve sayfalar için düzenli güncellemeler",
+            "CRM, lead tracking ve dashboard kontrolü",
+            "Ayda 2 optimizasyon görevine kadar"
           ]
         },
-        "outcome": "Net analitikle ongorulebilir lead akisi."
+        "outcome": "Net analizle planlanabilir lead akışı."
       },
       "pro": {
         "name": "Pro",
-        "desc": "Web sitesi, reklam ve otomasyonla buyumek icin.",
+        "desc": "Web sitesi, reklam ve otomasyonu birleştirmek isteyen şirketler için.",
         "price": "EUR 790'dan itibaren",
-        "range": "genelde EUR 790-990",
+        "range": "genelde EUR 790–990",
         "core": [
           "Web sitesi + reklam kurulumu",
           "Google Ads veya Meta Ads",
-          "Pazarlama paneli + tracking"
+          "Pazarlama dashboardu + tracking"
         ],
         "plus": [
-          "Yapay zeka ile lead kalifikasyonu",
-          "Otomasyon akislari"
+          "AI lead kalifikasyonu",
+          "Otomasyon workflows"
         ],
         "subscription": {
           "monthly": {
             "price": "EUR 160 / ay",
-            "meta": "growth sisteminin aktif yonetimi"
+            "meta": "Destek aboneliği web sitesi yapımından ayrıdır"
           },
           "yearly": {
-            "price": "EUR 1.344 / yil",
-            "meta": "12 ay icin %30 indirim"
+            "price": "EUR 1.344 / yıl",
+            "meta": "12 ay için %30 indirim"
           },
           "includes": [
-            "Web sitesi, reklamlar ve otomasyon akislari icin haftalik kontrol",
+            "Web sitesi, reklam ve otomasyon workflows için haftalık kontrol",
             "CPL, funnel ve lead kalifikasyonu optimizasyonu",
-            "Ayda 4 buyume gorevine kadar + oncelikli destek"
+            "Ayda 4 growth görevine kadar ve öncelikli destek"
           ]
         },
-        "outcome": "Lead basina maliyeti kontrol ederek daha fazla talep."
-      }
+        "outcome": "Kontrollü lead maliyetiyle daha fazla talep."
+      },
+      "subtitle": "İlk müşteriler için başlangıç teklifi: net web sitesi kurulumu ve isteğe bağlı destek.",
+      "websiteCreationLabel": "Web sitesi oluşturma",
+      "introOfferNote": "İlk müşteriler için başlangıç fiyatı",
+      "optionalSupportLabel": "İsteğe bağlı destek"
     },
     "comparison": {
       "title": "Ozellik karsilastirmasi",

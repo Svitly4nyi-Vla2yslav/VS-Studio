@@ -449,110 +449,114 @@
       }
     },
     "packages": {
-      "title": "Planes de precios",
+      "title": "Paquetes y precios",
       "badge": "Recomendado",
       "billing": {
-        "monthly": "Mensual",
-        "yearly": "Anual"
+        "monthly": "Mes",
+        "yearly": "Año"
       },
       "coreTitle": "Base",
       "plusTitle": "Extra",
-      "subscriptionTitle": "Suscripcion",
+      "subscriptionTitle": "Suscripción de soporte",
       "subscriptionIncludesTitle": "Incluye",
       "outcomeLabel": "Resultado:",
       "starter": {
         "name": "Starter",
-        "desc": "Para pequenos negocios locales con lanzamiento rapido.",
+        "desc": "Para pequeños negocios locales que quieren aparecer online de forma rápida y profesional.",
         "price": "desde EUR 490",
-        "range": "normalmente EUR 490-590",
+        "range": "normalmente EUR 490–590",
         "core": [
           "Landing page",
-          "Formulario de leads + formulario de contacto",
-          "GA4 + configuracion SEO basica"
+          "Formulario de lead + área de contacto",
+          "GA4 + configuración SEO básica"
         ],
         "plus": [
-          "Optimizacion movil",
-          "Tracking DSGVO basico"
+          "Optimización móvil",
+          "Tracking básico conforme a DSGVO"
         ],
         "subscription": {
           "monthly": {
             "price": "EUR 62 / mes",
-            "meta": "soporte basico despues del lanzamiento"
+            "meta": "Suscripción de soporte separada de la creación del sitio"
           },
           "yearly": {
-            "price": "EUR 521 / ano",
+            "price": "EUR 521 / año",
             "meta": "12 meses con 30% de descuento"
           },
           "includes": [
-            "Actualizaciones tecnicas y copias de seguridad",
-            "Supervision de formularios, conversiones y tracking basico",
-            "Hasta 1 bloque de cambios o actualizaciones al mes"
+            "Actualizaciones técnicas y copias de seguridad",
+            "Monitoreo de formularios, conversiones y tracking básico",
+            "Hasta 1 pequeño bloque de cambios al mes"
           ]
         },
-        "outcome": "Canal estable para las primeras solicitudes cualificadas."
+        "outcome": "Presencia online profesional para las primeras solicitudes cualificadas."
       },
       "business": {
         "name": "Business",
-        "desc": "Para equipos con varios servicios y ventas activas.",
+        "desc": "Para negocios locales que necesitan más solicitudes, mejor estructura y análisis claro.",
         "price": "desde EUR 590",
-        "range": "normalmente EUR 590-790",
+        "range": "normalmente EUR 590–790",
         "core": [
-          "Sitio web multipagina de hasta 5 paginas",
-          "Integracion CRM + lead tracking",
-          "Dashboard analitico"
+          "Sitio multipágina hasta 5 páginas",
+          "Integración CRM + lead tracking",
+          "Dashboard de analítica"
         ],
         "plus": [
-          "Estructura SEO por servicio",
-          "Optimizacion de conversion"
+          "Estructura SEO por servicios",
+          "Optimización de conversión"
         ],
         "subscription": {
           "monthly": {
             "price": "EUR 86 / mes",
-            "meta": "soporte para web, CRM y analitica"
+            "meta": "Suscripción de soporte separada de la creación del sitio"
           },
           "yearly": {
-            "price": "EUR 722 / ano",
+            "price": "EUR 722 / año",
             "meta": "12 meses con 30% de descuento"
           },
           "includes": [
-            "Actualizaciones regulares de contenido y paginas",
+            "Actualizaciones regulares de contenidos y páginas",
             "Control de CRM, lead tracking y dashboard",
-            "Hasta 2 tareas al mes para mejorar la conversion"
+            "Hasta 2 tareas de optimización al mes"
           ]
         },
-        "outcome": "Flujo de leads previsible con analitica clara."
+        "outcome": "Flujo de leads planificable con análisis claro."
       },
       "pro": {
         "name": "Pro",
-        "desc": "Para crecer con web, anuncios y automatizacion.",
+        "desc": "Para empresas que quieren conectar sitio web, publicidad y automatización.",
         "price": "desde EUR 790",
-        "range": "normalmente EUR 790-990",
+        "range": "normalmente EUR 790–990",
         "core": [
-          "Website + configuracion de Ads",
+          "Sitio + setup de ads",
           "Google Ads o Meta Ads",
           "Dashboard de marketing + tracking"
         ],
         "plus": [
-          "Calificacion de leads con IA",
-          "Automation flows"
+          "Cualificación de leads con AI",
+          "Workflows de automatización"
         ],
         "subscription": {
           "monthly": {
             "price": "EUR 160 / mes",
-            "meta": "gestion activa del sistema de growth"
+            "meta": "Suscripción de soporte separada de la creación del sitio"
           },
           "yearly": {
-            "price": "EUR 1.344 / ano",
+            "price": "EUR 1.344 / año",
             "meta": "12 meses con 30% de descuento"
           },
           "includes": [
-            "Control semanal de web, Ads y automation flows",
-            "Optimizacion de CPL, embudo y calificacion de leads",
-            "Hasta 4 tareas de growth al mes + soporte prioritario"
+            "Control semanal de sitio, ads y workflows de automatización",
+            "Optimización de CPL, funnel y cualificación de leads",
+            "Hasta 4 tareas growth al mes más soporte prioritario"
           ]
         },
-        "outcome": "Mas demanda con coste por lead controlado."
-      }
+        "outcome": "Más demanda con costes por lead controlados."
+      },
+      "subtitle": "Oferta inicial para los primeros clientes: creación clara del sitio y soporte opcional.",
+      "websiteCreationLabel": "Creación del sitio web",
+      "introOfferNote": "Precio inicial para los primeros clientes",
+      "optionalSupportLabel": "Soporte opcional"
     },
     "comparison": {
       "title": "Feature Comparison",

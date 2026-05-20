@@ -449,110 +449,114 @@
       }
     },
     "packages": {
-      "title": "Pachete de pret",
+      "title": "Pachete și prețuri",
       "badge": "Recomandat",
       "billing": {
-        "monthly": "Lunar",
-        "yearly": "Anual"
+        "monthly": "Lună",
+        "yearly": "An"
       },
-      "coreTitle": "Baza",
+      "coreTitle": "Bază",
       "plusTitle": "Extra",
       "subscriptionTitle": "Abonament suport",
-      "subscriptionIncludesTitle": "Include",
+      "subscriptionIncludesTitle": "Inclus",
       "outcomeLabel": "Rezultat:",
       "starter": {
         "name": "Starter",
-        "desc": "Pentru afaceri locale mici cu lansare rapida.",
+        "desc": "Pentru afaceri locale mici care vor să fie vizibile online rapid și profesionist.",
         "price": "de la EUR 490",
-        "range": "de obicei EUR 490-590",
+        "range": "de obicei EUR 490–590",
         "core": [
           "Landing page",
-          "Formular lead + formular de contact",
-          "GA4 + configurare SEO de baza"
+          "Formular lead + zonă de contact",
+          "GA4 + setup SEO de bază"
         ],
         "plus": [
-          "Optimizare mobila",
-          "Tracking DSGVO de baza"
+          "Optimizare mobilă",
+          "Tracking de bază conform DSGVO"
         ],
         "subscription": {
           "monthly": {
-            "price": "EUR 62 / luna",
-            "meta": "suport de baza dupa lansare"
+            "price": "EUR 62 / lună",
+            "meta": "Abonamentul de suport este separat de crearea site-ului"
           },
           "yearly": {
             "price": "EUR 521 / an",
             "meta": "12 luni cu reducere de 30%"
           },
           "includes": [
-            "Actualizari tehnice si backup-uri",
-            "Monitorizarea formularelor, conversiilor si trackingului de baza",
-            "Pana la 1 bloc de modificari sau update-uri pe luna"
+            "Actualizări tehnice și backupuri",
+            "Monitorizarea formularelor, conversiilor și trackingului de bază",
+            "Până la 1 bloc mic de modificări pe lună"
           ]
         },
-        "outcome": "Canal stabil pentru primele cereri calificate."
+        "outcome": "Prezență online profesionistă pentru primele cereri calificate."
       },
       "business": {
         "name": "Business",
-        "desc": "Pentru echipe cu mai multe servicii si vanzari active.",
+        "desc": "Pentru afaceri locale care au nevoie de mai multe cereri, structură mai bună și analiză clară.",
         "price": "de la EUR 590",
-        "range": "de obicei EUR 590-790",
+        "range": "de obicei EUR 590–790",
         "core": [
-          "Website multi-page de pana la 5 pagini",
+          "Website multipagină până la 5 pagini",
           "Integrare CRM + lead tracking",
-          "Dashboard analitic"
+          "Dashboard analytics"
         ],
         "plus": [
-          "Structura SEO pe servicii",
-          "Optimizarea conversiei"
+          "Structură SEO după servicii",
+          "Optimizare conversii"
         ],
         "subscription": {
           "monthly": {
-            "price": "EUR 86 / luna",
-            "meta": "suport pentru website, CRM si analytics"
+            "price": "EUR 86 / lună",
+            "meta": "Abonamentul de suport este separat de crearea site-ului"
           },
           "yearly": {
             "price": "EUR 722 / an",
             "meta": "12 luni cu reducere de 30%"
           },
           "includes": [
-            "Actualizari regulate de continut si pagini",
-            "Control pentru CRM, lead tracking si dashboard",
-            "Pana la 2 taskuri pe luna pentru cresterea conversiei"
+            "Actualizări regulate pentru conținut și pagini",
+            "Control CRM, lead tracking și dashboard",
+            "Până la 2 sarcini de optimizare pe lună"
           ]
         },
-        "outcome": "Flux previzibil de leaduri cu analiza clara."
+        "outcome": "Flux de leaduri planificabil cu analiză clară."
       },
       "pro": {
         "name": "Pro",
-        "desc": "Pentru crestere prin website, ads si automatizare.",
+        "desc": "Pentru companii care vor să lege website-ul, reclamele și automatizarea.",
         "price": "de la EUR 790",
-        "range": "de obicei EUR 790-990",
+        "range": "de obicei EUR 790–990",
         "core": [
-          "Website + setup Ads",
+          "Website + setup ads",
           "Google Ads sau Meta Ads",
-          "Marketing dashboard + tracking"
+          "Dashboard marketing + tracking"
         ],
         "plus": [
           "Calificare leaduri cu AI",
-          "Automation flows"
+          "Workflow-uri de automatizare"
         ],
         "subscription": {
           "monthly": {
-            "price": "EUR 160 / luna",
-            "meta": "gestionare activa a sistemului de growth"
+            "price": "EUR 160 / lună",
+            "meta": "Abonamentul de suport este separat de crearea site-ului"
           },
           "yearly": {
             "price": "EUR 1.344 / an",
             "meta": "12 luni cu reducere de 30%"
           },
           "includes": [
-            "Control saptamanal pentru website, ads si automation flows",
-            "Optimizarea CPL, funnel-ului si calificarii leadurilor",
-            "Pana la 4 taskuri de growth pe luna + suport prioritar"
+            "Control săptămânal pentru website, ads și workflow-uri de automatizare",
+            "Optimizare CPL, funnel și calificare leaduri",
+            "Până la 4 sarcini growth pe lună plus suport prioritar"
           ]
         },
-        "outcome": "Mai multa cerere cu cost pe lead controlat."
-      }
+        "outcome": "Mai multă cerere cu costuri per lead controlate."
+      },
+      "subtitle": "Ofertă introductivă pentru primii clienți: creare clară de website și suport opțional.",
+      "websiteCreationLabel": "Creare website",
+      "introOfferNote": "Preț introductiv pentru primii clienți",
+      "optionalSupportLabel": "Suport opțional"
     },
     "comparison": {
       "title": "Feature Comparison",
