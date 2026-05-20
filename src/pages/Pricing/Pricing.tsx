@@ -271,6 +271,14 @@ const PricingGrid = styled.div`
   }
 `;
 
+const SectionSubtitle = styled.p`
+  max-width: 760px;
+  margin: -4px 0 14px;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: clamp(14px, 1.6vw, 16px);
+  line-height: 1.55;
+`;
+
 const BillingToggle = styled.div`
   display: inline-flex;
   gap: 6px;
@@ -333,6 +341,14 @@ const Badge = styled.span`
   border: 1px solid rgba(153, 201, 255, 0.45);
 `;
 
+const PriceEyebrow = styled.div`
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+`;
+
 const Price = styled.div`
   font-size: 34px;
   font-weight: 800;
@@ -344,6 +360,13 @@ const Price = styled.div`
 const PriceMeta = styled.div`
   color: rgba(255, 255, 255, 0.66);
   font-size: 13px;
+`;
+
+const OfferNote = styled.div`
+  margin-top: 6px;
+  color: rgba(255, 208, 138, 0.86);
+  font-size: 13px;
+  line-height: 1.35;
 `;
 
 const CardGroupTitle = styled.div`
@@ -398,6 +421,13 @@ const SubscriptionLabel = styled.div`
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.58);
+`;
+
+const SubscriptionName = styled.div`
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 700;
 `;
 
 const SubscriptionPrice = styled.div`
@@ -526,13 +556,26 @@ const FinalButton = styled(HeroButton)`
   font-size: 16px;
 `;
 
+// Цей React-компонент рендерить сторінку цін: hero, flow, пакети, порівняння,
+// trust-блок і фінальний CTA. Тексти для pricing-секції беруться через i18n.
 const PricingPage: React.FC = () => {
+  // Функція t() приходить з react-i18next і повертає текст за ключем перекладу
+  // з public/locales/{мова}/translation.json.
   const { t } = useTranslation();
+
+  // Ця змінна зберігає активний режим відображення support abo:
+  // місячний або річний. Логіку перемикача не змінюємо.
   const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'yearly'>('monthly');
 
+  // Цей список визначає, які пакети показувати і в якому порядку.
+  // Самі назви, ціни та списки features нижче беруться через i18n-ключі.
   const packageKeys = ['starter', 'business', 'pro'] as const;
+
+  // Цей масив описує всі картки пакетів. Метод map() збирає дані для кожної
+  // картки з перекладів, щоб не дублювати JSX окремо для Starter, Business і Pro.
   const packages = packageKeys.map(key => ({
     key,
+    // Badge "Empfohlen" показується тільки для Business-пакета.
     recommended: key === 'business',
     name: t(`pricing.packages.${key}.name`),
     desc: t(`pricing.packages.${key}.desc`),
@@ -541,6 +584,8 @@ const PricingPage: React.FC = () => {
     core: t(`pricing.packages.${key}.core`, { returnObjects: true }) as string[],
     plus: t(`pricing.packages.${key}.plus`, { returnObjects: true }) as string[],
     outcome: t(`pricing.packages.${key}.outcome`),
+    // Ці два рядки відповідають за текст support abo залежно від активного
+    // режиму Monat/Jahr. Саму логіку перемикання не переписуємо.
     subscriptionPrice: t(`pricing.packages.${key}.subscription.${billingPeriod}.price`),
     subscriptionMeta: t(`pricing.packages.${key}.subscription.${billingPeriod}.meta`),
     subscriptionItems: t(`pricing.packages.${key}.subscription.includes`, { returnObjects: true }) as string[],
@@ -625,6 +670,7 @@ const PricingPage: React.FC = () => {
 
           <Section>
             <h2>{t('pricing.packages.title')}</h2>
+            <SectionSubtitle>{t('pricing.packages.subtitle')}</SectionSubtitle>
             <BillingToggle role='tablist' aria-label={t('pricing.packages.subscriptionTitle')}>
               <BillingButton
                 type='button'
@@ -649,29 +695,38 @@ const PricingPage: React.FC = () => {
                   whileHover={{ y: pkg.recommended ? -6 : -4 }}
                   transition={{ duration: 0.25 }}
                 >
+                  {/* Цей badge показує рекомендацію для Business-пакета. */}
                   {pkg.recommended ? <Badge>{t('pricing.packages.badge')}</Badge> : null}
                   <h3>{pkg.name}</h3>
                   <p>{pkg.desc}</p>
+                  {/* Цей блок відповідає за одноразову ціну створення сайту. */}
+                  <PriceEyebrow>{t('pricing.packages.websiteCreationLabel')}</PriceEyebrow>
                   <Price>{pkg.price}</Price>
                   <PriceMeta>{pkg.range}</PriceMeta>
+                  <OfferNote>{t('pricing.packages.introOfferNote')}</OfferNote>
                   <CardGroupTitle>{t('pricing.packages.coreTitle')}</CardGroupTitle>
                   <FeatureList>
+                    {/* Цей map() рендерить список базових features пакета. */}
                     {pkg.core.map(item => (
                       <li key={item}><FaCheck /> {item}</li>
                     ))}
                   </FeatureList>
                   <CardGroupTitle>{t('pricing.packages.plusTitle')}</CardGroupTitle>
                   <FeatureList>
+                    {/* Цей map() рендерить додаткові features без дублювання JSX. */}
                     {pkg.plus.map(item => (
                       <li key={item}><FaCheck /> {item}</li>
                     ))}
                   </FeatureList>
                   <SubscriptionBox>
-                    <SubscriptionLabel>{t('pricing.packages.subscriptionTitle')}</SubscriptionLabel>
+                    <SubscriptionLabel>{t('pricing.packages.optionalSupportLabel')}</SubscriptionLabel>
+                    <SubscriptionName>{t('pricing.packages.subscriptionTitle')}</SubscriptionName>
+                    {/* Цей блок показує ціну support abo, яку перемикає Monat/Jahr. */}
                     <SubscriptionPrice>{pkg.subscriptionPrice}</SubscriptionPrice>
                     <SubscriptionMeta>{pkg.subscriptionMeta}</SubscriptionMeta>
                     <CardGroupTitle>{t('pricing.packages.subscriptionIncludesTitle')}</CardGroupTitle>
                     <FeatureList>
+                      {/* Цей map() показує, що входить в optional support. */}
                       {pkg.subscriptionItems.map(item => (
                         <li key={item}><FaCheck /> {item}</li>
                       ))}

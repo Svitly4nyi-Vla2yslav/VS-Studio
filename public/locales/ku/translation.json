@@ -449,110 +449,114 @@
       }
     },
     "packages": {
-      "title": "Pakêtên bihayê",
-      "badge": "Pêşniyarkirî",
+      "title": "Pakêt û bihayên",
+      "badge": "Tê pêşniyar kirin",
       "billing": {
-        "monthly": "Mehane",
-        "yearly": "Salane"
+        "monthly": "Meh",
+        "yearly": "Sal"
       },
-      "coreTitle": "Bingehî",
+      "coreTitle": "Bingeh",
       "plusTitle": "Zêde",
-      "subscriptionTitle": "Aboneya piştgiriyê",
-      "subscriptionIncludesTitle": "Tê de heye",
+      "subscriptionTitle": "Abonementa piştgiriyê",
+      "subscriptionIncludesTitle": "Di nav de",
       "outcomeLabel": "Encam:",
       "starter": {
         "name": "Starter",
-        "desc": "Ji bo karsaziyên biçûk ên herêmî ku dixwazin bi lez dest pê bikin.",
-        "price": "ji EUR 490",
-        "range": "bi gelemperî EUR 490-590",
+        "desc": "Ji bo karsaziyên herêmî yên biçûk ku dixwazin zû bi awayekî profesyonel li online xuya bin.",
+        "price": "ji EUR 490 dest pê dike",
+        "range": "bi gelemperî EUR 490–590",
         "core": [
-          "Landing page",
-          "Forma lead + forma têkiliyê",
-          "GA4 + sazkirina bingehîn a SEO"
+          "Landingpage",
+          "Forma lead + qada têkilî",
+          "GA4 + sazkarina SEO ya bingehîn"
         ],
         "plus": [
-          "Optîmîzasyona mobîl",
-          "DSGVO tracking bingehîn"
+          "Optimîzekirina mobîl",
+          "Tracking bingehîn a li gor DSGVO"
         ],
         "subscription": {
           "monthly": {
             "price": "EUR 62 / meh",
-            "meta": "piştgiriya bingehîn piştî launch"
+            "meta": "Abonementa piştgiriyê ji çêkirina malperê cuda ye"
           },
           "yearly": {
             "price": "EUR 521 / sal",
-            "meta": "12 meh bi daxistina 30%"
+            "meta": "12 meh bi 30% erzankirin"
           },
           "includes": [
             "Nûvekirinên teknîkî û backup",
-            "Kontrola form, conversion û tracking bingehîn",
-            "Heta 1 blokê guhertin an nûvekirinê di mehê de"
+            "Şopandina forman, conversion û tracking bingehîn",
+            "Heta 1 bloka guhartinê ya biçûk her meh"
           ]
         },
-        "outcome": "Kanala stabîl ji bo yekem daxwazên bi kalîte."
+        "outcome": "Hebûna online ya profesyonel ji bo daxwazên yekem ên kalîteyî."
       },
       "business": {
         "name": "Business",
-        "desc": "Ji bo tîmên bi gelek xizmet û firotina çalak.",
-        "price": "ji EUR 590",
-        "range": "bi gelemperî EUR 590-790",
+        "desc": "Ji bo karsaziyên herêmî ku daxwazên zêdetir, avahiyek baştir û nirxandina zelal dixwazin.",
+        "price": "ji EUR 590 dest pê dike",
+        "range": "bi gelemperî EUR 590–790",
         "core": [
-          "Malperek pir-rûpelî heta 5 rûpel",
-          "Têkildana CRM + lead tracking",
-          "Dashboard-a analîtîkî"
+          "Malpera pir-rûpelî heta 5 rûpelan",
+          "Entegrasyona CRM + lead tracking",
+          "Dashboarda analytics"
         ],
         "plus": [
-          "Struktûra SEO li gorî xizmetan",
-          "Optîmîzasyona conversion"
+          "Avahiya SEO li gor xizmetan",
+          "Optimîzekirina conversion"
         ],
         "subscription": {
           "monthly": {
             "price": "EUR 86 / meh",
-            "meta": "piştgirî ji bo website, CRM û analytics"
+            "meta": "Abonementa piştgiriyê ji çêkirina malperê cuda ye"
           },
           "yearly": {
             "price": "EUR 722 / sal",
-            "meta": "12 meh bi daxistina 30%"
+            "meta": "12 meh bi 30% erzankirin"
           },
           "includes": [
-            "Nûvekirinên naverok û rûpelan bi rêkûpêk",
+            "Nûvekirinên birêkûpêk ji bo naverok û rûpelan",
             "Kontrola CRM, lead tracking û dashboard",
-            "Heta 2 task di mehê de ji bo baştirkirina conversion"
+            "Heta 2 karên optimîzekirinê her meh"
           ]
         },
-        "outcome": "Herikîna lead ya pêşbînîkirî bi analîtîka zelal."
+        "outcome": "Herikîna lead ya plansazkirî bi nirxandina zelal."
       },
       "pro": {
         "name": "Pro",
-        "desc": "Ji bo mezinbûn bi website, ads û otomatîzasyon.",
-        "price": "ji EUR 790",
-        "range": "bi gelemperî EUR 790-990",
+        "desc": "Ji bo şirketên ku dixwazin malper, reklam û otomasyonê girêbidin.",
+        "price": "ji EUR 790 dest pê dike",
+        "range": "bi gelemperî EUR 790–990",
         "core": [
-          "Malper + setup-a Ads",
+          "Malper + sazkarina reklamê",
           "Google Ads an Meta Ads",
-          "Marketing dashboard + tracking"
+          "Dashboarda marketing + tracking"
         ],
         "plus": [
-          "Pêvajoya lead bi AI",
-          "Automation flows"
+          "Kalîfîkasyona lead bi AI",
+          "Workflowên otomasyonê"
         ],
         "subscription": {
           "monthly": {
             "price": "EUR 160 / meh",
-            "meta": "birêvebirina çalak a pergala growth"
+            "meta": "Abonementa piştgiriyê ji çêkirina malperê cuda ye"
           },
           "yearly": {
             "price": "EUR 1.344 / sal",
-            "meta": "12 meh bi daxistina 30%"
+            "meta": "12 meh bi 30% erzankirin"
           },
           "includes": [
-            "Kontrola heftane ya website, ads û automation flows",
-            "Optîmîzasyona CPL, funnel û pêvajoya lead",
-            "Heta 4 taskên growth di mehê de + piştgiriya pêşîn"
+            "Kontrola heftane ya malper, reklam û workflowên otomasyonê",
+            "Optimîzekirina CPL, funnel û kalîfîkasyona lead",
+            "Heta 4 karên growth her meh û piştgiriya pêşîn"
           ]
         },
-        "outcome": "Daxwazeke zêdetir bi kontrola mesrefa her lead."
-      }
+        "outcome": "Daxwazên zêdetir bi mesrefa lead ya kontrolkirî."
+      },
+      "subtitle": "Pêşniyara destpêkê ji bo mişteriyên yekem: çêkirina malperê ya zelal û piştgiriya bijarte.",
+      "websiteCreationLabel": "Çêkirina malperê",
+      "introOfferNote": "Bihaya destpêkê ji bo mişteriyên yekem",
+      "optionalSupportLabel": "Piştgiriya bijarte"
     },
     "comparison": {
       "title": "Berhevkirina taybetmendiyan",

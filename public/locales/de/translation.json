@@ -424,7 +424,7 @@
       "titleLine2": "für lokale Unternehmen",
       "titleLine3": "ab EUR 490",
       "subtitle": "Premium setup for local businesses in Germany: clear funnel, measurable leads, clean handover to sales.",
-      "cta": "Kostenloses Erstgespraech",
+      "cta": "Kostenloses Erstgespräch",
       "metrics": {
         "leadVolume": "Lead Volume",
         "qualifiedLeads": "Qualified Leads",
@@ -449,7 +449,7 @@
       }
     },
     "packages": {
-      "title": "Preis Pakete",
+      "title": "Pakete & Preise",
       "badge": "Empfohlen",
       "billing": {
         "monthly": "Monat",
@@ -462,22 +462,22 @@
       "outcomeLabel": "Ergebnis:",
       "starter": {
         "name": "Starter",
-        "desc": "Fuer kleine lokale Unternehmen mit schnellem Start.",
+        "desc": "Für kleine lokale Unternehmen, die schnell professionell online sichtbar werden möchten.",
         "price": "ab EUR 490",
-        "range": "meist EUR 490-590",
+        "range": "meist EUR 490–590",
         "core": [
           "Landingpage",
-          "Lead-Formular + Kontaktformular",
-          "GA4 + Basis-SEO Setup"
+          "Lead-Formular + Kontaktbereich",
+          "GA4 + Basis-SEO-Setup"
         ],
         "plus": [
           "Mobile Optimierung",
-          "Basis DSGVO Tracking"
+          "DSGVO-konformes Basis-Tracking"
         ],
         "subscription": {
           "monthly": {
             "price": "EUR 62 / Monat",
-            "meta": "Basis-Support nach dem Launch"
+            "meta": "Support Abo separat zur Website-Erstellung"
           },
           "yearly": {
             "price": "EUR 521 / Jahr",
@@ -486,73 +486,77 @@
           "includes": [
             "Technische Updates und Backups",
             "Monitoring von Formularen, Conversions und Basis-Tracking",
-            "Bis zu 1 Block für Aenderungen oder Updates pro Monat"
+            "Bis zu 1 kleiner Änderungsblock pro Monat"
           ]
         },
-        "outcome": "Stabiler Kanal für erste qualifizierte Anfragen."
+        "outcome": "Professioneller Online-Auftritt für erste qualifizierte Anfragen."
       },
       "business": {
         "name": "Business",
-        "desc": "Fuer Teams mit mehreren Leistungen und aktivem Vertrieb.",
+        "desc": "Für lokale Unternehmen, die mehr Anfragen, bessere Struktur und klare Auswertung brauchen.",
         "price": "ab EUR 590",
-        "range": "meist EUR 590-790",
+        "range": "meist EUR 590–790",
         "core": [
           "Mehrseitige Website bis zu 5 Seiten",
-          "CRM Integration + Lead Tracking",
-          "Analytics Dashboard"
+          "CRM-Integration + Lead-Tracking",
+          "Analytics-Dashboard"
         ],
         "plus": [
-          "SEO Struktur nach Leistungen",
-          "Conversion Optimierung"
+          "SEO-Struktur nach Leistungen",
+          "Conversion-Optimierung"
         ],
         "subscription": {
           "monthly": {
             "price": "EUR 86 / Monat",
-            "meta": "Support für Website, CRM und Analytics"
+            "meta": "Support Abo separat zur Website-Erstellung"
           },
           "yearly": {
             "price": "EUR 722 / Jahr",
             "meta": "12 Monate mit 30% Rabatt"
           },
           "includes": [
-            "Regelmaessige Updates für Inhalte und Seiten",
-            "Kontrolle von CRM, Lead Tracking und Dashboard",
-            "Bis zu 2 Aufgaben pro Monat für Conversion Optimierung"
+            "Regelmäßige Updates für Inhalte und Seiten",
+            "Kontrolle von CRM, Lead-Tracking und Dashboard",
+            "Bis zu 2 Optimierungsaufgaben pro Monat"
           ]
         },
         "outcome": "Planbarer Lead-Flow mit klarer Auswertung."
       },
       "pro": {
         "name": "Pro",
-        "desc": "Fuer Wachstum mit Website, Ads und Automatisierung.",
+        "desc": "Für Unternehmen, die Website, Werbung und Automatisierung verbinden möchten.",
         "price": "ab EUR 790",
-        "range": "meist EUR 790-990",
+        "range": "meist EUR 790–990",
         "core": [
           "Website + Ads Setup",
           "Google Ads oder Meta Ads",
-          "Marketing Dashboard + Tracking"
+          "Marketing-Dashboard + Tracking"
         ],
         "plus": [
-          "AI Lead Qualifizierung",
-          "Automation Flows"
+          "KI-Lead-Qualifizierung",
+          "Automatisierungs-Workflows"
         ],
         "subscription": {
           "monthly": {
             "price": "EUR 160 / Monat",
-            "meta": "Aktive Betreuung der Growth-Systeme"
+            "meta": "Support Abo separat zur Website-Erstellung"
           },
           "yearly": {
             "price": "EUR 1.344 / Jahr",
             "meta": "12 Monate mit 30% Rabatt"
           },
           "includes": [
-            "Woechentliche Kontrolle von Website, Ads und Automation Flows",
-            "Optimierung von CPL, Funnel und Lead Qualifizierung",
+            "Wöchentliche Kontrolle von Website, Ads und Automatisierungs-Workflows",
+            "Optimierung von CPL, Funnel und Lead-Qualifizierung",
             "Bis zu 4 Growth-Aufgaben pro Monat plus priorisierter Support"
           ]
         },
         "outcome": "Mehr Nachfrage mit kontrollierten Kosten pro Lead."
-      }
+      },
+      "subtitle": "Einführungsangebot für die ersten Kunden – klare Website-Erstellung und optionaler Support.",
+      "websiteCreationLabel": "Website-Erstellung",
+      "introOfferNote": "Einführungspreis für erste Kunden",
+      "optionalSupportLabel": "Optionaler Support"
     },
     "comparison": {
       "title": "Feature Comparison",
@@ -589,9 +593,9 @@
       }
     },
     "final": {
-      "title": "Starten Sie mit einem kostenlosen Erstgespraech.",
+      "title": "Starten Sie mit einem kostenlosen Erstgespräch.",
       "subtitle": "In 30 minutes we show the right package and build plan for your lead system.",
-      "cta": "Kostenloses Erstgespraech"
+      "cta": "Kostenloses Erstgespräch"
     }
   },
   "references": {
@@ -756,24 +760,24 @@
     "ctaTitle": "Kontakt"
   },
   "contact": {
-    "h1": "Erzaehlen Sie uns von Ihrem Projekt",
+    "h1": "Erzählen Sie uns von Ihrem Projekt",
     "responseTime": "Durchschnittliche Antwortzeit: 1-2h",
-    "subtitle": "Kurz beschreiben, was Sie planen. Sie erhalten eine klare Ersteinschaetzung und den naechsten sinnvollen Schritt.",
+    "subtitle": "Kurz beschreiben, was Sie planen. Sie erhalten eine klare Ersteinschätzung und den nächsten sinnvollen Schritt.",
     "quickContacts": "Direkter Kontakt",
     "responseNote": "Antwort meist innerhalb von 1-2 Stunden",
     "contactMeta": {
       "location": "Standort für schnelle Abstimmung",
       "email": "Projektanfragen per E-Mail",
-      "phone": "Kurzes Erstgespraech oder Rueckruf"
+      "phone": "Kurzes Erstgespräch oder Rückruf"
     },
     "trustItems": [
       "Direkte Kommunikation",
-      "Klare Ersteinschaetzung",
-      "Schnelle Rueckmeldung"
+      "Klare Ersteinschätzung",
+      "Schnelle Rückmeldung"
     ],
     "form": {
       "title": "Projektanfrage",
-      "intro": "Je klarer die Anfrage, desto schneller koennen wir Aufwand, Prioritaeten und naechste Schritte einschaetzen.",
+      "intro": "Je klarer die Anfrage, desto schneller können wir Aufwand, Prioritäten und naechste Schritte einschätzen.",
       "name": "Ihr Name",
       "business": "Firmenname",
       "need": "Zum Beispiel: Website für ein Kosmetikstudio oder Werbung für eine Autowerkstatt",
@@ -852,7 +856,7 @@
   },
   "alert": {
     "success": "Erfolg! Deine Anfrage wurde gesendet.",
-    "error": "Fehler! Bitte versuche es spaeter erneut."
+    "error": "Fehler! Bitte versuche es später erneut."
   },
   "contact2": {
     "form": {
@@ -884,28 +888,28 @@
     },
     "blocks": {
       "who": {
-        "title": "Fuer lokale Unternehmen",
+        "title": "Für lokale Unternehmen",
         "text": "Websites, Lead-Systeme und Marketing für Betriebe, die planbar mehr Anfragen wollen."
       },
       "focus": {
-        "title": "Ein System statt Einzelloesungen",
+        "title": "Ein System statt Einzellösungen",
         "text": "Website, Kontaktwege, Kampagnen und Tracking greifen als ein klarer Prozess zusammen."
       },
       "locality": {
-        "title": "Lokale Naehe als Vorteil",
-        "subtitle": "Schnelle Abstimmung, klare Prioritaeten und messbare Ergebnisse.",
-        "text1": "Wir arbeiten direkt mit lokalen Unternehmen zusammen - ohne lange Agenturketten und unnoetige Buerokratie.",
+        "title": "Lokale Nähe als Vorteil",
+        "subtitle": "Schnelle Abstimmung, klare Prioritäten und messbare Ergebnisse.",
+        "text1": "Wir arbeiten direkt mit lokalen Unternehmen zusammen - ohne lange Agenturketten und unnötige Bürokratie.",
         "i1": "Direkte Kommunikation ohne Umwege",
         "i2": "Schnelle Umsetzung statt langer Abstimmungen",
-        "i3": "Verstaendnis für lokale Maerkte und Budgets",
-        "text2": "Unsere Kunden profitieren davon, dass Entscheidungen schneller getroffen werden und Projekte nicht wochenlang in Abstimmungsschleifen haengen bleiben.",
+        "i3": "Verständnis für lokale Märkte und Budgets",
+        "text2": "Unsere Kunden profitieren davon, dass Entscheidungen schneller getroffen werden und Projekte nicht wochenlang in Abstimmungsschleifen hängen bleiben.",
         "text3": "Das spart Zeit, reduziert Kosten und sorgt dafür, dass Marketingmassnahmen schneller Ergebnisse liefern.",
-        "text4": "Wir kennen die Realitaet kleiner und mittelstaendischer Unternehmen: begrenzte Budgets, wenig Zeit und den Wunsch nach klaren Resultaten statt komplizierten Konzepten.",
-        "text5": "Deshalb arbeiten wir pragmatisch und strukturiert - von der ersten Analyse ueber die Umsetzung bis zur kontinuierlichen Optimierung."
+        "text4": "Wir kennen die Realität kleiner und mittelständischer Unternehmen: begrenzte Budgets, wenig Zeit und den Wunsch nach klaren Resultaten statt komplizierten Konzepten.",
+        "text5": "Deshalb arbeiten wir pragmatisch und strukturiert - von der ersten Analyse über die Umsetzung bis zur kontinuierlichen Optimierung."
       }
     },
-    "photoAlt": "Vladyslav, Gruender von VS Web Studio aus Hildesheim",
-    "photoCaption": "Vladyslav - Gruender von VS Web Studio",
+    "photoAlt": "Vladyslav, Gründer von VS Web Studio aus Hildesheim",
+    "photoCaption": "Vladyslav - Gründer von VS Web Studio",
     "photoFacts": {
       "f1": "Fokus: lokale Unternehmen",
       "f2": "Standort: Hildesheim",
@@ -916,7 +920,7 @@
       "region": "Niedersachsen",
       "country": "Deutschlandweit"
     },
-    "localPriority": "Kurze Wege. Klare Prioritaeten. Fokus auf Ergebnisse.",
+    "localPriority": "Kurze Wege. Klare Prioritäten. Fokus auf Ergebnisse.",
     "how": {
       "s1": {
         "title": "1. Verstehen",
@@ -947,7 +951,7 @@
     },
     "results": {
       "title": "Was Kunden erhalten",
-      "i1": "Schnelle Website, die auf jedem Smartphone laedt",
+      "i1": "Schnelle Website, die auf jedem Smartphone lädt",
       "i2": "Klare Kontaktwege: Anruf, Formular, Termin",
       "i3": "Messbare Anfragen mit Tracking und Marketing-Daten"
     },
@@ -970,7 +974,7 @@
     },
     "cta": {
       "title": "Bereit für planbare Anfragen?",
-      "text": "Im kostenlosen Erstgespraech zeigen wir die groessten Hebel für Ihre Website, Lead-Prozesse und Werbung."
+      "text": "Im kostenlosen Erstgespräch zeigen wir die größten Hebel für Ihre Website, Lead-Prozesse und Werbung."
     },
     "visual": {
       "productBadge": "Lead System",

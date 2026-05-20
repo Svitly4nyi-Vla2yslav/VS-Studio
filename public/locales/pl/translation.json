@@ -452,25 +452,25 @@
       }
     },
     "packages": {
-      "title": "Pakiety cenowe",
-      "badge": "Polecany",
+      "title": "Pakiety i ceny",
+      "badge": "Polecane",
       "billing": {
         "monthly": "Miesiąc",
         "yearly": "Rok"
       },
-      "coreTitle": "Zakres podstawowy",
-      "plusTitle": "Dodatkowo",
+      "coreTitle": "Podstawa",
+      "plusTitle": "Extra",
       "subscriptionTitle": "Abonament wsparcia",
-      "subscriptionIncludesTitle": "W pakiecie",
-      "outcomeLabel": "Efekt:",
+      "subscriptionIncludesTitle": "W cenie",
+      "outcomeLabel": "Rezultat:",
       "starter": {
         "name": "Starter",
-        "desc": "Dla małych lokalnych firm, które chcą szybko wystartować.",
-        "price": "od 490 EUR",
-        "range": "zwykle 490-590 EUR",
+        "desc": "Dla małych lokalnych firm, które chcą szybko i profesjonalnie zaistnieć online.",
+        "price": "od EUR 490",
+        "range": "zwykle EUR 490–590",
         "core": [
           "Landing page",
-          "Formularz leadowy + formularz kontaktowy",
+          "Formularz lead + sekcja kontaktowa",
           "GA4 + podstawowa konfiguracja SEO"
         ],
         "plus": [
@@ -479,28 +479,28 @@
         ],
         "subscription": {
           "monthly": {
-            "price": "62 EUR / miesiąc",
-            "meta": "podstawowe wsparcie po wdrożeniu"
+            "price": "EUR 62 / miesiąc",
+            "meta": "Abonament wsparcia osobno od stworzenia strony"
           },
           "yearly": {
-            "price": "521 EUR / rok",
+            "price": "EUR 521 / rok",
             "meta": "12 miesięcy z rabatem 30%"
           },
           "includes": [
             "Aktualizacje techniczne i kopie zapasowe",
-            "Kontrola formularzy, konwersji i podstawowego trackingu",
-            "Do 1 bloku poprawek lub aktualizacji miesięcznie"
+            "Monitoring formularzy, konwersji i podstawowego trackingu",
+            "Do 1 małego bloku zmian miesięcznie"
           ]
         },
-        "outcome": "Stabilny kanał pierwszych kwalifikowanych zapytań."
+        "outcome": "Profesjonalna obecność online dla pierwszych kwalifikowanych zapytań."
       },
       "business": {
         "name": "Business",
-        "desc": "Dla zespołów z kilkoma usługami i aktywną sprzedażą.",
-        "price": "od 590 EUR",
-        "range": "zwykle 590-790 EUR",
+        "desc": "Dla lokalnych firm, które potrzebują więcej zapytań, lepszej struktury i jasnej analityki.",
+        "price": "od EUR 590",
+        "range": "zwykle EUR 590–790",
         "core": [
-          "Strona wielopodstronowa do 5 stron",
+          "Wielostronicowa strona do 5 podstron",
           "Integracja CRM + lead tracking",
           "Dashboard analityczny"
         ],
@@ -510,52 +510,56 @@
         ],
         "subscription": {
           "monthly": {
-            "price": "86 EUR / miesiąc",
-            "meta": "wsparcie dla strony, CRM i analityki"
+            "price": "EUR 86 / miesiąc",
+            "meta": "Abonament wsparcia osobno od stworzenia strony"
           },
           "yearly": {
-            "price": "722 EUR / rok",
+            "price": "EUR 722 / rok",
             "meta": "12 miesięcy z rabatem 30%"
           },
           "includes": [
             "Regularne aktualizacje treści i stron",
             "Kontrola CRM, lead trackingu i dashboardu",
-            "Do 2 zadań miesięcznie poprawiających konwersję"
+            "Do 2 zadań optymalizacyjnych miesięcznie"
           ]
         },
-        "outcome": "Przewidywalny napływ leadów z jasną analityką."
+        "outcome": "Planowalny przepływ leadów z jasną analityką."
       },
       "pro": {
         "name": "Pro",
-        "desc": "Dla wzrostu napędzanego stroną, reklamami i automatyzacjami.",
-        "price": "od 790 EUR",
-        "range": "zwykle 790-990 EUR",
+        "desc": "Dla firm, które chcą połączyć stronę, reklamy i automatyzację.",
+        "price": "od EUR 790",
+        "range": "zwykle EUR 790–990",
         "core": [
-          "Strona + konfiguracja Ads",
-          "Google Ads albo Meta Ads",
-          "Marketing dashboard + tracking"
+          "Strona + konfiguracja reklam",
+          "Google Ads lub Meta Ads",
+          "Dashboard marketingowy + tracking"
         ],
         "plus": [
           "Kwalifikacja leadów przez AI",
-          "Automation flows"
+          "Workflow automatyzacji"
         ],
         "subscription": {
           "monthly": {
-            "price": "160 EUR / miesiąc",
-            "meta": "aktywne prowadzenie systemu growth"
+            "price": "EUR 160 / miesiąc",
+            "meta": "Abonament wsparcia osobno od stworzenia strony"
           },
           "yearly": {
-            "price": "1.344 EUR / rok",
+            "price": "EUR 1.344 / rok",
             "meta": "12 miesięcy z rabatem 30%"
           },
           "includes": [
-            "Cotygodniowa kontrola strony, reklam i automation flows",
-            "Optymalizacja CPL, lejka i kwalifikacji leadów",
-            "Do 4 zadań growth miesięcznie + priorytetowe wsparcie"
+            "Cotygodniowa kontrola strony, reklam i workflow automatyzacji",
+            "Optymalizacja CPL, funnelu i kwalifikacji leadów",
+            "Do 4 zadań growth miesięcznie plus priorytetowe wsparcie"
           ]
         },
         "outcome": "Większy popyt przy kontrolowanym koszcie leada."
-      }
+      },
+      "subtitle": "Oferta startowa dla pierwszych klientów: jasne stworzenie strony i opcjonalne wsparcie.",
+      "websiteCreationLabel": "Stworzenie strony",
+      "introOfferNote": "Cena startowa dla pierwszych klientów",
+      "optionalSupportLabel": "Opcjonalne wsparcie"
     },
     "comparison": {
       "title": "Porównanie funkcji",
