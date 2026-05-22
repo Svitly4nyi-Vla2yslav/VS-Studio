@@ -20,11 +20,20 @@ import ServicesPage from './pages/ServicePages/Service';
 import './site.css';
 
 const AIAssistantDemoPage = lazy(() => import('./pages/AIAssistantDemo'));
+const PortfolioPage = lazy(() => import('./portfolio/pages/PortfolioPage'));
 
 export const App: React.FC = () => {
   return (
     // <MaintenanceGate>
       <Routes>
+        <Route
+          path='/portfolio'
+          element={
+            <Suspense fallback={null}>
+              <PortfolioPage />
+            </Suspense>
+          }
+        />
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
           <Route path='services' element={<ServicesPage />} />

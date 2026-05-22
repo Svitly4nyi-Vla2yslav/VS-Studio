@@ -4,10 +4,11 @@ import HttpApi from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 
 // Ця версія додається до URL файлів перекладів, щоб браузер не тримав старі pricing-тексти в кеші.
-const TRANSLATION_ASSET_VERSION = "20260520-pricing-packages-refined";
+const TRANSLATION_ASSET_VERSION = "20260520-portfolio-page";
 
 export const SUPPORTED_LANGUAGES = [
   "de",
+  "en",
   "uk",
   "tr",
   "ar",

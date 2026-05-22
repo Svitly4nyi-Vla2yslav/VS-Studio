@@ -13,6 +13,7 @@ import {
   FaUser,
 } from 'react-icons/fa';
 import TerminalType from '../../components/Motion/TerminalType';
+import { contactInfo } from '../../data/contactInfo';
 import { PageContainer } from '../shared/styles/PagePrimitives.styles';
 import ContactLeadVisual from './ContactLeadVisual';
 import {
@@ -358,18 +359,18 @@ const Contact: React.FC = () => {
                   </div>
                 </ContactItemLink> */}
 
-                <ContactItemLink href='mailto:anfrage@vs-web-studio.de'>
+                <ContactItemLink href={contactInfo.emailHref}>
                   <FaEnvelope />
                   <div>
-                    <strong>anfrage@vs-web-studio.de</strong>
+                    <strong>{contactInfo.email}</strong>
                     <span>{t('contact.contactMeta.email', { defaultValue: copy.contactMeta.email })}</span>
                   </div>
                 </ContactItemLink>
 
-                <ContactItemLink href='tel:+4915164392053'>
+                <ContactItemLink href={contactInfo.phoneHref}>
                   <FaPhone />
                   <div>
-                    <strong>+49 1516 4392053</strong>
+                    <strong>{contactInfo.phone}</strong>
                     <span>{t('contact.contactMeta.phone', { defaultValue: copy.contactMeta.phone })}</span>
                   </div>
                 </ContactItemLink>

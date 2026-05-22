@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { contactInfo } from '../../data/contactInfo';
 import {
   FooterCookieButton,
   FooterInfo,
@@ -28,9 +29,9 @@ const Footer: React.FC = () => {
           <FooterInfo>
             <p>{safeText(t('footer.tagline'), 'VS Studio - Websites, Web-Apps, Ads & Automationen')}</p>
             <FooterMuted>
-              <a href='mailto:anfrage@vs-web-studio.de'>anfrage@vs-web-studio.de</a>
+              <a href={contactInfo.emailHref}>{contactInfo.email}</a>
               {' | '}
-              <a href='tel:+4915164392053'>+49 1516 4392053</a>
+              <a href={contactInfo.phoneHref}>{contactInfo.phone}</a>
             </FooterMuted>
           </FooterInfo>
           <FooterLinks>

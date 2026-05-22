@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { backOut, easeOut, motion, useScroll, useTransform } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { FaArrowRight, FaBolt, FaBullseye, FaEuroSign, FaLifeRing, FaSearch } from 'react-icons/fa';
+import { FaArrowRight, FaBolt, FaBullseye, FaEuroSign, FaIdCard, FaLifeRing, FaSearch } from 'react-icons/fa';
 import TerminalType from '../../../components/Motion/TerminalType';
 import HeroVideo from '../../../components/Motion/HeroVideo';
 import { revealUp } from './homePageData';
@@ -70,6 +70,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ reducedMotion }) => {
             <NavLink to='/preise' className='btn btn-secondary'>
               <FaEuroSign /> {t('common.viewPrices')}
             </NavLink>
+            {/* <NavLink to='/portfolio' className='btn btn-secondary'>
+              <FaIdCard /> {t('home.portfolioLink', { defaultValue: 'Portfolio' })}
+            </NavLink> */}
             <a href='#faq' className='btn btn-secondary'>
               <FaArrowRight /> {t('home.toFaq', { defaultValue: 'Zum FAQ' })}
             </a>

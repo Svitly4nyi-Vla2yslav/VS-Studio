@@ -55,6 +55,7 @@ const menuVariants = {
 
 const languageLabels: Record<Language, string> = {
   de: 'Deutsch',
+  en: 'English',
   uk: '\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430',
   tr: 'T\u00fcrk\u00e7e',
   ar: '\u0627\u0644\u0639\u0631\u0628\u064a\u0629',
@@ -70,6 +71,7 @@ const languageLabels: Record<Language, string> = {
 
 const languageCodes: Record<Language, string> = {
   de: 'DE',
+  en: 'EN',
   uk: 'UA',
   tr: 'TR',
   ar: 'SA',
