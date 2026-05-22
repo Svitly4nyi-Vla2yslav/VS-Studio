@@ -1,17 +1,18 @@
 {
   "languages": {
     "de": "Deutsch",
-    "uk": "?????",
-    "tr": "T?rk?e",
-    "ar": "????",
+    "uk": "Українська",
+    "tr": "Türkçe",
+    "ar": "العربية",
     "pl": "Polski",
-    "ku": "Kurmanc?",
-    "fa": "???",
+    "ku": "Kurmancî",
+    "fa": "فارسی",
     "it": "Italiano",
-    "es": "Espa?ol",
-    "el": "????",
-    "ro": "Rom?n?",
-    "bg": "?????"
+    "es": "Español",
+    "el": "Ελληνικά",
+    "ro": "Română",
+    "bg": "Български",
+    "en": "English"
   },
   "common": {
     "projectRequest": "Projekt anfragen",
@@ -370,7 +371,8 @@
           "text": "Klare nächste Schritte zur Conversion-Steigerung nach Launch."
         }
       }
-    }
+    },
+    "portfolioLink": "Portfolio"
   },
   "services": {
     "h1": "Leistungen mit klarem Ergebnis und realistischem Zeitplan.",
@@ -1004,6 +1006,216 @@
         "label": "Ergebnis",
         "value": "Mehr qualifizierte Anfragen statt nur Website-Traffic"
       }
+    }
+  },
+  "portfolio": {
+    "profile": {
+      "name": "Vladyslav Svitlychnyi",
+      "location": "Hildesheim, Germany",
+      "role": "Junior Full Stack Developer",
+      "brand": "VS Web Studio",
+      "languages": "Ukrainian, English, German B1/B2"
+    },
+    "skills": {
+      "categories": {
+        "frontend": "Frontend Path",
+        "backend": "Backend Path",
+        "business": "Business Path",
+        "automation": "AI Automation Path"
+      },
+      "eyebrow": "Skill Tree",
+      "title": "Ability Branches & XP Paths",
+      "description": "Ein kompakter Überblick über Technologien, Business-Verständnis und Automatisierungsfelder, die ich aktuell für reale Projekte ausbaue.",
+      "descriptions": {
+        "frontend": "Interface magic: fast, responsive and clear experiences.",
+        "backend": "Server shield: data, APIs, functions and scalable structures.",
+        "business": "Growth path: lead generation, tracking and practical SMB thinking.",
+        "automation": "Mage branch: AI assistants, qualification flows and process automation."
+      }
+    },
+    "projects": {
+      "items": {
+        "vs": {
+          "title": "VS Web Studio",
+          "type": "Own Brand / Business Website",
+          "description": "Eigene Webstudio-Marke für Websites, Web-Apps, Automatisierung und digitale Lösungen für lokale Unternehmen in Deutschland.",
+          "reward": "Own brand for local German SMB web services, automation and lead generation."
+        },
+        "lumina": {
+          "title": "Lumina Atelier Salon",
+          "type": "Demo Project",
+          "description": "Moderne Landingpage für einen Beauty-Salon mit klarem Angebot, emotionalem Design und Fokus auf Termin-Anfragen.",
+          "reward": "Beauty salon demo focused on emotional presentation and appointment requests."
+        },
+        "autowerk": {
+          "title": "AutoWerk Musterstadt",
+          "type": "Demo Project",
+          "description": "Website-Konzept für eine Autowerkstatt mit klaren Leistungen, Termin-CTA und vertrauensbildendem Layout.",
+          "reward": "Workshop demo focused on service clarity, trust and appointment conversion."
+        },
+        "handwerk": {
+          "title": "Handwerk / SHK Demo",
+          "type": "Demo Project",
+          "description": "Website-Konzept für Handwerk, Heizung, Sanitär und Wärmepumpen mit regionaler Positionierung und Angebotsanfrage.",
+          "reward": "Local craftsman demo for heating, sanitary and heat pump services."
+        },
+        "ai": {
+          "title": "AI Assistant / Lead Automation",
+          "type": "Concept / In Development",
+          "description": "Konzept für einen Website-Assistenten, der Fragen beantwortet, Leads qualifiziert, Projektinformationen sammelt und Kontaktanfragen vorbereitet.",
+          "reward": "Concept for qualifying leads, answering FAQs and preparing client requests."
+        },
+        "research": {
+          "title": "Business Platform Research",
+          "type": "Research / UI Inspiration",
+          "description": "Analyse moderner Business-Operating-Systeme, CRM/POS-Strukturen, White-Label-Plattformen und Automatisierungsideen für kleine Unternehmen. Nicht als offizielle Kundenarbeit dargestellt.",
+          "reward": "Research and UI inspiration around CRM, POS, orders, inventory and automation. Not client work."
+        }
+      },
+      "eyebrow": "Project Dungeons",
+      "title": "Ausgewählte Websites, Demos & Konzepte",
+      "description": "Jede Mission zeigt ein konkretes Projektfeld. Demos sind klar markiert, Konzepte werden nicht als Kundenarbeit dargestellt.",
+      "open": "Open Quest",
+      "concept": "Konzept ohne Live-Link",
+      "difficulty": "Difficulty"
+    },
+    "nav": {
+      "hero": "Hero",
+      "skills": "Skills",
+      "projects": "Projects",
+      "timeline": "Timeline",
+      "network": "Network",
+      "contact": "Contact",
+      "profile": "Profile"
+    },
+    "header": {
+      "navigation": "Portfolio navigation",
+      "language": "Portfolio-Sprache",
+      "cta": "Projekt anfragen",
+      "openMenu": "Portfolio-Menü öffnen",
+      "closeMenu": "Portfolio-Menü schließen"
+    },
+    "positioning": "Ich entwickle moderne Websites, Web-Apps und Automatisierungen für lokale Unternehmen in Deutschland. Mein Fokus liegt auf klarer Struktur, schneller Umsetzung, mobilen Webseiten, Leadgenerierung und verständlicher Kommunikation.",
+    "hero": {
+      "systemAwakened": "SYSTEM AWAKENED",
+      "badge": "Level-Up Web Developer",
+      "languageSwitcher": "Portfolio-Sprache wechseln",
+      "title": "Websites, Web-Apps & Automatisierung mit System",
+      "subtitle": "Ich kombiniere Frontend, Backend, Design, KI-Tools und Business-Denken, um digitale Lösungen zu bauen, die nicht nur gut aussehen, sondern Anfragen und Prozesse verbessern.",
+      "buttons": {
+        "projects": "Quests ansehen",
+        "contact": "Kontakt aufnehmen",
+        "studio": "Zur VS Web Studio Seite"
+      },
+      "stats": {
+        "class": "Main Class",
+        "guild": "Guild",
+        "focus": "Focus",
+        "focusValue": "Websites, Web-Apps, AI"
+      }
+    },
+    "system": {
+      "eyebrow": "System Window",
+      "title": "Current Hunter Profile",
+      "rank": "Current Rank",
+      "class": "Main Class",
+      "guild": "Guild",
+      "location": "Location",
+      "mission": "Main Mission",
+      "xpFocus": "XP Focus",
+      "values": {
+        "mainClass": "Web Developer / Founder",
+        "mainMission": "Build useful digital systems for local businesses"
+      }
+    },
+    "timeline": {
+      "eyebrow": "Quest Progress Map",
+      "title": "Checkpoint Route",
+      "description": "Eine vertikale Karte vom Kursabschluss über Demo-Projekte bis zu echten Kunden, Automatisierung und skalierbaren Business-Systemen.",
+      "status": {
+        "completed": "Completed",
+        "active": "Active",
+        "training": "Training",
+        "preparing": "Preparing",
+        "next": "Next Quest"
+      },
+      "items": {
+        "course": {
+          "title": "Full Stack Developer course completed",
+          "description": "Solid base in frontend, backend, project structure and production workflows."
+        },
+        "platforms": {
+          "title": "Freelance platforms: Fiverr / Freelancer",
+          "description": "Testing offers, positioning and client communication channels."
+        },
+        "studio": {
+          "title": "Building VS Web Studio",
+          "description": "Own brand for websites, automation and lead systems for German SMBs."
+        },
+        "demos": {
+          "title": "Developing demo websites for German SMBs",
+          "description": "Practical demos for salons, workshops, handwerk and service businesses."
+        },
+        "german": {
+          "title": "Learning German for professional communication",
+          "description": "Improving B1/B2 communication for clear local client collaboration."
+        },
+        "selfEmployment": {
+          "title": "Preparing self-employment / Einzelunternehmen in Germany",
+          "description": "Business setup path with focus on honest offers and sustainable delivery."
+        },
+        "scale": {
+          "title": "Working toward real clients, automation and scalable business systems",
+          "description": "Next chapter: real projects, AI workflows and repeatable business systems."
+        }
+      }
+    },
+    "network": {
+      "eyebrow": "Guild & Alliances",
+      "title": "Network & Business Context",
+      "description": "Business network, research and professional inspiration around startups, local services and SMB systems.",
+      "items": {
+        "linkedin": {
+          "title": "LinkedIn presence",
+          "description": "Professioneller Aufbau von Sichtbarkeit, Kontakten und klarer Positionierung als Webentwickler in Deutschland."
+        },
+        "localSmb": {
+          "title": "Local SMB focus",
+          "description": "Fokus auf kleine lokale Unternehmen, Dienstleister, Werkstätten, Salons, Handwerk, Praxen und klare Lead-Prozesse."
+        },
+        "ecosystem": {
+          "title": "Startup ecosystem",
+          "description": "Austausch, Beobachtung und Inspiration rund um Gründer, lokale Services und praktische Business-Systeme."
+        },
+        "research": {
+          "title": "SABSUS / First Step Ideas Factory research",
+          "description": "Recherche und berufliche Inspiration, nicht als bestätigte Kundenarbeit formuliert."
+        }
+      }
+    },
+    "contact": {
+      "eyebrow": "Final Portal",
+      "title": "Bereit für ein digitales Upgrade?",
+      "description": "Wenn Sie eine moderne Website, einen klaren Online-Auftritt oder eine Automatisierung für Ihr Unternehmen brauchen, können wir mit einem einfachen ersten Gespräch starten.",
+      "buttons": {
+        "project": "Projekt anfragen",
+        "email": "E-Mail schreiben",
+        "website": "VS Web Studio besuchen",
+        "github": "GitHub öffnen"
+      },
+      "channels": {
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "website": "Website",
+        "github": "GitHub",
+        "location": "Location"
+      }
+    },
+    "footer": {
+      "description": "Junior Full Stack Developer und Gründer von VS Web Studio. Fokus auf Websites, Web-Apps, Automatisierung und Lead-Systeme für lokale Unternehmen in Deutschland.",
+      "navigation": "Navigation",
+      "contact": "Kontakt",
+      "note": "Anime-inspired personal portfolio. Original visual style, no copyrighted characters used."
     }
   }
 }
