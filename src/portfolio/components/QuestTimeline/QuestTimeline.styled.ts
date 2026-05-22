@@ -10,8 +10,8 @@ const pathGlow = keyframes`
 
 /* Fullscreen timeline-секція займає мінімум viewport без внутрішнього scroll. */
 export const QuestTimelineShell = styled(motion.section)`
-  /* position: relative;
-  z-index: 1; */
+  position: relative;
+  z-index: 1;
   min-height: 100vh;
   min-height: 100svh;
   overflow: hidden;
@@ -29,11 +29,18 @@ export const QuestTimelineShell = styled(motion.section)`
     position: relative;
     z-index: 2;
     margin-left: min(4vw, 50px);
+    min-width: 0;
+    flex: 1 1 auto;
   }
 
   @media (max-width: 900px) {
+    min-height: auto;
+    display: block;
+    padding: 82px max(16px, env(safe-area-inset-left)) 42px max(16px, env(safe-area-inset-right));
+
     > :not([data-portfolio-media]) {
       margin-left: 0;
+      width: 100%;
     }
   }
 `;
@@ -54,16 +61,31 @@ export const TimelineMediaSlot = styled(motion.div)`
     aspect-ratio: auto;
   }
 
-  @media (max-width: 900px) {
-    left: -250px;
-    width: 558px;
-    opacity: 0.2;
+  @media (max-width: 1024px) {
+    position: absolute;
+    inset: auto auto;
+    width: auto;
+    opacity: 0.14;
+    pointer-events: none;
+
+    figure {
+      width: 100%;
+      height: 62svh;
+    }
+  }
+
+  @media (max-width: 560px) {
+    inset: auto auto;
+    max-width: 520px;
+    width: auto;
+    opacity: 0.1;
   }
 `;
 
 /* Eyebrow label для timeline. */
 export const SectionLabel = styled.span`
   display: inline-flex;
+  max-width: 100%;
   border: 1px solid rgba(34, 211, 238, 0.28);
   border-radius: 999px;
   padding: 8px 12px;
@@ -72,6 +94,7 @@ export const SectionLabel = styled.span`
   font-size: 0.8rem;
   font-weight: 900;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 `;
 
 /* Заголовок quest route. */
@@ -82,6 +105,11 @@ export const SectionTitle = styled.h2`
   font-size: clamp(1.9rem, 3.8vw, 4rem);
   line-height: 1.02;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
+
+  @media (max-width: 560px) {
+    font-size: clamp(1.8rem, 10vw, 2.55rem);
+  }
 `;
 
 /* Опис маршруту розвитку. */
@@ -90,22 +118,29 @@ export const SectionIntro = styled.p`
   margin: 16px 0 0;
   color: rgba(248, 250, 252, 0.72);
   line-height: 1.55;
+  overflow-wrap: anywhere;
+
+  @media (max-width: 560px) {
+    font-size: 0.96rem;
+  }
 `;
 
 /* QuestList росте разом із секцією, тому скрол лишається сторінковим. */
 export const QuestList = styled.div`
-width: 94%;
+  width: min(94%, 760px);
   position: relative;
   display: grid;
   gap: 10px;
   margin-top: clamp(18px, 3vw, 28px);
-  overflow-x: hidden;
+  overflow: visible;
   padding-left: 69px;
   padding-right: min(0vw, 0px);
 
   @media (max-width: 700px) {
+    width: 100%;
     padding-left: 0;
     padding-right: 0;
+    gap: 12px;
   }
 `;
 
@@ -167,7 +202,31 @@ export const Checkpoint = styled(motion.article)`
   }
 
   @media (max-width: 700px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 8px 12px;
+    align-items: start;
+    padding: 13px 14px;
+
+    > span {
+      grid-column: 2;
+      grid-row: 1;
+      line-height: 1;
+    }
+
+    > div:nth-of-type(2) {
+      grid-column: 2;
+      min-width: 0;
+    }
+
+    h3 {
+      font-size: 0.96rem;
+      overflow-wrap: anywhere;
+    }
+
+    p {
+      font-size: 0.83rem;
+      overflow-wrap: anywhere;
+    }
   }
 `;
 
@@ -187,6 +246,11 @@ export const CheckpointDot = styled.div`
 
   @media (max-width: 700px) {
     position: static;
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    width: 30px;
+    height: 30px;
+    margin-top: -2px;
   }
 `;
 
@@ -201,6 +265,9 @@ export const StatusBadge = styled.strong`
   text-transform: uppercase;
 
   @media (max-width: 700px) {
+    grid-column: 2;
     justify-self: start;
+    padding: 7px 9px;
+    font-size: 0.7rem;
   }
 `;

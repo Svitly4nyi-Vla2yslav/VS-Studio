@@ -4,8 +4,8 @@ import { portfolioTheme } from '../../utils/portfolioTheme';
 
 /* Fullscreen skills-секція займає мінімум viewport без внутрішніх scrollbars. */
 export const SkillTreeShell = styled(motion.section)`
-  /* position: relative; */
-  /* z-index: 1; */
+  position: relative;
+  z-index: 1;
   min-height: 100vh;
   min-height: 100svh;
   overflow: hidden;
@@ -14,7 +14,7 @@ export const SkillTreeShell = styled(motion.section)`
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  gap:10px;
+  gap: 10px;
   padding: clamp(84px, 8vw, 108px) max(24px, calc((100% - 1440px) / 2)) clamp(24px, 4vw, 42px);
   color: #111827;
   background:
@@ -25,6 +25,18 @@ export const SkillTreeShell = styled(motion.section)`
   > :not([data-portfolio-media]) {
     position: relative;
     z-index: 2;
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  @media (max-width: 900px) {
+    min-height: auto;
+    display: block;
+    padding: 82px max(16px, env(safe-area-inset-left)) 42px max(16px, env(safe-area-inset-right));
+
+    > :not([data-portfolio-media]) {
+      width: 100%;
+    }
   }
 `;
 
@@ -44,16 +56,32 @@ export const SkillMediaSlot = styled(motion.div)`
   }
 
   @media (max-width: 860px) {
-    right: -180px;
-    bottom: -12svh;
-    width: 620px;
-    opacity: 0.22;
+    position: absolute;
+    inset: auto auto;
+    bottom: 60svh;
+    width: auto;
+    opacity: 0.14;
+    pointer-events: none;
+
+    figure {
+      width: 100%;
+      height: 60svh;
+    }
+  }
+
+  @media (max-width: 560px) {
+    inset: auto auto;
+    max-width: 520px;
+    bottom: 60svh;
+    width: auto;
+    opacity: 0.1;
   }
 `;
 
 /* Label для назви секції skill tree. */
 export const SectionLabel = styled.span`
   display: inline-flex;
+  max-width: 100%;
   border: 1px solid rgba(212, 175, 55, 0.32);
   border-radius: 999px;
   padding: 8px 12px;
@@ -63,6 +91,7 @@ export const SectionLabel = styled.span`
   font-weight: 900;
   text-transform: uppercase;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  overflow-wrap: anywhere;
 `;
 
 /* Заголовок ability paths. */
@@ -73,6 +102,11 @@ export const SectionTitle = styled.h2`
   font-size: clamp(1.75rem, 3.2vw, 3.25rem);
   line-height: 1.02;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
+
+  @media (max-width: 560px) {
+    font-size: clamp(1.75rem, 9vw, 2.4rem);
+  }
 `;
 
 /* Вступний текст секції skills. */
@@ -81,21 +115,28 @@ export const SectionIntro = styled.p`
   margin: 12px 0 0;
   color: rgba(15, 23, 42, 0.72);
   line-height: 1.55;
+  overflow-wrap: anywhere;
+
+  @media (max-width: 560px) {
+    font-size: 0.96rem;
+  }
 `;
 
 /* SkillGrid адаптується по висоті, а скрол лишається тільки загальний сторінковий. */
 export const SkillGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  max-width: fit-content;
+  width: min(100%, 860px);
+  max-width: 100%;
   gap: 12px;
   margin-top: clamp(14px, 2vw, 20px);
-  overflow-x: hidden;
+  overflow: visible;
   padding-right: min(5vw, 60px);
 
   @media (max-width: 860px) {
     grid-template-columns: 1fr;
     padding-right: 0;
+    gap: 14px;
   }
 `;
 
@@ -103,6 +144,7 @@ export const SkillGrid = styled.div`
 export const AbilityCard = styled(motion.article)`
   position: relative;
   overflow: hidden;
+  min-width: 0;
   border: 1px solid rgba(34, 211, 238, 0.22);
   border-radius: 8px;
   padding: clamp(12px, 1.4vw, 15px);
@@ -129,6 +171,11 @@ export const AbilityCard = styled(motion.article)`
       transform: none;
     }
   }
+
+  @media (max-width: 560px) {
+    clip-path: none;
+    padding: 14px;
+  }
 `;
 
 /* Вертикальна лінія з'єднує abilities у branch. */
@@ -140,6 +187,10 @@ export const BranchLine = styled.span`
   width: 1px;
   background: linear-gradient(180deg, ${portfolioTheme.colors.cyan}, rgba(168, 85, 247, 0.18));
   opacity: 0.7;
+
+  @media (max-width: 560px) {
+    display: none;
+  }
 `;
 
 /* Header ability card містить іконку, назву, опис і rank. */
@@ -163,6 +214,16 @@ export const AbilityHeader = styled.div`
     line-height: 1.32;
     font-size: 0.86rem;
   }
+
+  @media (max-width: 560px) {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 10px 12px;
+
+    h3,
+    p {
+      overflow-wrap: anywhere;
+    }
+  }
 `;
 
 /* Кругла іконка branch path. */
@@ -176,6 +237,11 @@ export const AbilityIcon = styled.div`
   background: rgba(34, 211, 238, 0.12);
   color: ${portfolioTheme.colors.cyan};
   box-shadow: 0 10px 24px rgba(34, 211, 238, 0.12);
+
+  @media (max-width: 560px) {
+    width: 36px;
+    height: 36px;
+  }
 `;
 
 /* Rank badge показує рівень гілки. */
@@ -186,6 +252,13 @@ export const RankBadge = styled.span`
   background: rgba(255, 255, 255, 0.72);
   color: #9a6b08;
   font-weight: 900;
+
+  @media (max-width: 560px) {
+    grid-column: 2;
+    justify-self: start;
+    padding: 6px 9px;
+    font-size: 0.78rem;
+  }
 `;
 
 /* Список skills всередині branch. */
@@ -210,6 +283,8 @@ export const SkillItem = styled.div`
   span {
     color: rgba(15, 23, 42, 0.8);
     font-size: 0.9rem;
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
 
   strong {
