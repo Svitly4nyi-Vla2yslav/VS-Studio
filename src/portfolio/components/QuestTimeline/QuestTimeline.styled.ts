@@ -44,12 +44,12 @@ export const TimelineMediaSlot = styled(motion.div)`
   left: clamp(-230px, -11vw, -96px);
   bottom: -8svh;
   /* z-index: 1; */
-  width: min(38vw, 576px);
+  width: min(48vw, 576px);
   opacity: 0.82;
 
   figure {
     --portfolio-media-size: 100%;
-    width: 100%;
+    width: 48vw;
     height: min(75svh, 674px);
     aspect-ratio: auto;
   }

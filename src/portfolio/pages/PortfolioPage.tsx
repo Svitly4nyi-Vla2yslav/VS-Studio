@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { AnimeBackground } from '../components/AnimeBackground/AnimeBackground';
 import { ContactPortal } from '../components/ContactPortal/ContactPortal';
 import { HunterProfile } from '../components/HunterProfile/HunterProfile';
@@ -13,9 +14,11 @@ import { ContentFrame, PortfolioGlobalStyle, PortfolioPageWrapper, SkipLink } fr
 
 // PortfolioPage збирає всі fullscreen-сцени portfolio в ізольованому середовищі.
 export const PortfolioPage: React.FC = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     // Ефект оновлює title, скидає scroll і вмикає scoped-стилі для прихованого scrollbar.
-    document.title = 'Vladyslav Svitlychnyi | Portfolio';
+    document.title = t('portfolio.meta.title');
     document.documentElement.classList.add('portfolio-page-active');
     document.body.classList.add('portfolio-page-active');
     window.scrollTo({ top: 0, behavior: 'auto' });
@@ -25,12 +28,12 @@ export const PortfolioPage: React.FC = () => {
       document.documentElement.classList.remove('portfolio-page-active');
       document.body.classList.remove('portfolio-page-active');
     };
-  }, []);
+  }, [t]);
 
   return (
     <PortfolioPageWrapper>
       <PortfolioGlobalStyle />
-      <SkipLink href='#portfolio-top'>Skip to portfolio content</SkipLink>
+      <SkipLink href='#portfolio-top'>{t('portfolio.skipLink')}</SkipLink>
       <AnimeBackground />
       <PortfolioHeader />
       <ContentFrame>

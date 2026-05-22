@@ -20,7 +20,7 @@ export const SkillTreeShell = styled(motion.section)`
   background:
     radial-gradient(circle at 82% 28%, rgba(168, 85, 247, 0.1), transparent 30%),
     radial-gradient(circle at 16% 72%, rgba(34, 211, 238, 0.12), transparent 32%),
-    linear-gradient(135deg, #ffffff 0%, #f8fafc 48%, #eef6ff 100%);
+    linear-gradient(135deg, #aeaeae 0%, #d6d6d6 48%, #fbeeff 100%);
 
   > :not([data-portfolio-media]) {
     position: relative;

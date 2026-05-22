@@ -35,7 +35,7 @@ export const PortfolioHero: React.FC = () => {
         <Subtitle>{t('portfolio.hero.subtitle')}</Subtitle>
         <HeroMeta>
           <span>
-            <FaMapMarkerAlt aria-hidden='true' /> {contactInfo.cityCountry}
+            <FaMapMarkerAlt aria-hidden='true' /> {t('portfolio.profile.location')}
           </span>
           <span>{t('portfolio.profile.languages')}</span>
         </HeroMeta>
@@ -54,10 +54,10 @@ export const PortfolioHero: React.FC = () => {
 
       <MangaPanel variants={systemAwakening} initial='hidden' animate='visible'>
         <HeroScene>
-          <PortfolioMediaFrame {...portfolioMedia.hero} />
+          <PortfolioMediaFrame type={portfolioMedia.hero.type} src={portfolioMedia.hero.src} alt={t(portfolioMedia.hero.altKey)} />
           {floatingCodeFragments.map(fragment => (
-            <CodeFragment key={fragment.label} $x={fragment.x} $y={fragment.y}>
-              {fragment.label}
+            <CodeFragment key={fragment.labelKey} $x={fragment.x} $y={fragment.y}>
+              {t(fragment.labelKey)}
             </CodeFragment>
           ))}
         </HeroScene>

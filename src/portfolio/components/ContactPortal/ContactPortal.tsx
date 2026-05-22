@@ -1,4 +1,4 @@
-import { FaEnvelope, FaExternalLinkAlt, FaGithub, FaMapMarkerAlt, FaPaperPlane, FaPhone } from 'react-icons/fa';
+import { FaEnvelope, FaExternalLinkAlt, FaGithub, FaPaperPlane, FaPhone } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { contactInfo } from '../../../data/contactInfo';
 import { portfolioMedia } from '../../data/portfolioMedia';
@@ -29,7 +29,7 @@ export const ContactPortal: React.FC = () => {
   const channels = [
     { id: 'email', label: t('portfolio.contact.channels.email'), value: contactInfo.email, href: contactInfo.emailHref, icon: FaEnvelope, external: false },
     { id: 'phone', label: t('portfolio.contact.channels.phone'), value: contactInfo.phone, href: contactInfo.phoneHref, icon: FaPhone, external: false },
-    { id: 'location', label: t('portfolio.contact.channels.location'), value: contactInfo.addressLine, href: contactInfo.mapsUrl, icon: FaMapMarkerAlt, external: true },
+    // { id: 'location', label: t('portfolio.contact.channels.location'), value: contactInfo.addressLine, href: contactInfo.mapsUrl, icon: FaMapMarkerAlt, external: true },
     { id: 'website', label: t('portfolio.contact.channels.website'), value: contactInfo.websiteLabel, href: contactInfo.websiteUrl, icon: FaExternalLinkAlt, external: true },
   ] as const;
 
@@ -43,7 +43,7 @@ export const ContactPortal: React.FC = () => {
       viewport={portfolioViewport}
     >
       <ContactMediaSlot variants={revealCard} data-portfolio-media='contact'>
-        <PortfolioMediaFrame {...portfolioMedia.contact} />
+        <PortfolioMediaFrame type={portfolioMedia.contact.type} src={portfolioMedia.contact.src} alt={t(portfolioMedia.contact.altKey)}  />
       </ContactMediaSlot>
 
       <PortalFrame variants={revealCard}>

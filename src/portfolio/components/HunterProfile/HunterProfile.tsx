@@ -38,7 +38,7 @@ export const HunterProfile: React.FC = () => {
       <ScanLine aria-hidden='true' />
       <ProfileContainer>
         <ProfileMediaSlot variants={revealCard} data-portfolio-media='profile'>
-          <PortfolioImageAura src={portfolioMedia.profile.src} alt={portfolioMedia.profile.alt} />
+          <PortfolioImageAura src={portfolioMedia.profile.src} alt={t(portfolioMedia.profile.altKey)} />
         </ProfileMediaSlot>
 
         <ProfileCopy variants={revealCard}>
@@ -58,8 +58,8 @@ export const HunterProfile: React.FC = () => {
 
         <XpGrid aria-label={t('portfolio.system.xpFocus')}>
           {xpFocusItems.map(item => (
-            <XpItem key={item.label} variants={revealCard}>
-              <span>{item.label}</span>
+            <XpItem key={item.labelKey} variants={revealCard}>
+              <span>{t(item.labelKey)}</span>
               <strong>{item.level}%</strong>
               <XpBar>
                 <XpFill

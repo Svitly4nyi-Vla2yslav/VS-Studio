@@ -64,8 +64,8 @@ export const SkillTree: React.FC = () => {
 
               <AbilityList>
                 {category.skills.slice(0, 4).map(skill => (
-                  <SkillItem key={skill.label}>
-                    <span>{skill.label}</span>
+                  <SkillItem key={skill.labelKey}>
+                    <span>{t(skill.labelKey)}</span>
                     <strong>{skill.level}%</strong>
                     <SkillBar>
                       <SkillFill
@@ -83,7 +83,7 @@ export const SkillTree: React.FC = () => {
         })}
       </SkillGrid> </div>
        <SkillMediaSlot variants={revealCard} data-portfolio-media='skills'>
-        <PortfolioMediaFrame {...portfolioMedia.skills} />
+        <PortfolioMediaFrame type={portfolioMedia.skills.type} src={portfolioMedia.skills.src} alt={t(portfolioMedia.skills.altKey)} />
       </SkillMediaSlot>
     </SkillTreeShell>
   );

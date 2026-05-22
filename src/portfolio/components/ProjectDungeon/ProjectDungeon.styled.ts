@@ -37,8 +37,8 @@ export const ProjectDungeonShell = styled(motion.section)`
 /* ProjectMediaSlot додає квадратний dungeon-art frame справа від project cards. */
 export const ProjectMediaSlot = styled(motion.div)`
   position: absolute;
-  right: clamp(-150px, -5vw, -44px);
-  bottom: -7svh;
+  right: clamp(-150px, 0vw, 0px);
+  bottom: 7svh;
   z-index: 1;
   width: min(42vw, 650px);
   opacity: 0.86;
@@ -99,7 +99,7 @@ export const DungeonGrid = styled.div`
   gap: 12px;
   margin-top: clamp(14px, 2vw, 20px);
   overflow-x: hidden;
-  padding-right: min(22vw, 360px);
+  padding-right: min(0vw, 0px);
 
   @media (max-width: 1100px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));

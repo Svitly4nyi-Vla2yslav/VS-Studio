@@ -35,7 +35,7 @@ export const ProjectDungeon: React.FC = () => {
       viewport={portfolioViewport}
     >
       <ProjectMediaSlot variants={revealCard} data-portfolio-media='projects'>
-        <PortfolioImageAura src={portfolioMedia.projects.src} alt={portfolioMedia.projects.alt} />
+        <PortfolioImageAura src={portfolioMedia.projects.src} alt={t(portfolioMedia.projects.altKey)} />
       </ProjectMediaSlot>
 
       <DungeonHeader variants={revealCard}>
@@ -56,8 +56,8 @@ export const ProjectDungeon: React.FC = () => {
               <span>{t(project.rewardKey)}</span>
             </RewardLine>
             <ProjectTags>
-              {project.tags.map(tag => (
-                <span key={tag}>{tag}</span>
+              {project.tagKeys.map(tagKey => (
+                <span key={tagKey}>{t(tagKey)}</span>
               ))}
             </ProjectTags>
             {project.link ? (

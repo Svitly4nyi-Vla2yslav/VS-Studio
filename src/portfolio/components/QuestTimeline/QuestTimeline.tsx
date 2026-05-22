@@ -32,7 +32,7 @@ export const QuestTimeline: React.FC = () => {
       viewport={portfolioViewport}
     >
       <TimelineMediaSlot variants={revealCard} data-portfolio-media='timeline'>
-        <PortfolioMediaFrame {...portfolioMedia.timeline} />
+        <PortfolioMediaFrame type={portfolioMedia.timeline.type} src={portfolioMedia.timeline.src} alt={t(portfolioMedia.timeline.altKey)} />
       </TimelineMediaSlot>
       <div>
         <div>

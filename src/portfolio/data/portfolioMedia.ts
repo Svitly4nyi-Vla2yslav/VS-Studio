@@ -9,7 +9,7 @@ import timelineVideo from '../assets/Timeline section-video.mp4';
 export interface PortfolioMediaAsset {
   readonly type: 'image' | 'video';
   readonly src: string;
-  readonly alt: string;
+  readonly altKey: string;
 }
 
 export type PortfolioMediaSection = 'hero' | 'profile' | 'skills' | 'projects' | 'timeline' | 'network' | 'contact';
@@ -19,36 +19,36 @@ export const portfolioMedia: Record<PortfolioMediaSection, PortfolioMediaAsset> 
   hero: {
     type: 'video',
     src: heroVideo,
-    alt: 'Animated hero awakening scene for Vladyslav Svitlychnyi portfolio',
+    altKey: 'portfolio.media.hero',
   },
   profile: {
     type: 'image',
     src: profileSystemImage,
-    alt: 'Profile system character artwork for current developer rank section',
+    altKey: 'portfolio.media.profile',
   },
   skills: {
     type: 'video',
     src: skillsVideo,
-    alt: 'Animated skill tree scene for ability paths section',
+    altKey: 'portfolio.media.skills',
   },
   projects: {
     type: 'image',
     src: projectsImage,
-    alt: 'Project dungeon character artwork for selected projects section',
+    altKey: 'portfolio.media.projects',
   },
   timeline: {
     type: 'video',
     src: timelineVideo,
-    alt: 'Animated quest timeline scene for the developer progression section',
+    altKey: 'portfolio.media.timeline',
   },
   network: {
     type: 'video',
     src: networkVideo,
-    alt: 'Animated guild network scene for business alliances section',
+    altKey: 'portfolio.media.network',
   },
   contact: {
     type: 'video',
     src: contactVideo,
-    alt: 'Animated final portal scene for contact section',
+    altKey: 'portfolio.media.contact',
   },
 };

@@ -20,7 +20,7 @@ export interface SystemAttribute {
 }
 
 export interface XpFocusItem {
-  readonly label: string;
+  readonly labelKey: string;
   readonly level: number;
 }
 
@@ -40,7 +40,7 @@ export interface ProjectDungeonItem {
   readonly descriptionKey: string;
   readonly rewardKey: string;
   readonly difficulty: string;
-  readonly tags: readonly string[];
+  readonly tagKeys: readonly string[];
   readonly link?: string;
 }
 
@@ -59,7 +59,7 @@ export interface GuildSignal {
 }
 
 export interface FloatingCodeFragment {
-  readonly label: string;
+  readonly labelKey: string;
   readonly x: number;
   readonly y: number;
 }
@@ -86,12 +86,12 @@ export const systemAttributes: readonly SystemAttribute[] = [
 
 // XP-фокуси показують напрямки, які зараз найактивніше прокачуються.
 export const xpFocusItems: readonly XpFocusItem[] = [
-  { label: 'German B2', level: 72 },
-  { label: 'React / TypeScript', level: 84 },
-  { label: 'Node.js', level: 68 },
-  { label: 'Firebase / Supabase', level: 70 },
-  { label: 'AI Automation', level: 76 },
-  { label: 'Local Business Websites', level: 88 },
+  { labelKey: 'portfolio.system.xpItems.german', level: 72 },
+  { labelKey: 'portfolio.system.xpItems.reactTypeScript', level: 84 },
+  { labelKey: 'portfolio.system.xpItems.node', level: 68 },
+  { labelKey: 'portfolio.system.xpItems.firebaseSupabase', level: 70 },
+  { labelKey: 'portfolio.system.xpItems.aiAutomation', level: 76 },
+  { labelKey: 'portfolio.system.xpItems.localBusinessWebsites', level: 88 },
 ];
 
 // Skill tree винесений у дані, щоб компонент рендерив гілки здібностей без дублювання.
@@ -103,15 +103,15 @@ export const skillCategories: readonly SkillCategory[] = [
     rank: 'A-',
     icon: FaGem,
     skills: [
-      { label: 'HTML', level: 88 },
-      { label: 'CSS', level: 86 },
-      { label: 'JavaScript', level: 82 },
-      { label: 'TypeScript', level: 78 },
-      { label: 'React', level: 84 },
-      { label: 'Vite', level: 80 },
-      { label: 'Styled-components', level: 82 },
-      { label: 'Framer Motion', level: 72 },
-      { label: 'i18next', level: 70 },
+      { labelKey: 'portfolio.skills.items.html', level: 88 },
+      { labelKey: 'portfolio.skills.items.css', level: 86 },
+      { labelKey: 'portfolio.skills.items.javascript', level: 82 },
+      { labelKey: 'portfolio.skills.items.typescript', level: 78 },
+      { labelKey: 'portfolio.skills.items.react', level: 84 },
+      { labelKey: 'portfolio.skills.items.vite', level: 80 },
+      { labelKey: 'portfolio.skills.items.styledComponents', level: 82 },
+      { labelKey: 'portfolio.skills.items.framerMotion', level: 72 },
+      { labelKey: 'portfolio.skills.items.i18next', level: 70 },
     ],
   },
   {
@@ -121,12 +121,12 @@ export const skillCategories: readonly SkillCategory[] = [
     rank: 'B+',
     icon: FaServer,
     skills: [
-      { label: 'Node.js', level: 70 },
-      { label: 'Firebase', level: 74 },
-      { label: 'Firebase Functions', level: 64 },
-      { label: 'Supabase', level: 68 },
-      { label: 'MongoDB', level: 62 },
-      { label: 'Netlify Functions', level: 66 },
+      { labelKey: 'portfolio.skills.items.node', level: 70 },
+      { labelKey: 'portfolio.skills.items.firebase', level: 74 },
+      { labelKey: 'portfolio.skills.items.firebaseFunctions', level: 64 },
+      { labelKey: 'portfolio.skills.items.supabase', level: 68 },
+      { labelKey: 'portfolio.skills.items.mongodb', level: 62 },
+      { labelKey: 'portfolio.skills.items.netlifyFunctions', level: 66 },
     ],
   },
   {
@@ -136,13 +136,13 @@ export const skillCategories: readonly SkillCategory[] = [
     rank: 'B+',
     icon: FaChartLine,
     skills: [
-      { label: 'Landing Pages', level: 84 },
-      { label: 'Local SEO basics', level: 70 },
-      { label: 'GA4 / Tracking', level: 68 },
-      { label: 'Google Ads basics', level: 58 },
-      { label: 'Meta automation basics', level: 60 },
-      { label: 'Lead forms', level: 80 },
-      { label: 'CRM/POS concepts', level: 66 },
+      { labelKey: 'portfolio.skills.items.landingPages', level: 84 },
+      { labelKey: 'portfolio.skills.items.localSeoBasics', level: 70 },
+      { labelKey: 'portfolio.skills.items.ga4Tracking', level: 68 },
+      { labelKey: 'portfolio.skills.items.googleAdsBasics', level: 58 },
+      { labelKey: 'portfolio.skills.items.metaAutomationBasics', level: 60 },
+      { labelKey: 'portfolio.skills.items.leadForms', level: 80 },
+      { labelKey: 'portfolio.skills.items.crmPosConcepts', level: 66 },
     ],
   },
   {
@@ -152,12 +152,12 @@ export const skillCategories: readonly SkillCategory[] = [
     rank: 'B',
     icon: FaHatWizard,
     skills: [
-      { label: 'AI assistant for websites', level: 78 },
-      { label: 'Lead qualification', level: 74 },
-      { label: 'Chatbot flows', level: 72 },
-      { label: 'Google Calendar integration idea', level: 58 },
-      { label: 'Social media auto-replies concept', level: 62 },
-      { label: 'Business process automation', level: 70 },
+      { labelKey: 'portfolio.skills.items.aiAssistantForWebsites', level: 78 },
+      { labelKey: 'portfolio.skills.items.leadQualification', level: 74 },
+      { labelKey: 'portfolio.skills.items.chatbotFlows', level: 72 },
+      { labelKey: 'portfolio.skills.items.googleCalendarIntegrationIdea', level: 58 },
+      { labelKey: 'portfolio.skills.items.socialMediaAutoRepliesConcept', level: 62 },
+      { labelKey: 'portfolio.skills.items.businessProcessAutomation', level: 70 },
     ],
   },
 ];
@@ -172,7 +172,14 @@ export const projectDungeons: readonly ProjectDungeonItem[] = [
     rewardKey: 'portfolio.projects.items.vs.reward',
     difficulty: 'A',
     link: 'https://vs-web-studio.de/',
-    tags: ['React', 'TypeScript', 'Styled-components', 'i18n', 'Lead Generation', 'AI Assistant'],
+    tagKeys: [
+      'portfolio.projects.tags.react',
+      'portfolio.projects.tags.typescript',
+      'portfolio.projects.tags.styledComponents',
+      'portfolio.projects.tags.i18n',
+      'portfolio.projects.tags.leadGeneration',
+      'portfolio.projects.tags.aiAssistant',
+    ],
   },
   {
     id: 'lumina-atelier',
@@ -182,7 +189,12 @@ export const projectDungeons: readonly ProjectDungeonItem[] = [
     rewardKey: 'portfolio.projects.items.lumina.reward',
     difficulty: 'B+',
     link: 'https://lumina-atelier-salon.netlify.app/',
-    tags: ['React', 'Landing Page', 'Beauty Business', 'Responsive Design'],
+    tagKeys: [
+      'portfolio.projects.tags.react',
+      'portfolio.projects.tags.landingPage',
+      'portfolio.projects.tags.beautyBusiness',
+      'portfolio.projects.tags.responsiveDesign',
+    ],
   },
   {
     id: 'autowerk',
@@ -192,7 +204,12 @@ export const projectDungeons: readonly ProjectDungeonItem[] = [
     rewardKey: 'portfolio.projects.items.autowerk.reward',
     difficulty: 'B+',
     link: 'https://auto-werkstatt.netlify.app/',
-    tags: ['React', 'Local Business', 'Workshop', 'CTA'],
+    tagKeys: [
+      'portfolio.projects.tags.react',
+      'portfolio.projects.tags.localBusiness',
+      'portfolio.projects.tags.workshop',
+      'portfolio.projects.tags.cta',
+    ],
   },
   {
     id: 'handwerk-shk',
@@ -202,7 +219,12 @@ export const projectDungeons: readonly ProjectDungeonItem[] = [
     rewardKey: 'portfolio.projects.items.handwerk.reward',
     difficulty: 'B+',
     link: 'https://handwerken.netlify.app/',
-    tags: ['React', 'Handwerk', 'SHK', 'Local SEO'],
+    tagKeys: [
+      'portfolio.projects.tags.react',
+      'portfolio.projects.tags.handwerk',
+      'portfolio.projects.tags.shk',
+      'portfolio.projects.tags.localSeo',
+    ],
   },
   {
     id: 'ai-assistant',
@@ -211,7 +233,13 @@ export const projectDungeons: readonly ProjectDungeonItem[] = [
     descriptionKey: 'portfolio.projects.items.ai.description',
     rewardKey: 'portfolio.projects.items.ai.reward',
     difficulty: 'A-',
-    tags: ['AI', 'Automation', 'Lead Capture', 'Chatbot', 'Business Process'],
+    tagKeys: [
+      'portfolio.projects.tags.ai',
+      'portfolio.projects.tags.automation',
+      'portfolio.projects.tags.leadCapture',
+      'portfolio.projects.tags.chatbot',
+      'portfolio.projects.tags.businessProcess',
+    ],
   },
   {
     id: 'business-platform',
@@ -220,7 +248,14 @@ export const projectDungeons: readonly ProjectDungeonItem[] = [
     descriptionKey: 'portfolio.projects.items.research.description',
     rewardKey: 'portfolio.projects.items.research.reward',
     difficulty: 'B',
-    tags: ['CRM', 'POS', 'Orders', 'Inventory', 'Automation', 'SaaS Research'],
+    tagKeys: [
+      'portfolio.projects.tags.crm',
+      'portfolio.projects.tags.pos',
+      'portfolio.projects.tags.orders',
+      'portfolio.projects.tags.inventory',
+      'portfolio.projects.tags.automation',
+      'portfolio.projects.tags.saasResearch',
+    ],
   },
 ];
 
@@ -300,10 +335,10 @@ export const guildSignals: readonly GuildSignal[] = [
 
 // Floating fragments створюють у hero відчуття coding aura без важких 3D або картинок.
 export const floatingCodeFragments: readonly FloatingCodeFragment[] = [
-  { label: 'React', x: 9, y: 22 },
-  { label: 'TypeScript', x: 66, y: 16 },
-  { label: 'Node.js', x: 74, y: 54 },
-  { label: 'Firebase', x: 18, y: 68 },
-  { label: 'AI', x: 52, y: 76 },
-  { label: 'Automation', x: 4, y: 44 },
+  { labelKey: 'portfolio.hero.fragments.react', x: 9, y: 22 },
+  { labelKey: 'portfolio.hero.fragments.typescript', x: 66, y: 16 },
+  { labelKey: 'portfolio.hero.fragments.node', x: 74, y: 54 },
+  { labelKey: 'portfolio.hero.fragments.firebase', x: 18, y: 68 },
+  { labelKey: 'portfolio.hero.fragments.ai', x: 52, y: 76 },
+  { labelKey: 'portfolio.hero.fragments.automation', x: 4, y: 44 },
 ];

@@ -167,15 +167,15 @@ export const XpGrid = styled.div`
 /* ProfileMediaSlot ставить квадратний system-art frame збоку, не створюючи внутрішнього scroll. */
 export const ProfileMediaSlot = styled(motion.div)`
   position: absolute;
-  right: clamp(-120px, -4vw, -34px);
-  top: 50%;
+  right: clamp(-120px, 0vw, 0px);
+  /* top: 50%; */
   z-index: 0;
-  width: min(43vw, 650px);
+  width: min(100vw, 650px);
   transform: translateY(-50%);
   opacity: 0.9;
 
   figure {
-    --portfolio-image-width: min(100%, 650px);
+    --portfolio-image-width: min(100vw, 650px);
     --portfolio-image-height: 92svh;
   }
 

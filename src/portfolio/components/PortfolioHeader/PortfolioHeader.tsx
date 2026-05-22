@@ -80,12 +80,12 @@ export const PortfolioHeader: React.FC = () => {
   return (
     <HeaderShell $scrolled={scrolled}>
       <HeaderInner>
-        <BrandBlock href='#portfolio-top' aria-label='Vladyslav portfolio hero'>
+        <BrandBlock href='#portfolio-top' aria-label={t('portfolio.header.brandAria')}>
           <strong>Vladyslav</strong>
           <span>/ {contactInfo.brandName}</span>
         </BrandBlock>
 
-        <RankBadge>LVL 21 Developer</RankBadge>
+        <RankBadge>{t('portfolio.header.rank')}</RankBadge>
 
         <NavLinks $open={menuOpen} aria-label={t('portfolio.header.navigation')}>
           {portfolioNavItems.map(item => (

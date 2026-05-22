@@ -29,7 +29,7 @@ export const NetworkGuild: React.FC = () => {
       viewport={portfolioViewport}
     >
       <NetworkMediaSlot variants={revealCard} data-portfolio-media='network'>
-        <PortfolioMediaFrame {...portfolioMedia.network} />
+        <PortfolioMediaFrame type={portfolioMedia.network.type} src={portfolioMedia.network.src} alt={t(portfolioMedia.network.altKey)} />
       </NetworkMediaSlot>
 
       <div>

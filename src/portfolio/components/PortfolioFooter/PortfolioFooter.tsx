@@ -44,7 +44,7 @@ export const PortfolioFooter: React.FC = () => {
             <a href={contactInfo.emailHref}>{contactInfo.email}</a>
             <a href={contactInfo.phoneHref}>{contactInfo.phone}</a>
             <a href={contactInfo.mapsUrl} target='_blank' rel='noopener noreferrer'>
-              {contactInfo.cityCountry} <FaExternalLinkAlt aria-hidden='true' />
+              {t('portfolio.profile.location')} <FaExternalLinkAlt aria-hidden='true' />
             </a>
             <a href={contactInfo.websiteUrl} target='_blank' rel='noopener noreferrer'>
               {contactInfo.websiteLabel} <FaExternalLinkAlt aria-hidden='true' />

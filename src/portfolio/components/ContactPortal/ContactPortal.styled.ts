@@ -25,11 +25,8 @@ export const ContactPortalShell = styled(motion.section)`
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(360px, 1fr);
   gap: clamp(24px, 5vw, 72px);
-  align-items: center;
-  padding:
-    clamp(90px, 10vw, 124px)
-    max(24px, calc((100% - 1440px) / 2))
-    clamp(34px, 5vw, 60px);
+  align-items: start;
+  padding: clamp(90px, 10vw, 124px) max(24px, calc((100% - 1440px) / 2)) clamp(34px, 5vw, 60px);
   background:
     radial-gradient(circle at 78% 42%, rgba(124, 58, 237, 0.2), transparent 30%),
     radial-gradient(circle at 18% 76%, rgba(34, 211, 238, 0.12), transparent 32%);
@@ -92,9 +89,17 @@ export const PortalHalo = styled.div`
   width: clamp(260px, 35vw, 470px);
   aspect-ratio: 1;
   border-radius: 50%;
-  background: conic-gradient(from 0deg, rgba(124, 58, 237, 0.08), rgba(34, 211, 238, 0.55), rgba(246, 211, 101, 0.36), rgba(124, 58, 237, 0.08));
+  background: conic-gradient(
+    from 0deg,
+    rgba(124, 58, 237, 0.08),
+    rgba(34, 211, 238, 0.55),
+    rgba(246, 211, 101, 0.36),
+    rgba(124, 58, 237, 0.08)
+  );
   transform: translateY(-50%);
-  animation: ${portalRotate} 14s linear infinite, ${auraPulse} 4s ease-in-out infinite;
+  animation:
+    ${portalRotate} 14s linear infinite,
+    ${auraPulse} 4s ease-in-out infinite;
 
   @media (max-width: 760px) {
     opacity: 0.28;
