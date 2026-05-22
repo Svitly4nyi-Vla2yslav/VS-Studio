@@ -1031,6 +1031,36 @@
         "backend": "Server shield: data, APIs, functions and scalable structures.",
         "business": "Growth path: lead generation, tracking and practical SMB thinking.",
         "automation": "Mage branch: AI assistants, qualification flows and process automation."
+      },
+      "items": {
+        "html": "HTML",
+        "css": "CSS",
+        "javascript": "JavaScript",
+        "typescript": "TypeScript",
+        "react": "React",
+        "vite": "Vite",
+        "styledComponents": "Styled-components",
+        "framerMotion": "Framer Motion",
+        "i18next": "i18next",
+        "node": "Node.js",
+        "firebase": "Firebase",
+        "firebaseFunctions": "Firebase Functions",
+        "supabase": "Supabase",
+        "mongodb": "MongoDB",
+        "netlifyFunctions": "Netlify Functions",
+        "landingPages": "Landing Pages",
+        "localSeoBasics": "Local SEO basics",
+        "ga4Tracking": "GA4 / Tracking",
+        "googleAdsBasics": "Google Ads basics",
+        "metaAutomationBasics": "Meta automation basics",
+        "leadForms": "Lead forms",
+        "crmPosConcepts": "CRM/POS concepts",
+        "aiAssistantForWebsites": "AI assistant for websites",
+        "leadQualification": "Lead qualification",
+        "chatbotFlows": "Chatbot flows",
+        "googleCalendarIntegrationIdea": "Google Calendar integration idea",
+        "socialMediaAutoRepliesConcept": "Social media auto-replies concept",
+        "businessProcessAutomation": "Business process automation"
       }
     },
     "projects": {
@@ -1077,7 +1107,34 @@
       "description": "Each mission shows a concrete project field. Demo projects are clearly marked, and concepts are not presented as client work.",
       "open": "Open Quest",
       "concept": "Concept without live link",
-      "difficulty": "Difficulty"
+      "difficulty": "Difficulty",
+      "tags": {
+        "react": "React",
+        "typescript": "TypeScript",
+        "styledComponents": "Styled-components",
+        "i18n": "i18n",
+        "leadGeneration": "Lead Generation",
+        "aiAssistant": "AI Assistant",
+        "landingPage": "Landing Page",
+        "beautyBusiness": "Beauty Business",
+        "responsiveDesign": "Responsive Design",
+        "localBusiness": "Local Business",
+        "workshop": "Workshop",
+        "cta": "CTA",
+        "handwerk": "Handwerk",
+        "shk": "SHK",
+        "localSeo": "Local SEO",
+        "ai": "AI",
+        "automation": "Automation",
+        "leadCapture": "Lead Capture",
+        "chatbot": "Chatbot",
+        "businessProcess": "Business Process",
+        "crm": "CRM",
+        "pos": "POS",
+        "orders": "Orders",
+        "inventory": "Inventory",
+        "saasResearch": "SaaS Research"
+      }
     },
     "nav": {
       "hero": "Hero",
@@ -1093,13 +1150,15 @@
       "language": "Portfolio language",
       "cta": "Request project",
       "openMenu": "Open portfolio menu",
-      "closeMenu": "Close portfolio menu"
+      "closeMenu": "Close portfolio menu",
+      "brandAria": "Go to Vladyslav portfolio hero",
+      "rank": "LVL 21 Developer"
     },
     "positioning": "I build modern websites, web apps and automation systems for small businesses in Germany. My focus is clear structure, fast delivery, mobile-first design, lead generation and honest communication.",
     "hero": {
       "systemAwakened": "SYSTEM AWAKENED",
       "badge": "Level-Up Web Developer",
-      "languageSwitcher": "Portfolio-Sprache wechseln",
+      "languageSwitcher": "Change portfolio language",
       "title": "Websites, Web Apps & Automation with System",
       "subtitle": "I combine frontend, backend, design, AI tools and business thinking to build digital solutions that do not only look good, but improve inquiries and processes.",
       "buttons": {
@@ -1111,7 +1170,15 @@
         "class": "Main Class",
         "guild": "Guild",
         "focus": "Focus",
-        "focusValue": "Websites, Web-Apps, AI"
+        "focusValue": "Websites, Web Apps, AI"
+      },
+      "fragments": {
+        "react": "React",
+        "typescript": "TypeScript",
+        "node": "Node.js",
+        "firebase": "Firebase",
+        "ai": "AI",
+        "automation": "Automation"
       }
     },
     "system": {
@@ -1126,6 +1193,14 @@
       "values": {
         "mainClass": "Web Developer / Founder",
         "mainMission": "Build useful digital systems for local businesses"
+      },
+      "xpItems": {
+        "german": "German B2",
+        "reactTypeScript": "React / TypeScript",
+        "node": "Node.js",
+        "firebaseSupabase": "Firebase / Supabase",
+        "aiAutomation": "AI Automation",
+        "localBusinessWebsites": "Local Business Websites"
       }
     },
     "timeline": {
@@ -1177,19 +1252,19 @@
       "items": {
         "linkedin": {
           "title": "LinkedIn presence",
-          "description": "Professioneller Aufbau von Sichtbarkeit, Kontakten und klarer Positionierung als Webentwickler in Deutschland."
+          "description": "Professional growth of visibility, contacts and clear positioning as a web developer in Germany."
         },
         "localSmb": {
           "title": "Local SMB focus",
-          "description": "Fokus auf kleine lokale Unternehmen, Dienstleister, Werkstätten, Salons, Handwerk, Praxen und klare Lead-Prozesse."
+          "description": "Focus on small local companies, service providers, workshops, salons, crafts, practices and clear lead processes."
         },
         "ecosystem": {
           "title": "Startup ecosystem",
-          "description": "Austausch, Beobachtung und Inspiration rund um Gründer, lokale Services und praktische Business-Systeme."
+          "description": "Exchange, observation and inspiration around founders, local services and practical business systems."
         },
         "research": {
           "title": "SABSUS / First Step Ideas Factory research",
-          "description": "Recherche und berufliche Inspiration, nicht als bestätigte Kundenarbeit formuliert."
+          "description": "Research and professional inspiration, not presented as confirmed client work."
         }
       }
     },
@@ -1216,6 +1291,19 @@
       "navigation": "Navigation",
       "contact": "Contact",
       "note": "Anime-inspired personal portfolio. Original visual style, no copyrighted characters used."
+    },
+    "meta": {
+      "title": "Vladyslav Svitlychnyi | Portfolio"
+    },
+    "skipLink": "Skip to portfolio content",
+    "media": {
+      "hero": "Animated hero awakening scene for Vladyslav Svitlychnyi portfolio",
+      "profile": "Profile system character artwork for the current developer rank section",
+      "skills": "Animated skill tree scene for the ability paths section",
+      "projects": "Project dungeon character artwork for selected projects section",
+      "timeline": "Animated quest timeline scene for the developer progression section",
+      "network": "Animated guild network scene for business context and alliances section",
+      "contact": "Animated final portal scene for the contact section"
     }
   }
 }

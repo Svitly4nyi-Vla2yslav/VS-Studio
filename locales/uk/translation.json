@@ -1039,20 +1039,20 @@
   },
   "portfolio": {
     "profile": {
-      "name": "Vladyslav Svitlychnyi",
-      "location": "Hildesheim, Germany",
+      "name": "Владислав Світличний",
+      "location": "Гільдесгайм, Німеччина",
       "role": "Junior Full Stack Developer",
       "brand": "VS Web Studio",
       "languages": "Українська, англійська, німецька B1/B2"
     },
     "skills": {
       "categories": {
-        "frontend": "Frontend Path",
-        "backend": "Backend Path",
-        "business": "Business Path",
-        "automation": "AI Automation Path"
+        "frontend": "Frontend-напрям",
+        "backend": "Backend-напрям",
+        "business": "Business-напрям",
+        "automation": "Напрям AI-автоматизації"
       },
-      "eyebrow": "Skill Tree",
+      "eyebrow": "Дерево навичок",
       "title": "Гілки здібностей та XP-напрямки",
       "description": "Компактний огляд технологій, бізнес-мислення та автоматизацій, які я зараз розвиваю для реальних проєктів.",
       "descriptions": {
@@ -1060,60 +1060,117 @@
         "backend": "Серверний щит: дані, API, функції та масштабовані структури.",
         "business": "Шлях росту: ліди, tracking і практичне мислення для SMB.",
         "automation": "Гілка мага: AI-асистенти, кваліфікація заявок і автоматизація процесів."
+      },
+      "items": {
+        "html": "HTML",
+        "css": "CSS",
+        "javascript": "JavaScript",
+        "typescript": "TypeScript",
+        "react": "React",
+        "vite": "Vite",
+        "styledComponents": "Styled-components",
+        "framerMotion": "Framer Motion",
+        "i18next": "i18next",
+        "node": "Node.js",
+        "firebase": "Firebase",
+        "firebaseFunctions": "Firebase Functions",
+        "supabase": "Supabase",
+        "mongodb": "MongoDB",
+        "netlifyFunctions": "Netlify Functions",
+        "landingPages": "Лендінги",
+        "localSeoBasics": "Основи Local SEO",
+        "ga4Tracking": "GA4 / Tracking",
+        "googleAdsBasics": "Основи Google Ads",
+        "metaAutomationBasics": "Основи Meta-автоматизації",
+        "leadForms": "Lead-форми",
+        "crmPosConcepts": "CRM/POS-концепти",
+        "aiAssistantForWebsites": "AI-асистент для сайтів",
+        "leadQualification": "Кваліфікація лідів",
+        "chatbotFlows": "Chatbot-сценарії",
+        "googleCalendarIntegrationIdea": "Ідея інтеграції Google Calendar",
+        "socialMediaAutoRepliesConcept": "Концепт автовідповідей у соцмережах",
+        "businessProcessAutomation": "Автоматизація бізнес-процесів"
       }
     },
     "projects": {
       "items": {
         "vs": {
           "title": "VS Web Studio",
-          "type": "Own Brand / Business Website",
+          "type": "Власний бренд / бізнес-сайт",
           "description": "Власний бренд вебстудії для сайтів, вебдодатків, автоматизації та цифрових рішень для локального бізнесу в Німеччині.",
-          "reward": "Own brand for local German SMB web services, automation and lead generation."
+          "reward": "Власний бренд для вебпослуг, автоматизації та лідогенерації для локальних SMB у Німеччині."
         },
         "lumina": {
           "title": "Lumina Atelier Salon",
-          "type": "Demo Project",
+          "type": "Демо-проєкт",
           "description": "Сучасна landing page для beauty-салону з чіткою пропозицією, емоційним дизайном і фокусом на заявки на запис.",
-          "reward": "Beauty salon demo focused on emotional presentation and appointment requests."
+          "reward": "Демо beauty-салону з фокусом на емоційну презентацію та заявки на запис."
         },
         "autowerk": {
           "title": "AutoWerk Musterstadt",
-          "type": "Demo Project",
+          "type": "Демо-проєкт",
           "description": "Концепт сайту для автомайстерні з чіткими послугами, CTA для запису та структурою, що формує довіру.",
-          "reward": "Workshop demo focused on service clarity, trust and appointment conversion."
+          "reward": "Демо майстерні з фокусом на зрозумілі послуги, довіру та конверсію в запис."
         },
         "handwerk": {
           "title": "Handwerk / SHK Demo",
-          "type": "Demo Project",
+          "type": "Демо-проєкт",
           "description": "Концепт сайту для handwerk, опалення, сантехніки та теплових насосів із регіональним позиціонуванням і запитом пропозиції.",
-          "reward": "Local craftsman demo for heating, sanitary and heat pump services."
+          "reward": "Локальне handwerk-демо для послуг опалення, сантехніки та теплових насосів."
         },
         "ai": {
-          "title": "AI Assistant / Lead Automation",
-          "type": "Concept / In Development",
+          "title": "AI-асистент / Lead-автоматизація",
+          "type": "Концепт / у розробці",
           "description": "Концепт website-асистента, який відповідає на питання, кваліфікує ліди, збирає інформацію про проєкт і готує контактні заявки.",
-          "reward": "Concept for qualifying leads, answering FAQs and preparing client requests."
+          "reward": "Концепт для кваліфікації лідів, відповідей на FAQ і підготовки клієнтських заявок."
         },
         "research": {
-          "title": "Business Platform Research",
-          "type": "Research / UI Inspiration",
+          "title": "Дослідження бізнес-платформи",
+          "type": "Дослідження / UI-натхнення",
           "description": "Аналіз сучасних business operating systems, CRM/POS-структур, white-label платформ та ідей автоматизації для малого бізнесу. Не подається як офіційна клієнтська робота.",
-          "reward": "Research and UI inspiration around CRM, POS, orders, inventory and automation. Not client work."
+          "reward": "Дослідження та UI-натхнення навколо CRM, POS, замовлень, складу й автоматизації. Не клієнтська робота."
         }
       },
       "eyebrow": "Project Dungeons",
       "title": "Вибрані сайти, демо та концепти",
       "description": "Кожна місія показує конкретний напрям. Демо чітко позначені, а концепти не подані як клієнтська робота.",
-      "open": "Open Quest",
+      "open": "Відкрити квест",
       "concept": "Концепт без live-посилання",
-      "difficulty": "Складність"
+      "difficulty": "Складність",
+      "tags": {
+        "react": "React",
+        "typescript": "TypeScript",
+        "styledComponents": "Styled-components",
+        "i18n": "i18n",
+        "leadGeneration": "Лідогенерація",
+        "aiAssistant": "AI-асистент",
+        "landingPage": "Landing page",
+        "beautyBusiness": "Beauty-бізнес",
+        "responsiveDesign": "Адаптивний дизайн",
+        "localBusiness": "Локальний бізнес",
+        "workshop": "Майстерня",
+        "cta": "CTA",
+        "handwerk": "Handwerk",
+        "shk": "SHK",
+        "localSeo": "Local SEO",
+        "ai": "AI",
+        "automation": "Автоматизація",
+        "leadCapture": "Збір лідів",
+        "chatbot": "Chatbot",
+        "businessProcess": "Бізнес-процес",
+        "crm": "CRM",
+        "pos": "POS",
+        "orders": "Замовлення",
+        "inventory": "Склад",
+        "saasResearch": "SaaS-дослідження"
+      }
     },
     "nav": {
       "hero": "Hero",
       "skills": "Навички",
       "projects": "Проєкти",
       "timeline": "Шлях",
-      "network": "Network",
+      "network": "Мережа",
       "contact": "Контакт",
       "profile": "Профіль"
     },
@@ -1122,13 +1179,15 @@
       "language": "Мова портфоліо",
       "cta": "Запитати проєкт",
       "openMenu": "Відкрити меню портфоліо",
-      "closeMenu": "Закрити меню портфоліо"
+      "closeMenu": "Закрити меню портфоліо",
+      "brandAria": "Перейти до hero-секції портфоліо Владислава",
+      "rank": "LVL 21 Developer"
     },
     "positioning": "Я створюю сучасні сайти, вебдодатки та автоматизації для малого бізнесу в Німеччині. Мій фокус — зрозуміла структура, швидкий запуск, мобільна адаптація, заявки від клієнтів і чесна комунікація.",
     "hero": {
-      "systemAwakened": "SYSTEM AWAKENED",
+      "systemAwakened": "СИСТЕМУ АКТИВОВАНО",
       "badge": "Level-Up Web Developer",
-      "languageSwitcher": "Portfolio-Sprache wechseln",
+      "languageSwitcher": "Змінити мову портфоліо",
       "title": "Сайти, вебдодатки та автоматизація з системою",
       "subtitle": "Я поєдную frontend, backend, дизайн, AI-інструменти та бізнес-мислення, щоб створювати цифрові рішення, які не просто добре виглядають, а покращують заявки та процеси.",
       "buttons": {
@@ -1137,15 +1196,23 @@
         "studio": "До VS Web Studio"
       },
       "stats": {
-        "class": "Main Class",
-        "guild": "Guild",
-        "focus": "Focus",
-        "focusValue": "Websites, Web-Apps, AI"
+        "class": "Основний клас",
+        "guild": "Гільдія",
+        "focus": "Фокус",
+        "focusValue": "Сайти, вебдодатки, AI"
+      },
+      "fragments": {
+        "react": "React",
+        "typescript": "TypeScript",
+        "node": "Node.js",
+        "firebase": "Firebase",
+        "ai": "AI",
+        "automation": "Автоматизація"
       }
     },
     "system": {
-      "eyebrow": "System Window",
-      "title": "Поточний профіль",
+      "eyebrow": "Системне вікно",
+      "title": "Поточний профіль Hunter",
       "rank": "Поточний ранг",
       "class": "Основний клас",
       "guild": "Гільдія",
@@ -1154,12 +1221,20 @@
       "xpFocus": "XP-фокус",
       "values": {
         "mainClass": "Web Developer / Founder",
-        "mainMission": "Build useful digital systems for local businesses"
+        "mainMission": "Створювати корисні цифрові системи для локального бізнесу"
+      },
+      "xpItems": {
+        "german": "Німецька B2",
+        "reactTypeScript": "React / TypeScript",
+        "node": "Node.js",
+        "firebaseSupabase": "Firebase / Supabase",
+        "aiAutomation": "AI-автоматизація",
+        "localBusinessWebsites": "Сайти для локального бізнесу"
       }
     },
     "timeline": {
-      "eyebrow": "Quest Progress Map",
-      "title": "Карта прогресу",
+      "eyebrow": "Карта прогресу квестів",
+      "title": "Маршрут checkpoint-ів",
       "description": "Вертикальна карта від завершення курсу та демо-проєктів до реальних клієнтів, автоматизацій і масштабованих бізнес-систем.",
       "status": {
         "completed": "Завершено",
@@ -1170,60 +1245,60 @@
       },
       "items": {
         "course": {
-          "title": "Full Stack Developer course completed",
-          "description": "Solid base in frontend, backend, project structure and production workflows."
+          "title": "Курс Full Stack Developer завершено",
+          "description": "Солідна база у frontend, backend, структурі проєктів і production workflows."
         },
         "platforms": {
-          "title": "Freelance platforms: Fiverr / Freelancer",
-          "description": "Testing offers, positioning and client communication channels."
+          "title": "Freelance-платформи: Fiverr / Freelancer",
+          "description": "Тестування оферів, позиціонування та каналів комунікації з клієнтами."
         },
         "studio": {
-          "title": "Building VS Web Studio",
-          "description": "Own brand for websites, automation and lead systems for German SMBs."
+          "title": "Побудова VS Web Studio",
+          "description": "Власний бренд для сайтів, автоматизації та lead-систем для німецьких SMB."
         },
         "demos": {
-          "title": "Developing demo websites for German SMBs",
-          "description": "Practical demos for salons, workshops, handwerk and service businesses."
+          "title": "Розробка demo-сайтів для німецьких SMB",
+          "description": "Практичні демо для салонів, майстерень, handwerk і сервісного бізнесу."
         },
         "german": {
-          "title": "Learning German for professional communication",
-          "description": "Improving B1/B2 communication for clear local client collaboration."
+          "title": "Вивчення німецької для професійної комунікації",
+          "description": "Покращення B1/B2-комунікації для зрозумілої співпраці з локальними клієнтами."
         },
         "selfEmployment": {
-          "title": "Preparing self-employment / Einzelunternehmen in Germany",
-          "description": "Business setup path with focus on honest offers and sustainable delivery."
+          "title": "Підготовка self-employment / Einzelunternehmen у Німеччині",
+          "description": "Шлях налаштування бізнесу з фокусом на чесні офери та стабільну delivery."
         },
         "scale": {
-          "title": "Working toward real clients, automation and scalable business systems",
-          "description": "Next chapter: real projects, AI workflows and repeatable business systems."
+          "title": "Рух до реальних клієнтів, автоматизації та масштабованих бізнес-систем",
+          "description": "Наступний розділ: реальні проєкти, AI workflows і повторювані бізнес-системи."
         }
       }
     },
     "network": {
-      "eyebrow": "Guild & Alliances",
-      "title": "Guild & Alliances",
-      "description": "Business network, research and professional inspiration around startups, local services and SMB systems.",
+      "eyebrow": "Гільдія та альянси",
+      "title": "Мережа та бізнес-контекст",
+      "description": "Бізнес-мережа, дослідження та професійне натхнення навколо стартапів, локальних сервісів і SMB-систем.",
       "items": {
         "linkedin": {
-          "title": "LinkedIn presence",
+          "title": "Присутність у LinkedIn",
           "description": "Побудова професійної видимості, контактів і чіткого позиціонування як web developer у Німеччині."
         },
         "localSmb": {
-          "title": "Local SMB focus",
+          "title": "Фокус на локальних SMB",
           "description": "Фокус на малому локальному бізнесі, сервісних компаніях, майстернях, салонах, handwerk, клініках і зрозумілих lead-процесах."
         },
         "ecosystem": {
-          "title": "Startup ecosystem",
+          "title": "Стартап-екосистема",
           "description": "Обмін, спостереження та натхнення навколо засновників, локальних сервісів і практичних бізнес-систем."
         },
         "research": {
-          "title": "SABSUS / First Step Ideas Factory research",
+          "title": "Дослідження SABSUS / First Step Ideas Factory",
           "description": "Дослідження та професійне натхнення, без формулювання як підтверджена клієнтська робота."
         }
       }
     },
     "contact": {
-      "eyebrow": "Final Portal",
+      "eyebrow": "Фінальний портал",
       "title": "Готові до цифрового апгрейду?",
       "description": "Якщо вам потрібен сучасний сайт, зрозуміла онлайн-присутність або автоматизація для бізнесу, ми можемо почати з простої першої розмови.",
       "buttons": {
@@ -1244,7 +1319,20 @@
       "description": "Junior Full Stack Developer і засновник VS Web Studio. Фокус на сайтах, вебдодатках, автоматизації та lead-системах для локального бізнесу в Німеччині.",
       "navigation": "Навігація",
       "contact": "Контакти",
-      "note": "Anime-inspired personal portfolio. Original visual style, no copyrighted characters used."
+      "note": "Персональне портфоліо в anime-inspired стилі. Власний візуальний стиль, без використання персонажів, захищених авторським правом."
+    },
+    "meta": {
+      "title": "Владислав Світличний | Портфоліо"
+    },
+    "skipLink": "Перейти до вмісту портфоліо",
+    "media": {
+      "hero": "Анімована hero-сцена пробудження для портфоліо Владислава Світличного",
+      "profile": "Ілюстрація системного профілю для секції поточного рангу розробника",
+      "skills": "Анімована сцена дерева навичок для секції напрямків здібностей",
+      "projects": "Ілюстрація project dungeon для секції вибраних проєктів",
+      "timeline": "Анімована сцена quest timeline для шляху розвитку розробника",
+      "network": "Анімована сцена guild network для бізнес-контексту та контактів",
+      "contact": "Анімована сцена final portal для контактної секції"
     }
   }
 }
