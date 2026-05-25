@@ -26,7 +26,7 @@ export const contactInfo: ContactInfo = {
   phoneHref: 'tel:+4915164392053',
   githubLabel: 'github.com/Svitly4nyi-Vla2yslav',
   githubUrl: 'https://github.com/Svitly4nyi-Vla2yslav',
-  addressLine: 'Ehrlicherstr. 52, 31135 Hildesheim',
+  addressLine: ', 31135 Hildesheim',
   cityCountry: 'Hildesheim, Germany',
   mapsUrl: 'https://www.google.com/maps/place/Ehrlicherstr.+52,+31135+Hildesheim',
 };

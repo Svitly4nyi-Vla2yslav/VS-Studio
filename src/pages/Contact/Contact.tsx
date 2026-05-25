@@ -354,7 +354,7 @@ const Contact: React.FC = () => {
                 {/* <ContactItemLink href={mapsHref} target='_blank' rel='noreferrer'>
                   <FaMapMarkerAlt />
                   <div>
-                    <strong>Ehrlicherstr. 52, 31135 Hildesheim</strong>
+                    <strong>, 31135 Hildesheim</strong>
                     <span>{t('contact.contactMeta.location', { defaultValue: copy.contactMeta.location })}</span>
                   </div>
                 </ContactItemLink> */}
