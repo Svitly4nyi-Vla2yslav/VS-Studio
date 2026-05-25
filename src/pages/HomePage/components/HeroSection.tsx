@@ -70,9 +70,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ reducedMotion }) => {
             <NavLink to='/preise' className='btn btn-secondary'>
               <FaEuroSign /> {t('common.viewPrices')}
             </NavLink>
-            {/* <NavLink to='/portfolio' className='btn btn-secondary'>
+             <NavLink to='/portfolio' className='btn btn-secondary'>
               <FaIdCard /> {t('home.portfolioLink', { defaultValue: 'Portfolio' })}
-            </NavLink> */}
+            </NavLink> 
             <a href='#faq' className='btn btn-secondary'>
               <FaArrowRight /> {t('home.toFaq', { defaultValue: 'Zum FAQ' })}
             </a>
