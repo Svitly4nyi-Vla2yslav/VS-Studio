@@ -146,9 +146,66 @@ const COMPLEX_INTEGRATION_KEYWORDS = [
 ];
 const PRICING_KEYWORDS = ['preis', 'preise', 'kosten', 'pricing', 'cost', 'quote', 'angebot', 'вартість', 'ціна'];
 const TIMELINE_KEYWORDS = ['dauer', 'timeline', 'zeit', 'wie lange', 'launch', 'строк', 'коли', 'скільки часу'];
-const BOOKING_KEYWORDS = ['termin', 'booking', 'call', 'meeting', 'appointment', 'дзвінок', 'зустріч', 'запис'];
-const HANDOFF_KEYWORDS = ['mensch', 'human', 'jemand', 'mitarbeiter', 'manager', 'людина', 'менеджер'];
-const LEAD_KEYWORDS = ['angebot', 'anfrage', 'contact', 'lead', 'projekt', 'проєкт', 'заявка'];
+const BOOKING_KEYWORDS = [
+  'termin',
+  'booking',
+  'call',
+  'meeting',
+  'appointment',
+  'treffen',
+  'zu treffen',
+  'sich treffen',
+  'beratung',
+  'erstgespräch',
+  'erstgespraech',
+  'gespräch',
+  'gespraech',
+  'telefonat',
+  'telefonieren',
+  'anrufen',
+  'besprechung',
+  'kennenlernen',
+  'kennenlerngespräch',
+  'kennenlerngespraech',
+  'дзвінок',
+  'зустріч',
+  'запис',
+  'термін',
+  'назначити',
+  'призначити',
+  'забронювати',
+  'домовитись',
+  'домовитися',
+];
+const HANDOFF_KEYWORDS = [
+  'mensch',
+  'human',
+  'jemand',
+  'mitarbeiter',
+  'manager',
+  'людина',
+  'людиною',
+  'поговорити з людиною',
+  'поговорити',
+  'менеджер',
+];
+const LEAD_KEYWORDS = [
+  'angebot',
+  'anfrage',
+  'contact',
+  'lead',
+  'projekt',
+  'проєкт',
+  'заявка',
+  'контакт',
+  'зв’яз',
+  'звʼяз',
+  "зв'яз",
+  'звяж',
+  'зв яз',
+  'звʼяж',
+  'зв’яж',
+];
 const NICHE_KEYWORDS = ['werkstatt', 'praxis', 'beauty', 'shk', 'сан', 'майстерня', 'clinic', 'garage'];
 const INTEGRATION_QUESTION_KEYWORDS = [
   'integrat',
@@ -242,6 +299,25 @@ const PUBLISHING_KEYWORDS = [
   'автопост',
   'постити',
 ];
+const TECHNOLOGY_QUESTION_KEYWORDS = [
+  'technology',
+  'technologies',
+  'tech stack',
+  'stack',
+  'framework',
+  'frameworks',
+  'tools',
+  'what do you use',
+  'technologie',
+  'technologien',
+  'tech-stack',
+  'технолог',
+  'стек',
+  'фреймворк',
+  'інструмент',
+  'що використовуєте',
+  'які технології',
+];
 const TIME_QUESTION_PATTERNS = [
   'what time',
   'current time',
@@ -268,7 +344,18 @@ const normalize = (value: string) => value.toLowerCase().trim();
 
 const findByKeywords = <T extends { keywords: string[] }>(items: T[], text: string): T | undefined => {
   const source = normalize(text);
-  return items.find(item => item.keywords.some(keyword => source.includes(normalize(keyword))));
+  const matches = items
+    .map(item => {
+      const bestKeyword = item.keywords
+        .map(keyword => normalize(keyword))
+        .filter(keyword => source.includes(keyword))
+        .sort((a, b) => b.length - a.length)[0];
+
+      return bestKeyword ? { item, score: bestKeyword.length } : null;
+    })
+    .filter((match): match is { item: T; score: number } => Boolean(match));
+
+  return matches.sort((a, b) => b.score - a.score)[0]?.item;
 };
 
 const findFaqByIntent = (faq: AssistantFaqEntry[], intent: AssistantIntent) => faq.find(item => item.intent === intent);
@@ -374,6 +461,33 @@ const buildIntegrationAnswer = (language: AssistantLanguage, text: string) => {
   }
 
   return 'Ja, einfache Website-Integrationen sind in der Regel möglich. Das kann zum Beispiel eine Karte, ein Kalender, ein Buchungs-Widget, ein Formular oder ein externer Dienst sein. Wenn Sie das konkrete Tool nennen, kann ich die passende Variante kurz einordnen.';
+};
+
+const buildTechnologyAnswer = (language: AssistantLanguage, text: string) => {
+  const source = normalize(text);
+  if (!TECHNOLOGY_QUESTION_KEYWORDS.some(keyword => source.includes(keyword))) return null;
+
+  if (language === 'uk') {
+    return [
+      'Так, можу зорієнтувати по технологіях. Для сайтів і веб-додатків зазвичай підходять React, TypeScript, Vite, Node.js/Netlify Functions, інтеграції з CRM, email, Google Sheets/Calendar, Firebase або іншими API.',
+      'Для AI-функцій можна підключати OpenAI API, базу знань, форми збору лідів, booking-flow і передачу заявки людині.',
+      'Точний стек залежить від задачі: простий сайт, lead-система, кабінет, реклама, tracking або AI-асистент.',
+    ].join(' ');
+  }
+
+  if (language === 'en') {
+    return [
+      'Yes, I can help with the technology side. For websites and web apps, a typical stack is React, TypeScript, Vite, Node.js/Netlify Functions, CRM, email, Google Sheets/Calendar, Firebase, or other API integrations.',
+      'For AI features, OpenAI API, a knowledge base, lead capture forms, booking flows, and human handoff can be connected.',
+      'The exact stack depends on whether you need a simple site, lead system, dashboard, ads/tracking setup, or an AI assistant.',
+    ].join(' ');
+  }
+
+  return [
+    'Ja, ich kann bei der Technologie-Auswahl helfen. Für Websites und Web-Apps passt oft React, TypeScript, Vite, Node.js/Netlify Functions, CRM, E-Mail, Google Sheets/Calendar, Firebase oder andere API-Integrationen.',
+    'Für AI-Funktionen lassen sich OpenAI API, Wissensbasis, Lead-Formulare, Booking-Flows und Übergabe an einen Menschen anbinden.',
+    'Der genaue Stack hängt davon ab, ob es um eine einfache Website, ein Lead-System, Dashboard, Ads/Tracking oder einen AI-Assistenten geht.',
+  ].join(' ');
 };
 
 const buildSocialAutomationAnswer = (language: AssistantLanguage, text: string) => {
@@ -741,6 +855,23 @@ export const generateAssistantLocalReply = ({
     };
   }
 
+  if (intent === 'lead_capture') {
+    return {
+      answer:
+        language === 'de'
+          ? 'Gerne. Sie können Ihre Kontaktdaten und kurz Ihr Anliegen hinterlassen, dann melden wir uns mit dem passenden nächsten Schritt.'
+          : language === 'uk'
+            ? 'Звичайно. Ви можете залишити контактні дані й коротко описати задачу, а ми зв’яжемося з вами та підкажемо наступний крок.'
+            : 'Of course. You can leave your contact details and briefly describe what you need, and we will get back to you with the right next step.',
+      detectedLanguage: language,
+      detectedIntent: 'lead_capture',
+      confidence: 0.86,
+      nextStep: 'lead',
+      leadPrompt: copy.leadIntro,
+      fallbackMode: true,
+    };
+  }
+
   const integrationAnswer = buildIntegrationAnswer(language, lastUserContent);
   if (integrationAnswer) {
     return {
@@ -760,6 +891,18 @@ export const generateAssistantLocalReply = ({
       detectedLanguage: language,
       detectedIntent: 'service_info',
       confidence: 0.86,
+      nextStep: 'none',
+      fallbackMode: true,
+    };
+  }
+
+  const technologyAnswer = buildTechnologyAnswer(language, lastUserContent);
+  if (technologyAnswer) {
+    return {
+      answer: technologyAnswer,
+      detectedLanguage: language,
+      detectedIntent: 'service_info',
+      confidence: 0.84,
       nextStep: 'none',
       fallbackMode: true,
     };
@@ -857,8 +1000,7 @@ export const generateAssistantLocalReply = ({
       detectedLanguage: language,
       detectedIntent: intent,
       confidence: 0.8,
-      nextStep: intent === 'lead_capture' ? 'lead' : 'none',
-      leadPrompt: intent === 'lead_capture' ? copy.leadIntro : undefined,
+      nextStep: 'none',
       fallbackMode: true,
       matchedService,
     };

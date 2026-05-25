@@ -32,7 +32,7 @@ export const servicesUk: AssistantService[] = [
     timeline: 'приблизно 1-3 тижні',
     estimateHint:
       `Обсяг залежить насамперед від кількості сторінок, контенту та технічних обмежень поточного сайту. Діапазон Business на Pricing зазвичай EUR ${WEBSITE_PRICING_PACKAGES.business.rangeFrom}-${WEBSITE_PRICING_PACKAGES.business.rangeTo}.`,
-    keywords: ['редизайн', 'оновити сайт', 'перезапуск', 'покращити сайт'],
+    keywords: ['редизайн', 'оновити сайт', 'оновити', 'поточний сайт', 'існуючий сайт', 'оновлення сайту', 'перезапуск', 'покращити сайт'],
   },
   {
     id: 'ads',
@@ -99,6 +99,6 @@ export const servicesUk: AssistantService[] = [
     timeline: 'постійно',
     estimateHint:
       `Відповідний тариф залежить від частоти оновлень: Starter EUR ${WEBSITE_PRICING_PACKAGES.starter.supportMonthly}/місяць, Business EUR ${WEBSITE_PRICING_PACKAGES.business.supportMonthly}/місяць, Pro EUR ${WEBSITE_PRICING_PACKAGES.pro.supportMonthly}/місяць.`,
-    keywords: ['підтримка', 'супровід', 'догляд', 'оновлення', 'допомога'],
+    keywords: ['підтримка', 'підтримку', 'постійна підтримка', 'шукаю підтримку', 'супровід', 'догляд', 'оновлення', 'допомога'],
   },
 ];

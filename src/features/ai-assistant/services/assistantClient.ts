@@ -2,50 +2,58 @@ import { generateAssistantLocalReply } from '../helpers';
 import type { AssistantChatRequest, AssistantChatResponse, AssistantLocalReply } from '../types';
 
 const getEndpoints = (functionName: string) => {
+  const relativeEndpoint = `/.netlify/functions/${functionName}`;
+
   if (typeof window !== 'undefined' && import.meta.env.DEV) {
     if (window.location.port === '8888') {
-      return [`/.netlify/functions/${functionName}`];
+      return [relativeEndpoint];
     }
 
-    if (import.meta.env.VITE_ASSISTANT_FORCE_BACKEND === 'true') {
-      return [`http://localhost:8888/.netlify/functions/${functionName}`, `/.netlify/functions/${functionName}`];
-    }
-
-    return [];
+    return [`http://localhost:8888/.netlify/functions/${functionName}`, relativeEndpoint];
   }
 
-  return [`/.netlify/functions/${functionName}`];
+  return [relativeEndpoint];
 };
 
 const postJson = async <TResponse>(functionName: string, payload: unknown): Promise<TResponse> => {
   const body = JSON.stringify(payload);
+  let lastError: Error | null = null;
 
   for (const endpoint of getEndpoints(functionName)) {
-    const response = await fetch(endpoint, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body,
-    });
+    let response: Response;
+
+    try {
+      response = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body,
+      });
+    } catch (error) {
+      lastError = error instanceof Error ? error : new Error(`Request to ${endpoint} failed`);
+      continue;
+    }
 
     if (response.ok) {
+      const contentType = response.headers.get('content-type') ?? '';
+      if (!contentType.includes('application/json')) {
+        lastError = new Error(`Endpoint ${endpoint} did not return JSON`);
+        continue;
+      }
+
       return (await response.json()) as TResponse;
     }
 
-    if (response.status !== 404) {
-      const errorText = await response.text();
-      throw new Error(errorText || `Request failed with status ${response.status}`);
-    }
+    if (response.status === 404) continue;
+
+    const errorText = await response.text();
+    throw new Error(errorText || `Request failed with status ${response.status}`);
   }
 
-  throw new Error(`No endpoint available for ${functionName}`);
+  throw lastError ?? new Error(`No endpoint available for ${functionName}`);
 };
 
 export const assistantClient = {
   async chat(request: AssistantChatRequest): Promise<AssistantChatResponse> {
-    if (getEndpoints('assistant-chat').length === 0) {
-      throw new Error('ASSISTANT_BACKEND_UNAVAILABLE_IN_VITE_DEV');
-    }
-
     return postJson<AssistantChatResponse>('assistant-chat', request);
   },
 
