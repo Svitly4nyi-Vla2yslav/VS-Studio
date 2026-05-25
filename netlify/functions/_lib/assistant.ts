@@ -7,6 +7,7 @@ import { nichesUk } from '../../../src/data/assistant/niches.uk';
 import { servicesDe } from '../../../src/data/assistant/services.de';
 import { servicesEn } from '../../../src/data/assistant/services.en';
 import { servicesUk } from '../../../src/data/assistant/services.uk';
+import { getWebsitePricingReference } from '../../../src/data/pricingCatalog';
 import type {
   AssistantChatResponse,
   AssistantBookingContext,
@@ -601,6 +602,9 @@ export const detectIntent = (text: string): AssistantIntent => {
 export const buildContextBlock = (language: AssistantLanguage) => {
   const { services, faq, niches } = knowledgeByLanguage[language];
   return [
+    'Pricing reference:',
+    getWebsitePricingReference(language),
+    'Use only these current pricing values for website packages, configurator ranges, support, ads setup, tracking, and AI lead qualification.',
     'Services:',
     ...services.map(
       service =>
@@ -615,12 +619,15 @@ export const buildContextBlock = (language: AssistantLanguage) => {
 
 const buildEstimate = (service: AssistantService, language: AssistantLanguage, enoughInfo: boolean) => {
   if (!enoughInfo) return service.estimateHint;
-  const low = service.pricingNumericFrom;
-  const high = Math.round(service.pricingNumericFrom * (service.pricingModel === 'monthly' ? 1.8 : 1.7));
+  const low = service.estimateRange?.from ?? service.pricingNumericFrom;
+  const high =
+    service.estimateRange?.to ?? Math.round(service.pricingNumericFrom * (service.pricingModel === 'monthly' ? 1.8 : 1.7));
   if (language === 'de') return `Grobe Orientierung: etwa ${low.toLocaleString('de-DE')} bis ${high.toLocaleString('de-DE')} EUR. ${service.estimateHint}`;
   if (language === 'uk') return `Груба рамка: приблизно ${low.toLocaleString('uk-UA')}-${high.toLocaleString('uk-UA')} EUR. ${service.estimateHint}`;
   return `Rough guide: about EUR ${low.toLocaleString('en-US')} to EUR ${high.toLocaleString('en-US')}. ${service.estimateHint}`;
 };
+
+const buildGeneralPricingAnswer = (language: AssistantLanguage) => getWebsitePricingReference(language);
 
 export const generateLocalResponse = (
   messages: AssistantMessage[],
@@ -711,15 +718,26 @@ export const generateLocalResponse = (
     return {
       answer:
         language === 'de'
-          ? `${matchedService.title} startet bei ${matchedService.pricingFrom}. ${buildEstimate(matchedService, language, enoughInfo)}`
+          ? `${matchedService.title}: ${matchedService.pricingFrom}. ${buildEstimate(matchedService, language, enoughInfo)}`
           : language === 'uk'
-            ? `${matchedService.title} стартує від ${matchedService.pricingFrom}. ${buildEstimate(matchedService, language, enoughInfo)}`
-            : `${matchedService.title} starts at ${matchedService.pricingFrom}. ${buildEstimate(matchedService, language, enoughInfo)}`,
+            ? `${matchedService.title}: ${matchedService.pricingFrom}. ${buildEstimate(matchedService, language, enoughInfo)}`
+            : `${matchedService.title}: ${matchedService.pricingFrom}. ${buildEstimate(matchedService, language, enoughInfo)}`,
       detectedLanguage: language,
       detectedIntent: 'pricing',
       confidence: enoughInfo ? 0.84 : 0.7,
       nextStep: enoughInfo ? 'none' : 'lead',
       leadPrompt: enoughInfo ? undefined : 'lead',
+      fallbackMode: true,
+    };
+  }
+
+  if (intent === 'pricing') {
+    return {
+      answer: buildGeneralPricingAnswer(language),
+      detectedLanguage: language,
+      detectedIntent: 'pricing',
+      confidence: 0.86,
+      nextStep: 'none',
       fallbackMode: true,
     };
   }

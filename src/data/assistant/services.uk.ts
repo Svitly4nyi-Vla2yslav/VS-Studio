@@ -1,4 +1,5 @@
 import type { AssistantService } from '../../features/ai-assistant/types';
+import { WEBSITE_PRICING_PACKAGES, getPackageRange } from '../pricingCatalog';
 
 export const servicesUk: AssistantService[] = [
   {
@@ -8,12 +9,13 @@ export const servicesUk: AssistantService[] = [
       'Швидкий і зрозумілий сайт з акцентом на довіру, заявки та вимірювані точки контакту.',
     businessValue:
       'Підійде бізнесу, який хоче виглядати професійно онлайн та стабільно отримувати якісні звернення.',
-    pricingFrom: 'від 2 490 EUR',
-    pricingNumericFrom: 2490,
+    pricingFrom: `від EUR ${WEBSITE_PRICING_PACKAGES.starter.priceFrom}`,
+    pricingNumericFrom: WEBSITE_PRICING_PACKAGES.starter.priceFrom,
     pricingModel: 'one_time',
+    estimateRange: getPackageRange('starter'),
     timeline: 'приблизно 2-4 тижні',
     estimateHint:
-      'Реалістичний старт зазвичай починається з базового сайту плюс додатковий обсяг за контент, трекінг або мультимовність.',
+      `На сторінці Pricing пакет Starter зазвичай EUR ${WEBSITE_PRICING_PACKAGES.starter.rangeFrom}-${WEBSITE_PRICING_PACKAGES.starter.rangeTo}; для більшого обсягу підходить Business від EUR ${WEBSITE_PRICING_PACKAGES.business.priceFrom}. Configurator після вибору параметрів показує EUR 600-900.`,
     keywords: ['сайт', 'вебсайт', 'сторінка', 'лендинг', 'створити', 'новий сайт'],
   },
   {
@@ -23,12 +25,13 @@ export const servicesUk: AssistantService[] = [
       'Оновлення існуючого сайту зі зрозумілішою структурою, сильнішою довірою та кращими шляхами до заявки.',
     businessValue:
       'Корисно, коли трафік уже є, але сайт виглядає застаріло або слабко конвертує.',
-    pricingFrom: 'від 1 490 EUR',
-    pricingNumericFrom: 1690,
+    pricingFrom: `від EUR ${WEBSITE_PRICING_PACKAGES.business.priceFrom}`,
+    pricingNumericFrom: WEBSITE_PRICING_PACKAGES.business.priceFrom,
     pricingModel: 'one_time',
+    estimateRange: getPackageRange('business'),
     timeline: 'приблизно 1-3 тижні',
     estimateHint:
-      'Обсяг залежить насамперед від кількості сторінок, контенту та технічних обмежень поточного сайту.',
+      `Обсяг залежить насамперед від кількості сторінок, контенту та технічних обмежень поточного сайту. Діапазон Business на Pricing зазвичай EUR ${WEBSITE_PRICING_PACKAGES.business.rangeFrom}-${WEBSITE_PRICING_PACKAGES.business.rangeTo}.`,
     keywords: ['редизайн', 'оновити сайт', 'перезапуск', 'покращити сайт'],
   },
   {
@@ -38,12 +41,13 @@ export const servicesUk: AssistantService[] = [
       'Google Ads, Meta Ads або локальні кампанії з коректним трекінгом і фокусом на якісних лідах.',
     businessValue:
       'Добрий варіант, коли потрібно отримувати прогнозований попит або прискорити поточну воронку.',
-    pricingFrom: 'від 399 EUR/місяць плюс рекламний бюджет',
-    pricingNumericFrom: 399,
-    pricingModel: 'monthly',
+    pricingFrom: `від EUR ${WEBSITE_PRICING_PACKAGES.pro.priceFrom} плюс рекламний бюджет`,
+    pricingNumericFrom: WEBSITE_PRICING_PACKAGES.pro.priceFrom,
+    pricingModel: 'one_time',
+    estimateRange: getPackageRange('pro'),
     timeline: 'запуск зазвичай 5-10 робочих днів',
     estimateHint:
-      'Для реклами потрібні і налаштування, і адекватний рекламний бюджет, і чіткі цілі конверсій.',
+      `Для реклами потрібні і налаштування, і адекватний рекламний бюджет, і чіткі цілі конверсій. На Pricing налаштування реклами входить у Pro від EUR ${WEBSITE_PRICING_PACKAGES.pro.priceFrom}.`,
     keywords: ['реклама', 'ads', 'google ads', 'meta ads', 'кампанія', 'кампанії'],
   },
   {
@@ -53,12 +57,13 @@ export const servicesUk: AssistantService[] = [
       'AI-асистент для питань на сайті, кваліфікації лідів, запитів на дзвінок і первинного збору заявки.',
     businessValue:
       'Особливо корисно, коли потенційні клієнти мають отримувати швидку відповідь і наступний крок навіть поза робочим часом.',
-    pricingFrom: 'від 2 990 EUR',
-    pricingNumericFrom: 2990,
+    pricingFrom: `від EUR ${WEBSITE_PRICING_PACKAGES.pro.priceFrom}`,
+    pricingNumericFrom: WEBSITE_PRICING_PACKAGES.pro.priceFrom,
     pricingModel: 'one_time',
+    estimateRange: getPackageRange('pro'),
     timeline: 'приблизно 2-5 тижнів',
     estimateHint:
-      'Рамка сильно залежить від обсягу бази знань, логіки лідів, мультимовності та передачі до вашої команди.',
+      `Рамка залежить від обсягу бази знань, логіки лідів, мультимовності та передачі до команди. На Pricing AI-кваліфікація лідів входить у Pro від EUR ${WEBSITE_PRICING_PACKAGES.pro.priceFrom}.`,
     keywords: ['ai', 'чатбот', 'асистент', 'автоматизація', 'ліди'],
   },
   {
@@ -68,12 +73,13 @@ export const servicesUk: AssistantService[] = [
       'Коректний event-tracking для форм, дзвінків, бронювань і оцінки кампаній.',
     businessValue:
       'Важливо, коли рішення мають базуватися не на відчуттях, а на зрозумілих даних.',
-    pricingFrom: 'від 790 EUR',
-    pricingNumericFrom: 790,
+    pricingFrom: `від EUR ${WEBSITE_PRICING_PACKAGES.starter.priceFrom}`,
+    pricingNumericFrom: WEBSITE_PRICING_PACKAGES.starter.priceFrom,
     pricingModel: 'one_time',
+    estimateRange: getPackageRange('starter'),
     timeline: 'приблизно 3-7 робочих днів',
     estimateHint:
-      'Складність зростає, коли треба поєднати кілька систем на кшталт GA4, Meta, CRM або server-side tracking.',
+      `Базовий tracking входить у Starter від EUR ${WEBSITE_PRICING_PACKAGES.starter.priceFrom}; CRM або marketing dashboard частіше належать до Business чи Pro.`,
     keywords: ['трекінг', 'аналітика', 'ga4', 'піксель', 'події', 'вимірювання'],
   },
   {
@@ -83,12 +89,16 @@ export const servicesUk: AssistantService[] = [
       'Постійний супровід для дрібних змін, технічного догляду, моніторингу й пріоритетних оновлень.',
     businessValue:
       'Підходить, коли сайт має залишатися актуальним, а зміни потрібно вносити без затримок.',
-    pricingFrom: 'від 59 EUR/місяць',
-    pricingNumericFrom: 59,
+    pricingFrom: `від EUR ${WEBSITE_PRICING_PACKAGES.starter.supportMonthly}/місяць`,
+    pricingNumericFrom: WEBSITE_PRICING_PACKAGES.starter.supportMonthly,
     pricingModel: 'monthly',
+    estimateRange: {
+      from: WEBSITE_PRICING_PACKAGES.starter.supportMonthly,
+      to: WEBSITE_PRICING_PACKAGES.pro.supportMonthly,
+    },
     timeline: 'постійно',
     estimateHint:
-      'Відповідний тариф залежить від того, як часто виникають оновлення контенту, кампаній або технічні задачі.',
+      `Відповідний тариф залежить від частоти оновлень: Starter EUR ${WEBSITE_PRICING_PACKAGES.starter.supportMonthly}/місяць, Business EUR ${WEBSITE_PRICING_PACKAGES.business.supportMonthly}/місяць, Pro EUR ${WEBSITE_PRICING_PACKAGES.pro.supportMonthly}/місяць.`,
     keywords: ['підтримка', 'супровід', 'догляд', 'оновлення', 'допомога'],
   },
 ];

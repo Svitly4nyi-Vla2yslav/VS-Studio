@@ -67,6 +67,10 @@ export interface AssistantService {
   pricingFrom: string;
   pricingNumericFrom: number;
   pricingModel: 'one_time' | 'monthly';
+  estimateRange?: {
+    from: number;
+    to: number;
+  };
   timeline: string;
   estimateHint: string;
   keywords: string[];

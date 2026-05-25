@@ -8,6 +8,7 @@ import { nichesUk } from '../../data/assistant/niches.uk';
 import { servicesDe } from '../../data/assistant/services.de';
 import { servicesEn } from '../../data/assistant/services.en';
 import { servicesUk } from '../../data/assistant/services.uk';
+import { getWebsitePricingReference } from '../../data/pricingCatalog';
 import { analyticsPromise } from '../../firebase';
 import {
   ASSISTANT_CONFIDENCE_THRESHOLD,
@@ -595,8 +596,9 @@ const buildEstimateText = (
 ) => {
   if (!scope || scope.length < 30 || !hasBusinessType) return null;
 
-  const low = service.pricingNumericFrom;
-  const high = Math.round(service.pricingNumericFrom * (service.pricingModel === 'monthly' ? 1.8 : 1.7));
+  const low = service.estimateRange?.from ?? service.pricingNumericFrom;
+  const high =
+    service.estimateRange?.to ?? Math.round(service.pricingNumericFrom * (service.pricingModel === 'monthly' ? 1.8 : 1.7));
 
   if (language === 'de') {
     return `Eine grobe Ersteinschätzung für ${service.title.toLowerCase()} liegt oft etwa im Bereich von ${low.toLocaleString(
@@ -661,6 +663,9 @@ export const buildAssistantContextBlock = (language: AssistantLanguage) => {
   const { services, faq, niches } = getAssistantKnowledge(language);
 
   return [
+    'Pricing reference:',
+    getWebsitePricingReference(language),
+    'Use only these current pricing values for website packages, configurator ranges, support, ads setup, tracking, and AI lead qualification.',
     'Services:',
     ...services.map(
       service =>
@@ -675,6 +680,8 @@ export const buildAssistantContextBlock = (language: AssistantLanguage) => {
     ),
   ].join('\n');
 };
+
+const buildGeneralPricingAnswer = (language: AssistantLanguage) => getWebsitePricingReference(language);
 
 export const generateAssistantLocalReply = ({
   messages,
@@ -763,14 +770,14 @@ export const generateAssistantLocalReply = ({
     return {
       answer:
         language === 'de'
-          ? `${matchedService.title} startet bei ${matchedService.pricingFrom}. ${estimate ?? matchedService.estimateHint} ${
+          ? `${matchedService.title}: ${matchedService.pricingFrom}. ${estimate ?? matchedService.estimateHint} ${
               estimate ? '' : copy.suggestions.estimate
             }`
           : language === 'uk'
-            ? `${matchedService.title} стартує від ${matchedService.pricingFrom}. ${estimate ?? matchedService.estimateHint} ${
+            ? `${matchedService.title}: ${matchedService.pricingFrom}. ${estimate ?? matchedService.estimateHint} ${
                 estimate ? '' : copy.suggestions.estimate
               }`
-            : `${matchedService.title} starts at ${matchedService.pricingFrom}. ${estimate ?? matchedService.estimateHint} ${
+            : `${matchedService.title}: ${matchedService.pricingFrom}. ${estimate ?? matchedService.estimateHint} ${
                 estimate ? '' : copy.suggestions.estimate
               }`,
       detectedLanguage: language,
@@ -780,6 +787,17 @@ export const generateAssistantLocalReply = ({
       leadPrompt: estimate ? undefined : copy.leadIntro,
       fallbackMode: true,
       matchedService,
+    };
+  }
+
+  if (intent === 'pricing') {
+    return {
+      answer: buildGeneralPricingAnswer(language),
+      detectedLanguage: language,
+      detectedIntent: 'pricing',
+      confidence: 0.86,
+      nextStep: 'none',
+      fallbackMode: true,
     };
   }
 

@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { CONFIGURATOR_PRICING } from '../../../data/pricingCatalog';
 import Segmented from './Segmented';
 import { segmentData } from './homePageData';
 
@@ -156,15 +157,14 @@ const MAX_BY_SEO: Record<string, number> = {
   other: 90,
 };
 
-const LAUNCH_PRICE_MIN = 600;
-const LAUNCH_PRICE_MAX = 900;
-const LAUNCH_PRICE_SCALE = 0.42;
-const LAUNCH_PRICE_STEP = 10;
-
 const normalizeLaunchPrice = (value: number) =>
   Math.min(
-    LAUNCH_PRICE_MAX,
-    Math.max(LAUNCH_PRICE_MIN, Math.round((value * LAUNCH_PRICE_SCALE) / LAUNCH_PRICE_STEP) * LAUNCH_PRICE_STEP)
+    CONFIGURATOR_PRICING.launchMax,
+    Math.max(
+      CONFIGURATOR_PRICING.launchMin,
+      Math.round((value * CONFIGURATOR_PRICING.launchScale) / CONFIGURATOR_PRICING.launchStep) *
+        CONFIGURATOR_PRICING.launchStep
+    )
   );
 
 const labelFallbacks: Record<string, string> = {
@@ -304,7 +304,8 @@ const Configurator: React.FC = () => {
       integration.includes('payments');
 
     const pack: 'Starter' | 'Business' = rawTotalTo > 1400 || businessSignals ? 'Business' : 'Starter';
-    const supportMonthly = pack === 'Business' ? 86 : 62;
+    const supportMonthly =
+      pack === 'Business' ? CONFIGURATOR_PRICING.businessSupportMonthly : CONFIGURATOR_PRICING.starterSupportMonthly;
     const supportYearlyRaw = supportMonthly * 12;
     const supportYearly = Math.round(supportYearlyRaw * 0.7);
 
