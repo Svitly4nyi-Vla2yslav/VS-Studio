@@ -2,7 +2,10 @@ import type { AssistantBookingPayload } from '../types';
 
 const resolveBookingEndpoints = () => {
   if (import.meta.env.DEV && window.location.port === '5173') {
-    return ['http://localhost:8888/.netlify/functions/booking-request', '/.netlify/functions/booking-request'];
+    return [
+      'http://localhost:8888/.netlify/functions/booking-request',
+      '/.netlify/functions/booking-request',
+    ];
   }
 
   return ['/.netlify/functions/booking-request'];
@@ -22,7 +25,8 @@ export const bookingClient = {
           body,
         });
       } catch (error) {
-        lastNetworkError = error instanceof Error ? error : new Error('Failed to fetch booking endpoint');
+        lastNetworkError =
+          error instanceof Error ? error : new Error('Failed to fetch booking endpoint');
         continue;
       }
 
