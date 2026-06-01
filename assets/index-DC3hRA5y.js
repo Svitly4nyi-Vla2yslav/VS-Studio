@@ -1,4 +1,4 @@
-import{u as s,j as e,P as a,A as d,a as o,d as r,m as l}from"./index-DQpzPpoZ.js";const c=r.div`
+import{u as s,j as e,P as a,A as d,a as o,d as r,m as l}from"./index-B3HsXjLe.js";const c=r.div`
   padding: 24px 0 96px;
 `,g=r.section`
   display: grid;
