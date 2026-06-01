@@ -19,7 +19,6 @@ import {
   BadgeText,
   BadgeDesc,
 } from './Partners.styled';
-import { useLazyMedia } from '../../hooks/useLazyMedia';
 import 'swiper/css';
 
 export type PartnerBadgeItem = {
@@ -60,12 +59,6 @@ const defaultBreakpoints = {
 const getMaxSlidesPerView = (breakpoints: Record<number, { slidesPerView: number }>) =>
   Math.max(1, ...Object.values(breakpoints).map(({ slidesPerView }) => Math.ceil(slidesPerView)));
 
-const LazyCardBackground: React.FC<{ readonly backgroundImage?: string }> = ({ backgroundImage }) => {
-  const { targetRef, shouldLoad } = useLazyMedia<HTMLDivElement>();
-
-  return <CardBg ref={targetRef} className='card-bg' $backgroundImage={shouldLoad ? backgroundImage : undefined} />;
-};
-
 const defaultRows: PartnerRow[] = [
   {
     title: 'Trusted Technologies',
@@ -85,7 +78,7 @@ const defaultRows: PartnerRow[] = [
 const Partners: React.FC<PartnersProps> = ({ rows = defaultRows, variant = 'carousel' }) => {
   const renderCard = (item: PartnerBadgeItem, key: string) => (
     <Badge key={key}>
-      <LazyCardBackground backgroundImage={item.backgroundImage} />
+      <CardBg className='card-bg' $backgroundImage={item.backgroundImage} />
       <CardOverlay className='card-overlay' />
       <CardContent className='card-content'>
         <CardTop>
