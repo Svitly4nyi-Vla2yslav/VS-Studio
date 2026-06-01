@@ -14,7 +14,7 @@ const HeroVideo: React.FC = () => {
         poster='/images/hero-generated.svg'
       >
         <source src={heroMainWebm} type='video/webm' />
-        <source src={heroFallbackMov} type='video/mp4' />
+        <source src={heroFallbackMov} type='video/quicktime' />
       </VideoElement>
       <VideoOverlay />
     </VideoRoot>

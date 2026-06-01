@@ -54,7 +54,7 @@ export const PortfolioHero: React.FC = () => {
 
       <MangaPanel variants={systemAwakening} initial='hidden' animate='visible'>
         <HeroScene>
-          <PortfolioMediaFrame type={portfolioMedia.hero.type} src={portfolioMedia.hero.src} alt={t(portfolioMedia.hero.altKey)} />
+          <PortfolioMediaFrame type={portfolioMedia.hero.type} src={portfolioMedia.hero.src} alt={t(portfolioMedia.hero.altKey)} eager />
           {floatingCodeFragments.map(fragment => (
             <CodeFragment key={fragment.labelKey} $x={fragment.x} $y={fragment.y}>
               {t(fragment.labelKey)}

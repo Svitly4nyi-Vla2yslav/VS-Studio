@@ -22,7 +22,7 @@ export const SectionCharacter: React.FC<SectionCharacterProps> = ({ variant, lab
     <CharacterRoot $variant={variant} aria-label={label}>
       <CharacterAura aria-hidden='true' />
       {assetSrc ? (
-        <img src={assetSrc} alt='' aria-hidden='true' />
+        <img src={assetSrc} alt='' aria-hidden='true' loading='lazy' decoding='async' fetchPriority='low' />
       ) : (
         <>
           <CharacterCape aria-hidden='true' />

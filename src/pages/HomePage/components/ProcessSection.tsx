@@ -85,7 +85,7 @@ const ProcessSection: React.FC = () => {
                 <SwiperSlide key={`${item.step}-${index}`}>
                   <div
                     className='process-slide'
-                    style={{ '--process-bg': `url(${item.image})` } as React.CSSProperties}
+                    style={{ '--process-bg': activeStep === index ? `url(${item.image})` : 'none' } as React.CSSProperties}
                   >
                     <div className='process-content'>
                       <div className='process-kicker'>
