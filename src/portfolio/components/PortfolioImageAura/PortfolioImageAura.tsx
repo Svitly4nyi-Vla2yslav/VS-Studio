@@ -10,6 +10,6 @@ export interface PortfolioImageAuraProps {
 export const PortfolioImageAura: React.FC<PortfolioImageAuraProps> = ({ src, alt, className }) => (
   <ImageAuraRoot className={className} aria-hidden='true'>
     <ImageAuraGlow />
-    <ImageAuraAsset src={src} alt={alt} loading='lazy' decoding='async' fetchPriority='low' />
+    <ImageAuraAsset src={src} alt={alt} loading='eager' decoding='async' fetchPriority='low' />
   </ImageAuraRoot>
 );

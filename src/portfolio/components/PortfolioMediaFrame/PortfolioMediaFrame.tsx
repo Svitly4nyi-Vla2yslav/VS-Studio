@@ -27,11 +27,24 @@ export const PortfolioMediaFrame: React.FC<PortfolioMediaFrameProps> = ({ type, 
     if (!frame || !video || type !== 'video') return;
 
     if (!('IntersectionObserver' in window)) {
+      video.preload = 'auto';
+      video.load();
       void video.play().catch(() => undefined);
       return;
     }
 
-    const observer = new IntersectionObserver(
+    const preloadObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+
+        video.preload = 'auto';
+        video.load();
+        preloadObserver.disconnect();
+      },
+      { rootMargin: '200% 0px', threshold: 0 }
+    );
+
+    const playbackObserver = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           void video.play().catch(() => undefined);
@@ -39,11 +52,15 @@ export const PortfolioMediaFrame: React.FC<PortfolioMediaFrameProps> = ({ type, 
           video.pause();
         }
       },
-      { rootMargin: '240px 0px', threshold: 0.08 }
+      { rootMargin: '360px 0px', threshold: 0.04 }
     );
-    observer.observe(frame);
+    preloadObserver.observe(frame);
+    playbackObserver.observe(frame);
 
-    return () => observer.disconnect();
+    return () => {
+      preloadObserver.disconnect();
+      playbackObserver.disconnect();
+    };
   }, [type]);
 
   return (
@@ -61,7 +78,7 @@ export const PortfolioMediaFrame: React.FC<PortfolioMediaFrameProps> = ({ type, 
             muted
             playsInline
             controls={false}
-            preload={eager ? 'metadata' : 'none'}
+            preload={eager ? 'auto' : 'none'}
             disablePictureInPicture
           />
         )}

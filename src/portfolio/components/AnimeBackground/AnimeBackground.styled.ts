@@ -26,11 +26,12 @@ const portalRotate = keyframes`
 
 /* Глобальний background wrapper існує тільки всередині portfolio page. */
 export const BackgroundWrapper = styled.div`
-  position: absolute;
+  position: fixed;
   inset: 0;
   overflow: hidden;
   pointer-events: none;
   z-index: 0;
+  contain: paint;
   background:
     radial-gradient(circle at 50% 8%, rgba(56, 189, 248, 0.14), transparent 22%),
     radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.18), transparent 28%),
