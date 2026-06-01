@@ -1,4 +1,4 @@
-import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h as y,i as O,k as T,l as R,n as _,o as U,p as E,q as W,s as Q,t as J,v as Z,w as D,x as q,y as ee,z as ie,B as oe}from"./index-aCKEMS50.js";const te=p`
+import{d as o,b as p,j as e,e as A,r as f,m as a,c as m,F as C,f as l,g as N,h as v,i as X,k as T,l as R,n as _,o as U,p as E,q as W,s as Q,t as J,v as Z,w as D,x as q,y as ee,z as ie,B as oe}from"./index-iXys3Ws-.js";const te=p`
   0% { transform: translate3d(-2%, -2%, 0); }
   100% { transform: translate3d(2%, 2%, 0); }
 `,re=p`
@@ -11,11 +11,12 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
 `,ne=p`
   to { transform: rotate(360deg); }
 `,se=o.div`
-  position: absolute;
+  position: fixed;
   inset: 0;
   overflow: hidden;
   pointer-events: none;
   z-index: 0;
+  contain: paint;
   background:
     radial-gradient(circle at 50% 8%, rgba(56, 189, 248, 0.14), transparent 22%),
     radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.18), transparent 28%),
@@ -132,17 +133,17 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
     animation: none;
     opacity: 0.22;
   }
-`,he=[{kind:"warrior",left:6,top:18,size:170},{kind:"mage",left:78,top:14,size:150},{kind:"swordsman",left:84,top:62,size:180},{kind:"spirit",left:14,top:70,size:118},{kind:"guild",left:48,top:42,size:210}],be=Array.from({length:28},(i,r)=>r),ue=Array.from({length:4},(i,r)=>r),we=()=>e.jsxs(se,{"aria-hidden":"true",children:[e.jsx(le,{}),ue.map(i=>e.jsx(pe,{$index:i},`circle-${i}`)),he.map(i=>e.jsxs(de,{$left:i.left,$top:i.top,$size:i.size,$kind:i.kind,children:[e.jsx(ce,{}),e.jsx(ge,{}),e.jsx(xe,{}),e.jsx(me,{})]},i.kind)),be.map(i=>e.jsx(fe,{$index:i},`shard-${i}`))]}),ye="/assets/Contact%20section-video-C46qwA7Z.mp4",ve="/assets/Hero%20section-4xnONyAA.mp4",je="/assets/Network%20section-video-DZDuf_bs.mp4",ke="/assets/Profile%20%20System%20section-r7iC3KHM.png",$e="/assets/Projects%20section-CntVwrdJ.png",Ke="/assets/Skills%20section-video-DUslJTdn.mp4",ze="/assets/Timeline%20section-video-CRAO9MGS.mp4",d={hero:{type:"video",src:ve,altKey:"portfolio.media.hero"},profile:{src:ke,altKey:"portfolio.media.profile"},skills:{type:"video",src:Ke,altKey:"portfolio.media.skills"},projects:{src:$e,altKey:"portfolio.media.projects"},timeline:{type:"video",src:ze,altKey:"portfolio.media.timeline"},network:{type:"video",src:je,altKey:"portfolio.media.network"},contact:{type:"video",src:ye,altKey:"portfolio.media.contact"}},v={once:!0,amount:.22},B={hidden:{opacity:0,y:32,filter:"blur(14px)"},visible:{opacity:1,y:0,filter:"blur(0px)",transition:{duration:.78,ease:A}}},j={hidden:{},visible:{transition:{staggerChildren:.12}}},c={hidden:{opacity:0,y:36},visible:{opacity:1,y:0,transition:{duration:.58,ease:A}}},V={hidden:{scaleX:0},visible:{scaleX:1,transition:{duration:.9,ease:A}}},t={colors:{background:"#050510",backgroundSoft:"#080812",backgroundPanel:"#0B0B18",purpleSoft:"#A855F7",cyan:"#22D3EE",goldSoft:"#F6D365",white:"#F8FAFC",muted:"#A1A1AA",danger:"#FB7185"},fonts:{body:'"Inter", "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',heading:'"Cinzel", "Playfair Display", "Geist", system-ui, serif'},radii:{pill:"999px"},shadows:{panel:"0 24px 90px rgba(0, 0, 0, 0.45)",cyanGlow:"0 0 30px rgba(34, 211, 238, 0.3)",goldGlow:"0 0 30px rgba(246, 211, 101, 0.26)"}},Se=p`
+`,he=[{kind:"warrior",left:6,top:18,size:170},{kind:"mage",left:78,top:14,size:150},{kind:"swordsman",left:84,top:62,size:180},{kind:"spirit",left:14,top:70,size:118},{kind:"guild",left:48,top:42,size:210}],be=Array.from({length:28},(i,r)=>r),ue=Array.from({length:4},(i,r)=>r),we=()=>e.jsxs(se,{"aria-hidden":"true",children:[e.jsx(le,{}),ue.map(i=>e.jsx(pe,{$index:i},`circle-${i}`)),he.map(i=>e.jsxs(de,{$left:i.left,$top:i.top,$size:i.size,$kind:i.kind,children:[e.jsx(ce,{}),e.jsx(ge,{}),e.jsx(xe,{}),e.jsx(me,{})]},i.kind)),be.map(i=>e.jsx(fe,{$index:i},`shard-${i}`))]}),ye="/assets/Contact%20section-video-C46qwA7Z.mp4",ve="/assets/Hero%20section-4xnONyAA.mp4",je="/assets/Network%20section-video-DZDuf_bs.mp4",ke="/assets/Profile%20%20System%20section-r7iC3KHM.png",$e="/assets/Projects%20section-CntVwrdJ.png",Ke="/assets/Skills%20section-video-DUslJTdn.mp4",ze="/assets/Timeline%20section-video-CRAO9MGS.mp4",d={hero:{type:"video",src:ve,altKey:"portfolio.media.hero"},profile:{src:ke,altKey:"portfolio.media.profile"},skills:{type:"video",src:Ke,altKey:"portfolio.media.skills"},projects:{src:$e,altKey:"portfolio.media.projects"},timeline:{type:"video",src:ze,altKey:"portfolio.media.timeline"},network:{type:"video",src:je,altKey:"portfolio.media.network"},contact:{type:"video",src:ye,altKey:"portfolio.media.contact"}},j={once:!0,amount:.22},B={hidden:{opacity:0,y:32,filter:"blur(14px)"},visible:{opacity:1,y:0,filter:"blur(0px)",transition:{duration:.78,ease:A}}},k={hidden:{},visible:{transition:{staggerChildren:.12}}},c={hidden:{opacity:0,y:36},visible:{opacity:1,y:0,transition:{duration:.58,ease:A}}},V={hidden:{scaleX:0},visible:{scaleX:1,transition:{duration:.9,ease:A}}},t={colors:{background:"#050510",backgroundSoft:"#080812",backgroundPanel:"#0B0B18",purpleSoft:"#A855F7",cyan:"#22D3EE",goldSoft:"#F6D365",white:"#F8FAFC",muted:"#A1A1AA",danger:"#FB7185"},fonts:{body:'"Inter", "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',heading:'"Cinzel", "Playfair Display", "Geist", system-ui, serif'},radii:{pill:"999px"},shadows:{panel:"0 24px 90px rgba(0, 0, 0, 0.45)",cyanGlow:"0 0 30px rgba(34, 211, 238, 0.3)",goldGlow:"0 0 30px rgba(246, 211, 101, 0.26)"}},Se=p`
   0%, 100% { transform: translate3d(0, 0, 0) rotate(-0.6deg); }
   50% { transform: translate3d(0, -12px, 0) rotate(0.8deg); }
 `,Fe=p`
   0%, 100% { opacity: 0.58; transform: scale(0.96); }
   50% { opacity: 0.92; transform: scale(1.04); }
-`,Pe=p`
+`,Ie=p`
   0% { transform: translateX(-130%) rotate(18deg); opacity: 0; }
   22% { opacity: 0.55; }
   52%, 100% { transform: translateX(180%) rotate(18deg); opacity: 0; }
-`,Y=o.figure`
+`,O=o.figure`
   position: relative;
   isolation: isolate;
   display: flex;
@@ -150,6 +151,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   aspect-ratio: 1 / 1;
   margin: 0;
   overflow: hidden;
+  contain: paint;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(34, 211, 238, 0.28);
@@ -183,7 +185,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
     width: 34%;
     height: 160%;
     background: linear-gradient(90deg, transparent, rgba(248, 250, 252, 0.18), transparent);
-    animation: ${Pe} 7.8s ease-in-out infinite;
+    animation: ${Ie} 7.8s ease-in-out infinite;
   }
 
   @media (max-width: 940px) {
@@ -201,7 +203,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
       display: none;
     }
   }
-`,Ie=o.span`
+`,Pe=o.span`
   position: absolute;
   inset: 8%;
   z-index: -1;
@@ -236,7 +238,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   animation: ${Se} 6.8s ease-in-out infinite;
 
   @media (hover: hover) and (pointer: fine) {
-    ${Y}:hover & {
+    ${O}:hover & {
       transform: translate3d(0, -8px, 0) scale(1.015);
     }
   }
@@ -265,7 +267,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   clip: rect(0 0 0 0);
   white-space: nowrap;
   color: ${t.colors.white};
-`,$=({type:i,src:r,alt:n,className:g,eager:f=!1})=>{const b=m.useRef(null),k=m.useRef(null);return m.useEffect(()=>{const K=b.current,u=k.current;if(!K||!u||i!=="video")return;if(!("IntersectionObserver"in window)){u.play().catch(()=>{});return}const z=new IntersectionObserver(([l])=>{l.isIntersecting?u.play().catch(()=>{}):u.pause()},{rootMargin:"240px 0px",threshold:.08});return z.observe(K),()=>z.disconnect()},[i]),e.jsxs(Y,{ref:b,className:g,$type:i,children:[e.jsx(Ie,{"aria-hidden":"true"}),e.jsx(Ce,{$type:i,children:i==="image"?e.jsx(Ae,{src:r,alt:n,loading:"lazy",decoding:"async",fetchPriority:f?"high":"low"}):e.jsx(Be,{ref:k,src:r,"aria-label":n,loop:!0,muted:!0,playsInline:!0,controls:!1,preload:f?"metadata":"none",disablePictureInPicture:!0})}),e.jsx(Le,{children:n})]})},Me=p`
+`,S=({type:i,src:r,alt:n,className:g,eager:h=!1})=>{const w=f.useRef(null),$=f.useRef(null);return f.useEffect(()=>{const K=w.current,x=$.current;if(!K||!x||i!=="video")return;if(!("IntersectionObserver"in window)){x.preload="auto",x.load(),x.play().catch(()=>{});return}const z=new IntersectionObserver(([b])=>{b.isIntersecting&&(x.preload="auto",x.load(),z.disconnect())},{rootMargin:"200% 0px",threshold:0}),s=new IntersectionObserver(([b])=>{b.isIntersecting?x.play().catch(()=>{}):x.pause()},{rootMargin:"360px 0px",threshold:.04});return z.observe(K),s.observe(K),()=>{z.disconnect(),s.disconnect()}},[i]),e.jsxs(O,{ref:w,className:g,$type:i,children:[e.jsx(Pe,{"aria-hidden":"true"}),e.jsx(Ce,{$type:i,children:i==="image"?e.jsx(Ae,{src:r,alt:n,loading:"lazy",decoding:"async",fetchPriority:h?"high":"low"}):e.jsx(Be,{ref:$,src:r,"aria-label":n,loop:!0,muted:!0,playsInline:!0,controls:!1,preload:h?"auto":"none",disablePictureInPicture:!0})}),e.jsx(Le,{children:n})]})},Me=p`
   to { transform: rotate(360deg); }
 `,Ge=p`
   0%, 100% { opacity: 0.58; filter: blur(0); }
@@ -372,7 +374,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   font-size: 0.8rem;
   font-weight: 900;
   text-transform: uppercase;
-`,Ye=o.h2`
+`,Oe=o.h2`
   position: relative;
   z-index: 1;
   max-width: 760px;
@@ -382,21 +384,21 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   font-size: clamp(1.95rem, 4.2vw, 4.4rem);
   line-height: 1.02;
   letter-spacing: 0;
-`,Ne=o.p`
+`,Ye=o.p`
   position: relative;
   z-index: 1;
   max-width: 720px;
   margin: 18px 0 0;
   color: rgba(248, 250, 252, 0.76);
   line-height: 1.55;
-`,Xe=o.div`
+`,Ne=o.div`
   position: relative;
   z-index: 1;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 30px;
-`,Oe=o.a`
+`,Xe=o.a`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -415,7 +417,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
     transform: translateY(-2px);
     outline: none;
   }
-`,I=o.a`
+`,P=o.a`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -476,7 +478,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
     border-color: rgba(34, 211, 238, 0.46);
     outline: none;
   }
-`,We=()=>{const{t:i}=x(),r=[{id:"email",label:i("portfolio.contact.channels.email"),value:s.email,href:s.emailHref,icon:C,external:!1},{id:"phone",label:i("portfolio.contact.channels.phone"),value:s.phone,href:s.phoneHref,icon:X,external:!1},{id:"website",label:i("portfolio.contact.channels.website"),value:s.websiteLabel,href:s.websiteUrl,icon:y,external:!0}];return e.jsxs(He,{id:"portfolio-contact","aria-labelledby":"portfolio-contact-title",variants:j,initial:"hidden",whileInView:"visible",viewport:v,children:[e.jsx(Te,{variants:c,"data-portfolio-media":"contact",children:e.jsx($,{type:d.contact.type,src:d.contact.src,alt:i(d.contact.altKey)})}),e.jsxs(Re,{variants:c,children:[e.jsx(Ee,{"aria-hidden":"true",children:e.jsx(De,{})}),e.jsx(Ve,{children:i("portfolio.contact.eyebrow")}),e.jsx(Ye,{id:"portfolio-contact-title",children:i("portfolio.contact.title")}),e.jsx(Ne,{children:i("portfolio.contact.description")}),e.jsxs(Xe,{children:[e.jsxs(Oe,{href:s.emailHref,children:[e.jsx(O,{"aria-hidden":"true"})," ",i("portfolio.contact.buttons.project")]}),e.jsxs(I,{href:s.emailHref,children:[e.jsx(C,{"aria-hidden":"true"})," ",i("portfolio.contact.buttons.email")]}),e.jsxs(I,{href:s.websiteUrl,target:"_blank",rel:"noopener noreferrer",children:[i("portfolio.contact.buttons.website")," ",e.jsx(y,{"aria-hidden":"true"})]}),e.jsxs(I,{href:s.githubUrl,target:"_blank",rel:"noopener noreferrer",children:[e.jsx(T,{"aria-hidden":"true"})," ",i("portfolio.contact.buttons.github")]})]})]}),e.jsx(_e,{children:r.map(n=>{const g=n.icon;return e.jsxs(Ue,{href:n.href,target:n.external?"_blank":void 0,rel:n.external?"noopener noreferrer":void 0,variants:c,children:[e.jsx(g,{"aria-hidden":"true"}),e.jsx("span",{children:n.label}),e.jsx("strong",{children:n.value})]},n.id)})})]})},S=[{id:"hero",labelKey:"portfolio.nav.hero",href:"#portfolio-top"},{id:"profile",labelKey:"portfolio.nav.profile",href:"#portfolio-profile"},{id:"skills",labelKey:"portfolio.nav.skills",href:"#portfolio-skills"},{id:"projects",labelKey:"portfolio.nav.projects",href:"#portfolio-projects"},{id:"timeline",labelKey:"portfolio.nav.timeline",href:"#portfolio-timeline"},{id:"network",labelKey:"portfolio.nav.network",href:"#portfolio-network"},{id:"contact",labelKey:"portfolio.nav.contact",href:"#portfolio-contact"}],Qe=[{labelKey:"portfolio.system.rank",valueKey:"portfolio.profile.role"},{labelKey:"portfolio.system.class",valueKey:"portfolio.system.values.mainClass"},{labelKey:"portfolio.system.guild",valueKey:"portfolio.profile.brand"},{labelKey:"portfolio.system.location",valueKey:"portfolio.profile.location"},{labelKey:"portfolio.system.mission",valueKey:"portfolio.system.values.mainMission"}],Je=[{labelKey:"portfolio.system.xpItems.german",level:72},{labelKey:"portfolio.system.xpItems.reactTypeScript",level:84},{labelKey:"portfolio.system.xpItems.node",level:68},{labelKey:"portfolio.system.xpItems.firebaseSupabase",level:70},{labelKey:"portfolio.system.xpItems.aiAutomation",level:76},{labelKey:"portfolio.system.xpItems.localBusinessWebsites",level:88}],Ze=[{id:"frontend",titleKey:"portfolio.skills.categories.frontend",descriptionKey:"portfolio.skills.descriptions.frontend",rank:"A-",icon:R,skills:[{labelKey:"portfolio.skills.items.html",level:88},{labelKey:"portfolio.skills.items.css",level:86},{labelKey:"portfolio.skills.items.javascript",level:82},{labelKey:"portfolio.skills.items.typescript",level:78},{labelKey:"portfolio.skills.items.react",level:84},{labelKey:"portfolio.skills.items.vite",level:80},{labelKey:"portfolio.skills.items.styledComponents",level:82},{labelKey:"portfolio.skills.items.framerMotion",level:72},{labelKey:"portfolio.skills.items.i18next",level:70}]},{id:"backend",titleKey:"portfolio.skills.categories.backend",descriptionKey:"portfolio.skills.descriptions.backend",rank:"B+",icon:_,skills:[{labelKey:"portfolio.skills.items.node",level:70},{labelKey:"portfolio.skills.items.firebase",level:74},{labelKey:"portfolio.skills.items.firebaseFunctions",level:64},{labelKey:"portfolio.skills.items.supabase",level:68},{labelKey:"portfolio.skills.items.mongodb",level:62},{labelKey:"portfolio.skills.items.netlifyFunctions",level:66}]},{id:"business",titleKey:"portfolio.skills.categories.business",descriptionKey:"portfolio.skills.descriptions.business",rank:"B+",icon:U,skills:[{labelKey:"portfolio.skills.items.landingPages",level:84},{labelKey:"portfolio.skills.items.localSeoBasics",level:70},{labelKey:"portfolio.skills.items.ga4Tracking",level:68},{labelKey:"portfolio.skills.items.googleAdsBasics",level:58},{labelKey:"portfolio.skills.items.metaAutomationBasics",level:60},{labelKey:"portfolio.skills.items.leadForms",level:80},{labelKey:"portfolio.skills.items.crmPosConcepts",level:66}]},{id:"automation",titleKey:"portfolio.skills.categories.automation",descriptionKey:"portfolio.skills.descriptions.automation",rank:"B",icon:E,skills:[{labelKey:"portfolio.skills.items.aiAssistantForWebsites",level:78},{labelKey:"portfolio.skills.items.leadQualification",level:74},{labelKey:"portfolio.skills.items.chatbotFlows",level:72},{labelKey:"portfolio.skills.items.googleCalendarIntegrationIdea",level:58},{labelKey:"portfolio.skills.items.socialMediaAutoRepliesConcept",level:62},{labelKey:"portfolio.skills.items.businessProcessAutomation",level:70}]}],qe=[{id:"vs-web-studio",titleKey:"portfolio.projects.items.vs.title",typeKey:"portfolio.projects.items.vs.type",descriptionKey:"portfolio.projects.items.vs.description",rewardKey:"portfolio.projects.items.vs.reward",difficulty:"A",link:"https://vs-web-studio.de/",tagKeys:["portfolio.projects.tags.react","portfolio.projects.tags.typescript","portfolio.projects.tags.styledComponents","portfolio.projects.tags.i18n","portfolio.projects.tags.leadGeneration","portfolio.projects.tags.aiAssistant"]},{id:"lumina-atelier",titleKey:"portfolio.projects.items.lumina.title",typeKey:"portfolio.projects.items.lumina.type",descriptionKey:"portfolio.projects.items.lumina.description",rewardKey:"portfolio.projects.items.lumina.reward",difficulty:"B+",link:"https://lumina-atelier-salon.netlify.app/",tagKeys:["portfolio.projects.tags.react","portfolio.projects.tags.landingPage","portfolio.projects.tags.beautyBusiness","portfolio.projects.tags.responsiveDesign"]},{id:"autowerk",titleKey:"portfolio.projects.items.autowerk.title",typeKey:"portfolio.projects.items.autowerk.type",descriptionKey:"portfolio.projects.items.autowerk.description",rewardKey:"portfolio.projects.items.autowerk.reward",difficulty:"B+",link:"https://auto-werkstatt.netlify.app/",tagKeys:["portfolio.projects.tags.react","portfolio.projects.tags.localBusiness","portfolio.projects.tags.workshop","portfolio.projects.tags.cta"]},{id:"handwerk-shk",titleKey:"portfolio.projects.items.handwerk.title",typeKey:"portfolio.projects.items.handwerk.type",descriptionKey:"portfolio.projects.items.handwerk.description",rewardKey:"portfolio.projects.items.handwerk.reward",difficulty:"B+",link:"https://handwerken.netlify.app/",tagKeys:["portfolio.projects.tags.react","portfolio.projects.tags.handwerk","portfolio.projects.tags.shk","portfolio.projects.tags.localSeo"]},{id:"ai-assistant",titleKey:"portfolio.projects.items.ai.title",typeKey:"portfolio.projects.items.ai.type",descriptionKey:"portfolio.projects.items.ai.description",rewardKey:"portfolio.projects.items.ai.reward",difficulty:"A-",tagKeys:["portfolio.projects.tags.ai","portfolio.projects.tags.automation","portfolio.projects.tags.leadCapture","portfolio.projects.tags.chatbot","portfolio.projects.tags.businessProcess"]},{id:"business-platform",titleKey:"portfolio.projects.items.research.title",typeKey:"portfolio.projects.items.research.type",descriptionKey:"portfolio.projects.items.research.description",rewardKey:"portfolio.projects.items.research.reward",difficulty:"B",tagKeys:["portfolio.projects.tags.crm","portfolio.projects.tags.pos","portfolio.projects.tags.orders","portfolio.projects.tags.inventory","portfolio.projects.tags.automation","portfolio.projects.tags.saasResearch"]}],ei=[{id:"course",titleKey:"portfolio.timeline.items.course.title",descriptionKey:"portfolio.timeline.items.course.description",statusKey:"portfolio.timeline.status.completed"},{id:"platforms",titleKey:"portfolio.timeline.items.platforms.title",descriptionKey:"portfolio.timeline.items.platforms.description",statusKey:"portfolio.timeline.status.active"},{id:"studio",titleKey:"portfolio.timeline.items.studio.title",descriptionKey:"portfolio.timeline.items.studio.description",statusKey:"portfolio.timeline.status.active"},{id:"demos",titleKey:"portfolio.timeline.items.demos.title",descriptionKey:"portfolio.timeline.items.demos.description",statusKey:"portfolio.timeline.status.active"},{id:"german",titleKey:"portfolio.timeline.items.german.title",descriptionKey:"portfolio.timeline.items.german.description",statusKey:"portfolio.timeline.status.training"},{id:"selfEmployment",titleKey:"portfolio.timeline.items.selfEmployment.title",descriptionKey:"portfolio.timeline.items.selfEmployment.description",statusKey:"portfolio.timeline.status.preparing"},{id:"scale",titleKey:"portfolio.timeline.items.scale.title",descriptionKey:"portfolio.timeline.items.scale.description",statusKey:"portfolio.timeline.status.next"}],ii=[{id:"linkedin",titleKey:"portfolio.network.items.linkedin.title",descriptionKey:"portfolio.network.items.linkedin.description",icon:W},{id:"localSmb",titleKey:"portfolio.network.items.localSmb.title",descriptionKey:"portfolio.network.items.localSmb.description",icon:Q},{id:"ecosystem",titleKey:"portfolio.network.items.ecosystem.title",descriptionKey:"portfolio.network.items.ecosystem.description",icon:R},{id:"research",titleKey:"portfolio.network.items.research.title",descriptionKey:"portfolio.network.items.research.description",icon:E}],oi=[{labelKey:"portfolio.hero.fragments.react",x:9,y:22},{labelKey:"portfolio.hero.fragments.typescript",x:66,y:16},{labelKey:"portfolio.hero.fragments.node",x:74,y:54},{labelKey:"portfolio.hero.fragments.firebase",x:18,y:68},{labelKey:"portfolio.hero.fragments.ai",x:52,y:76},{labelKey:"portfolio.hero.fragments.automation",x:4,y:44}],ti=p`
+`,We=()=>{const{t:i}=m(),r=[{id:"email",label:i("portfolio.contact.channels.email"),value:l.email,href:l.emailHref,icon:C,external:!1},{id:"phone",label:i("portfolio.contact.channels.phone"),value:l.phone,href:l.phoneHref,icon:N,external:!1},{id:"website",label:i("portfolio.contact.channels.website"),value:l.websiteLabel,href:l.websiteUrl,icon:v,external:!0}];return e.jsxs(He,{id:"portfolio-contact","aria-labelledby":"portfolio-contact-title",variants:k,initial:"hidden",whileInView:"visible",viewport:j,children:[e.jsx(Te,{variants:c,"data-portfolio-media":"contact",children:e.jsx(S,{type:d.contact.type,src:d.contact.src,alt:i(d.contact.altKey)})}),e.jsxs(Re,{variants:c,children:[e.jsx(Ee,{"aria-hidden":"true",children:e.jsx(De,{})}),e.jsx(Ve,{children:i("portfolio.contact.eyebrow")}),e.jsx(Oe,{id:"portfolio-contact-title",children:i("portfolio.contact.title")}),e.jsx(Ye,{children:i("portfolio.contact.description")}),e.jsxs(Ne,{children:[e.jsxs(Xe,{href:l.emailHref,children:[e.jsx(X,{"aria-hidden":"true"})," ",i("portfolio.contact.buttons.project")]}),e.jsxs(P,{href:l.emailHref,children:[e.jsx(C,{"aria-hidden":"true"})," ",i("portfolio.contact.buttons.email")]}),e.jsxs(P,{href:l.websiteUrl,target:"_blank",rel:"noopener noreferrer",children:[i("portfolio.contact.buttons.website")," ",e.jsx(v,{"aria-hidden":"true"})]}),e.jsxs(P,{href:l.githubUrl,target:"_blank",rel:"noopener noreferrer",children:[e.jsx(T,{"aria-hidden":"true"})," ",i("portfolio.contact.buttons.github")]})]})]}),e.jsx(_e,{children:r.map(n=>{const g=n.icon;return e.jsxs(Ue,{href:n.href,target:n.external?"_blank":void 0,rel:n.external?"noopener noreferrer":void 0,variants:c,children:[e.jsx(g,{"aria-hidden":"true"}),e.jsx("span",{children:n.label}),e.jsx("strong",{children:n.value})]},n.id)})})]})},F=[{id:"hero",labelKey:"portfolio.nav.hero",href:"#portfolio-top"},{id:"profile",labelKey:"portfolio.nav.profile",href:"#portfolio-profile"},{id:"skills",labelKey:"portfolio.nav.skills",href:"#portfolio-skills"},{id:"projects",labelKey:"portfolio.nav.projects",href:"#portfolio-projects"},{id:"timeline",labelKey:"portfolio.nav.timeline",href:"#portfolio-timeline"},{id:"network",labelKey:"portfolio.nav.network",href:"#portfolio-network"},{id:"contact",labelKey:"portfolio.nav.contact",href:"#portfolio-contact"}],Qe=[{labelKey:"portfolio.system.rank",valueKey:"portfolio.profile.role"},{labelKey:"portfolio.system.class",valueKey:"portfolio.system.values.mainClass"},{labelKey:"portfolio.system.guild",valueKey:"portfolio.profile.brand"},{labelKey:"portfolio.system.location",valueKey:"portfolio.profile.location"},{labelKey:"portfolio.system.mission",valueKey:"portfolio.system.values.mainMission"}],Je=[{labelKey:"portfolio.system.xpItems.german",level:72},{labelKey:"portfolio.system.xpItems.reactTypeScript",level:84},{labelKey:"portfolio.system.xpItems.node",level:68},{labelKey:"portfolio.system.xpItems.firebaseSupabase",level:70},{labelKey:"portfolio.system.xpItems.aiAutomation",level:76},{labelKey:"portfolio.system.xpItems.localBusinessWebsites",level:88}],Ze=[{id:"frontend",titleKey:"portfolio.skills.categories.frontend",descriptionKey:"portfolio.skills.descriptions.frontend",rank:"A-",icon:R,skills:[{labelKey:"portfolio.skills.items.html",level:88},{labelKey:"portfolio.skills.items.css",level:86},{labelKey:"portfolio.skills.items.javascript",level:82},{labelKey:"portfolio.skills.items.typescript",level:78},{labelKey:"portfolio.skills.items.react",level:84},{labelKey:"portfolio.skills.items.vite",level:80},{labelKey:"portfolio.skills.items.styledComponents",level:82},{labelKey:"portfolio.skills.items.framerMotion",level:72},{labelKey:"portfolio.skills.items.i18next",level:70}]},{id:"backend",titleKey:"portfolio.skills.categories.backend",descriptionKey:"portfolio.skills.descriptions.backend",rank:"B+",icon:_,skills:[{labelKey:"portfolio.skills.items.node",level:70},{labelKey:"portfolio.skills.items.firebase",level:74},{labelKey:"portfolio.skills.items.firebaseFunctions",level:64},{labelKey:"portfolio.skills.items.supabase",level:68},{labelKey:"portfolio.skills.items.mongodb",level:62},{labelKey:"portfolio.skills.items.netlifyFunctions",level:66}]},{id:"business",titleKey:"portfolio.skills.categories.business",descriptionKey:"portfolio.skills.descriptions.business",rank:"B+",icon:U,skills:[{labelKey:"portfolio.skills.items.landingPages",level:84},{labelKey:"portfolio.skills.items.localSeoBasics",level:70},{labelKey:"portfolio.skills.items.ga4Tracking",level:68},{labelKey:"portfolio.skills.items.googleAdsBasics",level:58},{labelKey:"portfolio.skills.items.metaAutomationBasics",level:60},{labelKey:"portfolio.skills.items.leadForms",level:80},{labelKey:"portfolio.skills.items.crmPosConcepts",level:66}]},{id:"automation",titleKey:"portfolio.skills.categories.automation",descriptionKey:"portfolio.skills.descriptions.automation",rank:"B",icon:E,skills:[{labelKey:"portfolio.skills.items.aiAssistantForWebsites",level:78},{labelKey:"portfolio.skills.items.leadQualification",level:74},{labelKey:"portfolio.skills.items.chatbotFlows",level:72},{labelKey:"portfolio.skills.items.googleCalendarIntegrationIdea",level:58},{labelKey:"portfolio.skills.items.socialMediaAutoRepliesConcept",level:62},{labelKey:"portfolio.skills.items.businessProcessAutomation",level:70}]}],qe=[{id:"vs-web-studio",titleKey:"portfolio.projects.items.vs.title",typeKey:"portfolio.projects.items.vs.type",descriptionKey:"portfolio.projects.items.vs.description",rewardKey:"portfolio.projects.items.vs.reward",difficulty:"A",link:"https://vs-web-studio.de/",tagKeys:["portfolio.projects.tags.react","portfolio.projects.tags.typescript","portfolio.projects.tags.styledComponents","portfolio.projects.tags.i18n","portfolio.projects.tags.leadGeneration","portfolio.projects.tags.aiAssistant"]},{id:"lumina-atelier",titleKey:"portfolio.projects.items.lumina.title",typeKey:"portfolio.projects.items.lumina.type",descriptionKey:"portfolio.projects.items.lumina.description",rewardKey:"portfolio.projects.items.lumina.reward",difficulty:"B+",link:"https://lumina-atelier-salon.netlify.app/",tagKeys:["portfolio.projects.tags.react","portfolio.projects.tags.landingPage","portfolio.projects.tags.beautyBusiness","portfolio.projects.tags.responsiveDesign"]},{id:"autowerk",titleKey:"portfolio.projects.items.autowerk.title",typeKey:"portfolio.projects.items.autowerk.type",descriptionKey:"portfolio.projects.items.autowerk.description",rewardKey:"portfolio.projects.items.autowerk.reward",difficulty:"B+",link:"https://auto-werkstatt.netlify.app/",tagKeys:["portfolio.projects.tags.react","portfolio.projects.tags.localBusiness","portfolio.projects.tags.workshop","portfolio.projects.tags.cta"]},{id:"handwerk-shk",titleKey:"portfolio.projects.items.handwerk.title",typeKey:"portfolio.projects.items.handwerk.type",descriptionKey:"portfolio.projects.items.handwerk.description",rewardKey:"portfolio.projects.items.handwerk.reward",difficulty:"B+",link:"https://handwerken.netlify.app/",tagKeys:["portfolio.projects.tags.react","portfolio.projects.tags.handwerk","portfolio.projects.tags.shk","portfolio.projects.tags.localSeo"]},{id:"ai-assistant",titleKey:"portfolio.projects.items.ai.title",typeKey:"portfolio.projects.items.ai.type",descriptionKey:"portfolio.projects.items.ai.description",rewardKey:"portfolio.projects.items.ai.reward",difficulty:"A-",tagKeys:["portfolio.projects.tags.ai","portfolio.projects.tags.automation","portfolio.projects.tags.leadCapture","portfolio.projects.tags.chatbot","portfolio.projects.tags.businessProcess"]},{id:"business-platform",titleKey:"portfolio.projects.items.research.title",typeKey:"portfolio.projects.items.research.type",descriptionKey:"portfolio.projects.items.research.description",rewardKey:"portfolio.projects.items.research.reward",difficulty:"B",tagKeys:["portfolio.projects.tags.crm","portfolio.projects.tags.pos","portfolio.projects.tags.orders","portfolio.projects.tags.inventory","portfolio.projects.tags.automation","portfolio.projects.tags.saasResearch"]}],ei=[{id:"course",titleKey:"portfolio.timeline.items.course.title",descriptionKey:"portfolio.timeline.items.course.description",statusKey:"portfolio.timeline.status.completed"},{id:"platforms",titleKey:"portfolio.timeline.items.platforms.title",descriptionKey:"portfolio.timeline.items.platforms.description",statusKey:"portfolio.timeline.status.active"},{id:"studio",titleKey:"portfolio.timeline.items.studio.title",descriptionKey:"portfolio.timeline.items.studio.description",statusKey:"portfolio.timeline.status.active"},{id:"demos",titleKey:"portfolio.timeline.items.demos.title",descriptionKey:"portfolio.timeline.items.demos.description",statusKey:"portfolio.timeline.status.active"},{id:"german",titleKey:"portfolio.timeline.items.german.title",descriptionKey:"portfolio.timeline.items.german.description",statusKey:"portfolio.timeline.status.training"},{id:"selfEmployment",titleKey:"portfolio.timeline.items.selfEmployment.title",descriptionKey:"portfolio.timeline.items.selfEmployment.description",statusKey:"portfolio.timeline.status.preparing"},{id:"scale",titleKey:"portfolio.timeline.items.scale.title",descriptionKey:"portfolio.timeline.items.scale.description",statusKey:"portfolio.timeline.status.next"}],ii=[{id:"linkedin",titleKey:"portfolio.network.items.linkedin.title",descriptionKey:"portfolio.network.items.linkedin.description",icon:W},{id:"localSmb",titleKey:"portfolio.network.items.localSmb.title",descriptionKey:"portfolio.network.items.localSmb.description",icon:Q},{id:"ecosystem",titleKey:"portfolio.network.items.ecosystem.title",descriptionKey:"portfolio.network.items.ecosystem.description",icon:R},{id:"research",titleKey:"portfolio.network.items.research.title",descriptionKey:"portfolio.network.items.research.description",icon:E}],oi=[{labelKey:"portfolio.hero.fragments.react",x:9,y:22},{labelKey:"portfolio.hero.fragments.typescript",x:66,y:16},{labelKey:"portfolio.hero.fragments.node",x:74,y:54},{labelKey:"portfolio.hero.fragments.firebase",x:18,y:68},{labelKey:"portfolio.hero.fragments.ai",x:52,y:76},{labelKey:"portfolio.hero.fragments.automation",x:4,y:44}],ti=p`
   0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
   50% { transform: translate3d(0, -16px, 0) scale(1.018); }
 `,ri=p`
@@ -525,7 +527,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   @media (prefers-reduced-motion: reduce) {
     animation: none;
   }
-`,N=({src:i,alt:r,className:n})=>e.jsxs(ni,{className:n,"aria-hidden":"true",children:[e.jsx(si,{}),e.jsx(li,{src:i,alt:r,loading:"lazy",decoding:"async",fetchPriority:"low"})]}),pi=p`
+`,Y=({src:i,alt:r,className:n})=>e.jsxs(ni,{className:n,"aria-hidden":"true",children:[e.jsx(si,{}),e.jsx(li,{src:i,alt:r,loading:"eager",decoding:"async",fetchPriority:"low"})]}),pi=p`
   0% { transform: translateY(-120%); opacity: 0; }
   12% { opacity: 0.8; }
   100% { transform: translateY(120%); opacity: 0; }
@@ -709,7 +711,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   border-radius: inherit;
   background: linear-gradient(90deg, ${t.colors.purpleSoft}, ${t.colors.cyan}, ${t.colors.goldSoft});
   box-shadow: ${t.shadows.cyanGlow};
-`,$i=()=>{const{t:i}=x();return e.jsxs(di,{id:"portfolio-profile","aria-labelledby":"portfolio-profile-title",variants:j,initial:"hidden",whileInView:"visible",viewport:v,children:[e.jsx(gi,{"aria-hidden":"true"}),e.jsxs(ci,{children:[e.jsx(yi,{variants:c,"data-portfolio-media":"profile",children:e.jsx(N,{src:d.profile.src,alt:i(d.profile.altKey)})}),e.jsxs(xi,{variants:c,children:[e.jsx(mi,{children:i("portfolio.system.eyebrow")}),e.jsx(fi,{id:"portfolio-profile-title",children:i("portfolio.system.title")}),e.jsx(hi,{children:i("portfolio.positioning")})]}),e.jsx(bi,{children:Qe.map(r=>e.jsxs(ui,{variants:c,children:[e.jsx("span",{children:i(r.labelKey)}),e.jsx("strong",{children:i(r.valueKey)})]},r.labelKey))}),e.jsx(wi,{"aria-label":i("portfolio.system.xpFocus"),children:Je.map(r=>e.jsxs(vi,{variants:c,children:[e.jsx("span",{children:i(r.labelKey)}),e.jsxs("strong",{children:[r.level,"%"]}),e.jsx(ji,{children:e.jsx(ki,{as:a.span,$level:r.level,variants:V,style:{transformOrigin:"left center"}})})]},r.labelKey))})]})]})},Ki=o(a.section)`
+`,$i=()=>{const{t:i}=m();return e.jsxs(di,{id:"portfolio-profile","aria-labelledby":"portfolio-profile-title",variants:k,initial:"hidden",whileInView:"visible",viewport:j,children:[e.jsx(gi,{"aria-hidden":"true"}),e.jsxs(ci,{children:[e.jsx(yi,{variants:c,"data-portfolio-media":"profile",children:e.jsx(Y,{src:d.profile.src,alt:i(d.profile.altKey)})}),e.jsxs(xi,{variants:c,children:[e.jsx(mi,{children:i("portfolio.system.eyebrow")}),e.jsx(fi,{id:"portfolio-profile-title",children:i("portfolio.system.title")}),e.jsx(hi,{children:i("portfolio.positioning")})]}),e.jsx(bi,{children:Qe.map(r=>e.jsxs(ui,{variants:c,children:[e.jsx("span",{children:i(r.labelKey)}),e.jsx("strong",{children:i(r.valueKey)})]},r.labelKey))}),e.jsx(wi,{"aria-label":i("portfolio.system.xpFocus"),children:Je.map(r=>e.jsxs(vi,{variants:c,children:[e.jsx("span",{children:i(r.labelKey)}),e.jsxs("strong",{children:[r.level,"%"]}),e.jsx(ji,{children:e.jsx(ki,{as:a.span,$level:r.level,variants:V,style:{transformOrigin:"left center"}})})]},r.labelKey))})]})]})},Ki=o(a.section)`
   position: relative;
   z-index: 1;
   min-height: 100vh;
@@ -775,12 +777,12 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   font-size: clamp(1.9rem, 3.8vw, 4rem);
   line-height: 1.02;
   letter-spacing: 0;
-`,Pi=o.p`
+`,Ii=o.p`
   max-width: 780px;
   margin: 16px 0 0;
   color: rgba(248, 250, 252, 0.72);
   line-height: 1.55;
-`,Ii=o.div`
+`,Pi=o.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
@@ -823,7 +825,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   color: ${t.colors.cyan};
   background: rgba(124, 58, 237, 0.1);
   box-shadow: 0 0 24px rgba(34, 211, 238, 0.14);
-`,Bi=()=>{const{t:i}=x();return e.jsxs(Ki,{id:"portfolio-network","aria-labelledby":"portfolio-network-title",variants:j,initial:"hidden",whileInView:"visible",viewport:v,children:[e.jsx(zi,{variants:c,"data-portfolio-media":"network",children:e.jsx($,{type:d.network.type,src:d.network.src,alt:i(d.network.altKey)})}),e.jsxs("div",{children:[e.jsx(Si,{children:i("portfolio.network.eyebrow")}),e.jsx(Fi,{id:"portfolio-network-title",children:i("portfolio.network.title")}),e.jsx(Pi,{children:i("portfolio.network.description")})]}),e.jsx(Ii,{children:ii.map(r=>{const n=r.icon;return e.jsxs(Ci,{variants:c,children:[e.jsx(Ai,{children:e.jsx(n,{"aria-hidden":"true"})}),e.jsx("h3",{children:i(r.titleKey)}),e.jsx("p",{children:i(r.descriptionKey)})]},r.id)})})]})},Li=p`
+`,Bi=()=>{const{t:i}=m();return e.jsxs(Ki,{id:"portfolio-network","aria-labelledby":"portfolio-network-title",variants:k,initial:"hidden",whileInView:"visible",viewport:j,children:[e.jsx(zi,{variants:c,"data-portfolio-media":"network",children:e.jsx(S,{type:d.network.type,src:d.network.src,alt:i(d.network.altKey)})}),e.jsxs("div",{children:[e.jsx(Si,{children:i("portfolio.network.eyebrow")}),e.jsx(Fi,{id:"portfolio-network-title",children:i("portfolio.network.title")}),e.jsx(Ii,{children:i("portfolio.network.description")})]}),e.jsx(Pi,{children:ii.map(r=>{const n=r.icon;return e.jsxs(Ci,{variants:c,children:[e.jsx(Ai,{children:e.jsx(n,{"aria-hidden":"true"})}),e.jsx("h3",{children:i(r.titleKey)}),e.jsx("p",{children:i(r.descriptionKey)})]},r.id)})})]})},Li=p`
   0% { transform: translateX(-35%); }
   100% { transform: translateX(35%); }
 `,Mi=o.footer`
@@ -924,7 +926,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   margin: 0;
   color: ${t.colors.muted};
   font-size: 0.86rem;
-`,Di=()=>{const{t:i}=x();return e.jsxs(Mi,{children:[e.jsxs(Gi,{children:[e.jsxs(Hi,{children:[e.jsx(Ti,{children:s.founderName}),e.jsx("strong",{children:s.brandName}),e.jsx("p",{children:i("portfolio.footer.description")})]}),e.jsxs(L,{children:[e.jsx("h2",{children:i("portfolio.footer.navigation")}),e.jsx(M,{children:S.map(r=>e.jsx("a",{href:r.href,children:i(r.labelKey)},r.id))})]}),e.jsxs(L,{children:[e.jsx("h2",{children:i("portfolio.footer.contact")}),e.jsxs(M,{children:[e.jsx("a",{href:s.emailHref,children:s.email}),e.jsx("a",{href:s.phoneHref,children:s.phone}),e.jsxs("a",{href:s.mapsUrl,target:"_blank",rel:"noopener noreferrer",children:[i("portfolio.profile.location")," ",e.jsx(y,{"aria-hidden":"true"})]}),e.jsxs("a",{href:s.websiteUrl,target:"_blank",rel:"noopener noreferrer",children:[s.websiteLabel," ",e.jsx(y,{"aria-hidden":"true"})]}),e.jsxs("a",{href:s.githubUrl,target:"_blank",rel:"noopener noreferrer",children:[e.jsx(T,{"aria-hidden":"true"})," GitHub"]})]})]})]}),e.jsx(Ri,{children:e.jsx(Ei,{children:i("portfolio.footer.note")})})]})},Vi=o.header`
+`,Di=()=>{const{t:i}=m();return e.jsxs(Mi,{children:[e.jsxs(Gi,{children:[e.jsxs(Hi,{children:[e.jsx(Ti,{children:l.founderName}),e.jsx("strong",{children:l.brandName}),e.jsx("p",{children:i("portfolio.footer.description")})]}),e.jsxs(L,{children:[e.jsx("h2",{children:i("portfolio.footer.navigation")}),e.jsx(M,{children:F.map(r=>e.jsx("a",{href:r.href,children:i(r.labelKey)},r.id))})]}),e.jsxs(L,{children:[e.jsx("h2",{children:i("portfolio.footer.contact")}),e.jsxs(M,{children:[e.jsx("a",{href:l.emailHref,children:l.email}),e.jsx("a",{href:l.phoneHref,children:l.phone}),e.jsxs("a",{href:l.mapsUrl,target:"_blank",rel:"noopener noreferrer",children:[i("portfolio.profile.location")," ",e.jsx(v,{"aria-hidden":"true"})]}),e.jsxs("a",{href:l.websiteUrl,target:"_blank",rel:"noopener noreferrer",children:[l.websiteLabel," ",e.jsx(v,{"aria-hidden":"true"})]}),e.jsxs("a",{href:l.githubUrl,target:"_blank",rel:"noopener noreferrer",children:[e.jsx(T,{"aria-hidden":"true"})," GitHub"]})]})]})]}),e.jsx(Ri,{children:e.jsx(Ei,{children:i("portfolio.footer.note")})})]})},Vi=o.header`
   position: fixed;
   top: 12px;
   left: 0;
@@ -933,7 +935,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   padding: 0 16px;
   pointer-events: none;
   --portfolio-header-bg: ${({$scrolled:i})=>i?"rgba(5, 5, 16, 0.9)":"rgba(5, 5, 16, 0.62)"};
-`,Yi=o.div`
+`,Oi=o.div`
   position: relative;
   display: grid;
   grid-template-columns: auto auto minmax(0, 1fr) auto auto auto;
@@ -954,7 +956,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   @media (max-width: 1040px) {
     grid-template-columns: auto 1fr auto auto;
   }
-`,Ni=o.a`
+`,Yi=o.a`
   display: grid;
   gap: 1px;
   min-width: max-content;
@@ -971,7 +973,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
     font-size: 0.78rem;
     font-weight: 800;
   }
-`,Xi=o.span`
+`,Ni=o.span`
   border: 1px solid rgba(246, 211, 101, 0.36);
   border-radius: 999px;
   padding: 8px 10px;
@@ -983,7 +985,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   @media (max-width: 760px) {
     display: none;
   }
-`,Oi=o.nav`
+`,Xi=o.nav`
   display: flex;
   justify-content: center;
   gap: 6px;
@@ -1075,7 +1077,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   @media (max-width: 1040px) {
     display: grid;
   }
-`,Ji=["de","en","uk"],Zi=()=>{const{t:i,i18n:r}=x(),[n,g]=m.useState(!1),[f,b]=m.useState(!1),[k,K]=m.useState("hero");m.useEffect(()=>{const l=()=>g(window.scrollY>18);return l(),window.addEventListener("scroll",l,{passive:!0}),()=>window.removeEventListener("scroll",l)},[]),m.useEffect(()=>{const l=new IntersectionObserver(F=>{const h=F.filter(w=>w.isIntersecting).sort((w,P)=>P.intersectionRatio-w.intersectionRatio)[0];if(h!=null&&h.target.id){const w=S.find(P=>P.href===`#${h.target.id}`);w&&K(w.id)}},{rootMargin:"-34% 0px -48% 0px",threshold:[.18,.34,.5]});return S.forEach(F=>{const h=document.querySelector(F.href);h&&l.observe(h)}),()=>l.disconnect()},[]);const u=l=>{r.changeLanguage(l),b(!1)},z=r.resolvedLanguage||r.language;return e.jsx(Vi,{$scrolled:n,children:e.jsxs(Yi,{children:[e.jsxs(Ni,{href:"#portfolio-top","aria-label":i("portfolio.header.brandAria"),children:[e.jsx("strong",{children:"Vladyslav"}),e.jsxs("span",{children:["/ ",s.brandName]})]}),e.jsx(Xi,{children:i("portfolio.header.rank")}),e.jsx(Oi,{$open:f,"aria-label":i("portfolio.header.navigation"),children:S.map(l=>e.jsx("a",{href:l.href,"aria-current":k===l.id?"page":void 0,"data-active":k===l.id?"true":void 0,onClick:()=>b(!1),children:i(l.labelKey)},l.id))}),e.jsx(_i,{"aria-label":i("portfolio.header.language"),children:Ji.map(l=>e.jsx(Ui,{type:"button",$active:z.startsWith(l),onClick:()=>u(l),children:l.toUpperCase()},l))}),e.jsx(Wi,{href:s.emailHref,children:i("portfolio.header.cta")}),e.jsx(Qi,{type:"button","aria-label":i(f?"portfolio.header.closeMenu":"portfolio.header.openMenu"),"aria-expanded":f,onClick:()=>b(l=>!l),children:f?e.jsx(J,{"aria-hidden":"true"}):e.jsx(Z,{"aria-hidden":"true"})})]})})},qi=p`
+`,Ji=["de","en","uk"],Zi=()=>{const{t:i,i18n:r}=m(),[n,g]=f.useState(!1),[h,w]=f.useState(!1),[$,K]=f.useState("hero");f.useEffect(()=>{const s=()=>g(window.scrollY>18);return s(),window.addEventListener("scroll",s,{passive:!0}),()=>window.removeEventListener("scroll",s)},[]),f.useEffect(()=>{const s=new IntersectionObserver(b=>{const u=b.filter(y=>y.isIntersecting).sort((y,I)=>I.intersectionRatio-y.intersectionRatio)[0];if(u!=null&&u.target.id){const y=F.find(I=>I.href===`#${u.target.id}`);y&&K(y.id)}},{rootMargin:"-34% 0px -48% 0px",threshold:[.18,.34,.5]});return F.forEach(b=>{const u=document.querySelector(b.href);u&&s.observe(u)}),()=>s.disconnect()},[]);const x=s=>{r.changeLanguage(s),w(!1)},z=r.resolvedLanguage||r.language;return e.jsx(Vi,{$scrolled:n,children:e.jsxs(Oi,{children:[e.jsxs(Yi,{href:"#portfolio-top","aria-label":i("portfolio.header.brandAria"),children:[e.jsx("strong",{children:"Vladyslav"}),e.jsxs("span",{children:["/ ",l.brandName]})]}),e.jsx(Ni,{children:i("portfolio.header.rank")}),e.jsx(Xi,{$open:h,"aria-label":i("portfolio.header.navigation"),children:F.map(s=>e.jsx("a",{href:s.href,"aria-current":$===s.id?"page":void 0,"data-active":$===s.id?"true":void 0,onClick:()=>w(!1),children:i(s.labelKey)},s.id))}),e.jsx(_i,{"aria-label":i("portfolio.header.language"),children:Ji.map(s=>e.jsx(Ui,{type:"button",$active:z.startsWith(s),onClick:()=>x(s),children:s.toUpperCase()},s))}),e.jsx(Wi,{href:l.emailHref,children:i("portfolio.header.cta")}),e.jsx(Qi,{type:"button","aria-label":i(h?"portfolio.header.closeMenu":"portfolio.header.openMenu"),"aria-expanded":h,onClick:()=>w(s=>!s),children:h?e.jsx(J,{"aria-hidden":"true"}):e.jsx(Z,{"aria-hidden":"true"})})]})})},qi=p`
   0%, 100% { filter: drop-shadow(0 0 26px rgba(124, 58, 237, 0.42)); transform: scale(1); }
   50% { filter: drop-shadow(0 0 46px rgba(34, 211, 238, 0.46)); transform: scale(1.03); }
 `,eo=p`
@@ -1417,7 +1419,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   @media (prefers-reduced-motion: reduce) {
     animation: none;
   }
-`,ho=()=>{const{t:i}=x();return e.jsxs(to,{id:"portfolio-top","aria-labelledby":"portfolio-title",children:[e.jsxs(ro,{variants:B,initial:"hidden",animate:"visible",children:[e.jsx(ao,{children:i("portfolio.hero.systemAwakened")}),e.jsx(no,{children:i("portfolio.profile.role")}),e.jsx(so,{id:"portfolio-title",children:i("portfolio.hero.title")}),e.jsx(lo,{children:i("portfolio.hero.subtitle")}),e.jsxs(po,{children:[e.jsxs("span",{children:[e.jsx(D,{"aria-hidden":"true"})," ",i("portfolio.profile.location")]}),e.jsx("span",{children:i("portfolio.profile.languages")})]}),e.jsxs(co,{children:[e.jsxs(go,{href:"#portfolio-projects",children:[i("portfolio.hero.buttons.projects")," ",e.jsx(q,{"aria-hidden":"true"})]}),e.jsxs(G,{href:s.emailHref,children:[e.jsx(C,{"aria-hidden":"true"})," ",i("portfolio.hero.buttons.contact")]}),e.jsxs(G,{href:s.websiteUrl,target:"_blank",rel:"noopener noreferrer",children:[i("portfolio.hero.buttons.studio")," ",e.jsx(y,{"aria-hidden":"true"})]})]})]}),e.jsx(xo,{variants:B,initial:"hidden",animate:"visible",children:e.jsxs(mo,{children:[e.jsx($,{type:d.hero.type,src:d.hero.src,alt:i(d.hero.altKey),eager:!0}),oi.map(r=>e.jsx(fo,{$x:r.x,$y:r.y,children:i(r.labelKey)},r.labelKey))]})})]})},bo=p`
+`,ho=()=>{const{t:i}=m();return e.jsxs(to,{id:"portfolio-top","aria-labelledby":"portfolio-title",children:[e.jsxs(ro,{variants:B,initial:"hidden",animate:"visible",children:[e.jsx(ao,{children:i("portfolio.hero.systemAwakened")}),e.jsx(no,{children:i("portfolio.profile.role")}),e.jsx(so,{id:"portfolio-title",children:i("portfolio.hero.title")}),e.jsx(lo,{children:i("portfolio.hero.subtitle")}),e.jsxs(po,{children:[e.jsxs("span",{children:[e.jsx(D,{"aria-hidden":"true"})," ",i("portfolio.profile.location")]}),e.jsx("span",{children:i("portfolio.profile.languages")})]}),e.jsxs(co,{children:[e.jsxs(go,{href:"#portfolio-projects",children:[i("portfolio.hero.buttons.projects")," ",e.jsx(q,{"aria-hidden":"true"})]}),e.jsxs(G,{href:l.emailHref,children:[e.jsx(C,{"aria-hidden":"true"})," ",i("portfolio.hero.buttons.contact")]}),e.jsxs(G,{href:l.websiteUrl,target:"_blank",rel:"noopener noreferrer",children:[i("portfolio.hero.buttons.studio")," ",e.jsx(v,{"aria-hidden":"true"})]})]})]}),e.jsx(xo,{variants:B,initial:"hidden",animate:"visible",children:e.jsxs(mo,{children:[e.jsx(S,{type:d.hero.type,src:d.hero.src,alt:i(d.hero.altKey),eager:!0}),oi.map(r=>e.jsx(fo,{$x:r.x,$y:r.y,children:i(r.labelKey)},r.labelKey))]})})]})},bo=p`
   0% { transform: translateX(-140%) rotate(18deg); }
   100% { transform: translateX(260%) rotate(18deg); }
 `,uo=o(a.section)`
@@ -1598,7 +1600,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
     margin-top: 3px;
     color: ${t.colors.goldSoft};
   }
-`,Po=o.div`
+`,Io=o.div`
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -1621,7 +1623,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   margin-top: auto;
   color: ${t.colors.cyan};
   font-weight: 900;
-`,Io=()=>{const{t:i}=x();return e.jsxs(uo,{id:"portfolio-projects","aria-labelledby":"portfolio-projects-title",variants:j,initial:"hidden",whileInView:"visible",viewport:v,children:[e.jsx(wo,{variants:c,"data-portfolio-media":"projects",children:e.jsx(N,{src:d.projects.src,alt:i(d.projects.altKey)})}),e.jsxs(yo,{variants:c,children:[e.jsx(vo,{children:i("portfolio.projects.eyebrow")}),e.jsx(jo,{id:"portfolio-projects-title",children:i("portfolio.projects.title")}),e.jsx(ko,{children:i("portfolio.projects.description")})]}),e.jsx($o,{children:qe.map(r=>e.jsxs(Ko,{variants:c,children:[e.jsxs(zo,{children:[i("portfolio.projects.difficulty")," ",r.difficulty]}),e.jsx(So,{children:i(r.typeKey)}),e.jsx("h3",{children:i(r.titleKey)}),e.jsx("p",{children:i(r.descriptionKey)}),e.jsxs(Fo,{children:[e.jsx(ee,{"aria-hidden":"true"}),e.jsx("span",{children:i(r.rewardKey)})]}),e.jsx(Po,{children:r.tagKeys.map(n=>e.jsx("span",{children:i(n)},n))}),r.link?e.jsxs(H,{href:r.link,target:"_blank",rel:"noopener noreferrer","aria-label":`${i("portfolio.projects.open")} ${i(r.titleKey)}`,children:[i("portfolio.projects.open")," ",e.jsx(y,{"aria-hidden":"true"})]}):e.jsxs(H,{as:"span",children:[i("portfolio.projects.concept")," ",e.jsx(ie,{"aria-hidden":"true"})]})]},r.id))})]})},Co=p`
+`,Po=()=>{const{t:i}=m();return e.jsxs(uo,{id:"portfolio-projects","aria-labelledby":"portfolio-projects-title",variants:k,initial:"hidden",whileInView:"visible",viewport:j,children:[e.jsx(wo,{variants:c,"data-portfolio-media":"projects",children:e.jsx(Y,{src:d.projects.src,alt:i(d.projects.altKey)})}),e.jsxs(yo,{variants:c,children:[e.jsx(vo,{children:i("portfolio.projects.eyebrow")}),e.jsx(jo,{id:"portfolio-projects-title",children:i("portfolio.projects.title")}),e.jsx(ko,{children:i("portfolio.projects.description")})]}),e.jsx($o,{children:qe.map(r=>e.jsxs(Ko,{variants:c,children:[e.jsxs(zo,{children:[i("portfolio.projects.difficulty")," ",r.difficulty]}),e.jsx(So,{children:i(r.typeKey)}),e.jsx("h3",{children:i(r.titleKey)}),e.jsx("p",{children:i(r.descriptionKey)}),e.jsxs(Fo,{children:[e.jsx(ee,{"aria-hidden":"true"}),e.jsx("span",{children:i(r.rewardKey)})]}),e.jsx(Io,{children:r.tagKeys.map(n=>e.jsx("span",{children:i(n)},n))}),r.link?e.jsxs(H,{href:r.link,target:"_blank",rel:"noopener noreferrer","aria-label":`${i("portfolio.projects.open")} ${i(r.titleKey)}`,children:[i("portfolio.projects.open")," ",e.jsx(v,{"aria-hidden":"true"})]}):e.jsxs(H,{as:"span",children:[i("portfolio.projects.concept")," ",e.jsx(ie,{"aria-hidden":"true"})]})]},r.id))})]})},Co=p`
   0%, 100% { filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.25)); }
   50% { filter: drop-shadow(0 0 18px rgba(246, 211, 101, 0.34)); }
 `,Ao=o(a.section)`
@@ -1858,7 +1860,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
     padding: 7px 9px;
     font-size: 0.7rem;
   }
-`,Vo=()=>{const{t:i}=x();return e.jsxs(Ao,{id:"portfolio-timeline","aria-labelledby":"portfolio-timeline-title",variants:j,initial:"hidden",whileInView:"visible",viewport:v,children:[e.jsx(Bo,{variants:c,"data-portfolio-media":"timeline",children:e.jsx($,{type:d.timeline.type,src:d.timeline.src,alt:i(d.timeline.altKey)})}),e.jsxs("div",{children:[e.jsxs("div",{children:[e.jsx(Lo,{children:i("portfolio.timeline.eyebrow")}),e.jsx(Mo,{id:"portfolio-timeline-title",children:i("portfolio.timeline.title")}),e.jsx(Go,{children:i("portfolio.timeline.description")})]}),e.jsxs(Ho,{children:[e.jsx(To,{"aria-hidden":"true"}),ei.map((r,n)=>e.jsxs(Ro,{variants:c,children:[e.jsx(Eo,{children:e.jsx(D,{"aria-hidden":"true"})}),e.jsx("span",{children:String(n+1).padStart(2,"0")}),e.jsxs("div",{children:[e.jsx("h3",{children:i(r.titleKey)}),e.jsx("p",{children:i(r.descriptionKey)})]}),e.jsx(Do,{children:i(r.statusKey)})]},r.id))]})]})]})},Yo=o(a.section)`
+`,Vo=()=>{const{t:i}=m();return e.jsxs(Ao,{id:"portfolio-timeline","aria-labelledby":"portfolio-timeline-title",variants:k,initial:"hidden",whileInView:"visible",viewport:j,children:[e.jsx(Bo,{variants:c,"data-portfolio-media":"timeline",children:e.jsx(S,{type:d.timeline.type,src:d.timeline.src,alt:i(d.timeline.altKey)})}),e.jsxs("div",{children:[e.jsxs("div",{children:[e.jsx(Lo,{children:i("portfolio.timeline.eyebrow")}),e.jsx(Mo,{id:"portfolio-timeline-title",children:i("portfolio.timeline.title")}),e.jsx(Go,{children:i("portfolio.timeline.description")})]}),e.jsxs(Ho,{children:[e.jsx(To,{"aria-hidden":"true"}),ei.map((r,n)=>e.jsxs(Ro,{variants:c,children:[e.jsx(Eo,{children:e.jsx(D,{"aria-hidden":"true"})}),e.jsx("span",{children:String(n+1).padStart(2,"0")}),e.jsxs("div",{children:[e.jsx("h3",{children:i(r.titleKey)}),e.jsx("p",{children:i(r.descriptionKey)})]}),e.jsx(Do,{children:i(r.statusKey)})]},r.id))]})]})]})},Oo=o(a.section)`
   position: relative;
   z-index: 1;
   min-height: 100vh;
@@ -1893,7 +1895,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
       width: 100%;
     }
   }
-`,No=o(a.div)`
+`,Yo=o(a.div)`
   /* position: absolute; */
   right: clamp(-130px, -5vw, -40px);
   bottom: -5svh;
@@ -1928,7 +1930,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
     width: auto;
     opacity: 0.1;
   }
-`,Xo=o.span`
+`,No=o.span`
   display: inline-flex;
   max-width: 100%;
   border: 1px solid rgba(212, 175, 55, 0.32);
@@ -1941,7 +1943,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   text-transform: uppercase;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
   overflow-wrap: anywhere;
-`,Oo=o.h2`
+`,Xo=o.h2`
   margin: 16px 0 0;
   color: #0f172a;
   font-family: ${t.fonts.heading};
@@ -2128,7 +2130,7 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
     ${t.colors.goldSoft}
   );
   box-shadow: 0 0 22px rgba(34, 211, 238, 0.25);
-`,rt=()=>{const{t:i}=x();return e.jsxs(Yo,{id:"portfolio-skills","aria-labelledby":"portfolio-skills-title",variants:j,initial:"hidden",whileInView:"visible",viewport:v,children:[e.jsxs("div",{children:[e.jsxs(a.div,{variants:c,children:[e.jsx(Xo,{children:i("portfolio.skills.eyebrow")}),e.jsx(Oo,{id:"portfolio-skills-title",children:i("portfolio.skills.title")}),e.jsx(_o,{children:i("portfolio.skills.description")})]}),e.jsx(Uo,{children:Ze.map(r=>{const n=r.icon;return e.jsxs(Wo,{variants:c,children:[e.jsx(Qo,{"aria-hidden":"true"}),e.jsxs(Jo,{children:[e.jsx(Zo,{children:e.jsx(n,{"aria-hidden":"true"})}),e.jsxs("div",{children:[e.jsx("h3",{children:i(r.titleKey)}),e.jsx("p",{children:i(r.descriptionKey)})]}),e.jsx(qo,{children:r.rank})]}),e.jsx(et,{children:r.skills.slice(0,4).map(g=>e.jsxs(it,{children:[e.jsx("span",{children:i(g.labelKey)}),e.jsxs("strong",{children:[g.level,"%"]}),e.jsx(ot,{children:e.jsx(tt,{as:a.span,$level:g.level,variants:V,style:{transformOrigin:"left center"}})})]},g.labelKey))})]},r.id)})})," "]}),e.jsx(No,{variants:c,"data-portfolio-media":"skills",children:e.jsx($,{type:d.skills.type,src:d.skills.src,alt:i(d.skills.altKey)})})]})},at=oe`
+`,rt=()=>{const{t:i}=m();return e.jsxs(Oo,{id:"portfolio-skills","aria-labelledby":"portfolio-skills-title",variants:k,initial:"hidden",whileInView:"visible",viewport:j,children:[e.jsxs("div",{children:[e.jsxs(a.div,{variants:c,children:[e.jsx(No,{children:i("portfolio.skills.eyebrow")}),e.jsx(Xo,{id:"portfolio-skills-title",children:i("portfolio.skills.title")}),e.jsx(_o,{children:i("portfolio.skills.description")})]}),e.jsx(Uo,{children:Ze.map(r=>{const n=r.icon;return e.jsxs(Wo,{variants:c,children:[e.jsx(Qo,{"aria-hidden":"true"}),e.jsxs(Jo,{children:[e.jsx(Zo,{children:e.jsx(n,{"aria-hidden":"true"})}),e.jsxs("div",{children:[e.jsx("h3",{children:i(r.titleKey)}),e.jsx("p",{children:i(r.descriptionKey)})]}),e.jsx(qo,{children:r.rank})]}),e.jsx(et,{children:r.skills.slice(0,4).map(g=>e.jsxs(it,{children:[e.jsx("span",{children:i(g.labelKey)}),e.jsxs("strong",{children:[g.level,"%"]}),e.jsx(ot,{children:e.jsx(tt,{as:a.span,$level:g.level,variants:V,style:{transformOrigin:"left center"}})})]},g.labelKey))})]},r.id)})})," "]}),e.jsx(Yo,{variants:c,"data-portfolio-media":"skills",children:e.jsx(S,{type:d.skills.type,src:d.skills.src,alt:i(d.skills.altKey)})})]})},at=oe`
   html.portfolio-page-active,
   body.portfolio-page-active {
     scrollbar-width: none;
@@ -2208,4 +2210,4 @@ import{d as o,b as p,j as e,e as A,r as m,m as a,c as x,F as C,f as s,g as X,h a
   &:focus {
     transform: translateY(0);
   }
-`,dt=()=>{const{t:i}=x();return m.useEffect(()=>(document.title=i("portfolio.meta.title"),document.documentElement.classList.add("portfolio-page-active"),document.body.classList.add("portfolio-page-active"),window.scrollTo({top:0,behavior:"auto"}),()=>{document.documentElement.classList.remove("portfolio-page-active"),document.body.classList.remove("portfolio-page-active")}),[i]),e.jsxs(nt,{children:[e.jsx(at,{}),e.jsx(lt,{href:"#portfolio-top",children:i("portfolio.skipLink")}),e.jsx(we,{}),e.jsx(Zi,{}),e.jsxs(st,{children:[e.jsx(ho,{}),e.jsx($i,{}),e.jsx(rt,{}),e.jsx(Io,{}),e.jsx(Vo,{}),e.jsx(Bi,{}),e.jsx(We,{})]}),e.jsx(Di,{})]})};export{dt as PortfolioPage,dt as default};
+`,dt=()=>{const{t:i}=m();return f.useEffect(()=>(document.title=i("portfolio.meta.title"),document.documentElement.classList.add("portfolio-page-active"),document.body.classList.add("portfolio-page-active"),window.scrollTo({top:0,behavior:"auto"}),()=>{document.documentElement.classList.remove("portfolio-page-active"),document.body.classList.remove("portfolio-page-active")}),[i]),e.jsxs(nt,{children:[e.jsx(at,{}),e.jsx(lt,{href:"#portfolio-top",children:i("portfolio.skipLink")}),e.jsx(we,{}),e.jsx(Zi,{}),e.jsxs(st,{children:[e.jsx(ho,{}),e.jsx($i,{}),e.jsx(rt,{}),e.jsx(Po,{}),e.jsx(Vo,{}),e.jsx(Bi,{}),e.jsx(We,{})]}),e.jsx(Di,{})]})};export{dt as PortfolioPage,dt as default};
