@@ -203,7 +203,7 @@ const AboutUs: React.FC = () => {
             <h2>{t('aboutPage.section.localAdvantages', { defaultValue: 'Lokale Vorteile' })}</h2>
             <div className='about-main-grid'>
               <Card className='about-photo-card'>
-                <img className='about-photo-image' src={aboutFounderPhoto} alt={t('aboutPage.photoAlt', { defaultValue: 'Vladyslav, Gruender von VS Web Studio aus Hildesheim' })} loading='lazy' decoding='async' fetchPriority='low' />
+                <img className='about-photo-image' src={aboutFounderPhoto} alt={t('aboutPage.photoAlt', { defaultValue: 'Vladyslav, Gruender von VS Web Studio aus Hildesheim' })} width='488' height='536' loading='lazy' decoding='async' fetchPriority='low' />
                 <p className='about-photo-caption'>{t('aboutPage.photoCaption', { defaultValue: 'Vladyslav - Gruender von VS Web Studio' })}</p>
                 <Checklist className='about-photo-facts'>
                   <li><FaCheckCircle /> {t('aboutPage.photoFacts.f1', { defaultValue: 'Fokus: lokale Unternehmen' })}</li>

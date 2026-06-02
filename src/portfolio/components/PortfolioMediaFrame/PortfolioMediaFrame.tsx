@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   ImageMedia,
   MediaCaption,
@@ -20,15 +20,33 @@ export interface PortfolioMediaFrameProps {
 export const PortfolioMediaFrame: React.FC<PortfolioMediaFrameProps> = ({ type, src, alt, className, eager = false }) => {
   const frameRef = useRef<HTMLElement | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [hasAttachedSource, setHasAttachedSource] = useState(eager);
+  const hasAttachedSourceRef = useRef(eager);
+  const isVisibleRef = useRef(false);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video || type !== 'video' || !hasAttachedSource || !isVisibleRef.current) return;
+
+    void video.play().catch(() => undefined);
+  }, [hasAttachedSource, src, type]);
 
   useEffect(() => {
     const frame = frameRef.current;
     const video = videoRef.current;
     if (!frame || !video || type !== 'video') return;
 
+    const prepareVideo = () => {
+      video.preload = 'metadata';
+
+      if (!hasAttachedSourceRef.current) {
+        hasAttachedSourceRef.current = true;
+        setHasAttachedSource(true);
+      }
+    };
+
     if (!('IntersectionObserver' in window)) {
-      video.preload = 'auto';
-      video.load();
+      prepareVideo();
       void video.play().catch(() => undefined);
       return;
     }
@@ -37,23 +55,30 @@ export const PortfolioMediaFrame: React.FC<PortfolioMediaFrameProps> = ({ type, 
       ([entry]) => {
         if (!entry.isIntersecting) return;
 
-        video.preload = 'auto';
-        video.load();
+        prepareVideo();
         preloadObserver.disconnect();
       },
-      { rootMargin: '200% 0px', threshold: 0 }
+      { rootMargin: '800px 0px', threshold: 0 }
     );
 
     const playbackObserver = new IntersectionObserver(
       ([entry]) => {
+        isVisibleRef.current = entry.isIntersecting;
+
         if (entry.isIntersecting) {
+          prepareVideo();
           void video.play().catch(() => undefined);
         } else {
           video.pause();
         }
       },
-      { rootMargin: '360px 0px', threshold: 0.04 }
+      { threshold: 0.2 }
     );
+
+    if (eager) {
+      prepareVideo();
+    }
+
     preloadObserver.observe(frame);
     playbackObserver.observe(frame);
 
@@ -61,7 +86,7 @@ export const PortfolioMediaFrame: React.FC<PortfolioMediaFrameProps> = ({ type, 
       preloadObserver.disconnect();
       playbackObserver.disconnect();
     };
-  }, [type]);
+  }, [eager, type]);
 
   return (
     <MediaFrame ref={frameRef} className={className} $type={type}>
@@ -72,13 +97,13 @@ export const PortfolioMediaFrame: React.FC<PortfolioMediaFrameProps> = ({ type, 
         ) : (
           <VideoMedia
             ref={videoRef}
-            src={src}
+            src={hasAttachedSource ? src : undefined}
             aria-label={alt}
             loop
             muted
             playsInline
             controls={false}
-            preload={eager ? 'auto' : 'none'}
+            preload={eager || hasAttachedSource ? 'metadata' : 'none'}
             disablePictureInPicture
           />
         )}

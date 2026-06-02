@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { easeOut, motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { A11y, Autoplay, Keyboard } from 'swiper/modules';
@@ -75,10 +75,41 @@ const defaultRows: PartnerRow[] = [
   },
 ];
 
+const LazyCardBackground: React.FC<{ backgroundImage?: string }> = ({ backgroundImage }) => {
+  const backgroundRef = useRef<HTMLDivElement | null>(null);
+  const [hasAttachedBackground, setHasAttachedBackground] = useState(!backgroundImage);
+
+  useEffect(() => {
+    const background = backgroundRef.current;
+    if (!background || !backgroundImage || hasAttachedBackground) return;
+
+    if (!('IntersectionObserver' in window)) {
+      setHasAttachedBackground(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+
+        setHasAttachedBackground(true);
+        observer.disconnect();
+      },
+      { rootMargin: '600px', threshold: 0 }
+    );
+
+    observer.observe(background);
+
+    return () => observer.disconnect();
+  }, [backgroundImage, hasAttachedBackground]);
+
+  return <CardBg ref={backgroundRef} className='card-bg' $backgroundImage={hasAttachedBackground ? backgroundImage : undefined} />;
+};
+
 const Partners: React.FC<PartnersProps> = ({ rows = defaultRows, variant = 'carousel' }) => {
   const renderCard = (item: PartnerBadgeItem, key: string) => (
     <Badge key={key}>
-      <CardBg className='card-bg' $backgroundImage={item.backgroundImage} />
+      <LazyCardBackground backgroundImage={item.backgroundImage} />
       <CardOverlay className='card-overlay' />
       <CardContent className='card-content'>
         <CardTop>
