@@ -58,7 +58,7 @@ const reveal = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } };
 const copy = {
   headline: 'Erzaehlen Sie uns von Ihrem Projekt',
   responseTime: 'Durchschnittliche Antwortzeit: 1-2h',
-  subtitle: 'Kurz beschreiben, was Sie planen. Sie erhalten schnell eine Ersteinschaetzung und den naechsten Schritt.',
+  subtitle: 'Kurz beschreiben, was Sie planen. Sie erhalten schnell eine Ersteinschaetzung und den nächsten Schritt.',
   quickContacts: 'Direkter Kontakt',
   responseNote: 'Antwort meist innerhalb von 1-2 Stunden',
   formTitle: 'Projektanfrage',
@@ -87,7 +87,7 @@ const copy = {
   nextSteps: [
     'Ihre Anfrage landet direkt im Intake-Flow.',
     'Wir melden uns meist innerhalb von 1-2 Stunden zurueck.',
-    'Sie erhalten einen klaren naechsten Schritt statt langer Rueckfragen.',
+    'Sie erhalten einen klaren nächsten Schritt statt langer Rückfragen.',
   ],
 };
 
