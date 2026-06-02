@@ -23,7 +23,7 @@
     "menu": "Menu",
     "menuAria": "Open navigation menu",
     "services": "Services",
-    "preise": "prices",
+    "preise": "Prices",
     "referenzen": "References",
     "ueberUns": "About us",
     "kontakt": "Contact"
@@ -70,7 +70,7 @@
         "desc": "More contacts via forms"
       },
       "clearPrices": {
-        "title": "Clear prices",
+        "title": "Clear Prices",
         "desc": "You know costs in advance"
       },
       "personalHelp": {
