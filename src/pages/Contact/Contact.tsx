@@ -8,6 +8,9 @@ import {
   FaCheckCircle,
   FaCommentDots,
   FaEnvelope,
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
   FaPhone,
   FaRegClock,
   FaUser,
@@ -94,6 +97,12 @@ const copy = {
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const contactDevFunctionEndpoint = 'http://localhost:8888/.netlify/functions/contact';
 const contactDevEndpoint = 'http://localhost:8888/api/contact';
+const socialIcons = {
+  linkedin: FaLinkedinIn,
+  facebook: FaFacebookF,
+  instagram: FaInstagram,
+};
+
 const Contact: React.FC = () => {
   const { t } = useTranslation();
   const location = useLocation();
@@ -374,6 +383,24 @@ const Contact: React.FC = () => {
                     <span>{t('contact.contactMeta.phone', { defaultValue: copy.contactMeta.phone })}</span>
                   </div>
                 </ContactItemLink>
+
+                {contactInfo.socialLinks.map(link => {
+                  const Icon = socialIcons[link.id];
+                  return (
+                    <ContactItemLink
+                      key={link.id}
+                      href={link.url}
+                      target='_blank'
+                      rel='me noopener noreferrer'
+                    >
+                      <Icon />
+                      <div>
+                        <strong>{link.label}</strong>
+                        <span>VS Web Studio</span>
+                      </div>
+                    </ContactItemLink>
+                  );
+                })}
               </ContactList>
 
               <TrustGrid>

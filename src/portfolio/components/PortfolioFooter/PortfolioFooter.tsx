@@ -1,4 +1,10 @@
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import {
+  FaExternalLinkAlt,
+  FaFacebookF,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+} from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { contactInfo } from '../../../data/contactInfo';
 import { portfolioNavItems } from '../../data/portfolioData';
@@ -12,6 +18,12 @@ import {
   FooterShell,
   FooterTitle,
 } from './PortfolioFooter.styled';
+
+const socialIcons = {
+  linkedin: FaLinkedinIn,
+  facebook: FaFacebookF,
+  instagram: FaInstagram,
+};
 
 // PortfolioFooter завершує cinematic portfolio і дублює навігацію/контакти.
 export const PortfolioFooter: React.FC = () => {
@@ -52,6 +64,14 @@ export const PortfolioFooter: React.FC = () => {
             <a href={contactInfo.githubUrl} target='_blank' rel='noopener noreferrer'>
               <FaGithub aria-hidden='true' /> GitHub
             </a>
+            {contactInfo.socialLinks.map(link => {
+              const Icon = socialIcons[link.id];
+              return (
+                <a key={link.id} href={link.url} target='_blank' rel='me noopener noreferrer'>
+                  <Icon aria-hidden='true' /> {link.label}
+                </a>
+              );
+            })}
           </FooterLinkList>
         </FooterPanel>
       </FooterGrid>

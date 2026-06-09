@@ -87,6 +87,7 @@ const createOrganizationNode = () => ({
   url: `${site.baseUrl}/`,
   logo: `${site.baseUrl}/apple-touch-icon.png`,
   image: site.defaultImage,
+  sameAs: site.socialProfiles,
   email: site.email,
   telephone: site.telephone,
   priceRange: site.priceRange,
@@ -120,6 +121,7 @@ const createWebsiteNode = () => ({
   url: `${site.baseUrl}/`,
   name: site.siteName,
   inLanguage: 'de-DE',
+  sameAs: site.socialProfiles,
   publisher: { '@id': organizationId },
 });
 
@@ -241,6 +243,29 @@ const replaceLink = (html, rel, href) => {
   return replaceOrInsert(html, regex, `<link rel="${rel}" href="${escapeHtml(href)}" />`);
 };
 
+const replaceManagedLinks = (html, rel, hrefs, dataKey) => {
+  const managedRegex = new RegExp(`\\s*<link\\s+[^>]*data-seo="${dataKey}"[^>]*>`, 'gi');
+  const cleanedHtml = html.replace(managedRegex, '');
+  const markup = hrefs
+    .map(href => `<link rel="${rel}" href="${escapeHtml(href)}" data-seo="${dataKey}" />`)
+    .join('\n    ');
+
+  return cleanedHtml.replace('</head>', `    ${markup}\n  </head>`);
+};
+
+const replaceManagedMetaGroup = (html, attribute, key, contents, dataKey) => {
+  const managedRegex = new RegExp(`\\s*<meta\\s+[^>]*data-seo="${dataKey}"[^>]*>`, 'gi');
+  const cleanedHtml = html.replace(managedRegex, '');
+  const markup = contents
+    .map(
+      content =>
+        `<meta ${attribute}="${key}" content="${escapeHtml(content)}" data-seo="${dataKey}" />`
+    )
+    .join('\n    ');
+
+  return cleanedHtml.replace('</head>', `    ${markup}\n  </head>`);
+};
+
 const replaceTitle = (html, title) => html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapeHtml(title)}</title>`);
 
 const replaceStructuredData = (html, payload) =>
@@ -274,6 +299,7 @@ const applySeoToHtml = (template, route) => {
   html = replaceMeta(html, 'property', 'og:image:width', '1200');
   html = replaceMeta(html, 'property', 'og:image:height', '630');
   html = replaceMeta(html, 'property', 'og:image:alt', site.defaultImageAlt);
+  html = replaceManagedMetaGroup(html, 'property', 'og:see_also', site.socialProfiles, 'social-og-see-also');
 
   html = replaceMeta(html, 'name', 'twitter:card', 'summary_large_image');
   html = replaceMeta(html, 'name', 'twitter:title', route.title);
@@ -281,6 +307,7 @@ const applySeoToHtml = (template, route) => {
   html = replaceMeta(html, 'name', 'twitter:image', site.defaultImage);
   html = replaceMeta(html, 'name', 'twitter:image:alt', site.defaultImageAlt);
   html = replaceMeta(html, 'name', 'twitter:url', route.absoluteUrl);
+  html = replaceManagedLinks(html, 'me', site.socialProfiles, 'social-rel-me');
 
   return replaceStructuredData(html, buildStructuredData(route));
 };

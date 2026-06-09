@@ -1,4 +1,13 @@
-import { FaEnvelope, FaExternalLinkAlt, FaGithub, FaPaperPlane, FaPhone } from 'react-icons/fa';
+import {
+  FaEnvelope,
+  FaExternalLinkAlt,
+  FaFacebookF,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaPaperPlane,
+  FaPhone,
+} from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { contactInfo } from '../../../data/contactInfo';
 import { portfolioMedia } from '../../data/portfolioMedia';
@@ -20,6 +29,12 @@ import {
   SecondaryButton,
 } from './ContactPortal.styled';
 
+const socialIcons = {
+  linkedin: FaLinkedinIn,
+  facebook: FaFacebookF,
+  instagram: FaInstagram,
+};
+
 // ContactPortal рендерить final portal CTA з контактами зі спільного contactInfo.
 export const ContactPortal: React.FC = () => {
   // t перекладає CTA та labels контактних каналів.
@@ -31,6 +46,15 @@ export const ContactPortal: React.FC = () => {
     { id: 'phone', label: t('portfolio.contact.channels.phone'), value: contactInfo.phone, href: contactInfo.phoneHref, icon: FaPhone, external: false },
     // { id: 'location', label: t('portfolio.contact.channels.location'), value: contactInfo.addressLine, href: contactInfo.mapsUrl, icon: FaMapMarkerAlt, external: true },
     { id: 'website', label: t('portfolio.contact.channels.website'), value: contactInfo.websiteLabel, href: contactInfo.websiteUrl, icon: FaExternalLinkAlt, external: true },
+    ...contactInfo.socialLinks.map(link => ({
+      id: link.id,
+      label: link.label,
+      value: 'VS Web Studio',
+      href: link.url,
+      icon: socialIcons[link.id],
+      external: true,
+      rel: 'me noopener noreferrer',
+    })),
   ] as const;
 
   return (
@@ -79,7 +103,7 @@ export const ContactPortal: React.FC = () => {
               key={channel.id}
               href={channel.href}
               target={channel.external ? '_blank' : undefined}
-              rel={channel.external ? 'noopener noreferrer' : undefined}
+              rel={'rel' in channel ? channel.rel : channel.external ? 'noopener noreferrer' : undefined}
               variants={revealCard}
             >
               <Icon aria-hidden='true' />

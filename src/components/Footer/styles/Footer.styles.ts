@@ -55,6 +55,13 @@ export const FooterLinks = styled.div`
   gap: 10px 14px;
 `;
 
+export const FooterSocialLinks = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+`;
+
 const interactiveLink = `
   color: rgba(255, 255, 255, 0.84);
   text-decoration: none;
@@ -69,6 +76,18 @@ const interactiveLink = `
 
 export const FooterLink = styled(NavLink)`
   ${interactiveLink}
+`;
+
+export const FooterSocialLink = styled.a`
+  ${interactiveLink}
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
 `;
 
 export const FooterCookieButton = styled.button`

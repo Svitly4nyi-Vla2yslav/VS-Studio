@@ -45,6 +45,7 @@ interface SeoConfig {
     defaultDescription: string;
     defaultImage: string;
     defaultImageAlt: string;
+    socialProfiles: string[];
     locale: string;
     language: string;
     themeColor: string;
@@ -175,6 +176,7 @@ const createOrganizationNode = () => ({
   url: `${config.site.baseUrl}/`,
   logo: `${config.site.baseUrl}/android-chrome-512x512.png`,
   image: config.site.defaultImage,
+  sameAs: config.site.socialProfiles,
   email: config.site.email,
   telephone: config.site.telephone,
   priceRange: config.site.priceRange,
@@ -217,6 +219,7 @@ const createWebsiteNode = () => ({
   url: `${config.site.baseUrl}/`,
   name: config.site.siteName,
   inLanguage: 'de-DE',
+  sameAs: config.site.socialProfiles,
   hasPart: importantRoutes.map(route => ({
     '@id': `${buildAbsoluteUrl(route.path)}#navigation`,
   })),

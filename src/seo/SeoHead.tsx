@@ -26,6 +26,39 @@ const ensureLink = (rel: string, href: string) => {
   element.setAttribute('href', href);
 };
 
+const ensureSeoLinks = (rel: string, hrefs: string[], key: string) => {
+  document.head.querySelectorAll<HTMLLinkElement>(`link[data-seo="${key}"]`).forEach(element => {
+    element.remove();
+  });
+
+  hrefs.forEach(href => {
+    const element = document.createElement('link');
+    element.setAttribute('rel', rel);
+    element.setAttribute('href', href);
+    element.setAttribute('data-seo', key);
+    document.head.appendChild(element);
+  });
+};
+
+const ensureSeoMetaGroup = (
+  attribute: 'name' | 'property',
+  metaKey: string,
+  contents: string[],
+  dataKey: string
+) => {
+  document.head.querySelectorAll<HTMLMetaElement>(`meta[data-seo="${dataKey}"]`).forEach(element => {
+    element.remove();
+  });
+
+  contents.forEach(content => {
+    const element = document.createElement('meta');
+    element.setAttribute(attribute, metaKey);
+    element.setAttribute('content', content);
+    element.setAttribute('data-seo', dataKey);
+    document.head.appendChild(element);
+  });
+};
+
 const ensureStructuredData = (payload: Record<string, unknown>) => {
   let element = document.head.querySelector<HTMLScriptElement>('script[data-seo="structured-data"]');
 
@@ -73,6 +106,7 @@ const SeoHead: React.FC = () => {
     ensureMeta('property', 'og:image:width', '1200');
     ensureMeta('property', 'og:image:height', '630');
     ensureMeta('property', 'og:image:alt', siteSeo.defaultImageAlt);
+    ensureSeoMetaGroup('property', 'og:see_also', siteSeo.socialProfiles, 'social-og-see-also');
 
     ensureMeta('name', 'twitter:card', 'summary_large_image');
     ensureMeta('name', 'twitter:title', route.title);
@@ -87,6 +121,7 @@ const SeoHead: React.FC = () => {
       removeCanonical();
     }
 
+    ensureSeoLinks('me', siteSeo.socialProfiles, 'social-rel-me');
     ensureStructuredData(structuredData);
   }, [location.pathname]);
 

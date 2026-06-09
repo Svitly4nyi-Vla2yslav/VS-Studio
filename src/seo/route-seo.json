@@ -6,6 +6,11 @@
     "defaultDescription": "VS Web Studio entwickelt schnelle Websites, Landingpages und Lead-Systeme für lokale Unternehmen in Deutschland. SEO, Performance, Tracking und Conversion aus einer Hand.",
     "defaultImage": "https://vs-web-studio.de/og.png",
     "defaultImageAlt": "VS Web Studio - Websites, SEO und Lead-Systeme",
+    "socialProfiles": [
+      "https://www.linkedin.com/company/vs-web-studio/",
+      "https://www.facebook.com/people/VS-Web-Studio/61568000211668/?locale=uk_UA",
+      "https://www.instagram.com/vs.studio.anfrage/"
+    ],
     "locale": "de_DE",
     "language": "de",
     "themeColor": "#0B0B0F",
