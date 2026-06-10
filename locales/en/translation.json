@@ -253,11 +253,22 @@
         "hosting": "Hosting",
         "domain": "domain",
         "pages": "pages",
-        "seo": "SEO"
+        "seo": "SEO",
+        "service": "Service",
+        "songDuration": "Song duration",
+        "songLanguage": "Language",
+        "musicStyle": "Music style",
+        "vocals": "Vocals",
+        "fileFormat": "File format",
+        "socialVersion": "Social media version",
+        "extraRevision": "Additional revision",
+        "expressDelivery": "Express delivery"
       },
       "options": {
         "common": {
-          "other": "Others"
+          "other": "Other",
+          "yes": "Yes",
+          "no": "No"
         },
         "goal": {
           "leads": "Leads",
@@ -307,6 +318,39 @@
         "seo": {
           "base": "SEO Base",
           "extended": "SEO Extended"
+        },
+        "service": {
+          "website": "Website & lead system",
+          "aiMusic": "AI Songs & Jingles"
+        },
+        "aiMusic": {
+          "duration": {
+            "15": "15 sec",
+            "30": "30 sec",
+            "45": "45 sec",
+            "custom": "Custom (+15 sec)"
+          },
+          "language": {
+            "en": "English",
+            "de": "German",
+            "en_de": "English + German"
+          },
+          "style": {
+            "pop": "Pop",
+            "edm": "EDM",
+            "hiphop": "Hip-Hop",
+            "corporate": "Corporate",
+            "funny": "Funny",
+            "elegant": "Elegant"
+          },
+          "vocals": {
+            "ai_vocal": "AI vocal",
+            "instrumental": "Instrumental only"
+          },
+          "fileFormat": {
+            "mp3": "MP3",
+            "mp3_wav": "MP3 + WAV"
+          }
         }
       },
       "reset": "Reset everything",
@@ -348,6 +392,39 @@
         "launch_price": "Starting price: {{value}}",
         "support_monthly": "Support / Month: {{value}}",
         "support_yearly": "Support / year (-30%): {{value}}"
+      },
+      "aiMusic": {
+        "totalPrice": "Estimated total:",
+        "pack": {
+          "basic": "Short AI Jingle",
+          "standard": "Business Promo Song",
+          "premium": "Full Brand Music Pack"
+        },
+        "bullets": {
+          "service": "Custom AI-generated song, jingle or brand music",
+          "duration": "Duration: {{value}}",
+          "language": "Language: {{value}}",
+          "style": "Music style: {{value}}",
+          "vocals": "Vocals: {{value}}",
+          "format": "File format: {{value}}",
+          "social_true": "Social media cut included",
+          "social_false": "No separate social media cut",
+          "express_true": "Express delivery selected",
+          "express_false": "Standard delivery"
+        },
+        "brief": {
+          "title": "Brief from the AI Songs & Jingles configurator:",
+          "package": "Package: {{value}}",
+          "duration": "Duration: {{value}}",
+          "language": "Language: {{value}}",
+          "style": "Music style: {{value}}",
+          "vocals": "Vocals: {{value}}",
+          "file_format": "File format: {{value}}",
+          "social": "Social media version: {{value}}",
+          "extra_revision": "Additional revision: {{value}}",
+          "express": "Express delivery: {{value}}",
+          "total": "Estimated total: {{value}}"
+        }
       }
     },
     "trust": {
@@ -598,6 +675,61 @@
       "title": "Start with a free initial consultation.",
       "subtitle": "In 30 minutes we show the right package and build plan for your lead system.",
       "cta": "Free initial consultation"
+    },
+    "aiMusic": {
+      "title": "AI Songs & Jingles",
+      "subtitle": "Custom AI-generated songs, commercial jingles and brand music for businesses, social media and advertising.",
+      "packageLabel": "AI music package",
+      "packages": {
+        "basic": {
+          "name": "Basic - Short AI Jingle",
+          "desc": "A compact hook for ads, intros, local campaigns or social media.",
+          "price": "EUR 35",
+          "range": "up to 15 seconds",
+          "includes": [
+            "Simple AI-generated melody",
+            "Simple lyrics",
+            "AI vocal",
+            "MP3 delivery",
+            "1 style",
+            "1 revision"
+          ],
+          "outcome": "A short branded jingle ready for quick promotional use."
+        },
+        "standard": {
+          "name": "Standard - Business Promo Song",
+          "desc": "A custom promo song for businesses, creators and campaigns.",
+          "price": "EUR 79",
+          "range": "up to 30 seconds",
+          "includes": [
+            "Custom lyrics",
+            "AI-generated music",
+            "AI vocal",
+            "English or German",
+            "MP3 + WAV",
+            "2 style directions",
+            "2 revisions"
+          ],
+          "outcome": "A polished business song for ads, reels and videos."
+        },
+        "premium": {
+          "name": "Premium - Full Brand Music Pack",
+          "desc": "A fuller brand music pack with versions for broader campaign use.",
+          "price": "EUR 149",
+          "range": "up to 45 seconds",
+          "includes": [
+            "Custom lyrics",
+            "AI-generated music",
+            "AI vocal",
+            "Intro/outro version",
+            "Social media version",
+            "MP3 + WAV",
+            "3 style directions",
+            "3 revisions"
+          ],
+          "outcome": "A flexible brand sound pack for ads, social media and content."
+        }
+      }
     }
   },
   "references": {

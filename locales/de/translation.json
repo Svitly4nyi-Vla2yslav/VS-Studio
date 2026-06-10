@@ -253,11 +253,22 @@
         "hosting": "Hosting",
         "domain": "Domain",
         "pages": "Seiten",
-        "seo": "SEO"
+        "seo": "SEO",
+        "service": "Service",
+        "songDuration": "Songdauer",
+        "songLanguage": "Sprache",
+        "musicStyle": "Musikstil",
+        "vocals": "Vocals",
+        "fileFormat": "Dateiformat",
+        "socialVersion": "Social-Media-Version",
+        "extraRevision": "Zusatzrevision",
+        "expressDelivery": "Express-Lieferung"
       },
       "options": {
         "common": {
-          "other": "Andere"
+          "other": "Andere",
+          "yes": "Ja",
+          "no": "Nein"
         },
         "goal": {
           "leads": "Leads",
@@ -307,6 +318,39 @@
         "seo": {
           "base": "SEO Base",
           "extended": "SEO Extended"
+        },
+        "service": {
+          "website": "Website & Lead-System",
+          "aiMusic": "KI-Songs & Jingles"
+        },
+        "aiMusic": {
+          "duration": {
+            "15": "15 Sek.",
+            "30": "30 Sek.",
+            "45": "45 Sek.",
+            "custom": "Custom (+15 Sek.)"
+          },
+          "language": {
+            "en": "Englisch",
+            "de": "Deutsch",
+            "en_de": "Englisch + Deutsch"
+          },
+          "style": {
+            "pop": "Pop",
+            "edm": "EDM",
+            "hiphop": "Hip-Hop",
+            "corporate": "Corporate",
+            "funny": "Funny",
+            "elegant": "Elegant"
+          },
+          "vocals": {
+            "ai_vocal": "KI-Vocal",
+            "instrumental": "Nur instrumental"
+          },
+          "fileFormat": {
+            "mp3": "MP3",
+            "mp3_wav": "MP3 + WAV"
+          }
         }
       },
       "reset": "Alles zurücksetzen",
@@ -348,6 +392,39 @@
         "launch_price": "Startpreis: {{value}}",
         "support_monthly": "Support / Monat: {{value}}",
         "support_yearly": "Support / Jahr (-30%): {{value}}"
+      },
+      "aiMusic": {
+        "totalPrice": "Gesch\u00e4tzter Gesamtpreis:",
+        "pack": {
+          "basic": "Short AI Jingle",
+          "standard": "Business Promo Song",
+          "premium": "Full Brand Music Pack"
+        },
+        "bullets": {
+          "service": "Individueller KI-generierter Song, Jingle oder Markenmusik",
+          "duration": "Dauer: {{value}}",
+          "language": "Sprache: {{value}}",
+          "style": "Musikstil: {{value}}",
+          "vocals": "Vocals: {{value}}",
+          "format": "Dateiformat: {{value}}",
+          "social_true": "Social-Media-Cut enthalten",
+          "social_false": "Kein separater Social-Media-Cut",
+          "express_true": "Express-Lieferung ausgew\u00e4hlt",
+          "express_false": "Standard-Lieferung"
+        },
+        "brief": {
+          "title": "Brief aus dem KI-Songs-&-Jingles-Konfigurator:",
+          "package": "Paket: {{value}}",
+          "duration": "Dauer: {{value}}",
+          "language": "Sprache: {{value}}",
+          "style": "Musikstil: {{value}}",
+          "vocals": "Vocals: {{value}}",
+          "file_format": "Dateiformat: {{value}}",
+          "social": "Social-Media-Version: {{value}}",
+          "extra_revision": "Zusatzrevision: {{value}}",
+          "express": "Express-Lieferung: {{value}}",
+          "total": "Gesch\u00e4tzter Gesamtpreis: {{value}}"
+        }
       }
     },
     "trust": {
@@ -598,6 +675,61 @@
       "title": "Starten Sie mit einem kostenlosen Erstgespräch.",
       "subtitle": "In 30 minutes we show the right package and build plan for your lead system.",
       "cta": "Kostenloses Erstgespräch"
+    },
+    "aiMusic": {
+      "title": "KI-Songs & Jingles",
+      "subtitle": "Individuelle KI-generierte Songs, Werbejingles und Markenmusik f\u00fcr Unternehmen, Social Media und Werbung.",
+      "packageLabel": "KI-Musik-Paket",
+      "packages": {
+        "basic": {
+          "name": "Basic - Short AI Jingle",
+          "desc": "Ein kompakter Hook f\u00fcr Ads, Intros, lokale Kampagnen oder Social Media.",
+          "price": "EUR 35",
+          "range": "bis zu 15 Sekunden",
+          "includes": [
+            "Einfache KI-generierte Melodie",
+            "Einfache Lyrics",
+            "KI-Vocal",
+            "MP3-Lieferung",
+            "1 Stil",
+            "1 Revision"
+          ],
+          "outcome": "Ein kurzer Markenjingle f\u00fcr schnelle Promotion."
+        },
+        "standard": {
+          "name": "Standard - Business Promo Song",
+          "desc": "Ein individueller Promo-Song f\u00fcr Unternehmen, Creator und Kampagnen.",
+          "price": "EUR 79",
+          "range": "bis zu 30 Sekunden",
+          "includes": [
+            "Individuelle Lyrics",
+            "KI-generierte Musik",
+            "KI-Vocal",
+            "Englisch oder Deutsch",
+            "MP3 + WAV",
+            "2 Stilrichtungen",
+            "2 Revisionen"
+          ],
+          "outcome": "Ein sauberer Business-Song f\u00fcr Ads, Reels und Videos."
+        },
+        "premium": {
+          "name": "Premium - Full Brand Music Pack",
+          "desc": "Ein umfangreicheres Markenmusik-Paket mit Versionen f\u00fcr Kampagnen.",
+          "price": "EUR 149",
+          "range": "bis zu 45 Sekunden",
+          "includes": [
+            "Individuelle Lyrics",
+            "KI-generierte Musik",
+            "KI-Vocal",
+            "Intro-/Outro-Version",
+            "Social-Media-Version",
+            "MP3 + WAV",
+            "3 Stilrichtungen",
+            "3 Revisionen"
+          ],
+          "outcome": "Ein flexibles Brand-Sound-Paket f\u00fcr Ads, Social Media und Content."
+        }
+      }
     }
   },
   "references": {
