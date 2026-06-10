@@ -17,6 +17,7 @@ export type AssistantServiceId =
   | 'redesign'
   | 'ads'
   | 'ai-chatbot'
+  | 'ai-music'
   | 'tracking'
   | 'support';
 

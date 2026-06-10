@@ -10,6 +10,7 @@ import {
   FaCode,
   FaDatabase,
   FaLayerGroup,
+  FaMusic,
   FaRobot,
 } from 'react-icons/fa';
 import LiveMetric from '../../components/Motion/LiveMetric';
@@ -764,7 +765,7 @@ const CompactMuted = styled(Muted)`
   margin: 8px 0 18px;
 `;
 
-type SystemKey = 'website' | 'ai' | 'ads' | 'analytics';
+type SystemKey = 'website' | 'ai' | 'aiMusic' | 'ads' | 'analytics';
 type LangKey = 'de' | 'uk' | 'tr' | 'ar' | 'pl' | 'ku' | 'fa' | 'it' | 'es' | 'el' | 'ro' | 'bg';
 
 type SystemData = {
@@ -804,6 +805,15 @@ const systemsDe: Record<SystemKey, SystemData> = {
     kpis: ['First Response Time', 'Qualified Lead Share', 'Sales Team Throughput'],
     details: ['Branchenspezifische Prompt-Pfade', 'No-Show Reminders', 'Priorisierung nach Score'],
   },
+  aiMusic: {
+    title: 'AI Songs & Jingles',
+    icon: <FaMusic />,
+    problem: 'Marken, Kampagnen und lokale Angebote bleiben online oft austauschbar und werden schnell uebersehen.',
+    system: 'KI-generierte Songs, Werbejingles und Brand Music mit Text, AI Vocal, Social-Media-Versionen und kommerziellem Sound.',
+    outcome: 'Das Angebot klingt einpraegsamer, wirkt eigenstaendiger und laesst sich in Reels, Ads, YouTube oder lokalen Kampagnen einsetzen.',
+    kpis: ['Recall Hook', 'Social Ad Fit', 'Brand Sound Consistency'],
+    details: ['Englische oder deutsche Lyrics', 'MP3 + WAV Export', 'Versionen fuer TikTok, Instagram und Ads'],
+  },
   ads: {
     title: 'Paid Acquisition',
     icon: <FaBullhorn />,
@@ -842,6 +852,15 @@ const systemsUk: Record<SystemKey, SystemData> = {
     outcome: 'Команда в першу чергу працює з лідами, які ближчі до покупки.',
     kpis: ['First Response Time', 'Qualified Lead Share', 'Sales Team Throughput'],
     details: ['Промпт-потоки під нішу', 'No-show нагадування', 'Пріоритезація за scoring'],
+  },
+  aiMusic: {
+    title: 'AI Songs & Jingles',
+    icon: <FaMusic />,
+    problem: 'Brands, campaigns and local offers are often hard to remember in social feeds.',
+    system: 'AI-generated songs, commercial jingles and brand music with lyrics, AI vocal, social cuts and commercial sound.',
+    outcome: 'The offer becomes more memorable and can be used in Reels, ads, YouTube and local campaigns.',
+    kpis: ['Recall Hook', 'Social Ad Fit', 'Brand Sound Consistency'],
+    details: ['English or German lyrics', 'MP3 + WAV export', 'Versions for TikTok, Instagram and ads'],
   },
   ads: {
     title: 'Paid Acquisition',
@@ -1010,6 +1029,7 @@ const localized = servicesTranslations as unknown as Record<Exclude<LangKey, 'de
 const mergeSystems = (texts: Record<SystemKey, SystemTextData>): Record<SystemKey, SystemData> => ({
   website: { ...systemsDe.website, ...texts.website },
   ai: { ...systemsDe.ai, ...texts.ai },
+  aiMusic: { ...systemsDe.aiMusic, ...texts.aiMusic },
   ads: { ...systemsDe.ads, ...texts.ads },
   analytics: { ...systemsDe.analytics, ...texts.analytics },
 });
@@ -1338,6 +1358,3 @@ const ServicesPage: React.FC = () => {
 };
 
 export default ServicesPage;
-
-
-

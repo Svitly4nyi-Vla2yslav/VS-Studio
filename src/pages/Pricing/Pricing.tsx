@@ -12,6 +12,7 @@ import {
   FaTools,
   FaUsers,
 } from 'react-icons/fa';
+import { AI_MUSIC_PACKAGES } from '../../data/pricingCatalog';
 import { PageContainer, PageRoot, PrimaryButtonLink, Section } from '../shared/styles/PagePrimitives.styles';
 
 const reveal = { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0 } };
@@ -570,6 +571,7 @@ const PricingPage: React.FC = () => {
   // Цей список визначає, які пакети показувати і в якому порядку.
   // Самі назви, ціни та списки features нижче беруться через i18n-ключі.
   const packageKeys = ['starter', 'business', 'pro'] as const;
+  const aiMusicPackageKeys = ['basic', 'standard', 'premium'] as const;
 
   // Цей масив описує всі картки пакетів. Метод map() збирає дані для кожної
   // картки з перекладів, щоб не дублювати JSX окремо для Starter, Business і Pro.
@@ -589,6 +591,19 @@ const PricingPage: React.FC = () => {
     subscriptionPrice: t(`pricing.packages.${key}.subscription.${billingPeriod}.price`),
     subscriptionMeta: t(`pricing.packages.${key}.subscription.${billingPeriod}.meta`),
     subscriptionItems: t(`pricing.packages.${key}.subscription.includes`, { returnObjects: true }) as string[],
+  }));
+
+  const aiMusicPackages = aiMusicPackageKeys.map(key => ({
+    key,
+    recommended: key === 'standard',
+    name: t(`pricing.aiMusic.packages.${key}.name`),
+    desc: t(`pricing.aiMusic.packages.${key}.desc`),
+    price: t(`pricing.aiMusic.packages.${key}.price`, {
+      defaultValue: `EUR ${AI_MUSIC_PACKAGES[key].price}`,
+    }),
+    range: t(`pricing.aiMusic.packages.${key}.range`),
+    includes: t(`pricing.aiMusic.packages.${key}.includes`, { returnObjects: true }) as string[],
+    outcome: t(`pricing.aiMusic.packages.${key}.outcome`),
   }));
 
   return (
@@ -732,6 +747,35 @@ const PricingPage: React.FC = () => {
                       ))}
                     </FeatureList>
                   </SubscriptionBox>
+                  <Outcome><strong>{t('pricing.packages.outcomeLabel')}</strong> {pkg.outcome}</Outcome>
+                </PricingCard>
+              ))}
+            </PricingGrid>
+          </Section>
+
+          <Section>
+            <h2>{t('pricing.aiMusic.title')}</h2>
+            <SectionSubtitle>{t('pricing.aiMusic.subtitle')}</SectionSubtitle>
+            <PricingGrid>
+              {aiMusicPackages.map(pkg => (
+                <PricingCard
+                  key={pkg.key}
+                  $recommended={pkg.recommended}
+                  whileHover={{ y: pkg.recommended ? -6 : -4 }}
+                  transition={{ duration: 0.25 }}
+                >
+                  {pkg.recommended ? <Badge>{t('pricing.packages.badge')}</Badge> : null}
+                  <h3>{pkg.name}</h3>
+                  <p>{pkg.desc}</p>
+                  <PriceEyebrow>{t('pricing.aiMusic.packageLabel')}</PriceEyebrow>
+                  <Price>{pkg.price}</Price>
+                  <PriceMeta>{pkg.range}</PriceMeta>
+                  <CardGroupTitle>{t('pricing.packages.coreTitle')}</CardGroupTitle>
+                  <FeatureList>
+                    {pkg.includes.map(item => (
+                      <li key={item}><FaCheck /> {item}</li>
+                    ))}
+                  </FeatureList>
                   <Outcome><strong>{t('pricing.packages.outcomeLabel')}</strong> {pkg.outcome}</Outcome>
                 </PricingCard>
               ))}

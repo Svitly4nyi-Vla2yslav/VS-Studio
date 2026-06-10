@@ -1,4 +1,6 @@
 export type WebsitePricingPackageKey = 'starter' | 'business' | 'pro';
+export type AiMusicPackageKey = 'basic' | 'standard' | 'premium';
+export type AiMusicDurationKey = '15' | '30' | '45' | 'custom';
 
 export const WEBSITE_PRICING_PACKAGES = {
   starter: {
@@ -27,6 +29,41 @@ export const WEBSITE_PRICING_PACKAGES = {
   },
 } as const;
 
+export const AI_MUSIC_PACKAGES = {
+  basic: {
+    name: 'Short AI Jingle',
+    price: 35,
+    durationSeconds: 15,
+    revisions: 1,
+  },
+  standard: {
+    name: 'Business Promo Song',
+    price: 79,
+    durationSeconds: 30,
+    revisions: 2,
+  },
+  premium: {
+    name: 'Full Brand Music Pack',
+    price: 149,
+    durationSeconds: 45,
+    revisions: 3,
+  },
+} as const;
+
+export const AI_MUSIC_PRICING = {
+  baseByDuration: {
+    '15': AI_MUSIC_PACKAGES.basic.price,
+    '30': AI_MUSIC_PACKAGES.standard.price,
+    '45': AI_MUSIC_PACKAGES.premium.price,
+    custom: AI_MUSIC_PACKAGES.premium.price,
+  },
+  additional15Seconds: 30,
+  extraRevision: 15,
+  additionalLanguageVersion: 35,
+  socialMediaCut: 25,
+  expressDelivery: 30,
+} as const;
+
 export const CONFIGURATOR_PRICING = {
   launchMin: 600,
   launchMax: 900,
@@ -48,6 +85,7 @@ export const getWebsitePricingReference = (language: 'de' | 'en' | 'uk') => {
   const starter = WEBSITE_PRICING_PACKAGES.starter;
   const business = WEBSITE_PRICING_PACKAGES.business;
   const pro = WEBSITE_PRICING_PACKAGES.pro;
+  const music = AI_MUSIC_PACKAGES;
 
   if (language === 'uk') {
     return [
@@ -62,6 +100,7 @@ export const getWebsitePricingReference = (language: 'de' | 'en' | 'uk') => {
       `Current Pricing page packages: Starter from EUR ${starter.priceFrom} (usually EUR ${starter.rangeFrom}-${starter.rangeTo}), Business from EUR ${business.priceFrom} (usually EUR ${business.rangeFrom}-${business.rangeTo}), Pro from EUR ${pro.priceFrom} (usually EUR ${pro.rangeFrom}-${pro.rangeTo}).`,
       `After selecting project parameters, the Configurator shows a launch range of EUR ${CONFIGURATOR_PRICING.launchMin}-${CONFIGURATOR_PRICING.launchMax}.`,
       `Support: Starter EUR ${starter.supportMonthly}/month or EUR ${starter.supportYearly}/year, Business EUR ${business.supportMonthly}/month or EUR ${business.supportYearly}/year, Pro EUR ${pro.supportMonthly}/month or EUR ${pro.supportYearly}/year.`,
+      `AI Songs & Jingles packages: Short AI Jingle EUR ${music.basic.price}, Business Promo Song EUR ${music.standard.price}, Full Brand Music Pack EUR ${music.premium.price}. Extras: additional 15 seconds EUR ${AI_MUSIC_PRICING.additional15Seconds}, extra revision EUR ${AI_MUSIC_PRICING.extraRevision}, additional language version EUR ${AI_MUSIC_PRICING.additionalLanguageVersion}, social media cut EUR ${AI_MUSIC_PRICING.socialMediaCut}, express delivery EUR ${AI_MUSIC_PRICING.expressDelivery}.`,
     ].join(' ');
   }
 
@@ -69,5 +108,6 @@ export const getWebsitePricingReference = (language: 'de' | 'en' | 'uk') => {
     `Aktuelle Preise auf der Pricing-Seite: Starter ab EUR ${starter.priceFrom} (meist EUR ${starter.rangeFrom}-${starter.rangeTo}), Business ab EUR ${business.priceFrom} (meist EUR ${business.rangeFrom}-${business.rangeTo}), Pro ab EUR ${pro.priceFrom} (meist EUR ${pro.rangeFrom}-${pro.rangeTo}).`,
     `Nach Auswahl der Projektparameter zeigt der Configurator einen Startbereich von EUR ${CONFIGURATOR_PRICING.launchMin}-${CONFIGURATOR_PRICING.launchMax}.`,
     `Support: Starter EUR ${starter.supportMonthly}/Monat oder EUR ${starter.supportYearly}/Jahr, Business EUR ${business.supportMonthly}/Monat oder EUR ${business.supportYearly}/Jahr, Pro EUR ${pro.supportMonthly}/Monat oder EUR ${pro.supportYearly}/Jahr.`,
+    `KI-Songs & Jingles Pakete: Short AI Jingle EUR ${music.basic.price}, Business Promo Song EUR ${music.standard.price}, Full Brand Music Pack EUR ${music.premium.price}. Extras: weitere 15 Sekunden EUR ${AI_MUSIC_PRICING.additional15Seconds}, Extra-Revision EUR ${AI_MUSIC_PRICING.extraRevision}, zusaetzliche Sprachversion EUR ${AI_MUSIC_PRICING.additionalLanguageVersion}, Social-Media-Cut EUR ${AI_MUSIC_PRICING.socialMediaCut}, Express-Lieferung EUR ${AI_MUSIC_PRICING.expressDelivery}.`,
   ].join(' ');
 };

@@ -1,5 +1,5 @@
 import type { AssistantService } from '../../features/ai-assistant/types';
-import { WEBSITE_PRICING_PACKAGES, getPackageRange } from '../pricingCatalog';
+import { AI_MUSIC_PACKAGES, WEBSITE_PRICING_PACKAGES, getPackageRange } from '../pricingCatalog';
 
 export const servicesDe: AssistantService[] = [
   {
@@ -65,6 +65,40 @@ export const servicesDe: AssistantService[] = [
     estimateHint:
       `Der Rahmen hängt davon ab, wie viel Wissensbasis, Lead-Logik, Mehrsprachigkeit und Übergabe eingebaut werden soll. Auf der Pricing-Seite ist KI-Lead-Qualifizierung im Pro-Paket ab EUR ${WEBSITE_PRICING_PACKAGES.pro.priceFrom} enthalten.`,
     keywords: ['ai', 'ki', 'chatbot', 'assistant', 'assistent', 'automatisierung'],
+  },
+  {
+    id: 'ai-music',
+    title: 'KI-Songs & Jingles',
+    shortDescription:
+      'Individuelle KI-generierte Songs, Werbejingles und Markenmusik fuer Unternehmen, Social Media und Werbung.',
+    businessValue:
+      'Sinnvoll fuer kleine Unternehmen, Startups, Creator und lokale Anbieter, die in Ads, Reels, Videos oder Kampagnen einpraegsamer klingen wollen.',
+    pricingFrom: `ab EUR ${AI_MUSIC_PACKAGES.basic.price}`,
+    pricingNumericFrom: AI_MUSIC_PACKAGES.basic.price,
+    pricingModel: 'one_time',
+    estimateRange: {
+      from: AI_MUSIC_PACKAGES.basic.price,
+      to: AI_MUSIC_PACKAGES.premium.price,
+    },
+    timeline: 'meist wenige Werktage je nach Stil und Revisionen',
+    estimateHint:
+      `Pakete: Short AI Jingle EUR ${AI_MUSIC_PACKAGES.basic.price}, Business Promo Song EUR ${AI_MUSIC_PACKAGES.standard.price}, Full Brand Music Pack EUR ${AI_MUSIC_PACKAGES.premium.price}. Extras gibt es fuer laengere Dauer, Extra-Revisionen, Sprachversionen, Social Cuts und Express-Lieferung.`,
+    keywords: [
+      'ki musik',
+      'ai musik',
+      'ki song',
+      'song',
+      'songs',
+      'jingle',
+      'jingles',
+      'werbejingle',
+      'markenmusik',
+      'brand music',
+      'brand anthem',
+      'promo song',
+      'tiktok musik',
+      'instagram musik',
+    ],
   },
   {
     id: 'tracking',

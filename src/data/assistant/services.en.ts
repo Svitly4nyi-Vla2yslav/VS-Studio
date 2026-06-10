@@ -1,5 +1,5 @@
 import type { AssistantService } from '../../features/ai-assistant/types';
-import { WEBSITE_PRICING_PACKAGES, getPackageRange } from '../pricingCatalog';
+import { AI_MUSIC_PACKAGES, WEBSITE_PRICING_PACKAGES, getPackageRange } from '../pricingCatalog';
 
 export const servicesEn: AssistantService[] = [
   {
@@ -65,6 +65,38 @@ export const servicesEn: AssistantService[] = [
     estimateHint:
       `The scope depends on the amount of knowledge, lead logic, multilingual support, and team handoff required. On the Pricing page, AI lead qualification is part of Pro from EUR ${WEBSITE_PRICING_PACKAGES.pro.priceFrom}.`,
     keywords: ['ai', 'chatbot', 'assistant', 'automation', 'lead qualification'],
+  },
+  {
+    id: 'ai-music',
+    title: 'AI Songs & Jingles',
+    shortDescription:
+      'Custom AI-generated songs, commercial jingles and brand music for businesses, social media and advertising.',
+    businessValue:
+      'Useful for small businesses, startups, creators and local companies that want a memorable sound for ads, reels, videos or brand campaigns.',
+    pricingFrom: `from EUR ${AI_MUSIC_PACKAGES.basic.price}`,
+    pricingNumericFrom: AI_MUSIC_PACKAGES.basic.price,
+    pricingModel: 'one_time',
+    estimateRange: {
+      from: AI_MUSIC_PACKAGES.basic.price,
+      to: AI_MUSIC_PACKAGES.premium.price,
+    },
+    timeline: 'usually a few business days depending on style and revisions',
+    estimateHint:
+      `Packages: Short AI Jingle EUR ${AI_MUSIC_PACKAGES.basic.price}, Business Promo Song EUR ${AI_MUSIC_PACKAGES.standard.price}, Full Brand Music Pack EUR ${AI_MUSIC_PACKAGES.premium.price}. Extras are available for longer duration, extra revisions, language versions, social cuts, and express delivery.`,
+    keywords: [
+      'ai music',
+      'ai song',
+      'song',
+      'songs',
+      'jingle',
+      'jingles',
+      'brand music',
+      'brand anthem',
+      'promo song',
+      'commercial music',
+      'tiktok music',
+      'instagram music',
+    ],
   },
   {
     id: 'tracking',
