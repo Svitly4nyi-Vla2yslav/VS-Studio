@@ -25,45 +25,45 @@ const PortfolioPage = lazy(() => import('./portfolio/pages/PortfolioPage'));
 export const App: React.FC = () => {
   return (
     // <MaintenanceGate>
-      <Routes>
+    <Routes>
+      <Route
+        path='/portfolio'
+        element={
+          <Suspense fallback={null}>
+            <PortfolioPage />
+          </Suspense>
+        }
+      />
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path='services' element={<ServicesPage />} />
+        <Route path='preise' element={<PricingPage />} />
+        <Route path='referenzen' element={<ReferencesPage />} />
+        <Route path='ueber-uns' element={<AboutUs />} />
+        <Route path='kontakt' element={<Contact />} />
+        <Route path='blog' element={<BlogPage />} />
         <Route
-          path='/portfolio'
+          path='ki-assistent'
           element={
             <Suspense fallback={null}>
-              <PortfolioPage />
+              <AIAssistantDemoPage />
             </Suspense>
           }
         />
-        <Route path='/' element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path='services' element={<ServicesPage />} />
-          <Route path='preise' element={<PricingPage />} />
-          <Route path='referenzen' element={<ReferencesPage />} />
-          <Route path='ueber-uns' element={<AboutUs />} />
-          <Route path='kontakt' element={<Contact />} />
-          <Route path='blog' element={<BlogPage />} />
-          <Route
-            path='ki-assistent'
-            element={
-              <Suspense fallback={null}>
-                <AIAssistantDemoPage />
-              </Suspense>
-            }
-          />
 
-          <Route path='handwerker' element={<HandwerkerLanding />} />
-          <Route path='praxis' element={<PraxisLanding />} />
-          <Route path='werkstatt' element={<WerkstattLanding />} />
+        <Route path='handwerker' element={<HandwerkerLanding />} />
+        <Route path='praxis' element={<PraxisLanding />} />
+        <Route path='werkstatt' element={<WerkstattLanding />} />
 
-          <Route path='impressum' element={<Impressum />} />
-          <Route path='datenschutz' element={<Datenschutz />} />
-          <Route path='agb' element={<AGB />} />
-          <Route path='cookies' element={<Cookies />} />
+        <Route path='impressum' element={<Impressum />} />
+        <Route path='datenschutz' element={<Datenschutz />} />
+        <Route path='agb' element={<AGB />} />
+        <Route path='cookies' element={<Cookies />} />
 
-          <Route path='home' element={<Navigate to='/' replace />} />
-          <Route path='*' element={<NotFound />} />
-        </Route>
-      </Routes>
+        <Route path='home' element={<Navigate to='/' replace />} />
+        <Route path='*' element={<NotFound />} />
+      </Route>
+    </Routes>
     // </MaintenanceGate>
   );
 };
