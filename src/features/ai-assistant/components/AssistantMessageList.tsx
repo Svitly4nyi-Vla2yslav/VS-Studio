@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, type ReactNode } from 'react';
 import styled from 'styled-components';
 import { TypingIndicator } from './TypingIndicator';
 import type { AssistantMessage, AssistantPanelCopy } from '../types';
@@ -53,6 +53,32 @@ const Meta = styled.span<{ $role: AssistantMessage['role'] }>`
   font-weight: 700;
 `;
 
+const ImportantText = styled.strong`
+  font-weight: 800;
+`;
+
+const renderMessageContent = (content: string): ReactNode => {
+  const parts: ReactNode[] = [];
+  const strongPattern = /\*\*([^*]+?)\*\*/g;
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = strongPattern.exec(content)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(content.slice(lastIndex, match.index));
+    }
+
+    parts.push(<ImportantText key={`strong-${match.index}`}>{match[1]}</ImportantText>);
+    lastIndex = strongPattern.lastIndex;
+  }
+
+  if (lastIndex < content.length) {
+    parts.push(content.slice(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : content;
+};
+
 interface AssistantMessageListProps {
   messages: AssistantMessage[];
   isTyping: boolean;
@@ -71,7 +97,7 @@ export const AssistantMessageList: React.FC<AssistantMessageListProps> = ({ mess
       {messages.map(message => (
         <Row key={message.id} $role={message.role}>
           <Bubble $role={message.role}>
-            {message.content}
+            {renderMessageContent(message.content)}
             {message.confidence !== undefined ? <Meta $role={message.role}>Confidence {Math.round(message.confidence * 100)}%</Meta> : null}
           </Bubble>
         </Row>
