@@ -11,6 +11,7 @@ export const HomePageShell = styled.div`
     margin: 0 auto;
     padding-left: var(--gutter);
     padding-right: var(--gutter);
+    overflow-x: visible;
   }
 
   .section-divider {

@@ -1,5 +1,6 @@
 import { useCursorSpotlight } from '../../hooks/useCursorSpotlight';
 import { usePrefersReducedMotion } from '../../hooks/usePrefersReducedMotion';
+import AiAssistantWorkflowSection from '../../components/AiAssistantWorkflowSection/AiAssistantWorkflowSection';
 import ConfiguratorSection from './components/ConfiguratorSection';
 import FaqSection from './components/FaqSection';
 import HeroSection from './components/HeroSection';
@@ -23,6 +24,9 @@ const Home: React.FC = () => {
 
           <div className='section-divider' />
           <PartnersSection />
+
+          <div className='section-divider' />
+          <AiAssistantWorkflowSection />
 
           <div className='section-divider' />
           <ProcessSection />
