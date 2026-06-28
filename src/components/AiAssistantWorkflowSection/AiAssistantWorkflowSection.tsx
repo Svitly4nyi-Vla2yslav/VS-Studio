@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import type { IconType } from 'react-icons';
 import {
   FaArrowRight,
@@ -58,18 +59,30 @@ type WorkflowIconName =
 // Тип WorkflowStep описує один короткий вузол карти процесу, який клієнт швидко зчитує візуально.
 type WorkflowStep = {
   id: string;
-  title: string;
-  description: string;
+  titleKey: string;
+  descriptionKey: string;
   icon: WorkflowIconName;
 };
 
 // Тип WorkflowConfig зберігає налаштування однієї карти: назву, короткий опис і послідовність кроків.
 type WorkflowConfig = {
   id: string;
+  labelKey: string;
+  titleKey: string;
+  descriptionKey: string;
+  steps: WorkflowStep[];
+};
+
+type TranslatedWorkflowStep = Omit<WorkflowStep, 'titleKey' | 'descriptionKey'> & {
+  title: string;
+  description: string;
+};
+
+type TranslatedWorkflowConfig = Omit<WorkflowConfig, 'labelKey' | 'titleKey' | 'descriptionKey' | 'steps'> & {
   label: string;
   title: string;
   description: string;
-  steps: WorkflowStep[];
+  steps: TranslatedWorkflowStep[];
 };
 
 // Тип WorkflowStepState потрібен для стилів вузла: неактивний, активний або завершений.
@@ -114,50 +127,50 @@ const connectorPoints8 = [
 // Константа websiteWorkflow зберігає лівий сценарій для заявки із сайту або email.
 const websiteWorkflow: WorkflowConfig = {
   id: 'website',
-  label: 'Website Flow',
-  title: 'Website-Anfrage',
-  description: 'Formular oder E-Mail wird zu einem klaren nächsten Schritt.',
+  labelKey: 'home.aiAssistantWorkflow.flows.website.label',
+  titleKey: 'home.aiAssistantWorkflow.flows.website.title',
+  descriptionKey: 'home.aiAssistantWorkflow.flows.website.description',
   steps: [
     {
       id: 'website-request',
-      title: 'Anfrage kommt rein',
-      description: 'Formular oder E-Mail.',
+      titleKey: 'home.aiAssistantWorkflow.flows.website.steps.request.title',
+      descriptionKey: 'home.aiAssistantWorkflow.flows.website.steps.request.description',
       icon: 'inbox',
     },
     {
       id: 'website-reaction',
-      title: 'AI reagiert',
-      description: 'Anfrage wird erkannt.',
+      titleKey: 'home.aiAssistantWorkflow.flows.website.steps.reaction.title',
+      descriptionKey: 'home.aiAssistantWorkflow.flows.website.steps.reaction.description',
       icon: 'spark',
     },
     {
       id: 'website-callback',
-      title: 'Rückruf',
-      description: 'AI kann Kontakt aufnehmen.',
+      titleKey: 'home.aiAssistantWorkflow.flows.website.steps.callback.title',
+      descriptionKey: 'home.aiAssistantWorkflow.flows.website.steps.callback.description',
       icon: 'phone',
     },
     {
       id: 'website-details',
-      title: 'Details klären',
-      description: 'Problem, Ort, Wunschzeit.',
+      titleKey: 'home.aiAssistantWorkflow.flows.website.steps.details.title',
+      descriptionKey: 'home.aiAssistantWorkflow.flows.website.steps.details.description',
       icon: 'checklist',
     },
     {
       id: 'website-calendar',
-      title: 'Kalender prüfen',
-      description: 'Freie Zeiten suchen.',
+      titleKey: 'home.aiAssistantWorkflow.flows.website.steps.calendar.title',
+      descriptionKey: 'home.aiAssistantWorkflow.flows.website.steps.calendar.description',
       icon: 'calendarSearch',
     },
     {
       id: 'website-result',
-      title: 'Termin vorbereiten',
-      description: 'Nächster Schritt steht.',
+      titleKey: 'home.aiAssistantWorkflow.flows.website.steps.result.title',
+      descriptionKey: 'home.aiAssistantWorkflow.flows.website.steps.result.description',
       icon: 'calendarCheck',
     },
     {
       id: 'website-summary',
-      title: 'Zusammenfassung',
-      description: 'Klare Infos für Sie.',
+      titleKey: 'home.aiAssistantWorkflow.flows.website.steps.summary.title',
+      descriptionKey: 'home.aiAssistantWorkflow.flows.website.steps.summary.description',
       icon: 'summary',
     },
   ],
@@ -166,56 +179,56 @@ const websiteWorkflow: WorkflowConfig = {
 // Константа missedCallWorkflow зберігає правий сценарій для пропущеного дзвінка.
 const missedCallWorkflow: WorkflowConfig = {
   id: 'missed-call',
-  label: 'Telefon Flow',
-  title: 'Verpasster Anruf',
-  description: 'Ein unbeantworteter Anruf wird zu einer geordneten Aufgabe.',
+  labelKey: 'home.aiAssistantWorkflow.flows.missedCall.label',
+  titleKey: 'home.aiAssistantWorkflow.flows.missedCall.title',
+  descriptionKey: 'home.aiAssistantWorkflow.flows.missedCall.description',
   steps: [
     {
       id: 'call-start',
-      title: 'Kunde ruft an',
-      description: 'Neuer Anruf kommt rein.',
+      titleKey: 'home.aiAssistantWorkflow.flows.missedCall.steps.start.title',
+      descriptionKey: 'home.aiAssistantWorkflow.flows.missedCall.steps.start.description',
       icon: 'phone',
     },
     {
       id: 'call-busy',
-      title: 'Niemand hebt ab',
-      description: 'Team ist beschäftigt.',
+      titleKey: 'home.aiAssistantWorkflow.flows.missedCall.steps.busy.title',
+      descriptionKey: 'home.aiAssistantWorkflow.flows.missedCall.steps.busy.description',
       icon: 'clock',
     },
     {
       id: 'call-forward',
-      title: 'Weiterleitung',
-      description: 'Anruf geht an AI.',
+      titleKey: 'home.aiAssistantWorkflow.flows.missedCall.steps.forward.title',
+      descriptionKey: 'home.aiAssistantWorkflow.flows.missedCall.steps.forward.description',
       icon: 'route',
     },
     {
       id: 'call-answer',
-      title: 'AI nimmt ab',
-      description: 'Kunde wird begrüßt.',
+      titleKey: 'home.aiAssistantWorkflow.flows.missedCall.steps.answer.title',
+      descriptionKey: 'home.aiAssistantWorkflow.flows.missedCall.steps.answer.description',
       icon: 'headset',
     },
     {
       id: 'call-details',
-      title: 'Anfrage erfassen',
-      description: 'Problem und Dringlichkeit.',
+      titleKey: 'home.aiAssistantWorkflow.flows.missedCall.steps.details.title',
+      descriptionKey: 'home.aiAssistantWorkflow.flows.missedCall.steps.details.description',
       icon: 'checklist',
     },
     {
       id: 'call-slot',
-      title: 'Termin finden',
-      description: 'Passender Slot gesucht.',
+      titleKey: 'home.aiAssistantWorkflow.flows.missedCall.steps.slot.title',
+      descriptionKey: 'home.aiAssistantWorkflow.flows.missedCall.steps.slot.description',
       icon: 'calendarSearch',
     },
     {
       id: 'call-task',
-      title: 'Aufgabe erstellen',
-      description: 'Rückruf vorbereiten.',
+      titleKey: 'home.aiAssistantWorkflow.flows.missedCall.steps.task.title',
+      descriptionKey: 'home.aiAssistantWorkflow.flows.missedCall.steps.task.description',
       icon: 'task',
     },
     {
       id: 'call-summary',
-      title: 'Zusammenfassung',
-      description: 'Alles geordnet sichtbar.',
+      titleKey: 'home.aiAssistantWorkflow.flows.missedCall.steps.summary.title',
+      descriptionKey: 'home.aiAssistantWorkflow.flows.missedCall.steps.summary.description',
       icon: 'summary',
     },
   ],
@@ -223,11 +236,11 @@ const missedCallWorkflow: WorkflowConfig = {
 
 // Масив benefits зберігає короткі бізнес-переваги для нижнього компактного рядка.
 const benefits = [
-  'Weniger verpasste Anfragen',
-  'Schnellere Rückrufe',
-  'Strukturierte Kundendaten',
-  'Weniger Unterbrechungen',
-  'Professioneller erster Eindruck',
+  'home.aiAssistantWorkflow.benefits.items.lessMissed',
+  'home.aiAssistantWorkflow.benefits.items.fasterCallbacks',
+  'home.aiAssistantWorkflow.benefits.items.structuredData',
+  'home.aiAssistantWorkflow.benefits.items.fewerInterruptions',
+  'home.aiAssistantWorkflow.benefits.items.professionalImpression',
 ];
 
 // Функція getStepState визначає візуальний стан вузла відносно активного кроку.
@@ -303,7 +316,7 @@ const WorkflowNode: React.FC<{
 
 // Компонент WorkflowMap показує одну повну карту: заголовок, шлях, вузли та анімовані конектори.
 const WorkflowMap: React.FC<{
-  workflow: WorkflowConfig;
+  workflow: TranslatedWorkflowConfig;
   activeStep: number;
 }> = ({ workflow, activeStep }) => (
   <WorkflowCardShell $flowId={workflow.id} aria-label={workflow.title}>
@@ -345,12 +358,27 @@ const BenefitChip: React.FC<{ label: string; index: number }> = ({ label, index 
 
 // Компонент AiAssistantWorkflowSection збирає преміальну секцію з двома простими візуальними workflow-картами.
 const AiAssistantWorkflowSection: React.FC = () => {
+  const { t } = useTranslation();
   // Змінна websiteActiveStep зберігає активний крок лівої карти Website-Anfrage.
   const [websiteActiveStep, setWebsiteActiveStep] = useState(0);
   // Змінна missedCallActiveStep зберігає активний крок правої карти Verpasster Anruf.
   const [missedCallActiveStep, setMissedCallActiveStep] = useState(0);
+  const translateWorkflow = useCallback((workflow: WorkflowConfig): TranslatedWorkflowConfig => ({
+    id: workflow.id,
+    label: t(workflow.labelKey),
+    title: t(workflow.titleKey),
+    description: t(workflow.descriptionKey),
+    steps: workflow.steps.map(step => ({
+      id: step.id,
+      icon: step.icon,
+      title: t(step.titleKey),
+      description: t(step.descriptionKey),
+    })),
+  }), [t]);
+  const websiteWorkflowCopy = useMemo(() => translateWorkflow(websiteWorkflow), [translateWorkflow]);
+  const missedCallWorkflowCopy = useMemo(() => translateWorkflow(missedCallWorkflow), [translateWorkflow]);
   // Змінна benefitItems мемоізує переваги, щоб рендер нижнього рядка залишався стабільним.
-  const benefitItems = useMemo(() => benefits, []);
+  const benefitItems = useMemo(() => benefits.map(benefitKey => t(benefitKey)), [t]);
 
   useEffect(() => {
     // Змінна websiteIntervalId запускає лівий workflow одразу і циклічно переводить активний крок.
@@ -390,39 +418,33 @@ const AiAssistantWorkflowSection: React.FC = () => {
 
       <SectionInner>
         <HeaderBlock>
-          <span>AI BUSINESS AUTOMATION</span>
-          <h2 id='ai-assistant-workflow-title'>So arbeitet Ihr AI-Assistent</h2>
-          <strong>Zwei Wege, ein Ziel: keine Anfrage geht verloren.</strong>
-          <p>
-            Website-Anfrage oder verpasster Anruf — der AI-Assistent erfasst die Anfrage, klärt Details und bereitet den
-            nächsten Schritt vor.
-          </p>
+          <span>{t('home.aiAssistantWorkflow.header.eyebrow')}</span>
+          <h2 id='ai-assistant-workflow-title'>{t('home.aiAssistantWorkflow.header.title')}</h2>
+          <strong>{t('home.aiAssistantWorkflow.header.kicker')}</strong>
+          <p>{t('home.aiAssistantWorkflow.header.description')}</p>
         </HeaderBlock>
 
         <FlowGrid>
-          <WorkflowMap workflow={websiteWorkflow} activeStep={websiteActiveStep} />
-          <WorkflowMap workflow={missedCallWorkflow} activeStep={missedCallActiveStep} />
+          <WorkflowMap workflow={websiteWorkflowCopy} activeStep={websiteActiveStep} />
+          <WorkflowMap workflow={missedCallWorkflowCopy} activeStep={missedCallActiveStep} />
         </FlowGrid>
 
         <CtaRow>
-          <BenefitsRow aria-label='Vorteile des AI-Assistenten'>
+          <BenefitsRow aria-label={t('home.aiAssistantWorkflow.benefits.aria')}>
             {benefitItems.map((benefit, index) => (
               <BenefitChip key={benefit} label={benefit} index={index} />
             ))}
           </BenefitsRow>
 
           <CtaButton as={NavLink} to='/kontakt'>
-            Kostenlose Beratung anfragen
+            {t('home.aiAssistantWorkflow.cta')}
             <FaArrowRight aria-hidden='true' />
           </CtaButton>
         </CtaRow>
 
         <LegalNote>
           <FaInfoCircle aria-hidden='true' />
-          <span>
-            Hinweis: Telefon-, Kalender- und CRM-Integrationen werden individuell eingerichtet. Datenschutz, Einwilligung
-            und technische Voraussetzungen werden je nach Unternehmen geprüft.
-          </span>
+          <span>{t('home.aiAssistantWorkflow.legal')}</span>
         </LegalNote>
       </SectionInner>
     </AiAssistantSection>
