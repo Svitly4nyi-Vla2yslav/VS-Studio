@@ -370,6 +370,102 @@
           "text": "Klare nächste Schritte zur Conversion-Steigerung nach Launch."
         }
       }
+    },
+    "aiAssistantWorkflow": {
+      "header": {
+        "eyebrow": "AI BUSINESS AUTOMATION",
+        "title": "Come lavora il tuo assistente AI",
+        "kicker": "Due percorsi, un obiettivo: nessuna richiesta va persa.",
+        "description": "Richiesta dal sito o chiamata persa - l’assistente AI registra la richiesta, chiarisce i dettagli e prepara il prossimo passo."
+      },
+      "flows": {
+        "website": {
+          "label": "Website flow",
+          "title": "Richiesta dal sito",
+          "description": "Un modulo o una email diventa un prossimo passo chiaro.",
+          "steps": {
+            "request": {
+              "title": "Arriva la richiesta",
+              "description": "Modulo o email."
+            },
+            "reaction": {
+              "title": "AI reagisce",
+              "description": "La richiesta viene riconosciuta."
+            },
+            "callback": {
+              "title": "Richiamata",
+              "description": "AI può prendere contatto."
+            },
+            "details": {
+              "title": "Chiarire i dettagli",
+              "description": "Problema, luogo, orario desiderato."
+            },
+            "calendar": {
+              "title": "Controllare il calendario",
+              "description": "Cercare orari liberi."
+            },
+            "result": {
+              "title": "Preparare appuntamento",
+              "description": "Il prossimo passo è pronto."
+            },
+            "summary": {
+              "title": "Riepilogo",
+              "description": "Informazioni chiare per te."
+            }
+          }
+        },
+        "missedCall": {
+          "label": "Phone flow",
+          "title": "Chiamata persa",
+          "description": "Una chiamata senza risposta diventa un’attività ordinata.",
+          "steps": {
+            "start": {
+              "title": "Il cliente chiama",
+              "description": "Arriva una nuova chiamata."
+            },
+            "busy": {
+              "title": "Nessuno risponde",
+              "description": "Il team è occupato."
+            },
+            "forward": {
+              "title": "Deviazione",
+              "description": "La chiamata va all’AI."
+            },
+            "answer": {
+              "title": "AI risponde",
+              "description": "Il cliente viene accolto."
+            },
+            "details": {
+              "title": "Registrare richiesta",
+              "description": "Problema e urgenza."
+            },
+            "slot": {
+              "title": "Trovare appuntamento",
+              "description": "Si cerca uno slot adatto."
+            },
+            "task": {
+              "title": "Creare attività",
+              "description": "Preparare la richiamata."
+            },
+            "summary": {
+              "title": "Riepilogo",
+              "description": "Tutto visibile in ordine."
+            }
+          }
+        }
+      },
+      "benefits": {
+        "aria": "Vantaggi dell’assistente AI",
+        "items": {
+          "lessMissed": "Meno richieste perse",
+          "fasterCallbacks": "Richiamate più rapide",
+          "structuredData": "Dati clienti strutturati",
+          "fewerInterruptions": "Meno interruzioni",
+          "professionalImpression": "Prima impressione professionale"
+        }
+      },
+      "cta": "Richiedi consulenza gratuita",
+      "legal": "Nota: Le integrazioni telefono, calendario e CRM vengono configurate individualmente. Protezione dei dati, consenso e requisiti tecnici vengono verificati per ogni azienda."
     }
   },
   "services": {

@@ -370,6 +370,102 @@
           "text": "Gavên paşê yên zelal ji bo bilindkirina conversionê piştî launchê."
         }
       }
+    },
+    "aiAssistantWorkflow": {
+      "header": {
+        "eyebrow": "OTOMASYONA KAR Û BAZIRGANIYÊ BI AI",
+        "title": "Alîkarê we yê AI çawa dixebite",
+        "kicker": "Du rê, yek armanc: ti daxwaz winda nabe.",
+        "description": "Daxwaza malperê an têlefoneke winda - alîkarê AI daxwazê tomar dike, hûrguliyan zelal dike û gava din amade dike."
+      },
+      "flows": {
+        "website": {
+          "label": "Website flow",
+          "title": "Daxwaza malperê",
+          "description": "Form an e-mail dibin gaveke din a zelal.",
+          "steps": {
+            "request": {
+              "title": "Daxwaz tê",
+              "description": "Form an e-mail."
+            },
+            "reaction": {
+              "title": "AI bersiv dide",
+              "description": "Daxwaz tê nasîn."
+            },
+            "callback": {
+              "title": "Vegera têlefonê",
+              "description": "AI dikare têkilî bike."
+            },
+            "details": {
+              "title": "Hûrguliyan zelal bike",
+              "description": "Pirsgirêk, cih, demê xwestî."
+            },
+            "calendar": {
+              "title": "Salnameyê kontrol bike",
+              "description": "Demên vala têne gerîn."
+            },
+            "result": {
+              "title": "Hevdîtinê amade bike",
+              "description": "Gava din amade ye."
+            },
+            "summary": {
+              "title": "Kurte",
+              "description": "Agahiyên zelal ji bo we."
+            }
+          }
+        },
+        "missedCall": {
+          "label": "Phone flow",
+          "title": "Têlefoneke winda",
+          "description": "Têlefoneke bêbersiv dibe karekî rêkûpêk.",
+          "steps": {
+            "start": {
+              "title": "Mişterî bang dike",
+              "description": "Bangeke nû tê."
+            },
+            "busy": {
+              "title": "Kes bersiv nade",
+              "description": "Tîm mijûl e."
+            },
+            "forward": {
+              "title": "Şandin",
+              "description": "Bang diçe ba AI."
+            },
+            "answer": {
+              "title": "AI bersiv dide",
+              "description": "Mişterî tê silav kirin."
+            },
+            "details": {
+              "title": "Daxwaz tomar bike",
+              "description": "Pirsgirêk û lezgînî."
+            },
+            "slot": {
+              "title": "Demekê bibîne",
+              "description": "Demeke guncan tê gerîn."
+            },
+            "task": {
+              "title": "Kar çêbike",
+              "description": "Vegera têlefonê amade bike."
+            },
+            "summary": {
+              "title": "Kurte",
+              "description": "Her tişt rêkûpêk xuya ye."
+            }
+          }
+        }
+      },
+      "benefits": {
+        "aria": "Sûdên alîkarê AI",
+        "items": {
+          "lessMissed": "Daxwazên winda kêmtir",
+          "fasterCallbacks": "Vegera têlefonê zûtir",
+          "structuredData": "Daneyên mişteriyan rêkûpêk",
+          "fewerInterruptions": "Qutbûn kêmtir",
+          "professionalImpression": "Bandora yekem a profesyonel"
+        }
+      },
+      "cta": "Şêwirmendiya belaş bixwaze",
+      "legal": "Têbînî: Girêdanên têlefon, salname û CRM bi awayekî taybet têne sazkirin. Parastina daneyan, razîbûn û pêdiviyên teknîkî ji bo her şirketê têne kontrolkirin."
     }
   },
   "services": {

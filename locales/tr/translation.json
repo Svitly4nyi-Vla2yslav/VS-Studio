@@ -373,6 +373,102 @@
           "text": "Yayından sonra dönüşümü artırmak için net sonraki adımlar."
         }
       }
+    },
+    "aiAssistantWorkflow": {
+      "header": {
+        "eyebrow": "AI İŞ OTOMASYONU",
+        "title": "AI asistanınız böyle çalışır",
+        "kicker": "İki yol, tek hedef: hiçbir talep kaybolmaz.",
+        "description": "Web sitesi talebi veya kaçırılan arama - AI asistanı talebi kaydeder, ayrıntıları netleştirir ve sonraki adımı hazırlar."
+      },
+      "flows": {
+        "website": {
+          "label": "Website flow",
+          "title": "Web sitesi talebi",
+          "description": "Form veya e-posta net bir sonraki adıma dönüşür.",
+          "steps": {
+            "request": {
+              "title": "Talep gelir",
+              "description": "Form veya e-posta."
+            },
+            "reaction": {
+              "title": "AI yanıt verir",
+              "description": "Talep algılanır."
+            },
+            "callback": {
+              "title": "Geri arama",
+              "description": "AI iletişime geçebilir."
+            },
+            "details": {
+              "title": "Detayları netleştir",
+              "description": "Sorun, yer, istenen zaman."
+            },
+            "calendar": {
+              "title": "Takvimi kontrol et",
+              "description": "Boş zamanlar aranır."
+            },
+            "result": {
+              "title": "Randevuyu hazırla",
+              "description": "Sonraki adım hazır."
+            },
+            "summary": {
+              "title": "Özet",
+              "description": "Sizin için net bilgiler."
+            }
+          }
+        },
+        "missedCall": {
+          "label": "Phone flow",
+          "title": "Kaçırılan arama",
+          "description": "Yanıtsız bir arama düzenli bir göreve dönüşür.",
+          "steps": {
+            "start": {
+              "title": "Müşteri arar",
+              "description": "Yeni arama gelir."
+            },
+            "busy": {
+              "title": "Kimse açmaz",
+              "description": "Ekip meşguldür."
+            },
+            "forward": {
+              "title": "Yönlendirme",
+              "description": "Arama AI’ya gider."
+            },
+            "answer": {
+              "title": "AI cevaplar",
+              "description": "Müşteri karşılanır."
+            },
+            "details": {
+              "title": "Talebi kaydet",
+              "description": "Sorun ve aciliyet."
+            },
+            "slot": {
+              "title": "Randevu bul",
+              "description": "Uygun zaman aranır."
+            },
+            "task": {
+              "title": "Görev oluştur",
+              "description": "Geri arama hazırlanır."
+            },
+            "summary": {
+              "title": "Özet",
+              "description": "Her şey düzenli görünür."
+            }
+          }
+        }
+      },
+      "benefits": {
+        "aria": "AI asistanı avantajları",
+        "items": {
+          "lessMissed": "Daha az kaçan talep",
+          "fasterCallbacks": "Daha hızlı geri aramalar",
+          "structuredData": "Düzenli müşteri verileri",
+          "fewerInterruptions": "Daha az kesinti",
+          "professionalImpression": "Profesyonel ilk izlenim"
+        }
+      },
+      "cta": "Ücretsiz danışmanlık iste",
+      "legal": "Not: Telefon, takvim ve CRM entegrasyonları bireysel olarak kurulur. Veri koruma, onay ve teknik gereksinimler her şirket için kontrol edilir."
     }
   },
   "services": {
