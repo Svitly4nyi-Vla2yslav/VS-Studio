@@ -370,6 +370,102 @@
           "text": "Klare nächste Schritte zur Conversion-Steigerung nach Launch."
         }
       }
+    },
+    "aiAssistantWorkflow": {
+      "header": {
+        "eyebrow": "AI BUSINESS AUTOMATION",
+        "title": "Așa lucrează asistentul tău AI",
+        "kicker": "Două căi, un singur obiectiv: nicio solicitare nu se pierde.",
+        "description": "Solicitare de pe website sau apel ratat - asistentul AI preia cererea, clarifică detaliile și pregătește pasul următor."
+      },
+      "flows": {
+        "website": {
+          "label": "Website flow",
+          "title": "Solicitare website",
+          "description": "Un formular sau email devine un pas următor clar.",
+          "steps": {
+            "request": {
+              "title": "Solicitarea intră",
+              "description": "Formular sau email."
+            },
+            "reaction": {
+              "title": "AI reacționează",
+              "description": "Solicitarea este recunoscută."
+            },
+            "callback": {
+              "title": "Apel înapoi",
+              "description": "AI poate lua legătura."
+            },
+            "details": {
+              "title": "Clarifică detalii",
+              "description": "Problemă, locație, ora dorită."
+            },
+            "calendar": {
+              "title": "Verifică calendarul",
+              "description": "Caută intervale libere."
+            },
+            "result": {
+              "title": "Pregătește programarea",
+              "description": "Pasul următor este gata."
+            },
+            "summary": {
+              "title": "Rezumat",
+              "description": "Informații clare pentru tine."
+            }
+          }
+        },
+        "missedCall": {
+          "label": "Phone flow",
+          "title": "Apel ratat",
+          "description": "Un apel fără răspuns devine o sarcină organizată.",
+          "steps": {
+            "start": {
+              "title": "Clientul sună",
+              "description": "Intră un apel nou."
+            },
+            "busy": {
+              "title": "Nimeni nu răspunde",
+              "description": "Echipa este ocupată."
+            },
+            "forward": {
+              "title": "Redirecționare",
+              "description": "Apelul merge la AI."
+            },
+            "answer": {
+              "title": "AI răspunde",
+              "description": "Clientul este întâmpinat."
+            },
+            "details": {
+              "title": "Înregistrează cererea",
+              "description": "Problemă și urgență."
+            },
+            "slot": {
+              "title": "Găsește programare",
+              "description": "Se caută un interval potrivit."
+            },
+            "task": {
+              "title": "Creează sarcină",
+              "description": "Pregătește apelul înapoi."
+            },
+            "summary": {
+              "title": "Rezumat",
+              "description": "Totul este vizibil și ordonat."
+            }
+          }
+        }
+      },
+      "benefits": {
+        "aria": "Beneficiile asistentului AI",
+        "items": {
+          "lessMissed": "Mai puține solicitări ratate",
+          "fasterCallbacks": "Apeluri înapoi mai rapide",
+          "structuredData": "Date clienți structurate",
+          "fewerInterruptions": "Mai puține întreruperi",
+          "professionalImpression": "Prima impresie profesională"
+        }
+      },
+      "cta": "Solicită consultanță gratuită",
+      "legal": "Notă: Integrările de telefon, calendar și CRM sunt configurate individual. Protecția datelor, consimțământul și cerințele tehnice sunt verificate pentru fiecare companie."
     }
   },
   "services": {

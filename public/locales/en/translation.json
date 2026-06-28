@@ -449,7 +449,103 @@
         }
       }
     },
-    "portfolioLink": "Portfolio"
+    "portfolioLink": "Portfolio",
+    "aiAssistantWorkflow": {
+      "header": {
+        "eyebrow": "AI BUSINESS AUTOMATION",
+        "title": "How your AI assistant works",
+        "kicker": "Two paths, one goal: no inquiry gets lost.",
+        "description": "Website inquiry or missed call - the AI assistant captures the request, clarifies details, and prepares the next step."
+      },
+      "flows": {
+        "website": {
+          "label": "Website flow",
+          "title": "Website inquiry",
+          "description": "A form or email becomes a clear next step.",
+          "steps": {
+            "request": {
+              "title": "Inquiry comes in",
+              "description": "Form or email."
+            },
+            "reaction": {
+              "title": "AI responds",
+              "description": "The request is detected."
+            },
+            "callback": {
+              "title": "Callback",
+              "description": "AI can make contact."
+            },
+            "details": {
+              "title": "Clarify details",
+              "description": "Problem, location, preferred time."
+            },
+            "calendar": {
+              "title": "Check calendar",
+              "description": "Search for free times."
+            },
+            "result": {
+              "title": "Prepare appointment",
+              "description": "The next step is ready."
+            },
+            "summary": {
+              "title": "Summary",
+              "description": "Clear info for you."
+            }
+          }
+        },
+        "missedCall": {
+          "label": "Phone flow",
+          "title": "Missed call",
+          "description": "An unanswered call becomes an organized task.",
+          "steps": {
+            "start": {
+              "title": "Customer calls",
+              "description": "A new call comes in."
+            },
+            "busy": {
+              "title": "Nobody answers",
+              "description": "The team is busy."
+            },
+            "forward": {
+              "title": "Forwarding",
+              "description": "The call goes to AI."
+            },
+            "answer": {
+              "title": "AI answers",
+              "description": "The customer is greeted."
+            },
+            "details": {
+              "title": "Capture request",
+              "description": "Problem and urgency."
+            },
+            "slot": {
+              "title": "Find appointment",
+              "description": "A suitable slot is searched."
+            },
+            "task": {
+              "title": "Create task",
+              "description": "Prepare the callback."
+            },
+            "summary": {
+              "title": "Summary",
+              "description": "Everything is visible in order."
+            }
+          }
+        }
+      },
+      "benefits": {
+        "aria": "AI assistant benefits",
+        "items": {
+          "lessMissed": "Fewer missed inquiries",
+          "fasterCallbacks": "Faster callbacks",
+          "structuredData": "Structured customer data",
+          "fewerInterruptions": "Fewer interruptions",
+          "professionalImpression": "Professional first impression"
+        }
+      },
+      "cta": "Request free consultation",
+      "legal": "Note: Phone, calendar, and CRM integrations are set up individually. Data protection, consent, and technical requirements are checked for each company."
+    }
   },
   "services": {
     "h1": "Services with clear results and a realistic schedule.",

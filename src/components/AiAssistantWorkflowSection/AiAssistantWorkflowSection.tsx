@@ -243,6 +243,10 @@ const benefits = [
   'home.aiAssistantWorkflow.benefits.items.professionalImpression',
 ];
 
+const workflowTranslationRoot = 'home.aiAssistantWorkflow';
+
+const isMissingWorkflowTranslation = (value: string) => value.startsWith(`${workflowTranslationRoot}.`);
+
 // Функція getStepState визначає візуальний стан вузла відносно активного кроку.
 const getStepState = (activeStep: number, stepIndex: number): WorkflowStepState => {
   if (stepIndex === activeStep) {
@@ -292,7 +296,7 @@ const WorkflowConnectorLayer: React.FC<{
 
 // Компонент WorkflowNode показує один великий зрозумілий вузол карти процесу.
 const WorkflowNode: React.FC<{
-  step: WorkflowStep;
+  step: TranslatedWorkflowStep;
   index: number;
   stepCount: number;
   state: WorkflowStepState;
@@ -358,11 +362,13 @@ const BenefitChip: React.FC<{ label: string; index: number }> = ({ label, index 
 
 // Компонент AiAssistantWorkflowSection збирає преміальну секцію з двома простими візуальними workflow-картами.
 const AiAssistantWorkflowSection: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   // Змінна websiteActiveStep зберігає активний крок лівої карти Website-Anfrage.
   const [websiteActiveStep, setWebsiteActiveStep] = useState(0);
   // Змінна missedCallActiveStep зберігає активний крок правої карти Verpasster Anruf.
   const [missedCallActiveStep, setMissedCallActiveStep] = useState(0);
+  const [workflowReloadAttempted, setWorkflowReloadAttempted] = useState(false);
+  const [workflowTranslationVersion, setWorkflowTranslationVersion] = useState(0);
   const translateWorkflow = useCallback((workflow: WorkflowConfig): TranslatedWorkflowConfig => ({
     id: workflow.id,
     label: t(workflow.labelKey),
@@ -374,11 +380,29 @@ const AiAssistantWorkflowSection: React.FC = () => {
       title: t(step.titleKey),
       description: t(step.descriptionKey),
     })),
-  }), [t]);
+  }), [t, workflowTranslationVersion]);
   const websiteWorkflowCopy = useMemo(() => translateWorkflow(websiteWorkflow), [translateWorkflow]);
   const missedCallWorkflowCopy = useMemo(() => translateWorkflow(missedCallWorkflow), [translateWorkflow]);
   // Змінна benefitItems мемоізує переваги, щоб рендер нижнього рядка залишався стабільним.
-  const benefitItems = useMemo(() => benefits.map(benefitKey => t(benefitKey)), [t]);
+  const benefitItems = useMemo(() => benefits.map(benefitKey => t(benefitKey)), [t, workflowTranslationVersion]);
+
+  useEffect(() => {
+    if (workflowReloadAttempted) {
+      return;
+    }
+
+    const translatedTitle = t(`${workflowTranslationRoot}.header.title`);
+
+    if (!isMissingWorkflowTranslation(translatedTitle)) {
+      return;
+    }
+
+    setWorkflowReloadAttempted(true);
+
+    void i18n.reloadResources(i18n.resolvedLanguage || i18n.language, 'translation').then(() => {
+      setWorkflowTranslationVersion(currentVersion => currentVersion + 1);
+    });
+  }, [i18n, t, workflowReloadAttempted]);
 
   useEffect(() => {
     // Змінна websiteIntervalId запускає лівий workflow одразу і циклічно переводить активний крок.

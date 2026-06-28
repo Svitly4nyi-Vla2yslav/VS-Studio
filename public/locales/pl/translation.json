@@ -373,6 +373,102 @@
           "text": "Jasne kolejne kroki do zwiększenia konwersji po launchu."
         }
       }
+    },
+    "aiAssistantWorkflow": {
+      "header": {
+        "eyebrow": "AI BUSINESS AUTOMATION",
+        "title": "Tak działa Twój asystent AI",
+        "kicker": "Dwie ścieżki, jeden cel: żadne zapytanie nie ginie.",
+        "description": "Zapytanie ze strony lub nieodebrane połączenie - asystent AI rejestruje sprawę, doprecyzowuje szczegóły i przygotowuje kolejny krok."
+      },
+      "flows": {
+        "website": {
+          "label": "Website flow",
+          "title": "Zapytanie ze strony",
+          "description": "Formularz lub e-mail zmienia się w jasny kolejny krok.",
+          "steps": {
+            "request": {
+              "title": "Wpływa zapytanie",
+              "description": "Formularz lub e-mail."
+            },
+            "reaction": {
+              "title": "AI reaguje",
+              "description": "Zapytanie zostaje rozpoznane."
+            },
+            "callback": {
+              "title": "Oddzwonienie",
+              "description": "AI może nawiązać kontakt."
+            },
+            "details": {
+              "title": "Wyjaśnienie szczegółów",
+              "description": "Problem, miejsce, preferowany czas."
+            },
+            "calendar": {
+              "title": "Sprawdzenie kalendarza",
+              "description": "Szukanie wolnych terminów."
+            },
+            "result": {
+              "title": "Przygotowanie terminu",
+              "description": "Kolejny krok jest gotowy."
+            },
+            "summary": {
+              "title": "Podsumowanie",
+              "description": "Jasne informacje dla Ciebie."
+            }
+          }
+        },
+        "missedCall": {
+          "label": "Phone flow",
+          "title": "Nieodebrane połączenie",
+          "description": "Nieodebrany telefon staje się uporządkowanym zadaniem.",
+          "steps": {
+            "start": {
+              "title": "Klient dzwoni",
+              "description": "Przychodzi nowe połączenie."
+            },
+            "busy": {
+              "title": "Nikt nie odbiera",
+              "description": "Zespół jest zajęty."
+            },
+            "forward": {
+              "title": "Przekierowanie",
+              "description": "Połączenie trafia do AI."
+            },
+            "answer": {
+              "title": "AI odbiera",
+              "description": "Klient zostaje powitany."
+            },
+            "details": {
+              "title": "Zapisanie zapytania",
+              "description": "Problem i pilność."
+            },
+            "slot": {
+              "title": "Znalezienie terminu",
+              "description": "Szukany jest pasujący slot."
+            },
+            "task": {
+              "title": "Utworzenie zadania",
+              "description": "Przygotowanie oddzwonienia."
+            },
+            "summary": {
+              "title": "Podsumowanie",
+              "description": "Wszystko widoczne w porządku."
+            }
+          }
+        }
+      },
+      "benefits": {
+        "aria": "Korzyści asystenta AI",
+        "items": {
+          "lessMissed": "Mniej utraconych zapytań",
+          "fasterCallbacks": "Szybsze oddzwanianie",
+          "structuredData": "Uporządkowane dane klientów",
+          "fewerInterruptions": "Mniej przerw w pracy",
+          "professionalImpression": "Profesjonalne pierwsze wrażenie"
+        }
+      },
+      "cta": "Poproś o bezpłatną konsultację",
+      "legal": "Uwaga: Integracje telefonu, kalendarza i CRM są konfigurowane indywidualnie. Ochrona danych, zgody i wymagania techniczne są sprawdzane osobno dla każdej firmy."
     }
   },
   "services": {

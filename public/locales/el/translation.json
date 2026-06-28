@@ -370,6 +370,102 @@
           "text": "Klare nächste Schritte zur Conversion-Steigerung nach Launch."
         }
       }
+    },
+    "aiAssistantWorkflow": {
+      "header": {
+        "eyebrow": "AI BUSINESS AUTOMATION",
+        "title": "Έτσι λειτουργεί ο AI βοηθός σας",
+        "kicker": "Δύο διαδρομές, ένας στόχος: κανένα αίτημα δεν χάνεται.",
+        "description": "Αίτημα από website ή αναπάντητη κλήση - ο AI βοηθός καταγράφει το αίτημα, διευκρινίζει λεπτομέρειες και προετοιμάζει το επόμενο βήμα."
+      },
+      "flows": {
+        "website": {
+          "label": "Website flow",
+          "title": "Αίτημα από website",
+          "description": "Μια φόρμα ή ένα email γίνεται ξεκάθαρο επόμενο βήμα.",
+          "steps": {
+            "request": {
+              "title": "Το αίτημα φτάνει",
+              "description": "Φόρμα ή email."
+            },
+            "reaction": {
+              "title": "Το AI αντιδρά",
+              "description": "Το αίτημα αναγνωρίζεται."
+            },
+            "callback": {
+              "title": "Επιστροφή κλήσης",
+              "description": "Το AI μπορεί να επικοινωνήσει."
+            },
+            "details": {
+              "title": "Διευκρίνιση λεπτομερειών",
+              "description": "Πρόβλημα, τοποθεσία, επιθυμητή ώρα."
+            },
+            "calendar": {
+              "title": "Έλεγχος ημερολογίου",
+              "description": "Αναζήτηση διαθέσιμων ωρών."
+            },
+            "result": {
+              "title": "Προετοιμασία ραντεβού",
+              "description": "Το επόμενο βήμα είναι έτοιμο."
+            },
+            "summary": {
+              "title": "Σύνοψη",
+              "description": "Ξεκάθαρες πληροφορίες για εσάς."
+            }
+          }
+        },
+        "missedCall": {
+          "label": "Phone flow",
+          "title": "Αναπάντητη κλήση",
+          "description": "Μια αναπάντητη κλήση γίνεται οργανωμένη εργασία.",
+          "steps": {
+            "start": {
+              "title": "Ο πελάτης καλεί",
+              "description": "Μπαίνει νέα κλήση."
+            },
+            "busy": {
+              "title": "Κανείς δεν απαντά",
+              "description": "Η ομάδα είναι απασχολημένη."
+            },
+            "forward": {
+              "title": "Προώθηση",
+              "description": "Η κλήση πηγαίνει στο AI."
+            },
+            "answer": {
+              "title": "Το AI απαντά",
+              "description": "Ο πελάτης καλωσορίζεται."
+            },
+            "details": {
+              "title": "Καταγραφή αιτήματος",
+              "description": "Πρόβλημα και επείγον."
+            },
+            "slot": {
+              "title": "Εύρεση ραντεβού",
+              "description": "Αναζητείται κατάλληλο slot."
+            },
+            "task": {
+              "title": "Δημιουργία εργασίας",
+              "description": "Προετοιμασία επιστροφής κλήσης."
+            },
+            "summary": {
+              "title": "Σύνοψη",
+              "description": "Όλα φαίνονται οργανωμένα."
+            }
+          }
+        }
+      },
+      "benefits": {
+        "aria": "Οφέλη του AI βοηθού",
+        "items": {
+          "lessMissed": "Λιγότερα χαμένα αιτήματα",
+          "fasterCallbacks": "Ταχύτερες επιστροφές κλήσεων",
+          "structuredData": "Δομημένα δεδομένα πελατών",
+          "fewerInterruptions": "Λιγότερες διακοπές",
+          "professionalImpression": "Επαγγελματική πρώτη εντύπωση"
+        }
+      },
+      "cta": "Ζητήστε δωρεάν συμβουλή",
+      "legal": "Σημείωση: Οι ενσωματώσεις τηλεφώνου, ημερολογίου και CRM ρυθμίζονται εξατομικευμένα. Η προστασία δεδομένων, η συναίνεση και οι τεχνικές προϋποθέσεις ελέγχονται ανά εταιρεία."
     }
   },
   "services": {

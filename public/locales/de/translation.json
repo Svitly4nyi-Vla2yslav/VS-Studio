@@ -394,7 +394,7 @@
         "support_yearly": "Support / Jahr (-30%): {{value}}"
       },
       "aiMusic": {
-        "totalPrice": "Gesch\u00e4tzter Gesamtpreis:",
+        "totalPrice": "Geschätzter Gesamtpreis:",
         "pack": {
           "basic": "Short AI Jingle",
           "standard": "Business Promo Song",
@@ -409,7 +409,7 @@
           "format": "Dateiformat: {{value}}",
           "social_true": "Social-Media-Cut enthalten",
           "social_false": "Kein separater Social-Media-Cut",
-          "express_true": "Express-Lieferung ausgew\u00e4hlt",
+          "express_true": "Express-Lieferung ausgewählt",
           "express_false": "Standard-Lieferung"
         },
         "brief": {
@@ -423,7 +423,7 @@
           "social": "Social-Media-Version: {{value}}",
           "extra_revision": "Zusatzrevision: {{value}}",
           "express": "Express-Lieferung: {{value}}",
-          "total": "Gesch\u00e4tzter Gesamtpreis: {{value}}"
+          "total": "Geschätzter Gesamtpreis: {{value}}"
         }
       }
     },
@@ -449,7 +449,103 @@
         }
       }
     },
-    "portfolioLink": "Portfolio"
+    "portfolioLink": "Portfolio",
+    "aiAssistantWorkflow": {
+      "header": {
+        "eyebrow": "AI BUSINESS AUTOMATION",
+        "title": "So arbeitet Ihr AI-Assistent",
+        "kicker": "Zwei Wege, ein Ziel: keine Anfrage geht verloren.",
+        "description": "Website-Anfrage oder verpasster Anruf - der AI-Assistent erfasst die Anfrage, klärt Details und bereitet den nächsten Schritt vor."
+      },
+      "flows": {
+        "website": {
+          "label": "Website Flow",
+          "title": "Website-Anfrage",
+          "description": "Formular oder E-Mail wird zu einem klaren nächsten Schritt.",
+          "steps": {
+            "request": {
+              "title": "Anfrage kommt rein",
+              "description": "Formular oder E-Mail."
+            },
+            "reaction": {
+              "title": "AI reagiert",
+              "description": "Anfrage wird erkannt."
+            },
+            "callback": {
+              "title": "Rückruf",
+              "description": "AI kann Kontakt aufnehmen."
+            },
+            "details": {
+              "title": "Details klären",
+              "description": "Problem, Ort, Wunschzeit."
+            },
+            "calendar": {
+              "title": "Kalender prüfen",
+              "description": "Freie Zeiten suchen."
+            },
+            "result": {
+              "title": "Termin vorbereiten",
+              "description": "Nächster Schritt steht."
+            },
+            "summary": {
+              "title": "Zusammenfassung",
+              "description": "Klare Infos für Sie."
+            }
+          }
+        },
+        "missedCall": {
+          "label": "Telefon Flow",
+          "title": "Verpasster Anruf",
+          "description": "Ein unbeantworteter Anruf wird zu einer geordneten Aufgabe.",
+          "steps": {
+            "start": {
+              "title": "Kunde ruft an",
+              "description": "Neuer Anruf kommt rein."
+            },
+            "busy": {
+              "title": "Niemand hebt ab",
+              "description": "Team ist beschäftigt."
+            },
+            "forward": {
+              "title": "Weiterleitung",
+              "description": "Anruf geht an AI."
+            },
+            "answer": {
+              "title": "AI nimmt ab",
+              "description": "Kunde wird begrüßt."
+            },
+            "details": {
+              "title": "Anfrage erfassen",
+              "description": "Problem und Dringlichkeit."
+            },
+            "slot": {
+              "title": "Termin finden",
+              "description": "Passender Slot gesucht."
+            },
+            "task": {
+              "title": "Aufgabe erstellen",
+              "description": "Rückruf vorbereiten."
+            },
+            "summary": {
+              "title": "Zusammenfassung",
+              "description": "Alles geordnet sichtbar."
+            }
+          }
+        }
+      },
+      "benefits": {
+        "aria": "Vorteile des AI-Assistenten",
+        "items": {
+          "lessMissed": "Weniger verpasste Anfragen",
+          "fasterCallbacks": "Schnellere Rückrufe",
+          "structuredData": "Strukturierte Kundendaten",
+          "fewerInterruptions": "Weniger Unterbrechungen",
+          "professionalImpression": "Professioneller erster Eindruck"
+        }
+      },
+      "cta": "Kostenlose Beratung anfragen",
+      "legal": "Hinweis: Telefon-, Kalender- und CRM-Integrationen werden individuell eingerichtet. Datenschutz, Einwilligung und technische Voraussetzungen werden je nach Unternehmen geprüft."
+    }
   },
   "services": {
     "h1": "Leistungen mit klarem Ergebnis und realistischem Zeitplan.",
@@ -678,12 +774,12 @@
     },
     "aiMusic": {
       "title": "KI-Songs & Jingles",
-      "subtitle": "Individuelle KI-generierte Songs, Werbejingles und Markenmusik f\u00fcr Unternehmen, Social Media und Werbung.",
+      "subtitle": "Individuelle KI-generierte Songs, Werbejingles und Markenmusik für Unternehmen, Social Media und Werbung.",
       "packageLabel": "KI-Musik-Paket",
       "packages": {
         "basic": {
           "name": "Basic - Short AI Jingle",
-          "desc": "Ein kompakter Hook f\u00fcr Ads, Intros, lokale Kampagnen oder Social Media.",
+          "desc": "Ein kompakter Hook für Ads, Intros, lokale Kampagnen oder Social Media.",
           "price": "EUR 35",
           "range": "bis zu 15 Sekunden",
           "includes": [
@@ -694,11 +790,11 @@
             "1 Stil",
             "1 Revision"
           ],
-          "outcome": "Ein kurzer Markenjingle f\u00fcr schnelle Promotion."
+          "outcome": "Ein kurzer Markenjingle für schnelle Promotion."
         },
         "standard": {
           "name": "Standard - Business Promo Song",
-          "desc": "Ein individueller Promo-Song f\u00fcr Unternehmen, Creator und Kampagnen.",
+          "desc": "Ein individueller Promo-Song für Unternehmen, Creator und Kampagnen.",
           "price": "EUR 79",
           "range": "bis zu 30 Sekunden",
           "includes": [
@@ -710,11 +806,11 @@
             "2 Stilrichtungen",
             "2 Revisionen"
           ],
-          "outcome": "Ein sauberer Business-Song f\u00fcr Ads, Reels und Videos."
+          "outcome": "Ein sauberer Business-Song für Ads, Reels und Videos."
         },
         "premium": {
           "name": "Premium - Full Brand Music Pack",
-          "desc": "Ein umfangreicheres Markenmusik-Paket mit Versionen f\u00fcr Kampagnen.",
+          "desc": "Ein umfangreicheres Markenmusik-Paket mit Versionen für Kampagnen.",
           "price": "EUR 149",
           "range": "bis zu 45 Sekunden",
           "includes": [
@@ -727,7 +823,7 @@
             "3 Stilrichtungen",
             "3 Revisionen"
           ],
-          "outcome": "Ein flexibles Brand-Sound-Paket f\u00fcr Ads, Social Media und Content."
+          "outcome": "Ein flexibles Brand-Sound-Paket für Ads, Social Media und Content."
         }
       }
     }
