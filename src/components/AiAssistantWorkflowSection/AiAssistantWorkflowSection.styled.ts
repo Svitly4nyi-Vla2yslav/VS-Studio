@@ -86,7 +86,10 @@ export const AiAssistantSection = styled.section`
       linear-gradient(rgba(59, 130, 246, 0.08) 1px, transparent 1px),
       linear-gradient(90deg, rgba(59, 130, 246, 0.08) 1px, transparent 1px),
       radial-gradient(circle, rgba(15, 23, 42, 0.12) 0 1px, transparent 1.4px);
-    background-size: 56px 56px, 56px 56px, 34px 34px;
+    background-size:
+      56px 56px,
+      56px 56px,
+      34px 34px;
     opacity: 0.34;
     mask-image: radial-gradient(circle at center, #000 0%, transparent 78%);
     animation: gridFloat 60s linear infinite;
@@ -164,7 +167,9 @@ export const HeaderBlock = styled.header`
     border-radius: 999px;
     border: 1px solid rgba(226, 166, 44, 0.34);
     background: rgba(255, 255, 255, 0.68);
-    box-shadow: 0 10px 28px rgba(59, 130, 246, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    box-shadow:
+      0 10px 28px rgba(59, 130, 246, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
     color: #9c6b11;
     font-size: 11px;
     font-weight: 900;
@@ -251,7 +256,11 @@ export const WorkflowCardShell = styled.article<{ $flowId: string }>`
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.76);
   background:
-    radial-gradient(circle at ${({ $flowId }) => ($flowId === 'website' ? '18% 10%' : '82% 10%')}, rgba(255, 214, 122, 0.2), transparent 34%),
+    radial-gradient(
+      circle at ${({ $flowId }) => ($flowId === 'website' ? '18% 10%' : '82% 10%')},
+      rgba(255, 214, 122, 0.2),
+      transparent 34%
+    ),
     linear-gradient(145deg, rgba(255, 255, 255, 0.72), rgba(246, 251, 255, 0.52));
   box-shadow:
     0 28px 90px rgba(48, 73, 120, 0.16),
@@ -269,7 +278,13 @@ export const WorkflowCardShell = styled.article<{ $flowId: string }>`
     inset: -1px;
     border-radius: inherit;
     padding: 1px;
-    background: linear-gradient(118deg, rgba(255, 255, 255, 0.2), rgba(236, 180, 58, 0.6), rgba(72, 170, 255, 0.36), rgba(255, 255, 255, 0.2));
+    background: linear-gradient(
+      118deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(236, 180, 58, 0.6),
+      rgba(72, 170, 255, 0.36),
+      rgba(255, 255, 255, 0.2)
+    );
     background-size: 280% 280%;
     opacity: 0.55;
     animation: cardAuroraBorder 18s cubic-bezier(0.22, 1, 0.36, 1) infinite;
@@ -292,7 +307,9 @@ export const WorkflowCardShell = styled.article<{ $flowId: string }>`
     bottom: -26%;
     border: 1px solid rgba(59, 130, 246, 0.12);
     background: radial-gradient(circle, rgba(255, 255, 255, 0.28), transparent 58%);
-    box-shadow: inset 0 0 48px rgba(255, 209, 102, 0.12), 0 0 70px rgba(59, 130, 246, 0.12);
+    box-shadow:
+      inset 0 0 48px rgba(255, 209, 102, 0.12),
+      0 0 70px rgba(59, 130, 246, 0.12);
     animation: workflowOrbit 36s linear infinite;
     pointer-events: none;
   }
@@ -418,7 +435,8 @@ export const ConnectorSegment = styled.polyline<{ $state: WorkflowStepState }>`
   stroke-linejoin: round;
   stroke-dasharray: ${({ $state }) => ($state === 'active' ? '6 8' : '0')};
   filter: ${({ $state }) => ($state === 'active' ? 'drop-shadow(0 0 6px rgba(236, 180, 58, 0.48))' : 'none')};
-  animation: ${({ $state }) => ($state === 'active' ? 'connectorPulse 1.65s cubic-bezier(0.22, 1, 0.36, 1) infinite' : 'none')};
+  animation: ${({ $state }) =>
+    $state === 'active' ? 'connectorPulse 1.65s cubic-bezier(0.22, 1, 0.36, 1) infinite' : 'none'};
   transition:
     stroke 650ms cubic-bezier(0.22, 1, 0.36, 1),
     stroke-width 650ms cubic-bezier(0.22, 1, 0.36, 1),
@@ -528,12 +546,20 @@ export const FlowNode = styled.div<{ $state: WorkflowStepState; $index: number; 
           ? 'rgba(82, 160, 128, 0.38)'
           : 'rgba(255, 255, 255, 0.74)'};
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, ${({ $state }) => ($state === 'inactive' ? '0.56' : '0.82')}), rgba(244, 250, 255, ${({ $state }) => ($state === 'active' ? '0.72' : '0.5')})),
-    radial-gradient(circle at 15% 12%, ${({ $state }) => ($state === 'active' ? 'rgba(255, 216, 126, 0.28)' : 'transparent')}, transparent 54%);
-  box-shadow:
-    ${({ $state }) => ($state === 'active' ? '0 18px 46px rgba(218, 151, 32, 0.18), 0 0 36px rgba(59, 130, 246, 0.12),' : '')}
-    ${({ $state }) => ($state === 'completed' ? '0 12px 28px rgba(82, 160, 128, 0.08),' : '')}
-    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, ${({ $state }) => ($state === 'inactive' ? '0.56' : '0.82')}),
+      rgba(244, 250, 255, ${({ $state }) => ($state === 'active' ? '0.72' : '0.5')})
+    ),
+    radial-gradient(
+      circle at 15% 12%,
+      ${({ $state }) => ($state === 'active' ? 'rgba(255, 216, 126, 0.28)' : 'transparent')},
+      transparent 54%
+    );
+  box-shadow: ${({ $state }) =>
+      $state === 'active' ? '0 18px 46px rgba(218, 151, 32, 0.18), 0 0 36px rgba(59, 130, 246, 0.12),' : ''}
+    ${({ $state }) => ($state === 'completed' ? '0 12px 28px rgba(82, 160, 128, 0.08),' : '')} inset 0 1px 0
+    rgba(255, 255, 255, 0.9);
   opacity: ${({ $state }) => ($state === 'inactive' ? 0.72 : 1)};
   transform: ${({ $state }) => ($state === 'active' ? 'translateY(-2px) scale(1.03)' : 'translateY(0) scale(1)')};
   backdrop-filter: blur(18px);
@@ -552,7 +578,8 @@ export const FlowNode = styled.div<{ $state: WorkflowStepState; $index: number; 
     background: linear-gradient(112deg, transparent 12%, rgba(255, 255, 255, 0.72) 50%, transparent 86%);
     transform: translateX(-120%) skewX(-12deg);
     opacity: ${({ $state }) => ($state === 'active' ? 0.68 : 0)};
-    animation: ${({ $state }) => ($state === 'active' ? 'nodeShine 2.6s cubic-bezier(0.22, 1, 0.36, 1) infinite' : 'none')};
+    animation: ${({ $state }) =>
+      $state === 'active' ? 'nodeShine 2.6s cubic-bezier(0.22, 1, 0.36, 1) infinite' : 'none'};
     pointer-events: none;
   }
 
@@ -603,7 +630,8 @@ export const FlowNodeStatus = styled.span<{ $state: WorkflowStepState }>`
         : 'rgba(226, 236, 248, 0.88)'};
   font-size: 11px;
   font-weight: 900;
-  box-shadow: ${({ $state }) => ($state === 'active' ? '0 0 18px rgba(236, 180, 58, 0.42)' : '0 5px 14px rgba(15, 23, 42, 0.08)')};
+  box-shadow: ${({ $state }) =>
+    $state === 'active' ? '0 0 18px rgba(236, 180, 58, 0.42)' : '0 5px 14px rgba(15, 23, 42, 0.08)'};
   transition:
     background 650ms cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 650ms cubic-bezier(0.22, 1, 0.36, 1),
@@ -739,7 +767,9 @@ export const BenefitChipWrapper = styled.div`
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.72);
   background: rgba(255, 255, 255, 0.62);
-  box-shadow: 0 10px 24px rgba(48, 73, 120, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.88);
+  box-shadow:
+    0 10px 24px rgba(48, 73, 120, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(16px);
   transition:
     border-color 420ms cubic-bezier(0.22, 1, 0.36, 1),
@@ -762,7 +792,9 @@ export const BenefitChipWrapper = styled.div`
   &:hover {
     transform: translateY(-1px);
     border-color: rgba(218, 151, 32, 0.36);
-    box-shadow: 0 14px 30px rgba(218, 151, 32, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+    box-shadow:
+      0 14px 30px rgba(218, 151, 32, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.95);
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -788,7 +820,9 @@ export const CtaButton = styled.a`
   background: linear-gradient(120deg, #d99a2b, #fff0bd, #f2b24a);
   background-size: 220% 220%;
   font-weight: 900;
-  box-shadow: 0 16px 38px rgba(218, 151, 32, 0.22), 0 6px 16px rgba(48, 73, 120, 0.08);
+  box-shadow:
+    0 16px 38px rgba(218, 151, 32, 0.22),
+    0 6px 16px rgba(48, 73, 120, 0.08);
   transition:
     transform 520ms cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 520ms cubic-bezier(0.22, 1, 0.36, 1),
@@ -810,7 +844,9 @@ export const CtaButton = styled.a`
     color: #101827;
     filter: none;
     transform: translateY(-1px) scale(1.02);
-    box-shadow: 0 20px 44px rgba(218, 151, 32, 0.3), 0 10px 22px rgba(48, 73, 120, 0.1);
+    box-shadow:
+      0 20px 44px rgba(218, 151, 32, 0.3),
+      0 10px 22px rgba(48, 73, 120, 0.1);
     outline: none;
   }
 
@@ -897,7 +933,8 @@ export const GlowParticle = styled.span<{ $variant: 'gold' | 'blue' | 'cyan' }>`
   top: ${({ $variant }) => ($variant === 'gold' ? '10%' : $variant === 'blue' ? '8%' : '72%')};
   animation: ${({ $variant }) =>
       $variant === 'gold' ? 'particleFloatGold' : $variant === 'blue' ? 'particleFloatBlue' : 'particleFloatCyan'}
-    ${({ $variant }) => ($variant === 'gold' ? '28s' : $variant === 'blue' ? '42s' : '34s')} cubic-bezier(0.22, 1, 0.36, 1) infinite alternate;
+    ${({ $variant }) => ($variant === 'gold' ? '28s' : $variant === 'blue' ? '42s' : '34s')}
+    cubic-bezier(0.22, 1, 0.36, 1) infinite alternate;
 
   &::after {
     content: '';
