@@ -30,14 +30,31 @@ jobs:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-service-account.json
         run: |
           printf '%s' "$FIREBASE_SERVICE_ACCOUNT_JSON" > "$GOOGLE_APPLICATION_CREDENTIALS"
+          deploy_log="$(mktemp)"
 
           for attempt in 1 2 3; do
             echo "Firebase preview deploy attempt $attempt"
-            if npx -y firebase-tools@15.22.3 hosting:channel:deploy "pr-${{ github.event.pull_request.number }}" --project vs-web-studio --expires 7d --json; then
+            npx -y firebase-tools@15.22.3 hosting:channel:deploy "pr-${{ github.event.pull_request.number }}" --project vs-web-studio --expires 7d --json 2>&1 | tee "$deploy_log"
+            status="${PIPESTATUS[0]}"
+
+            if [ "$status" -eq 0 ]; then
+              exit 0
+            fi
+
+            if grep -q "is the current active version" "$deploy_log"; then
+              echo "Firebase Hosting already released this preview version; treating this deploy as successful."
               exit 0
             fi
 
             sleep $((attempt * 15))
           done
 
-          npx -y firebase-tools@15.22.3 hosting:channel:deploy "pr-${{ github.event.pull_request.number }}" --project vs-web-studio --expires 7d --debug
+          npx -y firebase-tools@15.22.3 hosting:channel:deploy "pr-${{ github.event.pull_request.number }}" --project vs-web-studio --expires 7d --debug 2>&1 | tee "$deploy_log"
+          status="${PIPESTATUS[0]}"
+
+          if grep -q "is the current active version" "$deploy_log"; then
+            echo "Firebase Hosting already released this preview version; treating this deploy as successful."
+            exit 0
+          fi
+
+          exit "$status"
