@@ -24,9 +24,20 @@ jobs:
           fi
 
           node -e "const json = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_JSON); for (const key of ['client_email', 'private_key', 'project_id']) { if (!json[key]) throw new Error('Missing ' + key); } if (json.project_id !== 'vs-web-studio') throw new Error('Expected project_id vs-web-studio, got ' + json.project_id);"
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_VS_WEB_STUDIO }}
-          projectId: vs-web-studio
-          firebaseToolsVersion: 15.22.1
+      - name: Deploy Firebase Hosting preview
+        env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_VS_WEB_STUDIO }}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-service-account.json
+        run: |
+          printf '%s' "$FIREBASE_SERVICE_ACCOUNT_JSON" > "$GOOGLE_APPLICATION_CREDENTIALS"
+
+          for attempt in 1 2 3; do
+            echo "Firebase preview deploy attempt $attempt"
+            if npx -y firebase-tools@15.22.3 hosting:channel:deploy "pr-${{ github.event.pull_request.number }}" --project vs-web-studio --expires 7d --json; then
+              exit 0
+            fi
+
+            sleep $((attempt * 15))
+          done
+
+          npx -y firebase-tools@15.22.3 hosting:channel:deploy "pr-${{ github.event.pull_request.number }}" --project vs-web-studio --expires 7d --debug
