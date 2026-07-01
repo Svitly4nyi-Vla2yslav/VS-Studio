@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { backOut, easeOut, motion, useScroll, useTransform } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { FaArrowRight, FaBolt, FaBullseye, FaEuroSign, FaIdCard, FaLifeRing, FaSearch } from 'react-icons/fa';
+import { FaArrowRight, FaBolt, FaBullseye, FaIdCard, FaLifeRing, FaSearch } from 'react-icons/fa';
 import TerminalType from '../../../components/Motion/TerminalType';
 import HeroVideo from '../../../components/Motion/HeroVideo';
 import { revealUp } from './homePageData';
@@ -51,12 +51,23 @@ const HeroSection: React.FC<HeroSectionProps> = ({ reducedMotion }) => {
         >
           <h1>
             <TerminalType
-              text={t('home.heroTitle', { defaultValue: 'Websites, die Anfragen bringen statt nur gut aussehen.' })}
+              text={t('home.heroTitle', { defaultValue: 'Mehr Kundenanfragen durch eine moderne Website' })}
               durationMs={6200}
               storageKey='hero_terminal_once'
             />
           </h1>
-          <p>{t('home.heroSubtitle', { defaultValue: 'Klare Positionierung, schnelle Umsetzung und transparente Pakete für lokale Dienstleister in Deutschland.' })}</p>
+          <p>
+            {t('home.heroSubtitle', {
+              defaultValue:
+                'VS Web Studio erstellt schnelle Websites, Landingpages und Lead-Systeme für lokale Unternehmen in Hildesheim und Niedersachsen.',
+            })}
+          </p>
+          <p className='hero-supporting'>
+            {t('home.heroSupporting', {
+              defaultValue:
+                'Für Handwerker, Restaurants, Praxen, Studios und Dienstleister, die online professioneller wirken und mehr Anfragen bekommen wollen.',
+            })}
+          </p>
           <div className='btn-row'>
             <NavLink
               to='/kontakt'
@@ -65,18 +76,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({ reducedMotion }) => {
               onMouseLeave={resetMagnet}
               style={{ transform: `translate(${magnet.x}px, ${magnet.y}px)` }}
             >
-              <FaArrowRight /> {t('common.projectRequest')}
-            </NavLink>
-            <NavLink to='/preise' className='btn btn-secondary'>
-              <FaEuroSign /> {t('common.viewPrices')}
+              <FaArrowRight /> {t('home.heroPrimaryCta', { defaultValue: 'Kostenlose Erstberatung' })}
             </NavLink>
             <NavLink to='/portfolio' className='btn btn-secondary'>
-              <FaIdCard /> {t('home.portfolioLink', { defaultValue: 'Portfolio' })}
+              <FaIdCard /> {t('home.heroPortfolioCta', { defaultValue: 'Website-Beispiele ansehen' })}
             </NavLink>
-            <a href='#faq' className='btn btn-secondary'>
-              <FaArrowRight /> {t('home.toFaq', { defaultValue: 'Zum FAQ' })}
-            </a>
           </div>
+          <p className='hero-trustline'>
+            {t('home.heroTrustline', {
+              defaultValue:
+                'Webdesign · SEO-Grundstruktur · Mobile Optimierung · Kontaktformular · Google Business Unterstützung',
+            })}
+          </p>
         </motion.div>
 
         <aside className='hero-bento'>

@@ -46,6 +46,20 @@ export const HeroSectionScope = styled.div`
     color: rgba(255, 255, 255, 0.82);
   }
 
+  .hero-supporting {
+    max-width: 58ch;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: clamp(15px, 1.6vw, 18px);
+    line-height: 1.55;
+  }
+
+  .hero-trustline {
+    max-width: 76ch;
+    color: rgba(255, 219, 166, 0.92);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
   .hero-bento {
     position: relative;
     z-index: 2;

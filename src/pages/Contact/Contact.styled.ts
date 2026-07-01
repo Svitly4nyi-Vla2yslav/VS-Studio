@@ -268,7 +268,7 @@ export const FieldGroup = styled.div`
   gap: 4px;
 `;
 
-export const FieldLabel = styled.span`
+export const FieldLabel = styled.label`
   color: rgba(255, 255, 255, 0.72);
   font-size: 12px;
   font-weight: 600;
@@ -289,17 +289,31 @@ export const ContextField = styled(FieldIcon)`
   }
 
   input,
-  textarea {
+  textarea,
+  select {
     font: inherit;
   }
 
-  input {
+  input,
+  select {
     min-height: 26px;
   }
 
   input::placeholder,
   textarea::placeholder {
     color: rgba(255, 255, 255, 0.42);
+  }
+
+  select {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    color: #ffffff;
+    outline: none;
+  }
+
+  option {
+    color: #101321;
   }
 
   textarea {

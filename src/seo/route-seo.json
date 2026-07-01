@@ -2,10 +2,10 @@
   "site": {
     "baseUrl": "https://vs-web-studio.de",
     "siteName": "VS Web Studio",
-    "defaultTitle": "VS Web Studio | Websites, SEO und Lead-Systeme für Deutschland",
-    "defaultDescription": "VS Web Studio entwickelt schnelle Websites, Landingpages und Lead-Systeme für lokale Unternehmen in Deutschland. SEO, Performance, Tracking und Conversion aus einer Hand.",
+    "defaultTitle": "VS Web Studio | Webdesign Hildesheim, Websites & Lead-Systeme",
+    "defaultDescription": "VS Web Studio erstellt schnelle Websites, Landingpages und Lead-Systeme für lokale Unternehmen in Hildesheim und Niedersachsen. Modernes Webdesign, SEO und klare Anfragen statt nur schöner Optik.",
     "defaultImage": "https://vs-web-studio.de/og.png",
-    "defaultImageAlt": "VS Web Studio - Websites, SEO und Lead-Systeme",
+    "defaultImageAlt": "VS Web Studio - Webdesign aus Hildesheim",
     "socialProfiles": [
       "https://www.linkedin.com/company/vs-web-studio/",
       "https://www.facebook.com/people/VS-Web-Studio/61568000211668/?locale=uk_UA",
@@ -14,66 +14,62 @@
     "locale": "de_DE",
     "language": "de",
     "themeColor": "#0B0B0F",
-    "telephone": "+49 1516 4392053",
     "email": "anfrage@vs-web-studio.de",
-    "priceRange": "EUR",
+    "phone": "+49 1516 4392053",
     "address": {
-      "streetAddress": "",
+      "streetAddress": "Ehrlicherstr. 52",
       "addressLocality": "Hildesheim",
       "postalCode": "31135",
       "addressCountry": "DE"
     },
-    "geo": {
-      "latitude": "52.154778",
-      "longitude": "9.957965"
-    }
+    "priceRange": "Preis auf Anfrage"
   },
   "homeFaq": [
     {
-      "question": "Wie schnell koennen Sie starten?",
-      "answer": "In der Regel starten wir innerhalb von drei bis fuenf Werktagen. Nach der Anfrage erhalten Sie einen klaren Startplan mit den ersten Schritten."
+      "question": "Wie lange dauert die Erstellung einer Website?",
+      "answer": "Das hängt vom Umfang ab. Eine kompakte Landingpage ist schneller fertig als eine mehrseitige Unternehmenswebsite mit Texten, Formularen und SEO-Struktur."
     },
     {
-      "question": "Was wird am Anfang benoetigt?",
-      "answer": "Fuer den Start reichen Basisinfos zu Angebot, Zielgruppe und Kontaktwegen. Struktur, Texte und Prioritaeten erarbeiten wir gemeinsam."
+      "question": "Was kostet eine Website?",
+      "answer": "Ohne offiziellen Festpreis arbeitet VS Web Studio mit Preis auf Anfrage. Der Preis hängt von Seitenanzahl, Funktionen, Texten und Integrationen ab."
     },
     {
-      "question": "Wie laeuft die Zusammenarbeit ab?",
-      "answer": "Wir arbeiten in klaren Etappen: Konzept, Design, Entwicklung, Launch und Optimierung. Sie erhalten waehrend des gesamten Projekts transparente Updates."
+      "question": "Ist SEO enthalten?",
+      "answer": "Eine SEO-Grundstruktur kann direkt eingeplant werden: technische Basis, Meta-Daten, Überschriften, lokale Keywords und klare Seitenstruktur."
     },
     {
-      "question": "Ist das Angebot für kleine Unternehmen geeignet?",
-      "answer": "Ja. Die Pakete sind bewusst für lokale Unternehmen aufgebaut und fokussieren Anfragen, klare Preise und eine schnelle Umsetzung."
+      "question": "Kann meine alte Website modernisiert werden?",
+      "answer": "Ja. Bestehende Websites können analysiert, neu strukturiert und technisch sowie inhaltlich verbessert werden."
     },
     {
-      "question": "Was passiert nach dem Launch?",
-      "answer": "Nach dem Launch pruefen wir Tracking, Conversion-Punkte und Ladezeit und erstellen einen konkreten Verbesserungsplan für die nächsten 30 Tage."
+      "question": "Arbeitet VS Web Studio nur in Hildesheim?",
+      "answer": "Der lokale Fokus liegt auf Hildesheim und Niedersachsen. Projekte können aber auch deutschlandweit online umgesetzt werden."
     }
   ],
   "pricingPackages": [
     {
-      "name": "Starter",
-      "price": "ab EUR 490",
-      "description": "Landingpage mit Lead-Formular, Tracking und SEO-Basis für kleine lokale Unternehmen."
+      "name": "Landingpage",
+      "price": "Preis auf Anfrage",
+      "description": "Für einzelne Leistungen, Kampagnen oder lokale Angebote."
     },
     {
-      "name": "Business",
-      "price": "ab EUR 590",
-      "description": "Mehrseitige Website mit CRM-Integration, Tracking und Conversion-Fokus."
+      "name": "Business Website",
+      "price": "Preis auf Anfrage",
+      "description": "Für Unternehmen, die mehrere Leistungen, Vertrauen und professionelle Darstellung brauchen."
     },
     {
-      "name": "Pro",
-      "price": "ab EUR 790",
-      "description": "Growth-Setup mit Website, Ads, Marketing-Dashboard und Automationen."
+      "name": "Website + Lead-System",
+      "price": "Preis auf Anfrage",
+      "description": "Für Unternehmen, die Anfragen strukturieren, automatisieren und besser nachverfolgen wollen."
     }
   ],
   "routes": [
     {
       "path": "/",
       "name": "Startseite",
-      "title": "VS Web Studio | Websites, SEO und Lead-Systeme für Deutschland",
-      "description": "VS Web Studio entwickelt schnelle Websites, Landingpages und Lead-Systeme für lokale Unternehmen in Deutschland. SEO, Performance, Tracking und Conversion aus einer Hand.",
-      "keywords": "webagentur deutschland, webdesign hildesheim, seo agentur niedersachsen, landingpage agentur, lead system für lokale unternehmen, performance website",
+      "title": "VS Web Studio | Webdesign Hildesheim, Websites & Lead-Systeme",
+      "description": "VS Web Studio erstellt schnelle Websites, Landingpages und Lead-Systeme für lokale Unternehmen in Hildesheim und Niedersachsen. Modernes Webdesign, SEO und klare Anfragen statt nur schöner Optik.",
+      "keywords": "vs web studio, vs web studio hildesheim, webdesign hildesheim, website erstellen lassen hildesheim, webagentur hildesheim, seo hildesheim, landingpage erstellen lassen, lead-systeme lokale unternehmen",
       "pageKind": "home",
       "changeFrequency": "weekly",
       "priority": 1,
@@ -84,38 +80,129 @@
     {
       "path": "/services",
       "name": "Leistungen",
-      "title": "Leistungen | Website, SEO, Tracking, Ads und Automationen",
-      "description": "Website-Entwicklung, SEO-Basis, Tracking, Social Ads, KI-Automationen und Lead-Systeme für lokale Unternehmen in Deutschland.",
-      "keywords": "website entwicklung deutschland, seo basis, tracking setup, social ads agentur, ki automation, lead funnel",
+      "title": "Leistungen | Websites, Landingpages, SEO & AI Content",
+      "description": "Leistungen von VS Web Studio: moderne Websites, Landingpages, SEO-Grundstruktur, Lead-Systeme und AI Content für lokale Unternehmen.",
+      "keywords": "webdesign leistungen, landingpages, seo-grundstruktur, lead-systeme, ai content",
       "pageKind": "services",
       "changeFrequency": "weekly",
-      "priority": 0.95,
+      "priority": 0.9,
       "indexable": true,
       "sitemap": true,
       "breadcrumb": ["Startseite", "Leistungen"]
     },
     {
-      "path": "/preise",
-      "name": "Preise",
-      "title": "Preise | Website- und Lead-Systeme ab EUR 490",
-      "description": "Transparente Preise für Landingpages, mehrseitige Websites und Lead-Systeme inklusive SEO-Basis, Tracking und Support für lokale Unternehmen.",
-      "keywords": "website preise deutschland, landingpage ab 490, webagentur preise, lead system kosten, seo paket",
-      "pageKind": "pricing",
+      "path": "/webdesign-hildesheim",
+      "name": "Webdesign Hildesheim",
+      "title": "Webdesign Hildesheim | Moderne Websites für lokale Unternehmen",
+      "description": "VS Web Studio erstellt moderne Websites für Unternehmen in Hildesheim und Niedersachsen. Webdesign, SEO-Grundstruktur, mobile Optimierung und klare Kundenanfragen.",
+      "keywords": "webdesign hildesheim, webagentur hildesheim, website hildesheim, lokale website niedersachsen",
+      "pageKind": "services",
+      "changeFrequency": "weekly",
+      "priority": 0.95,
+      "indexable": true,
+      "sitemap": true,
+      "breadcrumb": ["Startseite", "Webdesign Hildesheim"]
+    },
+    {
+      "path": "/website-erstellen-lassen",
+      "name": "Website erstellen lassen",
+      "title": "Website erstellen lassen | Professionelle Website für Ihr Unternehmen",
+      "description": "Lassen Sie eine moderne Website erstellen: responsive, schnell, SEO-freundlich und mit klarem Fokus auf Kundenanfragen. VS Web Studio aus Hildesheim.",
+      "keywords": "website erstellen lassen, professionelle website, landingpage erstellen lassen, website für unternehmen",
+      "pageKind": "services",
       "changeFrequency": "weekly",
       "priority": 0.92,
+      "indexable": true,
+      "sitemap": true,
+      "breadcrumb": ["Startseite", "Website erstellen lassen"]
+    },
+    {
+      "path": "/seo-hildesheim",
+      "name": "SEO Hildesheim",
+      "title": "SEO Hildesheim | Besser gefunden werden bei Google",
+      "description": "SEO-Grundstruktur für lokale Unternehmen in Hildesheim: bessere Seitenstruktur, klare Inhalte, lokale Keywords und technische SEO-Basis.",
+      "keywords": "seo hildesheim, lokale seo, google sichtbarkeit hildesheim, seo-grundstruktur",
+      "pageKind": "services",
+      "changeFrequency": "weekly",
+      "priority": 0.9,
+      "indexable": true,
+      "sitemap": true,
+      "breadcrumb": ["Startseite", "SEO Hildesheim"]
+    },
+    {
+      "path": "/lead-systeme",
+      "name": "Lead-Systeme",
+      "title": "Lead-Systeme für lokale Unternehmen | Mehr Anfragen über Ihre Website",
+      "description": "VS Web Studio entwickelt Lead-Systeme für lokale Unternehmen: Kontaktformulare, Anfrageprozesse, Automatisierung und klare Kundenkommunikation.",
+      "keywords": "lead-systeme, lead-system lokale unternehmen, kontaktformular website, anfrageprozess automatisierung",
+      "pageKind": "services",
+      "changeFrequency": "weekly",
+      "priority": 0.9,
+      "indexable": true,
+      "sitemap": true,
+      "breadcrumb": ["Startseite", "Lead-Systeme"]
+    },
+    {
+      "path": "/websites-fuer-handwerker",
+      "name": "Website für Handwerker",
+      "title": "Website für Handwerker | Webdesign für Handwerksbetriebe",
+      "description": "Moderne Websites für Handwerker: Leistungen, Referenzen, Kontaktformular, lokale SEO-Struktur und professionelle Darstellung Ihres Betriebs.",
+      "keywords": "website für handwerker, handwerker webdesign, webdesign handwerksbetrieb, lokale seo handwerker",
+      "pageKind": "niche",
+      "changeFrequency": "monthly",
+      "priority": 0.88,
+      "indexable": true,
+      "sitemap": true,
+      "breadcrumb": ["Startseite", "Website für Handwerker"]
+    },
+    {
+      "path": "/portfolio",
+      "name": "Portfolio",
+      "title": "Portfolio | Website-Beispiele und Projekte von VS Web Studio",
+      "description": "Ausgewählte Website-Beispiele, Konzepte und Projekte von VS Web Studio. Moderne Websites, Lead-Systeme und Web-Apps mit klarem Business-Fokus.",
+      "keywords": "portfolio vs web studio, website beispiele, webdesign projekte, demo website",
+      "pageKind": "references",
+      "changeFrequency": "monthly",
+      "priority": 0.86,
+      "indexable": true,
+      "sitemap": true,
+      "breadcrumb": ["Startseite", "Portfolio"]
+    },
+    {
+      "path": "/preise",
+      "name": "Preise",
+      "title": "Preise | Website-Pakete von VS Web Studio",
+      "description": "Übersichtliche Website-Pakete für lokale Unternehmen: Landingpage, Unternehmenswebsite, SEO-Basis und optionale Lead-Systeme. Preis auf Anfrage.",
+      "keywords": "website preise, webdesign paket, landingpage paket, website preis auf anfrage",
+      "pageKind": "pricing",
+      "changeFrequency": "monthly",
+      "priority": 0.86,
       "indexable": true,
       "sitemap": true,
       "breadcrumb": ["Startseite", "Preise"]
     },
     {
+      "path": "/faq",
+      "name": "FAQ",
+      "title": "FAQ | Häufige Fragen zu Websites, SEO und Lead-Systemen",
+      "description": "Antworten auf häufige Fragen zu Webdesign, Website-Erstellung, SEO, Kosten, Dauer und Zusammenarbeit mit VS Web Studio.",
+      "keywords": "webdesign faq, website kosten, seo enthalten, website dauer",
+      "pageKind": "faq",
+      "changeFrequency": "monthly",
+      "priority": 0.72,
+      "indexable": true,
+      "sitemap": true,
+      "breadcrumb": ["Startseite", "FAQ"]
+    },
+    {
       "path": "/referenzen",
       "name": "Referenzen",
-      "title": "Referenzen | Messbare Ergebnisse für lokale Unternehmen",
-      "description": "Ausgewaehlte Referenzen mit messbaren Ergebnissen: mehr Anfragen, mehr Termine, mehr qualifizierte Leads und bessere Conversion.",
-      "keywords": "webagentur referenzen, case studies lokale unternehmen, mehr anfragen website, conversion optimierung referenzen",
+      "title": "Referenzen | Website- und Lead-System Ergebnisse",
+      "description": "Ausgewählte Referenzen und Konzepte mit Fokus auf Websites, lokale Sichtbarkeit, Lead-Systeme und bessere Kundenanfragen.",
+      "keywords": "webagentur referenzen, website referenzen, lead-system beispiele",
       "pageKind": "references",
-      "changeFrequency": "weekly",
-      "priority": 0.9,
+      "changeFrequency": "monthly",
+      "priority": 0.78,
       "indexable": true,
       "sitemap": true,
       "breadcrumb": ["Startseite", "Referenzen"]
@@ -123,12 +210,12 @@
     {
       "path": "/ueber-uns",
       "name": "Über uns",
-      "title": "Ueber VS Web Studio | Webagentur aus Hildesheim",
-      "description": "VS Web Studio aus Hildesheim entwickelt Websites und Lead-Systeme für lokale Unternehmen in Niedersachsen und ganz Deutschland.",
-      "keywords": "webagentur hildesheim, webdesign niedersachsen, ueber vs web studio, lokale agentur deutschland",
+      "title": "Über VS Web Studio | Webstudio aus Hildesheim",
+      "description": "VS Web Studio aus Hildesheim entwickelt Websites, Landingpages, SEO-Strukturen und Lead-Systeme für lokale Unternehmen in Niedersachsen.",
+      "keywords": "vs web studio, webstudio hildesheim, webagentur niedersachsen",
       "pageKind": "about",
       "changeFrequency": "monthly",
-      "priority": 0.86,
+      "priority": 0.76,
       "indexable": true,
       "sitemap": true,
       "breadcrumb": ["Startseite", "Über uns"]
@@ -136,9 +223,9 @@
     {
       "path": "/kontakt",
       "name": "Kontakt",
-      "title": "Kontakt | Projektanfrage an VS Web Studio",
-      "description": "Projektanfrage für Website, Relaunch, SEO, Tracking oder Lead-System. Direkter Kontakt mit VS Web Studio in Hildesheim.",
-      "keywords": "kontakt webagentur hildesheim, projektanfrage website, seo agentur kontakt, landingpage anfragen",
+      "title": "Kontakt | Kostenlose Erstberatung anfragen",
+      "description": "Kontaktieren Sie VS Web Studio für Webdesign, Websites, SEO und Lead-Systeme in Hildesheim und Niedersachsen.",
+      "keywords": "kontakt vs web studio, webdesign hildesheim kontakt, kostenlose erstberatung website",
       "pageKind": "contact",
       "changeFrequency": "monthly",
       "priority": 0.88,
@@ -149,12 +236,12 @@
     {
       "path": "/blog",
       "name": "Blog",
-      "title": "Blog | Insights zu Website, SEO, Ads und Automationen",
-      "description": "Insights zu Websites, Lead-Funnels, SEO, Tracking, Social Ads und Automationen für lokale Unternehmen in Deutschland.",
-      "keywords": "website blog deutschland, seo insights, lead funnel tipps, social ads tracking, automation blog",
+      "title": "Blog | Tipps zu Websites, SEO und Lead-Systemen",
+      "description": "Praktische Tipps zu Websites, lokaler SEO, Lead-Systemen und Online-Sichtbarkeit für kleine Unternehmen.",
+      "keywords": "website blog, seo tipps, lead-system tipps",
       "pageKind": "blog",
-      "changeFrequency": "weekly",
-      "priority": 0.76,
+      "changeFrequency": "monthly",
+      "priority": 0.56,
       "indexable": true,
       "sitemap": true,
       "breadcrumb": ["Startseite", "Blog"]
@@ -164,10 +251,10 @@
       "name": "Handwerker",
       "title": "Websites für Handwerker | Mehr passende Anfragen",
       "description": "Websites für Handwerker mit lokaler Sichtbarkeit, klaren Leistungsseiten, schneller Ladezeit und direktem Anfrage-Fokus.",
-      "keywords": "website für handwerker, handwerker webdesign, lokale sichtbarkeit handwerk, anfragen für handwerker",
+      "keywords": "website für handwerker, handwerker webdesign, lokale sichtbarkeit handwerk",
       "pageKind": "niche",
       "changeFrequency": "monthly",
-      "priority": 0.84,
+      "priority": 0.64,
       "indexable": true,
       "sitemap": true,
       "breadcrumb": ["Startseite", "Handwerker"]
@@ -177,10 +264,10 @@
       "name": "Praxis",
       "title": "Websites für Praxen | Mehr Terminanfragen und weniger Rückfragen",
       "description": "Websites für Praxen mit patientenfreundlicher Struktur, klaren Kontaktwegen und messbarer Conversion für Terminanfragen.",
-      "keywords": "website für praxis, arztpraxis webdesign, terminanfragen website, praxis marketing deutschland",
+      "keywords": "website für praxis, arztpraxis webdesign, terminanfragen website",
       "pageKind": "niche",
       "changeFrequency": "monthly",
-      "priority": 0.84,
+      "priority": 0.6,
       "indexable": true,
       "sitemap": true,
       "breadcrumb": ["Startseite", "Praxis"]
@@ -188,12 +275,12 @@
     {
       "path": "/werkstatt",
       "name": "Werkstatt",
-      "title": "Websites für Werkstaetten | Planbare Leads statt Zufall",
-      "description": "Website- und Lead-Systeme für Werkstaetten mit serviceorientierten Seiten, Tracking und klarem Anfrageprozess.",
-      "keywords": "website für werkstatt, auto werkstatt webdesign, lead system werkstatt, conversion website servicebetrieb",
+      "title": "Websites für Werkstätten | Planbare Leads statt Zufall",
+      "description": "Website- und Lead-Systeme für Werkstätten mit serviceorientierten Seiten, Tracking und klarem Anfrageprozess.",
+      "keywords": "website für werkstatt, auto werkstatt webdesign, lead system werkstatt",
       "pageKind": "niche",
       "changeFrequency": "monthly",
-      "priority": 0.84,
+      "priority": 0.6,
       "indexable": true,
       "sitemap": true,
       "breadcrumb": ["Startseite", "Werkstatt"]
@@ -207,8 +294,8 @@
       "pageKind": "legal",
       "changeFrequency": "yearly",
       "priority": 0.2,
-      "indexable": false,
-      "sitemap": false,
+      "indexable": true,
+      "sitemap": true,
       "breadcrumb": ["Startseite", "Impressum"]
     },
     {
@@ -220,19 +307,19 @@
       "pageKind": "legal",
       "changeFrequency": "yearly",
       "priority": 0.2,
-      "indexable": false,
-      "sitemap": false,
+      "indexable": true,
+      "sitemap": true,
       "breadcrumb": ["Startseite", "Datenschutz"]
     },
     {
       "path": "/agb",
       "name": "AGB",
       "title": "AGB | VS Web Studio",
-      "description": "Allgemeine Geschaeftsbedingungen von VS Web Studio.",
+      "description": "Allgemeine Geschäftsbedingungen von VS Web Studio.",
       "keywords": "agb vs web studio",
       "pageKind": "legal",
       "changeFrequency": "yearly",
-      "priority": 0.2,
+      "priority": 0.1,
       "indexable": false,
       "sitemap": false,
       "breadcrumb": ["Startseite", "AGB"]
@@ -245,7 +332,7 @@
       "keywords": "cookies vs web studio",
       "pageKind": "legal",
       "changeFrequency": "yearly",
-      "priority": 0.2,
+      "priority": 0.1,
       "indexable": false,
       "sitemap": false,
       "breadcrumb": ["Startseite", "Cookies"]

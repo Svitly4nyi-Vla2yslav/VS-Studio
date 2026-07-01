@@ -22,7 +22,12 @@
   "header": {
     "menu": "Menu",
     "menuAria": "Navigationsmenü öffnen",
+    "startseite": "Startseite",
     "services": "Services",
+    "webdesignHildesheim": "Webdesign Hildesheim",
+    "seo": "SEO",
+    "leadSysteme": "Lead-Systeme",
+    "portfolio": "Portfolio",
     "preise": "Preise",
     "referenzen": "Referenzen",
     "ueberUns": "Über uns",
@@ -30,12 +35,36 @@
   },
   "footer": {
     "tagline": "VS Studio - Websites, Web-Apps, Ads & Automationen",
+    "description": "Webdesign, Websites, SEO und Lead-Systeme für lokale Unternehmen in Hildesheim und Niedersachsen.",
+    "columns": {
+      "services": "Leistungen",
+      "regions": "Regionen",
+      "legal": "Rechtliches",
+      "contact": "Kontakt"
+    },
+    "links": {
+      "webdesign": "Webdesign Hildesheim",
+      "landingpages": "Landingpages",
+      "seoBase": "SEO",
+      "leadSystems": "Lead-Systeme",
+      "aiContent": "AI Content",
+      "freeConsultation": "Kostenlose Erstberatung",
+      "faq": "FAQ",
+      "portfolio": "Portfolio"
+    },
     "impressum": "Impressum",
     "datenschutz": "Datenschutz",
     "agb": "AGB",
     "cookies": "Cookies",
     "cookieSettings": "Cookie-Einstellungen",
-    "blog": "Blog"
+    "blog": "Blog",
+    "regions": {
+      "hildesheim": "Hildesheim",
+      "hannover": "Hannover",
+      "braunschweig": "Braunschweig",
+      "niedersachsen": "Niedersachsen",
+      "onlineGermany": "Deutschlandweit online"
+    }
   },
   "cookie": {
     "aria": "Cookie-Einwilligung",
@@ -51,9 +80,67 @@
     "saveSelection": "Auswahl speichern"
   },
   "home": {
-    "heroTitle": "Websites, die Anfragen bringen statt nur gut aussehen.",
-    "heroSubtitle": "Klare Positionierung, schnelle Umsetzung und transparente Pakete für lokale Dienstleister in Deutschland.",
+    "heroTitle": "Mehr Kundenanfragen durch eine moderne Website",
+    "heroSubtitle": "VS Web Studio erstellt schnelle Websites, Landingpages und Lead-Systeme für lokale Unternehmen in Hildesheim und Niedersachsen.",
     "toFaq": "Zum FAQ",
+    "heroSupporting": "Für Handwerker, Restaurants, Praxen, Studios und Dienstleister, die online professioneller wirken und mehr Anfragen bekommen wollen.",
+    "heroPrimaryCta": "Kostenlose Erstberatung",
+    "heroPortfolioCta": "Website-Beispiele ansehen",
+    "heroTrustline": "Webdesign · SEO-Grundstruktur · Mobile Optimierung · Kontaktformular · Google Business Unterstützung",
+    "localSeo": {
+      "audienceTitle": "Websites für lokale Unternehmen",
+      "audienceLead": "Wir helfen kleinen und lokalen Unternehmen, online professioneller aufzutreten und mehr qualifizierte Anfragen zu erhalten.",
+      "industries": [
+        {
+          "title": "Webdesign Hildesheim",
+          "text": "Wir helfen kleinen und lokalen Unternehmen, online professioneller aufzutreten und mehr qualifizierte Anfragen zu erhalten."
+        },
+        {
+          "title": "SEO",
+          "text": "Webdesign · SEO-Grundstruktur · Mobile Optimierung · Kontaktformular · Google Business Unterstützung"
+        },
+        {
+          "title": "Lead-Systeme",
+          "text": "Für Handwerker, Restaurants, Praxen, Studios und Dienstleister, die online professioneller wirken und mehr Anfragen bekommen wollen."
+        },
+        {
+          "title": "Kontakt"
+        }
+      ],
+      "includedTitle": "Websites für lokale Unternehmen",
+      "includedItems": [
+        "Hildesheim",
+        "SEO-Grundstruktur",
+        "klare Leistungen",
+        "mehr Anfragen"
+      ],
+      "processTitle": "Leistungen",
+      "processSteps": [
+        [
+          "SEO-Grundstruktur",
+          "Wir helfen kleinen und lokalen Unternehmen, online professioneller aufzutreten und mehr qualifizierte Anfragen zu erhalten."
+        ],
+        [
+          "klare Leistungen",
+          "Für Handwerker, Restaurants, Praxen, Studios und Dienstleister, die online professioneller wirken und mehr Anfragen bekommen wollen."
+        ],
+        [
+          "mehr Anfragen",
+          null
+        ]
+      ],
+      "whyTitle": "VS Web Studio",
+      "whyLead": "Wir helfen kleinen und lokalen Unternehmen, online professioneller aufzutreten und mehr qualifizierte Anfragen zu erhalten.",
+      "whyItems": [
+        "Hildesheim",
+        "SEO-Grundstruktur",
+        "klare Leistungen",
+        "mehr Anfragen"
+      ],
+      "industryCtaText": "Beschreiben Sie kurz Ihre Branche, Ihr Ziel und ob bereits eine Website vorhanden ist. Danach kann der passende nächste Schritt vorgeschlagen werden.",
+      "includedCtaText": "Beschreiben Sie kurz Ihre Branche, Ihr Ziel und ob bereits eine Website vorhanden ist. Danach kann der passende nächste Schritt vorgeschlagen werden.",
+      "processCtaText": "Beschreiben Sie kurz Ihre Branche, Ihr Ziel und ob bereits eine Website vorhanden ist. Danach kann der passende nächste Schritt vorgeschlagen werden."
+    },
     "partnersTitle": "Highlights, Zielgruppen und Leistungen",
     "groups": {
       "highlights": "Highlights",
@@ -597,8 +684,8 @@
     "hero": {
       "titleLine1": "Website and Lead System",
       "titleLine2": "für lokale Unternehmen",
-      "titleLine3": "ab EUR 490",
-      "subtitle": "Premium setup for local businesses in Germany: clear funnel, measurable leads, clean handover to sales.",
+      "titleLine3": "Preis auf Anfrage",
+      "subtitle": "Übersichtliche Website-Pakete für lokale Unternehmen: Landingpage, Business Website, SEO-Basis und optionale Lead-Systeme.",
       "cta": "Kostenloses Erstgespräch",
       "metrics": {
         "leadVolume": "Lead Volume",
@@ -638,8 +725,8 @@
       "starter": {
         "name": "Starter",
         "desc": "Für kleine lokale Unternehmen, die schnell professionell online sichtbar werden möchten.",
-        "price": "ab EUR 490",
-        "range": "meist EUR 490–590",
+        "price": "Preis auf Anfrage",
+        "range": "Individuelles Angebot nach Erstgespräch",
         "core": [
           "Landingpage",
           "Lead-Formular + Kontaktbereich",
@@ -651,11 +738,11 @@
         ],
         "subscription": {
           "monthly": {
-            "price": "EUR 62 / Monat",
+            "price": "Preis auf Anfrage",
             "meta": "Support Abo separat zur Website-Erstellung"
           },
           "yearly": {
-            "price": "EUR 521 / Jahr",
+            "price": "Individuelles Angebot",
             "meta": "12 Monate mit 30% Rabatt"
           },
           "includes": [
@@ -669,8 +756,8 @@
       "business": {
         "name": "Business",
         "desc": "Für lokale Unternehmen, die mehr Anfragen, bessere Struktur und klare Auswertung brauchen.",
-        "price": "ab EUR 590",
-        "range": "meist EUR 590–790",
+        "price": "Preis auf Anfrage",
+        "range": "Individuelles Angebot nach Erstgespräch",
         "core": [
           "Mehrseitige Website bis zu 5 Seiten",
           "CRM-Integration + Lead-Tracking",
@@ -682,11 +769,11 @@
         ],
         "subscription": {
           "monthly": {
-            "price": "EUR 86 / Monat",
+            "price": "Preis auf Anfrage",
             "meta": "Support Abo separat zur Website-Erstellung"
           },
           "yearly": {
-            "price": "EUR 722 / Jahr",
+            "price": "Individuelles Angebot",
             "meta": "12 Monate mit 30% Rabatt"
           },
           "includes": [
@@ -700,8 +787,8 @@
       "pro": {
         "name": "Pro",
         "desc": "Für Unternehmen, die Website, Werbung und Automatisierung verbinden möchten.",
-        "price": "ab EUR 790",
-        "range": "meist EUR 790–990",
+        "price": "Preis auf Anfrage",
+        "range": "Individuelles Angebot nach Erstgespräch",
         "core": [
           "Website + Ads Setup",
           "Google Ads oder Meta Ads",
@@ -713,11 +800,11 @@
         ],
         "subscription": {
           "monthly": {
-            "price": "EUR 160 / Monat",
+            "price": "Preis auf Anfrage",
             "meta": "Support Abo separat zur Website-Erstellung"
           },
           "yearly": {
-            "price": "EUR 1.344 / Jahr",
+            "price": "Individuelles Angebot",
             "meta": "12 Monate mit 30% Rabatt"
           },
           "includes": [
@@ -728,9 +815,9 @@
         },
         "outcome": "Mehr Nachfrage mit kontrollierten Kosten pro Lead."
       },
-      "subtitle": "Einführungsangebot für die ersten Kunden – klare Website-Erstellung und optionaler Support.",
+      "subtitle": "Übersichtliche Paket-Struktur für Websites, Landingpages und Lead-Systeme. Der konkrete Preis hängt von Umfang, Inhalten und Integrationen ab.",
       "websiteCreationLabel": "Website-Erstellung",
-      "introOfferNote": "Einführungspreis für erste Kunden",
+      "introOfferNote": "Konkreter Preis nach kurzer Einschätzung des Projektumfangs",
       "optionalSupportLabel": "Optionaler Support"
     },
     "comparison": {
@@ -1056,20 +1143,20 @@
   "legal": {
     "impressum": {
       "h1": "Impressum",
-      "subtitle": "Angaben gemäß § 5 TMG.",
-      "l1": "VS Studio",
-      "l2": "Musterstraße 10, 10115 Berlin, Deutschland",
-      "l3": "E-Mail: kontakt@vs-web-studio.de",
-      "l4": "Telefon: +49 30 1234567",
-      "l5": "Vertreten durch: Vladyslav"
+      "subtitle": "TODO: Vollständige Anbieterkennzeichnung nach § 5 DDG ergänzen.",
+      "l1": "TODO: Name / vollständige Anbieterkennzeichnung ergänzen.",
+      "l2": "TODO: Anschrift ergänzen.",
+      "l3": "TODO: Kontaktangaben ergänzen.",
+      "l4": "TODO: Rechtsform / Status und ggf. Umsatzsteuer-ID ergänzen.",
+      "l5": "TODO: Verantwortlich für den Inhalt ergänzen."
     },
     "datenschutz": {
       "h1": "Datenschutzerklärung",
-      "subtitle": "Kurzinformation zur Verarbeitung personenbezogener Daten.",
-      "l1": "Wir verarbeiten Daten nur zweckgebunden (Kontaktanfragen, Angebotserstellung, Statistik).",
-      "l2": "Rechtsgrundlagen: Art. 6 Abs. 1 lit. b und f DSGVO.",
-      "l3": "Betroffene Rechte: Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch.",
-      "l4": "Kontakt für Datenschutz: datenschutz@vs-web-studio.de"
+      "subtitle": "TODO: Vollständige Datenschutzerklärung rechtlich prüfen und ergänzen.",
+      "l1": "TODO: Hosting, Server-Logs und technische Sicherheitsmaßnahmen ergänzen.",
+      "l2": "TODO: Kontaktformular, E-Mail-Kontakt und Speicherdauer ergänzen.",
+      "l3": "TODO: Cookies, Analytics, Google Fonts und eingebettete Inhalte prüfen und ergänzen.",
+      "l4": "TODO: Rechte der betroffenen Personen und zuständige Kontaktstelle ergänzen."
     },
     "agb": {
       "h1": "AGB",
@@ -1532,6 +1619,286 @@
       "timeline": "Animierte Quest-Timeline-Szene für den Entwicklungsweg",
       "network": "Animierte Guild-Network-Szene für Business-Kontext und Kontakte",
       "contact": "Animierte Final-Portal-Szene für den Kontaktbereich"
+    }
+  },
+  "seoLanding": {
+    "signalsAria": "Leistungsbereiche",
+    "signals": [
+      "Hildesheim",
+      "SEO-Grundstruktur",
+      "klare Leistungen",
+      "mehr Anfragen"
+    ],
+    "finalCta": {
+      "title": "Kostenlose Erstberatung anfragen",
+      "text": "Beschreiben Sie kurz Ihre Branche, Ihr Ziel und ob bereits eine Website vorhanden ist. Danach kann der passende nächste Schritt vorgeschlagen werden.",
+      "button": "Anfrage senden"
+    },
+    "pages": {
+      "webdesign-hildesheim": {
+        "eyebrow": "Webdesign Hildesheim",
+        "h1": "Webdesign Hildesheim für lokale Unternehmen",
+        "lead": "VS Web Studio erstellt moderne Websites, die Vertrauen aufbauen, mobil stark funktionieren und klare Kundenanfragen ermöglichen.",
+        "cta": "Kostenlose Erstberatung anfragen",
+        "sections": [
+          {
+            "title": "Moderne Websites, die Vertrauen aufbauen",
+            "text": "Eine gute Website erklärt in wenigen Sekunden, wer Sie sind, was Sie anbieten und wie Kunden Sie erreichen.",
+            "points": [
+              "klare Startseite",
+              "verständliche Leistungen",
+              "mobile Optimierung"
+            ]
+          },
+          {
+            "title": "Für welche Branchen?",
+            "text": "Der Fokus liegt auf Handwerk, Restaurants, Praxen, Studios und lokalen Dienstleistern in Hildesheim und Niedersachsen.",
+            "points": [
+              "Handwerker",
+              "Restaurants & Cafés",
+              "Praxen, Studios und Dienstleister"
+            ]
+          },
+          {
+            "title": "Was ist enthalten?",
+            "text": "Je nach Projekt entsteht eine Landingpage oder mehrseitige Unternehmenswebsite mit SEO-Grundstruktur und Kontaktwegen.",
+            "points": [
+              "responsive Design",
+              "SEO-Basis",
+              "Kontaktformular und klare CTAs"
+            ]
+          },
+          {
+            "title": "Warum lokales Webdesign wichtig ist",
+            "text": "Lokale Kunden suchen konkret: Leistung, Standort, Vertrauen und schnelle Kontaktaufnahme. Genau darauf wird die Struktur ausgerichtet.",
+            "points": [
+              "lokale Keywords",
+              "Google Business Unterstützung",
+              "Anfrage-Fokus"
+            ]
+          }
+        ]
+      },
+      "website-erstellen-lassen": {
+        "eyebrow": "Website erstellen lassen",
+        "h1": "Website erstellen lassen - professionell, modern und verständlich",
+        "lead": "Lassen Sie eine Website erstellen, die nicht nur gut aussieht, sondern Leistungen klar erklärt und Anfragen erleichtert.",
+        "cta": "Projekt unverbindlich besprechen",
+        "sections": [
+          {
+            "title": "Moderne Websites, die Vertrauen aufbauen",
+            "text": "Eine gute Website erklärt in wenigen Sekunden, wer Sie sind, was Sie anbieten und wie Kunden Sie erreichen.",
+            "points": [
+              "klare Startseite",
+              "verständliche Leistungen",
+              "mobile Optimierung"
+            ]
+          },
+          {
+            "title": "Für welche Branchen?",
+            "text": "Der Fokus liegt auf Handwerk, Restaurants, Praxen, Studios und lokalen Dienstleistern in Hildesheim und Niedersachsen.",
+            "points": [
+              "Handwerker",
+              "Restaurants & Cafés",
+              "Praxen, Studios und Dienstleister"
+            ]
+          },
+          {
+            "title": "Was ist enthalten?",
+            "text": "Je nach Projekt entsteht eine Landingpage oder mehrseitige Unternehmenswebsite mit SEO-Grundstruktur und Kontaktwegen.",
+            "points": [
+              "responsive Design",
+              "SEO-Basis",
+              "Kontaktformular und klare CTAs"
+            ]
+          },
+          {
+            "title": "Warum lokales Webdesign wichtig ist",
+            "text": "Lokale Kunden suchen konkret: Leistung, Standort, Vertrauen und schnelle Kontaktaufnahme. Genau darauf wird die Struktur ausgerichtet.",
+            "points": [
+              "lokale Keywords",
+              "Google Business Unterstützung",
+              "Anfrage-Fokus"
+            ]
+          }
+        ]
+      },
+      "seo-hildesheim": {
+        "eyebrow": "SEO Hildesheim",
+        "h1": "SEO Hildesheim - besser gefunden werden",
+        "lead": "SEO-Grundstruktur für lokale Unternehmen: klare Seiten, lokale Keywords, schnelle Technik und verständliche Inhalte.",
+        "cta": "SEO-Basis prüfen lassen",
+        "sections": [
+          {
+            "title": "Moderne Websites, die Vertrauen aufbauen",
+            "text": "Eine gute Website erklärt in wenigen Sekunden, wer Sie sind, was Sie anbieten und wie Kunden Sie erreichen.",
+            "points": [
+              "klare Startseite",
+              "verständliche Leistungen",
+              "mobile Optimierung"
+            ]
+          },
+          {
+            "title": "Für welche Branchen?",
+            "text": "Der Fokus liegt auf Handwerk, Restaurants, Praxen, Studios und lokalen Dienstleistern in Hildesheim und Niedersachsen.",
+            "points": [
+              "Handwerker",
+              "Restaurants & Cafés",
+              "Praxen, Studios und Dienstleister"
+            ]
+          },
+          {
+            "title": "Was ist enthalten?",
+            "text": "Je nach Projekt entsteht eine Landingpage oder mehrseitige Unternehmenswebsite mit SEO-Grundstruktur und Kontaktwegen.",
+            "points": [
+              "responsive Design",
+              "SEO-Basis",
+              "Kontaktformular und klare CTAs"
+            ]
+          },
+          {
+            "title": "Warum lokales Webdesign wichtig ist",
+            "text": "Lokale Kunden suchen konkret: Leistung, Standort, Vertrauen und schnelle Kontaktaufnahme. Genau darauf wird die Struktur ausgerichtet.",
+            "points": [
+              "lokale Keywords",
+              "Google Business Unterstützung",
+              "Anfrage-Fokus"
+            ]
+          }
+        ]
+      },
+      "lead-systeme": {
+        "eyebrow": "Lead-Systeme",
+        "h1": "Lead-Systeme für lokale Unternehmen",
+        "lead": "Mehr Anfragen statt nur Besucher: Kontaktformulare, Anfrageprozesse und Automatisierung für bessere Kundenkommunikation.",
+        "cta": "Lead-System anfragen",
+        "sections": [
+          {
+            "title": "Moderne Websites, die Vertrauen aufbauen",
+            "text": "Eine gute Website erklärt in wenigen Sekunden, wer Sie sind, was Sie anbieten und wie Kunden Sie erreichen.",
+            "points": [
+              "klare Startseite",
+              "verständliche Leistungen",
+              "mobile Optimierung"
+            ]
+          },
+          {
+            "title": "Für welche Branchen?",
+            "text": "Der Fokus liegt auf Handwerk, Restaurants, Praxen, Studios und lokalen Dienstleistern in Hildesheim und Niedersachsen.",
+            "points": [
+              "Handwerker",
+              "Restaurants & Cafés",
+              "Praxen, Studios und Dienstleister"
+            ]
+          },
+          {
+            "title": "Was ist enthalten?",
+            "text": "Je nach Projekt entsteht eine Landingpage oder mehrseitige Unternehmenswebsite mit SEO-Grundstruktur und Kontaktwegen.",
+            "points": [
+              "responsive Design",
+              "SEO-Basis",
+              "Kontaktformular und klare CTAs"
+            ]
+          },
+          {
+            "title": "Warum lokales Webdesign wichtig ist",
+            "text": "Lokale Kunden suchen konkret: Leistung, Standort, Vertrauen und schnelle Kontaktaufnahme. Genau darauf wird die Struktur ausgerichtet.",
+            "points": [
+              "lokale Keywords",
+              "Google Business Unterstützung",
+              "Anfrage-Fokus"
+            ]
+          }
+        ]
+      },
+      "websites-fuer-handwerker": {
+        "eyebrow": "Website für Handwerker",
+        "h1": "Website für Handwerker",
+        "lead": "Moderne Websites für Handwerksbetriebe mit klaren Leistungen, Referenzen, lokaler SEO-Struktur und Anfrage-Fokus.",
+        "cta": "Website modernisieren lassen",
+        "sections": [
+          {
+            "title": "Moderne Websites, die Vertrauen aufbauen",
+            "text": "Eine gute Website erklärt in wenigen Sekunden, wer Sie sind, was Sie anbieten und wie Kunden Sie erreichen.",
+            "points": [
+              "klare Startseite",
+              "verständliche Leistungen",
+              "mobile Optimierung"
+            ]
+          },
+          {
+            "title": "Für welche Branchen?",
+            "text": "Der Fokus liegt auf Handwerk, Restaurants, Praxen, Studios und lokalen Dienstleistern in Hildesheim und Niedersachsen.",
+            "points": [
+              "Handwerker",
+              "Restaurants & Cafés",
+              "Praxen, Studios und Dienstleister"
+            ]
+          },
+          {
+            "title": "Was ist enthalten?",
+            "text": "Je nach Projekt entsteht eine Landingpage oder mehrseitige Unternehmenswebsite mit SEO-Grundstruktur und Kontaktwegen.",
+            "points": [
+              "responsive Design",
+              "SEO-Basis",
+              "Kontaktformular und klare CTAs"
+            ]
+          },
+          {
+            "title": "Warum lokales Webdesign wichtig ist",
+            "text": "Lokale Kunden suchen konkret: Leistung, Standort, Vertrauen und schnelle Kontaktaufnahme. Genau darauf wird die Struktur ausgerichtet.",
+            "points": [
+              "lokale Keywords",
+              "Google Business Unterstützung",
+              "Anfrage-Fokus"
+            ]
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "h1": "Häufige Fragen",
+        "lead": "Antworten auf typische Fragen zu Webdesign, Website-Erstellung, SEO, Kosten, Dauer und Zusammenarbeit mit VS Web Studio.",
+        "cta": "Weitere Frage stellen",
+        "sections": [
+          {
+            "title": "Moderne Websites, die Vertrauen aufbauen",
+            "text": "Eine gute Website erklärt in wenigen Sekunden, wer Sie sind, was Sie anbieten und wie Kunden Sie erreichen.",
+            "points": [
+              "klare Startseite",
+              "verständliche Leistungen",
+              "mobile Optimierung"
+            ]
+          },
+          {
+            "title": "Für welche Branchen?",
+            "text": "Der Fokus liegt auf Handwerk, Restaurants, Praxen, Studios und lokalen Dienstleistern in Hildesheim und Niedersachsen.",
+            "points": [
+              "Handwerker",
+              "Restaurants & Cafés",
+              "Praxen, Studios und Dienstleister"
+            ]
+          },
+          {
+            "title": "Was ist enthalten?",
+            "text": "Je nach Projekt entsteht eine Landingpage oder mehrseitige Unternehmenswebsite mit SEO-Grundstruktur und Kontaktwegen.",
+            "points": [
+              "responsive Design",
+              "SEO-Basis",
+              "Kontaktformular und klare CTAs"
+            ]
+          },
+          {
+            "title": "Warum lokales Webdesign wichtig ist",
+            "text": "Lokale Kunden suchen konkret: Leistung, Standort, Vertrauen und schnelle Kontaktaufnahme. Genau darauf wird die Struktur ausgerichtet.",
+            "points": [
+              "lokale Keywords",
+              "Google Business Unterstützung",
+              "Anfrage-Fokus"
+            ]
+          }
+        ]
+      }
     }
   }
 }

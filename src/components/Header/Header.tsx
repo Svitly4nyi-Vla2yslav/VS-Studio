@@ -1,7 +1,18 @@
 import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, backOut, easeInOut, motion } from 'framer-motion';
 import { createPortal } from 'react-dom';
-import { FaCogs, FaEuroSign, FaFolderOpen, FaInfoCircle, FaEnvelope, FaArrowRight, FaTimes } from 'react-icons/fa';
+import {
+  FaArrowRight,
+  FaBullseye,
+  FaCogs,
+  FaEnvelope,
+  FaEuroSign,
+  FaFolderOpen,
+  FaHome,
+  FaInfoCircle,
+  FaSearch,
+  FaTimes,
+} from 'react-icons/fa';
 import { useLanguage, type Language } from '../LanguageSwitcher/LanguageContext';
 import { SUPPORTED_LANGUAGES } from '../../i18n';
 import { useTranslation } from 'react-i18next';
@@ -85,6 +96,18 @@ const languageCodes: Record<Language, string> = {
   bg: 'BG',
 };
 
+const navItems = [
+  { to: '/', labelKey: 'header.startseite', fallback: 'Startseite', icon: FaHome },
+  { to: '/services', labelKey: 'header.services', fallback: 'Leistungen', icon: FaCogs },
+  { to: '/webdesign-hildesheim', labelKey: 'header.webdesignHildesheim', fallback: 'Webdesign Hildesheim', icon: FaCogs },
+  { to: '/seo-hildesheim', labelKey: 'header.seo', fallback: 'SEO', icon: FaSearch },
+  { to: '/lead-systeme', labelKey: 'header.leadSysteme', fallback: 'Lead-Systeme', icon: FaBullseye },
+  { to: '/portfolio', labelKey: 'header.portfolio', fallback: 'Portfolio', icon: FaFolderOpen },
+  { to: '/preise', labelKey: 'header.preise', fallback: 'Preise', icon: FaEuroSign },
+  { to: '/ueber-uns', labelKey: 'header.ueberUns', fallback: 'Über uns', icon: FaInfoCircle },
+  { to: '/kontakt', labelKey: 'header.kontakt', fallback: 'Kontakt', icon: FaEnvelope },
+];
+
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
@@ -134,11 +157,14 @@ const Header: React.FC = () => {
           </BrandLink>
 
           <DesktopNav>
-            <DesktopNavLink to='/services'><FaCogs /> {t('header.services')}</DesktopNavLink>
-            <DesktopNavLink to='/preise'><FaEuroSign /> {t('header.preise')}</DesktopNavLink>
-            <DesktopNavLink to='/referenzen'><FaFolderOpen /> {t('header.referenzen')}</DesktopNavLink>
-            <DesktopNavLink to='/ueber-uns'><FaInfoCircle /> {t('header.ueberUns')}</DesktopNavLink>
-            <DesktopNavLink to='/kontakt'><FaEnvelope /> {t('header.kontakt')}</DesktopNavLink>
+            {navItems.map(item => {
+              const Icon = item.icon;
+              return (
+                <DesktopNavLink key={item.to} to={item.to}>
+                  <Icon /> {t(item.labelKey, { defaultValue: item.fallback })}
+                </DesktopNavLink>
+              );
+            })}
           </DesktopNav>
 
           <HeaderControls>
@@ -202,16 +228,17 @@ const Header: React.FC = () => {
                       <FaTimes />
                     </MobileMenuClose>
                   </MobileMenuTop>
-                  <MobileMenuLink to='/services' onClick={closeMenu}><FaCogs /> {t('header.services')}</MobileMenuLink>
-                  <MobileMenuDivider />
-                  <MobileMenuLink to='/preise' onClick={closeMenu}><FaEuroSign /> {t('header.preise')}</MobileMenuLink>
-                  <MobileMenuDivider />
-                  <MobileMenuLink to='/referenzen' onClick={closeMenu}><FaFolderOpen /> {t('header.referenzen')}</MobileMenuLink>
-                  <MobileMenuDivider />
-                  <MobileMenuLink to='/ueber-uns' onClick={closeMenu}><FaInfoCircle /> {t('header.ueberUns')}</MobileMenuLink>
-                  <MobileMenuDivider />
-                  <MobileMenuLink to='/kontakt' onClick={closeMenu}><FaEnvelope /> {t('header.kontakt')}</MobileMenuLink>
-                  <MobileMenuDivider />
+                  {navItems.map(item => {
+                    const Icon = item.icon;
+                    return (
+                      <div key={item.to}>
+                        <MobileMenuLink to={item.to} onClick={closeMenu}>
+                          <Icon /> {t(item.labelKey, { defaultValue: item.fallback })}
+                        </MobileMenuLink>
+                        <MobileMenuDivider />
+                      </div>
+                    );
+                  })}
                   <MobileMenuLink to='/kontakt' onClick={closeMenu}><FaArrowRight /> {t('common.projectRequest')}</MobileMenuLink>
                 </MobileMenuOverlay>
               ) : null}

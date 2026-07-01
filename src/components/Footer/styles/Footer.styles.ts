@@ -16,14 +16,16 @@ export const FooterInner = styled.div`
 `;
 
 export const FooterRow = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: minmax(260px, 1.4fr) repeat(4, minmax(140px, 1fr));
+  gap: 24px;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
   @media (max-width: 767px) {
-    flex-direction: column;
-    align-items: flex-start;
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -31,6 +33,20 @@ export const FooterInfo = styled.div`
   p {
     margin: 0;
   }
+`;
+
+export const FooterColumn = styled.div`
+  display: grid;
+  align-content: start;
+  gap: 10px;
+`;
+
+export const FooterColumnTitle = styled.h2`
+  margin: 0;
+  color: #ffd08a;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 `;
 
 export const FooterMuted = styled.p`
@@ -50,9 +66,8 @@ export const FooterMuted = styled.p`
 `;
 
 export const FooterLinks = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 14px;
+  display: grid;
+  gap: 8px;
 `;
 
 export const FooterSocialLinks = styled.div`

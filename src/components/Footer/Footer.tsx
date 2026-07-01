@@ -3,6 +3,8 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { contactInfo } from '../../data/contactInfo';
 import {
   FooterCookieButton,
+  FooterColumn,
+  FooterColumnTitle,
   FooterInfo,
   FooterInner,
   FooterLink,
@@ -36,11 +38,15 @@ const Footer: React.FC = () => {
       <FooterInner>
         <FooterRow>
           <FooterInfo>
-            <p>{safeText(t('footer.tagline'), 'VS Studio - Websites, Web-Apps, Ads & Automationen')}</p>
+            <FooterColumnTitle>VS Web Studio</FooterColumnTitle>
+            <p>
+              {t('footer.description', {
+                defaultValue:
+                  'Webdesign, Websites, SEO und Lead-Systeme für lokale Unternehmen in Hildesheim und Niedersachsen.',
+              })}
+            </p>
             <FooterMuted>
               <a href={contactInfo.emailHref}>{contactInfo.email}</a>
-              {' | '}
-              <a href={contactInfo.phoneHref}>{contactInfo.phone}</a>
             </FooterMuted>
             <FooterSocialLinks aria-label='VS Web Studio social media'>
               {contactInfo.socialLinks.map(link => {
@@ -60,16 +66,46 @@ const Footer: React.FC = () => {
               })}
             </FooterSocialLinks>
           </FooterInfo>
-          <FooterLinks>
-            <FooterLink to='/impressum'>{safeText(t('footer.impressum'), 'Impressum')}</FooterLink>
-            <FooterLink to='/datenschutz'>{safeText(t('footer.datenschutz'), 'Datenschutz')}</FooterLink>
-            <FooterLink to='/agb'>{safeText(t('footer.agb'), 'AGB')}</FooterLink>
-            <FooterLink to='/cookies'>{safeText(t('footer.cookies'), 'Cookies')}</FooterLink>
-            <FooterCookieButton type='button' onClick={openCookieSettings}>
-              {safeText(t('footer.cookieSettings'), 'Cookie-Einstellungen')}
-            </FooterCookieButton>
-            <FooterLink to='/blog'>{safeText(t('footer.blog'), 'Blog')}</FooterLink>
-          </FooterLinks>
+          <FooterColumn>
+            <FooterColumnTitle>{t('footer.columns.services', { defaultValue: 'Leistungen' })}</FooterColumnTitle>
+            <FooterLinks>
+              <FooterLink to='/webdesign-hildesheim'>{t('footer.links.webdesign', { defaultValue: 'Webdesign' })}</FooterLink>
+              <FooterLink to='/website-erstellen-lassen'>{t('footer.links.landingpages', { defaultValue: 'Landingpages' })}</FooterLink>
+              <FooterLink to='/seo-hildesheim'>{t('footer.links.seoBase', { defaultValue: 'SEO-Grundstruktur' })}</FooterLink>
+              <FooterLink to='/lead-systeme'>{t('footer.links.leadSystems', { defaultValue: 'Lead-Systeme' })}</FooterLink>
+              <FooterLink to='/services'>{t('footer.links.aiContent', { defaultValue: 'AI Content' })}</FooterLink>
+            </FooterLinks>
+          </FooterColumn>
+          <FooterColumn>
+            <FooterColumnTitle>{t('footer.columns.regions', { defaultValue: 'Regionen' })}</FooterColumnTitle>
+            <FooterLinks>
+              <FooterLink to='/webdesign-hildesheim'>{t('footer.regions.hildesheim', { defaultValue: 'Hildesheim' })}</FooterLink>
+              <FooterLink to='/webdesign-hildesheim'>{t('footer.regions.hannover', { defaultValue: 'Hannover' })}</FooterLink>
+              <FooterLink to='/webdesign-hildesheim'>{t('footer.regions.braunschweig', { defaultValue: 'Braunschweig' })}</FooterLink>
+              <FooterLink to='/webdesign-hildesheim'>{t('footer.regions.niedersachsen', { defaultValue: 'Niedersachsen' })}</FooterLink>
+              <FooterLink to='/kontakt'>{t('footer.regions.onlineGermany', { defaultValue: 'Deutschlandweit online' })}</FooterLink>
+            </FooterLinks>
+          </FooterColumn>
+          <FooterColumn>
+            <FooterColumnTitle>{t('footer.columns.legal', { defaultValue: 'Rechtliches' })}</FooterColumnTitle>
+            <FooterLinks>
+              <FooterLink to='/impressum'>{safeText(t('footer.impressum'), 'Impressum')}</FooterLink>
+              <FooterLink to='/datenschutz'>{safeText(t('footer.datenschutz'), 'Datenschutz')}</FooterLink>
+              <FooterLink to='/agb'>{safeText(t('footer.agb'), 'AGB')}</FooterLink>
+              <FooterLink to='/cookies'>{safeText(t('footer.cookies'), 'Cookies')}</FooterLink>
+              <FooterCookieButton type='button' onClick={openCookieSettings}>
+                {safeText(t('footer.cookieSettings'), 'Cookie-Einstellungen')}
+              </FooterCookieButton>
+            </FooterLinks>
+          </FooterColumn>
+          <FooterColumn>
+            <FooterColumnTitle>{t('footer.columns.contact', { defaultValue: 'Kontakt' })}</FooterColumnTitle>
+            <FooterLinks>
+              <FooterLink to='/kontakt'>{t('footer.links.freeConsultation', { defaultValue: 'Kostenlose Erstberatung' })}</FooterLink>
+              <FooterLink to='/faq'>{t('footer.links.faq', { defaultValue: 'FAQ' })}</FooterLink>
+              <FooterLink to='/portfolio'>{t('footer.links.portfolio', { defaultValue: 'Portfolio' })}</FooterLink>
+            </FooterLinks>
+          </FooterColumn>
         </FooterRow>
       </FooterInner>
     </FooterRoot>

@@ -17,6 +17,8 @@ import NotFound from './pages/NotFound/NotFound';
 import PricingPage from './pages/Pricing/Pricing';
 import ReferencesPage from './pages/References/References';
 import ServicesPage from './pages/ServicePages/Service';
+import LocalLandingPage from './pages/SeoLanding/SeoLanding';
+import SeoHead from './seo/SeoHead';
 import './site.css';
 
 const AIAssistantDemoPage = lazy(() => import('./pages/AIAssistantDemo'));
@@ -30,6 +32,7 @@ export const App: React.FC = () => {
         path='/portfolio'
         element={
           <Suspense fallback={null}>
+            <SeoHead />
             <PortfolioPage />
           </Suspense>
         }
@@ -37,7 +40,13 @@ export const App: React.FC = () => {
       <Route path='/' element={<Layout />}>
         <Route index element={<Home />} />
         <Route path='services' element={<ServicesPage />} />
+        <Route path='webdesign-hildesheim' element={<LocalLandingPage pageId='webdesign-hildesheim' />} />
+        <Route path='website-erstellen-lassen' element={<LocalLandingPage pageId='website-erstellen-lassen' />} />
+        <Route path='seo-hildesheim' element={<LocalLandingPage pageId='seo-hildesheim' />} />
+        <Route path='lead-systeme' element={<LocalLandingPage pageId='lead-systeme' />} />
+        <Route path='websites-fuer-handwerker' element={<LocalLandingPage pageId='websites-fuer-handwerker' />} />
         <Route path='preise' element={<PricingPage />} />
+        <Route path='faq' element={<LocalLandingPage pageId='faq' />} />
         <Route path='referenzen' element={<ReferencesPage />} />
         <Route path='ueber-uns' element={<AboutUs />} />
         <Route path='kontakt' element={<Contact />} />

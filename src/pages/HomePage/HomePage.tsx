@@ -4,6 +4,7 @@ import AiAssistantWorkflowSection from '../../components/AiAssistantWorkflowSect
 import ConfiguratorSection from './components/ConfiguratorSection';
 import FaqSection from './components/FaqSection';
 import HeroSection from './components/HeroSection';
+import LocalSeoSections from './components/LocalSeoSections';
 import MarqueeSection from './components/MarqueeSection';
 import PartnersSection from './components/PartnersSection';
 import ProcessSection from './components/ProcessSection';
@@ -20,6 +21,11 @@ const Home: React.FC = () => {
       <div className='page'>
         <div className='container'>
           <HeroSection reducedMotion={reducedMotion} />
+
+          <div className='section-divider' />
+          <LocalSeoSections />
+
+          <div className='section-divider' />
           <MarqueeSection />
 
           <div className='section-divider' />

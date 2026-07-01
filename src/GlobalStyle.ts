@@ -69,9 +69,9 @@ export const GlobalStyle = css`
     --glow-ember: 0 0 30px rgba(255, 177, 74, 0.18);
 
     /* Fonts */
-    --font-family: "Noto Sans", "Noto Sans Arabic", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-    --second-family: "Noto Sans", "Noto Sans Arabic", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-    --third-family: "Noto Sans", "Noto Sans Arabic", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --font-family: "Geist", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --second-family: "Geist", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --third-family: "Bebas Neue", "Geist", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
     /* Safe-area */
     --safe-area-inset-top: env(safe-area-inset-top, 0px);
@@ -165,7 +165,7 @@ export const GlobalStyle = css`
   h6 {
     font-family: var(--second-family);
     font-weight: 700;
-    letter-spacing: 0.01em;
+    letter-spacing: 0;
     color: var(--text);
   }
 
@@ -258,6 +258,16 @@ export const GlobalStyle = css`
   @supports (-webkit-touch-callout: none) {
     body {
       height: -webkit-fill-available;
+    }
+  }
+
+  /* Зменшуємо рух для користувачів, які обрали reduced motion у системі. */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
     }
   }
 `;

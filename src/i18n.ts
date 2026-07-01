@@ -3,8 +3,8 @@ import { initReactI18next } from "react-i18next";
 import HttpApi from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-// Ця версія додається до URL файлів перекладів, щоб браузер не тримав старі pricing-тексти в кеші.
-const TRANSLATION_ASSET_VERSION = "20260628-ai-assistant-workflow";
+// Ця версія додається до URL файлів перекладів, щоб браузер не тримав старі i18n-тексти в кеші.
+const TRANSLATION_ASSET_VERSION = "20260701-all-locale-seo-i18n";
 
 export const SUPPORTED_LANGUAGES = [
   "de",
@@ -34,7 +34,7 @@ i18n
       escapeValue: false 
     },
     backend: {
-      // Оновлюємо кеш перекладів після правок pricing-секції.
+      // Оновлюємо кеш перекладів після правок i18n-контенту.
       loadPath: `/locales/{{lng}}/translation.json?v=${TRANSLATION_ASSET_VERSION}`,
     },
     detection: {

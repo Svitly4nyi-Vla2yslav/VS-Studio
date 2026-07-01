@@ -6,9 +6,11 @@ import {
   FaBolt,
   FaBuilding,
   FaCheckCircle,
+  FaClipboardList,
   FaCommentDots,
   FaEnvelope,
   FaFacebookF,
+  FaGlobe,
   FaInstagram,
   FaLinkedinIn,
   FaPhone,
@@ -74,6 +76,9 @@ const copy = {
     name: 'Ihr Name',
     business: 'Unternehmen',
     email: 'E-Mail',
+    phone: 'Telefon optional',
+    website: 'Website optional',
+    service: 'Gewünschte Leistung',
     message: 'Projekt oder Ziel',
   },
   submitLoading: 'Wird gesendet...',
@@ -110,8 +115,11 @@ const Contact: React.FC = () => {
   const [nameValue, setNameValue] = useState('');
   const [businessValue, setBusinessValue] = useState('');
   const [emailValue, setEmailValue] = useState('');
+  const [phoneValue, setPhoneValue] = useState('');
+  const [serviceValue, setServiceValue] = useState('Website erstellen lassen');
   const [needValue, setNeedValue] = useState(prefillNeed);
   const [websiteValue, setWebsiteValue] = useState('');
+  const [honeypotValue, setHoneypotValue] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState(false);
@@ -145,11 +153,18 @@ const Contact: React.FC = () => {
 
     setIsSubmitting(true);
 
+    if (honeypotValue.trim()) {
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       const requestBody = JSON.stringify({
         name: nameValue.trim(),
         business: businessValue.trim(),
         email: emailValue.trim(),
+        phone: phoneValue.trim(),
+        service: serviceValue.trim(),
         message: needValue.trim(),
         website: websiteValue.trim(),
       });
@@ -186,8 +201,11 @@ const Contact: React.FC = () => {
       setNameValue('');
       setBusinessValue('');
       setEmailValue('');
+      setPhoneValue('');
+      setServiceValue('Website erstellen lassen');
       setNeedValue('');
       setWebsiteValue('');
+      setHoneypotValue('');
       setSubmitSuccess(true);
     } catch (error) {
       console.error('Contact form submit failed', error);
@@ -241,18 +259,19 @@ const Contact: React.FC = () => {
                       id='contact-website'
                       type='text'
                       name='website'
-                      value={websiteValue}
-                      onChange={event => setWebsiteValue(event.target.value)}
+                      value={honeypotValue}
+                      onChange={event => setHoneypotValue(event.target.value)}
                       tabIndex={-1}
                       autoComplete='off'
                     />
                   </VisuallyHiddenField>
 
                   <FieldGroup>
-                    <FieldLabel>{t('contact.form.labels.name', { defaultValue: copy.labels.name })}</FieldLabel>
+                    <FieldLabel htmlFor='contact-name'>{t('contact.form.labels.name', { defaultValue: copy.labels.name })}</FieldLabel>
                     <ContextField>
                       <FaUser />
                       <input
+                        id='contact-name'
                         type='text'
                         name='name'
                         value={nameValue}
@@ -265,10 +284,11 @@ const Contact: React.FC = () => {
                   </FieldGroup>
 
                   <FieldGroup>
-                    <FieldLabel>{t('contact.form.labels.business', { defaultValue: copy.labels.business })}</FieldLabel>
+                    <FieldLabel htmlFor='contact-business'>{t('contact.form.labels.business', { defaultValue: copy.labels.business })}</FieldLabel>
                     <ContextField>
                       <FaBuilding />
                       <input
+                        id='contact-business'
                         type='text'
                         name='business'
                         value={businessValue}
@@ -281,10 +301,11 @@ const Contact: React.FC = () => {
                   </FieldGroup>
 
                   <FieldGroup>
-                    <FieldLabel>{t('contact.form.labels.email', { defaultValue: copy.labels.email })}</FieldLabel>
+                    <FieldLabel htmlFor='contact-email'>{t('contact.form.labels.email', { defaultValue: copy.labels.email })}</FieldLabel>
                     <ContextField>
                       <FaEnvelope />
                       <input
+                        id='contact-email'
                         type='email'
                         name='email'
                         value={emailValue}
@@ -298,10 +319,66 @@ const Contact: React.FC = () => {
                   </FieldGroup>
 
                   <FieldGroup>
-                    <FieldLabel>{t('contact.form.labels.message', { defaultValue: copy.labels.message })}</FieldLabel>
+                    <FieldLabel htmlFor='contact-phone'>{t('contact.form.labels.phone', { defaultValue: copy.labels.phone })}</FieldLabel>
+                    <ContextField>
+                      <FaPhone />
+                      <input
+                        id='contact-phone'
+                        type='tel'
+                        name='phone'
+                        value={phoneValue}
+                        onChange={event => setPhoneValue(event.target.value)}
+                        placeholder={t('contact.form.phone', { defaultValue: copy.labels.phone })}
+                        aria-label={t('contact.form.labels.phone', { defaultValue: copy.labels.phone })}
+                        autoComplete='tel'
+                      />
+                    </ContextField>
+                  </FieldGroup>
+
+                  <FieldGroup>
+                    <FieldLabel htmlFor='contact-visible-website'>{t('contact.form.labels.website', { defaultValue: copy.labels.website })}</FieldLabel>
+                    <ContextField>
+                      <FaGlobe />
+                      <input
+                        id='contact-visible-website'
+                        type='url'
+                        name='visibleWebsite'
+                        value={websiteValue}
+                        onChange={event => setWebsiteValue(event.target.value)}
+                        placeholder='https://'
+                        aria-label={t('contact.form.labels.website', { defaultValue: copy.labels.website })}
+                        autoComplete='url'
+                      />
+                    </ContextField>
+                  </FieldGroup>
+
+                  <FieldGroup>
+                    <FieldLabel htmlFor='contact-service'>{t('contact.form.labels.service', { defaultValue: copy.labels.service })}</FieldLabel>
+                    <ContextField>
+                      <FaClipboardList />
+                      <select
+                        id='contact-service'
+                        name='service'
+                        value={serviceValue}
+                        onChange={event => setServiceValue(event.target.value)}
+                        aria-label={t('contact.form.labels.service', { defaultValue: copy.labels.service })}
+                      >
+                        <option>Website erstellen lassen</option>
+                        <option>Landingpage</option>
+                        <option>SEO-Grundstruktur</option>
+                        <option>Lead-System</option>
+                        <option>Website modernisieren</option>
+                        <option>Sonstiges</option>
+                      </select>
+                    </ContextField>
+                  </FieldGroup>
+
+                  <FieldGroup>
+                    <FieldLabel htmlFor='contact-message'>{t('contact.form.labels.message', { defaultValue: copy.labels.message })}</FieldLabel>
                     <ContextField>
                       <FaCommentDots />
                       <textarea
+                        id='contact-message'
                         name='message'
                         placeholder={t('contact.form.need', { defaultValue: copy.labels.message })}
                         value={needValue}

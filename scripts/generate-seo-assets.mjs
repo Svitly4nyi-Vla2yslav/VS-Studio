@@ -21,6 +21,7 @@ const pageTypeByKind = {
   about: 'AboutPage',
   contact: 'ContactPage',
   blog: 'Blog',
+  faq: 'FAQPage',
   niche: 'Service',
   legal: 'WebPage',
   notFound: 'WebPage',
@@ -37,7 +38,7 @@ const normalizePath = pathname => {
 
 const buildAbsoluteUrl = pathname => {
   const normalizedPath = normalizePath(pathname);
-  return normalizedPath === '/' ? `${site.baseUrl}/` : `${site.baseUrl}${normalizedPath}`;
+  return normalizedPath === '/' ? `${site.baseUrl}/` : `${site.baseUrl}${normalizedPath}/`;
 };
 
 const resolveRoute = route => ({
@@ -52,6 +53,20 @@ const resolveRoute = route => ({
 
 const resolvedRoutes = config.routes.map(resolveRoute);
 const homeRoute = resolvedRoutes.find(route => route.path === '/') ?? resolvedRoutes[0];
+const importantRoutePaths = [
+  '/services',
+  '/webdesign-hildesheim',
+  '/website-erstellen-lassen',
+  '/seo-hildesheim',
+  '/lead-systeme',
+  '/websites-fuer-handwerker',
+  '/faq',
+  '/portfolio',
+  '/preise',
+  '/ueber-uns',
+  '/kontakt',
+];
+const importantRoutes = resolvedRoutes.filter(route => importantRoutePaths.includes(route.path));
 
 const escapeHtml = value =>
   String(value)
@@ -84,33 +99,68 @@ const createOrganizationNode = () => ({
   '@type': ['ProfessionalService', 'Organization'],
   '@id': organizationId,
   name: site.siteName,
+  alternateName: ['VS Studio', 'VS Web Studio Hildesheim'],
   url: `${site.baseUrl}/`,
-  logo: `${site.baseUrl}/apple-touch-icon.png`,
+  logo: `${site.baseUrl}/android-chrome-512x512.png`,
   image: site.defaultImage,
+  description:
+    'VS Web Studio aus Hildesheim erstellt moderne Websites, Landingpages, SEO-Strukturen und Lead-Systeme für lokale Unternehmen.',
   sameAs: site.socialProfiles,
   email: site.email,
-  telephone: site.telephone,
+  telephone: site.phone,
   priceRange: site.priceRange,
   address: {
     '@type': 'PostalAddress',
     ...site.address,
   },
-  geo: {
-    '@type': 'GeoCoordinates',
-    ...site.geo,
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer support',
+    email: site.email,
+    telephone: site.phone,
+    areaServed: 'DE',
+    availableLanguage: ['de', 'en', 'uk'],
   },
   areaServed: [
-    { '@type': 'City', name: 'Hildesheim' },
-    { '@type': 'AdministrativeArea', name: 'Niedersachsen' },
-    { '@type': 'Country', name: 'Germany' },
+    'Hildesheim',
+    'Hannover',
+    'Braunschweig',
+    'Niedersachsen',
+    'Deutschland',
   ],
-  contactPoint: [
+  founder: {
+    '@type': 'Person',
+    name: 'Vladyslav Svitlychnyi',
+  },
+  knowsAbout: [
+    'Webdesign Hildesheim',
+    'Website erstellen lassen',
+    'Local SEO',
+    'Lead-Systeme',
+    'Landingpages',
+    'Conversion Optimierung',
+  ],
+  makesOffer: [
     {
-      '@type': 'ContactPoint',
-      contactType: 'sales',
-      email: site.email,
-      telephone: site.telephone,
-      availableLanguage: ['de', 'uk', 'en'],
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: 'Webdesign und Website-Erstellung',
+      },
+    },
+    {
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: 'SEO-Grundstruktur und lokale Sichtbarkeit',
+      },
+    },
+    {
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: 'Lead-Systeme und Kontaktformulare',
+      },
     },
   ],
 });
@@ -122,6 +172,9 @@ const createWebsiteNode = () => ({
   name: site.siteName,
   inLanguage: 'de-DE',
   sameAs: site.socialProfiles,
+  hasPart: importantRoutes.map(route => ({
+    '@id': `${route.absoluteUrl}#navigation`,
+  })),
   publisher: { '@id': organizationId },
 });
 
@@ -135,11 +188,25 @@ const createPageNode = route => ({
   inLanguage: 'de-DE',
   isPartOf: { '@id': websiteId },
   about: { '@id': organizationId },
+  significantLink:
+    route.pageKind === 'home'
+      ? importantRoutes.map(item => item.absoluteUrl)
+      : undefined,
   primaryImageOfPage: {
     '@type': 'ImageObject',
     url: site.defaultImage,
   },
 });
+
+const createNavigationNodes = () =>
+  importantRoutes.map(route => ({
+    '@type': 'SiteNavigationElement',
+    '@id': `${route.absoluteUrl}#navigation`,
+    name: route.name,
+    url: route.absoluteUrl,
+    inLanguage: 'de-DE',
+    isPartOf: { '@id': websiteId },
+  }));
 
 const createHomeFaqNode = () => ({
   '@type': 'FAQPage',
@@ -201,9 +268,10 @@ const buildStructuredData = route => {
     createWebsiteNode(),
     createPageNode(route),
     createBreadcrumbNode(route),
+    ...createNavigationNodes(),
   ];
 
-  if (route.pageKind === 'home') {
+  if (route.pageKind === 'home' || route.pageKind === 'faq') {
     graph.push(createHomeFaqNode());
   }
 
@@ -342,7 +410,7 @@ const manifest = JSON.stringify(
   {
     name: site.siteName,
     short_name: 'VS Studio',
-    description: 'Websites, SEO und Lead-Systeme für lokale Unternehmen in Deutschland.',
+    description: 'Websites, SEO und Lead-Systeme für lokale Unternehmen in Hildesheim und Niedersachsen.',
     id: '/',
     scope: '/',
     start_url: '/',

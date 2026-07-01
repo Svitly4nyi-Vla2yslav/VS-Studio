@@ -8,6 +8,7 @@ type PageKind =
   | 'about'
   | 'contact'
   | 'blog'
+  | 'faq'
   | 'niche'
   | 'legal'
   | 'notFound';
@@ -49,19 +50,15 @@ interface SeoConfig {
     locale: string;
     language: string;
     themeColor: string;
-    telephone: string;
     email: string;
-    priceRange: string;
+    phone: string;
     address: {
       streetAddress: string;
       addressLocality: string;
       postalCode: string;
       addressCountry: string;
     };
-    geo: {
-      latitude: string;
-      longitude: string;
-    };
+    priceRange: string;
   };
   homeFaq: HomeFaqEntry[];
   pricingPackages: PricingPackage[];
@@ -119,7 +116,7 @@ export const buildAbsoluteUrl = (path: string): string => {
     return `${config.site.baseUrl}/`;
   }
 
-  return `${config.site.baseUrl}${path}`;
+  return `${config.site.baseUrl}${path}/`;
 };
 
 export const getSeoRoute = (pathname: string): SeoResolvedRoute => {
@@ -142,7 +139,19 @@ export const getSeoRoute = (pathname: string): SeoResolvedRoute => {
 
 const websiteId = `${config.site.baseUrl}/#website`;
 const organizationId = `${config.site.baseUrl}/#organization`;
-const importantRoutePaths = ['/services', '/preise', '/referenzen', '/ueber-uns', '/kontakt'];
+const importantRoutePaths = [
+  '/services',
+  '/webdesign-hildesheim',
+  '/website-erstellen-lassen',
+  '/seo-hildesheim',
+  '/lead-systeme',
+  '/websites-fuer-handwerker',
+  '/faq',
+  '/portfolio',
+  '/preise',
+  '/ueber-uns',
+  '/kontakt',
+];
 const importantRoutes = config.routes.filter(route => importantRoutePaths.includes(route.path));
 
 const pageTypeByKind: Record<PageKind, string> = {
@@ -153,6 +162,7 @@ const pageTypeByKind: Record<PageKind, string> = {
   about: 'AboutPage',
   contact: 'ContactPage',
   blog: 'Blog',
+  faq: 'FAQPage',
   niche: 'Service',
   legal: 'WebPage',
   notFound: 'WebPage',
@@ -173,42 +183,68 @@ const createOrganizationNode = () => ({
   '@type': ['ProfessionalService', 'Organization'],
   '@id': organizationId,
   name: config.site.siteName,
+  alternateName: ['VS Studio', 'VS Web Studio Hildesheim'],
   url: `${config.site.baseUrl}/`,
   logo: `${config.site.baseUrl}/android-chrome-512x512.png`,
   image: config.site.defaultImage,
+  description:
+    'VS Web Studio aus Hildesheim erstellt moderne Websites, Landingpages, SEO-Strukturen und Lead-Systeme für lokale Unternehmen.',
   sameAs: config.site.socialProfiles,
   email: config.site.email,
-  telephone: config.site.telephone,
+  telephone: config.site.phone,
   priceRange: config.site.priceRange,
   address: {
     '@type': 'PostalAddress',
     ...config.site.address,
   },
-  geo: {
-    '@type': 'GeoCoordinates',
-    ...config.site.geo,
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer support',
+    email: config.site.email,
+    telephone: config.site.phone,
+    areaServed: 'DE',
+    availableLanguage: ['de', 'en', 'uk'],
   },
   areaServed: [
-    {
-      '@type': 'City',
-      name: 'Hildesheim',
-    },
-    {
-      '@type': 'AdministrativeArea',
-      name: 'Niedersachsen',
-    },
-    {
-      '@type': 'Country',
-      name: 'Germany',
-    },
+    'Hildesheim',
+    'Hannover',
+    'Braunschweig',
+    'Niedersachsen',
+    'Deutschland',
   ],
-  contactPoint: [
+  founder: {
+    '@type': 'Person',
+    name: 'Vladyslav Svitlychnyi',
+  },
+  knowsAbout: [
+    'Webdesign Hildesheim',
+    'Website erstellen lassen',
+    'Local SEO',
+    'Lead-Systeme',
+    'Landingpages',
+    'Conversion Optimierung',
+  ],
+  makesOffer: [
     {
-      '@type': 'ContactPoint',
-      contactType: 'sales',
-      email: config.site.email,
-      telephone: config.site.telephone,
-      availableLanguage: ['de', 'uk', 'en'],
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: 'Webdesign und Website-Erstellung',
+      },
+    },
+    {
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: 'SEO-Grundstruktur und lokale Sichtbarkeit',
+      },
+    },
+    {
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: 'Lead-Systeme und Kontaktformulare',
+      },
     },
   ],
 });
@@ -331,7 +367,7 @@ export const buildStructuredData = (route: SeoResolvedRoute) => {
     ...createNavigationNodes(),
   ];
 
-  if (route.pageKind === 'home') {
+  if (route.pageKind === 'home' || route.pageKind === 'faq') {
     graph.push(createHomeFaqNode());
   }
 

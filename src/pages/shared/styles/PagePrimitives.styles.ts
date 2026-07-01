@@ -139,6 +139,9 @@ export const Card = styled(motion.article).attrs({
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: rgba(11, 15, 27, 0.75);
   padding: 32px;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: auto;
   transition:
     transform var(--dur-mid) var(--ease-smooth),
     border-color var(--dur-mid) var(--ease-smooth),
@@ -150,6 +153,27 @@ export const Card = styled(motion.article).attrs({
     border-color: rgba(248, 190, 98, 0.62);
     background: rgba(18, 23, 38, 0.9);
     box-shadow: 0 14px 24px rgba(0, 0, 0, 0.28);
+  }
+
+  h2 {
+    margin: 0 0 14px;
+    font-size: clamp(24px, 2.4vw, 34px);
+    line-height: 1.12;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  h3 {
+    margin: 0 0 12px;
+    font-size: clamp(20px, 1.7vw, 26px);
+    line-height: 1.18;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  p,
+  li {
+    line-height: 1.55;
   }
 
   @media (max-width: 767px) {

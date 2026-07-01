@@ -36,7 +36,7 @@ export const HeaderRow = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 14px;
   min-height: 76px;
   position: relative;
 
@@ -59,10 +59,10 @@ export const BrandLink = styled(NavLink)`
 `;
 
 export const BrandWordmark = styled.span`
-  font-family: 'Orbitron', 'Geist', 'Segoe UI', sans-serif;
-  font-size: clamp(30px, 4vw, 52px);
+  font-family: var(--third-family);
+  font-size: clamp(28px, 3.4vw, 46px);
   font-weight: 800;
-  letter-spacing: 0.03em;
+  letter-spacing: 0;
   line-height: 1;
   background: linear-gradient(105deg, #c9861e, #ffe7bb, #ffb43f, #ffe7bb, #c9861e);
   background-size: 300% 300%;
@@ -88,7 +88,7 @@ export const BrandWordmark = styled.span`
 export const DesktopNav = styled.nav`
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 10px;
 
   @media (max-width: 1023px) {
     display: none;
@@ -97,12 +97,12 @@ export const DesktopNav = styled.nav`
 
 export const DesktopNavLink = styled(NavLink)`
   color: rgba(255, 255, 255, 0.86);
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
   position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   text-decoration: none;
   transition: color var(--dur-mid) var(--ease-smooth), transform var(--dur-mid) var(--ease-smooth);
 
@@ -153,10 +153,10 @@ export const FixedCta = styled(NavLink)`
   background-size: 220% 220%;
   color: #101321;
   font-weight: 700;
-  padding: 11px 16px;
+  padding: 10px 14px;
   border-radius: 12px;
   white-space: nowrap;
-  font-size: 14px;
+  font-size: 13px;
   display: inline-flex;
   align-items: center;
   gap: 8px;

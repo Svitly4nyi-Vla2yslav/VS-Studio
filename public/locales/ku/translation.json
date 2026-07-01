@@ -25,7 +25,12 @@
     "preise": "bihayên",
     "referenzen": "ÒÇavkanî",
     "ueberUns": "Di derbarê me de",
-    "kontakt": "Têkilî"
+    "kontakt": "Têkilî",
+    "startseite": "Mal",
+    "webdesignHildesheim": "Webdesign Hildesheim",
+    "seo": "SEO",
+    "leadSysteme": "Pergalên lead",
+    "portfolio": "Portfolio"
   },
   "footer": {
     "tagline": "VS Studio ş\u001a· Malper, sepanên malperê, reklam û otomasyon",
@@ -34,7 +39,31 @@
     "agb": "Merc û Merc",
     "cookies": "cookies",
     "cookieSettings": "Mîhengên cookie",
-    "blog": "Blog"
+    "blog": "Blog",
+    "description": "Webdesign, malper, SEO û pergalên lead ji bo karsaziyên herêmî li Hildesheim û Niedersachsen.",
+    "columns": {
+      "services": "Xizmet",
+      "regions": "Herêm",
+      "legal": "Yasayî",
+      "contact": "Têkilî"
+    },
+    "links": {
+      "webdesign": "Webdesign Hildesheim",
+      "landingpages": "Landingpages",
+      "seoBase": "SEO",
+      "leadSystems": "Pergalên lead",
+      "aiContent": "AI Content",
+      "freeConsultation": "Şêwirmendiya belaş",
+      "faq": "FAQ",
+      "portfolio": "Portfolio"
+    },
+    "regions": {
+      "hildesheim": "Hildesheim",
+      "hannover": "Hannover",
+      "braunschweig": "Braunschweig",
+      "niedersachsen": "Niedersachsen",
+      "onlineGermany": "Li tevahiya Almanyayê online"
+    }
   },
   "cookie": {
     "aria": "Destûra cookieyan",
@@ -466,6 +495,71 @@
       },
       "cta": "Şêwirmendiya belaş bixwaze",
       "legal": "Têbînî: Girêdanên têlefon, salname û CRM bi awayekî taybet têne sazkirin. Parastina daneyan, razîbûn û pêdiviyên teknîkî ji bo her şirketê têne kontrolkirin."
+    },
+    "heroSupporting": "Ji bo hosta, xwaringeh, klînîk, studio û xizmetkarên ku dixwazin online profesyonel xuya bikin û daxwazên zêdetir bistînin.",
+    "heroPrimaryCta": "Şêwirmendiya belaş",
+    "heroPortfolioCta": "Mînakên malperê bibîne",
+    "heroTrustline": "Webdesign · bingeha SEO · Mobile · forma têkiliyê · Google Business",
+    "localSeo": {
+      "audienceTitle": "Malper ji bo karsaziyên herêmî",
+      "audienceLead": "Em alîkariya karsaziyên biçûk û herêmî dikin ku online baştir xuya bikin û daxwazên bi kalîte bistînin.",
+      "industries": [
+        {
+          "title": "Webdesign Hildesheim",
+          "text": "Em alîkariya karsaziyên biçûk û herêmî dikin ku online baştir xuya bikin û daxwazên bi kalîte bistînin."
+        },
+        {
+          "title": "SEO",
+          "text": "Webdesign · bingeha SEO · Mobile · forma têkiliyê · Google Business"
+        },
+        {
+          "title": "Pergalên lead",
+          "text": "Ji bo hosta, xwaringeh, klînîk, studio û xizmetkarên ku dixwazin online profesyonel xuya bikin û daxwazên zêdetir bistînin."
+        },
+        {
+          "title": "Têkilî",
+          "text": "Bi kurtî warê kar, armanc û malpera heyî binivîse. Paşê em gavê din ê rast pêşniyar dikin."
+        }
+      ],
+      "industryCtaTitle": "Şêwirmendiya belaş bixwaze",
+      "industryCtaText": "Bi kurtî warê kar, armanc û malpera heyî binivîse. Paşê em gavê din ê rast pêşniyar dikin.",
+      "industryCta": "Daxwaz bişîne",
+      "includedTitle": "Malper ji bo karsaziyên herêmî",
+      "includedItems": [
+        "Hildesheim",
+        "bingeha SEO",
+        "xizmetên zelal",
+        "daxwazên zêdetir"
+      ],
+      "includedCtaTitle": "Şêwirmendiya belaş bixwaze",
+      "includedCtaText": "Bi kurtî warê kar, armanc û malpera heyî binivîse. Paşê em gavê din ê rast pêşniyar dikin.",
+      "includedCta": "Daxwaz bişîne",
+      "processTitle": "Xizmet",
+      "processSteps": [
+        [
+          "bingeha SEO",
+          "Em alîkariya karsaziyên biçûk û herêmî dikin ku online baştir xuya bikin û daxwazên bi kalîte bistînin."
+        ],
+        [
+          "xizmetên zelal",
+          "Ji bo hosta, xwaringeh, klînîk, studio û xizmetkarên ku dixwazin online profesyonel xuya bikin û daxwazên zêdetir bistînin."
+        ],
+        [
+          "daxwazên zêdetir",
+          "Bi kurtî warê kar, armanc û malpera heyî binivîse. Paşê em gavê din ê rast pêşniyar dikin."
+        ]
+      ],
+      "processCtaTitle": "Şêwirmendiya belaş bixwaze",
+      "processCtaText": "Bi kurtî warê kar, armanc û malpera heyî binivîse. Paşê em gavê din ê rast pêşniyar dikin.",
+      "processCta": "Daxwaz bişîne",
+      "whyTitle": "VS Web Studio",
+      "whyLead": "Em alîkariya karsaziyên biçûk û herêmî dikin ku online baştir xuya bikin û daxwazên bi kalîte bistînin.",
+      "whyItems": [
+        "Hildesheim",
+        "bingeha SEO",
+        "xizmetên zelal",
+        "daxwazên zêdetir"
+      ]
     }
   },
   "services": {
@@ -1132,6 +1226,232 @@
       "anchor": {
         "label": "Encam",
         "value": "Daxwazên kalîteyî zêdetir li şûna tenê trafikê"
+      }
+    }
+  },
+  "seoLanding": {
+    "signalsAria": "Qadên xizmetê",
+    "signals": [
+      "Hildesheim",
+      "bingeha SEO",
+      "xizmetên zelal",
+      "daxwazên zêdetir"
+    ],
+    "finalCta": {
+      "title": "Şêwirmendiya belaş bixwaze",
+      "text": "Bi kurtî warê kar, armanc û malpera heyî binivîse. Paşê em gavê din ê rast pêşniyar dikin.",
+      "button": "Daxwaz bişîne"
+    },
+    "pages": {
+      "webdesign-hildesheim": {
+        "eyebrow": "Webdesign Hildesheim",
+        "h1": "Webdesign Hildesheim ji bo karsaziyên herêmî",
+        "lead": "Ji bo hosta, xwaringeh, klînîk, studio û xizmetkarên ku dixwazin online profesyonel xuya bikin û daxwazên zêdetir bistînin.",
+        "cta": "Şêwirmendiya belaş bixwaze",
+        "sections": [
+          {
+            "title": "xizmetên zelal",
+            "text": "Em alîkariya karsaziyên biçûk û herêmî dikin ku online baştir xuya bikin û daxwazên bi kalîte bistînin.",
+            "points": [
+              "bingeha SEO",
+              "xizmetên zelal",
+              "daxwazên zêdetir"
+            ]
+          },
+          {
+            "title": "Xizmet",
+            "text": "Ji bo hosta, xwaringeh, klînîk, studio û xizmetkarên ku dixwazin online profesyonel xuya bikin û daxwazên zêdetir bistînin.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Pergalên lead"
+            ]
+          },
+          {
+            "title": "Têkilî",
+            "text": "Bi kurtî warê kar, armanc û malpera heyî binivîse. Paşê em gavê din ê rast pêşniyar dikin.",
+            "points": [
+              "Daxwaz bişîne",
+              "Şêwirmendiya belaş",
+              "Li tevahiya Almanyayê online"
+            ]
+          }
+        ]
+      },
+      "website-erstellen-lassen": {
+        "eyebrow": "Webdesign Hildesheim",
+        "h1": "Webdesign Hildesheim",
+        "lead": "Em alîkariya karsaziyên biçûk û herêmî dikin ku online baştir xuya bikin û daxwazên bi kalîte bistînin.",
+        "cta": "Şêwirmendiya belaş bixwaze",
+        "sections": [
+          {
+            "title": "xizmetên zelal",
+            "text": "Em alîkariya karsaziyên biçûk û herêmî dikin ku online baştir xuya bikin û daxwazên bi kalîte bistînin.",
+            "points": [
+              "bingeha SEO",
+              "xizmetên zelal",
+              "daxwazên zêdetir"
+            ]
+          },
+          {
+            "title": "Xizmet",
+            "text": "Ji bo hosta, xwaringeh, klînîk, studio û xizmetkarên ku dixwazin online profesyonel xuya bikin û daxwazên zêdetir bistînin.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Pergalên lead"
+            ]
+          },
+          {
+            "title": "Têkilî",
+            "text": "Bi kurtî warê kar, armanc û malpera heyî binivîse. Paşê em gavê din ê rast pêşniyar dikin.",
+            "points": [
+              "Daxwaz bişîne",
+              "Şêwirmendiya belaş",
+              "Li tevahiya Almanyayê online"
+            ]
+          }
+        ]
+      },
+      "seo-hildesheim": {
+        "eyebrow": "SEO Hildesheim",
+        "h1": "SEO Hildesheim",
+        "lead": "Em alîkariya karsaziyên biçûk û herêmî dikin ku online baştir xuya bikin û daxwazên bi kalîte bistînin.",
+        "cta": "Şêwirmendiya belaş bixwaze",
+        "sections": [
+          {
+            "title": "xizmetên zelal",
+            "text": "Em alîkariya karsaziyên biçûk û herêmî dikin ku online baştir xuya bikin û daxwazên bi kalîte bistînin.",
+            "points": [
+              "bingeha SEO",
+              "xizmetên zelal",
+              "daxwazên zêdetir"
+            ]
+          },
+          {
+            "title": "Xizmet",
+            "text": "Ji bo hosta, xwaringeh, klînîk, studio û xizmetkarên ku dixwazin online profesyonel xuya bikin û daxwazên zêdetir bistînin.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Pergalên lead"
+            ]
+          },
+          {
+            "title": "Têkilî",
+            "text": "Bi kurtî warê kar, armanc û malpera heyî binivîse. Paşê em gavê din ê rast pêşniyar dikin.",
+            "points": [
+              "Daxwaz bişîne",
+              "Şêwirmendiya belaş",
+              "Li tevahiya Almanyayê online"
+            ]
+          }
+        ]
+      },
+      "lead-systeme": {
+        "eyebrow": "Pergalên lead",
+        "h1": "Pergalên lead",
+        "lead": "Em alîkariya karsaziyên biçûk û herêmî dikin ku online baştir xuya bikin û daxwazên bi kalîte bistînin.",
+        "cta": "Şêwirmendiya belaş bixwaze",
+        "sections": [
+          {
+            "title": "xizmetên zelal",
+            "text": "Em alîkariya karsaziyên biçûk û herêmî dikin ku online baştir xuya bikin û daxwazên bi kalîte bistînin.",
+            "points": [
+              "bingeha SEO",
+              "xizmetên zelal",
+              "daxwazên zêdetir"
+            ]
+          },
+          {
+            "title": "Xizmet",
+            "text": "Ji bo hosta, xwaringeh, klînîk, studio û xizmetkarên ku dixwazin online profesyonel xuya bikin û daxwazên zêdetir bistînin.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Pergalên lead"
+            ]
+          },
+          {
+            "title": "Têkilî",
+            "text": "Bi kurtî warê kar, armanc û malpera heyî binivîse. Paşê em gavê din ê rast pêşniyar dikin.",
+            "points": [
+              "Daxwaz bişîne",
+              "Şêwirmendiya belaş",
+              "Li tevahiya Almanyayê online"
+            ]
+          }
+        ]
+      },
+      "websites-fuer-handwerker": {
+        "eyebrow": "Webdesign Hildesheim",
+        "h1": "Webdesign Hildesheim",
+        "lead": "Em alîkariya karsaziyên biçûk û herêmî dikin ku online baştir xuya bikin û daxwazên bi kalîte bistînin.",
+        "cta": "Şêwirmendiya belaş bixwaze",
+        "sections": [
+          {
+            "title": "xizmetên zelal",
+            "text": "Em alîkariya karsaziyên biçûk û herêmî dikin ku online baştir xuya bikin û daxwazên bi kalîte bistînin.",
+            "points": [
+              "bingeha SEO",
+              "xizmetên zelal",
+              "daxwazên zêdetir"
+            ]
+          },
+          {
+            "title": "Xizmet",
+            "text": "Ji bo hosta, xwaringeh, klînîk, studio û xizmetkarên ku dixwazin online profesyonel xuya bikin û daxwazên zêdetir bistînin.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Pergalên lead"
+            ]
+          },
+          {
+            "title": "Têkilî",
+            "text": "Bi kurtî warê kar, armanc û malpera heyî binivîse. Paşê em gavê din ê rast pêşniyar dikin.",
+            "points": [
+              "Daxwaz bişîne",
+              "Şêwirmendiya belaş",
+              "Li tevahiya Almanyayê online"
+            ]
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "h1": "Pirsên gelemperî",
+        "lead": "Em alîkariya karsaziyên biçûk û herêmî dikin ku online baştir xuya bikin û daxwazên bi kalîte bistînin.",
+        "cta": "Şêwirmendiya belaş bixwaze",
+        "sections": [
+          {
+            "title": "xizmetên zelal",
+            "text": "Em alîkariya karsaziyên biçûk û herêmî dikin ku online baştir xuya bikin û daxwazên bi kalîte bistînin.",
+            "points": [
+              "bingeha SEO",
+              "xizmetên zelal",
+              "daxwazên zêdetir"
+            ]
+          },
+          {
+            "title": "Xizmet",
+            "text": "Ji bo hosta, xwaringeh, klînîk, studio û xizmetkarên ku dixwazin online profesyonel xuya bikin û daxwazên zêdetir bistînin.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Pergalên lead"
+            ]
+          },
+          {
+            "title": "Têkilî",
+            "text": "Bi kurtî warê kar, armanc û malpera heyî binivîse. Paşê em gavê din ê rast pêşniyar dikin.",
+            "points": [
+              "Daxwaz bişîne",
+              "Şêwirmendiya belaş",
+              "Li tevahiya Almanyayê online"
+            ]
+          }
+        ]
       }
     }
   }

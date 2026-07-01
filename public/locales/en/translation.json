@@ -22,7 +22,12 @@
   "header": {
     "menu": "Menu",
     "menuAria": "Open navigation menu",
+    "startseite": "Home",
     "services": "Services",
+    "webdesignHildesheim": "Webdesign Hildesheim",
+    "seo": "SEO",
+    "leadSysteme": "Lead systems",
+    "portfolio": "Portfolio",
     "preise": "Prices",
     "referenzen": "References",
     "ueberUns": "About us",
@@ -30,12 +35,36 @@
   },
   "footer": {
     "tagline": "VS Studio - Websites, Web Apps, Ads & Automations",
+    "description": "Web design, websites, SEO and lead systems for local businesses in Hildesheim and Lower Saxony.",
+    "columns": {
+      "services": "Services",
+      "regions": "Regions",
+      "legal": "Legal",
+      "contact": "Contact"
+    },
+    "links": {
+      "webdesign": "Webdesign Hildesheim",
+      "landingpages": "Landingpages",
+      "seoBase": "SEO",
+      "leadSystems": "Lead systems",
+      "aiContent": "AI Content",
+      "freeConsultation": "Free consultation",
+      "faq": "FAQ",
+      "portfolio": "Portfolio"
+    },
     "impressum": "Imprint",
     "datenschutz": "Data protection",
     "agb": "Terms and Conditions",
     "cookies": "cookies",
     "cookieSettings": "Cookie settings",
-    "blog": "Blog"
+    "blog": "Blog",
+    "regions": {
+      "hildesheim": "Hildesheim",
+      "hannover": "Hannover",
+      "braunschweig": "Braunschweig",
+      "niedersachsen": "Lower Saxony",
+      "onlineGermany": "Online across Germany"
+    }
   },
   "cookie": {
     "aria": "Cookie consent",
@@ -51,9 +80,67 @@
     "saveSelection": "Save selection"
   },
   "home": {
-    "heroTitle": "Websites that bring in inquiries instead of just looking good.",
-    "heroSubtitle": "Clear positioning, quick implementation and transparent packages for local service providers in Germany.",
+    "heroTitle": "More customer inquiries through a modern website",
+    "heroSubtitle": "VS Web Studio builds fast websites, landing pages and lead systems for local businesses in Hildesheim and Lower Saxony.",
     "toFaq": "Go to FAQ",
+    "heroSupporting": "For trades, restaurants, clinics, studios and service providers that want to look sharper online and win more enquiries.",
+    "heroPrimaryCta": "Free consultation",
+    "heroPortfolioCta": "View website examples",
+    "heroTrustline": "Web design · SEO foundation · Mobile optimization · Contact form · Google Business support",
+    "localSeo": {
+      "audienceTitle": "Websites for local businesses",
+      "audienceLead": "We help small and local businesses present themselves professionally online and receive more qualified enquiries.",
+      "industries": [
+        {
+          "title": "Webdesign Hildesheim",
+          "text": "We help small and local businesses present themselves professionally online and receive more qualified enquiries."
+        },
+        {
+          "title": "SEO",
+          "text": "Web design · SEO foundation · Mobile optimization · Contact form · Google Business support"
+        },
+        {
+          "title": "Lead systems",
+          "text": "For trades, restaurants, clinics, studios and service providers that want to look sharper online and win more enquiries."
+        },
+        {
+          "title": "Contact"
+        }
+      ],
+      "includedTitle": "Websites for local businesses",
+      "includedItems": [
+        "Hildesheim",
+        "SEO foundation",
+        "clear services",
+        "more enquiries"
+      ],
+      "processTitle": "Services",
+      "processSteps": [
+        [
+          "SEO foundation",
+          "We help small and local businesses present themselves professionally online and receive more qualified enquiries."
+        ],
+        [
+          "clear services",
+          "For trades, restaurants, clinics, studios and service providers that want to look sharper online and win more enquiries."
+        ],
+        [
+          "more enquiries",
+          null
+        ]
+      ],
+      "whyTitle": "VS Web Studio",
+      "whyLead": "We help small and local businesses present themselves professionally online and receive more qualified enquiries.",
+      "whyItems": [
+        "Hildesheim",
+        "SEO foundation",
+        "clear services",
+        "more enquiries"
+      ],
+      "industryCtaText": "Briefly describe your industry, goal and whether a website already exists. Then we can suggest the right next step.",
+      "includedCtaText": "Briefly describe your industry, goal and whether a website already exists. Then we can suggest the right next step.",
+      "processCtaText": "Briefly describe your industry, goal and whether a website already exists. Then we can suggest the right next step."
+    },
     "partnersTitle": "Highlights, target groups and services",
     "groups": {
       "highlights": "Highlights",
@@ -1532,6 +1619,286 @@
       "timeline": "Animated quest timeline scene for the developer progression section",
       "network": "Animated guild network scene for business context and alliances section",
       "contact": "Animated final portal scene for the contact section"
+    }
+  },
+  "seoLanding": {
+    "signalsAria": "Service areas",
+    "signals": [
+      "Hildesheim",
+      "SEO foundation",
+      "clear services",
+      "more enquiries"
+    ],
+    "finalCta": {
+      "title": "Request a free consultation",
+      "text": "Briefly describe your industry, goal and whether a website already exists. Then we can suggest the right next step.",
+      "button": "Send enquiry"
+    },
+    "pages": {
+      "webdesign-hildesheim": {
+        "eyebrow": "Webdesign Hildesheim",
+        "h1": "Webdesign Hildesheim for local businesses",
+        "lead": "VS Web Studio creates modern websites that build trust, work well on mobile and make clear customer enquiries easier.",
+        "cta": "Request a free consultation",
+        "sections": [
+          {
+            "title": "Modern websites that build trust",
+            "text": "A good website explains within seconds who you are, what you offer and how customers can reach you.",
+            "points": [
+              "clear homepage",
+              "understandable services",
+              "mobile optimization"
+            ]
+          },
+          {
+            "title": "Which industries?",
+            "text": "The focus is on trades, restaurants, clinics, studios and local service providers in Hildesheim and Lower Saxony.",
+            "points": [
+              "trades",
+              "restaurants & cafés",
+              "clinics, studios and service providers"
+            ]
+          },
+          {
+            "title": "What is included?",
+            "text": "Depending on the project, we build a landing page or multi-page business website with SEO foundation and contact paths.",
+            "points": [
+              "responsive design",
+              "SEO basics",
+              "contact form and clear CTAs"
+            ]
+          },
+          {
+            "title": "Why local web design matters",
+            "text": "Local customers search for specific services, location, trust and quick contact. The structure is built around that.",
+            "points": [
+              "local keywords",
+              "Google Business support",
+              "enquiry focus"
+            ]
+          }
+        ]
+      },
+      "website-erstellen-lassen": {
+        "eyebrow": "Website creation",
+        "h1": "Get a professional, modern and clear website",
+        "lead": "Commission a website that not only looks good, but explains services clearly and makes enquiries easier.",
+        "cta": "Discuss the project",
+        "sections": [
+          {
+            "title": "Modern websites that build trust",
+            "text": "A good website explains within seconds who you are, what you offer and how customers can reach you.",
+            "points": [
+              "clear homepage",
+              "understandable services",
+              "mobile optimization"
+            ]
+          },
+          {
+            "title": "Which industries?",
+            "text": "The focus is on trades, restaurants, clinics, studios and local service providers in Hildesheim and Lower Saxony.",
+            "points": [
+              "trades",
+              "restaurants & cafés",
+              "clinics, studios and service providers"
+            ]
+          },
+          {
+            "title": "What is included?",
+            "text": "Depending on the project, we build a landing page or multi-page business website with SEO foundation and contact paths.",
+            "points": [
+              "responsive design",
+              "SEO basics",
+              "contact form and clear CTAs"
+            ]
+          },
+          {
+            "title": "Why local web design matters",
+            "text": "Local customers search for specific services, location, trust and quick contact. The structure is built around that.",
+            "points": [
+              "local keywords",
+              "Google Business support",
+              "enquiry focus"
+            ]
+          }
+        ]
+      },
+      "seo-hildesheim": {
+        "eyebrow": "SEO Hildesheim",
+        "h1": "SEO Hildesheim - get found more easily",
+        "lead": "SEO foundation for local businesses: clear pages, local keywords, fast technology and understandable content.",
+        "cta": "Check SEO foundation",
+        "sections": [
+          {
+            "title": "Modern websites that build trust",
+            "text": "A good website explains within seconds who you are, what you offer and how customers can reach you.",
+            "points": [
+              "clear homepage",
+              "understandable services",
+              "mobile optimization"
+            ]
+          },
+          {
+            "title": "Which industries?",
+            "text": "The focus is on trades, restaurants, clinics, studios and local service providers in Hildesheim and Lower Saxony.",
+            "points": [
+              "trades",
+              "restaurants & cafés",
+              "clinics, studios and service providers"
+            ]
+          },
+          {
+            "title": "What is included?",
+            "text": "Depending on the project, we build a landing page or multi-page business website with SEO foundation and contact paths.",
+            "points": [
+              "responsive design",
+              "SEO basics",
+              "contact form and clear CTAs"
+            ]
+          },
+          {
+            "title": "Why local web design matters",
+            "text": "Local customers search for specific services, location, trust and quick contact. The structure is built around that.",
+            "points": [
+              "local keywords",
+              "Google Business support",
+              "enquiry focus"
+            ]
+          }
+        ]
+      },
+      "lead-systeme": {
+        "eyebrow": "Lead systems",
+        "h1": "Lead systems for local businesses",
+        "lead": "More enquiries instead of just visitors: contact forms, enquiry flows and automation for better customer communication.",
+        "cta": "Request lead system",
+        "sections": [
+          {
+            "title": "Modern websites that build trust",
+            "text": "A good website explains within seconds who you are, what you offer and how customers can reach you.",
+            "points": [
+              "clear homepage",
+              "understandable services",
+              "mobile optimization"
+            ]
+          },
+          {
+            "title": "Which industries?",
+            "text": "The focus is on trades, restaurants, clinics, studios and local service providers in Hildesheim and Lower Saxony.",
+            "points": [
+              "trades",
+              "restaurants & cafés",
+              "clinics, studios and service providers"
+            ]
+          },
+          {
+            "title": "What is included?",
+            "text": "Depending on the project, we build a landing page or multi-page business website with SEO foundation and contact paths.",
+            "points": [
+              "responsive design",
+              "SEO basics",
+              "contact form and clear CTAs"
+            ]
+          },
+          {
+            "title": "Why local web design matters",
+            "text": "Local customers search for specific services, location, trust and quick contact. The structure is built around that.",
+            "points": [
+              "local keywords",
+              "Google Business support",
+              "enquiry focus"
+            ]
+          }
+        ]
+      },
+      "websites-fuer-handwerker": {
+        "eyebrow": "Website for trades",
+        "h1": "Website for trades",
+        "lead": "Modern websites for trade businesses with clear services, references, local SEO structure and enquiry focus.",
+        "cta": "Modernize website",
+        "sections": [
+          {
+            "title": "Modern websites that build trust",
+            "text": "A good website explains within seconds who you are, what you offer and how customers can reach you.",
+            "points": [
+              "clear homepage",
+              "understandable services",
+              "mobile optimization"
+            ]
+          },
+          {
+            "title": "Which industries?",
+            "text": "The focus is on trades, restaurants, clinics, studios and local service providers in Hildesheim and Lower Saxony.",
+            "points": [
+              "trades",
+              "restaurants & cafés",
+              "clinics, studios and service providers"
+            ]
+          },
+          {
+            "title": "What is included?",
+            "text": "Depending on the project, we build a landing page or multi-page business website with SEO foundation and contact paths.",
+            "points": [
+              "responsive design",
+              "SEO basics",
+              "contact form and clear CTAs"
+            ]
+          },
+          {
+            "title": "Why local web design matters",
+            "text": "Local customers search for specific services, location, trust and quick contact. The structure is built around that.",
+            "points": [
+              "local keywords",
+              "Google Business support",
+              "enquiry focus"
+            ]
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "h1": "Frequently asked questions",
+        "lead": "Answers to common questions about web design, website creation, SEO, costs, timing and collaboration with VS Web Studio.",
+        "cta": "Ask another question",
+        "sections": [
+          {
+            "title": "Modern websites that build trust",
+            "text": "A good website explains within seconds who you are, what you offer and how customers can reach you.",
+            "points": [
+              "clear homepage",
+              "understandable services",
+              "mobile optimization"
+            ]
+          },
+          {
+            "title": "Which industries?",
+            "text": "The focus is on trades, restaurants, clinics, studios and local service providers in Hildesheim and Lower Saxony.",
+            "points": [
+              "trades",
+              "restaurants & cafés",
+              "clinics, studios and service providers"
+            ]
+          },
+          {
+            "title": "What is included?",
+            "text": "Depending on the project, we build a landing page or multi-page business website with SEO foundation and contact paths.",
+            "points": [
+              "responsive design",
+              "SEO basics",
+              "contact form and clear CTAs"
+            ]
+          },
+          {
+            "title": "Why local web design matters",
+            "text": "Local customers search for specific services, location, trust and quick contact. The structure is built around that.",
+            "points": [
+              "local keywords",
+              "Google Business support",
+              "enquiry focus"
+            ]
+          }
+        ]
+      }
     }
   }
 }
