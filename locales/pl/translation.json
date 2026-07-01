@@ -25,7 +25,12 @@
     "preise": "Ceny",
     "referenzen": "Referencje",
     "ueberUns": "O nas",
-    "kontakt": "Kontakt"
+    "kontakt": "Kontakt",
+    "startseite": "Start",
+    "webdesignHildesheim": "Webdesign Hildesheim",
+    "seo": "SEO",
+    "leadSysteme": "Systemy leadów",
+    "portfolio": "Portfolio"
   },
   "footer": {
     "tagline": "VS Studio - strony internetowe, web-appki, reklamy i automatyzacje",
@@ -34,7 +39,31 @@
     "agb": "Regulamin",
     "cookies": "Cookies",
     "cookieSettings": "Ustawienia cookies",
-    "blog": "Blog"
+    "blog": "Blog",
+    "description": "Webdesign, strony, SEO i systemy leadów dla lokalnych firm w Hildesheim i Dolnej Saksonii.",
+    "columns": {
+      "services": "Usługi",
+      "regions": "Regiony",
+      "legal": "Informacje prawne",
+      "contact": "Kontakt"
+    },
+    "links": {
+      "webdesign": "Webdesign Hildesheim",
+      "landingpages": "Landingpages",
+      "seoBase": "SEO",
+      "leadSystems": "Systemy leadów",
+      "aiContent": "AI Content",
+      "freeConsultation": "Bezpłatna konsultacja",
+      "faq": "FAQ",
+      "portfolio": "Portfolio"
+    },
+    "regions": {
+      "hildesheim": "Hildesheim",
+      "hannover": "Hannover",
+      "braunschweig": "Braunschweig",
+      "niedersachsen": "Niedersachsen",
+      "onlineGermany": "Online w całych Niemczech"
+    }
   },
   "cookie": {
     "aria": "Zgoda na cookies",
@@ -469,6 +498,64 @@
       },
       "cta": "Poproś o bezpłatną konsultację",
       "legal": "Uwaga: Integracje telefonu, kalendarza i CRM są konfigurowane indywidualnie. Ochrona danych, zgody i wymagania techniczne są sprawdzane osobno dla każdej firmy."
+    },
+    "heroSupporting": "Dla rzemieślników, restauracji, gabinetów, studiów i usługodawców, którzy chcą wyglądać profesjonalniej online i zdobywać więcej zapytań.",
+    "heroPrimaryCta": "Bezpłatna konsultacja",
+    "heroPortfolioCta": "Zobacz przykłady stron",
+    "heroTrustline": "Webdesign · Podstawa SEO · Mobile · Formularz kontaktowy · Google Business",
+    "localSeo": {
+      "audienceTitle": "Strony dla lokalnych firm",
+      "audienceLead": "Pomagamy małym i lokalnym firmom prezentować się profesjonalniej online i otrzymywać lepsze zapytania.",
+      "industries": [
+        {
+          "title": "Webdesign Hildesheim",
+          "text": "Pomagamy małym i lokalnym firmom prezentować się profesjonalniej online i otrzymywać lepsze zapytania."
+        },
+        {
+          "title": "SEO",
+          "text": "Webdesign · Podstawa SEO · Mobile · Formularz kontaktowy · Google Business"
+        },
+        {
+          "title": "Systemy leadów",
+          "text": "Dla rzemieślników, restauracji, gabinetów, studiów i usługodawców, którzy chcą wyglądać profesjonalniej online i zdobywać więcej zapytań."
+        },
+        {
+          "title": "Kontakt"
+        }
+      ],
+      "includedTitle": "Strony dla lokalnych firm",
+      "includedItems": [
+        "Hildesheim",
+        "podstawa SEO",
+        "jasne usługi",
+        "więcej zapytań"
+      ],
+      "processTitle": "Usługi",
+      "processSteps": [
+        [
+          "podstawa SEO",
+          "Pomagamy małym i lokalnym firmom prezentować się profesjonalniej online i otrzymywać lepsze zapytania."
+        ],
+        [
+          "jasne usługi",
+          "Dla rzemieślników, restauracji, gabinetów, studiów i usługodawców, którzy chcą wyglądać profesjonalniej online i zdobywać więcej zapytań."
+        ],
+        [
+          "więcej zapytań",
+          null
+        ]
+      ],
+      "whyTitle": "VS Web Studio",
+      "whyLead": "Pomagamy małym i lokalnym firmom prezentować się profesjonalniej online i otrzymywać lepsze zapytania.",
+      "whyItems": [
+        "Hildesheim",
+        "podstawa SEO",
+        "jasne usługi",
+        "więcej zapytań"
+      ],
+      "industryCtaText": "Krótko opisz branżę, cel i czy masz już stronę. Następnie zaproponujemy właściwy kolejny krok.",
+      "includedCtaText": "Krótko opisz branżę, cel i czy masz już stronę. Następnie zaproponujemy właściwy kolejny krok.",
+      "processCtaText": "Krótko opisz branżę, cel i czy masz już stronę. Następnie zaproponujemy właściwy kolejny krok."
     }
   },
   "services": {
@@ -1145,6 +1232,286 @@
       "anchor": {
         "label": "Efekt",
         "value": "Więcej kwalifikowanych zapytań zamiast samego ruchu"
+      }
+    }
+  },
+  "seoLanding": {
+    "signalsAria": "Obszary usług",
+    "signals": [
+      "Hildesheim",
+      "podstawa SEO",
+      "jasne usługi",
+      "więcej zapytań"
+    ],
+    "finalCta": {
+      "title": "Poproś o bezpłatną konsultację",
+      "text": "Krótko opisz branżę, cel i czy masz już stronę. Następnie zaproponujemy właściwy kolejny krok.",
+      "button": "Wyślij zapytanie"
+    },
+    "pages": {
+      "webdesign-hildesheim": {
+        "eyebrow": "Webdesign Hildesheim",
+        "h1": "Webdesign Hildesheim dla lokalnych firm",
+        "lead": "VS Web Studio tworzy nowoczesne strony, które budują zaufanie, działają mobilnie i ułatwiają zapytania.",
+        "cta": "Poproś o konsultację",
+        "sections": [
+          {
+            "title": "Nowoczesne strony, które budują zaufanie",
+            "text": "Dobra strona w kilka sekund wyjaśnia, kim jesteś, co oferujesz i jak się skontaktować.",
+            "points": [
+              "jasna strona główna",
+              "zrozumiałe usługi",
+              "optymalizacja mobilna"
+            ]
+          },
+          {
+            "title": "Dla jakich branż?",
+            "text": "Skupiamy się na rzemiośle, restauracjach, gabinetach, studiach i lokalnych usługach w Hildesheim i Dolnej Saksonii.",
+            "points": [
+              "rzemieślnicy",
+              "restauracje i kawiarnie",
+              "gabinety, studia i usługi"
+            ]
+          },
+          {
+            "title": "Co jest zawarte?",
+            "text": "Zależnie od projektu powstaje landing page lub strona firmowa z podstawą SEO i ścieżkami kontaktu.",
+            "points": [
+              "responsywny design",
+              "podstawa SEO",
+              "formularz i jasne CTA"
+            ]
+          },
+          {
+            "title": "Dlaczego lokalny webdesign jest ważny",
+            "text": "Lokalni klienci szukają usługi, miejsca, zaufania i szybkiego kontaktu. Struktura jest pod to ustawiona.",
+            "points": [
+              "lokalne frazy",
+              "wsparcie Google Business",
+              "focus na zapytania"
+            ]
+          }
+        ]
+      },
+      "website-erstellen-lassen": {
+        "eyebrow": "Tworzenie stron",
+        "h1": "Profesjonalna, nowoczesna i zrozumiała strona",
+        "lead": "Zamów stronę, która dobrze wygląda, jasno wyjaśnia usługi i ułatwia kontakt.",
+        "cta": "Omów projekt",
+        "sections": [
+          {
+            "title": "Nowoczesne strony, które budują zaufanie",
+            "text": "Dobra strona w kilka sekund wyjaśnia, kim jesteś, co oferujesz i jak się skontaktować.",
+            "points": [
+              "jasna strona główna",
+              "zrozumiałe usługi",
+              "optymalizacja mobilna"
+            ]
+          },
+          {
+            "title": "Dla jakich branż?",
+            "text": "Skupiamy się na rzemiośle, restauracjach, gabinetach, studiach i lokalnych usługach w Hildesheim i Dolnej Saksonii.",
+            "points": [
+              "rzemieślnicy",
+              "restauracje i kawiarnie",
+              "gabinety, studia i usługi"
+            ]
+          },
+          {
+            "title": "Co jest zawarte?",
+            "text": "Zależnie od projektu powstaje landing page lub strona firmowa z podstawą SEO i ścieżkami kontaktu.",
+            "points": [
+              "responsywny design",
+              "podstawa SEO",
+              "formularz i jasne CTA"
+            ]
+          },
+          {
+            "title": "Dlaczego lokalny webdesign jest ważny",
+            "text": "Lokalni klienci szukają usługi, miejsca, zaufania i szybkiego kontaktu. Struktura jest pod to ustawiona.",
+            "points": [
+              "lokalne frazy",
+              "wsparcie Google Business",
+              "focus na zapytania"
+            ]
+          }
+        ]
+      },
+      "seo-hildesheim": {
+        "eyebrow": "SEO Hildesheim",
+        "h1": "SEO Hildesheim - lepsza widoczność",
+        "lead": "Podstawa SEO dla lokalnych firm: jasne strony, lokalne frazy, szybka technika i zrozumiałe treści.",
+        "cta": "Sprawdź SEO",
+        "sections": [
+          {
+            "title": "Nowoczesne strony, które budują zaufanie",
+            "text": "Dobra strona w kilka sekund wyjaśnia, kim jesteś, co oferujesz i jak się skontaktować.",
+            "points": [
+              "jasna strona główna",
+              "zrozumiałe usługi",
+              "optymalizacja mobilna"
+            ]
+          },
+          {
+            "title": "Dla jakich branż?",
+            "text": "Skupiamy się na rzemiośle, restauracjach, gabinetach, studiach i lokalnych usługach w Hildesheim i Dolnej Saksonii.",
+            "points": [
+              "rzemieślnicy",
+              "restauracje i kawiarnie",
+              "gabinety, studia i usługi"
+            ]
+          },
+          {
+            "title": "Co jest zawarte?",
+            "text": "Zależnie od projektu powstaje landing page lub strona firmowa z podstawą SEO i ścieżkami kontaktu.",
+            "points": [
+              "responsywny design",
+              "podstawa SEO",
+              "formularz i jasne CTA"
+            ]
+          },
+          {
+            "title": "Dlaczego lokalny webdesign jest ważny",
+            "text": "Lokalni klienci szukają usługi, miejsca, zaufania i szybkiego kontaktu. Struktura jest pod to ustawiona.",
+            "points": [
+              "lokalne frazy",
+              "wsparcie Google Business",
+              "focus na zapytania"
+            ]
+          }
+        ]
+      },
+      "lead-systeme": {
+        "eyebrow": "Systemy leadów",
+        "h1": "Systemy leadów dla lokalnych firm",
+        "lead": "Więcej zapytań zamiast samych odwiedzin: formularze, procesy i automatyzacja komunikacji.",
+        "cta": "Zapytaj o system leadów",
+        "sections": [
+          {
+            "title": "Nowoczesne strony, które budują zaufanie",
+            "text": "Dobra strona w kilka sekund wyjaśnia, kim jesteś, co oferujesz i jak się skontaktować.",
+            "points": [
+              "jasna strona główna",
+              "zrozumiałe usługi",
+              "optymalizacja mobilna"
+            ]
+          },
+          {
+            "title": "Dla jakich branż?",
+            "text": "Skupiamy się na rzemiośle, restauracjach, gabinetach, studiach i lokalnych usługach w Hildesheim i Dolnej Saksonii.",
+            "points": [
+              "rzemieślnicy",
+              "restauracje i kawiarnie",
+              "gabinety, studia i usługi"
+            ]
+          },
+          {
+            "title": "Co jest zawarte?",
+            "text": "Zależnie od projektu powstaje landing page lub strona firmowa z podstawą SEO i ścieżkami kontaktu.",
+            "points": [
+              "responsywny design",
+              "podstawa SEO",
+              "formularz i jasne CTA"
+            ]
+          },
+          {
+            "title": "Dlaczego lokalny webdesign jest ważny",
+            "text": "Lokalni klienci szukają usługi, miejsca, zaufania i szybkiego kontaktu. Struktura jest pod to ustawiona.",
+            "points": [
+              "lokalne frazy",
+              "wsparcie Google Business",
+              "focus na zapytania"
+            ]
+          }
+        ]
+      },
+      "websites-fuer-handwerker": {
+        "eyebrow": "Strona dla rzemieślników",
+        "h1": "Strony dla rzemieślników",
+        "lead": "Nowoczesne strony dla rzemiosła z jasnymi usługami, referencjami, lokalnym SEO i naciskiem na zapytania.",
+        "cta": "Unowocześnij stronę",
+        "sections": [
+          {
+            "title": "Nowoczesne strony, które budują zaufanie",
+            "text": "Dobra strona w kilka sekund wyjaśnia, kim jesteś, co oferujesz i jak się skontaktować.",
+            "points": [
+              "jasna strona główna",
+              "zrozumiałe usługi",
+              "optymalizacja mobilna"
+            ]
+          },
+          {
+            "title": "Dla jakich branż?",
+            "text": "Skupiamy się na rzemiośle, restauracjach, gabinetach, studiach i lokalnych usługach w Hildesheim i Dolnej Saksonii.",
+            "points": [
+              "rzemieślnicy",
+              "restauracje i kawiarnie",
+              "gabinety, studia i usługi"
+            ]
+          },
+          {
+            "title": "Co jest zawarte?",
+            "text": "Zależnie od projektu powstaje landing page lub strona firmowa z podstawą SEO i ścieżkami kontaktu.",
+            "points": [
+              "responsywny design",
+              "podstawa SEO",
+              "formularz i jasne CTA"
+            ]
+          },
+          {
+            "title": "Dlaczego lokalny webdesign jest ważny",
+            "text": "Lokalni klienci szukają usługi, miejsca, zaufania i szybkiego kontaktu. Struktura jest pod to ustawiona.",
+            "points": [
+              "lokalne frazy",
+              "wsparcie Google Business",
+              "focus na zapytania"
+            ]
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "h1": "Najczęstsze pytania",
+        "lead": "Odpowiedzi o webdesignie, tworzeniu stron, SEO, kosztach, czasie i współpracy z VS Web Studio.",
+        "cta": "Zadaj pytanie",
+        "sections": [
+          {
+            "title": "Nowoczesne strony, które budują zaufanie",
+            "text": "Dobra strona w kilka sekund wyjaśnia, kim jesteś, co oferujesz i jak się skontaktować.",
+            "points": [
+              "jasna strona główna",
+              "zrozumiałe usługi",
+              "optymalizacja mobilna"
+            ]
+          },
+          {
+            "title": "Dla jakich branż?",
+            "text": "Skupiamy się na rzemiośle, restauracjach, gabinetach, studiach i lokalnych usługach w Hildesheim i Dolnej Saksonii.",
+            "points": [
+              "rzemieślnicy",
+              "restauracje i kawiarnie",
+              "gabinety, studia i usługi"
+            ]
+          },
+          {
+            "title": "Co jest zawarte?",
+            "text": "Zależnie od projektu powstaje landing page lub strona firmowa z podstawą SEO i ścieżkami kontaktu.",
+            "points": [
+              "responsywny design",
+              "podstawa SEO",
+              "formularz i jasne CTA"
+            ]
+          },
+          {
+            "title": "Dlaczego lokalny webdesign jest ważny",
+            "text": "Lokalni klienci szukają usługi, miejsca, zaufania i szybkiego kontaktu. Struktura jest pod to ustawiona.",
+            "points": [
+              "lokalne frazy",
+              "wsparcie Google Business",
+              "focus na zapytania"
+            ]
+          }
+        ]
       }
     }
   }

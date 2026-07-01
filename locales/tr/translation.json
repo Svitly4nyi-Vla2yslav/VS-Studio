@@ -25,7 +25,12 @@
     "preise": "Fiyatlar",
     "referenzen": "Referanslar",
     "ueberUns": "Hakkımızda",
-    "kontakt": "İletişim"
+    "kontakt": "İletişim",
+    "startseite": "Ana sayfa",
+    "webdesignHildesheim": "Webdesign Hildesheim",
+    "seo": "SEO",
+    "leadSysteme": "Lead sistemleri",
+    "portfolio": "Portföy"
   },
   "footer": {
     "tagline": "VS Studio - Web siteleri, web uygulamaları, reklamlar ve otomasyon",
@@ -34,7 +39,31 @@
     "agb": "Genel sartlar",
     "cookies": "Cerezler",
     "cookieSettings": "Cerez ayarları",
-    "blog": "Blog"
+    "blog": "Blog",
+    "description": "Hildesheim ve Aşağı Saksonya’daki yerel işletmeler için web tasarım, web siteleri, SEO ve lead sistemleri.",
+    "columns": {
+      "services": "Hizmetler",
+      "regions": "Bölgeler",
+      "legal": "Yasal",
+      "contact": "İletişim"
+    },
+    "links": {
+      "webdesign": "Webdesign Hildesheim",
+      "landingpages": "Landingpages",
+      "seoBase": "SEO",
+      "leadSystems": "Lead sistemleri",
+      "aiContent": "AI Content",
+      "freeConsultation": "Ücretsiz danışmanlık",
+      "faq": "FAQ",
+      "portfolio": "Portföy"
+    },
+    "regions": {
+      "hildesheim": "Hildesheim",
+      "hannover": "Hannover",
+      "braunschweig": "Braunschweig",
+      "niedersachsen": "Niedersachsen",
+      "onlineGermany": "Almanya genelinde online"
+    }
   },
   "cookie": {
     "aria": "Cookie onayi",
@@ -469,6 +498,71 @@
       },
       "cta": "Ücretsiz danışmanlık iste",
       "legal": "Not: Telefon, takvim ve CRM entegrasyonları bireysel olarak kurulur. Veri koruma, onay ve teknik gereksinimler her şirket için kontrol edilir."
+    },
+    "heroSupporting": "Online daha profesyonel görünmek ve daha fazla talep almak isteyen ustalar, restoranlar, klinikler, stüdyolar ve hizmet işletmeleri için.",
+    "heroPrimaryCta": "Ücretsiz danışmanlık",
+    "heroPortfolioCta": "Örnekleri gör",
+    "heroTrustline": "Webdesign · SEO temeli · Mobil optimizasyon · İletişim formu · Google Business",
+    "localSeo": {
+      "audienceTitle": "Yerel işletmeler için web siteleri",
+      "audienceLead": "Küçük ve yerel işletmelerin online daha profesyonel görünmesine ve daha nitelikli talep almasına yardımcı oluyoruz.",
+      "industries": [
+        {
+          "title": "Webdesign Hildesheim",
+          "text": "Küçük ve yerel işletmelerin online daha profesyonel görünmesine ve daha nitelikli talep almasına yardımcı oluyoruz."
+        },
+        {
+          "title": "SEO",
+          "text": "Webdesign · SEO temeli · Mobil optimizasyon · İletişim formu · Google Business"
+        },
+        {
+          "title": "Lead sistemleri",
+          "text": "Online daha profesyonel görünmek ve daha fazla talep almak isteyen ustalar, restoranlar, klinikler, stüdyolar ve hizmet işletmeleri için."
+        },
+        {
+          "title": "İletişim",
+          "text": "Sektörünüzü, hedefinizi ve mevcut bir siteniz olup olmadığını kısaca anlatın. Sonra doğru sonraki adımı önerelim."
+        }
+      ],
+      "industryCtaTitle": "Ücretsiz danışmanlık iste",
+      "industryCtaText": "Sektörünüzü, hedefinizi ve mevcut bir siteniz olup olmadığını kısaca anlatın. Sonra doğru sonraki adımı önerelim.",
+      "industryCta": "Talep gönder",
+      "includedTitle": "Yerel işletmeler için web siteleri",
+      "includedItems": [
+        "Hildesheim",
+        "SEO temeli",
+        "net hizmetler",
+        "daha fazla talep"
+      ],
+      "includedCtaTitle": "Ücretsiz danışmanlık iste",
+      "includedCtaText": "Sektörünüzü, hedefinizi ve mevcut bir siteniz olup olmadığını kısaca anlatın. Sonra doğru sonraki adımı önerelim.",
+      "includedCta": "Talep gönder",
+      "processTitle": "Hizmetler",
+      "processSteps": [
+        [
+          "SEO temeli",
+          "Küçük ve yerel işletmelerin online daha profesyonel görünmesine ve daha nitelikli talep almasına yardımcı oluyoruz."
+        ],
+        [
+          "net hizmetler",
+          "Online daha profesyonel görünmek ve daha fazla talep almak isteyen ustalar, restoranlar, klinikler, stüdyolar ve hizmet işletmeleri için."
+        ],
+        [
+          "daha fazla talep",
+          "Sektörünüzü, hedefinizi ve mevcut bir siteniz olup olmadığını kısaca anlatın. Sonra doğru sonraki adımı önerelim."
+        ]
+      ],
+      "processCtaTitle": "Ücretsiz danışmanlık iste",
+      "processCtaText": "Sektörünüzü, hedefinizi ve mevcut bir siteniz olup olmadığını kısaca anlatın. Sonra doğru sonraki adımı önerelim.",
+      "processCta": "Talep gönder",
+      "whyTitle": "VS Web Studio",
+      "whyLead": "Küçük ve yerel işletmelerin online daha profesyonel görünmesine ve daha nitelikli talep almasına yardımcı oluyoruz.",
+      "whyItems": [
+        "Hildesheim",
+        "SEO temeli",
+        "net hizmetler",
+        "daha fazla talep"
+      ]
     }
   },
   "services": {
@@ -1139,6 +1233,232 @@
       "anchor": {
         "label": "Sonuc",
         "value": "Sadece trafik yerine daha nitelikli talepler"
+      }
+    }
+  },
+  "seoLanding": {
+    "signalsAria": "Hizmet alanları",
+    "signals": [
+      "Hildesheim",
+      "SEO temeli",
+      "net hizmetler",
+      "daha fazla talep"
+    ],
+    "finalCta": {
+      "title": "Ücretsiz danışmanlık iste",
+      "text": "Sektörünüzü, hedefinizi ve mevcut bir siteniz olup olmadığını kısaca anlatın. Sonra doğru sonraki adımı önerelim.",
+      "button": "Talep gönder"
+    },
+    "pages": {
+      "webdesign-hildesheim": {
+        "eyebrow": "Webdesign Hildesheim",
+        "h1": "Yerel işletmeler için Webdesign Hildesheim",
+        "lead": "Online daha profesyonel görünmek ve daha fazla talep almak isteyen ustalar, restoranlar, klinikler, stüdyolar ve hizmet işletmeleri için.",
+        "cta": "Ücretsiz danışmanlık iste",
+        "sections": [
+          {
+            "title": "net hizmetler",
+            "text": "Küçük ve yerel işletmelerin online daha profesyonel görünmesine ve daha nitelikli talep almasına yardımcı oluyoruz.",
+            "points": [
+              "SEO temeli",
+              "net hizmetler",
+              "daha fazla talep"
+            ]
+          },
+          {
+            "title": "Hizmetler",
+            "text": "Online daha profesyonel görünmek ve daha fazla talep almak isteyen ustalar, restoranlar, klinikler, stüdyolar ve hizmet işletmeleri için.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Lead sistemleri"
+            ]
+          },
+          {
+            "title": "İletişim",
+            "text": "Sektörünüzü, hedefinizi ve mevcut bir siteniz olup olmadığını kısaca anlatın. Sonra doğru sonraki adımı önerelim.",
+            "points": [
+              "Talep gönder",
+              "Ücretsiz danışmanlık",
+              "Almanya genelinde online"
+            ]
+          }
+        ]
+      },
+      "website-erstellen-lassen": {
+        "eyebrow": "Webdesign Hildesheim",
+        "h1": "Webdesign Hildesheim",
+        "lead": "Küçük ve yerel işletmelerin online daha profesyonel görünmesine ve daha nitelikli talep almasına yardımcı oluyoruz.",
+        "cta": "Ücretsiz danışmanlık iste",
+        "sections": [
+          {
+            "title": "net hizmetler",
+            "text": "Küçük ve yerel işletmelerin online daha profesyonel görünmesine ve daha nitelikli talep almasına yardımcı oluyoruz.",
+            "points": [
+              "SEO temeli",
+              "net hizmetler",
+              "daha fazla talep"
+            ]
+          },
+          {
+            "title": "Hizmetler",
+            "text": "Online daha profesyonel görünmek ve daha fazla talep almak isteyen ustalar, restoranlar, klinikler, stüdyolar ve hizmet işletmeleri için.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Lead sistemleri"
+            ]
+          },
+          {
+            "title": "İletişim",
+            "text": "Sektörünüzü, hedefinizi ve mevcut bir siteniz olup olmadığını kısaca anlatın. Sonra doğru sonraki adımı önerelim.",
+            "points": [
+              "Talep gönder",
+              "Ücretsiz danışmanlık",
+              "Almanya genelinde online"
+            ]
+          }
+        ]
+      },
+      "seo-hildesheim": {
+        "eyebrow": "SEO Hildesheim",
+        "h1": "SEO Hildesheim",
+        "lead": "Küçük ve yerel işletmelerin online daha profesyonel görünmesine ve daha nitelikli talep almasına yardımcı oluyoruz.",
+        "cta": "Ücretsiz danışmanlık iste",
+        "sections": [
+          {
+            "title": "net hizmetler",
+            "text": "Küçük ve yerel işletmelerin online daha profesyonel görünmesine ve daha nitelikli talep almasına yardımcı oluyoruz.",
+            "points": [
+              "SEO temeli",
+              "net hizmetler",
+              "daha fazla talep"
+            ]
+          },
+          {
+            "title": "Hizmetler",
+            "text": "Online daha profesyonel görünmek ve daha fazla talep almak isteyen ustalar, restoranlar, klinikler, stüdyolar ve hizmet işletmeleri için.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Lead sistemleri"
+            ]
+          },
+          {
+            "title": "İletişim",
+            "text": "Sektörünüzü, hedefinizi ve mevcut bir siteniz olup olmadığını kısaca anlatın. Sonra doğru sonraki adımı önerelim.",
+            "points": [
+              "Talep gönder",
+              "Ücretsiz danışmanlık",
+              "Almanya genelinde online"
+            ]
+          }
+        ]
+      },
+      "lead-systeme": {
+        "eyebrow": "Lead sistemleri",
+        "h1": "Lead sistemleri",
+        "lead": "Küçük ve yerel işletmelerin online daha profesyonel görünmesine ve daha nitelikli talep almasına yardımcı oluyoruz.",
+        "cta": "Ücretsiz danışmanlık iste",
+        "sections": [
+          {
+            "title": "net hizmetler",
+            "text": "Küçük ve yerel işletmelerin online daha profesyonel görünmesine ve daha nitelikli talep almasına yardımcı oluyoruz.",
+            "points": [
+              "SEO temeli",
+              "net hizmetler",
+              "daha fazla talep"
+            ]
+          },
+          {
+            "title": "Hizmetler",
+            "text": "Online daha profesyonel görünmek ve daha fazla talep almak isteyen ustalar, restoranlar, klinikler, stüdyolar ve hizmet işletmeleri için.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Lead sistemleri"
+            ]
+          },
+          {
+            "title": "İletişim",
+            "text": "Sektörünüzü, hedefinizi ve mevcut bir siteniz olup olmadığını kısaca anlatın. Sonra doğru sonraki adımı önerelim.",
+            "points": [
+              "Talep gönder",
+              "Ücretsiz danışmanlık",
+              "Almanya genelinde online"
+            ]
+          }
+        ]
+      },
+      "websites-fuer-handwerker": {
+        "eyebrow": "Webdesign Hildesheim",
+        "h1": "Webdesign Hildesheim",
+        "lead": "Küçük ve yerel işletmelerin online daha profesyonel görünmesine ve daha nitelikli talep almasına yardımcı oluyoruz.",
+        "cta": "Ücretsiz danışmanlık iste",
+        "sections": [
+          {
+            "title": "net hizmetler",
+            "text": "Küçük ve yerel işletmelerin online daha profesyonel görünmesine ve daha nitelikli talep almasına yardımcı oluyoruz.",
+            "points": [
+              "SEO temeli",
+              "net hizmetler",
+              "daha fazla talep"
+            ]
+          },
+          {
+            "title": "Hizmetler",
+            "text": "Online daha profesyonel görünmek ve daha fazla talep almak isteyen ustalar, restoranlar, klinikler, stüdyolar ve hizmet işletmeleri için.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Lead sistemleri"
+            ]
+          },
+          {
+            "title": "İletişim",
+            "text": "Sektörünüzü, hedefinizi ve mevcut bir siteniz olup olmadığını kısaca anlatın. Sonra doğru sonraki adımı önerelim.",
+            "points": [
+              "Talep gönder",
+              "Ücretsiz danışmanlık",
+              "Almanya genelinde online"
+            ]
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "h1": "Sık sorulan sorular",
+        "lead": "Küçük ve yerel işletmelerin online daha profesyonel görünmesine ve daha nitelikli talep almasına yardımcı oluyoruz.",
+        "cta": "Ücretsiz danışmanlık iste",
+        "sections": [
+          {
+            "title": "net hizmetler",
+            "text": "Küçük ve yerel işletmelerin online daha profesyonel görünmesine ve daha nitelikli talep almasına yardımcı oluyoruz.",
+            "points": [
+              "SEO temeli",
+              "net hizmetler",
+              "daha fazla talep"
+            ]
+          },
+          {
+            "title": "Hizmetler",
+            "text": "Online daha profesyonel görünmek ve daha fazla talep almak isteyen ustalar, restoranlar, klinikler, stüdyolar ve hizmet işletmeleri için.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Lead sistemleri"
+            ]
+          },
+          {
+            "title": "İletişim",
+            "text": "Sektörünüzü, hedefinizi ve mevcut bir siteniz olup olmadığını kısaca anlatın. Sonra doğru sonraki adımı önerelim.",
+            "points": [
+              "Talep gönder",
+              "Ücretsiz danışmanlık",
+              "Almanya genelinde online"
+            ]
+          }
+        ]
       }
     }
   }

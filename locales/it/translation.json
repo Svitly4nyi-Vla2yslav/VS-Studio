@@ -25,7 +25,12 @@
     "preise": "prezzi",
     "referenzen": "Riferimenti",
     "ueberUns": "Chi siamo",
-    "kontakt": "Contatto"
+    "kontakt": "Contatto",
+    "startseite": "Home",
+    "webdesignHildesheim": "Webdesign Hildesheim",
+    "seo": "SEO",
+    "leadSysteme": "Sistemi lead",
+    "portfolio": "Portfolio"
   },
   "footer": {
     "tagline": "VS Studio �\u001a· Siti web, app web, annunci e automazioni",
@@ -34,7 +39,31 @@
     "agb": "Termini e condizioni",
     "cookies": "biscotti",
     "cookieSettings": "Impostazioni dei cookie",
-    "blog": "Blog"
+    "blog": "Blog",
+    "description": "Web design, siti, SEO e sistemi lead per aziende locali a Hildesheim e in Bassa Sassonia.",
+    "columns": {
+      "services": "Servizi",
+      "regions": "Regioni",
+      "legal": "Legale",
+      "contact": "Contatto"
+    },
+    "links": {
+      "webdesign": "Webdesign Hildesheim",
+      "landingpages": "Landingpages",
+      "seoBase": "SEO",
+      "leadSystems": "Sistemi lead",
+      "aiContent": "AI Content",
+      "freeConsultation": "Consulenza gratuita",
+      "faq": "FAQ",
+      "portfolio": "Portfolio"
+    },
+    "regions": {
+      "hildesheim": "Hildesheim",
+      "hannover": "Hannover",
+      "braunschweig": "Braunschweig",
+      "niedersachsen": "Niedersachsen",
+      "onlineGermany": "Online in tutta la Germania"
+    }
   },
   "cookie": {
     "aria": "Cookie-Einwilligung",
@@ -466,6 +495,64 @@
       },
       "cta": "Richiedi consulenza gratuita",
       "legal": "Nota: Le integrazioni telefono, calendario e CRM vengono configurate individualmente. Protezione dei dati, consenso e requisiti tecnici vengono verificati per ogni azienda."
+    },
+    "heroSupporting": "Per artigiani, ristoranti, studi, ambulatori e servizi che vogliono apparire più professionali online e ricevere più richieste.",
+    "heroPrimaryCta": "Consulenza gratuita",
+    "heroPortfolioCta": "Vedi esempi di siti",
+    "heroTrustline": "Web design · Base SEO · Ottimizzazione mobile · Modulo contatto · Google Business",
+    "localSeo": {
+      "audienceTitle": "Siti web per aziende locali",
+      "audienceLead": "Aiutiamo piccole aziende locali a presentarsi meglio online e ricevere richieste più qualificate.",
+      "industries": [
+        {
+          "title": "Webdesign Hildesheim",
+          "text": "Aiutiamo piccole aziende locali a presentarsi meglio online e ricevere richieste più qualificate."
+        },
+        {
+          "title": "SEO",
+          "text": "Web design · Base SEO · Ottimizzazione mobile · Modulo contatto · Google Business"
+        },
+        {
+          "title": "Sistemi lead",
+          "text": "Per artigiani, ristoranti, studi, ambulatori e servizi che vogliono apparire più professionali online e ricevere più richieste."
+        },
+        {
+          "title": "Contatto"
+        }
+      ],
+      "includedTitle": "Siti web per aziende locali",
+      "includedItems": [
+        "Hildesheim",
+        "base SEO",
+        "servizi chiari",
+        "più richieste"
+      ],
+      "processTitle": "Servizi",
+      "processSteps": [
+        [
+          "base SEO",
+          "Aiutiamo piccole aziende locali a presentarsi meglio online e ricevere richieste più qualificate."
+        ],
+        [
+          "servizi chiari",
+          "Per artigiani, ristoranti, studi, ambulatori e servizi che vogliono apparire più professionali online e ricevere più richieste."
+        ],
+        [
+          "più richieste",
+          null
+        ]
+      ],
+      "whyTitle": "VS Web Studio",
+      "whyLead": "Aiutiamo piccole aziende locali a presentarsi meglio online e ricevere richieste più qualificate.",
+      "whyItems": [
+        "Hildesheim",
+        "base SEO",
+        "servizi chiari",
+        "più richieste"
+      ],
+      "industryCtaText": "Descrivi brevemente settore, obiettivo e se esiste già un sito. Poi possiamo suggerire il prossimo passo giusto.",
+      "includedCtaText": "Descrivi brevemente settore, obiettivo e se esiste già un sito. Poi possiamo suggerire il prossimo passo giusto.",
+      "processCtaText": "Descrivi brevemente settore, obiettivo e se esiste già un sito. Poi possiamo suggerire il prossimo passo giusto."
     }
   },
   "services": {
@@ -1073,6 +1160,286 @@
       "anchor": {
         "label": "Risultato",
         "value": "Piu richieste qualificate invece di solo traffico"
+      }
+    }
+  },
+  "seoLanding": {
+    "signalsAria": "Aree di servizio",
+    "signals": [
+      "Hildesheim",
+      "base SEO",
+      "servizi chiari",
+      "più richieste"
+    ],
+    "finalCta": {
+      "title": "Richiedi una consulenza gratuita",
+      "text": "Descrivi brevemente settore, obiettivo e se esiste già un sito. Poi possiamo suggerire il prossimo passo giusto.",
+      "button": "Invia richiesta"
+    },
+    "pages": {
+      "webdesign-hildesheim": {
+        "eyebrow": "Webdesign Hildesheim",
+        "h1": "Webdesign Hildesheim per aziende locali",
+        "lead": "VS Web Studio crea siti moderni che costruiscono fiducia, funzionano bene da mobile e facilitano richieste chiare.",
+        "cta": "Richiedi consulenza gratuita",
+        "sections": [
+          {
+            "title": "Siti moderni che creano fiducia",
+            "text": "Un buon sito spiega in pochi secondi chi sei, cosa offri e come contattarti.",
+            "points": [
+              "home chiara",
+              "servizi comprensibili",
+              "ottimizzazione mobile"
+            ]
+          },
+          {
+            "title": "Per quali settori?",
+            "text": "Il focus è su artigiani, ristoranti, studi, ambulatori e servizi locali a Hildesheim e in Bassa Sassonia.",
+            "points": [
+              "artigiani",
+              "ristoranti e caffè",
+              "studi, ambulatori e servizi"
+            ]
+          },
+          {
+            "title": "Cosa include?",
+            "text": "In base al progetto nasce una landing page o un sito aziendale con base SEO e percorsi di contatto.",
+            "points": [
+              "design responsive",
+              "base SEO",
+              "modulo e CTA chiari"
+            ]
+          },
+          {
+            "title": "Perché conta il webdesign locale",
+            "text": "I clienti locali cercano servizio, posizione, fiducia e contatto rapido. La struttura è pensata per questo.",
+            "points": [
+              "keyword locali",
+              "supporto Google Business",
+              "focus richieste"
+            ]
+          }
+        ]
+      },
+      "website-erstellen-lassen": {
+        "eyebrow": "Realizzazione siti",
+        "h1": "Realizzare un sito professionale, moderno e chiaro",
+        "lead": "Fai realizzare un sito che non sia solo bello, ma spieghi i servizi e renda facile contattarti.",
+        "cta": "Parliamo del progetto",
+        "sections": [
+          {
+            "title": "Siti moderni che creano fiducia",
+            "text": "Un buon sito spiega in pochi secondi chi sei, cosa offri e come contattarti.",
+            "points": [
+              "home chiara",
+              "servizi comprensibili",
+              "ottimizzazione mobile"
+            ]
+          },
+          {
+            "title": "Per quali settori?",
+            "text": "Il focus è su artigiani, ristoranti, studi, ambulatori e servizi locali a Hildesheim e in Bassa Sassonia.",
+            "points": [
+              "artigiani",
+              "ristoranti e caffè",
+              "studi, ambulatori e servizi"
+            ]
+          },
+          {
+            "title": "Cosa include?",
+            "text": "In base al progetto nasce una landing page o un sito aziendale con base SEO e percorsi di contatto.",
+            "points": [
+              "design responsive",
+              "base SEO",
+              "modulo e CTA chiari"
+            ]
+          },
+          {
+            "title": "Perché conta il webdesign locale",
+            "text": "I clienti locali cercano servizio, posizione, fiducia e contatto rapido. La struttura è pensata per questo.",
+            "points": [
+              "keyword locali",
+              "supporto Google Business",
+              "focus richieste"
+            ]
+          }
+        ]
+      },
+      "seo-hildesheim": {
+        "eyebrow": "SEO Hildesheim",
+        "h1": "SEO Hildesheim - fatti trovare meglio",
+        "lead": "Base SEO per aziende locali: pagine chiare, keyword locali, tecnica veloce e contenuti comprensibili.",
+        "cta": "Controlla la base SEO",
+        "sections": [
+          {
+            "title": "Siti moderni che creano fiducia",
+            "text": "Un buon sito spiega in pochi secondi chi sei, cosa offri e come contattarti.",
+            "points": [
+              "home chiara",
+              "servizi comprensibili",
+              "ottimizzazione mobile"
+            ]
+          },
+          {
+            "title": "Per quali settori?",
+            "text": "Il focus è su artigiani, ristoranti, studi, ambulatori e servizi locali a Hildesheim e in Bassa Sassonia.",
+            "points": [
+              "artigiani",
+              "ristoranti e caffè",
+              "studi, ambulatori e servizi"
+            ]
+          },
+          {
+            "title": "Cosa include?",
+            "text": "In base al progetto nasce una landing page o un sito aziendale con base SEO e percorsi di contatto.",
+            "points": [
+              "design responsive",
+              "base SEO",
+              "modulo e CTA chiari"
+            ]
+          },
+          {
+            "title": "Perché conta il webdesign locale",
+            "text": "I clienti locali cercano servizio, posizione, fiducia e contatto rapido. La struttura è pensata per questo.",
+            "points": [
+              "keyword locali",
+              "supporto Google Business",
+              "focus richieste"
+            ]
+          }
+        ]
+      },
+      "lead-systeme": {
+        "eyebrow": "Sistemi lead",
+        "h1": "Sistemi lead per aziende locali",
+        "lead": "Più richieste invece di soli visitatori: moduli, processi e automazione per comunicare meglio.",
+        "cta": "Richiedi sistema lead",
+        "sections": [
+          {
+            "title": "Siti moderni che creano fiducia",
+            "text": "Un buon sito spiega in pochi secondi chi sei, cosa offri e come contattarti.",
+            "points": [
+              "home chiara",
+              "servizi comprensibili",
+              "ottimizzazione mobile"
+            ]
+          },
+          {
+            "title": "Per quali settori?",
+            "text": "Il focus è su artigiani, ristoranti, studi, ambulatori e servizi locali a Hildesheim e in Bassa Sassonia.",
+            "points": [
+              "artigiani",
+              "ristoranti e caffè",
+              "studi, ambulatori e servizi"
+            ]
+          },
+          {
+            "title": "Cosa include?",
+            "text": "In base al progetto nasce una landing page o un sito aziendale con base SEO e percorsi di contatto.",
+            "points": [
+              "design responsive",
+              "base SEO",
+              "modulo e CTA chiari"
+            ]
+          },
+          {
+            "title": "Perché conta il webdesign locale",
+            "text": "I clienti locali cercano servizio, posizione, fiducia e contatto rapido. La struttura è pensata per questo.",
+            "points": [
+              "keyword locali",
+              "supporto Google Business",
+              "focus richieste"
+            ]
+          }
+        ]
+      },
+      "websites-fuer-handwerker": {
+        "eyebrow": "Sito per artigiani",
+        "h1": "Siti web per artigiani",
+        "lead": "Siti moderni per artigiani con servizi chiari, referenze, SEO locale e focus sulle richieste.",
+        "cta": "Modernizza il sito",
+        "sections": [
+          {
+            "title": "Siti moderni che creano fiducia",
+            "text": "Un buon sito spiega in pochi secondi chi sei, cosa offri e come contattarti.",
+            "points": [
+              "home chiara",
+              "servizi comprensibili",
+              "ottimizzazione mobile"
+            ]
+          },
+          {
+            "title": "Per quali settori?",
+            "text": "Il focus è su artigiani, ristoranti, studi, ambulatori e servizi locali a Hildesheim e in Bassa Sassonia.",
+            "points": [
+              "artigiani",
+              "ristoranti e caffè",
+              "studi, ambulatori e servizi"
+            ]
+          },
+          {
+            "title": "Cosa include?",
+            "text": "In base al progetto nasce una landing page o un sito aziendale con base SEO e percorsi di contatto.",
+            "points": [
+              "design responsive",
+              "base SEO",
+              "modulo e CTA chiari"
+            ]
+          },
+          {
+            "title": "Perché conta il webdesign locale",
+            "text": "I clienti locali cercano servizio, posizione, fiducia e contatto rapido. La struttura è pensata per questo.",
+            "points": [
+              "keyword locali",
+              "supporto Google Business",
+              "focus richieste"
+            ]
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "h1": "Domande frequenti",
+        "lead": "Risposte su webdesign, creazione siti, SEO, costi, tempi e collaborazione con VS Web Studio.",
+        "cta": "Fai un’altra domanda",
+        "sections": [
+          {
+            "title": "Siti moderni che creano fiducia",
+            "text": "Un buon sito spiega in pochi secondi chi sei, cosa offri e come contattarti.",
+            "points": [
+              "home chiara",
+              "servizi comprensibili",
+              "ottimizzazione mobile"
+            ]
+          },
+          {
+            "title": "Per quali settori?",
+            "text": "Il focus è su artigiani, ristoranti, studi, ambulatori e servizi locali a Hildesheim e in Bassa Sassonia.",
+            "points": [
+              "artigiani",
+              "ristoranti e caffè",
+              "studi, ambulatori e servizi"
+            ]
+          },
+          {
+            "title": "Cosa include?",
+            "text": "In base al progetto nasce una landing page o un sito aziendale con base SEO e percorsi di contatto.",
+            "points": [
+              "design responsive",
+              "base SEO",
+              "modulo e CTA chiari"
+            ]
+          },
+          {
+            "title": "Perché conta il webdesign locale",
+            "text": "I clienti locali cercano servizio, posizione, fiducia e contatto rapido. La struttura è pensata per questo.",
+            "points": [
+              "keyword locali",
+              "supporto Google Business",
+              "focus richieste"
+            ]
+          }
+        ]
       }
     }
   }

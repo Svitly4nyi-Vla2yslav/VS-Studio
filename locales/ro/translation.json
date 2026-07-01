@@ -25,7 +25,12 @@
     "preise": "preturi",
     "referenzen": "Referin��⬺e",
     "ueberUns": "Despre noi",
-    "kontakt": "Contact"
+    "kontakt": "Contact",
+    "startseite": "Acasă",
+    "webdesignHildesheim": "Webdesign Hildesheim",
+    "seo": "SEO",
+    "leadSysteme": "Sisteme de lead-uri",
+    "portfolio": "Portofoliu"
   },
   "footer": {
     "tagline": "VS Studio �\u001a· Site-uri web, aplica��⬺ii web, reclame ���\u001e�i automatiz�\u001e�\u0019ri",
@@ -34,7 +39,31 @@
     "agb": "Termeni ���\u001e�i condi��⬺ii",
     "cookies": "cookie-uri",
     "cookieSettings": "Set�\u001e�\u0019ri cookie",
-    "blog": "Blog"
+    "blog": "Blog",
+    "description": "Webdesign, site-uri, SEO și sisteme de lead-uri pentru companii locale din Hildesheim și Saxonia Inferioară.",
+    "columns": {
+      "services": "Servicii",
+      "regions": "Regiuni",
+      "legal": "Legal",
+      "contact": "Contact"
+    },
+    "links": {
+      "webdesign": "Webdesign Hildesheim",
+      "landingpages": "Landingpages",
+      "seoBase": "SEO",
+      "leadSystems": "Sisteme de lead-uri",
+      "aiContent": "AI Content",
+      "freeConsultation": "Consultanță gratuită",
+      "faq": "FAQ",
+      "portfolio": "Portofoliu"
+    },
+    "regions": {
+      "hildesheim": "Hildesheim",
+      "hannover": "Hannover",
+      "braunschweig": "Braunschweig",
+      "niedersachsen": "Niedersachsen",
+      "onlineGermany": "Online în toată Germania"
+    }
   },
   "cookie": {
     "aria": "Cookie-Einwilligung",
@@ -466,6 +495,71 @@
       },
       "cta": "Solicită consultanță gratuită",
       "legal": "Notă: Integrările de telefon, calendar și CRM sunt configurate individual. Protecția datelor, consimțământul și cerințele tehnice sunt verificate pentru fiecare companie."
+    },
+    "heroSupporting": "Pentru meseriași, restaurante, cabinete, studiouri și servicii care vor o prezență online mai profesionistă și mai multe cereri.",
+    "heroPrimaryCta": "Consultanță gratuită",
+    "heroPortfolioCta": "Vezi exemple",
+    "heroTrustline": "Webdesign · Bază SEO · Mobile · Formular contact · Google Business",
+    "localSeo": {
+      "audienceTitle": "Site-uri pentru companii locale",
+      "audienceLead": "Ajutăm companiile mici și locale să arate mai profesionist online și să primească cereri mai calificate.",
+      "industries": [
+        {
+          "title": "Webdesign Hildesheim",
+          "text": "Ajutăm companiile mici și locale să arate mai profesionist online și să primească cereri mai calificate."
+        },
+        {
+          "title": "SEO",
+          "text": "Webdesign · Bază SEO · Mobile · Formular contact · Google Business"
+        },
+        {
+          "title": "Sisteme de lead-uri",
+          "text": "Pentru meseriași, restaurante, cabinete, studiouri și servicii care vor o prezență online mai profesionistă și mai multe cereri."
+        },
+        {
+          "title": "Contact",
+          "text": "Descrie pe scurt domeniul, obiectivul și dacă există deja un site. Apoi propunem următorul pas potrivit."
+        }
+      ],
+      "industryCtaTitle": "Solicită consultanță gratuită",
+      "industryCtaText": "Descrie pe scurt domeniul, obiectivul și dacă există deja un site. Apoi propunem următorul pas potrivit.",
+      "industryCta": "Trimite cererea",
+      "includedTitle": "Site-uri pentru companii locale",
+      "includedItems": [
+        "Hildesheim",
+        "bază SEO",
+        "servicii clare",
+        "mai multe cereri"
+      ],
+      "includedCtaTitle": "Solicită consultanță gratuită",
+      "includedCtaText": "Descrie pe scurt domeniul, obiectivul și dacă există deja un site. Apoi propunem următorul pas potrivit.",
+      "includedCta": "Trimite cererea",
+      "processTitle": "Servicii",
+      "processSteps": [
+        [
+          "bază SEO",
+          "Ajutăm companiile mici și locale să arate mai profesionist online și să primească cereri mai calificate."
+        ],
+        [
+          "servicii clare",
+          "Pentru meseriași, restaurante, cabinete, studiouri și servicii care vor o prezență online mai profesionistă și mai multe cereri."
+        ],
+        [
+          "mai multe cereri",
+          "Descrie pe scurt domeniul, obiectivul și dacă există deja un site. Apoi propunem următorul pas potrivit."
+        ]
+      ],
+      "processCtaTitle": "Solicită consultanță gratuită",
+      "processCtaText": "Descrie pe scurt domeniul, obiectivul și dacă există deja un site. Apoi propunem următorul pas potrivit.",
+      "processCta": "Trimite cererea",
+      "whyTitle": "VS Web Studio",
+      "whyLead": "Ajutăm companiile mici și locale să arate mai profesionist online și să primească cereri mai calificate.",
+      "whyItems": [
+        "Hildesheim",
+        "bază SEO",
+        "servicii clare",
+        "mai multe cereri"
+      ]
     }
   },
   "services": {
@@ -1073,6 +1167,232 @@
       "anchor": {
         "label": "Rezultat",
         "value": "Mai multe cereri calificate in loc de simplu trafic"
+      }
+    }
+  },
+  "seoLanding": {
+    "signalsAria": "Zone de servicii",
+    "signals": [
+      "Hildesheim",
+      "bază SEO",
+      "servicii clare",
+      "mai multe cereri"
+    ],
+    "finalCta": {
+      "title": "Solicită consultanță gratuită",
+      "text": "Descrie pe scurt domeniul, obiectivul și dacă există deja un site. Apoi propunem următorul pas potrivit.",
+      "button": "Trimite cererea"
+    },
+    "pages": {
+      "webdesign-hildesheim": {
+        "eyebrow": "Webdesign Hildesheim",
+        "h1": "Webdesign Hildesheim pentru companii locale",
+        "lead": "Pentru meseriași, restaurante, cabinete, studiouri și servicii care vor o prezență online mai profesionistă și mai multe cereri.",
+        "cta": "Solicită consultanță gratuită",
+        "sections": [
+          {
+            "title": "servicii clare",
+            "text": "Ajutăm companiile mici și locale să arate mai profesionist online și să primească cereri mai calificate.",
+            "points": [
+              "bază SEO",
+              "servicii clare",
+              "mai multe cereri"
+            ]
+          },
+          {
+            "title": "Servicii",
+            "text": "Pentru meseriași, restaurante, cabinete, studiouri și servicii care vor o prezență online mai profesionistă și mai multe cereri.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Sisteme de lead-uri"
+            ]
+          },
+          {
+            "title": "Contact",
+            "text": "Descrie pe scurt domeniul, obiectivul și dacă există deja un site. Apoi propunem următorul pas potrivit.",
+            "points": [
+              "Trimite cererea",
+              "Consultanță gratuită",
+              "Online în toată Germania"
+            ]
+          }
+        ]
+      },
+      "website-erstellen-lassen": {
+        "eyebrow": "Webdesign Hildesheim",
+        "h1": "Webdesign Hildesheim",
+        "lead": "Ajutăm companiile mici și locale să arate mai profesionist online și să primească cereri mai calificate.",
+        "cta": "Solicită consultanță gratuită",
+        "sections": [
+          {
+            "title": "servicii clare",
+            "text": "Ajutăm companiile mici și locale să arate mai profesionist online și să primească cereri mai calificate.",
+            "points": [
+              "bază SEO",
+              "servicii clare",
+              "mai multe cereri"
+            ]
+          },
+          {
+            "title": "Servicii",
+            "text": "Pentru meseriași, restaurante, cabinete, studiouri și servicii care vor o prezență online mai profesionistă și mai multe cereri.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Sisteme de lead-uri"
+            ]
+          },
+          {
+            "title": "Contact",
+            "text": "Descrie pe scurt domeniul, obiectivul și dacă există deja un site. Apoi propunem următorul pas potrivit.",
+            "points": [
+              "Trimite cererea",
+              "Consultanță gratuită",
+              "Online în toată Germania"
+            ]
+          }
+        ]
+      },
+      "seo-hildesheim": {
+        "eyebrow": "SEO Hildesheim",
+        "h1": "SEO Hildesheim",
+        "lead": "Ajutăm companiile mici și locale să arate mai profesionist online și să primească cereri mai calificate.",
+        "cta": "Solicită consultanță gratuită",
+        "sections": [
+          {
+            "title": "servicii clare",
+            "text": "Ajutăm companiile mici și locale să arate mai profesionist online și să primească cereri mai calificate.",
+            "points": [
+              "bază SEO",
+              "servicii clare",
+              "mai multe cereri"
+            ]
+          },
+          {
+            "title": "Servicii",
+            "text": "Pentru meseriași, restaurante, cabinete, studiouri și servicii care vor o prezență online mai profesionistă și mai multe cereri.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Sisteme de lead-uri"
+            ]
+          },
+          {
+            "title": "Contact",
+            "text": "Descrie pe scurt domeniul, obiectivul și dacă există deja un site. Apoi propunem următorul pas potrivit.",
+            "points": [
+              "Trimite cererea",
+              "Consultanță gratuită",
+              "Online în toată Germania"
+            ]
+          }
+        ]
+      },
+      "lead-systeme": {
+        "eyebrow": "Sisteme de lead-uri",
+        "h1": "Sisteme de lead-uri",
+        "lead": "Ajutăm companiile mici și locale să arate mai profesionist online și să primească cereri mai calificate.",
+        "cta": "Solicită consultanță gratuită",
+        "sections": [
+          {
+            "title": "servicii clare",
+            "text": "Ajutăm companiile mici și locale să arate mai profesionist online și să primească cereri mai calificate.",
+            "points": [
+              "bază SEO",
+              "servicii clare",
+              "mai multe cereri"
+            ]
+          },
+          {
+            "title": "Servicii",
+            "text": "Pentru meseriași, restaurante, cabinete, studiouri și servicii care vor o prezență online mai profesionistă și mai multe cereri.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Sisteme de lead-uri"
+            ]
+          },
+          {
+            "title": "Contact",
+            "text": "Descrie pe scurt domeniul, obiectivul și dacă există deja un site. Apoi propunem următorul pas potrivit.",
+            "points": [
+              "Trimite cererea",
+              "Consultanță gratuită",
+              "Online în toată Germania"
+            ]
+          }
+        ]
+      },
+      "websites-fuer-handwerker": {
+        "eyebrow": "Webdesign Hildesheim",
+        "h1": "Webdesign Hildesheim",
+        "lead": "Ajutăm companiile mici și locale să arate mai profesionist online și să primească cereri mai calificate.",
+        "cta": "Solicită consultanță gratuită",
+        "sections": [
+          {
+            "title": "servicii clare",
+            "text": "Ajutăm companiile mici și locale să arate mai profesionist online și să primească cereri mai calificate.",
+            "points": [
+              "bază SEO",
+              "servicii clare",
+              "mai multe cereri"
+            ]
+          },
+          {
+            "title": "Servicii",
+            "text": "Pentru meseriași, restaurante, cabinete, studiouri și servicii care vor o prezență online mai profesionistă și mai multe cereri.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Sisteme de lead-uri"
+            ]
+          },
+          {
+            "title": "Contact",
+            "text": "Descrie pe scurt domeniul, obiectivul și dacă există deja un site. Apoi propunem următorul pas potrivit.",
+            "points": [
+              "Trimite cererea",
+              "Consultanță gratuită",
+              "Online în toată Germania"
+            ]
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "FAQ",
+        "h1": "Întrebări frecvente",
+        "lead": "Ajutăm companiile mici și locale să arate mai profesionist online și să primească cereri mai calificate.",
+        "cta": "Solicită consultanță gratuită",
+        "sections": [
+          {
+            "title": "servicii clare",
+            "text": "Ajutăm companiile mici și locale să arate mai profesionist online și să primească cereri mai calificate.",
+            "points": [
+              "bază SEO",
+              "servicii clare",
+              "mai multe cereri"
+            ]
+          },
+          {
+            "title": "Servicii",
+            "text": "Pentru meseriași, restaurante, cabinete, studiouri și servicii care vor o prezență online mai profesionistă și mai multe cereri.",
+            "points": [
+              "Webdesign Hildesheim",
+              "SEO",
+              "Sisteme de lead-uri"
+            ]
+          },
+          {
+            "title": "Contact",
+            "text": "Descrie pe scurt domeniul, obiectivul și dacă există deja un site. Apoi propunem următorul pas potrivit.",
+            "points": [
+              "Trimite cererea",
+              "Consultanță gratuită",
+              "Online în toată Germania"
+            ]
+          }
+        ]
       }
     }
   }
