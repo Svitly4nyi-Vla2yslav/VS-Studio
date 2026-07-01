@@ -13,6 +13,7 @@ import {
   FaUsers,
 } from 'react-icons/fa';
 import { AI_MUSIC_PACKAGES } from '../../data/pricingCatalog';
+import pricingHeroImage from '../../assets/hero-image/Preise.png';
 import { PageContainer, PageRoot, PrimaryButtonLink, Section } from '../shared/styles/PagePrimitives.styles';
 
 const reveal = { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0 } };
@@ -27,6 +28,10 @@ const pulseGlow = keyframes`
   0% { box-shadow: 0 0 0 rgba(73, 157, 255, 0); }
   50% { box-shadow: 0 0 30px rgba(73, 157, 255, 0.28); }
   100% { box-shadow: 0 0 0 rgba(73, 157, 255, 0); }
+`;
+
+const PricingPageRoot = styled(PageRoot)`
+  padding-top: 0;
 `;
 
 const PricingSurface = styled.div`
@@ -62,15 +67,35 @@ const PricingSurface = styled.div`
 `;
 
 const Hero = styled.section`
+  position: relative;
   display: grid;
   gap: 26px;
   grid-template-columns: 1.15fr 1fr;
   align-items: center;
-  padding: 84px 0 24px;
+  width: 100vw;
+  min-height: calc(100svh - 76px);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: clamp(72px, 12vh, 132px) max(var(--gutter), calc((100vw - 1320px) / 2 + var(--gutter)));
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    linear-gradient(90deg, rgba(5, 8, 15, 0.92) 0%, rgba(5, 8, 15, 0.72) 40%, rgba(5, 8, 15, 0.3) 74%, rgba(5, 8, 15, 0.68) 100%),
+    linear-gradient(180deg, rgba(5, 8, 15, 0.28) 0%, rgba(5, 8, 15, 0.18) 48%, rgba(5, 8, 15, 0.86) 100%),
+    url(${pricingHeroImage});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 
   @media (max-width: 980px) {
     grid-template-columns: 1fr;
-    padding-top: 52px;
+    min-height: calc(100svh - 72px);
+    padding: clamp(64px, 12vh, 104px) var(--gutter);
+  }
+
+  @media (max-width: 767px) {
+    min-height: calc(100svh - 66px);
   }
 `;
 
@@ -607,7 +632,7 @@ const PricingPage: React.FC = () => {
   }));
 
   return (
-    <PageRoot>
+    <PricingPageRoot>
       <PageContainer>
         <PricingSurface>
           <Hero as={motion.section} initial='hidden' animate='show' variants={reveal} transition={{ duration: 0.64, ease: easeOut }}>
@@ -860,7 +885,7 @@ const PricingPage: React.FC = () => {
           </FinalCta>
         </PricingSurface>
       </PageContainer>
-    </PageRoot>
+    </PricingPageRoot>
   );
 };
 

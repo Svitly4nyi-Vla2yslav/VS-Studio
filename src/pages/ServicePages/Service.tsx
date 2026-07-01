@@ -16,6 +16,7 @@ import {
 import LiveMetric from '../../components/Motion/LiveMetric';
 import TerminalType from '../../components/Motion/TerminalType';
 import { fadeInLeft, fadeInRight, fadeInUp, scaleIn, staggerContainer } from '../../components/Motion/reveal';
+import servicesHeroImage from '../../assets/hero-image/Services.png';
 import servicesTranslations from './services.translations.json';
 import {
   ButtonRow,
@@ -42,6 +43,7 @@ const bgFloat = keyframes`
 const StyledPageRoot = styled(PageRoot)`
   position: relative;
   overflow: clip;
+  padding-top: 0;
   background:
     radial-gradient(1200px 600px at 12% -8%, rgba(46, 132, 255, 0.2), transparent 60%),
     radial-gradient(1000px 680px at 88% 2%, rgba(37, 187, 255, 0.15), transparent 64%),
@@ -86,27 +88,46 @@ const SectionShell = styled(motion.section)`
 `;
 
 const HeroShell = styled.div`
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-inline: var(--gutter);
+  position: relative;
+  width: 100vw;
+  min-height: calc(100svh - 76px);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  display: grid;
+  align-items: center;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(5, 9, 17, 0.92) 0%, rgba(5, 9, 17, 0.76) 42%, rgba(5, 9, 17, 0.3) 76%, rgba(5, 9, 17, 0.68) 100%),
+    linear-gradient(180deg, rgba(5, 9, 17, 0.28) 0%, rgba(5, 9, 17, 0.18) 50%, rgba(5, 9, 17, 0.86) 100%),
+    url(${servicesHeroImage});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+  @media (max-width: 767px) {
+    min-height: calc(100svh - 66px);
+  }
 `;
 
 const HeroGrid = styled(motion.section)`
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1.06fr 0.94fr;
   gap: clamp(24px, 3vw, 44px);
   align-items: center;
   min-height: calc(100svh - 124px);
-  padding-top: clamp(28px, 4vw, 52px);
-  padding-bottom: clamp(18px, 3vw, 34px);
+  padding: clamp(28px, 4vw, 52px) var(--gutter) clamp(18px, 3vw, 34px);
 
   @media (max-width: 980px) {
     grid-template-columns: 1fr;
-    min-height: auto;
+    min-height: calc(100svh - 76px);
     align-items: start;
     padding-top: clamp(28px, 6vw, 44px);
-    padding-bottom: 0;
+    padding-bottom: clamp(28px, 6vw, 44px);
   }
 `;
 

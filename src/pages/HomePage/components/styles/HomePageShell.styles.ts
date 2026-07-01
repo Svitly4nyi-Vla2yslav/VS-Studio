@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HomePageShell = styled.div`
   .page {
-    padding: 48px 0 72px;
+    padding: 0 0 72px;
   }
 
   .container {

@@ -20,6 +20,7 @@ import {
   PrimaryButtonLink,
   Section,
 } from '../shared/styles/PagePrimitives.styles';
+import leadSystemeHeroImage from '../../assets/hero-image/Lead-Systeme.png';
 import seoHeroImage from '../../assets/hero-image/seo.png';
 import webdesignHildesheimHeroImage from '../../assets/hero-image/Webdesign_Hildesheim.png';
 
@@ -50,6 +51,7 @@ const signalIcons = [FaMapMarkerAlt, FaSearch, FaClipboardList, FaComments];
 const heroBackgrounds: Partial<Record<PageId, string>> = {
   'webdesign-hildesheim': webdesignHildesheimHeroImage,
   'seo-hildesheim': seoHeroImage,
+  'lead-systeme': leadSystemeHeroImage,
 };
 
 const LandingPageRoot = styled(PageRoot)<{ $fullHero?: boolean }>`

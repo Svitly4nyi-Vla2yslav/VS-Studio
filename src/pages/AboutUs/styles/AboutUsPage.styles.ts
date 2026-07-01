@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import aboutHeroImage from '../../../assets/hero-image/Über uns.png';
 
 const heroGridDrift = keyframes`
   0% { transform: translate3d(0, 0, 0); }
@@ -13,46 +14,45 @@ const heroLineGlow = keyframes`
 `;
 
 export const AboutUsScope = styled.div`
+  .about-page-root {
+    padding-top: 0;
+  }
+
   .about-hero {
     position: relative;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    align-items: center;
-    gap: 48px;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 28px;
+    width: 100vw;
+    min-height: calc(100svh - 76px);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    grid-template-columns: minmax(0, 1fr);
+    align-items: end;
+    align-content: end;
+    gap: 32px;
+    border: 0;
+    border-radius: 0;
     background:
-      radial-gradient(640px 360px at 72% 28%, rgba(255, 180, 80, 0.15), transparent 60%),
-      radial-gradient(120% 120% at 0% 0%, rgba(244, 164, 84, 0.22), transparent 58%),
-      radial-gradient(100% 120% at 100% 0%, rgba(77, 115, 197, 0.18), transparent 62%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01)),
-      rgba(9, 12, 22, 0.9);
-    padding: 64px;
+      linear-gradient(90deg, rgba(4, 7, 13, 0.9) 0%, rgba(4, 7, 13, 0.72) 42%, rgba(4, 7, 13, 0.28) 76%, rgba(4, 7, 13, 0.66) 100%),
+      linear-gradient(180deg, rgba(4, 7, 13, 0.22) 0%, rgba(4, 7, 13, 0.22) 48%, rgba(4, 7, 13, 0.86) 100%),
+      url(${aboutHeroImage});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: clamp(72px, 12vh, 132px) max(var(--gutter), calc((100vw - 1320px) / 2 + var(--gutter)));
   }
 
   .about-hero::before {
     content: '';
     position: absolute;
     inset: 0;
-    background-image:
-      linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-    background-size: 40px 40px;
-    opacity: 0.04;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(7, 8, 18, 0.18));
+    opacity: 1;
     pointer-events: none;
   }
 
   .about-hero::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image:
-      radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.06) 0, transparent 32%),
-      radial-gradient(circle at 70% 10%, rgba(255, 255, 255, 0.04) 0, transparent 26%);
-    mix-blend-mode: screen;
-    opacity: 0.1;
-    pointer-events: none;
+    content: none;
   }
 
   .about-hero-copy,
@@ -65,6 +65,7 @@ export const AboutUsScope = styled.div`
     display: grid;
     gap: 16px;
     max-width: 760px;
+    text-shadow: 0 18px 46px rgba(0, 0, 0, 0.72);
   }
 
   .about-hero-eyebrow {
@@ -476,9 +477,8 @@ export const AboutUsScope = styled.div`
 
   @media (max-width: 1279px) {
     .about-hero {
-      gap: 40px;
-      padding: 56px;
-      grid-template-columns: 1fr 0.95fr;
+      gap: 28px;
+      grid-template-columns: 1fr;
     }
   }
 
@@ -649,9 +649,10 @@ export const AboutUsScope = styled.div`
   @media (max-width: 1023px) {
     .about-hero {
       grid-template-columns: 1fr;
-      gap: 32px;
-      padding: 48px 24px;
-      border-radius: 24px;
+      min-height: calc(100svh - 72px);
+      gap: 24px;
+      padding: clamp(64px, 12vh, 104px) var(--gutter);
+      border-radius: 0;
     }
 
     .about-hero-copy {
@@ -686,7 +687,9 @@ export const AboutUsScope = styled.div`
 
   @media (max-width: 767px) {
     .about-hero {
-      padding: 48px 24px;
+      min-height: calc(100svh - 66px);
+      padding: clamp(58px, 11vh, 96px) var(--gutter);
+      background-position: center;
     }
 
     .about-hero h1 {

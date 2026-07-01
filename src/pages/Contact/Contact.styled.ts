@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import styled, { css, keyframes } from 'styled-components';
+import hildesheimHeroImage from '../../assets/hero-image/Hildesheim.png';
 import { Card, FieldIcon, PrimaryButton } from '../shared/styles/PagePrimitives.styles';
 
 export const ContactPageRoot = styled.div`
@@ -11,18 +12,33 @@ export const ContactPageRoot = styled.div`
 `;
 
 export const ContactHeroSection = styled(motion.section)`
+  position: relative;
   display: grid;
   justify-items: center;
   align-items: stretch;
   min-height: calc(100svh - 76px);
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: clamp(22px, 5vw, 48px) 0;
   width: 100vw;
   margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
   transform: none;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    linear-gradient(90deg, rgba(4, 7, 13, 0.9) 0%, rgba(4, 7, 13, 0.74) 42%, rgba(4, 7, 13, 0.34) 76%, rgba(4, 7, 13, 0.7) 100%),
+    linear-gradient(180deg, rgba(4, 7, 13, 0.28) 0%, rgba(4, 7, 13, 0.18) 48%, rgba(4, 7, 13, 0.86) 100%),
+    url(${hildesheimHeroImage});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   @media (max-width: 991px) {
-    min-height: auto;
+    min-height: calc(100svh - 72px);
+  }
+
+  @media (max-width: 767px) {
+    min-height: calc(100svh - 66px);
+    padding: 18px 0;
   }
 `;
 
@@ -38,12 +54,13 @@ export const ContactHeroCanvas = styled.div`
   transform: none;
   padding: 28px;
   border-radius: 36px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   background:
-    radial-gradient(circle at 0% 0%, rgba(255, 188, 97, 0.14), transparent 24%),
-    radial-gradient(circle at 100% 0%, rgba(72, 129, 255, 0.2), transparent 30%),
-    linear-gradient(120deg, rgba(255, 255, 255, 0.03), transparent 36%),
-    linear-gradient(180deg, rgba(6, 10, 22, 0.96), rgba(5, 9, 18, 0.98));
+    radial-gradient(circle at 0% 0%, rgba(255, 188, 97, 0.12), transparent 24%),
+    radial-gradient(circle at 100% 0%, rgba(72, 129, 255, 0.16), transparent 30%),
+    linear-gradient(120deg, rgba(255, 255, 255, 0.05), transparent 36%),
+    rgba(5, 9, 18, 0.34);
+  backdrop-filter: blur(2px);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.05),
     0 32px 80px rgba(2, 8, 22, 0.36);

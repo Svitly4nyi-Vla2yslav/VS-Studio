@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaArrowRight, FaUsers, FaRobot, FaBullhorn, FaMapMarkerAlt, FaCheckCircle, FaLayerGroup, FaChartLine } from 'react-icons/fa';
 import aboutFounderPhoto from '../../assets/icons/about/vladyslav-founder.jpg';
@@ -19,145 +18,12 @@ import {
 } from '../shared/styles/PagePrimitives.styles';
 import { AboutUsScope } from './styles/AboutUsPage.styles';
 
-const HeroVisual: React.FC = () => {
-  const { t } = useTranslation();
-  const [time, setTime] = useState(0);
-
-  useEffect(() => {
-    let frameId = 0;
-    const start = performance.now();
-
-    const tick = (now: number) => {
-      setTime((now - start) / 1000);
-      frameId = window.requestAnimationFrame(tick);
-    };
-
-    frameId = window.requestAnimationFrame(tick);
-
-    return () => window.cancelAnimationFrame(frameId);
-  }, []);
-
-  const beforeOffset = Math.sin(time * 1.2) * -10;
-  const systemOffset = Math.sin(time * 1.2 + 0.8) * -12;
-  const resultOffset = Math.sin(time * 1.2 + 1.6) * -9;
-  const firstPulseX = ((time * 40) % 64);
-  const secondPulseX = ((time * 40 + 18) % 64);
-  const firstLineScale = 0.9 + ((Math.sin(time * 2.4) + 1) / 2) * 0.1;
-  const secondLineScale = 0.88 + ((Math.sin(time * 2.4 + 0.6) + 1) / 2) * 0.12;
-  const thirdLineScale = 0.84 + ((Math.sin(time * 2.4 + 1.2) + 1) / 2) * 0.14;
-  const ctaScale = 1 + ((Math.sin(time * 2.8) + 1) / 2) * 0.05;
-  const anchorShift = Math.sin(time * 1.1) * 6;
-
-  return (
-    <div className='about-hero-visual' aria-hidden='true'>
-      <div className='about-hero-bgLayer'>
-        <div className='about-hero-radial' />
-        <div className='about-hero-grid' />
-      </div>
-      <div className='about-hero-contentLayer'>
-        <div className='about-hero-dashboard-shell'>
-          <div className='about-hero-dashboard-head'>
-            <div className='about-hero-product-badge'>{t('aboutPage.visual.productBadge', { defaultValue: 'Lead System' })}</div>
-            <div className='about-hero-shell-metric'>
-              <span className='about-hero-shell-label'>{t('aboutPage.visual.flowLabel', { defaultValue: 'Flow' })}</span>
-              <span className='about-hero-shell-value'>{t('aboutPage.visual.flowValue', { defaultValue: 'Before zu System zu Result' })}</span>
-            </div>
-          </div>
-          <div className='about-hero-storyboard'>
-            <article
-              className='about-hero-story-card about-hero-story-card-before'
-              style={{ transform: `translateY(${beforeOffset}px)` }}
-            >
-              <p className='about-hero-stage-eyebrow'>{t('aboutPage.visual.before.label', { defaultValue: 'Before' })}</p>
-              <p className='about-hero-metric-title'>{t('aboutPage.visual.before.title', { defaultValue: 'Viele Klicks, wenig Klarheit' })}</p>
-              <ul className='about-hero-story-list'>
-                <li>{t('aboutPage.visual.before.i1', { defaultValue: 'Langsame Seiten' })}</li>
-                <li>{t('aboutPage.visual.before.i2', { defaultValue: 'Unklare Kontaktwege' })}</li>
-                <li>{t('aboutPage.visual.before.i3', { defaultValue: 'Keine sauberen Daten' })}</li>
-              </ul>
-            </article>
-
-            <div className='about-hero-story-connector'>
-              <div className='about-hero-pipeline-line' />
-              <span
-                className='about-hero-pipeline-pulse'
-                style={{ transform: `translate(${firstPulseX}px, -50%) scale(1.15)` }}
-              />
-            </div>
-
-            <article
-              className='about-hero-story-card about-hero-story-card-system'
-              style={{ transform: `translateY(${systemOffset}px)` }}
-            >
-              <p className='about-hero-stage-eyebrow'>{t('aboutPage.visual.system.label', { defaultValue: 'System' })}</p>
-              <div className='about-hero-phone-preview'>
-                <div className='about-hero-phone-notch' />
-                <div className='about-hero-phone-screen'>
-                  <div className='about-hero-phone-badge'>{t('aboutPage.visual.system.phoneBadge', { defaultValue: 'Website' })}</div>
-                  <div
-                    className='about-hero-phone-line about-hero-phone-line-strong'
-                    style={{ transform: `scaleX(${firstLineScale})`, opacity: 0.7 + (firstLineScale - 0.9) * 2.2 }}
-                  />
-                  <div
-                    className='about-hero-phone-line'
-                    style={{ transform: `scaleX(${secondLineScale})`, opacity: 0.56 + (secondLineScale - 0.88) * 2.1 }}
-                  />
-                  <div
-                    className='about-hero-phone-line'
-                    style={{ transform: `scaleX(${thirdLineScale})`, opacity: 0.52 + (thirdLineScale - 0.84) * 1.9 }}
-                  />
-                  <div
-                    className='about-hero-phone-cta'
-                    style={{ transform: `scale(${ctaScale})`, opacity: 0.88 + (ctaScale - 1) * 2 }}
-                  >
-                    {t('aboutPage.visual.system.cta', { defaultValue: 'Termin anfragen' })}
-                  </div>
-                </div>
-              </div>
-              <div className='about-hero-system-pills'>
-                <span>{t('aboutPage.visual.system.pill1', { defaultValue: 'Website' })}</span>
-                <span>{t('aboutPage.visual.system.pill2', { defaultValue: 'Kontaktwege' })}</span>
-                <span>{t('aboutPage.visual.system.pill3', { defaultValue: 'Tracking' })}</span>
-              </div>
-            </article>
-
-            <div className='about-hero-story-connector'>
-              <div className='about-hero-pipeline-line' />
-              <span
-                className='about-hero-pipeline-pulse'
-                style={{ transform: `translate(${secondPulseX}px, -50%) scale(1.15)` }}
-              />
-            </div>
-
-            <article
-              className='about-hero-story-card about-hero-story-card-result'
-              style={{ transform: `translateY(${resultOffset}px)` }}
-            >
-              <p className='about-hero-stage-eyebrow'>{t('aboutPage.visual.result.label', { defaultValue: 'Result' })}</p>
-              <p className='about-hero-result-metric'>+12</p>
-              <p className='about-hero-metric-title'>{t('aboutPage.visual.result.title', { defaultValue: 'Qualifizierte Anfragen' })}</p>
-              <p className='about-hero-metric-text'>{t('aboutPage.visual.result.text', { defaultValue: 'Messbar, schneller beantwortbar und klar im Funnel sichtbar.' })}</p>
-            </article>
-          </div>
-          <div
-            className='about-hero-metric-anchor'
-            style={{ transform: `translateX(${anchorShift}px)` }}
-          >
-            <span className='about-hero-anchor-label'>{t('aboutPage.visual.anchor.label', { defaultValue: 'Ergebnis' })}</span>
-            <span className='about-hero-anchor-value'>{t('aboutPage.visual.anchor.value', { defaultValue: 'Mehr qualifizierte Anfragen statt nur Website-Traffic' })}</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
 const AboutUs: React.FC = () => {
   const { t } = useTranslation();
 
   return (
     <AboutUsScope>
-      <PageRoot>
+      <PageRoot className='about-page-root'>
         <PageContainer>
           <HeroSection className='about-hero'>
             <div className='about-hero-copy'>
@@ -182,7 +48,6 @@ const AboutUs: React.FC = () => {
                 <PrimaryButtonLink to='/kontakt'><FaArrowRight /> {t('aboutPage.primaryCta', { defaultValue: 'Kostenlose Website-Analyse' })}</PrimaryButtonLink>
               </ButtonRow>
             </div>
-            <HeroVisual />
           </HeroSection>
 
           <Section>

@@ -4,16 +4,19 @@ export const HeroSectionScope = styled.div`
   .hero {
     display: grid;
     gap: 18px;
-    padding: 70px 0 30px;
+    padding: 0;
   }
 
   .hero-with-video {
     position: relative;
-    min-height: 560px;
-    border-radius: 18px;
+    width: 100vw;
+    min-height: calc(100svh - 76px);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    padding: 26px;
+    border: 0;
+    border-radius: 0;
+    padding: clamp(22px, 5vw, 64px) max(var(--gutter), calc((100vw - 1560px) / 2 + var(--gutter)));
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     align-items: end;
@@ -132,13 +135,12 @@ export const HeroSectionScope = styled.div`
 
   @media (max-width: 767px) {
     .hero {
-      padding-top: 38px;
       gap: 14px;
     }
 
     .hero-with-video {
-      min-height: 500px;
-      padding: 14px;
+      min-height: calc(100svh - 66px);
+      padding: 18px var(--gutter);
     }
 
     .hero-bento {

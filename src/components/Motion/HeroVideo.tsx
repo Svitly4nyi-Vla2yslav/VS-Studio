@@ -1,5 +1,4 @@
-import heroMainWebm from '../../assets/video/hero-main.webm';
-import heroFallbackMov from '../../assets/video/Sub_Zero_Refrigerator_Cinematic_Reveal.mov';
+import heroStartseiteMp4 from '../../assets/hero-image/Startseite.mp4';
 import { VideoElement, VideoOverlay, VideoRoot } from './HeroVideo.styled';
 
 const HeroVideo: React.FC = () => {
@@ -13,8 +12,7 @@ const HeroVideo: React.FC = () => {
         preload='metadata'
         poster='/images/hero-generated.svg'
       >
-        <source src={heroMainWebm} type='video/webm' />
-        <source src={heroFallbackMov} type='video/quicktime' />
+        <source src={heroStartseiteMp4} type='video/mp4' />
       </VideoElement>
       <VideoOverlay />
     </VideoRoot>
