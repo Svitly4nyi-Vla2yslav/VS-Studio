@@ -78,9 +78,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ reducedMotion }) => {
             >
               <FaArrowRight /> {t('home.heroPrimaryCta', { defaultValue: 'Kostenlose Erstberatung' })}
             </NavLink>
-            <NavLink to='/portfolio' className='btn btn-secondary'>
+            {/* <NavLink to='/portfolio' className='btn btn-secondary'>
               <FaIdCard /> {t('home.heroPortfolioCta', { defaultValue: 'Website-Beispiele ansehen' })}
-            </NavLink>
+            </NavLink> */}
           </div>
           <p className='hero-trustline'>
             {t('home.heroTrustline', {

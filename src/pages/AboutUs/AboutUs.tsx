@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { FaArrowRight, FaUsers, FaRobot, FaBullhorn, FaMapMarkerAlt, FaCheckCircle, FaLayerGroup, FaChartLine } from 'react-icons/fa';
-import aboutFounderPhoto from '../../assets/icons/about/vladyslav-founder.jpg';
+import aboutFounderPhoto from '../../assets/icons/about/vladyslav-founder.png';
 import {
   Band,
   ButtonRow,

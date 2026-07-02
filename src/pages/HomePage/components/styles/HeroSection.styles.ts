@@ -64,12 +64,13 @@ export const HeroSectionScope = styled.div`
   }
 
   .hero-bento {
-    position: relative;
+    /* position: relative;
     z-index: 2;
     display: grid;
     gap: 12px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-self: stretch;
+    align-self: stretch; */
+    display: none;
   }
 
   .bento-tile {
