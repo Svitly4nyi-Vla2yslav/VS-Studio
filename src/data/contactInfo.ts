@@ -16,7 +16,7 @@ export interface ContactInfo {
 }
 
 export interface SocialLink {
-  readonly id: 'linkedin' | 'facebook' | 'instagram';
+  readonly id: 'linkedin' | 'facebook' | 'instagram' | 'youtube';
   readonly label: string;
   readonly url: string;
 }
@@ -51,6 +51,11 @@ export const contactInfo: ContactInfo = {
       id: 'instagram',
       label: 'Instagram',
       url: 'https://www.instagram.com/vs.studio.anfrage/',
+    },
+    {
+      id: 'youtube',
+      label: 'YouTube',
+      url: 'https://www.youtube.com/@VSWebStudioDE',
     },
   ],
 };

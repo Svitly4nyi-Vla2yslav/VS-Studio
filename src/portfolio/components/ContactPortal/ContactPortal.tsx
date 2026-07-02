@@ -7,6 +7,7 @@ import {
   FaLinkedinIn,
   FaPaperPlane,
   FaPhone,
+  FaYoutube,
 } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { contactInfo } from '../../../data/contactInfo';
@@ -33,6 +34,7 @@ const socialIcons = {
   linkedin: FaLinkedinIn,
   facebook: FaFacebookF,
   instagram: FaInstagram,
+  youtube: FaYoutube,
 };
 
 // ContactPortal рендерить final portal CTA з контактами зі спільного contactInfo.

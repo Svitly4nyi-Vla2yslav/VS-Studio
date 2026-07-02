@@ -4,6 +4,7 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
+  FaYoutube,
 } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { contactInfo } from '../../../data/contactInfo';
@@ -23,6 +24,7 @@ const socialIcons = {
   linkedin: FaLinkedinIn,
   facebook: FaFacebookF,
   instagram: FaInstagram,
+  youtube: FaYoutube,
 };
 
 // PortfolioFooter завершує cinematic portfolio і дублює навігацію/контакти.

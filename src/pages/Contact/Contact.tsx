@@ -16,6 +16,7 @@ import {
   FaPhone,
   FaRegClock,
   FaUser,
+  FaYoutube,
 } from 'react-icons/fa';
 import TerminalType from '../../components/Motion/TerminalType';
 import { contactInfo } from '../../data/contactInfo';
@@ -106,6 +107,7 @@ const socialIcons = {
   linkedin: FaLinkedinIn,
   facebook: FaFacebookF,
   instagram: FaInstagram,
+  youtube: FaYoutube,
 };
 
 const Contact: React.FC = () => {

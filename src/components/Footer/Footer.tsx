@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import { contactInfo } from '../../data/contactInfo';
 import {
   FooterCookieButton,
@@ -24,6 +24,7 @@ const socialIcons = {
   linkedin: FaLinkedinIn,
   facebook: FaFacebookF,
   instagram: FaInstagram,
+  youtube: FaYoutube,
 };
 
 const Footer: React.FC = () => {
