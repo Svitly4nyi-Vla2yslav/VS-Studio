@@ -30,7 +30,8 @@ export const staggerContainer: Variants = {
   hidden: {},
   visible: {
     transition: {
-      staggerChildren: 0.12,
+      staggerChildren: 0.075,
+      delayChildren: 0.06,
     },
   },
 };
@@ -39,13 +40,17 @@ export const staggerContainer: Variants = {
 export const revealCard: Variants = {
   hidden: {
     opacity: 0,
-    y: 36,
+    y: 68,
+    scale: 0.955,
+    filter: 'blur(12px)',
   },
   visible: {
     opacity: 1,
     y: 0,
+    scale: 1,
+    filter: 'blur(0px)',
     transition: {
-      duration: 0.58,
+      duration: 0.72,
       ease: easeOut,
     },
   },

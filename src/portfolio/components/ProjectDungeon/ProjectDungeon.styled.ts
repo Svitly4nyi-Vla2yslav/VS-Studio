@@ -20,10 +20,7 @@ export const ProjectDungeonShell = styled(motion.section)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding:
-    clamp(90px, 10vw, 124px)
-    max(24px, calc((100% - 1440px) / 2))
-    clamp(34px, 5vw, 60px);
+  padding: clamp(90px, 10vw, 124px) max(24px, calc((100% - 1440px) / 2)) clamp(34px, 5vw, 60px);
   background:
     radial-gradient(circle at 78% 22%, rgba(251, 113, 133, 0.12), transparent 28%),
     radial-gradient(circle at 18% 78%, rgba(246, 211, 101, 0.08), transparent 34%);
@@ -94,16 +91,31 @@ export const SectionIntro = styled.p`
 /* Grid росте природно, щоб не створювати окремий scroll всередині секції. */
 export const DungeonGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   max-width: 1030px;
   gap: 12px;
   margin-top: clamp(14px, 2vw, 20px);
   overflow-x: hidden;
   padding-right: min(0vw, 0px);
 
+  > article {
+    grid-column: span 2;
+  }
+
+  > article:nth-child(1),
+  > article:nth-child(5) {
+    grid-column: span 3;
+  }
+
   @media (max-width: 1100px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding-right: 0;
+
+    > article,
+    > article:nth-child(1),
+    > article:nth-child(5) {
+      grid-column: span 1;
+    }
   }
 
   @media (max-width: 720px) {
@@ -119,13 +131,16 @@ export const DungeonCard = styled(motion.article)`
   flex-direction: column;
   overflow: hidden;
   border: 1px solid rgba(56, 189, 248, 0.22);
-  border-radius: 8px;
+  border-radius: ${portfolioTheme.radii.compact};
   padding: 13px;
   clip-path: polygon(0 0, calc(100% - 28px) 0, 100% 28px, 100% 100%, 28px 100%, 0 calc(100% - 28px));
   background:
     radial-gradient(circle at 78% 18%, rgba(124, 58, 237, 0.22), transparent 32%),
     linear-gradient(160deg, rgba(11, 11, 24, 0.94), rgba(5, 5, 16, 0.78));
-  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
 
   &::after {
     content: '';
@@ -135,18 +150,27 @@ export const DungeonCard = styled(motion.article)`
     width: 40%;
     height: 190%;
     background: linear-gradient(90deg, transparent, rgba(248, 250, 252, 0.16), transparent);
-    animation: ${lightSweep} 6s ease-in-out infinite;
     opacity: 0;
   }
 
   &:hover {
     border-color: rgba(34, 211, 238, 0.58);
-    box-shadow: 0 0 46px rgba(34, 211, 238, 0.2), inset 0 0 36px rgba(124, 58, 237, 0.1);
+    box-shadow:
+      0 0 46px rgba(34, 211, 238, 0.2),
+      inset 0 0 36px rgba(124, 58, 237, 0.1);
     transform: translateY(-6px);
   }
 
   &:hover::after {
     opacity: 1;
+    animation: ${lightSweep} 900ms ${portfolioTheme.motion.ease} both;
+  }
+
+  &:focus-within {
+    border-color: rgba(103, 232, 249, 0.72);
+    box-shadow:
+      0 0 0 3px rgba(103, 232, 249, 0.12),
+      0 24px 70px rgba(0, 0, 0, 0.34);
   }
 
   h3 {

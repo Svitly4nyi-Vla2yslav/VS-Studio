@@ -17,7 +17,13 @@ export interface PortfolioMediaFrameProps {
 }
 
 // PortfolioMediaFrame рендерить один квадратний контейнер і вибирає img або video за type.
-export const PortfolioMediaFrame: React.FC<PortfolioMediaFrameProps> = ({ type, src, alt, className, eager = false }) => {
+export const PortfolioMediaFrame: React.FC<PortfolioMediaFrameProps> = ({
+  type,
+  src,
+  alt,
+  className,
+  eager = false,
+}) => {
   const frameRef = useRef<HTMLElement | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [hasAttachedSource, setHasAttachedSource] = useState(eager);
@@ -26,10 +32,11 @@ export const PortfolioMediaFrame: React.FC<PortfolioMediaFrameProps> = ({ type, 
 
   useEffect(() => {
     const video = videoRef.current;
-    if (!video || type !== 'video' || !hasAttachedSource || !isVisibleRef.current) return;
+    if (!video || type !== 'video' || !hasAttachedSource) return;
 
-    void video.play().catch(() => undefined);
-  }, [hasAttachedSource, src, type]);
+    video.load();
+    if (isVisibleRef.current || eager) void video.play().catch(() => undefined);
+  }, [eager, hasAttachedSource, src, type]);
 
   useEffect(() => {
     const frame = frameRef.current;
@@ -47,6 +54,7 @@ export const PortfolioMediaFrame: React.FC<PortfolioMediaFrameProps> = ({ type, 
 
     if (!('IntersectionObserver' in window)) {
       prepareVideo();
+      isVisibleRef.current = true;
       void video.play().catch(() => undefined);
       return;
     }
@@ -72,8 +80,14 @@ export const PortfolioMediaFrame: React.FC<PortfolioMediaFrameProps> = ({ type, 
           video.pause();
         }
       },
-      { threshold: 0.2 }
+      { rootMargin: '80px 0px', threshold: 0.08 }
     );
+
+    const resumeWhenVisible = () => {
+      if (document.visibilityState === 'visible' && isVisibleRef.current) {
+        void video.play().catch(() => undefined);
+      }
+    };
 
     if (eager) {
       prepareVideo();
@@ -81,10 +95,12 @@ export const PortfolioMediaFrame: React.FC<PortfolioMediaFrameProps> = ({ type, 
 
     preloadObserver.observe(frame);
     playbackObserver.observe(frame);
+    document.addEventListener('visibilitychange', resumeWhenVisible);
 
     return () => {
       preloadObserver.disconnect();
       playbackObserver.disconnect();
+      document.removeEventListener('visibilitychange', resumeWhenVisible);
     };
   }, [eager, type]);
 
@@ -93,7 +109,13 @@ export const PortfolioMediaFrame: React.FC<PortfolioMediaFrameProps> = ({ type, 
       <MediaFrameGlow aria-hidden='true' />
       <MediaInnerLayer $type={type}>
         {type === 'image' ? (
-          <ImageMedia src={src} alt={alt} loading='lazy' decoding='async' fetchPriority={eager ? 'high' : 'low'} />
+          <ImageMedia
+            src={src}
+            alt={alt}
+            loading={eager ? 'eager' : 'lazy'}
+            decoding='async'
+            fetchPriority={eager ? 'high' : 'low'}
+          />
         ) : (
           <VideoMedia
             ref={videoRef}
@@ -101,10 +123,16 @@ export const PortfolioMediaFrame: React.FC<PortfolioMediaFrameProps> = ({ type, 
             aria-label={alt}
             loop
             muted
+            autoPlay
             playsInline
             controls={false}
             preload={eager || hasAttachedSource ? 'metadata' : 'none'}
             disablePictureInPicture
+            onCanPlay={() => {
+              const video = videoRef.current;
+              if (video && (isVisibleRef.current || eager))
+                void video.play().catch(() => undefined);
+            }}
           />
         )}
       </MediaInnerLayer>

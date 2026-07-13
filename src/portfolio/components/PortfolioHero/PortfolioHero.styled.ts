@@ -38,10 +38,7 @@ export const HeroWrapper = styled.section`
   min-height: 100svh;
   width: 100%;
   scroll-margin-top: 96px;
-  padding:
-    clamp(50px, 10vw, 50px)
-    max(24px, calc((100% - 1440px) / 2))
-    clamp(34px, 5vw, 64px);
+  padding: clamp(50px, 10vw, 50px) max(24px, calc((100% - 1440px) / 2)) clamp(34px, 5vw, 64px);
   background:
     radial-gradient(circle at 70% 42%, rgba(34, 211, 238, 0.12), transparent 28%),
     radial-gradient(circle at 20% 72%, rgba(168, 85, 247, 0.14), transparent 34%);
@@ -53,10 +50,7 @@ export const HeroWrapper = styled.section`
   }
 
   @media (max-width: 560px) {
-    padding:
-      clamp(86px, 16svh, 108px)
-      16px
-      24px;
+    padding: clamp(86px, 16svh, 108px) 16px 24px;
   }
 
   @media (max-height: 760px) and (min-width: 941px) {
@@ -70,6 +64,7 @@ export const HeroWrapper = styled.section`
 export const HeroCopy = styled(motion.div)`
   position: relative;
   z-index: 2;
+  min-width: 0;
 `;
 
 /* System notification показує стан пробудження сторінки. */
@@ -106,15 +101,24 @@ export const HeroTitle = styled.h1`
   margin: 22px 0 0;
   color: ${portfolioTheme.colors.white};
   font-family: ${portfolioTheme.fonts.heading};
-  font-size: clamp(2.2rem, 6.4vw, 6.8rem);
-  line-height: 0.92;
-  letter-spacing: 0;
+  font-size: clamp(3.3rem, 6.2vw, 6.6rem);
+  font-weight: 500;
+  line-height: 0.88;
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
   text-shadow:
     0 0 24px rgba(168, 85, 247, 0.5),
     0 0 54px rgba(34, 211, 238, 0.2);
+  overflow-wrap: anywhere;
 
   @media (max-height: 760px) and (min-width: 941px) {
-    font-size: clamp(2rem, 5.4vw, 5.4rem);
+    font-size: clamp(3.1rem, 5.4vw, 5.7rem);
+  }
+
+  @media (max-width: 560px) {
+    font-size: clamp(2.85rem, 10.8vw, 3.5rem);
+    line-height: 0.9;
+    letter-spacing: -0.045em;
   }
 `;
 
@@ -214,8 +218,7 @@ export const MangaPanel = styled(motion.aside)`
   clip-path: polygon(0 0, calc(100% - 42px) 0, 100% 42px, 100% 100%, 42px 100%, 0 calc(100% - 42px));
   background:
     radial-gradient(circle at 50% 42%, rgba(34, 211, 238, 0.16), transparent 28%),
-    radial-gradient(circle at 66% 18%, rgba(168, 85, 247, 0.22), transparent 28%),
-    rgba(5, 5, 16, 0.58);
+    radial-gradient(circle at 66% 18%, rgba(168, 85, 247, 0.22), transparent 28%), rgba(5, 5, 16, 0.58);
   box-shadow: ${portfolioTheme.shadows.panel};
 
   &::before {
@@ -361,7 +364,13 @@ export const Blade = styled.span`
   width: 8px;
   height: 54%;
   border-radius: 999px;
-  background: linear-gradient(180deg, transparent, ${portfolioTheme.colors.cyan}, ${portfolioTheme.colors.goldSoft}, transparent);
+  background: linear-gradient(
+    180deg,
+    transparent,
+    ${portfolioTheme.colors.cyan},
+    ${portfolioTheme.colors.goldSoft},
+    transparent
+  );
   box-shadow: 0 0 24px rgba(34, 211, 238, 0.6);
   transform: rotate(28deg);
 `;

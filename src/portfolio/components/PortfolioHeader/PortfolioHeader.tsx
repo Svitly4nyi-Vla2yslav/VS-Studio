@@ -13,6 +13,8 @@ import {
   MobileMenuButton,
   NavLinks,
   RankBadge,
+  ScrollProgress,
+  ScrollProgressBar,
 } from './PortfolioHeader.styled';
 
 // Доступні мови саме для portfolio-перемикача.
@@ -28,14 +30,36 @@ export const PortfolioHeader: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   // activeSection підсвічує пункт навігації для поточної fullscreen-секції.
   const [activeSection, setActiveSection] = useState('hero');
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     // onScroll оновлює стан фону header під час прокрутки.
-    const onScroll = () => setScrolled(window.scrollY > 18);
+    let frame = 0;
+    const onScroll = () => {
+      if (frame) return;
+      frame = window.requestAnimationFrame(() => {
+        const scrollable = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
+        setScrolled(window.scrollY > 18);
+        setScrollProgress(Math.min(window.scrollY / scrollable, 1));
+        frame = 0;
+      });
+    };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      if (frame) window.cancelAnimationFrame(frame);
+    };
   }, []);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setMenuOpen(false);
+    };
+    window.addEventListener('keydown', closeOnEscape);
+    return () => window.removeEventListener('keydown', closeOnEscape);
+  }, [menuOpen]);
 
   useEffect(() => {
     // IntersectionObserver тримає active state меню синхронним із fullscreen-секціями.
@@ -48,7 +72,9 @@ export const PortfolioHeader: React.FC = () => {
 
         if (visibleEntry?.target.id) {
           // nextActive знаходить nav item, який відповідає id видимої секції.
-          const nextActive = portfolioNavItems.find(item => item.href === `#${visibleEntry.target.id}`);
+          const nextActive = portfolioNavItems.find(
+            item => item.href === `#${visibleEntry.target.id}`
+          );
           if (nextActive) {
             setActiveSection(nextActive.id);
           }
@@ -79,6 +105,9 @@ export const PortfolioHeader: React.FC = () => {
 
   return (
     <HeaderShell $scrolled={scrolled}>
+      <ScrollProgress aria-hidden='true'>
+        <ScrollProgressBar style={{ transform: `scaleX(${scrollProgress})` }} />
+      </ScrollProgress>
       <HeaderInner>
         <BrandBlock href='#portfolio-top' aria-label={t('portfolio.header.brandAria')}>
           <strong>Vladyslav</strong>
