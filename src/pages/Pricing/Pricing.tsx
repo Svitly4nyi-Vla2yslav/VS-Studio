@@ -12,7 +12,7 @@ import {
   FaTools,
   FaUsers,
 } from 'react-icons/fa';
-import { AI_MUSIC_PACKAGES } from '../../data/pricingCatalog';
+import { AI_MUSIC_PACKAGES, WEBSITE_PRICING_PACKAGES } from '../../data/pricingCatalog';
 import pricingHeroImage from '../../assets/hero-image/Preise.png';
 import { PageContainer, PageRoot, PrimaryButtonLink, Section } from '../shared/styles/PagePrimitives.styles';
 
@@ -587,7 +587,29 @@ const FinalButton = styled(HeroButton)`
 const PricingPage: React.FC = () => {
   // Функція t() приходить з react-i18next і повертає текст за ключем перекладу
   // з public/locales/{мова}/translation.json.
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const formatPricingNumber = (value: number) =>
+    new Intl.NumberFormat(i18n.resolvedLanguage || i18n.language).format(value);
+  const injectPrice = (localizedText: string, value: number) => {
+    const formattedValue = formatPricingNumber(value);
+    const withEuroValue = localizedText.replace(/(EUR\s*)[\d.,]+/, `$1${formattedValue}`);
+
+    if (withEuroValue !== localizedText) return withEuroValue;
+
+    const withLocalizedValue = localizedText.replace(/[\d.,]+/, formattedValue);
+    return withLocalizedValue !== localizedText ? withLocalizedValue : `EUR ${formattedValue}`;
+  };
+  const injectRange = (localizedText: string, from: number, to: number) => {
+    const withRange = localizedText.replace(
+      /(EUR\s*)[\d.,]+\s*[-–]\s*[\d.,]+/,
+      `$1${formatPricingNumber(from)}–${formatPricingNumber(to)}`
+    );
+
+    return withRange !== localizedText
+      ? withRange
+      : `EUR ${formatPricingNumber(from)}–${formatPricingNumber(to)}`;
+  };
 
   // Ця змінна зберігає активний режим відображення support abo:
   // місячний або річний. Логіку перемикача не змінюємо.
@@ -606,14 +628,23 @@ const PricingPage: React.FC = () => {
     recommended: key === 'business',
     name: t(`pricing.packages.${key}.name`),
     desc: t(`pricing.packages.${key}.desc`),
-    price: t(`pricing.packages.${key}.price`),
-    range: t(`pricing.packages.${key}.range`),
+    price: injectPrice(t(`pricing.packages.${key}.price`), WEBSITE_PRICING_PACKAGES[key].priceFrom),
+    range: injectRange(
+      t(`pricing.packages.${key}.range`),
+      WEBSITE_PRICING_PACKAGES[key].rangeFrom,
+      WEBSITE_PRICING_PACKAGES[key].rangeTo
+    ),
     core: t(`pricing.packages.${key}.core`, { returnObjects: true }) as string[],
     plus: t(`pricing.packages.${key}.plus`, { returnObjects: true }) as string[],
     outcome: t(`pricing.packages.${key}.outcome`),
     // Ці два рядки відповідають за текст support abo залежно від активного
     // режиму Monat/Jahr. Саму логіку перемикання не переписуємо.
-    subscriptionPrice: t(`pricing.packages.${key}.subscription.${billingPeriod}.price`),
+    subscriptionPrice: injectPrice(
+      t(`pricing.packages.${key}.subscription.${billingPeriod}.price`),
+      billingPeriod === 'monthly'
+        ? WEBSITE_PRICING_PACKAGES[key].supportMonthly
+        : WEBSITE_PRICING_PACKAGES[key].supportYearly
+    ),
     subscriptionMeta: t(`pricing.packages.${key}.subscription.${billingPeriod}.meta`),
     subscriptionItems: t(`pricing.packages.${key}.subscription.includes`, { returnObjects: true }) as string[],
   }));
@@ -642,7 +673,9 @@ const PricingPage: React.FC = () => {
                 <br />
                 {t('pricing.hero.titleLine2')}
                 <br />
-                <HeroAccent>{t('pricing.hero.titleLine3')}</HeroAccent>
+                <HeroAccent>
+                  {injectPrice(t('pricing.hero.titleLine3'), WEBSITE_PRICING_PACKAGES.starter.priceFrom)}
+                </HeroAccent>
               </h1>
               <p>{t('pricing.hero.subtitle')}</p>
               <HeroActions>

@@ -1,5 +1,5 @@
 import type { AssistantService } from '../../features/ai-assistant/types';
-import { AI_MUSIC_PACKAGES, WEBSITE_PRICING_PACKAGES, getPackageRange } from '../pricingCatalog';
+import { AI_MUSIC_PACKAGES, CONFIGURATOR_PRICING, WEBSITE_PRICING_PACKAGES, getPackageRange } from '../pricingCatalog';
 
 export const servicesDe: AssistantService[] = [
   {
@@ -15,7 +15,7 @@ export const servicesDe: AssistantService[] = [
     estimateRange: getPackageRange('starter'),
     timeline: 'ca. 2 bis 4 Wochen',
     estimateHint:
-      `Auf der Pricing-Seite liegt Starter meist bei EUR ${WEBSITE_PRICING_PACKAGES.starter.rangeFrom}-${WEBSITE_PRICING_PACKAGES.starter.rangeTo}; mit mehr Umfang passt Business ab EUR ${WEBSITE_PRICING_PACKAGES.business.priceFrom}. Der Configurator zeigt nach Auswahl der Parameter EUR 600-900.`,
+      `Auf der Pricing-Seite liegt Starter meist bei EUR ${WEBSITE_PRICING_PACKAGES.starter.rangeFrom}-${WEBSITE_PRICING_PACKAGES.starter.rangeTo}; mit mehr Umfang passt Business ab EUR ${WEBSITE_PRICING_PACKAGES.business.priceFrom}. Der Configurator zeigt nach Auswahl der Parameter EUR ${CONFIGURATOR_PRICING.launchMin}-${CONFIGURATOR_PRICING.launchMax}.`,
     keywords: ['website', 'webseite', 'homepage', 'seite', 'neu', 'erstellen', 'landingpage'],
   },
   {

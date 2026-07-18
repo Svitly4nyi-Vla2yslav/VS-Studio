@@ -5,24 +5,24 @@ export type AiMusicDurationKey = '15' | '30' | '45' | 'custom';
 export const WEBSITE_PRICING_PACKAGES = {
   starter: {
     name: 'Starter',
-    priceFrom: 490,
-    rangeFrom: 490,
+    priceFrom: 480,
+    rangeFrom: 480,
     rangeTo: 590,
     supportMonthly: 62,
     supportYearly: 521,
   },
   business: {
     name: 'Business',
-    priceFrom: 590,
-    rangeFrom: 590,
+    priceFrom: 680,
+    rangeFrom: 680,
     rangeTo: 790,
     supportMonthly: 86,
     supportYearly: 722,
   },
   pro: {
     name: 'Pro',
-    priceFrom: 790,
-    rangeFrom: 790,
+    priceFrom: 880,
+    rangeFrom: 880,
     rangeTo: 990,
     supportMonthly: 160,
     supportYearly: 1344,
@@ -65,12 +65,17 @@ export const AI_MUSIC_PRICING = {
 } as const;
 
 export const CONFIGURATOR_PRICING = {
-  launchMin: 600,
-  launchMax: 900,
+  launchMin: WEBSITE_PRICING_PACKAGES.starter.priceFrom,
+  launchMax: WEBSITE_PRICING_PACKAGES.pro.priceFrom,
+  launchTiers: [
+    WEBSITE_PRICING_PACKAGES.starter.priceFrom,
+    WEBSITE_PRICING_PACKAGES.business.priceFrom,
+    WEBSITE_PRICING_PACKAGES.pro.priceFrom,
+  ],
   launchScale: 0.42,
-  launchStep: 10,
   starterSupportMonthly: WEBSITE_PRICING_PACKAGES.starter.supportMonthly,
   businessSupportMonthly: WEBSITE_PRICING_PACKAGES.business.supportMonthly,
+  proSupportMonthly: WEBSITE_PRICING_PACKAGES.pro.supportMonthly,
 } as const;
 
 export const getPackageRange = (key: WebsitePricingPackageKey) => {

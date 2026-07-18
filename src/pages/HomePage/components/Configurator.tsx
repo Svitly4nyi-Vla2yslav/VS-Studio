@@ -10,7 +10,7 @@ type WebsiteOfferResult =
   | { isComplete: false }
   | {
       isComplete: true;
-      pack: 'Starter' | 'Business';
+      pack: 'Starter' | 'Business' | 'Pro';
       bullets: string[];
       totalFrom: number;
       totalTo: number;
@@ -165,15 +165,17 @@ const MAX_BY_SEO: Record<string, number> = {
   other: 90,
 };
 
-const normalizeLaunchPrice = (value: number) =>
-  Math.min(
+const normalizeLaunchPrice = (value: number) => {
+  const scaledValue = Math.min(
     CONFIGURATOR_PRICING.launchMax,
-    Math.max(
-      CONFIGURATOR_PRICING.launchMin,
-      Math.round((value * CONFIGURATOR_PRICING.launchScale) / CONFIGURATOR_PRICING.launchStep) *
-        CONFIGURATOR_PRICING.launchStep
-    )
+    Math.max(CONFIGURATOR_PRICING.launchMin, value * CONFIGURATOR_PRICING.launchScale)
   );
+
+  return (
+    CONFIGURATOR_PRICING.launchTiers.find(tier => scaledValue <= tier) ??
+    CONFIGURATOR_PRICING.launchMax
+  );
+};
 
 const labelFallbacks: Record<string, string> = {
   service: 'Service',
@@ -397,9 +399,18 @@ const Configurator: React.FC = () => {
       integration.includes('crm') ||
       integration.includes('payments');
 
-    const pack: 'Starter' | 'Business' = rawTotalTo > 1400 || businessSignals ? 'Business' : 'Starter';
+    const pack: 'Starter' | 'Business' | 'Pro' =
+      totalTo >= CONFIGURATOR_PRICING.launchMax
+        ? 'Pro'
+        : totalTo >= CONFIGURATOR_PRICING.launchTiers[1] || businessSignals
+          ? 'Business'
+          : 'Starter';
     const supportMonthly =
-      pack === 'Business' ? CONFIGURATOR_PRICING.businessSupportMonthly : CONFIGURATOR_PRICING.starterSupportMonthly;
+      pack === 'Pro'
+        ? CONFIGURATOR_PRICING.proSupportMonthly
+        : pack === 'Business'
+          ? CONFIGURATOR_PRICING.businessSupportMonthly
+          : CONFIGURATOR_PRICING.starterSupportMonthly;
     const supportYearlyRaw = supportMonthly * 12;
     const supportYearly = Math.round(supportYearlyRaw * 0.7);
 
@@ -754,9 +765,11 @@ const Configurator: React.FC = () => {
                 <div className='offer-title'>
                   {translate('home.configurator.recommended', 'Empfohlen:')}{' '}
                   <strong>
-                    {websiteOffer.pack === 'Business'
-                      ? translate('home.configurator.pack.business', 'Business')
-                      : translate('home.configurator.pack.starter', 'Starter')}
+                    {websiteOffer.pack === 'Pro'
+                      ? translate('home.configurator.pack.pro', 'Pro')
+                      : websiteOffer.pack === 'Business'
+                        ? translate('home.configurator.pack.business', 'Business')
+                        : translate('home.configurator.pack.starter', 'Starter')}
                   </strong>
                 </div>
                 <p className='offer-price'>

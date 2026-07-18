@@ -1,5 +1,5 @@
 import type { AssistantService } from '../../features/ai-assistant/types';
-import { WEBSITE_PRICING_PACKAGES, getPackageRange } from '../pricingCatalog';
+import { CONFIGURATOR_PRICING, WEBSITE_PRICING_PACKAGES, getPackageRange } from '../pricingCatalog';
 
 export const servicesUk: AssistantService[] = [
   {
@@ -15,7 +15,7 @@ export const servicesUk: AssistantService[] = [
     estimateRange: getPackageRange('starter'),
     timeline: 'приблизно 2-4 тижні',
     estimateHint:
-      `На сторінці Pricing пакет Starter зазвичай EUR ${WEBSITE_PRICING_PACKAGES.starter.rangeFrom}-${WEBSITE_PRICING_PACKAGES.starter.rangeTo}; для більшого обсягу підходить Business від EUR ${WEBSITE_PRICING_PACKAGES.business.priceFrom}. Configurator після вибору параметрів показує EUR 600-900.`,
+      `На сторінці Pricing пакет Starter зазвичай EUR ${WEBSITE_PRICING_PACKAGES.starter.rangeFrom}-${WEBSITE_PRICING_PACKAGES.starter.rangeTo}; для більшого обсягу підходить Business від EUR ${WEBSITE_PRICING_PACKAGES.business.priceFrom}. Configurator після вибору параметрів показує EUR ${CONFIGURATOR_PRICING.launchMin}-${CONFIGURATOR_PRICING.launchMax}.`,
     keywords: ['сайт', 'вебсайт', 'сторінка', 'лендинг', 'створити', 'новий сайт'],
   },
   {
