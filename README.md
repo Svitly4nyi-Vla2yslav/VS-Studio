@@ -24,7 +24,7 @@ Modern websites and web applications for small and medium-sized businesses, with
 - React 19
 - TypeScript
 - Vite
-- React Router
+- React Router 7
 - Firebase
 - i18next / react-i18next
 - Styled Components
@@ -35,6 +35,8 @@ Modern websites and web applications for small and medium-sized businesses, with
 - ESLint / Prettier
 
 ## Local development
+
+Prerequisites: **Node.js 20+** and npm.
 
 ```bash
 npm install
@@ -55,6 +57,8 @@ npm run lint
 npm run seo:generate
 npm run favicon
 ```
+
+`npm run build` runs the TypeScript/Vite application build first and then regenerates the SEO assets. This keeps production output and generated SEO files in sync.
 
 ## Project focus
 
