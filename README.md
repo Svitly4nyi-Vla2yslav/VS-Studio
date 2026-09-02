@@ -60,6 +60,20 @@ npm run favicon
 
 `npm run build` runs the TypeScript/Vite application build first and then regenerates the SEO assets. This keeps production output and generated SEO files in sync.
 
+## Deployment flow
+
+Production deployment is configured for Netlify. `netlify.toml` runs `npm run build` with Node.js 20 and publishes the Vite `dist/` directory.
+
+For local testing of Netlify-specific behavior, use:
+
+```bash
+npm run dev:netlify
+```
+
+Netlify proxies `/api/contact` to the serverless contact function and rewrites application routes to `index.html` so client-side React Router navigation continues to work after direct page loads.
+
+Before a production release, run `npm run lint` and `npm run build`, then verify the contact flow in the Netlify environment because function behavior depends on deployment-side configuration.
+
 ## Project focus
 
 VS Web Studio is built around real small-business needs rather than isolated demo screens. The project combines frontend development, technical SEO, multilingual UX, contact conversion and deployment work in one production-oriented codebase.
