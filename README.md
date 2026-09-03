@@ -72,6 +72,8 @@ npm run dev:netlify
 
 Netlify proxies `/api/contact` to the serverless contact function and rewrites application routes to `index.html` so client-side React Router navigation continues to work after direct page loads.
 
+Production and deploy-preview contexts both run the same production build. Branch deploys are intentionally skipped, and documentation-only changes under Markdown files, `docs/` or `.github/` do not trigger a Netlify rebuild. This reduces unnecessary deploy queue activity while keeping production code changes covered by the normal build pipeline.
+
 Before a production release, run `npm run lint` and `npm run build`, then verify the contact flow in the Netlify environment because function behavior depends on deployment-side configuration.
 
 ## Project focus
