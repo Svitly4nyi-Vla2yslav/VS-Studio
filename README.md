@@ -112,4 +112,4 @@ Hildesheim, Germany
 
 ## License
 
-See the repository license files for licensing information.
+See [LICENSE](LICENSE) for licensing information.
