@@ -23,6 +23,7 @@ import './site.css';
 
 const AIAssistantDemoPage = lazy(() => import('./pages/AIAssistantDemo'));
 const PortfolioPage = lazy(() => import('./portfolio/pages/PortfolioPage'));
+const PlehnApplicationPage = lazy(() => import('./pages/PlehnApplication'));
 
 export const App: React.FC = () => {
   return (
@@ -34,6 +35,14 @@ export const App: React.FC = () => {
           <Suspense fallback={null}>
             <SeoHead />
             <PortfolioPage />
+          </Suspense>
+        }
+      />
+      <Route
+        path='/plehn'
+        element={
+          <Suspense fallback={null}>
+            <PlehnApplicationPage />
           </Suspense>
         }
       />
