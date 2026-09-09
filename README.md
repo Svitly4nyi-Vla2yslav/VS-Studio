@@ -60,6 +60,17 @@ npm run favicon
 
 `npm run build` runs the TypeScript/Vite application build first and then regenerates the SEO assets. This keeps production output and generated SEO files in sync.
 
+## Verification baseline
+
+The repository does not currently define an automated test script. The minimum pre-push verification is therefore:
+
+```bash
+npm run lint
+npm run build
+```
+
+This covers linting, TypeScript compilation, the production Vite bundle and SEO asset generation, but it should not be treated as a substitute for automated unit, integration or end-to-end tests.
+
 ## Deployment flow
 
 Production deployment is configured for Netlify. `netlify.toml` runs `npm run build` with Node.js 20 and publishes the Vite `dist/` directory.
