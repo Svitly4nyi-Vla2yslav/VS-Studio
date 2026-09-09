@@ -4,6 +4,8 @@ export interface HandlerEvent {
   httpMethod: string;
   body: string | null;
   headers?: Record<string, string | undefined>;
+  queryStringParameters?: Record<string, string>;
+  rawQuery?: string;
 }
 
 export interface HandlerResponse {
