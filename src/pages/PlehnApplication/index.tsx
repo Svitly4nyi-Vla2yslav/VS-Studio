@@ -29,23 +29,6 @@ import {
   Brand,
   BrandLabel,
   BrowserBar,
-  BookingActions,
-  BookingCloseButton,
-  BookingDayButton,
-  BookingDayGrid,
-  BookingDialogBackdrop,
-  BookingDialogHeader,
-  BookingDialogPanel,
-  BookingDialogTitle,
-  BookingForm,
-  BookingPrimaryButton,
-  BookingSecondaryButton,
-  BookingSlotButton,
-  BookingSlotGrid,
-  BookingStatus,
-  BookingStep,
-  BookingSummary,
-  BookingSummaryRow,
   ButtonRow,
   CaseArticle,
   CaseCopy,
@@ -255,203 +238,18 @@ const AIWorkbench: React.FC = () => {
   );
 };
 
-const formatDateKey = (date: Date) => date.toISOString().slice(0, 10);
-
-const formatBookingDate = (dateKey: string) =>
-  new Intl.DateTimeFormat('de-DE', { weekday: 'short', day: '2-digit', month: 'short' }).format(new Date(`${dateKey}T12:00:00Z`));
-
-const getUpcomingDates = () => Array.from({ length: 7 }, (_, index) => {
-  const date = new Date();
-  date.setHours(12, 0, 0, 0);
-  date.setDate(date.getDate() + index);
-  const dateKey = formatDateKey(date);
-  return { dateKey, label: formatBookingDate(dateKey), dayName: new Intl.DateTimeFormat('de-DE', { weekday: 'short' }).format(date) };
-});
-
-const BookingDialog: React.FC<{ open: boolean; onClose: () => void }> = ({ open, onClose }) => {
-  const [selectedDate, setSelectedDate] = useState<string>(() => getUpcomingDates()[0]?.dateKey ?? new Date().toISOString().slice(0, 10));
-  const [slots, setSlots] = useState<Array<{ start: string; end: string; label: string }>>([]);
-  const [selectedSlot, setSelectedSlot] = useState<string | null>(null);
-  const [form, setForm] = useState({ name: '', email: '', note: '' });
-  const [isLoading, setIsLoading] = useState(false);
-  const [status, setStatus] = useState<string>('');
-  const [isError, setIsError] = useState(false);
-
-  useEffect(() => {
-    if (!open) return;
-
-    const controller = new AbortController();
-    const fetchSlots = async () => {
-      setIsLoading(true);
-      setStatus('Verfügbare Slots werden geladen…');
-      setIsError(false);
-      setSelectedSlot(null);
-
-      try {
-        const response = await fetch(`/api/plehn/availability?date=${selectedDate}`, { signal: controller.signal });
-        const data = (await response.json()) as { ok?: boolean; slots?: Array<{ start: string; end: string; label: string }>; error?: string; fallbackUrl?: string };
-
-        if (!response.ok || !data.ok) {
-          throw new Error(data.error || 'Keine Verfügbarkeiten gefunden.');
-        }
-
-        setSlots(data.slots ?? []);
-        if ((data.slots ?? []).length === 0) {
-          setStatus('Für diesen Tag sind aktuell keine Slots frei. Bitte wählen Sie einen anderen Tag oder schreiben Sie eine kurze E-Mail.');
-        } else {
-          setStatus('');
-        }
-      } catch (error) {
-        if ((error as DOMException)?.name === 'AbortError') return;
-        setSlots([]);
-        setStatus(error instanceof Error ? error.message : 'Es konnte keine Verfügbarkeitsliste geladen werden.');
-        setIsError(true);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchSlots();
-    return () => controller.abort();
-  }, [open, selectedDate]);
-
-  useEffect(() => {
-    if (!open) return;
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') onClose();
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [open, onClose]);
-
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    if (!selectedSlot) {
-      setStatus('Bitte wählen Sie zuerst einen verfügbaren Termin aus.');
-      setIsError(true);
-      return;
-    }
-
-    if (!form.name.trim() || !form.email.trim()) {
-      setStatus('Bitte geben Sie Name und E-Mail an.');
-      setIsError(true);
-      return;
-    }
-
-    setIsLoading(true);
-    setIsError(false);
-    setStatus('Termin wird bestätigt…');
-
-    try {
-      const response = await fetch('/api/plehn/book', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: form.name.trim(),
-          email: form.email.trim(),
-          note: form.note.trim(),
-          start: selectedSlot,
-          timezone: 'Europe/Berlin',
-          source: 'plehn-landing',
-        }),
-      });
-
-      const data = (await response.json()) as { ok?: boolean; error?: string; reservation?: { meetUrl?: string | null; eventUrl?: string | null }; fallbackUrl?: string };
-      if (!response.ok || !data.ok) {
-        throw new Error(data.error || 'Der Termin konnte nicht bestätigt werden.');
-      }
-
-      const meetUrl = data.reservation?.meetUrl || data.reservation?.eventUrl || null;
-      setStatus(meetUrl ? `Termin bestätigt. Google Meet-Link: ${meetUrl}` : 'Termin bestätigt. Sie erhalten die Bestätigung per E-Mail.');
-      setIsError(false);
-      setForm({ name: '', email: '', note: '' });
-      setSelectedSlot(null);
-    } catch (error) {
-      setStatus(error instanceof Error ? error.message : 'Der Termin konnte nicht bestätigt werden.');
-      setIsError(true);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  if (!open) return null;
-
-  return (
-    <BookingDialogBackdrop onClick={onClose}>
-      <BookingDialogPanel onClick={event => event.stopPropagation()} role='dialog' aria-modal='true' aria-labelledby='plehn-booking-title'>
-        <BookingDialogHeader>
-          <BookingDialogTitle id='plehn-booking-title'>Gespräch buchen</BookingDialogTitle>
-          <BookingCloseButton type='button' aria-label='Dialog schließen' onClick={onClose}>×</BookingCloseButton>
-        </BookingDialogHeader>
-
-        <BookingStep>
-          <div>
-            <h4>1. Tag auswählen</h4>
-            <BookingDayGrid>
-              {getUpcomingDates().map(day => (
-                <BookingDayButton key={day.dateKey} type='button' $active={selectedDate === day.dateKey} onClick={() => setSelectedDate(day.dateKey)}>
-                  <strong>{day.dayName}</strong>
-                  <span>{day.label}</span>
-                </BookingDayButton>
-              ))}
-            </BookingDayGrid>
-          </div>
-
-          <div>
-            <h4>2. Termin wählen</h4>
-            {isLoading ? <BookingStatus>Verfügbarkeiten werden geladen…</BookingStatus> : (
-              <BookingSlotGrid>
-                {slots.length > 0 ? slots.map(slot => (
-                  <BookingSlotButton key={slot.start} type='button' $active={selectedSlot === slot.start} onClick={() => setSelectedSlot(slot.start)}>
-                    {slot.label}
-                  </BookingSlotButton>
-                )) : <BookingStatus $error>Keine Slots frei.</BookingStatus>}
-              </BookingSlotGrid>
-            )}
-          </div>
-
-          <BookingForm onSubmit={handleSubmit}>
-            <label>
-              Name
-              <input value={form.name} onChange={event => setForm(current => ({ ...current, name: event.target.value }))} placeholder='Ihr Name' />
-            </label>
-            <label>
-              E-Mail
-              <input type='email' value={form.email} onChange={event => setForm(current => ({ ...current, email: event.target.value }))} placeholder='name@email.de' />
-            </label>
-            <label>
-              Hinweis
-              <textarea value={form.note} onChange={event => setForm(current => ({ ...current, note: event.target.value }))} placeholder='Was möchten Sie konkret besprechen?' />
-            </label>
-
-            {selectedSlot ? (
-              <BookingSummary>
-                <BookingSummaryRow><span>Ausgewählter Termin</span><strong>{new Date(selectedSlot).toLocaleString('de-DE', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Europe/Berlin' })}</strong></BookingSummaryRow>
-              </BookingSummary>
-            ) : null}
-
-            <BookingActions>
-              <BookingSecondaryButton type='button' onClick={onClose}>Abbrechen</BookingSecondaryButton>
-              <BookingPrimaryButton type='submit' disabled={isLoading || !selectedSlot}>Termin bestätigen</BookingPrimaryButton>
-            </BookingActions>
-            <BookingStatus $error={isError}>{status}</BookingStatus>
-          </BookingForm>
-        </BookingStep>
-      </BookingDialogPanel>
-    </BookingDialogBackdrop>
-  );
-};
-
-const EvasiveBookingButton: React.FC<{ onRequestBooking?: () => void }> = ({ onRequestBooking }) => {
+const EvasiveBookingButton: React.FC = () => {
   const reduceMotion = useReducedMotion();
   const stageRef = useRef<HTMLDivElement | null>(null);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
-  const [hasEscaped, setHasEscaped] = useState(false);
+  const [escapeCount, setEscapeCount] = useState(0);
   const href = plehnApplication.bookingUrl || plehnApplication.emailUrl;
+  const maxEscapes = 3;
 
   const moveAwayFromPointer = (clientX: number, clientY: number) => {
     const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-    if (reduceMotion || !finePointer || !stageRef.current || hasEscaped) {
+    const compactViewport = window.matchMedia('(max-width: 390px)').matches;
+    if (reduceMotion || !finePointer || compactViewport || !stageRef.current || escapeCount >= maxEscapes) {
       return;
     }
 
@@ -464,28 +262,34 @@ const EvasiveBookingButton: React.FC<{ onRequestBooking?: () => void }> = ({ onR
     const radius = 120;
 
     if (distance < radius) {
-      const x = dx === 0 ? 0 : (-dx / distance) * 78;
-      const y = dy === 0 ? 0 : (-dy / distance) * 62;
-      const nextX = Math.max(-74, Math.min(74, x));
-      const nextY = Math.max(-54, Math.min(54, y));
+      const nextEscapeCount = Math.min(escapeCount + 1, maxEscapes);
+      const strength = 72 + escapeCount * 20;
+      const x = dx === 0 ? 0 : (-dx / distance) * strength;
+      const y = dy === 0 ? 0 : (-dy / distance) * strength;
+      const nextX = Math.max(-96, Math.min(96, x));
+      const nextY = Math.max(-72, Math.min(72, y));
       setOffset({ x: nextX, y: nextY });
-      setHasEscaped(true);
+      setEscapeCount(nextEscapeCount);
     }
   };
 
-  const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    if (onRequestBooking) {
-      event.preventDefault();
-      onRequestBooking();
-    }
-  };
+  const finalEscapeReached = escapeCount >= maxEscapes;
 
   return (
     <EvasiveStage
       ref={stageRef}
       onPointerMove={event => moveAwayFromPointer(event.clientX, event.clientY)}
-      onPointerLeave={() => setOffset({ x: 0, y: 0 })}
-      onPointerDown={() => setHasEscaped(false)}
+      onPointerLeave={() => {
+        if (!finalEscapeReached) {
+          setOffset({ x: 0, y: 0 });
+        }
+      }}
+      onPointerDown={() => {
+        if (!finalEscapeReached) {
+          setOffset({ x: 0, y: 0 });
+          setEscapeCount(0);
+        }
+      }}
     >
       <motion.div
         animate={reduceMotion ? { x: 0, y: 0 } : offset}
@@ -495,14 +299,13 @@ const EvasiveBookingButton: React.FC<{ onRequestBooking?: () => void }> = ({ onR
           href={href}
           target={plehnApplication.bookingUrl ? '_blank' : undefined}
           rel={plehnApplication.bookingUrl ? 'noreferrer' : undefined}
-          onClick={handleClick}
           onFocus={() => setOffset({ x: 0, y: 0 })}
           onBlur={() => setOffset({ x: 0, y: 0 })}
         >
           Gespräch vereinbaren <FaChevronRight />
         </EvasiveLink>
       </motion.div>
-      <EvasiveNote aria-live='polite'>{hasEscaped ? 'Okay. Ein kleines bisschen mussten Sie noch um mich kämpfen. 🙂' : ' '}</EvasiveNote>
+      <EvasiveNote aria-live='polite'>{finalEscapeReached ? 'Okay. Ein kleines bisschen mussten Sie noch um mich kämpfen. 🙂' : ' '}</EvasiveNote>
     </EvasiveStage>
   );
 };
@@ -515,7 +318,6 @@ const PlehnApplication: React.FC = () => {
   const employmentVisible = useInView(employmentRef, { once: true, amount: 0.35 });
   const reduceMotion = useReducedMotion();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [bookingOpen, setBookingOpen] = useState(false);
   const revealProps = reduceMotion ? { initial: false as const } : sectionMotion;
   const navItems = [
     { id: 'assistent', label: 'Assistent' },
@@ -728,14 +530,13 @@ const PlehnApplication: React.FC = () => {
           <h2><ViewportType text='Wenn Sie bis hier gelesen haben, hat die Bewerbung ihren Job schon halb erfüllt.' durationMs={1200} /></h2>
           <p>Der Rest lässt sich besser in 20 Minuten Gespräch klären als in weiteren 800 Wörtern.</p>
           <FinalActions>
-            <EvasiveBookingButton onRequestBooking={() => setBookingOpen(true)} />
+            <EvasiveBookingButton />
             <SecondaryLink href={plehnApplication.githubUrl} target='_blank' rel='noreferrer'>GitHub ansehen <FaGithub /></SecondaryLink>
             <SecondaryLink href={plehnApplication.cvUrl || plehnApplication.profileUrl} target='_blank' rel='noreferrer'>{plehnApplication.cvUrl ? 'Lebenslauf PDF' : 'Profil / CV'} <FaFilePdf /></SecondaryLink>
           </FinalActions>
           <p>Vladyslav Svitlychnyi · Hildesheim · Deutsch B2 Beruf</p>
         </Container>
       </FinalSection>
-      <BookingDialog open={bookingOpen} onClose={() => setBookingOpen(false)} />
     </Page>
   );
 };

@@ -64,16 +64,6 @@
   status = 200
 
 [[redirects]]
-  from = "/api/plehn/availability"
-  to = "/.netlify/functions/plehn-availability"
-  status = 200
-
-[[redirects]]
-  from = "/api/plehn/book"
-  to = "/.netlify/functions/plehn-book"
-  status = 200
-
-[[redirects]]
   from = "/home"
   to = "/"
   status = 301

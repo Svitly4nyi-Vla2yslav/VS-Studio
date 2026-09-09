@@ -14,7 +14,7 @@ export type PlehnCaseStudy = {
   accent: 'gold' | 'cyan' | 'blue';
 };
 
-const configuredBookingUrl = import.meta.env.VITE_PLEHN_BOOKING_URL?.trim();
+const configuredBookingUrl = import.meta.env.VITE_PLEHN_BOOKING_URL?.trim() || 'https://calendar.app.google/PhHiySoC7cJsVot28';
 const configuredCvUrl = import.meta.env.VITE_PLEHN_CV_URL?.trim();
 const configuredVideoUrl = import.meta.env.VITE_PLEHN_VIDEO_URL?.trim();
 const configuredCaptionsUrl = import.meta.env.VITE_PLEHN_VIDEO_CAPTIONS_URL?.trim();

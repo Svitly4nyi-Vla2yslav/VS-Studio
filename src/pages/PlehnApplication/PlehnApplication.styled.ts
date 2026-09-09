@@ -50,7 +50,7 @@ export const Page = styled.main`
   --plehn-surface: #0e1218;
   --plehn-surface-2: #131923;
   --plehn-text: #f7f8fa;
-  --plehn-muted: #9ba3b0;
+  --plehn-muted: #fcfcfd;
   --plehn-gold: ${gold};
   --plehn-cyan: ${cyan};
   --plehn-blue: ${blue};
