@@ -1,0 +1,20 @@
+Source preserved as: public/vlad-intro-original.mp4
+Original external source: C:\Users\Vladyslav\Downloads\WhatsApp Video 2026-09-10 at 14.37.00.mp4
+Source properties: 15.10 s, 1024x576, 30 fps, H.264 Baseline, AAC stereo 44.1 kHz
+Trim range: 00:00:02.150 through 00:00:14.250 (12.10 s requested; 12.12 s muxed)
+
+Video processing:
+- stream copy from the original camera file (`-c:v copy`)
+- no scaling in the intermediate
+- no frame interpolation, stabilization, denoise, sharpening, or contrast filter
+- Remotion version A presents the clip at 78% width over a blurred/darkened duplicate
+
+Audio filters:
+highpass=f=75,
+afftdn=nr=5:nf=-50:tn=1,
+acompressor=threshold=-24dB:ratio=1.6:attack=20:release=180:makeup=1.15,
+loudnorm=I=-18:LRA=7:TP=-1.5:measured_I=-27.18:measured_TP=-12.80:measured_LRA=0.90:measured_thresh=-37.38:offset=-0.12:linear=true,
+aresample=48000
+
+Measured selected original range: -27.18 LUFS integrated, -12.80 dBTP, 0.90 LU LRA.
+Measured processed clip: -18.05 LUFS integrated, -4.62 dBTP, 0.90 LU LRA.

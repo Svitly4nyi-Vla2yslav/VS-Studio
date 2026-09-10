@@ -13,7 +13,7 @@ $audioFilter = @(
   'highpass=f=75',
   'afftdn=nr=5:nf=-50:tn=1',
   'acompressor=threshold=-24dB:ratio=1.6:attack=20:release=180:makeup=1.15',
-  'loudnorm=I=-18:LRA=7:TP=-1.5:measured_I=-26.69:measured_TP=-13.23:measured_LRA=0.80:measured_thresh=-36.95:offset=-0.13:linear=true',
+  'loudnorm=I=-18:LRA=7:TP=-1.5:measured_I=-27.18:measured_TP=-12.80:measured_LRA=0.90:measured_thresh=-37.38:offset=-0.12:linear=true',
   'aresample=48000'
 ) -join ','
 

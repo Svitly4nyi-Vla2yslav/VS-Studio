@@ -7,7 +7,9 @@
     "studio": "remotion studio src/index.ts",
     "typecheck": "tsc --noEmit",
     "qa:page": "node scripts/qa-page.mjs",
-    "render": "remotion render src/index.ts PlehnRecruiterVideo ../../public/videos/plehn-recruiter-demo.next.mp4 && node scripts/finalize-video.mjs",
+    "preflight": "node scripts/preflight.mjs",
+    "render": "npm run preflight && remotion render src/index.ts PlehnRecruiterVideo ../../public/videos/plehn-recruiter-demo.next.mp4 --codec=h264 --audio-codec=aac --crf=16 && node scripts/finalize-video.mjs",
+    "render:live-intro": "npm run preflight && remotion render src/index.ts PlehnRecruiterVideoWithLiveIntro ../../public/videos/plehn-recruiter-demo-live-intro.mp4 --codec=h264 --audio-codec=aac --crf=16",
     "poster": "remotion still src/index.ts PlehnRecruiterVideo ../../public/videos/plehn-recruiter-poster.png --frame=2280 --image-format=png && node scripts/convert-poster.mjs"
   },
   "dependencies": {

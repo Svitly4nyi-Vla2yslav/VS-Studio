@@ -1,5 +1,5 @@
 import {Composition} from 'remotion';
-import {PlehnRecruiterVideo} from './PlehnRecruiterVideo';
+import {PlehnRecruiterVideo, PlehnRecruiterVideoWithLiveIntro} from './PlehnRecruiterVideo';
 import {sceneFrames} from './data/content';
 
 export const VIDEO = {
@@ -10,12 +10,22 @@ export const VIDEO = {
 } as const;
 
 export const RemotionRoot: React.FC = () => (
-  <Composition
-    id="PlehnRecruiterVideo"
-    component={PlehnRecruiterVideo}
-    durationInFrames={VIDEO.durationInFrames}
-    fps={VIDEO.fps}
-    width={VIDEO.width}
-    height={VIDEO.height}
-  />
+  <>
+    <Composition
+      id="PlehnRecruiterVideo"
+      component={PlehnRecruiterVideo}
+      durationInFrames={VIDEO.durationInFrames}
+      fps={VIDEO.fps}
+      width={VIDEO.width}
+      height={VIDEO.height}
+    />
+    <Composition
+      id="PlehnRecruiterVideoWithLiveIntro"
+      component={PlehnRecruiterVideoWithLiveIntro}
+      durationInFrames={VIDEO.durationInFrames}
+      fps={VIDEO.fps}
+      width={VIDEO.width}
+      height={VIDEO.height}
+    />
+  </>
 );

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE">
+  <voice name="de-DE-SeraphinaMultilingualNeural">
+    <prosody rate="-3%">
+      Diese Bewerbung ist selbst ein kleines Projekt.
+      <break time="350ms"/>
+      Ich wollte nicht einfach nur aufzählen, mit welchen Technologien ich arbeite.
+      <break time="220ms"/>
+      Deshalb habe ich Design, Entwicklung und KI direkt miteinander verbunden.
+    </prosody>
+    <break time="600ms"/>
+    <prosody rate="-1%">
+      Der Bewerbungsassistent zeigt, wie ich KI ganz konkret einsetze.
+      <break time="280ms"/>
+      Er beantwortet Fragen zu meinen Projekten, zu meiner Arbeitsweise – und auch zu den Bereichen, in denen ich mich noch weiterentwickle.
+    </prosody>
+    <break time="600ms"/>
+    <prosody rate="0%">
+      Bei meinen Projekten wollte ich nicht nur erzählen, was ich gemacht habe.
+      <break time="260ms"/>
+      Deshalb sehen Sie hier echte Arbeiten: VS Web Studio, AirTexno und SABSUS.
+    </prosody>
+    <break time="600ms"/>
+    <prosody rate="-4%">
+      Mein Workflow beginnt nicht direkt beim Code.
+      <break time="300ms"/>
+      Zuerst kommt das Ziel. <break time="220ms"/> Dann die Recherche.
+      <break time="220ms"/> Danach der visuelle Entwurf.
+      <break time="300ms"/> Und erst dann die technische Umsetzung.
+    </prosody>
+    <break time="650ms"/>
+    <prosody rate="-1%">
+      Auch dieses Video gehört zu diesem Workflow.
+      <break time="280ms"/>
+      Die Szenen wurden nicht mit einem klassischen KI-Videogenerator erzeugt.
+      <break time="240ms"/>
+      Sie sind mit React, TypeScript und Remotion aufgebaut.
+    </prosody>
+    <break time="600ms"/>
+    <prosody rate="0%">
+      Codex und KI helfen mir, Ideen schneller zu testen und verschiedene Lösungen auszuprobieren.
+      <break time="320ms"/>
+      Die Entscheidung über das Ergebnis bleibt trotzdem bei mir.
+    </prosody>
+    <break time="650ms"/>
+    <prosody rate="-3%">
+      Wenn dieser Ansatz zu plehn media passt, freue ich mich auf ein persönliches Gespräch.
+    </prosody>
+  </voice>
+</speak>

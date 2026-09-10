@@ -14,33 +14,18 @@ export const palette = {
 
 export const sceneFrames = {
   intro: 364,
-  application: 306,
-  assistant: 270,
-  projects: 360,
-  workflow: 330,
-  code: 450,
-  final: 450,
+  application: 432,
+  assistant: 422,
+  projects: 343,
+  workflow: 405,
+  code: 735,
+  final: 222,
 } as const;
 
-export const voiceovers = {
-  application: 'audio/02-application.wav',
-  assistant: 'audio/03-assistant.wav',
-  projects: 'audio/04-projects.wav',
-  workflow: 'audio/05-workflow.wav',
-  code: 'audio/06-code.wav',
-  final: 'audio/07-final.wav',
-} as const;
-
-// No acceptable neural or professional TTS is available in this environment.
-// We intentionally do not generate or keep a legacy desktop TTS narration here.
-// Vlad can supply a real final voice file manually at public/audio/plehn-voiceover-final.wav
-// and then set this to 'audio/plehn-voiceover-final.wav'.
-export const finalNarration: string | null = null;
-
-// No verified licensed music asset was available in the repo or downloaded from a safe source.
-// The project intentionally renders without music until Vlad provides a safe track.
-// Expected path: public/audio/plehn-background-music.mp3
-export const backgroundMusic: string | null = null;
+// Both assets are required. scripts/preflight.mjs deliberately blocks rendering if either
+// file is missing or if the narration is not a 48 kHz WAV. Never substitute Desktop SAPI.
+export const finalNarration = 'audio/plehn-voiceover-neural.wav';
+export const backgroundMusic = 'audio/plehn-background-music.mp3';
 
 export const projectAssets = [
   {name: 'VS Web Studio', tag: 'Web · SEO · Leads · KI', color: palette.gold, image: plehnProjectAssets.vsWebStudio.path.slice(1)},
