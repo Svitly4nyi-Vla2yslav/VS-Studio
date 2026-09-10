@@ -916,6 +916,46 @@ export const BrowserBar = styled.div`
   }
 `;
 
+export const ProjectImageCanvas = styled.div`
+  position: relative;
+  height: 330px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-top: 0;
+  border-radius: 0 0 14px 14px;
+  background: #090c11;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.18);
+  }
+
+  @media (max-width: 480px) {
+    height: 270px;
+  }
+`;
+
+export const ProjectScreenshot = styled.img`
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.005);
+  transition: transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+
+  ${CaseVisual}:hover & {
+    transform: scale(1.035);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+`;
+
 export const VisualCanvas = styled.div`
   position: relative;
   height: 330px;
@@ -1223,6 +1263,92 @@ export const DesignCanvas = styled.div`
   }
 `;
 
+export const WorkflowProof = styled.div`
+  margin-top: 34px;
+`;
+
+export const WorkflowImageLink = styled.a`
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgba(51, 224, 209, 0.28);
+  border-radius: 26px;
+  background: var(--plehn-surface);
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 260ms ease,
+    border-color 260ms ease,
+    box-shadow 260ms ease;
+
+  &::after {
+    content: 'Live in Figma öffnen ↗';
+    position: absolute;
+    right: 22px;
+    bottom: 22px;
+    padding: 11px 15px;
+    border: 1px solid rgba(51, 224, 209, 0.5);
+    border-radius: 999px;
+    background: rgba(7, 9, 13, 0.86);
+    color: var(--plehn-cyan);
+    font-size: 12px;
+    font-weight: 780;
+    letter-spacing: 0.04em;
+    backdrop-filter: blur(12px);
+  }
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-4px);
+    border-color: rgba(51, 224, 209, 0.62);
+    box-shadow: 0 34px 100px rgba(0, 0, 0, 0.4);
+  }
+
+  @media (max-width: 520px) {
+    border-radius: 18px;
+    &::after {
+      right: 12px;
+      bottom: 12px;
+      padding: 8px 11px;
+      font-size: 10px;
+    }
+  }
+`;
+
+export const WorkflowImage = styled.img`
+  display: block;
+  width: 100%;
+  aspect-ratio: 6 / 5;
+  object-fit: cover;
+`;
+
+export const WorkflowActions = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+`;
+
+export const WorkflowProofLink = styled.a`
+  ${buttonStyles}
+  min-height: 48px;
+  border-color: rgba(51, 224, 209, 0.44);
+  background: rgba(51, 224, 209, 0.08);
+  color: var(--plehn-cyan);
+`;
+
+export const WorkflowPending = styled.span`
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 18px;
+  border: 1px solid var(--plehn-line);
+  border-radius: 13px;
+  color: var(--plehn-muted);
+  font-size: 13px;
+  font-weight: 680;
+`;
+
 export const CaseCopy = styled.div`
   min-width: 0;
 `;
@@ -1488,12 +1614,9 @@ export const WorkbenchWrap = styled.div<{ $open: boolean }>`
 
 export const VideoGrid = styled.div`
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.75fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 24px;
   margin-top: 42px;
-  @media (max-width: 820px) {
-    grid-template-columns: 1fr;
-  }
 `;
 
 export const VideoFrame = styled.div`
@@ -1545,28 +1668,25 @@ export const VideoPoster = styled.div`
   }
 `;
 
-export const Transcript = styled.aside`
-  max-height: 480px;
-  overflow: auto;
-  padding: 26px;
+export const VideoSummary = styled.details`
+  max-width: 760px;
+  padding: 18px 20px;
   border: 1px solid var(--plehn-line);
-  border-radius: 24px;
+  border-radius: 16px;
   background: var(--plehn-surface);
-  h3 {
-    margin: 0 0 22px;
+
+  summary {
     color: var(--plehn-cyan);
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 750;
   }
+
   p {
-    margin: 0 0 16px;
-    color: #d4d8de;
+    margin: 14px 0 0;
+    color: var(--plehn-muted);
     font-size: 14px;
-    line-height: 1.5;
-    &:last-child {
-      margin-bottom: 0;
-    }
+    line-height: 1.55;
   }
 `;
 

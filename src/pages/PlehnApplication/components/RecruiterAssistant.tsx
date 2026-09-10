@@ -69,7 +69,7 @@ export const RecruiterAssistant: React.FC = () => {
                   typeSpeedMs={28}
                   minIntervalMs={14}
                   persistInSession={false}
-                  respectReducedMotion={false}
+                  respectReducedMotion
                 />
                 <SourceRow aria-label='Quellen'>
                   {sources.map(source => <span key={source}>{source}</span>)}

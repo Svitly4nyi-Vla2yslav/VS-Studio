@@ -18,7 +18,7 @@ import {
   growingSkills,
   plehnApplication,
   stack,
-  videoTranscript,
+  workflowImage,
   workflowSteps,
   type PlehnCaseStudy,
 } from './applicationData';
@@ -39,8 +39,6 @@ import {
   CaseTitle,
   CaseVisual,
   Container,
-  DashboardCanvas,
-  DesignCanvas,
   DetailList,
   EvasiveLink,
   EvasiveNote,
@@ -48,7 +46,6 @@ import {
   FinalActions,
   FinalBlob,
   FinalSection,
-  FlowCanvas,
   Header,
   HeaderActions,
   HeaderBrandLockup,
@@ -67,6 +64,8 @@ import {
   OutputField,
   Page,
   PrimaryLink,
+  ProjectImageCanvas,
+  ProjectScreenshot,
   RolePill,
   SecondaryLink,
   Section,
@@ -79,11 +78,10 @@ import {
   SkillsGrid,
   StackList,
   TechRow,
-  Transcript,
   VideoFrame,
   VideoGrid,
   VideoPoster,
-  VisualCanvas,
+  VideoSummary,
   VSBrandImage,
   VSBrandMark,
   Workbench,
@@ -91,6 +89,12 @@ import {
   WorkbenchWrap,
   WorkField,
   WorkflowGrid,
+  WorkflowActions,
+  WorkflowImage,
+  WorkflowImageLink,
+  WorkflowPending,
+  WorkflowProof,
+  WorkflowProofLink,
   WorkflowShell,
   WorkflowStep,
 } from './PlehnApplication.styled';
@@ -118,49 +122,19 @@ const ViewportType: React.FC<{ text: string; durationMs?: number; typeSpeedMs?: 
         typeSpeedMs={typeSpeedMs}
         start={visible}
         persistInSession={false}
-        respectReducedMotion={false}
+        respectReducedMotion
       />
     </span>
   );
 };
 
 const ProjectVisual: React.FC<{ project: PlehnCaseStudy }> = ({ project }) => {
-  if (project.id === 'airtexno') {
-    return (
-      <FlowCanvas aria-label='Visualisierung eines Service-Request-Datenflusses'>
-        <span className='node n1'>Anfrage</span><span className='node n2'>Kampagne</span>
-        <span className='hub'>Service Flow</span>
-        <span className='node n3'>E-Mail</span><span className='node n4'>Datenbank</span>
-        <i className='line l1' /><i className='line l2' /><i className='line l3' /><i className='line l4' />
-      </FlowCanvas>
-    );
-  }
-
-  if (project.id === 'sabsus') {
-    return (
-      <DashboardCanvas aria-label='Abstrakte Vorschau einer SABSUS Produktoberfläche'>
-        <div className='side'><div className='logo' /><div className='navline' /><div className='navline' /><div className='navline' /></div>
-        <div className='stats'><div className='stat' /><div className='stat' /></div>
-        <div className='chart' />
-      </DashboardCanvas>
-    );
-  }
-
-  if (project.id === 'design-workflow') {
-    return (
-      <DesignCanvas aria-label='Figma- und Canva-Workflow als gestapelte Designframes'>
-        <div className='frame f1' /><div className='frame f2' /><div className='frame f3' />
-        <span className='tag t1'>FIGMA</span><span className='tag t2'>CANVA MOTION</span>
-      </DesignCanvas>
-    );
-  }
-
   return (
     <>
       <BrowserBar><span /><span /><span /><i /></BrowserBar>
-      <VisualCanvas aria-label='Abstrakte Vorschau der VS Web Studio Website'>
-        <div className='visual-title' /><div className='visual-copy' /><div className='visual-cta' /><div className='visual-panel' />
-      </VisualCanvas>
+      <ProjectImageCanvas>
+        <ProjectScreenshot src={project.imagePath} alt={project.imageAlt} loading='lazy' decoding='async' />
+      </ProjectImageCanvas>
     </>
   );
 };
@@ -313,7 +287,6 @@ const EvasiveBookingButton: React.FC = () => {
 const PlehnApplication: React.FC = () => {
   const heroRef = useRef<HTMLDivElement | null>(null);
   const employmentRef = useRef<HTMLDivElement | null>(null);
-  const transcriptRef = useRef<HTMLElement | null>(null);
   const heroVisible = useInView(heroRef, { once: true, amount: 0.25 });
   const employmentVisible = useInView(employmentRef, { once: true, amount: 0.35 });
   const reduceMotion = useReducedMotion();
@@ -413,13 +386,13 @@ const PlehnApplication: React.FC = () => {
                 storageKey='plehn_hero_once'
                 start={heroVisible}
                 persistInSession={false}
-                respectReducedMotion={false}
+                respectReducedMotion
               />
             </HeroTitle>
             <HeroLead>Eine Bewerbung als kleines Produkt: echte Projekte, echte Grenzen, echte KI-Workflows. Nicht nur erzählen, sondern zeigen.</HeroLead>
             <ButtonRow>
               <PrimaryLink href='#assistent'>KI-Assistent testen <FaArrowRight /></PrimaryLink>
-              <SecondaryLink href='#video'>80-Sekunden-Demo ansehen <FaPlay /></SecondaryLink>
+              <SecondaryLink href='#video'>Video ansehen <FaPlay /></SecondaryLink>
             </ButtonRow>
             <StackList aria-label='Verwendete Werkzeuge'>{stack.map(item => <li key={item}>{item}</li>)}</StackList>
           </HeroContent>
@@ -446,9 +419,18 @@ const PlehnApplication: React.FC = () => {
 
       <Section id='workflow' {...revealProps}>
         <Container>
-          <SectionKicker>03 · Figma / Canva Workflow</SectionKicker>
+          <SectionKicker>03 · Design · Motion · Conversion</SectionKicker>
           <SectionTitle><ViewportType text='Wie ich mit KI arbeite' /></SectionTitle>
-          <SectionLead>Keine statische Behauptung, sondern eine ruhige, loopbare Prozess-Sequenz: vom Problem bis zur Conversion-Entscheidung.</SectionLead>
+          <SectionLead>Nicht nur Prompt rein, Ergebnis raus. Mein Workflow verbindet Recherche, Gestaltung, Entwicklung, Test und Conversion.</SectionLead>
+          <WorkflowProof>
+            <WorkflowImageLink href={plehnApplication.figmaUrl} target='_blank' rel='noopener noreferrer' aria-label='Workflow-Design in Figma in einem neuen Tab öffnen'>
+              <WorkflowImage src={workflowImage.path} alt={workflowImage.alt} loading='lazy' decoding='async' />
+            </WorkflowImageLink>
+            <WorkflowActions>
+              <WorkflowProofLink href={plehnApplication.figmaUrl} target='_blank' rel='noopener noreferrer'>Figma-Datei öffnen <FaArrowUpRightFromSquare /></WorkflowProofLink>
+              {plehnApplication.canvaUrl ? <WorkflowProofLink href={plehnApplication.canvaUrl} target='_blank' rel='noopener noreferrer'>Canva Motion öffnen <FaArrowUpRightFromSquare /></WorkflowProofLink> : <WorkflowPending>Canva Motion · Link folgt</WorkflowPending>}
+            </WorkflowActions>
+          </WorkflowProof>
           <WorkflowShell>
             <WorkflowGrid>{workflowSteps.map((step, index) => <WorkflowStep key={step.number} $index={index}><span>{step.number}</span><strong>{step.title}</strong><p>{step.note}</p></WorkflowStep>)}</WorkflowGrid>
           </WorkflowShell>
@@ -466,28 +448,32 @@ const PlehnApplication: React.FC = () => {
 
       <Section id='video' {...revealProps}>
         <Container>
-          <SectionKicker>05 · 80 Sekunden</SectionKicker>
+          <SectionKicker>05 · ca. 84 Sekunden</SectionKicker>
           <SectionTitle><ViewportType text='Kurzes Video. Kein Autoplay. Kein Hindernis.' /></SectionTitle>
-          <SectionLead>Play auf Wunsch, Untertitel und vollständiges Transkript. Sie können schauen, lesen oder einfach weiterscrollen.</SectionLead>
+          <SectionLead>Play auf Wunsch, mit Vlads echter Einleitung und deutscher Sprecherstimme. Kein Autoplay.</SectionLead>
           <VideoGrid>
             <VideoFrame>
               {plehnApplication.videoUrl ? (
-                <video controls preload='metadata' playsInline>
-                  <source src={plehnApplication.videoUrl} />
-                  {plehnApplication.captionsUrl ? <track kind='captions' src={plehnApplication.captionsUrl} srcLang='de' label='Deutsch' default /> : null}
-                  Ihr Browser kann dieses Video nicht wiedergeben. Das Transkript steht direkt daneben.
+                <video
+                  controls
+                  preload='metadata'
+                  playsInline
+                  poster={plehnApplication.videoPosterUrl}
+                  aria-label='Recruiter-Präsentationsvideo von Vladyslav Svitlychnyi für plehn media'
+                >
+                  <source src={plehnApplication.videoUrl} type='video/mp4' />
+                  Ihr Browser kann dieses Video nicht wiedergeben.
                 </video>
               ) : (
                 <VideoPoster>
-                  <button type='button' onClick={() => transcriptRef.current?.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' })} aria-label='Zum Transkript springen'><FaPlay /></button>
-                  <div><strong>80-Sekunden-Demo auf Deutsch</strong><span>Videoquelle konfigurierbar · Transkript verfügbar</span></div>
+                  <div><strong>Kurze Demo auf Deutsch</strong><span>Videoquelle ist derzeit nicht verfügbar.</span></div>
                 </VideoPoster>
               )}
             </VideoFrame>
-            <Transcript ref={transcriptRef} tabIndex={-1}>
-              <h3>Transkript</h3>
-              {videoTranscript.map((paragraph, index) => <p key={paragraph}><strong>{index === 0 ? '0–8s' : index === 1 ? '8–20s' : index === 2 ? '20–38s' : index === 3 ? '38–50s' : index === 4 ? '50–65s' : '65–78s'} · </strong>{paragraph}</p>)}
-            </Transcript>
+            <VideoSummary>
+              <summary>Inhalt des Videos</summary>
+              <p>Eine kurze Vorstellung, die Bewerbung als React-Projekt, der KI-Assistent, drei reale Projekte, der Figma-/Motion-Workflow und der Weg vom Code bis zur finalen Seite.</p>
+            </VideoSummary>
           </VideoGrid>
         </Container>
       </Section>
@@ -504,7 +490,7 @@ const PlehnApplication: React.FC = () => {
               storageKey='plehn_employment_once'
               start={employmentVisible}
               persistInSession={false}
-              respectReducedMotion={false}
+              respectReducedMotion
             />
           </AnswerPanel>
         </Container>

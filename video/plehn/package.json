@@ -1,0 +1,27 @@
+{
+  "name": "plehn-recruiter-video",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "qa:page": "node scripts/qa-page.mjs",
+    "render": "remotion render src/index.ts PlehnRecruiterVideo ../../public/videos/plehn-recruiter-demo.next.mp4 && node scripts/finalize-video.mjs",
+    "poster": "remotion still src/index.ts PlehnRecruiterVideo ../../public/videos/plehn-recruiter-poster.png --frame=2280 --image-format=png && node scripts/convert-poster.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.523",
+    "@remotion/renderer": "4.0.523",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "remotion": "4.0.523"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.23",
+    "@types/react-dom": "18.3.7",
+    "sharp": "^0.35.4",
+    "playwright-core": "1.55.0",
+    "typescript": "5.4.3"
+  }
+}

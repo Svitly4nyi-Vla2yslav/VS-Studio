@@ -1,3 +1,5 @@
+import { plehnFigmaUrl, plehnProjectAssets } from '../../data/plehnProjectAssets';
+
 export type PlehnCaseStudy = {
   id: string;
   number: string;
@@ -12,12 +14,14 @@ export type PlehnCaseStudy = {
   liveUrl?: string;
   repoUrl?: string;
   accent: 'gold' | 'cyan' | 'blue';
+  imagePath: string;
+  imageAlt: string;
 };
 
 const configuredBookingUrl = import.meta.env.VITE_PLEHN_BOOKING_URL?.trim() || 'https://calendar.app.google/PhHiySoC7cJsVot28';
 const configuredCvUrl = import.meta.env.VITE_PLEHN_CV_URL?.trim();
 const configuredVideoUrl = import.meta.env.VITE_PLEHN_VIDEO_URL?.trim();
-const configuredCaptionsUrl = import.meta.env.VITE_PLEHN_VIDEO_CAPTIONS_URL?.trim();
+const configuredVideoPosterUrl = import.meta.env.VITE_PLEHN_VIDEO_POSTER_URL?.trim();
 
 export const plehnApplication = {
   recruiter: 'Herr Plehn',
@@ -28,9 +32,9 @@ export const plehnApplication = {
   emailUrl: 'mailto:svetli4nuyvla2islav@gmail.com?subject=Gespr%C3%A4ch%20zur%20Bewerbung%20bei%20plehn%20media',
   bookingUrl: configuredBookingUrl || '',
   cvUrl: configuredCvUrl || '/documents/Vladyslav-Svitlychnyi-Lebenslauf.pdf',
-  videoUrl: configuredVideoUrl || '',
-  captionsUrl: configuredCaptionsUrl || '',
-  figmaUrl: 'https://www.figma.com/design/xRlWD90Xg0913bseOpMcFx',
+  videoUrl: configuredVideoUrl || '/videos/plehn-recruiter-demo.mp4',
+  videoPosterUrl: configuredVideoPosterUrl || '/videos/plehn-recruiter-poster.webp',
+  figmaUrl: plehnFigmaUrl,
   canvaUrl: '',
 } as const;
 
@@ -51,6 +55,8 @@ export const caseStudies: readonly PlehnCaseStudy[] = [
     liveUrl: 'https://vs-web-studio.de/',
     repoUrl: 'https://github.com/Svitly4nyi-Vla2yslav/VS-Studio',
     accent: 'gold',
+    imagePath: plehnProjectAssets.vsWebStudio.path,
+    imageAlt: plehnProjectAssets.vsWebStudio.alt,
   },
   {
     id: 'airtexno',
@@ -66,6 +72,8 @@ export const caseStudies: readonly PlehnCaseStudy[] = [
     liveUrl: 'https://airtexno.com/',
     repoUrl: 'https://github.com/Svitly4nyi-Vla2yslav/AirTexno',
     accent: 'cyan',
+    imagePath: plehnProjectAssets.airtexno.path,
+    imageAlt: plehnProjectAssets.airtexno.alt,
   },
   {
     id: 'sabsus',
@@ -81,20 +89,8 @@ export const caseStudies: readonly PlehnCaseStudy[] = [
     liveUrl: 'https://srm-sabsus.netlify.app/',
     repoUrl: 'https://github.com/Svitly4nyi-Vla2yslav/srm-sabsus',
     accent: 'blue',
-  },
-  {
-    id: 'design-workflow',
-    number: '04',
-    label: 'Design- & KI-Workflow',
-    title: 'Von der Idee zur Conversion',
-    purpose: 'Nicht nur behaupten, dass KI und Design zum Prozess gehören, sondern den Weg an dieser Bewerbung sichtbar machen.',
-    role: 'Briefing zerlegen, Varianten recherchieren, Figma-Struktur entwickeln, Motion-Sequenz konzipieren, implementieren und testen.',
-    implementation: 'Ein zusammenhängender Ablauf aus Briefing, KI-Recherche, Figma, Canva Motion, Code, responsivem QA und Conversion-Entscheidungen.',
-    result: 'Diese Seite selbst: ein recruiter-facing Produkt statt einer austauschbaren Portfolio-Broschüre.',
-    learning: 'Werkzeuge sind nur dann wertvoll, wenn ihre Ergebnisse geprüft, verbunden und auf ein klares Ziel ausgerichtet werden.',
-    tech: ['Figma', 'Canva', 'KI-Recherche', 'React', 'Accessibility', 'Conversion'],
-    liveUrl: 'https://www.figma.com/design/xRlWD90Xg0913bseOpMcFx',
-    accent: 'gold',
+    imagePath: plehnProjectAssets.sabsus.path,
+    imageAlt: plehnProjectAssets.sabsus.alt,
   },
 ] as const;
 
@@ -102,9 +98,10 @@ export const workflowSteps = [
   { number: '01', title: 'Briefing', note: 'Ziel und Grenzen klären' },
   { number: '02', title: 'KI-Recherche', note: 'Varianten vergleichen' },
   { number: '03', title: 'Figma', note: 'Hierarchie prototypen' },
-  { number: '04', title: 'Code', note: 'React + TypeScript' },
-  { number: '05', title: 'Test', note: 'A11y, Viewports, Build' },
-  { number: '06', title: 'Conversion', note: 'Verstehen und verbessern' },
+  { number: '04', title: 'Motion', note: 'Ablauf und Fokus planen' },
+  { number: '05', title: 'Code', note: 'React + TypeScript' },
+  { number: '06', title: 'Test', note: 'A11y, Viewports, Build' },
+  { number: '07', title: 'Conversion', note: 'Verstehen und verbessern' },
 ] as const;
 
 export const currentSkills = [
@@ -119,11 +116,4 @@ export const currentSkills = [
 
 export const growingSkills = ['Astro', 'TYPO3', 'Shopware', 'Python für Automationen', 'GEO / agent-ready web'] as const;
 
-export const videoTranscript = [
-  'Hallo Herr Plehn. Ich könnte Ihnen einfach erzählen, dass ich gerne mit KI arbeite. Für diese Stelle fand ich es sinnvoller, es direkt zu zeigen.',
-  'Deshalb habe ich für meine Bewerbung diese kleine Seite gebaut. Hier kann mein Bewerbungsassistent Fragen zu meinem Lebenslauf, meinen Projekten, meinen Stärken, aber auch zu meinen Schwächen beantworten.',
-  'Mein Schwerpunkt liegt heute auf React und TypeScript. VS Web Studio zeigt meine aktuelle Arbeit mit Webentwicklung, SEO, Leads und KI. AirTexno zeigt stärker Geschäftsprozesse und Automatisierung. Und bei SABSUS habe ich intensiv mit visuellen Oberflächen gearbeitet.',
-  'Ich nutze KI aber nicht nur beim Programmieren. Für Konzepte und Kommunikation arbeite ich auch mit Figma und Canva. Von der Idee über den Prototyp bis zur Umsetzung versuche ich, den gesamten Prozess zu verstehen.',
-  'Vielleicht fragen Sie sich, warum ich eine Stelle suche, obwohl ich VS Web Studio aufbaue. Die Antwort ist ziemlich einfach: Ich würde langfristig lieber in einem guten Team Verantwortung übernehmen, als allein gleichzeitig Entwickler, Verkäufer und Bürokratie-Abteilung zu sein.',
-  'Wenn Sie neugierig geworden sind, sehen Sie sich gerne meinen GitHub an oder vereinbaren Sie direkt einen kurzen Termin mit mir. Dann zeige ich Ihnen lieber echten Code als noch eine weitere Bewerbungsfloskel. Vielen Dank für Ihre Zeit.',
-] as const;
+export const workflowImage = plehnProjectAssets.workflow;
