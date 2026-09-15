@@ -35,7 +35,7 @@ export const plehnApplication = {
   videoUrl: configuredVideoUrl || '/videos/plehn-recruiter-demo.mp4',
   videoPosterUrl: configuredVideoPosterUrl || '/videos/plehn-recruiter-poster.webp',
   figmaUrl: plehnFigmaUrl,
-  canvaUrl: '',
+  canvaUrl: 'https://canva.link/wnpkfizyifr3r4g',
 } as const;
 
 export const stack = ['React 19', 'TypeScript', 'Node.js', 'OpenAI API', 'GitHub', 'Figma', 'Canva'] as const;
