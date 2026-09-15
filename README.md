@@ -53,23 +53,23 @@ npm run preview
 Useful project scripts:
 
 ```bash
+npm run check
 npm run lint
 npm run seo:generate
 npm run favicon
 ```
 
-`npm run build` runs the TypeScript/Vite application build first and then regenerates the SEO assets. This keeps production output and generated SEO files in sync.
+`npm run check` runs the lint and production-build verification in sequence. `npm run build` runs the TypeScript/Vite application build first and then regenerates the SEO assets. This keeps production output and generated SEO files in sync.
 
 ## Verification baseline
 
 The repository does not currently define an automated test script. The minimum pre-push verification is therefore:
 
 ```bash
-npm run lint
-npm run build
+npm run check
 ```
 
-This covers linting, TypeScript compilation, the production Vite bundle and SEO asset generation, but it should not be treated as a substitute for automated unit, integration or end-to-end tests.
+This runs linting, TypeScript compilation, the production Vite bundle and SEO asset generation, but it should not be treated as a substitute for automated unit, integration or end-to-end tests.
 
 ## Deployment flow
 
@@ -85,7 +85,7 @@ Netlify proxies `/api/contact` to the serverless contact function and rewrites a
 
 Production and deploy-preview contexts both run the same production build. Branch deploys are intentionally skipped, and documentation-only changes under Markdown files, `docs/` or `.github/` do not trigger a Netlify rebuild. This reduces unnecessary deploy queue activity while keeping production code changes covered by the normal build pipeline.
 
-Before a production release, run `npm run lint` and `npm run build`, then verify the contact flow in the Netlify environment because function behavior depends on deployment-side configuration.
+Before a production release, run `npm run check`, then verify the contact flow in the Netlify environment because function behavior depends on deployment-side configuration.
 
 ## Project focus
 
