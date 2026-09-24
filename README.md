@@ -39,6 +39,8 @@ Modern websites and web applications for small and medium-sized businesses, with
 Prerequisites: **Node.js 20+** and npm.
 
 ```bash
+git clone https://github.com/Svitly4nyi-Vla2yslav/VS-Studio.git
+cd VS-Studio
 npm install
 npm run dev
 ```
