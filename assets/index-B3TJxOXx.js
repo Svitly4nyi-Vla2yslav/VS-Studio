@@ -1,6 +1,6 @@
-import{u as s,j as e,P as a,A as d,a as o,g as r,m as l}from"./index-sai2Mp7r.js";const c=r.div`
+import{u as a,j as e,P as s,A as d,a as o,g as r,m as l}from"./index-DdkLRC3F.js";const g=r.div`
   padding: 24px 0 96px;
-`,g=r.section`
+`,c=r.section`
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
   gap: 28px;
@@ -26,22 +26,22 @@ import{u as s,j as e,P as a,A as d,a as o,g as r,m as l}from"./index-sai2Mp7r.js
   display: inline-flex;
   margin-bottom: 18px;
   color: rgba(255, 214, 156, 0.86);
-  font-size: 12px;
+  font-size: var(--type-meta);
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
 `,x=r.h1`
   margin: 0 0 16px;
   max-width: 12ch;
-  font-size: clamp(40px, 7vw, 82px);
-  line-height: 0.96;
+  font-size: var(--type-display-xl);
+  line-height: var(--leading-display);
   letter-spacing: -0.04em;
 `,m=r.p`
   max-width: 56ch;
   margin: 0 0 28px;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 17px;
-  line-height: 1.6;
+  color: var(--champagne-text);
+  font-size: var(--type-body-lg);
+  line-height: var(--leading-body);
 `,b=r.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -92,7 +92,7 @@ import{u as s,j as e,P as a,A as d,a as o,g as r,m as l}from"./index-sai2Mp7r.js
   @media (max-width: 991px) {
     grid-template-columns: 1fr;
   }
-`,n=r.div`
+`,t=r.div`
   padding: 24px;
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -128,11 +128,11 @@ import{u as s,j as e,P as a,A as d,a as o,g as r,m as l}from"./index-sai2Mp7r.js
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.6;
   }
-`,k=r.div`
+`,v=r.div`
   min-height: 0;
-`,w=r.div`
+`,k=r.div`
   height: 100%;
-`,v=r(l.div)`
+`,w=r(l.div)`
   width: 260px;
   height: 260px;
   display: grid;
@@ -142,4 +142,4 @@ import{u as s,j as e,P as a,A as d,a as o,g as r,m as l}from"./index-sai2Mp7r.js
     radial-gradient(circle, rgba(255, 177, 74, 0.18), transparent 70%),
     radial-gradient(circle at 70% 30%, rgba(84, 128, 255, 0.22), transparent 62%);
   filter: drop-shadow(0 24px 80px rgba(255, 177, 74, 0.2));
-`,z=()=>{const t=s();return e.jsx(c,{children:e.jsxs(a,{children:[e.jsxs(g,{children:[e.jsxs(p,{children:[e.jsx(h,{children:"AI Assistant Demo"}),e.jsx(x,{children:"24/7 Antworten, Leads und Terminwünsche in einem Flow."}),e.jsx(m,{children:"Dieses MVP zeigt, wie ein On-Site Assistant Service-Fragen beantwortet, den Nutzen eines AI-Assistenten erklärt, Leads sammelt, Booking Requests vorbereitet und bei Unsicherheit sauber an einen Menschen übergibt."}),e.jsxs(b,{children:[e.jsxs(i,{children:[e.jsx("strong",{children:"24/7"}),e.jsx("span",{children:"Sofortige Erstreaktion für Standardfragen, auch außerhalb klassischer Bürozeiten."})]}),e.jsxs(i,{children:[e.jsx("strong",{children:"DE / EN / UK"}),e.jsx("span",{children:"Mehrsprachiger Einstieg mit Erkennung der Gesprächssprache und ruhiger Tonalität."})]}),e.jsxs(i,{children:[e.jsx("strong",{children:"Lead Capture"}),e.jsx("span",{children:"Strukturierte Übergabe mit Name, Kontakt, Unternehmensart und konkretem Bedarf."})]}),e.jsxs(i,{children:[e.jsx("strong",{children:"Booking"}),e.jsx("span",{children:"Terminwünsche mit klaren Regeln für Verfügbarkeit, Slots und realistische Reaktionszeiten."})]})]}),e.jsx(u,{children:e.jsx(v,{animate:{y:[0,-10,0],scale:[1,1.04,1]},transition:{duration:7,repeat:1/0},children:e.jsx(d,{size:150})})})]}),e.jsx(k,{children:e.jsx(w,{children:e.jsx(o,{assistant:t,embedded:!0})})})]}),e.jsxs(f,{children:[e.jsxs(n,{children:[e.jsx("h3",{children:"Nischen-spezifische Antworten"}),e.jsx("p",{children:"Beispielhaft vorbereitet für Auto Werkstatt, SHK, Beauty und Praxis mit lokalem Wissenskontext."})]}),e.jsxs(n,{children:[e.jsx("h3",{children:"Ruhige Handoffs"}),e.jsx("p",{children:"Wenn die Sicherheit niedrig ist, sagt der Assistent das klar und bietet menschliche Rückmeldung an."})]}),e.jsxs(n,{children:[e.jsx("h3",{children:"Realistische Erstschätzung"}),e.jsx("p",{children:"Preise bleiben grob, bis genug Kontext für eine belastbare frühe Einordnung vorhanden ist."})]})]}),e.jsxs(j,{children:[e.jsx("strong",{children:"Trust-orientierter Einsatz statt Chat-Spielerei"}),e.jsx("p",{children:"Der Assistant ist als ruhiger Conversion-Layer gedacht: Fragen beantworten, Standardprozesse entlasten, qualifizierte Anfragen sichern und nur dann automatisieren, wenn die Antwort sauber und verantwortbar ist."})]})]})})};export{z as default};
+`,A=()=>{const n=a();return e.jsx(g,{children:e.jsxs(s,{children:[e.jsxs(c,{children:[e.jsxs(p,{children:[e.jsx(h,{children:"AI Assistant Demo"}),e.jsx(x,{children:"24/7 Antworten, Leads und Terminwünsche in einem Flow."}),e.jsx(m,{children:"Dieses MVP zeigt, wie ein On-Site Assistant Service-Fragen beantwortet, den Nutzen eines AI-Assistenten erklärt, Leads sammelt, Booking Requests vorbereitet und bei Unsicherheit sauber an einen Menschen übergibt."}),e.jsxs(b,{children:[e.jsxs(i,{children:[e.jsx("strong",{children:"24/7"}),e.jsx("span",{children:"Sofortige Erstreaktion für Standardfragen, auch außerhalb klassischer Bürozeiten."})]}),e.jsxs(i,{children:[e.jsx("strong",{children:"DE / EN / UK"}),e.jsx("span",{children:"Mehrsprachiger Einstieg mit Erkennung der Gesprächssprache und ruhiger Tonalität."})]}),e.jsxs(i,{children:[e.jsx("strong",{children:"Lead Capture"}),e.jsx("span",{children:"Strukturierte Übergabe mit Name, Kontakt, Unternehmensart und konkretem Bedarf."})]}),e.jsxs(i,{children:[e.jsx("strong",{children:"Booking"}),e.jsx("span",{children:"Terminwünsche mit klaren Regeln für Verfügbarkeit, Slots und realistische Reaktionszeiten."})]})]}),e.jsx(u,{children:e.jsx(w,{animate:{y:[0,-10,0],scale:[1,1.04,1]},transition:{duration:7,repeat:1/0},children:e.jsx(d,{state:n.isTyping?"thinking":"idle",size:150,decorative:!0})})})]}),e.jsx(v,{children:e.jsx(k,{children:e.jsx(o,{assistant:n,embedded:!0,visualState:n.isTyping?"thinking":"idle"})})})]}),e.jsxs(f,{children:[e.jsxs(t,{children:[e.jsx("h3",{children:"Nischen-spezifische Antworten"}),e.jsx("p",{children:"Beispielhaft vorbereitet für Auto Werkstatt, SHK, Beauty und Praxis mit lokalem Wissenskontext."})]}),e.jsxs(t,{children:[e.jsx("h3",{children:"Ruhige Handoffs"}),e.jsx("p",{children:"Wenn die Sicherheit niedrig ist, sagt der Assistent das klar und bietet menschliche Rückmeldung an."})]}),e.jsxs(t,{children:[e.jsx("h3",{children:"Realistische Erstschätzung"}),e.jsx("p",{children:"Preise bleiben grob, bis genug Kontext für eine belastbare frühe Einordnung vorhanden ist."})]})]}),e.jsxs(j,{children:[e.jsx("strong",{children:"Trust-orientierter Einsatz statt Chat-Spielerei"}),e.jsx("p",{children:"Der Assistant ist als ruhiger Conversion-Layer gedacht: Fragen beantworten, Standardprozesse entlasten, qualifizierte Anfragen sichern und nur dann automatisieren, wenn die Antwort sauber und verantwortbar ist."})]})]})})};export{A as default};
