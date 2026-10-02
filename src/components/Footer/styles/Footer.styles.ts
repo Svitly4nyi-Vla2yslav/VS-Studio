@@ -2,9 +2,11 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const FooterRoot = styled.footer`
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid var(--obsidian-border);
   padding: 30px 0 44px;
-  background: rgba(8, 10, 18, 0.9);
+  background:
+    radial-gradient(circle at 12% 100%, rgba(106, 60, 25, .1), transparent 34%),
+    linear-gradient(180deg, rgba(10, 9, 12, .9), var(--obsidian-950));
 `;
 
 export const FooterInner = styled.div`
@@ -43,14 +45,14 @@ export const FooterColumn = styled.div`
 
 export const FooterColumnTitle = styled.h2`
   margin: 0;
-  color: #ffd08a;
+  color: var(--gold-300);
   font-size: 14px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 `;
 
 export const FooterMuted = styled.p`
-  color: rgba(255, 255, 255, 0.72) !important;
+  color: var(--muted-gold-text) !important;
   margin-top: 4px !important;
 
   a {
@@ -61,7 +63,7 @@ export const FooterMuted = styled.p`
 
   a:hover,
   a:focus-visible {
-    color: #ffd08a;
+    color: var(--gold-300);
   }
 `;
 
@@ -78,13 +80,13 @@ export const FooterSocialLinks = styled.div`
 `;
 
 const interactiveLink = `
-  color: rgba(255, 255, 255, 0.84);
+  color: var(--champagne-text);
   text-decoration: none;
   transition: transform var(--dur-fast) var(--ease-smooth), color var(--dur-fast) var(--ease-smooth);
 
   &:hover,
   &:focus-visible {
-    color: #ffd08a;
+    color: var(--gold-300);
     transform: translateY(-1px);
   }
 `;
@@ -100,9 +102,9 @@ export const FooterSocialLink = styled.a`
   justify-content: center;
   width: 34px;
   height: 34px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid var(--obsidian-border);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--obsidian-surface);
 `;
 
 export const FooterCookieButton = styled.button`

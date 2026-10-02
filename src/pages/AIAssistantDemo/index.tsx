@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-import { AssistantOrb } from '../../features/ai-assistant/components/AssistantOrb';
+import { AssistantAvatar } from '../../features/ai-assistant/avatar/AssistantAvatar';
 import { AssistantPanel } from '../../features/ai-assistant/components/AssistantPanel';
 import { useAssistant } from '../../features/ai-assistant/hooks/useAssistant';
 import { PageContainer } from '../shared/styles/PagePrimitives.styles';
@@ -39,7 +39,7 @@ const Eyebrow = styled.span`
   display: inline-flex;
   margin-bottom: 18px;
   color: rgba(255, 214, 156, 0.86);
-  font-size: 12px;
+  font-size: var(--type-meta);
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -48,17 +48,17 @@ const Eyebrow = styled.span`
 const Title = styled.h1`
   margin: 0 0 16px;
   max-width: 12ch;
-  font-size: clamp(40px, 7vw, 82px);
-  line-height: 0.96;
+  font-size: var(--type-display-xl);
+  line-height: var(--leading-display);
   letter-spacing: -0.04em;
 `;
 
 const Lead = styled.p`
   max-width: 56ch;
   margin: 0 0 28px;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 17px;
-  line-height: 1.6;
+  color: var(--champagne-text);
+  font-size: var(--type-body-lg);
+  line-height: var(--leading-body);
 `;
 
 const Metrics = styled.div`
@@ -216,14 +216,14 @@ const AIAssistantDemo: React.FC = () => {
 
             <OrbStage>
               <LargeOrbWrap animate={{ y: [0, -10, 0], scale: [1, 1.04, 1] }} transition={{ duration: 7, repeat: Infinity }}>
-                <AssistantOrb size={150} />
+                <AssistantAvatar state={assistant.isTyping ? 'thinking' : 'idle'} size={150} decorative />
               </LargeOrbWrap>
             </OrbStage>
           </HeroCard>
 
           <PreviewColumn>
             <DemoAssistant>
-              <AssistantPanel assistant={assistant} embedded />
+              <AssistantPanel assistant={assistant} embedded visualState={assistant.isTyping ? 'thinking' : 'idle'} />
             </DemoAssistant>
           </PreviewColumn>
         </Hero>

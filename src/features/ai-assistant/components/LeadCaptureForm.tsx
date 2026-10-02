@@ -1,14 +1,15 @@
 import { useState } from 'react';
 import styled, { css } from 'styled-components';
+import { goldButtonMotion } from '../../../components/visual/goldButtonMotion';
 import type { AssistantLeadPayload, AssistantPanelCopy } from '../types';
 
 const inputSurface = css`
   min-height: 52px;
   padding: 0 16px;
   border-radius: 18px;
-  border: 1px solid rgba(128, 162, 214, 0.28);
-  background: rgba(255, 255, 255, 0.78);
-  color: #10203b;
+  border: 1px solid var(--obsidian-border);
+  background: rgba(3, 3, 4, .76);
+  color: var(--champagne-text);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.72),
     0 12px 30px rgba(129, 161, 211, 0.12);
@@ -19,16 +20,16 @@ const inputSurface = css`
     background 180ms ease;
 
   &::placeholder {
-    color: rgba(16, 32, 59, 0.42);
+    color: rgba(238, 226, 199, .44);
   }
 
   &:focus {
-    border-color: rgba(99, 145, 214, 0.54);
+    border-color: var(--obsidian-border-hot);
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.84),
       0 0 0 4px rgba(151, 196, 255, 0.18),
       0 16px 36px rgba(255, 204, 112, 0.18);
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(10, 9, 12, .94);
   }
 `;
 
@@ -38,9 +39,9 @@ const Form = styled.form`
   padding: 18px;
   border-radius: 28px;
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.46), rgba(247, 250, 255, 0.34)),
-    linear-gradient(125deg, rgba(255, 232, 188, 0.22), rgba(194, 226, 255, 0.18));
-  border: 1px solid rgba(255, 255, 255, 0.76);
+    radial-gradient(circle at 90% 0%, rgba(214, 165, 66, .08), transparent 34%),
+    linear-gradient(145deg, rgba(20, 18, 23, .94), rgba(5, 5, 6, .92));
+  border: 1px solid var(--obsidian-border);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.78),
     0 24px 50px rgba(44, 74, 128, 0.14);
@@ -53,7 +54,7 @@ const Field = styled.div`
 `;
 
 const Label = styled.label`
-  color: rgba(16, 32, 59, 0.76);
+  color: var(--gold-400);
   font-size: 12px;
   font-weight: 700;
   line-height: 1.3;
@@ -73,12 +74,14 @@ const Textarea = styled.textarea`
 `;
 
 const Submit = styled.button`
+  ${goldButtonMotion}
   min-height: 54px;
   padding: 0 18px;
   border-radius: 18px;
-  background:
-    linear-gradient(120deg, rgba(255, 255, 255, 0.98), rgba(255, 225, 165, 0.96) 42%, rgba(177, 215, 255, 0.96) 100%);
-  color: #10203b;
+  border: 1px solid rgba(255, 242, 189, .52);
+  background: var(--gold-metal);
+  background-size: 180% 100%;
+  color: #171108;
   font-weight: 800;
   letter-spacing: 0.01em;
   box-shadow:
@@ -94,17 +97,17 @@ const Submit = styled.button`
     transform: translateY(-1px);
     box-shadow:
       0 22px 36px rgba(255, 204, 112, 0.28),
-      0 0 0 4px rgba(169, 209, 255, 0.18);
-    filter: saturate(1.06);
+      var(--focus-ring);
+    filter: brightness(1.06);
   }
 `;
 
 const ErrorText = styled.p`
   padding: 12px 14px;
   border-radius: 16px;
-  background: rgba(255, 227, 198, 0.82);
-  border: 1px solid rgba(237, 164, 89, 0.26);
-  color: #8a3f10;
+  background: rgba(61, 27, 20, .78);
+  border: 1px solid rgba(209, 122, 95, .38);
+  color: #f0c2ad;
   font-size: 12px;
   line-height: 1.5;
 `;

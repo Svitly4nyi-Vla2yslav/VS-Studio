@@ -176,7 +176,7 @@ export const ResponseBadge = styled.div`
   background: rgba(255, 180, 80, 0.12);
   border: 1px solid rgba(255, 180, 80, 0.25);
   color: #ffd8ab;
-  font-size: 13px;
+  font-size: var(--type-small);
   font-weight: 600;
   line-height: 1.4;
 `;
@@ -186,19 +186,16 @@ export const HeroTitle = styled.h1`
   margin: 0;
   margin-inline: auto;
   margin-bottom: 16px;
-  font-size: clamp(34px, 4.15vw, 54px);
-  line-height: 0.96;
-  letter-spacing: -0.03em;
+  font-size: var(--type-display-l);
+  line-height: var(--leading-display);
+  letter-spacing: -0.04em;
   /* text-wrap: balance; */
 
   @media (max-width: 1279px) {
     width: min(100%, 15ch);
-    font-size: clamp(40px, 5.5vw, 42px);
   }
 
   @media (max-width: 767px) {
-    font-size: clamp(30px, 10vw, 44px);
-    line-height: 1.02;
     max-width: 12ch;
   }
 `;
@@ -207,13 +204,12 @@ export const HeroLead = styled.p`
   max-width: 620px;
   margin: 0;
   margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 17px;
-  line-height: 1.42;
+  color: var(--champagne-text);
+  font-size: var(--type-body-lg);
+  line-height: var(--leading-body);
 
   @media (max-width: 767px) {
-    font-size: 16px;
-    line-height: 1.45;
+    max-width: 52ch;
   }
 `;
 

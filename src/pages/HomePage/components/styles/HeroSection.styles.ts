@@ -42,23 +42,29 @@ export const HeroSectionScope = styled.div`
     font-size: clamp(34px, 8vw, 70px);
     line-height: 0.96;
     max-width: 15ch;
+    color: transparent;
+    background: var(--gold-metal);
+    background-size: 180% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    filter: drop-shadow(0 10px 32px rgba(214, 165, 66, .15));
   }
 
   .hero p {
     max-width: 62ch;
-    color: rgba(255, 255, 255, 0.82);
+    color: var(--champagne-text);
   }
 
   .hero-supporting {
     max-width: 58ch;
-    color: rgba(255, 255, 255, 0.74);
+    color: var(--muted-gold-text);
     font-size: clamp(15px, 1.6vw, 18px);
     line-height: 1.55;
   }
 
   .hero-trustline {
     max-width: 76ch;
-    color: rgba(255, 219, 166, 0.92);
+    color: var(--gold-300);
     font-size: 14px;
     line-height: 1.6;
   }
@@ -152,6 +158,10 @@ export const HeroSectionScope = styled.div`
       font-size: clamp(30px, 10vw, 44px);
       max-width: 12ch;
     }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero h1 { background-position: 50% 50%; }
   }
 
   @media (min-width: 768px) and (max-width: 1023px) {

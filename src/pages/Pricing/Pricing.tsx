@@ -25,9 +25,8 @@ const floatY = keyframes`
 `;
 
 const pulseGlow = keyframes`
-  0% { box-shadow: 0 0 0 rgba(73, 157, 255, 0); }
-  50% { box-shadow: 0 0 30px rgba(73, 157, 255, 0.28); }
-  100% { box-shadow: 0 0 0 rgba(73, 157, 255, 0); }
+  0%, 100% { box-shadow: 0 0 0 rgba(214, 165, 66, 0); }
+  50% { box-shadow: var(--gold-glow-md); }
 `;
 
 const PricingPageRoot = styled(PageRoot)`
@@ -45,9 +44,9 @@ const PricingSurface = styled.div`
     height: 420px;
     z-index: -2;
     background:
-      radial-gradient(circle at 22% 12%, rgba(31, 115, 255, 0.22), transparent 52%),
-      radial-gradient(circle at 78% 22%, rgba(255, 185, 91, 0.2), transparent 50%),
-      radial-gradient(circle at 50% 75%, rgba(10, 16, 34, 0.9), rgba(6, 10, 20, 1));
+      radial-gradient(circle at 22% 12%, rgba(77, 55, 92, .14), transparent 52%),
+      radial-gradient(circle at 78% 22%, rgba(214, 165, 66, .16), transparent 50%),
+      radial-gradient(circle at 50% 75%, var(--obsidian-800), var(--obsidian-950));
     filter: blur(2px);
   }
 
@@ -86,7 +85,7 @@ const Hero = styled.section`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid var(--obsidian-border);
 
   @media (max-width: 980px) {
     grid-template-columns: 1fr;
@@ -101,9 +100,9 @@ const Hero = styled.section`
 
 const HeroText = styled.div`
   h1 {
-    font-size: clamp(34px, 7vw, 72px);
-    line-height: 1.02;
-    letter-spacing: -0.02em;
+    font-size: var(--type-display-l);
+    line-height: var(--leading-display);
+    letter-spacing: -0.04em;
     margin: 0;
     text-wrap: balance;
   }
@@ -111,20 +110,23 @@ const HeroText = styled.div`
   p {
     margin: 18px 0 0;
     max-width: 52ch;
-    color: rgba(255, 255, 255, 0.78);
-    font-size: clamp(15px, 1.7vw, 18px);
+    color: var(--champagne-text);
+    font-size: var(--type-body-lg);
+    line-height: var(--leading-body);
   }
 
   @media (max-width: 767px) {
     h1 {
-      font-size: clamp(32px, 12vw, 52px);
-      line-height: 1.05;
+      max-width: 13ch;
     }
   }
 `;
 
 const HeroAccent = styled.span`
-  color: #ffd08a;
+  color: transparent;
+  background: var(--gold-metal);
+  background-clip: text;
+  -webkit-background-clip: text;
   text-shadow: 0 0 28px rgba(255, 193, 104, 0.34);
 `;
 
@@ -148,10 +150,10 @@ const HeroVisual = styled(motion.div)`
   position: relative;
   min-height: 340px;
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid var(--obsidian-border);
   background:
-    linear-gradient(165deg, rgba(16, 24, 44, 0.92), rgba(10, 16, 31, 0.82)),
-    radial-gradient(circle at 80% 18%, rgba(71, 154, 255, 0.22), transparent 44%);
+    radial-gradient(circle at 80% 18%, rgba(214, 165, 66, .12), transparent 44%),
+    linear-gradient(165deg, rgba(24, 21, 27, .95), rgba(5, 5, 6, .94));
   overflow: hidden;
   box-shadow: 0 24px 70px rgba(4, 7, 15, 0.62);
 
@@ -202,7 +204,7 @@ const BarWrap = styled.div`
 const Bar = styled(motion.div)`
   height: 100%;
   border-radius: 999px;
-  background: linear-gradient(90deg, #3f8cff, #76b8ff);
+  background: var(--gold-metal-soft);
 `;
 
 const FunnelLine = styled(motion.div)`
@@ -240,8 +242,8 @@ const FlowSection = styled(Section)`
 
 const FlowCard = styled.div`
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.86), rgba(10, 16, 30, 0.82));
+  border: 1px solid var(--obsidian-border);
+  background: linear-gradient(180deg, rgba(22, 20, 25, .94), rgba(5, 5, 6, .92));
   padding: 18px;
   box-shadow: 0 20px 54px rgba(5, 9, 18, 0.5);
 `;
@@ -300,7 +302,7 @@ const PricingGrid = styled.div`
 const SectionSubtitle = styled.p`
   max-width: 760px;
   margin: -4px 0 14px;
-  color: rgba(255, 255, 255, 0.68);
+  color: var(--muted-gold-text);
   font-size: clamp(14px, 1.6vw, 16px);
   line-height: 1.55;
 `;
@@ -312,8 +314,8 @@ const BillingToggle = styled.div`
   margin-bottom: 8px;
   padding: 6px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(11, 17, 32, 0.72);
+  border: 1px solid var(--obsidian-border);
+  background: rgba(7, 7, 9, .76);
 `;
 
 const BillingButton = styled.button<{ $active?: boolean }>`
@@ -321,9 +323,9 @@ const BillingButton = styled.button<{ $active?: boolean }>`
   min-height: 40px;
   padding: 0 16px;
   border-radius: 999px;
-  color: ${({ $active }) => ($active ? '#08101f' : 'rgba(255, 255, 255, 0.82)')};
+  color: ${({ $active }) => ($active ? '#171108' : 'var(--champagne-text)')};
   background: ${({ $active }) =>
-    $active ? 'linear-gradient(120deg, #ffd08a, #fff1cf)' : 'transparent'};
+    $active ? 'var(--gold-metal-soft)' : 'transparent'};
   box-shadow: ${({ $active }) => ($active ? '0 8px 20px rgba(255, 201, 125, 0.24)' : 'none')};
   font-weight: 700;
   cursor: pointer;
@@ -341,18 +343,20 @@ const BillingButton = styled.button<{ $active?: boolean }>`
 const PricingCard = styled(motion.article)<{ $recommended?: boolean }>`
   position: relative;
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(11, 17, 32, 0.78);
+  border: 1px solid var(--obsidian-border);
+  background:
+    radial-gradient(circle at 88% 0%, rgba(255, 242, 189, .08), transparent 30%),
+    linear-gradient(145deg, rgba(23, 20, 26, .95), rgba(5, 5, 6, .96));
   padding: ${({ $recommended }) => ($recommended ? '24px' : '20px')};
   box-shadow: ${({ $recommended }) =>
     $recommended ? '0 22px 60px rgba(32, 78, 148, 0.36)' : '0 14px 34px rgba(5, 9, 18, 0.45)'};
   transform: ${({ $recommended }) => ($recommended ? 'translateY(-6px)' : 'none')};
-  border-color: ${({ $recommended }) => ($recommended ? 'rgba(118, 182, 255, 0.68)' : 'rgba(255, 255, 255, 0.14)')};
+  border-color: ${({ $recommended }) => ($recommended ? 'var(--obsidian-border-hot)' : 'var(--obsidian-border)')};
   animation: ${({ $recommended }) => ($recommended ? pulseGlow : 'none')} 4.6s ease-in-out infinite;
 
   &:hover {
     transform: ${({ $recommended }) => ($recommended ? 'translateY(-9px)' : 'translateY(-5px)')};
-    border-color: rgba(245, 195, 120, 0.58);
+    border-color: var(--obsidian-border-hot);
   }
 `;
 
@@ -380,7 +384,7 @@ const Price = styled.div`
   font-weight: 800;
   line-height: 1;
   margin: 10px 0 3px;
-  color: #ffd28f;
+  color: var(--gold-300);
 `;
 
 const PriceMeta = styled.div`

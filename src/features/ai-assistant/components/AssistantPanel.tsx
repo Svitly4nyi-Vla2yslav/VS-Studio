@@ -1,10 +1,13 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import styled, { keyframes } from 'styled-components';
 import { ASSISTANT_QUICK_REPLIES } from '../constants';
+import { AssistantAvatar } from '../avatar/AssistantAvatar';
+import type { AssistantVisualState } from '../avatar/assistantAvatar.types';
+import type { PointerProximity } from '../avatar/assistantAvatar.types';
+import type { Ref } from 'react';
 import type { useAssistant } from '../hooks/useAssistant';
 import { AssistantComposer } from './AssistantComposer';
 import { AssistantMessageList } from './AssistantMessageList';
-import { AssistantOrb } from './AssistantOrb';
 import { AssistantQuickReplies } from './AssistantQuickReplies';
 import { BookingRequestForm } from './BookingRequestForm';
 import { LanguageBadge } from './LanguageBadge';
@@ -54,15 +57,18 @@ const Shell = styled(motion.aside)<{ $embedded: boolean }>`
   grid-template-rows: auto auto minmax(0, 1fr) auto;
   gap: 18px;
   padding: 22px;
-  border-radius: 32px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 30px 30px 24px 34px;
+  border: 1px solid var(--obsidian-border);
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.66), rgba(248, 250, 255, 0.42) 38%, rgba(255, 243, 214, 0.38) 68%, rgba(212, 231, 255, 0.34) 100%);
+    radial-gradient(circle at 76% 4%, rgba(241, 210, 119, 0.12), transparent 28%),
+    radial-gradient(ellipse at 0% 100%, rgba(91, 53, 29, 0.15), transparent 42%),
+    linear-gradient(145deg, rgba(25, 22, 28, 0.97), rgba(8, 7, 10, 0.96) 48%, rgba(3, 3, 4, 0.98));
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.86),
-    0 36px 90px rgba(54, 83, 131, 0.28),
-    0 0 56px rgba(255, 209, 128, 0.14);
-  backdrop-filter: blur(24px) saturate(145%);
+    inset 0 1px 0 rgba(255, 242, 189, 0.1),
+    inset 0 -1px 0 rgba(69, 50, 80, 0.24),
+    var(--obsidian-shadow-lg),
+    var(--gold-glow-sm);
+  backdrop-filter: blur(20px) saturate(118%);
   isolation: isolate;
   z-index: 170;
   overflow: hidden;
@@ -78,27 +84,28 @@ const Shell = styled(motion.aside)<{ $embedded: boolean }>`
 
   &::before {
     background:
-      radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.94), transparent 20%),
-      radial-gradient(circle at 68% 18%, rgba(255, 215, 136, 0.84), transparent 28%),
-      radial-gradient(circle at 78% 74%, rgba(170, 214, 255, 0.82), transparent 30%),
-      radial-gradient(circle at 26% 82%, rgba(255, 240, 201, 0.68), transparent 24%);
-    filter: blur(18px);
-    animation: ${auroraFlow} 12s ease-in-out infinite;
+      radial-gradient(circle at 68% 18%, rgba(214, 165, 66, 0.15), transparent 25%),
+      radial-gradient(circle at 78% 74%, rgba(82, 61, 96, 0.12), transparent 30%),
+      linear-gradient(118deg, transparent 0 47%, rgba(241, 210, 119, 0.03) 48%, transparent 51%);
+    filter: blur(12px);
+    animation: ${auroraFlow} 20s ease-in-out infinite;
   }
 
   &::after {
     inset: 1px;
     border-radius: 31px;
-    border: 1px solid rgba(255, 255, 255, 0.58);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.42);
+    border: 1px solid rgba(255, 242, 189, 0.08);
+    background: linear-gradient(118deg, transparent 28%, rgba(255, 242, 189, 0.035) 47%, transparent 55%);
+    box-shadow: inset 0 0 32px rgba(0, 0, 0, .42);
   }
 
   @media (max-width: 767px) {
     inset: ${({ $embedded }) => ($embedded ? 'auto' : 'auto 12px 12px 12px')};
     width: auto;
-    min-height: ${({ $embedded }) => ($embedded ? '700px' : '88vh')};
+    min-height: ${({ $embedded }) => ($embedded ? '700px' : 'min(88vh, 760px)')};
+    min-height: ${({ $embedded }) => ($embedded ? '700px' : 'min(88dvh, 760px)')};
     max-height: ${({ $embedded }) => ($embedded ? 'none' : '88vh')};
+    max-height: ${({ $embedded }) => ($embedded ? 'none' : '88dvh')};
     padding: 16px;
     border-radius: 28px;
 
@@ -127,19 +134,18 @@ const BrandBadge = styled.div`
   gap: 6px;
   padding: 16px 18px;
   border-radius: 24px;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(252, 246, 228, 0.66) 50%, rgba(220, 236, 255, 0.62) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.84);
+  background: linear-gradient(145deg, rgba(24, 21, 27, .92), rgba(7, 7, 9, .84));
+  border: 1px solid var(--obsidian-border);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.88),
-    0 26px 50px rgba(87, 119, 173, 0.16);
+    inset 0 1px 0 rgba(255, 242, 189, .08),
+    0 26px 50px rgba(0, 0, 0, .26);
   overflow: hidden;
 
   &::before {
     content: '';
     position: absolute;
     inset: -40% -16%;
-    background: linear-gradient(115deg, rgba(255, 255, 255, 0) 18%, rgba(255, 225, 164, 0.32) 42%, rgba(166, 211, 255, 0.28) 66%, rgba(255, 255, 255, 0) 84%);
+    background: linear-gradient(115deg, transparent 18%, rgba(255, 225, 164, 0.09) 46%, transparent 64%);
     background-size: 220% 220%;
     animation: ${shimmer} 9s ease-in-out infinite;
     pointer-events: none;
@@ -160,7 +166,7 @@ const Title = styled.h2`
   line-height: 1.02;
   letter-spacing: -0.04em;
   color: transparent;
-  background-image: linear-gradient(135deg, #17305d 0%, #d49429 42%, #6aaeea 100%);
+  background-image: var(--gold-metal);
   background-size: 220% 220%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -171,7 +177,7 @@ const Subtitle = styled.p`
   margin: 0;
   position: relative;
   z-index: 1;
-  color: rgba(18, 33, 63, 0.72);
+  color: var(--muted-gold-text);
   font-size: 13px;
   font-weight: 600;
   line-height: 1.55;
@@ -185,7 +191,7 @@ const TopLine = styled.div`
 `;
 
 const SectionTitle = styled.span`
-  color: rgba(23, 48, 93, 0.72);
+  color: var(--gold-400);
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -195,10 +201,9 @@ const SectionTitle = styled.span`
 const Note = styled.div`
   padding: 14px 16px;
   border-radius: 18px;
-  background:
-    linear-gradient(145deg, rgba(255, 247, 230, 0.88), rgba(255, 236, 205, 0.76));
-  border: 1px solid rgba(237, 189, 104, 0.34);
-  color: rgba(118, 64, 18, 0.92);
+  background: linear-gradient(145deg, rgba(58, 38, 20, .72), rgba(17, 13, 12, .9));
+  border: 1px solid rgba(209, 122, 95, .34);
+  color: var(--champagne-text);
   font-size: 12px;
   line-height: 1.6;
   box-shadow:
@@ -208,7 +213,7 @@ const Note = styled.div`
   strong {
     display: inline-block;
     margin-bottom: 2px;
-    color: #8a4c12;
+    color: var(--gold-300);
   }
 `;
 
@@ -264,14 +269,14 @@ const CloseButton = styled.button`
   align-items: center;
   justify-content: center;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.82);
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.74), rgba(230, 240, 255, 0.6));
-  color: rgba(18, 33, 63, 0.76);
+  border: 1px solid var(--obsidian-border);
+  background: linear-gradient(145deg, rgba(24, 21, 27, .94), rgba(7, 7, 9, .94));
+  color: var(--gold-300);
   font-size: 22px;
   line-height: 1;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.88),
-    0 14px 26px rgba(95, 128, 182, 0.14);
+    inset 0 1px 0 rgba(255, 242, 189, .08),
+    0 14px 26px rgba(0, 0, 0, .28);
   transition:
     transform 180ms ease,
     box-shadow 180ms ease,
@@ -280,7 +285,7 @@ const CloseButton = styled.button`
   &:hover,
   &:focus-visible {
     transform: translateY(-1px);
-    color: #17305d;
+    color: var(--gold-highlight);
     box-shadow:
       0 18px 30px rgba(255, 204, 112, 0.18),
       0 0 0 4px rgba(169, 209, 255, 0.16);
@@ -292,9 +297,24 @@ interface AssistantPanelProps {
   open?: boolean;
   embedded?: boolean;
   onClose?: () => void;
+  visualState?: AssistantVisualState;
+  onComposerFocusChange?: (focused: boolean) => void;
+  onComposerValuePresenceChange?: (hasValue: boolean) => void;
+  pointer?: PointerProximity;
+  avatarTrackingRef?: Ref<HTMLDivElement>;
 }
 
-export const AssistantPanel: React.FC<AssistantPanelProps> = ({ assistant, open = true, embedded = false, onClose }) => {
+export const AssistantPanel: React.FC<AssistantPanelProps> = ({
+  assistant,
+  open = true,
+  embedded = false,
+  onClose,
+  visualState = 'idle',
+  onComposerFocusChange,
+  onComposerValuePresenceChange,
+  pointer,
+  avatarTrackingRef,
+}) => {
   const {
     messages,
     isTyping,
@@ -313,6 +333,7 @@ export const AssistantPanel: React.FC<AssistantPanelProps> = ({ assistant, open 
   const panel = (
     <Shell
       $embedded={embedded}
+      aria-label={copy.title}
       initial={embedded ? false : { opacity: 0, y: 14, scale: 0.98 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       exit={{ opacity: 0, y: 12, scale: 0.98 }}
@@ -322,7 +343,13 @@ export const AssistantPanel: React.FC<AssistantPanelProps> = ({ assistant, open 
         <Headline>
           <BrandBadge>
             <TitleRow>
-              <AssistantOrb size={24} />
+               <AssistantAvatar
+                 state={visualState}
+                 size={72}
+                 pointer={pointer}
+                 trackingRef={avatarTrackingRef}
+                 decorative
+               />
               <Title>{copy.title}</Title>
             </TitleRow>
             <Subtitle>{copy.subtitle}</Subtitle>
@@ -368,7 +395,15 @@ export const AssistantPanel: React.FC<AssistantPanelProps> = ({ assistant, open 
           </CloseButton>
         ) : null}
 
-        {!activeForm ? <AssistantComposer copy={copy} disabled={isTyping} onSend={sendMessage} /> : null}
+        {!activeForm ? (
+          <AssistantComposer
+            copy={copy}
+            disabled={isTyping}
+            onSend={sendMessage}
+            onFocusChange={onComposerFocusChange}
+            onValuePresenceChange={onComposerValuePresenceChange}
+          />
+        ) : null}
       </Footer>
     </Shell>
   );

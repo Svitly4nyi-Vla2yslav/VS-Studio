@@ -45,9 +45,9 @@ const StyledPageRoot = styled(PageRoot)`
   overflow: clip;
   padding-top: 0;
   background:
-    radial-gradient(1200px 600px at 12% -8%, rgba(46, 132, 255, 0.2), transparent 60%),
-    radial-gradient(1000px 680px at 88% 2%, rgba(37, 187, 255, 0.15), transparent 64%),
-    #0b0f17;
+    radial-gradient(1200px 600px at 12% -8%, rgba(77, 55, 92, .12), transparent 60%),
+    radial-gradient(1000px 680px at 88% 2%, rgba(214, 165, 66, .12), transparent 64%),
+    var(--obsidian-950);
 
   &::before {
     content: '';
@@ -104,7 +104,7 @@ const HeroShell = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid var(--obsidian-border);
 
   @media (max-width: 767px) {
     min-height: calc(100svh - 66px);
@@ -146,7 +146,7 @@ const Eyebrow = styled.p`
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 12px;
-  color: rgba(207, 233, 255, 0.8);
+  color: var(--gold-400);
 `;
 
 const HeroTitle = styled.h1`
@@ -159,26 +159,29 @@ const HeroTitle = styled.h1`
   span:first-child {
     font-size: clamp(34px, 7vw, 68px);
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--champagne-text);
   }
 
   span:nth-child(2) {
     font-size: clamp(40px, 9vw, 84px);
     font-weight: 700;
-    color: #f5fbff;
+    color: transparent;
+    background: var(--gold-metal);
+    background-clip: text;
+    -webkit-background-clip: text;
   }
 
   span:last-child {
     font-size: clamp(30px, 6vw, 58px);
     font-weight: 500;
-    color: rgba(160, 225, 255, 0.95);
+    color: var(--gold-300);
   }
 `;
 
 const HeroLead = styled.p`
   margin: 8px 0 18px;
   max-width: 62ch;
-  color: rgba(235, 244, 255, 0.82);
+  color: var(--champagne-text);
   font-size: clamp(15px, 2vw, 19px);
   line-height: 1.62;
 `;
@@ -205,10 +208,10 @@ const HeroVisual = styled.div`
   position: relative;
   min-height: clamp(460px, 44vw, 640px);
   border-radius: 24px;
-  border: 1px solid rgba(129, 198, 255, 0.32);
+  border: 1px solid var(--obsidian-border);
   background:
-    radial-gradient(660px 280px at 70% -10%, rgba(68, 208, 255, 0.2), transparent 72%),
-    linear-gradient(160deg, rgba(14, 21, 34, 0.92), rgba(10, 15, 23, 0.95));
+    radial-gradient(660px 280px at 70% -10%, rgba(214, 165, 66, .13), transparent 72%),
+    linear-gradient(160deg, rgba(24, 21, 27, .95), rgba(5, 5, 6, .96));
   box-shadow:
     inset 0 1px 0 rgba(195, 230, 255, 0.18),
     inset 0 -20px 40px rgba(7, 11, 20, 0.7),
@@ -239,7 +242,7 @@ const Orb = styled.div`
   top: -72px;
   right: -54px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(70, 198, 255, 0.35), rgba(70, 198, 255, 0));
+  background: radial-gradient(circle, rgba(214, 165, 66, .24), transparent 70%);
   filter: blur(2px);
   animation: ${bgFloat} 6.2s ease-in-out infinite;
 `;
@@ -438,10 +441,10 @@ const ServiceGrid = styled(motion.div)`
 const SurfaceCard = styled(motion.article)<{ $area?: string; $compact?: boolean; $featured?: boolean }>`
   grid-area: ${({ $area }) => $area ?? 'auto'};
   border-radius: ${({ $compact }) => ($compact ? '16px' : '20px')};
-  border: 1px solid ${({ $featured }) => ($featured ? 'rgba(101, 205, 255, 0.5)' : 'rgba(255, 255, 255, 0.14)')};
+  border: 1px solid ${({ $featured }) => ($featured ? 'var(--obsidian-border-hot)' : 'var(--obsidian-border)')};
   background:
-    radial-gradient(420px 220px at 12% -12%, rgba(62, 177, 255, 0.13), transparent 65%),
-    linear-gradient(168deg, rgba(15, 22, 35, 0.94), rgba(10, 15, 24, 0.9));
+    radial-gradient(420px 220px at 12% -12%, rgba(214, 165, 66, .1), transparent 65%),
+    linear-gradient(168deg, rgba(23, 20, 26, .95), rgba(5, 5, 6, .94));
   padding: ${({ $compact }) => ($compact ? '18px' : '24px')};
   box-shadow:
     ${({ $featured }) => ($featured ? '0 0 0 1px rgba(91, 198, 255, 0.2),' : '')}
@@ -451,7 +454,7 @@ const SurfaceCard = styled(motion.article)<{ $area?: string; $compact?: boolean;
 
   &:hover {
     transform: translateY(-4px);
-    border-color: rgba(132, 212, 255, 0.66);
+    border-color: var(--obsidian-border-hot);
     box-shadow:
       0 0 0 1px rgba(104, 208, 255, 0.2),
       inset 0 1px 0 rgba(178, 216, 245, 0.14),

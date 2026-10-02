@@ -1,13 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { fadeInUp, scaleIn, staggerContainer } from '../../../components/Motion/reveal';
-
-const gradientFlow = keyframes`
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-`;
+import { goldButtonMotion } from '../../../components/visual/goldButtonMotion';
 
 export const PageRoot = styled.div`
   padding: 48px 0 96px;
@@ -36,14 +31,15 @@ export const HeroSection = styled(motion.section).attrs({
   padding: 72px 0;
 
   h1 {
-    font-size: clamp(34px, 8vw, 70px);
-    line-height: 1.2;
+    font-size: var(--type-display-l);
+    line-height: var(--leading-display);
+    letter-spacing: -.04em;
     max-width: 680px;
   }
 
   p {
     max-width: 62ch;
-    color: rgba(255, 255, 255, 0.82);
+    color: var(--champagne-text);
   }
 
   @media (max-width: 767px) {
@@ -51,7 +47,6 @@ export const HeroSection = styled(motion.section).attrs({
     gap: 16px;
 
     h1 {
-      font-size: clamp(30px, 10vw, 44px);
       max-width: 680px;
     }
   }
@@ -67,7 +62,9 @@ export const Section = styled(motion.section).attrs({
   padding-bottom: 72px;
 
   h2 {
-    font-size: clamp(28px, 6vw, 46px);
+    font-size: var(--type-h2);
+    line-height: var(--leading-heading);
+    letter-spacing: -.025em;
     margin-top: 72px;
     margin-bottom: 24px;
   }
@@ -86,7 +83,6 @@ export const Section = styled(motion.section).attrs({
     padding-bottom: 48px;
 
     h2 {
-      font-size: clamp(26px, 9vw, 34px);
       margin-top: 48px;
     }
 
@@ -135,9 +131,12 @@ export const Card = styled(motion.article).attrs({
 })`
   position: relative;
   overflow: hidden;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(11, 15, 27, 0.75);
+  border-radius: 22px 22px 18px 24px;
+  border: 1px solid var(--obsidian-border);
+  background:
+    radial-gradient(circle at 88% 0%, rgba(255, 242, 189, .08), transparent 30%),
+    radial-gradient(ellipse at 0% 110%, rgba(100, 57, 25, .12), transparent 42%),
+    linear-gradient(145deg, rgba(23, 20, 26, .94), rgba(6, 6, 7, .96));
   padding: 32px;
   overflow-wrap: normal;
   word-break: normal;
@@ -150,23 +149,23 @@ export const Card = styled(motion.article).attrs({
 
   &:hover {
     transform: translateY(-4px);
-    border-color: rgba(248, 190, 98, 0.62);
-    background: rgba(18, 23, 38, 0.9);
-    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.28);
+    border-color: var(--obsidian-border-hot);
+    background-color: var(--obsidian-surface-hover);
+    box-shadow: var(--obsidian-shadow-md), var(--gold-glow-sm);
   }
 
   h2 {
     margin: 0 0 14px;
-    font-size: clamp(24px, 2.4vw, 34px);
-    line-height: 1.12;
+    font-size: var(--type-h2);
+    line-height: var(--leading-heading);
     overflow-wrap: normal;
     word-break: normal;
   }
 
   h3 {
     margin: 0 0 12px;
-    font-size: clamp(20px, 1.7vw, 26px);
-    line-height: 1.18;
+    font-size: var(--type-h3);
+    line-height: var(--leading-heading);
     overflow-wrap: normal;
     word-break: normal;
   }
@@ -190,7 +189,7 @@ export const Band = styled(Card).attrs({ as: motion.section })`
 `;
 
 export const Muted = styled.p`
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--muted-gold-text);
 `;
 
 export const ButtonRow = styled.div`
@@ -232,35 +231,34 @@ const BaseButtonStyles = `
 
 export const PrimaryButtonLink = styled(NavLink)`
   ${BaseButtonStyles}
-  background: linear-gradient(120deg, #f39a4f, #ffe1b5, #f39a4f);
-  background-size: 220% 220%;
-  color: #121723;
+  ${goldButtonMotion}
+  border: 1px solid rgba(255, 242, 189, .52);
+  background: var(--gold-metal);
+  background-size: 180% 100%;
+  color: #171108;
 
   &:hover,
   &:focus-visible {
-    color: #f8fafc;
-    background: linear-gradient(120deg, #121723, #253a64, #121723);
-    background-size: 220% 220%;
-    animation: ${gradientFlow} 2.2s linear infinite;
-    box-shadow: 0 12px 22px rgba(21, 31, 52, 0.45);
+    color: #171108;
+    animation: none;
+    box-shadow: 0 14px 28px rgba(126, 78, 15, .28);
   }
 `;
 
 export const PrimaryButton = styled.button`
   ${BaseButtonStyles}
-  border: 0;
+  ${goldButtonMotion}
+  border: 1px solid rgba(255, 242, 189, .52);
   cursor: pointer;
-  background: linear-gradient(120deg, #f39a4f, #ffe1b5, #f39a4f);
-  background-size: 220% 220%;
-  color: #121723;
+  background: var(--gold-metal);
+  background-size: 180% 100%;
+  color: #171108;
 
   &:hover,
   &:focus-visible {
-    color: #f8fafc;
-    background: linear-gradient(120deg, #121723, #253a64, #121723);
-    background-size: 220% 220%;
-    animation: ${gradientFlow} 2.2s linear infinite;
-    box-shadow: 0 12px 22px rgba(21, 31, 52, 0.45);
+    color: #171108;
+    animation: none;
+    box-shadow: 0 14px 28px rgba(126, 78, 15, .28);
   }
 `;
 
@@ -272,8 +270,8 @@ export const IconBadge = styled.span`
   align-items: center;
   justify-content: center;
   margin-right: 8px;
-  color: #101321;
-  background: linear-gradient(120deg, #f7cb84, #ffdca8);
+  color: #171108;
+  background: var(--gold-metal-soft);
   vertical-align: middle;
 `;
 
@@ -293,7 +291,7 @@ export const Checklist = styled.ul`
 
 export const Price = styled.p`
   font-size: 30px;
-  color: #ffd08a;
+  color: var(--gold-300);
   margin: 8px 0;
 `;
 
@@ -307,7 +305,8 @@ export const TableRow = styled.div`
   justify-content: space-between;
   gap: 12px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(214, 165, 66, .12);
+  background: rgba(7, 7, 9, .62);
   padding: 10px 12px;
 
   span {
@@ -328,14 +327,15 @@ export const FieldIcon = styled.label`
   align-items: center;
   gap: 8px;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--obsidian-border);
+  background: rgba(7, 7, 9, .72);
   padding: 8px 10px;
   transition: border-color var(--dur-fast) var(--ease-smooth), background var(--dur-fast) var(--ease-smooth);
 
   &:focus-within {
-    border-color: rgba(255, 207, 130, 0.8);
-    background: rgba(255, 255, 255, 0.09);
+    border-color: var(--obsidian-border-hot);
+    background: rgba(15, 13, 17, .9);
+    box-shadow: var(--focus-ring);
   }
 
   input,
@@ -343,7 +343,7 @@ export const FieldIcon = styled.label`
     width: 100%;
     border: 0;
     background: transparent;
-    color: #ffffff;
+    color: var(--champagne-text);
     outline: none;
   }
 

@@ -1,17 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import styled, { keyframes } from 'styled-components';
-
-const logoFlow = keyframes`
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-`;
-
-const gradientFlow = keyframes`
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-`;
+import styled from 'styled-components';
+import { goldButtonMotion } from '../../visual/goldButtonMotion';
 
 export const HeaderShell = styled.header<{ $menuOpen: boolean }>`
   position: fixed;
@@ -19,9 +8,12 @@ export const HeaderShell = styled.header<{ $menuOpen: boolean }>`
   left: 0;
   width: 100%;
   z-index: ${({ $menuOpen }) => ($menuOpen ? 2000 : 120)};
-  backdrop-filter: blur(10px);
-  background: rgba(7, 9, 16, 0.78);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px) saturate(112%);
+  background:
+    radial-gradient(circle at 70% -80%, rgba(214, 165, 66, .14), transparent 44%),
+    linear-gradient(120deg, rgba(17, 15, 19, .91), rgba(4, 4, 5, .92));
+  border-bottom: 1px solid var(--obsidian-border);
+  box-shadow: inset 0 1px 0 rgba(255, 242, 189, .06), 0 14px 40px rgba(0, 0, 0, .28);
 `;
 
 export const HeaderInner = styled.div`
@@ -64,13 +56,12 @@ export const BrandWordmark = styled.span`
   font-weight: 800;
   letter-spacing: 0;
   line-height: 1;
-  background: linear-gradient(105deg, #c9861e, #ffe7bb, #ffb43f, #ffe7bb, #c9861e);
-  background-size: 300% 300%;
+  background: var(--gold-metal);
+  background-size: 180% 100%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: ${logoFlow} 4.8s ease-in-out infinite;
-  filter: drop-shadow(0 0 18px rgba(255, 198, 109, 0.55));
+  filter: drop-shadow(0 6px 16px rgba(214, 165, 66, .16));
 
   @media (max-width: 767px) {
     font-size: 38px;
@@ -96,7 +87,7 @@ export const DesktopNav = styled.nav`
 `;
 
 export const DesktopNavLink = styled(NavLink)`
-  color: rgba(255, 255, 255, 0.86);
+  color: var(--muted-gold-text);
   font-size: 13px;
   font-weight: 500;
   position: relative;
@@ -115,7 +106,7 @@ export const DesktopNavLink = styled(NavLink)`
     height: 2px;
     transform: scaleX(0);
     transform-origin: left;
-    background: linear-gradient(90deg, #ffb65b, #ffe5b7, #ffb65b);
+    background: var(--gold-metal-soft);
     background-size: 220% 100%;
     transition: transform var(--dur-mid) var(--ease-smooth), background-position var(--dur-slow) var(--ease-smooth);
   }
@@ -123,7 +114,7 @@ export const DesktopNavLink = styled(NavLink)`
   &:hover,
   &:focus-visible {
     transform: translateY(-1px);
-    color: #ffe6b5;
+    color: var(--gold-300);
   }
 
   &:hover::after,
@@ -134,7 +125,7 @@ export const DesktopNavLink = styled(NavLink)`
   }
 
   &.active {
-    color: #ffcc7f;
+    color: var(--gold-300);
   }
 `;
 
@@ -148,10 +139,11 @@ export const HeaderControls = styled.div`
 `;
 
 export const FixedCta = styled(NavLink)`
-  border: 1px solid rgba(255, 182, 84, 0.7);
-  background: linear-gradient(120deg, #f09a48, #ffd9a1, #f09a48);
-  background-size: 220% 220%;
-  color: #101321;
+  ${goldButtonMotion}
+  border: 1px solid rgba(255, 242, 189, .52);
+  background: var(--gold-metal);
+  background-size: 180% 100%;
+  color: #171108;
   font-weight: 700;
   padding: 10px 14px;
   border-radius: 12px;
@@ -167,10 +159,9 @@ export const FixedCta = styled(NavLink)`
 
   &:hover,
   &:focus-visible {
-    transform: translateY(-2px);
-    box-shadow: 0 14px 24px rgba(240, 154, 72, 0.35);
+    transform: translateY(-1px);
+    box-shadow: 0 14px 28px rgba(126, 78, 15, .28);
     filter: brightness(1.04);
-    animation: ${gradientFlow} 2.2s linear infinite;
   }
 
   @media (max-width: 1023px) {
@@ -188,8 +179,8 @@ export const LangTrigger = styled.button`
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(6, 10, 20, 0.88);
+  border: 1px solid var(--obsidian-border);
+  background: linear-gradient(145deg, rgba(25, 22, 28, .95), rgba(5, 5, 6, .94));
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -200,8 +191,8 @@ export const LangTrigger = styled.button`
 
   &:hover,
   &:focus-visible {
-    border-color: rgba(255, 210, 138, 0.8);
-    background: rgba(10, 15, 28, 0.95);
+    border-color: var(--obsidian-border-hot);
+    background: var(--obsidian-surface-hover);
     transform: translateY(-1px);
   }
 
@@ -225,9 +216,9 @@ export const LangMenu = styled.div`
   max-height: min(62vh, 360px);
   overflow-y: auto;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(7, 12, 24, 0.98);
-  box-shadow: 0 16px 26px rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--obsidian-border);
+  background: linear-gradient(145deg, rgba(22, 20, 25, .99), rgba(4, 4, 5, .99));
+  box-shadow: var(--obsidian-shadow-md);
   padding: 8px;
   z-index: 180;
 
