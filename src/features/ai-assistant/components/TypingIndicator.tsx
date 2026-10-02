@@ -8,21 +8,21 @@ const Indicator = styled.div`
   gap: 8px;
   padding: 13px 16px;
   border-radius: 999px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.86), rgba(225, 240, 255, 0.72));
-  border: 1px solid rgba(255, 255, 255, 0.82);
-  color: rgba(18, 33, 63, 0.62);
+  background: linear-gradient(145deg, rgba(22, 20, 25, .96), rgba(7, 7, 9, .94));
+  border: 1px solid var(--obsidian-border);
+  color: var(--muted-gold-text);
   font-size: 12px;
   font-weight: 700;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.84),
-    0 14px 28px rgba(101, 134, 188, 0.12);
+    inset 0 1px 0 rgba(255, 242, 189, .08),
+    0 14px 28px rgba(0, 0, 0, .24);
 `;
 
 const Dot = styled(motion.span)`
   width: 7px;
   height: 7px;
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(255, 203, 120, 0.98), rgba(104, 156, 232, 0.92));
+  background: linear-gradient(180deg, var(--gold-highlight), var(--gold-500));
   box-shadow: 0 0 12px rgba(255, 210, 138, 0.4);
 `;
 

@@ -1827,6 +1827,122 @@ main {
   border: 0;
 }
 
+/* Obsidian component layer: shared site shell, navigation, buttons and cards. */
+.site-shell {
+  background:
+    radial-gradient(1000px 480px at 88% -8%, rgba(129, 75, 28, 0.14), transparent 62%),
+    radial-gradient(820px 460px at 4% 45%, rgba(61, 45, 75, 0.1), transparent 64%),
+    linear-gradient(180deg, var(--obsidian-950), var(--obsidian-850));
+}
+
+.site-header {
+  background:
+    radial-gradient(circle at 70% -80%, rgba(214, 165, 66, 0.14), transparent 44%),
+    linear-gradient(120deg, rgba(17, 15, 19, 0.91), rgba(4, 4, 5, 0.92));
+  border-bottom-color: var(--obsidian-border);
+  box-shadow: inset 0 1px 0 rgba(255, 242, 189, 0.06), 0 14px 40px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(12px) saturate(112%);
+}
+
+.brand-wordmark {
+  background: var(--gold-metal);
+  background-size: 180% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 6px 16px rgba(214, 165, 66, 0.16));
+  animation: none;
+}
+
+.nav-desktop a { color: var(--muted-gold-text); }
+.nav-desktop a::after { background: var(--gold-metal-soft); }
+.nav-desktop a:hover,
+.nav-desktop a:focus-visible,
+.nav-desktop a.active { color: var(--gold-300); }
+
+.cta-fixed,
+.btn-primary {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-color: rgba(255, 242, 189, 0.5);
+  background: var(--gold-metal);
+  background-size: 180% 100%;
+  color: #171108;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 13px 28px rgba(126, 78, 15, 0.24);
+  transform: translateY(0);
+  transition: transform 600ms var(--ease-obsidian), box-shadow 600ms ease, border-color 600ms ease, filter 600ms ease;
+}
+
+.cta-fixed::before,
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: -15% -45%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(110deg, transparent 0 34%, rgba(255,255,255,.08) 42%, rgba(255,245,200,.48) 49%, rgba(255,255,255,.16) 55%, transparent 66% 100%);
+  animation: vsGoldSweep 4.8s linear infinite;
+  animation-play-state: paused;
+  transition: opacity 620ms ease;
+}
+
+.cta-fixed > *,
+.btn-primary > * { position: relative; z-index: 1; }
+
+.cta-fixed:hover::before,
+.cta-fixed:focus-visible::before,
+.btn-primary:hover::before,
+.btn-primary:focus-visible::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.cta-fixed:hover,
+.cta-fixed:focus-visible,
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 16px 34px rgba(126, 78, 15, 0.3);
+  animation: none;
+}
+
+.lang-trigger,
+.btn-secondary {
+  border-color: var(--obsidian-border);
+  background: linear-gradient(145deg, rgba(25, 22, 28, 0.95), rgba(5, 5, 6, 0.94));
+  color: var(--champagne-text);
+  box-shadow: inset 0 1px 0 rgba(255, 242, 189, 0.07), var(--obsidian-shadow-sm);
+}
+
+.card {
+  border-color: var(--obsidian-border);
+  background:
+    radial-gradient(circle at var(--light-x, 84%) 0%, rgba(255, 242, 189, 0.08), transparent 30%),
+    radial-gradient(ellipse at 0% 110%, rgba(100, 57, 25, 0.12), transparent 42%),
+    linear-gradient(145deg, rgba(23, 20, 26, 0.94), rgba(6, 6, 7, 0.96));
+  box-shadow: inset 0 1px 0 rgba(255, 242, 189, 0.07), var(--obsidian-shadow-md);
+}
+
+.section h2,
+.section-title {
+  color: transparent;
+  background: var(--gold-metal-soft);
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: drop-shadow(0 7px 20px rgba(214, 165, 66, 0.1));
+}
+
+.footer {
+  border-top-color: var(--obsidian-border);
+  background: linear-gradient(180deg, rgba(10, 9, 12, 0.86), var(--obsidian-950));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-wordmark,
+  .gold-gradient { animation: none !important; background-position: 50% 50%; }
+}
+
 .maintenance-ghost-trigger:focus-visible {
   opacity: 0.08;
   outline: 1px dashed rgba(255, 209, 137, 0.42);

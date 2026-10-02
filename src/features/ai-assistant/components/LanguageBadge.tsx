@@ -7,20 +7,19 @@ const Badge = styled.span`
   gap: 8px;
   padding: 8px 12px;
   border-radius: 999px;
-  background:
-    linear-gradient(120deg, rgba(255, 255, 255, 0.82), rgba(255, 239, 204, 0.68) 48%, rgba(211, 231, 255, 0.68) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.84);
-  color: rgba(18, 33, 63, 0.62);
+  background: rgba(9, 8, 11, .76);
+  border: 1px solid var(--obsidian-border);
+  color: var(--muted-gold-text);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.86),
-    0 14px 30px rgba(98, 131, 185, 0.1);
+    inset 0 1px 0 rgba(255, 242, 189, .06),
+    0 14px 30px rgba(0, 0, 0, .22);
 
   strong {
-    color: #17305d;
+    color: var(--gold-300);
     font-weight: 800;
   }
 `;

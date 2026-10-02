@@ -1,4 +1,5 @@
 import { useEffect, useRef, type ReactNode } from 'react';
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import { TypingIndicator } from './TypingIndicator';
 import type { AssistantMessage, AssistantPanelCopy } from '../types';
@@ -10,16 +11,16 @@ const List = styled.div`
   padding: 18px;
   border-radius: 28px;
   background:
-    linear-gradient(155deg, rgba(255, 255, 255, 0.38), rgba(247, 250, 255, 0.24)),
-    linear-gradient(120deg, rgba(255, 234, 192, 0.16), rgba(195, 226, 255, 0.16));
-  border: 1px solid rgba(255, 255, 255, 0.72);
+    radial-gradient(circle at 92% 0%, rgba(214, 165, 66, 0.08), transparent 34%),
+    linear-gradient(155deg, rgba(13, 12, 15, 0.82), rgba(3, 3, 4, 0.76));
+  border: 1px solid var(--obsidian-border);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.78),
-    0 20px 44px rgba(93, 125, 181, 0.12);
-  backdrop-filter: blur(16px);
+    inset 0 1px 0 rgba(255, 242, 189, 0.07),
+    0 20px 44px rgba(0, 0, 0, 0.26);
+  backdrop-filter: blur(12px);
 `;
 
-const Row = styled.div<{ $role: AssistantMessage['role'] }>`
+const Row = styled(motion.div)<{ $role: AssistantMessage['role'] }>`
   display: flex;
   justify-content: ${({ $role }) => ($role === 'user' ? 'flex-end' : 'flex-start')};
 `;
@@ -31,24 +32,24 @@ const Bubble = styled.div<{ $role: AssistantMessage['role'] }>`
   background:
     ${({ $role }) =>
       $role === 'user'
-        ? 'linear-gradient(135deg, rgba(86, 132, 229, 0.94), rgba(135, 193, 255, 0.9))'
-        : 'linear-gradient(145deg, rgba(255, 255, 255, 0.86), rgba(247, 245, 236, 0.72) 52%, rgba(222, 238, 255, 0.7) 100%)'};
+        ? 'linear-gradient(135deg, rgba(91, 60, 19, 0.94), rgba(35, 27, 20, 0.96))'
+        : 'radial-gradient(circle at 88% 0%, rgba(214, 165, 66, .12), transparent 36%), linear-gradient(145deg, rgba(22, 20, 25, .96), rgba(7, 7, 9, .94))'};
   border: 1px solid
-    ${({ $role }) => ($role === 'user' ? 'rgba(118, 166, 255, 0.7)' : 'rgba(255, 255, 255, 0.82)')};
-  color: ${({ $role }) => ($role === 'user' ? '#f7fbff' : '#12213f')};
+    ${({ $role }) => ($role === 'user' ? 'rgba(231, 195, 100, .48)' : 'rgba(214, 165, 66, .28)')};
+  color: var(--champagne-text);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.62;
   white-space: pre-wrap;
   box-shadow:
-    inset 0 1px 0 ${({ $role }) => ($role === 'user' ? 'rgba(255, 255, 255, 0.18)' : 'rgba(255, 255, 255, 0.8)')},
-    0 16px 30px ${({ $role }) => ($role === 'user' ? 'rgba(88, 132, 213, 0.22)' : 'rgba(104, 136, 181, 0.12)')};
+    inset 0 1px 0 rgba(255, 242, 189, 0.07),
+    0 16px 30px rgba(0, 0, 0, 0.24);
 `;
 
 const Meta = styled.span<{ $role: AssistantMessage['role'] }>`
   display: block;
   margin-top: 9px;
-  color: ${({ $role }) => ($role === 'user' ? 'rgba(247, 251, 255, 0.74)' : 'rgba(18, 33, 63, 0.46)')};
+  color: ${({ $role }) => ($role === 'user' ? 'rgba(255, 239, 199, 0.7)' : 'rgba(188, 174, 145, 0.68)')};
   font-size: 11px;
   font-weight: 700;
 `;
@@ -93,9 +94,15 @@ export const AssistantMessageList: React.FC<AssistantMessageListProps> = ({ mess
   }, [messages, isTyping]);
 
   return (
-    <List>
+    <List role='log' aria-live='polite' aria-relevant='additions text'>
       {messages.map(message => (
-        <Row key={message.id} $role={message.role}>
+        <Row
+          key={message.id}
+          $role={message.role}
+          initial={{ opacity: 0, y: 7, filter: 'blur(3px)' }}
+          animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          transition={{ duration: 0.28, ease: 'easeOut' }}
+        >
           <Bubble $role={message.role}>
             {renderMessageContent(message.content)}
             {message.confidence !== undefined ? <Meta $role={message.role}>Confidence {Math.round(message.confidence * 100)}%</Meta> : null}

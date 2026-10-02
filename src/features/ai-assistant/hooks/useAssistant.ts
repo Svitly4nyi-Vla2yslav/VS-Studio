@@ -60,6 +60,7 @@ export const useAssistant = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [degradedMode, setDegradedMode] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [successRevision, setSuccessRevision] = useState(0);
   const [activeForm, setActiveForm] = useState<'lead' | 'booking' | null>(null);
   const [leadDraft, setLeadDraft] = useState<Partial<AssistantLeadPayload>>({ language: assistantLanguage, source: 'assistant' });
   const [bookingDraft, setBookingDraft] = useState<Partial<AssistantBookingPayload>>({
@@ -204,6 +205,7 @@ export const useAssistant = () => {
       await leadClient.createLead(fullPayload);
       setMessages(current => [...current, createMessage('assistant', getAssistantCopy(assistantLanguage).leadSuccess, assistantLanguage)]);
       setActiveForm(null);
+      setSuccessRevision(value => value + 1);
       trackAssistantEvent('assistant_lead_completed', { language: assistantLanguage });
     } catch (error) {
       console.error('Lead capture failed.', error);
@@ -233,6 +235,7 @@ export const useAssistant = () => {
       await bookingClient.createBookingRequest(fullPayload);
       setMessages(current => [...current, createMessage('assistant', getAssistantCopy(assistantLanguage).bookingSuccess, assistantLanguage)]);
       setActiveForm(null);
+      setSuccessRevision(value => value + 1);
       trackAssistantEvent('assistant_booking_completed', { language: assistantLanguage });
     } catch (error) {
       console.error('Booking request failed.', error);
@@ -263,6 +266,7 @@ export const useAssistant = () => {
     isOpen,
     degradedMode,
     errorMessage,
+    successRevision,
     activeForm,
     assistantLanguage,
     copy: getAssistantCopy(assistantLanguage),

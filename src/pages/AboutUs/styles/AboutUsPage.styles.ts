@@ -72,16 +72,16 @@ export const AboutUsScope = styled.div`
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    font-size: 12px;
+    font-size: var(--type-meta);
     color: rgba(255, 255, 255, 0.62);
   }
 
   .about-hero h1 {
     margin: 0;
     max-width: 620px;
-    font-size: clamp(42px, 6vw, 72px);
-    line-height: 1.1;
-    letter-spacing: -0.035em;
+    font-size: var(--type-display-l);
+    line-height: var(--leading-display);
+    letter-spacing: -0.04em;
   }
 
   .about-hero-title-line {
@@ -98,9 +98,9 @@ export const AboutUsScope = styled.div`
   .about-hero-subtitle {
     margin: 0;
     max-width: 460px;
-    font-size: clamp(20px, 2.2vw, 26px);
-    line-height: 1.4;
-    color: rgba(255, 255, 255, 0.92);
+    font-size: var(--type-body-lg);
+    line-height: var(--leading-body);
+    color: var(--champagne-text);
   }
 
   .about-trustline {

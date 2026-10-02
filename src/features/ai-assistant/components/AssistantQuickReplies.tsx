@@ -9,18 +9,19 @@ const Wrap = styled.div`
 
 const QuickButton = styled.button`
   padding: 11px 15px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.76);
+  border-radius: 14px 18px 13px 17px;
+  border: 1px solid var(--obsidian-border);
   background:
-    linear-gradient(120deg, rgba(255, 255, 255, 0.76), rgba(255, 243, 214, 0.58) 48%, rgba(214, 232, 255, 0.58) 100%);
-  color: #17305d;
+    radial-gradient(circle at 80% 0%, rgba(241, 210, 119, .08), transparent 40%),
+    linear-gradient(145deg, rgba(23, 20, 26, .94), rgba(7, 7, 9, .92));
+  color: var(--champagne-text);
   font-size: 12px;
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: 0.01em;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.84),
-    0 14px 28px rgba(98, 130, 183, 0.1);
+    inset 0 1px 0 rgba(255, 242, 189, .07),
+    0 12px 24px rgba(0, 0, 0, .24);
   transition:
     transform 180ms ease,
     box-shadow 180ms ease,
@@ -29,13 +30,15 @@ const QuickButton = styled.button`
 
   &:hover,
   &:focus-visible {
-    border-color: rgba(149, 191, 255, 0.62);
+    border-color: var(--obsidian-border-hot);
     transform: translateY(-1px);
     box-shadow:
-      0 18px 32px rgba(255, 204, 112, 0.18),
-      0 0 0 4px rgba(169, 209, 255, 0.16);
-    filter: saturate(1.05);
+      var(--gold-glow-sm),
+      var(--focus-ring);
+    filter: brightness(1.08);
   }
+
+  &:active { transform: translateY(1px) scale(.985); }
 `;
 
 interface AssistantQuickRepliesProps {

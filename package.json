@@ -26,6 +26,7 @@
     "@studio-freight/lenis": "^1.0.42",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.9.1",
+    "bot-avatars": "^0.2.1",
     "firebase": "^12.10.0",
     "framer-motion": "^12.18.2",
     "i18next": "^24.1.0",

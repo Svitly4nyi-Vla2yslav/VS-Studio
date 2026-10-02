@@ -39,12 +39,62 @@ export const GlobalStyle = css`
 
   /* ========== TOKENS (під твою космічну золоту картинку) ========== */
   :root {
-    /* Base */
-    --bg: #07070b;
-    --bg-2: #0b0b12;
+    color-scheme: dark;
+    /* Primitive -> semantic Obsidian design tokens */
+    --obsidian-950: #030304;
+    --obsidian-900: #070708;
+    --obsidian-850: #0a090c;
+    --obsidian-800: #111015;
+    --obsidian-700: #18161d;
+    --gold-950: #3f270b;
+    --gold-800: #765019;
+    --gold-700: #94651f;
+    --gold-500: #d6a542;
+    --gold-400: #e7c364;
+    --gold-300: #f1d277;
+    --gold-highlight: #fff2bd;
+    --obsidian-surface: rgba(9, 8, 11, 0.9);
+    --obsidian-surface-hover: rgba(16, 14, 18, 0.94);
+    --obsidian-border: rgba(214, 165, 66, 0.24);
+    --obsidian-border-hot: rgba(241, 210, 119, 0.58);
+    --obsidian-reflection: rgba(255, 242, 189, 0.12);
+    --champagne-text: #eee2c7;
+    --muted-gold-text: #bcae91;
+    --danger-gold-red: #d17a5f;
+    --obsidian-blur: 18px;
+    --obsidian-shadow-sm: 0 10px 28px rgba(0, 0, 0, 0.34);
+    --obsidian-shadow-md: 0 22px 58px rgba(0, 0, 0, 0.48);
+    --obsidian-shadow-lg: 0 36px 96px rgba(0, 0, 0, 0.62);
+    --gold-glow-sm: 0 0 18px rgba(214, 165, 66, 0.16);
+    --gold-glow-md: 0 0 34px rgba(214, 165, 66, 0.24);
+    --gold-metal: linear-gradient(110deg, #765019 0%, #b9822c 18%, #f0cc72 38%, #fff2bd 48%, #d8a23c 59%, #8b5c18 82%, #e6c15d 100%);
+    --gold-metal-soft: linear-gradient(110deg, #80602a, #e1bd68 38%, #fff0b0 50%, #b9822c 72%, #e6c15d);
+    --focus-ring: 0 0 0 3px rgba(241, 210, 119, 0.28);
+    --motion-fast: 180ms;
+    --motion-normal: 300ms;
+    --motion-slow: 620ms;
+    --motion-ambient: 16s;
+    --ease-obsidian: cubic-bezier(0.22, 1, 0.36, 1);
 
-    --text: rgba(255, 255, 255, 0.92);
-    --muted: rgba(255, 255, 255, 0.68);
+    /* Services-derived semantic typography */
+    --type-display-xl: clamp(3rem, 8vw, 5.25rem);
+    --type-display-l: clamp(2.5rem, 6.5vw, 4.25rem);
+    --type-h1: clamp(2.25rem, 5.6vw, 4rem);
+    --type-h2: clamp(1.85rem, 4.2vw, 3rem);
+    --type-h3: clamp(1.25rem, 2.2vw, 1.65rem);
+    --type-body-lg: clamp(1rem, 1.6vw, 1.2rem);
+    --type-body: 1rem;
+    --type-small: 0.8125rem;
+    --type-meta: 0.75rem;
+    --leading-display: 0.96;
+    --leading-heading: 1.08;
+    --leading-body: 1.62;
+    /* Base */
+    --bg: var(--obsidian-950);
+    --bg-2: var(--obsidian-850);
+
+    --text: var(--champagne-text);
+    --muted: var(--muted-gold-text);
     --faint: rgba(255, 255, 255, 0.45);
 
     /* Gold / Ember accents */
@@ -117,7 +167,11 @@ export const GlobalStyle = css`
     background-repeat: no-repeat;
     background-attachment: fixed; */
 
-    background-color: var(--bg); /* безпечний дефолт */
+    background:
+      radial-gradient(ellipse at 78% 4%, rgba(128, 76, 29, 0.13), transparent 36%),
+      radial-gradient(ellipse at 12% 66%, rgba(55, 42, 70, 0.12), transparent 42%),
+      linear-gradient(145deg, var(--obsidian-950), var(--obsidian-850) 52%, #050406);
+    background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -134,9 +188,9 @@ export const GlobalStyle = css`
     pointer-events: none;
     z-index: 0;
     background:
-      radial-gradient(700px 320px at 78% 22%, rgba(255, 177, 74, 0.10), transparent 60%),
-      radial-gradient(700px 320px at 22% 82%, rgba(246, 211, 101, 0.08), transparent 58%),
-      radial-gradient(900px 600px at 50% 50%, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.62));
+      linear-gradient(117deg, transparent 0 42%, rgba(241, 210, 119, 0.018) 44%, transparent 47%),
+      radial-gradient(700px 320px at 78% 22%, rgba(183, 116, 41, 0.08), transparent 60%),
+      radial-gradient(900px 600px at 50% 50%, transparent, rgba(0, 0, 0, 0.52));
   }
 
   #root,
@@ -169,9 +223,51 @@ export const GlobalStyle = css`
     color: var(--text);
   }
 
+  h1 {
+    font-size: var(--type-h1);
+    line-height: var(--leading-display);
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+  }
+
+  h2 {
+    font-size: var(--type-h2);
+    line-height: var(--leading-heading);
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-size: var(--type-h3);
+    line-height: 1.16;
+  }
+
+  .type-display-xl { font-size: var(--type-display-xl); line-height: .92; letter-spacing: -.045em; }
+  .type-display-l { font-size: var(--type-display-l); line-height: var(--leading-display); letter-spacing: -.04em; }
+  .type-eyebrow { color: var(--gold-400); font-size: var(--type-meta); font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+  .type-body-lg { font-size: var(--type-body-lg); line-height: var(--leading-body); }
+  .type-meta { font-size: var(--type-meta); letter-spacing: .08em; text-transform: uppercase; }
+  .text-cream { color: var(--champagne-text); }
+
+  .text-gold,
+  .premium-heading em,
+  .premium-heading strong {
+    color: transparent;
+    background: var(--gold-metal);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-style: normal;
+  }
+
+  @keyframes vsGoldSweep {
+    0% { transform: translate3d(-115%, 0, 0); }
+    100% { transform: translate3d(115%, 0, 0); }
+  }
+
   /* Клас для золотого заголовку (коли треба прям “преміум”) */
   .gold-gradient {
-    background: linear-gradient(90deg, var(--gold-1), var(--gold-2), var(--gold-3));
+    background: var(--gold-metal);
+    background-size: 180% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -191,8 +287,13 @@ export const GlobalStyle = css`
     transition: color 200ms ease, filter 200ms ease;
   }
   a:hover {
-    color: rgba(255, 177, 74, 0.95); /* ember */
-    filter: drop-shadow(var(--glow-ember));
+    color: var(--gold-300);
+    filter: drop-shadow(0 0 12px rgba(214, 165, 66, 0.2));
+  }
+
+  :focus-visible {
+    outline: 1px solid var(--gold-300);
+    outline-offset: 3px;
   }
 
   button {
