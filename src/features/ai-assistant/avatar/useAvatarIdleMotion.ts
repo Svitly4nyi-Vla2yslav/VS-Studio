@@ -13,6 +13,11 @@ const gazeTargets = [
   { x: 0.9, y: 0.3 },
 ];
 
+/**
+ * Створює MotionValue для фонового руху погляду між наперед заданими точками.
+ * Коли вказівник поруч, повертає погляд у центр; інакше періодично обирає випадкову ціль.
+ * Повертає `gazeX` і `gazeY`, а interval гарантовано очищається під час unmount.
+ */
 export const useAvatarIdleMotion = (state: AssistantVisualState, isNear: boolean) => {
   const reducedMotion = false;
   const gazeX = useMotionValue(0);
@@ -25,6 +30,7 @@ export const useAvatarIdleMotion = (state: AssistantVisualState, isNear: boolean
       return undefined;
     }
 
+    // Обирає одну дозволену координату й синхронно оновлює обидві осі погляду.
     const schedule = () => {
       const next = gazeTargets[Math.floor(Math.random() * gazeTargets.length)];
       gazeX.set(next.x);
