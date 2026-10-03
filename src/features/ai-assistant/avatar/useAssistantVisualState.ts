@@ -13,12 +13,18 @@ interface Options {
   successRevision: number;
 }
 
+/**
+ * Перетворює стан панелі, повідомлень і вказівника на один візуальний стан аватара.
+ * Повертає `AssistantVisualState`; короткі greeting/success/error/answering стани мають
+ * часовий пріоритет, а таймери очищаються під час повторного ефекту або unmount.
+ */
 export const useAssistantVisualState = (options: Options) => {
   const [state, setState] = useState<AssistantVisualState>('idle');
   const previousMessages = useRef(options.messageCount);
   const previousOpen = useRef(options.isOpen);
   const expressiveUntil = useRef(0);
 
+  // Один раз за browser session показує привітання під час першого відкриття панелі.
   useEffect(() => {
     let timer: number | undefined;
     const greeted = window.sessionStorage.getItem(ASSISTANT_GREETING_KEY) === 'true';
@@ -32,6 +38,7 @@ export const useAssistantVisualState = (options: Options) => {
     return () => { if (timer) window.clearTimeout(timer); };
   }, [options.isOpen]);
 
+  // Кожна нова successRevision запускає коротку позитивну реакцію.
   useEffect(() => {
     if (options.successRevision === 0) return undefined;
     expressiveUntil.current = Date.now() + 1200;
@@ -40,6 +47,7 @@ export const useAssistantVisualState = (options: Options) => {
     return () => window.clearTimeout(timer);
   }, [options.successRevision]);
 
+  // Після виразних реакцій обирає базовий стан за фіксованим порядком пріоритетів.
   useEffect(() => {
     if (Date.now() < expressiveUntil.current) return undefined;
     if (options.isThinking) setState('thinking');
