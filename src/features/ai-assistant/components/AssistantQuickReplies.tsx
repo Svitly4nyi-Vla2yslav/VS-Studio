@@ -46,8 +46,11 @@ interface AssistantQuickRepliesProps {
   onSelect: (value: string, action?: AssistantQuickReply['action']) => void;
 }
 
+// Компонент приймає готові варіанти відповіді й callback вибору та повертає групу кнопок.
+// Для кожного натискання він передає значення й необов’язкову дію батьківському workflow, не змінюючи стан самостійно.
 export const AssistantQuickReplies: React.FC<AssistantQuickRepliesProps> = ({ items, onSelect }) => (
   <Wrap>
+    {/* Стабільний id зберігає відповідність кнопки під час повторних рендерів списку. */}
     {items.map(item => (
       <QuickButton key={item.id} type='button' onClick={() => onSelect(item.value, item.action)}>
         {item.label}
