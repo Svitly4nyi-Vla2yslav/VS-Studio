@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const HomePageShell = styled.div`
   .page {
+    position: relative;
     padding: 0 0 72px;
   }
 
@@ -250,7 +251,7 @@ export const HomePageShell = styled.div`
 
   @media (max-width: 767px) {
     .page {
-      padding: 28px 0 52px;
+      padding: 1px 0 52px;
     }
 
     .section {

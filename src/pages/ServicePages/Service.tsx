@@ -46,8 +46,7 @@ const StyledPageRoot = styled(PageRoot)`
   padding-top: 0;
   background:
     radial-gradient(1200px 600px at 12% -8%, rgba(77, 55, 92, .12), transparent 60%),
-    radial-gradient(1000px 680px at 88% 2%, rgba(214, 165, 66, .12), transparent 64%),
-    var(--obsidian-950);
+    radial-gradient(1000px 680px at 88% 2%, rgba(214, 165, 66, .12), transparent 64%);
 
   &::before {
     content: '';

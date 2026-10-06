@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
+import { marblePageBackground } from '../../../styles/marbleBackground';
 
 export const SiteShell = styled.div`
   min-height: 100vh;
-  background:
-    radial-gradient(1200px 500px at 12% -10%, rgba(255, 160, 70, 0.2), transparent 60%),
-    radial-gradient(900px 420px at 88% 10%, rgba(70, 127, 255, 0.22), transparent 60%),
-    linear-gradient(180deg, #070812 0%, #0e1220 100%);
+  overflow-x: clip;
+  ${marblePageBackground}
 `;
 
 export const MainContent = styled(motion.main)`

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import styled, { css, keyframes } from 'styled-components';
+import { marblePageBackground } from '../../styles/marbleBackground';
 
 const gold = '#efb33e';
 const cyan = '#33e0d1';
@@ -62,7 +63,7 @@ export const Page = styled.main`
   padding-top: 0;
   overflow-x: clip;
   color: var(--plehn-text);
-  background: radial-gradient(circle at 50% 22%, rgba(49, 107, 249, 0.045), transparent 28%), var(--plehn-bg);
+  ${marblePageBackground}
   font-family:
     Inter,
     Geist,

@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import { marblePageBackground } from '../../styles/marbleBackground';
 import { portfolioTheme } from '../utils/portfolioTheme';
 
 /* PortfolioGlobalStyle ховає нативний scrollbar тільки на portfolio-сторінці й не зачіпає основний сайт. */
@@ -41,15 +42,7 @@ export const PortfolioPageWrapper = styled.main`
   position: relative;
   min-height: 100vh;
   overflow-x: clip;
-  background:
-    radial-gradient(circle at top left, rgba(124, 58, 237, 0.18), transparent 28%),
-    radial-gradient(circle at bottom right, rgba(34, 211, 238, 0.12), transparent 28%),
-    linear-gradient(
-      180deg,
-      ${portfolioTheme.colors.background} 0%,
-      ${portfolioTheme.colors.backgroundSoft} 48%,
-      ${portfolioTheme.colors.backgroundPanel} 100%
-    );
+  ${marblePageBackground}
   color: ${portfolioTheme.colors.white};
   font-family: ${portfolioTheme.fonts.body};
   line-height: 1.5;
