@@ -1,399 +1,121 @@
-import { motion, useReducedMotion, useSpring, useTransform } from 'framer-motion';
-import { useEffect, useState, type Ref } from 'react';
-import styled, { keyframes } from 'styled-components';
+import { AnimatePresence, motion, useMotionValue, useReducedMotion, useSpring, useTransform } from 'framer-motion';
+import { useEffect, useId, useState, type Ref } from 'react';
+import styled from 'styled-components';
 import { avatarStateLabel } from './assistantAvatar.config';
 import type { AssistantVisualState, PointerProximity } from './assistantAvatar.types';
 import { useAvatarIdleMotion } from './useAvatarIdleMotion';
 import { useAvatarPointer } from './useAvatarPointer';
 
-const clamp = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max);
-
-const bodyFloat = keyframes`
-  0%, 100% { transform: translateY(-5px) rotate(-2deg) scale(0.985); }
-  50% { transform: translateY(6px) rotate(2.2deg) scale(1.04); }
+const Stage = styled.div<{ $size: number }>`
+  position: relative; width: ${({ $size }) => `${$size}px`}; height: ${({ $size }) => `${$size}px`};
+  display: grid; place-items: center; flex: 0 0 auto; overflow: visible;
+  filter: drop-shadow(0 9px 16px rgba(0,0,0,.52));
+  svg { overflow: visible; }
 `;
-
-const pulse = keyframes`
-  0%, 100% { opacity: 0.42; }
-  50% { opacity: 1; }
-`;
-
-const Stage = styled.div<{ $size: number; $state: AssistantVisualState }>`
-  position: relative;
-  width: ${({ $size }) => `${$size}px`};
-  height: ${({ $size }) => `${$size}px`};
-  display: grid;
-  place-items: center;
-  flex: 0 0 auto;
-  overflow: visible;
-  border-radius: 50%;
-  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.48));
-
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 7%;
-    border-radius: 50%;
-    border: 1px solid rgba(240, 213, 138, 0.18);
-    box-shadow: 0 0 18px rgba(214, 165, 66, 0.08);
-    opacity: ${({ $state }) => ($state === 'thinking' ? 0.8 : 0.2)};
-    animation: ${pulse} 3s ease-in-out infinite;
-    pointer-events: none;
-  }
-`;
-
-const AvatarBody = styled(motion.div)`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-  transform-origin: 50% 70%;
-  animation: ${bodyFloat} 4.8s ease-in-out infinite;
-`;
-
-const FaceWrap = styled(motion.div)`
-  position: relative;
-  display: grid;
-  place-items: center;
-  width: 92%;
-  height: 92%;
-  transform-origin: 50% 70%;
-`;
-
-const BotSvg = styled.svg`
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-`;
+const Layer = styled(motion.div)`width:100%;height:100%;display:grid;place-items:center;transform-origin:50% 65%;`;
 
 interface AssistantAvatarProps {
-  state: AssistantVisualState;
-  size?: number;
-  pointer?: PointerProximity;
-  trackingRef?: Ref<HTMLDivElement>;
-  decorative?: boolean;
+  state: AssistantVisualState; size?: number; pointer?: PointerProximity; trackingRef?: Ref<HTMLDivElement>;
+  decorative?: boolean; audioLevel?: number; reduceMotion?: boolean;
 }
+const clamp = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max);
 
-export const AssistantAvatar: React.FC<AssistantAvatarProps> = ({
-  state,
-  size = 64,
-  pointer,
-  trackingRef,
-  decorative = false,
-}) => {
-  const reducedMotion = useReducedMotion();
+export const AssistantAvatar: React.FC<AssistantAvatarProps> = ({ state, size = 64, pointer, trackingRef, decorative = false, audioLevel = 0, reduceMotion }) => {
+  const systemReducedMotion = useReducedMotion();
+  const reducedMotion = reduceMotion ?? Boolean(systemReducedMotion);
+  const id = useId().replace(/:/g, '');
   const internalPointer = useAvatarPointer<HTMLDivElement>();
   const resolvedPointer = pointer ?? internalPointer;
   const trackedPointer = resolvedPointer as PointerProximity & { ref?: Ref<HTMLDivElement> };
-  const avatarTrackingRef = trackingRef ?? trackedPointer.ref;
-  const idleMotion = useAvatarIdleMotion(state, resolvedPointer.isNear);
+  const idle = useAvatarIdleMotion(state, resolvedPointer.isNear);
   const [blink, setBlink] = useState(1);
-  const [autoAction, setAutoAction] = useState(0);
+  const [wink, setWink] = useState<'left' | 'right' | null>(null);
+  const rawAudio = useMotionValue(0);
+  const smoothAudio = useSpring(rawAudio, { stiffness: 90, damping: 24, mass: .9 });
+  const audioScale = useTransform(smoothAudio, [0, 1], [1, 1.018]);
+  const audioGlow = useTransform(smoothAudio, [0, 1], [.38, .8]);
 
+  useEffect(() => rawAudio.set(clamp(audioLevel, 0, 1)), [audioLevel, rawAudio]);
   useEffect(() => {
-    if (reducedMotion) {
-      setBlink(1);
-      setAutoAction(0);
-      return undefined;
-    }
+    if (reducedMotion || state === 'sleeping') { setBlink(1); setWink(null); return undefined; }
+    let blinkTimer = 0; let openTimer = 0; let secondTimer = 0;
+    const schedule = () => { blinkTimer = window.setTimeout(() => {
+      setBlink(.08); openTimer = window.setTimeout(() => { setBlink(1);
+        if (Math.random() < .1) secondTimer = window.setTimeout(() => { setBlink(.08); openTimer = window.setTimeout(() => { setBlink(1); schedule(); }, 110); }, 160 + Math.random() * 60);
+        else schedule();
+      }, 90 + Math.random() * 35);
+    }, 3200 + Math.random() * 4300); };
+    schedule(); return () => [blinkTimer, openTimer, secondTimer].forEach(window.clearTimeout);
+  }, [reducedMotion, state]);
+  useEffect(() => {
+    if (reducedMotion || resolvedPointer.isNear || !['idle', 'greeting', 'success'].includes(state)) return undefined;
+    let closeTimer = 0; const timer = window.setTimeout(() => { setWink(Math.random() > .5 ? 'left' : 'right'); closeTimer = window.setTimeout(() => setWink(null), 180); }, 25000 + Math.random() * 25000);
+    return () => { window.clearTimeout(timer); window.clearTimeout(closeTimer); };
+  }, [reducedMotion, resolvedPointer.isNear, state]);
 
-    let blinkTimer: number | undefined;
-    let closeTimer: number | undefined;
-    let actionTimer: number | undefined;
+  const semanticLock = !['idle', 'curious', 'greeting', 'reading'].includes(state);
+  const attentive = state === 'curious' || state === 'listening' || resolvedPointer.isNear;
+  const happy = ['idle', 'greeting', 'answering', 'success', 'celebrating'].includes(state) && !attentive;
+  const active = ['thinking', 'typing', 'listening', 'speaking'].includes(state);
+  const gazeX = useSpring(useTransform([resolvedPointer.x, idle.gazeX], ([px, ix]: number[]) => state === 'thinking' ? 1.8 : clamp(Number(resolvedPointer.isNear && !resolvedPointer.isCoarse && !semanticLock ? px : ix) * (resolvedPointer.isNear ? 5 : 2.2), -3.5, 3.5)), { stiffness: 310, damping: 28, mass: .6 });
+  const gazeY = useSpring(useTransform([resolvedPointer.y, idle.gazeY], ([py, iy]: number[]) => state === 'thinking' ? -1.8 : state === 'reading' ? 1.4 : clamp(Number(resolvedPointer.isNear && !resolvedPointer.isCoarse && !semanticLock ? py : iy) * (resolvedPointer.isNear ? 4.4 : 2), -2.5, 2.5)), { stiffness: 310, damping: 28, mass: .6 });
+  const bodyX = useSpring(useTransform(resolvedPointer.x, value => reducedMotion || semanticLock ? 0 : clamp(value * 1.5, -1.5, 1.5)), { stiffness: 135, damping: 22 });
+  const bodyY = useSpring(useTransform(resolvedPointer.y, value => reducedMotion || semanticLock ? 0 : clamp(value, -1, 1)), { stiffness: 130, damping: 22 });
+  const bodyRotateX = useSpring(useTransform(resolvedPointer.y, value => reducedMotion || semanticLock ? 0 : clamp(value * -2, -2, 2)), { stiffness: 120, damping: 22 });
+  const bodyRotateY = useSpring(useTransform(resolvedPointer.x, value => reducedMotion || semanticLock ? 0 : clamp(value * 3, -3, 3)), { stiffness: 120, damping: 22 });
+  const highlightX = useTransform(gazeX, value => clamp(value * .42, -1.5, 1.5));
+  const highlightY = useTransform(gazeY, value => clamp(value * .32, -1, 1));
+  const energyOpacity = state === 'sleeping' ? .24 : active ? .72 : happy ? .58 : .42;
+  const earOpacity = active || attentive ? .95 : state === 'error' ? .46 : .72;
 
-    const scheduleBlink = () => {
-      blinkTimer = window.setTimeout(() => {
-        setBlink(0);
-        closeTimer = window.setTimeout(() => {
-          setBlink(1);
-          scheduleBlink();
-        }, 110 + Math.random() * 80);
-      }, 2400 + Math.random() * 4200);
-    };
-
-    const scheduleAction = () => {
-      const delay = 5000 + Math.random() * 9000;
-      actionTimer = window.setTimeout(() => {
-        setAutoAction((value) => (value + 1) % 4);
-        scheduleAction();
-      }, delay);
-    };
-
-    scheduleBlink();
-    scheduleAction();
-
-    return () => {
-      if (blinkTimer) window.clearTimeout(blinkTimer);
-      if (closeTimer) window.clearTimeout(closeTimer);
-      if (actionTimer) window.clearTimeout(actionTimer);
-    };
-  }, [reducedMotion]);
-
-  const bodyX = useSpring(
-    useTransform([resolvedPointer.x, idleMotion.gazeX], (values: number[]) => {
-      const [pointerValue, idleValue] = values;
-      const numericPointer = Number(pointerValue ?? 0);
-      const numericIdle = Number(idleValue ?? 0);
-      return resolvedPointer.isNear ? numericPointer * 9 : numericIdle * 3.2;
-    }),
-    { stiffness: 120, damping: 18, mass: 1.1 }
-  );
-
-  const bodyY = useSpring(
-    useTransform([resolvedPointer.y, idleMotion.gazeY], (values: number[]) => {
-      const [pointerValue, idleValue] = values;
-      const numericPointer = Number(pointerValue ?? 0);
-      const numericIdle = Number(idleValue ?? 0);
-      return resolvedPointer.isNear ? numericPointer * 7 : numericIdle * 2.6;
-    }),
-    { stiffness: 110, damping: 18, mass: 1.1 }
-  );
-
-  const bodyRotate = useSpring(
-    useTransform([resolvedPointer.x, idleMotion.gazeX], (values: number[]) => {
-      const [pointerValue, idleValue] = values;
-      const numericPointer = Number(pointerValue ?? 0);
-      const numericIdle = Number(idleValue ?? 0);
-      return resolvedPointer.isNear ? numericPointer * 16 : numericIdle * 9;
-    }),
-    { stiffness: 100, damping: 16, mass: 1.4 }
-  );
-
-  const headX = useSpring(
-    useTransform([resolvedPointer.x, idleMotion.gazeX], (values: number[]) => {
-      const [pointerValue, idleValue] = values;
-      const numericPointer = Number(pointerValue ?? 0);
-      const numericIdle = Number(idleValue ?? 0);
-      return clamp((resolvedPointer.isNear ? numericPointer : numericIdle) * 5.4, -3.5, 3.5);
-    }),
-    { stiffness: 220, damping: 22, mass: 0.8 }
-  );
-
-  const headY = useSpring(
-    useTransform([resolvedPointer.y, idleMotion.gazeY], (values: number[]) => {
-      const [pointerValue, idleValue] = values;
-      const numericPointer = Number(pointerValue ?? 0);
-      const numericIdle = Number(idleValue ?? 0);
-      return clamp((resolvedPointer.isNear ? numericPointer : numericIdle) * 4.1, -2.3, 2.3);
-    }),
-    { stiffness: 210, damping: 22, mass: 0.8 }
-  );
-
-  const headRotate = useSpring(
-    useTransform([resolvedPointer.x, resolvedPointer.y], (values: number[]) => {
-      const [pointerX, pointerY] = values;
-      return clamp(Number(pointerX ?? 0) * 15 + Number(pointerY ?? 0) * 5, -12, 12);
-    }),
-    { stiffness: 200, damping: 22, mass: 0.9 }
-  );
-
-  const leftPupilX = useSpring(
-    useTransform([resolvedPointer.x, idleMotion.gazeX], (values: number[]) => {
-      const [pointerValue, idleValue] = values;
-      const numericPointer = Number(pointerValue ?? 0);
-      const numericIdle = Number(idleValue ?? 0);
-      const target = resolvedPointer.isNear ? numericPointer * 7.8 : numericIdle * 5.4;
-      return clamp(target - 0.9, -3.8, 3.8);
-    }),
-    { stiffness: 370, damping: 24, mass: 0.5 }
-  );
-
-  const rightPupilX = useSpring(
-    useTransform([resolvedPointer.x, idleMotion.gazeX], (values: number[]) => {
-      const [pointerValue, idleValue] = values;
-      const numericPointer = Number(pointerValue ?? 0);
-      const numericIdle = Number(idleValue ?? 0);
-      const target = resolvedPointer.isNear ? numericPointer * 7.8 : numericIdle * 5.4;
-      return clamp(target + 0.9, -3.8, 3.8);
-    }),
-    { stiffness: 370, damping: 24, mass: 0.5 }
-  );
-
-  const leftPupilY = useSpring(
-    useTransform([resolvedPointer.y, idleMotion.gazeY], (values: number[]) => {
-      const [pointerValue, idleValue] = values;
-      const numericPointer = Number(pointerValue ?? 0);
-      const numericIdle = Number(idleValue ?? 0);
-      const target = resolvedPointer.isNear ? numericPointer * 6.4 : numericIdle * 4.3;
-      return clamp(target - 0.4, -3, 3);
-    }),
-    { stiffness: 370, damping: 24, mass: 0.5 }
-  );
-
-  const rightPupilY = useSpring(
-    useTransform([resolvedPointer.y, idleMotion.gazeY], (values: number[]) => {
-      const [pointerValue, idleValue] = values;
-      const numericPointer = Number(pointerValue ?? 0);
-      const numericIdle = Number(idleValue ?? 0);
-      const target = resolvedPointer.isNear ? numericPointer * 6.4 : numericIdle * 4.3;
-      return clamp(target + 0.4, -3, 3);
-    }),
-    { stiffness: 370, damping: 24, mass: 0.5 }
-  );
-
-  const bodyMood = (() => {
-    if (state === 'success') return { s: 1.08, y: 0, rotate: 4, glow: 1 };
-    if (state === 'greeting') return { s: 1.12, y: -2, rotate: 8, glow: 1 };
-    if (state === 'thinking') return { s: 1.06, y: -0.5, rotate: -2, glow: 0.8 };
-    if (state === 'answering') return { s: 1.06, y: -1, rotate: 3, glow: 0.9 };
-    if (state === 'curious') return { s: 1.04, y: 0, rotate: 4, glow: 0.76 };
-    if (state === 'error') return { s: 1, y: 0.5, rotate: -4, glow: 0.55 };
-    return { s: 1, y: 0, rotate: 0, glow: 0.7 };
-  })();
-
-  const eyeLift = state === 'thinking' ? -1.3 : state === 'greeting' ? -1.1 : state === 'success' ? -0.8 : 0;
-  const eyeWiden = state === 'greeting' || state === 'success' ? 1.14 : state === 'thinking' ? 1.04 : 1;
-  const gazeShift = autoAction === 1 ? 2.3 : autoAction === 2 ? -2.1 : autoAction === 3 ? 1.4 : 0;
-
-  return (
-    <Stage
-      ref={avatarTrackingRef}
-      $state={state}
-      $size={size}
-      aria-hidden={decorative || undefined}
-      role={decorative ? undefined : 'img'}
-      aria-label={decorative ? undefined : avatarStateLabel[state]}
-      data-state={state}
-    >
-      <AvatarBody
-        style={{ x: bodyX, y: bodyY, rotate: bodyRotate }}
-        animate={
-          reducedMotion
-            ? { scale: [1, 0.995, 1] }
-            : {
-                scaleX: [1, bodyMood.s, 1.03, 1],
-                scaleY: [1, 1.02, bodyMood.s + 0.02, 1],
-                rotate: [0, bodyMood.rotate, -bodyMood.rotate * 0.6, 0],
-                y: [0, bodyMood.y, 0, 0],
-              }
-        }
-        transition={{ duration: state === 'thinking' ? 1.1 : state === 'greeting' ? 0.9 : 4.3, repeat: Infinity, ease: 'easeInOut' }}
-      >
-        <FaceWrap style={{ x: headX, y: headY, rotate: headRotate }}>
-          <BotSvg viewBox='0 0 120 120' aria-hidden='true'>
-            <defs>
-              <linearGradient id='ghostBody' x1='0%' x2='100%' y1='0%' y2='100%'>
-                <stop offset='0%' stopColor='rgba(20, 20, 22, 0.96)' />
-                <stop offset='40%' stopColor='rgba(12, 12, 14, 0.98)' />
-                <stop offset='100%' stopColor='rgba(8, 8, 10, 0.96)' />
-              </linearGradient>
-              <linearGradient id='ghostShine' x1='0%' x2='100%' y1='0%' y2='100%'>
-                <stop offset='0%' stopColor='rgba(242, 216, 155, 0.9)' />
-                <stop offset='65%' stopColor='rgba(202, 151, 80, 0.35)' />
-                <stop offset='100%' stopColor='rgba(242, 216, 155, 0)' />
-              </linearGradient>
-            </defs>
-
-            <ellipse cx='60' cy='92' rx='24' ry='9' fill='rgba(0,0,0,0.22)' />
-
-            <motion.g
-              animate={
-                reducedMotion
-                  ? { scale: 1 }
-                  : {
-                      scaleX: [1, 1.03, 1.06, 1],
-                      scaleY: [1, 0.99, 1.03, 1],
-                      rotate: state === 'greeting' ? [0, 7, -6, 0] : state === 'success' ? [0, 4, 2, 0] : [0, 2, -2, 0],
-                    }
-              }
-              transition={{ duration: state === 'greeting' ? 1.2 : 4.4, repeat: Infinity, ease: 'easeInOut' }}
-              style={{ transformOrigin: '50% 58%' }}
-            >
-              <path
-                d='M32 58C32 38 42 22 60 22C77 22 89 36 89 54C89 77 78 91 60 99C43 92 32 78 32 58Z'
-                fill='url(#ghostBody)'
-                stroke='rgba(246, 219, 163, 0.34)'
-                strokeWidth='1.4'
-              />
-              <path
-                d='M42 42C49 33 58 31 60 31C67 31 76 34 82 44C74 38 66 35 60 35C55 35 48 37 42 42Z'
-                fill='rgba(246, 220, 170, 0.08)'
-              />
-              <path
-                d='M38 56C48 64 52 74 60 80C69 74 76 66 82 56'
-                fill='rgba(250, 214, 147, 0.06)'
-                stroke='rgba(240, 213, 138, 0.12)'
-                strokeWidth='5'
-                strokeLinecap='round'
-              />
-            </motion.g>
-
-            <motion.g
-              animate={{
-                x: autoAction === 1 ? 2.8 : autoAction === 2 ? -2.6 : 0,
-                y: state === 'thinking' ? [0, -1, 0, 1, 0] : state === 'success' ? [0, -2, 0] : 0,
-              }}
-              transition={{ duration: 1.3, repeat: Infinity, ease: 'easeInOut' }}
-            >
-              <motion.g
-                animate={{ scaleY: blink, scaleX: eyeWiden, rotate: state === 'error' ? -5 : state === 'greeting' ? 2 : 0, y: eyeLift }}
-                transition={{ duration: 0.14, ease: 'easeInOut' }}
-                style={{ transformOrigin: '50% 50%' }}
-              >
-                <ellipse cx='46' cy='58' rx='12' ry='13' fill='rgba(249, 233, 196, 0.92)' opacity='0.9' />
-                <path d='M35 58 Q46 49 57 58' fill='none' stroke='rgba(34,28,20,0.18)' strokeWidth='1' strokeLinecap='round' />
-                <motion.g style={{ x: leftPupilX, y: leftPupilY }}>
-                  <ellipse cx='0' cy='0' rx='4.1' ry='4.7' fill='#1d140d' />
-                  <circle cx='1.1' cy='-1.3' r='1.2' fill='rgba(255,255,255,0.9)' />
-                </motion.g>
+  return <Stage ref={trackingRef ?? trackedPointer.ref} $size={size} aria-hidden={decorative || undefined} role={decorative ? undefined : 'img'} aria-label={decorative ? undefined : avatarStateLabel[state]} data-state={state}>
+    <Layer style={{ x: bodyX, y: bodyY, rotateX: bodyRotateX, rotateY: bodyRotateY, transformPerspective: 520 }}>
+      <Layer animate={reducedMotion ? { y: 0 } : { y: state === 'success' ? [0, -2, 0] : [0, -1.5, .7, 0] }} transition={{ duration: state === 'success' ? .8 : 6.4, repeat: state === 'success' ? 0 : Infinity, ease: 'easeInOut' }}>
+        <Layer style={{ scale: state === 'speaking' ? audioScale : undefined }} animate={reducedMotion ? { scale: 1 } : { scaleX: [1, 1.008, 1], scaleY: [1, 1.014, 1] }} transition={{ duration: 4.8, repeat: Infinity, ease: 'easeInOut' }}>
+          <Layer animate={reducedMotion ? { rotate: 0, scale: 1 } : { rotate: state === 'error' ? [-.7, .5, -.7] : [-.6, .8, -.6], scale: attentive ? 1.025 : state === 'success' ? 1.035 : 1 }} transition={{ duration: state === 'error' ? 4.2 : 9.4, repeat: Infinity, ease: 'easeInOut' }}>
+            <motion.svg viewBox='0 0 120 120' width='100%' height='100%' aria-hidden='true'>
+              <defs>
+                <linearGradient id={`${id}-helmet`} x1='18%' y1='8%' x2='88%' y2='92%'><stop offset='0%' stopColor='#1b1d22'/><stop offset='34%' stopColor='#0d0e11'/><stop offset='75%' stopColor='#08090b'/><stop offset='100%' stopColor='#141009'/></linearGradient>
+                <radialGradient id={`${id}-visor`} cx='45%' cy='24%' r='78%'><stop offset='0%' stopColor='#111318'/><stop offset='38%' stopColor='#050609'/><stop offset='100%' stopColor='#010102'/></radialGradient>
+                <linearGradient id={`${id}-gold`} x1='10%' y1='10%' x2='90%' y2='90%'><stop offset='0%' stopColor='#ffe29a'/><stop offset='38%' stopColor='#e6ad43'/><stop offset='100%' stopColor='#8e541b'/></linearGradient>
+                <radialGradient id={`${id}-core`} cx='50%' cy='55%' r='55%'><stop offset='0%' stopColor='#f0c45d' stopOpacity='.72'/><stop offset='45%' stopColor='#a66d22' stopOpacity='.3'/><stop offset='100%' stopColor='#7d481a' stopOpacity='0'/></radialGradient>
+                <linearGradient id={`${id}-orbit`} x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stopColor='#8e541b' stopOpacity='.1'/><stop offset='55%' stopColor='#e6ad43'/><stop offset='100%' stopColor='#ffe29a'/></linearGradient>
+                <filter id={`${id}-blur`} x='-50%' y='-50%' width='200%' height='200%'><feGaussianBlur stdDeviation='4'/></filter>
+                <filter id={`${id}-eye`} x='-80%' y='-100%' width='260%' height='300%'><feGaussianBlur stdDeviation='2.2'/></filter>
+                <clipPath id={`${id}-clip`}><path d='M60 18C80 18 93 28 96 45L98 78C98 94 84 103 60 104C36 103 22 94 22 78L24 45C27 28 40 18 60 18Z'/></clipPath>
+              </defs>
+              <ellipse cx='60' cy='105' rx='31' ry='6' fill='rgba(0,0,0,.34)'/>
+              <AnimatePresence>{state === 'thinking' && !reducedMotion ? <motion.g initial={{ opacity: 0, scale: .82 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 1.08 }} transition={{ duration: .32 }} style={{ transformOrigin: '60px 60px' }}>
+                <motion.ellipse cx='60' cy='61' rx='51' ry='37' fill='none' stroke={`url(#${id}-orbit)`} strokeWidth='1.5' strokeLinecap='round' strokeDasharray='76 42' animate={{ rotate: 360 }} transition={{ duration: 3.7, repeat: Infinity, ease: 'linear' }} style={{ transformOrigin: '60px 61px' }}/>
+                <motion.ellipse cx='60' cy='61' rx='44' ry='49' fill='none' stroke='rgba(230,173,67,.28)' strokeWidth='1' strokeDasharray='46 62' animate={{ rotate: -360 }} transition={{ duration: 4.4, repeat: Infinity, ease: 'linear' }} style={{ transformOrigin: '60px 61px' }}/>
+                <circle cx='108' cy='51' r='2.1' fill='#ffe29a'/><circle cx='25' cy='93' r='1.5' fill='#e6ad43'/>
+              </motion.g> : null}</AnimatePresence>
+              <motion.g style={{ opacity: state === 'speaking' ? audioGlow : earOpacity }}>
+                <path d='M25 43C16 44 12 51 12 61V72C12 82 17 87 25 88Z' fill='#08090b' stroke={`url(#${id}-gold)`} strokeWidth='2.2'/><path d='M95 43C104 44 108 51 108 61V72C108 82 103 87 95 88Z' fill='#08090b' stroke={`url(#${id}-gold)`} strokeWidth='2.2'/>
+                <rect x='16' y='54' width='5' height='23' rx='2.5' fill={`url(#${id}-gold)`}/><rect x='99' y='54' width='5' height='23' rx='2.5' fill={`url(#${id}-gold)`}/>
               </motion.g>
-
-              <motion.g
-                animate={{ scaleY: blink, scaleX: eyeWiden, rotate: state === 'error' ? 5 : state === 'greeting' ? -2 : 0, y: eyeLift }}
-                transition={{ duration: 0.14, ease: 'easeInOut' }}
-                style={{ transformOrigin: '50% 50%' }}
-              >
-                <ellipse cx='74' cy='58' rx='12' ry='13' fill='rgba(249, 233, 196, 0.92)' opacity='0.9' />
-                <path d='M63 58 Q74 49 85 58' fill='none' stroke='rgba(34,28,20,0.18)' strokeWidth='1' strokeLinecap='round' />
-                <motion.g style={{ x: rightPupilX, y: rightPupilY }}>
-                  <ellipse cx='0' cy='0' rx='4.1' ry='4.7' fill='#1d140d' />
-                  <circle cx='1.1' cy='-1.3' r='1.2' fill='rgba(255,255,255,0.9)' />
-                </motion.g>
+              <path d='M60 18C80 18 93 28 96 45L98 78C98 94 84 103 60 104C36 103 22 94 22 78L24 45C27 28 40 18 60 18Z' fill={`url(#${id}-helmet)`} stroke={`url(#${id}-gold)`} strokeWidth='1.45'/>
+              <g clipPath={`url(#${id}-clip)`}>
+                <motion.ellipse cx='43' cy='80' rx='26' ry='22' fill={`url(#${id}-core)`} filter={`url(#${id}-blur)`} animate={reducedMotion ? { opacity: energyOpacity } : { x: [-2,2,-2], y: [1,-2,1], opacity: [energyOpacity*.65,energyOpacity,energyOpacity*.65] }} transition={{ duration: active ? 6.5 : 9.2, repeat: Infinity, ease: 'easeInOut' }}/>
+                <motion.ellipse cx='79' cy='47' rx='19' ry='17' fill='#d99a37' opacity='.13' filter={`url(#${id}-blur)`} animate={reducedMotion ? undefined : { x:[2,-1,2],y:[-1,2,-1],opacity:[.08,.2,.08] }} transition={{ duration:10.7,repeat:Infinity,ease:'easeInOut' }}/>
+                <path d='M32 33C43 21 61 21 73 24C55 26 43 31 35 42Z' fill='rgba(255,255,255,.12)'/><path d='M38 27C49 21 65 21 77 25' fill='none' stroke='rgba(255,226,154,.2)' strokeWidth='2' strokeLinecap='round'/>
+              </g>
+              <rect x='28' y='40' width='64' height='45' rx='20' fill={`url(#${id}-visor)`} stroke='rgba(255,226,154,.24)' strokeWidth='1.2'/><path d='M37 46C49 41 70 41 83 46' fill='none' stroke='rgba(255,255,255,.15)' strokeWidth='2.1' strokeLinecap='round'/>
+              <motion.ellipse cx='60' cy='72' rx='25' ry='12' fill='#a66d22' filter={`url(#${id}-blur)`} style={{ opacity: state === 'speaking' ? audioGlow : energyOpacity*.25 }}/>
+              <motion.g style={{ x:gazeX,y:gazeY }}>
+                {happy || state === 'sleeping' ? <>
+                  <motion.path d={state === 'sleeping' ? 'M39 63Q47 67 54 63' : 'M38 65Q46 55 54 65'} fill='none' stroke='#f1bf57' strokeWidth='4.2' strokeLinecap='round' style={{ scaleY:wink==='left'?.08:blink,transformOrigin:'46px 62px' }}/><motion.path d={state === 'sleeping' ? 'M66 63Q73 67 81 63' : 'M66 65Q74 55 82 65'} fill='none' stroke='#f1bf57' strokeWidth='4.2' strokeLinecap='round' style={{ scaleY:wink==='right'?.08:blink,transformOrigin:'74px 62px' }}/>
+                  <path d='M38 65Q46 55 54 65' fill='none' stroke='rgba(240,174,62,.35)' strokeWidth='8' strokeLinecap='round' filter={`url(#${id}-eye)`}/><path d='M66 65Q74 55 82 65' fill='none' stroke='rgba(240,174,62,.35)' strokeWidth='8' strokeLinecap='round' filter={`url(#${id}-eye)`}/>
+                </> : <>
+                  <motion.rect x='37' y='58.5' width='18' height='8' rx='4' fill='#f1bf57' style={{ scaleY:wink==='left'?.08:blink,transformOrigin:'46px 62.5px' }}/><motion.rect x='65' y='58.5' width='18' height='8' rx='4' fill='#f1bf57' style={{ scaleY:wink==='right'?.08:blink,transformOrigin:'74px 62.5px' }}/>
+                  <motion.ellipse cx='43' cy='61' rx='3.2' ry='1.55' fill='#ffe599' style={{ x:highlightX,y:highlightY }}/><motion.ellipse cx='71' cy='61' rx='3.2' ry='1.55' fill='#ffe599' style={{ x:highlightX,y:highlightY }}/>
+                </>}
               </motion.g>
-            </motion.g>
-
-            <motion.g
-              animate={{
-                x: gazeShift,
-                y: state === 'success' ? [0, -1, 0] : state === 'greeting' ? [-1, 1, 0] : 0,
-                scaleY: state === 'success' ? [1, 1.08, 1] : 1,
-              }}
-              transition={{ duration: 1.1, repeat: Infinity, ease: 'easeInOut' }}
-            >
-              <path
-                d={state === 'success' ? 'M48 75 Q60 83 72 75' : state === 'greeting' ? 'M50 74 Q60 80 70 74' : 'M53 74 Q60 76 67 74'}
-                fill='none'
-                stroke='rgba(243, 215, 155, 0.9)'
-                strokeWidth={state === 'success' ? 3 : 2.2}
-                strokeLinecap='round'
-              />
-            </motion.g>
-
-            <motion.g
-              animate={{
-                x: state === 'greeting' ? [0, 6, -4, 0] : 0,
-                rotate: state === 'greeting' ? [0, 10, -7, 0] : 0,
-              }}
-              transition={{ duration: 1.2, repeat: Infinity, ease: 'easeInOut' }}
-              style={{ transformOrigin: '18% 58%' }}
-            >
-              <path d='M18 60C16 62 14 65 14 72C14 76 17 80 22 80C27 80 30 77 30 72C30 65 27 62 18 60Z' fill='rgba(244, 213, 146, 0.12)' stroke='rgba(244, 213, 146, 0.18)' strokeWidth='0.8' />
-            </motion.g>
-
-            {state === 'thinking' ? (
-              <motion.g
-                animate={{ rotate: 360 }}
-                transition={{ duration: 2.8, repeat: Infinity, ease: 'linear' }}
-                style={{ transformOrigin: '50% 50%' }}
-              >
-                <circle cx='90' cy='28' r='7' fill='none' stroke='rgba(240,213,138,0.62)' strokeWidth='1.1' />
-                <path d='M90 16V20M90 36V40M78 28H82M98 28H102' stroke='rgba(240,213,138,0.7)' strokeWidth='1.1' strokeLinecap='round' />
-              </motion.g>
-            ) : null}
-          </BotSvg>
-        </FaceWrap>
-      </AvatarBody>
-    </Stage>
-  );
+              {state === 'celebrating' && !reducedMotion ? <motion.g animate={{ opacity:[0,1,0],scale:[.8,1.14,.8] }} transition={{ duration:1.2 }} style={{ transformOrigin:'60px 60px' }}><path d='M15 31h7M18.5 27.5v7M99 91h7M102.5 87.5v7' stroke='#ffe29a' strokeWidth='1.6' strokeLinecap='round'/></motion.g> : null}
+            </motion.svg>
+          </Layer>
+        </Layer>
+      </Layer>
+    </Layer>
+  </Stage>;
 };

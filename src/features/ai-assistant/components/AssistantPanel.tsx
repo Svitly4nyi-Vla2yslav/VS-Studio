@@ -345,14 +345,14 @@ export const AssistantPanel: React.FC<AssistantPanelProps> = ({
             <TitleRow>
                <AssistantAvatar
                  state={visualState}
-                 size={72}
+                 size={64}
                  pointer={pointer}
                  trackingRef={avatarTrackingRef}
                  decorative
                />
-              <Title>{copy.title}</Title>
+              <Title>Emma AI</Title>
             </TitleRow>
-            <Subtitle>{copy.subtitle}</Subtitle>
+            <Subtitle>Ihre digitale Assistentin</Subtitle>
           </BrandBadge>
         </Headline>
         {!embedded ? (

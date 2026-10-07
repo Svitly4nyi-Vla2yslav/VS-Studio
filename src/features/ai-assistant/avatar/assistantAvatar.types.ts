@@ -9,7 +9,9 @@ export type AssistantVisualState =
   | 'success'
   | 'celebrating'
   | 'error'
-  | 'sleeping';
+  | 'sleeping'
+  | 'listening'
+  | 'speaking';
 
 export interface PointerProximity {
   proximity: MotionValue<number>;

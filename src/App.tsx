@@ -20,6 +20,7 @@ import ServicesPage from './pages/ServicePages/Service';
 import LocalLandingPage from './pages/SeoLanding/SeoLanding';
 import SeoHead from './seo/SeoHead';
 import './site.css';
+import EmmaAvatarDev from './pages/EmmaAvatarDev/EmmaAvatarDev';
 
 const AIAssistantDemoPage = lazy(() => import('./pages/AIAssistantDemo'));
 const PortfolioPage = lazy(() => import('./portfolio/pages/PortfolioPage'));
@@ -47,6 +48,7 @@ export const App: React.FC = () => {
         }
       />
       <Route path='/' element={<Layout />}>
+        {import.meta.env.DEV ? <Route path='dev/emma-avatar' element={<EmmaAvatarDev />} /> : null}
         <Route index element={<Home />} />
         <Route path='services' element={<ServicesPage />} />
         <Route path='webdesign-hildesheim' element={<LocalLandingPage pageId='webdesign-hildesheim' />} />

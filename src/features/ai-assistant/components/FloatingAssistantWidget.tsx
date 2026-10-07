@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
+import { FaArrowRight } from 'react-icons/fa';
 import styled from 'styled-components';
 import { AssistantAvatar } from '../avatar/AssistantAvatar';
 import { useAssistantVisualState } from '../avatar/useAssistantVisualState';
@@ -13,13 +14,14 @@ const Button = styled(motion.button)`
   right: 24px;
   bottom: calc(24px + var(--safe-area-inset-bottom));
   z-index: 150;
+  width: 252px;
   min-height: 66px;
   display: inline-flex;
   align-items: center;
   gap: 12px;
   padding: 7px 18px 7px 8px;
-  border-radius: 25px 31px 27px 22px;
-  border: 1px solid var(--obsidian-border);
+  border-radius: 999px;
+  border: 1px solid rgba(224, 177, 82, .34);
   background:
     radial-gradient(circle at 18% 0%, rgba(241, 210, 119, .13), transparent 34%),
     linear-gradient(142deg, rgba(25, 22, 28, .97), rgba(5, 5, 6, .96));
@@ -37,19 +39,22 @@ const Button = styled(motion.button)`
     background: linear-gradient(112deg, transparent 30%, rgba(255, 242, 189, .055) 48%, transparent 62%);
   }
 
-  strong { display: block; color: var(--champagne-text); text-align: left; line-height: 1.25; }
-  span { display: block; margin-top: 3px; color: var(--muted-gold-text); font-size: 11px; font-weight: 600; white-space: nowrap; }
-  &:hover { border-color: var(--obsidian-border-hot); box-shadow: inset 0 1px 0 rgba(255, 242, 189, .14), var(--obsidian-shadow-md), var(--gold-glow-md); }
+  strong { display: block; color: var(--champagne-text); text-align: left; line-height: 1.2; font-size: 15px; }
+  span { display: block; margin-top: 3px; color: var(--muted-gold-text); font-size: 11px; font-weight: 500; white-space: nowrap; }
+  .emma-copy { min-width: 0; flex: 1; }
+  .emma-arrow { color: var(--gold-300); font-size: 12px; transition: transform 220ms ease; }
+  &:hover { border-color: rgba(240, 201, 107, .48); box-shadow: inset 0 1px 0 rgba(255, 242, 189, .14), var(--obsidian-shadow-md), 0 0 22px rgba(214, 165, 66, .13); }
+  &:hover .emma-arrow { transform: translateX(3px); }
 
   @media (max-width: 767px) {
     right: 12px;
     bottom: calc(12px + var(--safe-area-inset-bottom));
-    width: 70px;
-    min-height: 70px;
+    width: 68px;
+    min-height: 68px;
     padding: 6px;
-    border-radius: 23px 28px 24px 20px;
+    border-radius: 999px;
     justify-content: center;
-    > div:last-child { display: none; }
+    .emma-copy, .emma-arrow { display: none; }
   }
 `;
 
@@ -90,13 +95,14 @@ export const FloatingAssistantWidget: React.FC = () => {
               scale: { duration: .24 },
               y: { duration: 5.8, repeat: Infinity, ease: 'easeInOut' },
             }}
-            whileTap={{ scale: .98 }}
+            whileTap={{ scale: .96, rotate: 1.5 }}
           >
-            <AssistantAvatar state={visualState} size={64} pointer={pointer} trackingRef={pointer.ref} decorative />
-            <div>
-              <strong>AI Assistant</strong>
-              <span>Fragen · Leads · Termine</span>
+            <AssistantAvatar state={visualState} size={62} pointer={pointer} trackingRef={pointer.ref} decorative />
+            <div className='emma-copy'>
+              <strong>Emma AI</strong>
+              <span>Fragen · Beratung · Termine</span>
             </div>
+            <FaArrowRight className='emma-arrow' aria-hidden='true' />
           </Button>
         ) : null}
       </AnimatePresence>

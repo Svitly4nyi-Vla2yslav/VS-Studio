@@ -14,4 +14,6 @@ export const avatarStateLabel: Record<AssistantVisualState, string> = {
   celebrating: 'VS assistant is celebrating',
   error: 'VS assistant needs another try',
   sleeping: 'VS assistant is resting',
+  listening: 'Emma is listening',
+  speaking: 'Emma is speaking',
 };

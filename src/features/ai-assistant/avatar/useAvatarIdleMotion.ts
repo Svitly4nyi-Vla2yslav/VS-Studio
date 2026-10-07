@@ -1,4 +1,4 @@
-import { useMotionValue } from 'framer-motion';
+import { useMotionValue, useReducedMotion } from 'framer-motion';
 import { useEffect } from 'react';
 import type { AssistantVisualState } from './assistantAvatar.types';
 
@@ -19,12 +19,13 @@ const gazeTargets = [
  * Повертає `gazeX` і `gazeY`, а interval гарантовано очищається під час unmount.
  */
 export const useAvatarIdleMotion = (state: AssistantVisualState, isNear: boolean) => {
-  const reducedMotion = false;
+  const reducedMotion = useReducedMotion();
   const gazeX = useMotionValue(0);
   const gazeY = useMotionValue(0);
 
   useEffect(() => {
-    if (reducedMotion || isNear) {
+    const semanticState = !['idle', 'curious', 'greeting'].includes(state);
+    if (reducedMotion || isNear || semanticState) {
       gazeX.set(0);
       gazeY.set(0);
       return undefined;
@@ -39,8 +40,15 @@ export const useAvatarIdleMotion = (state: AssistantVisualState, isNear: boolean
 
     schedule();
 
-    const interval = window.setInterval(schedule, 2600 + Math.random() * 1600);
-    return () => window.clearInterval(interval);
+    let timer: number;
+    const scheduleNext = () => {
+      timer = window.setTimeout(() => {
+        schedule();
+        scheduleNext();
+      }, 2800 + Math.random() * 2700);
+    };
+    scheduleNext();
+    return () => window.clearTimeout(timer);
   }, [gazeX, gazeY, isNear, reducedMotion, state]);
 
   return { gazeX, gazeY };
