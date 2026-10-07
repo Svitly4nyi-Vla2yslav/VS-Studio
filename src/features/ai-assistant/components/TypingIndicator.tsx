@@ -30,6 +30,7 @@ interface TypingIndicatorProps {
   copy: AssistantPanelCopy;
 }
 
+// TypingIndicator приймає локалізований copy, показує polite aria-live статус і три нескінченні крапки зі зміщеними фазами; зовнішній стан не змінює.
 export const TypingIndicator: React.FC<TypingIndicatorProps> = ({ copy }) => (
   <Indicator aria-live='polite'>
     <Dot animate={{ opacity: [0.3, 1, 0.3], y: [0, -2, 0] }} transition={{ duration: 0.9, repeat: Infinity }} />
