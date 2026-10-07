@@ -1,6 +1,7 @@
 import { generateAssistantLocalReply } from '../helpers';
 import type { AssistantChatRequest, AssistantChatResponse, AssistantLocalReply } from '../types';
 
+// getEndpoints приймає назву Netlify-функції та повертає впорядкований список адрес: локальний dev-proxy і відносний fallback або лише production-шлях.
 const getEndpoints = (functionName: string) => {
   const relativeEndpoint = `/.netlify/functions/${functionName}`;
 
@@ -15,6 +16,8 @@ const getEndpoints = (functionName: string) => {
   return [relativeEndpoint];
 };
 
+// postJson серіалізує payload і послідовно пробує доступні endpoint; мережеві помилки та 404 дозволяють перейти до fallback-адреси.
+// Функція повертає лише JSON успішної відповіді, а для іншого content-type чи фінальної помилки кидає Error.
 const postJson = async <TResponse>(functionName: string, payload: unknown): Promise<TResponse> => {
   const body = JSON.stringify(payload);
   let lastError: Error | null = null;
@@ -52,6 +55,7 @@ const postJson = async <TResponse>(functionName: string, payload: unknown): Prom
   throw lastError ?? new Error(`No endpoint available for ${functionName}`);
 };
 
+// assistantClient надає два HTTP-контракти: чат і короткоживучий voice-token; обидва делегують transport у postJson.
 export const assistantClient = {
   async chat(request: AssistantChatRequest): Promise<AssistantChatResponse> {
     return postJson<AssistantChatResponse>('assistant-chat', request);
@@ -65,6 +69,7 @@ export const assistantClient = {
   },
 };
 
+// buildLocalAssistantFallback перетворює запит на локальну відповідь без мережевого виклику, використовуючи німецьку як мову за замовчуванням.
 export const buildLocalAssistantFallback = (request: AssistantChatRequest): AssistantLocalReply =>
   generateAssistantLocalReply({
     messages: request.messages,
