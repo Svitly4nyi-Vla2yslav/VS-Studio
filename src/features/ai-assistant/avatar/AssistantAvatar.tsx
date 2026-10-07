@@ -6,7 +6,7 @@ import type { AssistantVisualState, PointerProximity } from './assistantAvatar.t
 import { useAvatarIdleMotion } from './useAvatarIdleMotion';
 import { useAvatarPointer } from './useAvatarPointer';
 
-const Stage = styled.div<{ $size: number }>`
+const Stage = styled(motion.div)<{ $size: number }>`
   position: relative; width: ${({ $size }) => `${$size}px`}; height: ${({ $size }) => `${$size}px`};
   display: grid; place-items: center; flex: 0 0 auto; overflow: visible;
   filter: drop-shadow(0 9px 16px rgba(0,0,0,.52));
@@ -30,6 +30,8 @@ export const AssistantAvatar: React.FC<AssistantAvatarProps> = ({ state, size = 
   const idle = useAvatarIdleMotion(state, resolvedPointer.isNear);
   const [blink, setBlink] = useState(1);
   const [wink, setWink] = useState<'left' | 'right' | null>(null);
+  const [hovered, setHovered] = useState(false);
+  const [pressed, setPressed] = useState(false);
   const rawAudio = useMotionValue(0);
   const smoothAudio = useSpring(rawAudio, { stiffness: 90, damping: 24, mass: .9 });
   const audioScale = useTransform(smoothAudio, [0, 1], [1, 1.018]);
@@ -54,24 +56,34 @@ export const AssistantAvatar: React.FC<AssistantAvatarProps> = ({ state, size = 
   }, [reducedMotion, resolvedPointer.isNear, state]);
 
   const semanticLock = !['idle', 'curious', 'greeting', 'reading'].includes(state);
-  const attentive = state === 'curious' || state === 'listening' || resolvedPointer.isNear;
+  const attentive = state === 'curious' || state === 'listening' || resolvedPointer.isNear || hovered;
   const happy = ['idle', 'greeting', 'answering', 'success', 'celebrating'].includes(state) && !attentive;
   const active = ['thinking', 'typing', 'listening', 'speaking'].includes(state);
-  const gazeX = useSpring(useTransform([resolvedPointer.x, idle.gazeX], ([px, ix]: number[]) => state === 'thinking' ? 1.8 : clamp(Number(resolvedPointer.isNear && !resolvedPointer.isCoarse && !semanticLock ? px : ix) * (resolvedPointer.isNear ? 5 : 2.2), -3.5, 3.5)), { stiffness: 310, damping: 28, mass: .6 });
-  const gazeY = useSpring(useTransform([resolvedPointer.y, idle.gazeY], ([py, iy]: number[]) => state === 'thinking' ? -1.8 : state === 'reading' ? 1.4 : clamp(Number(resolvedPointer.isNear && !resolvedPointer.isCoarse && !semanticLock ? py : iy) * (resolvedPointer.isNear ? 4.4 : 2), -2.5, 2.5)), { stiffness: 310, damping: 28, mass: .6 });
-  const bodyX = useSpring(useTransform(resolvedPointer.x, value => reducedMotion || semanticLock ? 0 : clamp(value * 1.5, -1.5, 1.5)), { stiffness: 135, damping: 22 });
-  const bodyY = useSpring(useTransform(resolvedPointer.y, value => reducedMotion || semanticLock ? 0 : clamp(value, -1, 1)), { stiffness: 130, damping: 22 });
-  const bodyRotateX = useSpring(useTransform(resolvedPointer.y, value => reducedMotion || semanticLock ? 0 : clamp(value * -2, -2, 2)), { stiffness: 120, damping: 22 });
-  const bodyRotateY = useSpring(useTransform(resolvedPointer.x, value => reducedMotion || semanticLock ? 0 : clamp(value * 3, -3, 3)), { stiffness: 120, damping: 22 });
+  const gazeX = useSpring(useTransform([resolvedPointer.x, idle.gazeX], ([px, ix]: number[]) => state === 'thinking' ? 1.8 : clamp(Number(resolvedPointer.isNear && !resolvedPointer.isCoarse && !semanticLock ? px : ix) * (resolvedPointer.isNear ? 14 : 2.5), -4, 4)), { stiffness: 340, damping: 27, mass: .52 });
+  const gazeY = useSpring(useTransform([resolvedPointer.y, idle.gazeY], ([py, iy]: number[]) => state === 'thinking' ? -1.8 : state === 'reading' ? 1.4 : clamp(Number(resolvedPointer.isNear && !resolvedPointer.isCoarse && !semanticLock ? py : iy) * (resolvedPointer.isNear ? 11 : 2.5), -3, 3)), { stiffness: 340, damping: 27, mass: .52 });
+  const bodyX = useSpring(useTransform(resolvedPointer.x, value => reducedMotion || semanticLock ? 0 : clamp(value * 8, -2, 2)), { stiffness: 115, damping: 23, mass: 1.1 });
+  const bodyY = useSpring(useTransform(resolvedPointer.y, value => reducedMotion || semanticLock ? 0 : clamp(value * 6, -1.5, 1.5)), { stiffness: 110, damping: 23, mass: 1.1 });
+  const bodyRotateX = useSpring(useTransform(resolvedPointer.y, value => reducedMotion || semanticLock ? 0 : clamp(value * -14, -3.5, 3.5)), { stiffness: 105, damping: 23, mass: 1.15 });
+  const bodyRotateY = useSpring(useTransform(resolvedPointer.x, value => reducedMotion || semanticLock ? 0 : clamp(value * 18, -4.5, 4.5)), { stiffness: 105, damping: 23, mass: 1.15 });
   const highlightX = useTransform(gazeX, value => clamp(value * .42, -1.5, 1.5));
   const highlightY = useTransform(gazeY, value => clamp(value * .32, -1, 1));
+  const visorX = useTransform(gazeX, value => value * .22);
+  const visorY = useTransform(gazeY, value => value * .16);
+  const reflectionX = useTransform(gazeX, value => value * -.34);
+  const reflectionY = useTransform(gazeY, value => value * -.2);
   const energyOpacity = state === 'sleeping' ? .24 : active ? .72 : happy ? .58 : .42;
   const earOpacity = active || attentive ? .95 : state === 'error' ? .46 : .72;
+  const flatLeft = 'M38 62Q46 62 54 62';
+  const flatRight = 'M66 62Q74 62 82 62';
+  const eyeLeft = attentive || active ? flatLeft : state === 'sleeping' || state === 'error' ? 'M38 62Q46 66 54 62' : 'M38 65Q46 55 54 65';
+  const eyeRight = attentive || active ? flatRight : state === 'sleeping' || state === 'error' ? 'M66 62Q74 66 82 62' : 'M66 65Q74 55 82 65';
 
-  return <Stage ref={trackingRef ?? trackedPointer.ref} $size={size} aria-hidden={decorative || undefined} role={decorative ? undefined : 'img'} aria-label={decorative ? undefined : avatarStateLabel[state]} data-state={state}>
+  return <Stage ref={trackingRef ?? trackedPointer.ref} $size={size} aria-hidden={decorative || undefined} role={decorative ? undefined : 'img'} aria-label={decorative ? undefined : avatarStateLabel[state]} data-state={state}
+    onPointerEnter={() => setHovered(true)} onPointerLeave={() => { setHovered(false); setPressed(false); }} onPointerDown={() => setPressed(true)} onPointerUp={() => setPressed(false)}
+    animate={{ scale: pressed ? .95 : 1, y: hovered ? -2 : 0 }} transition={{ type: 'spring', stiffness: 245, damping: 22 }}>
     <Layer style={{ x: bodyX, y: bodyY, rotateX: bodyRotateX, rotateY: bodyRotateY, transformPerspective: 520 }}>
-      <Layer animate={reducedMotion ? { y: 0 } : { y: state === 'success' ? [0, -2, 0] : [0, -1.5, .7, 0] }} transition={{ duration: state === 'success' ? .8 : 6.4, repeat: state === 'success' ? 0 : Infinity, ease: 'easeInOut' }}>
-        <Layer style={{ scale: state === 'speaking' ? audioScale : undefined }} animate={reducedMotion ? { scale: 1 } : { scaleX: [1, 1.008, 1], scaleY: [1, 1.014, 1] }} transition={{ duration: 4.8, repeat: Infinity, ease: 'easeInOut' }}>
+      <Layer animate={reducedMotion ? { y: 0 } : { y: state === 'success' ? [0, -2, 0] : [0, -1.8, .8, 0] }} transition={{ duration: state === 'success' ? .8 : 6.2, repeat: state === 'success' ? 0 : Infinity, ease: 'easeInOut' }}>
+        <Layer style={{ scale: state === 'speaking' ? audioScale : undefined }} animate={reducedMotion ? { scale: 1 } : { scaleX: [1, 1.01, 1], scaleY: [1, 1.018, 1] }} transition={{ duration: 4.8, repeat: Infinity, ease: 'easeInOut' }}>
           <Layer animate={reducedMotion ? { rotate: 0, scale: 1 } : { rotate: state === 'error' ? [-.7, .5, -.7] : [-.6, .8, -.6], scale: attentive ? 1.025 : state === 'success' ? 1.035 : 1 }} transition={{ duration: state === 'error' ? 4.2 : 9.4, repeat: Infinity, ease: 'easeInOut' }}>
             <motion.svg viewBox='0 0 120 120' width='100%' height='100%' aria-hidden='true'>
               <defs>
@@ -86,7 +98,7 @@ export const AssistantAvatar: React.FC<AssistantAvatarProps> = ({ state, size = 
               </defs>
               <ellipse cx='60' cy='105' rx='31' ry='6' fill='rgba(0,0,0,.34)'/>
               <AnimatePresence>{state === 'thinking' && !reducedMotion ? <motion.g initial={{ opacity: 0, scale: .82 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 1.08 }} transition={{ duration: .32 }} style={{ transformOrigin: '60px 60px' }}>
-                <motion.ellipse cx='60' cy='61' rx='51' ry='37' fill='none' stroke={`url(#${id}-orbit)`} strokeWidth='1.5' strokeLinecap='round' strokeDasharray='76 42' animate={{ rotate: 360 }} transition={{ duration: 3.7, repeat: Infinity, ease: 'linear' }} style={{ transformOrigin: '60px 61px' }}/>
+                <motion.ellipse cx='60' cy='61' rx='51' ry='37' fill='none' stroke={`url(#${id}-orbit)`} opacity='.58' strokeWidth='1.7' strokeLinecap='round' strokeDasharray='76 42' animate={{ rotate: 360 }} transition={{ duration: 3.7, repeat: Infinity, ease: 'linear' }} style={{ transformOrigin: '60px 61px' }}/>
                 <motion.ellipse cx='60' cy='61' rx='44' ry='49' fill='none' stroke='rgba(230,173,67,.28)' strokeWidth='1' strokeDasharray='46 62' animate={{ rotate: -360 }} transition={{ duration: 4.4, repeat: Infinity, ease: 'linear' }} style={{ transformOrigin: '60px 61px' }}/>
                 <circle cx='108' cy='51' r='2.1' fill='#ffe29a'/><circle cx='25' cy='93' r='1.5' fill='#e6ad43'/>
               </motion.g> : null}</AnimatePresence>
@@ -98,18 +110,15 @@ export const AssistantAvatar: React.FC<AssistantAvatarProps> = ({ state, size = 
               <g clipPath={`url(#${id}-clip)`}>
                 <motion.ellipse cx='43' cy='80' rx='26' ry='22' fill={`url(#${id}-core)`} filter={`url(#${id}-blur)`} animate={reducedMotion ? { opacity: energyOpacity } : { x: [-2,2,-2], y: [1,-2,1], opacity: [energyOpacity*.65,energyOpacity,energyOpacity*.65] }} transition={{ duration: active ? 6.5 : 9.2, repeat: Infinity, ease: 'easeInOut' }}/>
                 <motion.ellipse cx='79' cy='47' rx='19' ry='17' fill='#d99a37' opacity='.13' filter={`url(#${id}-blur)`} animate={reducedMotion ? undefined : { x:[2,-1,2],y:[-1,2,-1],opacity:[.08,.2,.08] }} transition={{ duration:10.7,repeat:Infinity,ease:'easeInOut' }}/>
-                <path d='M32 33C43 21 61 21 73 24C55 26 43 31 35 42Z' fill='rgba(255,255,255,.12)'/><path d='M38 27C49 21 65 21 77 25' fill='none' stroke='rgba(255,226,154,.2)' strokeWidth='2' strokeLinecap='round'/>
+                <motion.g style={{ x:reflectionX,y:reflectionY }}><path d='M32 33C43 21 61 21 73 24C55 26 43 31 35 42Z' fill='rgba(255,255,255,.12)'/><path d='M38 27C49 21 65 21 77 25' fill='none' stroke='rgba(255,226,154,.2)' strokeWidth='2' strokeLinecap='round'/></motion.g>
               </g>
-              <rect x='28' y='40' width='64' height='45' rx='20' fill={`url(#${id}-visor)`} stroke='rgba(255,226,154,.24)' strokeWidth='1.2'/><path d='M37 46C49 41 70 41 83 46' fill='none' stroke='rgba(255,255,255,.15)' strokeWidth='2.1' strokeLinecap='round'/>
+              <motion.g style={{ x:visorX,y:visorY }}><rect x='28' y='40' width='64' height='45' rx='20' fill={`url(#${id}-visor)`} stroke='rgba(255,226,154,.24)' strokeWidth='1.2'/><motion.path d='M37 46C49 41 70 41 83 46' fill='none' stroke='rgba(255,255,255,.15)' strokeWidth='2.1' strokeLinecap='round' style={{ x:reflectionX }}/></motion.g>
               <motion.ellipse cx='60' cy='72' rx='25' ry='12' fill='#a66d22' filter={`url(#${id}-blur)`} style={{ opacity: state === 'speaking' ? audioGlow : energyOpacity*.25 }}/>
               <motion.g style={{ x:gazeX,y:gazeY }}>
-                {happy || state === 'sleeping' ? <>
-                  <motion.path d={state === 'sleeping' ? 'M39 63Q47 67 54 63' : 'M38 65Q46 55 54 65'} fill='none' stroke='#f1bf57' strokeWidth='4.2' strokeLinecap='round' style={{ scaleY:wink==='left'?.08:blink,transformOrigin:'46px 62px' }}/><motion.path d={state === 'sleeping' ? 'M66 63Q73 67 81 63' : 'M66 65Q74 55 82 65'} fill='none' stroke='#f1bf57' strokeWidth='4.2' strokeLinecap='round' style={{ scaleY:wink==='right'?.08:blink,transformOrigin:'74px 62px' }}/>
-                  <path d='M38 65Q46 55 54 65' fill='none' stroke='rgba(240,174,62,.35)' strokeWidth='8' strokeLinecap='round' filter={`url(#${id}-eye)`}/><path d='M66 65Q74 55 82 65' fill='none' stroke='rgba(240,174,62,.35)' strokeWidth='8' strokeLinecap='round' filter={`url(#${id}-eye)`}/>
-                </> : <>
-                  <motion.rect x='37' y='58.5' width='18' height='8' rx='4' fill='#f1bf57' style={{ scaleY:wink==='left'?.08:blink,transformOrigin:'46px 62.5px' }}/><motion.rect x='65' y='58.5' width='18' height='8' rx='4' fill='#f1bf57' style={{ scaleY:wink==='right'?.08:blink,transformOrigin:'74px 62.5px' }}/>
-                  <motion.ellipse cx='43' cy='61' rx='3.2' ry='1.55' fill='#ffe599' style={{ x:highlightX,y:highlightY }}/><motion.ellipse cx='71' cy='61' rx='3.2' ry='1.55' fill='#ffe599' style={{ x:highlightX,y:highlightY }}/>
-                </>}
+                <motion.path d={eyeLeft} animate={{ d:eyeLeft,strokeWidth:attentive||active?6.2:4.2 }} transition={{ duration:.22,ease:'easeInOut' }} fill='none' stroke='#f1bf57' strokeLinecap='round' style={{ scaleY:wink==='left'?.06:blink,transformOrigin:'46px 62px' }}/>
+                <motion.path d={eyeRight} animate={{ d:eyeRight,strokeWidth:attentive||active?6.2:4.2 }} transition={{ duration:.22,ease:'easeInOut' }} fill='none' stroke='#f1bf57' strokeLinecap='round' style={{ scaleY:wink==='right'?.06:blink,transformOrigin:'74px 62px' }}/>
+                <motion.path d={eyeLeft} animate={{ d:eyeLeft,opacity:attentive||active?.38:.28 }} transition={{ duration:.22 }} fill='none' stroke='rgba(240,174,62,.5)' strokeWidth='9' strokeLinecap='round' filter={`url(#${id}-eye)`}/><motion.path d={eyeRight} animate={{ d:eyeRight,opacity:attentive||active?.38:.28 }} transition={{ duration:.22 }} fill='none' stroke='rgba(240,174,62,.5)' strokeWidth='9' strokeLinecap='round' filter={`url(#${id}-eye)`}/>
+                <motion.ellipse cx='43' cy='61' rx='3.2' ry='1.4' fill='#ffe599' style={{ x:highlightX,y:highlightY }} animate={{ opacity:attentive||active?.9:0,scale:attentive||active?1:.65 }} transition={{ duration:.18 }}/><motion.ellipse cx='71' cy='61' rx='3.2' ry='1.4' fill='#ffe599' style={{ x:highlightX,y:highlightY }} animate={{ opacity:attentive||active?.9:0,scale:attentive||active?1:.65 }} transition={{ duration:.18 }}/>
               </motion.g>
               {state === 'celebrating' && !reducedMotion ? <motion.g animate={{ opacity:[0,1,0],scale:[.8,1.14,.8] }} transition={{ duration:1.2 }} style={{ transformOrigin:'60px 60px' }}><path d='M15 31h7M18.5 27.5v7M99 91h7M102.5 87.5v7' stroke='#ffe29a' strokeWidth='1.6' strokeLinecap='round'/></motion.g> : null}
             </motion.svg>

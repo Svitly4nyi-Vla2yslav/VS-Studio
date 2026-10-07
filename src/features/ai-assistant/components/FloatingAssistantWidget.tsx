@@ -62,13 +62,14 @@ export const FloatingAssistantWidget: React.FC = () => {
   const assistant = useAssistant();
   const [composerFocused, setComposerFocused] = useState(false);
   const [composerHasValue, setComposerHasValue] = useState(false);
-  const pointer = useAvatarPointer<HTMLDivElement>();
+  const collapsedPointer = useAvatarPointer<HTMLDivElement>();
+  const panelPointer = useAvatarPointer<HTMLDivElement>();
   const visualState = useAssistantVisualState({
     isOpen: assistant.isOpen,
     isThinking: assistant.isTyping,
     hasError: Boolean(assistant.errorMessage),
     messageCount: assistant.messages.length,
-    pointerNear: pointer.isNear,
+    pointerNear: assistant.isOpen ? panelPointer.isNear : collapsedPointer.isNear,
     composerFocused,
     composerHasValue,
     successRevision: assistant.successRevision,
@@ -97,7 +98,7 @@ export const FloatingAssistantWidget: React.FC = () => {
             }}
             whileTap={{ scale: .96, rotate: 1.5 }}
           >
-            <AssistantAvatar state={visualState} size={62} pointer={pointer} trackingRef={pointer.ref} decorative />
+            <AssistantAvatar state={visualState} size={62} pointer={collapsedPointer} trackingRef={collapsedPointer.ref} decorative />
             <div className='emma-copy'>
               <strong>Emma AI</strong>
               <span>Fragen · Beratung · Termine</span>
@@ -111,8 +112,8 @@ export const FloatingAssistantWidget: React.FC = () => {
         open={assistant.isOpen}
         onClose={assistant.closeAssistant}
         visualState={visualState}
-        pointer={pointer}
-        avatarTrackingRef={pointer.ref}
+        pointer={panelPointer}
+        avatarTrackingRef={panelPointer.ref}
         onComposerFocusChange={setComposerFocused}
         onComposerValuePresenceChange={setComposerHasValue}
       />
