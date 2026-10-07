@@ -24,10 +24,11 @@ const EmmaAvatarDev: React.FC = () => {
   const [state, setState] = useState<AssistantVisualState>(initialState);
   const [audioLevel, setAudioLevel] = useState(.35);
   const [reduceMotion, setReduceMotion] = useState(false);
+  const previewSizes = new URLSearchParams(window.location.search).get('single') === '1' ? [96] : [128, 96, 64, 56];
   return <Page>
     <h1>Emma Soft Mini Robot preview</h1>
     <p>Move the pointer around the avatar and inspect every semantic state.</p>
-    <Preview>{[128, 96, 64, 56].map(size => <Sample key={size}><AssistantAvatar state={state} size={size} audioLevel={audioLevel} reduceMotion={reduceMotion} /><span>{size}px</span></Sample>)}</Preview>
+    <Preview>{previewSizes.map(size => <Sample key={size}><AssistantAvatar state={state} size={size} audioLevel={audioLevel} reduceMotion={reduceMotion} /><span>{size}px</span></Sample>)}</Preview>
     <h2>State</h2>
     <Controls>{states.map(item => <button key={item} type='button' aria-pressed={state === item} onClick={() => setState(item)}>{item}</button>)}</Controls>
     <h2>Motion</h2>

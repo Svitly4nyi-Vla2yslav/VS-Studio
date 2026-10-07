@@ -1,7 +1,11 @@
-import { useMotionValue, useReducedMotion, useSpring } from 'framer-motion';
+import { useMotionValue, useSpring } from 'framer-motion';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 const clamp = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max);
+const smoothstep = (value: number) => {
+  const t = clamp(value, 0, 1);
+  return t * t * (3 - 2 * t);
+};
 
 export interface AvatarPointerState {
   ref: React.MutableRefObject<HTMLDivElement | null>;
@@ -12,7 +16,7 @@ export interface AvatarPointerState {
   isCoarse: boolean;
 }
 
-export const useAvatarPointer = <T extends HTMLElement>(influenceRadius = 480) => {
+export const useAvatarPointer = <T extends HTMLElement>(influenceRadius = 540) => {
   const ref = useRef<T | null>(null);
   const frameRef = useRef<number | null>(null);
   const pointerRef = useRef({ x: 0, y: 0 });
@@ -24,7 +28,6 @@ export const useAvatarPointer = <T extends HTMLElement>(influenceRadius = 480) =
   const y = useSpring(rawY, { stiffness: 320, damping: 28, mass: 0.6 });
   const proximity = useSpring(rawProximity, { stiffness: 260, damping: 28, mass: 0.55 });
   const [isNear, setIsNear] = useState(false);
-  const reducedMotion = useReducedMotion();
   const [isCoarse] = useState(() =>
     typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches
   );
@@ -41,7 +44,7 @@ export const useAvatarPointer = <T extends HTMLElement>(influenceRadius = 480) =
 
   useEffect(() => {
     if (typeof window === 'undefined') return undefined;
-    if (isCoarse || reducedMotion) {
+    if (isCoarse) {
       reset();
       return undefined;
     }
@@ -58,9 +61,15 @@ export const useAvatarPointer = <T extends HTMLElement>(influenceRadius = 480) =
       const dy = pointerRef.current.y - centerY;
       const distance = Math.hypot(dx, dy);
       const influence = clamp(1 - distance / influenceRadius, 0, 1);
+      const centerDeadZone = Math.max(8, Math.min(rect.width, rect.height) * .12);
+      const centerRamp = smoothstep((distance - centerDeadZone) / Math.max(32, Math.min(rect.width, rect.height) * .72));
+      const attention = smoothstep((influence - .08) / .72);
+      const response = centerRamp * attention;
+      const directionX = distance > .001 ? dx / distance : 0;
+      const directionY = distance > .001 ? dy / distance : 0;
 
-      rawX.set(clamp(dx / influenceRadius, -1, 1) * influence);
-      rawY.set(clamp(dy / influenceRadius, -1, 1) * influence);
+      rawX.set(clamp(directionX * response, -1, 1));
+      rawY.set(clamp(directionY * response, -1, 1));
       rawProximity.set(influence);
       const nextNear = influence > 0.08;
       if (nextNear !== nearRef.current) {
@@ -86,7 +95,7 @@ export const useAvatarPointer = <T extends HTMLElement>(influenceRadius = 480) =
       document.removeEventListener('visibilitychange', onVisibilityChange);
       if (frameRef.current !== null) window.cancelAnimationFrame(frameRef.current);
     };
-  }, [influenceRadius, isCoarse, rawProximity, rawX, rawY, reducedMotion, reset]);
+  }, [influenceRadius, isCoarse, rawProximity, rawX, rawY, reset]);
 
   return {
     ref,
