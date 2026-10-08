@@ -1,16 +1,16 @@
-import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f as ce,h as F,i as Z,k as J,l as q,n as ee,o as xe,p as te,q as oe,s as ge,t as me,v as ie,w as fe,x as he,y as be,z as ue,B as E,C as Y,D as X,G as y,H as re,I as we,J as ye,K as ve,L as O,M as je,S as ke,N as $e}from"./index-BjYfxseG.js";function Ke(t,r,a){f.useInsertionEffect(()=>t.on(r,a),[t,r,a])}const Se={some:0,all:1};function ze(t,r,{root:a,margin:g,amount:n="some"}={}){const b=de(t),p=new WeakMap,d=c=>{c.forEach(m=>{const h=p.get(m.target);if(m.isIntersecting!==!!h)if(m.isIntersecting){const s=r(m.target,m);typeof s=="function"?p.set(m.target,s):$.unobserve(m.target)}else typeof h=="function"&&(h(m),p.delete(m.target))})},$=new IntersectionObserver(d,{root:a,rootMargin:g,threshold:typeof n=="number"?n:Se[n]});return b.forEach(c=>$.observe(c)),()=>$.disconnect()}function Ie(t,{root:r,margin:a,amount:g,once:n=!1,initial:b=!1}={}){const[p,d]=f.useState(b);return f.useEffect(()=>{if(!t.current||n&&p)return;const $=()=>(d(!0),n?void 0:()=>d(!1)),c={root:r&&r.current||void 0,margin:a,amount:g};return ze(t.current,$,c)},[r,t,a,n,g]),p}const Pe=u`
+import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f as ce,h as C,i as Z,k as J,l as q,n as ee,o as xe,p as te,q as oe,s as ge,t as me,v as ie,w as fe,x as he,y as be,z as ue,B as E,C as Y,D as X,G as y,H as re,I as we,J as ye,K as ve,L as U,M as je,S as ke,N as $e}from"./C9i_MFIy.js";function Ke(t,r,a){f.useInsertionEffect(()=>t.on(r,a),[t,r,a])}const Se={some:0,all:1};function ze(t,r,{root:a,margin:g,amount:n="some"}={}){const b=de(t),p=new WeakMap,d=c=>{c.forEach(m=>{const h=p.get(m.target);if(m.isIntersecting!==!!h)if(m.isIntersecting){const s=r(m.target,m);typeof s=="function"?p.set(m.target,s):$.unobserve(m.target)}else typeof h=="function"&&(h(m),p.delete(m.target))})},$=new IntersectionObserver(d,{root:a,rootMargin:g,threshold:typeof n=="number"?n:Se[n]});return b.forEach(c=>$.observe(c)),()=>$.disconnect()}function Ie(t,{root:r,margin:a,amount:g,once:n=!1,initial:b=!1}={}){const[p,d]=f.useState(b);return f.useEffect(()=>{if(!t.current||n&&p)return;const $=()=>(d(!0),n?void 0:()=>d(!1)),c={root:r&&r.current||void 0,margin:a,amount:g};return ze(t.current,$,c)},[r,t,a,n,g]),p}const Pe=u`
   0% { transform: translate3d(-2%, -2%, 0); }
   100% { transform: translate3d(2%, 2%, 0); }
-`,Ce=u`
+`,Fe=u`
   0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
   50% { transform: translate3d(0, -18px, 0) scale(1.02); }
-`,Fe=u`
+`,Ce=u`
   0% { transform: translate3d(0, 40px, 0) rotate(45deg); opacity: 0; }
   18% { opacity: 0.7; }
   100% { transform: translate3d(18px, -120px, 0) rotate(135deg); opacity: 0; }
-`,Me=u`
+`,Le=u`
   to { transform: rotate(360deg); }
-`,Le=o.div`
+`,Me=o.div`
   position: fixed;
   inset: 0;
   overflow: hidden;
@@ -21,7 +21,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     radial-gradient(circle at 50% 8%, rgba(56, 189, 248, 0.14), transparent 22%),
     radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.18), transparent 28%),
     radial-gradient(circle at 15% 72%, rgba(246, 211, 101, 0.09), transparent 30%);
-`,Ae=o.div`
+`,Re=o.div`
   position: absolute;
   inset: -8%;
   opacity: 0.22;
@@ -34,7 +34,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   @media (prefers-reduced-motion: reduce) {
     animation: none;
   }
-`,Be=o.span`
+`,Ae=o.span`
   position: absolute;
   left: ${({$index:t})=>[58,6,76,28][t]}%;
   top: ${({$index:t})=>[10,48,70,82][t]}%;
@@ -47,7 +47,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     0 0 44px rgba(124, 58, 237, 0.12),
     inset 0 0 36px rgba(246, 211, 101, 0.06);
   transform-origin: center;
-  animation: ${Me} ${({$index:t})=>18+t*7}s linear infinite;
+  animation: ${Le} ${({$index:t})=>18+t*7}s linear infinite;
 
   &::before,
   &::after {
@@ -66,7 +66,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   @media (prefers-reduced-motion: reduce) {
     animation: none;
   }
-`,Re=o.div`
+`,Be=o.div`
   position: absolute;
   left: ${({$left:t})=>`${t}%`};
   top: ${({$top:t})=>`${t}%`};
@@ -74,7 +74,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   aspect-ratio: 0.62;
   opacity: ${({$kind:t})=>t==="guild"?.07:.12};
   filter: drop-shadow(0 0 26px rgba(34, 211, 238, 0.26));
-  animation: ${Ce} ${({$size:t})=>`${9+t%5}s`} ease-in-out infinite;
+  animation: ${Fe} ${({$size:t})=>`${9+t%5}s`} ease-in-out infinite;
   animation-delay: ${({$left:t})=>`${t*-.08}s`};
 
   @media (max-width: 720px) {
@@ -92,7 +92,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   height: 70%;
   clip-path: polygon(48% 0, 100% 100%, 56% 86%, 4% 100%);
   background: linear-gradient(180deg, rgba(168, 85, 247, 0.95), rgba(5, 5, 16, 0.3));
-`,He=o.span`
+`,Ge=o.span`
   position: absolute;
   left: 35%;
   top: 2%;
@@ -100,7 +100,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   aspect-ratio: 1;
   border-radius: 50% 50% 44% 44%;
   background: #f8fafc;
-`,Ge=o.span`
+`,He=o.span`
   position: absolute;
   left: 28%;
   top: 25%;
@@ -126,14 +126,14 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   border-radius: 999px;
   background: linear-gradient(180deg, rgba(34, 211, 238, 0), rgba(34, 211, 238, 0.85), rgba(246, 211, 101, 0.8));
   box-shadow: 0 0 18px rgba(34, 211, 238, 0.28);
-  animation: ${Fe} ${({$index:t})=>`${8+t%7}s`} linear infinite;
+  animation: ${Ce} ${({$index:t})=>`${8+t%7}s`} linear infinite;
   animation-delay: ${({$index:t})=>`${t*-.7}s`};
 
   @media (prefers-reduced-motion: reduce) {
     animation: none;
     opacity: 0.22;
   }
-`,Ye=[{kind:"warrior",left:6,top:18,size:170},{kind:"mage",left:78,top:14,size:150},{kind:"swordsman",left:84,top:62,size:180},{kind:"spirit",left:14,top:70,size:118},{kind:"guild",left:48,top:42,size:210}],Xe=Array.from({length:28},(t,r)=>r),Oe=Array.from({length:4},(t,r)=>r),De=()=>e.jsxs(Le,{"aria-hidden":"true",children:[e.jsx(Ae,{}),Oe.map(t=>e.jsx(Be,{$index:t},`circle-${t}`)),Ye.map(t=>e.jsxs(Re,{$left:t.left,$top:t.top,$size:t.size,$kind:t.kind,children:[e.jsx(Ee,{}),e.jsx(He,{}),e.jsx(Ge,{}),e.jsx(Te,{})]},t.kind)),Xe.map(t=>e.jsx(Ve,{$index:t},`shard-${t}`))]}),Ne="/assets/Contact%20section-video-BW7NF7ey.webm",We="/assets/Hero%20section-BtW3V3SP.webm",Ue="/assets/Network%20section-video-4HXRanij.webm",_e="/assets/Profile%20%20System%20section-ssllxFh5.webp",Qe="/assets/Projects%20section-DU1LxcbB.webp",Ze="/assets/Skills%20section-video-sJswKy7N.webm",Je="/assets/Timeline%20section-video-ekCuwwK9.webm",v={hero:{type:"video",src:We,altKey:"portfolio.media.hero"},profile:{src:_e,altKey:"portfolio.media.profile"},skills:{type:"video",src:Ze,altKey:"portfolio.media.skills"},projects:{src:Qe,altKey:"portfolio.media.projects"},timeline:{type:"video",src:Je,altKey:"portfolio.media.timeline"},network:{type:"video",src:Ue,altKey:"portfolio.media.network"},contact:{type:"video",src:Ne,altKey:"portfolio.media.contact"}},M={once:!0,amount:.22},D={hidden:{opacity:0,y:32,filter:"blur(14px)"},visible:{opacity:1,y:0,filter:"blur(0px)",transition:{duration:.78,ease:V}}},L={hidden:{},visible:{transition:{staggerChildren:.075,delayChildren:.06}}},k={hidden:{opacity:0,y:68,scale:.955,filter:"blur(12px)"},visible:{opacity:1,y:0,scale:1,filter:"blur(0px)",transition:{duration:.72,ease:V}}},ae={hidden:{scaleX:0},visible:{scaleX:1,transition:{duration:.9,ease:V}}},i={colors:{background:"#070A12",backgroundPanel:"#101827",purpleSoft:"#C084FC",cyan:"#67E8F9",goldSoft:"#FDE68A",white:"#F8FAFC",muted:"#B6C2D2",danger:"#FB7185"},fonts:{body:'"Geist", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',heading:'"Geist", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',display:'"Bebas Neue", "Geist", sans-serif'},radii:{panel:"20px",compact:"12px",pill:"999px"},motion:{fast:"160ms",base:"240ms",ease:"cubic-bezier(0.22, 1, 0.36, 1)"},z:{content:10,header:40,skipLink:60},shadows:{panel:"0 24px 90px rgba(0, 0, 0, 0.45)",cyanGlow:"0 0 30px rgba(34, 211, 238, 0.3)",goldGlow:"0 0 30px rgba(246, 211, 101, 0.26)"}},qe=u`
+`,Ye=[{kind:"warrior",left:6,top:18,size:170},{kind:"mage",left:78,top:14,size:150},{kind:"swordsman",left:84,top:62,size:180},{kind:"spirit",left:14,top:70,size:118},{kind:"guild",left:48,top:42,size:210}],Xe=Array.from({length:28},(t,r)=>r),Ue=Array.from({length:4},(t,r)=>r),Oe=()=>e.jsxs(Me,{"aria-hidden":"true",children:[e.jsx(Re,{}),Ue.map(t=>e.jsx(Ae,{$index:t},`circle-${t}`)),Ye.map(t=>e.jsxs(Be,{$left:t.left,$top:t.top,$size:t.size,$kind:t.kind,children:[e.jsx(Ee,{}),e.jsx(Ge,{}),e.jsx(He,{}),e.jsx(Te,{})]},t.kind)),Xe.map(t=>e.jsx(Ve,{$index:t},`shard-${t}`))]}),De=""+new URL("BW7NF7ey.webm",import.meta.url).href,Ne=""+new URL("BtW3V3SP.webm",import.meta.url).href,We=""+new URL("4HXRanij.webm",import.meta.url).href,_e=""+new URL("ssllxFh5.webp",import.meta.url).href,Qe=""+new URL("DU1LxcbB.webp",import.meta.url).href,Ze=""+new URL("sJswKy7N.webm",import.meta.url).href,Je=""+new URL("ekCuwwK9.webm",import.meta.url).href,v={hero:{type:"video",src:Ne,altKey:"portfolio.media.hero"},profile:{src:_e,altKey:"portfolio.media.profile"},skills:{type:"video",src:Ze,altKey:"portfolio.media.skills"},projects:{src:Qe,altKey:"portfolio.media.projects"},timeline:{type:"video",src:Je,altKey:"portfolio.media.timeline"},network:{type:"video",src:We,altKey:"portfolio.media.network"},contact:{type:"video",src:De,altKey:"portfolio.media.contact"}},L={once:!0,amount:.22},O={hidden:{opacity:0,y:32,filter:"blur(14px)"},visible:{opacity:1,y:0,filter:"blur(0px)",transition:{duration:.78,ease:V}}},M={hidden:{},visible:{transition:{staggerChildren:.075,delayChildren:.06}}},k={hidden:{opacity:0,y:68,scale:.955,filter:"blur(12px)"},visible:{opacity:1,y:0,scale:1,filter:"blur(0px)",transition:{duration:.72,ease:V}}},ae={hidden:{scaleX:0},visible:{scaleX:1,transition:{duration:.9,ease:V}}},i={colors:{background:"#070A12",backgroundPanel:"#101827",purpleSoft:"#C084FC",cyan:"#67E8F9",goldSoft:"#FDE68A",white:"#F8FAFC",muted:"#B6C2D2",danger:"#FB7185"},fonts:{body:'"Geist", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',heading:'"Geist", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',display:'"Bebas Neue", "Geist", sans-serif'},radii:{panel:"20px",compact:"12px",pill:"999px"},motion:{fast:"160ms",base:"240ms",ease:"cubic-bezier(0.22, 1, 0.36, 1)"},z:{content:10,header:40,skipLink:60},shadows:{panel:"0 24px 90px rgba(0, 0, 0, 0.45)",cyanGlow:"0 0 30px rgba(34, 211, 238, 0.3)",goldGlow:"0 0 30px rgba(246, 211, 101, 0.26)"}},qe=u`
   0%, 100% { transform: translate3d(0, 0, 0) rotate(-0.6deg); }
   50% { transform: translate3d(0, -12px, 0) rotate(0.8deg); }
 `,et=u`
@@ -267,7 +267,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   clip: rect(0 0 0 0);
   white-space: nowrap;
   color: ${i.colors.white};
-`,A=({type:t,src:r,alt:a,className:g,eager:n=!1})=>{const b=f.useRef(null),p=f.useRef(null),[d,$]=f.useState(n),c=f.useRef(n),m=f.useRef(!1);return f.useEffect(()=>{const h=p.current;!h||t!=="video"||!d||(h.load(),(m.current||n)&&h.play().catch(()=>{}))},[n,d,r,t]),f.useEffect(()=>{const h=b.current,s=p.current;if(!h||!s||t!=="video")return;const w=()=>{s.preload="metadata",c.current||(c.current=!0,$(!0))};if(!("IntersectionObserver"in window)){w(),m.current=!0,s.play().catch(()=>{});return}const j=new IntersectionObserver(([I])=>{I.isIntersecting&&(w(),j.disconnect())},{rootMargin:"800px 0px",threshold:0}),K=new IntersectionObserver(([I])=>{m.current=I.isIntersecting,I.isIntersecting?(w(),s.play().catch(()=>{})):s.pause()},{rootMargin:"80px 0px",threshold:.08}),S=()=>{document.visibilityState==="visible"&&m.current&&s.play().catch(()=>{})};return n&&w(),j.observe(h),K.observe(h),document.addEventListener("visibilitychange",S),()=>{j.disconnect(),K.disconnect(),document.removeEventListener("visibilitychange",S)}},[n,t]),e.jsxs(ne,{ref:b,className:g,$type:t,children:[e.jsx(ot,{"aria-hidden":"true"}),e.jsx(it,{$type:t,children:t==="image"?e.jsx(rt,{src:r,alt:a,loading:n?"eager":"lazy",decoding:"async",fetchPriority:n?"high":"low"}):e.jsx(at,{ref:p,src:d?r:void 0,"aria-label":a,loop:!0,muted:!0,autoPlay:!0,playsInline:!0,controls:!1,preload:n||d?"metadata":"none",disablePictureInPicture:!0,onCanPlay:()=>{const h=p.current;h&&(m.current||n)&&h.play().catch(()=>{})}})}),e.jsx(nt,{children:a})]})},st=u`
+`,R=({type:t,src:r,alt:a,className:g,eager:n=!1})=>{const b=f.useRef(null),p=f.useRef(null),[d,$]=f.useState(n),c=f.useRef(n),m=f.useRef(!1);return f.useEffect(()=>{const h=p.current;!h||t!=="video"||!d||(h.load(),(m.current||n)&&h.play().catch(()=>{}))},[n,d,r,t]),f.useEffect(()=>{const h=b.current,s=p.current;if(!h||!s||t!=="video")return;const w=()=>{s.preload="metadata",c.current||(c.current=!0,$(!0))};if(!("IntersectionObserver"in window)){w(),m.current=!0,s.play().catch(()=>{});return}const j=new IntersectionObserver(([I])=>{I.isIntersecting&&(w(),j.disconnect())},{rootMargin:"800px 0px",threshold:0}),K=new IntersectionObserver(([I])=>{m.current=I.isIntersecting,I.isIntersecting?(w(),s.play().catch(()=>{})):s.pause()},{rootMargin:"80px 0px",threshold:.08}),S=()=>{document.visibilityState==="visible"&&m.current&&s.play().catch(()=>{})};return n&&w(),j.observe(h),K.observe(h),document.addEventListener("visibilitychange",S),()=>{j.disconnect(),K.disconnect(),document.removeEventListener("visibilitychange",S)}},[n,t]),e.jsxs(ne,{ref:b,className:g,$type:t,children:[e.jsx(ot,{"aria-hidden":"true"}),e.jsx(it,{$type:t,children:t==="image"?e.jsx(rt,{src:r,alt:a,loading:n?"eager":"lazy",decoding:"async",fetchPriority:n?"high":"low"}):e.jsx(at,{ref:p,src:d?r:void 0,"aria-label":a,loop:!0,muted:!0,autoPlay:!0,playsInline:!0,controls:!1,preload:n||d?"metadata":"none",disablePictureInPicture:!0,onCanPlay:()=>{const h=p.current;h&&(m.current||n)&&h.play().catch(()=>{})}})}),e.jsx(nt,{children:a})]})},st=u`
   to { transform: rotate(360deg); }
 `,lt=u`
   0%, 100% { opacity: 0.58; filter: blur(0); }
@@ -417,7 +417,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     transform: translateY(-2px);
     outline: none;
   }
-`,H=o.a`
+`,G=o.a`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -478,10 +478,10 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     border-color: rgba(34, 211, 238, 0.46);
     outline: none;
   }
-`,vt={linkedin:ee,facebook:q,instagram:J,youtube:Z},jt=()=>{const{t}=z(),r=[{id:"email",label:t("portfolio.contact.channels.email"),value:x.email,href:x.emailHref,icon:T,external:!1},{id:"phone",label:t("portfolio.contact.channels.phone"),value:x.phone,href:x.phoneHref,icon:ce,external:!1},{id:"website",label:t("portfolio.contact.channels.website"),value:x.websiteLabel,href:x.websiteUrl,icon:F,external:!0},...x.socialLinks.map(a=>({id:a.id,label:a.label,value:"VS Web Studio",href:a.url,icon:vt[a.id],external:!0,rel:"me noopener noreferrer"}))];return e.jsxs(pt,{id:"portfolio-contact","aria-labelledby":"portfolio-contact-title",variants:L,initial:"hidden",whileInView:"visible",viewport:M,children:[e.jsx(dt,{variants:k,"data-portfolio-media":"contact",children:e.jsx(A,{type:v.contact.type,src:v.contact.src,alt:t(v.contact.altKey)})}),e.jsxs(ct,{variants:k,children:[e.jsx(xt,{"aria-hidden":"true",children:e.jsx(gt,{})}),e.jsx(mt,{children:t("portfolio.contact.eyebrow")}),e.jsx(ft,{id:"portfolio-contact-title",children:t("portfolio.contact.title")}),e.jsx(ht,{children:t("portfolio.contact.description")}),e.jsxs(bt,{children:[e.jsxs(ut,{href:x.emailHref,children:[e.jsx(xe,{"aria-hidden":"true"})," ",t("portfolio.contact.buttons.project")]}),e.jsxs(H,{href:x.emailHref,children:[e.jsx(T,{"aria-hidden":"true"})," ",t("portfolio.contact.buttons.email")]}),e.jsxs(H,{href:x.websiteUrl,target:"_blank",rel:"noopener noreferrer",children:[t("portfolio.contact.buttons.website")," ",e.jsx(F,{"aria-hidden":"true"})]}),e.jsxs(H,{href:x.githubUrl,target:"_blank",rel:"noopener noreferrer",children:[e.jsx(te,{"aria-hidden":"true"})," ",t("portfolio.contact.buttons.github")]})]})]}),e.jsx(wt,{children:r.map(a=>{const g=a.icon;return e.jsxs(yt,{href:a.href,target:a.external?"_blank":void 0,rel:"rel"in a?a.rel:a.external?"noopener noreferrer":void 0,variants:k,children:[e.jsx(g,{"aria-hidden":"true"}),e.jsx("span",{children:a.label}),e.jsx("strong",{children:a.value})]},a.id)})})]})},B=[{id:"hero",labelKey:"portfolio.nav.hero",href:"#portfolio-top"},{id:"profile",labelKey:"portfolio.nav.profile",href:"#portfolio-profile"},{id:"skills",labelKey:"portfolio.nav.skills",href:"#portfolio-skills"},{id:"projects",labelKey:"portfolio.nav.projects",href:"#portfolio-projects"},{id:"timeline",labelKey:"portfolio.nav.timeline",href:"#portfolio-timeline"},{id:"network",labelKey:"portfolio.nav.network",href:"#portfolio-network"},{id:"contact",labelKey:"portfolio.nav.contact",href:"#portfolio-contact"}],kt=[{labelKey:"portfolio.system.rank",valueKey:"portfolio.profile.role"},{labelKey:"portfolio.system.class",valueKey:"portfolio.system.values.mainClass"},{labelKey:"portfolio.system.guild",valueKey:"portfolio.profile.brand"},{labelKey:"portfolio.system.location",valueKey:"portfolio.profile.location"},{labelKey:"portfolio.system.mission",valueKey:"portfolio.system.values.mainMission"}],$t=[{labelKey:"portfolio.system.xpItems.german",level:72},{labelKey:"portfolio.system.xpItems.reactTypeScript",level:84},{labelKey:"portfolio.system.xpItems.node",level:68},{labelKey:"portfolio.system.xpItems.firebaseSupabase",level:70},{labelKey:"portfolio.system.xpItems.aiAutomation",level:76},{labelKey:"portfolio.system.xpItems.localBusinessWebsites",level:88}],Kt=[{id:"frontend",titleKey:"portfolio.skills.categories.frontend",descriptionKey:"portfolio.skills.descriptions.frontend",rank:"A-",icon:oe,skills:[{labelKey:"portfolio.skills.items.html",level:88},{labelKey:"portfolio.skills.items.css",level:86},{labelKey:"portfolio.skills.items.javascript",level:82},{labelKey:"portfolio.skills.items.typescript",level:78},{labelKey:"portfolio.skills.items.react",level:84},{labelKey:"portfolio.skills.items.vite",level:80},{labelKey:"portfolio.skills.items.styledComponents",level:82},{labelKey:"portfolio.skills.items.framerMotion",level:72},{labelKey:"portfolio.skills.items.i18next",level:70}]},{id:"backend",titleKey:"portfolio.skills.categories.backend",descriptionKey:"portfolio.skills.descriptions.backend",rank:"B+",icon:ge,skills:[{labelKey:"portfolio.skills.items.node",level:70},{labelKey:"portfolio.skills.items.firebase",level:74},{labelKey:"portfolio.skills.items.firebaseFunctions",level:64},{labelKey:"portfolio.skills.items.supabase",level:68},{labelKey:"portfolio.skills.items.mongodb",level:62},{labelKey:"portfolio.skills.items.netlifyFunctions",level:66}]},{id:"business",titleKey:"portfolio.skills.categories.business",descriptionKey:"portfolio.skills.descriptions.business",rank:"B+",icon:me,skills:[{labelKey:"portfolio.skills.items.landingPages",level:84},{labelKey:"portfolio.skills.items.localSeoBasics",level:70},{labelKey:"portfolio.skills.items.ga4Tracking",level:68},{labelKey:"portfolio.skills.items.googleAdsBasics",level:58},{labelKey:"portfolio.skills.items.metaAutomationBasics",level:60},{labelKey:"portfolio.skills.items.leadForms",level:80},{labelKey:"portfolio.skills.items.crmPosConcepts",level:66}]},{id:"automation",titleKey:"portfolio.skills.categories.automation",descriptionKey:"portfolio.skills.descriptions.automation",rank:"B",icon:ie,skills:[{labelKey:"portfolio.skills.items.aiAssistantForWebsites",level:78},{labelKey:"portfolio.skills.items.leadQualification",level:74},{labelKey:"portfolio.skills.items.chatbotFlows",level:72},{labelKey:"portfolio.skills.items.googleCalendarIntegrationIdea",level:58},{labelKey:"portfolio.skills.items.socialMediaAutoRepliesConcept",level:62},{labelKey:"portfolio.skills.items.businessProcessAutomation",level:70}]}],St=[{id:"vs-web-studio",titleKey:"portfolio.projects.items.vs.title",typeKey:"portfolio.projects.items.vs.type",descriptionKey:"portfolio.projects.items.vs.description",rewardKey:"portfolio.projects.items.vs.reward",difficulty:"A",link:"https://vs-web-studio.de/",tagKeys:["portfolio.projects.tags.react","portfolio.projects.tags.typescript","portfolio.projects.tags.styledComponents","portfolio.projects.tags.i18n","portfolio.projects.tags.leadGeneration","portfolio.projects.tags.aiAssistant"]},{id:"lumina-atelier",titleKey:"portfolio.projects.items.lumina.title",typeKey:"portfolio.projects.items.lumina.type",descriptionKey:"portfolio.projects.items.lumina.description",rewardKey:"portfolio.projects.items.lumina.reward",difficulty:"B+",link:"https://lumina-atelier-salon.netlify.app/",tagKeys:["portfolio.projects.tags.react","portfolio.projects.tags.landingPage","portfolio.projects.tags.beautyBusiness","portfolio.projects.tags.responsiveDesign"]},{id:"autowerk",titleKey:"portfolio.projects.items.autowerk.title",typeKey:"portfolio.projects.items.autowerk.type",descriptionKey:"portfolio.projects.items.autowerk.description",rewardKey:"portfolio.projects.items.autowerk.reward",difficulty:"B+",link:"https://auto-werkstatt.netlify.app/",tagKeys:["portfolio.projects.tags.react","portfolio.projects.tags.localBusiness","portfolio.projects.tags.workshop","portfolio.projects.tags.cta"]},{id:"handwerk-shk",titleKey:"portfolio.projects.items.handwerk.title",typeKey:"portfolio.projects.items.handwerk.type",descriptionKey:"portfolio.projects.items.handwerk.description",rewardKey:"portfolio.projects.items.handwerk.reward",difficulty:"B+",link:"https://handwerken.netlify.app/",tagKeys:["portfolio.projects.tags.react","portfolio.projects.tags.handwerk","portfolio.projects.tags.shk","portfolio.projects.tags.localSeo"]},{id:"ai-assistant",titleKey:"portfolio.projects.items.ai.title",typeKey:"portfolio.projects.items.ai.type",descriptionKey:"portfolio.projects.items.ai.description",rewardKey:"portfolio.projects.items.ai.reward",difficulty:"A-",tagKeys:["portfolio.projects.tags.ai","portfolio.projects.tags.automation","portfolio.projects.tags.leadCapture","portfolio.projects.tags.chatbot","portfolio.projects.tags.businessProcess"]},{id:"business-platform",titleKey:"portfolio.projects.items.research.title",typeKey:"portfolio.projects.items.research.type",descriptionKey:"portfolio.projects.items.research.description",rewardKey:"portfolio.projects.items.research.reward",difficulty:"B",tagKeys:["portfolio.projects.tags.crm","portfolio.projects.tags.pos","portfolio.projects.tags.orders","portfolio.projects.tags.inventory","portfolio.projects.tags.automation","portfolio.projects.tags.saasResearch"]}],zt=[{id:"course",titleKey:"portfolio.timeline.items.course.title",descriptionKey:"portfolio.timeline.items.course.description",statusKey:"portfolio.timeline.status.completed"},{id:"platforms",titleKey:"portfolio.timeline.items.platforms.title",descriptionKey:"portfolio.timeline.items.platforms.description",statusKey:"portfolio.timeline.status.active"},{id:"studio",titleKey:"portfolio.timeline.items.studio.title",descriptionKey:"portfolio.timeline.items.studio.description",statusKey:"portfolio.timeline.status.active"},{id:"demos",titleKey:"portfolio.timeline.items.demos.title",descriptionKey:"portfolio.timeline.items.demos.description",statusKey:"portfolio.timeline.status.active"},{id:"german",titleKey:"portfolio.timeline.items.german.title",descriptionKey:"portfolio.timeline.items.german.description",statusKey:"portfolio.timeline.status.training"},{id:"selfEmployment",titleKey:"portfolio.timeline.items.selfEmployment.title",descriptionKey:"portfolio.timeline.items.selfEmployment.description",statusKey:"portfolio.timeline.status.preparing"},{id:"scale",titleKey:"portfolio.timeline.items.scale.title",descriptionKey:"portfolio.timeline.items.scale.description",statusKey:"portfolio.timeline.status.next"}],It=[{id:"linkedin",titleKey:"portfolio.network.items.linkedin.title",descriptionKey:"portfolio.network.items.linkedin.description",icon:fe},{id:"localSmb",titleKey:"portfolio.network.items.localSmb.title",descriptionKey:"portfolio.network.items.localSmb.description",icon:he},{id:"ecosystem",titleKey:"portfolio.network.items.ecosystem.title",descriptionKey:"portfolio.network.items.ecosystem.description",icon:oe},{id:"research",titleKey:"portfolio.network.items.research.title",descriptionKey:"portfolio.network.items.research.description",icon:ie}],Pt=[{labelKey:"portfolio.hero.fragments.react",x:9,y:22},{labelKey:"portfolio.hero.fragments.typescript",x:66,y:16},{labelKey:"portfolio.hero.fragments.node",x:74,y:54},{labelKey:"portfolio.hero.fragments.firebase",x:18,y:68},{labelKey:"portfolio.hero.fragments.ai",x:52,y:76},{labelKey:"portfolio.hero.fragments.automation",x:4,y:44}],Ct=u`
+`,vt={linkedin:ee,facebook:q,instagram:J,youtube:Z},jt=()=>{const{t}=z(),r=[{id:"email",label:t("portfolio.contact.channels.email"),value:x.email,href:x.emailHref,icon:T,external:!1},{id:"phone",label:t("portfolio.contact.channels.phone"),value:x.phone,href:x.phoneHref,icon:ce,external:!1},{id:"website",label:t("portfolio.contact.channels.website"),value:x.websiteLabel,href:x.websiteUrl,icon:C,external:!0},...x.socialLinks.map(a=>({id:a.id,label:a.label,value:"VS Web Studio",href:a.url,icon:vt[a.id],external:!0,rel:"me noopener noreferrer"}))];return e.jsxs(pt,{id:"portfolio-contact","aria-labelledby":"portfolio-contact-title",variants:M,initial:"hidden",whileInView:"visible",viewport:L,children:[e.jsx(dt,{variants:k,"data-portfolio-media":"contact",children:e.jsx(R,{type:v.contact.type,src:v.contact.src,alt:t(v.contact.altKey)})}),e.jsxs(ct,{variants:k,children:[e.jsx(xt,{"aria-hidden":"true",children:e.jsx(gt,{})}),e.jsx(mt,{children:t("portfolio.contact.eyebrow")}),e.jsx(ft,{id:"portfolio-contact-title",children:t("portfolio.contact.title")}),e.jsx(ht,{children:t("portfolio.contact.description")}),e.jsxs(bt,{children:[e.jsxs(ut,{href:x.emailHref,children:[e.jsx(xe,{"aria-hidden":"true"})," ",t("portfolio.contact.buttons.project")]}),e.jsxs(G,{href:x.emailHref,children:[e.jsx(T,{"aria-hidden":"true"})," ",t("portfolio.contact.buttons.email")]}),e.jsxs(G,{href:x.websiteUrl,target:"_blank",rel:"noopener noreferrer",children:[t("portfolio.contact.buttons.website")," ",e.jsx(C,{"aria-hidden":"true"})]}),e.jsxs(G,{href:x.githubUrl,target:"_blank",rel:"noopener noreferrer",children:[e.jsx(te,{"aria-hidden":"true"})," ",t("portfolio.contact.buttons.github")]})]})]}),e.jsx(wt,{children:r.map(a=>{const g=a.icon;return e.jsxs(yt,{href:a.href,target:a.external?"_blank":void 0,rel:"rel"in a?a.rel:a.external?"noopener noreferrer":void 0,variants:k,children:[e.jsx(g,{"aria-hidden":"true"}),e.jsx("span",{children:a.label}),e.jsx("strong",{children:a.value})]},a.id)})})]})},A=[{id:"hero",labelKey:"portfolio.nav.hero",href:"#portfolio-top"},{id:"profile",labelKey:"portfolio.nav.profile",href:"#portfolio-profile"},{id:"skills",labelKey:"portfolio.nav.skills",href:"#portfolio-skills"},{id:"projects",labelKey:"portfolio.nav.projects",href:"#portfolio-projects"},{id:"timeline",labelKey:"portfolio.nav.timeline",href:"#portfolio-timeline"},{id:"network",labelKey:"portfolio.nav.network",href:"#portfolio-network"},{id:"contact",labelKey:"portfolio.nav.contact",href:"#portfolio-contact"}],kt=[{labelKey:"portfolio.system.rank",valueKey:"portfolio.profile.role"},{labelKey:"portfolio.system.class",valueKey:"portfolio.system.values.mainClass"},{labelKey:"portfolio.system.guild",valueKey:"portfolio.profile.brand"},{labelKey:"portfolio.system.location",valueKey:"portfolio.profile.location"},{labelKey:"portfolio.system.mission",valueKey:"portfolio.system.values.mainMission"}],$t=[{labelKey:"portfolio.system.xpItems.german",level:72},{labelKey:"portfolio.system.xpItems.reactTypeScript",level:84},{labelKey:"portfolio.system.xpItems.node",level:68},{labelKey:"portfolio.system.xpItems.firebaseSupabase",level:70},{labelKey:"portfolio.system.xpItems.aiAutomation",level:76},{labelKey:"portfolio.system.xpItems.localBusinessWebsites",level:88}],Kt=[{id:"frontend",titleKey:"portfolio.skills.categories.frontend",descriptionKey:"portfolio.skills.descriptions.frontend",rank:"A-",icon:oe,skills:[{labelKey:"portfolio.skills.items.html",level:88},{labelKey:"portfolio.skills.items.css",level:86},{labelKey:"portfolio.skills.items.javascript",level:82},{labelKey:"portfolio.skills.items.typescript",level:78},{labelKey:"portfolio.skills.items.react",level:84},{labelKey:"portfolio.skills.items.vite",level:80},{labelKey:"portfolio.skills.items.styledComponents",level:82},{labelKey:"portfolio.skills.items.framerMotion",level:72},{labelKey:"portfolio.skills.items.i18next",level:70}]},{id:"backend",titleKey:"portfolio.skills.categories.backend",descriptionKey:"portfolio.skills.descriptions.backend",rank:"B+",icon:ge,skills:[{labelKey:"portfolio.skills.items.node",level:70},{labelKey:"portfolio.skills.items.firebase",level:74},{labelKey:"portfolio.skills.items.firebaseFunctions",level:64},{labelKey:"portfolio.skills.items.supabase",level:68},{labelKey:"portfolio.skills.items.mongodb",level:62},{labelKey:"portfolio.skills.items.netlifyFunctions",level:66}]},{id:"business",titleKey:"portfolio.skills.categories.business",descriptionKey:"portfolio.skills.descriptions.business",rank:"B+",icon:me,skills:[{labelKey:"portfolio.skills.items.landingPages",level:84},{labelKey:"portfolio.skills.items.localSeoBasics",level:70},{labelKey:"portfolio.skills.items.ga4Tracking",level:68},{labelKey:"portfolio.skills.items.googleAdsBasics",level:58},{labelKey:"portfolio.skills.items.metaAutomationBasics",level:60},{labelKey:"portfolio.skills.items.leadForms",level:80},{labelKey:"portfolio.skills.items.crmPosConcepts",level:66}]},{id:"automation",titleKey:"portfolio.skills.categories.automation",descriptionKey:"portfolio.skills.descriptions.automation",rank:"B",icon:ie,skills:[{labelKey:"portfolio.skills.items.aiAssistantForWebsites",level:78},{labelKey:"portfolio.skills.items.leadQualification",level:74},{labelKey:"portfolio.skills.items.chatbotFlows",level:72},{labelKey:"portfolio.skills.items.googleCalendarIntegrationIdea",level:58},{labelKey:"portfolio.skills.items.socialMediaAutoRepliesConcept",level:62},{labelKey:"portfolio.skills.items.businessProcessAutomation",level:70}]}],St=[{id:"vs-web-studio",titleKey:"portfolio.projects.items.vs.title",typeKey:"portfolio.projects.items.vs.type",descriptionKey:"portfolio.projects.items.vs.description",rewardKey:"portfolio.projects.items.vs.reward",difficulty:"A",link:"https://vs-web-studio.de/",tagKeys:["portfolio.projects.tags.react","portfolio.projects.tags.typescript","portfolio.projects.tags.styledComponents","portfolio.projects.tags.i18n","portfolio.projects.tags.leadGeneration","portfolio.projects.tags.aiAssistant"]},{id:"lumina-atelier",titleKey:"portfolio.projects.items.lumina.title",typeKey:"portfolio.projects.items.lumina.type",descriptionKey:"portfolio.projects.items.lumina.description",rewardKey:"portfolio.projects.items.lumina.reward",difficulty:"B+",link:"https://lumina-atelier-salon.netlify.app/",tagKeys:["portfolio.projects.tags.react","portfolio.projects.tags.landingPage","portfolio.projects.tags.beautyBusiness","portfolio.projects.tags.responsiveDesign"]},{id:"autowerk",titleKey:"portfolio.projects.items.autowerk.title",typeKey:"portfolio.projects.items.autowerk.type",descriptionKey:"portfolio.projects.items.autowerk.description",rewardKey:"portfolio.projects.items.autowerk.reward",difficulty:"B+",link:"https://auto-werkstatt.netlify.app/",tagKeys:["portfolio.projects.tags.react","portfolio.projects.tags.localBusiness","portfolio.projects.tags.workshop","portfolio.projects.tags.cta"]},{id:"handwerk-shk",titleKey:"portfolio.projects.items.handwerk.title",typeKey:"portfolio.projects.items.handwerk.type",descriptionKey:"portfolio.projects.items.handwerk.description",rewardKey:"portfolio.projects.items.handwerk.reward",difficulty:"B+",link:"https://handwerken.netlify.app/",tagKeys:["portfolio.projects.tags.react","portfolio.projects.tags.handwerk","portfolio.projects.tags.shk","portfolio.projects.tags.localSeo"]},{id:"ai-assistant",titleKey:"portfolio.projects.items.ai.title",typeKey:"portfolio.projects.items.ai.type",descriptionKey:"portfolio.projects.items.ai.description",rewardKey:"portfolio.projects.items.ai.reward",difficulty:"A-",tagKeys:["portfolio.projects.tags.ai","portfolio.projects.tags.automation","portfolio.projects.tags.leadCapture","portfolio.projects.tags.chatbot","portfolio.projects.tags.businessProcess"]},{id:"business-platform",titleKey:"portfolio.projects.items.research.title",typeKey:"portfolio.projects.items.research.type",descriptionKey:"portfolio.projects.items.research.description",rewardKey:"portfolio.projects.items.research.reward",difficulty:"B",tagKeys:["portfolio.projects.tags.crm","portfolio.projects.tags.pos","portfolio.projects.tags.orders","portfolio.projects.tags.inventory","portfolio.projects.tags.automation","portfolio.projects.tags.saasResearch"]}],zt=[{id:"course",titleKey:"portfolio.timeline.items.course.title",descriptionKey:"portfolio.timeline.items.course.description",statusKey:"portfolio.timeline.status.completed"},{id:"platforms",titleKey:"portfolio.timeline.items.platforms.title",descriptionKey:"portfolio.timeline.items.platforms.description",statusKey:"portfolio.timeline.status.active"},{id:"studio",titleKey:"portfolio.timeline.items.studio.title",descriptionKey:"portfolio.timeline.items.studio.description",statusKey:"portfolio.timeline.status.active"},{id:"demos",titleKey:"portfolio.timeline.items.demos.title",descriptionKey:"portfolio.timeline.items.demos.description",statusKey:"portfolio.timeline.status.active"},{id:"german",titleKey:"portfolio.timeline.items.german.title",descriptionKey:"portfolio.timeline.items.german.description",statusKey:"portfolio.timeline.status.training"},{id:"selfEmployment",titleKey:"portfolio.timeline.items.selfEmployment.title",descriptionKey:"portfolio.timeline.items.selfEmployment.description",statusKey:"portfolio.timeline.status.preparing"},{id:"scale",titleKey:"portfolio.timeline.items.scale.title",descriptionKey:"portfolio.timeline.items.scale.description",statusKey:"portfolio.timeline.status.next"}],It=[{id:"linkedin",titleKey:"portfolio.network.items.linkedin.title",descriptionKey:"portfolio.network.items.linkedin.description",icon:fe},{id:"localSmb",titleKey:"portfolio.network.items.localSmb.title",descriptionKey:"portfolio.network.items.localSmb.description",icon:he},{id:"ecosystem",titleKey:"portfolio.network.items.ecosystem.title",descriptionKey:"portfolio.network.items.ecosystem.description",icon:oe},{id:"research",titleKey:"portfolio.network.items.research.title",descriptionKey:"portfolio.network.items.research.description",icon:ie}],Pt=[{labelKey:"portfolio.hero.fragments.react",x:9,y:22},{labelKey:"portfolio.hero.fragments.typescript",x:66,y:16},{labelKey:"portfolio.hero.fragments.node",x:74,y:54},{labelKey:"portfolio.hero.fragments.firebase",x:18,y:68},{labelKey:"portfolio.hero.fragments.ai",x:52,y:76},{labelKey:"portfolio.hero.fragments.automation",x:4,y:44}],Ft=u`
   0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
   50% { transform: translate3d(0, -16px, 0) scale(1.018); }
-`,Ft=u`
+`,Ct=u`
   0%, 100% {
     filter:
       drop-shadow(0 0 18px rgba(34, 211, 238, 0.24))
@@ -494,17 +494,17 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
       drop-shadow(0 0 54px rgba(246, 211, 101, 0.24))
       drop-shadow(0 26px 70px rgba(0, 0, 0, 0.52));
   }
-`,Mt=u`
+`,Lt=u`
   0%, 100% { opacity: 0.4; transform: scale(0.96); }
   50% { opacity: 0.74; transform: scale(1.05); }
-`,Lt=o.figure`
+`,Mt=o.figure`
   position: relative;
   isolation: isolate;
   width: min(100%, var(--portfolio-image-width, 42vw));
   height: var(--portfolio-image-height, 86svh);
   margin: 0;
   pointer-events: none;
-`,At=o.span`
+`,Rt=o.span`
   position: absolute;
   inset: 10% 4%;
   z-index: -1;
@@ -514,20 +514,20 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     radial-gradient(circle at 44% 68%, rgba(124, 58, 237, 0.26), transparent 58%),
     conic-gradient(from 140deg, rgba(246, 211, 101, 0.16), rgba(34, 211, 238, 0.2), rgba(168, 85, 247, 0.18), rgba(246, 211, 101, 0.16));
   filter: blur(18px);
-  animation: ${Mt} 6.4s ease-in-out infinite;
-`,Bt=o.img`
+  animation: ${Lt} 6.4s ease-in-out infinite;
+`,At=o.img`
   display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
   object-position: center bottom;
-  animation: ${Ct} 7.6s ease-in-out infinite, ${Ft} 5.8s ease-in-out infinite;
+  animation: ${Ft} 7.6s ease-in-out infinite, ${Ct} 5.8s ease-in-out infinite;
   user-select: none;
 
   @media (prefers-reduced-motion: reduce) {
     animation: none;
   }
-`,se=({src:t,alt:r,className:a})=>e.jsxs(Lt,{className:a,"aria-hidden":"true",children:[e.jsx(At,{}),e.jsx(Bt,{src:t,alt:r,loading:"lazy",decoding:"async",fetchPriority:"low"})]}),Rt=u`
+`,se=({src:t,alt:r,className:a})=>e.jsxs(Mt,{className:a,"aria-hidden":"true",children:[e.jsx(Rt,{}),e.jsx(At,{src:t,alt:r,loading:"lazy",decoding:"async",fetchPriority:"low"})]}),Bt=u`
   0% { transform: translateY(-120%); opacity: 0; }
   12% { opacity: 0.8; }
   100% { transform: translateY(120%); opacity: 0; }
@@ -542,7 +542,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   background:
     radial-gradient(circle at 76% 34%, rgba(246, 211, 101, 0.12), transparent 26%),
     radial-gradient(circle at 18% 76%, rgba(34, 211, 238, 0.14), transparent 32%);
-`,Ht=o.div`
+`,Gt=o.div`
   position: relative;
   z-index: 1;
   display: flex;
@@ -558,12 +558,12 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   @media (max-width: 560px) {
     width: min(100% - 24px, 1440px);
   }
-`,Gt=o.span`
+`,Ht=o.span`
   position: absolute;
   inset: 0;
   z-index: 0;
   background: linear-gradient(180deg, transparent 0%, rgba(34, 211, 238, 0.16) 48%, transparent 52%);
-  animation: ${Rt} 7s ease-in-out infinite;
+  animation: ${Bt} 7s ease-in-out infinite;
   pointer-events: none;
 
   @media (prefers-reduced-motion: reduce) {
@@ -597,7 +597,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   color: rgba(248, 250, 252, 0.76);
   font-size: clamp(0.98rem, 1.6vw, 1.14rem);
   line-height: 1.75;
-`,Ot=o.div`
+`,Ut=o.div`
   position: relative;
   z-index: 2;
   display: grid;
@@ -614,7 +614,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   @media (max-width: 620px) {
     grid-template-columns: 1fr;
   }
-`,Dt=o(l.article)`
+`,Ot=o(l.article)`
   min-height: 104px;
   border: 1px solid rgba(168, 85, 247, 0.3);
   border-radius: 8px;
@@ -639,7 +639,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     color: ${i.colors.white};
     line-height: 1.35;
   }
-`,Nt=o.div`
+`,Dt=o.div`
   position: relative;
   z-index: 2;
   display: grid;
@@ -656,7 +656,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   @media (max-width: 620px) {
     grid-template-columns: 1fr;
   }
-`,Wt=o(l.div)`
+`,Nt=o(l.div)`
   position: absolute;
   right: clamp(-120px, 0vw, 0px);
   /* top: 50%; */
@@ -681,7 +681,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     width: 620px;
     opacity: 0.22;
   }
-`,Ut=o(l.article)`
+`,Wt=o(l.article)`
   border: 1px solid rgba(56, 189, 248, 0.22);
   border-radius: 8px;
   padding: 14px;
@@ -711,7 +711,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   border-radius: inherit;
   background: linear-gradient(90deg, ${i.colors.purpleSoft}, ${i.colors.cyan}, ${i.colors.goldSoft});
   box-shadow: ${i.shadows.cyanGlow};
-`,Zt=()=>{const{t}=z();return e.jsxs(Et,{id:"portfolio-profile","aria-labelledby":"portfolio-profile-title",variants:L,initial:"hidden",whileInView:"visible",viewport:M,children:[e.jsx(Gt,{"aria-hidden":"true"}),e.jsxs(Ht,{children:[e.jsx(Wt,{variants:k,"data-portfolio-media":"profile",children:e.jsx(se,{src:v.profile.src,alt:t(v.profile.altKey)})}),e.jsxs(Tt,{variants:k,children:[e.jsx(Vt,{children:t("portfolio.system.eyebrow")}),e.jsx(Yt,{id:"portfolio-profile-title",children:t("portfolio.system.title")}),e.jsx(Xt,{children:t("portfolio.positioning")})]}),e.jsx(Ot,{children:kt.map(r=>e.jsxs(Dt,{variants:k,children:[e.jsx("span",{children:t(r.labelKey)}),e.jsx("strong",{children:t(r.valueKey)})]},r.labelKey))}),e.jsx(Nt,{"aria-label":t("portfolio.system.xpFocus"),children:$t.map(r=>e.jsxs(Ut,{variants:k,children:[e.jsx("span",{children:t(r.labelKey)}),e.jsxs("strong",{children:[r.level,"%"]}),e.jsx(_t,{children:e.jsx(Qt,{as:l.span,$level:r.level,variants:ae,style:{transformOrigin:"left center"}})})]},r.labelKey))})]})]})},Jt=o(l.section)`
+`,Zt=()=>{const{t}=z();return e.jsxs(Et,{id:"portfolio-profile","aria-labelledby":"portfolio-profile-title",variants:M,initial:"hidden",whileInView:"visible",viewport:L,children:[e.jsx(Ht,{"aria-hidden":"true"}),e.jsxs(Gt,{children:[e.jsx(Nt,{variants:k,"data-portfolio-media":"profile",children:e.jsx(se,{src:v.profile.src,alt:t(v.profile.altKey)})}),e.jsxs(Tt,{variants:k,children:[e.jsx(Vt,{children:t("portfolio.system.eyebrow")}),e.jsx(Yt,{id:"portfolio-profile-title",children:t("portfolio.system.title")}),e.jsx(Xt,{children:t("portfolio.positioning")})]}),e.jsx(Ut,{children:kt.map(r=>e.jsxs(Ot,{variants:k,children:[e.jsx("span",{children:t(r.labelKey)}),e.jsx("strong",{children:t(r.valueKey)})]},r.labelKey))}),e.jsx(Dt,{"aria-label":t("portfolio.system.xpFocus"),children:$t.map(r=>e.jsxs(Wt,{variants:k,children:[e.jsx("span",{children:t(r.labelKey)}),e.jsxs("strong",{children:[r.level,"%"]}),e.jsx(_t,{children:e.jsx(Qt,{as:l.span,$level:r.level,variants:ae,style:{transformOrigin:"left center"}})})]},r.labelKey))})]})]})},Jt=o(l.section)`
   position: relative;
   z-index: 1;
   min-height: 100vh;
@@ -825,7 +825,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   color: ${i.colors.cyan};
   background: rgba(124, 58, 237, 0.1);
   box-shadow: 0 0 24px rgba(34, 211, 238, 0.14);
-`,no=()=>{const{t}=z();return e.jsxs(Jt,{id:"portfolio-network","aria-labelledby":"portfolio-network-title",variants:L,initial:"hidden",whileInView:"visible",viewport:M,children:[e.jsx(qt,{variants:k,"data-portfolio-media":"network",children:e.jsx(A,{type:v.network.type,src:v.network.src,alt:t(v.network.altKey)})}),e.jsxs("div",{children:[e.jsx(eo,{children:t("portfolio.network.eyebrow")}),e.jsx(to,{id:"portfolio-network-title",children:t("portfolio.network.title")}),e.jsx(oo,{children:t("portfolio.network.description")})]}),e.jsx(io,{children:It.map(r=>{const a=r.icon;return e.jsxs(ro,{variants:k,children:[e.jsx(ao,{children:e.jsx(a,{"aria-hidden":"true"})}),e.jsx("h3",{children:t(r.titleKey)}),e.jsx("p",{children:t(r.descriptionKey)})]},r.id)})})]})},so=u`
+`,no=()=>{const{t}=z();return e.jsxs(Jt,{id:"portfolio-network","aria-labelledby":"portfolio-network-title",variants:M,initial:"hidden",whileInView:"visible",viewport:L,children:[e.jsx(qt,{variants:k,"data-portfolio-media":"network",children:e.jsx(R,{type:v.network.type,src:v.network.src,alt:t(v.network.altKey)})}),e.jsxs("div",{children:[e.jsx(eo,{children:t("portfolio.network.eyebrow")}),e.jsx(to,{id:"portfolio-network-title",children:t("portfolio.network.title")}),e.jsx(oo,{children:t("portfolio.network.description")})]}),e.jsx(io,{children:It.map(r=>{const a=r.icon;return e.jsxs(ro,{variants:k,children:[e.jsx(ao,{children:e.jsx(a,{"aria-hidden":"true"})}),e.jsx("h3",{children:t(r.titleKey)}),e.jsx("p",{children:t(r.descriptionKey)})]},r.id)})})]})},so=u`
   0% { transform: translateX(-35%); }
   100% { transform: translateX(35%); }
 `,lo=o.footer`
@@ -888,7 +888,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   color: ${i.colors.white};
   font-family: ${i.fonts.heading};
   letter-spacing: 0;
-`,N=o.div`
+`,D=o.div`
   border: 1px solid rgba(34, 211, 238, 0.16);
   border-radius: 8px;
   padding: 18px;
@@ -901,7 +901,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     letter-spacing: 0;
     text-transform: uppercase;
   }
-`,W=o.div`
+`,N=o.div`
   display: grid;
   gap: 9px;
 
@@ -926,7 +926,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   margin: 0;
   color: ${i.colors.muted};
   font-size: 0.86rem;
-`,fo={linkedin:ee,facebook:q,instagram:J,youtube:Z},ho=()=>{const{t}=z();return e.jsxs(lo,{children:[e.jsxs(po,{children:[e.jsxs(co,{children:[e.jsx(xo,{children:x.founderName}),e.jsx("strong",{children:x.brandName}),e.jsx("p",{children:t("portfolio.footer.description")})]}),e.jsxs(N,{children:[e.jsx("h2",{children:t("portfolio.footer.navigation")}),e.jsx(W,{children:B.map(r=>e.jsx("a",{href:r.href,children:t(r.labelKey)},r.id))})]}),e.jsxs(N,{children:[e.jsx("h2",{children:t("portfolio.footer.contact")}),e.jsxs(W,{children:[e.jsx("a",{href:x.emailHref,children:x.email}),e.jsx("a",{href:x.phoneHref,children:x.phone}),e.jsxs("a",{href:x.mapsUrl,target:"_blank",rel:"noopener noreferrer",children:[t("portfolio.profile.location")," ",e.jsx(F,{"aria-hidden":"true"})]}),e.jsxs("a",{href:x.websiteUrl,target:"_blank",rel:"noopener noreferrer",children:[x.websiteLabel," ",e.jsx(F,{"aria-hidden":"true"})]}),e.jsxs("a",{href:x.githubUrl,target:"_blank",rel:"noopener noreferrer",children:[e.jsx(te,{"aria-hidden":"true"})," GitHub"]}),x.socialLinks.map(r=>{const a=fo[r.id];return e.jsxs("a",{href:r.url,target:"_blank",rel:"me noopener noreferrer",children:[e.jsx(a,{"aria-hidden":"true"})," ",r.label]},r.id)})]})]})]}),e.jsx(go,{children:e.jsx(mo,{children:t("portfolio.footer.note")})})]})},bo=o.header`
+`,fo={linkedin:ee,facebook:q,instagram:J,youtube:Z},ho=()=>{const{t}=z();return e.jsxs(lo,{children:[e.jsxs(po,{children:[e.jsxs(co,{children:[e.jsx(xo,{children:x.founderName}),e.jsx("strong",{children:x.brandName}),e.jsx("p",{children:t("portfolio.footer.description")})]}),e.jsxs(D,{children:[e.jsx("h2",{children:t("portfolio.footer.navigation")}),e.jsx(N,{children:A.map(r=>e.jsx("a",{href:r.href,children:t(r.labelKey)},r.id))})]}),e.jsxs(D,{children:[e.jsx("h2",{children:t("portfolio.footer.contact")}),e.jsxs(N,{children:[e.jsx("a",{href:x.emailHref,children:x.email}),e.jsx("a",{href:x.phoneHref,children:x.phone}),e.jsxs("a",{href:x.mapsUrl,target:"_blank",rel:"noopener noreferrer",children:[t("portfolio.profile.location")," ",e.jsx(C,{"aria-hidden":"true"})]}),e.jsxs("a",{href:x.websiteUrl,target:"_blank",rel:"noopener noreferrer",children:[x.websiteLabel," ",e.jsx(C,{"aria-hidden":"true"})]}),e.jsxs("a",{href:x.githubUrl,target:"_blank",rel:"noopener noreferrer",children:[e.jsx(te,{"aria-hidden":"true"})," GitHub"]}),x.socialLinks.map(r=>{const a=fo[r.id];return e.jsxs("a",{href:r.url,target:"_blank",rel:"me noopener noreferrer",children:[e.jsx(a,{"aria-hidden":"true"})," ",r.label]},r.id)})]})]})]}),e.jsx(go,{children:e.jsx(mo,{children:t("portfolio.footer.note")})})]})},bo=o.header`
   position: fixed;
   top: 12px;
   left: 0;
@@ -1161,18 +1161,18 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     height: 40px;
     flex-basis: 40px;
   }
-`,Io=["de","en","uk"],Po=()=>{const{t,i18n:r}=z(),[a,g]=f.useState(!1),[n,b]=f.useState(!1),[p,d]=f.useState("hero"),[$,c]=f.useState(0);f.useEffect(()=>{let s=0;const w=()=>{s||(s=window.requestAnimationFrame(()=>{const j=Math.max(document.documentElement.scrollHeight-window.innerHeight,1);g(window.scrollY>18),c(Math.min(window.scrollY/j,1)),s=0}))};return w(),window.addEventListener("scroll",w,{passive:!0}),()=>{window.removeEventListener("scroll",w),s&&window.cancelAnimationFrame(s)}},[]),f.useEffect(()=>{if(!n)return;const s=w=>{w.key==="Escape"&&b(!1)};return window.addEventListener("keydown",s),()=>window.removeEventListener("keydown",s)},[n]),f.useEffect(()=>{const s=new IntersectionObserver(w=>{const j=w.filter(K=>K.isIntersecting).sort((K,S)=>S.intersectionRatio-K.intersectionRatio)[0];if(j!=null&&j.target.id){const K=B.find(S=>S.href===`#${j.target.id}`);K&&d(K.id)}},{rootMargin:"-34% 0px -48% 0px",threshold:[.18,.34,.5]});return B.forEach(w=>{const j=document.querySelector(w.href);j&&s.observe(j)}),()=>s.disconnect()},[]);const m=s=>{r.changeLanguage(s),b(!1)},h=r.resolvedLanguage||r.language;return e.jsxs(bo,{$scrolled:a,children:[e.jsx(uo,{"aria-hidden":"true",children:e.jsx(wo,{style:{transform:`scaleX(${$})`}})}),e.jsxs(yo,{children:[e.jsxs(vo,{href:"#portfolio-top","aria-label":t("portfolio.header.brandAria"),children:[e.jsx("strong",{children:"Vladyslav"}),e.jsxs("span",{children:["/ ",x.brandName]})]}),e.jsx(jo,{children:t("portfolio.header.rank")}),e.jsx(ko,{$open:n,"aria-label":t("portfolio.header.navigation"),children:B.map(s=>e.jsx("a",{href:s.href,"aria-current":p===s.id?"page":void 0,"data-active":p===s.id?"true":void 0,onClick:()=>b(!1),children:t(s.labelKey)},s.id))}),e.jsx($o,{"aria-label":t("portfolio.header.language"),children:Io.map(s=>e.jsx(Ko,{type:"button",$active:h.startsWith(s),onClick:()=>m(s),children:s.toUpperCase()},s))}),e.jsx(So,{href:x.emailHref,children:t("portfolio.header.cta")}),e.jsx(zo,{type:"button","aria-label":t(n?"portfolio.header.closeMenu":"portfolio.header.openMenu"),"aria-expanded":n,onClick:()=>b(s=>!s),children:n?e.jsx(be,{"aria-hidden":"true"}):e.jsx(ue,{"aria-hidden":"true"})})]})]})},Co=u`
+`,Io=["de","en","uk"],Po=()=>{const{t,i18n:r}=z(),[a,g]=f.useState(!1),[n,b]=f.useState(!1),[p,d]=f.useState("hero"),[$,c]=f.useState(0);f.useEffect(()=>{let s=0;const w=()=>{s||(s=window.requestAnimationFrame(()=>{const j=Math.max(document.documentElement.scrollHeight-window.innerHeight,1);g(window.scrollY>18),c(Math.min(window.scrollY/j,1)),s=0}))};return w(),window.addEventListener("scroll",w,{passive:!0}),()=>{window.removeEventListener("scroll",w),s&&window.cancelAnimationFrame(s)}},[]),f.useEffect(()=>{if(!n)return;const s=w=>{w.key==="Escape"&&b(!1)};return window.addEventListener("keydown",s),()=>window.removeEventListener("keydown",s)},[n]),f.useEffect(()=>{const s=new IntersectionObserver(w=>{const j=w.filter(K=>K.isIntersecting).sort((K,S)=>S.intersectionRatio-K.intersectionRatio)[0];if(j!=null&&j.target.id){const K=A.find(S=>S.href===`#${j.target.id}`);K&&d(K.id)}},{rootMargin:"-34% 0px -48% 0px",threshold:[.18,.34,.5]});return A.forEach(w=>{const j=document.querySelector(w.href);j&&s.observe(j)}),()=>s.disconnect()},[]);const m=s=>{r.changeLanguage(s),b(!1)},h=r.resolvedLanguage||r.language;return e.jsxs(bo,{$scrolled:a,children:[e.jsx(uo,{"aria-hidden":"true",children:e.jsx(wo,{style:{transform:`scaleX(${$})`}})}),e.jsxs(yo,{children:[e.jsxs(vo,{href:"#portfolio-top","aria-label":t("portfolio.header.brandAria"),children:[e.jsx("strong",{children:"Vladyslav"}),e.jsxs("span",{children:["/ ",x.brandName]})]}),e.jsx(jo,{children:t("portfolio.header.rank")}),e.jsx(ko,{$open:n,"aria-label":t("portfolio.header.navigation"),children:A.map(s=>e.jsx("a",{href:s.href,"aria-current":p===s.id?"page":void 0,"data-active":p===s.id?"true":void 0,onClick:()=>b(!1),children:t(s.labelKey)},s.id))}),e.jsx($o,{"aria-label":t("portfolio.header.language"),children:Io.map(s=>e.jsx(Ko,{type:"button",$active:h.startsWith(s),onClick:()=>m(s),children:s.toUpperCase()},s))}),e.jsx(So,{href:x.emailHref,children:t("portfolio.header.cta")}),e.jsx(zo,{type:"button","aria-label":t(n?"portfolio.header.closeMenu":"portfolio.header.openMenu"),"aria-expanded":n,onClick:()=>b(s=>!s),children:n?e.jsx(be,{"aria-hidden":"true"}):e.jsx(ue,{"aria-hidden":"true"})})]})]})},Fo=u`
   0%, 100% { filter: drop-shadow(0 0 26px rgba(124, 58, 237, 0.42)); transform: scale(1); }
   50% { filter: drop-shadow(0 0 46px rgba(34, 211, 238, 0.46)); transform: scale(1.03); }
-`,Fo=u`
+`,Co=u`
   to { transform: rotate(360deg); }
-`,Mo=u`
+`,Lo=u`
   0%, 100% { transform: translate3d(0, 0, 0); }
   50% { transform: translate3d(0, -12px, 0); }
-`,Lo=u`
+`,Mo=u`
   0%, 100% { transform: translate3d(0, 0, 0) rotate(-8deg); }
   50% { transform: translate3d(10px, -18px, 0) rotate(8deg); }
-`,Ao=o.section`
+`,Ro=o.section`
   position: relative;
   overflow: hidden;
   isolation: isolate;
@@ -1204,11 +1204,11 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     padding-top: 92px;
     padding-bottom: 28px;
   }
-`,Bo=o(l.div)`
+`,Ao=o(l.div)`
   position: relative;
   z-index: 2;
   min-width: 0;
-`,Ro=o.span`
+`,Bo=o.span`
   display: inline-flex;
   width: fit-content;
   border: 1px solid rgba(34, 211, 238, 0.35);
@@ -1230,7 +1230,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   color: ${i.colors.goldSoft};
   font-size: 0.82rem;
   font-weight: 900;
-`,Ho=o.h1`
+`,Go=o.h1`
   max-width: 900px;
   margin: 22px 0 0;
   color: ${i.colors.white};
@@ -1254,7 +1254,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     line-height: 0.9;
     letter-spacing: -0.045em;
   }
-`,Go=o.p`
+`,Ho=o.p`
   max-width: 760px;
   margin: 24px 0 0;
   color: rgba(248, 250, 252, 0.78);
@@ -1305,7 +1305,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     transform: translateY(-2px);
     outline: none;
   }
-`,U=o.a`
+`,W=o.a`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1349,7 +1349,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     height: 100%;
     min-height: 220px;
   }
-`,Oo=o.div`
+`,Uo=o.div`
   position: absolute;
   inset: 0;
   display: grid;
@@ -1382,7 +1382,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     inset: 8%;
     border: 1px dashed rgba(246, 211, 101, 0.36);
     border-radius: 50%;
-    animation: ${Fo} 18s linear infinite;
+    animation: ${Co} 18s linear infinite;
   }
 
   &::after {
@@ -1405,7 +1405,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   width: min(42%, 260px);
   aspect-ratio: 0.48;
   transform: translateX(-50%);
-  animation: ${Co} 4.8s ease-in-out infinite;
+  animation: ${Fo} 4.8s ease-in-out infinite;
 
   .head,
   .coat,
@@ -1489,12 +1489,12 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     radial-gradient(circle at 62% 34%, #f8fafc 0 6px, transparent 7px),
     radial-gradient(circle, rgba(34, 211, 238, 0.34), rgba(168, 85, 247, 0.16));
   box-shadow: 0 0 34px rgba(34, 211, 238, 0.36);
-  animation: ${Lo} 5s ease-in-out infinite;
+  animation: ${Mo} 5s ease-in-out infinite;
 
   @media (prefers-reduced-motion: reduce) {
     animation: none;
   }
-`;const Do=o.span`
+`;const Oo=o.span`
   position: absolute;
   left: ${({$x:t})=>`${t}%`};
   top: ${({$y:t})=>`${t}%`};
@@ -1506,16 +1506,16 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   font-size: 0.78rem;
   font-weight: 900;
   box-shadow: 0 0 22px rgba(34, 211, 238, 0.14);
-  animation: ${Mo} 4.8s ease-in-out infinite;
+  animation: ${Lo} 4.8s ease-in-out infinite;
   animation-delay: ${({$x:t})=>`${t*-.04}s`};
 
   @media (prefers-reduced-motion: reduce) {
     animation: none;
   }
-`,No=()=>{const{t}=z(),r=f.useRef(null),a=E(),{scrollYProgress:g}=Y({target:r,offset:["start start","end start"]}),n=X(g,{stiffness:90,damping:24,mass:.3}),b=y(n,[0,1],[0,-150]),p=y(n,[0,1],[0,180]),d=y(n,[0,1],[1,1.14]),$=y(n,[0,1],[0,3]);return e.jsxs(Ao,{ref:r,id:"portfolio-top","aria-labelledby":"portfolio-title",children:[e.jsxs(Bo,{variants:D,initial:"hidden",animate:"visible",style:{y:a?0:b},children:[e.jsx(Ro,{children:t("portfolio.hero.systemAwakened")}),e.jsx(Eo,{children:t("portfolio.profile.role")}),e.jsx(Ho,{id:"portfolio-title",children:t("portfolio.hero.title")}),e.jsx(Go,{children:t("portfolio.hero.subtitle")}),e.jsxs(To,{children:[e.jsxs("span",{children:[e.jsx(re,{"aria-hidden":"true"})," ",t("portfolio.profile.location")]}),e.jsx("span",{children:t("portfolio.profile.languages")})]}),e.jsxs(Vo,{children:[e.jsxs(Yo,{href:"#portfolio-projects",children:[t("portfolio.hero.buttons.projects")," ",e.jsx(we,{"aria-hidden":"true"})]}),e.jsxs(U,{href:x.emailHref,children:[e.jsx(T,{"aria-hidden":"true"})," ",t("portfolio.hero.buttons.contact")]}),e.jsxs(U,{href:x.websiteUrl,target:"_blank",rel:"noopener noreferrer",children:[t("portfolio.hero.buttons.studio")," ",e.jsx(F,{"aria-hidden":"true"})]})]})]}),e.jsx(Xo,{variants:D,initial:"hidden",animate:"visible",style:{y:a?0:p,scale:a?1:d,rotate:a?0:$},children:e.jsxs(Oo,{children:[e.jsx(A,{type:v.hero.type,src:v.hero.src,alt:t(v.hero.altKey),eager:!0}),Pt.map(c=>e.jsx(Do,{$x:c.x,$y:c.y,children:t(c.labelKey)},c.labelKey))]})})]})},Wo=u`
+`,Do=()=>{const{t}=z(),r=f.useRef(null),a=E(),{scrollYProgress:g}=Y({target:r,offset:["start start","end start"]}),n=X(g,{stiffness:90,damping:24,mass:.3}),b=y(n,[0,1],[0,-150]),p=y(n,[0,1],[0,180]),d=y(n,[0,1],[1,1.14]),$=y(n,[0,1],[0,3]);return e.jsxs(Ro,{ref:r,id:"portfolio-top","aria-labelledby":"portfolio-title",children:[e.jsxs(Ao,{variants:O,initial:"hidden",animate:"visible",style:{y:a?0:b},children:[e.jsx(Bo,{children:t("portfolio.hero.systemAwakened")}),e.jsx(Eo,{children:t("portfolio.profile.role")}),e.jsx(Go,{id:"portfolio-title",children:t("portfolio.hero.title")}),e.jsx(Ho,{children:t("portfolio.hero.subtitle")}),e.jsxs(To,{children:[e.jsxs("span",{children:[e.jsx(re,{"aria-hidden":"true"})," ",t("portfolio.profile.location")]}),e.jsx("span",{children:t("portfolio.profile.languages")})]}),e.jsxs(Vo,{children:[e.jsxs(Yo,{href:"#portfolio-projects",children:[t("portfolio.hero.buttons.projects")," ",e.jsx(we,{"aria-hidden":"true"})]}),e.jsxs(W,{href:x.emailHref,children:[e.jsx(T,{"aria-hidden":"true"})," ",t("portfolio.hero.buttons.contact")]}),e.jsxs(W,{href:x.websiteUrl,target:"_blank",rel:"noopener noreferrer",children:[t("portfolio.hero.buttons.studio")," ",e.jsx(C,{"aria-hidden":"true"})]})]})]}),e.jsx(Xo,{variants:O,initial:"hidden",animate:"visible",style:{y:a?0:p,scale:a?1:d,rotate:a?0:$},children:e.jsxs(Uo,{children:[e.jsx(R,{type:v.hero.type,src:v.hero.src,alt:t(v.hero.altKey),eager:!0}),Pt.map(c=>e.jsx(Oo,{$x:c.x,$y:c.y,children:t(c.labelKey)},c.labelKey))]})})]})},No=u`
   0% { transform: translateX(-140%) rotate(18deg); }
   100% { transform: translateX(260%) rotate(18deg); }
-`,Uo=o(l.section)`
+`,Wo=o(l.section)`
   position: relative;
   z-index: 1;
   min-height: 100vh;
@@ -1648,7 +1648,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
 
   &:hover::after {
     opacity: 1;
-    animation: ${Wo} 900ms ${i.motion.ease} both;
+    animation: ${No} 900ms ${i.motion.ease} both;
   }
 
   &:focus-within {
@@ -1740,7 +1740,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   margin-top: auto;
   color: ${i.colors.cyan};
   font-weight: 900;
-`,ni=()=>{const{t}=z();return e.jsxs(Uo,{id:"portfolio-projects","aria-labelledby":"portfolio-projects-title",variants:L,initial:"hidden",whileInView:"visible",viewport:M,children:[e.jsx(_o,{variants:k,"data-portfolio-media":"projects",children:e.jsx(se,{src:v.projects.src,alt:t(v.projects.altKey)})}),e.jsxs(Qo,{variants:k,children:[e.jsx(Zo,{children:t("portfolio.projects.eyebrow")}),e.jsx(Jo,{id:"portfolio-projects-title",children:t("portfolio.projects.title")}),e.jsx(qo,{children:t("portfolio.projects.description")})]}),e.jsx(ei,{children:St.map(r=>e.jsxs(ti,{variants:k,children:[e.jsxs(oi,{children:[t("portfolio.projects.difficulty")," ",r.difficulty]}),e.jsx(ii,{children:t(r.typeKey)}),e.jsx("h3",{children:t(r.titleKey)}),e.jsx("p",{children:t(r.descriptionKey)}),e.jsxs(ri,{children:[e.jsx(ye,{"aria-hidden":"true"}),e.jsx("span",{children:t(r.rewardKey)})]}),e.jsx(ai,{children:r.tagKeys.map(a=>e.jsx("span",{children:t(a)},a))}),r.link?e.jsxs(_,{href:r.link,target:"_blank",rel:"noopener noreferrer","aria-label":`${t("portfolio.projects.open")} ${t(r.titleKey)}`,children:[t("portfolio.projects.open")," ",e.jsx(F,{"aria-hidden":"true"})]}):e.jsxs(_,{as:"span",children:[t("portfolio.projects.concept")," ",e.jsx(ve,{"aria-hidden":"true"})]})]},r.id))})]})},si=u`
+`,ni=()=>{const{t}=z();return e.jsxs(Wo,{id:"portfolio-projects","aria-labelledby":"portfolio-projects-title",variants:M,initial:"hidden",whileInView:"visible",viewport:L,children:[e.jsx(_o,{variants:k,"data-portfolio-media":"projects",children:e.jsx(se,{src:v.projects.src,alt:t(v.projects.altKey)})}),e.jsxs(Qo,{variants:k,children:[e.jsx(Zo,{children:t("portfolio.projects.eyebrow")}),e.jsx(Jo,{id:"portfolio-projects-title",children:t("portfolio.projects.title")}),e.jsx(qo,{children:t("portfolio.projects.description")})]}),e.jsx(ei,{children:St.map(r=>e.jsxs(ti,{variants:k,children:[e.jsxs(oi,{children:[t("portfolio.projects.difficulty")," ",r.difficulty]}),e.jsx(ii,{children:t(r.typeKey)}),e.jsx("h3",{children:t(r.titleKey)}),e.jsx("p",{children:t(r.descriptionKey)}),e.jsxs(ri,{children:[e.jsx(ye,{"aria-hidden":"true"}),e.jsx("span",{children:t(r.rewardKey)})]}),e.jsx(ai,{children:r.tagKeys.map(a=>e.jsx("span",{children:t(a)},a))}),r.link?e.jsxs(_,{href:r.link,target:"_blank",rel:"noopener noreferrer","aria-label":`${t("portfolio.projects.open")} ${t(r.titleKey)}`,children:[t("portfolio.projects.open")," ",e.jsx(C,{"aria-hidden":"true"})]}):e.jsxs(_,{as:"span",children:[t("portfolio.projects.concept")," ",e.jsx(ve,{"aria-hidden":"true"})]})]},r.id))})]})},si=u`
   0%, 100% { filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.25)); }
   50% { filter: drop-shadow(0 0 18px rgba(246, 211, 101, 0.34)); }
 `,li=o(l.section)`
@@ -1977,11 +1977,11 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     padding: 7px 9px;
     font-size: 0.7rem;
   }
-`,ui=()=>{const{t}=z();return e.jsxs(li,{id:"portfolio-timeline","aria-labelledby":"portfolio-timeline-title",variants:L,initial:"hidden",whileInView:"visible",viewport:M,children:[e.jsx(pi,{variants:k,"data-portfolio-media":"timeline",children:e.jsx(A,{type:v.timeline.type,src:v.timeline.src,alt:t(v.timeline.altKey)})}),e.jsxs("div",{children:[e.jsxs("div",{children:[e.jsx(di,{children:t("portfolio.timeline.eyebrow")}),e.jsx(ci,{id:"portfolio-timeline-title",children:t("portfolio.timeline.title")}),e.jsx(xi,{children:t("portfolio.timeline.description")})]}),e.jsxs(gi,{children:[e.jsx(mi,{"aria-hidden":"true"}),zt.map((r,a)=>e.jsxs(fi,{variants:k,children:[e.jsx(hi,{children:e.jsx(re,{"aria-hidden":"true"})}),e.jsx("span",{children:String(a+1).padStart(2,"0")}),e.jsxs("div",{children:[e.jsx("h3",{children:t(r.titleKey)}),e.jsx("p",{children:t(r.descriptionKey)})]}),e.jsx(bi,{children:t(r.statusKey)})]},r.id))]})]})]})},R={depth:"103, 232, 249",wipe:"253, 230, 138",deck:"251, 113, 133",diagonal:"192, 132, 252",orbit:"56, 189, 248",portal:"253, 230, 138"},wi=o.div`
+`,ui=()=>{const{t}=z();return e.jsxs(li,{id:"portfolio-timeline","aria-labelledby":"portfolio-timeline-title",variants:M,initial:"hidden",whileInView:"visible",viewport:L,children:[e.jsx(pi,{variants:k,"data-portfolio-media":"timeline",children:e.jsx(R,{type:v.timeline.type,src:v.timeline.src,alt:t(v.timeline.altKey)})}),e.jsxs("div",{children:[e.jsxs("div",{children:[e.jsx(di,{children:t("portfolio.timeline.eyebrow")}),e.jsx(ci,{id:"portfolio-timeline-title",children:t("portfolio.timeline.title")}),e.jsx(xi,{children:t("portfolio.timeline.description")})]}),e.jsxs(gi,{children:[e.jsx(mi,{"aria-hidden":"true"}),zt.map((r,a)=>e.jsxs(fi,{variants:k,children:[e.jsx(hi,{children:e.jsx(re,{"aria-hidden":"true"})}),e.jsx("span",{children:String(a+1).padStart(2,"0")}),e.jsxs("div",{children:[e.jsx("h3",{children:t(r.titleKey)}),e.jsx("p",{children:t(r.descriptionKey)})]}),e.jsx(bi,{children:t(r.statusKey)})]},r.id))]})]})]})},B={depth:"103, 232, 249",wipe:"253, 230, 138",deck:"251, 113, 133",diagonal:"192, 132, 252",orbit:"56, 189, 248",portal:"253, 230, 138"},wi=o.div`
   position: relative;
   isolation: isolate;
   overflow: clip;
-  background: ${({$mode:t})=>`linear-gradient(180deg, transparent, rgba(${R[t]}, 0.025), transparent)`};
+  background: ${({$mode:t})=>`linear-gradient(180deg, transparent, rgba(${B[t]}, 0.025), transparent)`};
   perspective: 1200px;
 `,yi=o(l.div)`
   position: relative;
@@ -1999,17 +1999,17 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   z-index: 0;
   width: clamp(280px, 46vw, 720px);
   aspect-ratio: 1;
-  border: 1px solid ${({$mode:t})=>`rgba(${R[t]}, 0.18)`};
+  border: 1px solid ${({$mode:t})=>`rgba(${B[t]}, 0.18)`};
   border-radius: ${({$mode:t})=>t==="deck"?"18%":"50%"};
-  background: ${({$mode:t})=>`radial-gradient(circle, rgba(${R[t]}, 0.16), transparent 66%)`};
+  background: ${({$mode:t})=>`radial-gradient(circle, rgba(${B[t]}, 0.16), transparent 66%)`};
   filter: blur(2px);
   pointer-events: none;
   will-change: transform;
 
-  ${({$mode:t})=>t==="depth"||t==="deck"||t==="portal"?O`
+  ${({$mode:t})=>t==="depth"||t==="deck"||t==="portal"?U`
           right: -12vw;
           top: 18%;
-        `:O`
+        `:U`
           left: -14vw;
           top: 24%;
         `}
@@ -2019,7 +2019,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     content: '';
     position: absolute;
     inset: 14%;
-    border: 1px dashed ${({$mode:t})=>`rgba(${R[t]}, 0.22)`};
+    border: 1px dashed ${({$mode:t})=>`rgba(${B[t]}, 0.22)`};
     border-radius: inherit;
   }
 
@@ -2053,7 +2053,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   @media (max-width: 900px) {
     display: none;
   }
-`,$i={depth:{x:[0,0,0,0],y:[110,0,0,-54],scale:[.94,1,1,.98],rotate:[0,0,0,0]},wipe:{x:[-90,0,0,48],y:[30,0,0,-24],scale:[.98,1,1,.99],rotate:[-.7,0,0,.35]},deck:{x:[0,0,0,0],y:[72,0,0,-38],scale:[.86,1,1,.96],rotate:[0,0,0,0]},diagonal:{x:[86,0,0,-46],y:[90,0,0,-42],scale:[.95,1,1,.98],rotate:[1.4,0,0,-.45]},orbit:{x:[-56,0,0,36],y:[74,0,0,-36],scale:[.9,1,1,.97],rotate:[-1.5,0,0,.8]},portal:{x:[0,0,0,0],y:[46,0,0,-24],scale:[.76,1,1,1.04],rotate:[0,0,0,0]}},P={duration:.9,ease:[.16,1,.3,1]},Ki={depth:{hidden:{opacity:.08,y:150,scale:.84,rotateX:13,filter:"blur(18px)"},visible:{opacity:1,y:0,scale:1,rotateX:0,filter:"blur(0px)",transition:P}},wipe:{hidden:{opacity:.24,x:-150,clipPath:"inset(0 100% 0 0)"},visible:{opacity:1,x:0,clipPath:"inset(0 0% 0 0)",transition:{...P,duration:1.05}}},deck:{hidden:{opacity:.08,y:125,scale:.74,rotateX:18,filter:"blur(12px)"},visible:{opacity:1,y:0,scale:1,rotateX:0,filter:"blur(0px)",transition:P}},diagonal:{hidden:{opacity:.12,x:135,y:105,rotateZ:2.8,clipPath:"polygon(0 0, 12% 0, 0 18%, 0 18%)"},visible:{opacity:1,x:0,y:0,rotateZ:0,clipPath:"polygon(0 0, 100% 0, 100% 100%, 0 100%)",transition:{...P,duration:1.1}}},orbit:{hidden:{opacity:.06,x:-135,y:80,scale:.76,rotateZ:-4.5,filter:"blur(14px)"},visible:{opacity:1,x:0,y:0,scale:1,rotateZ:0,filter:"blur(0px)",transition:{...P,duration:1.1}}},portal:{hidden:{opacity:.08,scale:.58,clipPath:"circle(4% at 50% 50%)",filter:"blur(18px)"},visible:{opacity:1,scale:1,clipPath:"circle(150% at 50% 50%)",filter:"blur(0px)",transition:{...P,duration:1.2}}}},Si={hidden:{opacity:.55},visible:{opacity:1,transition:{duration:.2}}},C=({children:t,index:r,mode:a,reducedMotion:g})=>{const n=f.useRef(null),b=E(),p=g??b,d=Ie(n,{amount:.12,margin:"-6% 0px -6% 0px"}),{scrollYProgress:$}=Y({target:n,offset:["start end","end start"]}),c=X($,{stiffness:82,damping:24,mass:.34}),m=$i[a],h=[0,.24,.76,1],s=y(c,h,m.x),w=y(c,h,m.y),j=y(c,h,m.scale),K=y(c,h,m.rotate),S=y(c,[0,.14,.82,1],[.28,1,1,.68]),I=y(c,[0,.2,.8,1],["blur(16px)","blur(0px)","blur(0px)","blur(5px)"]),le=y(c,[0,1],["18%","-22%"]),pe=y(c,[0,1],[-18,22]);return e.jsxs(wi,{ref:n,$mode:a,"data-scroll-chapter":a,children:[e.jsx(ji,{$mode:a,style:{y:p?0:le,rotate:p?0:pe},"aria-hidden":"true"}),e.jsxs(ki,{"aria-hidden":"true",children:[e.jsx("span",{children:String(r).padStart(2,"0")}),a]}),e.jsx(vi,{"data-scroll-reveal":a,variants:p?Si:Ki[a],initial:"hidden",animate:d?"visible":"hidden",children:e.jsx(yi,{"data-scroll-canvas":a,style:{x:p?0:s,y:p?0:w,scale:p?1:j,rotate:p?0:K,opacity:p?1:S,filter:p?"none":I},children:t})})]})},zi=o.div`
+`,$i={depth:{x:[0,0,0,0],y:[110,0,0,-54],scale:[.94,1,1,.98],rotate:[0,0,0,0]},wipe:{x:[-90,0,0,48],y:[30,0,0,-24],scale:[.98,1,1,.99],rotate:[-.7,0,0,.35]},deck:{x:[0,0,0,0],y:[72,0,0,-38],scale:[.86,1,1,.96],rotate:[0,0,0,0]},diagonal:{x:[86,0,0,-46],y:[90,0,0,-42],scale:[.95,1,1,.98],rotate:[1.4,0,0,-.45]},orbit:{x:[-56,0,0,36],y:[74,0,0,-36],scale:[.9,1,1,.97],rotate:[-1.5,0,0,.8]},portal:{x:[0,0,0,0],y:[46,0,0,-24],scale:[.76,1,1,1.04],rotate:[0,0,0,0]}},P={duration:.9,ease:[.16,1,.3,1]},Ki={depth:{hidden:{opacity:.08,y:150,scale:.84,rotateX:13,filter:"blur(18px)"},visible:{opacity:1,y:0,scale:1,rotateX:0,filter:"blur(0px)",transition:P}},wipe:{hidden:{opacity:.24,x:-150,clipPath:"inset(0 100% 0 0)"},visible:{opacity:1,x:0,clipPath:"inset(0 0% 0 0)",transition:{...P,duration:1.05}}},deck:{hidden:{opacity:.08,y:125,scale:.74,rotateX:18,filter:"blur(12px)"},visible:{opacity:1,y:0,scale:1,rotateX:0,filter:"blur(0px)",transition:P}},diagonal:{hidden:{opacity:.12,x:135,y:105,rotateZ:2.8,clipPath:"polygon(0 0, 12% 0, 0 18%, 0 18%)"},visible:{opacity:1,x:0,y:0,rotateZ:0,clipPath:"polygon(0 0, 100% 0, 100% 100%, 0 100%)",transition:{...P,duration:1.1}}},orbit:{hidden:{opacity:.06,x:-135,y:80,scale:.76,rotateZ:-4.5,filter:"blur(14px)"},visible:{opacity:1,x:0,y:0,scale:1,rotateZ:0,filter:"blur(0px)",transition:{...P,duration:1.1}}},portal:{hidden:{opacity:.08,scale:.58,clipPath:"circle(4% at 50% 50%)",filter:"blur(18px)"},visible:{opacity:1,scale:1,clipPath:"circle(150% at 50% 50%)",filter:"blur(0px)",transition:{...P,duration:1.2}}}},Si={hidden:{opacity:.55},visible:{opacity:1,transition:{duration:.2}}},F=({children:t,index:r,mode:a,reducedMotion:g})=>{const n=f.useRef(null),b=E(),p=g??b,d=Ie(n,{amount:.12,margin:"-6% 0px -6% 0px"}),{scrollYProgress:$}=Y({target:n,offset:["start end","end start"]}),c=X($,{stiffness:82,damping:24,mass:.34}),m=$i[a],h=[0,.24,.76,1],s=y(c,h,m.x),w=y(c,h,m.y),j=y(c,h,m.scale),K=y(c,h,m.rotate),S=y(c,[0,.14,.82,1],[.28,1,1,.68]),I=y(c,[0,.2,.8,1],["blur(16px)","blur(0px)","blur(0px)","blur(5px)"]),le=y(c,[0,1],["18%","-22%"]),pe=y(c,[0,1],[-18,22]);return e.jsxs(wi,{ref:n,$mode:a,"data-scroll-chapter":a,children:[e.jsx(ji,{$mode:a,style:{y:p?0:le,rotate:p?0:pe},"aria-hidden":"true"}),e.jsxs(ki,{"aria-hidden":"true",children:[e.jsx("span",{children:String(r).padStart(2,"0")}),a]}),e.jsx(vi,{"data-scroll-reveal":a,variants:p?Si:Ki[a],initial:"hidden",animate:d?"visible":"hidden",children:e.jsx(yi,{"data-scroll-canvas":a,style:{x:p?0:s,y:p?0:w,scale:p?1:j,rotate:p?0:K,opacity:p?1:S,filter:p?"none":I},children:t})})]})},zi=o.div`
   position: fixed;
   inset: 0;
   z-index: 0;
@@ -2123,7 +2123,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     border-style: solid;
     border-color: rgba(192, 132, 252, 0.15);
   }
-`,Ci=o(l.div)`
+`,Fi=o(l.div)`
   position: absolute;
   left: -4vw;
   top: 42%;
@@ -2137,7 +2137,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   -webkit-text-stroke: 1px rgba(248, 250, 252, 0.075);
   opacity: 0.72;
   will-change: transform;
-`,Fi=o.div`
+`,Ci=o.div`
   position: absolute;
   right: clamp(12px, 2vw, 32px);
   top: 50%;
@@ -2153,7 +2153,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   @media (max-width: 760px) {
     display: none;
   }
-`,Mi=o.strong`
+`,Li=o.strong`
   display: flex;
   gap: 5px;
   align-items: baseline;
@@ -2168,13 +2168,13 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     font-family: ${i.fonts.body};
     font-size: 0.58rem;
   }
-`,Li=o.div`
+`,Mi=o.div`
   position: absolute;
   inset: 0;
   opacity: 0.1;
   background: repeating-linear-gradient(180deg, transparent 0 3px, rgba(248, 250, 252, 0.06) 3px 4px);
   mix-blend-mode: overlay;
-`,G=7,Ai=({reducedMotion:t})=>{const r=E(),a=t??r,[g,n]=f.useState(0),b=f.useRef(0),{scrollYProgress:p}=Y(),d=X(p,{stiffness:72,damping:22,mass:.32}),$=y(d,[0,1],["0%","-14%"]),c=y(d,[0,1],["34vh","-44vh"]),m=y(d,[0,1],[-8,8]),h=y(d,[0,1],[0,190]),s=y(d,[0,1],[30,-290]),w=y(d,[0,.5,1],[.84,1.18,.9]),j=y(d,[0,.18,.36,.56,.76,1],["rgba(76, 29, 149, 0.24)","rgba(8, 145, 178, 0.2)","rgba(234, 179, 8, 0.12)","rgba(190, 24, 93, 0.16)","rgba(37, 99, 235, 0.18)","rgba(126, 34, 206, 0.22)"]);return Ke(d,"change",K=>{const S=Math.min(Math.floor(K*G),G-1);S!==b.current&&(b.current=S,n(S))}),e.jsxs(zi,{"aria-hidden":"true",children:[e.jsx(Ii,{style:{backgroundColor:j}}),e.jsx(Pi,{style:{y:a?0:$}}),e.jsx(Q,{$variant:"slow",style:{rotate:a?0:h,scale:a?1:w}}),e.jsx(Q,{$variant:"fast",style:{rotate:a?0:s,scale:a?1:w}}),e.jsx(Ci,{style:{y:a?0:c,rotate:a?0:m},children:"BUILD / EVOLVE / IMPACT"}),e.jsxs(Fi,{children:[e.jsx("span",{children:"CHAPTER"}),e.jsxs(Mi,{children:[String(g+1).padStart(2,"0"),e.jsxs("small",{children:["/ ",String(G).padStart(2,"0")]})]})]}),e.jsx(Li,{})]})},Bi=o(l.section)`
+`,H=7,Ri=({reducedMotion:t})=>{const r=E(),a=t??r,[g,n]=f.useState(0),b=f.useRef(0),{scrollYProgress:p}=Y(),d=X(p,{stiffness:72,damping:22,mass:.32}),$=y(d,[0,1],["0%","-14%"]),c=y(d,[0,1],["34vh","-44vh"]),m=y(d,[0,1],[-8,8]),h=y(d,[0,1],[0,190]),s=y(d,[0,1],[30,-290]),w=y(d,[0,.5,1],[.84,1.18,.9]),j=y(d,[0,.18,.36,.56,.76,1],["rgba(76, 29, 149, 0.24)","rgba(8, 145, 178, 0.2)","rgba(234, 179, 8, 0.12)","rgba(190, 24, 93, 0.16)","rgba(37, 99, 235, 0.18)","rgba(126, 34, 206, 0.22)"]);return Ke(d,"change",K=>{const S=Math.min(Math.floor(K*H),H-1);S!==b.current&&(b.current=S,n(S))}),e.jsxs(zi,{"aria-hidden":"true",children:[e.jsx(Ii,{style:{backgroundColor:j}}),e.jsx(Pi,{style:{y:a?0:$}}),e.jsx(Q,{$variant:"slow",style:{rotate:a?0:h,scale:a?1:w}}),e.jsx(Q,{$variant:"fast",style:{rotate:a?0:s,scale:a?1:w}}),e.jsx(Fi,{style:{y:a?0:c,rotate:a?0:m},children:"BUILD / EVOLVE / IMPACT"}),e.jsxs(Ci,{children:[e.jsx("span",{children:"CHAPTER"}),e.jsxs(Li,{children:[String(g+1).padStart(2,"0"),e.jsxs("small",{children:["/ ",String(H).padStart(2,"0")]})]})]}),e.jsx(Mi,{})]})},Ai=o(l.section)`
   position: relative;
   z-index: 1;
   min-height: 100vh;
@@ -2209,7 +2209,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
       width: 100%;
     }
   }
-`,Ri=o(l.div)`
+`,Bi=o(l.div)`
   /* position: absolute; */
   right: clamp(-130px, -5vw, -40px);
   bottom: -5svh;
@@ -2257,7 +2257,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   text-transform: uppercase;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
   overflow-wrap: anywhere;
-`,Hi=o.h2`
+`,Gi=o.h2`
   margin: 16px 0 0;
   color: #0f172a;
   font-family: ${i.fonts.heading};
@@ -2269,7 +2269,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   @media (max-width: 560px) {
     font-size: clamp(1.75rem, 9vw, 2.4rem);
   }
-`,Gi=o.p`
+`,Hi=o.p`
   max-width: 760px;
   margin: 12px 0 0;
   color: rgba(15, 23, 42, 0.72);
@@ -2371,7 +2371,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
       overflow-wrap: anywhere;
     }
   }
-`,Oi=o.div`
+`,Ui=o.div`
   display: grid;
   place-items: center;
   width: 40px;
@@ -2386,7 +2386,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     width: 36px;
     height: 36px;
   }
-`,Di=o.span`
+`,Oi=o.span`
   border: 1px solid rgba(246, 211, 101, 0.32);
   border-radius: 999px;
   padding: 8px 10px;
@@ -2400,7 +2400,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     padding: 6px 9px;
     font-size: 0.78rem;
   }
-`,Ni=o.div`
+`,Di=o.div`
   display: grid;
   gap: 7px;
   margin-top: 12px;
@@ -2409,7 +2409,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
   @media (max-width: 560px) {
     padding-left: 0;
   }
-`,Wi=o.div`
+`,Ni=o.div`
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 8px 12px;
@@ -2426,7 +2426,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     color: #9a6b08;
     font-size: 0.86rem;
   }
-`,Ui=o.div`
+`,Wi=o.div`
   grid-column: 1 / -1;
   height: 7px;
   overflow: hidden;
@@ -2444,7 +2444,7 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     ${i.colors.goldSoft}
   );
   box-shadow: 0 0 22px rgba(34, 211, 238, 0.25);
-`,Qi=()=>{const{t}=z();return e.jsxs(Bi,{id:"portfolio-skills","aria-labelledby":"portfolio-skills-title",variants:L,initial:"hidden",whileInView:"visible",viewport:M,children:[e.jsxs("div",{children:[e.jsxs(l.div,{variants:k,children:[e.jsx(Ei,{children:t("portfolio.skills.eyebrow")}),e.jsx(Hi,{id:"portfolio-skills-title",children:t("portfolio.skills.title")}),e.jsx(Gi,{children:t("portfolio.skills.description")})]}),e.jsx(Ti,{children:Kt.map(r=>{const a=r.icon;return e.jsxs(Vi,{variants:k,children:[e.jsx(Yi,{"aria-hidden":"true"}),e.jsxs(Xi,{children:[e.jsx(Oi,{children:e.jsx(a,{"aria-hidden":"true"})}),e.jsxs("div",{children:[e.jsx("h3",{children:t(r.titleKey)}),e.jsx("p",{children:t(r.descriptionKey)})]}),e.jsx(Di,{children:r.rank})]}),e.jsx(Ni,{children:r.skills.slice(0,4).map(g=>e.jsxs(Wi,{children:[e.jsx("span",{children:t(g.labelKey)}),e.jsxs("strong",{children:[g.level,"%"]}),e.jsx(Ui,{children:e.jsx(_i,{as:l.span,$level:g.level,variants:ae,style:{transformOrigin:"left center"}})})]},g.labelKey))})]},r.id)})})," "]}),e.jsx(Ri,{variants:k,"data-portfolio-media":"skills",children:e.jsx(A,{type:v.skills.type,src:v.skills.src,alt:t(v.skills.altKey)})})]})},Zi=ke`
+`,Qi=()=>{const{t}=z();return e.jsxs(Ai,{id:"portfolio-skills","aria-labelledby":"portfolio-skills-title",variants:M,initial:"hidden",whileInView:"visible",viewport:L,children:[e.jsxs("div",{children:[e.jsxs(l.div,{variants:k,children:[e.jsx(Ei,{children:t("portfolio.skills.eyebrow")}),e.jsx(Gi,{id:"portfolio-skills-title",children:t("portfolio.skills.title")}),e.jsx(Hi,{children:t("portfolio.skills.description")})]}),e.jsx(Ti,{children:Kt.map(r=>{const a=r.icon;return e.jsxs(Vi,{variants:k,children:[e.jsx(Yi,{"aria-hidden":"true"}),e.jsxs(Xi,{children:[e.jsx(Ui,{children:e.jsx(a,{"aria-hidden":"true"})}),e.jsxs("div",{children:[e.jsx("h3",{children:t(r.titleKey)}),e.jsx("p",{children:t(r.descriptionKey)})]}),e.jsx(Oi,{children:r.rank})]}),e.jsx(Di,{children:r.skills.slice(0,4).map(g=>e.jsxs(Ni,{children:[e.jsx("span",{children:t(g.labelKey)}),e.jsxs("strong",{children:[g.level,"%"]}),e.jsx(Wi,{children:e.jsx(_i,{as:l.span,$level:g.level,variants:ae,style:{transformOrigin:"left center"}})})]},g.labelKey))})]},r.id)})})," "]}),e.jsx(Bi,{variants:k,"data-portfolio-media":"skills",children:e.jsx(R,{type:v.skills.type,src:v.skills.src,alt:t(v.skills.altKey)})})]})},Zi=ke`
   html.portfolio-page-active,
   body.portfolio-page-active {
     scrollbar-width: none;
@@ -2591,4 +2591,4 @@ import{r as f,b as de,g as o,E as u,j as e,e as V,m as l,c as z,F as T,d as x,f 
     outline: 2px solid ${i.colors.cyan};
     outline-offset: 3px;
   }
-`,rr=()=>{const{t}=z(),r=E(),[a,g]=f.useState(!0),n=!a;$e(n),f.useEffect(()=>{const p=window.localStorage.getItem("portfolio-motion");p==="reduced"&&g(!1),p==="full"&&g(!0)},[r]);const b=()=>{g(p=>{const d=!p;return window.localStorage.setItem("portfolio-motion",d?"full":"reduced"),d})};return f.useEffect(()=>(document.title=t("portfolio.meta.title"),document.documentElement.classList.add("portfolio-page-active"),document.body.classList.add("portfolio-page-active"),window.scrollTo({top:0,behavior:"auto"}),()=>{document.documentElement.classList.remove("portfolio-page-active"),document.body.classList.remove("portfolio-page-active")}),[t]),e.jsxs(Ji,{children:[e.jsx(Zi,{}),e.jsx(tr,{href:"#portfolio-top",children:t("portfolio.skipLink")}),e.jsx(De,{}),e.jsx(Ai,{reducedMotion:n}),e.jsx(qi,{"aria-hidden":"true"}),e.jsxs(or,{type:"button",$active:a,"aria-pressed":a,"aria-label":a?"Disable full portfolio motion":"Enable full portfolio motion",title:r?"System reduced motion detected — click to change":"Toggle motion effects",onClick:b,children:[e.jsx("span",{"aria-hidden":"true"}),"FX ",a?"FULL":"CALM"]}),e.jsx(Po,{}),e.jsxs(er,{children:[e.jsx(No,{}),e.jsx(C,{index:2,mode:"depth",reducedMotion:n,children:e.jsx(Zt,{})}),e.jsx(C,{index:3,mode:"wipe",reducedMotion:n,children:e.jsx(Qi,{})}),e.jsx(C,{index:4,mode:"deck",reducedMotion:n,children:e.jsx(ni,{})}),e.jsx(C,{index:5,mode:"diagonal",reducedMotion:n,children:e.jsx(ui,{})}),e.jsx(C,{index:6,mode:"orbit",reducedMotion:n,children:e.jsx(no,{})}),e.jsx(C,{index:7,mode:"portal",reducedMotion:n,children:e.jsx(jt,{})})]}),e.jsx(ho,{})]})};export{rr as PortfolioPage,rr as default};
+`,rr=()=>{const{t}=z(),r=E(),[a,g]=f.useState(!0),n=!a;$e(n),f.useEffect(()=>{const p=window.localStorage.getItem("portfolio-motion");p==="reduced"&&g(!1),p==="full"&&g(!0)},[r]);const b=()=>{g(p=>{const d=!p;return window.localStorage.setItem("portfolio-motion",d?"full":"reduced"),d})};return f.useEffect(()=>(document.title=t("portfolio.meta.title"),document.documentElement.classList.add("portfolio-page-active"),document.body.classList.add("portfolio-page-active"),window.scrollTo({top:0,behavior:"auto"}),()=>{document.documentElement.classList.remove("portfolio-page-active"),document.body.classList.remove("portfolio-page-active")}),[t]),e.jsxs(Ji,{children:[e.jsx(Zi,{}),e.jsx(tr,{href:"#portfolio-top",children:t("portfolio.skipLink")}),e.jsx(Oe,{}),e.jsx(Ri,{reducedMotion:n}),e.jsx(qi,{"aria-hidden":"true"}),e.jsxs(or,{type:"button",$active:a,"aria-pressed":a,"aria-label":a?"Disable full portfolio motion":"Enable full portfolio motion",title:r?"System reduced motion detected — click to change":"Toggle motion effects",onClick:b,children:[e.jsx("span",{"aria-hidden":"true"}),"FX ",a?"FULL":"CALM"]}),e.jsx(Po,{}),e.jsxs(er,{children:[e.jsx(Do,{}),e.jsx(F,{index:2,mode:"depth",reducedMotion:n,children:e.jsx(Zt,{})}),e.jsx(F,{index:3,mode:"wipe",reducedMotion:n,children:e.jsx(Qi,{})}),e.jsx(F,{index:4,mode:"deck",reducedMotion:n,children:e.jsx(ni,{})}),e.jsx(F,{index:5,mode:"diagonal",reducedMotion:n,children:e.jsx(ui,{})}),e.jsx(F,{index:6,mode:"orbit",reducedMotion:n,children:e.jsx(no,{})}),e.jsx(F,{index:7,mode:"portal",reducedMotion:n,children:e.jsx(jt,{})})]}),e.jsx(ho,{})]})};export{rr as PortfolioPage,rr as default};
