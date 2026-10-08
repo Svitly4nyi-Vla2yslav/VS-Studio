@@ -16,7 +16,7 @@ import {
 import LiveMetric from '../../components/Motion/LiveMetric';
 import TerminalType from '../../components/Motion/TerminalType';
 import { fadeInLeft, fadeInRight, fadeInUp, scaleIn, staggerContainer } from '../../components/Motion/reveal';
-import servicesHeroImage from '../../assets/hero-image/Services.png';
+import servicesHeroImage from '../../assets/hero-image/Services.webp';
 import servicesTranslations from './services.translations.json';
 import {
   ButtonRow,

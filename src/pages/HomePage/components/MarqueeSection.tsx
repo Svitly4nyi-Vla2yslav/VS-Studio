@@ -16,18 +16,18 @@ import {
   FaUtensils,
 } from 'react-icons/fa';
 import Partners from '../../../components/PartnersBanner/PartnersBanner';
-import beautyBg from '../../../assets/icons/marquee/Beauty.png';
-import bildungBg from '../../../assets/icons/marquee/Bildung.png';
-import coachingBg from '../../../assets/icons/marquee/Coaching.png';
-import fitnessBg from '../../../assets/icons/marquee/Fitness.png';
-import gastronomieBg from '../../../assets/icons/marquee/Gastronomie.png';
-import handwerkBg from '../../../assets/icons/marquee/Handwerk.png';
-import immobilienBg from '../../../assets/icons/marquee/Immobilien.png';
-import kanzleiBg from '../../../assets/icons/marquee/Kanzlei.png';
-import praxenBg from '../../../assets/icons/marquee/Praxen.png';
-import reinigungBg from '../../../assets/icons/marquee/Reinigung.png';
-import transportBg from '../../../assets/icons/marquee/Transport.png';
-import werkstaettenBg from '../../../assets/icons/marquee/Werkst\u00e4tten.png';
+import beautyBg from '../../../assets/icons/marquee/Beauty.webp';
+import bildungBg from '../../../assets/icons/marquee/Bildung.webp';
+import coachingBg from '../../../assets/icons/marquee/Coaching.webp';
+import fitnessBg from '../../../assets/icons/marquee/Fitness.webp';
+import gastronomieBg from '../../../assets/icons/marquee/Gastronomie.webp';
+import handwerkBg from '../../../assets/icons/marquee/Handwerk.webp';
+import immobilienBg from '../../../assets/icons/marquee/Immobilien.webp';
+import kanzleiBg from '../../../assets/icons/marquee/Kanzlei.webp';
+import praxenBg from '../../../assets/icons/marquee/Praxen.webp';
+import reinigungBg from '../../../assets/icons/marquee/Reinigung.webp';
+import transportBg from '../../../assets/icons/marquee/Transport.webp';
+import werkstaettenBg from '../../../assets/icons/marquee/Werkst\u00e4tten.webp';
 import { MarqueeSectionScope } from './styles/MarqueeSection.styles';
 import { fadeInUp } from '../../../components/Motion/reveal';
 

@@ -13,7 +13,7 @@ import {
   FaUsers,
 } from 'react-icons/fa';
 import { AI_MUSIC_PACKAGES, WEBSITE_PRICING_PACKAGES } from '../../data/pricingCatalog';
-import pricingHeroImage from '../../assets/hero-image/Preise.png';
+import pricingHeroImage from '../../assets/hero-image/Preise.webp';
 import { PageContainer, PageRoot, PrimaryButtonLink, Section } from '../shared/styles/PagePrimitives.styles';
 
 const reveal = { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0 } };

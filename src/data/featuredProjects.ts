@@ -1,6 +1,6 @@
-import workshopCover from '../assets/proekt/Auto-Werkstatt.png';
-import handwerkCover from '../assets/proekt/handwerk.png';
-import beautyCover from '../assets/proekt/single-page_beauty_salon.png';
+import workshopCover from '../assets/proekt/Auto-Werkstatt.webp';
+import handwerkCover from '../assets/proekt/handwerk.webp';
+import beautyCover from '../assets/proekt/single-page_beauty_salon.webp';
 
 export type FeaturedProjectId = 'handwerk' | 'auto-werkstatt' | 'single-page_beauty_salon';
 

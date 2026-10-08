@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import styled, { css, keyframes } from 'styled-components';
-import hildesheimHeroImage from '../../assets/hero-image/Hildesheim.png';
+import hildesheimHeroImage from '../../assets/hero-image/Hildesheim.webp';
 import { Card, FieldIcon, PrimaryButton } from '../shared/styles/PagePrimitives.styles';
 
 export const ContactPageRoot = styled.div`
