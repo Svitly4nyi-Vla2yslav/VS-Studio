@@ -1,10 +1,10 @@
-import contactVideo from '../assets/Contact section-video.mp4';
-import heroVideo from '../assets/Hero section.mp4';
-import networkVideo from '../assets/Network section-video.mp4';
-import profileSystemImage from '../assets/Profile  System section.png';
-import projectsImage from '../assets/Projects section.png';
-import skillsVideo from '../assets/Skills section-video.mp4';
-import timelineVideo from '../assets/Timeline section-video.mp4';
+import contactVideo from '../assets/Contact section-video.webm';
+import heroVideo from '../assets/Hero section.webm';
+import networkVideo from '../assets/Network section-video.webm';
+import profileSystemImage from '../assets/Profile  System section.webp';
+import projectsImage from '../assets/Projects section.webp';
+import skillsVideo from '../assets/Skills section-video.webm';
+import timelineVideo from '../assets/Timeline section-video.webm';
 
 export interface PortfolioMediaAsset {
   readonly type: 'image' | 'video';

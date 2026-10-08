@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import aboutHeroImage from '../../../assets/hero-image/Über uns.png';
+import aboutHeroImage from '../../../assets/hero-image/Über uns.webp';
 
 const heroGridDrift = keyframes`
   0% { transform: translate3d(0, 0, 0); }

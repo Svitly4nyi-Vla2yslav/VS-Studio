@@ -16,19 +16,19 @@ import {
   FaRobot,
   FaShareAlt,
 } from 'react-icons/fa';
-import aiIntegrationBg from '../../../assets/service/AI Integration.png';
-import arztpraxisBg from '../../../assets/service/Arztpraxis.png';
-import handwerkerBg from '../../../assets/service/Handwerker.png';
-import klarePreiseBg from '../../../assets/service/Klare Preise.png';
-import lokaleServicesBg from '../../../assets/service/Lokale Services.png';
-import mehrAnfragenBg from '../../../assets/service/Mehr Anfragen.png';
-import persoenlicheHilfeBg from '../../../assets/service/Persönliche Hilfe.png';
-import schnellGeladenBg from '../../../assets/service/Schnell geladen.png';
-import socialAdsBg from '../../../assets/service/Social Ads.png';
-import socialMediaBg from '../../../assets/service/Social Media.png';
-import webAppsBg from '../../../assets/service/Web-Apps.png';
-import websitesBg from '../../../assets/service/Websites.png';
-import werkstaettenBg from '../../../assets/service/Werkstätten.png';
+import aiIntegrationBg from '../../../assets/service/AI Integration.webp';
+import arztpraxisBg from '../../../assets/service/Arztpraxis.webp';
+import handwerkerBg from '../../../assets/service/Handwerker.webp';
+import klarePreiseBg from '../../../assets/service/Klare Preise.webp';
+import lokaleServicesBg from '../../../assets/service/Lokale Services.webp';
+import mehrAnfragenBg from '../../../assets/service/Mehr Anfragen.webp';
+import persoenlicheHilfeBg from '../../../assets/service/Persönliche Hilfe.webp';
+import schnellGeladenBg from '../../../assets/service/Schnell geladen.webp';
+import socialAdsBg from '../../../assets/service/Social Ads.webp';
+import socialMediaBg from '../../../assets/service/Social Media.webp';
+import webAppsBg from '../../../assets/service/Web-Apps.webp';
+import websitesBg from '../../../assets/service/Websites.webp';
+import werkstaettenBg from '../../../assets/service/Werkstätten.webp';
 import Partners from '../../../components/PartnersBanner/PartnersBanner';
 import { fadeInUp } from '../../../components/Motion/reveal';
 

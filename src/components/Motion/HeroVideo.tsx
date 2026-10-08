@@ -1,4 +1,4 @@
-import heroStartseiteMp4 from '../../assets/hero-image/Startseite.mp4';
+import heroStartseiteWebm from '../../assets/hero-image/Startseite.webm';
 import { VideoElement, VideoOverlay, VideoRoot } from './HeroVideo.styled';
 
 const HeroVideo: React.FC = () => {
@@ -12,7 +12,7 @@ const HeroVideo: React.FC = () => {
         preload='metadata'
         poster='/images/hero-generated.svg'
       >
-        <source src={heroStartseiteMp4} type='video/mp4' />
+        <source src={heroStartseiteWebm} type='video/webm' />
       </VideoElement>
       <VideoOverlay />
     </VideoRoot>
