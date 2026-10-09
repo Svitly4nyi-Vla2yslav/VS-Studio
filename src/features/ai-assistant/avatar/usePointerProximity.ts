@@ -1,8 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useMotionValue, useSpring } from 'framer-motion';
 
+// Утримує координати та силу впливу в безпечному числовому діапазоні.
 const clamp = (value: number, min: number, max: number) => Math.max(min, Math.min(max, value));
 
+/**
+ * Обчислює напрямок і близькість вказівника відносно DOM-елемента.
+ * Повертає ref, згладжені motion values і дискретний isNear; coarse pointer та reduced motion вимикають слухач.
+ */
 export const usePointerProximity = <T extends HTMLElement>(influenceRadius = 800) => {
   const ref = useRef<T | null>(null);
   const frameRef = useRef<number | null>(null);
@@ -19,6 +24,7 @@ export const usePointerProximity = <T extends HTMLElement>(influenceRadius = 800
     typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches
   );
 
+  // Скидає анімаційні значення та React-стан до нейтральної позиції.
   const reset = useCallback(() => {
     rawX.set(0);
     rawY.set(0);
@@ -29,6 +35,7 @@ export const usePointerProximity = <T extends HTMLElement>(influenceRadius = 800
     }
   }, [rawProximity, rawX, rawY]);
 
+  // Вимірює відстань до центра елемента й переводить її у нормалізований вплив 0–1.
   const measure = useCallback(() => {
     frameRef.current = null;
     const element = ref.current;
@@ -54,16 +61,19 @@ export const usePointerProximity = <T extends HTMLElement>(influenceRadius = 800
 
   useEffect(() => {
     if (isCoarse || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined;
+    // Зберігає останню позицію та планує максимум один вимір на кадр браузера.
     const onMove = (event: PointerEvent) => {
       pointerRef.current = { x: event.clientX, y: event.clientY };
       if (frameRef.current === null) frameRef.current = window.requestAnimationFrame(measure);
     };
+    // Прихована вкладка скидає позу, а повернення одразу переоцінює положення.
     const onVisibility = () => {
       if (document.hidden) reset();
       else measure();
     };
     window.addEventListener('pointermove', onMove, { passive: true });
     document.addEventListener('visibilitychange', onVisibility);
+    // Cleanup прибирає глобальні слухачі й скасовує запланований animation frame.
     return () => {
       window.removeEventListener('pointermove', onMove);
       document.removeEventListener('visibilitychange', onVisibility);
