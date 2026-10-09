@@ -1,7 +1,9 @@
 import { useMotionValue, useSpring } from 'framer-motion';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
+// Обмежує числову реакцію заданим діапазоном, щоб анімація не виходила за межі.
 const clamp = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max);
+// Перетворює нормалізоване значення на плавну S-криву без різкого старту й завершення.
 const smoothstep = (value: number) => {
   const t = clamp(value, 0, 1);
   return t * t * (3 - 2 * t);
@@ -16,6 +18,10 @@ export interface AvatarPointerState {
   isCoarse: boolean;
 }
 
+/**
+ * Відстежує вказівник відносно центра аватара та повертає згладжені напрямок і близькість.
+ * На coarse-pointer пристроях слухач не реєструється; ref треба прикріпити до контейнера аватара.
+ */
 export const useAvatarPointer = <T extends HTMLElement>(influenceRadius = 540) => {
   const ref = useRef<T | null>(null);
   const frameRef = useRef<number | null>(null);
@@ -32,6 +38,7 @@ export const useAvatarPointer = <T extends HTMLElement>(influenceRadius = 540) =
     typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches
   );
 
+  // Повертає motion values і React-стан близькості до нейтрального положення.
   const reset = useCallback(() => {
     rawX.set(0);
     rawY.set(0);
@@ -49,6 +56,10 @@ export const useAvatarPointer = <T extends HTMLElement>(influenceRadius = 540) =
       return undefined;
     }
 
+    /**
+     * Вимірює геометрію один раз на animation frame, враховує центральну мертву зону
+     * й оновлює напрямок тільки в межах радіуса впливу.
+     */
     const measure = () => {
       frameRef.current = null;
       const element = ref.current;
@@ -78,11 +89,13 @@ export const useAvatarPointer = <T extends HTMLElement>(influenceRadius = 540) =
       }
     };
 
+    // Зберігає останні координати та об'єднує часті pointermove в один rAF-вимір.
     const onPointerMove = (event: PointerEvent) => {
       pointerRef.current = { x: event.clientX, y: event.clientY };
       if (frameRef.current === null) frameRef.current = window.requestAnimationFrame(measure);
     };
 
+    // На прихованій вкладці скидає реакцію, щоб аватар не залишався в старій позі.
     const onVisibilityChange = () => {
       if (document.hidden) reset();
     };
@@ -90,6 +103,7 @@ export const useAvatarPointer = <T extends HTMLElement>(influenceRadius = 540) =
     window.addEventListener('pointermove', onPointerMove, { passive: true });
     document.addEventListener('visibilitychange', onVisibilityChange);
 
+    // Cleanup прибирає глобальні слухачі та скасовує незавершений кадр.
     return () => {
       window.removeEventListener('pointermove', onPointerMove);
       document.removeEventListener('visibilitychange', onVisibilityChange);
