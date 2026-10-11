@@ -98,6 +98,10 @@ const notFoundRoute: SeoResolvedRoute = {
   canonicalUrl: null,
 };
 
+/**
+ * Відкидає query/hash, прибирає кінцевий slash і зводить `/home` до канонічного `/`.
+ * Порожній або кореневий шлях повертає як `/`.
+ */
 export const normalizeSeoPath = (pathname: string): string => {
   const pathWithoutQuery = pathname.split('?')[0]?.split('#')[0] ?? '/';
   if (!pathWithoutQuery || pathWithoutQuery === '/') {
@@ -111,6 +115,7 @@ export const normalizeSeoPath = (pathname: string): string => {
   return normalizedPath === '/home' ? '/' : normalizedPath;
 };
 
+/** Будує абсолютний канонічний URL від `baseUrl`, завжди завершуючи маршрут символом `/`. */
 export const buildAbsoluteUrl = (path: string): string => {
   if (path === '/') {
     return `${config.site.baseUrl}/`;
@@ -119,6 +124,10 @@ export const buildAbsoluteUrl = (path: string): string => {
   return `${config.site.baseUrl}${path}/`;
 };
 
+/**
+ * Знаходить SEO-конфігурацію за нормалізованим шляхом і доповнює її robots/canonical URL.
+ * Невідомий маршрут повертає окрему 404-конфігурацію без індексації та canonical.
+ */
 export const getSeoRoute = (pathname: string): SeoResolvedRoute => {
   const normalizedPath = normalizeSeoPath(pathname);
   const route = routeMap.get(normalizedPath);
