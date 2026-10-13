@@ -96,9 +96,18 @@ interface AssistantComposerProps {
   onValuePresenceChange?: (hasValue: boolean) => void;
 }
 
+/**
+ * Керує локальним текстом поля та передає очищене повідомлення через onSend.
+ * copy надає локалізовані підписи, disabled блокує ввід, а необов'язкові
+ * колбеки повідомляють батьківський компонент про фокус і наявність тексту.
+ */
 export const AssistantComposer: React.FC<AssistantComposerProps> = ({ copy, disabled, onSend, onFocusChange, onValuePresenceChange }) => {
   const [value, setValue] = useState('');
 
+  /**
+   * Зупиняє стандартне надсилання форми, ігнорує порожній після trim текст,
+   * очікує завершення onSend і лише тоді очищує поле та зовнішній індикатор.
+   */
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const trimmed = value.trim();
