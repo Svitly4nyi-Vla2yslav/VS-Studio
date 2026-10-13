@@ -58,6 +58,11 @@ const ImportantText = styled.strong`
   font-weight: 800;
 `;
 
+/**
+ * Перетворює лише фрагменти **тексту** на виділені React-вузли.
+ * Приймає звичайний рядок і повертає текст або масив вузлів; інший Markdown
+ * не інтерпретується, а побічних ефектів функція не має.
+ */
 const renderMessageContent = (content: string): ReactNode => {
   const parts: ReactNode[] = [];
   const strongPattern = /\*\*([^*]+?)\*\*/g;
@@ -86,9 +91,15 @@ interface AssistantMessageListProps {
   copy: AssistantPanelCopy;
 }
 
+/**
+ * Рендерить журнал повідомлень і, за потреби, індикатор відповіді асистента.
+ * Після зміни messages або isTyping має побічний ефект: плавно прокручує
+ * кінцевий маркер у видиму область. copy передається індикатору набору.
+ */
 export const AssistantMessageList: React.FC<AssistantMessageListProps> = ({ messages, isTyping, copy }) => {
   const endRef = useRef<HTMLDivElement | null>(null);
 
+  // Тримає найновіше повідомлення або індикатор набору в полі зору.
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
   }, [messages, isTyping]);
