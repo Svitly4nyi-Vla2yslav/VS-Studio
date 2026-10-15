@@ -3,6 +3,10 @@ import styled, { css } from 'styled-components';
 import { goldButtonMotion } from '../../../components/visual/goldButtonMotion';
 import type { AssistantBookingPayload, AssistantPanelCopy } from '../types';
 
+/**
+ * Повертає числові складові поточного часу в часовому поясі Берліна.
+ * Значення використовуються для календарної перевірки без змішування з локальним поясом браузера.
+ */
 const getBerlinNowParts = () => {
   const formatter = new Intl.DateTimeFormat('sv-SE', {
     timeZone: 'Europe/Berlin',
@@ -25,14 +29,20 @@ const getBerlinNowParts = () => {
   };
 };
 
+/** Перетворює календарні складові на порівнюване число, не трактуючи його як реальний UTC-момент. */
 const toPseudoTimestamp = (year: number, month: number, day: number, hour: number, minute: number) =>
   Date.UTC(year, month - 1, day, hour, minute);
 
+/** Повертає сьогоднішню берлінську дату у форматі YYYY-MM-DD для атрибута min поля дати. */
 const getTodayInBerlin = () => {
   const { year, month, day } = getBerlinNowParts();
   return `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
 };
 
+/**
+ * Перевіряє дату й час бажаного запису відносно поточного часу в Берліні.
+ * Повертає англомовне повідомлення для невалідного або минулого слота, інакше null.
+ */
 const validateBookingSlot = (preferredDate: string, preferredTime: string) => {
   const [year, month, day] = preferredDate.split('-').map(Number);
   const [hour, minute] = preferredTime.split(':').map(Number);
@@ -178,6 +188,10 @@ interface BookingRequestFormProps {
   ) => Promise<void> | void;
 }
 
+/**
+ * Збирає контактні дані та бажаний слот консультації, перевіряє їх і передає очищений payload назовні.
+ * Компонент не виконує мережевий запит самостійно: цей побічний ефект делеговано onSubmit.
+ */
 export const BookingRequestForm: React.FC<BookingRequestFormProps> = ({ copy, onSubmit }) => {
   const minBookingDate = getTodayInBerlin();
   const [name, setName] = useState('');
@@ -190,6 +204,7 @@ export const BookingRequestForm: React.FC<BookingRequestFormProps> = ({ copy, on
   const [notes, setNotes] = useState('');
   const [error, setError] = useState('');
 
+  /** Перехоплює submit, перевіряє обов'язкові поля й майбутній слот, після чого очікує onSubmit. */
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -349,3 +364,4 @@ export const BookingRequestForm: React.FC<BookingRequestFormProps> = ({ copy, on
     </Form>
   );
 };
+
