@@ -117,6 +117,10 @@ interface LeadCaptureFormProps {
   onSubmit: (payload: Omit<AssistantLeadPayload, 'language' | 'source'>) => Promise<void> | void;
 }
 
+/**
+ * Збирає мінімальні дані потенційного клієнта та передає очищений payload у зовнішній обробник.
+ * Вимагає хоча б один канал зв'язку; мережевий або інший побічний ефект виконує onSubmit.
+ */
 export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ copy, onSubmit }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -126,6 +130,7 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ copy, onSubmit
   const [need, setNeed] = useState('');
   const [error, setError] = useState('');
 
+  /** Скасовує стандартний submit, перевіряє поля та очікує переданий onSubmit з нормалізованими значеннями. */
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -248,3 +253,4 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ copy, onSubmit
     </Form>
   );
 };
+
