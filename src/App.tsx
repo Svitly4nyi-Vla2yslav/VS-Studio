@@ -2,28 +2,31 @@ import { lazy, Suspense } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from './components/Layout/Layout';
 // import { MaintenanceGate } from './components/MaintenanceGate';
-import AboutUs from './pages/AboutUs/AboutUs';
-import Contact from './pages/Contact/Contact';
 import Home from './pages/HomePage/HomePage';
-import BlogPage from './pages/Info/Info';
-import AGB from './pages/Legal/AGB';
-import Cookies from './pages/Legal/Cookies';
-import Datenschutz from './pages/Legal/Datenschutz';
-import Impressum from './pages/Legal/Impressum';
-import HandwerkerLanding from './pages/Niche/Handwerker';
-import PraxisLanding from './pages/Niche/Praxis';
-import WerkstattLanding from './pages/Niche/Werkstatt';
-import NotFound from './pages/NotFound/NotFound';
-import PricingPage from './pages/Pricing/Pricing';
-import ReferencesPage from './pages/References/References';
-import ServicesPage from './pages/ServicePages/Service';
-import LocalLandingPage from './pages/SeoLanding/SeoLanding';
 import SeoHead from './seo/SeoHead';
 import './site.css';
-import EmmaAvatarDev from './pages/EmmaAvatarDev/EmmaAvatarDev';
 
+const AboutUs = lazy(() => import('./pages/AboutUs/AboutUs'));
+const Contact = lazy(() => import('./pages/Contact/Contact'));
+const BlogPage = lazy(() => import('./pages/Info/Info'));
+const AGB = lazy(() => import('./pages/Legal/AGB'));
+const Cookies = lazy(() => import('./pages/Legal/Cookies'));
+const Datenschutz = lazy(() => import('./pages/Legal/Datenschutz'));
+const Impressum = lazy(() => import('./pages/Legal/Impressum'));
+const HandwerkerLanding = lazy(() => import('./pages/Niche/Handwerker'));
+const PraxisLanding = lazy(() => import('./pages/Niche/Praxis'));
+const WerkstattLanding = lazy(() => import('./pages/Niche/Werkstatt'));
+const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
+const PricingPage = lazy(() => import('./pages/Pricing/Pricing'));
+const ReferencesPage = lazy(() => import('./pages/References/References'));
+const ServicesPage = lazy(() => import('./pages/ServicePages/Service'));
+const LocalLandingPage = lazy(() => import('./pages/SeoLanding/SeoLanding'));
 const AIAssistantDemoPage = lazy(() => import('./pages/AIAssistantDemo'));
 const PortfolioPage = lazy(() => import('./portfolio/pages/PortfolioPage'));
+const EmmaAvatarDev = lazy(() => import('./pages/EmmaAvatarDev/EmmaAvatarDev'));
+const StarfieldPreview = lazy(() => import('./pages/StarfieldPreview/StarfieldPreview'));
+
+const withSuspense = (element: React.ReactNode) => <Suspense fallback={null}>{element}</Suspense>;
 
 export const App: React.FC = () => {
   return (
@@ -39,20 +42,25 @@ export const App: React.FC = () => {
         }
       />
       <Route path='/' element={<Layout />}>
-        {import.meta.env.DEV ? <Route path='dev/emma-avatar' element={<EmmaAvatarDev />} /> : null}
+        {import.meta.env.DEV ? (
+          <>
+            <Route path='dev/emma-avatar' element={withSuspense(<EmmaAvatarDev />)} />
+            <Route path='dev/starfield' element={withSuspense(<StarfieldPreview />)} />
+          </>
+        ) : null}
         <Route index element={<Home />} />
-        <Route path='services' element={<ServicesPage />} />
-        <Route path='webdesign-hildesheim' element={<LocalLandingPage pageId='webdesign-hildesheim' />} />
-        <Route path='website-erstellen-lassen' element={<LocalLandingPage pageId='website-erstellen-lassen' />} />
-        <Route path='seo-hildesheim' element={<LocalLandingPage pageId='seo-hildesheim' />} />
-        <Route path='lead-systeme' element={<LocalLandingPage pageId='lead-systeme' />} />
-        <Route path='websites-fuer-handwerker' element={<LocalLandingPage pageId='websites-fuer-handwerker' />} />
-        <Route path='preise' element={<PricingPage />} />
-        <Route path='faq' element={<LocalLandingPage pageId='faq' />} />
-        <Route path='referenzen' element={<ReferencesPage />} />
-        <Route path='ueber-uns' element={<AboutUs />} />
-        <Route path='kontakt' element={<Contact />} />
-        <Route path='blog' element={<BlogPage />} />
+        <Route path='services' element={withSuspense(<ServicesPage />)} />
+        <Route path='webdesign-hildesheim' element={withSuspense(<LocalLandingPage pageId='webdesign-hildesheim' />)} />
+        <Route path='website-erstellen-lassen' element={withSuspense(<LocalLandingPage pageId='website-erstellen-lassen' />)} />
+        <Route path='seo-hildesheim' element={withSuspense(<LocalLandingPage pageId='seo-hildesheim' />)} />
+        <Route path='lead-systeme' element={withSuspense(<LocalLandingPage pageId='lead-systeme' />)} />
+        <Route path='websites-fuer-handwerker' element={withSuspense(<LocalLandingPage pageId='websites-fuer-handwerker' />)} />
+        <Route path='preise' element={withSuspense(<PricingPage />)} />
+        <Route path='faq' element={withSuspense(<LocalLandingPage pageId='faq' />)} />
+        <Route path='referenzen' element={withSuspense(<ReferencesPage />)} />
+        <Route path='ueber-uns' element={withSuspense(<AboutUs />)} />
+        <Route path='kontakt' element={withSuspense(<Contact />)} />
+        <Route path='blog' element={withSuspense(<BlogPage />)} />
         <Route
           path='ki-assistent'
           element={
@@ -62,17 +70,17 @@ export const App: React.FC = () => {
           }
         />
 
-        <Route path='handwerker' element={<HandwerkerLanding />} />
-        <Route path='praxis' element={<PraxisLanding />} />
-        <Route path='werkstatt' element={<WerkstattLanding />} />
+        <Route path='handwerker' element={withSuspense(<HandwerkerLanding />)} />
+        <Route path='praxis' element={withSuspense(<PraxisLanding />)} />
+        <Route path='werkstatt' element={withSuspense(<WerkstattLanding />)} />
 
-        <Route path='impressum' element={<Impressum />} />
-        <Route path='datenschutz' element={<Datenschutz />} />
-        <Route path='agb' element={<AGB />} />
-        <Route path='cookies' element={<Cookies />} />
+        <Route path='impressum' element={withSuspense(<Impressum />)} />
+        <Route path='datenschutz' element={withSuspense(<Datenschutz />)} />
+        <Route path='agb' element={withSuspense(<AGB />)} />
+        <Route path='cookies' element={withSuspense(<Cookies />)} />
 
         <Route path='home' element={<Navigate to='/' replace />} />
-        <Route path='*' element={<NotFound />} />
+        <Route path='*' element={withSuspense(<NotFound />)} />
       </Route>
     </Routes>
     // </MaintenanceGate>
