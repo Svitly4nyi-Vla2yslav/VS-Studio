@@ -19,6 +19,11 @@ type Star = {
 const MOBILE_BREAKPOINT = 768;
 const MAX_DPR = 1.5;
 
+/**
+ * Малює декоративне зоряне тло в Canvas 2D з обмеженням щільності пікселів і частоти кадрів.
+ * Щільність та maxFps керують кількістю зірок і плавністю; анімація зупиняється поза екраном,
+ * у прихованій вкладці та для користувачів із prefers-reduced-motion.
+ */
 export const StarfieldBackground = ({ className = '', density = 1, maxFps = 30 }: StarfieldBackgroundProps) => {
   const rootRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -39,6 +44,7 @@ export const StarfieldBackground = ({ className = '', density = 1, maxFps = 30 }
     let height = 0;
     let stars: Star[] = [];
 
+    // Перегенеровує координати зірок відповідно до площі контейнера; на мобільних їх менше.
     const createStars = () => {
       const area = width * height;
       const mobileMultiplier = width < MOBILE_BREAKPOINT ? 0.48 : 1;
@@ -54,6 +60,7 @@ export const StarfieldBackground = ({ className = '', density = 1, maxFps = 30 }
       }));
     };
 
+    // Очищує кадр і малює поточний стан; time задає мерехтіння та вертикальний дрейф.
     const draw = (time: number) => {
       context.clearRect(0, 0, width, height);
       const seconds = time / 1000;
@@ -69,11 +76,13 @@ export const StarfieldBackground = ({ className = '', density = 1, maxFps = 30 }
       }
     };
 
+    // Скасовує запланований кадр і позначає цикл як зупинений.
     const stop = () => {
       if (frameId !== null) window.cancelAnimationFrame(frameId);
       frameId = null;
     };
 
+    // Планує наступний кадр лише за допустимих умов і обмежує частоту діапазоном 1–30 FPS.
     const tick = (time: number) => {
       if (document.hidden || !inViewport || reducedMotion) {
         frameId = null;
@@ -87,12 +96,14 @@ export const StarfieldBackground = ({ className = '', density = 1, maxFps = 30 }
       frameId = window.requestAnimationFrame(tick);
     };
 
+    // Запускає єдиний цикл requestAnimationFrame, якщо компонент видимий і рух дозволений.
     const start = () => {
       if (frameId === null && !document.hidden && inViewport && !reducedMotion) {
         frameId = window.requestAnimationFrame(tick);
       }
     };
 
+    // Синхронізує розмір Canvas із контейнером, обмежує DPR до 1.5 і створює нові зірки.
     const resize = () => {
       const rect = root.getBoundingClientRect();
       width = Math.max(1, Math.round(rect.width));
@@ -107,7 +118,9 @@ export const StarfieldBackground = ({ className = '', density = 1, maxFps = 30 }
       draw(performance.now());
     };
 
+    // Призупиняє роботу в прихованій вкладці та відновлює її після повернення.
     const handleVisibility = () => (document.hidden ? stop() : start());
+    // Одразу застосовує нове системне налаштування руху та перемальовує статичний кадр.
     const handleMotionPreference = (event: MediaQueryListEvent) => {
       reducedMotion = event.matches;
       stop();
@@ -115,6 +128,7 @@ export const StarfieldBackground = ({ className = '', density = 1, maxFps = 30 }
       start();
     };
 
+    // Спостерігачі оновлюють геометрію та не витрачають ресурси, коли фон поза viewport.
     const resizeObserver = new ResizeObserver(resize);
     const intersectionObserver = new IntersectionObserver(([entry]) => {
       inViewport = entry.isIntersecting;
