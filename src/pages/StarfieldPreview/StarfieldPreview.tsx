@@ -1,6 +1,10 @@
 import StarfieldBackground from '../../components/StarfieldBackground/StarfieldBackground';
 import './StarfieldPreview.css';
 
+/**
+ * Показує ізольовану демонстрацію StarfieldBackground і нижній блок для перевірки паузи при прокручуванні.
+ * Компонент не має аргументів чи побічних ефектів: життєвим циклом Canvas керує вкладений фон.
+ */
 const StarfieldPreview = () => (
   <section className='starfield-preview'>
     <StarfieldBackground />
