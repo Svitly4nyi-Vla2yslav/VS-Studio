@@ -2,9 +2,10 @@
 import { initReactI18next } from "react-i18next";
 import HttpApi from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
+import { dankeTranslations } from "./dankeTranslations";
 
 // Ця версія додається до URL файлів перекладів, щоб браузер не тримав старі i18n-тексти в кеші.
-const TRANSLATION_ASSET_VERSION = "20260701-all-locale-seo-i18n";
+const TRANSLATION_ASSET_VERSION = "20261018-danke-page";
 
 export const SUPPORTED_LANGUAGES = [
   "de",
@@ -47,6 +48,13 @@ export const i18nReady = i18n
     },
     saveMissing: false,
     returnEmptyString: false,
+  })
+  .then(() => {
+    Object.entries(dankeTranslations).forEach(([language, danke]) => {
+      i18n.addResourceBundle(language, "translation", { danke }, true, true);
+    });
+
+    return i18n;
   });
 
 export default i18n;
