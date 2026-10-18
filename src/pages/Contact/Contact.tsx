@@ -1,7 +1,7 @@
 import { easeOut } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import {
   FaBolt,
   FaBuilding,
@@ -20,6 +20,7 @@ import {
 } from 'react-icons/fa';
 import TerminalType from '../../components/Motion/TerminalType';
 import { contactInfo } from '../../data/contactInfo';
+import { getUtmAttribution, trackEvent } from '../../analytics/analytics';
 import { PageContainer } from '../shared/styles/PagePrimitives.styles';
 import ContactLeadVisual from './ContactLeadVisual';
 import {
@@ -113,6 +114,8 @@ const socialIcons = {
 const Contact: React.FC = () => {
   const { t } = useTranslation();
   const location = useLocation();
+  const navigate = useNavigate();
+  const formStarted = useRef(false);
   const prefillNeed = (location.state as { prefillNeed?: string } | null)?.prefillNeed || '';
   const [nameValue, setNameValue] = useState('');
   const [businessValue, setBusinessValue] = useState('');
@@ -161,6 +164,7 @@ const Contact: React.FC = () => {
     }
 
     try {
+      const conversionId = crypto.randomUUID();
       const requestBody = JSON.stringify({
         name: nameValue.trim(),
         business: businessValue.trim(),
@@ -169,6 +173,8 @@ const Contact: React.FC = () => {
         service: serviceValue.trim(),
         message: needValue.trim(),
         website: websiteValue.trim(),
+        attribution: getUtmAttribution(),
+        conversionId,
       });
 
       const endpoints = getContactEndpoints();
@@ -209,6 +215,12 @@ const Contact: React.FC = () => {
       setWebsiteValue('');
       setHoneypotValue('');
       setSubmitSuccess(true);
+      trackEvent('generate_lead', {
+        lead_source: 'contact_form',
+        form_id: 'contact-form',
+        page_location: window.location.href,
+      }, conversionId);
+      navigate('/danke', { replace: true, state: { confirmedSubmission: true } });
     } catch (error) {
       console.error('Contact form submit failed', error);
       setSubmitError(true);
@@ -250,7 +262,20 @@ const Contact: React.FC = () => {
               </HeroCopyBlock>
 
               <HeroWorkbench>
-                <FormCard onSubmit={handleSubmit} noValidate>
+                <FormCard
+                  id='contact-form'
+                  onSubmit={handleSubmit}
+                  onFocusCapture={() => {
+                    if (formStarted.current) return;
+                    formStarted.current = true;
+                    trackEvent('form_start', {
+                      lead_source: 'contact_form',
+                      form_id: 'contact-form',
+                      page_location: window.location.href,
+                    });
+                  }}
+                  noValidate
+                >
                   <CardEyebrow>VS Web Studio</CardEyebrow>
                   <CardTitle>{t('contact.form.title', { defaultValue: copy.formTitle })}</CardTitle>
                   <FormIntro>{t('contact.form.intro', { defaultValue: copy.formIntro })}</FormIntro>

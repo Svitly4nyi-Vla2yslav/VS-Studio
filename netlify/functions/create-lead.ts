@@ -14,6 +14,8 @@ const requestSchema = z
     need: z.string().min(1),
     language: z.enum(['de', 'en', 'uk']),
     source: z.literal('assistant'),
+    conversionId: z.string().uuid().optional(),
+    attribution: z.record(z.enum(['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']), z.string().max(200)).optional(),
   })
   .refine(payload => Boolean(payload.email || payload.phone), {
     message: 'Either email or phone is required',

@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { AnimatePresence, easeOut } from 'framer-motion';
 import { Outlet, useLocation } from 'react-router-dom';
+import { AnalyticsController } from '../../analytics/AnalyticsController';
 import { FloatingAssistantWidget } from '../../features/ai-assistant/components/FloatingAssistantWidget';
 import SeoHead from '../../seo/SeoHead';
 import CookieConsentBanner from '../CookieConsentBanner';
@@ -17,6 +18,7 @@ export const Layout: React.FC = () => {
 
   return (
     <SiteShell>
+      <AnalyticsController />
       <SeoHead />
       <Header />
       <AnimatePresence mode='wait'>

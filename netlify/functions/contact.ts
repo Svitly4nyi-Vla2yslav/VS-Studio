@@ -20,6 +20,8 @@ interface ContactPayload {
   email: string;
   message: string;
   website?: string;
+  conversionId?: string;
+  attribution?: Partial<Record<'utm_source' | 'utm_medium' | 'utm_campaign' | 'utm_content' | 'utm_term', string>>;
 }
 
 const jsonHeaders: HandlerHeaders = {
@@ -75,6 +77,9 @@ const buildInternalEmail = (payload: ContactPayload, metadata: { submittedAt: st
   const safeEmail = escapeHtml(payload.email);
   const safeUserAgent = escapeHtml(metadata.userAgent || '-');
   const safeIp = escapeHtml(metadata.ipAddress || '-');
+  const attribution = Object.entries(payload.attribution ?? {})
+    .map(([key, value]) => `${key}: ${value}`)
+    .join(', ') || '-';
 
   return {
     subject: 'Neue Anfrage \u00fcber das Kontaktformular \u2013 VS Web Studio',
@@ -89,6 +94,7 @@ const buildInternalEmail = (payload: ContactPayload, metadata: { submittedAt: st
           <tr><td style="padding:6px 0;font-weight:700;">Submission date</td><td style="padding:6px 0;">${escapeHtml(metadata.submittedAt)}</td></tr>
           <tr><td style="padding:6px 0;font-weight:700;">User-Agent</td><td style="padding:6px 0;">${safeUserAgent}</td></tr>
           <tr><td style="padding:6px 0;font-weight:700;">IP</td><td style="padding:6px 0;">${safeIp}</td></tr>
+          <tr><td style="padding:6px 0;font-weight:700;">Attribution</td><td style="padding:6px 0;">${escapeHtml(attribution)}</td></tr>
         </table>
       </div>
     `,
@@ -102,6 +108,7 @@ const buildInternalEmail = (payload: ContactPayload, metadata: { submittedAt: st
       `Submission date: ${metadata.submittedAt}`,
       `User-Agent: ${metadata.userAgent || '-'}`,
       `IP: ${metadata.ipAddress || '-'}`,
+      `Attribution: ${attribution}`,
     ].join('\n'),
   };
 };
@@ -170,10 +177,19 @@ export const handler = async (event: HandlerEvent): Promise<HandlerResponse> => 
     email: parsedBody.email.trim(),
     message: parsedBody.message.trim(),
     website: parsedBody.website?.trim(),
+    conversionId: typeof parsedBody.conversionId === 'string' ? parsedBody.conversionId : undefined,
+    attribution:
+      parsedBody.attribution && typeof parsedBody.attribution === 'object'
+        ? Object.fromEntries(
+            Object.entries(parsedBody.attribution)
+              .filter(([key, value]) => ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].includes(key) && typeof value === 'string')
+              .map(([key, value]) => [key, (value as string).slice(0, 200)])
+          )
+        : undefined,
   };
 
   if (payload.website) {
-    return jsonResponse(200, { ok: true });
+    return jsonResponse(200, { ok: true, conversionId: payload.conversionId ?? '' });
   }
 
   if (!payload.name || !payload.business || !payload.email || !payload.message) {

@@ -4,6 +4,7 @@ import { getAssistantCopy, trackAssistantEvent } from '../helpers';
 import { assistantClient, buildLocalAssistantFallback } from '../services/assistantClient';
 import { bookingClient } from '../services/bookingClient';
 import { leadClient } from '../services/leadClient';
+import { getUtmAttribution, trackEvent } from '../../../analytics/analytics';
 import type {
   AssistantBookingPayload,
   AssistantChatResponse,
@@ -196,7 +197,14 @@ export const useAssistant = () => {
   };
 
   const submitLead = async (payload: Omit<AssistantLeadPayload, 'language' | 'source'>) => {
-    const fullPayload: AssistantLeadPayload = { ...payload, language: assistantLanguage, source: 'assistant' };
+    const conversionId = crypto.randomUUID();
+    const fullPayload: AssistantLeadPayload = {
+      ...payload,
+      language: assistantLanguage,
+      source: 'assistant',
+      attribution: getUtmAttribution(),
+      conversionId,
+    };
     setLeadDraft(fullPayload);
     setErrorMessage('');
     trackAssistantEvent('assistant_lead_started', { language: assistantLanguage });
@@ -207,6 +215,11 @@ export const useAssistant = () => {
       setActiveForm(null);
       setSuccessRevision(value => value + 1);
       trackAssistantEvent('assistant_lead_completed', { language: assistantLanguage });
+      trackEvent('assistant_lead', {
+        lead_source: 'assistant',
+        form_id: 'assistant-lead',
+        page_location: window.location.href,
+      }, conversionId);
     } catch (error) {
       console.error('Lead capture failed.', error);
       setErrorMessage(
