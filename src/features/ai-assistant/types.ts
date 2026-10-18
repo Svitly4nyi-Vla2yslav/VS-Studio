@@ -110,6 +110,8 @@ export interface AssistantLeadPayload {
   need: string;
   language: AssistantLanguage;
   source: 'assistant';
+  attribution?: Partial<Record<'utm_source' | 'utm_medium' | 'utm_campaign' | 'utm_content' | 'utm_term', string>>;
+  conversionId?: string;
 }
 
 export interface AssistantBookingPayload {

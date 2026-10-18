@@ -25,6 +25,7 @@ const AIAssistantDemoPage = lazy(() => import('./pages/AIAssistantDemo'));
 const PortfolioPage = lazy(() => import('./portfolio/pages/PortfolioPage'));
 const EmmaAvatarDev = lazy(() => import('./pages/EmmaAvatarDev/EmmaAvatarDev'));
 const StarfieldPreview = lazy(() => import('./pages/StarfieldPreview/StarfieldPreview'));
+const Danke = lazy(() => import('./pages/Danke/Danke'));
 
 const withSuspense = (element: React.ReactNode) => <Suspense fallback={null}>{element}</Suspense>;
 
@@ -60,6 +61,7 @@ export const App: React.FC = () => {
         <Route path='referenzen' element={withSuspense(<ReferencesPage />)} />
         <Route path='ueber-uns' element={withSuspense(<AboutUs />)} />
         <Route path='kontakt' element={withSuspense(<Contact />)} />
+        <Route path='danke' element={withSuspense(<Danke />)} />
         <Route path='blog' element={withSuspense(<BlogPage />)} />
         <Route
           path='ki-assistent'

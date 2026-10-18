@@ -60,6 +60,7 @@ const CookieConsentBanner: React.FC = () => {
 
   const save = (state: ConsentState) => {
     window.localStorage.setItem(KEY, JSON.stringify(state));
+    window.dispatchEvent(new CustomEvent('cookie-consent-changed', { detail: state }));
     setIsOpen(false);
     setShowSettings(false);
   };

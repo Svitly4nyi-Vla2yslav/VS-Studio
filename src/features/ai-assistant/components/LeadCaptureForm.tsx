@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import { trackEvent } from '../../../analytics/analytics';
 import styled, { css } from 'styled-components';
 import { goldButtonMotion } from '../../../components/visual/goldButtonMotion';
 import type { AssistantLeadPayload, AssistantPanelCopy } from '../types';
@@ -122,6 +123,7 @@ interface LeadCaptureFormProps {
  * Вимагає хоча б один канал зв'язку; мережевий або інший побічний ефект виконує onSubmit.
  */
 export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ copy, onSubmit }) => {
+  const formStarted = useRef(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -156,7 +158,19 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ copy, onSubmit
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form
+      id='assistant-lead'
+      onSubmit={handleSubmit}
+      onFocusCapture={() => {
+        if (formStarted.current) return;
+        formStarted.current = true;
+        trackEvent('form_start', {
+          lead_source: 'assistant',
+          form_id: 'assistant-lead',
+          page_location: window.location.href,
+        });
+      }}
+    >
       <Field>
         <Label htmlFor='assistant-lead-name'>{copy.fields.name}</Label>
         <Input

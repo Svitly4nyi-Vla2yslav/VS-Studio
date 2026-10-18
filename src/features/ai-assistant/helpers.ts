@@ -1,4 +1,4 @@
-import { logEvent } from 'firebase/analytics';
+import { trackEvent } from '../../analytics/analytics';
 import { faqDe } from '../../data/assistant/faq.de';
 import { faqEn } from '../../data/assistant/faq.en';
 import { faqUk } from '../../data/assistant/faq.uk';
@@ -9,7 +9,6 @@ import { servicesDe } from '../../data/assistant/services.de';
 import { servicesEn } from '../../data/assistant/services.en';
 import { servicesUk } from '../../data/assistant/services.uk';
 import { getWebsitePricingReference } from '../../data/pricingCatalog';
-import { analyticsPromise } from '../../firebase';
 import {
   ASSISTANT_CONFIDENCE_THRESHOLD,
   ASSISTANT_COPY,
@@ -1047,14 +1046,5 @@ export const generateAssistantLocalReply = ({
 
 export const trackAssistantEvent = async (name: AssistantEventName, params?: Record<string, string | number | boolean>) => {
   if (typeof window === 'undefined') return;
-
-  try {
-    const analytics = await analyticsPromise;
-    if (analytics) logEvent(analytics, name, params);
-  } catch (error) {
-    console.warn('Assistant analytics unavailable.', error);
-  }
-
-  const dataLayer = (window as Window & { dataLayer?: Array<Record<string, unknown>> }).dataLayer;
-  if (Array.isArray(dataLayer)) dataLayer.push({ event: name, ...params });
+  if (name === 'assistant_opened') trackEvent('assistant_opened', params);
 };
