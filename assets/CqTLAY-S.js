@@ -1,10 +1,10 @@
-import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be,t as m,v as ue,w as o,a as me,x as N,y as he,T as fe,z as ve,A as we,D,J as ye,K as je,L as ke,N as $e,O as u,Q as Ve,R as Se,U as ze,V as Ce,d as Le}from"./DJVUdjIW.js";const Fe=""+new URL("D23lH-wW.webp",import.meta.url).href,Me=t.div`
+import{g as t,o as S,p as ee,E as i,C as be,q as me,r as he,u as ae,j as a,s as fe,t as h,v as ve,w as we,x as o,a as ye,y as A,z as je,T as ke,A as $e,D as Ve,J as G,K as Se,L as ze,N as Ce,O as _,Q as Le,R as b,U as Fe,V as Me,W as Ee,X as Re,d as Ie,Y as Te}from"./B8R3ppdB.js";const Ye=""+new URL("D23lH-wW.webp",import.meta.url).href,He=t.div`
   padding: 0 0 84px;
 
   @media (max-width: 991px) {
     padding: 0 0 72px;
   }
-`,Ee=t(V.section)`
+`,Pe=t(S.section)`
   position: relative;
   display: grid;
   justify-items: center;
@@ -20,7 +20,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   background:
     linear-gradient(90deg, rgba(4, 7, 13, 0.9) 0%, rgba(4, 7, 13, 0.74) 42%, rgba(4, 7, 13, 0.34) 76%, rgba(4, 7, 13, 0.7) 100%),
     linear-gradient(180deg, rgba(4, 7, 13, 0.28) 0%, rgba(4, 7, 13, 0.18) 48%, rgba(4, 7, 13, 0.86) 100%),
-    url(${Fe});
+    url(${Ye});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     min-height: calc(100svh - 66px);
     padding: 18px 0;
   }
-`,Re=t.div`
+`,We=t.div`
   position: relative;
   overflow: hidden;
   min-height: calc(100svh - 112px);
@@ -83,7 +83,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     padding: 20px;
     border-radius: 24px;
   }
-`,Ie=t.div`
+`,Xe=t.div`
   display: grid;
   min-height: 100%;
   grid-template-columns: 1fr;
@@ -99,7 +99,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     min-height: auto;
     gap: 24px;
   }
-`,Te=t.div`
+`,Ne=t.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,7 +109,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   max-width: 1240px;
   margin: 0 auto;
   padding: 10px 0 0;
-`,Ye=t.div`
+`,Be=t.div`
   position: relative;
   overflow: hidden;
   display: grid;
@@ -142,11 +142,11 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     gap: 16px;
     padding: 12px;
   }
-`,He=t.div`
+`,De=t.div`
   align-self: stretch;
   position: relative;
   z-index: 1;
-`,Pe=t.div`
+`,Ae=t.div`
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -160,7 +160,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   font-size: var(--type-small);
   font-weight: 600;
   line-height: 1.4;
-`,We=t.h1`
+`,Ge=t.h1`
   width: min(100%, 48ch);
   margin: 0;
   margin-inline: auto;
@@ -177,7 +177,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   @media (max-width: 767px) {
     max-width: 12ch;
   }
-`,Xe=t.p`
+`,_e=t.p`
   max-width: 620px;
   margin: 0;
   margin-bottom: 0;
@@ -188,7 +188,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   @media (max-width: 767px) {
     max-width: 52ch;
   }
-`,Q=J`
+`,te=ee`
   padding: 24px;
   border-radius: 28px;
   border-color: rgba(255, 255, 255, 0.09);
@@ -202,10 +202,10 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   @media (max-width: 767px) {
     padding: 24px;
   }
-`,Be=t(pe)`
-  ${Q}
-`,Ne=t(V.form)`
-  ${Q}
+`,qe=t(be)`
+  ${te}
+`,Ke=t(S.form)`
+  ${te}
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -214,10 +214,10 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   position: relative;
   z-index: 1;
   backdrop-filter: blur(20px);
-`,G=t(Be)`
+`,q=t(qe)`
   display: grid;
   gap: 14px;
-`,$=t.span`
+`,V=t.span`
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -228,11 +228,11 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-`,A=t.h2`
+`,K=t.h2`
   margin: 0 0 10px;
   font-size: clamp(24px, 2.4vw, 34px);
   line-height: 1.02;
-`,De=t.p`
+`,Ue=t.p`
   margin: 0 0 12px;
   color: rgba(255, 255, 255, 0.72);
   font-size: 12px;
@@ -246,7 +246,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   font-weight: 600;
   letter-spacing: 0.02em;
   margin-bottom: 6px;
-`,b=t(ge)`
+`,u=t(me)`
   gap: 8px;
   min-height: 46px;
   padding: 7px 12px;
@@ -290,13 +290,13 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     min-height: 82px;
     max-height: 96px;
   }
-`,Ge=t.p`
+`,Oe=t.p`
   margin: 6px 0 0;
   color: rgba(255, 255, 255, 0.58);
   max-width: 36ch;
   font-size: 11px;
   line-height: 1.35;
-`,q=t.p`
+`,U=t.p`
   margin: 8px 0 0;
   padding: 10px 12px;
   border-radius: 14px;
@@ -306,7 +306,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   color: ${({$tone:e})=>e==="success"?"#bef7d0":"#ffd0d0"};
   font-size: 12px;
   line-height: 1.45;
-`,Ae=t.div`
+`,Je=t.div`
   position: absolute;
   width: 1px;
   height: 1px;
@@ -316,7 +316,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
-`,qe=t(xe)`
+`,Ze=t(he)`
   width: fit-content;
   min-height: auto;
   padding: 12px 18px;
@@ -336,7 +336,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   @media (max-width: 767px) {
     width: 100%;
   }
-`,Ke=t.div`
+`,Qe=t.div`
   display: flex;
   align-items: center;
   gap: 10px;
@@ -347,10 +347,10 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   color: #ffd8ab;
   font-weight: 600;
   line-height: 1.5;
-`,Oe=t.div`
+`,ea=t.div`
   display: grid;
   gap: 8px;
-`,ee=J`
+`,re=ee`
   display: grid;
   grid-template-columns: 18px 1fr;
   gap: 12px;
@@ -384,9 +384,9 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     line-height: 1.45;
   }
 `;t.div`
-  ${ee}
-`;const k=t.a`
-  ${ee}
+  ${re}
+`;const $=t.a`
+  ${re}
   text-decoration: none;
 
   &:hover,
@@ -395,11 +395,11 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     border-color: rgba(255, 180, 80, 0.3);
     background: rgba(255, 255, 255, 0.07);
   }
-`,Ue=t.div`
+`,aa=t.div`
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-`,_e=t.span`
+`,ta=t.span`
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -414,9 +414,9 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   svg {
     color: #ffcf94;
   }
-`,Je=t(V.section)`
+`,ra=t(S.section)`
   padding-top: 8px;
-`,Ze=t.div`
+`,na=t.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
@@ -424,21 +424,21 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   @media (max-width: 991px) {
     grid-template-columns: 1fr;
   }
-`,Qe=t($)`
+`,ia=t(V)`
   color: rgba(255, 211, 148, 0.88);
-`,ea=t.h3`
+`,oa=t.h3`
   margin: 0;
   font-size: clamp(22px, 2.8vw, 30px);
   line-height: 1.12;
-`,aa=t.p`
+`,sa=t.p`
   margin: 0;
   color: rgba(255, 255, 255, 0.7);
   font-size: 15px;
   line-height: 1.55;
-`,ta=t.div`
+`,la=t.div`
   display: grid;
   gap: 10px;
-`,ra=t.div`
+`,da=t.div`
   display: grid;
   grid-template-columns: 42px 1fr;
   gap: 12px;
@@ -467,7 +467,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     font-size: 14px;
     line-height: 1.5;
   }
-`,ae=n`
+`,ne=i`
   0%, 100% {
     transform: translate3d(0, 0, 0) scale(1);
   }
@@ -480,7 +480,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   70% {
     transform: translate3d(7px, -4px, 0) scale(1.025);
   }
-`,ia=n`
+`,ca=i`
   0%, 100% {
     transform: perspective(1200px) rotateX(0deg) rotateY(0deg) translateY(0) scale(1);
   }
@@ -496,7 +496,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   74% {
     transform: perspective(1200px) rotateX(0.7deg) rotateY(1.1deg) translateY(-2px) scale(1.004);
   }
-`,na=n`
+`,pa=i`
   0%, 100% {
     transform: scaleX(0.18);
     opacity: 0.42;
@@ -505,7 +505,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     transform: scaleX(1);
     opacity: 1;
   }
-`,oa=n`
+`,ga=i`
   0%, 100% {
     transform: translateY(0) scale(1);
     opacity: 0.72;
@@ -514,7 +514,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     transform: translateY(-2px) scale(1.06);
     opacity: 1;
   }
-`,sa=n`
+`,xa=i`
   0% {
     background-position: 0% 50%;
     opacity: 0.28;
@@ -527,7 +527,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     background-position: 0% 50%;
     opacity: 0.28;
   }
-`,la=n`
+`,ua=i`
   0% {
     transform: translateX(0) scale(0.84);
     opacity: 0;
@@ -543,7 +543,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     transform: translateX(var(--beam-width)) scale(0.92);
     opacity: 0;
   }
-`,da=n`
+`,ba=i`
   0% {
     transform: translate(-50%, -50%) scale(0.64);
     opacity: 0;
@@ -555,14 +555,14 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     transform: translate(-50%, -50%) scale(1.76);
     opacity: 0;
   }
-`,ca=n`
+`,ma=i`
   0%, 100% {
     transform: translate(-50%, -50%) scale(0.92);
   }
   50% {
     transform: translate(-50%, -50%) scale(1.28);
   }
-`,pa=n`
+`,ha=i`
   0% {
     transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
     opacity: 0.96;
@@ -591,7 +591,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     transform: translate3d(var(--move-three-x), var(--move-three-y), 0) scale(1.02) rotate(var(--rotate-three));
     opacity: 0.98;
   }
-`,te=n`
+`,ie=i`
   0%, 100% {
     transform: translateX(-160%) skewX(-18deg);
     opacity: 0;
@@ -608,14 +608,14 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   100% {
     transform: translateX(220%) skewX(-18deg);
   }
-`,ga=n`
+`,fa=i`
   0%, 100% {
     transform: scale(1);
   }
   50% {
     transform: scale(1.1);
   }
-`,xa=t.div`
+`,va=t.div`
   position: relative;
   overflow: hidden;
   height: 100%;
@@ -631,56 +631,56 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     0 22px 52px rgba(2, 8, 22, 0.28);
   isolation: isolate;
   backdrop-filter: blur(18px);
-`,re=t.div`
+`,oe=t.div`
   position: absolute;
   border-radius: 999px;
   pointer-events: none;
   filter: blur(64px);
   opacity: 0.26;
   z-index: 0;
-`,ba=t(re)`
+`,wa=t(oe)`
   width: 240px;
   height: 180px;
   top: 4%;
   left: 8%;
   background: radial-gradient(circle, rgba(255, 190, 98, 0.54), rgba(255, 190, 98, 0));
-  animation: ${ae} 12s ease-in-out infinite;
-`,ua=t(re)`
+  animation: ${ne} 12s ease-in-out infinite;
+`,ya=t(oe)`
   width: 280px;
   height: 220px;
   right: 0;
   bottom: 6%;
   background: radial-gradient(circle, rgba(68, 120, 255, 0.46), rgba(68, 120, 255, 0));
-  animation: ${ae} 14s ease-in-out infinite reverse;
-`,ma=t.div`
+  animation: ${ne} 14s ease-in-out infinite reverse;
+`,ja=t.div`
   position: relative;
   z-index: 1;
   display: grid;
   gap: 3px;
   margin-bottom: 12px;
-`,ha=t.span`
+`,ka=t.span`
   color: rgba(255, 208, 148, 0.78);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-`,fa=t.p`
+`,$a=t.p`
   margin: 0;
   max-width: 24ch;
   color: rgba(255, 255, 255, 0.88);
   font-size: 12px;
   line-height: 1.3;
-`,va=t.div`
+`,Va=t.div`
   position: relative;
   z-index: 1;
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
   align-items: start;
-`,wa=t.div`
+`,Sa=t.div`
   display: grid;
   gap: 8px;
-`,ya=t.div`
+`,za=t.div`
   display: grid;
   grid-template-columns: minmax(0, 1fr) 34px minmax(98px, 0.78fr);
   gap: 8px;
@@ -693,7 +693,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   @media (max-width: 767px) {
     grid-template-columns: minmax(0, 1fr) 30px minmax(96px, 0.86fr);
   }
-`,K=t.div`
+`,O=t.div`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -709,7 +709,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   font-weight: 700;
   line-height: 1.25;
   text-align: center;
-`,ja=t.div`
+`,Ca=t.div`
   position: relative;
   height: 3px;
   border-radius: 999px;
@@ -726,7 +726,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     border-right: 2px solid rgba(88, 145, 255, 0.9);
     transform: translateY(-50%) rotate(45deg);
   }
-`,ka=t.div`
+`,La=t.div`
   position: relative;
   overflow: hidden;
   display: grid;
@@ -740,26 +740,26 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.04),
     0 24px 56px rgba(3, 9, 20, 0.24);
-`,$a=t.span`
+`,Fa=t.span`
   color: rgba(255, 211, 148, 0.82);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-`,Va=t.strong`
+`,Ma=t.strong`
   color: rgba(255, 255, 255, 0.96);
   font-size: 18px;
   line-height: 1.05;
-`,Sa=t.p`
+`,Ea=t.p`
   margin: 0;
   color: rgba(255, 255, 255, 0.66);
   font-size: 11px;
   line-height: 1.3;
-`,za=t.div`
+`,Ra=t.div`
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-`,O=t.span`
+`,J=t.span`
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -770,11 +770,11 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   color: rgba(255, 255, 255, 0.78);
   font-size: 11px;
   line-height: 1.3;
-`,Ca=t.div`
+`,Ia=t.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 6px;
-`,La=t.div`
+`,Ta=t.div`
   display: grid;
   gap: 2px;
   padding: 8px 10px;
@@ -797,7 +797,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   position: relative;
   min-height: 346px;
   z-index: 1;
-  animation: ${ia} 12.6s ease-in-out infinite;
+  animation: ${ca} 12.6s ease-in-out infinite;
   transform-style: preserve-3d;
 `;t.div`
   display: grid;
@@ -849,7 +849,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   color: #ffd59d;
   font-size: 11px;
   font-weight: 700;
-  animation: ${oa} 1.8s ease-in-out infinite;
+  animation: ${ga} 1.8s ease-in-out infinite;
 `;t.div`
   display: grid;
   gap: 10px;
@@ -867,7 +867,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   border-radius: inherit;
   transform-origin: left center;
   background: ${({$tone:e})=>{switch(e){case"blue":return"linear-gradient(90deg, rgba(72, 129, 255, 0.18), rgba(108, 183, 255, 0.62))";case"green":return"linear-gradient(90deg, rgba(42, 189, 141, 0.18), rgba(88, 227, 178, 0.62))";case"gold":default:return"linear-gradient(90deg, rgba(255, 184, 87, 0.16), rgba(255, 214, 144, 0.62))"}}};
-  animation: ${na} 1.6s ease-in-out infinite;
+  animation: ${pa} 1.6s ease-in-out infinite;
   animation-delay: ${({$delay:e})=>`${e}s`};
 `;t.div`
   --beam-width: ${({$width:e})=>`${e}px`};
@@ -879,7 +879,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   transform-origin: left center;
   background: linear-gradient(90deg, rgba(255, 188, 97, 0.08), rgba(87, 147, 255, 0.84), rgba(255, 188, 97, 0.08));
   background-size: 200% 100%;
-  animation: ${sa} ${({$duration:e})=>`${e}s`} ease-in-out infinite;
+  animation: ${xa} ${({$duration:e})=>`${e}s`} ease-in-out infinite;
   animation-delay: ${({$delay:e})=>`${e}s`};
   pointer-events: none;
   opacity: 0.44;
@@ -895,7 +895,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     background: radial-gradient(circle, rgba(255, 220, 168, 1), rgba(255, 184, 87, 0.2));
     box-shadow: 0 0 18px rgba(255, 205, 126, 0.56);
     transform: translateY(-50%);
-    animation: ${la} ${({$duration:e})=>`${Math.max(e-.4,1.2)}s`} linear infinite;
+    animation: ${ua} ${({$duration:e})=>`${Math.max(e-.4,1.2)}s`} linear infinite;
     animation-delay: ${({$delay:e})=>`${e*.5}s`};
   }
 `;t.div`
@@ -917,7 +917,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     inset: 0;
     border: 1px solid rgba(98, 160, 255, 0.3);
     box-shadow: 0 0 20px rgba(98, 160, 255, 0.14);
-    animation: ${da} ${({$duration:e})=>`${e}s`} ease-out infinite;
+    animation: ${ba} ${({$duration:e})=>`${e}s`} ease-out infinite;
     animation-delay: ${({$delay:e})=>`${e}s`};
   }
 
@@ -926,7 +926,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     height: 10px;
     background: radial-gradient(circle, rgba(255, 220, 168, 1), rgba(255, 178, 80, 0.2));
     box-shadow: 0 0 18px rgba(255, 200, 120, 0.58);
-    animation: ${ca} ${({$duration:e})=>`${Math.max(e-.4,1.1)}s`} ease-in-out infinite;
+    animation: ${ma} ${({$duration:e})=>`${Math.max(e-.4,1.1)}s`} ease-in-out infinite;
     animation-delay: ${({$delay:e})=>`${(e*.5).toFixed(2)}s`};
   }
 `;t.div`
@@ -953,7 +953,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   box-shadow:
     0 22px 44px rgba(3, 9, 20, 0.28),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  animation: ${pa} ${({$duration:e})=>`${e}s`} cubic-bezier(0.42, 0.08, 0.58, 0.92) infinite alternate both;
+  animation: ${ha} ${({$duration:e})=>`${e}s`} cubic-bezier(0.42, 0.08, 0.58, 0.92) infinite alternate both;
   animation-delay: ${({$delay:e})=>`${e}s`};
   will-change: transform, opacity;
 
@@ -965,7 +965,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     width: 34%;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0));
     filter: blur(6px);
-    animation: ${te} ${({$duration:e})=>`${Math.max(e-.4,1.4)}s`} linear infinite;
+    animation: ${ie} ${({$duration:e})=>`${Math.max(e-.4,1.4)}s`} linear infinite;
     animation-delay: ${({$delay:e})=>`${e}s`};
     pointer-events: none;
   }
@@ -979,7 +979,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   color: #fff;
   background: ${({$tone:e})=>{switch(e){case"blue":return"linear-gradient(135deg, rgba(66, 132, 255, 0.88), rgba(92, 181, 255, 0.7))";case"green":return"linear-gradient(135deg, rgba(52, 211, 153, 0.88), rgba(96, 230, 188, 0.66))";case"violet":return"linear-gradient(135deg, rgba(117, 92, 255, 0.84), rgba(173, 110, 255, 0.66))";case"gold":default:return"linear-gradient(135deg, rgba(255, 188, 97, 0.92), rgba(255, 211, 136, 0.7))"}}}; 
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22);
-  animation: ${ga} 2.4s ease-in-out infinite;
+  animation: ${fa} 2.4s ease-in-out infinite;
 `;t.div`
   display: grid;
   gap: 3px;
@@ -992,14 +992,14 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
   line-height: 1.35;
-`;const Fa=n`
+`;const Ya=i`
   from {
     transform: translate3d(calc(-50% - (var(--lane-gap) / 2)), 0, 0);
   }
   to {
     transform: translate3d(0, 0, 0);
   }
-`,Ma=n`
+`,Ha=i`
   0%, 100% {
     opacity: 0.24;
     transform: scaleX(0.92);
@@ -1008,21 +1008,21 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     opacity: 0.54;
     transform: scaleX(1);
   }
-`,Ea=n`
+`,Pa=i`
   0%, 100% {
     transform: translate3d(0, 0, 0);
   }
   50% {
     transform: translate3d(0, -3px, 0);
   }
-`,Ra=n`
+`,Wa=i`
   0%, 100% {
     transform: translateY(0) scale(1);
   }
   50% {
     transform: translateY(-6px) scale(1.01);
   }
-`,U=n`
+`,Z=i`
   0% {
     transform: translate(-50%, -50%) scale(0.88);
     opacity: 0.18;
@@ -1035,7 +1035,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     transform: translate(-50%, -50%) scale(1.42);
     opacity: 0;
   }
-`,Ia=n`
+`,Xa=i`
   0%, 100% {
     transform: translateY(0);
     border-color: rgba(255, 255, 255, 0.08);
@@ -1044,7 +1044,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     transform: translateY(-3px);
     border-color: rgba(255, 188, 97, 0.18);
   }
-`,Ta=n`
+`,Na=i`
   0%, 100% {
     transform: translateY(0);
   }
@@ -1072,7 +1072,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     linear-gradient(180deg, rgba(16, 21, 36, 0.78), rgba(10, 14, 24, 0.84)),
     radial-gradient(circle at left center, rgba(255, 188, 97, 0.08), transparent 44%);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
-  animation: ${Ea} 6.2s ease-in-out infinite;
+  animation: ${Pa} 6.2s ease-in-out infinite;
   will-change: transform;
 
   &::before {
@@ -1083,7 +1083,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     bottom: 12px;
     height: 1px;
     background: linear-gradient(90deg, rgba(255, 188, 97, 0), rgba(255, 188, 97, 0.36), rgba(71, 133, 255, 0));
-    animation: ${Ma} 3.4s ease-in-out infinite;
+    animation: ${Ha} 3.4s ease-in-out infinite;
     pointer-events: none;
   }
 `;t.div`
@@ -1131,7 +1131,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   gap: var(--lane-gap);
   width: max-content;
   transform: translate3d(calc(-50% - (var(--lane-gap) / 2)), 0, 0);
-  animation: ${Fa} ${({$duration:e})=>`${e}s`} linear infinite;
+  animation: ${Ya} ${({$duration:e})=>`${e}s`} linear infinite;
   animation-delay: ${({$delay:e})=>`${e}s`};
   will-change: transform;
 `;t.div`
@@ -1154,7 +1154,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   box-shadow:
     0 16px 32px rgba(3, 9, 20, 0.22),
     inset 0 1px 0 rgba(255, 255, 255, 0.04);
-  animation: ${Ta} 3.6s ease-in-out infinite;
+  animation: ${Na} 3.6s ease-in-out infinite;
 
   &::after {
     content: '';
@@ -1162,7 +1162,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     inset: 0;
     background: linear-gradient(120deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0));
     transform: translateX(-120%);
-    animation: ${te} 6.8s linear infinite;
+    animation: ${ie} 6.8s linear infinite;
     pointer-events: none;
   }
 `;t.span`
@@ -1202,7 +1202,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.04),
     0 24px 56px rgba(3, 9, 20, 0.24);
-  animation: ${Ra} 8.6s ease-in-out infinite;
+  animation: ${Wa} 8.6s ease-in-out infinite;
 
   &::before,
   &::after {
@@ -1218,14 +1218,14 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
     width: 112px;
     height: 112px;
     border: 1px solid rgba(255, 188, 97, 0.14);
-    animation: ${U} 4.8s ease-out infinite;
+    animation: ${Z} 4.8s ease-out infinite;
   }
 
   &::after {
     width: 152px;
     height: 152px;
     border: 1px solid rgba(76, 134, 255, 0.12);
-    animation: ${U} 5.8s ease-out infinite;
+    animation: ${Z} 5.8s ease-out infinite;
     animation-delay: 1.1s;
   }
 `;t.span`
@@ -1278,7 +1278,7 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.04);
-  animation: ${Ia} 3.8s ease-in-out infinite;
+  animation: ${Xa} 3.8s ease-in-out infinite;
   animation-delay: ${({$delay:e})=>`${e}s`};
 `;t.strong`
   color: rgba(255, 255, 255, 0.95);
@@ -1289,4 +1289,4 @@ import{g as t,o as V,p as J,E as n,C as pe,q as ge,r as xe,u as Z,j as a,s as be
   color: rgba(255, 255, 255, 0.58);
   font-size: 12px;
   line-height: 1.35;
-`;const c={eyebrow:"Lead Flow",title:"Website, Ads und Calls gehen direkt in den CRM-Flow.",lanes:[{source:"Website",target:"Lead",tone:"gold"},{source:"Ads",target:"Lead",tone:"blue"},{source:"Calls",target:"Lead",tone:"green"}],routerEyebrow:"CRM Hub",routerTitle:"CRM Router",routerMeta:"Capture, Routing und Rueckmeldung.",miniMeta:["1-2h Antwort","Live in CRM"],stats:[{value:"1-2h",label:"Response"},{value:"Live",label:"Assigned in CRM"}]},Ya=()=>{const{t:e}=Z();return a.jsxs(xa,{"aria-hidden":"true",children:[a.jsx(ba,{}),a.jsx(ua,{}),a.jsxs(ma,{children:[a.jsx(ha,{children:e("contact.visual.eyebrow",{defaultValue:c.eyebrow})}),a.jsx(fa,{children:e("contact.visual.title",{defaultValue:c.title})})]}),a.jsxs(va,{children:[a.jsx(wa,{children:c.lanes.map((d,s)=>a.jsxs(ya,{children:[a.jsx(K,{$tone:d.tone,children:e(`contact.visual.lanes.${s}.source`,{defaultValue:d.source})}),a.jsx(ja,{}),a.jsx(K,{children:e(`contact.visual.lanes.${s}.target`,{defaultValue:d.target})})]},d.source))}),a.jsxs(ka,{children:[a.jsx($a,{children:e("contact.visual.routerEyebrow",{defaultValue:c.routerEyebrow})}),a.jsx(Va,{children:e("contact.visual.routerTitle",{defaultValue:c.routerTitle})}),a.jsx(Sa,{children:e("contact.visual.routerMeta",{defaultValue:c.routerMeta})}),a.jsxs(za,{children:[a.jsxs(O,{children:[a.jsx(be,{}),e("contact.visual.miniMeta.0",{defaultValue:c.miniMeta[0]})]}),a.jsxs(O,{children:[a.jsx(m,{}),e("contact.visual.miniMeta.1",{defaultValue:c.miniMeta[1]})]})]}),a.jsx(Ca,{children:c.stats.map((d,s)=>a.jsxs(La,{children:[a.jsx("strong",{children:e(`contact.visual.stats.${s}.value`,{defaultValue:d.value})}),a.jsx("span",{children:e(`contact.visual.stats.${s}.label`,{defaultValue:d.label})})]},d.label))})]})]})]})},_={hidden:{opacity:0,y:20},show:{opacity:1,y:0}},r={headline:"Erzaehlen Sie uns von Ihrem Projekt",responseTime:"Durchschnittliche Antwortzeit: 1-2h",subtitle:"Kurz beschreiben, was Sie planen. Sie erhalten schnell eine Ersteinschaetzung und den nächsten Schritt.",quickContacts:"Direkter Kontakt",responseNote:"Antwort meist innerhalb von 1-2 Stunden",formTitle:"Projektanfrage",formIntro:"Drei Angaben reichen für den Start.",formHelp:"Name, Unternehmen und Ziel genuegen.",nextStepsTitle:"So geht es weiter",nextStepsLead:"Nach Ihrer Anfrage sehen Sie sofort, wie der erste Kontakt, die Priorisierung und die Rueckmeldung organisiert sind.",labels:{name:"Ihr Name",business:"Unternehmen",email:"E-Mail",phone:"Telefon optional",website:"Website optional",service:"Gewünschte Leistung",message:"Projekt oder Ziel"},submitLoading:"Wird gesendet...",submitSuccess:"Vielen Dank. Ihre Anfrage wurde erfolgreich versendet.",submitError:"Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",contactMeta:{email:"Projektanfragen per E-Mail",phone:"Kurzes Erstgespraech oder Rueckruf"},trustItems:["Direkte Kommunikation","Klare Ersteinschaetzung","Schnelle Rueckmeldung"],nextSteps:["Ihre Anfrage landet direkt im Intake-Flow.","Wir melden uns meist innerhalb von 1-2 Stunden zurueck.","Sie erhalten einen klaren nächsten Schritt statt langer Rückfragen."]},Ha=/^[^\s@]+@[^\s@]+\.[^\s@]+$/,Pa={linkedin:Ce,facebook:ze,instagram:Se,youtube:Ve},Xa=()=>{var B;const{t:e}=Z(),s=((B=ue().state)==null?void 0:B.prefillNeed)||"",[S,z]=o.useState(""),[C,L]=o.useState(""),[h,F]=o.useState(""),[M,E]=o.useState(""),[R,I]=o.useState("Website erstellen lassen"),[T,f]=o.useState(s),[Y,H]=o.useState(""),[P,W]=o.useState(""),[v,w]=o.useState(!1),[ie,X]=o.useState(!1),[ne,y]=o.useState(!1),[oe,j]=o.useState("");o.useEffect(()=>{s&&f(s)},[s]);const se=()=>["/.netlify/functions/contact","/api/contact"],le=async i=>{if(i.preventDefault(),X(!1),y(!1),j(""),!Ha.test(h.trim())){y(!0),j(e("contact.form.error",{defaultValue:r.submitError}));return}if(w(!0),P.trim()){w(!1);return}try{const l=JSON.stringify({name:S.trim(),business:C.trim(),email:h.trim(),phone:M.trim(),service:R.trim(),message:T.trim(),website:Y.trim()}),de=se();let p=null;for(const ce of de)if(p=await fetch(ce,{method:"POST",headers:{"Content-Type":"application/json"},body:l}),p.ok||p.status!==404)break;if(!p||!p.ok)throw new Error(`Request failed with status ${(p==null?void 0:p.status)??"unknown"}`);z(""),L(""),F(""),E(""),I("Website erstellen lassen"),f(""),H(""),W(""),X(!0)}catch(l){console.error("Contact form submit failed",l),y(!0),j(e("contact.form.error",{defaultValue:r.submitError}))}finally{w(!1)}};return a.jsx(Me,{children:a.jsxs(me,{children:[a.jsx(Ee,{initial:"hidden",animate:"show",variants:_,transition:{duration:.62,ease:N},children:a.jsx(Re,{children:a.jsxs(Ie,{children:[a.jsxs(Te,{children:[a.jsxs(Pe,{children:[a.jsx(he,{}),a.jsx("span",{children:e("contact.responseTime",{defaultValue:r.responseTime})})]}),a.jsx(We,{children:a.jsx(fe,{text:e("contact.h1",{defaultValue:r.headline}),durationMs:2200,storageKey:"kontakt_h1_once"})}),a.jsx(Xe,{children:e("contact.subtitle",{defaultValue:r.subtitle})})]}),a.jsxs(Ye,{children:[a.jsxs(Ne,{onSubmit:le,noValidate:!0,children:[a.jsx($,{children:"VS Web Studio"}),a.jsx(A,{children:e("contact.form.title",{defaultValue:r.formTitle})}),a.jsx(De,{children:e("contact.form.intro",{defaultValue:r.formIntro})}),a.jsxs(Ae,{"aria-hidden":"true",children:[a.jsx("label",{htmlFor:"contact-website",children:"Website"}),a.jsx("input",{id:"contact-website",type:"text",name:"website",value:P,onChange:i=>W(i.target.value),tabIndex:-1,autoComplete:"off"})]}),a.jsxs(g,{children:[a.jsx(x,{htmlFor:"contact-name",children:e("contact.form.labels.name",{defaultValue:r.labels.name})}),a.jsxs(b,{children:[a.jsx(ve,{}),a.jsx("input",{id:"contact-name",type:"text",name:"name",value:S,onChange:i=>z(i.target.value),placeholder:e("contact.form.name",{defaultValue:r.labels.name}),"aria-label":e("contact.form.labels.name",{defaultValue:r.labels.name}),required:!0})]})]}),a.jsxs(g,{children:[a.jsx(x,{htmlFor:"contact-business",children:e("contact.form.labels.business",{defaultValue:r.labels.business})}),a.jsxs(b,{children:[a.jsx(we,{}),a.jsx("input",{id:"contact-business",type:"text",name:"business",value:C,onChange:i=>L(i.target.value),placeholder:e("contact.form.business",{defaultValue:r.labels.business}),"aria-label":e("contact.form.labels.business",{defaultValue:r.labels.business}),required:!0})]})]}),a.jsxs(g,{children:[a.jsx(x,{htmlFor:"contact-email",children:e("contact.form.labels.email",{defaultValue:r.labels.email})}),a.jsxs(b,{children:[a.jsx(m,{}),a.jsx("input",{id:"contact-email",type:"email",name:"email",value:h,onChange:i=>F(i.target.value),placeholder:e("contact.form.email",{defaultValue:r.labels.email}),"aria-label":e("contact.form.labels.email",{defaultValue:r.labels.email}),autoComplete:"email",required:!0})]})]}),a.jsxs(g,{children:[a.jsx(x,{htmlFor:"contact-phone",children:e("contact.form.labels.phone",{defaultValue:r.labels.phone})}),a.jsxs(b,{children:[a.jsx(D,{}),a.jsx("input",{id:"contact-phone",type:"tel",name:"phone",value:M,onChange:i=>E(i.target.value),placeholder:e("contact.form.phone",{defaultValue:r.labels.phone}),"aria-label":e("contact.form.labels.phone",{defaultValue:r.labels.phone}),autoComplete:"tel"})]})]}),a.jsxs(g,{children:[a.jsx(x,{htmlFor:"contact-visible-website",children:e("contact.form.labels.website",{defaultValue:r.labels.website})}),a.jsxs(b,{children:[a.jsx(ye,{}),a.jsx("input",{id:"contact-visible-website",type:"url",name:"visibleWebsite",value:Y,onChange:i=>H(i.target.value),placeholder:"https://","aria-label":e("contact.form.labels.website",{defaultValue:r.labels.website}),autoComplete:"url"})]})]}),a.jsxs(g,{children:[a.jsx(x,{htmlFor:"contact-service",children:e("contact.form.labels.service",{defaultValue:r.labels.service})}),a.jsxs(b,{children:[a.jsx(je,{}),a.jsxs("select",{id:"contact-service",name:"service",value:R,onChange:i=>I(i.target.value),"aria-label":e("contact.form.labels.service",{defaultValue:r.labels.service}),children:[a.jsx("option",{children:"Website erstellen lassen"}),a.jsx("option",{children:"Landingpage"}),a.jsx("option",{children:"SEO-Grundstruktur"}),a.jsx("option",{children:"Lead-System"}),a.jsx("option",{children:"Website modernisieren"}),a.jsx("option",{children:"Sonstiges"})]})]})]}),a.jsxs(g,{children:[a.jsx(x,{htmlFor:"contact-message",children:e("contact.form.labels.message",{defaultValue:r.labels.message})}),a.jsxs(b,{children:[a.jsx(ke,{}),a.jsx("textarea",{id:"contact-message",name:"message",placeholder:e("contact.form.need",{defaultValue:r.labels.message}),value:T,onChange:i=>f(i.target.value),"aria-label":e("contact.form.labels.message",{defaultValue:r.labels.message}),required:!0})]})]}),a.jsx(Ge,{children:e("contact.form.help",{defaultValue:r.formHelp})}),ie?a.jsx(q,{$tone:"success",role:"status","aria-live":"polite",children:e("contact.form.success",{defaultValue:r.submitSuccess})}):null,ne?a.jsx(q,{$tone:"error",role:"alert",children:oe||e("contact.form.error",{defaultValue:r.submitError})}):null,a.jsxs(qe,{type:"submit",disabled:v,"aria-busy":v,children:[a.jsx(m,{}),v?e("contact.form.submitLoading",{defaultValue:r.submitLoading}):e("contact.form.submit",{defaultValue:"Projekt anfragen"})]})]}),a.jsx(He,{children:a.jsx(Ya,{})})]})]})})}),a.jsx(Je,{initial:"hidden",whileInView:"show",viewport:{once:!0,amount:.18},variants:_,transition:{duration:.52,ease:N},children:a.jsxs(Ze,{children:[a.jsxs(G,{children:[a.jsx($,{children:"VS Web Studio"}),a.jsx(A,{children:e("contact.quickContacts",{defaultValue:r.quickContacts})}),a.jsxs(Ke,{children:[a.jsx($e,{}),a.jsx("span",{children:e("contact.responseNote",{defaultValue:r.responseNote})})]}),a.jsxs(Oe,{children:[a.jsxs(k,{href:u.emailHref,children:[a.jsx(m,{}),a.jsxs("div",{children:[a.jsx("strong",{children:u.email}),a.jsx("span",{children:e("contact.contactMeta.email",{defaultValue:r.contactMeta.email})})]})]}),a.jsxs(k,{href:u.phoneHref,children:[a.jsx(D,{}),a.jsxs("div",{children:[a.jsx("strong",{children:u.phone}),a.jsx("span",{children:e("contact.contactMeta.phone",{defaultValue:r.contactMeta.phone})})]})]}),u.socialLinks.map(i=>{const l=Pa[i.id];return a.jsxs(k,{href:i.url,target:"_blank",rel:"me noopener noreferrer",children:[a.jsx(l,{}),a.jsxs("div",{children:[a.jsx("strong",{children:i.label}),a.jsx("span",{children:"VS Web Studio"})]})]},i.id)})]}),a.jsx(Ue,{children:r.trustItems.map((i,l)=>a.jsxs(_e,{children:[a.jsx(Le,{}),e(`contact.trustItems.${l}`,{defaultValue:i})]},i))})]}),a.jsxs(G,{children:[a.jsx(Qe,{children:e("contact.nextStepsEyebrow",{defaultValue:"Lead Intake"})}),a.jsx(ea,{children:e("contact.nextStepsTitle",{defaultValue:r.nextStepsTitle})}),a.jsx(aa,{children:e("contact.nextStepsLead",{defaultValue:r.nextStepsLead})}),a.jsx(ta,{children:r.nextSteps.map((i,l)=>a.jsxs(ra,{children:[a.jsxs("span",{children:["0",l+1]}),a.jsx("p",{children:e(`contact.nextSteps.${l}`,{defaultValue:i})})]},i))})]})]})})]})})};export{Xa as default};
+`;const d={eyebrow:"Lead Flow",title:"Website, Ads und Calls gehen direkt in den CRM-Flow.",lanes:[{source:"Website",target:"Lead",tone:"gold"},{source:"Ads",target:"Lead",tone:"blue"},{source:"Calls",target:"Lead",tone:"green"}],routerEyebrow:"CRM Hub",routerTitle:"CRM Router",routerMeta:"Capture, Routing und Rueckmeldung.",miniMeta:["1-2h Antwort","Live in CRM"],stats:[{value:"1-2h",label:"Response"},{value:"Live",label:"Assigned in CRM"}]},Ba=()=>{const{t:e}=ae();return a.jsxs(va,{"aria-hidden":"true",children:[a.jsx(wa,{}),a.jsx(ya,{}),a.jsxs(ja,{children:[a.jsx(ka,{children:e("contact.visual.eyebrow",{defaultValue:d.eyebrow})}),a.jsx($a,{children:e("contact.visual.title",{defaultValue:d.title})})]}),a.jsxs(Va,{children:[a.jsx(Sa,{children:d.lanes.map((l,p)=>a.jsxs(za,{children:[a.jsx(O,{$tone:l.tone,children:e(`contact.visual.lanes.${p}.source`,{defaultValue:l.source})}),a.jsx(Ca,{}),a.jsx(O,{children:e(`contact.visual.lanes.${p}.target`,{defaultValue:l.target})})]},l.source))}),a.jsxs(La,{children:[a.jsx(Fa,{children:e("contact.visual.routerEyebrow",{defaultValue:d.routerEyebrow})}),a.jsx(Ma,{children:e("contact.visual.routerTitle",{defaultValue:d.routerTitle})}),a.jsx(Ea,{children:e("contact.visual.routerMeta",{defaultValue:d.routerMeta})}),a.jsxs(Ra,{children:[a.jsxs(J,{children:[a.jsx(fe,{}),e("contact.visual.miniMeta.0",{defaultValue:d.miniMeta[0]})]}),a.jsxs(J,{children:[a.jsx(h,{}),e("contact.visual.miniMeta.1",{defaultValue:d.miniMeta[1]})]})]}),a.jsx(Ia,{children:d.stats.map((l,p)=>a.jsxs(Ta,{children:[a.jsx("strong",{children:e(`contact.visual.stats.${p}.value`,{defaultValue:l.value})}),a.jsx("span",{children:e(`contact.visual.stats.${p}.label`,{defaultValue:l.label})})]},l.label))})]})]})]})},Q={hidden:{opacity:0,y:20},show:{opacity:1,y:0}},r={headline:"Erzaehlen Sie uns von Ihrem Projekt",responseTime:"Durchschnittliche Antwortzeit: 1-2h",subtitle:"Kurz beschreiben, was Sie planen. Sie erhalten schnell eine Ersteinschaetzung und den nächsten Schritt.",quickContacts:"Direkter Kontakt",responseNote:"Antwort meist innerhalb von 1-2 Stunden",formTitle:"Projektanfrage",formIntro:"Drei Angaben reichen für den Start.",formHelp:"Name, Unternehmen und Ziel genuegen.",nextStepsTitle:"So geht es weiter",nextStepsLead:"Nach Ihrer Anfrage sehen Sie sofort, wie der erste Kontakt, die Priorisierung und die Rueckmeldung organisiert sind.",labels:{name:"Ihr Name",business:"Unternehmen",email:"E-Mail",phone:"Telefon optional",website:"Website optional",service:"Gewünschte Leistung",message:"Projekt oder Ziel"},submitLoading:"Wird gesendet...",submitSuccess:"Vielen Dank. Ihre Anfrage wurde erfolgreich versendet.",submitError:"Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",contactMeta:{email:"Projektanfragen per E-Mail",phone:"Kurzes Erstgespraech oder Rueckruf"},trustItems:["Direkte Kommunikation","Klare Ersteinschaetzung","Schnelle Rueckmeldung"],nextSteps:["Ihre Anfrage landet direkt im Intake-Flow.","Wir melden uns meist innerhalb von 1-2 Stunden zurueck.","Sie erhalten einen klaren nächsten Schritt statt langer Rückfragen."]},Da=/^[^\s@]+@[^\s@]+\.[^\s@]+$/,Aa={linkedin:Re,facebook:Ee,instagram:Me,youtube:Fe},_a=()=>{var D;const{t:e}=ae(),l=ve(),p=we(),z=o.useRef(!1),m=((D=l.state)==null?void 0:D.prefillNeed)||"",[C,L]=o.useState(""),[F,M]=o.useState(""),[f,E]=o.useState(""),[R,I]=o.useState(""),[T,Y]=o.useState("Website erstellen lassen"),[H,v]=o.useState(m),[P,W]=o.useState(""),[X,N]=o.useState(""),[w,y]=o.useState(!1),[se,B]=o.useState(!1),[le,j]=o.useState(!1),[de,k]=o.useState("");o.useEffect(()=>{m&&v(m)},[m]);const ce=()=>["/.netlify/functions/contact","/api/contact"],pe=async n=>{if(n.preventDefault(),B(!1),j(!1),k(""),!Da.test(f.trim())){j(!0),k(e("contact.form.error",{defaultValue:r.submitError}));return}if(y(!0),X.trim()){y(!1);return}try{const s=crypto.randomUUID(),ge=JSON.stringify({name:C.trim(),business:F.trim(),email:f.trim(),phone:R.trim(),service:T.trim(),message:H.trim(),website:P.trim(),attribution:Te(),conversionId:s}),xe=ce();let c=null;for(const ue of xe)if(c=await fetch(ue,{method:"POST",headers:{"Content-Type":"application/json"},body:ge}),c.ok||c.status!==404)break;if(!c||!c.ok)throw new Error(`Request failed with status ${(c==null?void 0:c.status)??"unknown"}`);L(""),M(""),E(""),I(""),Y("Website erstellen lassen"),v(""),W(""),N(""),B(!0),_("generate_lead",{lead_source:"contact_form",form_id:"contact-form",page_location:window.location.href},s),p("/danke",{replace:!0,state:{confirmedSubmission:!0}})}catch(s){console.error("Contact form submit failed",s),j(!0),k(e("contact.form.error",{defaultValue:r.submitError}))}finally{y(!1)}};return a.jsx(He,{children:a.jsxs(ye,{children:[a.jsx(Pe,{initial:"hidden",animate:"show",variants:Q,transition:{duration:.62,ease:A},children:a.jsx(We,{children:a.jsxs(Xe,{children:[a.jsxs(Ne,{children:[a.jsxs(Ae,{children:[a.jsx(je,{}),a.jsx("span",{children:e("contact.responseTime",{defaultValue:r.responseTime})})]}),a.jsx(Ge,{children:a.jsx(ke,{text:e("contact.h1",{defaultValue:r.headline}),durationMs:2200,storageKey:"kontakt_h1_once"})}),a.jsx(_e,{children:e("contact.subtitle",{defaultValue:r.subtitle})})]}),a.jsxs(Be,{children:[a.jsxs(Ke,{id:"contact-form",onSubmit:pe,onFocusCapture:()=>{z.current||(z.current=!0,_("form_start",{lead_source:"contact_form",form_id:"contact-form",page_location:window.location.href}))},noValidate:!0,children:[a.jsx(V,{children:"VS Web Studio"}),a.jsx(K,{children:e("contact.form.title",{defaultValue:r.formTitle})}),a.jsx(Ue,{children:e("contact.form.intro",{defaultValue:r.formIntro})}),a.jsxs(Je,{"aria-hidden":"true",children:[a.jsx("label",{htmlFor:"contact-website",children:"Website"}),a.jsx("input",{id:"contact-website",type:"text",name:"website",value:X,onChange:n=>N(n.target.value),tabIndex:-1,autoComplete:"off"})]}),a.jsxs(g,{children:[a.jsx(x,{htmlFor:"contact-name",children:e("contact.form.labels.name",{defaultValue:r.labels.name})}),a.jsxs(u,{children:[a.jsx($e,{}),a.jsx("input",{id:"contact-name",type:"text",name:"name",value:C,onChange:n=>L(n.target.value),placeholder:e("contact.form.name",{defaultValue:r.labels.name}),"aria-label":e("contact.form.labels.name",{defaultValue:r.labels.name}),required:!0})]})]}),a.jsxs(g,{children:[a.jsx(x,{htmlFor:"contact-business",children:e("contact.form.labels.business",{defaultValue:r.labels.business})}),a.jsxs(u,{children:[a.jsx(Ve,{}),a.jsx("input",{id:"contact-business",type:"text",name:"business",value:F,onChange:n=>M(n.target.value),placeholder:e("contact.form.business",{defaultValue:r.labels.business}),"aria-label":e("contact.form.labels.business",{defaultValue:r.labels.business}),required:!0})]})]}),a.jsxs(g,{children:[a.jsx(x,{htmlFor:"contact-email",children:e("contact.form.labels.email",{defaultValue:r.labels.email})}),a.jsxs(u,{children:[a.jsx(h,{}),a.jsx("input",{id:"contact-email",type:"email",name:"email",value:f,onChange:n=>E(n.target.value),placeholder:e("contact.form.email",{defaultValue:r.labels.email}),"aria-label":e("contact.form.labels.email",{defaultValue:r.labels.email}),autoComplete:"email",required:!0})]})]}),a.jsxs(g,{children:[a.jsx(x,{htmlFor:"contact-phone",children:e("contact.form.labels.phone",{defaultValue:r.labels.phone})}),a.jsxs(u,{children:[a.jsx(G,{}),a.jsx("input",{id:"contact-phone",type:"tel",name:"phone",value:R,onChange:n=>I(n.target.value),placeholder:e("contact.form.phone",{defaultValue:r.labels.phone}),"aria-label":e("contact.form.labels.phone",{defaultValue:r.labels.phone}),autoComplete:"tel"})]})]}),a.jsxs(g,{children:[a.jsx(x,{htmlFor:"contact-visible-website",children:e("contact.form.labels.website",{defaultValue:r.labels.website})}),a.jsxs(u,{children:[a.jsx(Se,{}),a.jsx("input",{id:"contact-visible-website",type:"url",name:"visibleWebsite",value:P,onChange:n=>W(n.target.value),placeholder:"https://","aria-label":e("contact.form.labels.website",{defaultValue:r.labels.website}),autoComplete:"url"})]})]}),a.jsxs(g,{children:[a.jsx(x,{htmlFor:"contact-service",children:e("contact.form.labels.service",{defaultValue:r.labels.service})}),a.jsxs(u,{children:[a.jsx(ze,{}),a.jsxs("select",{id:"contact-service",name:"service",value:T,onChange:n=>Y(n.target.value),"aria-label":e("contact.form.labels.service",{defaultValue:r.labels.service}),children:[a.jsx("option",{children:"Website erstellen lassen"}),a.jsx("option",{children:"Landingpage"}),a.jsx("option",{children:"SEO-Grundstruktur"}),a.jsx("option",{children:"Lead-System"}),a.jsx("option",{children:"Website modernisieren"}),a.jsx("option",{children:"Sonstiges"})]})]})]}),a.jsxs(g,{children:[a.jsx(x,{htmlFor:"contact-message",children:e("contact.form.labels.message",{defaultValue:r.labels.message})}),a.jsxs(u,{children:[a.jsx(Ce,{}),a.jsx("textarea",{id:"contact-message",name:"message",placeholder:e("contact.form.need",{defaultValue:r.labels.message}),value:H,onChange:n=>v(n.target.value),"aria-label":e("contact.form.labels.message",{defaultValue:r.labels.message}),required:!0})]})]}),a.jsx(Oe,{children:e("contact.form.help",{defaultValue:r.formHelp})}),se?a.jsx(U,{$tone:"success",role:"status","aria-live":"polite",children:e("contact.form.success",{defaultValue:r.submitSuccess})}):null,le?a.jsx(U,{$tone:"error",role:"alert",children:de||e("contact.form.error",{defaultValue:r.submitError})}):null,a.jsxs(Ze,{type:"submit",disabled:w,"aria-busy":w,children:[a.jsx(h,{}),w?e("contact.form.submitLoading",{defaultValue:r.submitLoading}):e("contact.form.submit",{defaultValue:"Projekt anfragen"})]})]}),a.jsx(De,{children:a.jsx(Ba,{})})]})]})})}),a.jsx(ra,{initial:"hidden",whileInView:"show",viewport:{once:!0,amount:.18},variants:Q,transition:{duration:.52,ease:A},children:a.jsxs(na,{children:[a.jsxs(q,{children:[a.jsx(V,{children:"VS Web Studio"}),a.jsx(K,{children:e("contact.quickContacts",{defaultValue:r.quickContacts})}),a.jsxs(Qe,{children:[a.jsx(Le,{}),a.jsx("span",{children:e("contact.responseNote",{defaultValue:r.responseNote})})]}),a.jsxs(ea,{children:[a.jsxs($,{href:b.emailHref,children:[a.jsx(h,{}),a.jsxs("div",{children:[a.jsx("strong",{children:b.email}),a.jsx("span",{children:e("contact.contactMeta.email",{defaultValue:r.contactMeta.email})})]})]}),a.jsxs($,{href:b.phoneHref,children:[a.jsx(G,{}),a.jsxs("div",{children:[a.jsx("strong",{children:b.phone}),a.jsx("span",{children:e("contact.contactMeta.phone",{defaultValue:r.contactMeta.phone})})]})]}),b.socialLinks.map(n=>{const s=Aa[n.id];return a.jsxs($,{href:n.url,target:"_blank",rel:"me noopener noreferrer",children:[a.jsx(s,{}),a.jsxs("div",{children:[a.jsx("strong",{children:n.label}),a.jsx("span",{children:"VS Web Studio"})]})]},n.id)})]}),a.jsx(aa,{children:r.trustItems.map((n,s)=>a.jsxs(ta,{children:[a.jsx(Ie,{}),e(`contact.trustItems.${s}`,{defaultValue:n})]},n))})]}),a.jsxs(q,{children:[a.jsx(ia,{children:e("contact.nextStepsEyebrow",{defaultValue:"Lead Intake"})}),a.jsx(oa,{children:e("contact.nextStepsTitle",{defaultValue:r.nextStepsTitle})}),a.jsx(sa,{children:e("contact.nextStepsLead",{defaultValue:r.nextStepsLead})}),a.jsx(la,{children:r.nextSteps.map((n,s)=>a.jsxs(da,{children:[a.jsxs("span",{children:["0",s+1]}),a.jsx("p",{children:e(`contact.nextSteps.${s}`,{defaultValue:n})})]},n))})]})]})})]})})};export{_a as default};
