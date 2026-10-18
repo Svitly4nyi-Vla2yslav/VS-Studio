@@ -22,7 +22,7 @@ export const SUPPORTED_LANGUAGES = [
   "bg",
 ] as const;
 
-i18n
+export const i18nReady = i18n
   .use(HttpApi)
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -41,7 +41,12 @@ i18n
       order: ["localStorage", "navigator"],
       caches: ["localStorage"],
       lookupLocalStorage: "i18nextLng",
-    }
+    },
+    react: {
+      useSuspense: false,
+    },
+    saveMissing: false,
+    returnEmptyString: false,
   });
 
 export default i18n;

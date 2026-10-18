@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { buildStructuredData, getSeoRoute, siteSeo } from './seo';
 
 const ensureMeta = (attribute: 'name' | 'property', key: string, content: string) => {
@@ -79,13 +80,14 @@ const removeCanonical = () => {
 
 const SeoHead: React.FC = () => {
   const location = useLocation();
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     const route = getSeoRoute(location.pathname);
     const structuredData = buildStructuredData(route);
 
     document.title = route.title;
-    document.documentElement.lang = siteSeo.language;
+    document.documentElement.lang = i18n.resolvedLanguage || i18n.language || siteSeo.language;
 
     ensureMeta('name', 'description', route.description);
     ensureMeta('name', 'keywords', route.keywords);
@@ -123,7 +125,7 @@ const SeoHead: React.FC = () => {
 
     ensureSeoLinks('me', siteSeo.socialProfiles, 'social-rel-me');
     ensureStructuredData(structuredData);
-  }, [location.pathname]);
+  }, [i18n.language, i18n.resolvedLanguage, location.pathname]);
 
   return null;
 };

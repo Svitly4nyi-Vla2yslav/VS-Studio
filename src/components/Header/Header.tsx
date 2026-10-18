@@ -177,7 +177,7 @@ const Header: React.FC = () => {
                 <LangTrigger
                   type='button'
                   aria-expanded={isLangOpen}
-                  aria-label='Language switcher'
+                  aria-label={`Language switcher ${languageCodes[language]}`}
                   onClick={() => setIsLangOpen(prev => !prev)}
                 >
                   <LangFlag>{languageCodes[language]}</LangFlag>

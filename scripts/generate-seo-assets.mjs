@@ -400,7 +400,13 @@ ${urlEntries}
 `;
 };
 
-const robotsTxt = `User-agent: *
+const robotsTxt = `User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: *
 Allow: /
 
 Sitemap: ${site.baseUrl}/sitemap.xml

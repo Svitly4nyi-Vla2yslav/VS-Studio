@@ -94,9 +94,9 @@
     {
       "path": "/webdesign-hildesheim",
       "name": "Webdesign Hildesheim",
-      "title": "Webdesign Hildesheim | Moderne Websites für lokale Unternehmen",
-      "description": "VS Web Studio erstellt moderne Websites für Unternehmen in Hildesheim und Niedersachsen. Webdesign, SEO-Grundstruktur, mobile Optimierung und klare Kundenanfragen.",
-      "keywords": "webdesign hildesheim, webagentur hildesheim, website hildesheim, lokale website niedersachsen",
+      "title": "Webdesign Hildesheim | Websites für lokale Unternehmen",
+      "description": "Webdesign in Hildesheim für lokale Unternehmen: schnelle, mobil optimierte Websites mit klarer SEO-Struktur und direktem Fokus auf Kundenanfragen.",
+      "keywords": "webdesign hildesheim, webdesign freelancer hildesheim, webagentur hildesheim, website hildesheim, lokale website niedersachsen",
       "pageKind": "services",
       "changeFrequency": "weekly",
       "priority": 0.95,
@@ -120,9 +120,9 @@
     {
       "path": "/seo-hildesheim",
       "name": "SEO Hildesheim",
-      "title": "SEO Hildesheim | Besser gefunden werden bei Google",
-      "description": "SEO-Grundstruktur für lokale Unternehmen in Hildesheim: bessere Seitenstruktur, klare Inhalte, lokale Keywords und technische SEO-Basis.",
-      "keywords": "seo hildesheim, lokale seo, google sichtbarkeit hildesheim, seo-grundstruktur",
+      "title": "SEO Hildesheim | Lokale Sichtbarkeit bei Google",
+      "description": "SEO in Hildesheim: technische SEO-Basis, lokale Suchbegriffe und verständliche Inhalte für Unternehmen, die bei Google besser gefunden werden möchten.",
+      "keywords": "seo hildesheim, seo sem agentur hildesheim, lokale seo, google sichtbarkeit hildesheim, seo-grundstruktur",
       "pageKind": "services",
       "changeFrequency": "weekly",
       "priority": 0.9,
@@ -146,9 +146,9 @@
     {
       "path": "/websites-fuer-handwerker",
       "name": "Website für Handwerker",
-      "title": "Website für Handwerker | Webdesign für Handwerksbetriebe",
-      "description": "Moderne Websites für Handwerker: Leistungen, Referenzen, Kontaktformular, lokale SEO-Struktur und professionelle Darstellung Ihres Betriebs.",
-      "keywords": "website für handwerker, handwerker webdesign, webdesign handwerksbetrieb, lokale seo handwerker",
+      "title": "Website für Handwerksbetriebe | Webdesign für Handwerker",
+      "description": "Moderne Homepage für Handwerker und Handwerksbetriebe: klare Leistungen, Referenzen, lokale SEO-Struktur und ein direkter Weg zur Projektanfrage.",
+      "keywords": "website für handwerksbetriebe, homepage für handwerker, website für handwerker, handwerker webdesign, lokale seo handwerker",
       "pageKind": "niche",
       "changeFrequency": "monthly",
       "priority": 0.88,
@@ -233,6 +233,19 @@
       "indexable": true,
       "sitemap": true,
       "breadcrumb": ["Startseite", "Kontakt"]
+    },
+    {
+      "path": "/danke",
+      "name": "Danke",
+      "title": "Vielen Dank für Ihre Anfrage | VS Web Studio",
+      "description": "Bestätigung für eine erfolgreich übermittelte Projektanfrage an VS Web Studio.",
+      "keywords": "",
+      "pageKind": "contact",
+      "changeFrequency": "yearly",
+      "priority": 0.1,
+      "indexable": false,
+      "sitemap": false,
+      "breadcrumb": ["Startseite", "Danke"]
     },
     {
       "path": "/blog",

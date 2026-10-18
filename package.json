@@ -16,7 +16,8 @@
     "check": "npm run lint && npm run build",
     "preview": "vite preview",
     "favicon": "node scripts/generate-favicons.mjs",
-    "seo:generate": "node scripts/generate-seo-assets.mjs"
+    "seo:generate": "node scripts/generate-seo-assets.mjs",
+    "validate:analytics-seo": "node scripts/validate-analytics-seo.mjs"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
