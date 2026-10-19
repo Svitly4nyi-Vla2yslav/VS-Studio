@@ -14,6 +14,10 @@ type LiveMetricProps = {
   storageKey?: string;
 };
 
+/**
+ * Форматує числове значення з фіксованою точністю та необов'язковими префіксом і суфіксом.
+ * Повертає готовий для відображення рядок, не змінюючи вхідні дані.
+ */
 const formatValue = (
   value: number,
   decimals: number,
@@ -21,6 +25,10 @@ const formatValue = (
   suffix: string
 ) => `${prefix}${value.toFixed(decimals)}${suffix}`;
 
+/**
+ * Анімує метрику від start до target (або max) через requestAnimationFrame.
+ * storageKey робить завершення одноразовим у межах вкладки; під час демонтажу активний кадр скасовується.
+ */
 const LiveMetric: React.FC<LiveMetricProps> = ({
   start,
   max,
@@ -36,6 +44,7 @@ const LiveMetric: React.FC<LiveMetricProps> = ({
   const [isAnimating, setIsAnimating] = useState(true);
   const rafRef = useRef<number | null>(null);
 
+  // Ефект відновлює завершений стан із sessionStorage або запускає новий цикл анімації.
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
@@ -49,6 +58,7 @@ const LiveMetric: React.FC<LiveMetricProps> = ({
     const from = start;
     const to = finalValue;
 
+    // tick приймає timestamp кадру, обчислює лінійний прогрес і планує наступний кадр до досягнення цілі.
     const tick = (t: number) => {
       if (!startTime) startTime = t;
       const progress = Math.min((t - startTime) / durationMs, 1);
@@ -70,6 +80,7 @@ const LiveMetric: React.FC<LiveMetricProps> = ({
     };
   }, [durationMs, finalValue, start, storageKey]);
 
+  // Мемоізований рядок перераховується лише після зміни значення або параметрів форматування.
   const view = useMemo(
     () => formatValue(value, decimals, prefix, suffix),
     [value, decimals, prefix, suffix]
