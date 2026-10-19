@@ -34,6 +34,10 @@ interface LanguageBadgeProps {
   language: AssistantLanguage;
 }
 
+/**
+ * Перетворює типізовану мову асистента на коротку мітку DE/EN/UK.
+ * Приймає лише підтримуваний AssistantLanguage і повертає презентаційний badge без стану та побічних ефектів.
+ */
 export const LanguageBadge: React.FC<LanguageBadgeProps> = ({ language }) => (
   <Badge>
     <strong>{languageLabel[language]}</strong>
