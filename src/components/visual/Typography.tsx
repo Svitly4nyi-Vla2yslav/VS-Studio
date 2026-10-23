@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
+// Семантичні типографічні примітиви зберігають єдину шкалу заголовків, тексту й метаданих.
+// Вони не додають поведінки: споживач обирає відповідний HTML-елемент і передає лише вміст.
+
 export const DisplayXL = styled.h1`
   margin: 0;
   font-size: var(--type-display-xl);
