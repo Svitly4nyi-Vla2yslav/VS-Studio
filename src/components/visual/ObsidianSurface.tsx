@@ -58,11 +58,17 @@ export const GoldButton = styled.button`
   &:disabled { cursor: not-allowed; filter: grayscale(0.45); opacity: 0.58; transform: none; }
 `;
 
+/**
+ * Повертає ref, pointer-handler і початкові CSS-змінні для локальної світлової плями.
+ * Рух миші перетворюється на відсотки всередині елемента й записується не частіше одного разу за кадр;
+ * touch та reduced-motion ігноруються, а запланований кадр скасовується під час unmount.
+ */
 export const usePointerLighting = <T extends HTMLElement>() => {
   const ref = useRef<T | null>(null);
   const frameRef = useRef<number | null>(null);
   const latestRef = useRef({ x: 78, y: 8 });
 
+  // Зберігає останні координати та об'єднує часті pointer-події в одне DOM-оновлення.
   const update = (event: ReactPointerEvent<T>) => {
     if (event.pointerType === 'touch' || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const rect = event.currentTarget.getBoundingClientRect();
