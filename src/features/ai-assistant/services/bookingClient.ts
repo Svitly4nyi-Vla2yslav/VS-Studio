@@ -1,5 +1,10 @@
 import type { AssistantBookingPayload } from '../types';
 
+/**
+ * Повертає порядок endpoint-ів для бронювання.
+ * У локальному Vite-режимі спочатку перевіряє Netlify Dev на :8888,
+ * а в інших середовищах використовує same-origin serverless-функцію.
+ */
 const resolveBookingEndpoints = () => {
   if (import.meta.env.DEV && window.location.port === '5173') {
     return [
@@ -12,6 +17,11 @@ const resolveBookingEndpoints = () => {
 };
 
 export const bookingClient = {
+  /**
+   * Серіалізує заявку та послідовно пробує дозволені endpoint-и.
+   * 404 дозволяє перейти до fallback; інші HTTP-помилки й остання мережева
+   * помилка повертаються викликачу. Успіх повертає розібраний JSON.
+   */
   async createBookingRequest(payload: AssistantBookingPayload) {
     const body = JSON.stringify(payload);
     let lastNetworkError: Error | null = null;
