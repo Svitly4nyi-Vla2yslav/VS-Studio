@@ -1,5 +1,10 @@
 import type { AssistantLeadPayload } from '../types';
 
+/**
+ * Визначає порядок endpoint-ів створення ліда.
+ * У локальному Vite-режимі першим є Netlify Dev на :8888,
+ * а production і fallback використовують same-origin функцію.
+ */
 const resolveLeadEndpoints = () => {
   if (import.meta.env.DEV && window.location.port === '5173') {
     return ['http://localhost:8888/.netlify/functions/create-lead', '/.netlify/functions/create-lead'];
@@ -9,6 +14,11 @@ const resolveLeadEndpoints = () => {
 };
 
 export const leadClient = {
+  /**
+   * Надсилає типізовані дані ліда як JSON і повертає відповідь функції.
+   * Лише 404 перемикає на наступний endpoint; інші HTTP-помилки та остання
+   * мережева помилка передаються викликачу без приховування причини.
+   */
   async createLead(payload: AssistantLeadPayload) {
     const body = JSON.stringify(payload);
     let lastNetworkError: Error | null = null;
