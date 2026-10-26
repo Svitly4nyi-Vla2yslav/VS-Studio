@@ -3,7 +3,6 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from './components/Layout/Layout';
 // import { MaintenanceGate } from './components/MaintenanceGate';
 import Home from './pages/HomePage/HomePage';
-import SeoHead from './seo/SeoHead';
 import './site.css';
 
 const AboutUs = lazy(() => import('./pages/AboutUs/AboutUs'));
@@ -59,6 +58,7 @@ export const App: React.FC = () => {
         <Route path='preise' element={withSuspense(<PricingPage />)} />
         <Route path='faq' element={withSuspense(<LocalLandingPage pageId='faq' />)} />
         <Route path='referenzen' element={withSuspense(<ReferencesPage />)} />
+        <Route path='portfolio' element={withSuspense(<PortfolioPage />)} />
         <Route path='ueber-uns' element={withSuspense(<AboutUs />)} />
         <Route path='kontakt' element={withSuspense(<Contact />)} />
         <Route path='danke' element={withSuspense(<Danke />)} />
@@ -88,3 +88,4 @@ export const App: React.FC = () => {
     // </MaintenanceGate>
   );
 };
+
