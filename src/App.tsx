@@ -32,15 +32,6 @@ export const App: React.FC = () => {
   return (
     // <MaintenanceGate>
     <Routes>
-      <Route
-        path='/portfolio'
-        element={
-          <Suspense fallback={null}>
-            <SeoHead />
-            <PortfolioPage />
-          </Suspense>
-        }
-      />
       <Route path='/' element={<Layout />}>
         {import.meta.env.DEV ? (
           <>
