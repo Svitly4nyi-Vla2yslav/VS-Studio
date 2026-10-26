@@ -1,166 +1,39 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { marblePageBackground } from '../../styles/marbleBackground';
-import { portfolioTheme } from '../utils/portfolioTheme';
 
-/* PortfolioGlobalStyle ховає нативний scrollbar тільки на portfolio-сторінці й не зачіпає основний сайт. */
-export const PortfolioGlobalStyle = createGlobalStyle`
-  html.portfolio-page-active,
-  body.portfolio-page-active {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
+const goldFlow = keyframes`0%,100%{background-position:0% 50%}50%{background-position:100% 50%}`;
+const shine = keyframes`from{transform:translateX(-170%) skewX(-18deg)}to{transform:translateX(300%) skewX(-18deg)}`;
 
-  html.portfolio-page-active *,
-  body.portfolio-page-active * {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  html.portfolio-page-active::-webkit-scrollbar,
-  body.portfolio-page-active::-webkit-scrollbar,
-  html.portfolio-page-active *::-webkit-scrollbar,
-  body.portfolio-page-active *::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-    display: none;
-  }
-
-  html.portfolio-page-active {
-    scroll-padding-top: 96px;
-    scroll-behavior: smooth;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    html.portfolio-page-active {
-      scroll-behavior: auto;
-    }
-  }
-`;
-
-/* Кореневий wrapper ізолює portfolio від основного сайту й тримає єдиний вертикальний потік сторінки. */
-export const PortfolioPageWrapper = styled.main`
-  position: relative;
-  min-height: 100vh;
-  overflow-x: clip;
+export const PortfolioPageWrapper = styled.div`
   ${marblePageBackground}
-  color: ${portfolioTheme.colors.white};
-  font-family: ${portfolioTheme.fonts.body};
-  line-height: 1.5;
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-
-  h1,
-  h2,
-  h3,
-  p,
-  span,
-  strong {
-    color: inherit;
-  }
-
-  a {
-    text-decoration: none;
-    cursor: pointer;
-    touch-action: manipulation;
-  }
-
-  button {
-    cursor: pointer;
-    touch-action: manipulation;
-  }
-
-  a:focus-visible,
-  button:focus-visible {
-    outline: 2px solid ${portfolioTheme.colors.cyan};
-    outline-offset: 3px;
-  }
+  min-height:100vh; overflow:hidden; color:var(--champagne-text);
+  .portfolio-hero,.projects-section,.method-section,.portfolio-cta{width:min(100% - 40px,1240px);margin-inline:auto}
+  .portfolio-hero{position:relative;min-height:min(860px,92svh);display:grid;place-items:center;padding:150px 0 100px;text-align:center}
+  .hero-content{position:relative;z-index:2;max-width:1000px}
+  .eyebrow{display:inline-flex;border:1px solid rgba(241,210,119,.3);border-radius:999px;padding:8px 14px;background:rgba(214,165,66,.08);color:#f1d277;font-size:.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;box-shadow:0 0 32px rgba(214,165,66,.1)}
+  .gold-title{color:transparent;background:linear-gradient(115deg,#765019,#d9a943 24%,#fff2bd 46%,#d6a542 62%,#8c5d19 78%,#f1d277);background-size:240% 100%;background-clip:text;-webkit-background-clip:text;animation:${goldFlow} 8s ease-in-out infinite;filter:drop-shadow(0 10px 30px rgba(214,165,66,.13))}
+  h1{margin:28px auto 24px;max-width:980px;font-size:clamp(3rem,7.2vw,6.7rem);line-height:.94;letter-spacing:-.055em}
+  .hero-lead{max-width:760px;margin:0 auto;color:rgba(238,226,199,.78);font-size:clamp(1rem,1.6vw,1.25rem);line-height:1.7}
+  .hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:34px}
+  .primary-action,.secondary-action{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;border-radius:15px;padding:0 22px;font-weight:800;transition:.28s ease}
+  .primary-action{color:#0a0804;background:linear-gradient(120deg,#b47a24,#fff0ae 50%,#cb9236);box-shadow:0 16px 40px rgba(214,165,66,.22)}
+  .secondary-action{border:1px solid rgba(241,210,119,.28);color:#f4e9d2;background:rgba(10,8,12,.58);backdrop-filter:blur(18px)}
+  .primary-action:hover,.secondary-action:hover{transform:translateY(-3px);box-shadow:0 20px 46px rgba(214,165,66,.24)}
+  .hero-proof{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;margin-top:30px;font-size:.9rem}.hero-proof li{display:flex;align-items:center;gap:8px;color:rgba(238,226,199,.7)}.hero-proof svg{color:#d6a542}
+  .hero-orb{position:absolute;border-radius:50%;filter:blur(12px);pointer-events:none}.orb-one{width:360px;height:360px;right:-160px;top:15%;background:radial-gradient(circle,rgba(214,165,66,.18),transparent 68%)}.orb-two{width:300px;height:300px;left:-140px;bottom:10%;background:radial-gradient(circle,rgba(109,76,132,.18),transparent 70%)}
+  .projects-section,.method-section{padding:100px 0;scroll-margin-top:90px}.section-heading{max-width:780px;margin:0 auto 48px;text-align:center}.section-heading h2,.portfolio-cta h2{margin:18px 0;font-size:clamp(2.4rem,5vw,4.6rem);line-height:1}.section-heading p{color:rgba(238,226,199,.7);font-size:1.08rem;line-height:1.7}
+  .project-grid{display:grid;gap:30px}.project-card{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(360px,.85fr);overflow:hidden;border:1px solid rgba(241,210,119,.2);border-radius:30px;background:linear-gradient(145deg,rgba(19,16,20,.82),rgba(7,7,9,.66));box-shadow:inset 0 1px rgba(255,255,255,.08),0 28px 80px rgba(0,0,0,.4);backdrop-filter:blur(28px) saturate(125%);transition:.4s cubic-bezier(.22,1,.36,1)}
+  .project-card:hover{transform:translateY(-8px);border-color:rgba(241,210,119,.46);box-shadow:inset 0 1px rgba(255,255,255,.12),0 34px 90px rgba(0,0,0,.5),0 0 45px rgba(214,165,66,.1)}
+  .project-visual{position:relative;min-height:480px;overflow:hidden;background:#09090b}.project-visual img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:.7s cubic-bezier(.22,1,.36,1)}.project-card:hover img{transform:scale(1.045);filter:saturate(1.08) brightness(1.04)}
+  .browser-chrome{position:absolute;inset:16px 16px auto;z-index:2;display:flex;align-items:center;gap:7px;min-height:34px;border:1px solid rgba(255,255,255,.11);border-radius:11px;padding:0 12px;background:rgba(5,5,7,.72);backdrop-filter:blur(16px)}.browser-chrome i{width:7px;height:7px;border-radius:50%;background:#d6a542;opacity:.72}.browser-chrome small{margin-left:7px;color:rgba(255,255,255,.56);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .visual-shine{position:absolute;inset:0;width:22%;background:linear-gradient(90deg,transparent,rgba(255,244,205,.14),transparent);transform:translateX(-170%) skewX(-18deg);pointer-events:none}.project-card:hover .visual-shine{animation:${shine} 1.1s ease-out}
+  .project-content{position:relative;display:flex;flex-direction:column;padding:clamp(28px,4vw,52px)}.project-number{position:absolute;right:28px;top:20px;color:rgba(241,210,119,.12);font:400 clamp(4rem,7vw,7rem)/1 'Bebas Neue',sans-serif}.project-type{position:relative;width:fit-content;color:#e7c364;font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.project-content h3{position:relative;margin:18px 0 14px;font-size:clamp(1.7rem,3vw,2.7rem);line-height:1.04}.project-description{color:rgba(238,226,199,.74);line-height:1.65}
+  .project-value{margin-top:24px;border-left:2px solid #d6a542;padding:2px 0 2px 16px}.project-value strong{color:#f1d277;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}.project-value p{margin-top:8px;color:rgba(238,226,199,.82);line-height:1.55}.project-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0}.project-tags span{border:1px solid rgba(241,210,119,.18);border-radius:999px;padding:6px 10px;background:rgba(214,165,66,.06);color:rgba(238,226,199,.68);font-size:.72rem}
+  .project-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}.project-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;border-radius:12px;padding:0 15px;font-weight:800;font-size:.86rem;transition:.25s}.project-link.live{color:#090704;background:linear-gradient(120deg,#c08a31,#f3d988)}.project-link.code{border:1px solid rgba(241,210,119,.24);color:#eee2c7;background:rgba(255,255,255,.035)}.project-link:hover{transform:translateY(-2px)}.github-link{display:flex;width:fit-content;align-items:center;gap:11px;margin:34px auto 0;border-bottom:1px solid rgba(241,210,119,.32);padding:10px 2px;font-weight:800}
+  .method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.method-card{min-height:245px;border:1px solid rgba(241,210,119,.16);border-radius:24px;padding:26px;background:rgba(12,10,13,.62);box-shadow:inset 0 1px rgba(255,255,255,.06);backdrop-filter:blur(22px);transition:.3s}.method-card:hover{transform:translateY(-6px);border-color:rgba(241,210,119,.4)}.method-card>span{color:rgba(241,210,119,.34);font:400 3.4rem/1 'Bebas Neue',sans-serif}.method-card h3{margin:25px 0 10px;color:#f1d277}.method-card p{color:rgba(238,226,199,.68);line-height:1.65}
+  .portfolio-cta{margin-top:80px;margin-bottom:110px;border:1px solid rgba(241,210,119,.24);border-radius:32px;padding:clamp(44px,7vw,86px) 24px;text-align:center;background:radial-gradient(circle at 50% 0,rgba(214,165,66,.16),transparent 55%),rgba(10,8,11,.72);box-shadow:inset 0 1px rgba(255,255,255,.08),0 34px 90px rgba(0,0,0,.42);backdrop-filter:blur(26px)}.portfolio-cta p{max-width:680px;margin:0 auto 28px;color:rgba(238,226,199,.72);line-height:1.7}.portfolio-cta .primary-action{width:fit-content;margin:auto}
+  @media(max-width:900px){.project-card{grid-template-columns:1fr}.project-visual{min-height:380px}.method-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.portfolio-hero,.projects-section,.method-section,.portfolio-cta{width:min(100% - 28px,1240px)}.portfolio-hero{padding-top:120px}.hero-proof{flex-direction:column;align-items:center}.project-visual{min-height:280px}.project-content{padding:28px 22px}.method-grid{grid-template-columns:1fr}.method-card{min-height:unset}.project-actions{display:grid;grid-template-columns:1fr 1fr}.project-link{padding:0 10px}}
+  @media(prefers-reduced-motion:reduce){.gold-title,.hero-orb,.visual-shine{animation:none!important}.project-card:hover,.method-card:hover,.primary-action:hover,.secondary-action:hover{transform:none}}
 `;
 
-export const AmbientSpotlight = styled.div`
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background: radial-gradient(
-    520px circle at var(--spotlight-x, 50vw) var(--spotlight-y, 28vh),
-    rgba(103, 232, 249, 0.085),
-    rgba(192, 132, 252, 0.035) 42%,
-    transparent 72%
-  );
-  mix-blend-mode: screen;
-
-  @media (pointer: coarse), (prefers-reduced-motion: reduce) {
-    display: none;
-  }
-`;
-
-/* ContentFrame більше не обмежує ширину, бо кожна секція має власний fullscreen контейнер. */
-export const ContentFrame = styled.div`
-  position: relative;
-  z-index: ${portfolioTheme.z.content};
-  width: 100%;
-  margin: 0 auto;
-`;
-
-/* SkipLink дає keyboard users швидкий перехід до контенту. */
-export const SkipLink = styled.a`
-  position: absolute;
-  left: 16px;
-  top: 16px;
-  z-index: ${portfolioTheme.z.skipLink};
-  transform: translateY(-140%);
-  border-radius: ${portfolioTheme.radii.pill};
-  padding: 10px 14px;
-  background: ${portfolioTheme.colors.white};
-  color: ${portfolioTheme.colors.background};
-  font-weight: 900;
-
-  &:focus {
-    transform: translateY(0);
-  }
-`;
-
-export const MotionModeButton = styled.button<{ $active: boolean }>`
-  position: fixed;
-  left: clamp(10px, 1.6vw, 24px);
-  bottom: clamp(10px, 1.6vw, 24px);
-  z-index: ${portfolioTheme.z.header};
-  display: inline-flex;
-  gap: 8px;
-  align-items: center;
-  min-height: 42px;
-  border: 1px solid ${({ $active }) => ($active ? 'rgba(103, 232, 249, 0.48)' : 'rgba(148, 163, 184, 0.28)')};
-  border-radius: 999px;
-  padding: 0 14px;
-  color: ${({ $active }) => ($active ? portfolioTheme.colors.cyan : portfolioTheme.colors.muted)};
-  background: rgba(5, 5, 16, 0.86);
-  box-shadow: ${({ $active }) => ($active ? '0 0 28px rgba(34, 211, 238, 0.18)' : 'none')};
-  backdrop-filter: blur(14px);
-  font-size: 0.68rem;
-  font-weight: 900;
-  letter-spacing: 0.16em;
-  cursor: pointer;
-  transition: 180ms ease;
-
-  span {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: ${({ $active }) => ($active ? portfolioTheme.colors.cyan : portfolioTheme.colors.muted)};
-    box-shadow: ${({ $active }) => ($active ? `0 0 12px ${portfolioTheme.colors.cyan}` : 'none')};
-  }
-
-  &:hover {
-    transform: translateY(-2px);
-    border-color: ${portfolioTheme.colors.goldSoft};
-  }
-
-  &:focus-visible {
-    outline: 2px solid ${portfolioTheme.colors.cyan};
-    outline-offset: 3px;
-  }
-`;
