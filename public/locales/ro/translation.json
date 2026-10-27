@@ -1395,5 +1395,139 @@
         ]
       }
     }
+  },
+  "portfolioPage": {
+    "hero": {
+      "imageAlt": "Site-urile sunt doar începutul. Construiesc sisteme digitale conectate — de la CRM și automatizarea lead-urilor la social media, boți AI și procese inteligente pentru clienți.",
+      "eyebrow": "Hildesheim · Digital Growth Portfolio",
+      "title": "Soluții digitale care transformă",
+      "accent": "atenția în creștere.",
+      "description": "Site-urile sunt doar începutul. Construiesc sisteme digitale conectate — de la CRM și automatizarea lead-urilor la social media, boți AI și procese inteligente pentru clienți.",
+      "primary": "Vezi 10 proiecte",
+      "secondary": "Discută o soluție",
+      "scroll": "↓",
+      "stats": {
+        "projects": "proiecte reale",
+        "areas": "domenii de soluții",
+        "goal": "obiectiv: mai mulți clienți"
+      }
+    },
+    "industries": {
+      "aria": "Industries we want to support digitally",
+      "label": "Construim soluții pentru aceste domenii",
+      "note": "Exemple de domenii țintă — fără a indica relații existente cu clienți.",
+      "items": {
+        "handwerk": "Handwerk",
+        "practices": "Praxen",
+        "workshops": "Werkstätten",
+        "gastronomy": "Gastronomie",
+        "beauty": "Beauty",
+        "realEstate": "Immobilien",
+        "lawFirms": "Kanzlei",
+        "fitness": "Fitness",
+        "coaching": "Coaching",
+        "retail": "Servicii locale"
+      }
+    },
+    "projects": {
+      "eyebrow": "Selected work / 2025—2026",
+      "title": "Experiență făcută vizibilă.",
+      "description": "Proiecte reale selectate din GitHub, cu site live, cod sursă, public țintă, obiectiv și valoare concretă pentru afacere.",
+      "previewAlt": "Experiență făcută vizibilă.: {{title}}",
+      "impact": "Impact asupra afacerii",
+      "live": "Proiect live",
+      "source": "GitHub",
+      "github": "GitHub",
+      "items": {
+        "handwerk": {
+          "sector": "Proiect live",
+          "description": "Soluție digitală proiectată și dezvoltată pentru un scenariu real de afaceri.",
+          "impact": "Simplifică parcursul clientului și ajută echipa să lucreze mai eficient."
+        },
+        "workshop": {
+          "sector": "Proiect live",
+          "description": "Soluție digitală proiectată și dezvoltată pentru un scenariu real de afaceri.",
+          "impact": "Simplifică parcursul clientului și ajută echipa să lucreze mai eficient."
+        },
+        "beauty": {
+          "sector": "Proiect live",
+          "description": "Soluție digitală proiectată și dezvoltată pentru un scenariu real de afaceri.",
+          "impact": "Simplifică parcursul clientului și ajută echipa să lucreze mai eficient."
+        },
+        "studio": {
+          "sector": "Proiect live",
+          "description": "Soluție digitală proiectată și dezvoltată pentru un scenariu real de afaceri.",
+          "impact": "Simplifică parcursul clientului și ajută echipa să lucreze mai eficient."
+        },
+        "sabsus": {
+          "sector": "Proiect live",
+          "description": "Soluție digitală proiectată și dezvoltată pentru un scenariu real de afaceri.",
+          "impact": "Simplifică parcursul clientului și ajută echipa să lucreze mai eficient."
+        },
+        "airtexno": {
+          "sector": "Proiect live",
+          "description": "Soluție digitală proiectată și dezvoltată pentru un scenariu real de afaceri.",
+          "impact": "Simplifică parcursul clientului și ajută echipa să lucreze mai eficient."
+        },
+        "srm": {
+          "sector": "Proiect live",
+          "description": "Soluție digitală proiectată și dezvoltată pentru un scenariu real de afaceri.",
+          "impact": "Simplifică parcursul clientului și ajută echipa să lucreze mai eficient."
+        },
+        "meterflow": {
+          "sector": "Proiect live",
+          "description": "Soluție digitală proiectată și dezvoltată pentru un scenariu real de afaceri.",
+          "impact": "Simplifică parcursul clientului și ajută echipa să lucreze mai eficient."
+        },
+        "healthai": {
+          "sector": "Proiect live",
+          "description": "Soluție digitală proiectată și dezvoltată pentru un scenariu real de afaceri.",
+          "impact": "Simplifică parcursul clientului și ajută echipa să lucreze mai eficient."
+        },
+        "photography": {
+          "sector": "Proiect live",
+          "description": "Soluție digitală proiectată și dezvoltată pentru un scenariu real de afaceri.",
+          "impact": "Simplifică parcursul clientului și ajută echipa să lucreze mai eficient."
+        }
+      }
+    },
+    "capabilities": {
+      "eyebrow": "Beyond websites",
+      "title": "Un singur sistem digital în locul instrumentelor separate.",
+      "intro": "Fiecare soluție pornește de la procesele, clienții și obiectivul clar al afacerii.",
+      "items": {
+        "websites": {
+          "title": "Site-uri pentru conversie",
+          "description": "Clarificăm obiectivele, publicul, serviciile, conținutul și cererile, apoi realizăm structura, prototipul, dezvoltarea responsive, formularele, analiza, testarea și lansarea."
+        },
+        "crm": {
+          "title": "CRM și fluxuri de lead-uri",
+          "description": "CRM-ul adună contacte, cereri, sarcini, oferte și reveniri într-un singur loc, pentru a nu pierde informații sau oportunități."
+        },
+        "ai": {
+          "title": "Agenți AI și chatboți",
+          "description": "Răspund la întrebări, califică lead-uri, programează întâlniri și asistă clienții pe site, WhatsApp și alte canale, cu transfer către o persoană."
+        },
+        "social": {
+          "title": "Sisteme social media",
+          "description": "Organizăm profilurile, planul editorial, aprobarea și publicarea, conectăm campaniile cu pagini de destinație și integrăm boți pentru întrebări frecvente."
+        },
+        "automation": {
+          "title": "Automatizarea afacerii",
+          "description": "Conectăm formulare, e-mail, calendare, CRM, facturi și notificări, astfel încât datele să circule automat și munca repetitivă să scadă."
+        },
+        "analytics": {
+          "title": "Analiză și creștere",
+          "description": "Configurăm evenimente, dashboard-uri și rapoarte care arată ce canale și procese produc cereri, vânzări și creștere."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "De la Hildesheim la afacerea dvs.",
+      "title": "Ce ar trebui să funcționeze automat în compania dvs.?",
+      "description": "Pornim de la obiectiv, nu de la un instrument: clienți potriviți, mai puțină rutină și un sistem care crește cu firma.",
+      "button": "Consultație inițială gratuită"
+    }
   }
 }
+
