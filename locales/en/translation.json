@@ -1900,5 +1900,139 @@
         ]
       }
     }
+  },
+  "portfolioPage": {
+    "hero": {
+      "imageAlt": "Hildesheim at night as the background for the digital portfolio",
+      "eyebrow": "Hildesheim · Digital Growth Portfolio",
+      "title": "Digital solutions that turn",
+      "accent": "attention into growth.",
+      "description": "Websites are only the beginning. I build connected digital systems for local companies — from CRM and lead automation to social media, AI bots and intelligent customer processes.",
+      "primary": "Explore 10 projects",
+      "secondary": "Discuss a solution",
+      "scroll": "Scroll to explore",
+      "stats": {
+        "projects": "real projects",
+        "areas": "solution areas",
+        "goal": "goal: more customers"
+      }
+    },
+    "industries": {
+      "aria": "Industries we want to support digitally",
+      "label": "We build solutions for these industries",
+      "note": "Example target industries — not a claim of existing client relationships.",
+      "items": {
+        "handwerk": "Trades",
+        "practices": "Practices",
+        "workshops": "Workshops",
+        "gastronomy": "Hospitality",
+        "beauty": "Beauty",
+        "realEstate": "Real estate",
+        "lawFirms": "Law firms",
+        "fitness": "Fitness",
+        "coaching": "Coaching",
+        "retail": "Local retail"
+      }
+    },
+    "projects": {
+      "eyebrow": "Selected work / 2025—2026",
+      "title": "Experience made visible.",
+      "description": "Selected real projects from my GitHub — with live website, source code, target group, task and concrete business value.",
+      "previewAlt": "Full preview: {{title}}",
+      "impact": "Business impact",
+      "live": "Live project",
+      "source": "Source",
+      "github": "More experiments on GitHub",
+      "items": {
+        "handwerk": {
+          "sector": "Lead website · Live",
+          "description": "Service website for heating, plumbing and heat-pump companies with a clear local service structure.",
+          "impact": "Reduces search effort, makes contact faster and supports better qualified regional enquiries."
+        },
+        "workshop": {
+          "sector": "Booking experience · Live",
+          "description": "Premium dark interface for workshop services, trust building and appointment requests.",
+          "impact": "Helps workshops explain services clearly and pre-qualify incoming requests."
+        },
+        "beauty": {
+          "sector": "Beauty website · Live",
+          "description": "Calm, premium one-page presence for beauty studios and personal-care providers.",
+          "impact": "Communicates quality visually and guides clients directly to appointment booking."
+        },
+        "studio": {
+          "sector": "Digital studio · Live",
+          "description": "Multilingual platform for websites, SEO, lead systems and digital business solutions.",
+          "impact": "Combines services, consulting and enquiries in one scalable brand platform."
+        },
+        "sabsus": {
+          "sector": "E-commerce · Live",
+          "description": "Modern digital shop with clear product hierarchy and a distinctive visual identity.",
+          "impact": "Makes products easier to understand and creates a direct path to purchase."
+        },
+        "airtexno": {
+          "sector": "Service platform · Live",
+          "description": "Digital platform for repairs, maintenance and structured customer enquiries.",
+          "impact": "Connects local visibility, service selection and fast customer contact."
+        },
+        "srm": {
+          "sector": "Business platform · Live",
+          "description": "Modular CRM, POS and administration ecosystem for restaurants, cafés and local retail.",
+          "impact": "Brings operations, customer relationships and sales data into one interface."
+        },
+        "meterflow": {
+          "sector": "Energy SaaS · Live",
+          "description": "Full-stack dashboard for managing tenant-electricity projects, installations, contracts and consumption data.",
+          "impact": "Makes complex energy projects centrally manageable for operators and teams."
+        },
+        "healthai": {
+          "sector": "Mobile health · Live demo",
+          "description": "Mobile-first health interface with structured onboarding and a cross-platform React Native foundation.",
+          "impact": "Shows how complex health features can be organised clearly, calmly and accessibly."
+        },
+        "photography": {
+          "sector": "Creative portfolio · Live",
+          "description": "Minimal, image-led portfolio for photography, selected work and direct contact paths.",
+          "impact": "Gives visual work room to breathe and guides prospects directly to references and contact."
+        }
+      }
+    },
+    "capabilities": {
+      "eyebrow": "Beyond websites",
+      "title": "One digital system instead of isolated tools.",
+      "intro": "Each solution starts with your process, your customers and a clear business goal. The parts are then connected into a system that can grow with the company.",
+      "items": {
+        "websites": {
+          "title": "Conversion websites",
+          "description": "We clarify goals, target groups, services, content and desired enquiries together. Then we plan structure and prototype, develop responsively, connect forms and analytics, test everything with you and support the launch."
+        },
+        "crm": {
+          "title": "CRM & lead pipelines",
+          "description": "A CRM collects contacts, requests, tasks, offers and follow-ups in one place. It is useful wherever enquiries must be assigned, tracked and converted into appointments or sales without losing information."
+        },
+        "ai": {
+          "title": "AI agents & chatbots",
+          "description": "AI agents can answer common questions, qualify leads, arrange appointments, transfer conversations and support customers on the website, WhatsApp or other communication channels — with clear handover to a person."
+        },
+        "social": {
+          "title": "Social media systems",
+          "description": "We can structure profiles, content planning, approval and publishing, connect campaigns to landing pages and integrate bots that answer recurring customer questions and forward valuable enquiries."
+        },
+        "automation": {
+          "title": "Business automation",
+          "description": "We connect forms, email, calendars, CRM, invoices and internal notifications so data moves automatically, routine work is reduced and the team always knows the next step."
+        },
+        "analytics": {
+          "title": "Analytics & growth",
+          "description": "We configure meaningful events, dashboards and reports to show which channels, content and processes generate enquiries, sales and growth — and where optimisation is worthwhile."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "From Hildesheim to your business",
+      "title": "What should work automatically in your company in the future?",
+      "description": "We do not start with a tool, but with your goal: more suitable customers, less routine and a system that grows with the company.",
+      "button": "Free initial consultation"
+    }
   }
 }
+

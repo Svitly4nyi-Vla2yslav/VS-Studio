@@ -1,4 +1,4 @@
-import{u as S,j as n,ag as L,a as W,M as l,B as c,b as h,F as b,e as y,ah as j,L as A,ai as v,d as p,S as k,G as E,C as f,g as r,P as z,H as F}from"./85BoPfmM.js";const H="/assets/WluZqbIr.webp",K="/assets/BWI8g70S.webp",B="/assets/CWLD9ZKk.webp",m=["Hildesheim","SEO-Grundstruktur","klare Leistungen","mehr Anfragen"],O=[y,j,A,v],P={"webdesign-hildesheim":B,"seo-hildesheim":K,"lead-systeme":H},C=r(z)`
+import{u as S,j as n,ag as L,a as W,M as l,B as c,b as h,F as b,e as y,ah as j,L as A,ai as v,d as p,S as k,G as E,C as f,g as r,P as z,H as F}from"./BWmDfY33.js";const H="/assets/WluZqbIr.webp",K="/assets/BWI8g70S.webp",B="/assets/CWLD9ZKk.webp",m=["Hildesheim","SEO-Grundstruktur","klare Leistungen","mehr Anfragen"],O=[y,j,A,v],P={"webdesign-hildesheim":B,"seo-hildesheim":K,"lead-systeme":H},C=r(z)`
   padding-top: ${({$fullHero:e})=>e?"0":"48px"};
 
   @media (max-width: 767px) {

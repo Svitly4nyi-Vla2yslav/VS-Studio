@@ -1,0 +1,1 @@
+import{u as e,j as t,P as n,a as r,H as a,B as o,b as i}from"./BWmDfY33.js";const h=()=>{const{t:s}=e();return t.jsx(n,{children:t.jsx(r,{children:t.jsxs(a,{children:[t.jsx("h1",{children:s("niche.werkstatt.h1")}),t.jsx("p",{children:s("niche.werkstatt.p")}),t.jsx(o,{children:t.jsx(i,{to:"/kontakt",children:s("common.projectRequest")})})]})})})};export{h as default};

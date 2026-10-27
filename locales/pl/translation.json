@@ -1514,5 +1514,139 @@
         ]
       }
     }
+  },
+  "portfolioPage": {
+    "hero": {
+      "imageAlt": "Strony internetowe to dopiero początek. Buduję połączone systemy cyfrowe — od CRM i automatyzacji leadów po media społecznościowe, boty AI i inteligentną obsługę klienta.",
+      "eyebrow": "Hildesheim · Digital Growth Portfolio",
+      "title": "Cyfrowe rozwiązania, które zamieniają",
+      "accent": "uwagę we wzrost.",
+      "description": "Strony internetowe to dopiero początek. Buduję połączone systemy cyfrowe — od CRM i automatyzacji leadów po media społecznościowe, boty AI i inteligentną obsługę klienta.",
+      "primary": "Zobacz 10 projektów",
+      "secondary": "Omów rozwiązanie",
+      "scroll": "↓",
+      "stats": {
+        "projects": "prawdziwych projektów",
+        "areas": "obszarów rozwiązań",
+        "goal": "cel: więcej klientów"
+      }
+    },
+    "industries": {
+      "aria": "Industries we want to support digitally",
+      "label": "Tworzymy rozwiązania dla tych branż",
+      "note": "Przykładowe branże docelowe — nie oznacza to istniejących relacji z klientami.",
+      "items": {
+        "handwerk": "Rzemiosło",
+        "practices": "Gabinety",
+        "workshops": "Warsztaty",
+        "gastronomy": "Gastronomia",
+        "beauty": "Beauty",
+        "realEstate": "Nieruchomości",
+        "lawFirms": "Kancelarie",
+        "fitness": "Fitness",
+        "coaching": "Coaching",
+        "retail": "Usługi lokalne"
+      }
+    },
+    "projects": {
+      "eyebrow": "Selected work / 2025—2026",
+      "title": "Doświadczenie, które widać.",
+      "description": "Wybrane prawdziwe projekty z GitHub — z działającą stroną, kodem, grupą docelową, zadaniem i konkretną wartością biznesową.",
+      "previewAlt": "Doświadczenie, które widać.: {{title}}",
+      "impact": "Wpływ na biznes",
+      "live": "Projekt live",
+      "source": "GitHub",
+      "github": "GitHub",
+      "items": {
+        "handwerk": {
+          "sector": "Projekt live",
+          "description": "Rozwiązanie cyfrowe zaprojektowane i wykonane dla rzeczywistego scenariusza biznesowego.",
+          "impact": "Upraszcza ścieżkę klienta i pomaga zespołowi pracować wydajniej."
+        },
+        "workshop": {
+          "sector": "Projekt live",
+          "description": "Rozwiązanie cyfrowe zaprojektowane i wykonane dla rzeczywistego scenariusza biznesowego.",
+          "impact": "Upraszcza ścieżkę klienta i pomaga zespołowi pracować wydajniej."
+        },
+        "beauty": {
+          "sector": "Projekt live",
+          "description": "Rozwiązanie cyfrowe zaprojektowane i wykonane dla rzeczywistego scenariusza biznesowego.",
+          "impact": "Upraszcza ścieżkę klienta i pomaga zespołowi pracować wydajniej."
+        },
+        "studio": {
+          "sector": "Projekt live",
+          "description": "Rozwiązanie cyfrowe zaprojektowane i wykonane dla rzeczywistego scenariusza biznesowego.",
+          "impact": "Upraszcza ścieżkę klienta i pomaga zespołowi pracować wydajniej."
+        },
+        "sabsus": {
+          "sector": "Projekt live",
+          "description": "Rozwiązanie cyfrowe zaprojektowane i wykonane dla rzeczywistego scenariusza biznesowego.",
+          "impact": "Upraszcza ścieżkę klienta i pomaga zespołowi pracować wydajniej."
+        },
+        "airtexno": {
+          "sector": "Projekt live",
+          "description": "Rozwiązanie cyfrowe zaprojektowane i wykonane dla rzeczywistego scenariusza biznesowego.",
+          "impact": "Upraszcza ścieżkę klienta i pomaga zespołowi pracować wydajniej."
+        },
+        "srm": {
+          "sector": "Projekt live",
+          "description": "Rozwiązanie cyfrowe zaprojektowane i wykonane dla rzeczywistego scenariusza biznesowego.",
+          "impact": "Upraszcza ścieżkę klienta i pomaga zespołowi pracować wydajniej."
+        },
+        "meterflow": {
+          "sector": "Projekt live",
+          "description": "Rozwiązanie cyfrowe zaprojektowane i wykonane dla rzeczywistego scenariusza biznesowego.",
+          "impact": "Upraszcza ścieżkę klienta i pomaga zespołowi pracować wydajniej."
+        },
+        "healthai": {
+          "sector": "Projekt live",
+          "description": "Rozwiązanie cyfrowe zaprojektowane i wykonane dla rzeczywistego scenariusza biznesowego.",
+          "impact": "Upraszcza ścieżkę klienta i pomaga zespołowi pracować wydajniej."
+        },
+        "photography": {
+          "sector": "Projekt live",
+          "description": "Rozwiązanie cyfrowe zaprojektowane i wykonane dla rzeczywistego scenariusza biznesowego.",
+          "impact": "Upraszcza ścieżkę klienta i pomaga zespołowi pracować wydajniej."
+        }
+      }
+    },
+    "capabilities": {
+      "eyebrow": "Beyond websites",
+      "title": "Jeden system cyfrowy zamiast osobnych narzędzi.",
+      "intro": "Każde rozwiązanie zaczyna się od procesu, klientów i jasnego celu biznesowego.",
+      "items": {
+        "websites": {
+          "title": "Strony konwersyjne",
+          "description": "Wspólnie ustalamy cele, odbiorców, usługi, treści i oczekiwane zapytania; następnie tworzymy strukturę, prototyp, responsywne wdrożenie, formularze, analitykę, testy i uruchomienie."
+        },
+        "crm": {
+          "title": "CRM i lejki leadów",
+          "description": "CRM gromadzi kontakty, zapytania, zadania, oferty i działania następcze w jednym miejscu, aby nie tracić informacji ani szans sprzedaży."
+        },
+        "ai": {
+          "title": "Agenci AI i chatboty",
+          "description": "Odpowiadają na pytania, kwalifikują leady, umawiają spotkania i wspierają klientów na stronie, WhatsAppie i innych kanałach z przekazaniem do człowieka."
+        },
+        "social": {
+          "title": "Systemy social media",
+          "description": "Porządkujemy profile, plan treści, akceptację i publikację, łączymy kampanie z landing page’ami i integrujemy boty do częstych pytań."
+        },
+        "automation": {
+          "title": "Automatyzacja biznesu",
+          "description": "Łączymy formularze, e-mail, kalendarze, CRM, faktury i powiadomienia, aby dane przepływały automatycznie i ograniczały rutynę."
+        },
+        "analytics": {
+          "title": "Analityka i wzrost",
+          "description": "Konfigurujemy zdarzenia, pulpity i raporty pokazujące, które kanały i procesy generują zapytania, sprzedaż i wzrost."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Z Hildesheim do Twojej firmy",
+      "title": "Co powinno działać automatycznie w Twojej firmie?",
+      "description": "Zaczynamy od celu, nie od narzędzia: więcej właściwych klientów, mniej rutyny i system rosnący z firmą.",
+      "button": "Bezpłatna konsultacja"
+    }
   }
 }
+
