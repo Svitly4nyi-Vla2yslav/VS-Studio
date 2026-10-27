@@ -59,7 +59,7 @@ const PortfolioPage: React.FC = () => {
       <p>{t('portfolioPage.industries.note')}</p>
     </section>
 
-    <motion.section id='projects' className='projects-section' initial='hidden' whileInView='visible' viewport={viewport} variants={fadeInUp}>
+    <motion.section id='projects' className='projects-section' initial='hidden' whileInView='visible' viewport={{ once:true, amount:0.01 }} variants={fadeInUp}>
       <div className='section-heading'><span className='eyebrow'>{t('portfolioPage.projects.eyebrow')}</span><h2>{t('portfolioPage.projects.title')}</h2><p>{t('portfolioPage.projects.description')}</p></div>
       <motion.div className='project-grid' variants={staggerContainer}>
         {projects.map((project,index)=><motion.article className={`project-card card-${index+1}`} style={{'--tone':project.tone} as CSSProperties} key={project.title} variants={scaleIn}>
