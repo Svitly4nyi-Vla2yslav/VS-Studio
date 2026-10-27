@@ -1454,5 +1454,139 @@
         ]
       }
     }
+  },
+  "portfolioPage": {
+    "hero": {
+      "imageAlt": "Malper tenê destpêk in. Ez ji CRM û otomasyona leadan heta medyaya civakî, botên AI û pêvajoyên jîr ên xerîdaran pergalên dîjîtal ên girêdayî ava dikim.",
+      "eyebrow": "Hildesheim · Digital Growth Portfolio",
+      "title": "Çareseriyên dîjîtal ku",
+      "accent": "baldariyê vediguherînin mezinbûnê.",
+      "description": "Malper tenê destpêk in. Ez ji CRM û otomasyona leadan heta medyaya civakî, botên AI û pêvajoyên jîr ên xerîdaran pergalên dîjîtal ên girêdayî ava dikim.",
+      "primary": "10 projeyan bibîne",
+      "secondary": "Çareseriyê nîqaş bike",
+      "scroll": "↓",
+      "stats": {
+        "projects": "projeyên rastîn",
+        "areas": "warên çareseriyê",
+        "goal": "armanc: zêdetir xerîdar"
+      }
+    },
+    "industries": {
+      "aria": "Industries we want to support digitally",
+      "label": "Em ji bo van qadan çareseriyan ava dikin",
+      "note": "Qadên armancê yên nimûneyî ne îdiaya têkiliyên xerîdar ên heyî ne.",
+      "items": {
+        "handwerk": "Handwerk",
+        "practices": "Praxen",
+        "workshops": "Werkstätten",
+        "gastronomy": "Gastronomie",
+        "beauty": "Beauty",
+        "realEstate": "Immobilien",
+        "lawFirms": "Kanzlei",
+        "fitness": "Fitness",
+        "coaching": "Coaching",
+        "retail": "Xizmetên Herêmî"
+      }
+    },
+    "projects": {
+      "eyebrow": "Selected work / 2025—2026",
+      "title": "Tecrûbeya ku tê dîtin.",
+      "description": "Projeyên rastîn ên hilbijartî ji GitHubê bi malpera zindî, koda çavkaniyê û nirxa karsaziyê.",
+      "previewAlt": "Tecrûbeya ku tê dîtin.: {{title}}",
+      "impact": "Bandora karsaziyê",
+      "live": "Projeya zindî",
+      "source": "GitHub",
+      "github": "GitHub",
+      "items": {
+        "handwerk": {
+          "sector": "Projeya zindî",
+          "description": "Çareseriya dîjîtal ku ji bo senaryoyek karsaziya rastîn hatiye sêwirandin.",
+          "impact": "Rêwîtiya xerîdar hêsan dike û alîkariya tîmê dike ku bikêrtir bixebite."
+        },
+        "workshop": {
+          "sector": "Projeya zindî",
+          "description": "Çareseriya dîjîtal ku ji bo senaryoyek karsaziya rastîn hatiye sêwirandin.",
+          "impact": "Rêwîtiya xerîdar hêsan dike û alîkariya tîmê dike ku bikêrtir bixebite."
+        },
+        "beauty": {
+          "sector": "Projeya zindî",
+          "description": "Çareseriya dîjîtal ku ji bo senaryoyek karsaziya rastîn hatiye sêwirandin.",
+          "impact": "Rêwîtiya xerîdar hêsan dike û alîkariya tîmê dike ku bikêrtir bixebite."
+        },
+        "studio": {
+          "sector": "Projeya zindî",
+          "description": "Çareseriya dîjîtal ku ji bo senaryoyek karsaziya rastîn hatiye sêwirandin.",
+          "impact": "Rêwîtiya xerîdar hêsan dike û alîkariya tîmê dike ku bikêrtir bixebite."
+        },
+        "sabsus": {
+          "sector": "Projeya zindî",
+          "description": "Çareseriya dîjîtal ku ji bo senaryoyek karsaziya rastîn hatiye sêwirandin.",
+          "impact": "Rêwîtiya xerîdar hêsan dike û alîkariya tîmê dike ku bikêrtir bixebite."
+        },
+        "airtexno": {
+          "sector": "Projeya zindî",
+          "description": "Çareseriya dîjîtal ku ji bo senaryoyek karsaziya rastîn hatiye sêwirandin.",
+          "impact": "Rêwîtiya xerîdar hêsan dike û alîkariya tîmê dike ku bikêrtir bixebite."
+        },
+        "srm": {
+          "sector": "Projeya zindî",
+          "description": "Çareseriya dîjîtal ku ji bo senaryoyek karsaziya rastîn hatiye sêwirandin.",
+          "impact": "Rêwîtiya xerîdar hêsan dike û alîkariya tîmê dike ku bikêrtir bixebite."
+        },
+        "meterflow": {
+          "sector": "Projeya zindî",
+          "description": "Çareseriya dîjîtal ku ji bo senaryoyek karsaziya rastîn hatiye sêwirandin.",
+          "impact": "Rêwîtiya xerîdar hêsan dike û alîkariya tîmê dike ku bikêrtir bixebite."
+        },
+        "healthai": {
+          "sector": "Projeya zindî",
+          "description": "Çareseriya dîjîtal ku ji bo senaryoyek karsaziya rastîn hatiye sêwirandin.",
+          "impact": "Rêwîtiya xerîdar hêsan dike û alîkariya tîmê dike ku bikêrtir bixebite."
+        },
+        "photography": {
+          "sector": "Projeya zindî",
+          "description": "Çareseriya dîjîtal ku ji bo senaryoyek karsaziya rastîn hatiye sêwirandin.",
+          "impact": "Rêwîtiya xerîdar hêsan dike û alîkariya tîmê dike ku bikêrtir bixebite."
+        }
+      }
+    },
+    "capabilities": {
+      "eyebrow": "Beyond websites",
+      "title": "Pergalek dîjîtal li şûna amûrên cuda.",
+      "intro": "Her çareserî bi pêvajo, xerîdar û armanceke karsaziyê ya zelal dest pê dike.",
+      "items": {
+        "websites": {
+          "title": "Malperên veguherînê",
+          "description": "Em armanc, temaşevan, karûbar û naverokê bi hev re diyar dikin; paşê struktur, prototîp, pêşvebirina responsive, form, analîtîk, test û destpêkirinê çêdikin."
+        },
+        "crm": {
+          "title": "CRM û rêzikên leadan",
+          "description": "CRM têkilî, daxwaz, peywir, pêşniyar û şopandinê li yek cihî dicivîne da ku agahî û derfetên firotanê winda nebin."
+        },
+        "ai": {
+          "title": "Agentên AI û chatbot",
+          "description": "Pirsan bersiv didin, leadan dinirxînin, randevûyan saz dikin û li malper, WhatsApp û kanalên din piştgirî didin."
+        },
+        "social": {
+          "title": "Pergalên medyaya civakî",
+          "description": "Em profîl, plana naverokê, pejirandin û weşanê rêk dixin, kampanyayan bi landing pagean ve girêdidin û botan entegre dikin."
+        },
+        "automation": {
+          "title": "Otomasyona karsaziyê",
+          "description": "Em form, e-name, salname, CRM, fatûre û agahdariyan girêdidin da ku dane bixweber herikin û karê rojane kêm bibe."
+        },
+        "analytics": {
+          "title": "Analîtîk û mezinbûn",
+          "description": "Em event, dashboard û raporan saz dikin ku nîşan bidin kîjan kanal û pêvajo daxwaz, firotan û mezinbûnê diafirînin."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Ji Hildesheimê bo karsaziya we",
+      "title": "Di pargîdaniya we de çi divê bixweber bixebite?",
+      "description": "Em bi amûrekê ne, bi armanca we dest pê dikin: xerîdarên rast, karê rojane yê kêmtir û pergalek ku bi pargîdaniyê re mezin dibe.",
+      "button": "Şêwirmendiya yekem a belaş"
+    }
   }
 }
+

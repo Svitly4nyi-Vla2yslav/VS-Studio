@@ -1442,5 +1442,139 @@
         ]
       }
     }
+  },
+  "portfolioPage": {
+    "hero": {
+      "imageAlt": "Los sitios web son solo el comienzo. Creo sistemas digitales conectados: desde CRM y automatización de leads hasta redes sociales, bots de IA y procesos inteligentes de atención al cliente.",
+      "eyebrow": "Hildesheim · Digital Growth Portfolio",
+      "title": "Soluciones digitales que convierten",
+      "accent": "la atención en crecimiento.",
+      "description": "Los sitios web son solo el comienzo. Creo sistemas digitales conectados: desde CRM y automatización de leads hasta redes sociales, bots de IA y procesos inteligentes de atención al cliente.",
+      "primary": "Ver 10 proyectos",
+      "secondary": "Hablar de una solución",
+      "scroll": "↓",
+      "stats": {
+        "projects": "proyectos reales",
+        "areas": "áreas de solución",
+        "goal": "objetivo: más clientes"
+      }
+    },
+    "industries": {
+      "aria": "Industries we want to support digitally",
+      "label": "Creamos soluciones para estos sectores",
+      "note": "Sectores objetivo de ejemplo; no implica relaciones existentes con clientes.",
+      "items": {
+        "handwerk": "Handwerk",
+        "practices": "Praxen",
+        "workshops": "Werkstätten",
+        "gastronomy": "Gastronomie",
+        "beauty": "Beauty",
+        "realEstate": "Immobilien",
+        "lawFirms": "Kanzlei",
+        "fitness": "Fitness",
+        "coaching": "Coaching",
+        "retail": "Servicios locales"
+      }
+    },
+    "projects": {
+      "eyebrow": "Selected work / 2025—2026",
+      "title": "Experiencia que se puede ver.",
+      "description": "Proyectos reales seleccionados de mi GitHub, con web activa, código, público objetivo, tarea y valor empresarial concreto.",
+      "previewAlt": "Experiencia que se puede ver.: {{title}}",
+      "impact": "Impacto empresarial",
+      "live": "Proyecto activo",
+      "source": "GitHub",
+      "github": "GitHub",
+      "items": {
+        "handwerk": {
+          "sector": "Proyecto activo",
+          "description": "Solución digital diseñada y desarrollada para un escenario empresarial real.",
+          "impact": "Simplifica el recorrido del cliente y ayuda al equipo a trabajar con mayor eficiencia."
+        },
+        "workshop": {
+          "sector": "Proyecto activo",
+          "description": "Solución digital diseñada y desarrollada para un escenario empresarial real.",
+          "impact": "Simplifica el recorrido del cliente y ayuda al equipo a trabajar con mayor eficiencia."
+        },
+        "beauty": {
+          "sector": "Proyecto activo",
+          "description": "Solución digital diseñada y desarrollada para un escenario empresarial real.",
+          "impact": "Simplifica el recorrido del cliente y ayuda al equipo a trabajar con mayor eficiencia."
+        },
+        "studio": {
+          "sector": "Proyecto activo",
+          "description": "Solución digital diseñada y desarrollada para un escenario empresarial real.",
+          "impact": "Simplifica el recorrido del cliente y ayuda al equipo a trabajar con mayor eficiencia."
+        },
+        "sabsus": {
+          "sector": "Proyecto activo",
+          "description": "Solución digital diseñada y desarrollada para un escenario empresarial real.",
+          "impact": "Simplifica el recorrido del cliente y ayuda al equipo a trabajar con mayor eficiencia."
+        },
+        "airtexno": {
+          "sector": "Proyecto activo",
+          "description": "Solución digital diseñada y desarrollada para un escenario empresarial real.",
+          "impact": "Simplifica el recorrido del cliente y ayuda al equipo a trabajar con mayor eficiencia."
+        },
+        "srm": {
+          "sector": "Proyecto activo",
+          "description": "Solución digital diseñada y desarrollada para un escenario empresarial real.",
+          "impact": "Simplifica el recorrido del cliente y ayuda al equipo a trabajar con mayor eficiencia."
+        },
+        "meterflow": {
+          "sector": "Proyecto activo",
+          "description": "Solución digital diseñada y desarrollada para un escenario empresarial real.",
+          "impact": "Simplifica el recorrido del cliente y ayuda al equipo a trabajar con mayor eficiencia."
+        },
+        "healthai": {
+          "sector": "Proyecto activo",
+          "description": "Solución digital diseñada y desarrollada para un escenario empresarial real.",
+          "impact": "Simplifica el recorrido del cliente y ayuda al equipo a trabajar con mayor eficiencia."
+        },
+        "photography": {
+          "sector": "Proyecto activo",
+          "description": "Solución digital diseñada y desarrollada para un escenario empresarial real.",
+          "impact": "Simplifica el recorrido del cliente y ayuda al equipo a trabajar con mayor eficiencia."
+        }
+      }
+    },
+    "capabilities": {
+      "eyebrow": "Beyond websites",
+      "title": "Un sistema digital en lugar de herramientas aisladas.",
+      "intro": "Cada solución comienza con tus procesos, tus clientes y un objetivo empresarial claro.",
+      "items": {
+        "websites": {
+          "title": "Webs de conversión",
+          "description": "Definimos objetivos, público, servicios, contenido y consultas; después creamos estructura, prototipo, desarrollo responsive, formularios, analítica, pruebas y lanzamiento."
+        },
+        "crm": {
+          "title": "CRM y embudos de leads",
+          "description": "El CRM reúne contactos, consultas, tareas, ofertas y seguimientos en un solo lugar para no perder información ni oportunidades."
+        },
+        "ai": {
+          "title": "Agentes de IA y chatbots",
+          "description": "Responden preguntas, califican leads, reservan citas y ayudan en la web, WhatsApp y otros canales con transferencia clara a una persona."
+        },
+        "social": {
+          "title": "Sistemas de redes sociales",
+          "description": "Organizamos perfiles, planificación, aprobación y publicación; conectamos campañas con landing pages e integramos bots para preguntas frecuentes."
+        },
+        "automation": {
+          "title": "Automatización empresarial",
+          "description": "Conectamos formularios, correo, calendarios, CRM, facturas y avisos para que los datos fluyan automáticamente y se reduzca el trabajo rutinario."
+        },
+        "analytics": {
+          "title": "Analítica y crecimiento",
+          "description": "Configuramos eventos, paneles e informes que muestran qué canales y procesos generan consultas, ventas y crecimiento."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "De Hildesheim a tu empresa",
+      "title": "¿Qué debería funcionar automáticamente en tu empresa?",
+      "description": "Empezamos por tu objetivo, no por una herramienta: mejores clientes, menos rutina y un sistema que crece con la empresa.",
+      "button": "Consulta inicial gratuita"
+    }
   }
 }
+

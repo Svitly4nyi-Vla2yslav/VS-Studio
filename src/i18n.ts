@@ -1,11 +1,11 @@
-﻿import i18n from "i18next";
+import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import HttpApi from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { dankeTranslations } from "./dankeTranslations";
 
 // Ця версія додається до URL файлів перекладів, щоб браузер не тримав старі i18n-тексти в кеші.
-const TRANSLATION_ASSET_VERSION = "20261018-danke-page";
+const TRANSLATION_ASSET_VERSION = "20261027-portfolio-i18n";
 
 export const SUPPORTED_LANGUAGES = [
   "de",
@@ -58,4 +58,5 @@ export const i18nReady = i18n
   });
 
 export default i18n;
+
 
