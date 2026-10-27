@@ -1,4 +1,4 @@
-// Import the functions you need from the SDKs you need
+// Публічні параметри Firebase надходять із Vite env і не містять серверних секретів.
 import { initializeApp } from "firebase/app";
 import { getAnalytics, isSupported } from "firebase/analytics";
 
@@ -12,7 +12,13 @@ const firebaseConfig = {
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
+/** Ініціалізує єдиний Firebase App для браузерних сервісів цього застосунку. */
 export const app = initializeApp(firebaseConfig);
 
+/**
+ * Ліниво повертає Analytics лише у підтримуваному браузері.
+ * Під час SSR або в несумісному середовищі Promise завершується значенням null,
+ * тому імпорт модуля не звертається до browser API без window.
+ */
 export const analyticsPromise =
   typeof window === "undefined" ? Promise.resolve(null) : isSupported().then((supported) => (supported ? getAnalytics(app) : null));
