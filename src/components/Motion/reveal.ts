@@ -1,6 +1,7 @@
 import type { Variants } from 'framer-motion';
 import { easeOut } from 'framer-motion';
 
+/** Поява знизу: переводить opacity до 1 і y до 0 за 0,6 секунди. */
 export const fadeInUp: Variants = {
   hidden: {
     opacity: 0,
@@ -16,6 +17,7 @@ export const fadeInUp: Variants = {
   },
 };
 
+/** Поява зліва: прибирає відступ -40 px зі спільним плавним easeOut. */
 export const fadeInLeft: Variants = {
   hidden: {
     opacity: 0,
@@ -31,6 +33,7 @@ export const fadeInLeft: Variants = {
   },
 };
 
+/** Поява справа: симетрично повертає елемент з x=40 до початкової позиції. */
 export const fadeInRight: Variants = {
   hidden: {
     opacity: 0,
@@ -46,6 +49,7 @@ export const fadeInRight: Variants = {
   },
 };
 
+/** М'яко збільшує елемент від 95% до повного масштабу разом із проявленням. */
 export const scaleIn: Variants = {
   hidden: {
     opacity: 0,
@@ -61,6 +65,7 @@ export const scaleIn: Variants = {
   },
 };
 
+/** Контейнер не анімує себе, а запускає дочірні variants з інтервалом 0,1 секунди. */
 export const staggerContainer: Variants = {
   hidden: {},
   visible: {
