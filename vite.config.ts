@@ -7,7 +7,8 @@ export default defineConfig({
   resolve: {
     dedupe: ['react', 'react-dom'],
   },
-  base: './',
+  // Route snapshots such as /portfolio/index.html must load bundles from the site root.
+  base: '/',
   build: {
     rollupOptions: {
       output: {
