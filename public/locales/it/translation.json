@@ -1442,5 +1442,139 @@
         ]
       }
     }
+  },
+  "portfolioPage": {
+    "hero": {
+      "imageAlt": "I siti web sono solo l’inizio. Creo sistemi digitali connessi: dal CRM e automazione dei lead ai social media, bot AI e processi intelligenti per i clienti.",
+      "eyebrow": "Hildesheim · Digital Growth Portfolio",
+      "title": "Soluzioni digitali che trasformano",
+      "accent": "l’attenzione in crescita.",
+      "description": "I siti web sono solo l’inizio. Creo sistemi digitali connessi: dal CRM e automazione dei lead ai social media, bot AI e processi intelligenti per i clienti.",
+      "primary": "Scopri 10 progetti",
+      "secondary": "Parliamo della soluzione",
+      "scroll": "↓",
+      "stats": {
+        "projects": "progetti reali",
+        "areas": "aree di soluzione",
+        "goal": "obiettivo: più clienti"
+      }
+    },
+    "industries": {
+      "aria": "Industries we want to support digitally",
+      "label": "Creiamo soluzioni per questi settori",
+      "note": "Settori target di esempio, senza dichiarare rapporti commerciali esistenti.",
+      "items": {
+        "handwerk": "Handwerk",
+        "practices": "Praxen",
+        "workshops": "Werkstätten",
+        "gastronomy": "Gastronomie",
+        "beauty": "Beauty",
+        "realEstate": "Immobilien",
+        "lawFirms": "Kanzlei",
+        "fitness": "Fitness",
+        "coaching": "Coaching",
+        "retail": "Servizi locali"
+      }
+    },
+    "projects": {
+      "eyebrow": "Selected work / 2025—2026",
+      "title": "Esperienza resa visibile.",
+      "description": "Progetti reali selezionati dal mio GitHub, con sito live, codice, pubblico, attività e valore concreto per l’azienda.",
+      "previewAlt": "Esperienza resa visibile.: {{title}}",
+      "impact": "Impatto aziendale",
+      "live": "Progetto live",
+      "source": "GitHub",
+      "github": "GitHub",
+      "items": {
+        "handwerk": {
+          "sector": "Progetto live",
+          "description": "Soluzione digitale progettata e sviluppata per uno scenario aziendale reale.",
+          "impact": "Semplifica il percorso del cliente e aiuta il team a lavorare meglio."
+        },
+        "workshop": {
+          "sector": "Progetto live",
+          "description": "Soluzione digitale progettata e sviluppata per uno scenario aziendale reale.",
+          "impact": "Semplifica il percorso del cliente e aiuta il team a lavorare meglio."
+        },
+        "beauty": {
+          "sector": "Progetto live",
+          "description": "Soluzione digitale progettata e sviluppata per uno scenario aziendale reale.",
+          "impact": "Semplifica il percorso del cliente e aiuta il team a lavorare meglio."
+        },
+        "studio": {
+          "sector": "Progetto live",
+          "description": "Soluzione digitale progettata e sviluppata per uno scenario aziendale reale.",
+          "impact": "Semplifica il percorso del cliente e aiuta il team a lavorare meglio."
+        },
+        "sabsus": {
+          "sector": "Progetto live",
+          "description": "Soluzione digitale progettata e sviluppata per uno scenario aziendale reale.",
+          "impact": "Semplifica il percorso del cliente e aiuta il team a lavorare meglio."
+        },
+        "airtexno": {
+          "sector": "Progetto live",
+          "description": "Soluzione digitale progettata e sviluppata per uno scenario aziendale reale.",
+          "impact": "Semplifica il percorso del cliente e aiuta il team a lavorare meglio."
+        },
+        "srm": {
+          "sector": "Progetto live",
+          "description": "Soluzione digitale progettata e sviluppata per uno scenario aziendale reale.",
+          "impact": "Semplifica il percorso del cliente e aiuta il team a lavorare meglio."
+        },
+        "meterflow": {
+          "sector": "Progetto live",
+          "description": "Soluzione digitale progettata e sviluppata per uno scenario aziendale reale.",
+          "impact": "Semplifica il percorso del cliente e aiuta il team a lavorare meglio."
+        },
+        "healthai": {
+          "sector": "Progetto live",
+          "description": "Soluzione digitale progettata e sviluppata per uno scenario aziendale reale.",
+          "impact": "Semplifica il percorso del cliente e aiuta il team a lavorare meglio."
+        },
+        "photography": {
+          "sector": "Progetto live",
+          "description": "Soluzione digitale progettata e sviluppata per uno scenario aziendale reale.",
+          "impact": "Semplifica il percorso del cliente e aiuta il team a lavorare meglio."
+        }
+      }
+    },
+    "capabilities": {
+      "eyebrow": "Beyond websites",
+      "title": "Un solo sistema digitale invece di strumenti isolati.",
+      "intro": "Ogni soluzione parte dai processi, dai clienti e da un obiettivo aziendale chiaro.",
+      "items": {
+        "websites": {
+          "title": "Siti orientati alla conversione",
+          "description": "Definiamo insieme obiettivi, pubblico, servizi, contenuti e richieste; poi realizziamo struttura, prototipo, sviluppo responsive, moduli, analytics, test e lancio."
+        },
+        "crm": {
+          "title": "CRM e pipeline di lead",
+          "description": "Il CRM raccoglie contatti, richieste, attività, offerte e follow-up in un unico luogo, evitando di perdere informazioni e opportunità."
+        },
+        "ai": {
+          "title": "Agenti AI e chatbot",
+          "description": "Rispondono alle domande, qualificano i lead, fissano appuntamenti e assistono i clienti sul sito, WhatsApp e altri canali con passaggio a una persona."
+        },
+        "social": {
+          "title": "Sistemi per social media",
+          "description": "Organizziamo profili, piano editoriale, approvazione e pubblicazione, colleghiamo campagne e landing page e integriamo bot per le domande frequenti."
+        },
+        "automation": {
+          "title": "Automazione aziendale",
+          "description": "Colleghiamo moduli, email, calendari, CRM, fatture e notifiche affinché i dati circolino automaticamente e il lavoro ripetitivo diminuisca."
+        },
+        "analytics": {
+          "title": "Analytics e crescita",
+          "description": "Configuriamo eventi, dashboard e report che mostrano quali canali e processi generano richieste, vendite e crescita."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Da Hildesheim alla tua azienda",
+      "title": "Cosa dovrebbe funzionare automaticamente nella tua azienda?",
+      "description": "Partiamo dal tuo obiettivo, non dallo strumento: clienti più adatti, meno routine e un sistema che cresce con l’azienda.",
+      "button": "Prima consulenza gratuita"
+    }
   }
 }
+
