@@ -1,1 +1,0 @@
-import{u as r,j as e,P as s,a as t,H as a,B as o,b as i}from"./d_aqZy3T.js";const h=()=>{const{t:n}=r();return e.jsx(s,{children:e.jsx(t,{children:e.jsxs(a,{children:[e.jsx("h1",{children:n("niche.handwerker.h1")}),e.jsx("p",{children:n("niche.handwerker.p")}),e.jsx(o,{children:e.jsx(i,{to:"/kontakt",children:n("common.projectRequest")})})]})})})};export{h as default};
