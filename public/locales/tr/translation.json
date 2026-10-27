@@ -1461,5 +1461,139 @@
         ]
       }
     }
+  },
+  "portfolioPage": {
+    "hero": {
+      "imageAlt": "Web siteleri sadece başlangıçtır. CRM ve müşteri adayı otomasyonundan sosyal medyaya, yapay zekâ botlarına ve akıllı müşteri süreçlerine kadar bağlantılı dijital sistemler kuruyorum.",
+      "eyebrow": "Hildesheim · Digital Growth Portfolio",
+      "title": "Dikkati",
+      "accent": "büyümeye dönüştüren dijital çözümler.",
+      "description": "Web siteleri sadece başlangıçtır. CRM ve müşteri adayı otomasyonundan sosyal medyaya, yapay zekâ botlarına ve akıllı müşteri süreçlerine kadar bağlantılı dijital sistemler kuruyorum.",
+      "primary": "10 projeyi incele",
+      "secondary": "Çözümü konuşalım",
+      "scroll": "↓",
+      "stats": {
+        "projects": "gerçek proje",
+        "areas": "çözüm alanı",
+        "goal": "hedef: daha fazla müşteri"
+      }
+    },
+    "industries": {
+      "aria": "Industries we want to support digitally",
+      "label": "Bu sektörler için çözümler geliştiriyoruz",
+      "note": "Örnek hedef sektörlerdir; mevcut müşteri ilişkisi iddiası değildir.",
+      "items": {
+        "handwerk": "Zanaat",
+        "practices": "Klinikler",
+        "workshops": "Atölyeler",
+        "gastronomy": "Gastronomi",
+        "beauty": "Güzellik",
+        "realEstate": "Gayrimenkul",
+        "lawFirms": "Hukuk Ofisi",
+        "fitness": "Fitness",
+        "coaching": "Koçluk",
+        "retail": "Yerel hizmetler"
+      }
+    },
+    "projects": {
+      "eyebrow": "Selected work / 2025—2026",
+      "title": "Görünür hâle gelen deneyim.",
+      "description": "GitHub hesabımdaki gerçek projeler: canlı site, kaynak kodu, hedef kitle, görev ve somut iş değeriyle.",
+      "previewAlt": "Görünür hâle gelen deneyim.: {{title}}",
+      "impact": "İşletme etkisi",
+      "live": "Canlı proje",
+      "source": "GitHub",
+      "github": "GitHub",
+      "items": {
+        "handwerk": {
+          "sector": "Canlı proje",
+          "description": "Gerçek bir işletme senaryosu için tasarlanmış ve geliştirilmiş dijital çözüm.",
+          "impact": "Müşteri yolculuğunu sadeleştirir ve ekibin daha verimli çalışmasına yardımcı olur."
+        },
+        "workshop": {
+          "sector": "Canlı proje",
+          "description": "Gerçek bir işletme senaryosu için tasarlanmış ve geliştirilmiş dijital çözüm.",
+          "impact": "Müşteri yolculuğunu sadeleştirir ve ekibin daha verimli çalışmasına yardımcı olur."
+        },
+        "beauty": {
+          "sector": "Canlı proje",
+          "description": "Gerçek bir işletme senaryosu için tasarlanmış ve geliştirilmiş dijital çözüm.",
+          "impact": "Müşteri yolculuğunu sadeleştirir ve ekibin daha verimli çalışmasına yardımcı olur."
+        },
+        "studio": {
+          "sector": "Canlı proje",
+          "description": "Gerçek bir işletme senaryosu için tasarlanmış ve geliştirilmiş dijital çözüm.",
+          "impact": "Müşteri yolculuğunu sadeleştirir ve ekibin daha verimli çalışmasına yardımcı olur."
+        },
+        "sabsus": {
+          "sector": "Canlı proje",
+          "description": "Gerçek bir işletme senaryosu için tasarlanmış ve geliştirilmiş dijital çözüm.",
+          "impact": "Müşteri yolculuğunu sadeleştirir ve ekibin daha verimli çalışmasına yardımcı olur."
+        },
+        "airtexno": {
+          "sector": "Canlı proje",
+          "description": "Gerçek bir işletme senaryosu için tasarlanmış ve geliştirilmiş dijital çözüm.",
+          "impact": "Müşteri yolculuğunu sadeleştirir ve ekibin daha verimli çalışmasına yardımcı olur."
+        },
+        "srm": {
+          "sector": "Canlı proje",
+          "description": "Gerçek bir işletme senaryosu için tasarlanmış ve geliştirilmiş dijital çözüm.",
+          "impact": "Müşteri yolculuğunu sadeleştirir ve ekibin daha verimli çalışmasına yardımcı olur."
+        },
+        "meterflow": {
+          "sector": "Canlı proje",
+          "description": "Gerçek bir işletme senaryosu için tasarlanmış ve geliştirilmiş dijital çözüm.",
+          "impact": "Müşteri yolculuğunu sadeleştirir ve ekibin daha verimli çalışmasına yardımcı olur."
+        },
+        "healthai": {
+          "sector": "Canlı proje",
+          "description": "Gerçek bir işletme senaryosu için tasarlanmış ve geliştirilmiş dijital çözüm.",
+          "impact": "Müşteri yolculuğunu sadeleştirir ve ekibin daha verimli çalışmasına yardımcı olur."
+        },
+        "photography": {
+          "sector": "Canlı proje",
+          "description": "Gerçek bir işletme senaryosu için tasarlanmış ve geliştirilmiş dijital çözüm.",
+          "impact": "Müşteri yolculuğunu sadeleştirir ve ekibin daha verimli çalışmasına yardımcı olur."
+        }
+      }
+    },
+    "capabilities": {
+      "eyebrow": "Beyond websites",
+      "title": "Ayrı araçlar yerine tek dijital sistem.",
+      "intro": "Her çözüm süreçleriniz, müşterileriniz ve net bir iş hedefiyle başlar.",
+      "items": {
+        "websites": {
+          "title": "Dönüşüm odaklı web siteleri",
+          "description": "Hedefleri, kitleyi, hizmetleri, içeriği ve beklenen talepleri birlikte netleştirir; yapı, prototip, duyarlı geliştirme, formlar, analiz, test ve yayına alma adımlarını yürütürüz."
+        },
+        "crm": {
+          "title": "CRM ve müşteri adayı hatları",
+          "description": "CRM; kişileri, talepleri, görevleri, teklifleri ve takipleri tek yerde toplar; bilgi ve satış fırsatlarının kaybolmasını önler."
+        },
+        "ai": {
+          "title": "Yapay zekâ ajanları ve sohbet botları",
+          "description": "Soruları yanıtlar, müşteri adaylarını değerlendirir, randevu oluşturur ve web sitesi, WhatsApp veya diğer kanallarda insana aktarım yaparak destek verir."
+        },
+        "social": {
+          "title": "Sosyal medya sistemleri",
+          "description": "Profilleri, içerik planını, onayı ve yayını düzenler; kampanyaları açılış sayfalarına bağlar ve sık sorular için botlar entegre ederiz."
+        },
+        "automation": {
+          "title": "İş otomasyonu",
+          "description": "Formları, e-postayı, takvimi, CRM’yi, faturaları ve bildirimleri bağlayarak verinin otomatik akmasını ve rutin işlerin azalmasını sağlarız."
+        },
+        "analytics": {
+          "title": "Analiz ve büyüme",
+          "description": "Hangi kanal ve süreçlerin talep, satış ve büyüme getirdiğini gösteren etkinlikler, panolar ve raporlar kurarız."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Hildesheim’dan işletmenize",
+      "title": "Şirketinizde gelecekte neler otomatik çalışmalı?",
+      "description": "Bir araçla değil hedefinizle başlarız: daha uygun müşteriler, daha az rutin ve şirketinizle büyüyen bir sistem.",
+      "button": "Ücretsiz ilk görüşme"
+    }
   }
 }
+
