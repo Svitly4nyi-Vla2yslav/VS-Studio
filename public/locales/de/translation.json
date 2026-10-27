@@ -1900,5 +1900,139 @@
         ]
       }
     }
+  },
+  "portfolioPage": {
+    "hero": {
+      "imageAlt": "Websites sind nur der Anfang. Ich entwickle vernetzte digitale Systeme für lokale Unternehmen — von CRM und Lead-Automation bis Social Media, KI-Bots und intelligenten Kundenprozessen.",
+      "eyebrow": "Hildesheim · Digital Growth Portfolio",
+      "title": "Digitale Lösungen, die",
+      "accent": "Aufmerksamkeit in Wachstum verwandeln.",
+      "description": "Websites sind nur der Anfang. Ich entwickle vernetzte digitale Systeme für lokale Unternehmen — von CRM und Lead-Automation bis Social Media, KI-Bots und intelligenten Kundenprozessen.",
+      "primary": "10 Projekte entdecken",
+      "secondary": "Lösung besprechen",
+      "scroll": "↓",
+      "stats": {
+        "projects": "Echte Projekte",
+        "areas": "Lösungsbereiche",
+        "goal": "Ziel: mehr Kunden"
+      }
+    },
+    "industries": {
+      "aria": "Industries we want to support digitally",
+      "label": "Für diese Branchen entwickeln wir",
+      "note": "Beispielhafte Zielbranchen — keine Darstellung bestehender Kundenbeziehungen.",
+      "items": {
+        "handwerk": "Handwerk",
+        "practices": "Praxen",
+        "workshops": "Werkstätten",
+        "gastronomy": "Gastronomie",
+        "beauty": "Beauty",
+        "realEstate": "Immobilien",
+        "lawFirms": "Kanzlei",
+        "fitness": "Fitness",
+        "coaching": "Coaching",
+        "retail": "Lokale Services"
+      }
+    },
+    "projects": {
+      "eyebrow": "Selected work / 2025—2026",
+      "title": "Erfahrung, sichtbar gemacht.",
+      "description": "Ausgewählte reale Projekte aus meinem GitHub — mit Live-Seite, Quellcode, Zielgruppe, Aufgabe und konkretem Geschäftsnutzen.",
+      "previewAlt": "Erfahrung, sichtbar gemacht.: {{title}}",
+      "impact": "Geschäftlicher Nutzen",
+      "live": "Live-Projekt",
+      "source": "GitHub",
+      "github": "GitHub",
+      "items": {
+        "handwerk": {
+          "sector": "Live-Projekt",
+          "description": "Digitale Lösung, gestaltet und entwickelt für einen realen Unternehmensfall.",
+          "impact": "Vereinfacht die Customer Journey und hilft dem Team, effizienter zu arbeiten."
+        },
+        "workshop": {
+          "sector": "Live-Projekt",
+          "description": "Digitale Lösung, gestaltet und entwickelt für einen realen Unternehmensfall.",
+          "impact": "Vereinfacht die Customer Journey und hilft dem Team, effizienter zu arbeiten."
+        },
+        "beauty": {
+          "sector": "Live-Projekt",
+          "description": "Digitale Lösung, gestaltet und entwickelt für einen realen Unternehmensfall.",
+          "impact": "Vereinfacht die Customer Journey und hilft dem Team, effizienter zu arbeiten."
+        },
+        "studio": {
+          "sector": "Live-Projekt",
+          "description": "Digitale Lösung, gestaltet und entwickelt für einen realen Unternehmensfall.",
+          "impact": "Vereinfacht die Customer Journey und hilft dem Team, effizienter zu arbeiten."
+        },
+        "sabsus": {
+          "sector": "Live-Projekt",
+          "description": "Digitale Lösung, gestaltet und entwickelt für einen realen Unternehmensfall.",
+          "impact": "Vereinfacht die Customer Journey und hilft dem Team, effizienter zu arbeiten."
+        },
+        "airtexno": {
+          "sector": "Live-Projekt",
+          "description": "Digitale Lösung, gestaltet und entwickelt für einen realen Unternehmensfall.",
+          "impact": "Vereinfacht die Customer Journey und hilft dem Team, effizienter zu arbeiten."
+        },
+        "srm": {
+          "sector": "Live-Projekt",
+          "description": "Digitale Lösung, gestaltet und entwickelt für einen realen Unternehmensfall.",
+          "impact": "Vereinfacht die Customer Journey und hilft dem Team, effizienter zu arbeiten."
+        },
+        "meterflow": {
+          "sector": "Live-Projekt",
+          "description": "Digitale Lösung, gestaltet und entwickelt für einen realen Unternehmensfall.",
+          "impact": "Vereinfacht die Customer Journey und hilft dem Team, effizienter zu arbeiten."
+        },
+        "healthai": {
+          "sector": "Live-Projekt",
+          "description": "Digitale Lösung, gestaltet und entwickelt für einen realen Unternehmensfall.",
+          "impact": "Vereinfacht die Customer Journey und hilft dem Team, effizienter zu arbeiten."
+        },
+        "photography": {
+          "sector": "Live-Projekt",
+          "description": "Digitale Lösung, gestaltet und entwickelt für einen realen Unternehmensfall.",
+          "impact": "Vereinfacht die Customer Journey und hilft dem Team, effizienter zu arbeiten."
+        }
+      }
+    },
+    "capabilities": {
+      "eyebrow": "Beyond websites",
+      "title": "Ein digitales System statt einzelner Tools.",
+      "intro": "Jede Lösung beginnt mit Ihrem Prozess, Ihren Kunden und einem klaren Geschäftsziel.",
+      "items": {
+        "websites": {
+          "title": "Conversion-Websites",
+          "description": "Wir klären gemeinsam Ziele, Zielgruppen, Leistungen, Inhalte und gewünschte Anfragen. Danach folgen Struktur, Prototyp, responsive Entwicklung, Formulare, Analytics, Tests und Launch."
+        },
+        "crm": {
+          "title": "CRM & Lead-Pipelines",
+          "description": "Ein CRM sammelt Kontakte, Anfragen, Aufgaben, Angebote und Follow-ups an einem Ort und verhindert, dass Informationen oder Verkaufschancen verloren gehen."
+        },
+        "ai": {
+          "title": "KI-Agenten & Chatbots",
+          "description": "KI-Agenten beantworten Fragen, qualifizieren Leads, vereinbaren Termine und unterstützen Kunden auf Website, WhatsApp oder anderen Kanälen — mit Übergabe an einen Menschen."
+        },
+        "social": {
+          "title": "Social-Media-Systeme",
+          "description": "Wir strukturieren Profile, Content-Planung, Freigabe und Veröffentlichung, verbinden Kampagnen mit Landingpages und integrieren Bots für wiederkehrende Kundenfragen."
+        },
+        "automation": {
+          "title": "Business-Automation",
+          "description": "Wir verbinden Formulare, E-Mail, Kalender, CRM, Rechnungen und interne Benachrichtigungen, damit Daten automatisch fließen und Routinearbeit sinkt."
+        },
+        "analytics": {
+          "title": "Analytics & Wachstum",
+          "description": "Wir richten Events, Dashboards und Reports ein, die zeigen, welche Kanäle und Prozesse Anfragen, Umsatz und Wachstum erzeugen."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Von Hildesheim zu Ihrem Unternehmen",
+      "title": "Was soll in Ihrem Unternehmen künftig automatisch funktionieren?",
+      "description": "Wir starten nicht mit einem Tool, sondern mit Ihrem Ziel: mehr passende Kunden, weniger Routine und ein System, das mitwächst.",
+      "button": "Kostenloses Erstgespräch"
+    }
   }
 }
+
