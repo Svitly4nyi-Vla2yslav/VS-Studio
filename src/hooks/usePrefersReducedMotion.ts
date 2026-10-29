@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react';
 
 /**
- * Повертає поточне значення медіа-запиту `prefers-reduced-motion: reduce`.
- * Після монтування підписується на системні зміни, оновлює React-стан
- * і обов'язково прибирає слухач під час unmount.
+ * Не приймає аргументів і повертає boolean із поточного media query 'prefers-reduced-motion: reduce'.
+ * Після монтування синхронізує початкове значення, підписується на системні зміни
+ * та прибирає той самий слухач під час unmount; до виконання ефекту повертає false.
  */
 export function usePrefersReducedMotion() {
   const [reduced, setReduced] = useState(false);
 
   useEffect(() => {
     const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
-    // Перечитує matches із того самого MediaQueryList після системної зміни.
+    // Не приймає дані події: перечитує актуальний matches із того самого MediaQueryList.
     const onChange = () => setReduced(mq.matches);
     setReduced(mq.matches);
     mq.addEventListener?.('change', onChange);
