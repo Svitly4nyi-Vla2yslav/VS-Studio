@@ -11,6 +11,12 @@ type TerminalTypeProps = {
   minIntervalMs?: number;
 };
 
+/**
+ * Поступово відкриває переданий текст із курсором термінала.
+ * Швидкість визначається явним typeSpeedMs або durationMs, але не може бути меншою за minIntervalMs.
+ * Reduced motion і вже завершена sessionStorage-анімація одразу показують повний текст;
+ * інтервал очищається після завершення, зміни параметрів або демонтажу компонента.
+ */
 const TerminalType: React.FC<TerminalTypeProps> = ({
   text,
   durationMs = 2400,
@@ -24,6 +30,7 @@ const TerminalType: React.FC<TerminalTypeProps> = ({
   const [index, setIndex] = useState(0);
   const [completed, setCompleted] = useState(false);
 
+  // Обчислює стабільний інтервал між символами, захищаючись від порожнього тексту та надто частих оновлень.
   const intervalMs = useMemo(() => {
     if (typeSpeedMs && typeSpeedMs > 0) {
       return Math.max(minIntervalMs, typeSpeedMs);
@@ -33,11 +40,13 @@ const TerminalType: React.FC<TerminalTypeProps> = ({
     return Math.max(minIntervalMs, Math.floor(durationMs / len));
   }, [durationMs, minIntervalMs, text.length, typeSpeedMs]);
 
+  // Заміна text починає візуалізацію нового рядка з першого символу.
   useEffect(() => {
     setIndex(0);
     setCompleted(false);
   }, [text]);
 
+  // Керує єдиним таймером друку та синхронізує ознаку завершення в межах поточної вкладки.
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
