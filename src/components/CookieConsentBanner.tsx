@@ -10,6 +10,11 @@ type ConsentState = {
 
 const KEY = 'cookie_consent_v2';
 
+/**
+ * Відновлює згоду з `localStorage`, показує банер або детальні налаштування та зберігає
+ * обов’язкову, статистичну й маркетингову категорії. Після запису надсилає глобальну подію
+ * `cookie-consent-changed`; подія `open-cookie-settings` повторно відкриває діалог із збереженим вибором.
+ */
 const CookieConsentBanner: React.FC = () => {
   const { t } = useTranslation();
   const [isLoaded, setIsLoaded] = useState(false);
@@ -26,7 +31,7 @@ const CookieConsentBanner: React.FC = () => {
         setStatistics(Boolean(parsed.statistics));
         setMarketing(Boolean(parsed.marketing));
       } catch {
-        // ignore malformed localStorage
+        // Пошкоджений запис не застосовується; банер залишається доступним для нового вибору.
       }
     }
     setIsOpen(!saved);
@@ -42,7 +47,7 @@ const CookieConsentBanner: React.FC = () => {
           setStatistics(Boolean(parsed.statistics));
           setMarketing(Boolean(parsed.marketing));
         } catch {
-          // ignore malformed localStorage
+          // Пошкоджений запис не змінює поточні перемикачі налаштувань.
         }
       }
       setIsOpen(true);
@@ -58,6 +63,7 @@ const CookieConsentBanner: React.FC = () => {
     [statistics, marketing]
   );
 
+  /** Зберігає повний стан згоди, сповіщає підписників і закриває банер разом із налаштуваннями. */
   const save = (state: ConsentState) => {
     window.localStorage.setItem(KEY, JSON.stringify(state));
     window.dispatchEvent(new CustomEvent('cookie-consent-changed', { detail: state }));
