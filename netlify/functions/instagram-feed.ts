@@ -12,6 +12,8 @@ interface InstagramMedia {
   thumbnail_url?: string;
   timestamp?: string;
   username?: string;
+  like_count?: number;
+  comments_count?: number;
 }
 
 interface InstagramCollection {
@@ -80,9 +82,9 @@ export const handler = async (event: HandlerEvent) => {
   const postsUrl = new URL(`${baseUrl}/${userId}/media`);
   postsUrl.searchParams.set(
     'fields',
-    'id,caption,media_type,media_url,permalink,thumbnail_url,timestamp,username'
+    'id,caption,media_type,media_url,permalink,thumbnail_url,timestamp,username,like_count,comments_count'
   );
-  postsUrl.searchParams.set('limit', '6');
+  postsUrl.searchParams.set('limit', '100');
   if (after) postsUrl.searchParams.set('after', after);
 
   const storiesUrl = new URL(`${baseUrl}/${userId}/stories`);
@@ -120,3 +122,4 @@ export const handler = async (event: HandlerEvent) => {
     return respond(502, { ok: false, configured: true, posts: [], stories: [] });
   }
 };
+

@@ -1,7 +1,16 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { FaArrowDown, FaInstagram, FaPlay, FaSyncAlt } from 'react-icons/fa';
+import {
+  FaArrowDown,
+  FaEllipsisH,
+  FaExternalLinkAlt,
+  FaHeart,
+  FaImages,
+  FaInstagram,
+  FaPlay,
+  FaRegComment,
+} from 'react-icons/fa';
 import { fadeInUp, scaleIn, staggerContainer } from '../../../components/Motion/reveal';
 import { InstagramFeedSectionScope } from './styles/InstagramFeedSection.styles';
 
@@ -14,6 +23,8 @@ interface InstagramMedia {
   thumbnail_url?: string;
   timestamp?: string;
   username?: string;
+  like_count?: number;
+  comments_count?: number;
 }
 
 interface InstagramFeedResponse {
@@ -28,13 +39,13 @@ interface InstagramFeedResponse {
 const INSTAGRAM_FEED_ENDPOINT = '/.netlify/functions/instagram-feed';
 
 const INSTAGRAM_PROFILE_URL = 'https://www.instagram.com/vs.studio.anfrage/';
+const INITIAL_POST_COUNT = 6;
 
 const InstagramFeedSection: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [feed, setFeed] = useState<InstagramFeedResponse | null>(null);
   const [loading, setLoading] = useState(true);
-  const [loadingMore, setLoadingMore] = useState(false);
-  const [loadMoreError, setLoadMoreError] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(INITIAL_POST_COUNT);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -58,37 +69,13 @@ const InstagramFeedSection: React.FC = () => {
   const stories = feed?.stories.filter(story => story.media_url || story.thumbnail_url) ?? [];
   const username = feed?.profile?.username ?? 'vs.studio.anfrage';
 
-  const loadMore = async () => {
-    if (!feed?.nextCursor || loadingMore) return;
-
-    setLoadingMore(true);
-    setLoadMoreError(false);
-
-    try {
-      const response = await fetch(
-        `${INSTAGRAM_FEED_ENDPOINT}?after=${encodeURIComponent(feed.nextCursor)}`,
-      );
-      if (!response.ok) throw new Error(`Instagram feed returned ${response.status}`);
-      const nextPage = (await response.json()) as InstagramFeedResponse;
-
-      setFeed(current => {
-        if (!current) return nextPage;
-        const knownIds = new Set(current.posts.map(post => post.id));
-        const newPosts = nextPage.posts.filter(post => !knownIds.has(post.id));
-
-        return {
-          ...current,
-          posts: [...current.posts, ...newPosts],
-          nextCursor: nextPage.nextCursor ?? null,
-        };
-      });
-    } catch (error) {
-      console.warn('More Instagram posts could not be loaded.', error);
-      setLoadMoreError(true);
-    } finally {
-      setLoadingMore(false);
-    }
-  };
+  const visiblePosts = posts.slice(0, visibleCount);
+  const hasMorePosts = visibleCount < posts.length;
+  const formatDate = (timestamp?: string) => timestamp
+    ? new Intl.DateTimeFormat(i18n.resolvedLanguage || i18n.language, {
+      day: 'numeric', month: 'long', year: 'numeric',
+    }).format(new Date(timestamp))
+    : '';
 
   return (
     <InstagramFeedSectionScope>
@@ -154,29 +141,57 @@ const InstagramFeedSection: React.FC = () => {
             </div>
           )}
 
+          {!loading && posts.length > 0 && (
+            <div className='instagram-profile-summary'>
+              <span className='profile-avatar-ring'>
+                {feed?.profile?.profile_picture_url
+                  ? <img src={feed.profile.profile_picture_url} alt='' />
+                  : <FaInstagram aria-hidden='true' />}
+              </span>
+              <div>
+                <strong>@{username}</strong>
+                <span>{t('home.instagram.profileMeta', { count: posts.length })}</span>
+              </div>
+              <span className='live-badge'>{t('home.instagram.liveFeed')}</span>
+            </div>
+          )}
+
           {loading ? (
             <div className='instagram-grid' aria-label={t('home.instagram.loading')} aria-busy='true'>
               {Array.from({ length: 6 }, (_, index) => <div className='instagram-skeleton' key={index} />)}
             </div>
           ) : posts.length > 0 ? (
             <motion.div className='instagram-grid' variants={staggerContainer}>
-              {posts.map(post => (
-                <motion.a
+              {visiblePosts.map(post => (
+                <motion.article
                   className='instagram-card'
-                  href={post.permalink ?? INSTAGRAM_PROFILE_URL}
-                  target='_blank'
-                  rel='noopener noreferrer'
                   key={post.id}
                   variants={scaleIn}
-                  aria-label={post.caption || t('home.instagram.openPost')}
                 >
-                  <img src={post.thumbnail_url ?? post.media_url} alt={post.caption?.slice(0, 140) || t('home.instagram.postAlt')} loading='lazy' />
-                  {post.media_type === 'VIDEO' && <FaPlay className='media-type-icon' aria-hidden='true' />}
-                  <span className='instagram-card-overlay'>
-                    <FaInstagram aria-hidden='true' />
-                    <span>{post.caption || `@${username}`}</span>
-                  </span>
-                </motion.a>
+                  <header className='post-header'>
+                    <span className='post-avatar'>
+                      {feed?.profile?.profile_picture_url
+                        ? <img src={feed.profile.profile_picture_url} alt='' />
+                        : <FaInstagram aria-hidden='true' />}
+                    </span>
+                    <div><strong>{post.username ?? username}</strong><span>{formatDate(post.timestamp)}</span></div>
+                    <FaEllipsisH aria-hidden='true' />
+                  </header>
+                  <a className='post-media' href={post.permalink ?? INSTAGRAM_PROFILE_URL} target='_blank' rel='noopener noreferrer' aria-label={post.caption || t('home.instagram.openPost')}>
+                    <img src={post.thumbnail_url ?? post.media_url} alt={post.caption?.slice(0, 140) || t('home.instagram.postAlt')} loading='lazy' />
+                    {post.media_type === 'VIDEO' && <span className='media-type-icon'><FaPlay aria-hidden='true' /> Reels</span>}
+                    {post.media_type === 'CAROUSEL_ALBUM' && <span className='media-type-icon'><FaImages aria-hidden='true' /> {t('home.instagram.carousel')}</span>}
+                  </a>
+                  <div className='post-content'>
+                    <div className='post-actions'>
+                      {typeof post.like_count === 'number' && <span><FaHeart aria-hidden='true' /> {t('home.instagram.likes', { count: post.like_count })}</span>}
+                      {typeof post.comments_count === 'number' && <span><FaRegComment aria-hidden='true' /> {t('home.instagram.comments', { count: post.comments_count })}</span>}
+                      <a href={post.permalink ?? INSTAGRAM_PROFILE_URL} target='_blank' rel='noopener noreferrer'><FaExternalLinkAlt aria-hidden='true' /> {t('home.instagram.openPost')}</a>
+                    </div>
+                    <p className='post-caption'><strong>{post.username ?? username}</strong> {post.caption || t('home.instagram.noCaption')}</p>
+                    <time dateTime={post.timestamp}>{formatDate(post.timestamp)}</time>
+                  </div>
+                </motion.article>
               ))}
             </motion.div>
           ) : (
@@ -189,15 +204,14 @@ const InstagramFeedSection: React.FC = () => {
 
           {!loading && posts.length > 0 && (
             <div className='instagram-pagination' aria-live='polite'>
-              {feed?.nextCursor ? (
-                <button className='btn btn-secondary load-more-button' type='button' onClick={loadMore} disabled={loadingMore}>
-                  {loadingMore ? <FaSyncAlt className='spin' aria-hidden='true' /> : <FaArrowDown aria-hidden='true' />}
-                  {loadingMore ? t('home.instagram.loadingMore') : t('home.instagram.loadMore')}
+              {hasMorePosts ? (
+                <button className='btn btn-secondary load-more-button' type='button' onClick={() => setVisibleCount(count => count + 6)}>
+                  <FaArrowDown aria-hidden='true' />
+                  {t('home.instagram.loadMore')}
                 </button>
               ) : (
                 <span className='instagram-end'>{t('home.instagram.noMore')}</span>
               )}
-              {loadMoreError && <p className='load-more-error'>{t('home.instagram.loadMoreError')}</p>}
             </div>
           )}
         </div>
