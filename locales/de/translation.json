@@ -1,3 +1,6 @@
+Warning: truncated output (original token count: 21298)
+Total output lines: 2069
+
 {
   "languages": {
     "de": "Deutsch",
@@ -350,6 +353,12 @@
       "loadingMore": "Weitere Beiträge werden geladen",
       "noMore": "Alle verfügbaren Beiträge werden angezeigt.",
       "loadMoreError": "Weitere Beiträge konnten nicht geladen werden. Bitte versuchen Sie es erneut."
+      ,"profileMeta": "{{count}} synchronisierte Beiträge"
+      ,"liveFeed": "Automatisch aktuell"
+      ,"carousel": "Karussell"
+      ,"likes": "{{count}} Likes"
+      ,"comments": "{{count}} Kommentare"
+      ,"noCaption": "Instagram-Beitrag ohne Beschreibung"
     },
     "configurator": {
       "title": "Angebots-Konfigurator",
@@ -1032,109 +1041,7 @@
       }
     },
     "performanceDashboard": "Performance-Dashboard",
-    "growthCurve90": "90-Tage-Wachstumskurve",
-    "growthChartAria": "Wachstumsdiagramm",
-    "resultLabel": "Ergebnis",
-    "trendAria": "{{niche}} Trend",
-    "compareGraphAria": "Vorher-Nachher-Diagramm",
-    "dayLabel": "Tag {{day}}",
-    "beforeLegend": "Vorher: schwache Dynamik",
-    "afterLegend": "Nachher: stabiles Wachstum",
-    "filterGroups": {
-      "all": "Alle",
-      "localServices": "Lokale Services",
-      "healthBeauty": "Gesundheit & Beauty",
-      "professional": "Professionell"
-    },
-    "kpis": {
-      "traffic": "Traffic",
-      "leads": "Leads",
-      "conversion": "Conversion"
-    },
-    "daysUnit": "Tage"
-  },
-  "about": {
-    "h1": "Über uns",
-    "subtitle": "Wir erstellen Websites und Automationen, die lokalen Unternehmen messbar mehr Anfragen bringen.",
-    "photoPlaceholder": "Foto: Porträt des Gründers von VS Web Studio (Vladyslav)",
-    "photoCaption": "Vladyslav, Gründer von VS Web Studio. Hildesheim.",
-    "photoAlt": "Vladyslav, Webentwickler von VS Web Studio aus Hildesheim",
-    "geo": {
-      "local": "Wir arbeiten hier: Hildesheim",
-      "region": "Hauptregion: Niedersachsen",
-      "country": "Möglich: ganz Deutschland"
-    },
-    "intro1": "Ich bin Vladyslav, Gründer von VS Web Studio. Ich arbeite aus Hildesheim und unterstütze zuerst Unternehmen direkt in der Stadt und Umgebung. Zusätzlich betreue ich Projekte in ganz Niedersachsen und bei Bedarf in ganz Deutschland.",
-    "intro2": "Mein Ziel ist einfach: nicht nur eine schöne Website, sondern eine Website, die verkauft und neue Kunden bringt. Deshalb fokussieren wir Struktur, Geschwindigkeit, Vertrauen, Tracking und klare Kontaktwege (Anruf, Formular, Messenger, Termin).",
-    "intro3": "Wir sind ein kleines Team mit bewährten Partnern (Design, Content, Werbung). Dadurch arbeiten wir schnell, ohne unnötige Bürokratie, und bringen Projekte bis zum Ergebnis.",
-    "localPriority": "Hildesheim ist unser Fokus: Lokale Betriebe brauchen schnelle Kommunikation und ein echtes Verständnis für den Markt vor Ort.",
-    "miniFactsTitle": "Was wir konkret machen",
-    "miniFacts": {
-      "i1": "Klare Schritte ohne Fachchinesisch",
-      "i2": "Transparente Updates in jeder Projektphase",
-      "i3": "Launch und laufende Optimierung nach Daten"
-    },
-    "cards": {
-      "work": {
-        "title": "Wie wir arbeiten",
-        "desc": "Kurze Schritte, klare Verantwortung, realistische Deadlines. Ablauf: Briefing  ->  Struktur  ->  Design  ->  Entwicklung  ->  Launch  ->  Verbesserung."
-      },
-      "ai": {
-        "title": "KI-Ansatz",
-        "desc": "Wir automatisieren Routine, damit Sie schneller antworten und weniger Anfragen verlieren. Beispiele: smarte Formulare, Auto-Antworten, Lead-Sortierung, Integrationen."
-      },
-      "leads": {
-        "title": "Fokus auf Anfragen",
-        "desc": "Design, Marketing und Tracking greifen zusammen: mehr echte Kontakte statt nur Besucher. Ziel: Ihre Website arbeitet wie ein Vertriebsmitarbeiter 24/7."
-      }
-    },
-    "whatYouGetTitle": "Was Sie konkret erhalten",
-    "whatYouGet": {
-      "i1": "Eine schnelle Website, die auf dem Smartphone sauber funktioniert",
-      "i2": "Klare Seitenstruktur mit starken CTA-Elementen",
-      "i3": "Eingerichtetes Tracking, damit Sie die Quellen Ihrer Anfragen sehen",
-      "i4": "Automationen, die Zeit sparen und die Conversion erhöhen"
-    },
-    "contactTitle": "Kontakt",
-    "contactText": "Schreiben Sie uns, welches Geschäft Sie in Hildesheim oder der Region haben und was verbessert werden soll (Anfragen, Werbung, Website). Sie erhalten einen klaren Plan mit Zeitrahmen.",
-    "contactButton": "Projekt anfragen",
-    "ctaTitle": "Kontakt"
-  },
-  "contact": {
-    "h1": "Erzählen Sie uns von Ihrem Projekt",
-    "responseTime": "Durchschnittliche Antwortzeit: 1-2h",
-    "subtitle": "Kurz beschreiben, was Sie planen. Sie erhalten eine klare Ersteinschätzung und den nächsten sinnvollen Schritt.",
-    "quickContacts": "Direkter Kontakt",
-    "responseNote": "Antwort meist innerhalb von 1-2 Stunden",
-    "contactMeta": {
-      "location": "Standort für schnelle Abstimmung",
-      "email": "Projektanfragen per E-Mail",
-      "phone": "Kurzes Erstgespräch oder Rückruf"
-    },
-    "trustItems": [
-      "Direkte Kommunikation",
-      "Klare Ersteinschätzung",
-      "Schnelle Rückmeldung"
-    ],
-    "form": {
-      "title": "Projektanfrage",
-      "intro": "Je klarer die Anfrage, desto schneller können wir Aufwand, Prioritäten und naechste Schritte einschätzen.",
-      "name": "Ihr Name",
-      "business": "Firmenname",
-      "need": "Zum Beispiel: Website für ein Kosmetikstudio oder Werbung für eine Autowerkstatt",
-      "help": "Zum Start reichen Branche, Ziel und was zuerst verbessert werden soll.",
-      "submit": "Kostenlose Beratung",
-      "labels": {
-        "email": "E-Mail-Adresse",
-        "name": "Ihr Name",
-        "business": "Unternehmen",
-        "message": "Projekt oder Ziel"
-      },
-      "email": "E-Mail-Adresse",
-      "submitLoading": "Wird gesendet...",
-      "success": "Vielen Dank. Ihre Anfrage wurde erfolgreich versendet.",
-      "error": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
-      "devError": "Lokaler API-Server nicht erreichbar. Starten Sie die App mit \"npm run dev:netlify\" und öffnen Sie dann http://localhost:8888."
+    "growthCurve90": "90-Tage-Wachstums…1298 tokens truncated…     "devError": "Lokaler API-Server nicht erreichbar. Starten Sie die App mit \"npm run dev:netlify\" und öffnen Sie dann http://localhost:8888."
     }
   },
   "blog": {
@@ -2059,4 +1966,5 @@
     }
   }
 }
+
 

@@ -1,3 +1,6 @@
+Warning: truncated output (original token count: 20632)
+Total output lines: 2069
+
 {
   "languages": {
     "de": "Deutsch",
@@ -350,6 +353,12 @@
       "loadingMore": "Loading more posts",
       "noMore": "All available posts are displayed.",
       "loadMoreError": "More posts could not be loaded. Please try again."
+      ,"profileMeta": "{{count}} synchronized posts"
+      ,"liveFeed": "Automatically updated"
+      ,"carousel": "Carousel"
+      ,"likes": "{{count}} likes"
+      ,"comments": "{{count}} comments"
+      ,"noCaption": "Instagram post without a caption"
     },
     "configurator": {
       "title": "Offer configurator",
@@ -1065,51 +1074,7 @@
       "country": "Possible: all of Germany"
     },
     "intro1": "I am Vladyslav, founder of VS Web Studio. I work from Hildesheim and initially support companies directly in the city and the surrounding area. I also manage projects throughout Lower Saxony and, if necessary, throughout Germany.",
-    "intro2": "My goal is simple: not just a beautiful website, but a website that sells and brings in new customers. That's why we focus on structure, speed, trust, tracking and clear contact channels (call, form, messenger, appointment).",
-    "intro3": "We are a small team with proven partners (design, content, advertising). This means we work quickly, without unnecessary bureaucracy, and bring projects to fruition.",
-    "localPriority": "Hildesheim is our focus: Local businesses need fast communication and a real understanding of the local market.",
-    "miniFactsTitle": "What we do specifically",
-    "miniFacts": {
-      "i1": "Clear steps without technical jargon",
-      "i2": "Transparent updates in every project phase",
-      "i3": "Launch and ongoing optimization according to data"
-    },
-    "cards": {
-      "work": {
-        "title": "How we work",
-        "desc": "Short steps, clear responsibility, realistic deadlines. Process: Briefing -> Structure -> Design -> Development -> Launch -> Improvement."
-      },
-      "ai": {
-        "title": "AI approach",
-        "desc": "We automate routines so you respond faster and lose fewer requests. Examples: smart forms, auto-responders, lead sorting, integrations."
-      },
-      "leads": {
-        "title": "Focus on requests",
-        "desc": "Design, marketing and tracking come together: more real contacts instead of just visitors. Goal: Your website works like a sales representative 24/7."
-      }
-    },
-    "whatYouGetTitle": "What you specifically receive",
-    "whatYouGet": {
-      "i1": "A fast website that works smoothly on smartphones",
-      "i2": "Clear page structure with strong CTA elements",
-      "i3": "Tracking set up so you can see the sources of your requests",
-      "i4": "Automations that save time and increase conversion"
-    },
-    "contactTitle": "Contact",
-    "contactText": "Write to us which business you have in Hildesheim or the region and what needs to be improved (enquiries, advertising, website). You will receive a clear plan with a time frame.",
-    "contactButton": "Request project",
-    "ctaTitle": "Contact"
-  },
-  "contact": {
-    "h1": "Tell us about your project",
-    "responseTime": "Average response time: 1-2h",
-    "subtitle": "Briefly describe what you are planning. You will receive a clear initial assessment and the next sensible step.",
-    "quickContacts": "Direct contact",
-    "responseNote": "Response usually within 1-2 hours",
-    "contactMeta": {
-      "location": "Location for quick coordination",
-      "email": "Project inquiries via email",
-      "phone": "Short initial consultation or callback"
+    "intro2": "My goal is simple: not just a beautiful websit…632 tokens truncated…      "phone": "Short initial consultation or callback"
     },
     "trustItems": [
       "Direct communication",
@@ -2059,4 +2024,5 @@
     }
   }
 }
+
 
