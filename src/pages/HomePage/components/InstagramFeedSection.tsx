@@ -25,6 +25,8 @@ interface InstagramFeedResponse {
   nextCursor?: string | null;
 }
 
+const INSTAGRAM_FEED_ENDPOINT = '/.netlify/functions/instagram-feed';
+
 const INSTAGRAM_PROFILE_URL = 'https://www.instagram.com/vs.studio.anfrage/';
 
 const InstagramFeedSection: React.FC = () => {
@@ -37,7 +39,7 @@ const InstagramFeedSection: React.FC = () => {
   useEffect(() => {
     const controller = new AbortController();
 
-    fetch('/api/instagram-feed', { signal: controller.signal })
+    fetch(INSTAGRAM_FEED_ENDPOINT, { signal: controller.signal })
       .then(async response => {
         if (!response.ok) throw new Error(`Instagram feed returned ${response.status}`);
         return (await response.json()) as InstagramFeedResponse;
@@ -63,7 +65,9 @@ const InstagramFeedSection: React.FC = () => {
     setLoadMoreError(false);
 
     try {
-      const response = await fetch(`/api/instagram-feed?after=${encodeURIComponent(feed.nextCursor)}`);
+      const response = await fetch(
+        `${INSTAGRAM_FEED_ENDPOINT}?after=${encodeURIComponent(feed.nextCursor)}`,
+      );
       if (!response.ok) throw new Error(`Instagram feed returned ${response.status}`);
       const nextPage = (await response.json()) as InstagramFeedResponse;
 
@@ -203,3 +207,4 @@ const InstagramFeedSection: React.FC = () => {
 };
 
 export default InstagramFeedSection;
+
