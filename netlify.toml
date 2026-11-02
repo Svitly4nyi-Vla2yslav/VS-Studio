@@ -69,6 +69,11 @@
   status = 200
 
 [[redirects]]
+  from = "/api/instagram-feed"
+  to = "/.netlify/functions/instagram-feed"
+  status = 200
+
+[[redirects]]
   from = "/home"
   to = "/"
   status = 301

@@ -327,6 +327,30 @@
         }
       }
     },
+    "instagram": {
+      "eyebrow": "Automated social media integration",
+      "title": "Connect social media automatically to your website and business",
+      "desc": "A new Instagram post updates your website at the same time. Offers, projects and news stay visible without maintaining content twice or changing code.",
+      "follow": "Follow on Instagram",
+      "storiesLabel": "Current stories",
+      "storyLabel": "Instagram story",
+      "loading": "Loading Instagram posts",
+      "openPost": "Open post on Instagram",
+      "postAlt": "VS Web Studio post on Instagram",
+      "empty": "The latest Instagram content is temporarily unavailable.",
+      "openProfile": "Open Instagram profile",
+      "flowLabel": "How social media automation works",
+      "flowPostTitle": "Post once on Instagram",
+      "flowPostText": "Publish your content in Instagram as usual.",
+      "flowSyncTitle": "Synchronize automatically",
+      "flowSyncText": "The secure server integration regularly fetches new content.",
+      "flowWebsiteTitle": "Keep the website current",
+      "flowWebsiteText": "Customers see updates without extra content maintenance or code changes.",
+      "loadMore": "Show more posts",
+      "loadingMore": "Loading more posts",
+      "noMore": "All available posts are displayed.",
+      "loadMoreError": "More posts could not be loaded. Please try again."
+    },
     "configurator": {
       "title": "Offer configurator",
       "desc": "Select project parameters and receive a starting price and appropriate support rates.",

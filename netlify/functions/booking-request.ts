@@ -144,10 +144,11 @@ export const handler = async (event: HandlerEvent): Promise<HandlerResponse> => 
   } catch (error) {
     console.error('booking-request failed.', error);
     if (error instanceof z.ZodError) {
+      const validationError = error as z.ZodError;
       return jsonResponse(400, {
         ok: false,
-        error: error.issues[0]?.message || 'Invalid booking payload',
-        issues: error.issues.map(issue => ({
+        error: validationError.issues[0]?.message || 'Invalid booking payload',
+        issues: validationError.issues.map(issue => ({
           path: issue.path.join('.'),
           message: issue.message,
         })),

@@ -4,6 +4,7 @@ import AiAssistantWorkflowSection from '../../components/AiAssistantWorkflowSect
 import ConfiguratorSection from './components/ConfiguratorSection';
 import FaqSection from './components/FaqSection';
 import HeroSection from './components/HeroSection';
+import InstagramFeedSection from './components/InstagramFeedSection';
 import LocalSeoSections from './components/LocalSeoSections';
 import MarqueeSection from './components/MarqueeSection';
 import PartnersSection from './components/PartnersSection';
@@ -39,6 +40,9 @@ const Home: React.FC = () => {
 
           <div className='section-divider' />
           <ProjectsSection />
+
+          <div className='section-divider' />
+          <InstagramFeedSection />
 
           <div className='section-divider' />
           <ConfiguratorSection />
