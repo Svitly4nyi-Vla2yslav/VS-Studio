@@ -11,7 +11,7 @@ import {
   FaPlay,
   FaRegComment,
 } from 'react-icons/fa';
-import { fadeInUp, scaleIn, staggerContainer } from '../../../components/Motion/reveal';
+import { fadeInUp } from '../../../components/Motion/reveal';
 import { InstagramFeedSectionScope } from './styles/InstagramFeedSection.styles';
 
 interface InstagramMedia {
@@ -161,12 +161,11 @@ const InstagramFeedSection: React.FC = () => {
               {Array.from({ length: 6 }, (_, index) => <div className='instagram-skeleton' key={index} />)}
             </div>
           ) : posts.length > 0 ? (
-            <motion.div className='instagram-grid' variants={staggerContainer}>
+            <div className='instagram-grid'>
               {visiblePosts.map(post => (
-                <motion.article
+                <article
                   className='instagram-card'
                   key={post.id}
-                  variants={scaleIn}
                 >
                   <header className='post-header'>
                     <span className='post-avatar'>
@@ -191,9 +190,9 @@ const InstagramFeedSection: React.FC = () => {
                     <p className='post-caption'><strong>{post.username ?? username}</strong> {post.caption || t('home.instagram.noCaption')}</p>
                     <time dateTime={post.timestamp}>{formatDate(post.timestamp)}</time>
                   </div>
-                </motion.article>
+                </article>
               ))}
-            </motion.div>
+            </div>
           ) : (
             <div className='instagram-empty'>
               <FaInstagram aria-hidden='true' />

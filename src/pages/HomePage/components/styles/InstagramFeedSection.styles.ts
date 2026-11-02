@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const InstagramFeedSectionScope = styled.div`
-  .instagram-section { overflow: hidden; }
-  .instagram-shell { width: 100%; padding: 96px clamp(16px,4vw,72px); }
+  .instagram-section { position: relative; z-index: 1; overflow: visible; }
+  .instagram-shell { display: flow-root; width: 100%; padding: 96px clamp(16px,4vw,72px); }
   .instagram-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; max-width: 1480px; margin: 0 auto 40px; }
   .instagram-copy { max-width: 820px; }
   .section-kicker { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px; border: 1px solid rgba(246,211,101,.28); border-radius: 999px; padding: 7px 14px; color: rgba(255,236,196,.88); background: rgba(246,211,101,.08); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
@@ -30,7 +30,7 @@ export const InstagramFeedSectionScope = styled.div`
   .instagram-profile-summary strong { color: #fff; font-size: 16px; }
   .instagram-profile-summary div span { color: rgba(255,255,255,.58); font-size: 13px; }
   .live-badge { margin-left: auto; border: 1px solid rgba(80,200,120,.28); border-radius: 999px; padding: 7px 11px; color: #8ce8a9; background: rgba(80,200,120,.09); font-size: 11px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
-  .instagram-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); align-items: start; gap: 18px; }
+  .instagram-grid { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); align-items: start; gap: 18px; }
   .instagram-card, .instagram-skeleton { overflow: hidden; border: 1px solid rgba(255,255,255,.14); border-radius: 18px; background: rgba(7,9,15,.94); box-shadow: 0 24px 60px rgba(0,0,0,.3); }
   .instagram-card { color: #fff; }
   .post-header { display: flex; align-items: center; gap: 11px; padding: 13px 15px; }
