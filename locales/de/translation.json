@@ -327,6 +327,30 @@
         }
       }
     },
+    "instagram": {
+      "eyebrow": "Automatisierte Social-Media-Integration",
+      "title": "Social Media automatisch mit Ihrer Website und Ihrem Unternehmen verbinden",
+      "desc": "Ein neuer Instagram-Post aktualisiert gleichzeitig Ihre Website. So bleiben Angebote, Projekte und Neuigkeiten sichtbar, ohne dass Sie Inhalte doppelt pflegen oder Code ändern müssen.",
+      "follow": "Auf Instagram folgen",
+      "storiesLabel": "Aktuelle Stories",
+      "storyLabel": "Instagram Story",
+      "loading": "Instagram-Beiträge werden geladen",
+      "openPost": "Beitrag auf Instagram öffnen",
+      "postAlt": "Beitrag von VS Web Studio auf Instagram",
+      "empty": "Die neuesten Inhalte sind gerade nicht verfügbar.",
+      "openProfile": "Instagram-Profil öffnen",
+      "flowLabel": "So funktioniert die Social-Media-Automatisierung",
+      "flowPostTitle": "Einmal auf Instagram posten",
+      "flowPostText": "Sie veröffentlichen Ihren Inhalt wie gewohnt in Instagram.",
+      "flowSyncTitle": "Automatisch synchronisieren",
+      "flowSyncText": "Die sichere Server-Integration lädt neue Inhalte regelmäßig nach.",
+      "flowWebsiteTitle": "Website bleibt aktuell",
+      "flowWebsiteText": "Kunden sehen Neuigkeiten ohne zusätzliche Inhalts- oder Codepflege.",
+      "loadMore": "Mehr Beiträge anzeigen",
+      "loadingMore": "Weitere Beiträge werden geladen",
+      "noMore": "Alle verfügbaren Beiträge werden angezeigt.",
+      "loadMoreError": "Weitere Beiträge konnten nicht geladen werden. Bitte versuchen Sie es erneut."
+    },
     "configurator": {
       "title": "Angebots-Konfigurator",
       "desc": "Wählen Sie Projektparameter und erhalten Sie einen Startpreis sowie passende Support-Tarife.",
