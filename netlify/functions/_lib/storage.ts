@@ -7,6 +7,7 @@ interface PersistResult {
   error?: string | null;
 }
 
+/** Перетворює звичайний об’єкт на мапу полів Firestore REST; не-об’єкти дають порожню мапу. */
 const toFirestoreFields = (value: unknown): Record<string, unknown> => {
   if (!value || typeof value !== 'object' || Array.isArray(value)) {
     return {};
@@ -17,6 +18,7 @@ const toFirestoreFields = (value: unknown): Record<string, unknown> => {
   );
 };
 
+/** Рекурсивно кодує JavaScript-значення у відповідний тип Firestore REST API. */
 const toFirestoreValue = (value: unknown): Record<string, unknown> => {
   if (value === null || value === undefined) return { nullValue: null };
   if (typeof value === 'string') return { stringValue: value };
@@ -27,6 +29,10 @@ const toFirestoreValue = (value: unknown): Record<string, unknown> => {
   return { stringValue: String(value) };
 };
 
+/**
+ * Створює короткоживучий Google OAuth access token із service-account змінних.
+ * Без облікових даних повертає `null`; приватний ключ не записується й не повертається.
+ */
 const createGoogleAccessToken = async () => {
   const clientEmail = process.env.FIREBASE_CLIENT_EMAIL;
   const privateKey = process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, '\n');
@@ -66,8 +72,10 @@ const createGoogleAccessToken = async () => {
   return json.access_token;
 };
 
+/** Повертає серверний або Vite-сумісний Firebase project id без мережевих запитів. */
 const resolveFirebaseProjectId = () => process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID || null;
 
+/** Записує документ у Firestore REST або повідомляє, що провайдер не налаштований. */
 const persistToFirestore = async (collection: string, record: Record<string, unknown>): Promise<PersistResult> => {
   const projectId = resolveFirebaseProjectId();
   if (!projectId) {
@@ -99,6 +107,7 @@ const persistToFirestore = async (collection: string, record: Record<string, unk
   return { provider: 'firestore', stored: true, id: json.name?.split('/').pop() ?? null };
 };
 
+/** Записує рядок через Supabase REST і повертає нормалізований ідентифікатор. */
 const persistToSupabase = async (table: string, record: Record<string, unknown>): Promise<PersistResult> => {
   const url = process.env.SUPABASE_URL;
   const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -130,6 +139,11 @@ const persistToSupabase = async (table: string, record: Record<string, unknown>)
   };
 };
 
+/**
+ * Послідовно пробує Firestore, потім Supabase; перший успішний запис завершує операцію.
+ * Помилки провайдерів збираються в безпечний результат, щоб викликач вирішив,
+ * чи можна продовжити обробку форми без постійного сховища.
+ */
 export const persistRecord = async (collection: string, table: string, record: Record<string, unknown>) => {
   const errors: string[] = [];
 
