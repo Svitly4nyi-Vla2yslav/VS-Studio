@@ -1,4 +1,4 @@
-import{aj as a,j as e,a as s,ak as d,al as o,g as r,o as l}from"./CszikZSG.js";const g=r.div`
+import{aj as a,j as e,a as s,ak as d,al as o,g as r,o as l}from"./C_9jcjGv.js";const g=r.div`
   padding: 24px 0 96px;
 `,c=r.section`
   display: grid;
