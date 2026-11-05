@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import {
   FaArrowDown,
+  FaChevronLeft,
+  FaChevronRight,
   FaEllipsisH,
   FaExternalLinkAlt,
   FaHeart,
@@ -10,9 +13,13 @@ import {
   FaInstagram,
   FaPlay,
   FaRegComment,
+  FaTimes,
 } from 'react-icons/fa';
 import { fadeInUp } from '../../../components/Motion/reveal';
-import { InstagramFeedSectionScope } from './styles/InstagramFeedSection.styles';
+import {
+  InstagramFeedSectionScope,
+  InstagramStoryViewer,
+} from './styles/InstagramFeedSection.styles';
 
 interface InstagramMedia {
   id: string;
@@ -46,6 +53,7 @@ const InstagramFeedSection: React.FC = () => {
   const [feed, setFeed] = useState<InstagramFeedResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [visibleCount, setVisibleCount] = useState(INITIAL_POST_COUNT);
+  const [activeStoryIndex, setActiveStoryIndex] = useState<number | null>(null);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -68,6 +76,30 @@ const InstagramFeedSection: React.FC = () => {
   const posts = feed?.posts.filter(post => post.media_url || post.thumbnail_url) ?? [];
   const stories = feed?.stories.filter(story => story.media_url || story.thumbnail_url) ?? [];
   const username = feed?.profile?.username ?? 'vs.studio.anfrage';
+  const activeStory = activeStoryIndex === null ? null : stories[activeStoryIndex];
+
+  useEffect(() => {
+    if (activeStoryIndex === null) return undefined;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setActiveStoryIndex(null);
+      if (event.key === 'ArrowLeft') {
+        setActiveStoryIndex(index => index === null ? null : (index - 1 + stories.length) % stories.length);
+      }
+      if (event.key === 'ArrowRight') {
+        setActiveStoryIndex(index => index === null ? null : (index + 1) % stories.length);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [activeStoryIndex, stories.length]);
 
   const visiblePosts = posts.slice(0, visibleCount);
   const hasMorePosts = visibleCount < posts.length;
@@ -78,7 +110,8 @@ const InstagramFeedSection: React.FC = () => {
     : '';
 
   return (
-    <InstagramFeedSectionScope>
+    <>
+      <InstagramFeedSectionScope>
       <motion.section
         className='section instagram-section'
         initial='hidden'
@@ -124,18 +157,17 @@ const InstagramFeedSection: React.FC = () => {
               <span className='stories-label'>{t('home.instagram.storiesLabel')}</span>
               <div className='stories-row'>
                 {stories.map((story, index) => (
-                  <a
+                  <button
                     className='story-link'
-                    href={story.permalink ?? INSTAGRAM_PROFILE_URL}
-                    target='_blank'
-                    rel='noopener noreferrer'
+                    type='button'
+                    onClick={() => setActiveStoryIndex(index)}
                     key={story.id}
                     aria-label={`${t('home.instagram.storyLabel')} ${index + 1}`}
                   >
                     <span className='story-ring'>
                       <img src={story.thumbnail_url ?? story.media_url} alt='' loading='lazy' />
                     </span>
-                  </a>
+                  </button>
                 ))}
               </div>
             </div>
@@ -215,7 +247,59 @@ const InstagramFeedSection: React.FC = () => {
           )}
         </div>
       </motion.section>
-    </InstagramFeedSectionScope>
+      </InstagramFeedSectionScope>
+      {activeStory && createPortal(
+        <InstagramStoryViewer
+          role='dialog'
+          aria-modal='true'
+          aria-label={`${t('home.instagram.storyLabel')} ${activeStoryIndex! + 1}`}
+          onClick={() => setActiveStoryIndex(null)}
+        >
+          <div className='story-viewer-frame' onClick={event => event.stopPropagation()}>
+            <div className='story-progress' aria-hidden='true'>
+              {stories.map((story, index) => (
+                <span className={index <= activeStoryIndex! ? 'is-active' : ''} key={story.id} />
+              ))}
+            </div>
+            <header className='story-viewer-header'>
+              <span className='story-viewer-avatar'>
+                {feed?.profile?.profile_picture_url
+                  ? <img src={feed.profile.profile_picture_url} alt='' />
+                  : <FaInstagram aria-hidden='true' />}
+              </span>
+              <div>
+                <strong>{activeStory.username ?? username}</strong>
+                <span>{formatDate(activeStory.timestamp)}</span>
+              </div>
+              <button type='button' onClick={() => setActiveStoryIndex(null)} aria-label={t('common.close', { defaultValue: 'Close' })}>
+                <FaTimes aria-hidden='true' />
+              </button>
+            </header>
+            <div className='story-viewer-media'>
+              {activeStory.media_type === 'VIDEO' ? (
+                <video src={activeStory.media_url} poster={activeStory.thumbnail_url} autoPlay playsInline controls />
+              ) : (
+                <img src={activeStory.media_url ?? activeStory.thumbnail_url} alt={activeStory.caption ?? ''} />
+              )}
+            </div>
+            {stories.length > 1 && (
+              <>
+                <button className='story-nav story-nav-prev' type='button' onClick={() => setActiveStoryIndex(index => index === null ? null : (index - 1 + stories.length) % stories.length)} aria-label={t('common.previous', { defaultValue: 'Previous' })}>
+                  <FaChevronLeft aria-hidden='true' />
+                </button>
+                <button className='story-nav story-nav-next' type='button' onClick={() => setActiveStoryIndex(index => index === null ? null : (index + 1) % stories.length)} aria-label={t('common.next', { defaultValue: 'Next' })}>
+                  <FaChevronRight aria-hidden='true' />
+                </button>
+              </>
+            )}
+            <a className='story-instagram-link' href={activeStory.permalink ?? INSTAGRAM_PROFILE_URL} target='_blank' rel='noopener noreferrer'>
+              <FaInstagram aria-hidden='true' /> {t('home.instagram.openPost')}
+            </a>
+          </div>
+        </InstagramStoryViewer>,
+        document.body,
+      )}
+    </>
   );
 };
 
