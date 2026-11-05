@@ -280,10 +280,17 @@ const InstagramFeedSection: React.FC = () => {
               </button>
             </header>
             <div className='story-viewer-media'>
-              {activeStory.media_type === 'VIDEO' ? (
-                <video src={activeStory.media_url} poster={activeStory.thumbnail_url} autoPlay playsInline controls />
+              {activeStory.media_type === 'VIDEO' && activeStory.media_url ? (
+                <video key={activeStory.id} src={activeStory.media_url} poster={activeStory.thumbnail_url} autoPlay playsInline controls />
               ) : (
-                <img src={activeStory.media_url ?? activeStory.thumbnail_url} alt={activeStory.caption ?? ''} />
+                <div className='story-media-fallback'>
+                  <img src={activeStory.media_url ?? activeStory.thumbnail_url} alt={activeStory.caption ?? ''} />
+                  {activeStory.media_type === 'VIDEO' && (
+                    <a href={activeStory.permalink ?? INSTAGRAM_PROFILE_URL} target='_blank' rel='noopener noreferrer'>
+                      <FaInstagram aria-hidden='true' /> {t('home.instagram.openPost')}
+                    </a>
+                  )}
+                </div>
               )}
             </div>
             {stories.length > 1 && (

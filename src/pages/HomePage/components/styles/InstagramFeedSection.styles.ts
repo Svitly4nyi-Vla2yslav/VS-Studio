@@ -185,6 +185,28 @@ export const InstagramStoryViewer = styled.div`
     background: #000;
   }
 
+  .story-media-fallback { position: relative; width: 100%; height: 100%; }
+  .story-media-fallback > a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    gap: 9px;
+    border: 1px solid rgba(255,255,255,.28);
+    border-radius: 999px;
+    padding: 10px 16px;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    background: rgba(0,0,0,.7);
+    font-size: 13px;
+    font-weight: 800;
+    white-space: nowrap;
+    backdrop-filter: blur(12px);
+  }
+
   .story-nav {
     position: absolute;
     top: 50%;

@@ -104,6 +104,23 @@ export const handler = async (event: HandlerEvent) => {
       }),
     ]);
 
+    const enrichedStories = await Promise.all(
+      (stories.data ?? []).map(async story => {
+        if (story.media_url) return story;
+
+        const storyUrl = new URL(`${baseUrl}/${story.id}`);
+        storyUrl.searchParams.set(
+          'fields',
+          'id,caption,media_type,media_url,permalink,thumbnail_url,timestamp,username'
+        );
+
+        return fetchInstagramJson<InstagramMedia>(storyUrl, token).catch(error => {
+          console.warn(`Instagram story ${story.id} could not be enriched.`, error);
+          return story;
+        });
+      })
+    );
+
     return respond(
       200,
       {
@@ -111,7 +128,7 @@ export const handler = async (event: HandlerEvent) => {
         configured: true,
         profile,
         posts: posts.data ?? [],
-        stories: stories.data ?? [],
+        stories: enrichedStories,
         nextCursor: posts.paging?.next ? posts.paging.cursors?.after ?? null : null,
         fetchedAt: new Date().toISOString(),
       },
