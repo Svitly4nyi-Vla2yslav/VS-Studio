@@ -167,6 +167,10 @@ const InstagramFeedSection: React.FC = () => {
                     <span className='story-ring'>
                       <img src={story.thumbnail_url ?? story.media_url} alt='' loading='lazy' />
                     </span>
+                    <span className='story-preview-meta'>
+                      <FaInstagram aria-hidden='true' />
+                      <span><strong>{story.username ?? username}</strong>{t('home.instagram.storyLabel')}</span>
+                    </span>
                   </button>
                 ))}
               </div>

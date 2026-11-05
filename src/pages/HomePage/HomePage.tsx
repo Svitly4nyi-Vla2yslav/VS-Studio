@@ -24,6 +24,9 @@ const Home: React.FC = () => {
           <HeroSection reducedMotion={reducedMotion} />
 
           <div className='section-divider' />
+          <InstagramFeedSection />
+
+          <div className='section-divider' />
           <LocalSeoSections />
 
           <div className='section-divider' />
@@ -42,9 +45,6 @@ const Home: React.FC = () => {
           <ProjectsSection />
 
           <div className='section-divider' />
-          <InstagramFeedSection />
-
-          <div className='section-divider' />
           <ConfiguratorSection />
 
           <div className='section-divider' />
@@ -57,3 +57,4 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+

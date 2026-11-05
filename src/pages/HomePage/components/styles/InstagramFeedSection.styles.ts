@@ -18,11 +18,16 @@ export const InstagramFeedSectionScope = styled.div`
   .stories-block, .instagram-profile-summary, .instagram-grid, .instagram-pagination { max-width: 1480px; margin-right: auto; margin-left: auto; }
   .stories-block { margin-bottom: 28px; }
   .stories-label { display: block; margin-bottom: 12px; color: rgba(255,255,255,.72); font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
-  .stories-row { display: flex; gap: 14px; overflow-x: auto; padding: 2px 2px 10px; scrollbar-width: thin; }
-  .story-link { flex: 0 0 auto; border: 0; border-radius: 50%; padding: 0; cursor: pointer; color: inherit; background: transparent; }
-  .story-ring { display: grid; width: 72px; height: 72px; place-items: center; border-radius: 50%; padding: 3px; background: linear-gradient(135deg,#feda75,#d62976 55%,#4f5bd5); transition: transform 220ms ease,box-shadow 220ms ease; }
-  .story-ring img { width: 100%; height: 100%; border: 3px solid #090d17; border-radius: inherit; object-fit: cover; background: #111827; }
-  .story-link:hover .story-ring, .story-link:focus-visible .story-ring { transform: translateY(-3px) scale(1.04); box-shadow: 0 10px 24px rgba(214,41,118,.28); }
+  .stories-row { display: flex; gap: 18px; overflow-x: auto; padding: 2px 2px 14px; scrollbar-width: thin; }
+  .story-link { position: relative; flex: 0 0 190px; overflow: hidden; border: 1px solid rgba(255,255,255,.16); border-radius: 20px; padding: 3px; cursor: pointer; color: #fff; background: linear-gradient(145deg,#feda75,#d62976 55%,#4f5bd5); box-shadow: 0 18px 42px rgba(0,0,0,.32); }
+  .story-ring { display: block; width: 100%; aspect-ratio: 9 / 16; overflow: hidden; border-radius: 16px; background: #050507; transition: transform 220ms ease,filter 220ms ease; }
+  .story-ring img { width: 100%; height: 100%; border: 0; border-radius: inherit; object-fit: contain; background: #050507; }
+  .story-preview-meta { position: absolute; right: 3px; bottom: 3px; left: 3px; display: flex; align-items: center; gap: 9px; min-height: 66px; border-radius: 0 0 16px 16px; padding: 20px 12px 10px; text-align: left; background: linear-gradient(180deg,transparent,rgba(0,0,0,.9)); }
+  .story-preview-meta > svg { width: 18px; height: 18px; flex: 0 0 auto; }
+  .story-preview-meta > span { display: grid; gap: 2px; color: rgba(255,255,255,.75); font-size: 11px; }
+  .story-preview-meta strong { overflow: hidden; color: #fff; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
+  .story-link:hover, .story-link:focus-visible { outline: 2px solid rgba(246,211,101,.72); outline-offset: 3px; }
+  .story-link:hover .story-ring, .story-link:focus-visible .story-ring { transform: scale(1.025); filter: brightness(.88); }
   .instagram-profile-summary { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; border: 1px solid rgba(255,255,255,.12); border-radius: 18px; padding: 14px 18px; background: rgba(7,9,15,.84); box-shadow: 0 18px 50px rgba(0,0,0,.2); }
   .profile-avatar-ring { display: grid; width: 58px; height: 58px; flex: 0 0 auto; place-items: center; border-radius: 50%; padding: 3px; color: #fff; background: linear-gradient(135deg,#feda75,#d62976 55%,#4f5bd5); }
   .profile-avatar-ring img { width: 100%; height: 100%; border: 3px solid #090d17; border-radius: inherit; object-fit: cover; }
@@ -67,7 +72,7 @@ export const InstagramFeedSectionScope = styled.div`
   @media (max-width: 1180px) { .instagram-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
   @media (max-width: 900px) { .instagram-heading { align-items: flex-start; flex-direction: column; } .automation-flow { grid-template-columns: 1fr; } .automation-arrow { justify-self: center; transform: none; } }
   @media (max-width: 700px) { .instagram-grid { grid-template-columns: 1fr; max-width: 680px; } .instagram-profile-summary { max-width: 680px; } }
-  @media (max-width: 560px) { .instagram-shell { padding: 76px 12px; } .instagram-heading { margin-bottom: 30px; padding: 0 4px; } .instagram-profile-link { width: 100%; } .automation-flow { border-radius: 16px; padding: 18px; } .instagram-card,.instagram-skeleton { border-radius: 14px; } .instagram-skeleton { min-height: 520px; } .post-actions { gap: 12px; } .post-actions span,.post-actions a { font-size: 12px; } .post-actions a { font-size: 0; } .post-actions a svg { width: 18px; height: 18px; } .story-ring { width: 64px; height: 64px; } .live-badge { display: none; } }
+  @media (max-width: 560px) { .instagram-shell { padding: 76px 12px; } .instagram-heading { margin-bottom: 30px; padding: 0 4px; } .instagram-profile-link { width: 100%; } .automation-flow { border-radius: 16px; padding: 18px; } .instagram-card,.instagram-skeleton { border-radius: 14px; } .instagram-skeleton { min-height: 520px; } .post-actions { gap: 12px; } .post-actions span,.post-actions a { font-size: 12px; } .post-actions a { font-size: 0; } .post-actions a svg { width: 18px; height: 18px; } .story-link { flex-basis: min(58vw,220px); } .live-badge { display: none; } }
 `;
 
 export const InstagramStoryViewer = styled.div`
