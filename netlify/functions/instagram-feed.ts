@@ -37,12 +37,20 @@ const jsonHeaders = {
   'Content-Type': 'application/json; charset=utf-8',
 };
 
+/**
+ * Формує єдину JSON-відповідь Netlify з CORS і керованим Cache-Control.
+ */
 const respond = (statusCode: number, body: unknown, cacheControl = 'no-store') => ({
   statusCode,
   headers: { ...jsonHeaders, 'Cache-Control': cacheControl },
   body: JSON.stringify(body),
 });
 
+/**
+ * Додає access token лише до серверного запиту й отримує типізований JSON Graph API.
+ *
+ * @throws Error для HTTP-помилки або error-поля Instagram; запит обмежений 8 секундами.
+ */
 const fetchInstagramJson = async <T>(url: URL, token: string): Promise<T> => {
   url.searchParams.set('access_token', token);
 
@@ -60,6 +68,13 @@ const fetchInstagramJson = async <T>(url: URL, token: string): Promise<T> => {
   return payload;
 };
 
+/**
+ * Обслуговує GET/OPTIONS, паралельно завантажує профіль, дописи й stories,
+ * а stories без media_url намагається дозавантажити окремо.
+ *
+ * Відсутній токен повертає 503, помилка Graph API — 502. Токен ніколи
+ * не включається у відповідь, а успішний результат кешується на CDN.
+ */
 export const handler = async (event: HandlerEvent) => {
   if (event.httpMethod === 'OPTIONS') return respond(200, { ok: true });
   if (event.httpMethod !== 'GET') return respond(405, { ok: false, error: 'Method not allowed' });
@@ -104,6 +119,7 @@ export const handler = async (event: HandlerEvent) => {
       }),
     ]);
 
+    // Окремий запит потрібний лише для stories, у яких список не повернув media_url.
     const enrichedStories = await Promise.all(
       (stories.data ?? []).map(async story => {
         if (story.media_url) return story;
