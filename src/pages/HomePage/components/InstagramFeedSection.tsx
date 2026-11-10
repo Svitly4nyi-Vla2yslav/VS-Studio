@@ -48,6 +48,10 @@ const INSTAGRAM_FEED_ENDPOINT = '/.netlify/functions/instagram-feed';
 const INSTAGRAM_PROFILE_URL = 'https://www.instagram.com/vs.studio.anfrage/';
 const INITIAL_POST_COUNT = 6;
 
+/**
+ * Завантажує публікації та історії Instagram і відображає адаптивну галерею з переглядачем.
+ * Компонент не приймає аргументів; мережевий запит скасовується під час розмонтування.
+ */
 const InstagramFeedSection: React.FC = () => {
   const { t, i18n } = useTranslation();
   const [feed, setFeed] = useState<InstagramFeedResponse | null>(null);
@@ -55,6 +59,7 @@ const InstagramFeedSection: React.FC = () => {
   const [visibleCount, setVisibleCount] = useState(INITIAL_POST_COUNT);
   const [activeStoryIndex, setActiveStoryIndex] = useState<number | null>(null);
 
+  // Один раз отримує feed; AbortController не дає завершеному запиту оновити розмонтований компонент.
   useEffect(() => {
     const controller = new AbortController();
 
@@ -78,6 +83,8 @@ const InstagramFeedSection: React.FC = () => {
   const username = feed?.profile?.username ?? 'vs.studio.anfrage';
   const activeStory = activeStoryIndex === null ? null : stories[activeStoryIndex];
 
+  // Відкритий переглядач блокує прокрутку сторінки та підтримує Escape і стрілки.
+  // Cleanup повертає попереднє значення overflow і прибирає глобальний обробник клавіатури.
   useEffect(() => {
     if (activeStoryIndex === null) return undefined;
 
@@ -103,6 +110,7 @@ const InstagramFeedSection: React.FC = () => {
 
   const visiblePosts = posts.slice(0, visibleCount);
   const hasMorePosts = visibleCount < posts.length;
+  // Форматує необов'язковий ISO-час мовою поточної локалі; без часу повертає порожній рядок.
   const formatDate = (timestamp?: string) => timestamp
     ? new Intl.DateTimeFormat(i18n.resolvedLanguage || i18n.language, {
       day: 'numeric', month: 'long', year: 'numeric',
