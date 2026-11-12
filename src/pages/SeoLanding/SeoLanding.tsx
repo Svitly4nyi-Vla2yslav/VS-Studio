@@ -62,6 +62,10 @@ const LandingPageRoot = styled(PageRoot)<{ $fullHero?: boolean }>`
   }
 `;
 
+/**
+ * Перевіряє мінімальну форму перекладеної SEO-сторінки та звужує unknown до LandingPageData.
+ * Функція чиста: вона не змінює отриманий об'єкт і не перевіряє вміст окремих секцій.
+ */
 const isLandingPageData = (value: unknown): value is LandingPageData => {
   if (!value || typeof value !== 'object') return false;
 
@@ -76,6 +80,7 @@ const isLandingPageData = (value: unknown): value is LandingPageData => {
   );
 };
 
+/** Повертає true лише для масиву, кожен елемент якого є рядком; вхідне значення не змінює. */
 const isStringArray = (value: unknown): value is string[] =>
   Array.isArray(value) && value.every(item => typeof item === 'string');
 
@@ -367,6 +372,10 @@ const PointList = styled.ul`
   }
 `;
 
+/**
+ * Будує локальну SEO-сторінку за pageId, надаючи перекладам пріоритет над вбудованим fallback.
+ * Некоректні структури перекладу відкидаються валідаторами; відсутня сторінка веде на кореневий маршрут.
+ */
 const LocalLandingPage: React.FC<{ pageId: PageId }> = ({ pageId }) => {
   const { t } = useTranslation();
   const fallbackPage = localLandingPages[pageId];
