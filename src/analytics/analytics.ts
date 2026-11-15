@@ -61,6 +61,10 @@ const ensureGtag = () => {
   window.gtag = window.gtag || ((...args: unknown[]) => window.dataLayer.push(args));
 };
 
+/**
+ * Зчитує підтримувані UTM-параметри з поточного URL, обрізає кожне значення до 200 символів
+ * і тримає їх у пам’яті до згоди. За наявності statistics-consent також оновлює sessionStorage.
+ */
 export const captureUtmAttribution = () => {
   const params = new URLSearchParams(window.location.search);
   const captured = Object.fromEntries(
@@ -76,6 +80,10 @@ export const captureUtmAttribution = () => {
   }
 };
 
+/**
+ * Повертає UTM-атрибуцію лише за наявності statistics-consent.
+ * Спочатку читає sessionStorage, а пошкоджений JSON безпечно замінює значенням із пам’яті.
+ */
 export const getUtmAttribution = (): UtmAttribution => {
   if (!analyticsAllowed()) return {};
   try {
@@ -86,6 +94,10 @@ export const getUtmAttribution = (): UtmAttribution => {
   }
 };
 
+/**
+ * Фіксує UTM, перевіряє consent, measurement ID і production-домен, після чого один раз
+ * налаштовує gtag та додає GA4-скрипт. Повертає true лише коли аналітика готова до надсилання.
+ */
 export const initializeAnalytics = () => {
   captureUtmAttribution();
   if (initialized || !measurementId || !analyticsAllowed() || !canSendProductionAnalytics()) return false;
@@ -107,6 +119,10 @@ export const initializeAnalytics = () => {
   return true;
 };
 
+/**
+ * Реєструє eventId у sessionStorage для дедуплікації та зберігає щонайбільше 50 останніх значень.
+ * За недоступного або пошкодженого сховища працює fail-open і дозволяє подію.
+ */
 const rememberEventId = (eventId: string) => {
   try {
     const current = JSON.parse(window.sessionStorage.getItem(EVENT_IDS_KEY) || '[]') as string[];
@@ -118,6 +134,10 @@ const rememberEventId = (eventId: string) => {
   }
 };
 
+/**
+ * За потреби відсіює повторний eventId, перевіряє consent і надсилає подію лише у дозволеному production.
+ * У non-production debug-режимі журналює payload; результат показує, чи подію прийнято до обробки.
+ */
 export const trackEvent = (
   name: AnalyticsEventName,
   params: Record<string, string | number | boolean> = {},
@@ -138,6 +158,10 @@ export const trackEvent = (
   return true;
 };
 
+/**
+ * Формує абсолютний page_location і не дублює останній успішно надісланий перегляд.
+ * Кеш маршруту оновлюється лише тоді, коли trackEvent повернув true.
+ */
 export const trackPageView = (path: string) => {
   const pageLocation = new URL(path, window.location.origin).toString();
   if (pageLocation === lastPageView) return false;
@@ -149,6 +173,10 @@ export const trackPageView = (path: string) => {
   return sent;
 };
 
+/**
+ * Синхронізує gtag consent після зміни вибору користувача.
+ * Надання згоди повторно фіксує UTM та ініціалізує аналітику; відкликання надсилає denied, якщо gtag уже активний.
+ */
 export const handleConsentChange = () => {
   if (analyticsAllowed()) {
     captureUtmAttribution();
