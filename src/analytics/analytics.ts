@@ -30,6 +30,7 @@ declare global {
   }
 }
 
+/** Читає cookie_consent_v2 з localStorage; відсутній або пошкоджений JSON безпечно повертає як null. */
 const readConsent = (): ConsentState | null => {
   try {
     const raw = window.localStorage.getItem(CONSENT_KEY);
@@ -39,13 +40,22 @@ const readConsent = (): ConsentState | null => {
   }
 };
 
+/**
+ * Повертає true лише для production-збірки на підтверджених доменах VS Web Studio.
+ * Preview та довільні hostname навмисно не надсилають аналітику.
+ */
 const canSendProductionAnalytics = () =>
   import.meta.env.PROD &&
   import.meta.env.VITE_APP_ENV !== 'preview' &&
   ['vs-web-studio.de', 'www.vs-web-studio.de'].includes(window.location.hostname);
 
+/** Повертає поточний statistics-consent без кешування, щоб врахувати останній вибір користувача. */
 const analyticsAllowed = () => Boolean(readConsent()?.statistics);
 
+/**
+ * Ініціалізує dataLayer і локальну gtag-обгортку, якщо їх ще не створив зовнішній скрипт.
+ * Побічний ефект обмежений глобальними полями window; мережевий скрипт тут не додається.
+ */
 const ensureGtag = () => {
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || ((...args: unknown[]) => window.dataLayer.push(args));
