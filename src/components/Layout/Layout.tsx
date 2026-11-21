@@ -9,9 +9,15 @@ import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import { MainContent, SiteShell } from './styles/Layout.styles';
 
+/**
+ * Формує спільну оболонку сторінок: аналітику, SEO, навігацію, активний дочірній маршрут і службові віджети.
+ * Аргументів не приймає; `pathname` одночасно задає ключ анімації переходу та повертає вікно нагору.
+ * Побічний ефект прокрутки виконується після зміни шляху, мережеві запити компонент безпосередньо не робить.
+ */
 export const Layout: React.FC = () => {
   const location = useLocation();
 
+  // Query і hash на незмінному pathname не перезапускають ефект; cleanup не потрібен.
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' });
   }, [location.pathname]);
