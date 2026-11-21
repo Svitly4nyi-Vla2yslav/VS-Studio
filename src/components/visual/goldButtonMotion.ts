@@ -1,5 +1,10 @@
 import { css } from 'styled-components';
 
+/**
+ * Надає styled-components спільний CSS-фрагмент для золотих кнопок.
+ * Hover і фокус запускають декоративний відблиск та невелике зміщення, active опускає кнопку;
+ * за `prefers-reduced-motion: reduce` анімація відблиску вимикається. Побічних ефектів у JavaScript немає.
+ */
 export const goldButtonMotion = css`
   position: relative;
   isolation: isolate;
